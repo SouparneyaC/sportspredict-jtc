@@ -1,0 +1,382 @@
+{
+  "match": "Croatia vs Panama",
+  "tournament": "FIFA World Cup 2026",
+  "group": "L",
+  "game_day": 2,
+  "date": "2026-06-23",
+  "venue": "Neutral",
+  "analysis_date": "2026-06-23",
+
+  "model_inputs": {
+    "cro_elo": 1973.5928,
+    "pan_elo": 1859.0601,
+    "elo_diff": 114.53,
+    "intercept": 0.10408,
+    "elo_diff_coef": 0.0018099,
+    "home_advantage": 0.0
+  },
+
+  "model_outputs": {
+    "lambda_cro": 1.3653,
+    "lambda_pan": 0.9019,
+    "lambda_total": 2.2672,
+    "p_cro_win": 0.5101,
+    "p_draw": 0.2865,
+    "p_pan_win": 0.2034,
+    "p_cro_scores": 0.7447,
+    "p_pan_scores": 0.5942,
+    "p_btts": 0.4425,
+    "p_total_ge3": 0.4038,
+    "p_cro_first_2h_goal": 0.4084,
+    "p_pan_ge3_sot_model_3x": 0.5078
+  },
+
+  "market_data": {
+    "fanduel_cro_ml": -220,
+    "fanduel_draw": 350,
+    "fanduel_pan_ml": 600,
+    "market_cro_win_implied": 0.6875,
+    "market_draw_implied": 0.2222,
+    "market_pan_win_implied": 0.1429,
+    "btts_yes_line": -115,
+    "btts_no_line": -109,
+    "btts_yes_implied": 0.5349,
+    "over_2p5_line": -145,
+    "over_2p5_implied": 0.5921,
+    "corners_over_9p5_line": 110,
+    "corners_under_9p5_line": -150,
+    "corners_over_9p5_implied": 0.4762,
+    "corners_under_9p5_implied": 0.6000,
+    "market_model_gap_cro_win": 0.1774,
+    "blended_cro_win": 0.5988,
+    "note": "Market significantly stronger on Croatia than Elo model. Blended estimate used for downstream calibration."
+  },
+
+  "rules_fired": {
+    "RULE7": false,
+    "RULE7_note": "Panama 20.3% (model) / 14.3% (market). Model above 15% threshold but market at/below. RULE7 partially in effect for player props.",
+    "RULE8": true,
+    "RULE8_note": "Draw 28.65% > 25% threshold. BUT: survival match — both teams must win (JOR-ALG caveat). Apply cautiously; do NOT compress attacking props aggressively.",
+    "RULE15": true,
+    "RULE15_note": "Fajardo is expected-losing-team forward. Market says Panama 14.3% win (RULE7-adjacent). Full RULE15 suppression applied to Q9.",
+    "RULE_FOULS": true,
+    "RULE_FOULS_note": "Croatia slight possession/control favorite. Panama expected to defend more → Panama fouls more. But Croatia historical 13.0/game is high.",
+    "FLOOR_0p25": true,
+    "FLOOR_0p25_note": "Applied to Q2 (offsides), Q7 (corners), Q9 (Fajardo SOT), Q10 (Sučić SOT).",
+    "RULE1": true,
+    "RULE1_note": "Market heavily weighted (-220 Croatia). 50% market / 50% model blended for match-outcome-driven props."
+  },
+
+  "gd1_evidence": {
+    "croatia_gd1": {
+      "opponent": "England",
+      "result": "2-4 L",
+      "shots": 10,
+      "sot": 8,
+      "fouls": 12,
+      "corners": 2,
+      "offsides": 1,
+      "possession_pct": 38,
+      "goals_1h": 2,
+      "goals_2h": 0,
+      "notes": "Both Croatia goals in 1H. England scored twice in 2H. Croatia chased from 60' onward. Historical avg fouls: 13.0/game. Corner average WC: under 6.5 in 8 consecutive WC matches."
+    },
+    "panama_gd1": {
+      "opponent": "Ghana",
+      "result": "0-1 L",
+      "shots": 12,
+      "sot": 4,
+      "fouls": 11,
+      "corners": 2,
+      "offsides": 1,
+      "tackles": 29,
+      "possession_pct": 62,
+      "goals": 0,
+      "notes": "Dominant possession (62%) but 0 goals. 4 SOT vs Ghana compact block. 29 tackles — most by any team in WC2026 R1. Blackman (70') + Harvey (90') both received yellows — BOTH ON WARNINGS for GD2. Fajardo came on at 62', 0 SOT in 28 min."
+    }
+  },
+
+  "player_profiles": {
+    "jose_fajardo": {
+      "club": "Universidad Católica (Ecuador)",
+      "position": "ST",
+      "age": 32,
+      "sot_per_90_club": 0.78,
+      "gd1_sot": 0,
+      "gd1_role": "sub (62' on)",
+      "gd1_minutes": 28,
+      "rule15_applies": true,
+      "rule15_note": "Panama expected loser. Market 14.3% win = RULE7-adjacent. Full RULE15 suppression.",
+      "main_book_presence": "not found on FanDuel/DraftKings scorer markets — signals low market confidence"
+    },
+    "luka_sucic": {
+      "club": "Real Sociedad (La Liga)",
+      "position": "AM/W",
+      "age": 23,
+      "sot_per_90_club": 0.78,
+      "gd1_sot": null,
+      "gd1_role": "UNUSED SUBSTITUTE vs England",
+      "gd1_minutes": 0,
+      "identity_warning": "CRITICAL: Luka Sučić (Real Sociedad) ≠ Petar Sučić (Inter Milan). Petar STARTED vs England. Luka was UNUSED. No GD1 tournament data for Luka.",
+      "rule15_applies": false,
+      "rule15_note": "Croatia expected WINNER. RULE15 does NOT apply to Croatia players.",
+      "starting_probability": 0.42,
+      "sub_probability": 0.30,
+      "unused_probability": 0.28,
+      "note": "Dalić may switch to 4-3-3 for Panama match with Luka as key attacking option given fresh legs."
+    },
+    "petar_sucic": {
+      "club": "Inter Milan (Serie A)",
+      "position": "AM/CM",
+      "age": 22,
+      "gd1_role": "starter, 90 min vs England",
+      "gd1_sot": 2,
+      "note": "Petar is different player from Q10 subject Luka. Petar set up Baturina goal vs England."
+    }
+  },
+
+  "referee_profile": {
+    "name": "Pierre Atcho",
+    "association": "Gabon (CAF)",
+    "career_yc_per_game": 4.5,
+    "career_rc_per_game": 0.2,
+    "wc2026_gd1": "Officiated IRQ-NOR",
+    "yc_in_gd1": "4 yellows reported",
+    "note": "High card-giver. AFCON-level physical style management. Warns teams early. With both Panama players on YC warnings and physical survival-match style expected, high card probability overall."
+  },
+
+  "compound_calculations": {
+    "corners": {
+      "lambda_cro_corners_estimate": 3.5,
+      "lambda_pan_corners_estimate": 3.5,
+      "lambda_total_corners": 7.0,
+      "p_ge9_poisson_lambda7": 0.2710,
+      "p_ge9_poisson_lambda6": 0.1528,
+      "market_implied_p_ge10": 0.4762,
+      "market_implied_p_ge9": 0.53,
+      "note": "GD1 evidence (2 corners each) conflicts with market. GD1 dominant per hierarchy. Generous λ=7 gives 27%. Croatia 'under 6.5 in 8 WC matches' aligns with GD1."
+    },
+    "panama_offsides": {
+      "lambda_pan_gd1": 1.0,
+      "p_ge2_poisson": 0.2642,
+      "survival_match_adjustment": 0.05,
+      "final_estimate": 0.32,
+      "note": "Panama only 1 offside despite 62% possession vs Ghana. Not a pace-behind-lines team."
+    },
+    "fajardo_sot": {
+      "p_sot_if_starts_90min_club_rate": 0.541,
+      "rule15_suppression": 0.15,
+      "croatia_defense_quality_discount": 0.05,
+      "p_sot_if_starts_adjusted": 0.315,
+      "p_starts": 0.57,
+      "p_sot_if_sub_30min": 0.229,
+      "rule15_sub_adjusted": 0.17,
+      "p_sub": 0.30,
+      "p_unused": 0.13,
+      "weighted_combined": 0.231,
+      "floor_025_applies": true,
+      "final_estimate": 0.28
+    },
+    "luka_sucic_sot": {
+      "p_sot_if_starts_90min_club_rate": 0.541,
+      "p_sot_if_sub_30min": 0.227,
+      "p_starts": 0.42,
+      "p_sub": 0.30,
+      "p_unused": 0.28,
+      "weighted_combined": 0.295,
+      "rule15_applies": false,
+      "final_estimate": 0.30
+    }
+  },
+
+  "final_estimates": {
+    "Q1": {
+      "question": "Will Panama commit more fouls than Croatia?",
+      "estimate": 0.50,
+      "direction": "NO_LEAN",
+      "key_drivers": [
+        "RULE_FOULS: Panama expected to defend more → Panama fouls more",
+        "BUT Croatia historical 13.0 fouls/game is very high",
+        "Panama GD1: 11 fouls while ATTACKING + 29 tackles",
+        "In this match: Panama defends → could foul 12-15; Croatia controls → might foul 9-12",
+        "Near coin-flip; slight YES lean for Panama based on defending-team principle"
+      ],
+      "crowd_expected": 0.45,
+      "edge": "minimal"
+    },
+    "Q2": {
+      "question": "Will Panama be caught offside 2 or more times?",
+      "estimate": 0.32,
+      "direction": "NO",
+      "key_drivers": [
+        "Panama GD1: only 1 offside despite 62% possession (not a pace-behind-lines team)",
+        "Poisson λ=1: P(≥2) = 0.264",
+        "Survival match: Panama will counter-attack more than GD1 → slight upward bump",
+        "Croatia defends with disciplined line; Panama lacks high-pace forwards",
+        "FLOOR_0.25 does not bind (0.32 > 0.25)"
+      ],
+      "crowd_expected": 0.40,
+      "edge": "moderate NO"
+    },
+    "Q3": {
+      "question": "Will Panama have more shots on target than Croatia in the second half?",
+      "estimate": 0.30,
+      "direction": "NO",
+      "key_drivers": [
+        "Market: Croatia -220 (68.75% win) vs model 51.0%. Market implies Croatia much stronger.",
+        "Blended Croatia win 59.9% → Croatia expected to dominate 2H",
+        "Croatia 2H SOT likely higher given quality edge (even in GD1 had shots; only lost because England 4-2 better)",
+        "Panama will push forward in 2H but Croatia will control pace and create more chances",
+        "Skellam P(PAN 2H SOT > CRO 2H SOT) in competitive match with Croatia quality: ~30%"
+      ],
+      "crowd_expected": 0.40,
+      "edge": "significant NO"
+    },
+    "Q4": {
+      "question": "Will Croatia score the first goal of the second half?",
+      "estimate": 0.42,
+      "direction": "YES_LEAN",
+      "key_drivers": [
+        "Model: 40.84% (P(Croatia scores first of 2H) = 60.22% × P(any 2H goal) 67.81%)",
+        "Survival match: both teams attack → higher total goal rate → adjust up slightly",
+        "Croatia quality edge means they're more likely to score in 2H than Panama",
+        "Croatia GD1: 0 goals in 2H, but vs England. vs Panama should be easier.",
+        "Market-calibrated: P(any 2H goal) adjusted to ~72% given match intensity"
+      ],
+      "crowd_expected": 0.38,
+      "edge": "slight YES"
+    },
+    "Q5": {
+      "question": "Will Croatia receive more cards than Panama?",
+      "estimate": 0.38,
+      "direction": "NO",
+      "key_drivers": [
+        "Panama: Blackman + Harvey BOTH on yellow card warnings from GD1",
+        "Both will play (Panama needs all players for survival match)",
+        "Referee Atcho: 4.5+ YC/game at AFCON — high card-giver",
+        "Panama's physical style (29 tackles, 11 fouls while attacking GD1) = more cards when defending",
+        "Croatia: fresh card slate in GD2; likely fewer cards as possession team"
+      ],
+      "crowd_expected": 0.47,
+      "edge": "moderate NO"
+    },
+    "Q6": {
+      "question": "Will Panama score at least 1 goal?",
+      "estimate": 0.55,
+      "direction": "YES",
+      "key_drivers": [
+        "Model: P(PAN scores) = 59.42%",
+        "Market BTTS Yes -115 (53.5% implied) → P(PAN scores) ≈ 55-60% given P(CRO scores) ≈ 85%",
+        "Survival match: Panama MUST WIN → attacks aggressively regardless of score",
+        "Panama GD1: 4 SOT, 12 shots vs Ghana compact block with 62% possession",
+        "Both Blackman + Harvey on warnings but will still play aggressively on offense too"
+      ],
+      "crowd_expected": 0.50,
+      "edge": "slight YES"
+    },
+    "Q7": {
+      "question": "Will there be 9 or more total corner kicks?",
+      "estimate": 0.30,
+      "direction": "STRONG_NO",
+      "key_drivers": [
+        "Croatia GD1: only 2 corners vs England. Historical: under 6.5 corners in 8 consecutive WC matches.",
+        "Panama GD1: only 2 corners despite 62% possession (not a cross/corner-generating team)",
+        "Poisson with generous λ_total=7: P(≥9) = 27.1%; conservative λ=6: P(≥9) = 15.3%",
+        "Market Under 9.5 at -150 (60% implied for under; 40% for ≥10 corners)",
+        "GD1 evidence hierarchy: direct GD1 behavioral data > market corner lines",
+        "FLOOR_0.25 applies — estimate at 0.30 is above floor"
+      ],
+      "crowd_expected": 0.43,
+      "edge": "STRONGEST NO — biggest edge in match"
+    },
+    "Q8": {
+      "question": "Will Panama have 3 or more shots on target?",
+      "estimate": 0.45,
+      "direction": "SLIGHT_NO",
+      "key_drivers": [
+        "Panama GD1: 4 SOT vs Ghana (62% possession, compact Ghana block)",
+        "vs Croatia (1973 Elo, better defense than Ghana 1625): quality discount",
+        "Model 3.0× multiplier gives P(≥3 SOT|λ=0.9×3=2.7) = 52%",
+        "Adjusted for Croatian defensive quality: λ_SOT ≈ 2.5 → P(≥3) ≈ 46%",
+        "Survival match urgency pushes up slightly; near coin-flip"
+      ],
+      "crowd_expected": 0.50,
+      "edge": "slight NO"
+    },
+    "Q9": {
+      "question": "Will José Fajardo have at least 1 shot on target?",
+      "estimate": 0.28,
+      "direction": "NO",
+      "key_drivers": [
+        "RULE15 FIRES FULLY: Panama market 14.3% win = RULE7-adjacent. Expected-losing-team forward.",
+        "GD1: 0 SOT in 28 min as substitute (came on 62' with Panama losing to Ghana)",
+        "Club rate 0.78 SOT/90 (Ecuador league — lower quality than WC opposition)",
+        "Likely to start given must-win (vs starting 28 min sub in GD1) but Croatian defense far better than Ghana",
+        "GHA-PAN lesson: crowd priced Fajardo at 0.57, correct was ~0.25-0.30 (RULE15 applied)",
+        "Combined probability with starting probability weighted: ~0.23 → FLOOR_0.25 → ESTIMATE: 0.28",
+        "Not found on FanDuel/DraftKings scorer markets = MAIN_BOOK_ABSENCE signal (<35%)"
+      ],
+      "crowd_expected": 0.43,
+      "edge": "significant NO"
+    },
+    "Q10": {
+      "question": "Will Luka Sučić have at least 1 shot on target?",
+      "estimate": 0.30,
+      "direction": "NO",
+      "key_drivers": [
+        "IDENTITY CRITICAL: Luka Sučić (Real Sociedad) was UNUSED SUBSTITUTE vs England. Zero GD1 minutes.",
+        "Petar Sučić (Inter Milan, different player) started and played 90 min vs England.",
+        "Luka's starting status for GD2 uncertain: P(starts)=42%, P(sub)=30%, P(unused)=28%",
+        "Club rate 0.78 SOT/90 at Real Sociedad (La Liga — quality rate)",
+        "RULE15 does NOT apply: Croatia is the expected winner",
+        "Dalić may use Luka in 4-3-3 switch as fresh attacking option",
+        "Weighted calculation: 0.42×0.54 + 0.30×0.23 + 0.28×0 = 0.295 → estimate 0.30",
+        "CROWD RISK: crowd may conflate Luka with Petar (who started) and price much higher (~0.45)"
+      ],
+      "crowd_expected": 0.43,
+      "edge": "significant NO (amplified by Luka/Petar identity confusion)"
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q7", "estimate": 0.30, "direction": "NO", "note": "9+ corners: GD1 (2 each), Croatia WC history, Panama possession-not-corners team. Crowd ~0.43."},
+    {"rank": 2, "q": "Q3", "estimate": 0.30, "direction": "NO", "note": "Panama more 2H SOT: market says Croatia 69% win dominant. Crowd ~0.40."},
+    {"rank": 3, "q": "Q9", "estimate": 0.28, "direction": "NO", "note": "Fajardo RULE15 full. GD1 0 SOT as sub. Market RULE7-adjacent. Crowd ~0.43."},
+    {"rank": 4, "q": "Q10", "estimate": 0.30, "direction": "NO", "note": "Luka Sučić unused vs England. Crowd may conflate with Petar. Crowd ~0.43."},
+    {"rank": 5, "q": "Q5", "estimate": 0.38, "direction": "NO", "note": "Panama more cards: physical style, two on warnings. Crowd ~0.47."},
+    {"rank": 6, "q": "Q6", "estimate": 0.55, "direction": "YES", "note": "Panama scores: survival match urgency + GD1 capability. Crowd ~0.50."},
+    {"rank": 7, "q": "Q4", "estimate": 0.42, "direction": "YES_LEAN", "note": "Croatia first 2H goal: model 40.8%, calibrated up. Crowd ~0.38."},
+    {"rank": 8, "q": "Q2", "estimate": 0.32, "direction": "NO", "note": "Panama offsides: 1 in GD1; survival match adds some. Crowd ~0.40."},
+    {"rank": 9, "q": "Q8", "estimate": 0.45, "direction": "SLIGHT_NO", "note": "Panama 3+ SOT: GD1 4 SOT but vs Ghana; Croatia better defense. Coin-flip."},
+    {"rank": 10, "q": "Q1", "estimate": 0.50, "direction": "COIN_FLIP", "note": "Fouls: true coin-flip. Panama defends (fouls) vs Croatia historical 13.0/game."}
+  ],
+
+  "post_match": {
+    "final_score": "0-1 (Croatia wins)",
+    "total_rbp": -0.47,
+    "settled_date": "2026-06-23",
+    "outcomes": {
+      "Q1": {"question": "Panama 2+ offsides", "outcome": "NO", "our_estimate": 0.32, "crowd": 0.44, "rbp": 11.69, "beat_crowd": true, "note": "Panama 0 offsides. GD1 evidence (1 offside despite 62% possession) correctly predicted low offside count. Crowd at 44% overpriced counter-attack offside risk."},
+      "Q2": {"question": "Panama more 2H SOT than Croatia", "outcome": "NO", "our_estimate": 0.30, "crowd": 0.27, "rbp": 0.39, "beat_crowd": true, "note": "Panama did not have more 2H SOT than Croatia. Tiny beat — crowd was also close."},
+      "Q3": {"question": "Croatia first goal of 2H", "outcome": "YES", "our_estimate": 0.42, "crowd": 0.54, "rbp": -9.8, "beat_crowd": false, "note": "Croatia scored in 2H (the only goal, 1-0 result). Crowd at 54% was above us — they correctly read this more bullishly. Our 42% was too conservative."},
+      "Q4": {"question": "Panama more fouls than Croatia", "outcome": "YES", "our_estimate": 0.50, "crowd": 0.57, "rbp": -4.7, "beat_crowd": false, "note": "Panama committed more fouls. Crowd at 57% was above us — correctly read Panama would defend and foul. Our coin-flip (50%) was too neutral; RULE_FOULS should have pushed us to 0.55."},
+      "Q5": {"question": "Croatia more cards than Panama", "outcome": "NO", "our_estimate": 0.38, "crowd": 0.36, "rbp": -0.14, "beat_crowd": false, "note": "Croatia did not receive more cards than Panama. Tiny loss — very close to crowd. Cards likely went to Panama's physical players (Blackman, Harvey on warnings?)."},
+      "Q6": {"question": "Panama scores ≥1 goal", "outcome": "NO", "our_estimate": 0.55, "crowd": 0.50, "rbp": -3.09, "beat_crowd": false, "note": "Panama did not score. Croatia 1-0. We overpriced Panama's scoring chance at 0.55 (model 59.4%). The market's Croatian dominance signal was correct."},
+      "Q7": {"question": "9+ total corners", "outcome": "YES", "our_estimate": 0.30, "crowd": 0.51, "rbp": -21.77, "beat_crowd": false, "note": "9+ corners YES — BIGGEST LOSS. GD1 evidence (2 corners each) was completely wrong for a survival match. The survival match attacking intensity (both teams desperate) massively inflated corners. Crowd at 51% was reading the market-implied probability correctly. The Under 9.5 -150 market line INCLUDED meaningful P(exactly 9) so P(≥9) was actually ~50-53%, not 27-30% as our Poisson suggested. CRITICAL CALIBRATION FAILURE: GD1 corners are unreliable when match-script changes from normal to both-teams-must-win."},
+      "Q8": {"question": "Panama 3+ SOT", "outcome": "NO", "our_estimate": 0.45, "crowd": 0.49, "rbp": 6.8, "beat_crowd": true, "note": "Panama <3 SOT. Croatian defense held. Our slight NO bias vs crowd was rewarded."},
+      "Q9": {"question": "Fajardo ≥1 SOT", "outcome": "NO", "our_estimate": 0.28, "crowd": 0.40, "rbp": 10.62, "beat_crowd": true, "note": "Fajardo 0 SOT. RULE15 confirmed again. Crowd at 40% still overpriced given RULE15 + Ecuador league level + Croatian defense quality."},
+      "Q10": {"question": "Luka Sučić ≥1 SOT", "outcome": "NO", "our_estimate": 0.30, "crowd": 0.37, "rbp": 9.53, "beat_crowd": true, "note": "Luka Sučić 0 SOT. Either unused again or played and didn't register SOT. Crowd at 37% may have conflated with Petar Sučić (who started GD1). Our Luka-specific identification and uncertain-start weighting paid off."}
+    },
+    "wins": ["Q1", "Q2", "Q8", "Q9", "Q10"],
+    "losses": ["Q3", "Q4", "Q5", "Q6", "Q7"],
+    "beat_crowd_count": 5,
+    "below_crowd_count": 5,
+    "key_learnings": {
+      "L1_CORNER_CATASTROPHE": "Q7 -21.77: 9+ corners YES despite GD1 showing only 2 each. SURVIVAL MATCH CORNERS rule: When both teams are in must-win situations, corner production from GD1 is unreliable. The attacking intensity of survival matches creates end-to-end play with many dead balls. For survival matches, weight the market corner line at 80%+ rather than anchoring on GD1. P(≥9 corners) in a both-teams-must-win match should be treated as ~50% (crowd level) unless there is overwhelming structural reason to deviate.",
+      "L2_RULE_FOULS_Q4": "Q4 -4.7: Panama more fouls YES. Our coin-flip (0.50) was too neutral. RULE_FOULS clearly said Panama defends → Panama fouls more. We should have been 0.55-0.58. The hesitation was Croatia's historical 13.0/game average, but in THIS match with Croatia having possession, Panama was the defending team. RULE_FOULS direction signal should have outweighed the magnitude uncertainty.",
+      "L3_Q3_CROATIA_FIRST_2H": "Q3 -9.8: Croatia first 2H goal YES. Our 0.42 was too conservative; crowd at 0.54 was right. The sole goal of the match came in the 2H by Croatia. In a tight competitive match where Croatia controlled, they were more likely to nick a goal in 2H than our model suggested. Consider anchoring closer to crowd (0.50) when the match is competitive and Croatia is the slight favorite.",
+      "L4_RULE15_CONFIRMED_AGAIN": "Q9 +10.62: Fajardo 0 SOT. RULE15 fully confirmed. Pattern: n=10+ now. Crowd consistently overprices expected-losing-team forwards. Always apply RULE15 in these situations.",
+      "L5_SUCIC_IDENTITY": "Q10 +9.53: Luka Sučić 0 SOT. The identity distinction (Luka vs Petar) paid off. Crowd likely still partially confusing the two players and/or over-weighting starting probability."
+    }
+  }
+}

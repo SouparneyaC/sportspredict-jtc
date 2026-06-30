@@ -1,0 +1,289 @@
+BASH LOG: JOR vs ALG Match Analysis Session
+Date: 2026-06-22
+Session context: Pre-match analysis for Jordan vs Algeria (WC2026 Group C, GD2). Third match of the day. France vs Iraq and Norway vs Senegal happening simultaneously. Both JOR and ALG likely lost GD1 → potential SURVIVAL MATCH for both.
+
+===========================================================================
+COMMAND 1: Elo ratings lookup
+===========================================================================
+$ grep -i "jordan\|algeria" sportspredict_research/data/processed/elo_current_ratings.csv
+
+OUTPUT:
+  Algeria: 1872.4250
+  Jordan:  1774.1438
+  Elo diff (ALG - JOR): +98.28 (Algeria slight favorite)
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 2: Ordered logit match winner (correct model parameters)
+===========================================================================
+$ python3 model/predict_ordered_logit.py "Algeria" "Jordan" --neutral true
+
+OUTPUT:
+  Elo: Algeria=1872.4, Jordan=1774.1 (diff=+98.3), neutral=true
+  Will Algeria win the match?  P = 0.489
+  Draw probability:            P = 0.294
+  Will Jordan win the match?   P = 0.217
+
+  RULE7 check: ALG=48.9%, JOR=21.7% -- BOTH above 15%, RULE7 does NOT fire
+  RULE8 check: Draw=29.4% -- FIRES (threshold 25%). Shrink all attacking/threshold props toward 50%.
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 3: Poisson goals model + all 10-Q preliminary computation
+===========================================================================
+$ python3 -c "[full inline model script]"
+
+OUTPUT:
+  lambda_ALG: 1.3258  lambda_JOR: 0.9289  lambda_total: 2.2546
+  P(ALG scores): 0.7344  P(JOR scores): 0.6050
+  P(total < 3): 0.6081  P(total >= 3): 0.3919
+  P(HT tie): 0.4588
+  lambda_total_SOT_2H (x3.0): 3.720  P(>=4): 0.5100
+  P(JOR more fouls than ALG): 0.4997 (coin flip)
+  P(ALG 2+ offsides): 0.5372
+  lambda_Mahrez_SOT_2H (38% share): 0.831  P(Mahrez>=1 SOT in 2H): 0.5645
+  lambda_Al-Taamari_SOT (32% share): 0.892  P(Al-Taamari>=1 SOT): 0.5900
+  P(JOR scores first): 0.3688
+  P(ALG scores in 2H): 0.5177
+  P(Q3 compound - JOR first AND ALG 2H): 0.1909
+
+  KNOWN PRIOR DATA — Al-Taamari GD1:
+    AUT-JOR Q10 (Al-Taamari 1+ SOT) = YES (crowd 100%)
+    Al-Taamari CONFIRMED had at least 1 SOT in GD1 vs Austria
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 4: Deep research agent — spawned in background
+===========================================================================
+[Subagent spawned: general-purpose research agent — background]
+[Agent ID: a96bd223a84a9fd1e]
+
+Searching for:
+  - Argentina vs Algeria GD1 result and full stats (CRITICAL — ALG GD1 unknown)
+  - Austria vs Jordan GD1 additional stats (JOR fouls, shots, Al-Taamari details)
+  - Jordan vs Algeria market odds (Betfair, Smarkets, etc.)
+  - Referee assignment for JOR-ALG and their stats
+  - Riyad Mahrez profile (age, fitness, unretirement, GD1 stats)
+  - Mousa Al-Taamari profile (club, goals record, GD1 performance)
+  - WC2026 Group C standings and survival match context
+  - Head-to-head JOR vs ALG history
+
+STATUS: RUNNING — will update log when results arrive
+
+===========================================================================
+FILES WRITTEN THIS SESSION (so far):
+  - sportspredict_research/data/external_markets/jor_alg_2026-06-22.json
+      (preliminary model outputs + rule checks + preliminary estimates)
+  - sportspredict_research/bash_logs/2026-06-22_JOR-ALG_match_analysis_bash_log.txt
+      (this file)
+
+===========================================================================
+RESEARCH AGENT RESULTS — KEY FINDINGS (Agent ID: a96bd223a84a9fd1e)
+===========================================================================
+
+GD1 CONFIRMED STATS:
+
+  Argentina 3-0 Algeria (Messi hat-trick: 17', 60', 76')
+  - Algeria: 7 shots, 0 SOT, 52% possession, 8 fouls, 1 offside, 2 corners, xG 0.32
+  - ALGERIA ZERO SOT TOTAL — historic offensive underperformance
+  - Mahrez: BENCHED (tactical surprise), came on ~64', played 26 min, 1 shot at 86', 0 SOT
+  - Amoura: DID NOT PLAY — OUT with confirmed hamstring injury. NOT available vs Jordan.
+  - No penalties or red cards
+  - Note: Algeria vs Argentina is an extreme mismatch — lower bound for their attacking output vs Jordan
+
+  Austria 3-1 Jordan (Jordan's first WC goal ever via Olwan 50')
+  - Jordan: 11 shots, 4 SOT, xG unknown, fouls ~10-12
+  - Austria goals: Schmid 21', Yazan Al-Arab OG 76', Arnautovic pen 90+12'
+  - Jordan goal: Ali Olwan 50' (Jordan's FIRST EVER WC goal)
+  - Penalty: VAR handball review at 90+12' — Austria awarded penalty
+  - Al-Taamari: played 87 min, confirmed at least 1 SOT (per prior Q10 AUT-JOR data = YES 100%)
+  - Note: Jordan generated VERY STRONG attacking output (11 shots, 4 SOT) for a losing team
+
+CRITICAL TEAM NEWS:
+  - AMOURA OUT: Mohamed Amoura (hamstring injury) — Algeria's top WC qualifier scorer (10 goals)
+    → Replacement: Amine Gouiri (Marseille) — capable but not equal to Amoura
+  - Mahrez EXPECTED TO START vs Jordan (widespread pre-match reports)
+    → Tactical explanation: benching Mahrez vs Argentina = conservative approach vs far superior team
+    → vs Jordan = Mahrez starts as primary creative threat
+
+REFEREE: Slavko Vincic (Slovenia)
+  - Career YC/game: 4.13
+  - WC YC/game: 3.33 (NOTABLY LOWER — more restrained at highest level)
+  - Career penalties/game: 0.27
+  - Style: Balanced, serene, lets game flow. Not trigger-happy.
+  - WC experience: 2022 Qatar (Argentina-Saudi Arabia, England-Wales). Well-controlled.
+
+MARKET DATA:
+  Algeria win: -175 to -188 (62-65% implied) — significantly above model (48.9%)
+  Draw: +300 to +333 (19-22% implied)
+  Jordan win: +475 to +500 (14-17% implied)
+  Over 2.5 goals: -104 to -110 (~51-52% implied — 50/50 market)
+  BTTS Yes: -102 to -105 (~50-51% YES) — BTTS No slightly favored at -124 to -132
+  HT Draw: +130 (~43% implied)
+  Mahrez anytime scorer: +160 (~38% implied)
+  Al-Taamari anytime scorer: +350 (~22% implied)
+  Gouiri anytime scorer: +175 (~36% implied)
+  Corners: Under 9.5 favored 7/10
+  Jordan penalties: WON 5 pens in last 10 / CONCEDED 3 pens in last 10 = 8 total involvement
+
+TEAM FOUL DATA:
+  Jordan avg fouls/match: 10.44
+  Algeria avg fouls/match: 14.78
+  → Algeria fouls 41% MORE per match — DECISIVE for Q1
+
+PLAYER PROFILES:
+  Mahrez: 35yo, Al-Ahli. 0.41 SOT/game, 0.29 goals/game at club. Expected to start.
+  Al-Taamari: 29yo, Rennes (Ligue 1). 0.76 SOT/game — STRONGEST CLUB RATE IN SESSION.
+  Gouiri (Amoura replacement): 25yo, Marseille. +175 anytime scorer (~36% implied).
+
+===========================================================================
+COMMAND 5: GD1 Calibration and Final Estimate Derivation
+===========================================================================
+[No code — analytical synthesis with research agent data]
+
+KEY DERIVATIONS:
+
+  Q1: Jordan more fouls than Algeria?
+    - Algeria 14.78/match vs Jordan 10.44/match. Algeria fouls 41% MORE.
+    - Algeria in must-win pressing mode = THEY foul more (pressing = fouling).
+    - Jordan sits in low block = they don't press = fewer Jordan fouls.
+    - Model was 50% (coin flip). GD1 team data is decisive.
+    - RULE8: applies minimally — this is not an attacking/scoring prop.
+    - FINAL: 0.32 (STRONG NO)
+
+  Q2: 4+ total SOT in 2H?
+    - Jordan 4 total SOT in GD1 (~2/half). Algeria 0 TOTAL SOT in GD1 (extreme).
+    - But Algeria vs much stronger Argentina without Amoura/Mahrez. Vs Jordan = different.
+    - With Mahrez starting + must-attack 2H, Algeria will generate some SOT.
+    - Jordan generates SOT (4 in GD1). Both must-attack in 2H.
+    - FINAL: 0.50 (coin flip)
+
+  Q3: Jordan first AND Algeria 2H? (Compound)
+    - P(JOR scores first) ≈ 28-30% (market has Jordan at 14-17% win prob = lower first-goal prob than model's 37%)
+    - P(ALG scores in 2H | JOR leads) ≈ 70-75% (desperate Algeria must chase)
+    - Combined: 0.29 × 0.72 ≈ 0.21. Slight downward from market view.
+    - FINAL: 0.18
+
+  Q4: Algeria 2+ offsides?
+    - Algeria only 1 offside in GD1 vs Argentina (controlled possession style).
+    - Amoura OUT — their primary channel runner gone. Gouiri less explosive.
+    - Jordan 3-CB does not play an extreme high line (counter-attack team).
+    - Model was 53.7%. GD1 evidence + Amoura absence pull down.
+    - RULE8 shrinks toward 50%. GD1 pulls further below 50%.
+    - FINAL: 0.44 (NO lean)
+
+  Q5: Penalty OR red card?
+    - Jordan involved in 8 pens in last 10 matches (5 won, 3 conceded). Extreme rate.
+    - Vincic 0.27/game. Survival desperation in 2H = more cynical fouls/handball risk.
+    - Jordan's penalty tendency is real and measurable.
+    - FINAL: 0.45 (YES lean)
+
+  Q6: Mahrez 1+ SOT in 2H?
+    - Expected to start. Club: 0.41 SOT/game. But: rarely plays full 90 (sub risk 65-70').
+    - Q6 is 2H SOT SPECIFICALLY — if he's subbed off before 2H SOT, it's NO.
+    - Algeria 0 SOT in GD1 — collective attack dysfunction.
+    - 2H share of Mahrez expected SOT: ~0.22 expected → P(>=1) ≈ 0.20 per half.
+    - But with must-win and more license, bump up. Market Mahrez scorer at +160 (~38%).
+    - Model was 56.5%. Far too high. GD1 + sub risk + 2H-specific condition.
+    - FINAL: 0.42 (NO lean vs model)
+
+  Q7: Jordan scores 1+ goal?
+    - Jordan scored in 90% of last 10 matches. 4 SOT in GD1. Olwan + Al-Taamari threats.
+    - Market: Algeria win-to-nil at +140 = ~42% → Jordan scores ~58%.
+    - RULE8: pull from 60.5% toward 50% = ~57%.
+    - Market and RULE8 converge at ~57%.
+    - FINAL: 0.57 (YES lean)
+
+  Q8: HT tied?
+    - Model 45.9%, market +130 = 43%.
+    - 0-0 is the most likely single HT score. Algeria attack limited 1H without Amoura.
+    - Jordan's HT trailing pattern (5/6 matches) vs stronger teams.
+    - FINAL: 0.44
+
+  Q9: 3+ total goals?
+    - Model 39.2% too low. RULE8 pulls toward 50%.
+    - Market at 51-52%. Both GD1 matches in Group J had 3+ goals.
+    - Jordan over 2.5 in 5 of last 6 matches.
+    - But Algeria's 0 SOT performance creates genuine uncertainty about their scoring.
+    - FINAL: 0.48
+
+  Q10: Al-Taamari 1+ SOT?
+    - Club rate 0.76 SOT/game at Rennes — STRONGEST BASE RATE IN SESSION.
+    - GD1 CONFIRMED: had ≥1 SOT vs Austria.
+    - Jordan explicitly play to spring him on counters. Primary attacking weapon.
+    - Market: +350 anytime scorer = ~22% → SOT ≈ 44-66% (2-3× scorer prob).
+    - RULE8 pulls from model 59% slightly. Club rate supports higher end.
+    - FINAL: 0.58
+
+===========================================================================
+FINAL SUBMISSION ESTIMATES: Jordan vs Algeria
+===========================================================================
+  Q1:  0.32  (Jordan more fouls than Algeria)       — TIER 1 STRONG NO
+  Q2:  0.50  (4+ total SOT in 2H)                   — TIER 3 coin flip
+  Q3:  0.18  (Jordan first AND Algeria 2H goal)      — TIER 3 slight NO
+  Q4:  0.44  (Algeria 2+ offsides)                  — TIER 2 NO lean
+  Q5:  0.45  (Penalty OR red card)                  — TIER 2 YES lean
+  Q6:  0.42  (Mahrez 1+ SOT in 2H)                  — TIER 2 NO lean vs model
+  Q7:  0.57  (Jordan scores 1+ goal)                — TIER 2 YES lean
+  Q8:  0.44  (HT tied)                              — TIER 3 near-model
+  Q9:  0.48  (3+ total goals)                       — TIER 2 near-market
+  Q10: 0.58  (Al-Taamari 1+ SOT)                   — TIER 1 YES lean
+
+EDGE RANKING:
+  #1  Q1  0.32 — STRONGEST: Algeria 14.78 fouls/game vs Jordan 10.44. Crowd doesn't know this.
+  #2  Q10 0.58 — 0.76 SOT/game at Rennes; GD1 confirmed; Jordan's primary weapon.
+  #3  Q6  0.42 — Model 56.5% is too high; 2H-specific; Mahrez sub risk; Algeria 0 GD1 SOT.
+  #4  Q4  0.44 — Algeria only 1 GD1 offside; Amoura out; controlled style.
+  #5  Q5  0.45 — Jordan 8 penalty involvements in 10 matches.
+  #6  Q7  0.57 — Jordan 90% scoring rate; market-aligned.
+  #7  Q9  0.48 — RULE8 + market + GD1 pattern vs Algeria scoring uncertainty.
+  #8  Q8  0.44 — HT context; Algeria limited 1H without Amoura.
+  #9  Q2  0.50 — Genuine coin flip (Jordan SOT vs Algeria SOT uncertainty).
+  #10 Q3  0.18 — Low-probability compound.
+
+===========================================================================
+FILES WRITTEN THIS SESSION:
+  - sportspredict_research/data/external_markets/jor_alg_2026-06-22.json
+      (full pre-match analysis with model + GD1 + research agent data + final estimates)
+  - sportspredict_research/bash_logs/2026-06-22_JOR-ALG_match_analysis_bash_log.txt
+      (this file — complete)
+
+===========================================================================
+POST-MATCH RESULTS: Jordan 1-2 Algeria
+===========================================================================
+Final: Jordan 1 - 2 Algeria (Algeria WIN — comeback)
+HT score (derived): 1-0 Jordan (Q3 YES + Q8 NO proves Jordan led, not tied)
+Total RBP: -5.60
+Beat crowd: 6/10
+
+Match narrative: Jordan scored first → led 1-0 at halftime. Algeria mounted a 2H comeback,
+scoring twice to win 2-1. Jordan spent 60-70+ minutes defending their lead and fouled MORE
+than Algeria in the process. Al-Taamari registered at least 1 SOT. Mahrez had no 2H SOT.
+No penalty or red card. Exactly 3 goals total.
+
+  Q1  YES (Jordan more fouls)          us=0.32 crowd=0.54 RBP=-23.23  BELOW ✗ ← CATASTROPHIC
+  Q2  YES (4+ total 2H SOT)            us=0.50 crowd=0.60 RBP=-6.60   BELOW ✗
+  Q3  YES (Jordan first AND Alg 2H)    us=0.18 crowd=0.23 RBP=-6.03   BELOW ✗
+  Q4  NO  (Algeria 2+ offsides)        us=0.44 crowd=0.51 RBP=+8.98   BEAT ✓
+  Q5  NO  (Penalty OR red card)        us=0.45 crowd=0.38 RBP=-3.20   BELOW ✗
+  Q6  NO  (Mahrez 2H SOT)              us=0.42 crowd=0.43 RBP=+3.59   BEAT ✓
+  Q7  YES (Jordan scores)              us=0.57 crowd=0.52 RBP=+6.40   BEAT ✓
+  Q8  NO  (HT tied)                    us=0.44 crowd=0.42 RBP=+0.01   BEAT ✓
+  Q9  YES (3+ total goals)             us=0.48 crowd=0.48 RBP=+1.38   BEAT ✓
+  Q10 YES (Al-Taamari SOT)             us=0.58 crowd=0.47 RBP=+13.11  BEAT ✓
+
+ROOT CAUSE — Q1 DISASTER:
+  We submitted 0.32 (TIER 1 STRONG NO) because Algeria fouls 14.78/game vs Jordan 10.44/game.
+  But Jordan scored first and DEFENDED their lead for most of the match.
+  DEFENDING team fouls more. Jordan = defending team = Jordan fouled more.
+  This is IDENTICAL to JPN-TUN (-17.65): high-base-rate team not actually defending = doesn't foul more.
+  RULE_FOULS NEW: "who fouls more" = "who defends more in THIS match". Base rates are proxies only.
+  NEVER go below 0.38 on any pre-match fouls question.
+
+FILES UPDATED:
+  - sportspredict_research/data/external_markets/jor_alg_2026-06-22.json (crowd + results added)
+  - sportspredict_research/ML_EXPERIMENTS_NOTEBOOK.md (post-match analysis + new rule appended)
+  - memory/project_sportspredict_edge_analysis.md (running total updated to ~730.65)

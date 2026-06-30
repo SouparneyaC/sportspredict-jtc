@@ -1,0 +1,788 @@
+{
+  "match": "Qatar vs Switzerland",
+  "smarkets_event_id": 44754857,
+  "smarkets_start_date": "2026-06-13",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "c3312bad-7f26-4ff7-a3d9-994230bdb4bd",
+  "opening_time": "2026-06-13T19:00:00.000Z",
+  "closing_time": "2026-06-13T21:30:00.000Z",
+  "sportspredict_questions": {
+    "7904c72f-34a8-467f-a973-873cd5953690": "At halftime, will both teams have at least 1 shot on target?",
+    "1b3d100e-f943-432c-93d4-9e900d641d97": "Will Switzerland be caught offside 2 or more times?",
+    "018e3215-6bf7-41a4-8344-4ba89e235ace": "Will Switzerland receive at least 1 card in the second half?",
+    "157a5c1f-b769-49c6-aec9-c305df9d55de": "Will both teams score AND the match have 3 or more total goals?",
+    "0e47a1b2-97bb-4993-87f8-96fcd9ca774f": "Will Qatar have 2 or more shots on target in the second half?",
+    "b833736f-2ceb-43d8-9d34-f5889d1d3179": "Will Qatar commit more fouls than Switzerland?",
+    "6bf2d51d-eda0-48eb-a902-e3a1fb5b7ca6": "Will Qatar score at least 1 goal?",
+    "bb71936a-f3b2-471d-acb9-669ab812674e": "Will Qatar have 2 or more shots on target?",
+    "5214295f-dbe0-4d7a-839d-434b82b73753": "Will Akram Afif have at least 1 shot on target?",
+    "96096e67-2fae-46e0-ae55-dc21beffb541": "Will Granit Xhaka have at least 1 shot on target?"
+  },
+  "sources": {
+    "smarkets": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13",
+      "method": "api.smarkets.com/v3/markets/<id>/contracts/ + /quotes/, mid = (best_bid+best_offer)/2/10000",
+      "markets": {
+        "btts_and_over2.5_119428074": {
+          "Yes_Over_mid": 0.3229,
+          "Yes_Over_bid": 0.3125,
+          "Yes_Over_offer": 0.3333,
+          "maps_to": "Q4 - direct match (BTTS=Yes AND total goals >2.5 == BTTS AND 3+ goals)"
+        },
+        "qatar_over_under_0.5_goals_119428092": {
+          "Over0.5_mid": 0.3986,
+          "Over0.5_bid": 0.3906,
+          "Over0.5_offer": 0.4065,
+          "maps_to": "Q7 - direct match (Qatar scores >=1 goal == Over 0.5)"
+        },
+        "player_sot_over0.5_144466056": {
+          "Akram_Afif_offer_only": 0.4274,
+          "Granit_Xhaka_bid": 0.3704,
+          "Granit_Xhaka_offer": 0.4545,
+          "Granit_Xhaka_mid": 0.4125,
+          "maps_to": "Q9 (Afif), Q10 (Xhaka) - direct match, full-match player 1+ SOT"
+        },
+        "switzerland_over_under_0.5_cards_119428252": {
+          "Over0.5_mid": 0.7271,
+          "Over0.5_bid": 0.6667,
+          "Over0.5_offer": 0.7874,
+          "note": "FULL-MATCH Switzerland 1+ card. Q3 asks specifically about 2ND HALF - no such market exists. Used as an anchor for the Poisson half-split model below."
+        },
+        "both_teams_to_score_119428046": {
+          "Yes_mid": 0.3759,
+          "note": "context/cross-check for Q4, consistent with BTTS&O2.5 joint price (positive correlation confirmed)"
+        },
+        "over_under_2.5_119428081": {
+          "Over2.5_mid": 0.5866,
+          "note": "context/cross-check for Q4"
+        }
+      },
+      "structural_gaps_confirmed": [
+        "No team-level 'shots on target over/under' market for Qatar (full match or 2nd half) anywhere in the 173-market enumeration - Q5 and Q8 are structural gaps, same pattern as CAN-BIH Q2.",
+        "No 'offside' market of any kind - Q2 is a structural gap, same pattern as USA-PAR Q1.",
+        "No team-fouls-comparison market - Q6 is a structural gap, same CONFIRMED PERMANENT pattern as CAN-BIH Q1.",
+        "No '2nd half team cards' market for either team - Q3 has no direct market, only the full-match Switzerland cards market as an indirect anchor.",
+        "No 'halftime shots on target' market for either team - Q1 (compound) is a structural gap."
+      ]
+    },
+    "polymarket_gamma_api": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "slug": "fifwc-qat-che-2026-06-13",
+      "liquidity_usd": 4490000,
+      "markets": {
+        "match_winner": {
+          "Qatar_win": 0.0615,
+          "Draw": 0.125,
+          "Switzerland_win": 0.815
+        }
+      },
+      "note": "First search used the wrong slug pattern ('fifwc-qat-sui...') - 'sui' should have been 'che' (Switzerland=CHE, ISO code). Real event found, $4.49M volume. Only winner/draw + halftime-result + exact-score sub-markets exist - no BTTS/goals-total/SOT/fouls/cards/offsides markets. KEY NEW SIGNAL: Switzerland is a HEAVY favorite (81.5%) - more lopsided than we'd assumed when building the tier2 models. This reinforces the qualitative 'Qatar pinned back, late/2H-only chances' adjustment used for Q1/Q5/Q8, and supports treating Qatar as a stronger underdog than in their El Salvador/Ireland reference matches."
+    },
+    "kalshi": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "method": "api.elections.kalshi.com, series KXWCGAME-26JUN13QATSUI / KXWCBTTS / KXWC1HTOTAL / KXWCTEAMTOTAL",
+      "markets": {
+        "btts_full_match": 0.395,
+        "qatar_over_0.5_goals": 0.395,
+        "switzerland_over_1.5_goals": 0.76,
+        "switzerland_over_2.5_goals": 0.475,
+        "switzerland_over_3.5_goals": 0.225,
+        "switzerland_over_4.5_goals": 0.095,
+        "first_half_total_over_0.5": 0.755,
+        "first_half_total_over_1.5": 0.385,
+        "first_half_total_over_2.5": 0.155,
+        "first_half_total_over_3.5": 0.045,
+        "match_winner_switzerland": 0.815,
+        "match_winner_qatar": 0.065,
+        "match_winner_draw": 0.135
+      },
+      "note": "INDEPENDENT 2nd source for Q7: Kalshi 'Qatar Over 0.5 goals' = 39.5%, essentially identical to Smarkets' 39.86% - cross-verified, upgrades Q7 confidence. Kalshi plain BTTS (39.5%) > our Q4 BTTS-AND-Over2.5 (32%), directionally consistent (the AND condition is a subset). No SOG/fouls/cards/offsides series found for this event - structural gaps confirmed by a 3rd exchange.",
+      "structural_gaps_confirmed": [
+        "Qatar team SOT",
+        "Switzerland offsides",
+        "fouls comparison",
+        "Switzerland 2H cards"
+      ]
+    },
+    "betfair_exchange": {
+      "verification": "BLOCKED",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "note": "403 geo/IP block ('country Betfair does not accept bets from'), also failed via r.jina.ai proxy (429). Could not check for Betfair's typically-richer prop market set (team SOT, offside specials, half-by-half cards)."
+    },
+    "oddschecker_via_jina": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "note": "Total goals Over 2.5 at -145 (~59% implied pre-vig) - close cross-check vs Smarkets full-match Over2.5 mid (58.66%). A Granit Xhaka 'Over 0.5 assists' market exists (+330, ~23%) but no SOT market for Xhaka was found here. No BTTS-combo, Qatar-goals, team-SOT, offsides, fouls, or 2H-cards markets found."
+    },
+    "espn_qatar_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (research agent)",
+      "method": "site.api.espn.com/apis/site/v2/sports/soccer/<league>/summary?event=<id>",
+      "matches": [
+        {
+          "date": "2026-06-06",
+          "opponent": "El Salvador (H)",
+          "event_id": 401870103,
+          "fouls": 10,
+          "sot": 1,
+          "sot_1h": 0,
+          "sot_2h": 1,
+          "sot_2h_minute": "90+4",
+          "cards": "1 YC (36', 1H)",
+          "offsides": 2
+        },
+        {
+          "date": "2026-05-28",
+          "opponent": "Republic of Ireland (A)",
+          "event_id": 401860781,
+          "fouls": 16,
+          "sot": 1,
+          "sot_1h": 0,
+          "sot_2h": 1,
+          "sot_2h_minute": "71",
+          "cards": "1 RC (78', 2H)",
+          "offsides": 3
+        }
+      ],
+      "summary_stats": {
+        "avg_fouls_per_match": 13.0,
+        "avg_sot_per_match": 1.0,
+        "avg_sot_2h_per_match": 1.0,
+        "note_2h_sot": "Both of Qatar's only SOT events (1 per match) occurred in the 2nd half (71', 90+4') - n=2, but consistent with a team that sits deep and creates only late chances."
+      },
+      "caveats": [
+        "n=2 only - the 4 older 2025 AFC-region friendlies (vs Zimbabwe, Russia, Bahrain, Lebanon) had no boxscore stats via this endpoint, only key events.",
+        "footystats.org Qatar team page did not load season aggregates in the time available - no independent cross-check.",
+        "Both reference matches (El Salvador, Rep. of Ireland) are reasonable underdog-role comparables for facing Switzerland."
+      ]
+    },
+    "footystats_qatar_n10": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "url": "footystats.org/clubs/qatar-national-team-8589",
+      "data": {
+        "avg_fouls_committed_per_match_last10": 9.3
+      },
+      "note": "Larger (n=10) season-aggregate sample for Qatar fouls, notably LOWER than the n=2 ESPN estimate (13.0/match). Does not break out SOT or half-splits (premium-gated). This materially narrows the Qatar-vs-Switzerland foul-rate gap used in Q6 (9.3 vs Switzerland's 8.875, nearly even) vs the original n=2-driven 13.0 vs 8.875."
+    },
+    "espn_qatar_wc2022_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 3, research agent)",
+      "method": "site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=<id>, WC2022 group stage (Qatar as host)",
+      "matches": [
+        {
+          "date": "2022-11-20",
+          "opponent": "Ecuador",
+          "fouls": 15,
+          "sot": 0,
+          "sot_1h": 0,
+          "sot_2h": 0,
+          "cards": "4 YC (3 in 1H: 15',22',36'; 1 in 2H: 78')",
+          "offsides": 3
+        },
+        {
+          "date": "2022-11-25",
+          "opponent": "Senegal",
+          "fouls": 7,
+          "sot": 3,
+          "sot_1h": 0,
+          "sot_2h": 3,
+          "cards": "3 YC (2 in 1H: 20',45+2; 1 in 2H: 90+1)",
+          "offsides": 4
+        },
+        {
+          "date": "2022-11-29",
+          "opponent": "Netherlands",
+          "fouls": 9,
+          "sot": 3,
+          "sot_1h": 2,
+          "sot_2h": 1,
+          "cards": "0",
+          "offsides": 0
+        }
+      ],
+      "note": "Qatar as host playing 3 group matches vs decent-to-strong opposition (lost all 3, first host ever to do so). Combined with the existing n=2 (El Salvador, Ireland), gives an n=5 'vs strong/European-or-South-American opposition' sample: fouls=[10,16,15,7,9] avg=11.4, full SOT=[1,1,0,3,3] avg=1.6, 2H SOT=[1,1,0,3,1] avg=1.2. This is now the primary sample for Q1/Q5/Q8/Q6."
+    },
+    "espn_opponent_vs_qatar_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 3, re-extraction from already-fetched WC2022/AFC2024 boxscores)",
+      "method": "site.api.espn.com boxscores include BOTH teams' statistics - extracted the OPPONENT's offsides/fouls from the same 10 matches used for espn_qatar_wc2022_realdata and espn_qatar_afc2024_realdata, i.e. 'what stats does a team rack up when playing AGAINST Qatar's specific defense'",
+      "matches": [
+        {
+          "opponent": "Ecuador",
+          "comp": "WC2022",
+          "opp_offsides": 4,
+          "opp_fouls": 15,
+          "opp_poss_pct": 52.9
+        },
+        {
+          "opponent": "Senegal",
+          "comp": "WC2022",
+          "opp_offsides": 3,
+          "opp_fouls": 12,
+          "opp_poss_pct": 54.7
+        },
+        {
+          "opponent": "Netherlands",
+          "comp": "WC2022",
+          "opp_offsides": 5,
+          "opp_fouls": 19,
+          "opp_poss_pct": 63.0
+        },
+        {
+          "opponent": "Lebanon",
+          "comp": "AFC2024",
+          "opp_offsides": 0,
+          "opp_fouls": 9,
+          "opp_poss_pct": 38.6
+        },
+        {
+          "opponent": "Tajikistan",
+          "comp": "AFC2024",
+          "opp_offsides": 4,
+          "opp_fouls": 22,
+          "opp_poss_pct": 40.2
+        },
+        {
+          "opponent": "China",
+          "comp": "AFC2024",
+          "opp_offsides": 1,
+          "opp_fouls": 12,
+          "opp_poss_pct": 40.9
+        },
+        {
+          "opponent": "Palestine",
+          "comp": "AFC2024",
+          "opp_offsides": 2,
+          "opp_fouls": 15,
+          "opp_poss_pct": 40.7
+        },
+        {
+          "opponent": "Uzbekistan",
+          "comp": "AFC2024",
+          "opp_offsides": 5,
+          "opp_fouls": 25,
+          "opp_poss_pct": 45.2
+        },
+        {
+          "opponent": "Iran",
+          "comp": "AFC2024",
+          "opp_offsides": 0,
+          "opp_fouls": 9,
+          "opp_poss_pct": 58.5
+        },
+        {
+          "opponent": "Jordan",
+          "comp": "AFC2024",
+          "opp_offsides": 1,
+          "opp_fouls": 14,
+          "opp_poss_pct": 57.6
+        }
+      ],
+      "summary": {
+        "avg_opp_offsides_n10": 2.5,
+        "avg_opp_offsides_WC2022_n3": 4.0,
+        "avg_opp_offsides_high_poss_n5": 2.6,
+        "avg_opp_fouls_n10": 15.2,
+        "avg_opp_fouls_WC2022_n3": 15.33,
+        "avg_opp_fouls_AFC2024_n7": 15.14
+      },
+      "note": "KEY FINDING for Q2: teams playing AGAINST Qatar's deep/disorganized low block average 2.5 offsides/match (n=10), and in the 3 WC2022 matches where Qatar sat deepest as a massive underdog (most analogous to today), opponents got 3, 4, 5 offsides - ALL >=2. This REVERSES the prior qualitative assumption that a deep block reduces opponent offsides. Secondary finding for Q6: opponents commit fouls at 15.2/match vs Qatar (consistent across both WC2022 and AFC2024) - much higher than Switzerland's own 8.875 friendly/qualifier baseline, suggesting a competition-context effect (see espn_switzerland_tournament_realdata)."
+    },
+    "espn_switzerland_tournament_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 3)",
+      "method": "site.api.espn.com - Switzerland's 9 major-tournament matches (WC2022 group+R16, Euro2024 group+R16+QF), to test whether Switzerland's 8.875 fouls/8 friendly-and-qualifier-match baseline holds in tournament context",
+      "matches": [
+        {
+          "comp": "WC2022",
+          "opponent": "Cameroon",
+          "sui_fouls": 12,
+          "sui_offsides": 2,
+          "sui_sot": 3,
+          "sui_poss_pct": 50.8,
+          "opp_fouls": 10
+        },
+        {
+          "comp": "WC2022",
+          "opponent": "Brazil",
+          "sui_fouls": 17,
+          "sui_offsides": 1,
+          "sui_sot": 0,
+          "sui_poss_pct": 46.3,
+          "opp_fouls": 10
+        },
+        {
+          "comp": "WC2022",
+          "opponent": "Serbia",
+          "sui_fouls": 14,
+          "sui_offsides": 0,
+          "sui_sot": 7,
+          "sui_poss_pct": 46.4,
+          "opp_fouls": 18
+        },
+        {
+          "comp": "WC2022",
+          "opponent": "Portugal",
+          "sui_fouls": 10,
+          "sui_offsides": 3,
+          "sui_sot": 3,
+          "sui_poss_pct": 52.2,
+          "opp_fouls": 12
+        },
+        {
+          "comp": "Euro2024",
+          "opponent": "Hungary",
+          "sui_fouls": 13,
+          "sui_offsides": 2,
+          "sui_sot": 7,
+          "sui_poss_pct": 50.3,
+          "opp_fouls": 9
+        },
+        {
+          "comp": "Euro2024",
+          "opponent": "Scotland",
+          "sui_fouls": 11,
+          "sui_offsides": 5,
+          "sui_sot": 4,
+          "sui_poss_pct": 52.4,
+          "opp_fouls": 11
+        },
+        {
+          "comp": "Euro2024",
+          "opponent": "Germany",
+          "sui_fouls": 14,
+          "sui_offsides": 2,
+          "sui_sot": 3,
+          "sui_poss_pct": 33.9,
+          "opp_fouls": 12
+        },
+        {
+          "comp": "Euro2024",
+          "opponent": "Italy",
+          "sui_fouls": 9,
+          "sui_offsides": 0,
+          "sui_sot": 4,
+          "sui_poss_pct": 49.4,
+          "opp_fouls": 15
+        },
+        {
+          "comp": "Euro2024",
+          "opponent": "England",
+          "sui_fouls": 13,
+          "sui_offsides": 0,
+          "sui_sot": 3,
+          "sui_poss_pct": 48.2,
+          "opp_fouls": 8
+        }
+      ],
+      "summary": {
+        "avg_sui_fouls_tournament_n9": 12.56,
+        "avg_sui_offsides_tournament_n9": 1.667,
+        "avg_sui_fouls_WC2022only_n4": 13.25
+      },
+      "note": "KEY FINDING for Q6: Switzerland's tournament-context foul rate (12.56/match, n=9) is 41% HIGHER than their friendly/qualifier rate (8.875, n=8) - same competition-context-inflation pattern already flagged for Switzerland's card rate (0.625 friendly vs ~1.3 implied by Smarkets' WC market). Switzerland's tournament-context OFFSIDES (1.67) barely moves from their friendly rate (1.5), confirming the Q2 'opponent vs Qatar' offside finding is a genuine Qatar-specific effect, not just tournament inflation. For Q6: in the apples-to-apples WC2022-only comparison, Switzerland (13.25, n=4) actually fouls MORE than Qatar (10.33, n=3) - the opposite direction of the original session-1/2/3 estimates, which were built on a competition-context mismatch (Qatar's tournament-heavy sample vs Switzerland's friendly-heavy sample)."
+    },
+    "espn_qatar_afc2024_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (session 3, research agent)",
+      "method": "site.api.espn.com AFC Asian Cup 2024 (Qatar won as host)",
+      "matches": [
+        {
+          "date": "2024-01-12",
+          "opponent": "Lebanon",
+          "fouls": 9,
+          "sot": 5,
+          "cards": "2 YC",
+          "offsides": 4
+        },
+        {
+          "date": "2024-01-17",
+          "opponent": "Tajikistan",
+          "fouls": 19,
+          "sot": 6,
+          "cards": "3 YC",
+          "offsides": 1
+        },
+        {
+          "date": "2024-01-22",
+          "opponent": "China",
+          "fouls": 8,
+          "sot": 1,
+          "cards": "3 YC",
+          "offsides": 3
+        },
+        {
+          "date": "2024-01-29",
+          "opponent": "Palestine",
+          "fouls": 11,
+          "sot": 3,
+          "cards": "0",
+          "offsides": 1
+        },
+        {
+          "date": "2024-02-03",
+          "opponent": "Uzbekistan",
+          "fouls": 16,
+          "sot": 3,
+          "cards": "4 YC",
+          "offsides": 4
+        },
+        {
+          "date": "2024-02-07",
+          "opponent": "Iran",
+          "fouls": 11,
+          "sot": 8,
+          "cards": "2 YC",
+          "offsides": 0
+        },
+        {
+          "date": "2024-02-10",
+          "opponent": "Jordan",
+          "fouls": 15,
+          "sot": 7,
+          "cards": "2 YC",
+          "offsides": 4
+        }
+      ],
+      "note": "n=7 vs weaker AFC opposition: avg fouls=12.7, avg SOT=4.7 (~3x the strong-opposition rate). KEY FINDING: fouls rate (12.7) is similar to or HIGHER than the strong-opposition rate (11.4) - Qatar's foul rate appears roughly opponent-independent (~11-13/match), unlike SOT which is heavily opponent-dependent. This argues the footystats n=10 figure (9.3) may be a stale/different-window outlier vs 3 independent real-match samples (ESPN n=2=13.0, WC2022 n=3=10.33, AsianCup n=7=12.7) all clustering 10-13."
+    },
+    "social_media_research_2026": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "fetched": "2026-06-13 (session 3, research agent)",
+      "current_2026_findings": {
+        "lineups": "Both Afif (Qatar) and Xhaka (Switzerland, captain, double-pivot w/ Freuler) expected to start, per pre-match previews dated ~2026-06-10. No injury/availability concerns reported for either - 'fully fit squad' per Lopetegui.",
+        "qatar_form": "Qatar 'scoreless for 373 minutes across competitions, 1 goal in last 5 games' (last goal vs Syria, Arab Cup Dec 2025). Under new coach Lopetegui, Qatar has won only 2 of 11 games. Opta gives Switzerland ~76% win prob (vs Polymarket's 81.5%), median predicted score 2-0 Switzerland.",
+        "tactical_narrative": "Consensus: Qatar plays a deep low block reliant on Afif counters; Switzerland dominates possession via Xhaka/Freuler pivot and probes via wide play/crosses. Supports the 'Qatar pinned back, late/sparse chances' framing already used for Q1/Q5/Q8.",
+        "referee": "One source named Said Martinez (Honduras, career ~4.3 YC/game - moderately card-heavy) but with a conflicting kickoff date (listed as June 12) - FLAGGED UNCONFIRMED, not used to adjust Q3."
+      },
+      "historical_2022_context": {
+        "squad_continuity": "Core players (Afif, Khoukhi, Pedro Miguel, Al Haydos) return from the 2022 WC squad, but coach changed (Felix Sanchez -> Lopetegui in 2026). 2022-era data treated as relevant-but-slightly-stale comparable.",
+        "implication": "Current 2026 attacking form ('373 min scoreless') appears WORSE than the 2022 WC sample average (which included a 3-SOT match vs Senegal and a 3-SOT match vs Netherlands) - argues for weighting the n=2 2026 matches (avg SOT=1.0) somewhat more than a flat n=5 average (avg SOT=1.6) when estimating Q5/Q8."
+      }
+    },
+    "alt_qatar_matches_search_summary": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "matches": [
+        {
+          "date": "2025-12-07",
+          "opponent": "Tunisia (Arab Cup)",
+          "sot": 4
+        },
+        {
+          "date": "2025-10-14",
+          "opponent": "UAE (WC Qualifier)",
+          "sot": 3,
+          "note": "both Qatar goals (49', 74') came in 2nd half"
+        }
+      ],
+      "note": "2 additional Qatar matches with higher SOT (3, 4) than the ESPN n=2 (1, 1) - but BOTH are vs weaker AFC/Arab opposition (Tunisia, UAE), unlike today's opponent Switzerland (a strong European side, 81.5% win prob per Polymarket). Opponent-quality mismatch means these are lower-relevance comparables, but they do show Qatar's SOT ceiling is higher than n=2-vs-Europe suggested, and that even vs weaker opposition, goals/chances cluster in 2H (consistent pattern, now n=4/4 'late chances')."
+    },
+    "switzerland_data_quality_conflicts": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "fetched": "2026-06-13 (session 2, research agent)",
+      "conflicts": [
+        "vs Sweden (2025-11-15): UEFA official report says Switzerland fouls=18 total (9 in 1H) vs ESPN-derived figure of 13 - genuine source conflict, UEFA likely more authoritative but full report (PDF) was 403/503-blocked so 1H/2H split unconfirmed.",
+        "vs Sweden (2025-11-15): UEFA report says Switzerland offsides=0 - matches our existing ESPN figure (0), no conflict here.",
+        "vs Australia (2026-06-06): one search summary says offsides '3 each' (both teams) vs our ESPN figure of Switzerland=4 - minor discrepancy.",
+        "vs Norway (2026-03-31): one source says offsides=2 vs our ESPN figure of 1 - minor discrepancy."
+      ],
+      "note": "Sofascore, WhoScored, FBref, Transfermarkt, and UEFA PDF reports were all blocked (403/503) even via r.jina.ai proxy - could not get independent per-half splits. Net effect: Switzerland's offside/foul numbers have +/-1-5 noise across sources but no large systematic shift; ESPN figures retained as primary, ranges noted."
+    },
+    "espn_switzerland_realdata": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-13 (research agent)",
+      "method": "site.api.espn.com/apis/site/v2/sports/soccer/<league>/summary?event=<id>",
+      "matches": [
+        {
+          "date": "2026-06-06",
+          "opponent": "Australia (H)",
+          "event_id": 401869743,
+          "offsides": 4,
+          "fouls": 10,
+          "cards": "3 YC (32' 1H, 45+2' 1H, 82' 2H)",
+          "sot": 3
+        },
+        {
+          "date": "2026-05-31",
+          "opponent": "Jordan (H)",
+          "event_id": 401862319,
+          "offsides": 3,
+          "fouls": 10,
+          "cards": 0,
+          "sot": 10
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Norway (A)",
+          "event_id": 762552,
+          "offsides": 1,
+          "fouls": 8,
+          "cards": 0,
+          "sot": 1
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Germany (H)",
+          "event_id": 762550,
+          "offsides": 0,
+          "fouls": 6,
+          "cards": 0,
+          "sot": 3
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Kosovo (A)",
+          "event_id": 724922,
+          "offsides": 1,
+          "fouls": 9,
+          "cards": 0,
+          "sot": 3
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Sweden (H)",
+          "event_id": 724897,
+          "offsides": 0,
+          "fouls": 13,
+          "cards": "1 YC (36', 1H)",
+          "sot": 7
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Slovenia (A)",
+          "event_id": 724863,
+          "offsides": 2,
+          "fouls": 5,
+          "cards": 0,
+          "sot": 3
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Sweden (A)",
+          "event_id": 724837,
+          "offsides": 1,
+          "fouls": 10,
+          "cards": "1 YC (48', 2H)",
+          "sot": 8
+        }
+      ],
+      "summary_stats": {
+        "avg_offsides_per_match": 1.5,
+        "avg_offsides_last4": 2.0,
+        "avg_fouls_per_match": 8.875,
+        "card_rate_per_match": 0.625,
+        "matches_with_any_card": "3/8",
+        "matches_with_confirmed_2h_card": "1/8 (timestamps only available for 3/8)"
+      },
+      "caveats": [
+        "Offsides highly variable (range 0-4); last 2 matches (4,3) notably higher than the earlier run (avg 0.75) - recency vs full-sample tension.",
+        "Card data shows much LOWER full-match card rate (0.625/match, implies ~46.5% P(>=1 card)) than the live Smarkets 'Switzerland over 0.5 cards' market (72.7% mid) - large divergence between friendly/qualifier sample and World Cup-match pricing, likely reflects higher-stakes/host-crowd intensity not captured in the sample."
+      ]
+    }
+  },
+  "derived_estimates_draft": {
+    "157a5c1f-b769-49c6-aec9-c305df9d55de": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "estimate_mid": 0.3229,
+      "source": "Smarkets BTTS-and-Over2.5 (VERIFIED_API), direct market match",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.32,
+      "category": "tier1_market",
+      "reliability": "high"
+    },
+    "6bf2d51d-eda0-48eb-a902-e3a1fb5b7ca6": {
+      "question": "Will Qatar score at least 1 goal?",
+      "estimate_mid": 0.3986,
+      "source": "Smarkets Qatar Over 0.5 goals (0.3986, VERIFIED_API) + Kalshi Qatar Over 0.5 goals (0.395, VERIFIED_API) - two independent exchanges agree almost exactly + social-media current-form context (UNVERIFIED_SEARCH_SUMMARY)",
+      "sources_count_verified": 2,
+      "recommended_estimate": 0.38,
+      "category": "tier1_market_deviated_down",
+      "reliability": "high",
+      "note": "Cross-verified across 2 independent exchanges at ~0.40 (session 2). SMALL DOWNWARD ADJUSTMENT (session 3, 0.40->0.38) given fresh qualitative signal: Qatar 'scoreless for 373 minutes across competitions, 1 goal in last 5 games' under a new manager (2/11 record). Two sharp markets likely already price most of this in, so this is a small nudge rather than a full override - per the crowd-bias memo, deviations from a cross-verified market need real justification, and this is a downward deviation (away from crowd inflation, not toward it), unlike the KOR-CZE penalty case that lost from an unjustified upward deviation."
+    },
+    "5214295f-dbe0-4d7a-839d-434b82b73753": {
+      "question": "Will Akram Afif have at least 1 shot on target?",
+      "estimate_mid": 0.4274,
+      "source": "Smarkets player SOT>0.5 (VERIFIED_API, offer-only/illiquid - same pattern as Dzeko/Balogun)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.42,
+      "category": "tier1_market",
+      "reliability": "medium",
+      "note": "Per RULE 2, stick close to the market-implied number undeviated; shaded 0.7pp below the offer-only price as a slight conservatism adjustment (precedent: Dzeko/Balogun offer-only prices used near-verbatim worked fine, +2.89/+2.38 RBP). Reliability medium (not high) because it's offer-only/illiquid - no real bid to confirm. Session 3: social-media research confirms Afif expected to start (Qatar's primary attacking outlet/counter threat) - removes 'will he even play' uncertainty but doesn't change the number, since Qatar's overall attacking output (Q8 lambda~1.35 team SOT) is consistent with an individual lambda~0.5-0.7 for Afif specifically."
+    },
+    "96096e67-2fae-46e0-ae55-dc21beffb541": {
+      "question": "Will Granit Xhaka have at least 1 shot on target?",
+      "estimate_mid": 0.4125,
+      "source": "Smarkets player SOT>0.5 (VERIFIED_API), two-sided market",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.41,
+      "category": "tier1_market",
+      "reliability": "medium",
+      "note_reliability": "Direct market match, but two-sided spread is wide (37.0% bid to 45.5% offer, 8.4pp) - less liquid than Q4/Q7. Session 3: social-media research confirms Xhaka starting as captain in the Xhaka-Freuler double pivot - removes lineup risk but doesn't change the number (a deep-lying midfielder's SOT rate is naturally lower-variance than a forward's, consistent with the 0.41 market price)."
+    },
+    "b833736f-2ceb-43d8-9d34-f5889d1d3179": {
+      "question": "Will Qatar commit more fouls than Switzerland?",
+      "estimate": "MAJOR REVERSAL (session 3, part 2). The 0.58-0.72 range across sessions 1-3 all compared Qatar's TOURNAMENT-HEAVY foul sample (n=12, avg~11.5-12.16) against Switzerland's FRIENDLY/QUALIFIER sample (n=8, avg=8.875) - a competition-context mismatch. New data: pulled Switzerland's own 9 major-tournament matches (WC2022 n=4 + Euro2024 n=5) - Switzerland's TOURNAMENT foul rate is 12.56/match (n=9), 41% higher than their friendly rate, mirroring the same context-inflation already seen in Switzerland's card rate. Recomputing Skellam under different framings: (a) WC2022-ONLY same-tournament (Qatar n=3=10.33 vs Swiss n=4=13.25): P(diff>0)=0.274 [Swiss foul MORE]. (b) All-tournament (Qatar n=10=12.0 vs Swiss n=9=12.56): P=0.455 [near coin-flip, Swiss slightly more]. (c) All-data blend (Qatar n=12=11.5 vs Swiss n=17=10.82): P=0.557 [Qatar slightly more]. (d) Original session-3 mismatched framing: P=0.719. Weighted toward the apples-to-apples comparisons (0.2*0.274 + 0.4*0.455 + 0.4*0.557 = 0.46).",
+      "source": "ESPN site API (VERIFIED_API, Qatar n=2+3+7=12 / Switzerland friendly n=8 + Switzerland tournament n=9=WC2022+Euro2024) + Skellam model across multiple context-framings",
+      "sources_count_verified": 2,
+      "recommended_estimate": 0.46,
+      "category": "tier2_realdata",
+      "reliability": "low",
+      "note": "Structural gap confirmed across Smarkets, Kalshi, and Polymarket - no team-fouls-comparison market exists anywhere (consistent CONFIRMED PERMANENT pattern from CAN-BIH). MAJOR REVERSAL from session-3-part-1's 0.66 (and sessions 1/2's 0.58-0.65) - those were all built on a Qatar-tournament-vs-Switzerland-friendly mismatch. Once corrected to tournament-vs-tournament, Switzerland's WC2022 foul rate (13.25) actually EXCEEDS Qatar's (10.33). Landed near coin-flip (0.46), reliability downgraded medium->low given how sensitive this estimate is to the context-framing choice (range 0.27-0.72 across 4 reasonable framings) - this is the least-certain estimate in the match."
+    },
+    "1b3d100e-f943-432c-93d4-9e900d641d97": {
+      "question": "Will Switzerland be caught offside 2 or more times?",
+      "estimate": "MAJOR REVISION (session 3). Prior estimate (0.42) assumed a deep Qatar low block REDUCES opponent offsides. New data DIRECTLY TESTS this: re-extracted the OPPONENT's offside counts from the same 10 ESPN boxscores already pulled for Qatar's own stats (espn_opponent_vs_qatar_realdata). Result: teams playing AGAINST Qatar average 2.5 offsides/match (n=10), and in the 3 WC2022 matches (Qatar deepest/biggest underdog, most analogous to today) opponents got 3, 4, 5 - ALL >=2. The deep-block assumption was BACKWARDS - a disorganized low block produces MORE offside situations (late/mistimed attacking runs against a back line that intermittently steps up), not fewer. Blending Switzerland's own recency-weighted rate (lambda=2.0, n=4, last 4 matches) with the Qatar-specific opponent effect (lambda=2.5, n=10): lambda_blend=(2.0+2.5)/2=2.25 -> Poisson P(X>=2)=1-e^-2.25*(1+2.25)=0.6575. Shaded slightly down for n=3/n=10 sample noise and AFC2024 opponents not being stylistically like Switzerland.",
+      "source": "ESPN site API real per-match data for Switzerland (VERIFIED_API, n=8) + opponent-vs-Qatar boxscore re-extraction (VERIFIED_API, n=10) + Poisson model",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.6,
+      "category": "tier2_realdata",
+      "reliability": "medium",
+      "note": "Structural gap confirmed - no offside market exists on Smarkets (consistent pattern from USA-PAR). LARGEST single revision in this match (0.42->0.60, +18pp) - the prior qualitative adjustment had the sign backwards, and the corrected direction is corroborated by 3 independent convergent signals (Switzerland's own recency trend, n=10 opponent-vs-Qatar, and the n=3 most-analogous WC2022 subset all point the same way)."
+    },
+    "018e3215-6bf7-41a4-8344-4ba89e235ace": {
+      "question": "Will Switzerland receive at least 1 card in the second half?",
+      "estimate": "Two competing anchors: (1) Smarkets full-match 'Switzerland over 0.5 cards' mid=0.7271 implies lambda_full~1.298; assuming ~57.5% of cards occur in 2H (general football heuristic) gives lambda_2h~0.746 -> P(>=1)=0.526. (2) ESPN real data: card_rate=0.625/match (lambda_full), only 1/8 matches had a confirmed 2H card -> lambda_2h~0.36 -> P(>=1)~0.30. Blended ~midway, weighting slightly toward the live market since World Cup host-nation matches likely run hotter/more cards than Switzerland's recent friendlies/qualifiers.",
+      "source": "Smarkets full-match cards market (VERIFIED_API, indirect anchor) + ESPN real per-match card data (VERIFIED_API, n=8) + Poisson half-split model",
+      "sources_count_verified": 2,
+      "recommended_estimate": 0.4,
+      "category": "tier2_realdata",
+      "reliability": "low",
+      "note": "No direct 2H-team-cards market exists - hybrid of an indirect market anchor and real per-match data, similar in spirit to CAN-BIH Q2's structural-gap modeling. Reliability low because the two anchors diverge by ~23pp (0.526 vs 0.30) and the blend is a judgment call. Session 3: social-media research surfaced a possible referee (Said Martinez, Honduras, ~4.3 YC/game career rate - moderately card-heavy, would support the higher/market-side anchor), but the source had a conflicting kickoff date (listed June 12 vs confirmed June 13) - FLAGGED UNCONFIRMED, not used to move the estimate."
+    },
+    "0e47a1b2-97bb-4993-87f8-96fcd9ca774f": {
+      "question": "Will Qatar have 2 or more shots on target in the second half?",
+      "estimate": "REVISED AGAIN (session 3). The WC2022 data adds a directly-relevant n=3 'vs strong opposition' sample of 2H SOT: vs Ecuador=0, vs Senegal=3 (all 3 came in 2H, chasing a 0-2 deficit), vs Netherlands=1. Combined with the existing n=2 (El Salvador=1, Ireland=1), the full n=5 'vs comparable-or-stronger opposition' 2H-SOT sample is [1,1,0,3,1], avg=1.2 -> Poisson(lambda_2h=1.2) gives P(X>=2)=1-e^-1.2*(1+1.2)=0.337. However, the 2026 n=2 subset (avg=1.0) reflects Qatar's CURRENT 'attacking crisis' form (373 min scoreless per social-media research), which the 2022 matches don't capture. Blending the larger-sample signal (0.337) with the current-form signal (n=2 implies ~0.264) and shading slightly toward the latter given recency: lambda_2h~1.05 -> P(X>=2)~0.30.",
+      "source": "ESPN site API (VERIFIED_API, n=2+3, now n=5 total) + Poisson model + social-media current-form context (UNVERIFIED_SEARCH_SUMMARY)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.3,
+      "category": "tier2_realdata",
+      "reliability": "medium",
+      "note": "Structural gap confirmed across Smarkets, Kalshi, Polymarket - no team SOT market (full or half) exists anywhere for Qatar, same pattern as CAN-BIH Q2. REVISED UP from 0.24 - n=5 sample (up from n=2) is more robust; reliability upgraded low->medium. The 2022 Senegal game (3 SOT, all in 2H while trailing) is a useful precedent for 'Qatar generates 2H chances when chasing the game', which is the likely scenario here given Switzerland is heavily favored."
+    },
+    "bb71936a-f3b2-471d-acb9-669ab812674e": {
+      "question": "Will Qatar have 2 or more shots on target?",
+      "estimate": "REVISED AGAIN (session 3). The WC2022 data adds n=3 'vs strong opposition' full-match SOT: vs Ecuador=0, vs Senegal=3, vs Netherlands=3. Combined with the existing n=2 (El Salvador=1, Ireland=1), the full n=5 'vs comparable-or-stronger opposition' sample is [1,1,0,3,3], avg=1.6 -> Poisson(lambda=1.6) gives P(X>=2)=1-e^-1.6*(1+1.6)=0.475. As with Q5, the 2026 n=2 subset (avg=1.0, P(X>=2)=0.264) reflects Qatar's current 'attacking crisis' (373 min scoreless, social-media research), while the 2022 matches (avg=2.0) reflect a different squad/manager. Blending toward recency but giving the larger sample real weight: lambda~1.35 -> P(X>=2)=1-e^-1.35*(2.35)=0.394.",
+      "source": "ESPN site API (VERIFIED_API, n=2+3, now n=5 total) + Poisson model + social-media current-form context (UNVERIFIED_SEARCH_SUMMARY)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.39,
+      "category": "tier2_realdata",
+      "reliability": "medium",
+      "note": "Structural gap confirmed across Smarkets, Kalshi, Polymarket - no team SOT market exists anywhere for Qatar. REVISED UP from session-2's 0.28 - n=5 sample (up from n=2) shows a meaningfully higher ceiling vs strong opposition (2022 Senegal/Netherlands both =3 SOT). Reliability upgraded low->medium."
+    },
+    "7904c72f-34a8-467f-a973-873cd5953690": {
+      "question": "At halftime, will both teams have at least 1 shot on target?",
+      "estimate": "REVISED (session 3). The WC2022 data adds n=3 1H-SOT values for Qatar vs strong opposition: vs Ecuador=0, vs Senegal=0, vs Netherlands=2. Combined with the existing n=2 (both 0 in 1H), the n=5 1H-SOT sample is [0,0,0,0,2], avg=0.4 -> Poisson(lambda=0.4) gives P(>=1)=1-e^-0.4=0.330. But the 2026 n=2 subset (both 0) reflects current 'attacking crisis' form. Blending the larger sample (0.330) with current-form (~0.22 from n=2 alone): lambda_1h_qatar~0.27 -> P(>=1)~0.236. Switzerland 1H SOT unchanged: lambda_1h_swiss~1.9 -> P(>=1)~0.85. Joint = 0.236 * 0.85 ~ 0.20.",
+      "source": "ESPN site API real per-match data for both teams (VERIFIED_API, n=5+8) + Poisson compound-independence model + social-media current-form context (UNVERIFIED_SEARCH_SUMMARY)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.2,
+      "category": "tier2_realdata",
+      "reliability": "medium",
+      "note": "Structural gap confirmed - no halftime team-SOT market exists on Smarkets. UNCHANGED at 0.20 - the larger n=5 sample (up from n=2) lands almost exactly where the original n=2-based estimate did, a useful convergence check. Reliability upgraded low->medium given the larger sample now corroborates rather than just extrapolates."
+    }
+  },
+  "post_match_results": {
+    "settled_date": "2026-06-13",
+    "final_score": "Qatar 1 - 1 Switzerland",
+    "total_rbp": -39.21,
+    "beat_crowd_count": "5/10 (Q3, Q4, Q7, Q9, Q10 beat crowd)",
+    "source_note": "Full postmortem in MATCH_LOG.md - QAT vs SUI postmortem section (corrected for complete final leaderboard, total -39.21)",
+    "questions": [
+      {
+        "q": 1,
+        "question": "At halftime, will both teams have at least 1 shot on target?",
+        "category": "tier2_realdata",
+        "us": 0.2,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": -42.51
+      },
+      {
+        "q": 2,
+        "question": "Will Switzerland be caught offside 2 or more times?",
+        "category": "tier2_realdata",
+        "us": 0.6,
+        "crowd": 0.53,
+        "outcome": 0,
+        "rbp": -3.84
+      },
+      {
+        "q": 3,
+        "question": "Will Switzerland receive at least 1 card in the second half?",
+        "category": "tier2_realdata",
+        "us": 0.4,
+        "crowd": 0.57,
+        "outcome": 0,
+        "rbp": 19.86
+      },
+      {
+        "q": 4,
+        "question": "Will both teams score AND the match have 3 or more total goals?",
+        "category": "tier1_market",
+        "us": 0.32,
+        "crowd": 0.31,
+        "outcome": 0,
+        "rbp": 2.85
+      },
+      {
+        "q": 5,
+        "question": "Will Qatar have 2 or more shots on target in the second half?",
+        "category": "tier2_realdata",
+        "us": 0.3,
+        "crowd": 0.39,
+        "outcome": 1,
+        "rbp": -7.61
+      },
+      {
+        "q": 6,
+        "question": "Will Qatar commit more fouls than Switzerland?",
+        "category": "tier2_realdata",
+        "us": 0.46,
+        "crowd": 0.64,
+        "outcome": 1,
+        "rbp": -13.81
+      },
+      {
+        "q": 7,
+        "question": "Will Qatar score at least 1 goal?",
+        "category": "tier1_market_deviated_down",
+        "us": 0.38,
+        "crowd": 0.4,
+        "outcome": 1,
+        "rbp": 2
+      },
+      {
+        "q": 8,
+        "question": "Will Qatar have 2 or more shots on target?",
+        "category": "tier2_realdata",
+        "us": 0.39,
+        "crowd": 0.57,
+        "outcome": 1,
+        "rbp": -14.3
+      },
+      {
+        "q": 9,
+        "question": "Will Akram Afif have at least 1 shot on target?",
+        "category": "tier1_market",
+        "us": 0.42,
+        "crowd": 0.46,
+        "outcome": 0,
+        "rbp": 7.26
+      },
+      {
+        "q": 10,
+        "question": "Will Granit Xhaka have at least 1 shot on target?",
+        "category": "tier1_market",
+        "us": 0.41,
+        "crowd": 0.48,
+        "outcome": 0,
+        "rbp": 10.91
+      }
+    ]
+  }
+}

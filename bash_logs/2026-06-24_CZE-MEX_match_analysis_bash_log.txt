@@ -1,0 +1,140 @@
+CZECHIA vs MEXICO — WC2026 Group A GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24 | Venue: Estadio Azteca, Mexico City | KO: 9:00 PM ET
+
+=== COMMANDS RUN ===
+
+1. grep -iE "czech|mexico" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Mexico,1984.7936 | Czech Republic,1806.3989
+
+2. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff (CZE-MEX): -178.39 (Mexico favored)
+  lambda_CZE: 0.8035 | lambda_MEX: 1.5326 | total: 2.3361
+  P(CZE scores): 0.5523 | P(MEX scores): 0.7841
+  P(BTTS): 0.4329 | P(BTTS AND >=3): 0.3139
+  P(3+ goals): 0.4135 | P(4+ goals): 0.2080
+  P(CZE win): 0.1851 | P(Draw): 0.2757 | P(MEX win): 0.5392  <- RULE8 FIRES (draw >= 25%)
+  P(CZE 2H scores): 0.3308 | P(MEX 2H scores): 0.5353
+  P(MEX more corners): 0.7646
+  P(MEX 2+ offsides proxy): 0.8452
+  P(CZE more 2H SOT): 0.1888
+  λ_schick_proxy (35% share of CZE SOT): 0.844 → P(Schick >=1 SOT): 0.570
+
+3. HT-tie probability:
+  λ_CZE_1H: 0.4018 | λ_MEX_1H: 0.7663
+  P(0-0 at HT): 0.302 | P(1-1 at HT): 0.093 | P(HT tied): 0.414
+
+4. Existing match files checked:
+  - kor_cze_2026-06-11.json: KOR 2-1 CZE (GD1); CZE: 7 shots, 4 SOT; Krejci scored 59'
+  - mex_kor_2026-06-19.json: MEX 1-0 KOR (GD2); RBP +40.22, 8/9 beat crowd
+
+5. Research agent spawned — key findings below.
+
+=== GROUP A CONTEXT ===
+
+After GD2:
+  Mexico:      6pts | W-W | GD +3 | QUALIFIED — ROTATING HEAVILY
+  South Korea: 3pts | W-L | GD  0
+  Czechia:     1pt  | L-D | GD -1 | MUST WIN vs MEX to reach 4pts (3rd-place contention)
+  South Africa:1pt  | L-D | GD -2 | Playing KOR simultaneously
+
+CZE scenario: Win = 4pts, enters 3rd-place race (8/12 advance). Draw or loss = elimination.
+MEX scenario: Dead rubber. Rotating completely for R32 prep.
+
+=== KEY FINDINGS ===
+
+CZECHIA GD1 vs Korea (KOR 2-1 CZE):
+- CZE: 7 shots, 4 SOT. Goals for: Krejčí 59' (2H). Goals against: 67', 80'.
+- Schick: played 64 min, rated 5.9/10 FotMob — poor performance, substituted off.
+
+CZECHIA GD2 vs South Africa (CZE 1-1 RSA):
+- CZE: 14 shots, 3 SOT. Only 32% possession. Sadílek 6' (1H). Conceded Mokoena pen 83'.
+- Cards: Krejčí Y 75'. No confirmed fouls/corners totals.
+
+MEXICO GD1 vs South Africa (MEX 2-0 RSA):
+- MEX: 16 shots, 4 SOT. Goals: Quiñones 9', Jiménez 67'.
+- Corners: MEX 3, RSA 1. Fouls: MEX 12, RSA 11.
+
+MEXICO GD2 vs South Korea (MEX 1-0 KOR) — WE PLAYED THIS:
+- MEX goal: Romo 50' (GK error). KOR dominated (58% poss, xG 0.67 vs MEX 0.48).
+- Result: RULE8 confirmed — 1-0, low-scoring. RULE15 (Son) confirmed.
+- Corners: KOR 4, MEX 3 — Korea got MORE corners despite losing! Key evidence for Q4.
+- Our result: +40.22 RBP, 8/9 beat crowd.
+
+PATRIK SCHICK:
+- Club: Bayer Leverkusen. Club form: 16G, 2A in 28 Bundesliga matches (strong).
+- WC2026: 154 minutes, 2 shots, 1 SOT, 0 goals. GD1: 5.9/10; GD2: 6.2/10.
+- Very quiet for the tournament. Hlozek also taking shots (market: Hlozek SOT -132 = 57% implied).
+- GD3 expected to start: YES. Fitness OK.
+
+MEXICO ROTATION (CRITICAL):
+- Raúl Jiménez: LIKELY RESTED (scored GD1, age 35).
+- Julián Quiñones: LIKELY RESTED (scored GD1, 5 shots GD1).
+- Guillermo Ochoa (40, GK): LIKELY STARTING — sentimental farewell appearance.
+- Starting lineup expected: Giménez, Alvarado, Romo, Huerta, Mora, Galindo (rotation squad).
+- No suspensions or injuries for MEX.
+- CZE injury: Jurasek (LB) out with thigh injury.
+
+VENUE — ESTADIO AZTECA:
+- Mexico's home ground. Quasi-home advantage not in Elo model (neutral=TRUE used).
+- 80-90% pro-Mexico crowd. Real psychological effect on CZE.
+- Slight downward pressure on CZE win above what rotation alone suggests.
+
+REFEREE — Yael Falcón Pérez (Argentina):
+- No specific career card rate confirmed from available sources.
+- Argentina referees tend to be card-active but no data to quantify.
+
+=== RULES APPLIED ===
+
+RULE8: FIRES — draw 27.57% >= 25%
+  → Shrink extreme attacking props toward 50%
+  → Cagier match; RULE8 confirmed in MEX-KOR (1-0, 1 total goal)
+  → Reduces: MEX offsides, MEX corners, BTTS chance
+
+RULE7: Does NOT fire (CZE 18.51% > 15%)
+
+RULE_FOULS: CZE underdog defends → CZE fouls more
+  → Q1 direction: YES (0.62)
+
+ROTATION_EFFECT: MEX B-team → CZE win probability rises from model 0.185 toward 0.30
+  → Reduces MEX forward runs (fewer offsides, fewer corners)
+  → But MEX still have quality players (Giménez is a good striker)
+
+AZTECA_EFFECT: Slight downward on CZE win from what rotation alone would suggest
+  → 80,000+ Mexican fans; real pressure on CZE
+
+MEX-KOR PRECEDENT: Korea got MORE corners than Mexico (GD2) — corners are volatile
+  → Q4 adjusted heavily downward from model's 0.765 → 0.52
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.62 — CZE more fouls [YES: RULE_FOULS + CZE underdog defends]
+Q2: 0.58 — MEX 2+ offsides [YES_LEAN: model 0.845, RULE8 shrink, rotation reduces forward runs]
+Q3: 0.28 — CZE more 2H SOT [NO_LEAN: model 0.189, survival uplift + rotation offset; still NO]
+Q4: 0.52 — MEX more corners [YES_LEAN barely: model 0.765, MEX-KOR evidence volatile]
+Q5: 0.32 — BTTS AND 3+ goals [NO_LEAN: RULE8, MEX-KOR precedent (1-0)]
+Q6: 0.30 — CZE win [NO_LEAN: model 0.185, rotation uplift, Azteca slight offset]
+Q7: 0.38 — CZE 2H goal [NO_LEAN: model 0.331, survival push, Krejci scored 2H in GD1]
+Q8: 0.45 — 4+ total cards [NO_LEAN: ref unknown, CZE desperation = physical play]
+Q9: 0.48 — Schick >=1 SOT [NO_LEAN: model 0.570, WC evidence 1 SOT in 154min, Hlozek competes]
+
+=== EDGE RANKING ===
+
+RANK 1: Q3 0.28 NO — CZE more 2H SOT. Crowd ~0.38. Our -10pp NO edge. Best edge.
+RANK 2: Q6 0.30 NO — CZE win. Crowd ~0.39. -9pp NO edge. Mexico rotation known but Azteca matters.
+RANK 3: Q5 0.32 NO — BTTS+3+. Crowd ~0.40. -8pp NO edge. RULE8 confirmed precedent.
+RANK 4: Q7 0.38 NO — CZE 2H goal. Crowd ~0.44. -6pp NO edge.
+RANK 5: Q8 0.45 NO — 4+ cards. Crowd ~0.48. Small edge, low confidence without ref data.
+RANK 6: Q9 0.48 NO — Schick SOT. Crowd ~0.50. Near coin-flip, slight NO lean.
+RANK 7: Q1 0.62 YES — CZE fouls. Crowd ~0.59. +3pp YES edge. Structural YES.
+RANK 8: Q2 0.58 YES — MEX offsides. Crowd ~0.56. +2pp YES edge. Minimal.
+RANK 9: Q4 0.52 YES — MEX more corners. Crowd ~0.53. -1pp, basically coin-flip.
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/cze_mex_2026-06-24.json
+2. THIS FILE: bash_logs/2026-06-24_CZE-MEX_match_analysis_bash_log.txt
+3. ML_EXPERIMENTS_NOTEBOOK.md — Appended CZE-MEX section
+
+=== END LOG ===

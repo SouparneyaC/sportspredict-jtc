@@ -1,0 +1,52 @@
+RSA vs CAN (2026-06-28) — pricing pass bash log
+=================================================
+
+# 1. Confirm today's match status/kickoff before pricing (pre-match, as always)
+$ curl -s ".../summary?event=760486" -> status: STATUS_SCHEDULED, date: 2026-06-28T19:00Z
+
+# 2. Pull full ESPN box scores for South Africa's 3 group matches (760415 MEX, 760438 CZE,
+#    760466 KOR) and Canada's 3 group matches (760416 BIH, 760440 QAT, 760463 SUI)
+#    -> see full output captured directly into rsa_can_2026-06-28.json wc2026_espn_stats block.
+#    Notable: South Africa had 2 red cards in the Mexico match (DISCIPLINE_FLAG); Canada's
+#    corner average (11.67) is skewed by a 19-corner outlier vs Qatar (BIMODAL_FLAG, same
+#    pattern as ALG-AUT's bimodal SOT/corners from 2026-06-27).
+
+# 3. Discover full Smarkets market list for event 45155173 (150 markets returned via
+#    limit=300 pagination + client-side filtering, per the operational lesson the research
+#    agent already flagged about name= filters being non-functional)
+$ curl -s ".../events/45155173/markets/?limit=300" -> 150 markets listed, full list saved
+  inline in this log's predecessor research file.
+
+# 4. Pulled contract lists + quotes for all markets needed across the 15 questions:
+#    FTR (147758216), To qualify (147758349), Method of qualification (147758284),
+#    Will there be ET (147758350), Will there be pen shootout (147758351), BTTS (147758218),
+#    OU2.5/3.5 goals (147758253/254), Cards OU1.5/2.5/3.5/4.5 (147758379/381/383/385),
+#    Corners OU8.5 (147758394), Penalty (147758241), Any sent off (147758372),
+#    Highest scoring half (147758234), HT result (147758223), First half OU0.5 goals
+#    (147758251), Goal 1 time bracket (147758441, 10 contracts: 1-10...81-90,None),
+#    SA goals OU0.5/1.5 (147758264/265), CAN goals OU0.5/1.5/2.5 (147758274/275/276),
+#    Anytime goalscorer -> Larin contract (411257250), Player SOT 0.5 -> Rayners contract
+#    (411260243), Player to score 2+ goals (147758693, 44 contracts).
+#    Full raw quote dumps in scratchpad fetch_quotes.py output (this session).
+
+# 5. KEY FINDING flagged in the JSON's context_flags: summing all 44 illiquid offer-side
+#    contracts on "Player to score 2+ goals" gives 0.7611 -- not a valid probability (illiquid
+#    offer-overpricing compounds across many contracts). Did NOT use this number. Instead
+#    backed out team-level goal lambdas (SA ~0.80, CAN ~1.54) from the team O/U goal markets
+#    and ran a proper Poisson/binomial top-scorer-share decomposition for Q12 (final: 0.18,
+#    vs. the misleading 0.76 raw sum).
+
+# 6. Computed via local python (scipy poisson/brentq/binom), not API calls:
+#    - Total-match card lambda (~4.0) fit from 3 separate card O/U thresholds (consistent:
+#      3.87/4.01/3.99) -> Q1 (card after 2nd hydration break ~69', incl ET) modeled at 0.78
+#      using a 40%-of-cards-land-post-69' assumption plus an ET-card add-on.
+#    - Total-goal lambda (~2.34) from goal O/U markets -> Q4 (substitute scores) modeled at
+#      0.28 via a ~13%-per-goal substitute-scorer share base rate.
+#    - Combined ESPN offside average (RSA 2.33 + CAN 1.67 = 4.0) scaled to the ~24-minute
+#      pre-break window -> Q3 (offside before 1st break) modeled at 0.50 (no market exists
+#      for this, confirmed gap from the research agent; trimmed from naive 0.64 for cautious
+#      knockout-match-start uncertainty).
+#    - Q5 (goal before 1st break) solved directly and cleanly from the "Goal 1 time bracket"
+#      market: bracket(1-10)+bracket(11-20)+0.4*bracket(21-30) = 0.398.
+
+# Output: data/external_markets/rsa_can_2026-06-28.json (full 15-question estimates + reasoning)

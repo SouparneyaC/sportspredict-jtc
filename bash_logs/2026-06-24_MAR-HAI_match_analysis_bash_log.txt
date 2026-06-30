@@ -1,0 +1,151 @@
+MOROCCO vs HAITI — WC2026 Group C GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24 | Venue: Mercedes-Benz Stadium, Atlanta | KO: 6:00 PM ET
+
+=== COMMANDS RUN ===
+
+1. grep -i "morocco|haiti" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Morocco,1984.8491 | Haiti,1717.2284
+
+2. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff (MAR-HAI): 267.62
+  lambda_MAR: 1.8012 | lambda_HAI: 0.6837 | total: 2.4849
+  P(MAR scores): 0.8349 | P(HAI scores): 0.4952 | P(BTTS): 0.4135
+  P(total<=2): 0.5477 | P(total>=3): 0.4523
+  P(BTTS AND >=3): 0.3108
+  P(MAR win): 0.6977 | P(Draw): 0.1990 | P(HAI win): 0.1033  <- RULE7 FIRES
+  P(2H>=2 goals): 0.3966
+  P(MAR more 2H SOT): 0.7275
+  P(MAR more corners full match): 0.8813
+  P(MAR 2H scores): 0.6287
+  P(MAR 1H scores): 0.5554
+  P(HAI 2H scores): 0.3134
+
+3. Makkelie cards calculation:
+  Career 3.40 YC/game → P(4+ cards): 0.4416
+  Not a relevant threshold for Q here but noted.
+
+4. Combined 2H SOT estimate (Q5):
+  Model proxy: P(4+ combined 2H SOT) = 0.5115
+  Evidence-calibrated: Morocco WC avg 2.5 SOT/match. Haiti 2.5 SOT/match.
+  2H portion (~50%): combined lambda ~2.5 → P(>=4) = 0.242
+  Blend with proxy: ~40-45% → Final: 0.45
+
+5. Research agent spawned — Key findings below.
+
+=== RULES APPLIED ===
+
+RULE7: FIRES — HAI win 10.33% < 15%
+  → Submit unshaded estimates for underdog props
+  → RULE15 FIRES FULLY for Nazon (Q9): <15% underdog + fitness doubt + 0 WC minutes
+
+RULE8: Does NOT fire (draw 19.90% < 25%)
+
+FLOOR_0.25: Applied to Q9 (Nazon SOT)
+  → Computed ~11%. FLOOR binds at 0.25.
+
+RULE_FOULS: Morocco attacks → Haiti defends → Haiti fouls more
+  → Evidence very clear: Haiti 18.5 fouls/match vs Morocco ~12/match
+  → Q1 direction: Haiti more fouls = YES (0.65)
+
+DEAD_RUBBER_HAITI: Haiti ELIMINATED. Less motivated, possible rotations.
+  → Slightly reduces Haiti's fouling intensity
+  → May make match more open (both teams less desperate)
+  → Does NOT change direction of any estimates, only magnitude
+
+=== KEY FINDINGS ===
+
+GROUP C CONTEXT:
+Same group: Brazil, Morocco, Scotland, Haiti
+After GD2: Brazil 4pts (+3), Morocco 4pts (+1), Scotland 3pts (0), Haiti 0pts (-4, eliminated)
+Morocco already QUALIFIED — playing for group position only
+Haiti ELIMINATED — dead rubber, 0 goals in 2 WC matches, 0 GF
+Brazil vs Scotland playing simultaneously (Scotland survival match)
+
+MOROCCO GD1 vs Brazil (1-1):
+- Shots: 14, SOT: 3. Corners: 2 (vs Brazil 6). Free kicks: 16 (vs Brazil 14).
+- Cards: 0 YC (zero!). Possession: 49%.
+- Saibari 21' (Brahim Diaz assist). xG: 1.37 Morocco vs 1.26 Brazil.
+
+MOROCCO GD2 vs Scotland (1-0):
+- Shots: 12, SOT: 2. Corners: 5 (vs Scotland 2). Fouls committed: ~8 (vs Scotland 11).
+- Cards: 1 YC (Issa Diop 23'). Possession: 54%.
+- Saibari 2' (Brahim Diaz assist) — EARLIEST winning goal in a 1-0 WC match ever.
+- Morocco passed 601/~680 (record for African WC team since 1966).
+- Ziyech and En-Nesyri NOT in squad (not selected by new manager).
+
+MOROCCO TOTALS (2 games): 26 shots, 5 SOT, 7 corners, 1 YC. Style: quick transitions, early goals.
+
+HAITI GD1 vs Scotland (0-1):
+- Shots: 13, SOT: 2. Corners: 4. Fouls: 23 (vs Scotland 21). Offsides: 3.
+- Cards: 1 YC (Bellegarde 39'). Despite 13 shots, 0 goals.
+
+HAITI GD2 vs Brazil (0-3):
+- Shots: 7, SOT: 3 (surprisingly good despite losing). Corners: 4 (vs Brazil 4 — tied!).
+- Fouls: 14 (vs Brazil 13). Offsides: 4. Cards: 3 YC (Arcus 4', Pierrot 45+4', Jean Jacques 72').
+- xG: 0.25 for Haiti (vs Brazil 1.50).
+
+HAITI TOTALS (2 games): 20 shots, 5 SOT, 8 corners, 4 YC. Fouls avg: 18.5/match.
+
+NOTE: Haiti corners (4/game) is SURPRISINGLY HIGH despite being dominated. In both GD matches,
+Haiti matched or nearly matched their opponents in corners (GD1: 4 vs 3, GD2: 4 vs 4). This
+is why Q2 (Haiti more HT corners) is less certain than model suggests.
+
+DUCKENS NAZON:
+- Age: ~31-32. Club: Esteghlal FC (Persian Gulf Pro League, Iran).
+- Haiti all-time top scorer (44 goals, 82 caps). CONCACAF qualifying joint-top scorer.
+- GD1 vs Scotland: UNUSED SUBSTITUTE. Did NOT play.
+- GD2 vs Brazil: Did NOT start. Fitness doubt reported.
+- GD3 status: DOUBTFUL. Sports Mole: "Nazon decision remains." "Isidor pushing to start."
+- WC2026 minutes: 0. WC2026 SOT: 0.
+- Not listed in major anytime scorer markets.
+- RULE15 fires + doubtful = FLOOR_0.25 (0.25 estimate).
+
+REFEREE — Danny Makkelie (Netherlands):
+- Career 506 matches: 3.40 YC/game, 0.20 RC/game, 0.33 pens/game
+- Not extreme card-giver (3.40 vs Ramos's 4.17)
+- Pens at 0.33/game = awards them at meaningful rate
+- Qatar 2022 experience (GS + R16)
+
+MARKETS:
+- Morocco -600 (~85.7% de-vigged). Draw +600. Haiti +1500.
+- Over 2.5: -188 (heavy YES). Over 3.5: +140.
+- BTTS No: -172 (63.2% → Haiti NOT scoring).
+- Corners: Over 7.5 at 4/11 (~73%) well-priced.
+- Saibari anytime scorer: -110 (market very bullish).
+- No Nazon-specific prop listing found.
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.65 — Haiti more fouls than Morocco [YES: RULE_FOULS + Haiti 18.5/match vs MAR 12/match]
+Q2: 0.35 — Haiti more HT corners [NO_LEAN: Morocco dominates but HT volatile; Haiti 4 corners/game]
+Q3: 0.72 — Haiti more cards than Morocco [YES: Haiti 2/game vs Morocco 0.5/game — clear evidence]
+Q4: 0.70 — Morocco more 2H SOT [YES: model 72.75%; MAR dominant vs eliminated Haiti]
+Q5: 0.45 — 4+ total SOT in 2H [NO_LEAN: model 51% but evidence-calibrated ~24-40%; blend 0.45]
+Q6: 0.38 — Penalty OR red card [NO_LEAN: Makkelie 0.33/game; 0 pens in both teams' 4 prev matches]
+Q7: 0.80 — Morocco win [YES: market 85.7%; dead rubber Haiti; model 69.77%; blend 0.80]
+Q8: 0.70 — Morocco score in 1H [YES: scored 21' and 2' in GD1/GD2; Haiti weakest defense yet]
+Q9: 0.25 — Nazon >=1 SOT [STRONG_NO FLOOR: RULE15 + doubtful + 0 WC minutes; computed ~11%]
+Q10: 0.25 — Haiti score in 2H [STRONG_NO: 0 goals in 180 WC min; model 31%, market-implied 22%; blend ~25%]
+
+=== EDGE RANKING ===
+
+RANK 1: Q9 0.25 FLOOR — Nazon SOT. RULE15 + doubtful + 0 WC minutes. Crowd ~0.42. Major ~17pp NO edge.
+RANK 2: Q10 0.25 NO — Haiti 2H goal. 0 goals in 2 WC games. Morocco conceded 1 goal total. Crowd ~0.35.
+RANK 3: Q3 0.72 YES — Haiti more cards. 4 vs 1 YC in tournament. Very clear evidence. Crowd ~0.60.
+RANK 4: Q8 0.70 YES — Morocco 1H goal. Scored 2nd min and 21st min previously. Crowd ~0.62.
+RANK 5: Q1 0.65 YES — Haiti more fouls. RULE_FOULS + historical data (18.5 vs 12/match).
+RANK 6: Q7 0.80 YES — Morocco win. Market-supported. Dead rubber Haiti.
+RANK 7: Q4 0.70 YES — Morocco more 2H SOT. Model 72.75%.
+RANK 8: Q6 0.38 NO_LEAN — Penalty/red card. Historical overpricing.
+RANK 9: Q5 0.45 NO_LEAN — 4+ 2H SOT. Model-evidence diverge.
+RANK 10: Q2 0.35 NO_LEAN — Haiti HT corners. Morocco expected but volatile.
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/mar_hai_2026-06-24.json
+2. THIS FILE: bash_logs/2026-06-24_MAR-HAI_match_analysis_bash_log.txt
+3. ML_EXPERIMENTS_NOTEBOOK.md — Appended MAR-HAI section
+
+=== END LOG ===

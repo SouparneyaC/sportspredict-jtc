@@ -1,0 +1,350 @@
+{
+  "match": "Switzerland vs Canada",
+  "match_code": "SUI-CAN",
+  "competition": "FIFA World Cup 2026",
+  "group": "Group B",
+  "game_day": "GD3",
+  "date": "2026-06-24",
+  "venue": "BC Place, Vancouver, Canada",
+  "analysis_date": "2026-06-18",
+
+  "model_inputs": {
+    "sui_elo": 1951.79,
+    "can_elo": 1901.98,
+    "elo_diff": 49.81,
+    "venue": "neutral",
+    "home_advantage_applied": false,
+    "poisson_coefs": {
+      "intercept": 0.10408,
+      "elo_diff_coef": 0.0018099
+    },
+    "ordered_logit_coefs": {
+      "b_elo": 0.005199,
+      "c1": -0.7702,
+      "c2": 0.5549
+    }
+  },
+
+  "model_outputs": {
+    "lambda_sui": 1.2144,
+    "lambda_can": 1.0140,
+    "lambda_total": 2.2284,
+    "p_sui_scores": 0.7033,
+    "p_can_scores": 0.6370,
+    "p_btts": 0.4481,
+    "p_total_le2": 0.6151,
+    "p_total_ge3": 0.3849,
+    "p_btts_and_ge3": 0.3154,
+    "p_sui_win": 0.4265,
+    "p_draw": 0.3102,
+    "p_can_win": 0.2632,
+    "p_2h_ge2_goals": 0.3062,
+    "p_sui_more_2h_sot": 0.4497
+  },
+
+  "rules_applied": {
+    "RULE7": "Does NOT fire — CAN 26.32% > 15% threshold",
+    "RULE8": "FIRES — Draw 31.02% > 25% threshold. Moderate shrink on extreme attacking props.",
+    "RULE15": "Mild consideration — Canada at 26.32% win probability, just above 15-20% threshold. Minimal RULE15 effect on David SOT (discount via SUI defensive quality instead).",
+    "FLOOR_0.25": "Applied to Q9 (Xhaka SOT) — computed probability ~20%, floored at 0.25.",
+    "SURVIVAL_MATCH_CORNERS": "Does NOT apply — neither team is eliminated. Both already qualified. No survival desperation.",
+    "BOTH_QUALIFIED_CONTEXT": "SUI needs WIN to top group. CAN needs only DRAW to top on GD (+6 vs +3). Motivation asymmetry: SUI more aggressive, CAN slightly more conservative.",
+    "RULE_FOULS": "Canada high-press style (19 fouls while attacking in GD2) vs SUI compact mid-block (7 fouls GD2). High-press team fouls more. RULE_FOULS direction: Canada more fouls."
+  },
+
+  "group_context": {
+    "standings_after_gd2": {
+      "Canada": "4 pts (+6 GD) — QUALIFIED",
+      "Switzerland": "4 pts (+3 GD) — QUALIFIED",
+      "Bosnia-Herzegovina": "1 pt (-4 GD)",
+      "Qatar": "1 pt (-6 GD)"
+    },
+    "gd3_implications": {
+      "SUI_need": "WIN to top group — stay in Vancouver (favorable for Canada fanbase away from home)",
+      "CAN_need": "DRAW sufficient to top group on goal difference. Win also tops group.",
+      "group_winner_advantage": "Winner gets favorable R32/R16 bracket position, likely plays in Vancouver for multiple rounds."
+    }
+  },
+
+  "gd_evidence": {
+    "SUI_GD1_vs_Qatar": {
+      "score": "1-1",
+      "shots": 23,
+      "sot": 7,
+      "result": "Draw — Qatar equalized via own goal from set piece (Muheim 90+1')",
+      "scorers": ["Embolo (pen, 36')"],
+      "note": "SUI led most of game, conceded to set piece in injury time"
+    },
+    "SUI_GD2_vs_Bosnia": {
+      "score": "4-1",
+      "shots_sui": 13,
+      "sot_sui": 7,
+      "shots_bih": 5,
+      "sot_bih": 3,
+      "fouls_sui": 7,
+      "fouls_bih": 18,
+      "corners_sui": 7,
+      "result": "WIN — ALL SUI goals came after 74'! 0-0 at HT. Bosnia red card Muharemovic 80'.",
+      "note": "Massive late burst driven by red card advantage — not reflective of open-play dominance"
+    },
+    "CAN_GD1_vs_Bosnia": {
+      "score": "1-1",
+      "shots": 13,
+      "sot": 4,
+      "corners": 9,
+      "result": "Draw — Larin sub 83' equalized",
+      "note": "David started but didn't score; Canada struggled to convert against BIH defense"
+    },
+    "CAN_GD2_vs_Qatar": {
+      "score": "6-0",
+      "shots_can": 32,
+      "sot_can": 10,
+      "shots_qat": 2,
+      "sot_qat": 0,
+      "fouls_can": 19,
+      "fouls_qat": 1,
+      "result": "WIN — Blowout. David hat trick (29', 45+3', 90+2'). Qatar had 2 red cards.",
+      "note": "David: 8 shots, 5 SOT. Entirely blowout context — Qatar went to 9 men.",
+      "koné_out": "Koné OUT (broken leg) — confirmed absent for SUI-CAN"
+    }
+  },
+
+  "player_profiles": {
+    "Granit_Xhaka": {
+      "club_2025_26": "Sunderland FC (Premier League) — moved from Leverkusen July 2025",
+      "position": "Deep-lying CM (ball-distributor)",
+      "sot_per_90_2024_25": 0.09,
+      "sot_season_total": "3 SOT in 33 Bundesliga games",
+      "gd2_sot": 1,
+      "gd2_sot_context": "Converted penalty at 90+7' — the only source of his SOT in GD2",
+      "fanDuel_scorer_odds": "+1600",
+      "xhaka_sot_calculation": {
+        "p_natural_sot_per90": 0.086,
+        "p_penalty_path": 0.126,
+        "p_total_computed": 0.201,
+        "floor_applied": 0.25,
+        "final_estimate": 0.25
+      },
+      "note": "Structurally a passer, not a shooter. Penalty is his only reliable SOT route."
+    },
+    "Jonathan_David": {
+      "club_2025_26": "Juventus (Serie A) — free transfer from Lille July 2025",
+      "position": "CF (pure striker)",
+      "sot_per_90_historical": "2.0-2.5 at Lille",
+      "gd1_goals": 0,
+      "gd2_sot": 5,
+      "gd2_goals": 3,
+      "gd2_shots_attempted": 8,
+      "gd2_context": "Hat trick vs Qatar (who had 0 SOT, 2 red cards) — extreme blowout",
+      "fanDuel_scorer_odds": "+225 to +275",
+      "estimated_lambda_vs_sui": 1.5,
+      "p_ge1_sot_vs_sui": 0.777,
+      "final_estimate": 0.70,
+      "note": "World-class striker. Swiss defense (Akanji, Elvedi) will limit him vs Qatar pace — discounted to lambda=1.5"
+    }
+  },
+
+  "referee": {
+    "name": "Ramon Abatti Abel",
+    "nationality": "Brazil",
+    "career_yc_per_game": 4.85,
+    "career_rc_per_game": 0.22,
+    "career_pens_per_game": 0.32,
+    "season_2025_26": {
+      "yc_per_game": 4.5,
+      "rc_per_game": 0.0,
+      "pens_per_game": 0.0,
+      "matches": 2
+    },
+    "p_2h_ge2_cards_computed": 0.64,
+    "note": "High-card disciplinarian. Career rate strongly supports 2+ cards in 2H."
+  },
+
+  "market_data": {
+    "match_winner": {
+      "SUI": "+145 (~40.8% implied de-vigged)",
+      "Draw": "+195 (~33.1% implied de-vigged)",
+      "CAN": "+220 (~26.9% implied de-vigged)"
+    },
+    "totals": {
+      "over_2.5": "+110 to +120 (~47.6% implied)",
+      "under_2.5": "-127 to -140 (~56.3% implied)"
+    },
+    "btts": {
+      "yes": "-135 to -140 (~58% implied)",
+      "no": "+110"
+    },
+    "market_vs_model_gap": {
+      "SUI_win": "market 40% vs model 42.65% — close alignment",
+      "BTTS_yes": "market 58% vs model 44.81% — 13pp gap (market prices recent form higher)",
+      "market_implied_btts_and_ge3": "~0.58 × 0.476 = 0.276 — close to model 0.315"
+    }
+  },
+
+  "question_analysis": {
+    "Q1": {
+      "question": "Will Canada commit more fouls than Switzerland?",
+      "estimate": 0.63,
+      "direction": "YES",
+      "crowd_estimate": 0.53,
+      "key_drivers": [
+        "Canada GD2 vs Qatar: 19 fouls while attacking (high-press style inherent to Marsch 4-4-2)",
+        "Switzerland GD2 vs Bosnia: only 7 fouls (compact, disciplined mid-block)",
+        "In competitive match: Canada presses, SUI absorbs → CAN fouls more in pressing",
+        "Lambda model: P(CAN>SUI | λ_can=13, λ_sui=10) = 69.9%"
+      ],
+      "caveat": "If SUI leads and CAN chases, trailing team fouls more. But opening 60min favors Canada."
+    },
+    "Q2": {
+      "question": "Will Switzerland have 2 or more offsides?",
+      "estimate": 0.42,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.48,
+      "key_drivers": [
+        "Canada high defensive line (high-press = high line = offside trap opportunities)",
+        "SUI fast wingers (Ndoye, Vargas, Okafor/Manzambi) run in behind on transitions",
+        "Lambda 1.3-1.5 estimated: P(≥2) = 34-44%",
+        "No GD-specific SUI offside count available"
+      ]
+    },
+    "Q3": {
+      "question": "Will there be 2 or more total cards in the second half?",
+      "estimate": 0.60,
+      "direction": "YES",
+      "crowd_estimate": 0.55,
+      "key_drivers": [
+        "Abatti career 4.85 YC/game → expected 2H cards ~2.4 → P(≥2) = 64-70%",
+        "Physical, pressing match between two athletic teams",
+        "Both teams already qualified: players SLIGHTLY more cautious about suspension — modest shade down",
+        "Late-game desperation (SUI chasing a win if drawing) = late yellow cards"
+      ]
+    },
+    "Q4": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "estimate": 0.30,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.38,
+      "key_drivers": [
+        "Model: P(BTTS AND ≥3) = 31.54%",
+        "RULE8 FIRES: draw 31.02% → cagey, tactical match → fewer goals shade",
+        "Market-implied joint probability: ~27-31% (BTTS 58% × cond. on ≥3 = ~53% → joint ~0.307)",
+        "GD1 matches were 1-1 (SUI-QAT and CAN-BIH) — low-scoring competitive contests"
+      ]
+    },
+    "Q5": {
+      "question": "Will a penalty kick be awarded?",
+      "estimate": 0.33,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.38,
+      "key_drivers": [
+        "Abatti career ~0.32 pens/game",
+        "Historical overpricing pattern on penalty questions — shade below theoretical rate",
+        "Season 2025-26: 0 penalties in 2 matches (small sample but directional)"
+      ]
+    },
+    "Q6": {
+      "question": "Will Switzerland have more 2H shots on target than Canada?",
+      "estimate": 0.48,
+      "direction": "COIN-FLIP",
+      "crowd_estimate": 0.50,
+      "key_drivers": [
+        "Model: P(SUI more 2H SOT) = 44.97% — essentially coin-flip",
+        "RULE8 compresses toward 50%: 44.97% → ~48%",
+        "Switzerland technically superior; Canada GD1 only 4 SOT total",
+        "CAN 10 SOT in GD2 was vs Qatar 9 men — inflated"
+      ]
+    },
+    "Q7": {
+      "question": "Will Switzerland win the match?",
+      "estimate": 0.44,
+      "direction": "YES_LEAN",
+      "crowd_estimate": 0.42,
+      "key_drivers": [
+        "Model: 42.65%; Market: ~40%; Average: ~41%",
+        "Motivation asymmetry: SUI MUST WIN to top group; CAN happy with draw",
+        "+3pp for motivation: SUI will push harder, CAN may sit deeper in 2H with lead or draw",
+        "RULE8 does not suppress WIN props (only extreme attacking props)"
+      ]
+    },
+    "Q8": {
+      "question": "Will the second half have 2 or more total goals?",
+      "estimate": 0.30,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.38,
+      "key_drivers": [
+        "Model: P(2H ≥ 2 goals) = 30.62%",
+        "RULE8: tactical match = fewer 2H goals",
+        "SUI GD1: 0 SUI goals in 2H vs Qatar (held 1-0 until conceded in 90+)",
+        "CAN GD1: only 1 2H goal vs Bosnia (in 83')"
+      ]
+    },
+    "Q9": {
+      "question": "Will Granit Xhaka have at least 1 shot on target?",
+      "estimate": 0.25,
+      "direction": "STRONG NO (FLOOR)",
+      "crowd_estimate": 0.40,
+      "key_drivers": [
+        "0.09 SOT/90 career rate at Leverkusen (3 SOT in 33 games) — structural shooting limitation",
+        "Computed probability (open play + penalty path): ~20%",
+        "FLOOR_0.25 applied per standing rule",
+        "GD2 SOT was a converted penalty — unlikely without another penalty opportunity",
+        "FanDuel scorer +1600 confirms market knows he rarely scores/shoots",
+        "MAJOR EDGE: crowd likely ~0.40; our floor is 0.25 → ~15pp NO edge"
+      ]
+    },
+    "Q10": {
+      "question": "Will Jonathan David have at least 1 shot on target?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_estimate": 0.60,
+      "key_drivers": [
+        "Historical Lille SOT/90: 2.0-2.5 → P(≥1) = 86-92% in normal match",
+        "GD2: 5 SOT from 8 shots (hat trick) vs Qatar — discount for Switzerland quality defense",
+        "Discount to lambda=1.5 vs SUI (Akanji, Elvedi, Rodriguez) → P(≥1) = 77.7%",
+        "Mild RULE15 discount for CAN 26.32% underdog status: -7pp → 70%",
+        "FanDuel scorer +225 implies ~31% scoring probability → SOT much higher",
+        "Edge: crowd ~0.60; our estimate 0.70 → ~10pp YES edge"
+      ]
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q9", "estimate": 0.25, "direction": "STRONG_NO", "note": "Xhaka floor. Structural 0.09 SOT/90. Crowd ~0.40. Biggest edge of match."},
+    {"rank": 2, "q": "Q10", "estimate": 0.70, "direction": "YES", "note": "David world-class striker, crowd ~0.60."},
+    {"rank": 3, "q": "Q1", "estimate": 0.63, "direction": "YES", "note": "Canada high-press fouls. GD2 evidence: CAN 19 vs SUI 7."},
+    {"rank": 4, "q": "Q7", "estimate": 0.44, "direction": "YES_LEAN", "note": "SUI motivation asymmetry. Model+market blend ~41%, +3pp motivation."},
+    {"rank": 5, "q": "Q8", "estimate": 0.30, "direction": "NO_LEAN", "note": "Low 2H goals. RULE8 + model. Crowd may be ~0.38."},
+    {"rank": 6, "q": "Q4", "estimate": 0.30, "direction": "NO_LEAN", "note": "BTTS AND ≥3. RULE8 + model. Crowd ~0.38."},
+    {"rank": 7, "q": "Q3", "estimate": 0.60, "direction": "YES", "note": "Abatti high card rate. Physical match."},
+    {"rank": 8, "q": "Q2", "estimate": 0.42, "direction": "NO_LEAN", "note": "SUI 2+ offsides. Canada high line."},
+    {"rank": 9, "q": "Q5", "estimate": 0.33, "direction": "NO_LEAN", "note": "Penalty. Historical overpricing."},
+    {"rank": 10, "q": "Q6", "estimate": 0.48, "direction": "COIN_FLIP", "note": "SUI more 2H SOT. Essentially no edge."}
+  ],
+
+  "post_match": {
+    "actual_score": "Switzerland 2-1 Canada",
+    "match_played": true,
+    "questions": [
+      {"q": 1, "submitted": 0.63, "crowd": 0.53, "outcome": 0, "rbp": -9.59, "beat_crowd": false, "question": "Will Canada commit more fouls than Switzerland?"},
+      {"q": 2, "submitted": 0.42, "crowd": 0.50, "outcome": 0, "rbp": 9.88, "beat_crowd": true, "question": "Will Switzerland be caught offside 2 or more times?"},
+      {"q": 3, "submitted": 0.60, "crowd": 0.54, "outcome": 0, "rbp": -3.71, "beat_crowd": false, "question": "Will there be 2 or more total cards shown in the second half?"},
+      {"q": 4, "submitted": 0.30, "crowd": 0.41, "outcome": 1, "rbp": -11.74, "beat_crowd": false, "question": "Will both teams score AND the match have 3 or more total goals?"},
+      {"q": 5, "submitted": 0.33, "crowd": 0.29, "outcome": 0, "rbp": -0.61, "beat_crowd": false, "question": "Will a penalty kick be awarded in the match?"},
+      {"q": 6, "submitted": 0.48, "crowd": 0.51, "outcome": 0, "rbp": 5.27, "beat_crowd": true, "question": "Will Switzerland have more shots on target than Canada in the second half?"},
+      {"q": 7, "submitted": 0.44, "crowd": 0.45, "outcome": 1, "rbp": 1.16, "beat_crowd": true, "question": "Will Switzerland win the match?"},
+      {"q": 8, "submitted": 0.30, "crowd": 0.43, "outcome": 1, "rbp": -14.28, "beat_crowd": false, "question": "Will the second half have 2 or more total goals?"},
+      {"q": 9, "submitted": 0.25, "crowd": 0.40, "outcome": 0, "rbp": 13.40, "beat_crowd": true, "question": "Will Granit Xhaka have at least 1 shot on target?"},
+      {"q": 10, "submitted": 0.70, "crowd": 0.59, "outcome": 0, "rbp": -11.34, "beat_crowd": false, "question": "Will Jonathan David have at least 1 shot on target?"}
+    ],
+    "total_rbp": -21.56,
+    "beat_crowd_count": "4/10",
+    "key_learnings": [
+      "BTTS+3+ goals (Q4) = YES in a 2-1 match — our 0.30 was over-suppressed by RULE8. Both teams scored AND total was exactly 3. RULE8 pushed us too far from model's 0.315.",
+      "Q8 (2H 2+ goals) = YES — our 0.30 missed again. At least 2 second-half goals in a close 2-1 match.",
+      "Q1 (CAN more fouls) = NO — Switzerland fouled more despite being expected to be the less press-intensive team. In a 2-1 match, the dynamics of who chases and who presses shifted prediction.",
+      "Jonathan David SOT (Q10) = NO — our 0.70 overestimated. Swiss defense (Akanji, Elvedi) suppressed David effectively. His GD2 hat-trick vs 9-man Qatar did not transfer. Should have been closer to 0.55.",
+      "Xhaka SOT floor (Q9, 0.25) confirmed correct — structural DM prior held, outcome NO, +13.40 RBP our best result.",
+      "Q3 (2H 2+ cards) = NO — Abatti's high card rate didn't materialize in a 2-1 result. Cards often cluster in desperate situations; 2-1 may have been less frantic than expected."
+    ]
+  }
+}

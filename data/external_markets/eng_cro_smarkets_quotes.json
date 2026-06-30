@@ -1,0 +1,145 @@
+{
+  "119427046": {
+    "label": "Full-time result",
+    "quotes": {
+      "England": 58.65,
+      "Croatia": 16.4,
+      "Draw": 24.695
+    }
+  },
+  "119427076": {
+    "label": "BTTS and over/under 2.5",
+    "quotes": {
+      "Yes / Over": 36.67,
+      "Yes / Under": 11.62,
+      "No / Over": 10.86,
+      "No / Under": 40.695
+    }
+  },
+  "119427071": {
+    "label": "Penalty to be awarded",
+    "quotes": {
+      "Yes": 28.375,
+      "No": 72.315
+    }
+  },
+  "144613807": {
+    "label": "Player to be sent off",
+    "quotes": {
+      "Anthony Gordon": 1.0,
+      "Eberechi Eze": 0.62,
+      "403815313": null,
+      "Djed Spence": 1.0,
+      "Morgan Rogers": 1.0,
+      "Bukayo Saka": 0.71,
+      "Marc Guehi": 0.71,
+      "Jude Bellingham": 1.18,
+      "Elliot Anderson": 1.18,
+      "Noni Madueke": 0.62,
+      "403815321": null,
+      "Jarell Quansah": 1.0,
+      "403815323": null,
+      "James Trafford": 0.62,
+      "403815325": null,
+      "403815326": null,
+      "Kobbie Mainoo": 1.0,
+      "403815328": null,
+      "403815329": null,
+      "Nico O'Reilly": 1.0,
+      "403815331": null,
+      "Jordan Henderson": 1.0,
+      "Harry Kane": 0.62,
+      "Dan Burn": 1.18,
+      "403815335": null,
+      "John Stones": 0.67,
+      "403815337": null,
+      "Jordan Pickford": 0.62,
+      "403815339": null,
+      "Ivan Toney": 1.0,
+      "403815341": null,
+      "403815342": null,
+      "403815343": null,
+      "Ollie Watkins": 0.62,
+      "403815345": null,
+      "403815346": null,
+      "403815347": null,
+      "Marcus Rashford": 0.62,
+      "Ezri Konsa": 1.0,
+      "Dean Henderson": 0.62,
+      "403815351": null,
+      "403815352": null,
+      "403815353": null,
+      "Declan Rice": 1.0,
+      "403815355": null,
+      "Reece James": 1.18,
+      "403815357": null,
+      "Josip Stanisic": 1.43,
+      "Petar Musa": 2.08,
+      "Dominik Kotarski": 1.11,
+      "Ivor Pandur": 1.11,
+      "403815362": null,
+      "Kristijan Jakic": 2.08,
+      "Josko Gvardiol": 1.0,
+      "Josip Sutalo": 1.18,
+      "403815366": null,
+      "403815367": null,
+      "Petar Sucic": 1.43,
+      "Igor Matanovic": 1.43,
+      "403815370": null,
+      "403815371": null,
+      "Toni Fruk": 1.43,
+      "Luka Sucic": 1.18,
+      "Marco Pasalic": 2.08,
+      "Martin Baturina": 1.0,
+      "Luka Vuskovic": 1.43,
+      "Luka Modric": 1.18,
+      "403815378": null,
+      "Ivan Perisic": 1.43,
+      "Ante Budimir": 1.43,
+      "Andrej Kramaric": 0.83,
+      "Mateo Kova\u010di\u0107": 1.43,
+      "Mario Pa\u0161ali\u0107": 2.08,
+      "Duje \u0106aleta-Car": 2.08,
+      "403815385": null,
+      "Nikola Vla\u0161i\u0107": 0.71,
+      "Dominik Livakovi\u0107": 1.11,
+      "Martin Erlic": 1.43,
+      "Nikola Moro": 1.43,
+      "403815390": null,
+      "403815391": null,
+      "Marin Pongracic": 2.38,
+      "403818604": null,
+      "403818606": null,
+      "404855784": null
+    }
+  },
+  "119427167": {
+    "label": "England -0.5 corners / Croatia +0.5 corners",
+    "quotes": {
+      "England -0.5 corners": null,
+      "Croatia +0.5 corners": null
+    }
+  },
+  "119427064": {
+    "label": "Highest scoring half",
+    "quotes": {
+      "First Half": 29.765,
+      "Equal": 26.995,
+      "Second Half": 43.56
+    }
+  },
+  "119427101": {
+    "label": "2H England O/U 0.5 goals",
+    "quotes": {
+      "Under 0.5 goals": 37.36,
+      "Over 0.5 goals": 62.8
+    }
+  },
+  "119427111": {
+    "label": "2H Croatia O/U 0.5 goals",
+    "quotes": {
+      "Under 0.5 goals": 62.8,
+      "Over 0.5 goals": 37.325
+    }
+  }
+}

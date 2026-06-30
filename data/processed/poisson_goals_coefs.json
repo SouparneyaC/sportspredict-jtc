@@ -1,0 +1,8 @@
+{
+  "intercept": 0.10408044153858706,
+  "home_advantage": 0.23022302599398,
+  "elo_diff_coef": 0.0018098969023864922,
+  "xi_decay": 0.0008,
+  "n_matches": 49400,
+  "n_observations": 98800
+}

@@ -1,0 +1,81 @@
+date,match_name,home_team,away_team,result,market_id,question,initial_value,final_value,outcome,status,closing_date,settled_date
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,f3962b11-d359-4295-8efb-b9a55c574d3b,Will Cédric Bakambu score or assist a goal (excluding own goals)?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:18:42.109Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,41bdce13-bfca-4c36-a0bb-12ad94b54db8,Will DR Congo win the match?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:33:58.704Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,cf17a41d-37e3-4979-82aa-81934ce7b121,Will Eldor Shomurodov have at least 1 shot on target in the second half?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:33:45.917Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,2a93e720-962b-43d9-a6de-c595fdf29a0d,Will Uzbekistan be caught offside 2 or more times?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:30.764Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,12f8261f-89b4-4c59-ab7b-4cea700478a1,Will Uzbekistan commit more fouls than DR Congo?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:13.777Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,b7328c17-3a9c-49fe-a9a0-1eceed96a03a,Will Uzbekistan have 5 or more corner kicks?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:34:22.456Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,bb825e94-a0a4-4ea9-a7f3-9835ecf3bca8,Will Uzbekistan have more shots on target than DR Congo in the second half?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:33:33.765Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,3f4a50eb-7a9a-4eba-b913-f3bb14d64ee7,Will a penalty kick be awarded OR a red card be shown?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:07:11.765Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,57a0208a-b784-4663-aca6-047aadc0fc4b,Will both teams have at least 1 shot on target in the second half?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:52.619Z
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,2392f003-e56a-4289-a3b1-b07e7de291b2,Will both teams score AND the match have 3 or more total goals?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:15:46.228Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,c48e143a-ce01-4977-9b79-98077a2e04bc,"In the second half, will Colombia have more shots on target than Portugal?",50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:30:40.169Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,9f7c76ed-e5f2-459b-af43-29e03299257b,Will Colombia be caught offside 2 or more times?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T00:20:28.514Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,eb47fe91-b920-4acf-9c5a-1009ed7cb33a,Will Colombia have 4 or more shots on target?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T00:58:04.542Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,9abcb31a-2213-49d2-a515-43b9cc9a71ab,Will Colombia win the match?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:31:03.190Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,c52cb04a-6fdc-41ce-be3a-e52331e876e4,Will Gonçalo Ramos have at least 1 shot on target?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:31:44.923Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,7e371206-e93a-437d-9a4a-a5451e44012e,Will Luis Díaz score a goal (excluding own goals)?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:31:23.755Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,c703d31f-77ab-4190-8666-7b334aa1bec8,Will Portugal have 4 or more shots on target?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:31:12.381Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,de87022c-d94b-41cc-84c9-096f933d5929,Will a penalty kick be awarded OR a red card be shown?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:30:44.777Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,3b9f27bf-b9ca-4604-9112-ef8e99dfbe36,Will both teams score AND the match have 3 or more total goals?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:30:50.703Z
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,c5fada39-248b-4118-ae3e-4e6af345fa96,Will there be 5 or more total corner kicks in the second half?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:25:01.215Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,53d1cfb1-c433-4bf5-bb0e-2d9b82cfec0e,Will Cape Verde be caught offside 2 or more times?,50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:00:56.766Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,f16fed56-b5a2-4d37-9553-ac4196eac2c0,Will Cape Verde commit more fouls than Saudi Arabia?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:00:09.997Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,ac0602d9-157b-4f67-a473-7838dbef8c9d,Will Cape Verde score in the second half?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:31.152Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,1e222611-391d-4b26-af5a-0ef123f62151,Will Cape Verde win the match?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:20.447Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,112dde24-c7b1-4f24-98d3-24860e7b9088,Will Ryan Mendes score or assist a goal (excluding own goals)?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:39:42.677Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,37561adf-2575-4b0e-946a-3554bf110416,Will Salem Al-Dawsari score a goal (excluding own goals)?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:40:04.889Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,bab6a5eb-1f7f-4185-b833-86c0335b15a3,Will Saudi Arabia have more shots on target than Cape Verde in the second half?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:09.679Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,ddb0aebe-cbe0-4040-963a-6096f6b5571f,Will Saudi Arabia receive more cards than Cape Verde?,50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:00:29.390Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,ae22aa51-8a21-4455-9086-ca124c9c2656,Will a penalty kick be awarded in the match?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:00:39.447Z
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,085e6d40-55c7-4070-b356-fcdba73edb6b,Will both teams have at least 1 shot on target in the second half?,50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:32:51.024Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,3555d723-0ef3-4c1a-86c4-b9bccc02d650,"At halftime, will Croatia be winning?",50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T21:51:04.745Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,2e61a108-671a-4024-b421-aa67e7b8105d,Will Antoine Semenyo have at least 1 shot on target?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:01:20.359Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,43ae8180-e10c-418d-89ab-e5a42e58d702,Will Croatia have 6 or more shots on target?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:01:04.555Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,c499a3e6-92f2-4b44-bac2-751ec61acf56,Will Croatia score in the second half?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:49:56.615Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,0e3f5b26-a800-414a-8c74-d3056ea293c0,Will Croatia win the match?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:00:45.894Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,33e7f75a-cc38-4762-86f1-32fc2fb975cc,Will Ghana be caught offside 2 or more times?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:49.545Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,bb1836ef-4d8b-4360-8482-e474be117aec,Will Luka Sučić have at least 1 shot on target in the second half?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:00:19.499Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,9c41d950-c256-43af-80db-076ed84dc567,Will a penalty kick be awarded OR a red card be shown in the match?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:57.954Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,ccbcf840-6275-4403-8791-02c64bdd1893,Will there be 4 or more total shots on target in the second half?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:00:35.896Z
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,6a29d849-2b3f-4a64-b2b6-3f034b2a5b2b,Will there be 9 or more total corner kicks?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T23:00:59.251Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,6ae1692b-b794-4d64-8862-f7a42865b5d8,Will Egypt have 3 or more shots on target?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:13:51.508Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,9d76af0a-07d6-4e3e-83e7-a7fcfcc5f6c0,Will Egypt win the match?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:04:31.236Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,528c633c-2c27-484e-aae2-ffd8bfc11274,Will Iran be caught offside 2 or more times?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:52:36.325Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,ac02e3c7-ad61-4f98-85bf-c0b8aa80a3be,Will Iran finish with more corner kicks than Egypt?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:04:22.217Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,b78c46e8-557c-4f5e-98b9-cb0774335119,Will Iran have more shots on target than Egypt in the second half?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:04:11.942Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,b3442350-1e03-42e0-8310-d83af5f99fdb,Will Mahmoud Trezeguet have at least 1 shot on target?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:32:16.954Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,9b10408f-a5b9-4586-a4d1-ef3269ad60fc,Will Mehdi Taremi have at least 1 shot on target?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:15:42.696Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,b749e570-1132-4c04-ad87-eb084a4f8b2f,Will the match have 2 or fewer total goals?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:04:43.022Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,537c8858-c51b-4f52-976a-d4822594f93b,Will the second half have 2 or more total goals?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:04:53.817Z
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,1f08b2aa-1cf4-4f3e-8ac9-a38d13476dd7,Will there be 4 or more total cards shown?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:49:00.922Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,0a58473c-5d91-405d-bc16-cb2de57a9a0c,"At halftime, will both teams have at least 1 shot on target?",50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:53:20.377Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,84aaece6-6111-4a5a-a77a-a97f9ff13afe,Will Belgium have 4 or more shots on target?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:45:06.834Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,6c1ae3e9-01e0-436a-b4ee-55bd54171708,Will Belgium receive at least 1 card in the second half?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:58:26.694Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,ee0f2ad4-846e-43ca-8166-01593619dd44,Will Belgium score in the second half?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:13:05.595Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,9282f983-7e74-48c2-ae92-64d972164a32,Will New Zealand commit more fouls than Belgium?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:58:10.862Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,9eabe9c0-6ec7-4702-8540-04ee755c323c,Will New Zealand have 2 or more shots on target in the second half?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:47:47.758Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,bb023eb2-d88e-4317-a475-2526f87276c3,Will New Zealand receive more cards than Belgium?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:58:54.942Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,ae0232d1-b5ec-440f-a0aa-fd816ce7550e,Will New Zealand score at least 1 goal?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:47:30.398Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,66ed62a5-c4f6-4938-9287-e17c2743ca64,Will Youri Tielemans have at least 1 shot on target?,50,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:48:15.550Z
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,37014a9f-5ab2-43f5-baa4-6bd2dbc1bd97,Will both teams score AND the match have 3 or more total goals?,50,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:47:52.317Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,d793a499-ddd9-4eab-8c07-4be160366653,"At halftime, will the match be tied?",50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T21:53:31.516Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,6c63350c-f662-44bb-b914-406c60ad3d0c,Will Harry Kane have at least 1 shot on target?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:22:53.439Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,aad59e42-0d36-4261-aa3f-8e95a96fcd47,Will José Fajardo have at least 1 shot on target?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:58:57.499Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,97a01954-750b-4bfb-8269-ad7e48dec873,Will Panama commit more fouls than England?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:55:51.467Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,00f8764b-b25b-4da2-8b8b-2a0e53eede10,Will Panama score at least 1 goal?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:09.139Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,b3b81826-7b60-468a-b71e-43838587f0d7,Will Panama score the first goal of the game and England score in the second half?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:23:32.191Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,90b29cc0-7b7a-4aed-8703-b91967fe6225,Will a penalty kick be awarded OR a red card be shown?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:55:58.287Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,b394df3c-cd76-4d91-a9e6-d654162adab2,Will the match have 3 or more total goals?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:29.001Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,6913dd4d-f020-4955-b562-c9c5458a32f0,Will there be 4 or more total shots on target in the second half?,50,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:51:28.692Z
+2026-06-27,PAN vs ENG,Panama,England,0-2,91d86b83-bac0-49dd-ba31-bbde0983c2d2,Will there be 5 or more total corner kicks in the second half?,50,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:57:03.996Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,2b098e01-ee28-4740-a472-0e47702583de,"At halftime, will the match be tied?",50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T00:55:25.433Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,f3ecfd87-4562-4e01-afd7-5e89c3db468b,"In the second half, will Uruguay have more shots on target than Spain?",50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:17.687Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,6dd84759-11e1-408d-8d60-5eb46f13197e,Will Dani Olmo have at least 1 shot on target in the second half?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:32.487Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,9d58ebc6-35db-495e-87a8-82d61798e640,Will Darwin Núñez have at least 1 shot on target?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:03:17.953Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,e3b6f5b3-e5f0-4f9c-8453-121aa08d0e9e,Will Uruguay commit more fouls than Spain?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:04.326Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,d65224ff-c16d-4f3a-ab5c-e389871cecf1,Will Uruguay score at least 1 goal?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:36.700Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,0399ea52-41c2-48b7-b304-5d915cffa527,Will the match have 2 or fewer total goals?,50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:45.352Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,cb8219c4-07cd-4d69-8c99-297c9a8c8944,Will the second half have 2 or more total goals?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:02:56.520Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,8392278e-6be8-46dc-89c7-456cb123846c,Will there be 4 or more total cards shown?,50,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:26.665Z
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,ecdf6acb-eef7-45de-88ad-cab0ecf41882,Will there be 9 or more total corner kicks in the match?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:03:10.305Z

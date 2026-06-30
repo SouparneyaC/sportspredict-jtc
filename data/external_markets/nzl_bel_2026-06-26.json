@@ -1,0 +1,157 @@
+{
+  "match": "New Zealand vs Belgium",
+  "date": "2026-06-26",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"EGY_vs_BEL_GD1": 760426, "NZL_vs_IRN_GD1": 760427, "IRN_vs_BEL_GD2": 760451, "EGY_vs_NZL_GD2": 760452},
+  "smarkets_event_id": 45086925,
+  "group_context": {
+    "Belgium": {"pts": 2, "record": "0-2-0 (D1-1 EGY, D0-0 IRN)", "status": "Needs a win to control 2nd place; heavy favorite today against the group's bottom side"},
+    "New Zealand": {"pts": 1, "record": "0-1-1 (D2-2 IRN, L1-3 EGY)", "status": "Bottom of the group, needs a win and help elsewhere to have any realistic path"}
+  },
+  "wc2026_espn_stats": {
+    "BEL": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760426, "opponent": "Egypt", "result": "D 1-1", "fouls": 15, "SOT": 3, "offsides": 0, "YC": 2, "RC": 0, "corners": 2, "possession": 53.6},
+        {"event_id": 760451, "opponent": "Iran", "result": "D 0-0", "fouls": 7, "SOT": 7, "offsides": 3, "YC": 1, "RC": 1, "corners": 4, "possession": 70.1}
+      ],
+      "averages": {"fouls": 11.0, "SOT": 5.0, "offsides": 1.5, "cards": 2.0, "corners": 3.0}
+    },
+    "NZL": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760427, "opponent": "Iran", "result": "D 2-2", "fouls": 8, "SOT": 8, "offsides": 0, "YC": 0, "RC": 0, "corners": 1, "possession": 51.5},
+        {"event_id": 760452, "opponent": "Egypt", "result": "L 1-3", "fouls": 14, "SOT": 5, "offsides": 3, "YC": 2, "RC": 0, "corners": 4, "possession": 44.4}
+      ],
+      "averages": {"fouls": 11.0, "SOT": 6.5, "offsides": 1.5, "cards": 1.0, "corners": 2.5},
+      "NOTE": "NZL's SOT average (6.5) is inflated by one strong performance (8 SOT vs a defensively shakier Iran); against Belgium's much tighter defense (only 1 goal conceded across 2 matches) this is unlikely to repeat fully."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"New_Zealand": 0.0656, "Belgium": 0.8265, "Draw": 0.1124, "liquid": true},
+    "HT_result": {"New_Zealand": 0.0854, "Belgium": 0.6716, "Draw": 0.2429, "liquid": true},
+    "BTTS_and_OU2_5": {"Yes_Over": 0.5237, "Yes_Under": 0.045, "No_Over": 0.2476, "No_Under": 0.1821, "liquid": true},
+    "NZL_cards_handicap_minus0_5": {"NZL_more_cards": 0.5199, "BEL_covers": 0.4791, "liquid": true},
+    "NZL_OU0_5_goals": {"Under": 0.4281, "Over": 0.5685, "liquid": true},
+    "BEL_2H_OU0_5_goals": {"Under": 0.1735, "Over": 0.8348, "liquid": true},
+    "BEL_SOT_OU6_5_fullmatch": {"Under": 0.4365, "Over": 0.5630, "liquid": true, "implied_lambda": 7.09},
+    "player_SOT_fullmatch": {"Youri_Tielemans": {"offer": 0.5128, "adjusted": 0.485}}
+  },
+  "context_flags": [
+    "MASSIVE_MISMATCH: Belgium 82.65% favorite — the most lopsided FTR of any GD3 fixture analyzed so far. Treat this as blowout-regime for all comparison props.",
+    "BEL_DEFENSE_ELITE: Belgium has conceded only 1 goal across 2 WC2026 matches (1 to Egypt, 0 to Iran) — suppresses NZL's scoring/SOT props below their raw average.",
+    "NZL_DESPERATION_MOTIVATION: NZL is bottom of the group and needs a win badly — unlike a truly dead-rubber team, they have real incentive to commit numbers forward, which raises (not lowers) their own foul/card/offside risk relative to a pure park-the-bus read.",
+    "BEL_SOT_MARKET_ABOVE_HISTORY: the market-implied SOT rate for Belgium today (λ≈7.1) is well above their 5.0 ESPN average from tougher EGY/IRN matchups — makes sense given NZL is comfortably the weakest defense in the group."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "At halftime, will both teams have at least 1 shot on target?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Half-split Poisson off full-match ESPN averages (NZL λ_1H≈3.25→P(≥1)=0.96; BEL λ_1H≈2.5→P(≥1)=0.92) gives a joint ≈0.88. Both teams have shown they generate shots early — shaded down slightly for uncertainty in the even-split assumption.",
+      "final_estimate": 0.82,
+      "direction": "YES",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will New Zealand commit more fouls than Belgium?",
+      "pick_tier": "LOW-MEDIUM CONFIDENCE",
+      "reasoning": "Both teams average exactly 11.0 fouls/game — a true tie on paper, and Poisson-with-ties gives 0.46 raw. But NZL will almost certainly see far less of the ball than ever today against a stronger, more dominant Belgium, pushing them toward the 'defending team fouls more' pattern seen across the tournament. Nets out close to a coin-flip.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "low-medium"
+    },
+    {
+      "q": 3,
+      "text": "Will Belgium receive at least 1 card in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Belgium's card average is 2.0/game (includes a red card vs Iran). Half-split Poisson (λ_2H≈1.0) gives P(≥1)=0.63.",
+      "final_estimate": 0.60,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will both teams score AND the match have 3 or more total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets compound market: Yes/Over = 52.37%. Trust it.",
+      "final_estimate": 0.52,
+      "direction": "YES lean (narrow)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will New Zealand have 2 or more shots on target in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "ESPN-raw half-split (λ_2H≈3.25) gives P(≥2)=0.84, but this leans on NZL's outlier 8-SOT game against a weaker Iranian defense. Belgium's defense has been far tighter (1 goal conceded all tournament) — shaded down meaningfully from the raw number.",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 6,
+      "text": "Will New Zealand receive more cards than Belgium?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets handicap market: NZL -0.5 cards covers (i.e. NZL strictly more cards) at 51.99%. Trust it.",
+      "final_estimate": 0.52,
+      "direction": "YES lean (narrow)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will New Zealand score at least 1 goal?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: NZL over 0.5 goals = 56.85%. NZL has scored in both of their matches so far (2 vs Iran, 1 vs Egypt) — consistent with the market.",
+      "final_estimate": 0.57,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Belgium score in the second half?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Belgium 2H over 0.5 goals = 83.48%. Trust it — consistent with Belgium's status as a heavy favorite against the weakest defense in the group.",
+      "final_estimate": 0.83,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will Belgium have 4 or more shots on target?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "ESPN-history Poisson (λ=5.0) gives P(≥4)=0.74, but the market-implied rate for THIS specific matchup (λ≈7.1, from the Over6.5 SOT line at 56.3%) is considerably higher, reflecting NZL's weak defense. Weight toward the matchup-specific market read.",
+      "final_estimate": 0.85,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will Youri Tielemans have at least 1 shot on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Illiquid full-match offer (0.5128, adjusted ×0.945=0.485). Tielemans is a deep-lying playmaker, not Belgium's primary shot-taker, even in a dominant performance. Trust the market near-raw.",
+      "final_estimate": 0.48,
+      "direction": "TOSS-UP (slight NO lean)",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_HT_both_SOT": 0.82,
+    "Q2_NZL_more_fouls": 0.50,
+    "Q3_BEL_card_2H": 0.60,
+    "Q4_BTTS_3plus": 0.52,
+    "Q5_NZL_2plus_2H_SOT": 0.65,
+    "Q6_NZL_more_cards": 0.52,
+    "Q7_NZL_scores": 0.57,
+    "Q8_BEL_scores_2H": 0.83,
+    "Q9_BEL_4plus_SOT": 0.85,
+    "Q10_Tielemans_SOT": 0.48
+  },
+  "strongest_picks": [
+    "Q9: Belgium 4+ SOT = 0.85 (HIGH CONFIDENCE — matchup-specific market well above historical average vs tougher opponents)",
+    "Q8: Belgium scores in 2H = 0.83 (HIGH CONFIDENCE — direct market)",
+    "Q1: Both teams 1+ SOT at HT = 0.82 (HIGH CONFIDENCE — both teams have shown early shot generation all tournament)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-26"
+}

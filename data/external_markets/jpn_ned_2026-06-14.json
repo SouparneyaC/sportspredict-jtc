@@ -1,0 +1,136 @@
+{
+  "match": "JPN-NED",
+  "sportspredict_event_id": null,
+  "sportspredict_match_id": null,
+  "sportspredict_market_id": null,
+  "smarkets_event_id": "44754868",
+  "closing_time": "2026-06-14T20:00:00.000Z",
+  "context_note": "Netherlands vs Japan - a genuinely competitive group-stage match, unlike the lopsided GER-CUR. Smarkets has Netherlands ~46.6% / Draw ~27.9% / Japan ~25.6%, a real three-way race.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "endpoint": "api.smarkets.com/v3/markets/{id}/quotes?contract_ids=...",
+      "method": "mid-price = avg(best_bid, best_offer) per contract (1/100ths of a percent), vig-removed via normalization across all contracts in a market",
+      "markets_used": {
+        "full_time_result": {"Netherlands": 0.4656, "Draw": 0.2788, "Japan": 0.2556},
+        "most_cards": {"Netherlands": 0.2941, "Draw": 0.2642, "Japan": 0.4419},
+        "both_teams_score_and_ou_2.5": {"Yes/Over": 0.3874, "Yes/Under": 0.1299, "No/Over": 0.0734, "No/Under": 0.4096},
+        "second_half_japan_ou_0.5_goals": {"Under": 0.5504, "Over": 0.4496},
+        "total_shots_on_target_ou_7.5": {"Under": 0.4079, "Over": 0.5921},
+        "cody_gakpo_1plus_sot": {"price": 0.6086, "note": "two-sided, liquid"},
+        "takefusa_kubo_score_or_assist": {"price": 0.3226, "note": "offer-only, no bid (illiquid)"},
+        "sanity_check_full_match_sot_lines": {
+          "note": "used as market-anchor blend for Q1 (2H SOT, no direct 2H market exists)",
+          "netherlands_ou_3.5": 0.6881,
+          "netherlands_ou_4.5": 0.4845,
+          "japan_ou_2.5": 0.6827,
+          "japan_ou_3.5": 0.4845,
+          "japan_ou_5.5": 0.1740,
+          "implied_full_match_sot_mean": {"netherlands": 4.7, "japan": 3.65}
+        }
+      },
+      "no_market_exists_for": ["team fouls (either direction)", "team offsides (either direction)", "2nd-half SOT by team or combined"]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "endpoint": "site.api.espn.com/apis/site/v2/sports/soccer/{league}/summary?event={id}",
+      "file": "jpn_ned_wc2026_raw.jsonl",
+      "japan_n3": {
+        "matches": ["Iceland(H) 2026-05-31", "England(A) 2026-03-31", "Scotland(A) 2026-03-28"],
+        "note": "All 5 fifa.worldq.afc events (2024-2025) returned empty boxscore.statistics, same gap as Curacao in GER-CUR - excluded. Only the 3 most recent 2026 friendlies usable.",
+        "avg_fouls": 13.333,
+        "avg_offsides": 1.0,
+        "avg_sot_full": 5.333
+      },
+      "netherlands_n8": {
+        "matches": ["Uzbekistan(H) 2026-06-08", "Algeria(H) 2026-06-03", "Ecuador(H) 2026-03-31", "Norway(H) 2026-03-27", "Lithuania(H) 2025-11-17", "Poland(A) 2025-11-14", "Finland(H) 2025-10-12", "Malta(A) 2025-10-09"],
+        "avg_fouls": 9.875,
+        "avg_offsides": 1.5,
+        "avg_sot_full": 5.125
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_both_teams_1plus_sot_2h": {
+      "category": "tier2_realdata",
+      "method": "No direct 2H-SOT market exists. Built Skellam-style independent-probability product: P(team scores 1+ SOT in 2H) = 1-e^-lambda_2H, lambda_2H = full-match-SOT-mean/2. Full-match means BLENDED between ESPN recent-form and Smarkets full-match O/U SOT lines (the QAT-SUI Q3 winning pattern, +19.86): Japan ESPN n=3 avg=5.333 vs market-implied ~3.65 (large gap - Japan's 2026 friendly SOT numbers, esp. vs Iceland/Scotland, likely overstate output vs a much stronger Netherlands defense) blended 70/30 toward market = 4.155 -> 2H lambda=2.08 -> P=0.875. Netherlands ESPN n=8 avg=5.125 vs market ~4.7, close already, blended 50/50 = 4.91 -> 2H lambda=2.46 -> P=0.914. Product = 0.875*0.914.",
+      "raw_espn_only": 0.859,
+      "recommended_estimate": 0.80
+    },
+    "q2_japan_more_fouls_than_netherlands": {
+      "category": "tier2_realdata",
+      "method": "Skellam normal approx on per-match foul rates: Japan n=3 avg=13.333, Netherlands n=8 avg=9.875, mean_diff=3.458, var=sum of means (Poisson)=23.21, z=0.718, raw P=0.764. SHRUNK toward 0.5 to 0.70 to account for Japan's thin n=3 sample (regression-to-mean shrinkage, not a narrative shade). Direction is reinforced, not contradicted, by the underdog-fouls-more pattern (QAT-SUI Q6, GER-CUR Q1): Japan as the weaker side defending against Netherlands should commit MORE fouls than its n=3 average suggests, not fewer - so shrinking toward 0.5 (rather than further toward 1.0) is the conservative choice given no market exists to anchor against.",
+      "raw_skellam": 0.764,
+      "recommended_estimate": 0.70
+    },
+    "q3_netherlands_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson, Netherlands offsides n=8, lambda=1.5, P(X>=2)=1-e^-lambda(1+lambda)=0.4422. Identical structure and nearly identical value to GER-CUR Q5 (Germany 2+ offsides, also lambda=1.5, 0.4422) and BRA-MAR Q1 (Brazil 2+ offsides, 0.43) - both unshaded first-pass numbers, both wins (+20.36 for BRA-MAR Q1). No market exists for offsides. Submitted unshaded per the established 'first-pass wins' pattern.",
+      "raw_poisson": 0.4422,
+      "recommended_estimate": 0.44
+    },
+    "q4_btts_and_3plus_total_goals": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Both teams to score and over/under 2.5' market, 'Yes/Over' contract = BTTS AND >2.5 goals = BTTS AND >=3 total goals, exact match for this question. Vig-adjusted 38.74%. Undeviated per RULE2.",
+      "recommended_estimate": 0.39
+    },
+    "q5_japan_more_cards_than_netherlands": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Most cards' market, Japan outcome = Japan has strictly more cards than Netherlands (draw = equal), vig-adjusted 44.19%. Undeviated - our most consistent category (+5.00 avg, 85% correct side over 13 questions).",
+      "recommended_estimate": 0.44
+    },
+    "q6_netherlands_win": {
+      "category": "tier1_market (match-winner)",
+      "method": "RULE1 (avg(crowd,market)) cannot be computed pre-match (crowd unobservable). Unlike GER-CUR's lopsided 94.6% favorite, this is a genuinely competitive three-way (NED 46.6% / Draw 27.9% / JPN 25.6%) - well within normal range, no RULE6 capping needed. Smarkets full-time-result market, vig-adjusted, treated as tier1_market undeviated (our most proven category) rather than a 'gut' number.",
+      "recommended_estimate": 0.47
+    },
+    "q7_japan_scores_in_2h": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Second half Japan over/under 0.5 goals' market, Over=Japan scores 1+ in 2H, vig-adjusted 44.96%. Undeviated.",
+      "recommended_estimate": 0.45
+    },
+    "q8_8plus_total_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Over/under 7.5 shots on target' (combined total) market, Over=8+, vig-adjusted 59.21%. Undeviated.",
+      "recommended_estimate": 0.59
+    },
+    "q9_gakpo_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets player-SOT market, Cody Gakpo 'over 0.5 shots on target' = 1+ SOT, two-sided liquid quote, mid-price 60.86%. Undeviated.",
+      "recommended_estimate": 0.61
+    },
+    "q10_kubo_score_or_assist": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to score or assist' market, Takefusa Kubo, offer-only (32.26%, no bid - illiquid), same situation as GER-CUR Q10 (Bacuna). Submitted slightly below the one-sided offer using the same ratio (0.945) applied there: 0.3226*0.945=0.305.",
+      "recommended_estimate": 0.30
+    }
+  },
+  "post_match_results": {
+    "final_score": "Netherlands 2 - 2 Japan",
+    "total_rbp": 0.47,
+    "beat_crowd_count": "6/10",
+    "actual_boxscore": {
+      "netherlands": {"fouls": 7, "yellow_cards": 3, "red_cards": 0, "offsides": 1, "possession_pct": 59.8, "sot": 6},
+      "japan": {"fouls": 7, "yellow_cards": 0, "red_cards": 0, "offsides": 0, "possession_pct": 40.2, "sot": 3}
+    },
+    "goal_and_foul_timeline": {
+      "goals": ["51' NED 1-0 (van Dijk header)", "57' NED 1-1 (Nakamura, JPN equalizer)", "64' NED 2-1 (Summerville)", "88' NED 2-2 (Kamada header, JPN late equalizer)"],
+      "fouls_in_order": ["6' NED (van de Ven)", "8' NED (de Jong)", "21' JPN (Nakamura)", "44' NED (de Jong)", "45+1' JPN (Ito)", "50' JPN (Doan)", "61' NED (Summerville, YELLOW - 4min after conceding 57' equalizer)", "62' JPN (Kubo)", "65' JPN (Ueda)", "83' NED (Depay, YELLOW)", "84' JPN (Tomiyasu)", "86' NED (Koopmeiners)", "90+1' NED (van de Ven, YELLOW - 2-3min after conceding 88' equalizer)"],
+      "running_foul_tally_at_88min_japan_goal": "JPN 6 - NED 5 (Japan AHEAD on fouls when they scored the late equalizer)",
+      "final_tally": "NED 7 - JPN 7 (tied)"
+    },
+    "questions": [
+      {"q": 1, "leaderboard_question": "Will Japan commit more fouls than Netherlands?", "maps_to": "q2_japan_more_fouls_than_netherlands", "us": 0.72, "crowd": 0.49, "outcome": 0, "rbp": -25.37, "category": "tier2_realdata", "note": "OUR WORST RESULT THIS MATCH. Japan was AHEAD on fouls 6-5 at the moment of their 88' equalizer - this question was on track to resolve YES. Netherlands' very last foul of the match (90+1', van de Ven, carded for 'a bad foul' - an emotional/reactive tackle thrown in the immediate aftermath of conceding the dramatic late equalizer) tied the count 7-7, flipping the outcome to NO. A single late reactive foul, itself CAUSED by the same event (Japan's 88' goal) that pushed Q7 to YES, flipped this question against us."},
+      {"q": 2, "leaderboard_question": "Will Netherlands be caught offside 2 or more times?", "maps_to": "q3_netherlands_2plus_offsides", "us": 0.44, "crowd": 0.54, "outcome": 0, "rbp": 12.02, "category": "tier2_realdata"},
+      {"q": 3, "leaderboard_question": "Will both teams have at least 1 shot on target in the second half?", "maps_to": "q1_both_teams_1plus_sot_2h", "us": 0.83, "crowd": 0.76, "outcome": 1, "rbp": 5.23, "category": "tier2_realdata"},
+      {"q": 4, "leaderboard_question": "Will both teams score AND the match have 3 or more total goals?", "maps_to": "q4_btts_and_3plus_total_goals", "us": 0.39, "crowd": 0.44, "outcome": 1, "rbp": -2.69, "category": "tier1_market"},
+      {"q": 5, "leaderboard_question": "Will Japan receive more cards than Netherlands?", "maps_to": "q5_japan_more_cards_than_netherlands", "us": 0.44, "crowd": 0.43, "outcome": 0, "rbp": 1.06, "category": "tier1_market"},
+      {"q": 6, "leaderboard_question": "Will Netherlands win the match?", "maps_to": "q6_netherlands_win", "us": 0.47, "crowd": 0.53, "outcome": 0, "rbp": 9.32, "category": "match_winner_deferred_market"},
+      {"q": 7, "leaderboard_question": "Will Japan score in the second half?", "maps_to": "q7_japan_scores_in_2h", "us": 0.45, "crowd": 0.50, "outcome": 1, "rbp": -2.95, "category": "tier1_market", "note": "Japan scored TWICE in the 2H (57', 88'). The 88' goal is the SAME event that flipped Q1 against us - directly correlated loss."},
+      {"q": 8, "leaderboard_question": "Will there be 8 or more total shots on target?", "maps_to": "q8_8plus_total_sot", "us": 0.59, "crowd": 0.56, "outcome": 1, "rbp": 6.02, "category": "tier1_market"},
+      {"q": 9, "leaderboard_question": "Will Cody Gakpo have at least 1 shot on target?", "maps_to": "q9_gakpo_1plus_sot", "us": 0.61, "crowd": 0.61, "outcome": 1, "rbp": 2.5, "category": "tier1_market"},
+      {"q": 10, "leaderboard_question": "Will Takefusa Kubo score or assist a goal (excluding own goals)?", "maps_to": "q10_kubo_score_or_assist", "us": 0.30, "crowd": 0.36, "outcome": 1, "rbp": -4.65, "category": "tier1_market"}
+    ],
+    "summary": "Near-perfect wash (+0.47) masking a single correlated failure mode: Q1 (Japan fouls more, -25.37, our worst result) and Q7 (Japan scores in 2H, -2.95) were BOTH driven by the SAME event - Japan's dramatic 88th-minute equalizer (2-2 final). Japan was actually AHEAD on fouls 6-5 heading into that minute (Q1 was on track for a big WIN); Netherlands' immediate emotional response - a reckless tackle by van de Ven 2-3 minutes later, carded 'for a bad foul' - tied the foul count 7-7 and flipped Q1 to a loss. Both teams ended up UNDER their historical foul averages (JPN avg 13.33 -> actual 7; NED avg 9.875 -> actual 7), converging to an exact tie - in a genuinely competitive match (NED 46.6%/Draw 27.9%/JPN 25.6% pre-match), counting-stat 'more than' props are inherently tie-prone, which our historical-average Skellam model didn't account for. New candidate RULE8: for 'Team A more [count stat] than Team B' questions, high pre-match draw probability should shrink the estimate further toward (or below) 50% than team-level historical averages alone suggest, because evenly-matched teams' counting stats are more likely to converge/tie (tie=NO)."
+  }
+}

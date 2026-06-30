@@ -1,0 +1,796 @@
+{
+  "FTR": {
+    "Canada": {
+      "offer": 0.7692,
+      "bid": 0.7634,
+      "mid": 0.7663,
+      "liquid": true
+    },
+    "Qatar": {
+      "offer": 0.0769,
+      "bid": 0.0741,
+      "mid": 0.0755,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.1667,
+      "bid": 0.1562,
+      "mid": 0.16144999999999998,
+      "liquid": true
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "offer": 0.431,
+      "bid": 0.4167,
+      "mid": 0.42385,
+      "liquid": true
+    },
+    "Over 2.5 goals": {
+      "offer": 0.5848,
+      "bid": 0.5714,
+      "mid": 0.5781000000000001,
+      "liquid": true
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "offer": 0.2,
+      "bid": 0.1852,
+      "mid": 0.1926,
+      "liquid": true
+    },
+    "Over 1.5 goals": {
+      "offer": 0.8264,
+      "bid": 0.7937,
+      "mid": 0.8100499999999999,
+      "liquid": true
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "offer": 0.3125,
+      "bid": 0.2703,
+      "mid": 0.2914,
+      "liquid": true
+    },
+    "No": {
+      "offer": 0.7299,
+      "bid": 0.6944,
+      "mid": 0.7121500000000001,
+      "liquid": true
+    }
+  },
+  "2H_result": {
+    "Canada": {
+      "offer": 0.6211,
+      "bid": 0.5714,
+      "mid": 0.59625,
+      "liquid": true
+    },
+    "Qatar": {
+      "offer": 0.122,
+      "bid": 0.0833,
+      "mid": 0.10264999999999999,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.3175,
+      "bid": 0.2703,
+      "mid": 0.2939,
+      "liquid": true
+    }
+  },
+  "2H_OU1.5": {
+    "Under 1.5 goals": {
+      "offer": 0.5236,
+      "bid": 0.4808,
+      "mid": 0.5022,
+      "liquid": true
+    },
+    "Over 1.5 goals": {
+      "offer": 0.5128,
+      "bid": 0.4717,
+      "mid": 0.49225,
+      "liquid": true
+    }
+  },
+  "2H_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.2041,
+      "bid": 0.1613,
+      "mid": 0.1827,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.8403,
+      "bid": 0.7937,
+      "mid": 0.817,
+      "liquid": true
+    }
+  },
+  "2H_CAN_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.2985,
+      "bid": 0.2439,
+      "mid": 0.2712,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.7519,
+      "bid": 0.6993,
+      "mid": 0.7256,
+      "liquid": true
+    }
+  },
+  "2H_QAT_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.7092,
+      "bid": 0.6579,
+      "mid": 0.6835500000000001,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.3378,
+      "bid": 0.2857,
+      "mid": 0.31174999999999997,
+      "liquid": true
+    }
+  },
+  "Cards_OU1.5": {
+    "Under 1.5 cards": {
+      "offer": 0.2222,
+      "bid": 0.119,
+      "mid": 0.1706,
+      "liquid": true
+    },
+    "Over 1.5 cards": {
+      "offer": 0.885,
+      "bid": 0.7752,
+      "mid": 0.8301000000000001,
+      "liquid": true
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "offer": 0.3876,
+      "bid": null,
+      "mid": 0.366282,
+      "liquid": false
+    },
+    "Over 2.5 cards": {
+      "offer": 0.7143,
+      "bid": 0.5376,
+      "mid": 0.62595,
+      "liquid": true
+    }
+  },
+  "AH_CAN_minus0.5": {
+    "Canada -0.5": {
+      "offer": 0.7752,
+      "bid": 0.7407,
+      "mid": 0.75795,
+      "liquid": true
+    },
+    "Qatar +0.5": {
+      "offer": 0.25,
+      "bid": 0.2326,
+      "mid": 0.24130000000000001,
+      "liquid": true
+    }
+  },
+  "QAT_corners_OU4.5": {
+    "Under 4.5 corners": {
+      "offer": 0.885,
+      "bid": 0.8403,
+      "mid": 0.86265,
+      "liquid": true
+    },
+    "Over 4.5 corners": {
+      "offer": 0.1613,
+      "bid": 0.1064,
+      "mid": 0.13385,
+      "liquid": true
+    }
+  },
+  "QAT_corners_OU3.5": {
+    "Under 3.5 corners": {
+      "offer": 0.7812,
+      "bid": 0.7092,
+      "mid": 0.7452000000000001,
+      "liquid": true
+    },
+    "Over 3.5 corners": {
+      "offer": 0.2667,
+      "bid": 0.2222,
+      "mid": 0.24445,
+      "liquid": true
+    }
+  },
+  "CAN_SOT_OU4.5": {
+    "Under 4.5 shots on target": {
+      "offer": 0.3175,
+      "bid": 0.2041,
+      "mid": 0.26080000000000003,
+      "liquid": true
+    },
+    "Over 4.5 shots on target": {
+      "offer": 0.8264,
+      "bid": 0.6667,
+      "mid": 0.74655,
+      "liquid": true
+    }
+  },
+  "QAT_SOT_OU2.5": {
+    "Under 2.5 shots on target": {
+      "offer": 0.6024,
+      "bid": 0.4902,
+      "mid": 0.5463,
+      "liquid": true
+    },
+    "Over 2.5 shots on target": {
+      "offer": 0.5128,
+      "bid": 0.4167,
+      "mid": 0.46475,
+      "liquid": true
+    }
+  },
+  "PlayerSOT_0.5plus": {
+    "Stephan Eust\u00e1quio": {
+      "offer": 0.2632,
+      "bid": 0.2083,
+      "mid": 0.23575000000000002,
+      "liquid": true
+    },
+    "405451254": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Jonathan David": {
+      "offer": 0.7143,
+      "bid": 0.6536,
+      "mid": 0.6839500000000001,
+      "liquid": true
+    },
+    "405451256": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451257": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451258": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Liam Millar": {
+      "offer": 0.6329,
+      "bid": null,
+      "mid": 0.5980905,
+      "liquid": false
+    },
+    "Derek Cornelius": {
+      "offer": 0.2899,
+      "bid": 0.2041,
+      "mid": 0.247,
+      "liquid": true
+    },
+    "405451261": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451262": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Jacob Shaffelburg": {
+      "offer": 0.6494,
+      "bid": null,
+      "mid": 0.613683,
+      "liquid": false
+    },
+    "405451264": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Alistair Johnston": {
+      "offer": 0.1923,
+      "bid": 0.1316,
+      "mid": 0.16194999999999998,
+      "liquid": true
+    },
+    "Joel Waterman": {
+      "offer": 0.2174,
+      "bid": null,
+      "mid": 0.205443,
+      "liquid": false
+    },
+    "405451267": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Jayden Nelson": {
+      "offer": 0.6536,
+      "bid": null,
+      "mid": 0.617652,
+      "liquid": false
+    },
+    "Tajon Buchanan": {
+      "offer": 0.495,
+      "bid": 0.4673,
+      "mid": 0.48114999999999997,
+      "liquid": true
+    },
+    "405451270": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451271": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Nathan-Dylan Saliba": {
+      "offer": 0.495,
+      "bid": null,
+      "mid": 0.467775,
+      "liquid": false
+    },
+    "405451273": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Isma\u00ebl Kon\u00e9": {
+      "offer": 0.4,
+      "bid": 0.3077,
+      "mid": 0.35385,
+      "liquid": true
+    },
+    "Tani Oluwaseyi": {
+      "offer": 0.7634,
+      "bid": null,
+      "mid": 0.721413,
+      "liquid": false
+    },
+    "405451276": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451277": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Luc De Fougerolles": {
+      "offer": 0.2041,
+      "bid": null,
+      "mid": 0.1928745,
+      "liquid": false
+    },
+    "Moise Bombito": {
+      "offer": 0.2817,
+      "bid": null,
+      "mid": 0.2662065,
+      "liquid": false
+    },
+    "405451280": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451281": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Promise David": {
+      "offer": 0.7812,
+      "bid": null,
+      "mid": 0.738234,
+      "liquid": false
+    },
+    "Niko Sigur": {
+      "offer": 0.3279,
+      "bid": null,
+      "mid": 0.3098655,
+      "liquid": false
+    },
+    "Ali Ahmed": {
+      "offer": 0.6098,
+      "bid": 0.0037,
+      "mid": 0.30675,
+      "liquid": true
+    },
+    "405451285": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451286": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451287": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451288": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451289": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Jonathan Osorio": {
+      "offer": 0.578,
+      "bid": null,
+      "mid": 0.54621,
+      "liquid": false
+    },
+    "405451291": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Cyle Christopher Larin": {
+      "offer": 0.6849,
+      "bid": 0.5882,
+      "mid": 0.63655,
+      "liquid": true
+    },
+    "405451293": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Richmond Laryea": {
+      "offer": 0.274,
+      "bid": 0.2083,
+      "mid": 0.24115000000000003,
+      "liquid": true
+    },
+    "Mathew Choini\u00e8re": {
+      "offer": 0.495,
+      "bid": null,
+      "mid": 0.467775,
+      "liquid": false
+    },
+    "405451296": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Alphonso Davies": {
+      "offer": 0.7042,
+      "bid": null,
+      "mid": 0.665469,
+      "liquid": false
+    },
+    "Ahmed Fathi": {
+      "offer": 0.1613,
+      "bid": null,
+      "mid": 0.1524285,
+      "liquid": false
+    },
+    "405451299": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451300": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Homam Ahmed": {
+      "offer": 0.119,
+      "bid": null,
+      "mid": 0.11245499999999999,
+      "liquid": false
+    },
+    "Yusuf Abdurisag": {
+      "offer": 0.274,
+      "bid": 0.2222,
+      "mid": 0.24810000000000001,
+      "liquid": true
+    },
+    "405451303": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451304": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Sultan Al-Brake": {
+      "offer": 0.1389,
+      "bid": null,
+      "mid": 0.1312605,
+      "liquid": false
+    },
+    "405451306": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451307": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Jassem Gaber Abdulsallam": {
+      "offer": 0.1471,
+      "bid": null,
+      "mid": 0.1390095,
+      "liquid": false
+    },
+    "405451309": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451310": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Ahmed Al Ganehi": {
+      "offer": 0.3497,
+      "bid": null,
+      "mid": 0.3304665,
+      "liquid": false
+    },
+    "405451312": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Ayoub Al-Oui": {
+      "offer": 0.119,
+      "bid": null,
+      "mid": 0.11245499999999999,
+      "liquid": false
+    },
+    "405451314": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451315": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "405451316": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Mohammed Tahsin": {
+      "offer": 0.2817,
+      "bid": null,
+      "mid": 0.2662065,
+      "liquid": false
+    },
+    "Al-Hashmi Al-Hussain": {
+      "offer": 0.1316,
+      "bid": null,
+      "mid": 0.12436199999999999,
+      "liquid": false
+    },
+    "405451319": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Issa Laye": {
+      "offer": 0.1064,
+      "bid": null,
+      "mid": 0.10054799999999998,
+      "liquid": false
+    },
+    "405451321": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Mohamed Al-Mannai": {
+      "offer": 0.3425,
+      "bid": null,
+      "mid": 0.3236625,
+      "liquid": false
+    },
+    "Edmilson Junior": {
+      "offer": 0.2778,
+      "bid": 0.1786,
+      "mid": 0.22820000000000001,
+      "liquid": true
+    },
+    "Hassan Al-Haydos": {
+      "offer": 0.3546,
+      "bid": null,
+      "mid": 0.33509700000000003,
+      "liquid": false
+    },
+    "Lucas Mendes": {
+      "offer": 0.1316,
+      "bid": null,
+      "mid": 0.12436199999999999,
+      "liquid": false
+    },
+    "Abdulaziz Hatem": {
+      "offer": 0.2273,
+      "bid": null,
+      "mid": 0.2147985,
+      "liquid": false
+    },
+    "405451327": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Boualem Khoukhi": {
+      "offer": 0.1562,
+      "bid": 0.0133,
+      "mid": 0.08475,
+      "liquid": true
+    },
+    "405451329": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Mohammed Muntari": {
+      "offer": 0.3968,
+      "bid": null,
+      "mid": 0.374976,
+      "liquid": false
+    },
+    "Karim Boudiaf": {
+      "offer": 0.1786,
+      "bid": null,
+      "mid": 0.168777,
+      "liquid": false
+    },
+    "405451332": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Akram Afif": {
+      "offer": 0.3472,
+      "bid": 0.2326,
+      "mid": 0.2899,
+      "liquid": true
+    },
+    "405451334": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    },
+    "Pedro Miguel": {
+      "offer": 0.1282,
+      "bid": null,
+      "mid": 0.121149,
+      "liquid": false
+    },
+    "Ahmed Alaaeldin": {
+      "offer": 0.4717,
+      "bid": null,
+      "mid": 0.4457565,
+      "liquid": false
+    },
+    "Almoez Ali": {
+      "offer": 0.495,
+      "bid": null,
+      "mid": 0.467775,
+      "liquid": false
+    },
+    "Assim Madibo": {
+      "offer": 0.0667,
+      "bid": null,
+      "mid": 0.06303149999999999,
+      "liquid": false
+    },
+    "405451339": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    }
+  },
+  "Most_cards": {
+    "Canada": {
+      "offer": 0.2564,
+      "bid": 0.1786,
+      "mid": 0.21750000000000003,
+      "liquid": true
+    },
+    "Qatar": {
+      "offer": 0.5882,
+      "bid": 0.4902,
+      "mid": 0.5392,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.2778,
+      "bid": 0.1923,
+      "mid": 0.23504999999999998,
+      "liquid": true
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "offer": 0.4464,
+      "bid": 0.4348,
+      "mid": 0.4406,
+      "liquid": true
+    },
+    "No": {
+      "offer": 0.5682,
+      "bid": 0.5587,
+      "mid": 0.56345,
+      "liquid": true
+    }
+  }
+}

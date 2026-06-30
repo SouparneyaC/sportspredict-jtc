@@ -1,0 +1,222 @@
+{
+  "match": "Czechia vs Mexico",
+  "date": "2026-06-24",
+  "group": "Group A — GD3",
+  "venue": "Estadio Azteca, Mexico City (quasi-home for Mexico)",
+  "kickoff": "9:00 PM ET",
+  "source_url": "https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=e1bc50c6-c39e-454a-b6be-bbe6e3ae6261",
+
+  "model_inputs": {
+    "cze_elo": 1806.3989,
+    "mex_elo": 1984.7936,
+    "elo_diff_cze_minus_mex": -178.39,
+    "lambda_cze": 0.8035,
+    "lambda_mex": 1.5326,
+    "lambda_total": 2.3361,
+    "p_cze_win": 0.1851,
+    "p_draw": 0.2757,
+    "p_mex_win": 0.5392,
+    "p_btts": 0.4329,
+    "p_btts_and_3plus": 0.3139,
+    "p_3plus_goals": 0.4135,
+    "p_4plus_goals": 0.2080,
+    "p_cze_2h_scores": 0.3308,
+    "p_mex_2h_scores": 0.5353,
+    "p_mex_more_corners": 0.7646,
+    "p_mex_2plus_offside_proxy": 0.8452,
+    "p_cze_more_2h_sot": 0.1888,
+    "lambda_cze_sot": 2.410,
+    "lambda_mex_sot": 4.598,
+    "lambda_schick_sot_proxy": 0.844,
+    "p_schick_1plus_sot_model": 0.5699,
+    "p_ht_tied": 0.4143
+  },
+
+  "group_context": {
+    "standings_after_gd2": {
+      "Mexico": {"pts": 6, "w": 2, "d": 0, "l": 0, "gf": 3, "ga": 0, "gd": "+3", "status": "QUALIFIED — rotating heavily"},
+      "South_Korea": {"pts": 3, "w": 1, "d": 0, "l": 1, "gf": 2, "ga": 2, "gd": "0"},
+      "Czechia": {"pts": 1, "w": 0, "d": 1, "l": 1, "gf": 2, "ga": 3, "gd": "-1", "status": "MUST WIN to stay alive"},
+      "South_Africa": {"pts": 1, "w": 0, "d": 1, "l": 1, "gf": 1, "ga": 3, "gd": "-2"}
+    },
+    "qualification_math": {
+      "Czechia": "WIN = 4pts, enters third-place contention (8 of 12 advance). Draw or loss = eliminated.",
+      "Mexico": "Already through. Playing for fun/fitness. Rotating aggressively for R32."
+    },
+    "venue_note": "Estadio Azteca is Mexico's home ground. Crowd will be 80-90% pro-Mexico. Not in Elo model (neutral=TRUE) but real psychological/tactical effect."
+  },
+
+  "gd_evidence": {
+    "cze_gd1_vs_kor": {
+      "score": "KOR 2-1 CZE",
+      "cze_shots": 7, "cze_sot": 4,
+      "krejci_goal": "59' (2H)",
+      "schick": "played 64 min, 5.9/10 FotMob, poor performance, substituted off"
+    },
+    "cze_gd2_vs_rsa": {
+      "score": "CZE 1-1 RSA",
+      "cze_shots": 14, "cze_sot": 3, "cze_possession": "32%",
+      "cze_goal": "Sadílek 6' (1H)",
+      "conceded": "Mokoena pen 83'",
+      "cze_cards": "Krejčí Y 75'"
+    },
+    "mex_gd1_vs_rsa": {
+      "score": "MEX 2-0 RSA",
+      "mex_shots": 16, "mex_sot": 4,
+      "goals": "Quiñones 9', Jiménez 67'",
+      "rsa_red_cards": "Sithole 49', Zwane 84'"
+    },
+    "mex_gd2_vs_kor": {
+      "score": "MEX 1-0 KOR",
+      "goal": "Romo 50' (GK error)",
+      "kor_xg": 0.67, "mex_xg": 0.48,
+      "kor_possession": "58%",
+      "mex_corners": 3, "kor_corners": 4,
+      "our_result": "+40.22 RBP, 8/9 beat crowd"
+    }
+  },
+
+  "key_players": {
+    "Patrik_Schick": {
+      "club": "Bayer Leverkusen",
+      "club_season": "16G 2A in 28 Bundesliga matches",
+      "wc2026_minutes": 154,
+      "wc2026_shots": 2,
+      "wc2026_sot": 1,
+      "wc2026_goals": 0,
+      "gd3_expected": "START — CZE's main striker, will be relied upon in must-win",
+      "fitness": "No injury concerns"
+    },
+    "Adam_Hlozek": {
+      "note": "Co-striker. Market: Over 0.5 SOT at -132 (57% implied) — competes with Schick for shots"
+    },
+    "Mexico_rotation": {
+      "Jimenez_status": "LIKELY RESTED",
+      "Quinones_status": "LIKELY RESTED",
+      "Ochoa_status": "LIKELY STARTING (GK, 40yo, sentimental farewell appearance)",
+      "Rangel_status": "No.1 GK being rested for knockouts",
+      "starters_expected": "Santiago Gimenez, Alvarado, Romo, Huerta, Galindo rotation squad"
+    }
+  },
+
+  "referee": {
+    "name": "Yael Falcón Pérez",
+    "nationality": "Argentina",
+    "card_rate_avg": "Not confirmed — flag for future reference",
+    "notes": "Female referee. Argentina national referees program."
+  },
+
+  "rules_applied": {
+    "RULE8": "FIRES — draw 27.57% ≥ 25%. Shrink extreme attacking props toward 50%. Cagier match expected. MEX-KOR GD2 precedent: 1-0, RULE8 fully confirmed.",
+    "RULE7": "Does NOT fire — CZE 18.51% > 15% threshold",
+    "RULE15": "Does NOT apply (CZE not <15% win)",
+    "RULE_FOULS": "CZE is underdog, defends → fouls more. Q1 direction = YES.",
+    "FLOOR_0.25": "Not applied (Q3 estimate at 0.28, above floor)",
+    "AZTECA_EFFECT": "Quasi-home for Mexico. Slight downward on CZE win from what rotation alone would suggest.",
+    "ROTATION_EFFECT": "MEX resting Jimenez/Quinones → CZE win prob UP from model. MEX attacking stats (offsides, corners) DOWN slightly."
+  },
+
+  "crowd_formula": "crowd ≈ 0.514 + 0.61 × (us - 0.5)",
+
+  "pre_match_estimates": {
+    "Q1": {
+      "question": "Will Czechia commit more fouls than Mexico?",
+      "estimate": 0.62,
+      "direction": "YES",
+      "crowd_est": 0.59,
+      "edge": "+0.03",
+      "rationale": "RULE_FOULS: CZE is underdog (18.5% win), defends more, fouls more. Even with MEX rotating, they control the ball and CZE chases."
+    },
+    "Q2": {
+      "question": "Will Mexico be caught offside 2 or more times?",
+      "estimate": 0.58,
+      "direction": "YES_LEAN",
+      "crowd_est": 0.56,
+      "edge": "+0.02",
+      "rationale": "Model 0.845, RULE8 shrink (cagier match). MEX-KOR GD2: Mexico DID have 2+ offsides. Rotation slightly reduces coordinated forward runs."
+    },
+    "Q3": {
+      "question": "Will Czechia have more shots on target than Mexico in the second half?",
+      "estimate": 0.28,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.38,
+      "edge": "-0.10",
+      "rationale": "Model 0.189. CZE survival uplift and MEX rotation offset, but MEX still λ_sot 4.598 vs CZE 2.410. Strong NO. BEST EDGE in CZE-MEX."
+    },
+    "Q4": {
+      "question": "Will Mexico finish with more corner kicks than Czechia?",
+      "estimate": 0.52,
+      "direction": "YES_LEAN",
+      "crowd_est": 0.53,
+      "edge": "-0.01",
+      "rationale": "Model 0.765, RULE8. Key evidence: in MEX-KOR, KOR got MORE corners than Mexico — corner dominance is volatile. Nearly coin-flip here.",
+      "warning": "Very small edge. Near-skip question."
+    },
+    "Q5": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "estimate": 0.32,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.40,
+      "edge": "-0.08",
+      "rationale": "Model 0.314, RULE8. MEX-KOR (similar Elo gap): 1-0 only goal, RULE8 fully confirmed. Slight upward from rotation opening match."
+    },
+    "Q6": {
+      "question": "Will Czechia win the match?",
+      "estimate": 0.30,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.39,
+      "edge": "-0.09",
+      "rationale": "Model 0.185. MEX rotating heavily = big uplift. Azteca crowd offsets some of rotation advantage. Crowd will also price rotation → crowd at ~0.40."
+    },
+    "Q7": {
+      "question": "Will Czechia score in the second half?",
+      "estimate": 0.38,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.44,
+      "edge": "-0.06",
+      "rationale": "Model 0.331. CZE survival = they push in 2H. Krejčí scored in 59' (2H) vs KOR in GD1. MEX rotation = gaps in defense. Some uplift but still NO_LEAN."
+    },
+    "Q8": {
+      "question": "Will there be 4 or more total cards shown?",
+      "estimate": 0.45,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.48,
+      "edge": "-0.03",
+      "rationale": "Referee Falcón Pérez: Argentina, no specific card rate confirmed. CZE desperation = physical play = cards. MEX rotation = calmer. Slight NO lean pending ref data."
+    },
+    "Q9": {
+      "question": "Will Patrik Schick have at least 1 shot on target?",
+      "estimate": 0.48,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.50,
+      "edge": "-0.02",
+      "rationale": "Model 0.570, but Schick has 1 SOT in 154 WC minutes. Hlozek also shooting. RULE8 reduces overall shots. CZE needs win = he'll be relied on. Coin-flip with slight NO lean."
+    }
+  },
+
+  "post_match_results": {
+    "final_score": "Czechia 0-3 Mexico",
+    "total_rbp": -6.01,
+    "beat_crowd_count": "6/9",
+    "note_submission_error": "Q9 SUBMISSION ERROR: Platform shows 0.72 submitted for Schick SOT, but our pre-match JSON estimate was 0.48. Believed to be accidental submission of RSA-KOR Son estimate (0.72) for the wrong question. Outcome was NO, RBP = -25.42 (catastrophic). Correct estimate 0.48 would have earned positive RBP.",
+    "question_results": {
+      "Q1": {"question": "CZE more fouls than MEX", "our_estimate": 0.62, "submitted_estimate": 0.62, "crowd_estimate": 0.56, "outcome": 0, "rbp": -5.25, "beat_crowd": false},
+      "Q2": {"question": "MEX 2+ offsides", "our_estimate": 0.58, "submitted_estimate": 0.58, "crowd_estimate": 0.50, "outcome": 0, "rbp": -6.51, "beat_crowd": false},
+      "Q3": {"question": "CZE more 2H SOT than MEX", "our_estimate": 0.28, "submitted_estimate": 0.28, "crowd_estimate": 0.38, "outcome": 0, "rbp": 9.02, "beat_crowd": true},
+      "Q4": {"question": "MEX more corners", "our_estimate": 0.52, "submitted_estimate": 0.52, "crowd_estimate": 0.54, "outcome": 0, "rbp": 4.72, "beat_crowd": true},
+      "Q5": {"question": "BTTS AND 3+ goals", "our_estimate": 0.32, "submitted_estimate": 0.32, "crowd_estimate": 0.37, "outcome": 0, "rbp": 5.66, "beat_crowd": true},
+      "Q6": {"question": "CZE win", "our_estimate": 0.30, "submitted_estimate": 0.30, "crowd_estimate": 0.27, "outcome": 0, "rbp": 0.31, "beat_crowd": true},
+      "Q7": {"question": "CZE score in 2H", "our_estimate": 0.38, "submitted_estimate": 0.38, "crowd_estimate": 0.44, "outcome": 0, "rbp": 6.88, "beat_crowd": true},
+      "Q8": {"question": "4+ total cards", "our_estimate": 0.45, "submitted_estimate": 0.45, "crowd_estimate": 0.47, "outcome": 0, "rbp": 4.58, "beat_crowd": true},
+      "Q9": {"question": "Schick 1+ SOT", "our_estimate": 0.48, "submitted_estimate": 0.72, "crowd_estimate": 0.47, "outcome": 0, "rbp": -25.42, "beat_crowd": false, "ERROR": "SUBMISSION ERROR — intended 0.48, accidentally submitted 0.72 (Son RSA-KOR estimate). At 0.48, outcome NO would have yielded positive RBP beating crowd's 0.47."}
+    },
+    "key_learnings": [
+      "SUBMISSION ERROR (Q9): Schick SOT estimate 0.48 accidentally submitted as 0.72 (Son's RSA-KOR estimate). Cost approximately -30 RBP swing vs what 0.48 would have earned. Double-check cross-match estimates before submitting.",
+      "CZE 0-3 MEX — Mexico rotation was no weakness. Santiago Gimenez and rotation squad scored 3. Rotation effect may have been less severe than assumed.",
+      "Q1 (CZE more fouls) = NO despite RULE_FOULS — Mexico fouled more in a 3-0 win. RULE10 analog: winning team presses/fouls more in a dominant win, even if they were expected to foul less.",
+      "Q2 (MEX 2+ offsides) = NO despite rotation — Mexico's offense was disciplined, not caught offside. Rotation reduced forward coordination as expected, but fell below even our reduced 0.58 estimate.",
+      "Q4 (MEX more corners) = NO in a 3-0 Mexico win — THIRD consecutive match where the winning team had FEWER corners (after MEX-KOR, SCO-BRA). Corners are genuinely not predictable from dominance. Our near-coin-flip (0.52) was correct posture.",
+      "Q3, Q5, Q6, Q7, Q8 all beat crowd (5 structural NO edges all paid off) — the core model NO-lean estimates for CZE were correct."
+    ]
+  }
+}

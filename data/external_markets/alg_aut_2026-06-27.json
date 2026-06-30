@@ -1,0 +1,158 @@
+{
+  "match": "Algeria vs Austria",
+  "date": "2026-06-27",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"ALG_vs_ARG_GD1": 760433, "JOR_vs_AUT_GD1": 760431, "ALG_vs_JOR_GD2": 760455, "AUT_vs_ARG_GD2": 760456},
+  "smarkets_event_id": 45086949,
+  "group_context": {
+    "Algeria": {"pts": 3, "record": "1-0-1 (L0-3 ARG, W2-1 JOR)", "status": "Tied with Austria on points but behind on GD (-2 vs 0) — needs a win to take clear control of 2nd place"},
+    "Austria": {"pts": 3, "record": "1-0-1 (W3-1 JOR, L0-2 ARG)", "status": "Tied with Algeria on points, ahead on GD — a draw keeps them ahead of Algeria on GD"}
+  },
+  "wc2026_espn_stats": {
+    "ALG": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760433, "opponent": "Argentina", "result": "L 0-3", "fouls": 8, "SOT": 1, "offsides": 1, "YC": 0, "RC": 0, "corners": 2, "possession": 52.2},
+        {"event_id": 760455, "opponent": "Jordan", "result": "W 2-1", "fouls": 6, "SOT": 8, "offsides": 0, "YC": 1, "RC": 0, "corners": 10, "possession": 72.1}
+      ],
+      "averages": {"fouls": 7.0, "SOT": 4.5, "offsides": 0.5, "cards": 0.5, "corners": 6.0},
+      "NOTE": "Algeria's SOT/corner output is highly bimodal — almost nothing vs elite Argentina (1 SOT, 2 corners), excellent vs weaker Jordan (8 SOT, 10 corners). Their genuinely low, consistent trait is FOULS (8, then 6) — a controlled, technical team regardless of opponent quality."
+    },
+    "AUT": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760431, "opponent": "Jordan", "result": "W 3-1", "fouls": 12, "SOT": 4, "offsides": 3, "YC": 1, "RC": 0, "corners": 4, "possession": 63.2},
+        {"event_id": 760456, "opponent": "Argentina", "result": "L 0-2", "fouls": 13, "SOT": 1, "offsides": 0, "YC": 2, "RC": 0, "corners": 3, "possession": 46.4}
+      ],
+      "averages": {"fouls": 12.5, "SOT": 2.5, "offsides": 1.5, "cards": 1.5, "corners": 3.5},
+      "PRIOR_LESSON_SABITZER": "ARG-AUT Q9 was a -31.86 loss: we applied RULE15 (extreme-underdog forward suppression) to Sabitzer when Austria was an 8.7% underdog fighting hard to come back from a deficit — but 'competitive chasing context = more shots,' not fewer. RULE15 only holds when the underdog DISENGAGES (genuine blowout); a team fighting for something generates MORE shot attempts from its creative outlet, not less.",
+      "PRIOR_LESSON_CORNERS_AND_CARDS": "ARG-AUT Q4 (-19.91) and Q6 (-19.17): both 'Austria corners' and 'total cards' were modeled assuming a blowout/dominant-win pattern from AUT-JOR, but ARG-AUT was a genuinely competitive, close match — chasing teams accumulate corners from repelled attacks, and competitive matches produce MORE cards than the dominant-win comparison suggested."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Algeria": 0.2650, "Austria": 0.2581, "Draw": 0.4717, "liquid": true},
+    "Most_cards": {"Algeria": 0.3538, "Austria": 0.3537, "Draw": 0.2899, "liquid": true},
+    "Corners_OU8_5": {"Under": 0.7046, "Over": 0.3029, "liquid": true},
+    "ALG_SOT_OU3_5_fullmatch": {"Under": 0.5823, "Over": 0.4167, "liquid": true, "implied_lambda": 3.29},
+    "AUT_SOT_OU3_5_fullmatch": {"Under": 0.4844, "Over": 0.5159, "liquid": true, "implied_lambda": 3.75},
+    "ALG_2H_OU0_5_goals": {"Under": 0.6201, "Over": 0.3850, "liquid": true},
+    "AUT_2H_OU0_5_goals": {"Under": 0.6240, "Over": 0.3808, "liquid": true},
+    "player_SOT_fullmatch": {"Marcel_Sabitzer": {"bid": 0.25, "offer": 0.4386, "mid": 0.344}}
+  },
+  "context_flags": [
+    "RULE8_MAXIMUM: HT/FT draw probability is 47.17% — the highest of ANY GD3 fixture analyzed this entire session. This is a textbook cagey, even, high-stakes match between two teams tied on points.",
+    "TRUE_COIN_FLIP_MATCHUP: FTR is essentially 26.5/25.8/47.2 — the most evenly-matched fixture of the day. Critically, this means Austria is NOT in the extreme-underdog role that caused the Sabitzer/corners/cards lessons to fail in ARG-AUT — apply those lessons' DIRECTION (don't over-suppress a competitive team) but recognize today's baseline is even more balanced, so trust the live market more directly than in that match.",
+    "ALG_BIMODAL_OUTPUT: Algeria's attacking stats swing wildly with opponent quality — their TRUE consistent trait is low fouls, not their SOT/corner numbers, which are unreliable as a base rate here."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Algeria commit more fouls than Austria?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Raw normal-approx (ALG 7.0 vs AUT 12.5) gives 0.06 — extreme, but unlike the Jordan/Algeria foul-script lesson, Algeria's low-foul trait held up in BOTH a blowout loss (8 fouls vs Argentina) AND a dominant win (6 fouls vs Jordan), suggesting it's a genuine team trait, not just a possession-script artifact. Nudge up modestly from the extreme raw number purely for the uncertainty of an even, high-stakes match.",
+      "final_estimate": 0.18,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will Austria have more shots on target than Algeria in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Poisson off full-match averages (AUT λ_2H=1.25, ALG λ_2H=2.25) gives 0.20 raw, but Algeria's SOT average is skewed by one outlier blowout-win game (8 SOT vs Jordan) that may not represent their output in an even, cagey match like today. Nudge up from the raw extreme to reflect that uncertainty.",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will Austria score the first goal of the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Poisson-race approximation using market-calibrated 2H goal rates for each team (λ_AUT_2H≈0.48, λ_ALG_2H≈0.49 — nearly identical) gives a near-even split, consistent with the overall match parity (47% draw probability).",
+      "final_estimate": 0.49,
+      "direction": "TOSS-UP",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will Austria score more goals than Algeria in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Skellam off the same market-calibrated 2H lambdas (0.48 vs 0.49) gives 0.26 once tie probability is removed — consistent with a low-scoring, even second half being the most likely outcome.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will Austria receive more cards than Algeria?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Most cards, Austria = 35.37% (essentially identical to Algeria's 35.38%). Trust it — and given the ARG-AUT lesson that competitive matches produce MORE physical play than a dominant-win comparison would suggest, this even split looks well-calibrated rather than an underestimate.",
+      "final_estimate": 0.35,
+      "direction": "NO lean (narrow)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Algeria win the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets FTR: Algeria 26.50%. Direct tier-1 market in the most evenly-matched fixture of the day.",
+      "final_estimate": 0.27,
+      "direction": "NO lean (draw most likely)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will there be 9 or more total corner kicks?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over8.5 corners = 30.29%. Trust the live market directly here (unlike CRO-GHA, this is already a matchup-specific live price, not a thin historical sample needing correction).",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Austria have 5 or more shots on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Market-implied lambda from the Over3.5 SOT line (51.59%→λ=3.75) gives P(≥5)=0.32.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Marcel Sabitzer have at least 1 shot on target?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — LESSON-CORRECTED",
+      "reasoning": "Liquid market mid (bid 0.25, offer 0.4386) = 0.344. Unlike ARG-AUT, Austria is NOT an extreme underdog today (25.8% win prob, nearly identical to Algeria's 26.5%) — the RULE15-failure lesson applies directly: do not suppress Sabitzer's output in anything resembling a competitive/even match. Trust the liquid market.",
+      "final_estimate": 0.36,
+      "direction": "NO lean (narrow)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 10,
+      "text": "Will Algeria have 3 or more shots on target?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Market-implied lambda from the Over3.5 SOT line (41.67%→λ=3.29) gives P(≥3)=0.64.",
+      "final_estimate": 0.64,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_ALG_more_fouls": 0.18,
+    "Q2_AUT_more_2H_SOT": 0.30,
+    "Q3_AUT_first_2H_goal": 0.49,
+    "Q4_AUT_more_2H_goals": 0.28,
+    "Q5_AUT_more_cards": 0.35,
+    "Q6_ALG_wins": 0.27,
+    "Q7_9plus_corners": 0.30,
+    "Q8_AUT_5plus_SOT": 0.32,
+    "Q9_Sabitzer_SOT": 0.36,
+    "Q10_ALG_3plus_SOT": 0.64
+  },
+  "strongest_picks": [
+    "Q1: Algeria more fouls = 0.18 (HIGH CONFIDENCE — genuine team trait confirmed in both a blowout loss AND a dominant win)",
+    "Q10: Algeria 3+ SOT = 0.64 (MEDIUM-HIGH — market-derived)",
+    "Q9: Sabitzer SOT = 0.36 (MEDIUM-HIGH — direct corrective application of the RULE15-failure lesson, recognizing today's genuinely even matchup)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-27"
+}

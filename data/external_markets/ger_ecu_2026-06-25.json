@@ -1,0 +1,261 @@
+{
+  "match": "Germany vs Ecuador",
+  "date": "2026-06-25",
+  "stage": "Group D Group Stage 3 (GD3)",
+  "espn_event_id": 760468,
+  "smarkets_event_id": 45086950,
+  "venue": "Neutral (USA WC2026)",
+  "group_context": {
+    "Germany": {"pts": 6, "record": "2-0-0", "status": "QUALIFIED - likely rotating"},
+    "Ecuador": {"pts": 1, "record": "0-1-1", "status": "MUST WIN to advance"}
+  },
+  "elo": {
+    "GER": 1954,
+    "ECU": 1864,
+    "diff_ger_minus_ecu": 90,
+    "source": "eloratings.net World.tsv 2026-06-25"
+  },
+  "wc2026_espn_stats": {
+    "GER": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760422, "opponent": "Curacao", "result": "W 7-1", "fouls": 18, "SOT": 12, "shots": 26, "offsides": 0, "YC": 0, "RC": 0},
+        {"event_id": 760448, "opponent": "Ivory Coast", "result": "W 2-1", "fouls": 5, "SOT": 7, "shots": 16, "offsides": 0, "YC": 0, "RC": 0}
+      ],
+      "averages": {"fouls": 11.5, "SOT": 9.5, "shots": 21.0, "offsides": 0.0, "YC": 0.0}
+    },
+    "ECU": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760423, "opponent": "Ivory Coast", "result": "L (0 SOT from 12 shots)", "fouls": 13, "SOT": 1, "shots": 12, "offsides": 0, "YC": 1, "RC": 0},
+        {"event_id": 760446, "opponent": "Curacao", "result": "D 0-0 (15 SOT 27 shots 0 goals)", "fouls": 7, "SOT": 15, "shots": 27, "offsides": 1, "YC": 1, "RC": 0}
+      ],
+      "averages": {"fouls": 10.0, "SOT": 8.0, "shots": 19.5, "offsides": 0.5, "YC": 1.0},
+      "CRITICAL_NOTE": "ECU scored 0 goals in 2 WC2026 matches despite 16 total SOT from 39 total shots"
+    }
+  },
+  "model": {
+    "type": "Poisson_GLM + Dixon-Coles + Skellam",
+    "elo_calibrated": {
+      "elo_diff_used": 90,
+      "lambda_GER": 1.3060,
+      "lambda_ECU": 0.9429
+    },
+    "market_calibrated": {
+      "effective_elo_diff": 245,
+      "lambda_GER": 1.729,
+      "lambda_ECU": 0.712,
+      "note": "Calibrated to match Smarkets FTR: GER=61.6%, Draw=19.6%, ECU=18.4%"
+    },
+    "ftr_probabilities": {
+      "GER_win": 0.616,
+      "Draw": 0.196,
+      "ECU_win": 0.184,
+      "source": "Smarkets market mid-price 2026-06-25"
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {
+      "market_id": "141594374",
+      "GER": {"contract_id": "396672261", "mid": 0.616},
+      "Draw": {"contract_id": "396672262", "mid": 0.196},
+      "ECU": {"contract_id": "396672260", "mid": 0.184}
+    },
+    "BTTS": {
+      "market_id": "141594376",
+      "YES": {"mid": 0.4567},
+      "NO": {"mid": 0.5495}
+    },
+    "OU0_5": {"market_id": "141594409", "UNDER": 0.0520, "OVER": 0.9481},
+    "OU1_5": {"market_id": "141594410", "UNDER": 0.2084, "OVER": 0.7906},
+    "OU2_5": {"market_id": "141594412", "UNDER": 0.6646, "OVER": 0.3391},
+    "OU3_5": {"market_id": "141594413", "UNDER": 0.8199, "OVER": 0.1803},
+    "player_SOT_0_5plus": {
+      "market_id": "146501319",
+      "Enner Valencia (ECU)": 0.532,
+      "Gonzalo Plata (ECU)": 0.360,
+      "Moises Caicedo (ECU)": 0.156,
+      "Kai Havertz (GER)": 0.607,
+      "Florian Wirtz (GER)": 0.490,
+      "Jamal Musiala (GER)": 0.505,
+      "Leroy Sane (GER)": 0.422,
+      "Joshua Kimmich (GER)": 0.235
+    }
+  },
+  "context_flags": [
+    "GER_ROTATION: Germany qualified (6pts), will likely rotate starters → lower GER attacking output, possibly lower defensive line",
+    "ECU_MUST_WIN: Ecuador has scored 0 goals in 2 WC2026 matches, this is their last chance",
+    "ECU_FINISHING_CRISIS: 16 total SOT across 2 matches = 0 goals (catastrophic conversion rate)",
+    "GER_DEEP_BLOCK: Rotating Germany likely plays lower defensive line → fewer ECU offsides",
+    "ECU_OFFSIDE_HISTORY: 0 offsides in GD1, 1 in GD2 (λ=0.5 avg) → very unlikely ≥2 offsides",
+    "MARKET_DISCOUNT: Market prices GER at 61.6% despite only 90 Elo pts advantage - reflects ECU's poor form"
+  ],
+  "rules_applied": [
+    "RULE_OFFSIDE_DEFENSIVE_SHAPE: GER rotating = likely deep/low line → cap ECU offsides at 0.10",
+    "WINNING_TRAIL: Use ESPN verified data, submit near-raw Poisson/Skellam, no stacked narrative adjustments"
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "At halftime, will both teams have at least 1 shot on target?",
+      "type": "HT_BTTS_SOT",
+      "model_estimate": 0.90,
+      "context": "GER almost certainly SOT in 1H. ECU attacks from start (must-win). ECU avg 8 SOT → ~4/half. Even in GD1 (1 total SOT) they likely had some 1H attempt. Confidence: medium-high.",
+      "crowd_estimate": 0.82,
+      "final_estimate": 0.85,
+      "direction": "YES",
+      "confidence": "medium"
+    },
+    {
+      "q": 2,
+      "text": "Will Ecuador commit more fouls than Germany?",
+      "type": "FOULS_COMPARISON",
+      "data": {"ECU_avg_fouls": 10.0, "GER_avg_fouls": 11.5},
+      "model_raw": 0.333,
+      "model_skellam": "P(ECU > GER in fouls) = 33.3% (Skellam with λ_ECU=10, λ_GER=11.5)",
+      "context": "GER rotation may reduce fouls. ECU must-win = tactical pressing = more fouls. Net effect modest. GER averages higher fouls than ECU in WC2026.",
+      "crowd_estimate": 0.42,
+      "final_estimate": 0.35,
+      "direction": "NO",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "In the second half, will Ecuador have more corner kicks than Germany?",
+      "type": "2H_CORNERS_COMPARISON",
+      "data_note": "No ESPN corner data available for WC2026 matches",
+      "context": "Key structural driver: GER leads in 61.6% of scenarios → sits back in 2H → ECU chases → more ECU corners. But GER quality still generates corners too. Estimate without verified data.",
+      "crowd_estimate": 0.45,
+      "final_estimate": 0.43,
+      "direction": "NO (slight lean)",
+      "confidence": "low - no corner data"
+    },
+    {
+      "q": 4,
+      "text": "Will Germany score more goals than Ecuador in the second half?",
+      "type": "2H_GOALS_COMPARISON",
+      "model": {
+        "lambda_GER_2H": 0.865,
+        "lambda_ECU_2H": 0.356,
+        "P_GER_gt_ECU": 0.461,
+        "P_tie_2H": 0.393,
+        "P_ECU_gt_GER": 0.145
+      },
+      "context": "Counter-intuitively low at 46.1% because 2H 0-0 ties are common (39.3%). GER is stronger but with small λ values, ties dominate. Crowd will over-price GER dominance in 2H at 55-65%.",
+      "crowd_estimate": 0.60,
+      "final_estimate": 0.46,
+      "direction": "NO lean (below 50/50)",
+      "confidence": "medium - crowd likely over-bullish on GER 2H dominance"
+    },
+    {
+      "q": 5,
+      "text": "Will Germany have more shots on target than Ecuador in the second half?",
+      "type": "2H_SOT_COMPARISON",
+      "data": {"GER_avg_SOT": 9.5, "ECU_avg_SOT": 8.0},
+      "model_raw": 0.532,
+      "context": "GER rotation lowers their SOT rate. ECU must-win brings maximum attacking intensity → more ECU 2H SOT. ECU's GD2 survival context (15 SOT) is the relevant comparison. Adjustment downward from raw.",
+      "crowd_estimate": 0.60,
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "low - rotation + must-win context creates major uncertainty"
+    },
+    {
+      "q": 6,
+      "text": "Will a penalty kick be awarded OR a red card be shown?",
+      "type": "PENALTY_OR_RC",
+      "context": "WC2026 so far: 0 RC in our 4 observed matches. High-stakes survival match for ECU increases foul rate and drama. Historical WC group stage base ~25-30% per match for penalty or RC.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.28,
+      "direction": "NO",
+      "confidence": "low - rare event, hard to model"
+    },
+    {
+      "q": 7,
+      "text": "Will Ecuador be caught offside 2 or more times?",
+      "type": "OFFSIDE_GEQ2",
+      "data": {"ECU_avg_offsides": 0.5, "lambda": 0.5},
+      "model_raw": 0.0902,
+      "context": "CRITICAL FLAG: ECU has 0 offsides in GD1 and 1 in GD2 (λ=0.5). GER rotation = likely lower defensive line = NO high-line offside trap. Deep block eliminates offside traps. Even in ECU's most attacking game (15 SOT vs CUR), they only had 1 offside. STRONG NO signal.",
+      "rule_applied": "RULE_OFFSIDE_DEFENSIVE_SHAPE: deep block → cap at 0.10-0.12",
+      "crowd_estimate": 0.27,
+      "final_estimate": 0.10,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will both teams score AND the match have 3 or more total goals?",
+      "type": "BTTS_PLUS_3GOALS",
+      "model_raw": 0.312,
+      "market_constraint": "OVER 2.5 = 33.9% → P(BTTS+3+) < 33.9%",
+      "context": "ECU scored 0 in 2 WC2026 matches. BTTS YES = 45.7% (market). P(BTTS ∩ ≥3 goals) bounded by OVER 2.5 (33.9%). Many GER wins are clean sheets (2-0, 3-0). P(BTTS|3+ goals) ≈ 55-60%.",
+      "crowd_estimate": 0.32,
+      "final_estimate": 0.22,
+      "direction": "NO",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Ecuador score at least 1 goal?",
+      "type": "ECU_SCORE_GEQ1",
+      "model_raw": 0.61,
+      "market_anchor": "BTTS YES = 45.7% → P(ECU scores) ≥ 45.7% (since BTTS requires ECU to score)",
+      "context": "ECU MUST WIN and will attack maximally. BUT: scored 0 goals in 2 WC2026 matches. P(ECU ≥1) = P(BTTS) + P(ECU wins with GER clean sheet) ≈ 46% + 2% ≈ 48-52%. Market-anchored estimate.",
+      "crowd_estimate": 0.51,
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "low - ECU's 0-goal form is significant but must-win context changes urgency"
+    },
+    {
+      "q": 10,
+      "text": "Will the match have 2 or fewer total goals?",
+      "type": "UNDER_2_5",
+      "model_raw": 0.61,
+      "market": 0.6646,
+      "context": "Market UNDER 2.5 = 66.5%. ECU's 0-goal form supports low scoring game. GER rotation also reduces their output. Both factors push toward UNDER. Strong structural case for UNDER 2.5.",
+      "crowd_estimate": 0.60,
+      "final_estimate": 0.65,
+      "direction": "YES (UNDER 2.5)",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_HT_BTTS_SOT": 0.85,
+    "Q2_ECU_more_fouls": 0.35,
+    "Q3_ECU_more_2H_corners": 0.43,
+    "Q4_GER_more_2H_goals": 0.46,
+    "Q5_GER_more_2H_SOT": 0.50,
+    "Q6_penalty_or_RC": 0.28,
+    "Q7_ECU_offside_2plus": 0.10,
+    "Q8_BTTS_3plus": 0.22,
+    "Q9_ECU_scores": 0.50,
+    "Q10_under_2_5": 0.65
+  },
+  "strongest_signals": [
+    "Q7: ECU ≥2 offsides = 0.10 (STRONG NO - low λ=0.5 + GER deep block context)",
+    "Q10: UNDER 2.5 = 0.65 (YES - market-validated, ECU 0-goal form)",
+    "Q8: BTTS+3+ = 0.22 (NO - bounded by market OVER 2.5 at 33.9%)"
+  ],
+  "post_match_results": {
+    "final_score": "Ecuador 2-1 Germany",
+    "total_rbp": 8.05,
+    "beat_crowd_count": "6/10",
+    "results": {
+      "Q1_HT_BTTS_SOT": {"outcome": "YES", "our_est": 0.85, "crowd": 0.67, "rbp": 11.70, "beat_crowd": true},
+      "Q2_ECU_more_fouls": {"outcome": "YES", "our_est": 0.35, "crowd": 0.57, "rbp": -22.01, "beat_crowd": false, "note": "Second-biggest loss of the match. We trusted the WC2026 foul averages (ECU 10.0 < GER 11.5) and bet against a rotated-Germany attacking more fouls, but Ecuador's must-win pressing intensity drove much heavier fouling than their history suggested. The crowd's 57% correctly weighted the must-win urgency far more than we did."},
+      "Q3_ECU_more_2H_corners": {"outcome": "YES", "our_est": 0.43, "crowd": 0.35, "rbp": 12.13, "beat_crowd": true},
+      "Q4_GER_more_2H_goals": {"outcome": "NO", "our_est": 0.46, "crowd": 0.54, "rbp": 10.50, "beat_crowd": true, "note": "Our 2H-tie-heavy Poisson model (46%, below the crowd's bullish 54% on a rotated Germany) was directionally right."},
+      "Q5_GER_more_2H_SOT": {"outcome": "NO", "our_est": 0.50, "crowd": 0.62, "rbp": 16.37, "beat_crowd": true},
+      "Q6_penalty_or_RC": {"outcome": "NO", "our_est": 0.28, "crowd": 0.34, "rbp": 5.66, "beat_crowd": true},
+      "Q7_ECU_offside_2plus": {"outcome": "NO", "our_est": 0.10, "crowd": 0.45, "rbp": 21.43, "beat_crowd": true, "note": "Biggest single win of the match. RULE_OFFSIDE_DEFENSIVE_SHAPE (rotated Germany plays a lower defensive line, eliminating the offside trap) held exactly as modeled against a crowd that priced it near coin-flip."},
+      "Q8_BTTS_3plus_goals": {"outcome": "YES", "our_est": 0.22, "crowd": 0.41, "rbp": -24.10, "beat_crowd": false, "note": "Biggest loss of the match. We anchored hard to Ecuador's '0 goals in 2 WC2026 matches' finishing crisis and a market-bounded ceiling (OU2.5=33.9%), but Ecuador finally converted in their must-win finale, scoring twice. The 0-goal streak was a small-sample artifact (16 SOT, 0 goals = unsustainable conversion luck), not a durable skill signal — we over-weighted it."},
+      "Q9_ECU_scores": {"outcome": "YES", "our_est": 0.50, "crowd": 0.56, "rbp": -2.62, "beat_crowd": false},
+      "Q10_under_2_5_goals": {"outcome": "NO", "our_est": 0.65, "crowd": 0.43, "rbp": -21.02, "beat_crowd": false, "note": "Third-biggest loss. Same root cause as Q8 — we doubled down on Ecuador's poor finishing continuing into a third match, when in fact a must-win elimination scenario was exactly the moment a finishing crisis was most likely to break."}
+    },
+    "key_confirmations": [
+      "Q7 (+21.43) shows RULE_OFFSIDE_DEFENSIVE_SHAPE works well for a rotated/defensively passive favorite, independent of the underdog's own attacking intent.",
+      "Q2, Q8, Q10 (combined -67.13) share one root cause: treating Ecuador's 0-goals-in-2-matches finishing crisis as a stable rate rather than a small-sample (16 SOT, 0 goals) variance artifact. A must-win elimination match is precisely the highest-motivation, highest-regression-to-the-mean scenario — we should have shaded UP Ecuador's scoring odds and DOWN our confidence in the under, not doubled down on the streak."
+    ]
+  },
+  "created": "2026-06-25"
+}

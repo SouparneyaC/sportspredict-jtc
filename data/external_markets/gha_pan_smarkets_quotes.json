@@ -1,0 +1,46 @@
+{
+  "119428352": {
+    "label": "Full-time result",
+    "quotes": {
+      "Ghana": 40.65,
+      "Panama": 29.42,
+      "Draw": 30.31
+    }
+  },
+  "119428370": {
+    "label": "Highest scoring half",
+    "quotes": {
+      "First Half": 28.31,
+      "Equal": 29.765,
+      "Second Half": 41.93
+    }
+  },
+  "119428377": {
+    "label": "Penalty to be awarded",
+    "quotes": {
+      "Yes": 26.48,
+      "No": 74.11
+    }
+  },
+  "119428407": {
+    "label": "2H Ghana O/U 0.5 goals",
+    "quotes": {
+      "Under 0.5 goals": 49.19,
+      "Over 0.5 goals": 50.92
+    }
+  },
+  "119428417": {
+    "label": "2H Panama O/U 0.5 goals",
+    "quotes": {
+      "Under 0.5 goals": 56.76,
+      "Over 0.5 goals": 43.425
+    }
+  },
+  "119428472": {
+    "label": "Ghana -0.5 corners / Panama +0.5 corners",
+    "quotes": {
+      "Ghana -0.5 corners": 48.58,
+      "Panama +0.5 corners": 51.745
+    }
+  }
+}

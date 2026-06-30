@@ -1,0 +1,190 @@
+{
+  "match": "BRA-MAR",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "d95d0e9c-c8dd-40af-9090-3df88d3c610d",
+  "sportspredict_market_id": "a52515a9-1090-4a79-9544-0169abdb8684",
+  "smarkets_event_id": "44754856",
+  "kickoff_note": "Estimates built under severe time pressure - page showed 'Kicks off in 23m' / 'CLOSES SOON' at submission time.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "endpoint": "api.smarkets.com/v3/markets/{id}/quotes?contract_ids=...",
+      "method": "mid-price = avg(best_bid, best_offer) per contract (prices in 1/100ths of a percent), then vig-removed via normalization across all contracts in a market (true_prob = raw_prob / sum(all_outcomes_raw_probs))",
+      "markets_used": {
+        "match_winner": "Brazil 57.87% (vig-adjusted)",
+        "2h_goals_brazil_vs_morocco": "Brazil more 2H goals ~46%",
+        "total_cards": "Brazil more cards than Morocco ~32%",
+        "btts_over2.5": "~34%",
+        "morocco_corners_5plus": "~31%",
+        "ht_result": "Draw at HT ~44.57% (normalized)"
+      }
+    },
+    "espn_wc2022": {
+      "tier": "VERIFIED_API",
+      "endpoint": "site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/.../summary?event={id}",
+      "file": "bra_mar_wc2022_raw.jsonl",
+      "coverage": "12 WC2022 matches (5 Brazil, 7 Morocco) - boxscore.teams[].statistics arrays: offsides, fouls, shotsOnTarget, cards, corners, wonCorners",
+      "normalization": "per-90-minute scaling (x90/120) applied to extra-time matches (Brazil-Croatia QF, Morocco-Spain R16) to avoid inflating per-match rates"
+    }
+  },
+  "derived_estimates_draft": {
+    "q1_brazil_offsides_2plus": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson from Brazil's WC2022 offsides rate (5 matches, ESPN), P(X>=2) = 1 - e^-lambda(1+lambda)",
+      "recommended_estimate": 0.43
+    },
+    "q2_morocco_more_fouls": {
+      "category": "tier2_realdata",
+      "method": "Skellam (fouls_morocco - fouls_brazil) from each team's WC2022 per-match foul rate (ESPN, 5 and 7 matches respectively)",
+      "recommended_estimate": 0.64
+    },
+    "q3_morocco_scores_first_2h_goal": {
+      "category": "tier2_realdata",
+      "method": "Race model: convert Smarkets-implied P(team scores >=1 in 2H) to Poisson lambda via lambda=-ln(1-P), then P(Morocco first) = [lambda_MAR/(lambda_MAR+lambda_BRA)] x [1-e^-(lambda_MAR+lambda_BRA)]",
+      "recommended_estimate": 0.24
+    },
+    "q4_brazil_more_2h_goals": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 2H-goals handicap market, vig-adjusted",
+      "recommended_estimate": 0.46
+    },
+    "q5_morocco_more_2h_sot": {
+      "category": "tier2_realdata",
+      "method": "Skellam (SOT_morocco - SOT_brazil, 2H only) from each team's WC2022 2H SOT rate (ESPN)",
+      "recommended_estimate": 0.13
+    },
+    "q6_brazil_more_cards": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets total-cards-by-team market, vig-adjusted",
+      "recommended_estimate": 0.32
+    },
+    "q7_btts_and_3plus_goals": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets BTTS + Over 2.5 compound market, vig-adjusted",
+      "recommended_estimate": 0.34
+    },
+    "q8_brazil_win": {
+      "category": "match_winner (RULE1: avg(crowd, verified_sharp_market))",
+      "method": "Smarkets match-winner = 57.87% vig-adjusted. Predicted crowd would run ABOVE market on a global-favorite team (per crowd_bias_model 'big team' inflation literature, PMC11785260) - recommended a small +2pp nudge over pure market.",
+      "recommended_estimate_range": [0.58, 0.6]
+    },
+    "q9_morocco_5plus_corners": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets Morocco-corners-5+ market, vig-adjusted",
+      "recommended_estimate": 0.31
+    },
+    "q10_ht_tied": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets HT-result market, Draw outcome normalized (corrected from an initial bug that read Brazil's HT price instead of Draw's)",
+      "recommended_estimate": 0.45
+    }
+  },
+  "post_match_results": {
+    "final_score": "Brazil 1 - 1 Morocco",
+    "total_rbp": -16.33,
+    "beat_crowd_count": "7/10",
+    "questions": [
+      {
+        "q": 1,
+        "question": "Will Brazil be caught offside 2 or more times?",
+        "us": 0.43,
+        "crowd": 0.59,
+        "outcome": 0,
+        "rbp": 20.36,
+        "category": "tier2_realdata",
+        "note": "Submitted exactly as recommended. Best result of the match - first-pass model nailed it, crowd was wrong-side and overconfident."
+      },
+      {
+        "q": 2,
+        "question": "Will Morocco commit more fouls than Brazil?",
+        "us": 0.64,
+        "crowd": 0.61,
+        "outcome": 0,
+        "rbp": -0.44,
+        "category": "tier2_realdata",
+        "note": "Submitted as recommended. Both us and crowd on the wrong side of 50%, by nearly identical margins - negligible loss."
+      },
+      {
+        "q": 3,
+        "question": "Will Morocco score the first goal of the second half?",
+        "us": 0.35,
+        "crowd": 0.32,
+        "outcome": 0,
+        "rbp": 0.47,
+        "category": "tier2_realdata",
+        "note": "Recommended 0.24, submitted 0.35 (+11pp). Still beat crowd narrowly - small win either way."
+      },
+      {
+        "q": 4,
+        "question": "Will Brazil score more goals than Morocco in the second half?",
+        "us": 0.58,
+        "crowd": 0.55,
+        "outcome": 0,
+        "rbp": 0.47,
+        "category": "tier1_market_deviated",
+        "note": "Recommended 0.46 (market), submitted 0.58 (+12pp toward crowd). Crowd was ALSO above market here - the deviation tracked crowd's direction and the loss was negligible."
+      },
+      {
+        "q": 5,
+        "question": "Will Morocco have more shots on target than Brazil in the second half?",
+        "us": 0.23,
+        "crowd": 0.33,
+        "outcome": 0,
+        "rbp": 8.46,
+        "category": "tier2_realdata",
+        "note": "Recommended 0.13, submitted 0.23 (+10pp). Still well below crowd's 0.33 and on the correct side - solid win."
+      },
+      {
+        "q": 6,
+        "question": "Will Brazil receive more cards than Morocco?",
+        "us": 0.41,
+        "crowd": 0.39,
+        "outcome": 1,
+        "rbp": 4.72,
+        "category": "tier1_market_deviated",
+        "note": "Recommended 0.32 (market), submitted 0.41 (+9pp toward crowd). Outcome was YES - the upward deviation moved us closer to the correct answer than either market or crowd's own number. Small win."
+      },
+      {
+        "q": 7,
+        "question": "Will both teams score AND the match have 3 or more total goals?",
+        "us": 0.4,
+        "crowd": 0.47,
+        "outcome": 0,
+        "rbp": 10.79,
+        "category": "tier1_market_deviated",
+        "note": "Recommended 0.34 (market), submitted 0.40 (+6pp toward crowd, but still well below crowd's 0.47). Final score 1-1 = BTTS yes but only 2 total goals, so outcome=NO. Strong win."
+      },
+      {
+        "q": 8,
+        "question": "Will Brazil win the match?",
+        "us": 1.0,
+        "crowd": 0.67,
+        "outcome": 0,
+        "rbp": -51.97,
+        "category": "match_winner_gut_override",
+        "note": "RECOMMENDED 0.58-0.60 (RULE1: avg of Smarkets 57.87% market and predicted crowd-inflation). SUBMITTED 1.00 instead - a personal-conviction override, not the researched number. Brazil drew 1-1 (did not win). RBP=-51.97 is our worst-ever single result, exceeding QAT-SUI Q1's -42.51. Crowd (0.67) was ALSO too high (as our crowd-inflation prediction anticipated) but still beat us by a huge margin because 100% guarantees squared error of exactly 1.0 when wrong, with no possible upside beyond what ~0.90-0.95 would have given if right. Counterfactual: at us=0.60, sq_err=0.36 vs crowd's sq_err=0.4489 - we would have BEATEN crowd. Even RULE1's literal avg(0.67,0.5787)=0.624 would have beaten crowd (sq_err=0.389). ANY of the researched numbers wins this question; only the 100% override loses it."
+      },
+      {
+        "q": 9,
+        "question": "Will Morocco have 5 or more corner kicks?",
+        "us": 0.42,
+        "crowd": 0.38,
+        "outcome": 0,
+        "rbp": 0.34,
+        "category": "tier1_market_deviated",
+        "note": "Recommended 0.31 (market), submitted 0.42 (+11pp toward crowd, ending up slightly above crowd). Tiny win despite the deviation - low-stakes question."
+      },
+      {
+        "q": 10,
+        "question": "Will the match be tied at halftime?",
+        "us": 0.32,
+        "crowd": 0.42,
+        "outcome": 1,
+        "rbp": -9.52,
+        "category": "tier1_market_deviated",
+        "note": "Recommended 0.45 (market, Draw-at-HT normalized to 44.57%), submitted 0.32 (-13pp, moving AWAY from both market and crowd). Outcome was YES (HT was tied) - this deviation went the WRONG direction, likely the same 'Brazil will dominate, so no tie' gut feeling that produced Q8's override. Had we submitted the recommended 0.45, sq_err=(1-0.45)^2=0.3025 would have beaten crowd's sq_err=(1-0.42)^2=0.3364, turning this into a small win."
+      }
+    ],
+    "summary": "9/10 questions followed the researched methodology (tier1_market or tier2_realdata, first-pass models, submitted at-or-near the recommended value with only minor +6-12pp drifts toward crowd that mostly didn't hurt). Those 9 combined for +35.65 RBP, 7 of them beating crowd outright - our best beat-crowd RATE (7/10) of any match so far, and the strongest validation yet of the Phase-3 retrospective's 'first-pass real-data + undeviated tier1_market' approach. The ENTIRE net loss (-16.33) is attributable to ONE question (Q8, -51.97): a 100% gut-conviction override of a researched ~0.60 recommendation on 'Will Brazil win', which lost by a wide margin to a draw. Q10's smaller loss (-9.52) may be a secondary casualty of the same 'Brazil will dominate' belief that drove Q8."
+  }
+}

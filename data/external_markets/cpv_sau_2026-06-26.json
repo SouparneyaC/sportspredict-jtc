@@ -1,0 +1,179 @@
+{
+  "match": "Cape Verde vs Saudi Arabia",
+  "date": "2026-06-26",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"CPV_vs_ESP_GD1": 760428, "URU_vs_SAU_GD1": 760429, "CPV_vs_URU_GD2": 760450, "SAU_vs_ESP_GD2": 760453},
+  "smarkets_event_id": 45086928,
+  "group_context": {
+    "Cape Verde": {"pts": 2, "record": "0-2-0 (D0-0 ESP, D2-2 URU)", "status": "Two creditable draws. A win here puts them in strong control of 2nd place."},
+    "Saudi Arabia": {"pts": 1, "record": "0-1-1 (D1-1 URU, L0-4 ESP)", "status": "Needs a win, and likely a big GD swing, to have a real shot at advancing."}
+  },
+  "wc2026_espn_stats": {
+    "CPV": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760428, "opponent": "Spain", "result": "D 0-0", "fouls": 1, "SOT": 1, "offsides": 3, "YC": 1, "RC": 0, "corners": 1, "possession": 25.7},
+        {"event_id": 760450, "opponent": "Uruguay", "result": "D 2-2", "fouls": 4, "SOT": 4, "offsides": 0, "YC": 2, "RC": 0, "corners": 4, "possession": 34.8}
+      ],
+      "averages": {"fouls": 2.5, "SOT": 2.5, "offsides": 1.5, "cards": 1.5, "corners": 2.5},
+      "CRITICAL": "Remarkably disciplined low-possession side — only 1 foul in 90 minutes against Spain. Two excellent defensive results (0-0 vs Spain, 2-2 vs Uruguay) despite minimal possession both times."
+    },
+    "SAU": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760429, "opponent": "Uruguay", "result": "D 1-1", "fouls": 11, "SOT": 3, "offsides": 0, "YC": 1, "RC": 0, "corners": 4, "possession": 33.2},
+        {"event_id": 760453, "opponent": "Spain", "result": "L 0-4", "fouls": 2, "SOT": 1, "offsides": 3, "YC": 2, "RC": 0, "corners": 1, "possession": 32.9}
+      ],
+      "averages": {"fouls": 6.5, "SOT": 2.0, "offsides": 1.5, "cards": 1.5, "corners": 2.5},
+      "NOTE": "Classic RULE10 disengagement pattern: 11 fouls in a competitive 1-1 draw vs Uruguay, only 2 fouls while being blown out 0-4 by Spain. Today's match is far more competitive than the Spain game, so expect the higher (11-foul) rate to be more representative."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Cape_Verde": 0.3690, "Saudi_Arabia": 0.3437, "Draw": 0.2899, "liquid": true},
+    "HT_result": {"Cape_Verde": 0.2742, "Saudi_Arabia": 0.2650, "Draw": 0.4652, "liquid": true},
+    "Penalty": {"Yes": 0.2542, "No": 0.7520, "liquid": true},
+    "CPV_2H_OU0_5_goals": {"Under": 0.5072, "Over": 0.4949, "liquid": true},
+    "CPV_SOT_OU4_5_fullmatch": {"Under": 0.5842, "Over": 0.4152, "liquid": true},
+    "SAU_SOT_OU3_5_fullmatch": {"Under": 0.5159, "Over": 0.4844, "liquid": true},
+    "player_score_or_assist": {"Ryan_Mendes": {"offer": 0.365, "adjusted": 0.345}},
+    "anytime_goalscorer": {"Salem_Al_Dawsari": {"offer": 0.25, "adjusted": 0.236}}
+  },
+  "context_flags": [
+    "EVEN_MATCHUP: FTR is almost a true 3-way pick'em (CPV 36.9% / SAU 34.4% / Draw 29.0%) — neither team is a clear favorite, unlike both teams' games against Spain.",
+    "RULE8_WATCH: HT Draw priced at 46.52% — elevated, consistent with a cagey, low-event match expected between two evenly-matched, defensively solid sides.",
+    "SAU_RULE10_FOUL_SWING: Saudi Arabia's foul rate is highly game-state dependent (11 when competitive, 2 when blown out). Today's even matchup should pull them toward the higher rate, not their 2-match average.",
+    "CPV_GENUINE_DISCIPLINE: Cape Verde's low foul count appears to be a real team trait (low fouls in BOTH a blowout-against scenario and a competitive draw), not just blowout disengagement — trust it more than a typical low-foul read.",
+    "BOTH_LOW_SOT_TEAMS: Cape Verde (2.5 avg) and Saudi Arabia (2.0 avg) are both modest shot-generation teams — supports a generally low-event match across SOT-based props."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Cape Verde commit more fouls than Saudi Arabia?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Normal-approx on raw averages (CPV 2.5 vs SAU 6.5) gives P=0.17. Cape Verde's discipline looks like a genuine team trait (low fouls even in a competitive draw), while Saudi Arabia's foul rate should rise toward their competitive-match level (11) in this even fixture. Small upward nudge from the raw number for uncertainty, but direction is clear.",
+      "final_estimate": 0.22,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will both teams have at least 1 shot on target in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Poisson off full-match ESPN SOT averages (CPV λ_2H=1.25 → P(≥1)=0.71; SAU λ_2H=1.0 → P(≥1)=0.63). Joint ≈ 0.45.",
+      "final_estimate": 0.45,
+      "direction": "NO lean (narrow)",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will a penalty kick be awarded in the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets market: 25.42%. Trust it.",
+      "final_estimate": 0.25,
+      "direction": "NO",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Cape Verde be caught offside 2 or more times?",
+      "pick_tier": "LOW-MEDIUM CONFIDENCE",
+      "reasoning": "CPV offsides were 3 (vs Spain, low-possession counter-attacking) and 0 (vs Uruguay, more controlled approach where they scored twice). λ=1.5 → raw Poisson P(≥2)=0.44. High variance (n=2, opposite patterns), and today's even matchup against a non-high-press Saudi Arabia should produce fewer high-risk transition forays than the Spain game did. Shade down from raw.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "low-medium"
+    },
+    {
+      "q": 5,
+      "text": "Will Saudi Arabia have more shots on target than Cape Verde in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Skellam (SAU λ_2H=1.0, CPV λ_2H=1.25) gives P(SAU>CPV)=0.30. Cape Verde has actually out-generated Saudi Arabia on SOT across the tournament so far (2.5 vs 2.0 avg) despite far less possession in their matches — a real, if modest, signal.",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 6,
+      "text": "Will Cape Verde win the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets FTR: Cape Verde 36.90%. Direct tier-1 market in a near-3-way-even fixture.",
+      "final_estimate": 0.37,
+      "direction": "NO lean (more likely draw/SAU)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will Cape Verde score in the second half?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: CPV 2H over 0.5 goals = 49.49%. Essentially a coin-flip — trust it as-is.",
+      "final_estimate": 0.49,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Ryan Mendes score or assist a goal (excluding own goals)?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Illiquid offer (0.365, adjusted ×0.945=0.345). Mendes is Cape Verde's primary attacking threat; no strong RULE15 case since Cape Verde isn't an extreme underdog (36.9% win prob) in this fixture. Trust the market closely.",
+      "final_estimate": 0.34,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Salem Al-Dawsari score a goal (excluding own goals)?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Illiquid offer (0.25, adjusted ×0.945=0.236). Saudi Arabia has scored only 1 goal in 2 WC2026 matches; Al-Dawsari is their most dangerous attacker but the team's overall scoring output has been very low. Trust the market near-raw.",
+      "final_estimate": 0.24,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will Saudi Arabia receive more cards than Cape Verde?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Card averages are EQUAL on paper (SAU 1.5, CPV 1.5), so a naive read is a coin-flip — but the symmetric Poisson comparison (λ=1.5 vs 1.5) already gives 0.38 once tie-probability mass is removed. Context confirms the same direction: both teams' card counts are NOT driven by foul volume but by match competitiveness — SAU got MORE cards in their blowout loss (2, despite only 2 fouls) than in their competitive draw (1, despite 11 fouls), while CPV got MORE cards in their competitive draw (2) than their disciplined draw vs Spain (1). Today's fixture is a competitive, even match — exactly the scenario where CPV's card rate (2) historically exceeds SAU's (1).",
+      "final_estimate": 0.38,
+      "direction": "NO lean",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_CPV_more_fouls": 0.22,
+    "Q2_both_SOT_2H": 0.45,
+    "Q3_penalty": 0.25,
+    "Q4_CPV_2plus_offsides": 0.32,
+    "Q5_SAU_more_2H_SOT": 0.30,
+    "Q6_CPV_wins": 0.37,
+    "Q7_CPV_scores_2H": 0.49,
+    "Q8_Mendes_score_or_assist": 0.34,
+    "Q9_AlDawsari_scores": 0.24,
+    "Q10_SAU_more_cards": 0.38
+  },
+  "strongest_picks": [
+    "Q1: CPV more fouls than SAU = 0.22 (HIGH CONFIDENCE — genuine discipline trait vs SAU's RULE10 game-state-dependent fouling)",
+    "Q3: Penalty awarded = 0.25 (HIGH CONFIDENCE — direct market)",
+    "Q6: Cape Verde wins = 0.37 (HIGH CONFIDENCE — direct market in a near-even fixture)"
+  ],
+  "post_match_results": {
+    "final_score": "Cape Verde 0-0 Saudi Arabia",
+    "total_rbp": 1.45,
+    "beat_crowd_count": "6/10",
+    "results": {
+      "Q1_CPV_more_fouls": {"outcome": "NO", "our_est": 0.22, "crowd": 0.45, "rbp": 17.76, "beat_crowd": true, "note": "Biggest win of the match. CPV's discipline-as-genuine-trait read (not just blowout disengagement) held up cleanly in a competitive 0-0."},
+      "Q2_both_SOT_2H": {"outcome": "YES", "our_est": 0.45, "crowd": 0.66, "rbp": -16.16, "beat_crowd": false, "note": "Second-biggest loss. Both teams found at least 1 2H SOT in a cagey match — the half-split Poisson (0.45) undershot; crowd's 66% was closer."},
+      "Q3_penalty": {"outcome": "NO", "our_est": 0.25, "crowd": 0.28, "rbp": 3.30, "beat_crowd": true},
+      "Q4_CPV_2plus_offsides": {"outcome": "YES", "our_est": 0.32, "crowd": 0.47, "rbp": -15.32, "beat_crowd": false, "note": "THE KEY MISS. Cape Verde sat on exactly 1 offside for almost the entire match — consistent with our cagey-match read — then picked up a 2nd in stoppage time pushing for a late winner in a still-0-0, must-have-points game. Root cause: we shaded DOWN from the raw Poisson (0.44) to 0.32 based on a 'fewer transition forays in an even matchup' narrative. The raw number was closer to truth than our shaded one, AND we missed a distinct pattern — late-match desperation in a scoreless draw between two teams that both need a result raises stoppage-time offside risk, similar in spirit to chasing-a-deficit (BRA-HAI, POR-UZB, TUR-PAR) but triggered by a tied scoreline + mutual must-win pressure rather than an actual deficit. See updated STEPS_FOR_HIGH_POINTS.md entry."},
+      "Q5_SAU_more_2H_SOT": {"outcome": "NO", "our_est": 0.30, "crowd": 0.44, "rbp": 12.50, "beat_crowd": true},
+      "Q6_CPV_wins": {"outcome": "NO", "our_est": 0.37, "crowd": 0.39, "rbp": 3.80, "beat_crowd": true},
+      "Q7_CPV_scores_2H": {"outcome": "NO", "our_est": 0.49, "crowd": 0.49, "rbp": 1.87, "beat_crowd": true, "note": "Exact tie with crowd, correct side."},
+      "Q8_Mendes_score_or_assist": {"outcome": "NO", "our_est": 0.34, "crowd": 0.30, "rbp": -0.74, "beat_crowd": false, "note": "Tiny loss, essentially a push."},
+      "Q9_AlDawsari_scores": {"outcome": "NO", "our_est": 0.24, "crowd": 0.25, "rbp": 2.54, "beat_crowd": true},
+      "Q10_SAU_more_cards": {"outcome": "YES", "our_est": 0.38, "crowd": 0.46, "rbp": -8.09, "beat_crowd": false, "note": "Our 'competitive match favors Cape Verde's higher card rate' read was wrong — Saudi Arabia picked up more cards in this competitive 0-0 instead."}
+    },
+    "key_confirmations": [
+      "Q1 and Q4 are a direct contrast worth studying together: Q1 (trusting a real discipline signal near-raw) won big; Q4 (shading a real signal DOWN based on a plausible-sounding narrative) lost big. Same match, same team, opposite lesson outcomes depending on whether we trusted the data or a story about the data.",
+      "NEW PATTERN CANDIDATE: 'mutual must-win stalemate' late-match risk — when two teams that BOTH need a win are still scoreless deep into the match, treat stoppage-time event risk (offsides, cards, corners from late desperation) as elevated, not suppressed, even in an otherwise cagey match."
+    ]
+  },
+  "created": "2026-06-26"
+}

@@ -1,0 +1,289 @@
+{
+  "match": "USA vs Paraguay",
+  "smarkets_event_id": 44754855,
+  "smarkets_start_date": "2026-06-13",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "f3e6d1f5-dfb2-4cab-8673-906307cc0b11",
+  "closing_date": "2026-06-13T01:00:00.000Z",
+  "sportspredict_questions": {
+    "91e621b2-9551-4eb6-bdda-77a1acfb3310": "Will Julio Enciso have at least 1 shot on target in the second half?",
+    "33e8ba65-9cd0-4125-b3d9-b9c0e5380ca9": "Will United States be caught offside 2 or more times?",
+    "0cebcac7-078a-4d31-91bb-4d77398eb96b": "Will United States score the first goal of the game and Paraguay score in the second half?",
+    "19d983af-4175-418f-b303-79cdee780554": "Will Paraguay finish with more corner kicks than United States?",
+    "80b7efe8-2509-496c-acf1-b30196edfe57": "Will United States win the match?",
+    "9a591eeb-3ad3-4234-bd84-f72819e94668": "At halftime, will the match be tied?",
+    "4b53c9c5-e9b5-4aab-a65a-93513050a97c": "Will the match have 3 or more total goals?",
+    "32a650bf-7d02-4c69-9ac6-959f8d0aeab9": "Will Paraguay score in the second half?",
+    "37668b41-28f2-4612-ad4d-88aeda1d397a": "Will there be 4 or more total cards shown?",
+    "ff48e965-9564-4b72-ad93-c163d7261e67": "Will Folarin Balogun have at least 1 shot on target?"
+  },
+  "sources": {
+    "smarkets": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-12 (session 1)",
+      "method": "api.smarkets.com/v3/markets/<id>/contracts/ + /quotes/, mid = (best_bid+best_offer)/2/10000",
+      "markets": {
+        "full_time_result_119427359": {
+          "USA_mid": 0.4651,
+          "Draw_mid": 0.3008,
+          "Paraguay_mid": 0.2354,
+          "sum": 1.0012
+        },
+        "ht_result_119427366": {
+          "USA_mid": 0.3352,
+          "Draw_mid": 0.4696,
+          "Paraguay_mid": 0.1962,
+          "sum": 1.0009
+        },
+        "over_under_2.5_goals_119427396": {
+          "Over2.5_mid": 0.3818,
+          "Under2.5_mid": 0.6175,
+          "sum": 0.9993
+        },
+        "corners_handicap_119427479": {
+          "USA_minus0.5_mid": 0.5172,
+          "Paraguay_plus0.5_mid": 0.4843,
+          "sum": 1.0015,
+          "note": "Paraguay+0.5 mid = P(Paraguay corners >= USA corners), INCLUDES ties - need to subtract P(tie) for the strict 'more than' question Q4"
+        },
+        "2h_paraguay_goals_119427424": {
+          "Over0.5_mid": 0.4017,
+          "Under0.5_mid": 0.6035,
+          "sum": 1.0051
+        },
+        "team_to_score_first_119427549": {
+          "USA_mid": 0.5225,
+          "NoGoal_mid": 0.1095,
+          "Paraguay_mid": 0.3667,
+          "sum": 0.9986
+        },
+        "cards_over_under_3.5_119427515": {
+          "Over3.5_mid": 0.5761,
+          "Under3.5_mid": 0.4947,
+          "sum": 1.0707,
+          "note": "wider spread than other markets - less liquid"
+        },
+        "player_sot_over0.5_144466689": {
+          "Folarin_Balogun_offer_only": 0.6289,
+          "Julio_Enciso_offer_only": 0.6024,
+          "note": "FULL-MATCH player SOT>=1, offer-only (no bids, illiquid - same pattern as Dzeko in CAN-BIH). Q1 asks specifically about 2ND HALF for Enciso - no such market exists (structural gap, same as Dzeko-2H last time)."
+        }
+      },
+      "structural_gaps_confirmed": [
+        "No 'offside' market of any kind found in the 181-market enumeration for this fixture (Q2: USA offsides 2+) - same pattern as BIH fouls/2H-SOT last session.",
+        "No '2nd half player shots on target' market exists for any player (Q1: Enciso 2H SOT)."
+      ]
+    },
+    "polymarket_gamma_api": {
+      "verification": "VERIFIED_API",
+      "fetched": "2026-06-12 (session 2)",
+      "slug": "fifwc-usa-par-2026-06-12",
+      "markets": {
+        "match_winner": {
+          "USA_win": 0.465,
+          "Draw": 0.295,
+          "Paraguay_win": 0.235,
+          "liquidity_usd": 8160000
+        }
+      }
+    },
+    "fanduel_search_summary": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "fetched": "2026-06-12 (session 2)",
+      "method": "WebSearch 'USA vs Paraguay World Cup odds oddschecker' -> FanDuel odds cited",
+      "raw_odds_american": {
+        "USA": -105,
+        "Draw": 240,
+        "Paraguay": 310
+      },
+      "implied_normalized": {
+        "USA_win": 0.488,
+        "Draw": 0.28,
+        "Paraguay_win": 0.233
+      },
+      "note": "US-based book (FanDuel) - normalized implied probs are slightly HIGHER on USA (48.8%) than Smarkets/Polymarket (46.5%), consistent with the user's host-bias hunch, but the gap is small (~2.3pp) and well within noise."
+    },
+    "enciso_injury_search_summary": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "fetched": "2026-06-12 (session 2)",
+      "facts": [
+        "Enciso stretchered off in 25th minute of Paraguay 4-0 win vs Nicaragua (friendly, 2026-06-05, Asuncion) with hamstring + quad/waist injury (per coach Gustavo Alfaro)",
+        "As of latest reports: 'made encouraging progress', coach 'left the door open' for him to start vs USA",
+        "Projected XI (multiple outlets) still lists Enciso as AM starter, but flagged as 'the biggest question mark' in the lineup"
+      ],
+      "implication_for_Q1": "Genuine uncertainty whether Enciso starts/plays at all, on top of normal 2H-SOT uncertainty. Smarkets full-match SOT>=1 offer (0.6024, illiquid/offer-only) was fetched same window as this news so may already partially reflect it, but offer-only prices are unreliable. Recommend discounting heavily for Q1."
+    }
+  },
+  "derived_estimates_draft": {
+    "80b7efe8-2509-496c-acf1-b30196edfe57": {
+      "question": "Will United States win the match?",
+      "estimate_mid": 0.465,
+      "recommended_estimate": 0.465,
+      "source": "Smarkets (0.4651) + Polymarket (0.465) VERIFIED_API agree almost exactly; FanDuel (0.488, UNVERIFIED) slightly higher but within 2.3pp",
+      "sources_count_verified": 2,
+      "note": "RESOLVED per CAN-BIH postmortem rule: internal ordered-logit model gives ~34.4% (driven by Paraguay Elo 1917.75 > USA Elo 1827.50), diverging >10pp from a 2-source verified market consensus (~46.5%). Per the rule, defer to market. Host-bias hunch check: FanDuel (US book) is only ~2.3pp above the EU/crypto-native consensus (Smarkets UK, Polymarket global) - this is NOT a large US-bias signal, well within normal book-to-book variance. The bigger story is that our OWN MODEL is the outlier here (opposite of CAN-BIH where the model overrated the host). Likely cause: Elo panel rates Paraguay's recent World Cup playoff run very highly (beat/qualified past Uruguay etc.) similar to how it underrated BIH's playoff run last time - i.e. the panel may compress strength differences for teams that just went through high-stakes playoff matches, in BOTH directions depending on result."
+    },
+    "4b53c9c5-e9b5-4aab-a65a-93513050a97c": {
+      "question": "Will the match have 3 or more total goals?",
+      "estimate_mid": 0.3818,
+      "source": "Smarkets Over 2.5 goals (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.3818
+    },
+    "9a591eeb-3ad3-4234-bd84-f72819e94668": {
+      "question": "At halftime, will the match be tied?",
+      "estimate_mid": 0.4696,
+      "source": "Smarkets HT result Draw (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.4696
+    },
+    "32a650bf-7d02-4c69-9ac6-959f8d0aeab9": {
+      "question": "Will Paraguay score in the second half?",
+      "estimate_mid": 0.4017,
+      "source": "Smarkets 2H Paraguay over 0.5 goals (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.4017
+    },
+    "37668b41-28f2-4612-ad4d-88aeda1d397a": {
+      "question": "Will there be 4 or more total cards shown?",
+      "estimate_mid": 0.5761,
+      "source": "Smarkets Over 3.5 cards (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.5761
+    },
+    "ff48e965-9564-4b72-ad93-c163d7261e67": {
+      "question": "Will Folarin Balogun have at least 1 shot on target?",
+      "estimate_mid": 0.6289,
+      "source": "Smarkets player SOT>0.5 (VERIFIED_API, offer-only/illiquid - same pattern as Dzeko)",
+      "sources_count_verified": 1,
+      "recommended_estimate": 0.6289
+    },
+    "0cebcac7-078a-4d31-91bb-4d77398eb96b": {
+      "question": "Will United States score the first goal of the game and Paraguay score in the second half?",
+      "estimate": "P(A)*P(B) using A=0.5225 (USA scores first, Smarkets) and B=0.4017 (Paraguay scores in 2H, Smarkets), assumes independence -> 0.5225*0.4017 = 0.2099",
+      "source": "Smarkets, both components VERIFIED_API",
+      "sources_count_verified": 1,
+      "note": "Same compound-independence approach as CAN-BIH 'penalty OR red card'. Caveat: these events are NOT independent in reality - if USA scores first, Paraguay is more likely to need to chase the game and attack more in 2H (positive correlation), which would push the true joint probability slightly ABOVE the naive product. Worth a small upward adjustment. Applying small positive-correlation bump (naive 0.2099 -> 0.225) per the noted chase-the-game effect.",
+      "recommended_estimate": 0.225
+    },
+    "19d983af-4175-418f-b303-79cdee780554": {
+      "question": "Will Paraguay finish with more corner kicks than United States?",
+      "estimate": "Smarkets corners handicap normalized: P(PAR>=USA)=0.4837. Skellam tie-probability model (lambda_USA~5.3, lambda_PAR~4.7, total corners~10) -> P(tie)~0.125 -> P(PAR>USA)=0.4837-0.125=0.358",
+      "recommended_estimate": 0.355,
+      "source": "Smarkets (VERIFIED_API) handicap + Skellam model calibrated against ESPN real corner counts. See usa_par_realdata.md",
+      "sources_count_verified": 1
+    },
+    "91e621b2-9551-4eb6-bdda-77a1acfb3310": {
+      "question": "Will Julio Enciso have at least 1 shot on target in the second half?",
+      "estimate": "Smarkets full-match anchor 0.6024 -> Poisson lambda_full=0.922 -> even-half-split lambda_2h=0.461 -> P(2H SOT|plays normally)=0.369; injury-adjusted blend (P(starts)=0.55 x0.9 fitness factor + P(sub,2H-only)=0.45*0.35) = 0.193",
+      "recommended_estimate": 0.2,
+      "source": "Smarkets (VERIFIED_API, illiquid anchor) + WebSearch injury reports (UNVERIFIED) + Poisson half-split model. See usa_par_realdata.md",
+      "sources_count_verified": 1
+    },
+    "33e8ba65-9cd0-4125-b3d9-b9c0e5380ca9": {
+      "question": "Will United States be caught offside 2 or more times?",
+      "estimate": "ESPN real data: USA had 3 offsides in Gold Cup blowout vs T&T (lambda implied >2.5, but extreme-dominance match). Poisson(lambda=2.0-2.2) -> P(>=2)=0.594-0.645",
+      "recommended_estimate": 0.58,
+      "source": "ESPN site API VERIFIED_API (event 735319) + Poisson model. See usa_par_realdata.md",
+      "sources_count_verified": 1
+    }
+  },
+  "post_match_results": {
+    "settled_date": "2026-06-12",
+    "final_score": "United States 4 - 1 Paraguay",
+    "total_rbp": 19.11,
+    "beat_crowd_count": "6/10",
+    "questions": [
+      {
+        "q": 1,
+        "question": "Will United States be caught offside 2 or more times?",
+        "category": "tier2_realdata",
+        "us": 0.58,
+        "crowd": 0.56,
+        "outcome": 1,
+        "rbp": 5.31
+      },
+      {
+        "q": 2,
+        "question": "Will United States score the first goal of the game and Paraguay score in the second half?",
+        "category": "compound_independence",
+        "us": 0.22,
+        "crowd": 0.31,
+        "outcome": 1,
+        "rbp": -9.25
+      },
+      {
+        "q": 3,
+        "question": "Will Paraguay finish with more corner kicks than United States?",
+        "category": "skellam_market_hybrid",
+        "us": 0.35,
+        "crowd": 0.35,
+        "outcome": 0,
+        "rbp": 4.28
+      },
+      {
+        "q": 4,
+        "question": "Will United States win the match?",
+        "category": "match_winner_deferred_market",
+        "us": 0.46,
+        "crowd": 0.6,
+        "outcome": 1,
+        "rbp": -8.81
+      },
+      {
+        "q": 5,
+        "question": "At halftime, will the match be tied?",
+        "category": "tier1_market",
+        "us": 0.47,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 1.28
+      },
+      {
+        "q": 6,
+        "question": "Will the match have 3 or more total goals?",
+        "category": "tier1_market",
+        "us": 0.38,
+        "crowd": 0.42,
+        "outcome": 1,
+        "rbp": -1.47
+      },
+      {
+        "q": 7,
+        "question": "Will Paraguay score in the second half?",
+        "category": "tier1_market",
+        "us": 0.4,
+        "crowd": 0.44,
+        "outcome": 1,
+        "rbp": -1.54
+      },
+      {
+        "q": 8,
+        "question": "Will there be 4 or more total cards shown?",
+        "category": "tier1_market",
+        "us": 0.57,
+        "crowd": 0.49,
+        "outcome": 1,
+        "rbp": 12.18
+      },
+      {
+        "q": 9,
+        "question": "Will Folarin Balogun have at least 1 shot on target?",
+        "category": "tier1_market",
+        "us": 0.62,
+        "crowd": 0.63,
+        "outcome": 1,
+        "rbp": 2.38
+      },
+      {
+        "q": 10,
+        "question": "Will Julio Enciso have at least 1 shot on target in the second half?",
+        "category": "tier2_realdata",
+        "us": 0.2,
+        "crowd": 0.37,
+        "outcome": 0,
+        "rbp": 14.77
+      }
+    ]
+  }
+}

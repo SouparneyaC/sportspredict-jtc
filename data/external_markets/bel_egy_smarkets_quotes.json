@@ -1,0 +1,84 @@
+{
+  "event_id": "44754860",
+  "event_name": "Belgium vs Egypt",
+  "fetched_at": "2026-06-15",
+  "markets": {
+    "full_time_result": {
+      "market_id": "119428963",
+      "contracts": {"Belgium": "336001301", "Draw": "336001303", "Egypt": "336001302"},
+      "quotes": {
+        "336001301": {"bids": [{"price": 6098}, {"price": 6061}, {"price": 6024}, {"price": 5988}, {"price": 5952}], "offers": [{"price": 6173}, {"price": 6211}, {"price": 6250}, {"price": 6369}, {"price": 6993}]},
+        "336001302": {"bids": [{"price": 1515}, {"price": 1471}, {"price": 1429}, {"price": 1389}], "offers": [{"price": 1562}, {"price": 1613}, {"price": 1667}, {"price": 9999}]},
+        "336001303": {"bids": [{"price": 2326}, {"price": 2273}, {"price": 2222}, {"price": 2041}], "offers": [{"price": 2381}, {"price": 2439}, {"price": 2500}, {"price": 5000}, {"price": 9999}]}
+      },
+      "mid_prices_raw": {"Belgium": 0.61355, "Egypt": 0.15385, "Draw": 0.23535},
+      "vig_normalized": {"Belgium": 0.6119, "Egypt": 0.1534, "Draw": 0.2347}
+    },
+    "half_time_result": {
+      "market_id": "119428970",
+      "contracts": {"Belgium": "336001342", "Draw": "336001344", "Egypt": "336001343"},
+      "quotes": {
+        "336001342": {"bids": [{"price": 4386}, {"price": 4348}, {"price": 4237}], "offers": [{"price": 4464}, {"price": 4505}]},
+        "336001343": {"bids": [{"price": 1429}, {"price": 1389}, {"price": 1351}], "offers": [{"price": 1613}, {"price": 1667}]},
+        "336001344": {"bids": [{"price": 4065}, {"price": 4032}, {"price": 4000}, {"price": 3906}], "offers": [{"price": 4132}, {"price": 4202}, {"price": 4237}]}
+      },
+      "mid_prices_raw": {"Belgium": 0.4425, "Egypt": 0.1521, "Draw": 0.40985},
+      "vig_normalized": {"Belgium": 0.4405, "Egypt": 0.1515, "Draw": 0.4080}
+    },
+    "btts_and_ou_2.5": {
+      "market_id": "119428993",
+      "contracts": {"Yes_Over": "336001437", "Yes_Under": "336001438", "No_Over": "336001439", "No_Under": "336001440"},
+      "quotes": {
+        "336001437": {"bids": [{"price": 3704}, {"price": 3623}, {"price": 3077}], "offers": [{"price": 3876}, {"price": 4274}]},
+        "336001438": {"bids": [{"price": 1000}, {"price": 606}], "offers": [{"price": 1250}, {"price": 1351}]},
+        "336001439": {"bids": [{"price": 1111}, {"price": 741}], "offers": [{"price": 1389}, {"price": 1613}]},
+        "336001440": {"bids": [{"price": 3788}, {"price": 3401}], "offers": [{"price": 4032}, {"price": 4464}, {"price": 4630}]}
+      },
+      "mid_prices_raw": {"Yes_Over": 0.379, "Yes_Under": 0.1125, "No_Over": 0.125, "No_Under": 0.391},
+      "vig_normalized": {"Yes_Over": 0.3761, "Yes_Under": 0.1116, "No_Over": 0.1241, "No_Under": 0.3881},
+      "note": "Yes_Over = both teams score AND 3+ total goals (over 2.5) = Q3 directly"
+    },
+    "belgium_minus0.5_corners_egypt_plus0.5_corners": {
+      "market_id": "119429083",
+      "contracts": {"Belgium_more_corners": "336001643", "Egypt_gte_corners": "336001644"},
+      "quotes": {"336001643": {"bids": [], "offers": []}, "336001644": {"bids": [], "offers": []}},
+      "note": "ILLIQUID - no bids or offers on either side, market unusable for Q1 dominance signal"
+    },
+    "belgium_ou_1.5_cards": {
+      "market_id": "119429167",
+      "contracts": {"Under_1.5": "336001840", "Over_1.5": "336001841"},
+      "quotes": {
+        "336001840": {"bids": [{"price": 5236}], "offers": [{"price": 6369}, {"price": 6667}]},
+        "336001841": {"bids": [{"price": 3623}], "offers": [{"price": 4762}]}
+      },
+      "mid_prices_raw": {"Under_1.5": 0.58025, "Over_1.5": 0.41925},
+      "vig_normalized": {"Under_1.5": 0.5806, "Over_1.5": 0.4194}
+    },
+    "egypt_ou_1.5_cards": {
+      "market_id": "119429168",
+      "contracts": {"Under_1.5": "336001842", "Over_1.5": "336001843"},
+      "quotes": {
+        "336001842": {"bids": [{"price": 3472}], "offers": [{"price": 4237}, {"price": 4717}]},
+        "336001843": {"bids": [{"price": 5780}], "offers": [{"price": 6536}, {"price": 6944}, {"price": 7143}]}
+      },
+      "mid_prices_raw": {"Under_1.5": 0.38545, "Over_1.5": 0.6158},
+      "vig_normalized": {"Under_1.5": 0.3848, "Over_1.5": 0.6152}
+    },
+    "player_0.5plus_sot_tielemans": {
+      "market_id": "144810097",
+      "contract_id": "404290979",
+      "contract_name": "Youri Tielemans",
+      "quotes": {"bids": [], "offers": [{"price": 4000}, {"price": 4167}]},
+      "note": "offer-only illiquid, best offer 40.00, x0.945 -> 0.378"
+    },
+    "player_score_or_assist_trezeguet": {
+      "market_id": "144810126",
+      "contract_id": "404293149",
+      "contract_name": "Mahmoud Hassan",
+      "note_name": "Mahmoud Hassan = Mahmoud Trezeguet (full name Mahmoud Abdelmonem Hassan 'Trezeguet')",
+      "quotes": {"bids": [], "offers": [{"price": 2597}]},
+      "note": "offer-only illiquid, offer 25.97, x0.945 -> 0.245"
+    },
+    "no_market_exists_for": ["team fouls (either direction)", "team offsides (either direction)", "2nd-half team SOT", "total match cards (only team-specific 1.5-card lines exist)", "2nd-half cards specifically", "corners handicap (illiquid, no quotes)"]
+  }
+}

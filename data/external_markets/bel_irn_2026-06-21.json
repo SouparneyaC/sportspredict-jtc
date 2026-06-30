@@ -1,0 +1,210 @@
+{
+  "match": "BEL-IRN",
+  "sportspredict_match_id": "260eafaf-0e4b-468d-9418-bc05b13de89f",
+  "smarkets_event_id": "45067766",
+  "espn_event_id": "760451",
+  "kickoff_utc": "2026-06-21T19:00:00Z",
+  "context_note": "Belgium vs Iran, WC2026 Group Stage. Belgium 69.45% to win; Iran 10.87%. Draw 20.01% — no RULE8 fire (<25%). Belgium NOT extreme favorite — no RULE7 (<86%). Iran 10.87% = underdog range (10-30%) → RULE15 applies to Taremi. Prior match data: BEL 1-1 EGY (Belgium 15 fouls, 3 SOT, 2 corners; Egypt 15 fouls, 3 SOT, 7 corners). IRN 2-2 NZL (Iran 10 fouls, 4 SOT, 4 corners; NZL 8 fouls, 8 SOT, 1 corner). Belgium pressing team (15 fouls vs Egypt despite 53.6% possession). Spain vs KSA context: dominant possession team (67%) only committed 10 fouls. Belgium may be ~13 fouls (possession style but physical). Iran deeper defender → 12-15 fouls.",
+  "lineups_confirmed": false,
+  "RULE7_fires": false,
+  "RULE8_fires": false,
+  "draw_probability": 0.2001,
+  "key_lambdas": {
+    "lambda_BEL_goals": 2.1637,
+    "lambda_IRN_goals": 0.7419,
+    "lambda_total_goals": 2.9056,
+    "lambda_1H_total": 1.2532,
+    "lambda_2H_total": 1.6524,
+    "lambda_BEL_1H": 0.929,
+    "lambda_IRN_1H": 0.324,
+    "lambda_BEL_2H": 1.231,
+    "lambda_IRN_2H": 0.422,
+    "lambda_BEL_SOT": 5.7,
+    "lambda_IRN_SOT": 2.6,
+    "lambda_total_SOT": 8.3,
+    "lambda_BEL_SOT_2H": 2.96,
+    "lambda_IRN_SOT_2H": 1.25,
+    "lambda_total_SOT_2H": 4.21,
+    "lambda_corners": 9.3,
+    "lambda_total_cards": 3.2,
+    "lambda_taremi_sot": 0.595,
+    "lambda_tielemans_sot": 0.479
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Belgium": 0.6945,
+      "Draw": 0.2001,
+      "Iran": 0.1087,
+      "liquid": true
+    },
+    "HT_result": {
+      "Belgium": 0.5182,
+      "Draw": 0.3706,
+      "Iran": 0.1178,
+      "liquid": true
+    },
+    "BTTS_OU25": {
+      "Yes_Over": 0.3665,
+      "Yes_Under": 0.0948,
+      "No_Over": 0.1634,
+      "No_Under": 0.3748,
+      "liquid": true
+    },
+    "OU25_cards": {"Over": 0.6175, "Under": 0.4091, "liquid": true},
+    "OU35_cards": {"Over": 0.4240, "Under": 0.5783, "liquid": true},
+    "OU85_total_SOT": {
+      "Over": 0.5463,
+      "Under": 0.4647,
+      "note": "Thin — individual BEL/IRN SOT markets returned identical prices; use player-derived lambdas as primary",
+      "liquid": false
+    },
+    "OU85_corners": {"Over": 0.5769, "Under": 0.4276, "liquid": true},
+    "OU95_corners": {"Over": 0.4683, "Under": 0.5389, "liquid": true},
+    "Penalty": {"Yes": 0.3332, "No": 0.7225, "liquid": true},
+    "Red_card": {"Yes": 0.1283, "No": 0.8853, "liquid": true},
+    "2H_OU15": {"Over": 0.4659, "Under": 0.5369, "liquid": true},
+    "1H_OU05": {"Over": 0.7144, "Under": 0.2901, "liquid": true},
+    "1H_OU15": {"Over": 0.3509, "Under": 0.6517, "liquid": true},
+    "BEL_OU05_goals": {"Over": 0.8851, "Under": 0.1157, "liquid": true},
+    "BEL_OU15_goals": {"Over": 0.6234, "Under": 0.3778, "liquid": true},
+    "IRN_OU05_goals": {"Over": 0.5238, "Under": 0.4766, "liquid": true},
+    "IRN_OU15_goals": {"Over": 0.1690, "Under": 0.8336, "liquid": true},
+    "Player_SOT_05": {
+      "Romelu_Lukaku": {"mid": 0.7273, "liquid": true},
+      "Kevin_De_Bruyne": {"mid": 0.6098, "liquid": true},
+      "Leandro_Trossard": {"mid": 0.5763, "liquid": true},
+      "Mehdi_Taremi": {"mid": 0.4485, "liquid": true},
+      "Youri_Tielemans": {"mid": 0.3802, "liquid": true},
+      "Alexis_Saelemaekers": {"mid": 0.4294, "liquid": false},
+      "Maxim_De_Cuyper": {"mid": 0.2985, "liquid": false},
+      "Saman_Ghoddos": {"mid": 0.1777, "liquid": false},
+      "Ramin_Rezaeian": {"mid": 0.1906, "liquid": false}
+    },
+    "Player_score_or_assist": {
+      "Romelu_Lukaku": {"offer": 0.5882, "liquid": false},
+      "Kevin_De_Bruyne": {"offer": 0.5, "liquid": false},
+      "Mehdi_Taremi": {"offer": 0.25, "note": "offer-only, illiquid — key reference for Q9"},
+      "Youri_Tielemans": {"offer": 0.3788, "liquid": false}
+    }
+  },
+  "rules_applied": {
+    "NO_RULE7": "Belgium 69.45% < 86% threshold. Not extreme-blowout territory.",
+    "NO_RULE8": "Draw 20.01% < 25% threshold. Not a high-draw match.",
+    "RULE15_Taremi": "Iran 10.87% win prob = underdog range (10-30%). RULE15 applies to Taremi G or A (Q9). Market offer 0.25 — likely overpriced. Shade toward 0.22-0.28.",
+    "Q1_Iran_fouls": "Iran defensive underdog vs Belgium high-presser. BEL 15 fouls vs EGY; IRN 10 fouls vs NZL. LOW CONFIDENCE — 1 match each. Skellam λ_BEL=13, λ_IRN=14 → 0.54 but highly uncertain. Genuine coin-flip. Crowd likely ~0.48-0.55 (underdog fouls more narrative). No strong edge. Estimate 0.45.",
+    "Q2_2H_cards": "λ_total_cards=3.2 (from OU2.5=61.75%). Assuming 47% of cards in 2H (Iran frustration as game progresses). λ_2H=1.50 → P(2H≥2)=0.44. Crowd likely similar. No large edge.",
+    "Q3_BTTS_3plus": "Direct Smarkets market: BTTS+OU2.5 Yes/Over=0.3665. Trust market. BTTS=P(BEL≥1)×P(IRN≥1)=0.885×0.524=0.464, consistent with Yes/Under+Yes/Over=0.461.",
+    "Q4_BEL_more_2H_SOT": "Belgium is the dominant team attacking throughout. λ_BEL_SOT_2H=2.96 vs λ_IRN_SOT_2H=1.25. Skellam z=-0.72 → P=0.72. Strong YES. Crowd likely 0.55-0.65.",
+    "Q5_4plus_2H_SOT": "λ_total_SOT_2H=4.21 (midpoint from player-derived 3.90 and market-thin 4.50). P(≥4)=0.61. Crowd likely 0.50-0.60. Slight YES lean.",
+    "Q6_Belgium_wins": "FTR Belgium=0.6945. Direct market. No RULE7 applies. Estimate 0.70.",
+    "Q7_Belgium_HT_winning": "HT market Belgium=0.5182. Direct market. Estimate 0.52.",
+    "Q8_Tielemans_SOT": "Liquid Smarkets market: Tielemans bid=0.3788, offer=0.3817, mid=0.3802. Very tight spread = highly liquid. Trust directly. Estimate 0.38. Crowd likely 0.35-0.40.",
+    "Q9_Taremi_G_or_A": "RULE15 applies: Iran 10.87% underdog. Market offer only at 0.25. Model pre-RULE15: λ_Taremi_goal=0.408 (55% share of λ_IRN=0.742) → P(goal)=0.335 + assists → P(G or A)~0.45. But: Taremi SOT market (44.85%) × team conversion rate (0.742/2.6 SOT = 28.5%) → λ_Taremi_goal=0.595×0.285=0.169 → P(goal)=0.16 → P(G or A)≈0.25-0.28. RULE15 shade from 0.45 → 0.27. Market offer 0.25. Estimate 0.27.",
+    "Q10_9plus_corners": "Direct Smarkets: OU8.5 Over=0.5769 (liquid). λ_corners≈9.3. Belgium dominant attacking team → many corners. BEL-EGY total=9 corners (BEL 2+EGY 7). Estimate 0.58."
+  },
+  "final_submission_estimates": {
+    "Q1_Iran_more_fouls": {
+      "estimate": 0.45,
+      "confidence": "LOW",
+      "note": "Coin-flip territory. Belgium pressed Egypt (15 fouls), Iran conservative vs NZL (10 fouls). Skellam with λ_BEL=13, λ_IRN=14 gives 0.54 but high uncertainty. Crowd probably at ~0.48-0.55. No strong edge either direction. Slight discount from 0.50 since Belgium can also foul frequently."
+    },
+    "Q2_2plus_cards_2H": {
+      "estimate": 0.44,
+      "confidence": "MEDIUM",
+      "note": "λ_total_cards=3.2 from OU2.5=61.75%. Assuming 47% of match cards in 2H → λ_2H=1.50 → P(2H≥2)=0.442. Iran frustration in 2H if trailing supports this. Crowd likely 0.42-0.50."
+    },
+    "Q3_BTTS_3plus_goals": {
+      "estimate": 0.37,
+      "confidence": "HIGH",
+      "note": "Direct Smarkets BTTS+OU2.5 Yes/Over=0.3665. Trust market. P(BTTS)=0.461 from individual team goal markets is consistent."
+    },
+    "Q4_Belgium_more_2H_SOT": {
+      "estimate": 0.72,
+      "confidence": "MEDIUM-HIGH",
+      "note": "Skellam: λ_BEL_SOT_2H=2.96 vs λ_IRN_SOT_2H=1.25 → P=0.72. Belgium dominant team with Lukaku (72.73% SOT), KDB (60.98%), Trossard (57.63%). Crowd likely 0.55-0.65. Edge ~+10pp."
+    },
+    "Q5_4plus_total_2H_SOT": {
+      "estimate": 0.61,
+      "confidence": "MEDIUM",
+      "note": "λ_total_SOT_2H=4.21 → P(≥4)=0.61. Total SOT market thin (same price across markets), but player-derived λ=3.9 and market-implied λ=4.5 average to ~4.2. Crowd likely 0.50-0.58."
+    },
+    "Q6_Belgium_wins": {
+      "estimate": 0.70,
+      "confidence": "HIGH",
+      "note": "Direct FTR Belgium=0.6945. Trust market. No RULE7 or RULE8 modifications."
+    },
+    "Q7_Belgium_HT_winning": {
+      "estimate": 0.52,
+      "confidence": "HIGH",
+      "note": "Direct HT result Belgium=0.5182. Trust market. λ_BEL_1H=0.929, λ_IRN_1H=0.324 → P(BEL wins 1H) consistent with market."
+    },
+    "Q8_Tielemans_1plus_SOT": {
+      "estimate": 0.38,
+      "confidence": "HIGH",
+      "note": "LIQUID Smarkets market: bid=0.3788, offer=0.3817, mid=0.3802. Tight spread, trust market. Tielemans (Aston Villa CM) gets into positions to shoot. λ_Tielemans_SOT=0.479 → P(≥1)=0.381 ✓."
+    },
+    "Q9_Taremi_goal_or_assist": {
+      "estimate": 0.27,
+      "confidence": "MEDIUM",
+      "note": "RULE15 applies (Iran 10.87% underdog). Market offer=0.25 (offer-only). Model: Iran λ_goals=0.742, Taremi ~55% of goals → λ_Taremi_goal=0.408 → P(goal)=0.335. But cross-checking via SOT market (Taremi 44.85% SOT) × team conversion → λ_goal≈0.17 → P(G or A)≈0.25-0.28. RULE15 shade → 0.27. Crowd likely 0.30-0.38."
+    },
+    "Q10_9plus_corners": {
+      "estimate": 0.58,
+      "confidence": "HIGH",
+      "note": "Direct market: OU8.5 corners Over=0.5769 (liquid). λ_corners≈9.3. BEL-EGY had exactly 9 total corners. Belgium attacks more vs Iran than vs Egypt → Belgium gets more corners, Iran gets fewer. Total ≈ 9.3 expected. Trust market."
+    }
+  },
+  "post_match_results": {
+    "match_score": "BEL 0-0 IRN",
+    "halftime_score": "0-0",
+    "match_facts": {
+      "note": "0-0 draw. Belgium failed to score despite being 69% favorites. Iran defended well. Low corner count despite Belgium's attacking history.",
+      "source": "Jump Trading Competition platform"
+    },
+    "question_results": {
+      "Q1_Iran_more_fouls": {
+        "our_estimate": 0.45, "crowd_estimate": 0.58, "outcome": 1, "rbp": -10.51, "beat_crowd": false,
+        "notes": "Iran committed more fouls than Belgium. Our 45% was on NO side; crowd 58% on YES side — crowd won."
+      },
+      "Q2_2plus_cards_2H": {
+        "our_estimate": 0.44, "crowd_estimate": 0.56, "outcome": 0, "rbp": 14.44, "beat_crowd": true,
+        "notes": "Fewer than 2 cards in 2H. Both on YES side but crowd 56% more wrong than our 44%."
+      },
+      "Q3_BTTS_3plus_goals": {
+        "our_estimate": 0.37, "crowd_estimate": 0.38, "outcome": 0, "rbp": 2.90, "beat_crowd": true,
+        "notes": "0-0 draw, no BTTS. Both on NO side; tiny edge."
+      },
+      "Q4_Belgium_more_2H_SOT": {
+        "our_estimate": 0.72, "crowd_estimate": 0.66, "outcome": 1, "rbp": 5.60, "beat_crowd": true,
+        "notes": "Belgium had more 2H SOT. Our 72% more extreme than crowd 66% — bigger reward."
+      },
+      "Q5_4plus_2H_total_SOT": {
+        "our_estimate": 0.61, "crowd_estimate": 0.63, "outcome": 1, "rbp": 0.65, "beat_crowd": true,
+        "notes": "4+ 2H SOT: YES. Tiny edge over crowd."
+      },
+      "Q6_Belgium_wins": {
+        "our_estimate": 0.70, "crowd_estimate": 0.69, "outcome": 0, "rbp": -0.25, "beat_crowd": false,
+        "notes": "0-0 draw. Both strongly on YES; our 70% slightly more wrong than crowd 69%."
+      },
+      "Q7_Belgium_HT_winning": {
+        "our_estimate": 0.52, "crowd_estimate": 0.50, "outcome": 0, "rbp": 0.32, "beat_crowd": true,
+        "notes": "HT 0-0. Our 52% vs crowd 50%; both wrong but crowd slightly more wrong."
+      },
+      "Q8_Tielemans_1plus_SOT": {
+        "our_estimate": 0.38, "crowd_estimate": 0.43, "outcome": 1, "rbp": -3.33, "beat_crowd": false,
+        "notes": "Tielemans DID have a SOT. Crowd 43% was closer to truth than our 38%."
+      },
+      "Q9_Taremi_goal_or_assist": {
+        "our_estimate": 0.27, "crowd_estimate": 0.31, "outcome": 0, "rbp": 4.14, "beat_crowd": true,
+        "notes": "Taremi 0 G+A. RULE15 applied correctly (Iran 10.87% underdog). 0-0 = Iran 0 goals."
+      },
+      "Q10_9plus_corners": {
+        "our_estimate": 0.58, "crowd_estimate": 0.52, "outcome": 0, "rbp": -4.32, "beat_crowd": false,
+        "notes": "Fewer than 9 corners. Belgium's corner expectation didn't fire in a low-intensity 0-0. Our 58% on wrong YES side."
+      }
+    },
+    "match_rbp_total": 9.63,
+    "questions_beat_crowd": 6,
+    "learning_notes": "0-0 upset (Belgium 69% favorites). Key losses: Q1 Iran fouls (Iran defensive but still fouled) and Q10 corners (0-0 suppressed Belgium attacking). Key wins: Q2 cards 2H (+14.44) and Q4 Belgium more 2H SOT (+5.60). RULE15 Taremi worked (+4.14)."
+  }
+}

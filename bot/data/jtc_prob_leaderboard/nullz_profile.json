@@ -1,0 +1,18 @@
+{
+  "user_id": "e629977e-a3a8-4c73-848d-56192939bc33",
+  "rank_data": {
+    "score": 2107.8823549118997,
+    "smart_rating": 99.9,
+    "rank": 3,
+    "total": 709,
+    "imgVariants": {
+      "s": "https://just-win-prod-bucket.s3.us-east-2.amazonaws.com/users/45bc4b4f-26b0-4d20-af06-e98cfc5abfda/s/avatar.webp",
+      "xs": "https://just-win-prod-bucket.s3.us-east-2.amazonaws.com/users/45bc4b4f-26b0-4d20-af06-e98cfc5abfda/xs/avatar.webp"
+    },
+    "label": null,
+    "canBeFollowed": true,
+    "country": "TW",
+    "score_change": 18.906589834431088,
+    "rank_change": 0
+  }
+}

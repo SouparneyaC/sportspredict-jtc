@@ -1,0 +1,372 @@
+=== SESSION: NED-SWE analysis 2026-06-20 ===
+
+### CMD
+python3 [fetch key NED-SWE markets: NED/SWE goal OUs, 2H result, HT result, cards, corners, SOT markets]
+### OUT
+NED OU0.5 Over: 0.8659 [L]  NED OU1.5 Over: 0.5866 [L]
+SWE OU0.5 Over: 0.6946 [L]  SWE OU1.5 Over: 0.3080 [L]
+2H NED OU0.5 Over: 0.6698 [L]  2H SWE OU0.5 Over: 0.4559 [L]
+1H NED OU0.5 Over: 0.5886 [L]  1H SWE OU0.5 Over: 0.3850 [L]
+HT: NED=0.4221 Draw=0.3832 SWE=0.2001 [L]
+2H: NED=0.4724 Draw=0.3227 SWE=0.2031 [L]
+BTTS 2H: Yes=0.3029 [L]  Most cards: NED=0.3169 SWE=0.4202 Draw=0.2602 [L]
+Cards OU2.5 Over=0.5962  OU3.5 Over=0.3837  OU4.5 Over=0.2083 [L]
+NED cards OU1.5 Over=0.4285  SWE cards OU1.5 Over=0.5153  SWE cards OU2.5 Over=0.2666 [L]
+NED corners OU4.5 Over=0.6492  NED corners OU5.5 Over=0.5392 [L]
+---
+
+### CMD
+python3 [fetch remaining: Total SOT OU8.5, NED/SWE SOT OUs, SWE corners, most corners, penalty, BTTS+OU2.5]
+### OUT
+Total SOT OU8.5: Over=0.4895 Under=0.5210 [L]
+NED SOT OU5.5: Over=0.4435 Under=0.5676 [L]
+SWE SOT OU3.5: Over=0.4064 Under=0.6014 [L]
+SWE corners OU3.5: Over=0.5069  OU4.5: Over=0.3409 [L]
+NED -0.5 corners: NED=0.6583  NED -1.5 corners: NED=0.5424 [L]
+Most corners: NED=0.6554 SWE=0.2488 Draw=0.0925 [L]
+Penalty: Yes=0.2788 No=0.7231 [L]
+BTTS+OU2.5: Yes/Over=0.4742 Yes/Under=0.1095 No/Over=0.1058 No/Under=0.3058 [L]
+BTTS+OU3.5: Yes/Over=0.3132 [L]
+NED OU2.5: Over=0.2985  SWE OU2.5: Over=0.1008 [L]
+---
+
+### CMD
+python3 [search for Gyokeres 2H SOT market]
+### OUT
+No 2H Gyokeres SOT market found. Available: Player OU0.5/1.5 SOT full match only.
+---
+
+### CMD
+python3 [lambda derivations and Poisson/Skellam estimates]
+### OUT
+lambda_NED_goals=1.93  lambda_SWE_goals=1.10
+lambda_NED_2H=1.108  lambda_SWE_2H=0.609
+lambda_total_SOT=8.6: P(>=8)=0.6272, P(>=9)=0.4906 [market=0.4895 ✓]
+GYO: full=0.811, 2H=0.449, P(>=1 in 2H)=0.362
+GYO with -5pp RULE15: 0.312
+NED off lam=1.3: P(>=2)=0.373
+---
+
+FINAL ESTIMATES (NED-SWE, KO 17:00 UTC June 20):
+Q1 NED 2+ offsides: 0.43
+Q2 Both >=1 SOT in 2H: 0.79
+Q3 BTTS AND OU2.5: 0.47
+Q4 NED more goals in 2H: 0.47
+Q5 SWE more cards: 0.42
+Q6 Gyokeres >=1 SOT in 2H: 0.32
+Q7 NED wins: 0.56
+Q8 HT tied: 0.38
+Q9 >=8 total SOT: 0.63
+Q10 Gakpo >=1 SOT: 0.64
+---
+
+=== GER-CIV SECTION ===
+
+### CMD
+Search Smarkets for Germany vs Ivory Coast event
+### OUT
+Found: id=45042859 name=Germany vs Ivory Coast start=2026-06-20T20:00:00Z
+---
+
+### CMD
+List all Smarkets markets for event 45042859
+### OUT
+190 markets found. Key IDs: FTR=137954144, OU2.5=137954181, GER OU0.5=137954192, CIV OU0.5=137954202, 2H GER OU0.5=137954199, 2H result=137954150, HT=137954151, Highest scoring half=137954162, Most corners=137954167, Most cards=137954168, Cards OU2.5=137954298, Cards OU3.5=137954300, CIV cards OU1.5=137954349, Total SOT OU8.5=143898652, Penalty=137954169, Player SOT OU0.5=145627208
+---
+
+### CMD
+Fetch batch 1: FTR, goal OUs, halves, highest scoring half, most corners
+### OUT
+FTR: GER=0.6558, Draw=0.2021, CIV=0.1409
+OU2.5 Over=0.6080  OU3.5 Over=0.3776  OU4.5 Over=0.2022
+BTTS Yes=0.5587
+GER OU0.5 Over=0.8891  OU1.5 Over=0.6452  OU2.5 Over=0.3650
+CIV OU0.5 Over=0.6193  OU1.5 Over=0.2470
+2H GER OU0.5 Over=0.7051  OU1.5 Over=0.3337
+2H CIV OU0.5 Over=0.4097
+1H GER OU0.5 Over=0.6252  1H CIV OU0.5 Over=0.3298
+HT: GER=0.4951 Draw=0.3610 CIV=0.1517
+2H result: GER=0.5325 Draw=0.3063 CIV=0.1592
+Highest scoring half: 1H=0.3063, Equal=0.2337, 2H=0.4574
+Most corners: GER=0.7200 CIV=0.1877 Draw=0.0843
+---
+
+### CMD
+Fetch batch 2: corners, cards, SOT, penalty, BTTS halves
+### OUT
+GER corners OU5.5 Over=0.5563  OU6.5 Over=0.4112  OU7.5 Over=0.2965
+CIV corners OU3.5 Over=0.4500  OU4.5 Over=0.2949
+GER -1.5 corners covers=0.6350
+Most cards: CIV=0.5328 Draw=0.2470 GER_implied=0.2202
+Cards OU2.5 Over=0.5969
+Cards OU3.5 Under[illiq]=0.5814
+CIV cards OU1.5 Over=0.5823
+GER +0.5 cards handicap: GER=0.4588, CIV-0.5 covers=0.5408
+Total SOT OU8.5: Over=0.5463 Under=0.4647
+GER shots OU15.5 Over=0.5030  CIV shots OU9.5 Over=0.5357
+Penalty Yes=0.2967
+2H BTTS Yes=0.2861  1H BTTS Yes=0.2072
+---
+
+### CMD
+Fetch player SOT OU0.5 and OU1.5 + compute lambdas
+### OUT
+Player SOT OU0.5: Havertz=0.7237[L] Musiala=0.6337[L] Wirtz=0.5299[L] Undav=0.7441[illiq] Sane=0.6518[illiq]
+CIV players: Amad=0.4725[illiq] Yan_Diomande=0.3852[L] Pepe=0.4416[illiq] Wahi=0.5369[illiq]
+lambda_GER=2.199, lambda_CIV=0.966
+lambda_GER_2H=1.221, lambda_CIV_2H=0.527
+lambda_GER_1H=0.981, lambda_CIV_1H=0.400
+P(GER>=1 SOT 1H)=0.928, P(CIV>=1 SOT 1H)=0.735 → BOTH=0.682
+Skellam P(CIV>GER SOT 2H)=0.248
+lambda_cards≈3.1: P(>=4)=0.375
+---
+
+FINAL ESTIMATES (GER-CIV, KO 20:00 UTC June 20):
+Q1 CIV more fouls than GER: 0.56
+Q2 Both >=1 SOT at HT: 0.65
+Q3 2H more goals than 1H: 0.46
+Q4 GER 2+ offsides: 0.43
+Q5 CIV more SOT than GER in 2H: 0.22
+Q6 CIV 2+ offsides: 0.18
+Q7 CIV more cards than GER: 0.53
+Q8 GER wins: 0.66
+Q9 4+ total cards: 0.40
+Q10 GER score in 2H: 0.70
+---
+
+=== ECU-CUR SECTION ===
+
+### CMD
+python3 [search Smarkets for Ecuador vs Curacao event]
+### OUT
+FOUND: id=45042869 name=Ecuador vs Curaçao start=2026-06-21T00:00:00Z
+---
+
+### CMD
+python3 [list all 188 markets for event 45042869]
+### OUT
+FTR=137955252, OU2.5=137955289, ECU OU0.5=137955300, CUR OU0.5=137955310
+2H ECU=137955307, 2H CUR=137955317, 1H ECU=137955304, 1H CUR=137955314
+HT=137955259, 2H result=137955258, Highest scoring half=137955270
+ECU corners OU4.5=137955450, OU5.5=137955452
+Most cards=137955276, Cards OU2.5=137955425, OU3.5=137955427, OU4.5=137955429
+CUR cards OU1.5=137955476, CUR cards OU2.5=137955478
+Total SOT OU8.5=144836455, ECU SOT OU6.5=144836362, CUR SOT OU1.5=144836405
+Penalty=137955277, Red card=137955416
+Player SOT OU0.5=145808763
+---
+
+### CMD
+python3 [fetch batch 1: FTR, goal OUs, halves, HT result]
+### OUT
+FTR: ECU=0.8659, Draw=0.0976, CUR=0.0377
+OU2.5 Over=0.6118  OU3.5 Over=0.3732  BTTS Yes=0.3033
+ECU OU0.5 Over=0.9266  OU1.5=0.7635  OU2.5=0.5182  OU3.5=0.2797
+CUR OU0.5 Over=0.3400  OU1.5=0.0694
+2H ECU OU0.5 Over=0.7863  OU1.5=0.4404
+2H CUR OU0.5 Over=0.2084
+1H ECU OU0.5 Over=0.7225  1H CUR OU0.5 Over=0.1605
+HT: ECU=0.6645 Draw=0.2964 CUR=0.0484
+---
+
+### CMD
+python3 [fetch batch 2: 2H result, highest scoring half, corners, cards, SOT, penalty, red card, player SOT]
+### OUT
+2H result: ECU=0.7010 Draw=0.2545 CUR=0.0554
+Highest scoring half: 2H=0.4594 1H=0.3086 Equal=0.2372
+Most corners: ECU=0.8512 CUR=0.0811 Draw=0.0563
+ECU corners OU4.5 Over=0.7587  OU5.5 Over=0.6327
+Most cards: CUR=0.5317 Draw=0.2334 ECU=0.2332
+Cards OU2.5 Over=0.6181  OU3.5 Over=0.4505  OU4.5 Over=0.2699
+CUR cards OU1.5 Over=0.5887  CUR cards OU2.5 Over=0.3352
+ECU +0.5 cards: CUR -0.5 covers=0.5182
+Total SOT OU8.5 Over=0.5243
+ECU SOT OU6.5 Over=0.5676
+CUR SOT OU1.5 Over=0.6014
+Penalty Yes=0.3298  Red card Yes=0.1736
+2H BTTS Yes=0.1551  1H BTTS Yes=0.1157
+PLAYER SOT: NO PRICES (markets not yet populated)
+---
+
+### CMD
+python3 [compute lambdas and all 10 estimates]
+### OUT
+lambda_ECU=2.612, lambda_CUR=0.416
+lambda_ECU_1H=1.282, lambda_CUR_1H=0.175
+lambda_ECU_2H=1.543, lambda_CUR_2H=0.234
+lambda_ECU_SOT_est=7.2, lambda_CUR_SOT_est=2.05
+Q1 both SOT at HT: P(ECU>=1 in 1H)=0.968, P(CUR>=1 in 1H)=0.578, P(both)=0.560
+Q4 compound: P(ECU first)=0.821, P(CUR in 2H)=0.2084, P(Q4)=0.171
+Q5 pen or red: P=0.446
+Q6 Sarmiento 2H (no market): lam_2H~0.58, P(>=1)~0.44 → use 0.40
+Q10 Bacuna (no market): base 0.437, mild RULE15 → 0.38
+---
+
+FINAL ESTIMATES (ECU-CUR, KO 00:00 UTC June 21):
+Q1 Both >=1 SOT at HT: 0.56
+Q2 ECU more fouls than CUR: 0.28
+Q3 2H more goals than 1H: 0.46
+Q4 ECU first goal AND CUR scores in 2H: 0.17
+Q5 Penalty OR red card: 0.44
+Q6 Sarmiento >=1 SOT in 2H: 0.40
+Q7 Ecuador wins: 0.87
+Q8 3+ total goals: 0.61
+Q9 ECU 5+ corners: 0.76
+Q10 Bacuna >=1 SOT: 0.38
+---
+
+============================================================
+=== JPN-TUN RESEARCH SESSION — 2026-06-20 23:05 UTC ===
+=== Smarkets event 45042857, KO 2026-06-21 04:00 UTC ===
+============================================================
+
+CMD: curl -sk 'https://api.smarkets.com/v3/markets/137953391/quotes/'
+OUT: {
+  "387278961": {"bids":[{"price":1190,"quantity":9903282},{"price":1136,"quantity":15044790}],"offers":[{"price":1220,"quantity":12347156},{"price":1250,"quantity":329213744}]},
+  "387278962": {"bids":[{"price":6579,"quantity":114220600},{"price":6452,"quantity":1520785}],"offers":[{"price":6623,"quantity":392642},{"price":6667,"quantity":495134972}]},
+  "387278963": {"bids":[{"price":2128,"quantity":125800569},{"price":2083,"quantity":12742363}],"offers":[{"price":2273,"quantity":401629922},{"price":2326,"quantity":2764941}]}
+}
+PROCESSED: FTR contracts: {387278961→Tunisia, 387278963→Draw, 387278962→Japan}
+  Japan mid=(0.6579+0.6623)/2=0.6601, Draw=(0.2128+0.2273)/2=0.2201, Tunisia=(0.119+0.122)/2=0.1205
+  RULE8 check: Draw=22.01% — does NOT fire
+  RATE LIMIT STATUS: 1/20 calls used (limit just reset at 23:04:13 UTC)
+
+CMD: python3 fetch_contracts.py (non-rate-limited calls)
+OUT: FTR contracts confirmed. Player SOT OU0.5 market 145808661 contains 57 contracts.
+  Key: Skhiri=406658980, Kubo=406658927
+
+CMD: python3 fetch_all_19_priority_markets.py
+(Fetched 19 markets sequentially with 0.3s delay)
+RESULTS:
+  OU2_5_goals: Over=0.4589, Under=0.5393 [liquid]
+  JPN_OU0_5: Over=0.8548 → λ_JPN=-ln(0.1452)=1.9296
+  TUN_OU0_5: Over=0.4927 → λ_TUN=-ln(0.5073)=0.6787
+  2H_JPN_OU0_5: Over=0.6461 → λ_JPN_2H=1.0387 (2H frac=0.538)
+  2H_TUN_OU0_5: Over=0.2964 → λ_TUN_2H=0.3515 (2H frac=0.518)
+  2H_result: Japan=0.5310, Draw=0.3412, Tunisia=0.1304
+  Highest_scoring_half: 1H=0.2952, Equal=0.2848, 2H=0.4209
+  Most_corners: Japan=0.6979, Draw=0.0925, Tunisia=0.2072
+  1H_corners_OU3_5: Over=0.5873 → λ_1H_corners=4.1078
+  JPN_corners_OU5_5: Over=0.4823 → λ_JPN_corners=5.5657
+  Most_cards: Tunisia=0.5029, Draw=0.2626, Japan=0.2776
+  Cards_OU2_5: Over=0.5633 → λ_cards≈2.94
+  TUN_cards_OU1_5: Over=0.5077
+  Total_SOT_OU7_5: Over=0.5030
+  JPN_SOT_OU4_5: Over=0.5210 → λ_JPN_SOT=4.7850
+  TUN_SOT_OU2_5: Over=0.5210 → λ_TUN_SOT=2.7602
+  Penalty: Yes=0.2715, No=0.7478
+  Red_card: Yes=0.1457, No=0.8623
+  Player_SOT_OU0_5: Kubo=0.5798 (illiq), Skhiri=0.175 (illiq), Maeda=0.6949 (illiq), Ueda=0.6847 (illiq)
+  RATE LIMIT: 20/20 calls used for this window
+
+CMD: python3 compute_estimates.py (bisection lambda solver)
+OUT:
+  λ_JPN_SOT=4.7850 (P(≥5)=0.521), λ_TUN_SOT=2.7602 (P(≥3)=0.521)
+  λ_total_SOT=7.545, P(≥8)=0.482 vs market OU7.5 Over=0.503 (minor discrepancy, total market more accurate)
+  λ_JPN_SOT_2H=2.576 (frac 0.538), λ_TUN_SOT_2H=1.430 (frac 0.518)
+  
+  Q2 Skellam: z=(1.430-2.576)/√(1.430+2.576)=-1.146/2.001=-0.5726
+    P(TUN>JPN SOT 2H) continuous=0.2835, discrete-adj=0.248 → estimate 0.25
+
+  Corner derivation:
+    λ_JPN_corners=5.5657 (JPN OU5.5 Over=0.4823)
+    Skellam z=0.5184 → λ_TUN_corners=3.9653 (quadratic solution)
+    λ_total_corners=9.531
+    λ_1H_corners=4.108 (1H OU3.5 Over=0.5873)
+    λ_2H_corners=5.423
+    P(2H corners ≥5 | λ=5.423) = 0.630 → Q7 estimate 0.63
+
+  Q4: P(pen OR red) = 1-(0.7478×0.8623) = 0.3552 → estimate 0.36
+
+=== FINAL JPN-TUN ESTIMATES ===
+  Q1 (Japan more fouls than Tunisia): 0.25
+  Q2 (Tunisia more SOT in 2H): 0.25
+  Q3 (Japan 2+ offsides): 0.45
+  Q4 (penalty OR red card): 0.36
+  Q5 (Tunisia wins): 0.12
+  Q6 (≤2 total goals): 0.54
+  Q7 (5+ corners in 2H): 0.63
+  Q8 (Japan scores in 2H): 0.65
+  Q9 (Skhiri SOT): 0.18
+  Q10 (Kubo SOT): 0.58
+
+File saved: sportspredict_research/data/external_markets/jpn_tun_2026-06-21.json
+
+
+============================================================
+=== ESP-KSA RESEARCH SESSION — 2026-06-21 15:28 UTC ===
+=== Smarkets event 45042895, KO 2026-06-21 16:00 UTC ===
+============================================================
+
+CMD: curl -sk 'https://api.smarkets.com/v3/events/?type=football_match&state=upcoming&sort=id&per_page=200'
+OUT: Found "Spain vs Saudi Arabia | id=45042895 | dt=2026-06-21T16:00:00Z"
+
+CMD: curl -sk 'https://api.smarkets.com/v3/events/45042895/markets/?per_page=300'
+OUT: 176 markets found. Key IDs extracted:
+  FTR=137956065, OU2.5=137956102, ESP_OU0.5=137956113, KSA_OU0.5=137956123
+  2H_KSA_OU0.5=137956130, 2H_ESP_OU0.5=137956120, BTTS_OU2.5=137956095
+  Penalty=137956090, Red_card=137956210, Goalscorer=137956363
+  Total_SOT_OU9.5=143904211, ESP_SOT_OU7.5=143903918
+  KSA_SOT_OU1.5=143903960, KSA_SOT_OU2.5=143903961
+  Most_corners=137956088, 1H_corners_OU4.5=137956240
+  ESP_corners_OU7.5=137956250, KSA_corners_OU3.5=137956243
+  2H_result=137956071, Most_cards=137956089
+
+CMD: Contract fetches (non-rate-limited)
+OUT: FTR: {387288019→Spain, 387288021→Draw, 387288020→Saudi Arabia}
+  Salem Al-Dawsari goalscorer contract: 387288940 (spelled "Salem Al-Dawsar")
+
+CMD: 20 priority quotes fetched
+OUT (key values):
+  FTR: Spain=0.8969, Draw=0.0771, Saudi Arabia=0.0351
+    → RULE7 FIRES (Spain 89.69% > 86%)
+    → RULE8 does NOT fire (draw=7.71%)
+  OU2.5: Over=0.7170 (high-scoring match expected)
+  ESP_OU0.5: Over=0.9617 → λ_ESP=-ln(0.0383)=3.2623
+  KSA_OU0.5: Over=0.3770 → λ_KSA=-ln(0.623)=0.4732
+  2H_ESP_OU0.5: Over=0.8254 → λ_ESP_2H=1.7453 (2H frac=0.535)
+  2H_KSA_OU0.5: Over=0.2409 → λ_KSA_2H=0.2756 (2H frac=0.582)
+  BTTS_OU2.5: Yes/Over=0.3337 → Q6 direct
+  Penalty: Yes=0.3067, No=0.7047
+  Red_card: Yes=0.1193, No=0.8891
+  Salem Al-Dawsari goalscorer: 0.0711 (LIQUID) → Q10 direct
+  Total_SOT_OU9.5: Over=0.6242 → calibrated λ_total_SOT=10.68
+  ESP_SOT_OU7.5: Over=0.6338 → λ_ESP_SOT=8.652
+  KSA_SOT_OU1.5: Over=0.5676 → λ_KSA_SOT_partial=1.905
+  KSA_SOT_OU2.5: Over=0.3222 → λ_KSA_SOT_partial=1.996 → avg λ_KSA_SOT=1.950
+  Most_corners: Spain=0.9222, KSA=0.0406
+  1H_corners_OU4.5: Over=0.5091 → λ_1H_corn=4.720
+  ESP_corners_OU7.5: Over=0.5535 → λ_ESP_corn=8.046
+  KSA_corners_OU3.5: Over=0.1736 → λ_KSA_corn=2.164
+  2H_result: Spain=0.7546, Draw=0.2176, KSA=0.0501
+  Most_cards: KSA=0.568, Draw=0.247, Spain=0.200
+  TOTAL CALLS: 20/20 window used
+
+CMD: python3 compute_estimates.py
+OUT:
+  λ_ESP=3.262, λ_KSA=0.473; λ_total=3.735 (high-scoring)
+  λ_ESP_SOT=8.652 (P(≥8)=0.634), λ_KSA_SOT=1.950 (bracketed by OU1.5 and OU2.5)
+  λ_total_SOT=10.684 (calibrated); P(≥8)=0.835
+  λ_ESP_corn=8.046, λ_KSA_corn=2.164, λ_total_corn=10.210
+  λ_1H_corn=4.720, λ_2H_corn=5.490
+  λ_ESP_corn_2H=4.327, λ_KSA_corn_2H=1.164
+
+  Q2 Skellam (ESP>KSA corners 2H): z=1.35, P=0.876 (discrete-adj)
+  Q3 Skellam (ESP>KSA SOT 2H): z=1.45, P=0.892 (discrete-adj)
+  Q4: P(pen OR red) = 1-(0.7047×0.8891) = 0.374
+  Q9: P(total SOT≥8|λ=10.68) = 0.835
+
+=== FINAL ESP-KSA ESTIMATES ===
+  Q1 (Saudi Arabia 2+ offsides): 0.33
+  Q2 (Spain more corners in 2H): 0.88
+  Q3 (Spain more SOT in 2H): 0.89
+  Q4 (penalty OR red card): 0.37
+  Q5 (Spain 2+ offsides): 0.50
+  Q6 (BTTS + 3+ goals): 0.33
+  Q7 (Spain wins): 0.90
+  Q8 (Saudi Arabia scores in 2H): 0.24
+  Q9 (8+ total SOT): 0.84
+  Q10 (Salem Al-Dawsari scores): 0.07
+
+File saved: sportspredict_research/data/external_markets/esp_ksa_2026-06-21.json
+

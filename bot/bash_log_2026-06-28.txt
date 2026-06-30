@@ -1,0 +1,41 @@
+================================================================================
+BASH SESSION LOG — 2026-06-28
+Working directory: /Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/
+Session purpose: Scrape AbirC's Probability Cup question-wise data and build dataset
+================================================================================
+
+TASK: Scrape all 58 settled probability cup matches for AbirC (Souparneya),
+      get per-question predictions (youPct, crowdPct, outcomePct, RBP), build CSV.
+
+METHOD:
+  - Browser console script (pushState + popstate React Router navigation)
+  - Script injected by user into DevTools console at:
+    https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/profile
+  - Used Blob download instead of console.log to avoid Chrome truncation
+  - First run: 49 matches OK, last 9 stale (page not rendering fast enough)
+  - Second run (patch): targeted 8 bad matches with polling wait (500ms × 16)
+
+FILES DOWNLOADED BY BROWSER:
+  ~/Downloads/abirc_prob_cup_data (1).json   172 KB  — 58 matches (8 stale)
+  ~/Downloads/abirc_patch.json                25 KB  — 8 corrected matches
+
+FILES WRITTEN:
+  data/prob_cup/abirc_raw.json            — 58 matches, full structure
+  data/prob_cup/abirc_forecasts.csv       — 570 rows (one per question)
+  data/prob_cup/abirc_match_summary.csv   — 58 rows (one per match)
+
+SCHEMA (abirc_forecasts.csv):
+  match_id, match_name, score, match_date, match_rbp,
+  q_num, question_text, result, you_pct, crowd_pct, outcome_pct,
+  rbp, performance, predicted, beat_crowd, brier_you, brier_crowd
+
+RESULTS SUMMARY:
+  Matches:          58
+  Total questions:  570
+  Predicted:        556 (14 not predicted)
+  Total RBP:        +1256.26
+  Avg RBP/match:    +21.66
+  Positive matches: 44/58 (75.9%)
+  Avg beat-crowd%:  68.4%
+
+================================================================================

@@ -1,0 +1,330 @@
+{
+  "FTR": {
+    "Mexico": {
+      "offer": 0.4808,
+      "bid": 0.4717,
+      "mid": 0.47625,
+      "liquid": true
+    },
+    "South Korea": {
+      "offer": 0.2381,
+      "bid": 0.2273,
+      "mid": 0.23270000000000002,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.303,
+      "bid": 0.2985,
+      "mid": 0.30074999999999996,
+      "liquid": true
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "offer": 0.578,
+      "bid": 0.5587,
+      "mid": 0.5683499999999999,
+      "liquid": true
+    },
+    "Over 2.5 goals": {
+      "offer": 0.4386,
+      "bid": 0.431,
+      "mid": 0.43479999999999996,
+      "liquid": true
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "offer": 0.2941,
+      "bid": 0.2817,
+      "mid": 0.2879,
+      "liquid": true
+    },
+    "Over 1.5 goals": {
+      "offer": 0.7194,
+      "bid": 0.7042,
+      "mid": 0.7118,
+      "liquid": true
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "offer": 0.5464,
+      "bid": 0.5291,
+      "mid": 0.53775,
+      "liquid": true
+    },
+    "No": {
+      "offer": 0.4762,
+      "bid": 0.463,
+      "mid": 0.4696,
+      "liquid": true
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "offer": 0.2941,
+      "bid": 0.2857,
+      "mid": 0.2899,
+      "liquid": true
+    },
+    "No": {
+      "offer": 0.7194,
+      "bid": 0.6944,
+      "mid": 0.7069000000000001,
+      "liquid": true
+    }
+  },
+  "HT_result": {
+    "Mexico": {
+      "offer": 0.3521,
+      "bid": 0.3401,
+      "mid": 0.3461,
+      "liquid": true
+    },
+    "South Korea": {
+      "offer": 0.2041,
+      "bid": 0.2,
+      "mid": 0.20205,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.463,
+      "bid": 0.4464,
+      "mid": 0.4547,
+      "liquid": true
+    }
+  },
+  "2H_result": {
+    "Mexico": {
+      "offer": 0.4065,
+      "bid": 0.3704,
+      "mid": 0.38844999999999996,
+      "liquid": true
+    },
+    "South Korea": {
+      "offer": 0.25,
+      "bid": 0.2083,
+      "mid": 0.22915000000000002,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.4065,
+      "bid": 0.3676,
+      "mid": 0.38705,
+      "liquid": true
+    }
+  },
+  "2H_OU1.5": {
+    "Under 1.5 goals": {
+      "offer": 0.6369,
+      "bid": 0.5917,
+      "mid": 0.6143000000000001,
+      "liquid": true
+    },
+    "Over 1.5 goals": {
+      "offer": 0.4098,
+      "bid": 0.3676,
+      "mid": 0.3887,
+      "liquid": true
+    }
+  },
+  "2H_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.2778,
+      "bid": 0.2326,
+      "mid": 0.2552,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.7692,
+      "bid": 0.7246,
+      "mid": 0.7469,
+      "liquid": true
+    }
+  },
+  "2H_MEX_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.4717,
+      "bid": 0.4167,
+      "mid": 0.44420000000000004,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.5848,
+      "bid": 0.5319,
+      "mid": 0.55835,
+      "liquid": true
+    }
+  },
+  "2H_KOR_OU0.5": {
+    "Under 0.5 goals": {
+      "offer": 0.6098,
+      "bid": 0.5556,
+      "mid": 0.5827,
+      "liquid": true
+    },
+    "Over 0.5 goals": {
+      "offer": 0.4505,
+      "bid": 0.3937,
+      "mid": 0.42210000000000003,
+      "liquid": true
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "offer": 0.3846,
+      "bid": 0.3472,
+      "mid": 0.3659,
+      "liquid": true
+    },
+    "Over 2.5 cards": {
+      "offer": 0.7353,
+      "bid": 0.5464,
+      "mid": 0.6408499999999999,
+      "liquid": true
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "offer": 0.6061,
+      "bid": 0.5376,
+      "mid": 0.57185,
+      "liquid": true
+    },
+    "Over 3.5 cards": {
+      "offer": 0.4854,
+      "bid": 0.4167,
+      "mid": 0.45105,
+      "liquid": true
+    }
+  },
+  "Most_cards": {
+    "Mexico": {
+      "offer": 0.365,
+      "bid": 0.2857,
+      "mid": 0.32535000000000003,
+      "liquid": true
+    },
+    "South Korea": {
+      "offer": 0.4673,
+      "bid": 0.3876,
+      "mid": 0.42745,
+      "liquid": true
+    },
+    "Draw": {
+      "offer": 0.2857,
+      "bid": 0.1923,
+      "mid": 0.239,
+      "liquid": true
+    }
+  },
+  "AH_MEX_minus0.5": {
+    "Mexico -0.5": {
+      "offer": 0.4808,
+      "bid": 0.4587,
+      "mid": 0.46975,
+      "liquid": true
+    },
+    "South Korea +0.5": {
+      "offer": 0.5405,
+      "bid": 0.5155,
+      "mid": 0.528,
+      "liquid": true
+    }
+  },
+  "KOR_corners_OU3.5": {
+    "Under 4.5 corners": {
+      "offer": 0.7299,
+      "bid": 0.641,
+      "mid": 0.68545,
+      "liquid": true
+    },
+    "Over 4.5 corners": {
+      "offer": 0.3571,
+      "bid": 0.274,
+      "mid": 0.31555,
+      "liquid": true
+    }
+  },
+  "KOR_corners_OU4.5": {
+    "Under 5.5 corners": {
+      "offer": 0.8475,
+      "bid": 0.7692,
+      "mid": 0.80835,
+      "liquid": true
+    },
+    "Over 5.5 corners": {
+      "offer": 0.2222,
+      "bid": 0.1562,
+      "mid": 0.1892,
+      "liquid": true
+    }
+  },
+  "MEX_corners_OU3.5": {
+    "Under 3.5 corners": {
+      "offer": 0.3472,
+      "bid": 0.2857,
+      "mid": 0.31645,
+      "liquid": true
+    },
+    "Over 3.5 corners": {
+      "offer": 0.7194,
+      "bid": 0.6494,
+      "mid": 0.6844,
+      "liquid": true
+    }
+  },
+  "MEX_corners_OU4.5": {
+    "Under 4.5 corners": {
+      "offer": 0.5348,
+      "bid": 0.3788,
+      "mid": 0.45680000000000004,
+      "liquid": true
+    },
+    "Over 4.5 corners": {
+      "offer": 0.625,
+      "bid": 0.4673,
+      "mid": 0.54615,
+      "liquid": true
+    }
+  },
+  "Corner_handicap_MEX_minus0.5": {
+    "Mexico -0.5 corners": {
+      "offer": 0.6757,
+      "bid": 0.5682,
+      "mid": 0.62195,
+      "liquid": true
+    },
+    "South Korea +0.5 corners": {
+      "offer": 0.4348,
+      "bid": 0.3279,
+      "mid": 0.38135,
+      "liquid": true
+    }
+  },
+  "MEX_SOT_OU4.5": {
+    "data": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    }
+  },
+  "KOR_SOT_OU2.5": {
+    "data": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    }
+  },
+  "PlayerSOT_0.5plus": {
+    "data": {
+      "offer": null,
+      "bid": null,
+      "mid": null,
+      "liquid": false
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "full_time_result": {
+    "market_id": "119417597",
+    "vig_normalized": {
+      "Uzbekistan": 0.095,
+      "Draw": 0.2013,
+      "Colombia": 0.7037
+    }
+  },
+  "penalty_to_be_awarded": {
+    "market_id": "119417622",
+    "vig_normalized": {
+      "Yes": 0.2867,
+      "No": 0.7133
+    }
+  },
+  "uzbekistan_ou_0.5_goals": {
+    "market_id": "119417645",
+    "vig_normalized": {
+      "Under 0.5": 0.5262,
+      "Over 0.5": 0.4738
+    },
+    "note": "P(UZB scores >=1) = 0.474"
+  },
+  "second_half_colombia_ou_0.5_goals": {
+    "market_id": "119417662",
+    "vig_normalized": {
+      "Under 0.5": 0.3206,
+      "Over 0.5": 0.6794
+    },
+    "note": "P(COL scores in 2H) = 0.679"
+  },
+  "uzbekistan_ou_4.5_corners": {
+    "market_id": "119417776",
+    "contracts": {
+      "Under 4.5": {
+        "bid": 0.7519,
+        "offer": 0.8333,
+        "mid": 0.7926
+      },
+      "Over 4.5": {
+        "bid": 0.1667,
+        "offer": 0.2439,
+        "mid": 0.2053
+      }
+    },
+    "vig_normalized": {
+      "Under 4.5": 0.7943,
+      "Over 4.5": 0.2057
+    },
+    "note": "P(UZB >=5 corners) = 0.206"
+  },
+  "over_under_2.5_goals": {
+    "market_id": "119417634",
+    "vig_normalized": {
+      "Under 2.5": 0.5025,
+      "Over 2.5": 0.4975
+    },
+    "note": "P(match <=2 goals) = 0.503"
+  },
+  "halftime_result": {
+    "market_id": "119417604",
+    "vig_normalized": {
+      "Uzbekistan": 0.0959,
+      "Draw": 0.3941,
+      "Colombia": 0.5101
+    }
+  },
+  "luis_diaz_ou_0.5_sot_full_match": {
+    "market_id": "145290146",
+    "contract_id": "405437365",
+    "offer_only": 0.8772,
+    "illiquidity_discounted_x0945": 0.829,
+    "note": "Full-match, not 2H-specific. Offer-only -> unreliable but strongly bullish on Diaz SOT"
+  },
+  "shomurodov_ou_0.5_sot_full_match": {
+    "market_id": "145290146",
+    "contract_id": "405437359",
+    "offer_only": 0.5,
+    "note": "Offer-only, illiquid"
+  },
+  "shomurodov_score_or_assist": {
+    "market_id": "145290167",
+    "contract_id": "405439396",
+    "offer_only": 0.2597,
+    "illiquidity_discounted_x0945": 0.2454
+  },
+  "uzbekistan_ou_1.5_cards": {
+    "market_id": "119417801",
+    "vig_normalized": {
+      "Under 1.5": 0.4639,
+      "Over 1.5": 0.5361
+    },
+    "implied_lambda_cards": 1.47
+  },
+  "uzbekistan_ou_2.5_cards": {
+    "market_id": "119417803",
+    "vig_normalized": {
+      "Under 2.5": 0.732,
+      "Over 2.5": 0.268
+    }
+  },
+  "colombia_ou_1.5_cards": {
+    "market_id": "119417802",
+    "vig_normalized": {
+      "Under 1.5": 0.6434,
+      "Over 1.5": 0.3566
+    }
+  },
+  "second_half_uzbekistan_ou_0.5_goals": {
+    "market_id": "119417652",
+    "vig_normalized": {
+      "Under 0.5": 0.7177,
+      "Over 0.5": 0.2823
+    },
+    "note": "P(UZB scores in 2H) = 0.282"
+  }
+}

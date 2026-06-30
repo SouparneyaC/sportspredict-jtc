@@ -1,0 +1,320 @@
+{
+  "match": "JPN-TUN",
+  "sportspredict_match_id": "f0b2f474-e506-4abc-ae8d-cf9ce8ef2d31",
+  "smarkets_event_id": "45042857",
+  "kickoff_utc": "2026-06-21T04:00:00Z",
+  "context_note": "Japan vs Tunisia, WC2026. Japan moderate-to-strong favorite: \u03bb_JPN=1.930, \u03bb_TUN=0.679. FTR: Japan 66.01%, Draw 22.01%, Tunisia 12.05%. Draw=22.01% well below 25% \u2014 RULE8 does NOT fire. RULE7 does NOT fire (Japan 66%, not >86%). Moderate mismatch match. Tunisia 12% \u2192 RULE15 applies to Tunisia's primary forwards (Mastouri, Saad). Skhiri is CDM \u2014 partial RULE15. Japan plays technical attacking football vs organized Tunisia defense. Key players: Kubo (Japan AM), Skhiri (Tunisia CDM). FTR prices fetched from test call at 23:05 UTC (1 call used). All 19 remaining market calls used for priority data.",
+  "lineups_confirmed": false,
+  "RULE8_fires": false,
+  "draw_probability": 0.2201,
+  "key_lambdas": {
+    "lambda_JPN_goals": 1.9296,
+    "lambda_TUN_goals": 0.6787,
+    "lambda_JPN_2H": 1.0387,
+    "lambda_TUN_2H": 0.3515,
+    "lambda_JPN_1H": 0.8909,
+    "lambda_TUN_1H": 0.3271,
+    "lambda_JPN_SOT_full": 4.785,
+    "lambda_TUN_SOT_full": 2.7602,
+    "lambda_JPN_SOT_2H": 2.5758,
+    "lambda_TUN_SOT_2H": 1.4298,
+    "lambda_JPN_corners": 5.5657,
+    "lambda_TUN_corners": 3.9653,
+    "lambda_total_corners": 9.531,
+    "lambda_1H_corners_total": 4.1078,
+    "lambda_2H_corners_total": 5.4232,
+    "lambda_total_cards_est": 2.94
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Japan": 0.6601,
+      "Draw": 0.2201,
+      "Tunisia": 0.1205,
+      "liquid": true,
+      "note": "Fetched at 23:05 UTC (test call)"
+    },
+    "OU2_5": {
+      "Over": 0.4589,
+      "Under": 0.5393,
+      "liquid": true
+    },
+    "JPN_OU0_5": {
+      "Over": 0.8548,
+      "liquid": true
+    },
+    "TUN_OU0_5": {
+      "Over": 0.4927,
+      "liquid": true
+    },
+    "2H_JPN_OU0_5": {
+      "Over": 0.6461,
+      "liquid": true
+    },
+    "2H_TUN_OU0_5": {
+      "Over": 0.2964,
+      "liquid": true
+    },
+    "2H_result": {
+      "Japan": 0.531,
+      "Draw": 0.3412,
+      "Tunisia": 0.1304,
+      "liquid": true
+    },
+    "Highest_scoring_half": {
+      "First_Half": 0.2952,
+      "Equal": 0.2848,
+      "Second_Half": 0.4209,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Japan": 0.6979,
+      "Draw": 0.0925,
+      "Tunisia": 0.2072,
+      "liquid": true
+    },
+    "1H_corners_OU3_5": {
+      "Over": 0.5873,
+      "Under": 0.4167,
+      "liquid": true
+    },
+    "JPN_corners_OU5_5": {
+      "Over": 0.4823,
+      "Under": 0.5159,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Tunisia": 0.5029,
+      "Draw": 0.2626,
+      "Japan": 0.2776,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Over": 0.5633,
+      "Under": 0.4336,
+      "liquid": true
+    },
+    "TUN_cards_OU1_5": {
+      "Over": 0.5077,
+      "Under": 0.4906,
+      "liquid": true
+    },
+    "Total_SOT_OU7_5": {
+      "Over": 0.503,
+      "Under": 0.503,
+      "liquid": true
+    },
+    "JPN_SOT_OU4_5": {
+      "Over": 0.521,
+      "Under": 0.4895,
+      "liquid": true
+    },
+    "TUN_SOT_OU2_5": {
+      "Over": 0.521,
+      "Under": 0.4895,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.2715,
+      "No": 0.7478,
+      "liquid": true
+    },
+    "Red_card": {
+      "Yes": 0.1457,
+      "No": 0.8623,
+      "liquid": true
+    },
+    "Player_SOT_OU0_5": {
+      "Takefusa_Kubo": 0.5798,
+      "Ellyes_Skhiri": 0.175,
+      "Daizen_Maeda": 0.6949,
+      "Ayase_Ueda": 0.6847,
+      "Keito_Nakamura": 0.675,
+      "Koki_Ogawa": 0.6898,
+      "Shuto_Machino": 0.6655,
+      "Junya_Ito": 0.5526,
+      "Ritsu_Doan": 0.5221,
+      "Firas_Chaouat_TUN": 0.5108,
+      "Hazem_Mastouri_TUN": 0.4725,
+      "Elias_Saad_TUN": 0.4218,
+      "Anis_Ben_Slimane_TUN": 0.3873,
+      "Hannibal_Mejbri_TUN": 0.3375,
+      "all_illiquid": true,
+      "note": "All player markets illiquid (offer-only, x0.945 applied)"
+    }
+  },
+  "rules_applied": {
+    "NO_RULE8": "Draw=22.01% well below 25% threshold. Normal estimation applies.",
+    "NO_RULE7": "Japan 66.01% \u2014 not a blowout-level mismatch. RULE7 does NOT fire.",
+    "RULE15_TUN_forwards": "Tunisia 12.05% win \u2014 strong RULE15 territory. Mastouri/Saad/Chaouat as primary forwards get SOT/goal suppressed. Skhiri is CDM (partial RULE15: positional role limits attacking output independently; tiny chasing bump from deep deficit).",
+    "Q1_fouls_proxy": "Most cards TUN=50.29% >> JPN=27.76%. TUN OU1.5 cards Over=50.77%. Defensive underdog fouls more to break up play; foul rate exceeds card rate. P(Japan more fouls) \u2248 0.25.",
+    "Q2_skellam_SOT_2H": "\u03bb_JPN_SOT_2H=2.576, \u03bb_TUN_SOT_2H=1.430. Skellam z=-0.573, P(TUN>JPN continuous)=0.284. Discrete correction -3.5pp \u2192 0.248. Japan dominates 2H (2H result JPN=53.1%). Round to 0.25.",
+    "Q3_JPN_2plus_offsides": "Japan is attacking favorite (not defensive-underdog 2+ offsides family). \u03bb_JPN_goals=1.93 \u2192 \u03bb_JPN_off\u22481.5. P(\u22652|1.5)=0.44. Tunisia sits deep = fewer effective offside traps. Slight NO lean. Estimate 0.45.",
+    "Q4_pen_or_red": "P(pen)=0.2715, P(red)=0.1457. Independence: P(OR)=1-0.7478\u00d70.8623=0.3552.",
+    "Q5_Tunisia_wins": "FTR market TUN=0.1205. RULE1: trust liquid market directly. Q5=0.12.",
+    "Q6_2_or_fewer_goals": "OU2.5 Under=0.5393 direct market. P(total goals \u22642)=0.54.",
+    "Q7_5plus_corners_2H": "\u03bb_1H_corners=4.11 (from 1H OU3.5 Over=0.5873), \u03bb_JPN_corners=5.57 (from JPN OU5.5 Over=0.4823), \u03bb_TUN_corners=3.97 (Skellam from most_corners=0.6979). \u03bb_total=9.53, \u03bb_2H=5.42. P(\u22655|5.42)=0.630.",
+    "Q8_Japan_scores_2H": "Direct 2H JPN OU0.5 Over=0.6461. Trust market. Q8=0.65.",
+    "Q9_Skhiri_CDM": "Market illiq 0.175 (offer\u00d70.945). Skhiri is CDM \u2014 not primary forward, less RULE15 than striker. TUN 12% \u2192 strong suppression expected. Tiny chasing bump. Estimate 0.18.",
+    "Q10_Kubo_JPN_winner": "Market illiq 0.5798. Kubo is Japan's key attacking MF. Japan expected winner \u2192 no RULE15. Trust market. Estimate 0.58."
+  },
+  "final_submission_estimates": {
+    "Q1_JPN_more_fouls_than_TUN": {
+      "estimate": 0.25,
+      "confidence": "MEDIUM-HIGH",
+      "note": "NO lean. TUN as defensive underdog fouls more. Most cards: TUN=50.3% vs JPN=27.8%. TUN cards OU1.5 Over=50.8%. Fouls skewed even further toward defensive underdog than cards (many fouls go unbookied). Strong edge if crowd prices ~0.45-0.50."
+    },
+    "Q2_TUN_more_SOT_than_JPN_in_2H": {
+      "estimate": 0.25,
+      "confidence": "MEDIUM",
+      "note": "NO lean. Skellam P(TUN>JPN SOT in 2H)=0.248 (discrete). \u03bb_JPN_SOT_2H=2.58 >> \u03bb_TUN_SOT_2H=1.43. Japan dominates 2H (2H result JPN=53.1%). Tunisia will be defending the majority of 2H."
+    },
+    "Q3_JPN_2plus_offsides": {
+      "estimate": 0.45,
+      "confidence": "LOW-MEDIUM",
+      "note": "SLIGHT NO lean. Japan is attacking favorite \u2014 NOT the defensive-underdog 2+ offsides family. \u03bb_JPN_goals=1.93 \u2192 \u03bb_JPN_off\u22481.4-1.6. P(\u22652|1.5)\u22480.44. Tunisia sits in a deep block = fewer offside traps triggered. Crowd likely prices ~0.50."
+    },
+    "Q4_penalty_or_red_card": {
+      "estimate": 0.36,
+      "confidence": "MEDIUM",
+      "note": "NO lean. P(pen)=0.2715 (direct), P(red)=0.1457 (direct). Independence: P(pen OR red)=1-(0.7478\u00d70.8623)=0.355. Both markets liquid."
+    },
+    "Q5_Tunisia_wins": {
+      "estimate": 0.12,
+      "confidence": "HIGH",
+      "note": "FTR market Tunisia=0.1205 (liquid). RULE1: avg(crowd, market). Crowd IS the market for liquid FTR. Q5=0.12."
+    },
+    "Q6_2_or_fewer_total_goals": {
+      "estimate": 0.54,
+      "confidence": "HIGH",
+      "note": "Direct OU2.5 Under=0.5393. Trust the market. \u03bb_total=2.608; match expected to be relatively low-scoring despite Japan dominance (Tunisia sits deep, limits scoring opportunities)."
+    },
+    "Q7_5plus_corners_in_2H": {
+      "estimate": 0.63,
+      "confidence": "MEDIUM",
+      "note": "Model: \u03bb_2H_corners_total=5.42 (from \u03bb_total=9.53 minus \u03bb_1H=4.11). P(\u22655|5.42)=0.630. Japan dominates corners (69.8% most corners). YES lean \u2014 Japan will press Tunisia's half in 2H."
+    },
+    "Q8_Japan_scores_in_2H": {
+      "estimate": 0.65,
+      "confidence": "HIGH",
+      "note": "Direct 2H JPN OU0.5 Over=0.6461. Trust the market. Japan expected to dominate 2H (2H result JPN=53.1%)."
+    },
+    "Q9_Skhiri_SOT": {
+      "estimate": 0.18,
+      "confidence": "LOW",
+      "note": "Market illiq 0.175 (offer-only \u00d70.945). Skhiri is Tunisia's CDM (not primary forward). TUN 12% win \u2192 RULE15 territory, but CDM positional role limits attacking output independently. Tiny upward push for chasing effect. Estimate 0.18. LOW confidence (illiquid only)."
+    },
+    "Q10_Kubo_SOT": {
+      "estimate": 0.58,
+      "confidence": "MEDIUM",
+      "note": "Market illiq 0.5798 (offer-only \u00d70.945). Kubo (Real Sociedad) is Japan's key attacking midfielder. Japan expected winner \u2192 no RULE15. Trust market directly. \u03bb_Kubo\u22480.87. Estimate 0.58."
+    }
+  },
+  "post_match_results": {
+    "match_score": "JPN 4-0 TUN",
+    "halftime_score": "2-0",
+    "goals_by_half": {
+      "JPN": {
+        "1H": 2,
+        "2H": 2
+      },
+      "TUN": {
+        "1H": 0,
+        "2H": 0
+      }
+    },
+    "match_facts": {
+      "JPN_fouls": 15,
+      "TUN_fouls": 8,
+      "JPN_YC": 0,
+      "TUN_YC": 0,
+      "JPN_RC": 0,
+      "TUN_RC": 0,
+      "JPN_offsides": 1,
+      "TUN_offsides": 1,
+      "JPN_corners": 5,
+      "TUN_corners": 3,
+      "JPN_SOT": 5,
+      "TUN_SOT": 0,
+      "JPN_shots": 11,
+      "TUN_shots": 2,
+      "source": "ESPN event 760449",
+      "notable": "Japan dominant 4-0 win. Tunisia 0 SOT in entire match. Japan fouled MORE despite being favorite (15 vs 8). No cards for either team."
+    },
+    "question_results": {
+      "Q1_JPN_more_fouls_than_TUN": {
+        "our_estimate": 0.25,
+        "crowd_estimate": 0.39,
+        "outcome": 1,
+        "rbp": -17.65,
+        "notes": "JPN 15 fouls > TUN 8. outcome=YES. BIG MISS: estimated 0.25 vs crowd 0.39."
+      },
+      "Q2_TUN_more_SOT_than_JPN_in_2H": {
+        "our_estimate": 0.25,
+        "crowd_estimate": 0.28,
+        "outcome": 0,
+        "rbp": 3.9,
+        "notes": "TUN 0 total SOT. outcome=NO."
+      },
+      "Q3_JPN_2plus_offsides": {
+        "our_estimate": 0.45,
+        "crowd_estimate": 0.47,
+        "outcome": 0,
+        "rbp": 4.7,
+        "notes": "JPN 1 offside. outcome=NO."
+      },
+      "Q4_penalty_or_red_card": {
+        "our_estimate": 0.36,
+        "crowd_estimate": 0.37,
+        "outcome": 0,
+        "rbp": 2.44,
+        "notes": "0 cards, 0 pens. outcome=NO."
+      },
+      "Q5_Tunisia_wins": {
+        "our_estimate": 0.12,
+        "crowd_estimate": 0.17,
+        "outcome": 0,
+        "rbp": 3.23,
+        "notes": "JPN 4-0. outcome=NO."
+      },
+      "Q6_2_or_fewer_total_goals": {
+        "our_estimate": 0.54,
+        "crowd_estimate": 0.5,
+        "outcome": 0,
+        "rbp": -1.86,
+        "notes": "4 total goals. outcome=NO. MISS."
+      },
+      "Q7_5plus_corners_in_2H": {
+        "our_estimate": 0.63,
+        "crowd_estimate": 0.51,
+        "outcome": 1,
+        "rbp": 12.09,
+        "notes": "outcome=YES (confirmed: 5+ total corners in 2H). Beat crowd well."
+      },
+      "Q8_Japan_scores_in_2H": {
+        "our_estimate": 0.65,
+        "crowd_estimate": 0.64,
+        "outcome": 1,
+        "rbp": 1.98,
+        "notes": "JPN scored 2 in 2H. outcome=YES."
+      },
+      "Q9_Skhiri_SOT": {
+        "our_estimate": 0.18,
+        "crowd_estimate": 0.29,
+        "outcome": 0,
+        "rbp": 8.5,
+        "notes": "TUN 0 total SOT. Skhiri got 0. outcome=NO. Beat crowd well."
+      },
+      "Q10_Kubo_SOT_NOT_IN_QK": {
+        "our_estimate": 0.58,
+        "crowd_estimate": null,
+        "outcome": null,
+        "rbp": null,
+        "notes": "NOT A QK QUESTION \u2014 Kubo SOT was not on the platform for this match."
+      }
+    },
+    "match_rbp_total": 17.34,
+    "questions_beat_crowd": "7/9",
+    "crowd_data_needed": true,
+    "note": "Only 9 questions on QK platform. Q10 Kubo SOT was not a QK question."
+  }
+}

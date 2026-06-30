@@ -1,0 +1,406 @@
+{
+  "match": "England vs Ghana",
+  "date": "2026-06-23",
+  "tournament": "FIFA World Cup 2026",
+  "group": "Group L",
+  "match_day": "GD2",
+  "venue": "TBD",
+  "sportspredict_url": "https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=ffa7a87a-1a80-40af-9798-3d3dc321d17b&marketId=06e1d4dd-3f44-4ac6-99df-96572c4dd13b",
+
+  "model_inputs": {
+    "eng_elo": 2090.3687,
+    "gha_elo": 1625.5008,
+    "elo_diff": 464.8679,
+    "venue_type": "neutral",
+    "note": "Elo diff 464.87 is LARGEST in our analysis series. Larger than FRA-IRQ (392.5), ARG-AUT (304.5), POR-UZB (237.6)"
+  },
+
+  "model_outputs": {
+    "lambda_ENG": 2.574,
+    "lambda_GHA": 0.478,
+    "lambda_total": 3.052,
+    "ordered_logit": {
+      "linear_predictor": 2.4167,
+      "p_eng_win": 0.8655,
+      "p_draw": 0.0948,
+      "p_gha_win": 0.0397
+    },
+    "poisson_probs": {
+      "p_eng_scores": 0.9238,
+      "p_gha_scores": 0.3800,
+      "p_btts": 0.3512,
+      "p_total_ge3": 0.5883,
+      "p_total_ge4": 0.3644,
+      "p_btts_and_3plus": 0.2929,
+      "p_eng_ge2": 0.7276,
+      "p_eng_ge3": 0.4750
+    }
+  },
+
+  "rules_applied": {
+    "RULE7": "FIRES — Ghana 3.97% win prob < 15% threshold. Submit unshaded estimates for all Ghana offensive props. Do not compress toward 50%.",
+    "RULE8": "Does NOT fire — draw 9.48% < 25% threshold. No general attacking shrinkage.",
+    "RULE15": "FIRES — Semenyo as expected-losing-team forward in massive mismatch. Suppress Q9.",
+    "RULE1": "Match winner: avg(sharp market, model). Both converge at ~86%.",
+    "FLOOR_0.25": "Applied to Q10 (Ghana corners), Q9 partially. All count-stat questions floored at 0.25.",
+    "RULE_FOULS": "Q2: predict which team DEFENDS. Ghana is the clear defending team from kickoff. Ghana fouls more."
+  },
+
+  "gd1_evidence": {
+    "england_vs_croatia_4_2": {
+      "ht_score": "2-2",
+      "england_shots": 22,
+      "england_sot": 11,
+      "england_corners": 8,
+      "england_fouls": 10,
+      "england_offsides": 2,
+      "england_yellow_cards": 1,
+      "england_possession": "48%",
+      "croatia_shots": 10,
+      "croatia_sot": 5,
+      "croatia_corners": 2,
+      "croatia_fouls": 12,
+      "kane_goals": 2,
+      "kane_sot": 3,
+      "kane_xg": 1.03,
+      "kane_minutes": 90,
+      "bellingham_goal": "47'",
+      "rashford_goal": "85'",
+      "england_tactical_style": "High press, high line, 4-2-3-1. Tuchel counter-pressing. Defensive vulnerabilities exposed (Croatia scored 2).",
+      "key_note": "England scored at 12' and 42' in 1H — active first-half scorers."
+    },
+    "ghana_vs_panama_1_0": {
+      "ht_score": "0-0",
+      "goal_scorer": "Yirenkyi 90+5'",
+      "ghana_shots": 7,
+      "ghana_sot": 2,
+      "ghana_corners": "not confirmed",
+      "ghana_fouls": 9,
+      "ghana_possession": "38%",
+      "panama_possession": "62%",
+      "panama_shots": 12,
+      "panama_sot": 4,
+      "semenyo_sot": 0,
+      "semenyo_shots": 2,
+      "semenyo_minutes": 90,
+      "semenyo_note": "Man of the Match despite 0 SOT. ESPN final box confirms 0 SOT.",
+      "ghana_1h_shots_total": 0,
+      "ghana_1h_note": "CRITICAL: Ghana had ZERO total shots in the first half vs Panama. Not just 0 SOT — 0 total shots.",
+      "ghana_2h_sot": 2,
+      "ghana_tactical_style": "4-3-3 or 4-2-3-1 deep block. Invited possession (62% Panama). Dangerous on transitions. Classic counter-attacking setup.",
+      "partey_status": "ABSENT GD1 (visa issue). Thomas Partey returns for GD2 — key defensive midfielder.",
+      "goalkeeper_note": "Lawrence Ati-Zigi injured at HT vs Panama. Benjamin Asare (backup) expected to start GD2.",
+      "yirenkyi_yellow": "16' — cautioned then scored winner"
+    }
+  },
+
+  "referee_data": {
+    "name": "Said (Héctor Saíd) Martínez Sorto",
+    "nationality": "Honduras",
+    "first_honduran_wc_referee": true,
+    "career_yc_per_game": 4.17,
+    "career_rc_per_game": 0.18,
+    "career_matches": 165,
+    "wc2026_gd1": {
+      "match": "Qatar vs Switzerland (1-1)",
+      "date": "2026-06-13",
+      "yellows": 3,
+      "reds": 0,
+      "penalties": 1,
+      "note": "Penalty awarded in first WC match. 3 yellows."
+    },
+    "career_penalty_rate": "not confirmed — only WC2026: 1 in 1 match",
+    "assessment": "High card-giver (career 4.17 YC/game vs WC avg ~2-3). Awarded 1 penalty in only WC match. Ghana fouling to defend = elevated card/penalty probability."
+  },
+
+  "player_profiles": {
+    "harry_kane": {
+      "club": "Bayern Munich",
+      "club_sot_per_90_2024_25": 1.74,
+      "club_goals_2024_25": 26,
+      "club_sot_2024_25": 52,
+      "club_matches_2024_25": 31,
+      "england_career_goals": 81,
+      "england_career_caps": 115,
+      "england_goals_per_cap": 0.70,
+      "england_wc_career_goals": 10,
+      "gd1_goals": 2,
+      "gd1_sot": 3,
+      "gd1_minutes": 90,
+      "fitness": "No concerns — fully expected to start",
+      "market_anytime_scorer": "-145 (FanDuel, ~59% implied)",
+      "market_first_scorer": "+250",
+      "market_1h_sot": "-170 (~63% implied for 1H alone)",
+      "context": "One goal vs Ghana = sole England WC record (surpassing Gary Lineker 10 goals)"
+    },
+    "antoine_semenyo": {
+      "club_2024_25": "Bournemouth (PL) then Manchester City from January 2026",
+      "club_sot_per_90_estimate": "~0.9 (career Bournemouth average, 73 SOT across 81 apps)",
+      "club_sot_per_90_note": "Career estimate only — specific 2024-25 per-90 not confirmed. Man City stint 17 goals in 37 matches.",
+      "ghana_caps": 35,
+      "ghana_goals": 3,
+      "gd1_sot": 0,
+      "gd1_shots": 2,
+      "gd1_minutes": 90,
+      "gd1_note": "CRITICAL: ESPN final box shows 0 SOT vs Panama despite being Man of the Match. All 2 shots were blocked/off-target.",
+      "fitness": "No concerns — expected to start",
+      "market": "No FanDuel/DraftKings lines found — MAIN_BOOK_ABSENCE signal for scorer markets"
+    }
+  },
+
+  "external_markets": {
+    "match_winner": {
+      "fanduel": {"england": -600, "draw": "+600", "ghana": "+1500"},
+      "bet365": {"england": "2/11 (~-550)", "draw": "13/2 (+650)", "ghana": "14/1 (+1400)"},
+      "implied_england_win": 0.857,
+      "opta_supercomputer": {"england": 0.788, "draw": 0.133, "ghana": 0.079},
+      "kickoff_algorithm": {"england": 0.82}
+    },
+    "totals": {
+      "over_2_5": "-184 (~65% implied)",
+      "under_2_5": "+148 (~40% implied)",
+      "over_3_5": "13/10 (+130, ~43% implied, bet365)",
+      "under_3_5": "8/13 (-163, ~62% implied, bet365)"
+    },
+    "btts": {
+      "btts_yes": "+125 (~44% implied, bet365)",
+      "btts_no": "-175 (~63% implied, bet365)"
+    },
+    "spread": {
+      "england_minus_1_5": "-175 to -180"
+    }
+  },
+
+  "group_l_standings": {
+    "after_gd1": [
+      {"team": "England", "pts": 3, "gd": "+2"},
+      {"team": "Ghana", "pts": 3, "gd": "+1"},
+      {"team": "Croatia", "pts": 0, "gd": "-2"},
+      {"team": "Panama", "pts": 0, "gd": "-1"}
+    ],
+    "context": "Both teams 3 pts. England lead on GD. A win clinches strong position for England. Ghana need points to stay level with England at top. GD3: England vs Panama, Ghana vs Croatia."
+  },
+
+  "question_analysis": {
+    "Q1": {
+      "question": "At halftime, will both teams have at least 1 shot on target?",
+      "compound_structure": "P(ENG ≥1 HT SOT) × P(GHA ≥1 HT SOT)",
+      "p_eng_ht_sot": 0.92,
+      "p_gha_ht_sot": 0.25,
+      "model_p": 0.23,
+      "key_evidence": [
+        "Ghana had ZERO total shots in 1H vs Panama — not just 0 SOT, zero shots entirely",
+        "England scored at 12' and 42' in 1H vs Croatia — active attackers from kick-off",
+        "RULE7: Ghana at 3.97% = extreme underdog, attacks will be minimal throughout",
+        "England's high press creates transition opportunities for Ghana but England defense is far better than Panama"
+      ],
+      "final_estimate": 0.23,
+      "edge_direction": "STRONG NO vs crowd expected ~0.38-0.42"
+    },
+    "Q2": {
+      "question": "Will Ghana commit more fouls than England?",
+      "rule_applied": "RULE_FOULS",
+      "match_script_prediction": "Ghana is the DEFENDING team from kickoff. Deep block, absorbing England's attacks. The defending team fouls more.",
+      "gd1_foul_data": {
+        "ghana_vs_panama": 9,
+        "england_vs_croatia": 10,
+        "note": "GD1 is close — Ghana 9 vs England 10. But roles in GD2 are reversed."
+      },
+      "partey_factor": "Thomas Partey returns — defensive DM known for cynical fouls at the base of midfield. Elevates Ghana foul count.",
+      "england_fouls_10_match_avg": 8.9,
+      "model_p": 0.55,
+      "final_estimate": 0.58,
+      "edge_direction": "Moderate YES vs crowd expected ~0.50"
+    },
+    "Q3": {
+      "question": "Will both teams have at least 1 shot on target in the second half?",
+      "compound_structure": "P(ENG ≥1 2H SOT) × P(GHA ≥1 2H SOT)",
+      "p_eng_2h_sot": 0.98,
+      "p_gha_2h_sot": 0.60,
+      "model_p": 0.59,
+      "key_evidence": [
+        "Ghana had 2 total SOT vs Panama, both in 2H (0 in 1H) — baseline for 2H output",
+        "Against England (harder), Ghana's total SOT may drop to 1-2, still mostly in 2H",
+        "If England is 3-0 up, Ghana may push forward desperately and get 1-2 SOT",
+        "England near-certain to have 2H SOT regardless of match state"
+      ],
+      "final_estimate": 0.52,
+      "edge_direction": "Near neutral / slight YES"
+    },
+    "Q4": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "poisson_p": 0.2929,
+      "market_adjusted_p": 0.3087,
+      "key_evidence": [
+        "P(Ghana scores) = 38% (model); market BTTS Yes at ~37% confirms",
+        "England very likely to score 2+ goals (P=72.8%)",
+        "Binding constraint: Ghana scoring at all",
+        "Market Over 2.5 at -184 (~65%) → P(total≥3) ≈ 65% but BTTS is binding constraint"
+      ],
+      "final_estimate": 0.30,
+      "edge_direction": "Slight NO vs crowd expected ~0.34-0.37"
+    },
+    "Q5": {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "referee_career_yc_per_game": 4.17,
+      "wc_penalties": "1 in 1 WC match (vs Qatar-Switzerland)",
+      "key_evidence": [
+        "Martínez career 4.17 YC/game — HIGH card-giver",
+        "Awarded penalty in his only WC match so far",
+        "Ghana's deep block defending England = repeated fouls near the box = penalty risk",
+        "Thomas Partey (defensive DM) returning = more reckless fouls possible",
+        "England's attacking quality (Bellingham, Kane) creates box contact situations"
+      ],
+      "final_estimate": 0.45,
+      "edge_direction": "Near crowd"
+    },
+    "Q6": {
+      "question": "Will Ghana have more shots on target than England in the second half?",
+      "rule_applied": "RULE7",
+      "model_p": "raw ~0.12-0.18 from distribution",
+      "key_evidence": [
+        "RULE7: Ghana at 3.97% = extreme underdog. Do NOT compress toward 50%.",
+        "England will attack throughout — even managing a 3-0 lead, they'll have 4-6 2H SOT",
+        "Ghana 2H SOT: probably 0-2 total (GD1 vs weaker Panama: 2 total in 90 min)",
+        "For Ghana to WIN the 2H SOT battle: England must massively under-perform AND Ghana over-perform",
+        "Blowout scenario: if England 4-0 up, they sit back somewhat — but Ghana's quality cap limits their SOT",
+        "RULE15 partially applies: Semenyo suppressed as expected-loser forward in blowout"
+      ],
+      "final_estimate": 0.18,
+      "edge_direction": "STRONG NO vs crowd expected ~0.30-0.35"
+    },
+    "Q7": {
+      "question": "Will England win the match?",
+      "rule_applied": "RULE1",
+      "ordered_logit_p": 0.8655,
+      "market_implied": 0.857,
+      "avg_model_market": 0.861,
+      "final_estimate": 0.86,
+      "edge_direction": "YES above expected crowd (~0.78-0.82)"
+    },
+    "Q8": {
+      "question": "Will Harry Kane score or assist a goal (excluding own goals)?",
+      "kane_anytime_scorer_market": "-145 (~59% implied FanDuel)",
+      "p_kane_scores": 0.592,
+      "p_kane_assist_only": 0.10,
+      "model_p": 0.68,
+      "key_evidence": [
+        "Kane market -145 for SCORING ALONE = 59% implied",
+        "Score OR assist adds ~10-12% for assist-only scenarios",
+        "Kane GD1: 2 goals, 0 assists vs Croatia in a 4-2 match (50% of England goals)",
+        "1.74 SOT/90 at Bayern Munich 2024-25 (StatMuse confirmed)",
+        "England λ=2.574 = 2-3 expected goals → Kane involved in many attacks",
+        "Kane 1H SOT market: -170 (63% implied) — shows books expect high 1H involvement"
+      ],
+      "final_estimate": 0.68,
+      "edge_direction": "Moderate YES vs crowd expected ~0.58-0.62"
+    },
+    "Q9": {
+      "question": "Will Antoine Semenyo have at least 1 shot on target?",
+      "rules_applied": ["RULE7", "RULE15", "FLOOR_0.25"],
+      "semenyo_gd1_sot": 0,
+      "semenyo_club_sot_estimate": 0.9,
+      "market_signal": "No FanDuel/DraftKings lines found — weak MAIN_BOOK_ABSENCE signal",
+      "key_evidence": [
+        "CRITICAL: Semenyo had 0 SOT vs Panama in GD1 (ESPN confirmed) despite being Man of the Match",
+        "His 2 shots in GD1 were all blocked or off-target",
+        "RULE15: Expected-losing-team forward in massive mismatch (3.97% Ghana win) = suppress SOT",
+        "RULE7: Extreme underdog — do not compress toward 50%",
+        "Against England's defense (better than Panama), shooting opportunities even fewer",
+        "Estimated P(Ghana total SOT): 2-3 in 90 min. Semenyo's share: 0-2 of those",
+        "FLOOR_0.25 applies"
+      ],
+      "compound_calc": "P(Ghana 0 SOT) ~0.35 × 0 + P(Ghana 1 SOT) ~0.25 × 0.30 + P(Ghana 2 SOT) ~0.20 × 0.45 + P(Ghana 3+ SOT) ~0.20 × 0.60 = 0.285",
+      "final_estimate": 0.28,
+      "edge_direction": "NO vs crowd expected ~0.38-0.45"
+    },
+    "Q10": {
+      "question": "Will Ghana have 5 or more corner kicks?",
+      "rules_applied": ["RULE7", "FLOOR_0.25"],
+      "key_evidence": [
+        "Ghana deep block (38% possession vs Panama) = few sustained attacks = few corners",
+        "Corners come from sustained attacks reaching the byline — Ghana plays on the counter",
+        "RULE7: Ghana's corner count severely suppressed as extreme underdog",
+        "GHA-PAN corner count: not confirmed but Ghana had only 7 total shots — probably 3-4 corners",
+        "England 8 corners vs Croatia — England will dominate the corner count here",
+        "Corner reversal rule: if England sits back at 3-0, Ghana pushes and could get corners",
+        "But Ghana's quality cap limits how often they reach the byline",
+        "FLOOR_0.25 applied — blowout reversal could push Ghana forward and generate some corners"
+      ],
+      "final_estimate": 0.25,
+      "edge_direction": "NO vs crowd expected ~0.35-0.42"
+    }
+  },
+
+  "final_submission_estimates": {
+    "Q1": 0.23,
+    "Q2": 0.58,
+    "Q3": 0.52,
+    "Q4": 0.30,
+    "Q5": 0.45,
+    "Q6": 0.18,
+    "Q7": 0.86,
+    "Q8": 0.68,
+    "Q9": 0.28,
+    "Q10": 0.25
+  },
+
+  "edge_ranking": [
+    "Q1 0.23 — STRONGEST EDGE: Ghana 0 total 1H shots in GD1. Compound 'both HT SOT' suppressed. Crowd likely ~0.40.",
+    "Q6 0.18 — SECOND EDGE: Ghana more 2H SOT than England is highly unlikely. RULE7 unshaded. Crowd likely ~0.32.",
+    "Q7 0.86 — PUSH HIGH: Market -600 (86%) confirms model (86.6%). Crowd may anchor low (~0.78).",
+    "Q9 0.28 — THIRD EDGE: Semenyo 0 GD1 SOT + RULE15 + RULE7. Crowd overprices his club form.",
+    "Q10 0.25 — FOURTH EDGE: Ghana deep block = minimal corners. RULE7 + FLOOR_0.25.",
+    "Q8 0.68 — MODERATE YES: Kane market -145 for scoring alone; add assist-only probability.",
+    "Q4 0.30 — SLIGHT NO: Binding constraint is Ghana scoring (38%). Crowd likely ~0.34-0.37.",
+    "Q2 0.58 — SLIGHT YES: Ghana defends = fouls more. Partey returns. Near-coin-flip direction.",
+    "Q3 0.52 — NEUTRAL: Compound; England certain, Ghana uncertain (2 2H SOT in GD1).",
+    "Q5 0.45 — NEUTRAL: High-card referee + Ghana fouling to defend; near crowd estimate."
+  ],
+
+  "key_risks": {
+    "Q1_risk": "If Ghana gets a 1H SOT from a set-piece or counter-attack, compound becomes YES and we lose.",
+    "Q3_risk": "If England blows Ghana out 4-0 by 60' and Ghana loses all shape, they might actually get more 2H SOT (blowout reversal).",
+    "Q8_risk": "If England wins clinically (1-0, Kane uninvolved), the assist-chain doesn't fire.",
+    "Q2_risk": "If England presses high and fouls a lot in the midfield (similar to their 10 vs Croatia), the foul gap may be small."
+  },
+
+  "gd1_key_lessons_applied": {
+    "ghana_0_1h_shots": "Applied to Q1 — Ghana HT SOT probability is low (~25%)",
+    "semenyo_0_sot": "Applied to Q9 — RULE15 reinforced by actual GD1 evidence",
+    "england_11_sot": "Confirms England will generate many SOT — applied to Q6 (Ghana unlikely to get more)",
+    "kane_2_goals": "Calibrates Q8 — Kane is in excellent form, will be central to England attacks",
+    "ghana_deep_block": "Applied to Q2 (defending team fouls more), Q10 (corners suppressed)"
+  },
+
+  "post_match": {
+    "final_score": "0-0",
+    "result_note": "MASSIVE UPSET. England (86.55% model win / -600 market) drew 0-0 with Ghana. Outcome fell in the 9.48% draw probability bucket. No goals, no penalty, no red card.",
+    "total_rbp": 44.4,
+    "settled_date": "2026-06-23",
+    "outcomes": {
+      "Q1": {"outcome": "NO", "our_estimate": 0.23, "crowd": 0.61, "rbp": 35.5, "beat_crowd": true, "note": "Ghana 0 1H SOT confirmed. GD1 behavioral data prediction validated perfectly."},
+      "Q2": {"outcome": "YES", "our_estimate": 0.58, "crowd": 0.61, "rbp": 0.09, "beat_crowd": true, "note": "Ghana committed more fouls. Near tie with crowd."},
+      "Q3": {"outcome": "YES", "our_estimate": 0.52, "crowd": 0.66, "rbp": -9.28, "beat_crowd": false, "note": "Both teams had ≥1 2H SOT. Even outmatched Ghana got SOT in 2H. We underpriced this at 52%."},
+      "Q4": {"outcome": "NO", "our_estimate": 0.30, "crowd": 0.37, "rbp": 7.51, "beat_crowd": true, "note": "No goals at all. Correctly priced low."},
+      "Q5": {"outcome": "NO", "our_estimate": 0.45, "crowd": 0.37, "rbp": -4.09, "beat_crowd": false, "note": "No penalty or red card. We were above crowd at 0.45 and paid for it."},
+      "Q6": {"outcome": "NO", "our_estimate": 0.18, "crowd": 0.22, "rbp": 3.6, "beat_crowd": true, "note": "Ghana did not have more 2H SOT than England. RULE7 applied correctly."},
+      "Q7": {"outcome": "NO", "our_estimate": 0.86, "crowd": 0.80, "rbp": -7.56, "beat_crowd": false, "note": "England failed to win. 0-0 draw. Both us and crowd overpriced England win; crowd less so at 80%. This is the 9.48% draw scenario materializing. Model not wrong — high probability events still fail."},
+      "Q8": {"outcome": "NO", "our_estimate": 0.68, "crowd": 0.65, "rbp": -0.71, "beat_crowd": false, "note": "Kane no goal or assist in 0-0 draw. Crowd very close."},
+      "Q9": {"outcome": "NO", "our_estimate": 0.28, "crowd": 0.45, "rbp": 15.14, "beat_crowd": true, "note": "Semenyo 0 SOT. RULE15 applied correctly. Crowd overpriced club form at 45%."},
+      "Q10": {"outcome": "NO", "our_estimate": 0.25, "crowd": 0.28, "rbp": 4.19, "beat_crowd": true, "note": "Ghana did not get 5+ corners. RULE7 + deep block + FLOOR_0.25 applied."}
+    },
+    "wins": ["Q1", "Q2", "Q4", "Q6", "Q9", "Q10"],
+    "losses": ["Q3", "Q5", "Q7", "Q8"],
+    "beat_crowd_count": 6,
+    "below_crowd_count": 4,
+    "key_learnings": {
+      "L1": "Q1 +35.5: GD1 behavioral data (Ghana 0 total 1H shots) was the single best predictor in match. Crowd at 61% was massively wrong. Always anchor on GD1 individual behavioral data first.",
+      "L2": "Q9 +15.14: RULE15 applied correctly to Semenyo. 0 SOT in match. Crowd 45% overpriced club form. RULE15 + GD1 evidence together = reliable suppression signal.",
+      "L3": "Q3 -9.28: Both teams 2H SOT. We underpriced at 52% (crowd 66%). Even massively outmatched Ghana (3.97% win probability) got ≥1 SOT in 2H. CALIBRATION UPDATE: 'Both teams 2H SOT' base rate is ~75-80% even in extreme mismatch. Distinct from 'Both teams 1H SOT' (which correctly fails for extreme underdogs).",
+      "L4": "Q7 -7.56: England failed to win despite 86%+ probability. The 9.48% draw materialized. Not a model failure — this is within normal variance. But note: we were MORE confident than crowd (86% vs 80%) which means we ate more loss. In future extreme Elo mismatches where draw is legitimately only ~10%, consider whether crowd's slight compression (to 80%) is actually better calibrated.",
+      "L5": "Q5 -4.09: Penalty/red card prop. We went 45% (above crowd 37%). Result NO. Historical pattern: we keep being too high on penalty/red card. Need to review our calibration on this question type across the ledger.",
+      "L6": "0-0 result in England-Ghana is the biggest upset of WC2026 so far. England's Elo advantage (464.87 — largest in our series) meant nothing on the day. This has implications: extreme Elo gaps do NOT guarantee goals. The model's λ_ENG=2.574 was not realized."
+    }
+  }
+}

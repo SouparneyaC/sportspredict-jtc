@@ -1,0 +1,161 @@
+{
+  "match": "Croatia vs Ghana",
+  "date": "2026-06-27",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"CRO_vs_ENG_GD1": 760437, "PAN_vs_GHA_GD1": 760434, "GHA_vs_ENG_GD2": 760458, "CRO_vs_PAN_GD2": 760460},
+  "smarkets_event_id": 45086953,
+  "group_context": {
+    "Croatia": {"pts": 3, "record": "0-1-1 (L2-4 ENG, W1-0 PAN)", "status": "Needs a win to firmly control 2nd place; GD currently -1"},
+    "Ghana": {"pts": 4, "record": "1-1-0 (W1-0 PAN, D0-0 ENG)", "status": "A draw likely secures qualification; GD +1, slightly ahead of Croatia"}
+  },
+  "wc2026_espn_stats": {
+    "CRO": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760437, "opponent": "England", "result": "L 2-4", "fouls": 12, "SOT": 5, "offsides": 1, "YC": 0, "RC": 0, "corners": 2, "possession": 48.3},
+        {"event_id": 760460, "opponent": "Panama", "result": "W 1-0", "fouls": 12, "SOT": 2, "offsides": 2, "YC": 1, "RC": 0, "corners": 2, "possession": 58.0}
+      ],
+      "averages": {"fouls": 12.0, "SOT": 3.5, "offsides": 1.5, "cards": 0.5, "corners": 2.0},
+      "CRITICAL_LESSON": "CRO-PAN's '9+ corners' question was our biggest single loss of that match (-21.77): we trusted Croatia's thin 2-corner GD1/GD2 sample and badly underestimated a high-stakes, both-teams-attacking match, while the market (already pricing the survival-match intensity) was right. DO NOT repeat — weight the live market far more than the raw 2.0 corner average today."
+    },
+    "GHA": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760434, "opponent": "Panama", "result": "W 1-0", "fouls": 9, "SOT": 2, "offsides": 4, "YC": 1, "RC": 0, "corners": 2, "possession": 38.0},
+        {"event_id": 760458, "opponent": "England", "result": "D 0-0", "fouls": 24, "SOT": 1, "offsides": 2, "YC": 1, "RC": 0, "corners": 2, "possession": 21.1},
+        {"_note": "Ghana's offside count stayed elevated (4, then 2) in BOTH a moderate-possession win and an extreme-low-possession defensive performance — similar to Iran's counter-attack profile (EGY-IRN) rather than a simple defensive-underdog-parks-the-bus read. Their foul count, by contrast, exploded (9→24) purely as a function of possession share."}
+      ],
+      "averages": {"fouls": 16.5, "SOT": 1.5, "offsides": 3.0, "cards": 1.0, "corners": 2.0}
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Croatia": 0.5420, "Ghana": 0.1640, "Draw": 0.2942, "liquid": true},
+    "HT_result": {"Croatia": 0.3789, "Ghana": 0.1591, "Draw": 0.4695, "liquid": true},
+    "2H_result": {"Croatia": 0.4371, "Ghana": 0.1743, "Draw": 0.3866, "liquid": true},
+    "Penalty": {"Yes": 0.2409, "No": 0.7549, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1376, "No": 0.8659, "liquid": true},
+    "OU3_5": {"Under": 0.7971, "Over": 0.2064, "liquid": true},
+    "CRO_2H_OU0_5_goals": {"Under": 0.4262, "Over": 0.5754, "liquid": true},
+    "CRO_SOT_OU4_5_fullmatch": {"Under": 0.4985, "Over": 0.5232, "liquid": true, "implied_lambda": 4.80},
+    "Corners_OU8_5": {"Under": 0.5321, "Over": 0.4631, "liquid": true},
+    "player_SOT_fullmatch": {"Luka_Sucic": {"offer": 0.5618, "adjusted": 0.531}, "Antoine_Semenyo": {"bid": 0.3546, "offer": 0.40, "mid": 0.3773}}
+  },
+  "context_flags": [
+    "RULE8_STRONG: HT Draw priced at 46.95% — the highest HT-draw price of any GD3 fixture this session. Both teams have something concrete to play for, pointing to a cagey first half before Croatia's class shows.",
+    "PRIOR_LESSON_CORNERS: see CRO_CRITICAL_LESSON above — this is the single most important carry-over from our own history into this match.",
+    "GHA_OFFSIDE_NOT_DEFENSIVE_UNDERDOG_PATTERN: Ghana's offside rate held up across very different possession shares (38% and 21%), resembling Iran's counter-attacking profile (EGY-IRN, where the same logic just confirmed a +75% pick) rather than a typical low-block team that should get the standard NO-family discount.",
+    "NO_RULE15_ON_SUCIC_TODAY: unlike ENG-CRO (where Croatia was the loser and Sucic-family players were over-priced), Croatia is the clear favorite here (54.2%) — RULE15 does not apply in this direction today.",
+    "GHA_NEAR_RULE15_SEMENYO: Ghana's 16.4% win probability sits just outside the strict <15% RULE15 threshold, but their measured attacking output (1.5 team SOT/game average) is extremely low — shade Semenyo down from the live market mid toward the team's real output ceiling."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Ghana be caught offside 2 or more times?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "GHA offsides: 4 (38% poss) and 2 (21% poss) — λ=3.0 raw Poisson gives P(≥2)=0.80. This does NOT look like a typical defensive-underdog signal (compare GHA_OFFSIDE_NOT_DEFENSIVE_UNDERDOG_PATTERN) since the rate held up even at extreme-low possession. Shaded modestly down from raw because Croatia's press today may differ from England's high press that produced Ghana's 2nd offside game.",
+      "final_estimate": 0.60,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 2,
+      "text": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Penalty Yes=24.09%, Any sent off Yes=13.76%. P(OR)=1-(0.7591×0.8624)=0.3451.",
+      "final_estimate": 0.35,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will Luka Sučić have at least 1 shot on target in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Illiquid full-match offer (0.5618, adjusted ×0.945=0.531) implies λ_full≈0.76. No RULE15 suppression today since Croatia is the favorite. Weighting slightly more of Croatia's attacking output into the 2H (consistent with their pattern of producing the decisive goal late in tight matches, confirmed in CRO-PAN) gives λ_2H≈0.42 → P(≥1)=0.34.",
+      "final_estimate": 0.34,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will Croatia win the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets FTR: Croatia 54.20%. Direct tier-1 market; high draw probability (29.4%) keeps this below the level Croatia's talent gap alone might suggest.",
+      "final_estimate": 0.54,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "At halftime, will Croatia be winning?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT market: Croatia = 37.89%. RULE8 (HT draw at 46.95%, the highest of the day) suppresses this below the full-match win probability — consistent with Croatia's tendency to take time to break teams down.",
+      "final_estimate": 0.38,
+      "direction": "NO lean (more likely tied at HT)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Croatia score in the second half?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Croatia 2H over 0.5 goals = 57.54%. Direct lesson from CRO-PAN: we were too conservative on an almost identical question last time (42% vs a market-aligned 54%, actual outcome YES) — trust this market fully rather than shading down again.",
+      "final_estimate": 0.58,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will there be 9 or more total corner kicks?",
+      "pick_tier": "MARKET-ANCHORED — LESSON-CORRECTED",
+      "reasoning": "ESPN raw average (CRO 2.0 + GHA 2.0 = 4.0 combined) would suggest a very low probability here — but this is EXACTLY the mistake that cost us -21.77 RBP in CRO-PAN, where Croatia's thin corner sample badly underestimated a high-stakes match the market had already priced correctly. Trust the live market (Over8.5 = 46.31%) directly this time instead of the historical average.",
+      "final_estimate": 0.46,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Croatia have 6 or more shots on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "ESPN history (λ=3.5) would give a low number, but the market-implied rate for THIS matchup (λ≈4.80, backed out of the Over4.5 SOT line at 52.32%) already reflects Croatia facing a much weaker defense than England or even Panama defensively. Using the market lambda, P(≥6)=0.35.",
+      "final_estimate": 0.36,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Antoine Semenyo have at least 1 shot on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Live market mid (bid 0.3546, offer 0.40) = 0.3773, but Ghana's team-wide SOT output has been just 1.5/game across 2 matches — extremely low for any individual player, even their best attacker, to clear 1 SOT reliably. Ghana sits just outside strict RULE15 territory (16.4% win prob) but the team output ceiling argument applies just as hard. Shade down from the market mid.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will there be 4 or more total shots on target in the second half?",
+      "pick_tier": "MARKET-ANCHORED — HISTORY-OVERRIDE",
+      "reasoning": "ESPN raw combined average (CRO 3.5 + GHA 1.5 = 5.0 full match) gives only 0.24 for 2H 4+ — but both teams' histories include one unusually defensive, low-event match each (Croatia's 1-0 grind vs Panama, Ghana's 0-0 vs England) that suppresses their averages. Backing out market-implied lambdas from each team's own SOT line (CRO≈4.80, GHA≈3.03 — note Ghana's market lambda is double their own ESPN average) gives a combined full-match λ≈7.82, and an even 2H split puts P(≥4) at 0.55. Same principle as the Q7 corners correction: trust the live, matchup-specific market over a thin, stale historical sample.",
+      "final_estimate": 0.55,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_GHA_2plus_offsides": 0.60,
+    "Q2_penalty_or_red": 0.35,
+    "Q3_Sucic_2H_SOT": 0.34,
+    "Q4_CRO_wins": 0.54,
+    "Q5_HT_CRO_winning": 0.38,
+    "Q6_CRO_scores_2H": 0.58,
+    "Q7_9plus_corners": 0.46,
+    "Q8_CRO_6plus_SOT": 0.36,
+    "Q9_Semenyo_SOT": 0.28,
+    "Q10_4plus_2H_SOT": 0.55
+  },
+  "strongest_picks": [
+    "Q7: 9+ total corners = 0.46 (HIGH CONFIDENCE — direct corrective application of the CRO-PAN corner-inflation lesson, trusting the market over a thin historical sample)",
+    "Q6: Croatia scores in 2H = 0.58 (HIGH CONFIDENCE — direct market, also corrects a prior under-confidence error on the same question type)",
+    "Q4: Croatia wins = 0.54 (HIGH CONFIDENCE — direct market)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-27"
+}

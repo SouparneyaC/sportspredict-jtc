@@ -1,0 +1,275 @@
+BASH LOG: POR vs UZB Match Analysis Session
+Date: 2026-06-23
+Session context: Pre-match analysis for Portugal vs Uzbekistan (WC2026, GD2).
+SportsPredict URL: https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=69befda5-5418-4a6e-9516-295139e79565&marketId=8dcbcf84-b3ef-4715-bb70-6f2f4e2abd50
+
+===========================================================================
+COMMAND 1: Elo ratings lookup
+===========================================================================
+$ grep -i "portugal|uzbekistan" sportspredict_research/data/processed/elo_current_ratings.csv
+
+OUTPUT:
+  Portugal:   2056.5074
+  Uzbekistan: 1818.9133
+  Elo diff (POR - UZB): +237.59
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 2: Ordered logit match winner (correct model parameters)
+===========================================================================
+$ python3 model/predict_ordered_logit.py "Portugal" "Uzbekistan" --neutral true
+
+OUTPUT:
+  Elo: Portugal=2056.5, Uzbekistan=1818.9 (diff=+237.6), neutral=true
+  Will Portugal win the match?      P = 0.664
+  Draw probability:                 P = 0.218
+  Will Uzbekistan win the match?    P = 0.119
+
+  RULE7 check: UZB=11.9% < 15% → RULE7 FIRES
+    → Submit UNSHADED model estimates. Do NOT compress toward crowd.
+    → RULE15 applies to Uzbekistan forwards (expected-losing-team forward SOT suppression)
+  RULE8 check: Draw=21.8% < 25% → RULE8 does NOT fire
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 3: Poisson goals model + all 10-Q preliminary computation
+===========================================================================
+$ python3 -c "[full Poisson inline model]"
+
+OUTPUT:
+  Elo diff: +237.59
+  lambda_POR: 1.7060
+  lambda_UZB: 0.7218
+  lambda_total: 2.4278
+
+  P(POR scores >= 1): 0.8184
+  P(UZB scores >= 1): 0.5141 (only 51% — important for Q6 BTTS)
+
+  P(BTTS AND 3+ goals): 0.3121  [Q6]
+  P(3+ total goals): 0.4375
+  P(2H 2+ goals): 0.3856        [Q8]
+  P(HT tied): 0.4244
+
+  lambda_POR_SOT (x3.0): 5.118
+  lambda_UZB_SOT (x3.0): 2.166
+  P(POR more 2H SOT): 0.7111    [Q2]
+  P(UZB 4+ total SOT): 0.1739   [Q9]
+
+  lambda_Ramos (30% POR lambda): 0.512   P(Ramos scores): 0.4006  [Q10]
+  lambda_Shomurodov_2H_SOT (35% UZB): 0.4169  P(Shom 2H SOT): 0.3409  [Q5]
+
+  lambda_UZB_offsides: 1.181   P(UZB 2+ offsides): 0.3306   [Q1]
+  lambda_POR_offsides: 2.792   P(POR 2+ offsides): 0.7675   [Q3]
+
+  === RULE CHECKS ===
+  RULE7: UZB win prob = 11.9% < 15% → RULE7 FIRES (extreme underdog)
+  RULE8: Draw prob = 21.8% < 25% → RULE8 does NOT fire
+  RULE15 candidate: Shomurodov (UZB expected-losing forward, suppress 2H SOT)
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 4: Deep research agent — spawned in background
+===========================================================================
+[Subagent spawned: general-purpose research agent — background]
+[Agent ID: a7331c665edfe75d7]
+
+Searching for:
+  - Portugal GD1 result and full stats (shots, SOT, corners, fouls, offsides, scorers)
+  - Uzbekistan GD1 result and full stats
+  - Group standings for Portugal and Uzbekistan after GD1
+  - Market odds: POR win, draw, UZB win, Over/Under 2.5/3.5, BTTS, corners
+  - Referee assignment and career stats
+  - Gonçalo Ramos: club team, SOT/game, goals/game, WC role (starter/sub?)
+  - Eldor Shomurodov: club team, SOT/game, GD1 individual stats
+  - Ronaldo status (starting or benched?)
+  - Portugal and Uzbekistan fouls/game (recent 10 matches)
+  - Portugal tactical formation and pressing style
+  - Uzbekistan's GD1 setup (deep block? high press?)
+
+STATUS: RUNNING — will update log when results arrive
+
+===========================================================================
+PRELIMINARY MODEL ESTIMATES (before research agent returns):
+===========================================================================
+  Q1  UZB 2+ offsides          model=33.1%  prelim=0.22-0.28  (RULE7 + 2+ offsides family: organized underdog stays compact)
+  Q2  POR more 2H SOT          model=71.1%  prelim=0.74-0.82  (RULE7 = submit unshaded; Portugal dominant)
+  Q3  POR 2+ offsides          model=76.8%  prelim=0.65-0.78  (Portugal attacks; UZB high defensive line?)
+  Q4  Penalty OR red card      model=~38%   prelim=0.35-0.45  (pending referee data)
+  Q5  Shomurodov 2H SOT        model=34.1%  prelim=0.20-0.28  (RULE15 candidate: expected-losing forward)
+  Q6  BTTS AND 3+ goals        model=31.2%  prelim=0.25-0.33  (UZB scores only 51% base rate)
+  Q7  Portugal win             model=66.4%  prelim=0.75-0.85  (market will be higher; RULE1 apply)
+  Q8  2H 2+ total goals        model=38.6%  prelim=0.38-0.46  (pending match script; blowout = POR manages 2H)
+  Q9  UZB 4+ total SOT         model=17.4%  prelim=0.12-0.20  (RULE7 = submit unshaded; very low)
+  Q10 Ramos scores             model=40.1%  prelim=0.38-0.48  (pending starter/sub status)
+
+===========================================================================
+RESEARCH AGENT RESULTS — KEY FINDINGS (Agent ID: a7331c665edfe75d7)
+===========================================================================
+
+GROUP: K (Portugal, DR Congo, Colombia, Uzbekistan)
+
+GD1 CONFIRMED STATS:
+
+  Portugal 1-1 DR Congo (Houston):
+  - Portugal: 7 shots, 1 SOT, xG 0.64, 68-79% possession, 724 passes
+  - 3 yellow cards (Bernardo Silva 13', Semedo 88', Araujo 90+2')
+  - Portugal goal: Joao Neves 6' (header from Pedro Neto cross)
+  - Cancelo overhead kick DISALLOWED for offside at 55' (at least 1 Portugal offside)
+  - Ronaldo: STARTED. Peripheral. Did not score.
+  - Ramos: SUB at 83'. ~7 minutes. No goal.
+  - NO penalties or red cards in match.
+  - CRITICAL: Only 1 SOT from 7 shots despite 68-79% possession.
+  - RUBEN DIAS reportedly returning to lineup for GD2.
+
+  Uzbekistan 1-3 Colombia (Azteca):
+  - Uzbekistan: 8 shots, 2 SOT, xG 1.16, 28-33% possession
+  - UZBEKISTAN: 0 OFFSIDES IN 90 MINUTES (decisive for Q1)
+  - Zero touches in opposition box in FIRST HALF
+  - First shot didn't come until 40th minute
+  - Goal: Fayzullaev 60' (header from cross)
+  - 1 yellow card (Khusanov)
+  - Shomurodov: STARTED. No goal.
+  - Fouls committed: 14 (confirms 11.63/game average)
+
+GROUP K STANDINGS AFTER GD1:
+  Colombia: 3pts (+2 GD)
+  DR Congo: 1pt (0 GD)
+  Portugal: 1pt (0 GD)  ← MUST WIN GD2
+  Uzbekistan: 0pts (-2 GD)
+
+REFEREE: Jalal Jayed (Morocco)
+  - Career YC/game: 3.73 (below tournament average)
+  - Career penalty rate: 0.50/game (42 pens in 84 matches) — HIGHEST OF ANY REF THIS TOURNAMENT
+  - Career RC/game: 0.14
+  - WC2026 match: GER 7-1 CUR → 0 cards (extremely lenient in blowout)
+  - KEY: 0.5 pens/game career rate significantly elevates Q4 (Penalty OR RC)
+
+MARKET DATA:
+  Portugal win: -600 to -700 (85-87.5% implied)
+  Draw: +600 to +700 (12.5-14%)
+  Uzbekistan win: +1400 to +1900 (5-6.5%)
+  Over 2.5 goals: -170 to -178 (63-64% implied)
+  Over 3.5 goals: +115 to +118 (46% implied)
+  BTTS Yes: +140 to +150 (~40%); BTTS No: -190 to -200 (67%)
+  Corners: Over 8.5 (-150) total; Portugal Over 6.5 corners (-114 to -130)
+  Ronaldo anytime scorer: -190 to -150 (60-65% implied)
+  Ramos anytime scorer: ~+90 (52% implied, Goal.com; NOT on main FanDuel/DK tables)
+  Shomurodov anytime scorer: +550 (15% implied)
+
+PLAYER PROFILES:
+  Goncalo Ramos: PSG. 0.41 goals/90 in Ligue 1 (30 apps, 6 goals). CONFIRMED SUPERSUB (83' in GD1, ~7 min). Expected same role vs UZB.
+  Ronaldo: 41yo. STARTER. Peripheral in GD1. Still starting vs UZB per multiple reports.
+  Shomurodov: Basaksehir. 0.68 goals/90 last season. Started GD1. No goal.
+  Francisco Conceicao: EXPECTED TO START vs UZB (replacing Bernardo Silva who got yellow at 13').
+  Pedro Neto: Provided GD1 assist. Strong attacking outlet.
+
+TACTICAL CONTEXT:
+  Portugal: 4-2-3-1 (morphs 3-2-5 in possession). High press.
+  Uzbekistan: 3-4-2-1 deep compact block (Cannavaro). Zero box touches in 1H GD1.
+  Portugal fouls/game: 7.8; Uzbekistan: 11.63/game (12.33 away)
+  Portugal qualifying SOT/game: 8.3 (GD1 was a severe outlier at 1)
+
+===========================================================================
+COMMAND 5: GD1 Calibration and Final Estimate Derivation
+===========================================================================
+[No code — analytical synthesis with research agent data]
+
+  Q1: UZB 2+ offsides?
+    - GD1 DECISIVE: Uzbekistan had ZERO offsides vs Colombia (even while trailing 3-1!)
+    - Their 3-4-2-1 Cannavaro system NEVER sends players behind defensive lines
+    - Even in blowout chasing mode vs Colombia, 0 offsides. This overrides blowout reversal rule.
+    - Model 33.1% is far above evidence. Crowd will be ~45-52%.
+    - FINAL: 0.20
+
+  Q2: Portugal more 2H SOT than UZB?
+    - UZB barely generates SOT (2 total in GD1). POR will dominate possession.
+    - POR 1 GD1 SOT was against active DR Congo — vs passive UZB, more opportunities.
+    - Even if POR gets only 2-3 2H SOT, UZB gets 0-1. POR wins this easily.
+    - FINAL: 0.80
+
+  Q3: Portugal 2+ offsides?
+    - GD1: at least 1 offside (Cancelo disallowed). POR attacks aggressively.
+    - BUT: GER-CUR analogue — Germany had <2 offsides in 7-1 blowout (+13.79 for us by going 0.43 vs crowd 0.54)
+    - Deep defensive line is EASIER to time runs against (less likely to get caught)
+    - Revise down from model 76.8%.
+    - FINAL: 0.65
+
+  Q4: Penalty OR red card?
+    - Jayed 0.5 pens/game career (42/84 matches) — highest of any WC ref we've seen
+    - GER-CUR he gave 0 (blowout discount). But career rate still very high.
+    - Portugal attacks into box; UZB fouls 11.63/game when defending.
+    - FINAL: 0.42
+
+  Q5: Shomurodov 2H SOT?
+    - RULE15 fires (UZB 11.9% win prob, extreme underdog forward)
+    - UZB: 2 total SOT in GD1 vs Colombia. Even less vs Portugal.
+    - In blowout 2H: Shomurodov barely gets chances. RULE15 suppresses.
+    - Weighted scenario analysis: 0.40×0.15 + 0.35×0.28 + 0.20×0.38 + 0.05×0.40 = 0.25
+    - FINAL: 0.25
+
+  Q6: BTTS AND 3+ goals?
+    - P(UZB scores) = ~39-40% (market BTTS No 67%). Binding constraint.
+    - Model 31.2% and market-derived (39% × 80%) = 31.2% align.
+    - UZB scored in GD1 (they CAN score). But POR defense stronger.
+    - FINAL: 0.30
+
+  Q7: Portugal win?
+    - Market -600 to -700 (85-87.5%). RULE1 — weight market over model.
+    - POR highly motivated (drew GD1, Ronaldo scrutiny). Uzbekistan can't win.
+    - FINAL: 0.85
+
+  Q8: 2H 2+ total goals?
+    - Model 38.6%. Over 3.5 at 46% supports elevated 2H output.
+    - POR will score in 2H; UZB may nick 1 on counter.
+    - FINAL: 0.42
+
+  Q9: UZB 4+ total SOT?
+    - UZB: 2 total SOT in GD1 vs Colombia (weaker than Portugal's defense).
+    - 4+ requires doubling GD1 output against STRONGER defense. Near-impossible.
+    - RULE7: unshaded — submit low estimate.
+    - FINAL: 0.12
+
+  Q10: Ramos scores?
+    - Goal.com: +90 (~52% implied). Not on main books (supersub role).
+    - Came on 83' in GD1 (~7 min). Will come on earlier if POR winning big.
+    - Portugal scores 2-3 total → creates scoring opportunity for Ramos in closing stages.
+    - FINAL: 0.48
+
+===========================================================================
+FINAL SUBMISSION ESTIMATES: Portugal vs Uzbekistan
+===========================================================================
+  Q1:  0.20  (UZB 2+ offsides)          — TIER 1 STRONG NO (0 GD1 offsides; crowd ~50%)
+  Q2:  0.80  (POR more 2H SOT)           — TIER 1 STRONG YES (dominant POR; UZB barely shoots)
+  Q3:  0.65  (POR 2+ offsides)           — TIER 2 YES lean (attacking style; GER-CUR pulls down)
+  Q4:  0.42  (Penalty OR red card)       — TIER 2 YES lean (Jayed 0.5 pens/game career)
+  Q5:  0.25  (Shomurodov 2H SOT)         — TIER 2 NO lean (RULE15 + only 2 GD1 SOT)
+  Q6:  0.30  (BTTS AND 3+ goals)         — TIER 3 NO lean (P(UZB scores) ~39% binding)
+  Q7:  0.85  (Portugal win)              — TIER 1 STRONG YES (market -600 to -700)
+  Q8:  0.42  (2H 2+ goals)               — TIER 3 slight YES (over 3.5 at 46%)
+  Q9:  0.12  (UZB 4+ SOT)                — TIER 1 STRONG NO (only 2 GD1 SOT; 4+ impossible)
+  Q10: 0.48  (Ramos scores)              — TIER 3 coin flip (supersub role; market +90)
+
+EDGE RANKING:
+  #1  Q1  0.20 — STRONGEST: UZB 0 GD1 offsides + Cannavaro deep block. Crowd ~50%.
+  #2  Q9  0.12 — UZB only 2 GD1 SOT; 4+ vs Portugal defense near-impossible.
+  #3  Q2  0.80 — Portugal dominates SOT; UZB barely creates. RULE7 unshaded.
+  #4  Q7  0.85 — Market -600/-700; Portugal motivated; crowd may be at 70-78%.
+  #5  Q5  0.25 — RULE15 + GD1 evidence; crowd anchors on club form.
+  #6  Q3  0.65 — Portugal aggressive but GER-CUR analogue provides key discount.
+  #7  Q4  0.42 — Jayed 0.5 pens/game career; crowd won't know referee data.
+  #8  Q6  0.30 — Model and market-derived align; submit at model level.
+  #9  Q8  0.42 — Slight above model; over 3.5 at 46%.
+  #10 Q10 0.48 — Coin flip; supersub role uncertainty.
+
+===========================================================================
+FILES WRITTEN THIS SESSION:
+  - sportspredict_research/data/external_markets/por_uzb_2026-06-23.json
+  - sportspredict_research/bash_logs/2026-06-23_POR-UZB_match_analysis_bash_log.txt
+
+PENDING:
+  - ML_EXPERIMENTS_NOTEBOOK.md update (will append after estimates written)
+  - Crowd estimates when available
+  - Post-match results

@@ -1,0 +1,161 @@
+COLOMBIA vs DR CONGO — WC2026 Group K GD2
+Pre-match Analysis Bash Log
+Date: 2026-06-23
+
+=== COMMANDS RUN ===
+
+1. grep -i "colombia|congo" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Colombia,2063.7111 | DR Congo,1763.2036 | Congo,1328.6370
+NOTE: Used DR Congo (1763.2036), not Congo (1328.6370 — different country)
+
+2. cat sportspredict_research/data/processed/poisson_goals_coefs.json
+OUTPUT: intercept=0.10408, elo_diff_coef=0.0018099, home_advantage=0.23022
+
+3. cat sportspredict_research/data/processed/ordered_logit_coefs.json
+OUTPUT: b_elo=0.005199, b_home=0.3771, c1=-0.7702, c2=0.5549
+
+4. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff: 300.51 (Colombia significantly stronger)
+  lambda_COL: 1.9117
+  lambda_CDR: 0.6442
+  lambda_total: 2.5558
+  P(COL scores): 0.8522
+  P(CDR scores): 0.4749
+  P(BTTS): 0.4047
+  P(total <= 2): 0.5296
+  P(total >= 3): 0.4704
+  P(COL win): 0.7325
+  P(Draw): 0.1790
+  P(CDR win): 0.0885  <- RULE7 FIRES (<15%)
+  P(COL leads HT): 0.5067
+  P(HT draw): 0.3712
+  P(CDR leads HT): 0.1221
+  P(COL more 2H goals): 0.5067
+  P(CDR more 2H goals): 0.1221
+  P(COL more 2H SOT): 0.7637
+  lambda_SOT_COL (3x): 5.7350
+  lambda_SOT_CDR (3x): 1.9325
+  P(COL 5+ corners | lambda=5): 0.5595
+
+5. Research agent spawned — Sources: ESPN, FIFA, BBC Sport, Opta Analyst, CBS Sports,
+   FOX Sports, footystats, RefStats, FanDuel, DraftKings, SportsMole, AFCON data
+   Key findings recorded below.
+
+=== KEY FINDINGS ===
+
+RULES:
+- RULE7: FIRES — DR Congo 8.85% model win / 13.6% market win. Both below 15% threshold.
+  Apply RULE15 fully for Bakambu (Q10). Submit unshaded estimates for underdog props.
+- RULE8: Does NOT fire — Draw 17.90% < 25% threshold.
+- RULE15: FIRES for Bakambu (Q10). <15% underdog → 0.25-0.35 range regardless of club rate.
+- RULE_FOULS: Colombia possesses → DR Congo defends → DR Congo fouls more (direction).
+  BUT: Colombia is a high-press team (11 fouls while attacking in GD1 — JPN-TUN lesson applies).
+  Q4 estimate moderately NO but not aggressively low.
+- FLOOR_0.25: Applied to Q10 (Bakambu SOT). Estimate 0.32 > floor.
+- RULE1: Q5 Colombia win = avg(model 73.25%, market 62.7%) → blended 0.72.
+
+COLOMBIA GD1 (3-1 vs Uzbekistan):
+- 15 shots, 4 SOT, 11 fouls, 4 corners, 3 offsides, 56% possession
+- 1H: 1 goal (Muñoz 40'), 2H: 2 goals (Díaz 65', Campaz 90+9') + Uzbekistan 1 goal (Fayzullaev 60')
+- Formation: 4-2-3-1, high-press style under Néstor Lorenzo
+- DÍAZ: 1 goal + 1 assist + woodwork. First WC2026 player with goal+assist+woodwork.
+- Only 4 SOT from 15 shots (26.7% shot-to-SOT conversion) — low efficiency
+- No injuries or suspensions; same XI expected for GD2
+
+DR CONGO GD1 (1-1 vs Portugal):
+- 8 shots, 2 SOT, 10 fouls, 4 corners, 2 offsides, 25% possession
+- 1H: Wissa 45+5' equalizer; Portugal Neves 6' opener. HT: 1-1
+- 2H: 0 goals. Compact defensive block held Portugal (68% possession) to ONLY 1 total SOT
+- Formation: 5-3-2 (Wan-Bissaka RWB, Masuaku LWB; Wissa + Bakambu up front)
+- BAKAMBU: Started 90 min. ~1 SOT (forced save from Diogo Costa in 2H). Rated 7/10.
+  Had 2 total attempts — 1 SOT, 1 off-target. NOT suspended (Mbemba's yellow ≠ auto-ban).
+- Yellow cards: Mbemba (CDR, 32'). No reds.
+- Holding Portugal (one of world's best) to 1 SOT is exceptional defensive achievement.
+
+LUIS DÍAZ:
+- Liverpool FC / Bayern Munich (2025-26 transfer reports)
+- PL 2024-25: 13 goals, ~35 apps, estimated 1.5-1.8 SOT/90
+- GD1: 1 goal (65') + 1 assist (Muñoz 40') + woodwork
+- FanDuel anytime scorer: +185 (35.1% implied)
+- Score or assist: estimated ~47% from market
+- No RULE15 (Colombia is expected winner)
+
+CÉDRIC BAKAMBU:
+- Real Betis (La Liga, Spain). Age 34.
+- 2024-25: 25 apps (6 starts), 561 min, 3 goals, 9 SOT → 1.44 SOT/90
+- Primarily bench option at Betis (19/25 apps off bench)
+- GD1: Started vs Portugal. 1 SOT (Costa save). 2 total attempts.
+- FanDuel: +490 scorer, +230 score-or-assist (30.3% implied for latter)
+- RULE15 FULL: <15% underdog. Use 0.25-0.35 range.
+
+REFEREE — Maurizio Mariani (Italy):
+- Career: 4.81 YC/game, 0.18 RC/game, 0.37 pens/game (289 matches)
+- Current 2025-26: 3.95 YC/match, 0.14 RC/match, 0.24 pens/match, 24.29 fouls/match
+- WC2026 GD1: Saudi Arabia vs Uruguay
+- High-card referee historically but current season rate lower
+- P(penalty OR red card) ≈ 0.36 theoretical; shaded to 0.38 given historical overpricing pattern
+
+MARKET:
+- FanDuel COL -195, Draw +300, CDR +600
+- Market COL win devigged: ~62.7%
+- Model COL win: 73.25%. Gap: ~10.5pp.
+- Under 2.5 at -155 (60.8% implied); Over 2.5 at +125 (44.4% implied)
+- BTTS Yes ~40%, BTTS No ~60%
+- Corners: Under 10.5 total flagged as value (both teams had only 4 corners each in GD1)
+
+GROUP K CONTEXT:
+- Colombia: 3 pts (clinches with a win here)
+- Portugal: 1 pt; DR Congo: 1 pt
+- DR Congo must effectively win (draw only keeps alive if Portugal drops pts vs Uzbekistan)
+- Survival element for DR Congo → might push forward late → more open match in 2H
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.72 — Colombia more 2H SOT [YES: model 76.37%; RULE7 fires; CDR compact defense slight shade]
+Q2: 0.55 — Colombia more 2H goals [YES_LEAN: COL scored 2 in 2H in GD1; CDR scored 0 in 2H]
+Q3: 0.38 — Penalty OR red card [NO_LEAN: Mariani 0.24 pens/game; historical overpricing pattern]
+Q4: 0.42 — Colombia more fouls [NO_LEAN: DR Congo defends; but Colombia high-press = JPN-TUN caveat]
+Q5: 0.72 — Colombia win [YES: model 73.25%, market 62.7%; RULE1 blended 0.72]
+Q6: 0.52 — Colombia leads at HT [YES_LEAN: model 50.67%; COL led HT in GD1; coin-flip]
+Q7: 0.56 — ≤2 total goals [YES_LEAN: market Under -155; CDR held Portugal to 1 SOT]
+Q8: 0.48 — Colombia 5+ corners [NO_LEAN: GD1 4 corners; compact CDR = more corners; coin-flip]
+Q9: 0.48 — Díaz score or assist [YES_LEAN: market ~47%; GD1 goal+assist; RULE7 context]
+Q10: 0.32 — Bakambu ≥1 SOT [SIGNIFICANT NO: RULE15 full; <15% underdog; GD1 1 SOT slight uplift from 0.25]
+
+=== EDGE RANKING ===
+
+RANK 1: Q10 0.32 NO — Bakambu RULE15 full. CDR <15% win. Crowd likely ~0.43.
+RANK 2: Q5 0.72 YES — Colombia win. Model 73% vs market 63%.
+RANK 3: Q1 0.72 YES — Colombia more 2H SOT. Model 76.37%.
+RANK 4: Q3 0.38 NO — Penalty/red card. Historical overpricing.
+RANK 5: Q7 0.56 YES — ≤2 total goals. Market Under -155 confirms.
+RANK 6: Q2 0.55 YES — Colombia more 2H goals. GD1 patterns align.
+RANK 7: Q4 0.42 NO_LEAN — Colombia fouls. Near coin-flip with slight NO lean.
+RANK 8: Q9 0.48 YES_LEAN — Díaz score or assist. Market-anchored.
+RANK 9: Q8 0.48 NO_LEAN — Colombia 5+ corners. Near coin-flip.
+RANK 10: Q6 0.52 YES_LEAN — Colombia leads HT. Essentially coin-flip.
+
+=== DATA STORAGE OVERVIEW ===
+
+WHERE DATA IS SAVED:
+1. Pre-match JSON: data/external_markets/col_cdr_2026-06-23.json
+   → Model inputs, GD1 evidence, player profiles, market data, final estimates, post-match results
+2. Bash log: bash_logs/2026-06-23_COL-CDR_match_analysis_bash_log.txt (THIS FILE)
+   → Every command run and key output
+3. ML Notebook: sportspredict_research/ML_EXPERIMENTS_NOTEBOOK.md
+   → Full match analysis section with pre/post tables and key learnings
+4. Memory files: /Users/aki/.claude/projects/.../memory/*.md
+   → Cross-match rules (project_crowd_bias_model.md, project_sportspredict_edge_analysis.md)
+   → These persist across ALL future sessions
+
+WHAT IS NOT RAW-SAVED:
+- Research agent raw output (too large; key numbers extracted into JSON)
+- Intermediate Python calculations (results captured in this log and JSON)
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/col_cdr_2026-06-23.json — Full match analysis JSON
+2. THIS FILE: bash_logs/2026-06-23_COL-CDR_match_analysis_bash_log.txt
+
+=== END LOG ===

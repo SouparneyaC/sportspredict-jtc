@@ -1,0 +1,374 @@
+{
+  "match": "NED-SWE",
+  "sportspredict_match_id": "397652b4-cc83-419f-b917-0fe1511667fc",
+  "smarkets_event_id": "45042896",
+  "kickoff_utc": "2026-06-20T17:00:00Z",
+  "context_note": "Netherlands vs Sweden, WC2026 Group C. Netherlands moderate favorite: \u03bb_NED=1.93, \u03bb_SWE=1.10. FTR: Netherlands 56.18%, Draw 24.10%, Sweden 20.21%. Draw=24.10%, just below RULE8 threshold (25%) \u2014 RULE8 does NOT fire. Open attacking match expected: BTTS 61.36%, OU2.5 Over 59.53%. Sweden has world-class attackers Gy\u00f6keres (Sporting CP, 40+ goals in 24-25) and Isak (Newcastle). Netherlands have Gakpo, van Dijk, multiple attack options. RULE15 applies to Gy\u00f6keres (Sweden 20.21% underdog) \u2014 mild application (-5pp). No RULE15 for Gakpo (NED expected winner). Most corners: Netherlands 65.54% (dominant set-piece side).",
+  "lineups_confirmed": false,
+  "RULE8_fires": false,
+  "draw_probability": 0.241,
+  "key_lambdas": {
+    "lambda_NED_goals": 1.93,
+    "lambda_SWE_goals": 1.1,
+    "lambda_NED_2H": 1.108,
+    "lambda_SWE_2H": 0.609,
+    "lambda_NED_SOT_full": 5.35,
+    "lambda_SWE_SOT_full": 3.2,
+    "lambda_NED_SOT_2H": 3.06,
+    "lambda_SWE_SOT_2H": 1.77,
+    "lambda_total_SOT": 8.55,
+    "lambda_GYO_full": 0.811,
+    "lambda_GYO_2H": 0.449,
+    "lambda_NED_off_est": 1.3
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Netherlands": 0.5618,
+      "Draw": 0.241,
+      "Sweden": 0.2021,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Over": 0.5953,
+      "Under": 0.4047,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.6136,
+      "liquid": true
+    },
+    "BTTS_OU2_5": {
+      "Yes_Over": 0.4742,
+      "Yes_Under": 0.1095,
+      "No_Over": 0.1058,
+      "No_Under": 0.3058,
+      "liquid": true
+    },
+    "BTTS_OU3_5": {
+      "Yes_Over": 0.3132,
+      "liquid": true
+    },
+    "NED_OU0_5": {
+      "Over": 0.8659,
+      "liquid": true
+    },
+    "NED_OU1_5": {
+      "Over": 0.5866,
+      "liquid": true
+    },
+    "NED_OU2_5": {
+      "Over": 0.2985,
+      "liquid": true
+    },
+    "SWE_OU0_5": {
+      "Over": 0.6946,
+      "liquid": true
+    },
+    "SWE_OU1_5": {
+      "Over": 0.308,
+      "liquid": true
+    },
+    "SWE_OU2_5": {
+      "Over": 0.1008,
+      "liquid": true
+    },
+    "2H_NED_OU0_5": {
+      "Over": 0.6698,
+      "liquid": true
+    },
+    "2H_SWE_OU0_5": {
+      "Over": 0.4559,
+      "liquid": true
+    },
+    "1H_NED_OU0_5": {
+      "Over": 0.5886,
+      "liquid": true
+    },
+    "1H_SWE_OU0_5": {
+      "Over": 0.385,
+      "liquid": true
+    },
+    "HT_result": {
+      "Netherlands": 0.4221,
+      "Draw": 0.3832,
+      "Sweden": 0.2001,
+      "liquid": true
+    },
+    "2H_result": {
+      "Netherlands": 0.4724,
+      "Draw": 0.3227,
+      "Sweden": 0.2031,
+      "liquid": true
+    },
+    "BTTS_2H": {
+      "Yes": 0.3029,
+      "No": 0.693,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.2788,
+      "No": 0.7231,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Netherlands": 0.6554,
+      "Sweden": 0.2488,
+      "Draw": 0.0925,
+      "liquid": true
+    },
+    "NED_corners_OU4_5": {
+      "Over": 0.6492,
+      "liquid": true
+    },
+    "NED_corners_OU5_5": {
+      "Over": 0.5392,
+      "liquid": true
+    },
+    "NED_minus0_5_corners": {
+      "NED_covers": 0.6583,
+      "SWE_covers": 0.3461,
+      "liquid": true
+    },
+    "NED_minus1_5_corners": {
+      "NED_covers": 0.5424,
+      "SWE_covers": 0.4613,
+      "liquid": true
+    },
+    "SWE_corners_OU3_5": {
+      "Over": 0.5069,
+      "liquid": true
+    },
+    "SWE_corners_OU4_5": {
+      "Over": 0.3409,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Netherlands": 0.3169,
+      "Sweden": 0.4202,
+      "Draw": 0.2602,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Over": 0.5962,
+      "liquid": true
+    },
+    "Cards_OU3_5": {
+      "Over": 0.3837,
+      "liquid": true
+    },
+    "Cards_OU4_5": {
+      "Over": 0.2083,
+      "liquid": true
+    },
+    "NED_cards_OU1_5": {
+      "Over": 0.4285,
+      "liquid": true
+    },
+    "SWE_cards_OU1_5": {
+      "Over": 0.5153,
+      "liquid": true
+    },
+    "SWE_cards_OU2_5": {
+      "Over": 0.2666,
+      "liquid": true
+    },
+    "NED_SOT_OU5_5": {
+      "Over": 0.4435,
+      "liquid": true
+    },
+    "SWE_SOT_OU3_5": {
+      "Over": 0.4064,
+      "liquid": true
+    },
+    "Total_SOT_OU8_5": {
+      "Over": 0.4895,
+      "Under": 0.521,
+      "liquid": true
+    },
+    "Player_SOT": {
+      "Cody_Gakpo": {
+        "mid": 0.6423,
+        "liquid": true,
+        "note": "OU0.5 full match, liquid"
+      },
+      "Viktor_Gyokeres": {
+        "mid": 0.5556,
+        "liquid": true,
+        "note": "OU0.5 full match, liquid"
+      },
+      "Gyokeres_OU1_5": {
+        "mid": 0.3049,
+        "liquid": false,
+        "note": "OU1.5 full match, illiq offer\u00d70.945"
+      }
+    }
+  },
+  "rules_applied": {
+    "NO_RULE8": "Draw=24.10% is just below the 25% threshold. RULE8 does NOT fire. Normal estimation approach.",
+    "RULE15_Gyokeres_mild": "Sweden 20.21% win prob \u2192 moderate underdog. Gy\u00f6keres is expected-loser primary forward. Apply mild RULE15: -5pp from model. \u03bb_GYO_2H=0.449 \u2192 P(\u22651 SOT in 2H)=0.362 \u2192 0.31 after RULE15.",
+    "No_RULE15_Gakpo": "Netherlands is the expected winner (56.18%). Gakpo is NED's primary forward. RULE15 does NOT apply. Trust liquid market directly.",
+    "Q1_revised_offsides_rule": "NED is the ATTACKING FAVORITE, NOT a defensive underdog. The 2+ offsides family (0.10-0.22) applies only to defensive underdogs. For NED: estimate from \u03bb_off. \u03bb_NED_goals=1.93 \u2192 \u03bb_NED_off\u22481.3 (Dutch attacking style). P(\u22652|1.3)=0.373. No direct market \u2014 moderate lean YES but below crowd estimate.",
+    "Q2_both_SOT_2H": "No direct BTTS-SOT-2H market. Derive from \u03bb_SOT_2H: P(NED\u22651)=0.955 \u00d7 P(SWE\u22651)=0.830 = 0.792. SOT threshold much lower than scoring \u2014 BTTS 2H goals=0.30 confirms they're different questions.",
+    "Q9_no_OU7_5_market": "Question asks '8 or more' = X\u22658 = OU7.5 Over. Only OU8.5 available (P(\u22659)=0.4895). Used model: \u03bb_total_SOT=8.6, P(\u22658)=0.627.",
+    "direct_markets_used": "Q3=BTTS+OU2.5 direct(0.4742); Q4=2H result NED(0.4724); Q5=most cards SWE(0.4202); Q7=FTR NED via RULE1(0.5618); Q8=HT draw(0.3832); Q10=Gakpo OU0.5 liquid(0.6423)."
+  },
+  "final_submission_estimates": {
+    "Q1_NED_2plus_offsides": {
+      "estimate": 0.43,
+      "confidence": "LOW-MEDIUM",
+      "note": "NED attacking favorite (56%). Not the 2+ offsides defensive-underdog family. \u03bb_NED_off\u22481.3 \u2192 P(\u22652)=0.373. No direct market. Dutch attacking football style suggests moderate offside risk. Slight NO lean vs crowd (~0.50)."
+    },
+    "Q2_both_SOT_in_2H": {
+      "estimate": 0.79,
+      "confidence": "MEDIUM",
+      "note": "Model: \u03bb_NED_SOT_2H=3.06 \u2192 P(NED\u22651)=0.955. \u03bb_SWE_SOT_2H=1.77 \u2192 P(SWE\u22651)=0.830. Combined P=0.792. Big YES lean if crowd prices lower (~0.60-0.65). SOT threshold much easier than scoring. Gy\u00f6keres/Isak/Gakpo are world-class attackers who generate shots."
+    },
+    "Q3_BTTS_and_OU2_5": {
+      "estimate": 0.47,
+      "confidence": "HIGH",
+      "note": "DIRECT liquid market: BTTS+OU2.5 Over = 0.4742. Trust the market. Open attacking match expected."
+    },
+    "Q4_NED_more_2H_goals": {
+      "estimate": 0.47,
+      "confidence": "HIGH",
+      "note": "DIRECT 2H result market: NED wins 2H = 0.4724. Trust the direct market (Skellam approximation overcounts by ignoring ties). Draw 2H = 0.3227 is substantial."
+    },
+    "Q5_SWE_more_cards": {
+      "estimate": 0.42,
+      "confidence": "HIGH",
+      "note": "DIRECT most cards market: SWE 0.4202. Trust the direct market. SWE underdog fouls more. NED 31.69%, SWE 42.02%, Draw 26.02%."
+    },
+    "Q6_Gyokeres_SOT_2H": {
+      "estimate": 0.32,
+      "confidence": "LOW-MEDIUM",
+      "note": "\u03bb_GYO_full=0.811 (from liquid OU0.5=0.5556). 2H split (fraction 0.609/1.10=0.554): \u03bb_GYO_2H=0.449. P(\u22651 in 2H)=0.362. Mild RULE15 (SWE 20.21% underdog, Gy\u00f6keres expected-loser primary forward): -5pp \u2192 0.31. No direct 2H player SOT market exists. Round to 0.32."
+    },
+    "Q7_NED_wins": {
+      "estimate": 0.56,
+      "confidence": "HIGH",
+      "note": "RULE1: FTR market NED = 0.5618 (liquid). avg(crowd_est~0.56, market 0.56) = 0.56. Straightforward."
+    },
+    "Q8_HT_tied": {
+      "estimate": 0.38,
+      "confidence": "HIGH",
+      "note": "DIRECT HT result market: Draw = 0.3832. Trust the market."
+    },
+    "Q9_8plus_total_SOT": {
+      "estimate": 0.63,
+      "confidence": "MEDIUM",
+      "note": "No OU7.5 market \u2014 only OU8.5 (P(\u22659)=0.4895). Model: \u03bb_NED_SOT\u22485.35, \u03bb_SWE_SOT\u22483.2, \u03bb_total=8.55. P(X\u22658|\u03bb=8.6)=0.627. Calibrated: OU8.5 market=0.4895 \u2248 P(\u22659|\u03bb=8.6)=0.491 \u2713. YES lean \u2014 open attacking match with two offensive teams."
+    },
+    "Q10_Gakpo_SOT": {
+      "estimate": 0.64,
+      "confidence": "HIGH",
+      "note": "DIRECT liquid market: Gakpo SOT OU0.5 = 0.6423. NED expected winner. No RULE15. Trust the market."
+    }
+  },
+  "post_match_results": {
+    "match_score": "NED 5-1 SWE",
+    "halftime_score": "2-0",
+    "goals_by_half": {
+      "NED": {
+        "1H": 2,
+        "2H": 3
+      },
+      "SWE": {
+        "1H": 0,
+        "2H": 1
+      }
+    },
+    "match_facts": {
+      "NED_fouls": 9,
+      "SWE_fouls": 12,
+      "NED_YC": 0,
+      "SWE_YC": 3,
+      "NED_RC": 0,
+      "SWE_RC": 0,
+      "NED_offsides": 3,
+      "SWE_offsides": 3,
+      "NED_corners": 2,
+      "SWE_corners": 5,
+      "NED_SOT": 7,
+      "SWE_SOT": 8,
+      "NED_shots": 10,
+      "SWE_shots": 16,
+      "source": "ESPN event 760447",
+      "notable": "NED 5-1 dominant win despite fewer total corners. SWE 8 SOT with only 1 goal (NED GK very busy). Both had 3 offsides."
+    },
+    "question_results": {
+      "Q1_NED_2plus_offsides": {
+        "our_estimate": 0.43,
+        "crowd_estimate": 0.52,
+        "outcome": 1,
+        "rbp": -6.73,
+        "notes": "NED 3 offsides. outcome=YES. MISS \u2014 we were too low vs crowd."
+      },
+      "Q2_both_SOT_in_2H": {
+        "our_estimate": 0.79,
+        "crowd_estimate": 0.73,
+        "outcome": 1,
+        "rbp": 5.05,
+        "notes": "Both scored in 2H (NED 3, SWE 1). outcome=YES. Beat crowd."
+      },
+      "Q3_BTTS_and_OU2_5": {
+        "our_estimate": 0.47,
+        "crowd_estimate": 0.47,
+        "outcome": 1,
+        "rbp": 2.55,
+        "notes": "NED 5, SWE 1 = BTTS + 6 goals. outcome=YES."
+      },
+      "Q4_NED_more_2H_goals": {
+        "our_estimate": 0.47,
+        "crowd_estimate": 0.49,
+        "outcome": 1,
+        "rbp": -0.16,
+        "notes": "2H: NED 3, SWE 1. outcome=YES. Virtually tied."
+      },
+      "Q5_SWE_more_cards": {
+        "our_estimate": 0.42,
+        "crowd_estimate": 0.47,
+        "outcome": 1,
+        "rbp": -3.64,
+        "notes": "SWE 3 YC > NED 0. outcome=YES. MISS."
+      },
+      "Q6_Gyokeres_SOT_2H": {
+        "our_estimate": 0.32,
+        "crowd_estimate": 0.5,
+        "outcome": 0,
+        "rbp": 18.04,
+        "notes": "Gy\u00f6keres did NOT get SOT in 2H (SWE had 8 total SOT but Gy\u00f6keres wasn't among them in 2H). outcome=NO. HUGE beat crowd. RULE15 validated again."
+      },
+      "Q7_NED_wins": {
+        "our_estimate": 0.56,
+        "crowd_estimate": 0.59,
+        "outcome": 1,
+        "rbp": -0.2,
+        "notes": "NED 5-1. outcome=YES. Virtually tied."
+      },
+      "Q8_HT_tied": {
+        "our_estimate": 0.38,
+        "crowd_estimate": 0.43,
+        "outcome": 0,
+        "rbp": 5.57,
+        "notes": "HT 2-0 NED. outcome=NO. Beat crowd."
+      },
+      "Q9_8plus_total_SOT": {
+        "our_estimate": 0.63,
+        "crowd_estimate": 0.58,
+        "outcome": 1,
+        "rbp": 6.6,
+        "notes": "15 total SOT. outcome=YES. Beat crowd."
+      },
+      "Q10_Gakpo_SOT": {
+        "our_estimate": 0.64,
+        "crowd_estimate": 0.61,
+        "outcome": 1,
+        "rbp": 4.96,
+        "notes": "Gakpo had SOT (NED scored 5). outcome=YES. Beat crowd."
+      }
+    },
+    "match_rbp_total": 32.05,
+    "questions_beat_crowd": "6/10",
+    "crowd_data_needed": true
+  }
+}

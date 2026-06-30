@@ -1,0 +1,157 @@
+{
+  "match": "Egypt vs Iran",
+  "date": "2026-06-26",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"EGY_vs_BEL_GD1": 760426, "NZL_vs_IRN_GD1": 760427, "IRN_vs_BEL_GD2": 760451, "EGY_vs_NZL_GD2": 760452},
+  "smarkets_event_id": 45086927,
+  "group_context": {
+    "Egypt": {"pts": 4, "record": "1-1-0 (D1-1 BEL, W3-1 NZL)", "status": "Leading the group, a draw today likely secures top spot outright"},
+    "Iran": {"pts": 2, "record": "0-2-0 (D2-2 NZL, D0-0 BEL)", "status": "Needs a win today to keep real control of 2nd place, since Belgium is a heavy favorite in the other GD3 fixture"}
+  },
+  "wc2026_espn_stats": {
+    "EGY": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760426, "opponent": "Belgium", "result": "D 1-1", "fouls": 15, "SOT": 3, "offsides": 1, "YC": 2, "RC": 0, "corners": 7, "possession": 46.4},
+        {"event_id": 760452, "opponent": "New Zealand", "result": "W 3-1", "fouls": 8, "SOT": 7, "offsides": 0, "YC": 1, "RC": 0, "corners": 4, "possession": 55.6}
+      ],
+      "averages": {"fouls": 11.5, "SOT": 5.0, "offsides": 0.5, "cards": 1.5, "corners": 5.5}
+    },
+    "IRN": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760427, "opponent": "New Zealand", "result": "D 2-2", "fouls": 10, "SOT": 4, "offsides": 2, "YC": 1, "RC": 0, "corners": 4, "possession": 48.5},
+        {"event_id": 760451, "opponent": "Belgium", "result": "D 0-0", "fouls": 9, "SOT": 3, "offsides": 4, "YC": 1, "RC": 0, "corners": 2, "possession": 29.9},
+        {"_note": "Iran's offside count (2, then 4) held up or RISE even as their possession collapsed from 48.5% to 29.9% — this is a counter-attacking, transition-based team, not a settle-and-defend team. Do not apply the defensive-underdog 2+ offsides NO-family here without checking this."}
+      ],
+      "averages": {"fouls": 9.5, "SOT": 3.5, "offsides": 3.0, "cards": 1.0, "corners": 3.0}
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Egypt": 0.3610, "Iran": 0.2858, "Draw": 0.3597, "liquid": true},
+    "OU2_5": {"Under": 0.6539, "Over": 0.3438, "liquid": true},
+    "2H_OU1_5_goals": {"Under": 0.6786, "Over": 0.3227, "liquid": true},
+    "Cards_OU2_5": {"Under": 0.4940, "Over": 0.5341, "liquid": true},
+    "EGY_SOT_OU3_5_fullmatch": {"Under": 0.4601, "Over": 0.5407, "liquid": true},
+    "Iran_plus0_5_corners": {"Iran_more_or_equal": 0.5983, "Iran_strictly_more": 0.4017, "liquid": true, "note": "derived: Egypt+0.5 covers (ties+Egypt more)=0.5983, so P(Iran>Egypt)=0.4017"},
+    "player_SOT_fullmatch": {"Mehdi_Taremi": {"offer": 0.6135, "adjusted": 0.580}},
+    "Mahmoud_Trezeguet": "NOT LISTED in any player market for this match (SOT, anytime goalscorer, or score-or-assist) — same structural absence pattern as McGree (USA-AUS) and Berterame (MEX-KOR), both of whom were confirmed not in the matchday squad."
+  },
+  "context_flags": [
+    "TREZEGUET_ABSENT_FLAG: Trezeguet — Egypt's hero from the NZL-EGY match (goal+assist, our biggest single-player win of the tournament at +32.04) — is absent from every Smarkets player market for this match. RULE9 pattern (McGree/Berterame): this has been 100% predictive of a confirmed squad absence in 2 prior instances. The crowd, anchored on his heroic last performance plus general 'winner narrative' bias, will likely overprice him; we should price near-zero.",
+    "EVEN_MATCH_BUT_DRAW_HEAVY: FTR is close to a 3-way pick'em (EGY 36.1% / IRN 28.6% / Draw 36.0%, the highest draw price of any GD3 fixture analyzed) — RULE8 cagey-match signal is strong here.",
+    "IRN_COUNTERATTACK_PROFILE: Iran's offside count actually rose as their possession fell (2 at 48.5% poss, 4 at 29.9% poss) — they are a transition/counter team that generates offside risk independent of possession share, unlike a typical low-block defensive underdog. Trust their raw offside rate rather than discounting it for underdog status.",
+    "EGY_STAKES_LOWER: Egypt already control the group (4pts) and a draw is likely enough for top spot — some chance of a slightly more conservative approach than their NZL demolition."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Iran be caught offside 2 or more times?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Iran offsides: 2 (vs NZL, 48.5% poss) and 4 (vs Belgium, only 29.9% poss). λ=3.0 → raw Poisson P(≥2)=0.80. This is the rare underdog case (see IRN_COUNTERATTACK_PROFILE) where the usual 2+ offsides NO-family does NOT apply — Iran's offside rate is driven by transition attacking, not possession share, and it held up (rose, even) against a much stronger opponent. Trust the data over the generic underdog discount.",
+      "final_estimate": 0.75,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will Iran have more shots on target than Egypt in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Skellam off full-match ESPN averages (IRN λ_2H=1.75, EGY λ_2H=2.5) gives P(IRN>EGY)=0.27.",
+      "final_estimate": 0.27,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will Iran finish with more corner kicks than Egypt?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Derived from the Egypt+0.5/Iran-0.5 corners handicap market: P(Iran strictly more) = 1 - 0.5983 = 0.40.",
+      "final_estimate": 0.40,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Egypt win the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets FTR: Egypt 36.10%. Direct tier-1 market in a near-3-way-even, draw-heavy fixture.",
+      "final_estimate": 0.36,
+      "direction": "NO lean (more likely draw/IRN)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will the match have 2 or fewer total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Under2.5 = 65.39%. Consistent with the high draw probability and generally low-event profile both teams have shown.",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will the second half have 2 or more total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: 2H Over1.5 = 32.27%.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will there be 4 or more total cards shown?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "ESPN combined average (EGY 1.5 + IRN 1.0 = 2.5 total) gives Poisson P(≥4)=0.24; the Over2.5-cards market (53.4%, implying total λ≈2.82) gives P(≥4)=0.31. Blend the two.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 8,
+      "text": "Will Egypt have 3 or more shots on target?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "ESPN-history Poisson (λ=5.0) gives P(≥3)=0.88; the market-implied rate from the Over3.5 SOT line (54.1%, λ≈3.87) gives P(≥3)=0.74. Blend toward the middle, weighting the matchup-specific market somewhat since Iran is a tougher defensive test than New Zealand.",
+      "final_estimate": 0.80,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will Mahmoud Trezeguet have at least 1 shot on target?",
+      "pick_tier": "HIGHEST CONFIDENCE — ABSENCE SIGNAL",
+      "reasoning": "Trezeguet does not appear in ANY player market for this match (SOT, goalscorer, or score-or-assist) — identical structural pattern to McGree (USA-AUS, confirmed absent, won us +20.74) and Berterame (MEX-KOR, confirmed absent). The crowd will likely anchor on his heroic NZL-EGY performance and price him generously; we price near-zero on the absence signal.",
+      "final_estimate": 0.10,
+      "direction": "NO (maximum confidence)",
+      "confidence": "very high"
+    },
+    {
+      "q": 10,
+      "text": "Will Mehdi Taremi have at least 1 shot on target?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Illiquid full-match offer (0.6135, adjusted ×0.945=0.580). Taremi is Iran's primary striker (Inter Milan); Iran is only a moderate underdog here (28.6%, not extreme), so no RULE15 suppression applies. Trust the market near-raw.",
+      "final_estimate": 0.58,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_IRN_2plus_offsides": 0.75,
+    "Q2_IRN_more_2H_SOT": 0.27,
+    "Q3_IRN_more_corners": 0.40,
+    "Q4_EGY_wins": 0.36,
+    "Q5_2_or_fewer_goals": 0.65,
+    "Q6_2H_2plus_goals": 0.32,
+    "Q7_4plus_cards": 0.28,
+    "Q8_EGY_3plus_SOT": 0.80,
+    "Q9_Trezeguet_SOT": 0.10,
+    "Q10_Taremi_SOT": 0.58
+  },
+  "strongest_picks": [
+    "Q9: Trezeguet SOT = 0.10 (MAXIMUM CONFIDENCE — absent from every player market, same pattern as 2 prior confirmed-absent players, crowd likely to overprice given his last match heroics)",
+    "Q1: Iran 2+ offsides = 0.75 (HIGH CONFIDENCE — genuine counter-attacking signal that held up even as possession collapsed, NOT a defensive-underdog situation)",
+    "Q8: Egypt 3+ SOT = 0.80 (HIGH CONFIDENCE — blended ESPN + market both point strongly YES)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-26"
+}

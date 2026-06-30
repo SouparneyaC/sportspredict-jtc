@@ -1,0 +1,165 @@
+BOSNIA AND HERZEGOVINA vs QATAR — WC2026 Group B GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24
+Venue: Lumen Field, Seattle | KO: 12:00 PT
+
+=== COMMANDS RUN ===
+
+1. grep -i "bosnia|qatar|bih|qat" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Bosnia and Herzegovina,1652.8208 | Qatar,1564.5424
+
+2. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff (BIH-QAT): 88.28
+  lambda_BIH: 1.3019
+  lambda_QAT: 0.9458
+  lambda_total: 2.2478
+  P(BIH scores): 0.7280
+  P(QAT scores): 0.6116
+  P(BTTS): 0.4453
+  P(total <= 2): 0.6099
+  P(total >= 3): 0.3901
+  P(BTTS AND >=3): 0.3152
+  P(BIH win): 0.4760
+  P(Draw): 0.2976  <- RULE8 FIRES (>25%)
+  P(QAT win): 0.2263
+  P(2H >= 2 goals | 55% in 2H): 0.3504
+  P(BIH more 2H SOT): 0.5005
+  P(QAT more 2H SOT): 0.2799  <- Major NO direction for Q3
+  P(BIH more 2H corners): 0.5195
+  P(QAT 2+ offsides | lambda=0.8): 0.1912  <- Below floor
+  P(QAT 2+ offsides | lambda=1.0): 0.2642  <- Below floor
+
+3. Research agent spawned for BIH/QAT GD data, Dzeko stats, referee, markets:
+   Sources: ESPN, FIFA, Opta Analyst, FourFourTwo, FanDuel, Al Jazeera, FotMob, BBC Sport
+   Key findings recorded below.
+
+=== RULES APPLIED ===
+
+RULE7: Does NOT fire based on model (QAT 22.63% > 15%)
+  BUT: Market prices QAT at 12.6% — near RULE7 territory.
+  Apply moderate SOT suppression to Qatar attacker props.
+
+RULE8: FIRES — Draw 29.76% > 25%
+  HOWEVER: Both teams need to WIN for 3rd-place advancement (draw = elimination for both).
+  This reduces the effective draw probability toward market's 18.2%.
+  RULE8's 'fewer goals' and 'cagey match' assumptions are LESS applicable here.
+  Both teams will attack aggressively.
+
+FLOOR_0.25: Applied to Q8 (QAT 2+ offsides)
+  Qatar had 0 offsides in GD1 vs Switzerland (90 min). Very limited attacking runs.
+  Computed P(>=2 | lambda=0.8): 19%. Floor binds at 0.25.
+
+RULE_FOULS: BIH attacks → QAT defends → QAT fouls more.
+  Direction: Qatar more fouls (Q5 YES direction, 0.55).
+
+BOTH_TEAMS_MUST_WIN: Functionally a must-win for both.
+  Winner goes to 4pts with realistic 3rd-place qualification shot.
+  Draw = virtually eliminated for both. This makes the match MORE OPEN than RULE8 suggests.
+
+SUSPENSIONS_ADJUSTMENT:
+  BIH: Muharemovic OUT (Hadzikadunic in) — one CB change
+  QAT: Al Amin + Madibo OUT — both a defender AND midfielder missing
+  Qatar's losses are more significant. Shifts toward BIH dominance further.
+
+=== KEY FINDINGS ===
+
+GROUP CONTEXT:
+- Canada 4pts (+6 GD) and Switzerland 4pts (+3 GD) — BOTH QUALIFIED, playing each other in GD3
+- Bosnia 1pt (GD -3): win = 4pts, possible 3rd-place shot with improved GD
+- Qatar 1pt (GD -6): win = 4pts, possible 3rd-place shot BUT terrible GD even with win
+- Draw = both eliminated from 3rd-place contention (2pts won't be top 8 3rd places)
+- WC2026: 8 of 12 3rd-place teams advance → realistic path for winner
+
+EDIN DZEKO:
+- Born March 17, 1986 — age 40 in March 2026
+- Club 2025-26: Schalke 04 (2. Bundesliga, signed January 22, 2026)
+- Stats: 6 goals, 3 assists, 599 minutes (very limited club minutes)
+- International: All-time BIH leading scorer (73 goals, 149 caps). Captain.
+- GD1 vs Canada: DID NOT PLAY (shoulder injury — Jovo Lukic started)
+- GD2 vs Switzerland: STARTED 90min, 0 goals, 0 SOT, 0.12 xG, yellow card 61'
+- GD3 props: FanDuel anytime scorer -110 (implied 52.4%!) — market extremely bullish vs Qatar
+- SOT calculation: P(score)=52.4%, with CVR=0.275: implied lambda_SOT=2.45, P(>=1 SOT)≈91%
+  → Discounted to 0.70 for: age 40, limited club form, GD2 0 SOT baseline, age-related uncertainty
+
+BOSNIA GD1 vs Canada (1-1):
+- BIH scored: Jovo Lukic 21' (header from corner — Kolasinac/Basic delivery)
+- CAN scored: Cyle Larin 78' (sub, scored 121 sec after entering)
+- BIH shots: 8, SOT: ~4 (0.98 xG); CAN shots: 13, SOT: 4
+- Dzeko ABSENT (shoulder injury)
+
+BOSNIA GD2 vs Switzerland (1-4):
+- BIH scored: Mahmic 90+3' (consolation); SUI: Manzambi 74'/90', Vargas 84', Xhaka pen 90+7'
+- BIH shots: 5 (xG 0.24), SOT: ~3; Fouls: 18 (SUI: 7)
+- RED CARD: Muharemovic straight red 80' (first red card of WC2026)
+- YELLOW: Dedic 59', Dzeko 61'
+- Dzeko: started, 0 goals, 0 SOT, 0.12 xG, yellow card 61'
+- Formation: defensive 4-back with Sunjic/Tahirovic crowding midfield
+
+QATAR GD1 vs Switzerland (1-1):
+- QAT scored: Khoukhi 90+4' (ACTUAL HEADER GOAL — not OG. First ever WC point for Qatar.)
+- QAT: 6 shots, 3 SOT, 12 fouls, 3 corners, 0 OFFSIDES, 28% possession
+- SUI: 26 shots, 7 SOT, 10 corners
+- QAT yellow cards: Abunada (pen foul), Jassem Gaber 22'
+- KEY STAT: Qatar 0 offsides in 90 minutes — they do NOT run in behind
+
+QATAR GD2 vs Canada (0-6):
+- QAT: 2 shots, 0 SOT, ~1 foul, 20% possession
+- RED CARDS: Homam Al Amin (defender, ~30' VAR upgrade), Assim Madibo (midfielder 53')
+  → Madibo foul caused Koné BROKEN LEG (still out for tournament)
+  → BOTH SUSPENDED for GD3: Sultan Al Brake replaces Al Amin, Boudiaf replaces Madibo
+- Historic: first AFC team with 2 red cards in single WC match
+
+REFEREE — Jesus Valenzuela (Venezuela):
+- Second WC; fair and disciplined; NOT an extreme card-giver
+- Career rate estimated: ~3.5-4.0 YC/game, ~0.15-0.25 pens/game (exact stats unavailable)
+- P(penalty OR red card) baseline: ~0.38
+
+MARKETS:
+- FanDuel: BIH -270, Draw +420, QAT +650
+- De-vigged: BIH 69.1%, Draw 18.2%, QAT 12.6%
+- Model vs Market gap: Model says BIH 47.6%, market 69.1% (21.5pp gap!)
+  → Market correctly factors in: QAT's GD2 collapse, both suspensions, Qatar's minimal attack
+- Over 2.5: approximately +100 (50% implied); BTTS Yes: -141 (58.5% implied)
+- Dzeko anytime scorer: -110 (52.4% implied) — extremely bullish from market
+
+=== QUESTION ANALYSIS & ESTIMATES ===
+
+NOTE: Q6 and Q7 in user's question list appear IDENTICAL:
+  "Will Bosnia and Herzegovina receive more cards than Qatar?" × 2
+  ASSUMPTION: Q7 is the inverse "Will Qatar receive more cards than Bosnia?"
+  USER SHOULD CONFIRM before submitting Q7.
+
+Q1: 0.58 — BIH more 2H corners [YES_LEAN: BIH dominant; QAT 3 corners in GD1; model 51.95%]
+Q2: 0.42 — BIH more 2H goals than Qatar [NO_LEAN: RULE8 + model 37-40%; open match partial offset]
+Q3: 0.22 — QAT more 2H SOT than BIH [STRONG_NO: QAT 0 SOT in GD2; model 27.99%; market QAT 12.6%]
+Q4: 0.38 — Penalty OR red card [NO_LEAN: Valenzuela baseline; historical overpricing pattern]
+Q5: 0.55 — QAT more fouls than BIH [YES_LEAN: RULE_FOULS; QAT defends; GD1 QAT 12 fouls defending]
+Q6: 0.40 — BIH more cards than QAT [NO_LEAN: QAT defending role = QAT gets cards; ~8pp edge]
+Q7: 0.52 — [ASSUMED: QAT more cards than BIH] [YES_LEAN: QAT defending + GD2 red card history]
+Q8: 0.25 — QAT 2+ offsides [STRONG_NO FLOOR: QAT 0 offsides in GD1! Computed <19%. Floor binds.]
+Q9: 0.62 — BIH win [YES: model 47.60%, market 69.1%; both-teams-want-to-win blend = 60.5%]
+Q10: 0.52 — Match <=2 total goals [COIN-FLIP: model 61%, market 50%; both attack = open play]
+Q11: 0.70 — Dzeko >=1 SOT [YES: market -110 scorer; Qatar 0-SOT defense; starter expected]
+
+=== EDGE RANKING ===
+
+RANK 1: Q3 0.22 STRONG_NO — Qatar more 2H SOT than Bosnia. Model 28%, market QAT 12.6%. QAT 0 SOT in GD2. Crowd likely ~0.37. Major ~15pp NO edge.
+RANK 2: Q8 0.25 FLOOR_NO — Qatar 2+ offsides. Qatar 0 offsides in GD1 (90 min). Crowd ~0.40. ~15pp NO edge.
+RANK 3: Q11 0.70 YES — Dzeko SOT. Market -110 scorer. Qatar 0-SOT defense. Crowd ~0.58. ~12pp YES edge.
+RANK 4: Q9 0.62 YES — Bosnia win. Market-model blend 60.5%. Both teams attack. Crowd ~0.55.
+RANK 5: Q5 0.55 YES_LEAN — Qatar more fouls. RULE_FOULS defending team direction.
+RANK 6: Q6 0.40 NO_LEAN — Bosnia more cards. Qatar defending = Qatar cards.
+RANK 7: Q2 0.42 NO_LEAN — BIH more 2H goals. Below 50% despite BIH dominance.
+RANK 8: Q1 0.58 YES_LEAN — BIH more 2H corners. Model 51.95% + dominance.
+RANK 9: Q10 0.52 COIN_FLIP — <=2 total goals. Model 61%, market 50%. Uncertain.
+RANK 10: Q4 0.38 NO_LEAN — Penalty/red card. Historical overpricing.
+RANK 11: Q7 0.52 UNCERTAIN — FLAGGED DUPLICATE. Confirm Q7 text before submitting.
+
+=== FILES WRITTEN ===
+
+1. sportspredict_research/data/external_markets/bih_qat_2026-06-24.json — Full match analysis JSON
+2. THIS FILE: sportspredict_research/bash_logs/2026-06-24_BIH-QAT_match_analysis_bash_log.txt
+3. sportspredict_research/ML_EXPERIMENTS_NOTEBOOK.md — Appended BIH-QAT section
+
+=== END LOG ===

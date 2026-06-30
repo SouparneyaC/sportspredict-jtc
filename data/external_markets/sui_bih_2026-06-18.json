@@ -1,0 +1,499 @@
+{
+  "match": "SUI-BIH",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "smarkets_event_id": "45042834",
+  "espn_event_id": "760439",
+  "kickoff_utc": "2026-06-18T19:00:00Z",
+  "context_note": "Switzerland vs Bosnia-Herzegovina, WC2026 Group G, Round 2. Both teams drew 1-1 in Round 1 (SUI drew vs Qatar 1-1, BIH drew vs Canada 1-1). Switzerland is moderate-to-heavy favorite. KEY DATA: Bosnia had 20 fouls and 3 YC vs Canada, confirmed extremely high-foul physical style. Bosnia's offsides: 0 in all 6 tracked matches - essentially never gets caught offside (deep defensive block). Switzerland dominated vs Qatar (68% poss, 26 shots, 7 SOT) but only drew. Both teams need a result - Switzerland must win to advance comfortably, Bosnia may try another low-block point-steal.",
+  "sources": {
+    "espn_switzerland_recent": {
+      "tier": "VERIFIED_API",
+      "matches_n9": [
+        {
+          "date": "2026-06-13",
+          "opponent": "Qatar(N)",
+          "fouls": 11,
+          "offsides": 1,
+          "sot": 7,
+          "shots": 26,
+          "poss": 68,
+          "result": "1-1",
+          "note": "WC2026 R1"
+        },
+        {
+          "date": "2026-06-06",
+          "opponent": "Australia(H)",
+          "fouls": 10,
+          "offsides": 4,
+          "sot": 3,
+          "corners": null
+        },
+        {
+          "date": "2026-05-31",
+          "opponent": "Jordan(H)",
+          "fouls": 10,
+          "offsides": 3,
+          "sot": 10
+        },
+        {
+          "date": "2026-03-31",
+          "opponent": "Norway(A)",
+          "fouls": 8,
+          "offsides": 1,
+          "sot": 1
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Germany(H)",
+          "fouls": 6,
+          "offsides": 0,
+          "sot": 3
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Kosovo(A)",
+          "fouls": 9,
+          "offsides": 1,
+          "sot": 3
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Sweden(H)",
+          "fouls": 13,
+          "offsides": 0,
+          "sot": 7
+        },
+        {
+          "date": "2025-10-13",
+          "opponent": "Slovenia(A)",
+          "fouls": 5,
+          "offsides": 2,
+          "sot": 3
+        },
+        {
+          "date": "2025-10-10",
+          "opponent": "Sweden(A)",
+          "fouls": 10,
+          "offsides": 1,
+          "sot": 8
+        }
+      ],
+      "averages_n9": {
+        "fouls": 9.11,
+        "offsides": 1.44,
+        "sot": 5.0
+      },
+      "tournament_context_n9_WC2022_Euro2024": {
+        "avg_fouls": 12.56,
+        "avg_offsides": 1.67
+      }
+    },
+    "espn_bosnia_recent": {
+      "tier": "VERIFIED_API",
+      "matches_n6": [
+        {
+          "date": "2026-06-12",
+          "opponent": "Canada(N)",
+          "fouls": 20,
+          "offsides": 0,
+          "sot": 3,
+          "shots": 8,
+          "poss": 38.9,
+          "yc": 3,
+          "result": "1-1",
+          "note": "WC2026 R1"
+        },
+        {
+          "date": "WCQ5",
+          "fouls": 18,
+          "sot": 11
+        },
+        {
+          "date": "WCQ4",
+          "fouls": 20,
+          "sot": 5
+        },
+        {
+          "date": "WCQ3",
+          "fouls": 9,
+          "sot": 1
+        },
+        {
+          "date": "WCQ2",
+          "fouls": 15,
+          "sot": 4
+        },
+        {
+          "date": "WCQ1",
+          "fouls": 19,
+          "sot": 6
+        }
+      ],
+      "averages_n6": {
+        "fouls": 16.83,
+        "offsides": 0.0,
+        "sot": 5.0
+      },
+      "CRITICAL_OFFSIDE_NOTE": "Bosnia had ZERO offsides in all 6 tracked matches. This is the most extreme pattern we have ever seen - even lower than the typical '2+ offsides family'. Bosnia never pushes high line. If question is 'Bosnia 2+ offsides', estimate is ~0.03-0.05.",
+      "fouls_note": "Bosnia 20 fouls vs Canada in WC context confirmed. WCQ avg 16.2 (n=5). Tournament context: extremely physical."
+    },
+    "smarkets_markets_identified": {
+      "full_time_result": 137949816,
+      "over_under_2.5": 137949853,
+      "over_under_1.5": 137949852,
+      "btts": 137949818,
+      "btts_and_over_2.5": 137949846,
+      "penalty_to_be_awarded": 137949841,
+      "second_half_over_under_1.5": 137949862,
+      "second_half_SUI_over_under_0.5_goals": 137949871,
+      "second_half_BIH_over_under_0.5_goals": 137949881,
+      "player_sot_over_0.5": 145290456,
+      "player_carded": 144835991,
+      "over_under_1.5_cards": 137949968,
+      "over_under_2.5_cards": 137949970,
+      "most_cards": 137949840,
+      "halftime_result": 137949823,
+      "highest_scoring_half": 137949834,
+      "asian_handicap_SUI_minus0.5": 137949899,
+      "status": "Markets open, quotes not yet live (match 19:00 UTC, pull quotes ~16:00-17:00 UTC)"
+    }
+  },
+  "pre_match_estimates": {
+    "BIH_more_fouls_than_SUI": {
+      "category": "tier2_realdata",
+      "method": "Skellam: \u03bb_BIH=17.0 (tournament context, n=6 WC+WCQ), \u03bb_SUI=12.0 (tournament context, n=9). P(BIH>SUI)=0.799. RULE12: de-outlied (excl 20-foul WC match) gives \u03bb_BIH=16.2, P=0.757. Outlier sensitivity=0.04 \u2192 STABLE. Signal is extremely robust. No related market found (confirmed permanent structural gap). RULE8: draw price unknown but expected ~20-25%; moderate shrink.",
+      "raw_skellam": 0.799,
+      "deoutliered_skellam": 0.757,
+      "recommended_estimate": 0.75,
+      "confidence": "HIGH - signal robust, both directions of outlier removal strengthen the estimate"
+    },
+    "BIH_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "Poisson: \u03bb_BIH=0.0 (ALL ZEROS in n=6 matches). Even with a floor prior of \u03bb=0.25, P(X\u22652)=0.026. Bosnia is a pure defensive team that never pushes high line. If question appears, this is our single most extreme low estimate ever.",
+      "raw_poisson": 0.0,
+      "floor_estimate": 0.026,
+      "recommended_estimate": 0.04,
+      "confidence": "EXTREME - 6/6 zero observations"
+    },
+    "SUI_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "Poisson: \u03bb_SUI=1.44 (n=9 friendly/WC mix). P(X\u22652)=0.423. Tournament context: \u03bb=1.67, P=0.497. Blended: ~0.46. NOTE: unlike all previous '2+ offsides' questions which were for the DEFENDING/expected-to-lose team, Switzerland is the ATTACKING dominant team here. The 9/9 NO family rule does NOT apply the same way - Switzerland genuinely has a ~42-50% chance of 2+ offsides as the possession-heavy attacker.",
+      "raw_poisson": 0.423,
+      "tournament_poisson": 0.497,
+      "recommended_estimate": 0.44,
+      "confidence": "MEDIUM - plausible range 0.40-0.50"
+    },
+    "SUI_3plus_SOT": {
+      "category": "tier2_realdata",
+      "method": "Poisson: \u03bb_SUI_SOT=5.0 (n=9). P(X\u22653)=0.875. vs Qatar (also deep block): 7 SOT. Strong signal.",
+      "raw_poisson": 0.875,
+      "recommended_estimate": 0.82,
+      "confidence": "HIGH"
+    },
+    "SUI_4plus_SOT": {
+      "category": "tier2_realdata",
+      "method": "Poisson: \u03bb=5.0. P(X\u22654)=0.735.",
+      "raw_poisson": 0.735,
+      "recommended_estimate": 0.7,
+      "confidence": "HIGH"
+    },
+    "SUI_more_2H_SOT_than_BIH": {
+      "category": "tier2_realdata",
+      "method": "Skellam 2H-scaled: \u03bb_SUI_2H=2.5, \u03bb_BIH_2H=2.5 (naive). BUT BIH had only 3 SOT vs Canada (outpossessed 61-39%), so vs SUI (even more dominant): \u03bb_BIH_2H_adj~1.5. P(SUI>BIH)=0.594 (adjusted). Raw: 0.408.",
+      "raw_skellam": 0.408,
+      "adjusted_skellam": 0.594,
+      "recommended_estimate": 0.65,
+      "confidence": "MEDIUM-HIGH - depends on BIH's actual output adjustment"
+    },
+    "match_winner_SUI": {
+      "category": "tier1_market_deferred",
+      "method": "RULE1: wait for Smarkets + Polymarket, use avg(crowd, market)",
+      "expected_range": "0.65-0.72",
+      "note": "SUI drew 1-1 vs Qatar despite dominating - slight downward revision from ~81.5% pre-R1 price"
+    },
+    "penalty_or_red_card": {
+      "category": "compound_market_proxy",
+      "method": "Pull penalty market 137949841 once live. Estimate P(pen)~0.32 (BIH's high foul rate elevates), P(RC)~0.12, P(either)~0.40. Red card risk elevated: BIH had 3 YC vs Canada, one more step to RC territory.",
+      "recommended_estimate": 0.37,
+      "confidence": "MEDIUM - wait for live market"
+    }
+  },
+  "live_smarkets_quotes": {
+    "fetched_utc": "2026-06-18T~pre-kickoff",
+    "FTR": {
+      "SUI": 0.6243,
+      "Draw": 0.2304,
+      "BIH": 0.1453
+    },
+    "OU2.5": {
+      "Over": 0.5074,
+      "Under": 0.4926
+    },
+    "OU1.5": {
+      "Over": 0.7585,
+      "Under": 0.2415
+    },
+    "BTTS": {
+      "Yes": 0.4894,
+      "No": 0.5106
+    },
+    "BTTS_and_OU2.5": {
+      "Yes_Over": 0.3726
+    },
+    "Penalty": {
+      "Yes": 0.299
+    },
+    "2H_OU1.5": {
+      "Over": 0.4397
+    },
+    "2H_SUI_OU0.5_goals": {
+      "Over": 0.6557,
+      "lambda_derived": 1.0664
+    },
+    "2H_BIH_OU0.5_goals": {
+      "Over": 0.3601,
+      "lambda_derived": 0.4465
+    },
+    "Cards_OU2.5": {
+      "Over": 0.6249
+    },
+    "AnyRedCard": {
+      "Yes": 0.1361
+    },
+    "MostCards": {
+      "BIH": 0.5368,
+      "Draw": 0.239,
+      "SUI": 0.2259
+    },
+    "BIH_OU1.5_cards": {
+      "Over": 0.5907
+    },
+    "BIH_OU2.5_cards": {
+      "Over": 0.3075
+    },
+    "SUI_OU1.5_cards": {
+      "Over": 0.3845
+    },
+    "HighestScoringHalf": {
+      "2H": 0.4374,
+      "1H": 0.2996,
+      "Equal": 0.2609
+    },
+    "PlayerSOT_over0.5": {
+      "Embolo": {
+        "offer_only": 0.7634,
+        "illiquid_adj": 0.7214
+      },
+      "DanNdoye": {
+        "liquid_mid": 0.581
+      },
+      "ZekiAmdouni": {
+        "offer_only": 0.6667,
+        "illiquid_adj": 0.63
+      },
+      "NoahOkafor": {
+        "offer_only": 0.6711,
+        "illiquid_adj": 0.6342
+      },
+      "EdinDzeko": {
+        "offer_only": 0.5405,
+        "illiquid_adj": 0.5108,
+        "RULE15_shade": 0.45
+      },
+      "ErmedinDemirovic": {
+        "offer_only": 0.4587,
+        "illiquid_adj": 0.4334,
+        "RULE15_shade": 0.38
+      },
+      "HarisTabakovic": {
+        "offer_only": 0.5319,
+        "illiquid_adj": 0.5027,
+        "RULE15_shade": 0.44
+      }
+    }
+  },
+  "final_submission_estimates": {
+    "BIH_more_fouls_than_SUI": {
+      "estimate": 0.75,
+      "crowd_pred": 0.666,
+      "confidence": "HIGH"
+    },
+    "BIH_2plus_offsides": {
+      "estimate": 0.04,
+      "crowd_pred": 0.233,
+      "confidence": "EXTREME"
+    },
+    "SUI_2plus_offsides": {
+      "estimate": 0.44,
+      "crowd_pred": 0.477,
+      "confidence": "MEDIUM"
+    },
+    "BTTS_and_3plus_goals": {
+      "estimate": 0.37,
+      "crowd_pred": 0.435,
+      "confidence": "TIER1_MARKET"
+    },
+    "2H_over1.5_goals": {
+      "estimate": 0.44,
+      "crowd_pred": 0.477,
+      "confidence": "TIER1_MARKET"
+    },
+    "SUI_win": {
+      "estimate": 0.62,
+      "crowd_pred": 0.587,
+      "confidence": "TIER1_MARKET"
+    },
+    "SUI_more_2H_SOT_than_BIH": {
+      "estimate": 0.67,
+      "crowd_pred": 0.618,
+      "confidence": "MEDIUM_HIGH"
+    },
+    "penalty_or_red_card": {
+      "estimate": 0.39,
+      "crowd_pred": 0.447,
+      "confidence": "COMPOUND_MARKET"
+    },
+    "Embolo_1plus_SOT": {
+      "estimate": 0.72,
+      "crowd_pred": 0.648,
+      "confidence": "TIER1_MARKET_ILLIQUID"
+    },
+    "Dzeko_1plus_SOT": {
+      "estimate": 0.45,
+      "crowd_pred": 0.484,
+      "confidence": "TIER1_RULE15"
+    },
+    "Demirovic_1plus_SOT": {
+      "estimate": 0.38,
+      "crowd_pred": 0.455,
+      "confidence": "TIER1_RULE15"
+    },
+    "Cards_over2.5": {
+      "estimate": 0.62,
+      "crowd_pred": 0.587,
+      "confidence": "TIER1_MARKET"
+    }
+  },
+  "post_match_results": {
+    "match_score": "SUI 4-1 BIH",
+    "halftime_score": "0-0",
+    "goals_by_half": {
+      "SUI": {
+        "1H": 0,
+        "2H": 4
+      },
+      "BIH": {
+        "1H": 0,
+        "2H": 1
+      }
+    },
+    "match_facts": {
+      "SUI_fouls": 7,
+      "BIH_fouls": 18,
+      "SUI_YC": 1,
+      "BIH_YC": 2,
+      "SUI_RC": 0,
+      "BIH_RC": 1,
+      "SUI_offsides": 3,
+      "BIH_offsides": 1,
+      "SUI_corners": 7,
+      "BIH_corners": 3,
+      "SUI_SOT": 7,
+      "BIH_SOT": 3,
+      "SUI_shots": 13,
+      "BIH_shots": 5,
+      "source": "ESPN event 760439"
+    },
+    "question_results": {
+      "Q1_BIH_more_fouls_than_SUI": {
+        "our_estimate": 0.75,
+        "crowd_estimate": 0.666,
+        "outcome": 1,
+        "notes": "BIH 18 fouls > SUI 7. Strong edge. outcome=YES"
+      },
+      "Q2_BIH_2plus_offsides": {
+        "our_estimate": 0.04,
+        "crowd_estimate": 0.233,
+        "outcome": 0,
+        "notes": "BIH 1 offside. outcome=NO"
+      },
+      "Q3_SUI_2plus_offsides": {
+        "our_estimate": 0.44,
+        "crowd_estimate": 0.477,
+        "outcome": 1,
+        "notes": "SUI 3 offsides. outcome=YES"
+      },
+      "Q4_BTTS_and_3plus_goals": {
+        "our_estimate": 0.37,
+        "crowd_estimate": 0.435,
+        "outcome": 1,
+        "notes": "SUI 4, BIH 1 = 5 goals, BTTS yes. outcome=YES"
+      },
+      "Q5_2H_over1.5_goals": {
+        "our_estimate": 0.44,
+        "crowd_estimate": 0.477,
+        "outcome": 1,
+        "notes": "2H had 5 goals (SUI 4 + BIH 1). outcome=YES"
+      },
+      "Q6_SUI_win": {
+        "our_estimate": 0.62,
+        "crowd_estimate": 0.587,
+        "outcome": 1,
+        "notes": "SUI 4-1. outcome=YES"
+      },
+      "Q7_SUI_more_2H_SOT_than_BIH": {
+        "our_estimate": 0.67,
+        "crowd_estimate": 0.618,
+        "outcome": 1,
+        "notes": "Inference: SUI scored 4 in 2H, BIH scored 1. SUI 7 total SOT vs BIH 3. SUI dominated 2H. HIGH CONFIDENCE YES. Confirm from QK."
+      },
+      "Q8_penalty_or_red_card": {
+        "our_estimate": 0.39,
+        "crowd_estimate": 0.447,
+        "outcome": 1,
+        "notes": "BIH had 1 RC. outcome=YES"
+      },
+      "Q9_Embolo_1plus_SOT": {
+        "our_estimate": 0.72,
+        "crowd_estimate": 0.648,
+        "outcome": null,
+        "notes": "UNKNOWN - no player data from ESPN. SUI had 7 SOT total. Confirm from QK."
+      },
+      "Q10_Dzeko_1plus_SOT": {
+        "our_estimate": 0.45,
+        "crowd_estimate": 0.484,
+        "outcome": null,
+        "notes": "UNKNOWN - no player data from ESPN. BIH had 3 SOT total. Confirm from QK."
+      },
+      "Q11_Demirovic_1plus_SOT": {
+        "our_estimate": 0.38,
+        "crowd_estimate": 0.455,
+        "outcome": null,
+        "notes": "UNKNOWN - no player data from ESPN. BIH had 3 SOT total. Confirm from QK."
+      },
+      "Q12_Cards_over2.5": {
+        "our_estimate": 0.62,
+        "crowd_estimate": 0.587,
+        "outcome": 1,
+        "notes": "SUI 1 YC + BIH 2 YC + 1 RC = 4 total cards > 2.5. outcome=YES"
+      }
+    },
+    "match_rbp_total": 26.90,
+    "questions_beat_crowd": 8,
+    "confirmed_question_results_from_platform": {
+      "Q1_both_teams_HT_1plus_SOT": {"our_estimate": 0.63, "crowd_estimate": 0.64, "outcome": 1, "rbp": 2.29, "beat_crowd": true},
+      "Q2_SUI_2plus_offsides":      {"our_estimate": 0.45, "crowd_estimate": 0.47, "outcome": 1, "rbp": -0.43, "beat_crowd": false},
+      "Q3_2plus_cards_2H":          {"our_estimate": 0.60, "crowd_estimate": 0.56, "outcome": 1, "rbp": 6.37, "beat_crowd": true},
+      "Q4_BTTS_3plus_goals":        {"our_estimate": 0.37, "crowd_estimate": 0.37, "outcome": 1, "rbp": 1.54, "beat_crowd": true},
+      "Q5_BIH_more_fouls":          {"our_estimate": 0.77, "crowd_estimate": 0.60, "outcome": 1, "rbp": 12.66, "beat_crowd": true},
+      "Q6_penalty_awarded":         {"our_estimate": 0.32, "crowd_estimate": 0.30, "outcome": 1, "rbp": 5.05, "beat_crowd": true},
+      "Q7_SUI_more_2H_SOT":         {"our_estimate": 0.68, "crowd_estimate": 0.64, "outcome": 1, "rbp": 4.78, "beat_crowd": true},
+      "Q8_Xhaka_1plus_SOT_2H":      {"our_estimate": 0.23, "crowd_estimate": 0.34, "outcome": 1, "rbp": -12.89, "beat_crowd": false,
+        "notes": "Xhaka DID have a 2H SOT (Switzerland won 4-1 in 2H). Our 0.23 was too low — blowout winner midfielder bonus should apply."},
+      "Q9_Dzeko_1plus_SOT":         {"our_estimate": 0.41, "crowd_estimate": 0.45, "outcome": 0, "rbp": 6.73, "beat_crowd": true,
+        "notes": "Dzeko 0 SOT (RULE15 confirmed: Bosnia 14.53% underdog, forward starved of service)"},
+      "Q10_SUI_wins":               {"our_estimate": 0.62, "crowd_estimate": 0.63, "outcome": 1, "rbp": 0.80, "beat_crowd": true}
+    },
+    "learning_notes": "Q8 Xhaka (-12.89) = blowout winner MIDFIELDER gets more 2H SOT than expected (watch item confirmed negative). Should have used 0.55 multiplier for 2H → P≈0.25 instead of 0.23. Still lost but smaller. Q5 BIH more fouls (+12.66) = strongest win, Bosnia 18 fouls confirmed high-foul pattern. Dzeko RULE15 (+6.73) confirmed at n=3."
+  }
+}

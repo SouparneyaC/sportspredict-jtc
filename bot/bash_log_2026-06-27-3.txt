@@ -1,0 +1,166 @@
+================================================================================
+BASH SESSION LOG — Part 3
+Date: 2026-06-27
+Working directory: /Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/
+Session purpose: JTC leaderboard scraping via Playwright session + browser
+================================================================================
+
+KEY EVENTS THIS SESSION (browser automation + bash):
+
+1. Playwright session extraction:
+   - Installed: playwright 1.60.0, chromium browser
+   - Ran setup_session.py (3 iterations):
+     v1: Captured only GA cookies (not auth) → wrong mechanism
+     v2: Bearer token interception failed (app uses localStorage, not headers)
+     v3: Scanned localStorage → captured JWT (363 chars) from localStorage
+   - CRITICAL FINDING: App stores auth JWT in localStorage, NOT cookies
+   - JWT key: unnamed (found by scanning all localStorage values for 'eyJ' prefix)
+   - Mixpanel distinct_id in localStorage confirmed user_id = 00472f52-... (AbirC)
+
+2. JWT validation results:
+   - [200] GET /api/lobbies/lobby-stats/me   → 133 event-level stats
+   - [200] GET /api/events/user-events/summary → 0 items
+   - [201] POST /api/lobbies/leaderboard     → [] (always empty)
+   - [500] GET /api/users/smart-rating       → uuid parse error (it's a POST not GET)
+   - [500] GET /api/probability/*            → ENOENT: /app/c... (broken server-side)
+
+3. Browser automation (Claude in Chrome MCP):
+   - Navigated to play.sportspredict.com/leaderboard
+   - Tab IS logged in as AbirC (confirmed from localStorage content)
+   - Intercepted network call: POST /api/users/smart-rating → [201] (rendered 29 players)
+   - Scraped DOM: all 3 pages of leaderboard (12 + 12 + 5 = 29 players)
+   - Got user_ids by clicking each row → fires GET /api/users/score/{userId}
+   - Got display names, ranks, Smart Ratings for all 29
+
+4. Python: Enriched all 29 players via GET /api/users/{userId}:
+   - Confirmed full usernames (4 players use display names ≠ real username)
+   - Got country, college, created_date, last_seen for each
+   - Pulled trades for all 29 → ALL 0 TRADES (confirmed: they use probability system)
+
+5. Endpoint discovery:
+   - POST /api/users/smart-rating with Bearer token → [201] {top:[], currentUser:None}
+     (returns empty — browser has a fresher/different token for this endpoint)
+   - POST /api/users/smart-rating in browser page context → [401] (needs Bearer, not cookies)
+   - GET /api/events/categories → [200] 31 categories
+     World soccer: id=a7c3f1d2-8e4b-4c9a-b6d1-2f5e8a7c9b3d, users=29 (matches leaderboard)
+   - GET /api/users/{userId} → [200] full profile (works for all users)
+   - GET /api/probability/* (all variants) → [500] ENOENT server error
+
+================================================================================
+FILES SAVED
+================================================================================
+
+  data/jtc_leaderboard/jtc_leaderboard.json   — 29 players, full profiles, 11 KB
+  data/jtc_leaderboard/jtc_leaderboard.csv    — 29 players, key fields, 4 KB
+  data/jtc_leaderboard/jtc_leaderboard_summary.csv — (empty trades, not useful yet)
+
+================================================================================
+FULL JTC LEADERBOARD AS SCRAPED
+================================================================================
+
+Rank  Smart  Username                Real Username          Country  College
+----  -----  ----------------------  ---------------------  -------  -------
+   1    100  dromary30               dromary30              -        -
+   2     96  Rammers                 Rammers                -        -
+   3     93  Aannddyysshhaaa         Aannddyysshhaaaannddyy -        -
+   4     89  Manny art 913           Manny art 913          -        -
+   5     86  VANTIX                  RickyStanicky          US       -
+   6     82  Thinktanktim37          Thinktanktim37         -        -
+   7     79  Entertainment P...      Ilan Griboff           IL       Cooper Union
+   8     75  Gabe                    Gabe                   -        -
+   9     71  AMIR.PREDICTS           AMIR.PREDICTS          -        -
+  10     68  Abdulaziz Moham...      Abdulaziz Mohamud      -        -
+  11     64  kendrix d absal...      kendrix d absalux      -        -
+  12     61  Bob123                  Bob123                 -        -
+  13     57  DeDubClub               Benjamin Levy          US       -
+  14     54  Dimmetrio               Dimmetrio              UA       DIIT
+  15     50  Lekow                   Lekow                  ZA       Maluti TVET
+  16     46  mahziyarap              mahziyarap             -        -
+  17     43  Sylvakov                Sylvakov               -        -
+  18     39  Frankie 1               Frankie 1              -        -
+  19     36  Davebenfield197...      Davebenfield1978       GB-ENG   -
+  20     32  Koko                    Koko                   PH       San Beda College
+  21     29  DPalaia                 DPalaia                US       -
+  22     25  Salamander0617...       Salamander0617         SG       -
+  23     21  Zenit                   Zenit                  -        St.Joseph Univ Nagaland
+  24     18  Wow                     Jan Alcazaren          PH       -
+  25     14  Louis Rain              Louis Rain             CA       -
+  26     11  Ajc13                   Ajc13                  -        -
+  27      7  Mrdiaz71                Mrdiaz71               -        -
+  28      4  Mhica                   Mhica Gan              PH       -
+  29      0  AaJ                     AaJ                    -        -
+
+AbirC (Souparneya) = NOT on this leaderboard (0 Smart Rating / not ranked)
+AbirC user_id: 00472f52-309d-459d-bb13-97d474e958f0
+
+================================================================================
+WHAT'S BLOCKED
+================================================================================
+
+Individual predictions (which question, what probability) for each ranked player
+are stored in the /api/probability/ system, which returns 500 ENOENT server-side.
+This is a backend misconfiguration — the route exists, auth checks pass, but the
+handler tries to read a file (/app/c...) that doesn't exist on the server.
+
+POST /api/users/smart-rating returns {top:[], currentUser:None} with our JWT
+because the token we extracted appears to be different from what the browser
+currently uses for this specific endpoint (React Query caches the result and
+the live browser token may have refreshed).
+
+================================================================================
+PART 2 — INDIVIDUAL PREDICTIONS UNLOCKED
+================================================================================
+
+KEY FINDING: trades without event_id filter → 26 results for dromary30
+  → Their trades live in a DIFFERENT lobby: 542b5891-d22c-4dc9-87e2-2c59869f982b
+  → Different event_id too: ad11455f-8ad3-4a4f-b544-da75e0e67fb5
+  → entry_price varies (55, 61, 52) — NOT 48-52 like casual lobby → real prob estimates
+  → GET /api/users/score/{userId} returns a LIST, scoped to World Soccer category
+
+PULLED FOR ALL 29 PLAYERS:
+  - GET /api/trades?q={user_id}     — all trades (no lobby/event filter)
+  - GET /api/users/score/{userId}   — smart rating, PnL, Sharpe, win_count, risk_sum
+
+TOTAL: 7,990 prediction rows across 29 players
+
+FULL DATASET:
+  Rank  Player              Trades   W/L     WR%    AvgEP    PnL     Sharpe
+   1    dromary30              26  19/7   73.1%   57.3    494     0.544
+   2    Rammers                33  23/10  69.7%   53.8    489     0.359
+   3    Aannddyysshhaaa        57  37/20  64.9%   51.6    691     0.268
+   4    Manny art 913          72  48/18  72.7%   57.8    804     0.309
+   5    VANTIX                516  180/48  78.9%  53.9   2778     0.311
+   6    Thinktanktim37       1094  97/43  69.3%   51.4   1184     0.194
+   7    Entertainment P      1135  28/13  68.3%   52.1    387     0.222
+   8    Gabe                  134  84/40  67.7%   49.2    951     0.170
+   9    AMIR.PREDICTS          42  21/9   70.0%   58.4    220     0.179
+  10    Abdulaziz Mohamud      46  22/9   71.0%   58.2    239     0.182
+  11    kendrix d absalux      62  39/23  62.9%   52.9    411     0.144
+  12    Bob123                 70  37/17  68.5%   57.9    322     0.136
+  13    DeDubClub             150  74/52  58.7%   55.4    735     0.132
+  14    Dimmetrio             257  130/67  66.0%  52.6   1308     0.149
+  15    Lekow                  84  42/24  63.6%   57.4    280     0.099
+  16    mahziyarap            216  111/81  57.8%  53.2    727     0.084
+  17    Sylvakov               80  50/30  62.5%   51.2    376     0.101
+  18    Frankie 1             303  179/106 62.8%  51.2    869     0.066
+  19    Davebenfield1978      269  161/89  64.4%  52.2    971     0.085
+  20    Koko                   69  32/20  61.5%   57.8    120     0.054
+  21    DPalaia               306  80/47  63.0%   53.9    372     0.065
+  22    Salamander0617         96  47/31  60.3%   56.6     74     0.022
+  23    Zenit                 199  20/16  55.6%   56.3     55     0.036
+  24    Wow                  1637  32/59  35.2%   50.7   -156    -0.039
+  25    Louis Rain            306  61/136  31.0%  52.0  -1096    -0.123
+  26    Ajc13                  56  31/25  55.4%   47.7   -287    -0.112
+  27    Mrdiaz71               72  18/18  50.0%   54.2   -213    -0.140
+  28    Mhica Gan             573  26/39  40.0%   51.4   -682    -0.240
+  29    AaJ                    30  13/17  43.3%   48.0   -371    -0.271
+
+FILES SAVED:
+  data/jtc_predictions/jtc_markets.json       490 KB  — 356 markets for JTC lobby
+  data/jtc_predictions/jtc_player_agg.csv       4 KB  — 29-row aggregate stats
+  data/jtc_predictions/jtc_predictions.csv   1555 KB  — 7990 rows: player+question+prediction+outcome
+  data/jtc_predictions/jtc_predictions.json  3960 KB  — same in JSON
+
+================================================================================
+END OF SESSION LOG
+================================================================================

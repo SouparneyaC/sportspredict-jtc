@@ -1,0 +1,86 @@
+=== NZL-EGY 2026-06-22 Match Analysis Bash Log ===
+Date: 2026-06-21 (analysis completed ~5-7h before 01:00 UTC kickoff June 22)
+
+--- Smarkets Event Discovery ---
+CMD: Scanned IDs 45042820-45042900 via /events/{id}/markets/?limit=3
+RESULT: Found 45042849 as active event with 192 markets
+CMD: fetch https://api.smarkets.com/v3/markets/137952041/contracts/ (winner market)
+RESULT: ["New Zealand", "Draw", "Egypt"] confirmed
+
+--- ESPN Prior Match Discovery ---
+CMD: curl ESPN scoreboard 20260615
+RESULT: Egypt at Belgium ESPN_ID=760426, New Zealand at Iran ESPN_ID=760427
+
+--- ESPN NZL vs Iran (760427) ---
+CMD: curl -sk "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760427"
+RESULT: IRN 2-2 NZL
+  IRN: fouls=10, YC=1, offsides=2, corners=4, SOT=4, shots=17, poss=48.5%
+  NZL: fouls=8, YC=0, offsides=0, corners=1, SOT=8, shots=14, poss=51.5%
+  NZL_shot_to_SOT_rate=57% (very high), NZL_corners=1 (extremely low)
+
+--- ESPN EGY vs Belgium (760426) ---
+CMD: curl -sk "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+RESULT: BEL 1-1 EGY
+  BEL: fouls=15, YC=2, offsides=0, corners=2, SOT=3, shots=15, poss=53.6%
+  EGY: fouls=15, YC=2, offsides=1, corners=7, SOT=3, shots=14, poss=46.4%
+  EGY_corners=7 (very high even as underdog), EGY_shot_to_SOT_rate=21% (low)
+
+--- NZL-EGY Smarkets Quotes (primary markets) ---
+CMD: https://api.smarkets.com/v3/markets/{mid}/quotes/ (individual market format)
+RESULTS:
+  FTR (137952041): NZL=0.1493, Draw=0.2354, Egypt=0.6117 (LIQUID)
+  OU05 (137952076): Over=0.9134, Under=0.0801
+  OU15 (137952077): Over=0.7273, Under=0.2760
+  OU25 (137952078): Over=0.4630, Under=0.5363 (LIQUID)
+  OU35 (137952079): Over=0.2470, Under=0.7520
+  1H_OU05 (137952083): Over=0.6827, Under=0.3202
+  2H_OU05 (137952086): Over=0.7610, Under=0.2393
+  2H_OU15 (137952087): Over=0.3978, Under=0.5977
+  HT_winner (137952048): NZL=0.1430, Draw=0.4168, EGY=0.4446 (LIQUID)
+  2H_winner (137952047): NZL=0.1577, Draw=0.3465, EGY=0.4897
+  NZL_OU05 (137952089): Over=0.5422, Under=0.4527
+  NZL_OU15 (137952090): Over=0.1874, Under=0.8165
+  EGY_OU05 (137952099): Over=0.8334, Under=0.1643
+  EGY_OU15 (137952100): Over=0.5334, Under=0.4698
+  highest_scoring_half (137952059): 1H=0.2952, Equal=0.2808, 2H=0.4209 (LIQUID)
+  corners_winner (137952064): NZL=0.2481, Draw=0.0966, EGY=0.6492 (LIQUID)
+  NZL_corners_OU35 (137952218): Over=0.4437, Under=0.5584
+  NZL_corners_OU45 (137952220): Over=0.2765, Under=0.7256
+  EGY_corners_OU45 (137952221): Over=0.5917, Under=0.4167
+
+--- Illiquid markets (NO PRICES) ---
+  cards_OU25 (137952195), cards_OU35 (137952197), cards_OU45 (137952199): NO PRICES
+  penalty_in_match (137952066): NO PRICES
+  cards_winner (137952065): NO PRICES
+  NZL_SOT_OU25 (143912709): NO PRICES (implied line λ_NZL_SOT≈2.5)
+  EGY_SOT_OU55 (143912760): NO PRICES (implied line λ_EGY_SOT≈5.5)
+  total_SOT_OU75 (143912805), OU85 (143912806): NO PRICES
+  player markets: NO PRICES
+
+--- Lambda Calculations ---
+λ_EGY_goals = -ln(0.1666) = 1.7922
+λ_NZL_goals = -ln(0.4578) = 0.7813
+λ_total = 2.5735
+λ_1H = -ln(0.3173) = 1.1479
+λ_2H = -ln(0.239) = 1.4313
+λ_NZL_corners ≈ 3.5 (from NZL OU45 Over=27.65%)
+λ_EGY_corners ≈ 5.2 (from EGY OU45 Over=59.17%)
+λ_NZL_SOT ≈ 2.5 (from Smarkets implied line, no price)
+λ_EGY_SOT ≈ 5.5 (from Smarkets implied line, no price)
+
+--- Key Probability Computations ---
+Q1 (EGY 2+ offsides): Egypt 1 offside vs Belgium; uncertain → 0.50
+Q2 (NZL more fouls): Skellam λ_NZL=11, λ_EGY=13 → P=0.305 → estimate 0.33
+Q3 (NZL more 2H SOT): Skellam λ_NZL_SOT_2H=1.39, λ_EGY_SOT_2H=3.05 → P=0.153 → estimate 0.22
+Q4 (2H>1H goals): Direct market highest_scoring_half 2H=42.09% → 0.42
+Q5 (EGY more corners): Direct corners_winner EGY=64.92% → 0.65
+Q6 (NZL wins): Direct FTR NZL=14.93% → 0.15
+Q7 (≤2 total goals): Direct OU25 Under=53.63% → 0.54
+Q8 (4+ cards): No market; λ_total≈3.0 → P=0.353 → estimate 0.30
+Q9 (Waine ≥1 SOT): RULE15; λ_NZL_SOT≈2.5; λ_Waine=0.875 → P=0.583; shade → 0.48
+Q10 (Trezeguet G or A): No market; Egypt dominant, Trezeguet starting → 0.52
+
+--- Files Written ---
+nzl_egy_smarkets_quotes.json
+nzl_egy_2026-06-22.json
+nzl_egy_2026-06-22_bash_log.txt (this file)

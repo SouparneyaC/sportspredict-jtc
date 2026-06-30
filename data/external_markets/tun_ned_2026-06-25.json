@@ -1,0 +1,217 @@
+{
+  "match": "Tunisia vs Netherlands",
+  "date": "2026-06-25",
+  "stage": "Group C Group Stage 3 (GD3)",
+  "espn_event_id": null,
+  "smarkets_event_id": "45086932",
+  "venue": "Neutral (USA WC2026)",
+  "group_context": {
+    "Netherlands": {"pts": 4, "record": "1-1-0 (W5-1 SWE, D2-2 JPN)", "status": "Safe — advances with W or D. Even with a loss, advances if JPN doesn't win vs SWE."},
+    "Tunisia": {"pts": 0, "record": "0-0-2 (L1-5 SWE, L0-4 JPN)", "status": "ELIMINATED — no mathematical path to advancement"}
+  },
+  "wc2026_espn_stats": {
+    "TUN": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760424, "opponent": "Sweden", "result": "L 1-5", "fouls": 8, "SOT": 2, "offsides": 6, "YC": 1, "RC": 0, "corners": 2, "note": "1H goal by Rekik (43'), rest of match 0 Tunisia SOT"},
+        {"event_id": 760449, "opponent": "Japan", "result": "L 0-4", "fouls": 8, "SOT": 0, "offsides": 1, "YC": 0, "RC": 0, "corners": 3, "note": "Complete shutout — 0 SOT in entire match"}
+      ],
+      "averages": {"fouls": 8.0, "SOT": 1.0, "offsides": 3.5, "YC": 0.5, "corners": 2.5},
+      "CRITICAL": "Tunisia SOT collapsed from 2.8 pre-WC average to 1.0 WC average. 0 SOT vs Japan. 2H goals = 0 in both WC matches."
+    },
+    "NED": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": null, "opponent": "Japan", "result": "D 2-2", "fouls": 7, "SOT": 6, "offsides": 1, "YC": 3, "RC": 0},
+        {"event_id": 760447, "opponent": "Sweden", "result": "W 5-1", "fouls": 9, "SOT": 7, "offsides": 3, "YC": 0, "RC": 0, "corners": 2}
+      ],
+      "averages": {"fouls": 8.0, "SOT": 6.5, "offsides": 2.0, "YC": 1.5, "corners_partial": 2.0}
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Netherlands": 0.8831, "Draw": 0.0831, "Tunisia": 0.0338, "liquid": true},
+    "BTTS": {"Yes": 0.38, "No": 0.62, "liquid": true},
+    "OU2_5": {"Over": 0.70, "Under": 0.30, "liquid": true},
+    "BTTS_OU2_5": {"Yes_Over": 0.3273, "Yes_Under": 0.0403, "No_Over": 0.3474, "No_Under": 0.285, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.3075, "Equal": 0.2238, "Second_Half": 0.4688, "liquid": true},
+    "HT_result": {"Netherlands": 0.6655, "Draw": 0.2765, "Tunisia": 0.058, "liquid": true},
+    "2H_TUN_OU0_5": {"Over": 0.24, "Under": 0.76, "liquid": true},
+    "2H_NED_OU0_5": {"Over": 0.7914, "Under": 0.2086, "liquid": true},
+    "Most_cards": {"Tunisia": 0.4738, "Netherlands": 0.2333, "Draw": 0.2929, "liquid": true},
+    "Penalty": {"Yes": 0.2826, "No": 0.7174, "liquid": true},
+    "Red_card": {"Yes": 0.1038, "No": 0.8962, "liquid": true},
+    "SOT_OU7_5": {"Over": 0.6107, "Under": 0.3893, "liquid": true},
+    "player_SOT": {
+      "Ellyes_Skhiri_TUN": 0.0667,
+      "Cody_Gakpo_NED": 0.7144,
+      "Memphis_Depay_NED": 0.8009,
+      "liquid": true
+    },
+    "player_score_or_assist": {
+      "Cody_Gakpo_NED": 0.6608,
+      "Memphis_Depay_NED": 0.6949,
+      "Ellyes_Skhiri_TUN": 0.0675,
+      "liquid": true
+    }
+  },
+  "context_flags": [
+    "NED_88pct_FAVORITE: Massive mismatch. Classic blowout regime.",
+    "TUN_ELIMINATED: No motivation beyond pride. Disengage pattern expected (0 SOT vs JPN in GD2).",
+    "RULE10: In blowouts, winning team fouls ≥ losing team. NED likely fouls more than TUN.",
+    "TUN_2H_COLLAPSE: Tunisia has scored 0 goals in any second half across both WC2026 matches.",
+    "TUN_SOT_CRISIS: 0 SOT vs Japan (entire match), 2 SOT vs Sweden. WC avg = 1.0 SOT/game.",
+    "SKHIRI_CDM: Defensive midfielder with liquid market at 6.67% SOT — one of lowest player props seen."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Tunisia commit more fouls than Netherlands?",
+      "type": "FOULS_COMPARISON",
+      "pick_tier": "LOW CONFIDENCE",
+      "reasoning": "Both teams average exactly 8.0 fouls per game in WC2026. True coin flip on data. RULE10 (blowout: winning team fouls ≥ losing team) suggests NED may actually foul more. No edge. Skip or submit 0.45.",
+      "crowd_estimate": 0.48,
+      "final_estimate": 0.45,
+      "direction": "NO lean (very slight)",
+      "confidence": "low"
+    },
+    {
+      "q": 2,
+      "text": "Will both teams have at least 1 shot on target in the second half?",
+      "type": "BOTH_SOT_2H",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "NED almost certain to get 2H SOT (avg 6.5 total/game). Tunisia: 0 SOT in GD2 vs Japan, 2 in GD1 vs Sweden. P(TUN gets ≥1 SOT in 2H) is genuinely low — maybe 35-40%. Tunisia's 2H goal probability is only 24% from market; SOT probability is higher but this team is being shut out. Estimate: 0.38.",
+      "crowd_estimate": 0.55,
+      "final_estimate": 0.38,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will both teams score AND the match have 3 or more total goals?",
+      "type": "BTTS_PLUS_3GOALS",
+      "pick_tier": "DIRECT MARKET",
+      "reasoning": "Smarkets BTTS+OU2.5 Yes/Over = 32.73%. Direct tier-1 market. Trust it.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.33,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Netherlands receive more cards than Tunisia?",
+      "type": "CARDS_COMPARISON",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Most cards market: NED more cards = 23.33%. This is a liquid market and the low figure makes sense: Tunisia had only 1 YC total in 2 WC matches and disengages in blowouts. NED won't need to foul recklessly. The crowd will intuitively think 'NED is the big team that fouls' but the data says otherwise. Strong NO.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.23,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will Tunisia score at least 1 goal?",
+      "type": "TUN_SCORE_GEQ1",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "BTTS = 38%. P(TUN scores) ≈ 38-40% (BTTS + small chance TUN wins clean). Tunisia did score in GD1 vs Sweden (43'), did not score vs Japan. Market suggests about 38-40% chance. Submit at 0.39.",
+      "crowd_estimate": 0.45,
+      "final_estimate": 0.39,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 6,
+      "text": "At halftime, will the match be tied?",
+      "type": "HT_DRAW",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct HT result market: Draw = 27.65%. NED has 66.55% probability to be leading at HT. In GD2, NED led 2-0 at HT vs Sweden. Against a weaker Tunisia, NED leading at half is very likely. Trust the liquid market.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.28,
+      "direction": "NO",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will Tunisia score in the second half?",
+      "type": "TUN_SCORE_2H",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Direct Smarkets market: TUN 2H goals OU0.5 Over = 24%. Tunisia has scored 0 second-half goals in both WC2026 matches. Rekik's goal vs Sweden was in 43rd minute (1H). 0 goals vs Japan. The blowout pattern (NED comfortably ahead by HT) ensures Tunisia disengages in 2H. This is one of our highest-conviction questions: tier-1 direct market + confirming historical data. Submit at 0.24.",
+      "crowd_estimate": 0.40,
+      "final_estimate": 0.24,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Ellyes Skhiri have at least 1 shot on target?",
+      "type": "PLAYER_SOT",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Smarkets LIQUID market: 6.67%. Skhiri is Tunisia's defensive midfielder. Tunisia's TEAM total SOT in WC2026: 2 (GD1, full match) and 0 (GD2, full match). For a CDM to get a SOT when his team is essentially not registering any shots is essentially impossible. We've correctly beaten crowd on Skhiri before: SWE-TUN +10.77 RBP (market 15.83%, crowd 31%). Today the market is even lower (6.67%), the opposition is even better, and Tunisia's recent form is even worse. Submit at market: 0.07. Crowd will drift to 0.25-0.30.",
+      "crowd_estimate": 0.28,
+      "final_estimate": 0.07,
+      "direction": "NO (maximum confidence)",
+      "confidence": "very high"
+    },
+    {
+      "q": 9,
+      "text": "Will there be 8 or more total shots on target?",
+      "type": "TOTAL_SOT_GEQ8",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Smarkets OU7.5 Over = 61.07%. NED averages 6.5 SOT/game against strong opponents. Against a Tunisia defense that's allowed 4 and 5 goals in two matches, NED's SOT total should exceed their average. 7+ SOT from NED alone is plausible. Tunisia adds some (even if small). YES lean is well-supported by market and data.",
+      "crowd_estimate": 0.57,
+      "final_estimate": 0.61,
+      "direction": "YES",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will Cody Gakpo score or assist a goal (excluding own goals)?",
+      "type": "PLAYER_GOAL_OR_ASSIST",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Smarkets LIQUID market: 66.1%. Gakpo has participated in goals in both WC2026 matches. NED expected to score multiple goals (OU2.5 Over = 70%). Tunisia allowed 4 goals to JPN and 5 to SWE. As NED's primary attacker, Gakpo should get involved. Consistent with our prior result: GD2 vs SWE we priced Gakpo SOT at 0.64 (market) and won +4.96 RBP. Trust the liquid market.",
+      "crowd_estimate": 0.62,
+      "final_estimate": 0.66,
+      "direction": "YES",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_TUN_more_fouls": 0.45,
+    "Q2_both_SOT_2H": 0.38,
+    "Q3_BTTS_3plus_goals": 0.33,
+    "Q4_NED_more_cards": 0.23,
+    "Q5_TUN_scores": 0.39,
+    "Q6_HT_tied": 0.28,
+    "Q7_TUN_scores_2H": 0.24,
+    "Q8_Skhiri_SOT": 0.07,
+    "Q9_8plus_total_SOT": 0.61,
+    "Q10_Gakpo_score_or_assist": 0.66
+  },
+  "strongest_picks": [
+    "Q8: Skhiri SOT = 0.07 (MAXIMUM CONFIDENCE — liquid market 6.67%, TUN 0 SOT in GD2, CDM role, blowout expected)",
+    "Q7: Tunisia scores in 2H = 0.24 (HIGHEST CONFIDENCE — direct market, TUN 0 second-half goals in both WC matches)",
+    "Q4: NED more cards = 0.23 (HIGH CONFIDENCE — liquid most_cards market, TUN only 1 total YC in WC2026)",
+    "Q6: HT tied = 0.28 (HIGH CONFIDENCE — direct HT market, NED 66.6% to lead at HT)"
+  ],
+  "post_match_results": {
+    "final_score": "Tunisia 1-3 Netherlands",
+    "total_rbp": -13.62,
+    "beat_crowd_count": "6/10",
+    "results": {
+      "Q1_TUN_more_fouls": {"outcome": "YES", "our_est": 0.45, "crowd": 0.58, "rbp": -10.79, "beat_crowd": false, "note": "We flagged this as our lowest-confidence pick (true coin flip on equal 8.0/8.0 foul averages) and it cost us. Tunisia, eliminated and getting blown out, fouled more out of frustration/desperation defending — same dynamic as RULE10 blowout fouling, but we didn't apply it to the LOSING team's foul rate."},
+      "Q2_both_SOT_2H": {"outcome": "YES", "our_est": 0.38, "crowd": 0.59, "rbp": -18.24, "beat_crowd": false, "note": "Biggest single loss of the day. We bet heavily on Tunisia's SOT collapse (0 SOT vs Japan) repeating, but Tunisia got on the board with a 2H SOT/goal against a Netherlands team that had already let up once they were comfortably ahead. The crowd's higher 59% correctly priced in garbage-time space for the loser."},
+      "Q3_BTTS_3plus_goals": {"outcome": "YES", "our_est": 0.33, "crowd": 0.32, "rbp": 3.29, "beat_crowd": true},
+      "Q4_NED_more_cards": {"outcome": "NO", "our_est": 0.23, "crowd": 0.34, "rbp": 8.40, "beat_crowd": true},
+      "Q5_TUN_scores": {"outcome": "YES", "our_est": 0.39, "crowd": 0.38, "rbp": 3.26, "beat_crowd": true},
+      "Q6_HT_tied": {"outcome": "NO", "our_est": 0.28, "crowd": 0.31, "rbp": 3.15, "beat_crowd": true},
+      "Q7_TUN_scores_2H": {"outcome": "YES", "our_est": 0.24, "crowd": 0.28, "rbp": -4.74, "beat_crowd": false, "note": "Tunisia's '0 second-half goals across 2 WC matches' streak broke. Direct market read missed once garbage-time defending opened up — same root cause as Q2."},
+      "Q8_Skhiri_SOT": {"outcome": "NO", "our_est": 0.07, "crowd": 0.26, "rbp": 8.90, "beat_crowd": true, "note": "Our maximum-confidence pick held — Skhiri's CDM role and Tunisia's team-wide SOT crisis stayed true even as Tunisia broke through elsewhere on the pitch."},
+      "Q9_8plus_total_SOT": {"outcome": "YES", "our_est": 0.61, "crowd": 0.60, "rbp": 3.43, "beat_crowd": true},
+      "Q10_Gakpo_score_or_assist": {"outcome": "NO", "our_est": 0.66, "crowd": 0.55, "rbp": -10.28, "beat_crowd": false, "note": "Liquid market (66%) failed for the second time this tournament — same pattern as Balogun's liquid SOT market missing in USA-AUS. Netherlands won comfortably without Gakpo needing to be directly involved in a goal; subs/other scorers carried the scoreline."}
+    },
+    "key_confirmations": [
+      "The two biggest losses (Q2, Q7 = -22.98 combined) share one root cause: we modeled Tunisia as a team that simply doesn't generate second-half output, based on their complete shutout vs Japan. But that shutout happened against a disciplined, still-motivated Japan; here, a comfortably-ahead Netherlands likely eased off, handing Tunisia exactly the space/garbage-time chances they lacked in GD2. LESSON: 'team has been shut out' signals are conditional on opponent intensity, not a fixed team trait — re-derive for each specific opponent's likely game-state behavior once ahead.",
+      "Q10 (Gakpo) is now the SECOND liquid star-attacker market to fail this tournament (after Balogun in USA-AUS, and again in TUR-USA) — building toward a real pattern: trust liquid 'big name to score/assist' props less when the team is winning comfortably, since the goal/assist can come from a teammate instead."
+    ]
+  },
+  "created": "2026-06-25"
+}

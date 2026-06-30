@@ -1,0 +1,265 @@
+match,date,question_num,question_key,our_estimate,crowd_estimate,outcome,rbp,beat_crowd,has_sub_estimate,schema
+KOR-CZE,2026-06-11,Q1,Will both teams score AND the match have 3 or more total goals?,0.4,0.38,1,6.44,1,0,B
+KOR-CZE,2026-06-11,Q2,Will a penalty kick be awarded in the match?,0.42,0.33,0,-3.2,0,0,B
+KOR-CZE,2026-06-11,Q3,Will South Korea have more shots on target than Czechia in the second half?,0.6,0.55,1,7.21,1,0,B
+KOR-CZE,2026-06-11,Q4,Will South Korea win the match?,0.46,0.51,1,-0.08,0,0,B
+KOR-CZE,2026-06-11,Q5,Will Son Heung-min score a goal (excluding own goals)?,0.38,0.4,0,6.52,1,0,B
+KOR-CZE,2026-06-11,Q6,Will Patrik Schick have at least 1 shot on target?,0.65,0.67,0,5.91,1,0,B
+CAN-BIH,2026-06-12,Q1,BIH fouls > Canada,0.67,0.64,1,5.08,1,0,B
+CAN-BIH,2026-06-12,Q2,4+ 2H total SOT,0.7,0.59,1,11.76,1,0,B
+CAN-BIH,2026-06-12,Q3,Penalty OR red card,0.43,0.41,0,2.8,1,0,B
+CAN-BIH,2026-06-12,Q4,Canada win,0.75,0.62,0,-14.53,0,0,B
+CAN-BIH,2026-06-12,Q5,HT tied,0.46,0.47,0,3.86,1,0,B
+CAN-BIH,2026-06-12,Q6,2H 2+ goals,0.37,0.38,0,4.47,1,0,B
+CAN-BIH,2026-06-12,Q7,BIH 5+ corners,0.27,0.36,0,9.46,1,0,B
+CAN-BIH,2026-06-12,Q8,Jonathan David scores,0.33,0.38,0,6.88,1,0,B
+CAN-BIH,2026-06-12,Q9,Dzeko 1+ SOT,0.6,0.58,0,2.89,1,0,B
+CAN-BIH,2026-06-12,Q10,BIH score in 2H,0.37,0.44,0,9.98,1,0,B
+BRA-MAR,2026-06-13,Q1,Will Brazil be caught offside 2 or more times?,0.43,0.59,0,20.36,1,0,B
+BRA-MAR,2026-06-13,Q2,Will Morocco commit more fouls than Brazil?,0.64,0.61,0,-0.44,0,0,B
+BRA-MAR,2026-06-13,Q3,Will Morocco score the first goal of the second half?,0.35,0.32,0,0.47,1,0,B
+BRA-MAR,2026-06-13,Q4,Will Brazil score more goals than Morocco in the second half?,0.58,0.55,0,0.47,1,0,B
+BRA-MAR,2026-06-13,Q5,Will Morocco have more shots on target than Brazil in the second half?,0.23,0.33,0,8.46,1,0,B
+BRA-MAR,2026-06-13,Q6,Will Brazil receive more cards than Morocco?,0.41,0.39,1,4.72,1,0,B
+BRA-MAR,2026-06-13,Q7,Will both teams score AND the match have 3 or more total goals?,0.4,0.47,0,10.79,1,0,B
+BRA-MAR,2026-06-13,Q8,Will Brazil win the match?,1.0,0.67,0,-51.97,0,0,B
+BRA-MAR,2026-06-13,Q9,Will Morocco have 5 or more corner kicks?,0.42,0.38,0,0.34,1,0,B
+BRA-MAR,2026-06-13,Q10,Will the match be tied at halftime?,0.32,0.42,1,-9.52,0,0,B
+QAT-SUI,2026-06-13,Q1,"At halftime, will both teams have at least 1 shot on target?",0.2,0.59,1,-42.51,0,0,B
+QAT-SUI,2026-06-13,Q2,Will Switzerland be caught offside 2 or more times?,0.6,0.53,0,-3.84,0,0,B
+QAT-SUI,2026-06-13,Q3,Will Switzerland receive at least 1 card in the second half?,0.4,0.57,0,19.86,1,0,B
+QAT-SUI,2026-06-13,Q4,Will both teams score AND the match have 3 or more total goals?,0.32,0.31,0,2.85,1,0,B
+QAT-SUI,2026-06-13,Q5,Will Qatar have 2 or more shots on target in the second half?,0.3,0.39,1,-7.61,0,0,B
+QAT-SUI,2026-06-13,Q6,Will Qatar commit more fouls than Switzerland?,0.46,0.64,1,-13.81,0,0,B
+QAT-SUI,2026-06-13,Q7,Will Qatar score at least 1 goal?,0.38,0.4,1,2.0,1,0,B
+QAT-SUI,2026-06-13,Q8,Will Qatar have 2 or more shots on target?,0.39,0.57,1,-14.3,0,0,B
+QAT-SUI,2026-06-13,Q9,Will Akram Afif have at least 1 shot on target?,0.42,0.46,0,7.26,1,0,B
+QAT-SUI,2026-06-13,Q10,Will Granit Xhaka have at least 1 shot on target?,0.41,0.48,0,10.91,1,0,B
+USA-PAR,2026-06-13,Q1,Will United States be caught offside 2 or more times?,0.58,0.56,1,5.31,1,0,B
+USA-PAR,2026-06-13,Q2,Will United States score the first goal of the game and Paraguay score in the second half?,0.22,0.31,1,-9.25,0,0,B
+USA-PAR,2026-06-13,Q3,Will Paraguay finish with more corner kicks than United States?,0.35,0.35,0,4.28,1,0,B
+USA-PAR,2026-06-13,Q4,Will United States win the match?,0.46,0.6,1,-8.81,0,0,B
+USA-PAR,2026-06-13,Q5,"At halftime, will the match be tied?",0.47,0.45,0,1.28,1,0,B
+USA-PAR,2026-06-13,Q6,Will the match have 3 or more total goals?,0.38,0.42,1,-1.47,0,0,B
+USA-PAR,2026-06-13,Q7,Will Paraguay score in the second half?,0.4,0.44,1,-1.54,0,0,B
+USA-PAR,2026-06-13,Q8,Will there be 4 or more total cards shown?,0.57,0.49,1,12.18,1,0,B
+USA-PAR,2026-06-13,Q9,Will Folarin Balogun have at least 1 shot on target?,0.62,0.63,1,2.38,1,0,B
+USA-PAR,2026-06-13,Q10,Will Julio Enciso have at least 1 shot on target in the second half?,0.2,0.37,0,14.77,1,0,B
+CIV-ECU,2026-06-14,Q1,Will Ecuador commit more fouls than Ivory Coast?,0.57,0.52,1,6.97,1,0,B
+CIV-ECU,2026-06-14,Q2,"At halftime, will Ecuador have more corner kicks than Ivory Coast?",0.42,0.48,0,8.42,1,0,B
+CIV-ECU,2026-06-14,Q3,Will Ivory Coast be caught offside 2 or more times?,0.41,0.49,0,9.97,1,0,B
+CIV-ECU,2026-06-14,Q4,Will Ecuador have more shots on target than Ivory Coast in the second half?,0.48,0.5,0,2.0,1,0,B
+CIV-ECU,2026-06-14,Q5,Will the second half have more total goals than the first half?,0.4,0.51,1,-9.02,0,0,B
+CIV-ECU,2026-06-14,Q6,Will Ivory Coast win the match?,0.29,0.34,1,-7.0,0,0,B
+CIV-ECU,2026-06-14,Q7,Will Ivory Coast score in the second half?,0.41,0.45,1,-2.57,0,0,B
+CIV-ECU,2026-06-14,Q8,Will there be 4 or more total cards shown?,0.54,0.52,1,4.43,1,0,B
+CIV-ECU,2026-06-14,Q9,Will Ibrahim Sangare have at least 1 shot on target?,0.18,0.33,0,8.0,1,0,B
+GER-CUR,2026-06-14,Q1,Will Curacao be caught offside 2 or more times?,0.38,0.39,0,5.05,1,0,B
+GER-CUR,2026-06-14,Q2,"In the second half, will Germany have more shots on target than Curacao?",0.83,0.84,1,1.77,1,0,B
+GER-CUR,2026-06-14,Q3,Will Curacao commit more fouls than Germany?,0.48,0.66,0,23.36,1,0,B
+GER-CUR,2026-06-14,Q4,Will Curacao receive more cards than Germany?,0.59,0.61,0,4.85,1,0,B
+GER-CUR,2026-06-14,Q5,Will Germany be caught offside 2 or more times?,0.43,0.54,0,13.79,1,0,B
+GER-CUR,2026-06-14,Q6,Will Germany win the match?,0.94,0.92,1,1.64,1,0,B
+GER-CUR,2026-06-14,Q7,Will the match have 2 or fewer total goals?,0.16,0.25,0,7.17,1,0,B
+GER-CUR,2026-06-14,Q8,Will the second half have 2 or more total goals?,0.67,0.6,1,8.19,1,0,B
+GER-CUR,2026-06-14,Q9,Will Curacao have 3 or more shots on target?,0.42,0.32,0,-3.11,0,0,B
+GER-CUR,2026-06-14,Q10,Will Leandro Bacuna have at least 1 shot on target?,0.21,0.32,0,9.76,1,0,B
+JPN-NED,2026-06-14,Q1,Will Japan commit more fouls than Netherlands?,0.72,0.49,0,-25.37,0,0,B
+JPN-NED,2026-06-14,Q2,Will Netherlands be caught offside 2 or more times?,0.44,0.54,0,12.02,1,0,B
+JPN-NED,2026-06-14,Q3,Will both teams have at least 1 shot on target in the second half?,0.83,0.76,1,5.23,1,0,B
+JPN-NED,2026-06-14,Q4,Will both teams score AND the match have 3 or more total goals?,0.39,0.44,1,-2.69,0,0,B
+JPN-NED,2026-06-14,Q5,Will Japan receive more cards than Netherlands?,0.44,0.43,0,1.06,1,0,B
+JPN-NED,2026-06-14,Q6,Will Netherlands win the match?,0.47,0.53,0,9.32,1,0,B
+JPN-NED,2026-06-14,Q7,Will Japan score in the second half?,0.45,0.5,1,-2.95,0,0,B
+JPN-NED,2026-06-14,Q8,Will there be 8 or more total shots on target?,0.59,0.56,1,6.02,1,0,B
+JPN-NED,2026-06-14,Q9,Will Cody Gakpo have at least 1 shot on target?,0.61,0.61,1,2.5,1,0,B
+JPN-NED,2026-06-14,Q10,Will Takefusa Kubo score or assist a goal (excluding own goals)?,0.3,0.36,1,-4.65,0,0,B
+SWE-TUN,2026-06-14,Q1,"At halftime, will Tunisia have more corner kicks than Sweden?",0.28,0.34,0,6.06,1,0,B
+SWE-TUN,2026-06-14,Q2,Will Sweden commit more fouls than Tunisia?,0.15,0.4,1,-33.9,0,0,B
+SWE-TUN,2026-06-14,Q3,Will the second half have more total goals than the first half?,0.42,0.51,0,10.28,1,0,B
+SWE-TUN,2026-06-14,Q4,Will Sweden score the first goal of the game and Tunisia score in the second half?,0.24,0.31,0,7.0,1,0,B
+SWE-TUN,2026-06-14,Q5,Will Tunisia have more shots on target than Sweden in the second half?,0.27,0.33,0,5.71,1,0,B
+SWE-TUN,2026-06-14,Q6,Will a penalty kick be awarded OR a red card be shown in the match?,0.21,0.37,0,11.68,1,0,B
+SWE-TUN,2026-06-14,Q7,Will Sweden win the match?,0.52,0.59,1,-3.2,0,0,B
+SWE-TUN,2026-06-14,Q8,Will the match have 3 or more total goals?,0.43,0.44,1,1.57,1,0,B
+SWE-TUN,2026-06-14,Q9,Will Viktor Gyokeres score or assist a goal (excluding own goals)?,0.49,0.5,1,1.4,1,0,B
+SWE-TUN,2026-06-14,Q10,Will Ellyes Skhiri have at least 1 shot on target?,0.16,0.31,0,10.77,1,0,B
+BEL-EGY,2026-06-15,Q1,Will Egypt commit more fouls than Belgium?,0.46,0.59,0,15.47,1,0,B
+BEL-EGY,2026-06-15,Q2,Will there be 2 or more total cards shown in the second half?,0.6,0.58,0,0.75,1,0,B
+BEL-EGY,2026-06-15,Q3,Will both teams score AND the match have 3 or more total goals?,0.38,0.41,0,5.79,1,0,B
+BEL-EGY,2026-06-15,Q4,Will Egypt have more shots on target than Belgium in the second half?,0.11,0.31,0,10.71,1,0,B
+BEL-EGY,2026-06-15,Q5,Will there be 4 or more total shots on target in the second half?,0.78,0.64,1,10.28,1,0,B
+BEL-EGY,2026-06-15,Q6,Will Belgium be caught offside 2 or more times?,0.54,0.5,0,-1.57,0,0,B
+BEL-EGY,2026-06-15,Q7,Will Belgium win the match?,0.61,0.66,0,8.23,1,0,B
+BEL-EGY,2026-06-15,Q8,"At halftime, will the match be tied?",0.41,0.42,0,2.61,1,0,B
+BEL-EGY,2026-06-15,Q9,Will Youri Tielemans have at least 1 shot on target?,0.38,0.44,0,8.28,1,0,B
+BEL-EGY,2026-06-15,Q10,Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?,0.25,0.26,0,3.18,1,0,B
+SAU-URU,2026-06-15,Q1,Q1,0.34,0.44,0,10.87,1,0,B
+SAU-URU,2026-06-15,Q2,Q2,0.74,0.67,0,-7.76,0,0,B
+SAU-URU,2026-06-15,Q3,Q3,0.52,0.49,1,4.73,1,0,B
+SAU-URU,2026-06-15,Q4,Q4,0.57,0.56,1,3.09,1,0,B
+SAU-URU,2026-06-15,Q5,Q5,0.26,0.32,0,5.87,1,0,B
+SAU-URU,2026-06-15,Q6,Q6,0.41,0.53,1,-9.88,0,0,B
+SAU-URU,2026-06-15,Q7,Q7,0.3,0.67,1,-35.66,0,0,B
+SAU-URU,2026-06-15,Q8,Q8,0.11,0.18,0,4.4,1,0,B
+SAU-URU,2026-06-15,Q9,Q9,0.2,0.27,0,5.31,1,0,B
+SAU-URU,2026-06-15,Q10,Q10,0.38,0.41,0,5.28,1,0,B
+ENG-CRO,2026-06-17,Q1,Q1_Croatia_HT_more_corners,0.2,0.35,0,10.15,1,0,A/E
+ENG-CRO,2026-06-17,Q2,Q2_Croatia_2plus_offsides,0.26,0.45,0,15.73,1,0,A/E
+ENG-CRO,2026-06-17,Q3,Q3_both_teams_1plus_SOT_2H,0.76,0.72,1,4.42,1,0,A/E
+ENG-CRO,2026-06-17,Q4,Q4_BTTS_3plus_goals,0.37,0.41,1,-1.83,0,0,A/E
+ENG-CRO,2026-06-17,Q5,Q5_penalty_or_red_card,0.35,0.36,1,0.54,1,0,A/E
+ENG-CRO,2026-06-17,Q6,Q6_England_more_fouls,0.15,0.43,0,18.82,1,0,A/E
+ENG-CRO,2026-06-17,Q7,Q7_Kane_1plus_SOT_2H,0.2,0.59,1,-44.54,0,0,A/E
+ENG-CRO,2026-06-17,Q8,Q8_England_more_2H_SOT,0.6,0.62,1,0.12,1,0,A/E
+ENG-CRO,2026-06-17,Q9,Q9_England_wins,0.59,0.6,1,1.24,1,0,A/E
+ENG-CRO,2026-06-17,Q10,Q10_Sucic_1plus_SOT,0.43,0.34,0,-3.42,0,0,A/E
+GHA-PAN,2026-06-17,Q1,Q1_Ghana_more_fouls,0.42,0.48,0,7.02,1,0,A/E
+GHA-PAN,2026-06-17,Q2,Q2_Panama_2plus_offsides,0.28,0.44,0,13.61,1,0,A/E
+GHA-PAN,2026-06-17,Q3,Q3_Panama_scores_first_2H_goal,0.32,0.34,0,2.93,1,0,A/E
+GHA-PAN,2026-06-17,Q4,Q4_Panama_more_cards,0.5,0.46,1,5.63,1,0,A/E
+GHA-PAN,2026-06-17,Q5,Q5_Ghana_more_2H_SOT,0.4,0.54,0,16.23,1,0,A/E
+GHA-PAN,2026-06-17,Q6,Q6_Ghana_wins,0.4,0.48,1,-6.43,0,0,A/E
+GHA-PAN,2026-06-17,Q7,Q7_2H_2plus_goals,0.36,0.4,0,5.39,1,0,A/E
+GHA-PAN,2026-06-17,Q8,Q8_Ghana_3plus_SOT,0.45,0.66,0,25.69,1,0,A/E
+GHA-PAN,2026-06-17,Q9,Q9_Semenyo_1plus_SOT,0.68,0.56,1,11.74,1,0,A/E
+GHA-PAN,2026-06-17,Q10,Q10_Fajardo_1plus_SOT,0.57,0.39,0,-13.8,0,0,A/E
+CAN-QAT,2026-06-18,Q1,Q1_qatar_more_fouls,0.6,0.575,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q2,Q2_4plus_2h_sot,0.62,0.587,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q3,Q3_penalty_or_rc,0.38,0.447,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q5,Q5_canada_wins,0.77,0.7,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q6,Q6_canada_ht_winning,0.58,0.56,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q7,Q7_canada_5plus_sot,0.75,0.7,1,,0,1,A/E
+CAN-QAT,2026-06-18,Q8,Q8_qatar_5plus_corners,0.13,0.2,0,,0,1,A/E
+CAN-QAT,2026-06-18,Q9,Q9_afif_sot_rule15,0.22,0.343,0,,0,1,A/E
+CAN-QAT,2026-06-18,Q10,Q10_qatar_scores_2h,0.31,0.37,0,,0,1,A/E
+SUI-BIH,2026-06-18,Q1,Q1_BIH_more_fouls_than_SUI,0.75,0.666,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q2,Q2_BIH_2plus_offsides,0.04,0.233,0,,0,1,A/E
+SUI-BIH,2026-06-18,Q3,Q3_SUI_2plus_offsides,0.44,0.477,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q4,Q4_BTTS_and_3plus_goals,0.37,0.435,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q5,Q5_2H_over1.5_goals,0.44,0.477,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q6,Q6_SUI_win,0.62,0.587,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q7,Q7_SUI_more_2H_SOT_than_BIH,0.67,0.618,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q8,Q8_penalty_or_red_card,0.39,0.447,1,,0,1,A/E
+SUI-BIH,2026-06-18,Q12,Q12_Cards_over2.5,0.62,0.587,1,,0,1,A/E
+UZB-COL,2026-06-18,Q1,Q1_UZB_2plus_offsides,0.45,0.42,0,0.04,1,0,A/E
+UZB-COL,2026-06-18,Q2,Q2_COL_more_2H_SOT,0.62,0.69,0,11.47,1,0,A/E
+UZB-COL,2026-06-18,Q3,Q3_penalty_or_red_card,0.37,0.37,0,1.55,1,0,A/E
+UZB-COL,2026-06-18,Q4,Q4_Luis_Diaz_1plus_2H_SOT,0.58,0.55,1,5.92,1,0,A/E
+UZB-COL,2026-06-18,Q5,Q5_UZB_score_1plus_goal,0.47,0.43,1,6.52,1,0,A/E
+UZB-COL,2026-06-18,Q6,Q6_HT_tied,0.39,0.41,0,3.16,1,0,A/E
+UZB-COL,2026-06-18,Q7,Q7_2_or_fewer_goals,0.52,0.48,0,-1.81,0,0,A/E
+UZB-COL,2026-06-18,Q8,Q8_COL_scores_2H,0.67,0.66,1,2.12,1,0,A/E
+UZB-COL,2026-06-18,Q9,Q9_UZB_5plus_corners,0.2,0.29,0,6.64,1,0,A/E
+UZB-COL,2026-06-18,Q10,Q10_Shomurodov_G_or_A,0.24,0.28,0,4.12,1,0,A/E
+MEX-KOR,2026-06-19,Q1,Q1_Mexico_2plus_offsides,0.47,0.5,1,-1.31,0,1,C/D
+MEX-KOR,2026-06-19,Q3,Q3_Korea_more_corners,0.38,0.44,1,-0.81,0,1,C/D
+MEX-KOR,2026-06-19,Q4,Q4_Mexico_wins,0.48,0.49,1,1.02,1,1,C/D
+MEX-KOR,2026-06-19,Q5,Q5_Mexico_HT_winning,0.35,0.42,0,5.29,1,1,C/D
+SCO-MAR,2026-06-19,Q1,Q1_MAR_2plus_offsides,0.4,0.49,0,10.64,1,1,A/E
+SCO-MAR,2026-06-19,Q2,Q2_MAR_more_fouls,0.33,0.44,0,10.98,1,1,A/E
+SCO-MAR,2026-06-19,Q3,Q3_MAR_1plus_card_2H,0.5,0.58,0,10.35,1,1,A/E
+SCO-MAR,2026-06-19,Q4,Q4_BTTS_3plus_goals,0.29,0.36,0,7.07,1,1,A/E
+SCO-MAR,2026-06-19,Q5,Q5_SCO_more_2H_SOT,0.32,0.32,0,1.93,1,1,A/E
+SCO-MAR,2026-06-19,Q6,Q6_SCO_2plus_offsides,0.22,0.41,0,14.49,1,1,A/E
+SCO-MAR,2026-06-19,Q7,Q7_SCO_wins,0.16,0.24,0,5.43,1,1,A/E
+SCO-MAR,2026-06-19,Q8,Q8_SCO_3plus_SOT,0.55,0.5,0,-2.05,0,1,A/E
+SCO-MAR,2026-06-19,Q9,Q9_McTominay_1plus_SOT,0.37,0.48,0,11.94,1,1,A/E
+SCO-MAR,2026-06-19,Q10,Q10_MAR_score_2H,0.6,0.59,0,0.73,1,1,A/E
+USA-AUS,2026-06-19,Q1,Q1_USA_more_fouls,0.4,0.44,0,5.95,1,1,C/D
+USA-AUS,2026-06-19,Q2,Q2_AUS_2plus_offsides,0.15,0.45,0,20.74,1,1,C/D
+USA-AUS,2026-06-19,Q3,Q3_USA_more_2H_goals,0.47,0.52,0,8.01,1,1,C/D
+USA-AUS,2026-06-19,Q4,Q4_USA_more_2H_SOT,0.62,0.63,0,3.03,1,1,C/D
+USA-AUS,2026-06-19,Q5,Q5_AUS_more_corners,0.2,0.34,0,10.03,1,1,C/D
+USA-AUS,2026-06-19,Q6,Q6_BTTS_3plus,0.39,0.43,0,6.53,1,1,C/D
+USA-AUS,2026-06-19,Q7,Q7_USA_wins,0.59,0.62,1,-0.01,0,1,C/D
+USA-AUS,2026-06-19,Q8,Q8_4plus_cards,0.4,0.45,1,-3.06,0,1,C/D
+USA-AUS,2026-06-19,Q9,Q9_Balogun_SOT,0.73,0.65,0,-8.39,0,1,C/D
+BRA-HAI,2026-06-20,Q1,Q1_BRA_more_fouls,0.25,0.35,0,8.56,1,1,A/E
+BRA-HAI,2026-06-20,Q2,Q2_HAI_2plus_offsides,0.1,0.4,1,-42.56,0,1,A/E
+BRA-HAI,2026-06-20,Q3,Q3_HAI_1plus_SOT_2H,0.58,0.54,1,7.4,1,1,A/E
+BRA-HAI,2026-06-20,Q4,Q4_HAI_2plus_SOT_2H,0.22,0.32,1,-12.03,0,1,A/E
+BRA-HAI,2026-06-20,Q5,Q5_HAI_more_cards,0.55,0.55,1,1.8,1,1,A/E
+BRA-HAI,2026-06-20,Q6,Q6_BRA_wins,0.88,0.86,1,1.9,1,1,A/E
+BRA-HAI,2026-06-20,Q7,Q7_BRA_score_2H,0.85,0.78,0,-10.2,0,1,A/E
+BRA-HAI,2026-06-20,Q8,Q8_HAI_3plus_corners,0.38,0.41,1,0.18,1,1,A/E
+BRA-HAI,2026-06-20,Q9,Q9_BRA_3plus_goals,0.64,0.59,1,6.36,1,1,A/E
+BRA-HAI,2026-06-20,Q10,Q10_Nazon_SOT,0.25,0.3,0,6.46,1,1,A/E
+GER-CIV,2026-06-20,Q1,Q1_CIV_more_fouls,0.56,0.57,1,1.51,1,1,A/E
+GER-CIV,2026-06-20,Q2,Q2_both_SOT_at_HT,0.65,0.65,1,2.63,1,1,A/E
+GER-CIV,2026-06-20,Q3,Q3_2H_more_goals_than_1H,0.46,0.52,1,-3.72,0,1,A/E
+GER-CIV,2026-06-20,Q4,Q4_GER_2plus_offsides,0.43,0.49,0,8.15,1,1,A/E
+GER-CIV,2026-06-20,Q5,Q5_CIV_more_SOT_than_GER_2H,0.22,0.27,0,4.88,1,1,A/E
+GER-CIV,2026-06-20,Q6,Q6_CIV_2plus_offsides,0.18,0.44,0,18.7,1,1,A/E
+GER-CIV,2026-06-20,Q7,Q7_CIV_more_cards_than_GER,0.53,0.54,0,2.65,1,1,A/E
+GER-CIV,2026-06-20,Q8,Q8_GER_wins,0.66,0.69,1,0.07,1,1,A/E
+GER-CIV,2026-06-20,Q9,Q9_4plus_total_cards,0.4,0.46,0,7.5,1,1,A/E
+GER-CIV,2026-06-20,Q10,Q10_GER_score_2H,0.7,0.69,1,1.78,1,1,A/E
+NED-SWE,2026-06-20,Q1,Q1_NED_2plus_offsides,0.43,0.52,1,-6.73,0,1,A/E
+NED-SWE,2026-06-20,Q2,Q2_both_SOT_in_2H,0.79,0.73,1,5.05,1,1,A/E
+NED-SWE,2026-06-20,Q3,Q3_BTTS_and_OU2_5,0.47,0.47,1,2.55,1,1,A/E
+NED-SWE,2026-06-20,Q4,Q4_NED_more_2H_goals,0.47,0.49,1,-0.16,0,1,A/E
+NED-SWE,2026-06-20,Q5,Q5_SWE_more_cards,0.42,0.47,1,-3.64,0,1,A/E
+NED-SWE,2026-06-20,Q6,Q6_Gyokeres_SOT_2H,0.32,0.5,0,18.04,1,1,A/E
+NED-SWE,2026-06-20,Q7,Q7_NED_wins,0.56,0.59,1,-0.2,0,1,A/E
+NED-SWE,2026-06-20,Q8,Q8_HT_tied,0.38,0.43,0,5.57,1,1,A/E
+NED-SWE,2026-06-20,Q9,Q9_8plus_total_SOT,0.63,0.58,1,6.6,1,1,A/E
+NED-SWE,2026-06-20,Q10,Q10_Gakpo_SOT,0.64,0.61,1,4.96,1,1,A/E
+TUR-PAR,2026-06-20,Q1,Paraguay more cards,0.5,0.52,1,-0.21,0,1,C/D
+TUR-PAR,2026-06-20,Q2,Turkey 2+ offsides,0.32,0.51,1,-20.26,0,1,C/D
+TUR-PAR,2026-06-20,Q3,Turkey more 2H corners,0.57,0.57,1,1.35,1,1,C/D
+TUR-PAR,2026-06-20,Q4,Paraguay more fouls,0.52,0.58,1,-3.69,0,1,C/D
+TUR-PAR,2026-06-20,Q5,Turkey more 2H SOT,0.62,0.59,1,4.42,1,1,C/D
+TUR-PAR,2026-06-20,Q6,Penalty or red card,0.4,0.39,1,3.15,1,1,C/D
+TUR-PAR,2026-06-20,Q7,Turkey wins,0.48,0.54,0,8.0,1,1,C/D
+TUR-PAR,2026-06-20,Q8,2 or fewer total goals,0.54,0.5,1,5.35,1,1,C/D
+TUR-PAR,2026-06-20,Q9,Kökçü SOT,0.4,0.41,0,3.87,1,1,C/D
+TUR-PAR,2026-06-20,Q10,Enciso SOT,0.47,0.48,0,3.37,1,1,C/D
+BEL-IRN,2026-06-21,Q1,Q1_Iran_more_fouls,0.45,0.58,1,-10.51,0,1,A/E
+BEL-IRN,2026-06-21,Q2,Q2_2plus_cards_2H,0.44,0.56,0,14.44,1,1,A/E
+BEL-IRN,2026-06-21,Q3,Q3_BTTS_3plus_goals,0.37,0.38,0,2.9,1,1,A/E
+BEL-IRN,2026-06-21,Q4,Q4_Belgium_more_2H_SOT,0.72,0.66,1,5.6,1,1,A/E
+BEL-IRN,2026-06-21,Q5,Q5_4plus_2H_total_SOT,0.61,0.63,1,0.65,1,1,A/E
+BEL-IRN,2026-06-21,Q6,Q6_Belgium_wins,0.7,0.69,0,-0.25,0,1,A/E
+BEL-IRN,2026-06-21,Q7,Q7_Belgium_HT_winning,0.52,0.5,0,0.32,1,1,A/E
+BEL-IRN,2026-06-21,Q8,Q8_Tielemans_1plus_SOT,0.38,0.43,1,-3.33,0,1,A/E
+BEL-IRN,2026-06-21,Q9,Q9_Taremi_goal_or_assist,0.27,0.31,0,4.14,1,1,A/E
+BEL-IRN,2026-06-21,Q10,Q10_9plus_corners,0.58,0.52,0,-4.32,0,1,A/E
+ECU-CUR,2026-06-21,Q1,Q1_both_SOT_at_HT,0.56,0.56,0,2.88,1,1,A/E
+ECU-CUR,2026-06-21,Q2,Q2_ECU_more_fouls,0.28,0.44,0,14.27,1,1,A/E
+ECU-CUR,2026-06-21,Q3,Q3_2H_more_goals_than_1H,0.46,0.5,0,6.24,1,1,A/E
+ECU-CUR,2026-06-21,Q4,Q4_ECU_first_AND_CUR_2H_goal,0.17,0.27,0,7.63,1,1,A/E
+ECU-CUR,2026-06-21,Q5,Q5_penalty_or_red_card,0.44,0.39,0,-2.34,0,1,A/E
+ECU-CUR,2026-06-21,Q7,Q7_ECU_wins,0.87,0.8,0,-9.29,0,1,A/E
+ECU-CUR,2026-06-21,Q8,Q8_3plus_goals,0.61,0.57,0,-2.47,0,1,A/E
+ECU-CUR,2026-06-21,Q9,Q9_ECU_5plus_corners,0.76,0.63,1,11.1,1,1,A/E
+ECU-CUR,2026-06-21,Q10,Q10_Bacuna_SOT,0.38,0.35,1,7.83,1,1,A/E
+ESP-KSA,2026-06-21,Q1,Q1_KSA_2plus_offsides,0.33,0.42,1,-7.12,0,1,A/E
+ESP-KSA,2026-06-21,Q2,Q2_ESP_more_corners_2H,0.88,0.75,1,7.16,1,1,A/E
+ESP-KSA,2026-06-21,Q3,Q3_ESP_more_SOT_2H,0.89,0.77,1,6.37,1,1,A/E
+ESP-KSA,2026-06-21,Q4,Q4_penalty_or_red_card,0.37,0.38,0,3.36,1,1,A/E
+ESP-KSA,2026-06-21,Q5,Q5_ESP_2plus_offsides,0.5,0.54,1,-0.51,0,1,A/E
+ESP-KSA,2026-06-21,Q6,Q6_BTTS_and_3plus_goals,0.33,0.33,0,2.53,1,1,A/E
+ESP-KSA,2026-06-21,Q7,Q7_Spain_wins,0.91,0.85,1,3.17,1,1,A/E
+ESP-KSA,2026-06-21,Q8,Q8_KSA_scores_2H,0.24,0.28,0,4.05,1,1,A/E
+ESP-KSA,2026-06-21,Q9,Q9_8plus_total_SOT,0.84,0.65,1,12.9,1,1,A/E
+ESP-KSA,2026-06-21,Q10,Q10_AlDawsari_goal,0.07,0.18,0,5.47,1,1,A/E
+JPN-TUN,2026-06-21,Q1,Q1_JPN_more_fouls_than_TUN,0.25,0.39,1,-17.65,0,1,A/E
+JPN-TUN,2026-06-21,Q2,Q2_TUN_more_SOT_than_JPN_in_2H,0.25,0.28,0,3.9,1,1,A/E
+JPN-TUN,2026-06-21,Q3,Q3_JPN_2plus_offsides,0.45,0.47,0,4.7,1,1,A/E
+JPN-TUN,2026-06-21,Q4,Q4_penalty_or_red_card,0.36,0.37,0,2.44,1,1,A/E
+JPN-TUN,2026-06-21,Q5,Q5_Tunisia_wins,0.12,0.17,0,3.23,1,1,A/E
+JPN-TUN,2026-06-21,Q6,Q6_2_or_fewer_total_goals,0.54,0.5,0,-1.86,0,1,A/E
+JPN-TUN,2026-06-21,Q7,Q7_5plus_corners_in_2H,0.63,0.51,1,12.09,1,1,A/E
+JPN-TUN,2026-06-21,Q8,Q8_Japan_scores_in_2H,0.65,0.64,1,1.98,1,1,A/E
+JPN-TUN,2026-06-21,Q9,Q9_Skhiri_SOT,0.18,0.29,0,8.5,1,1,A/E
+NZL-EGY,2026-06-22,Q1,Will New Zealand commit more fouls than Egypt?,0.33,0.51,1,-18.43,0,1,G
+NZL-EGY,2026-06-22,Q2,"In the second half, will New Zealand have more shots on target than Egypt?",0.22,0.33,0,8.47,1,1,G
+NZL-EGY,2026-06-22,Q3,Will the second half have more goals than the first half?,0.42,0.49,1,-6.16,0,1,G
+NZL-EGY,2026-06-22,Q4,Will Egypt finish with more corner kicks than New Zealand?,0.42,0.62,0,22.85,1,1,G
+NZL-EGY,2026-06-22,Q5,Will New Zealand win the match?,0.15,0.23,0,5.45,1,1,G
+NZL-EGY,2026-06-22,Q6,Will the match have 2 or fewer total goals?,0.54,0.52,0,-0.45,0,1,G
+NZL-EGY,2026-06-22,Q7,Will there be 4 or more total cards shown?,0.3,0.43,0,11.91,1,1,G
+NZL-EGY,2026-06-22,Q8,Will Ben Waine have at least 1 shot on target?,0.48,0.32,0,-9.15,0,1,G
+NZL-EGY,2026-06-22,Q9,Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?,0.52,0.28,1,32.04,1,1,G
+NZL-EGY,2026-06-22,Q10,Will Egypt be caught offside 2 or more times?,0.5,0.49,0,0.0,0,1,G

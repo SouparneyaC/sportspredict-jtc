@@ -1,0 +1,76 @@
+{
+  "full_time_result": {
+    "market_id": "119430136",
+    "contracts": {
+      "Saudi Arabia": {"id": "336004106", "bid": 1064, "offer": 1087, "mid_pct": 10.755},
+      "Draw": {"id": "336004108", "bid": 2128, "offer": 2174, "mid_pct": 21.51},
+      "Uruguay": {"id": "336004107", "bid": 6757, "offer": 6803, "mid_pct": 67.80}
+    },
+    "sum_pct": 100.065,
+    "vig_normalized": {"Saudi Arabia": 0.1075, "Draw": 0.2149, "Uruguay": 0.6776}
+  },
+  "penalty_to_be_awarded": {
+    "market_id": "119430161",
+    "contracts": {
+      "Yes": {"id": "336004216", "bid": 2000, "offer": 3125, "mid_pct": 25.625},
+      "No": {"id": "336004217", "bid": 6897, "offer": 7812, "mid_pct": 73.545}
+    },
+    "sum_pct": 99.17,
+    "vig_normalized": {"Yes": 0.2584, "No": 0.7416}
+  },
+  "saudi_arabia_ou_1.5_cards": {
+    "market_id": "119430341",
+    "contracts": {
+      "Under 1.5": {"id": "336004647", "bid": 2857, "offer": 3817, "mid_pct": 33.37},
+      "Over 1.5": {"id": "336004648", "bid": 6173, "offer": 7143, "mid_pct": 66.58}
+    },
+    "sum_pct": 99.95,
+    "implied_poisson_lambda_cards": 2.30
+  },
+  "uruguay_ou_1.5_cards": {
+    "market_id": "119430342",
+    "contracts": {
+      "Under 1.5": {"id": "336004649", "bid": 4348, "offer": 5076, "mid_pct": 47.12},
+      "Over 1.5": {"id": "336004650", "bid": 4902, "offer": 6211, "mid_pct": 55.565}
+    },
+    "sum_pct": 102.685,
+    "vig_normalized_over1.5": 0.5411,
+    "implied_poisson_lambda_cards": 1.81
+  },
+  "second_half_saudi_arabia_ou_0.5_goals": {
+    "market_id": "119430191",
+    "contracts": {
+      "Under 0.5": {"id": "336004306", "bid": 6993, "offer": 7519, "mid_pct": 70.56},
+      "Over 0.5": {"id": "336004307", "bid": 2500, "offer": 3030, "mid_pct": 27.65}
+    },
+    "sum_pct": 98.21,
+    "vig_normalized_over0.5": 0.2815,
+    "implied_2h_goal_lambda": 0.331
+  },
+  "second_half_uruguay_ou_0.5_goals": {
+    "market_id": "119430201",
+    "contracts": {
+      "Under 0.5": {"id": "336004326", "bid": 3279, "offer": 3731, "mid_pct": 35.05},
+      "Over 0.5": {"id": "336004327", "bid": 6250, "offer": 6757, "mid_pct": 64.035}
+    },
+    "sum_pct": 99.085,
+    "vig_normalized_over0.5": 0.6463,
+    "implied_2h_goal_lambda": 1.039
+  },
+  "salem_al_dawsar_score_or_assist": {
+    "market_id": "144809871",
+    "contract": {"id": "404287122", "name": "Salem Al-Dawsar", "bid": null, "offer": 2128, "note": "offer-only, illiquid, x0.945 = 0.2010"},
+    "adjusted_estimate": 0.2010
+  },
+  "darwin_nunez_anytime_goalscorer": {
+    "market_id": "119430435",
+    "contract": {"id": "374860894", "name": "Darwin Nunez", "bid": 3788, "offer": 3846, "mid_pct": 38.17},
+    "liquid": true,
+    "estimate": 0.3817
+  },
+  "espn_pickcenter_context": {
+    "source": "espn fifa.world summary event=760429",
+    "moneyline": {"Uruguay": -225, "Saudi Arabia": 700, "Draw": 340},
+    "spread": "Uruguay -1.5"
+  }
+}

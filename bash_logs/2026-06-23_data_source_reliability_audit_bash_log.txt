@@ -1,0 +1,89 @@
+DATA SOURCE RELIABILITY AUDIT — BASH LOG
+Date: 2026-06-23
+Session: Post-match analysis synthesis
+Purpose: User requested full audit of data sources that have been reliable/profitable vs sources that have caused losses. "Etch this in memory."
+
+=== FILES READ ===
+
+1. ML_EXPERIMENTS_NOTEBOOK.md (1374 lines)
+   - Read in 5 chunks (lines 1-120, 120-240, 240-440, 440-640, 640-840, 840-1040, 1040-1240, 1240-1374)
+   - Extracted: full match history from KOR-CZE (first match, 2026-06-11) through POR-UZB (2026-06-23)
+
+2. /memory/project_sportspredict_edge_analysis.md
+   - Read full file
+   - Extracted: running totals, per-match RBP breakdown, all named rules and their discovery context
+
+3. data/external_markets/ directory listing
+   - 60 files: 26 match JSON files + smarkets quotes files + raw data files
+   - Matches covered: KOR-CZE through POR-UZB (chronological)
+
+=== ANALYSIS PERFORMED ===
+
+Synthesized every data source mentioned across all match analyses:
+- Read all match sections for data source citations
+- Extracted RBP evidence for each source (wins and losses)
+- Categorized into Tier 1 (profitable), Tier 2 (use with adjustment), Tier 3 (unreliable/avoid)
+
+=== KEY FINDINGS ===
+
+TIER 1 — RELIABLE AND PROFITABLE:
+1. GD1 individual behavioral data (ESPN/Opta/FotMob) — highest single source in portfolio
+   Wins: NOR-SEN Q1 +22.07, JOR-ALG Q10 +13.11, POR-UZB Q9 +10.61, NOR-SEN Q4 +8.46, USA-AUS Q2 +20.74, GER-CIV +18.70
+   Fails (wrong application): ARG-AUT Q9 -31.86, JOR-ALG Q1 -23.23, POR-UZB Q1 -26.35, BRA-HAI Q2 -42.56
+   Rule: FLOOR_0.25 on all count-stat questions; must check match-script before applying
+
+2. Main sportsbook consensus (FanDuel + DraftKings + Betfair + bet365)
+   Wins: POR-UZB Q7 +5.49, POR-UZB Q6 +5.72, France win confirmed, CAN-QAT total +62.72
+   Key signal: Player ABSENCE from main books = probability <35%
+   Critical failure lesson: POR-UZB Q10 -11.03 from ignoring Ramos absence
+
+3. FootyMetrics referee career stats (YC/game, pens/game)
+   Works: Elfath 0.27 pens/game → NOR-SEN Q3 +2.91; Fischer 3.35 YC/game → FRA-IRQ Q3 confirmed; Pinheiro HIGH CARD → SUI-BIH +6.52
+   Rule: Apply 30-40% blowout discount when RULE7 fires
+
+4. Club-level SOT/90 from top 5 European leagues
+   Works: Al-Taamari 0.76 SOT/90 at Rennes → JOR-ALG Q10 +13.11; Mahrez 0.41 at Al-Ahli → JOR-ALG Q6 +3.59
+   Rule: Saudi/MLS = 60% weight vs top 5
+
+5. WC-specific career record (FIFA) vs overall career caps
+   Works: Mané 0.25 WC goals/game (vs career 0.43/cap) → NOR-SEN Q10 +5.63
+
+6. Polymarket >$1M traded
+   Works: NOR-SEN $3.6M at NOR 43% → calibration validated (Norway won)
+
+TIER 2 — USE WITH ADJUSTMENTS:
+7. Footystats 10-match foul averages — magnitude only, not direction (RULE_FOULS)
+8. Market O/U and BTTS lines — total goals reliable; 2H-specific needs adjustment
+9. Football Whispers / Covers trends — 15-20% directional weight only
+10. Own Poisson/logit model — Elo gap >350: weight market 90%, model 10%
+
+TIER 3 — AVOID:
+11. Niche aggregator scorer odds when absent from main books (MAIN_BOOK_ABSENCE rule)
+12. GD1 data for count-stat estimates below 0.25 (FLOOR_0.25 rule)
+13. Raw foul averages without match-script prediction (RULE_FOULS)
+14. Personal conviction overrides (RULE6 — BRA-MAR Q8 -51.97 worst ever)
+15. Cross-team GD1 extrapolations (ARG-AUT -42.24, QAT-SUI Q1 -42.51)
+
+=== FILES WRITTEN ===
+
+1. /memory/feedback_data_source_reliability.md — NEW memory file with full ranked audit
+2. /memory/MEMORY.md — Added pointer to new memory file
+3. ML_EXPERIMENTS_NOTEBOOK.md — Appended full "Data Source Reliability Audit" section
+4. THIS FILE: bash_logs/2026-06-23_data_source_reliability_audit_bash_log.txt
+
+=== MASTER HIERARCHY (for quick reference) ===
+
+When sources conflict:
+1. GD1 individual behavioral data (same context + FLOOR_0.25)
+2. Main sportsbook consensus (3+ books agreeing); player absence = <35%
+3. FootyMetrics referee career stats (blowout discount when RULE7)
+4. Club-level SOT/90 (top 5 league)
+5. WC-specific career record (FIFA)
+6. Polymarket >$1M traded
+7. GD1 team stats (scenario-weighted)
+8. Footystats foul averages (AFTER predicting defending team)
+9. Football Whispers / trend sites (15-20% max)
+10. Expert previews (sanity check only)
+NEVER: niche aggregator odds when main books absent; GD1 data below 0.25; raw foul averages without match-script; personal conviction overrides; cross-team extrapolations
+
+=== END LOG ===

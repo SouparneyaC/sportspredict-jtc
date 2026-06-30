@@ -1,0 +1,438 @@
+================================================================================
+BASH SESSION LOG
+Date: 2026-06-27
+Working directory: /Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/
+Session purpose: API exploration + build planning for automated dashboard
+================================================================================
+
+--------------------------------------------------------------------------------
+CMD 1 — List bot/data directory contents
+--------------------------------------------------------------------------------
+INPUT:
+  ls "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/data/"
+
+OUTPUT:
+  endpoint_discovery.jsonl
+  external
+  markets_raw.jsonl
+  matches.json
+  predictions_review.csv
+
+--------------------------------------------------------------------------------
+CMD 2 — Check Python dependencies (playwright, requests)
+--------------------------------------------------------------------------------
+INPUT:
+  ls "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/" && \
+  python3 -c "import playwright; print('playwright ok')" 2>&1 && \
+  python3 -c "import requests; print('requests ok')" 2>&1
+
+OUTPUT:
+  __pycache__
+  API_EXPLORATION_2026-06-27.md
+  classify_markets.py
+  data
+  discover_endpoints.py
+  fetch_markets.py
+  fetch_smarkets_mapping.py
+  markets_sample.json
+  matches_raw.json
+  predict_markets.py
+  secrets.json
+  team_code_map.py
+
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+      import playwright; print('playwright ok')
+  ModuleNotFoundError: No module named 'playwright'
+
+  (requests not tested due to earlier error — tested separately below)
+
+--------------------------------------------------------------------------------
+CMD 3 — Check secrets.json keys (without printing values)
+--------------------------------------------------------------------------------
+INPUT:
+  cat "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/secrets.json" | \
+  python3 -c "import json,sys; d=json.load(sys.stdin); print(list(d.keys()))"
+
+OUTPUT:
+  ['sportspredict_api_key', 'bot_name']
+
+--------------------------------------------------------------------------------
+CMD 4 — Confirm requests is available + Python version
+--------------------------------------------------------------------------------
+INPUT:
+  python3 -c "import requests; print('requests ok')" && python3 --version
+
+OUTPUT:
+  requests ok
+  Python 3.13.5
+
+--------------------------------------------------------------------------------
+CMD 5 — Find Chrome user data directory path for Playwright
+--------------------------------------------------------------------------------
+INPUT:
+  ls ~/Library/Application\ Support/Google/Chrome/ 2>/dev/null | head -5
+
+OUTPUT:
+  ActorSafetyLists
+  Address Validation Rules
+  AmountExtractionHeuristicRegexes
+  BrowserMetrics
+  BrowserMetrics-spare.pma
+
+--------------------------------------------------------------------------------
+CMD 6 — Run test_web_api.py (test if existing API key works on web endpoints)
+--------------------------------------------------------------------------------
+INPUT:
+  cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot" && \
+  python3 test_web_api.py
+
+OUTPUT (exit code 1 — partial success):
+  ============================================================
+  SportsPredict Web API Key Compatibility Test
+  ============================================================
+    [✅ OK ] v1/matches [known working]
+             → 15 items
+    [✅ OK ] web/matches [same endpoint?]
+             → 4314 items
+    [✅ OK ] web/trades
+             → 73 items
+    [❌ 401] web/events/user-events/summary
+    [❌ 401] web/lobbies/lobby-stats/me
+    [❌ 400] web/lobbies/leaderboard
+
+  ============================================================
+  ⚠️  RESULT: API key works on 2/5 web endpoints.
+     → Partial access. Check which endpoints work above.
+     → May still need setup_session.py for the 401 ones.
+
+  KEY FINDINGS:
+  - /api/matches returns 4314 items (all events, not just JTC)
+  - /api/trades returns 73 items (public lobby trades)
+  - /api/v1/matches returns 15 items (JTC matches only — scoped by API key)
+
+--------------------------------------------------------------------------------
+CMD 7 — Inspect trades response structure (first + last trade, all keys)
+--------------------------------------------------------------------------------
+INPUT:
+  cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot" && python3 -c "
+  import json, requests
+  from pathlib import Path
+  SECRETS = json.load(open('secrets.json'))
+  API_KEY = SECRETS['sportspredict_api_key']
+  HEADERS = {'Authorization': f'Bearer {API_KEY}'}
+  EVENT_ID = 'aa5572ec-5930-4d99-b06b-f8966333d172'
+  q = json.dumps({'event_id': EVENT_ID})
+  r = requests.get('https://api.sportspredict.com/api/trades', headers=HEADERS, params={'q': q}, timeout=20)
+  trades = r.json()
+  print(f'Total trades: {len(trades)}')
+  print(f'First trade keys: {list(trades[0].keys())}')
+  print('First trade (full):')
+  print(json.dumps(trades[0], indent=2))
+  print('Last trade (full):')
+  print(json.dumps(trades[-1], indent=2))
+  "
+
+OUTPUT:
+  Total trades: 73
+  First trade keys: ['id', 'position', 'status', 'isAutoTrade', 'entry_price',
+    'market_id', 'lobby_id', 'created_date', 'user_id', 'user_role',
+    'user_email', 'user_name', 'user_img_variants', 'user_full_name']
+
+  First trade (full):
+  {
+    "id": "7958a5cf-9a9e-4e0f-9d9c-74c57ec15b1e",
+    "position": "long",
+    "status": "pending",
+    "isAutoTrade": false,
+    "entry_price": "50",
+    "market_id": "48443cca-6f5a-4d48-9859-16beedd7a369",
+    "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05",
+    "created_date": "2026-06-23T17:11:32.544Z",
+    "user_id": "00ce36ec-d448-4ac8-9f1f-7660fae51128",
+    "user_role": "user",
+    "user_email": "[REDACTED]",
+    "user_name": "bulawa",
+    "user_img_variants": {"s": "...", "xs": "..."},
+    "user_full_name": "[REDACTED]"
+  }
+
+  Last trade (full):
+  {
+    "id": "f41e5984-edfa-4ffc-93d7-e7a07577085b",
+    "position": "short",
+    "status": "pending",
+    "isAutoTrade": false,
+    "entry_price": "50",
+    "market_id": "8dc8be15-9b46-4fa0-ac71-44118b843c54",
+    "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05",
+    "created_date": "2026-06-12T04:56:56.284Z",
+    "user_id": "d990bf88-b48f-4cd2-b1ac-a2276814e49b",
+    "user_role": "user",
+    "user_email": "[REDACTED]",
+    "user_name": "aderosiere",
+    "user_img_variants": null,
+    "user_full_name": "[REDACTED]"
+  }
+
+--------------------------------------------------------------------------------
+CMD 8 — Fix leaderboard request body + identify bot_name
+--------------------------------------------------------------------------------
+INPUT:
+  cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot" && python3 -c "
+  import json, requests
+  ...
+  BOT_NAME = SECRETS.get('bot_name', '')
+  print(f'Bot name in secrets.json: {BOT_NAME}')
+  # Try various leaderboard body formats
+  bodies = [
+    {'event_id': EVENT_ID, 'lobby_id': LOBBY_ID, 'page': 1},
+    {'eventId': EVENT_ID, 'lobbyId': LOBBY_ID, 'page': 1},
+    ...
+  ]
+  "
+
+OUTPUT:
+  Bot name in secrets.json: Abir's Bot
+
+  Body ['event_id', 'lobby_id', 'page'] → 400
+    Error: {"statusCode":400,...,"message":["eventId should not be empty",
+            "eventId must be a string","lobbyId should not be empty","lobbyId must be a string"]}
+  Body ['eventId', 'lobbyId', 'page'] → 201
+  []
+
+  KEY FINDINGS:
+  - Correct POST body uses camelCase: {eventId, lobbyId, page}
+  - Returned empty array [] — still needs session auth for real data
+  - bot_name in secrets.json: "Abir's Bot" (likely Souparneya's nickname "Abir")
+
+--------------------------------------------------------------------------------
+CMD 9 — Filter trades by AbirC user ID to confirm identity
+--------------------------------------------------------------------------------
+INPUT:
+  cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot" && python3 -c "
+  ...
+  ABIRC_ID = '00472f52-309d-459d-bb13-97d474e958f0'
+  q = json.dumps({'user_id': ABIRC_ID, 'event_id': EVENT_ID})
+  r = requests.get('.../api/trades', headers=HEADERS, params={'q': q}, timeout=20)
+  trades = r.json()
+  print(f'Trades for user 00472f52 (AbirC): {len(trades)}')
+  # All unique users in the 73 trades
+  ..."
+
+OUTPUT:
+  Trades for user 00472f52 (AbirC): 0
+
+  All unique users in trades (16):
+    Aidan Meagher              2b8c275e-84de-40c5-9962-3459837f9557
+    Alexandre Corchia          70259c4b-a6e0-4157-88c6-42cd60af9b18
+    Cmrick                     7b98ffde-053f-419d-ae2e-d948f09f84cd
+    Igotlikehellamoney         356db57a-8938-4f5d-a113-497aa54e3d3d
+    Kash                       eff4f4f7-ba13-46fb-96c5-b69e8cda9ad5
+    Leciamarko                 10702399-c853-4d2b-b951-85436ce12790
+    PlanC                      5d0cf546-81da-435e-99ce-27253e752cf7
+    Saujas                     f2bd16ec-a12a-4192-ac54-d3946cd7f4b0
+    abhiveerk                  4f5b4f8d-e7fa-4510-830b-cd63ba98bbaa
+    aderosiere                 d990bf88-b48f-4cd2-b1ac-a2276814e49b
+    bulawa                     00ce36ec-d448-4ac8-9f1f-7660fae51128
+    chiccytendies              5f38cb20-811b-4677-9d80-adcd45a9806f
+    mani                       a2eecb6c-fecb-4303-abc1-aa10fec32402
+    pokerbot                   c1c6ae82-6c8c-429e-9a16-3889710389a7
+    saksham26                  cf1c33bd-5be9-4853-9092-93efd0a89326
+    sarangobongo               ba9fdfcc-32d6-4a6c-95a5-88d4e8168038
+
+  KEY FINDING: AbirC (00472f52) has 0 trades in the Group Stage lobby.
+  Souparneya's actual account trades are not in this lobby's public feed.
+
+--------------------------------------------------------------------------------
+CMD 10 — Find all lobbies for the JTC event
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  # GET /api/lobbies with event_id filter
+  r = requests.get('.../api/lobbies', headers=HEADERS, params={'event_id': EVENT_ID}, timeout=10)
+  all_lobbies = r.json()
+  jtc_lobbies = [l for l in all_lobbies if l.get('event_id') == EVENT_ID]
+  for l in jtc_lobbies: print(l['name'], l['id'], l['type'], l['status'])
+  "
+
+OUTPUT:
+  Total lobbies: 285
+  JTC lobbies: 1
+
+    Name: SportsPredict
+    ID:   8df8038c-fd2c-4a5f-be4e-0e11d5966c05
+    Type: classic
+    Private: False
+    Default: False
+    Status: upcoming
+
+  KEY FINDING: Only 1 public lobby for JTC. Status "upcoming" despite event being live.
+  Souparneya participates via the main event (not this lobby) or a different mechanism.
+
+--------------------------------------------------------------------------------
+CMD 11 — Search for user-identity endpoint + alternate submission endpoints
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  # Test /api/users/me, /api/auth/me, /api/me, /api/users/profile, /api/profile
+  # Test /api/trades with empty q filter (timed out)
+  # Test /api/picks, /api/predictions, /api/submissions, /api/responses
+  "
+
+OUTPUT:
+  /api/users/me → 401          (route exists, needs session auth)
+  /api/auth/me → 500           (route doesn't exist)
+  /api/me → 500                (route doesn't exist)
+  /api/users/profile → 401     (route exists, needs session auth)
+  /api/profile → 500           (route doesn't exist)
+  /api/trades (no filter) → ReadTimeoutError (too many records)
+  /api/picks → 500
+  /api/predictions → 500
+  /api/submissions → 500
+  /api/responses → 500
+
+  KEY FINDING: /api/users/me and /api/users/profile exist (401 not 500)
+  but require session auth. All submission-variant endpoints don't exist.
+
+--------------------------------------------------------------------------------
+CMD 12 — Full field analysis of 73 trades + entry_price/status/position stats
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  all_keys = set()
+  for t in trades: all_keys.update(t.keys())
+  prices = set(t['entry_price'] for t in trades)
+  statuses = set(t['status'] for t in trades)
+  positions = set(t['position'] for t in trades)
+  "
+
+OUTPUT:
+  ALL FIELDS: ['created_date', 'entry_price', 'id', 'isAutoTrade', 'lobby_id',
+    'market_id', 'position', 'status', 'user_email', 'user_full_name',
+    'user_id', 'user_img_variants', 'user_name', 'user_role']
+
+  Unique entry_price values: {'48', '52', '50', '49', '51'}
+  Unique status values: {'pending'}
+  Unique position values: {'long', 'short'}
+
+  KEY FINDING: All 73 trades have entry_price between 48-52%.
+  These are default-price (50%) Yes/No clicks, not calibrated probability estimates.
+
+--------------------------------------------------------------------------------
+CMD 13 — Cross-reference trades with market questions + get market structure
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  # GET /api/markets?q={lobby_id, event_id}
+  r = requests.get('.../api/markets', headers=HEADERS,
+      params={'q': json.dumps({'lobby_id': LOBBY_ID, 'event_id': EVENT_ID})}, timeout=20)
+  markets = r.json()
+  print(f'Total markets: {len(markets)}')
+  print('First market keys:', list(markets[0].keys()))
+  print(json.dumps(markets[0], indent=2))
+  "
+
+OUTPUT:
+  Markets by lobby+event → 200
+  Total markets: 844
+  First market keys: ['id', 'created_date', 'updated_date', 'event_id', 'market_id',
+    'question', 'initial_value', 'current_value', 'priority', 'second_chance_priority',
+    'h2h_priority', 'status', 'start_date', 'opening_time', 'closing_date',
+    'settled_date', 'trade_start_at', 'match_id', 'category_id', 'context',
+    'ext_api_market_id', 'ext_api_market', 'ext_api_name', 'is_settle_at_end',
+    'is_second_chance', 'updated_odds_date', 'stat_threshold', 'stat_current',
+    'deleted_date', 'lobby_ids']
+
+  First market example:
+  {
+    "question": "Will South Africa commit more fouls than Mexico?",
+    "initial_value": 50,
+    "current_value": 0,
+    "status": "settled",
+    "match_id": "cb422ad6-...",
+    "settled_date": "2026-06-11T21:06:48.987Z",
+    "lobby_ids": ["8df8038c-...", "15b0ae03-...", "2c02b492-...", "940373ab-..."]
+  }
+
+  KEY FINDINGS:
+  - 844 total markets in this lobby (open + settled)
+  - current_value = 0 on settled = resolved NO; 100 = resolved YES
+  - lobby_ids shows multiple lobbies share the same market questions
+  - match_id links each question back to a specific match
+
+--------------------------------------------------------------------------------
+CMD 14 — Analyze competitor predictions + settled outcomes per player
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  # Join trades to market data, group by user, show question/direction/outcome
+  # Show entry_price distribution, settled market count
+  "
+
+OUTPUT:
+  === WHAT WE CAN SEE PER COMPETITOR ===
+  [16 users shown — bulawa 14 picks, saksham26 7, PlanC 10, Igotlikehellamoney 10, ...]
+
+  Entry price range: 48-52%
+  (All near 50 = these players click Yes/No at default odds)
+
+  === SETTLED MARKETS VISIBLE: 649 / 844 total ===
+  [Sample settled questions with YES/NO outcomes shown]
+
+  KEY FINDINGS:
+  - Can see: username, email, direction (YES/NO), entry_price, outcome (win/loss)
+  - entry_price field exposes exact probability submitted (but all 48-52% here)
+  - 649 settled question outcomes accessible with API key alone
+  - 16 competitors visible — all unsophisticated (default 50% pricers)
+
+--------------------------------------------------------------------------------
+CMD 15 — Check current_value distribution to confirm outcome encoding
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  settled = [m for m in markets if m['status'] == 'settled']
+  vals = Counter(m['current_value'] for m in settled)
+  for v, count in sorted(vals.items()): print(f'{v}: {count} markets')
+  ambiguous = [m for m in settled if m['current_value'] not in (0, 100)]
+  print(f'Markets settled with non-0/100 current_value: {len(ambiguous)}')
+  "
+
+OUTPUT:
+  current_value distribution on settled markets:
+    0: 367 markets
+    100: 282 markets
+
+  Markets settled with non-0/100 current_value: 0
+
+  CONFIRMED: current_value is ALWAYS 0 (NO) or 100 (YES) after settlement.
+  It does NOT encode crowd probability — only binary outcome.
+  Crowd's final probability estimate is not stored in this API field.
+
+================================================================================
+SESSION SUMMARY
+================================================================================
+
+Scripts created this session:
+  bot/test_web_api.py         — API key compatibility diagnostic
+  bot/setup_session.py        — Playwright session cookie extractor (one-time)
+  bot/fetch_dashboard.py      — Daily dashboard runner
+
+Key discoveries:
+  - API has two namespaces: /api/v1 (external, Bearer) and /api (web, session)
+  - Existing API key works on /api/trades and /api/matches (web namespace)
+  - /api/trades exposes 73 public lobby trades from 16 competitors
+  - /api/markets returns 844 markets: 649 settled (outcomes), 195 open
+  - current_value on settled markets = binary outcome (0=NO, 100=YES)
+  - Correct leaderboard POST body is camelCase: {eventId, lobbyId, page}
+  - AbirC (00472f52) = likely Souparneya; 0 trades in public lobby
+  - Playwright needed to access personal submissions + rank
+
+Next actions:
+  pip install playwright && python3 -m playwright install chromium
+  python3 setup_session.py --fresh
+  python3 fetch_dashboard.py
+
+================================================================================
+END OF SESSION LOG
+================================================================================

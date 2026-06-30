@@ -1,0 +1,168 @@
+{
+  "match": "Paraguay vs Australia",
+  "date": "2026-06-25",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"PAR_vs_USA_GD1": 760417, "TUR_vs_AUS_GD1": 760421, "TUR_vs_PAR_GD2": 760443, "USA_vs_AUS_GD2": 760442},
+  "smarkets_event_id": "45086952",
+  "group_context": {
+    "Paraguay": {"pts": 3, "record": "1-0-1 (L1-4 USA, W1-0 TUR)", "status": "Fighting AUS for 2nd place. USA already has 6pts (safe). Win = lock 2nd. Draw probably enough on GD too."},
+    "Australia": {"pts": 3, "record": "1-0-1 (W2-0 TUR, L0-2 USA)", "status": "Same as Paraguay — this is essentially a play-in for 2nd place qualification."}
+  },
+  "wc2026_espn_stats": {
+    "PAR": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760417, "opponent": "USA", "result": "L 1-4", "fouls": 17, "SOT": 1, "offsides": 1, "YC": 5, "RC": 0, "corners": 1},
+        {"event_id": 760443, "opponent": "Turkey", "result": "W 1-0", "fouls": 15, "SOT": 2, "offsides": 3, "YC": 1, "RC": 1, "corners": 0}
+      ],
+      "averages": {"fouls": 16.0, "SOT": 1.5, "offsides": 2.0, "cards": 3.5, "corners": 0.5},
+      "NOTE": "Very low-possession, low-volume team (21.5%, 34.7% possession) but efficient — won GD2 1-0 on just 2 SOT. High card count came in the blowout loss (5), low in the disciplined win (2)."
+    },
+    "AUS": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760421, "opponent": "Turkey", "result": "W 2-0", "fouls": 12, "SOT": 4, "offsides": 1, "YC": 0, "RC": 0, "corners": 5},
+        {"event_id": 760442, "opponent": "USA", "result": "L 0-2", "fouls": 16, "SOT": 2, "offsides": 0, "YC": 4, "RC": 0, "corners": 4}
+      ],
+      "averages": {"fouls": 14.0, "SOT": 3.0, "offsides": 0.5, "cards": 2.0, "corners": 4.5},
+      "NOTE": "Low-possession defensive-block team (28.4%, 38.1%) but direct/efficient on the counter — 0-1 offsides in both matches despite low possession. Classic 2+ offsides NO-family defensive underdog."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Paraguay": 0.3599, "Australia": 0.2327, "Draw": 0.4032, "liquid": true},
+    "Most_cards": {"Paraguay": 0.3646, "Australia": 0.3740, "Draw": 0.2650, "liquid": true},
+    "Cards_OU1_5": {"Over": 0.7604, "liquid": true},
+    "Cards_OU2_5": {"Over": 0.4943, "liquid": false},
+    "Cards_OU3_5": {"Over": 0.2578, "liquid": false},
+    "2H_OU1_5_goals": {"Over": 0.2750, "Under": 0.7300, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.2540, "Equal": 0.3949, "Second_Half": 0.3578, "liquid": true},
+    "Player_SOT_Enciso": {"offer_only": 0.625, "adjusted": 0.591}
+  },
+  "context_flags": [
+    "VIRTUAL_PLAYOFF: PAR and AUS both on 3pts — this match decides 2nd place in the group. Both teams fully motivated, NOT a dead rubber.",
+    "HIGH_DRAW_PROB: Draw market at 40.3% (RULE8 territory) — expect a tight, low-event match.",
+    "AUS_OFFSIDE_NO_FAMILY: AUS is the defensive underdog (23.3%), 0-1 offsides in both WC matches despite low possession. 2+ offsides NO-family applies cleanly here.",
+    "PAR_LOW_VOLUME: Paraguay generates very few SOT (1, 2) but wins on efficiency — do not over-credit attacking props for Paraguay players.",
+    "CARDS_MARKET_VS_HISTORY_GAP: ESPN combined card average (PAR 3.5 + AUS 2.0) suggests higher card count than market implies (Over3.5=0.26). Resolved by noting both teams' high-card games were their LOSSES (frustration cards), and this match is genuinely competitive/high-stakes rather than a blowout — shading toward the market's lower, more calibrated number."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Australia be caught offside 2 or more times?",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "AUS offsides: 1 (vs TUR), 0 (vs USA). λ=0.5 → Poisson P(≥2)=0.09. AUS is the defensive underdog again today (23.3%) — same 2+ offsides NO-family that has gone 10/10 across the tournament, including AUS's own GD2 match. Floor slightly above raw Poisson for tail risk.",
+      "final_estimate": 0.12,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will Australia commit more fouls than Paraguay?",
+      "pick_tier": "LOW CONFIDENCE",
+      "reasoning": "PAR fouls avg 16.0, AUS avg 14.0 — history favors PAR fouling more (i.e. AUS NO). But Most-cards market has AUS (37.4%) essentially level with PAR (36.5%), conflicting signal. Shrink toward 0.45.",
+      "final_estimate": 0.45,
+      "direction": "NO lean (weak)",
+      "confidence": "low"
+    },
+    {
+      "q": 3,
+      "text": "Will Paraguay be caught offside 2 or more times?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "PAR offsides: 1 (vs USA blowout loss), 3 (vs TUR disciplined win). λ=2.0 → Poisson P(≥2)=0.594. Paraguay is the favorite today (36%) and will press to win the group's 2nd-place play-in — not a defensive-underdog scenario, so the NO-family does not apply. Trust the raw rate.",
+      "final_estimate": 0.55,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will Australia have more shots on target than Paraguay in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Full-match SOT averages: AUS 3.0, PAR 1.5 — AUS generates 2x Paraguay's shot volume. Half-split Skellam (λ_AUS_2H=1.5, λ_PAR_2H=0.75) gives P(AUS>PAR)=0.55. Small sample (n=2 each) keeps confidence medium, not high.",
+      "final_estimate": 0.55,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will the second half have more total goals than the first half?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct market: Highest-scoring-half, Second_Half = 35.78%. Trust the liquid market.",
+      "final_estimate": 0.36,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Paraguay win the match?",
+      "pick_tier": "DIRECT MARKET",
+      "reasoning": "Smarkets FTR: Paraguay 35.99%. Direct tier-1 market, high draw probability (40.3%) reflects the genuinely competitive nature of this 2nd-place play-in. No reason to deviate.",
+      "final_estimate": 0.36,
+      "direction": "NO lean (more likely draw/AUS)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will the second half have 2 or more total goals?",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Direct market: 2H Over 1.5 goals = 27.5%. Consistent with the high draw probability and tight, low-event match expected.",
+      "final_estimate": 0.28,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will there be 4 or more total cards shown?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Market Over3.5 cards = 25.78% (internally consistent with Over1.5=76% and Over2.5=49% — clean decay curve implies mean ~2.7-3.0 cards). ESPN history average is higher but skewed by each team's blowout-loss games; this match is competitive, not a blowout, so shade toward the market.",
+      "final_estimate": 0.27,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Julio Enciso have at least 1 shot on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Smarkets offer-only (illiquid) full-match SOT≥1 = 0.625, adjusted ×0.945 = 0.591. But Paraguay's TEAM SOT output has been very low (1, 2 per match) — even as the primary attacker, Enciso getting 1 SOT from a team generating only ~1.5 total is not as likely as the illiquid market suggests. Shade down.",
+      "final_estimate": 0.45,
+      "direction": "NO lean (slight)",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_AUS_2plus_offsides": 0.12,
+    "Q2_AUS_more_fouls": 0.45,
+    "Q3_PAR_2plus_offsides": 0.55,
+    "Q4_AUS_more_2H_SOT": 0.55,
+    "Q5_2H_more_goals_than_1H": 0.36,
+    "Q6_PAR_wins": 0.36,
+    "Q7_2H_2plus_goals": 0.28,
+    "Q8_4plus_cards": 0.27,
+    "Q9_Enciso_SOT": 0.45
+  },
+  "strongest_picks": [
+    "Q1: AUS 2+ offsides = 0.12 (HIGHEST CONFIDENCE — 10/10 NO-family, AUS defensive underdog again)",
+    "Q7: 2H has 2+ goals = 0.28 (HIGHEST CONFIDENCE — direct market, high draw probability confirms tight/low-event match)",
+    "Q5: 2H more goals than 1H = 0.36 (HIGH CONFIDENCE — direct market)"
+  ],
+  "post_match_results": {
+    "final_score": "Paraguay 0-0 Australia",
+    "total_rbp": 49.57,
+    "beat_crowd_count": "7/9",
+    "results": {
+      "Q1_AUS_2plus_offsides": {"outcome": "NO", "our_est": 0.12, "crowd": 0.44, "rbp": 20.13, "beat_crowd": true, "note": "Biggest single win of the match. 2+ offsides NO-family for defensive underdogs now extends further — huge gap vs crowd (44%) who treated this like a coinflip."},
+      "Q2_AUS_more_fouls": {"outcome": "NO", "our_est": 0.45, "crowd": 0.46, "rbp": 2.62, "beat_crowd": true},
+      "Q3_PAR_2plus_offsides": {"outcome": "NO", "our_est": 0.55, "crowd": 0.47, "rbp": -6.47, "beat_crowd": false, "note": "We trusted Paraguay's raw offside rate (avg 2.0) believing they'd press for the 2nd-place spot, but the 0-0 result suggests both teams played a cagey, low-event, low-risk match rather than committed attacking football — the virtual-playoff stakes produced caution, not urgency."},
+      "Q4_AUS_more_2H_SOT": {"outcome": "NO", "our_est": 0.55, "crowd": 0.44, "rbp": -8.68, "beat_crowd": false, "note": "Same root cause as Q3 — 0-0 means a low-shot-volume, conservative match overall. Our Skellam model assumed normal attacking output; the actual game was unusually flat for both sides."},
+      "Q5_2H_more_goals_than_1H": {"outcome": "NO", "our_est": 0.36, "crowd": 0.45, "rbp": 9.40, "beat_crowd": true},
+      "Q6_PAR_wins": {"outcome": "NO", "our_est": 0.36, "crowd": 0.37, "rbp": 2.73, "beat_crowd": true},
+      "Q7_2H_2plus_goals": {"outcome": "NO", "our_est": 0.28, "crowd": 0.37, "rbp": 7.63, "beat_crowd": true},
+      "Q8_4plus_cards": {"outcome": "NO", "our_est": 0.27, "crowd": 0.47, "rbp": 16.91, "beat_crowd": true, "note": "Second-biggest win. Market-anchored read (illiquid Smarkets cards curve) beat the crowd's much higher 47% by a wide margin — a 0-0 cagey playoff match stayed disciplined, not chippy."},
+      "Q9_Enciso_SOT": {"outcome": "NO", "our_est": 0.45, "crowd": 0.48, "rbp": 5.29, "beat_crowd": true}
+    },
+    "key_confirmations": [
+      "Q1 AND Q8 both confirm: when we shade DOWN below an inflated crowd on a 'something happens' question and trust either the NO-offside family or a market-anchored low curve, we win big (combined +37.04 RBP from these two alone).",
+      "Q3 and Q4 (our two losses) share a root cause: we assumed a 'virtual playoff' would produce MORE attacking urgency. The actual match was a cagey 0-0 — high-stakes play-in matches between evenly-matched teams can suppress event volume rather than inflate it. Worth a new rule: HIGH_DRAW_PROB + similar-pts-teams => lean toward fewer events across ALL props, not just goals."
+    ]
+  },
+  "created": "2026-06-25"
+}

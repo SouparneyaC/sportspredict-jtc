@@ -1,0 +1,180 @@
+{
+  "match": "Japan vs Sweden",
+  "date": "2026-06-25",
+  "stage": "Group C Group Stage 3 (GD3)",
+  "espn_event_id": null,
+  "smarkets_event_id": "45087300",
+  "venue": "Neutral (USA WC2026)",
+  "group_context": {
+    "Japan": {"pts": 4, "record": "1-1-0 (W4-0 TUN, D2-2 NED)", "status": "DRAW IS ENOUGH — a draw today guarantees top-2 finish regardless of NED-TUN result"},
+    "Sweden": {"pts": 3, "record": "1-0-1 (W5-1 TUN, L1-5 NED)", "status": "MUST WIN to advance"}
+  },
+  "wc2026_espn_stats": {
+    "JPN": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": null, "opponent": "Netherlands", "result": "D 2-2", "fouls": 7, "SOT": 3, "offsides": 0, "YC": 0, "RC": 0},
+        {"event_id": 760449, "opponent": "Tunisia", "result": "W 4-0", "fouls": 15, "SOT": 5, "offsides": 1, "YC": 0, "RC": 0, "corners": 5}
+      ],
+      "averages": {"fouls": 11.0, "SOT": 4.0, "offsides": 0.5, "YC": 0.0, "corners_partial": 5.0}
+    },
+    "SWE": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760424, "opponent": "Tunisia", "result": "W 5-1", "fouls": 10, "SOT": 7, "offsides": 3, "YC": 0, "RC": 0, "corners": 4},
+        {"event_id": 760447, "opponent": "Netherlands", "result": "L 1-5", "fouls": 12, "SOT": 8, "offsides": 3, "YC": 3, "RC": 0, "corners": 5}
+      ],
+      "averages": {"fouls": 11.0, "SOT": 7.5, "offsides": 3.0, "YC": 1.5, "corners": 4.5},
+      "NOTE": "SWE averaged 3 offsides in BOTH matches — dominant win AND heavy loss. Extremely consistent. SWE generated 8 SOT even in a 5-1 defeat vs NED."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Japan": 0.4658, "Draw": 0.2791, "Sweden": 0.2551, "liquid": true},
+    "BTTS": {"Yes": 0.5704, "No": 0.4296, "liquid": true},
+    "OU2_5": {"Under": 0.4956, "Over": 0.5044, "liquid": true},
+    "2H_JPN_OU0_5": {"Over": 0.5873, "Under": 0.4127, "liquid": true},
+    "2H_SWE_OU0_5": {"Over": 0.4963, "Under": 0.5037, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.292, "Equal": 0.2703, "Second_Half": 0.4376, "liquid": true},
+    "Most_cards": {"Japan": 0.316, "Sweden": 0.4158, "Draw": 0.2682, "liquid": true},
+    "Penalty": {"Yes": 0.2514, "No": 0.7486, "liquid": true},
+    "Red_card": {"Yes": 0.1044, "No": 0.8956, "liquid": true},
+    "SOT_OU7_5": {"Over": 0.478, "Under": 0.522, "liquid": true},
+    "SWE_corners_OU4_5": {"Over": 0.404, "Under": 0.596, "liquid": true},
+    "SWE_corners_OU3_5": {"Over": 0.5739, "Under": 0.4261, "liquid": true},
+    "player_score_or_assist": {"Viktor_Gyokeres": 0.4004, "Alexander_Isak": 0.4335, "liquid": false},
+    "anytime_goalscorer": {"Viktor_Gyokeres": 0.2963, "Alexander_Isak": 0.2356, "Ayase_Ueda": 0.3175, "liquid": false}
+  },
+  "context_flags": [
+    "JPN_CONSERVATIVE: Japan only needs a draw — may play more cautiously in 2H if leading or level",
+    "SWE_MUST_WIN: Sweden maximum attacking intent, especially in 2H",
+    "SWE_OFFSIDE_CONSISTENCY: 3 offsides in BOTH WC2026 matches regardless of game state — structural pattern",
+    "SWE_HIGH_SOT: 7 SOT vs TUN, 8 SOT vs NED (even in loss) — Sweden generates shots regardless",
+    "BLOWOUT_RULE10: If JPN leads comfortably, SWE desperation increases offside risk",
+    "JPN_LOW_SOT: Japan averaged only 4 SOT/game in WC2026 vs Sweden's 7.5"
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Sweden be caught offside 2 or more times?",
+      "type": "OFFSIDE_GEQ2",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Sweden caught offside exactly 3 times in GD1 (dominant 5-1 win vs TUN) and 3 times in GD2 (5-1 loss to NED). Entirely consistent regardless of game state. Today SWE must-win → more aggressive forward runs → offside risk increases further. Japan plays compact. First-pass Poisson λ=3.0 gives P(≥2)=0.80. Submit near-raw per WINNING TRAIL.",
+      "crowd_estimate": 0.60,
+      "final_estimate": 0.78,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "In the second half, will Japan have more shots on target than Sweden?",
+      "type": "2H_SOT_COMPARISON",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Sweden WC2026 SOT: 7 (vs TUN), 8 (vs NED) — 7.5 avg. Japan: 3 (vs NED), 5 (vs TUN) — 4.0 avg. Sweden out-shot NED in SOT (8-7) even while losing 5-1. Sweden is a high-volume shooting team regardless of scoreline. In 2H, SWE's must-win urgency means even more attacking. For Japan to out-SOT Sweden in 2H they'd need to significantly over-perform history. Skellam P(JPN>SWE in 2H) ≈ 0.20.",
+      "crowd_estimate": 0.42,
+      "final_estimate": 0.20,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will Sweden score more goals than Japan in the second half?",
+      "type": "2H_GOALS_COMPARISON",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "No direct 2H result market. SWE must-win = more 2H attacking. But JPN draw-is-enough = can sit back. SWE has higher goal rate expected. Rough estimate: P(SWE>JPN in 2H) ≈ 0.28. Medium confidence — no direct market anchor.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium-low"
+    },
+    {
+      "q": 4,
+      "text": "Will a penalty kick be awarded OR a red card be shown?",
+      "type": "PENALTY_OR_RC",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Market: Penalty 25.1%, Red card 10.4%. P(OR) = 1 - (0.749 × 0.896) = 0.33. This question family has been reliable: JPN-TUN +2.44, SWE-TUN +11.68. Crowd drifts to 0.40-0.45 on this type. Trust the compound market at 0.33.",
+      "crowd_estimate": 0.43,
+      "final_estimate": 0.33,
+      "direction": "NO",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 5,
+      "text": "Will Japan win the match?",
+      "type": "MATCH_WINNER",
+      "pick_tier": "DIRECT MARKET",
+      "reasoning": "Smarkets FTR: Japan 46.58%. Direct tier-1 market. No reason to deviate.",
+      "crowd_estimate": 0.50,
+      "final_estimate": 0.47,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will the match have 2 or fewer total goals?",
+      "type": "UNDER_2_5",
+      "pick_tier": "NO EDGE",
+      "reasoning": "Market OU2.5 Under = 49.56%. BTTS = 57%. Coin flip. No structural edge. Submit at market.",
+      "crowd_estimate": 0.50,
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "low"
+    },
+    {
+      "q": 7,
+      "text": "Will Sweden have 5 or more corner kicks?",
+      "type": "SWE_CORNERS_GEQ5",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "SWE corners in WC2026: 4 (vs TUN), 5 (vs NED). Average 4.5. Market SWE OU4.5 Over = 40.4%. SWE must-win = more attacking = potentially more corners. Trust market at 0.40.",
+      "crowd_estimate": 0.47,
+      "final_estimate": 0.40,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 8,
+      "text": "Will Viktor Gyökeres score a goal (excluding own goals)?",
+      "type": "PLAYER_GOAL",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Smarkets anytime goalscorer: 29.6%. Gyökeres scored in GD1 (vs TUN at 59'), did not score in GD2 (vs NED). SWE must-win increases his role but RULE15 applies mildly (SWE 25.5% underdog). Submit near market.",
+      "crowd_estimate": 0.38,
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_SWE_2plus_offsides": 0.78,
+    "Q2_JPN_more_2H_SOT": 0.20,
+    "Q3_SWE_more_2H_goals": 0.28,
+    "Q4_penalty_or_RC": 0.33,
+    "Q5_JPN_wins": 0.47,
+    "Q6_under_2_5_goals": 0.50,
+    "Q7_SWE_5plus_corners": 0.40,
+    "Q8_Gyokeres_scores": 0.30
+  },
+  "strongest_picks": [
+    "Q1: Sweden 2+ offsides = 0.78 (HIGHEST CONFIDENCE — λ=3.0 consistent across both WC matches, must-win context reinforces)",
+    "Q2: Japan more 2H SOT = 0.20 (STRONG NO — ESPN data very clear, SWE 7.5 avg vs JPN 4.0 avg SOT)",
+    "Q4: Penalty or RC = 0.33 (market-compound, reliable NO family)"
+  ],
+  "post_match_results": {
+    "final_score": "Japan 1-1 Sweden",
+    "total_rbp": 70.49,
+    "beat_crowd_count": "7/8",
+    "results": {
+      "Q1_SWE_2plus_offsides": {"outcome": "YES", "our_est": 0.78, "crowd": 0.51, "rbp": 21.58, "beat_crowd": true, "note": "Sweden's offside consistency (3 offsides in BOTH GD1 win and GD2 loss) held a third time. The single highest-conviction pick of the day paid off biggest — direct confirmation of the structural λ=3.0 pattern."},
+      "Q2_JPN_more_2H_SOT": {"outcome": "NO", "our_est": 0.20, "crowd": 0.51, "rbp": 23.98, "beat_crowd": true, "note": "Biggest single win of the match, and arguably the cleanest ESPN-data read all tournament — Sweden's 7.5 avg SOT vs Japan's 4.0 avg SOT held up exactly as modeled, while the crowd treated it as a 50/50."},
+      "Q3_SWE_more_2H_goals": {"outcome": "NO", "our_est": 0.28, "crowd": 0.33, "rbp": 5.08, "beat_crowd": true},
+      "Q4_penalty_or_RC": {"outcome": "NO", "our_est": 0.33, "crowd": 0.34, "rbp": 2.29, "beat_crowd": true},
+      "Q5_JPN_wins": {"outcome": "NO", "our_est": 0.47, "crowd": 0.52, "rbp": 7.79, "beat_crowd": true},
+      "Q6_under_2_5_goals": {"outcome": "YES", "our_est": 0.50, "crowd": 0.45, "rbp": 7.61, "beat_crowd": true},
+      "Q7_SWE_5plus_corners": {"outcome": "YES", "our_est": 0.40, "crowd": 0.46, "rbp": -2.87, "beat_crowd": false, "note": "Small loss — Sweden's must-win urgency generated slightly more corners than our market-anchored 0.40 expected."},
+      "Q8_Gyokeres_scores": {"outcome": "NO", "our_est": 0.29, "crowd": 0.34, "rbp": 5.03, "beat_crowd": true}
+    },
+    "key_confirmations": [
+      "Q1 + Q2 alone = +45.56 RBP, both from pure ESPN-boxscore Poisson/Skellam reads submitted near-raw with no narrative shading — the cleanest WINNING TRAIL execution of the day.",
+      "Q2 in particular is now a template case: when a team's average stat (SOT) is roughly double the opponent's across multiple matches, trust the model fully even when the crowd insists on near-50/50."
+    ]
+  },
+  "created": "2026-06-25"
+}

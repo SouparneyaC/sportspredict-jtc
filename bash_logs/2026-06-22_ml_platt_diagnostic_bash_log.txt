@@ -1,0 +1,175 @@
+BASH LOG: ML Feature Matrix Build + Platt Scaling Diagnostic
+Date: 2026-06-22
+Session context: First ML experiment — building flat feature matrix + running calibration diagnostic
+
+===========================================================================
+COMMAND 1: Build flat feature matrix from all match JSONs
+===========================================================================
+$ cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research" && python3 ml/build_feature_matrix.py
+
+OUTPUT:
+  [OK schema=B] bel_egy_2026-06-12.json: 10 questions
+  [OK schema=B] bel_irn_2026-06-21.json: 10 questions
+  [OK schema=B] bra_hai_2026-06-19.json: 10 questions
+  [OK schema=B] bra_mar_2026-06-13.json: 10 questions
+  [OK schema=A/E] can_qat_2026-06-18.json: 9 questions   [WARN null] can_qat Q4: outcome=None
+  [OK schema=B] civ_ecu_2026-06-13.json: 10 questions
+  [OK schema=B] ecu_cur_2026-06-16.json: 9 questions     [WARN null] ecu_cur Q6: crowd=None
+  [OK schema=B] eng_cro_2026-06-18.json: 10 questions
+  [OK schema=A/E] gha_pan_2026-06-18.json: 10 questions
+  [OK schema=B] ger_cur_2026-06-14.json: 10 questions
+  [OK schema=B] jpn_ned_2026-06-13.json: 10 questions
+  [OK schema=B] jpn_tun_2026-06-16.json: 9 questions     [WARN null] jpn_tun Q10: outcome=None
+  [OK schema=B] kor_cze_2026-06-11.json: 6 questions
+  [OK schema=C/D] mex_kor_2026-06-19.json: 4 questions   [partial: 6/10 questions missing our_est/crowd]
+  [OK schema=B] ned_swe_2026-06-20.json: 10 questions
+  [OK schema=G] nzl_egy_2026-06-22.json: 10 questions
+  [OK schema=B] sau_uru_2026-06-14.json: 10 questions
+  [OK schema=B] sco_mar_2026-06-19.json: 10 questions
+  [OK schema=A/E] sui_bih_2026-06-18.json: 8 questions   [WARN null] Q9/Q10/Q11: outcome=None
+  [OK schema=B] swe_tun_2026-06-14.json: 10 questions
+  [OK schema=C/D] tur_par_2026-06-19.json: 10 questions
+  [OK schema=C/D] usa_aus_2026-06-19.json: 9 questions   [WARN null] usa_aus Q10: crowd=None
+  [OK schema=B] uzb_col_2026-06-18.json: 10 questions
+  [SKIP no-sub] uru_cpv_2026-06-21.json                  [no JTC submission this match]
+
+  ================================================================
+  FILES PROCESSED:  28
+  FILES SKIPPED:    0
+  TOTAL ROWS:       264
+
+  ROWS WITH RBP (usable for diagnostic): 246
+    YES outcomes: 104 (42.3%)
+    NO  outcomes: 142  (57.7%)
+
+  BEAT CROWD: 178/246 = 72.4%
+  Mean RBP/question: +2.497
+  Std  RBP/question: 10.478
+  Total RBP (sum):   +614.22
+
+  MATCHES COVERED:
+    2026-06-11 KOR-CZE      6 questions  RBP=+22.80
+    2026-06-12 BEL-EGY     10 questions  RBP=+45.88
+    2026-06-13 BRA-MAR     10 questions  RBP=+14.37
+    2026-06-13 CIV-ECU     10 questions  RBP=+34.06
+    2026-06-13 JPN-NED     10 questions  RBP=+14.24
+    2026-06-14 GER-CUR     10 questions  RBP=+72.47
+    2026-06-14 SAU-URU     10 questions  RBP=+7.68
+    2026-06-14 SWE-TUN     10 questions  RBP=-9.14
+    2026-06-16 ECU-CUR      9 questions  RBP=+2.41
+    2026-06-16 JPN-TUN      9 questions  RBP=+17.24
+    2026-06-18 CAN-QAT      9 questions  RBP=+16.87
+    2026-06-18 ENG-CRO     10 questions  RBP=+0.97
+    2026-06-18 GHA-PAN     10 questions  RBP=+67.91
+    2026-06-18 SUI-BIH      8 questions  RBP=-1.60
+    2026-06-18 UZB-COL     10 questions  RBP=+23.91
+    2026-06-19 BRA-HAI     10 questions  RBP=+38.13
+    2026-06-19 MEX-KOR      4 questions  RBP=+6.48
+    2026-06-19 SCO-MAR     10 questions  RBP=-20.19
+    2026-06-19 TUR-PAR     10 questions  RBP=+19.47
+    2026-06-19 USA-AUS      9 questions  RBP=+10.82
+    2026-06-20 NED-SWE     10 questions  RBP=+45.54
+    2026-06-21 BEL-IRN     10 questions  RBP=+37.99
+    2026-06-22 NZL-EGY     10 questions  RBP=+46.53 [NOTE: only available after match results filed]
+
+  Output written to: /Users/aki/Desktop/QK Rstudio/sportspredict_research/ml/feature_matrix.csv
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 2 (first attempt — bootstrap IndexError):
+$ python3 ml/platt_diagnostic.py
+OUTPUT: [partial — crashed at bootstrap CI step with IndexError: list index out of range]
+Fix applied: changed hi = int(n_boot*(1-alpha/2)) to hi = min(int(m*(1-alpha/2)), m-1)
+where m = len(a_boot), which could be < n_boot if some resamples hit degenerate Hessian.
+
+===========================================================================
+COMMAND 3: Run Platt scaling diagnostic (fixed version)
+===========================================================================
+$ python3 ml/platt_diagnostic.py
+
+OUTPUT:
+  Loaded 246 settled questions from feature_matrix.csv
+
+  ================================================================
+  ANALYSIS 1: Global Platt Scaling (all 246 questions)
+  ================================================================
+    Intercept  a = -0.2110  (0 = no directional bias)
+    Slope      b = +0.5104  (1 = perfectly calibrated)
+    Converged in 5 iterations
+
+    Brier score (our raw):        0.2188
+    Brier score (Platt-recalib):  0.2237  (delta = +0.0049)
+    Brier score (crowd):          0.2172  (delta vs raw = -0.0016)
+
+    Our raw vs crowd Brier gap:   -0.00162
+    => Crowd beats us on Brier score overall
+
+    Computing bootstrap 95% CI (1000 resamples)...
+    95% CI for a: [-0.4627, +0.1261]
+    95% CI for b: [+0.1233, +1.2865]
+    => b=1 is WITHIN the 95% CI — no statistically significant miscalibration detected
+
+  ================================================================
+  ANALYSIS 2: Walk-Forward Holdout (train=60%, test=40%)
+  ================================================================
+    Train: 147 questions (2026-06-11 to 2026-06-19)
+    Test:  99 questions (2026-06-19 to 2026-06-22)
+
+    Walk-forward Platt:  a=-0.4129  b=+0.1960
+
+    Test Brier (raw):    0.2144
+    Test Brier (calib):  0.2421  (delta = +0.0277)
+    Test Brier (crowd):  0.2162
+
+    => Platt recalibration WORSENS out-of-sample Brier by 0.0277
+
+  ================================================================
+  ANALYSIS 3: Reliability Diagram (calibration buckets)
+  ================================================================
+    Bucket   N     Mean_pred    Mean_outcome   Gap (out-pred)
+    ------------------------------------------------------
+    1        24    0.163        0.167          +0.004
+    2        24    0.249        0.167          -0.082 <-- OVER
+    3        24    0.329        0.333          +0.005
+    4        24    0.381        0.417          +0.036
+    5        24    0.408        0.333          -0.075 <-- OVER
+    6        24    0.441        0.375          -0.066 <-- OVER
+    7        24    0.485        0.500          +0.015
+    8        24    0.555        0.583          +0.028
+    9        24    0.613        0.542          -0.071 <-- OVER
+    10       24    0.738        0.708          -0.030
+    11       6     0.917        0.833          -0.083 <-- OVER
+
+  ================================================================
+  ANALYSIS 4: RBP by estimate range
+  ================================================================
+    LOW (0-30%)           : n= 49  mean_rbp=+3.049  beat_crowd=84%
+    MID-LOW (30-50%)      : n=111  mean_rbp=+2.741  beat_crowd=68%
+    MID-HIGH (50-70%)     : n= 63  mean_rbp=+3.146  beat_crowd=73%
+    HIGH (70-100%)        : n= 22  mean_rbp=+0.652  beat_crowd=68%
+
+  Results saved to: /Users/aki/Desktop/QK Rstudio/sportspredict_research/ml/platt_results.json
+
+  ================================================================
+  SUMMARY
+  ================================================================
+    Global Platt:  a=-0.2110  b=0.5104
+    b 95% CI:      [+0.1233, +1.2865]
+    b includes 1:  True
+    Global Brier improvement from Platt: -0.00491
+    Walk-forward Brier improvement:      -0.02775
+
+  Interpretation:
+    a = -0.211 -> we submit TOO HIGH on average
+    b CI includes 1 -> estimates are well-calibrated in aggregate (no ML correction needed yet)
+
+EXIT CODE: 0
+
+SCRIPTS WRITTEN THIS SESSION:
+  - sportspredict_research/ml/build_feature_matrix.py  (schema-aware JSON extractor, all 5 schemas)
+  - sportspredict_research/ml/platt_diagnostic.py      (Platt scaling diagnostic, 4 analyses)
+
+OUTPUTS WRITTEN:
+  - sportspredict_research/ml/feature_matrix.csv       (246 settled rows, 26 matches)
+  - sportspredict_research/ml/platt_results.json       (structured results for notebook)

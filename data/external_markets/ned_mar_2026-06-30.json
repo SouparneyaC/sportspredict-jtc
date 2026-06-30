@@ -1,0 +1,250 @@
+{
+  "match": "Netherlands vs Morocco",
+  "date": "2026-06-30",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {"this_match": 760488, "JPN_vs_NED_GD1": 760425, "SWE_vs_NED_GD2": 760447, "TUN_vs_NED_GD3": 760472, "MAR_vs_BRA_GD1": 760419, "MAR_vs_SCO_GD2": 760445, "MAR_vs_HAI_GD3": 760464},
+  "smarkets_event_id": 45156985,
+  "prior_lessons_consulted": ["jpn_ned_2026-06-14.json", "ned_swe_2026-06-20.json", "tun_ned_2026-06-25.json", "bra_mar_2026-06-13.json", "sco_mar_2026-06-19.json", "mar_hai_2026-06-24.json"],
+  "knockout_context": {
+    "Netherlands": {"group_record": "1D-2W, 7pts, GD+6 (D2-2 JPN, W5-1 SWE, W3-1 TUN)", "status": "Mild favorite (40.3% straight win, 58.8% to qualify) — not dominant"},
+    "Morocco": {"group_record": "1D-2W, 7pts, GD+3 (D1-1 BRA, W1-0 SCO, W4-2 HAI)", "status": "Fully competitive underdog (26.6% straight win, 41.8% to qualify)"}
+  },
+  "wc2026_espn_stats": {
+    "NED": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760425, "opponent": "Japan", "result": "D 2-2", "fouls": 7, "SOT": 6, "offsides": 1, "YC": 3, "RC": 0, "corners": 5, "possession": 59.8},
+        {"event_id": 760447, "opponent": "Sweden", "result": "W 5-1", "fouls": 9, "SOT": 7, "offsides": 3, "YC": 0, "RC": 0, "corners": 2, "possession": 50.9},
+        {"event_id": 760472, "opponent": "Tunisia", "result": "W 3-1 (away)", "fouls": 10, "SOT": 7, "offsides": 1, "YC": 0, "RC": 0, "corners": 6, "possession": 71.4}
+      ],
+      "averages": {"fouls": 8.67, "SOT": 6.67, "offsides": 1.67, "YC": 1.0, "RC": 0.0, "corners": 4.33},
+      "LESSON_TUN_NED": "tun_ned Q2 (both teams 2H SOT) cost -18.24 RBP because Tunisia's '0 SOT vs Japan' one-match crisis suddenly broke against a Netherlands team that eased off after getting a lead. Morocco is a fundamentally different opponent — they genuinely threaten. Do NOT extrapolate 'weaker team SOT crisis continues' logic from Tunisia to Morocco."
+    },
+    "MAR": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760419, "opponent": "Brazil", "result": "D 1-1", "fouls": 14, "SOT": 3, "offsides": 1, "YC": 0, "RC": 0, "corners": 2, "possession": 48.6},
+        {"event_id": 760445, "opponent": "Scotland", "result": "W 1-0 (away)", "fouls": 8, "SOT": 2, "offsides": 0, "YC": 1, "RC": 0, "corners": 5, "possession": 58.9},
+        {"event_id": 760464, "opponent": "Haiti", "result": "W 4-2", "fouls": 10, "SOT": 11, "offsides": 5, "YC": 0, "RC": 0, "corners": 9, "possession": 69.1}
+      ],
+      "averages": {"fouls": 10.67, "SOT": 5.33, "offsides": 2.0, "YC": 0.33, "RC": 0.0, "corners": 5.33},
+      "BIMODAL_FLAG": "Morocco's Haiti game (11 SOT, 5 offsides, 9 corners) is a clear bimodal outlier — in the other two competitive matches (vs Brazil and Scotland, both quality opponents), they had only 3 and 2 SOT, 1 and 0 offsides, 2 and 5 corners. True competitive-match attacking baseline ≈ 2-3 SOT, 0-1 offsides, 2-5 corners. Applied this for the offside lambda estimate (used 0.5, not 2.0 average, for Morocco's contribution).",
+      "SAIBARI_DIRECT_PRECEDENT": "Ismael Saibari scored in BOTH GD1 (21' vs Brazil) AND GD2 (2' vs Scotland — earliest WC winning goal in a 1-0 in WC history). Brahim Diaz assisted both. Morocco's entire attack routes through this player; the live market mid-price (0.29 from bid/offer) is credible but potentially conservative given this documented streak. Score-OR-assist is a wider net than just scoring."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Netherlands": 0.4032, "Morocco": 0.2659, "Draw": 0.3150, "liquid": true},
+    "To_qualify": {"Netherlands": 0.5882, "Morocco": 0.4184, "liquid": true},
+    "Will_there_be_ET": {"Yes": 0.1899, "No": 0.8156, "liquid": true},
+    "BTTS": {"Yes": 0.5298, "No": 0.4793, "liquid": true},
+    "OU2_5_goals": {"Under": 0.5668, "Over": 0.4367, "liquid": true},
+    "OU3_5_goals": {"Under": 0.7725, "Over": 0.2302, "liquid": true},
+    "Cards_OU1_5": {"Under": 0.1562, "Over": 0.8441, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.5347, "Over": 0.4742, "liquid": true},
+    "Most_cards": {"Netherlands": 0.3470, "Morocco": 0.4014, "Draw": 0.2519, "liquid": true},
+    "NED_cards_OU1_5": {"Under": 0.4601, "Over": 0.5407, "liquid": true},
+    "MAR_cards_OU1_5": {"Under": 0.4833, "Over": 0.5180, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1313, "No": 0.8627, "liquid": true},
+    "Penalty": {"Yes": 0.2273, "No": 0.7666, "liquid": true},
+    "Highest_scoring_half": {"First Half": 0.2890, "Equal": 0.2908, "Second Half": 0.4281, "liquid": true},
+    "HT_result": {"Netherlands": 0.3009, "Morocco": 0.2302, "Draw": 0.4674, "liquid": true},
+    "1H_OU1_5_goals": {"Under": 0.7272, "Over": 0.2722, "liquid": true},
+    "Goal_1_time_bracket": {"1-10": 0.1787, "11-20": 0.1666, "21-30": 0.1367, "31-40": 0.1086, "41-50": 0.1049, "51-60": 0.0729, "61-70": 0.0530, "71-80": 0.0406, "81-90": 0.0442, "None": 0.0990, "liquid": true},
+    "Team_to_score_first_goal": {"Netherlands": 0.5202, "Morocco": 0.4053, "No goal": 0.0927, "liquid": true},
+    "Netherlands_corners_handicap_minus0_5": {"Netherlands": 0.5174, "Morocco": 0.4858, "liquid": true},
+    "NED_SOT_OU3_5": {"Under": 0.4167, "Over": 0.5823, "liquid": true},
+    "MAR_SOT_OU3_5": {"Under": 0.5441, "Over": 0.4566, "liquid": true},
+    "player_markets": {"Brian_Brobbey_2plus_SOT": {"bid": 0.2041, "offer": 0.2174, "mid": 0.2108, "liquid": true}, "Ismael_Saibari_score_or_assist": {"bid": 0.2326, "offer": 0.3401, "mid": 0.2864, "liquid": true}}
+  },
+  "context_flags": [
+    "GENUINELY_COMPETITIVE_MATCHUP: unlike earlier knockout blowouts (GER-PAR, BRA-JPN), this is a near-coin-flip in each direction — Netherlands only 40.3% to win in regulation, Morocco 26.6%, Draw 31.5%. The high draw price, 47% ET probability from 'No goal' at 9.27%, and Morocco's documented ability to absorb pressure (0-1 vs Scotland clean sheet, 1-1 vs Brazil) make this a legitimately open contest.",
+    "MOROCCO_BIMODAL_ATTACKING_OUTPUT: Morocco's attacking stats swing massively with opponent quality — Haiti game was a blowout outlier. Against true opposition (Brazil, Scotland), they showed only 2-3 SOT and 0-1 offsides, consistent with a defensive-first team that scores from tight setpieces/transitions rather than volume. Applied this for the offside Q (not asked today) and for calibrating Saibari's role.",
+    "SAIBARI_2_FOR_2_SCORING_STREAK: both WC2026 goals scored by Saibari, both in the first half, both early — an unusually concentrated, verifiable pattern in a small sample. Reflected as a modest upward bump from the liquid market mid on his 'score or assist' price.",
+    "LOSS_PATTERN_8_APPLIED_MORE_CONSERVATIVELY: Q2 (card after 2nd break + ET) uses the same self-constructed timing-decomposition methodology that produced our worst RSA-CAN result (-39.68 RBP) — applied the calculation but trimmed the output much more aggressively than RSA-CAN to reflect genuine uncertainty in the 40%-post-69' assumption that has never been independently verified.",
+    "TUN_NED_GAKPO_LESSON: liquid player market missed in TUN-NED (0.66 failed, Netherlands won without Gakpo directly involved). Applied here as a cautionary reminder that even a liquid, well-priced individual attacker can under-deliver when a TEAM win comes from distributed contributions — kept Brobbey estimate anchored to the market rather than inflating on narrative."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Morocco be ahead at halftime?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT result market: Morocco = 23.02%. Despite being the regulation underdog, Morocco's defensive, low-block approach and Saibari's pattern of early goals means they're a real HT-lead threat — the market correctly prices this higher than a simple 'underdog' discount would suggest.",
+      "final_estimate": 0.23,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will a card be shown after the second hydration break, including any extra time?",
+      "pick_tier": "MEDIUM CONFIDENCE — TIMING-MODEL, LOSS-PATTERN-8 DISCOUNT APPLIED",
+      "reasoning": "Total card lambda backed out from two card O/U thresholds (OU1.5 Over=0.844, OU3.5 Over=0.474): avg λ≈3.44. Assuming 40% of cards land post-69', gives λ_post69≈1.38, P(≥1 card in late regulation)=0.75. Adding ET-card probability (18.99% chance of ET × 55% card in ET if no prior late card), raw result ≈0.77. Trimmed more aggressively than RSA-CAN (where same method hit -39.68 RBP) for the timing-split assumption uncertainty — Loss Pattern #8 is directly in memory.",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will a goal be scored in first-half stoppage time?",
+      "pick_tier": "MEDIUM CONFIDENCE — MODELED, NARROW WINDOW",
+      "reasoning": "Very specific narrow time window (~4 minutes, 45'+1 to 45'+4). Using total goal lambda (~2.43 from O/U2.5/O/U3.5 markets), scaled to 4/94 of match time, gives P(≥1 goal in this window)≈0.10. This is a genuinely rare event type — no floor convention applies here (this is a specific time-window binary, not a count-stat threshold). Both teams are competitive and dangerous, but the absolute window is narrow.",
+      "final_estimate": 0.10,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will a goal be scored after the second hydration break?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — MODELED",
+      "reasoning": "Using total goal lambda (~2.43), scaled to the post-69' window (~25 minutes of a ~94-minute match), gives P(≥1 goal from ~69' onward)=0.48. This is a broader, more achievable window than Q3, and the match's competitive, open nature (BTTS 53%) makes late goals structurally plausible.",
+      "final_estimate": 0.47,
+      "direction": "TOSS-UP",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 5,
+      "text": "Will a red card be shown in the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Any player to be sent off = 13.13%. Consistent with both teams' clean disciplinary records throughout the group stage (Netherlands 0 RC in 3 matches, Morocco 0 RC in 3 matches — unusually clean combination).",
+      "final_estimate": 0.13,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will the second half produce more goals than the first half in regulation, excluding extra time?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Highest scoring half, Second Half = 42.81%.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will the Netherlands score the first goal of the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Team to score first goal, Netherlands = 52.02%. Note: 'No goal' at 9.27% is unusually high — reflecting a real probability this match stays scoreless deep into regulation (consistent with Morocco's defensive profile and draw probability of 31.5%).",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Brian Brobbey have 2 or more shots on target in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Genuinely liquid market (bid 0.2041, offer 0.2174) — mid = 0.2108. Trusted directly, per TUN-NED Gakpo lesson: even a correctly-liquid individual attacker prop can under-deliver when the team wins through distributed rather than concentrated contributions. No inflation beyond market mid.",
+      "final_estimate": 0.21,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will the Netherlands have more corner kicks than Morocco in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Netherlands -0.5 corners handicap (Netherlands wins the corner count) = 51.74%. The market already discounts Morocco's bimodal corner spike (9 vs Haiti) in favor of their true competitive-match corner output of 2-5.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will the Netherlands win in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct regulation-scoped market: Full-time result Netherlands = 40.32%. Notably modest for a team traditionally considered a top-tier football nation — the market fully reflects Morocco's proven competitive quality across this tournament.",
+      "final_estimate": 0.40,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 11,
+      "text": "Will Ismael Saibari score or assist a goal (excluding own goals) in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — LIQUID MARKET, SMALL LESSON-BASED BUMP",
+      "reasoning": "Liquid market mid (bid 0.2326, offer 0.3401) = 0.2864. Bumped slightly above the market mid to reflect Saibari's documented 2-for-2 scoring streak this tournament (21' vs Brazil, 2' vs Scotland), Brahim Diaz's corresponding 2-for-2 assist record to him, and the 'score or assist' bar being wider than just a goal. He is clearly Morocco's primary attacking channel regardless of opponent quality.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 12,
+      "text": "Will both teams score in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: BTTS Yes = 52.98%. Consistent with both teams' quality and Morocco's proven ability to find the goal against strong opposition (Brazil, Scotland).",
+      "final_estimate": 0.53,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 13,
+      "text": "Will both teams receive at least one card in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — MODELED FROM TEAM-LEVEL CARD MARKETS",
+      "reasoning": "No direct 'both teams carded' market. Backed out individual team card lambdas from team O/U1.5 card markets (NED P(≥2 cards)=54.07% → λ_NED≈1.52 → P(≥1 card)=0.78; MAR P(≥2 cards)=51.80% → λ_MAR≈1.46 → P(≥1 card)=0.77). P(both) ≈ 0.78×0.77=0.60. Trimmed slightly for model uncertainty.",
+      "final_estimate": 0.57,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 14,
+      "text": "Will the first half produce 2 or more goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: First half Over1.5 goals = 27.22%.",
+      "final_estimate": 0.27,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 15,
+      "text": "Will a penalty kick be awarded during regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Penalty to be awarded = 22.73%.",
+      "final_estimate": 0.23,
+      "direction": "NO lean",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_MAR_ahead_HT": 0.23,
+    "Q2_card_after_2nd_break_incl_ET": 0.65,
+    "Q3_goal_in_1H_stoppage": 0.10,
+    "Q4_goal_after_2nd_break": 0.47,
+    "Q5_red_card": 0.13,
+    "Q6_2H_more_goals": 0.43,
+    "Q7_NED_scores_first": 0.52,
+    "Q8_Brobbey_2plus_SOT": 0.21,
+    "Q9_NED_more_corners": 0.52,
+    "Q10_NED_wins_regulation": 0.40,
+    "Q11_Saibari_score_or_assist": 0.32,
+    "Q12_BTTS": 0.53,
+    "Q13_both_teams_carded": 0.57,
+    "Q14_1H_2plus_goals": 0.27,
+    "Q15_penalty": 0.23
+  },
+  "strongest_picks": [
+    "Q5: Red card in match = 0.13 (HIGH CONFIDENCE — direct market, consistent with both teams' unusually clean disciplinary records: 0 RC each in all 3 group matches)",
+    "Q3: Goal in first-half stoppage time = 0.10 (MEDIUM CONFIDENCE — modeled, genuinely rare narrow-window event)",
+    "Q11: Saibari score or assist = 0.32 (MEDIUM-HIGH — liquid market with documented 2-for-2 goal streak + 'score or assist' wider bar than pure goalscorer)"
+  ],
+  "post_match_results": {
+    "actual_score": "Netherlands 1-1 Morocco",
+    "match_rbp_total": 120.3,
+    "questions_beat_crowd": 12,
+    "questions_below_crowd": 3,
+    "note": "BEST MATCH OF THE SEASON SO FAR. Confirms this was a genuinely competitive, even fixture as modeled — the FTR-driven near-coin-flip framing was directly vindicated by the 1-1 regulation draw.",
+    "question_results": {
+      "Q1": {"question": "MAR ahead at HT?", "outcome": "NO", "us": 0.23, "crowd": 0.28, "rbp": 9.28, "vs_crowd": "beat"},
+      "Q2": {"question": "Card after 2nd hydration break, incl ET?", "outcome": "NO", "us": 0.65, "crowd": 0.61, "rbp": -3.51, "vs_crowd": "below", "notes": "Same timing-decomposition methodology as RSA-CAN's worst-ever result (-39.68), but after deliberately trimming the raw model output (0.77->0.65) per Loss Pattern #8, the miss was only -3.51 — direct evidence the correction worked, even though the direction was still slightly off. Validates: keep applying humility discounts to self-constructed timing models."},
+      "Q3": {"question": "Goal in 1H stoppage time?", "outcome": "NO", "us": 0.10, "crowd": 0.20, "rbp": 13.38, "vs_crowd": "beat", "notes": "Narrow-time-window Poisson scaling (no floor applied, correctly) beat a crowd that overpriced a rare event."},
+      "Q4": {"question": "Goal after 2nd hydration break?", "outcome": "YES", "us": 0.47, "crowd": 0.50, "rbp": -2.71, "vs_crowd": "below"},
+      "Q5": {"question": "Red card in match?", "outcome": "NO", "us": 0.13, "crowd": 0.19, "rbp": 6.83, "vs_crowd": "beat"},
+      "Q6": {"question": "2H more goals than 1H?", "outcome": "YES", "us": 0.43, "crowd": 0.48, "rbp": -7.34, "vs_crowd": "below"},
+      "Q7": {"question": "NED scores first?", "outcome": "YES", "us": 0.52, "crowd": 0.52, "rbp": 3.47, "vs_crowd": "beat"},
+      "Q8": {"question": "Brobbey 2+ SOT?", "outcome": "NO", "us": 0.21, "crowd": 0.36, "rbp": 24.84, "vs_crowd": "beat", "notes": "BIGGEST WIN. Trusted the genuinely liquid market (mid 0.2108) directly per the TUN-NED Gakpo-lesson caution against narrative inflation — crowd over-trusted a 'two strong attacking teams' framing and priced Brobbey far too high. Liquid two-sided markets deserve direct trust over crowd narrative."},
+      "Q9": {"question": "NED more corners?", "outcome": "NO", "us": 0.52, "crowd": 0.55, "rbp": 8.49, "vs_crowd": "beat"},
+      "Q10": {"question": "NED wins in regulation?", "outcome": "NO", "us": 0.40, "crowd": 0.46, "rbp": 15.16, "vs_crowd": "beat", "notes": "Direct FTR market (40.32%) beat a crowd that over-rated Netherlands' traditional pedigree over their actual measured form."},
+      "Q11": {"question": "Saibari score or assist?", "outcome": "NO", "us": 0.32, "crowd": 0.35, "rbp": 8.0, "vs_crowd": "beat"},
+      "Q12": {"question": "BTTS regulation?", "outcome": "YES", "us": 0.53, "crowd": 0.55, "rbp": 0.82, "vs_crowd": "beat"},
+      "Q13": {"question": "Both teams carded?", "outcome": "NO", "us": 0.57, "crowd": 0.65, "rbp": 23.37, "vs_crowd": "beat", "notes": "2ND-BIGGEST WIN. Team-level card-lambda decomposition (0.60 raw, trimmed to 0.57) beat a crowd that over-trusted a 'two physical/competitive teams' narrative into assuming both would certainly be carded — disciplined, modeled decomposition beat narrative-driven crowd pricing."},
+      "Q14": {"question": "1H 2+ goals?", "outcome": "NO", "us": 0.27, "crowd": 0.34, "rbp": 12.71, "vs_crowd": "beat"},
+      "Q15": {"question": "Penalty in regulation?", "outcome": "NO", "us": 0.23, "crowd": 0.27, "rbp": 7.52, "vs_crowd": "beat"}
+    }
+  },
+  "created": "2026-06-30"
+}

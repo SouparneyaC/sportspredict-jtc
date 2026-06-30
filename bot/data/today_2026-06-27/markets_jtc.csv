@@ -1,0 +1,49 @@
+date,match_name,home_team,away_team,result,market_id,question,initial_value,final_value,outcome,status,closing_date,settled_date,n_jtc_preds,n_yes,n_no,pct_yes,avg_entry_price
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,b105bd29-9d86-4f78-93e9-8e16f347bfa0,Will Ante Budimir score at least 0.5 goals?,41,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:07.626Z,2,0,2,0.0,40.5
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,694e6254-8132-498f-a170-e8f24cb7b7f2,Will Croatia score first?,60,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T21:32:51.064Z,20,17,3,85.0,66.2
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,34d2a95f-cce8-4c5c-9072-d3062987b7dc,Will Croatia win the match?,56,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:07.626Z,23,16,7,69.6,60.4
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,0db9da1f-76e1-4d0a-a7e1-297b3870b782,Will the total goals be over 2.5?,44,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:44:15.765Z,18,9,9,50.0,43.8
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,7a3c2ac4-a993-4dae-a839-077cd1117756,Will total corners be over 8.5?,51,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:07.626Z,2,2,0,100.0,51.5
+2026-06-27,CRO vs GHA,Croatia,Ghana,2-1,83e1ae3a-2e35-4c3e-a300-d25b86a37154,Will total shots on target be over 7.5?,57,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:59:07.626Z,2,2,0,100.0,57.5
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,3f9113d6-c7ef-4609-83f1-f6d790ec53e7,Will Belgium score first?,69,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:29:18.398Z,28,24,4,85.7,80.6
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,39974aa2-8b34-4946-a2c7-5e1b1594fe8c,Will Belgium win the match?,66,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:58:32.973Z,25,23,2,92.0,81.1
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,9c957d53-c8d2-4665-8ec3-466a30ad701f,Will Romelu Lukaku score at least 0.5 goals?,60,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:48:23.987Z,4,3,1,75.0,61.0
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,c8690b3e-092b-4290-bcba-a166057033aa,Will the total goals be over 2.5?,56,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:29:23.144Z,25,19,6,76.0,64.2
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,68639917-529e-4da4-a364-bfcca542f9a0,Will total corners be over 10.5?,45,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:39:41.210Z,4,0,4,0.0,43.5
+2026-06-27,New Zealand vs BEL,New Zealand,Belgium,1-5,aa768ec1-110f-44c3-a7ff-9bdcea00202c,Will total shots on target be over 10.5?,48,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:54:56.967Z,4,0,4,0.0,46.5
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,857364d8-fc2f-4f33-9436-c1e13eb29759,Will Mikel Oyarzabal score at least 0.5 goals?,40,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:50.146Z,4,3,1,75.0,41.0
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,d95faf6c-5dbc-447d-8cf8-f19c61bf0385,Will Spain score first?,62,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T00:43:25.578Z,28,26,2,92.9,73.8
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,a9ded6fd-b988-4132-9803-9e53fae4a502,Will Spain win the match?,57,100,YES,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:50.146Z,23,20,3,87.0,64.0
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,c562f998-6d2c-4a1e-a527-2a988e308dee,Will the total goals be over 2.5?,51,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:50.146Z,25,19,6,76.0,58.1
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,dd834bc5-eca4-4b10-8ac7-92ca47d85dcf,Will total corners be over 8.5?,50,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:50.146Z,3,3,0,100.0,51.0
+2026-06-27,URU vs ESP,Uruguay,Spain,0-1,3f020c19-0cae-4aed-baf3-790ccf90742d,Will total shots on target be over 9.5?,49,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T02:01:50.146Z,4,1,3,25.0,49.0
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,3603e19a-345b-4b60-9659-158d7dfcf6e8,Will Cristiano Ronaldo dos Santos Aveiro score at least 0.5 goals?,45,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,2,2,0,100.0,45.5
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,563d5199-13c2-4f10-aca9-d7d057e91529,Will Portugal score first?,55,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,21,16,5,76.2,59.7
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,4d3bbcb9-f346-4a41-ba5f-85272687b1d8,Will Portugal win the match?,44,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,20,16,4,80.0,48.5
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,9834ddd9-3bf0-47ab-83a7-12c45591989d,Will the total goals be over 2.5?,46,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,21,18,3,85.7,52.1
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,e0f2373d-7fe5-4dcf-a7f9-98ffb2365aa1,Will total corners be over 9.5?,50,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,2,0,2,0.0,49.5
+2026-06-27,COL vs POR,Colombia,Portugal,0-0,2a1cf099-800a-4ee4-817d-9684c157113d,Will total shots on target be over 9.5?,49,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:28:25.961Z,2,0,2,0.0,48.5
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,39c82eca-15f0-4361-931e-ab64f629f4ac,Will Egypt score first?,52,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T03:05:57.925Z,24,21,3,87.5,61.2
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,efbd30de-1ba3-4e55-8311-fb31fc6e8d34,Will Egypt win the match?,41,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:03:40.339Z,22,21,1,95.5,51.1
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,97e373ef-b726-4009-81df-cc0d61ed6249,Will Mohamed Salah score at least 0.5 goals?,32,0,NO,settled,2026-06-27T03:00:00.226Z,2026-06-27T05:03:40.339Z,3,2,1,66.7,33.0
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,f6c0fc2d-841e-4c4f-a23f-5531a5f536ca,Will the total goals be over 2.5?,37,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:57:24.559Z,23,11,12,47.8,35.3
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,c4b7a733-5183-48b9-975e-fc11de6e46a2,Will total corners be over 7.5?,52,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:35:56.606Z,3,2,1,66.7,52.3
+2026-06-27,EGY vs IRN,Egypt,IR Iran,1-1,b426db6c-adb6-4f6c-a9ed-04a6c4e49d51,Will total shots on target be over 7.5?,45,100,YES,settled,2026-06-27T03:00:00.226Z,2026-06-27T04:57:24.559Z,3,1,2,33.3,45.3
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,0b27a30b-4987-44df-9bce-a3c45fb92874,Will Ala Mohsen Al Hajji score at least 0.5 goals?,35,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,3,1,2,33.3,35.3
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,bc4eea1a-dc31-495f-b514-ead75cc60af8,Will Cabo Verde score first?,49,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,28,9,19,32.1,44.0
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,3cb0af69-67be-403b-ba38-c393c47fac1b,Will Cabo Verde win the match?,36,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,29,9,20,31.0,29.0
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,41f78769-c0f5-45e4-bde9-8866e06ac5d3,Will the total goals be over 2.5?,42,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,21,9,12,42.9,40.2
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,6435b6a7-5e98-4cff-a15d-b3a90044e0dc,Will total corners be over 8.5?,51,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,3,2,1,66.7,51.3
+2026-06-27,CPV vs KSA,Cabo Verde,Saudi Arabia,0-0,9f278da1-f631-4525-a852-164430a09ef6,Will total shots on target be over 9.5?,45,0,NO,settled,2026-06-27T00:00:00.333Z,2026-06-27T01:59:46.448Z,3,1,2,33.3,45.3
+2026-06-27,PAN vs ENG,Panama,England,0-2,1003eb30-fa1b-4006-83cf-ef7b110fbb4c,Will England win the match?,69,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:04.956Z,23,20,3,87.0,77.3
+2026-06-27,PAN vs ENG,Panama,England,0-2,199dbcd3-f156-473f-8874-a3e5c7c808f7,Will Harry Kane score at least 0.5 goals?,68,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:26:25.145Z,3,3,0,100.0,69.0
+2026-06-27,PAN vs ENG,Panama,England,0-2,714e18a4-81f9-443f-ab0c-289d52691d64,Will Panama score first?,30,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:04.956Z,23,4,19,17.4,21.8
+2026-06-27,PAN vs ENG,Panama,England,0-2,2c31a931-6840-4219-b809-6f765e7056fc,Will the total goals be over 2.5?,60,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:04.956Z,22,17,5,77.3,66.1
+2026-06-27,PAN vs ENG,Panama,England,0-2,0c1b1cc3-4dfc-41de-b6ef-4d278c38f242,Will total corners be over 9.5?,51,100,YES,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:54:33.808Z,3,1,2,33.3,51.3
+2026-06-27,PAN vs ENG,Panama,England,0-2,bb2beb8b-08c8-436b-8017-436c165dc215,Will total shots on target be over 10.5?,49,0,NO,settled,2026-06-27T21:00:00.121Z,2026-06-27T22:56:04.956Z,3,1,2,33.3,49.3
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,d025658c-3cf6-4bce-9fc4-f1bc29d754c7,Will Congo DR score first?,50,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-27T23:48:44.580Z,22,10,12,45.5,48.0
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,89d07618-a028-4091-b823-f749ff9b7596,Will Congo DR win the match?,40,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:07.740Z,21,9,12,42.9,38.2
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,0e888a28-eef1-4751-8a14-e8de01885518,Will Yoane Wissa score at least 0.5 goals?,40,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:01:35.853Z,2,1,1,50.0,40.5
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,08361e23-1e93-4177-8fd6-c6264233beeb,Will the total goals be over 2.5?,42,100,YES,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:11:53.821Z,21,6,15,28.6,38.9
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,2a9a9f84-54e8-46c0-a237-50b00b3126e1,Will total corners be over 8.5?,53,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:07.740Z,2,1,1,50.0,52.5
+2026-06-27,COD vs UZB,Congo DR,Uzbekistan,3-1,b941c49c-f7f0-46db-bf30-730dce22ff0a,Will total shots on target be over 8.5?,51,0,NO,settled,2026-06-27T23:30:00.027Z,2026-06-28T01:32:07.740Z,2,0,2,0.0,50.5

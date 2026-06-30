@@ -1,0 +1,550 @@
+file,match,date,stage,q_num,question_text,category,our_estimate,crowd_estimate,outcome,rbp,beat_crowd,final_score,match_rbp_total
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,1,,,0.28,0.45,1,-19.17,False,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,2,,,0.4,0.48,0,9.9,True,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,3,,,0.12,0.27,0,8.22,True,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,4,,,0.44,0.51,0,8.29,True,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,5,,,0.16,0.3,1,-19.91,False,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,6,,,0.52,0.44,1,10.46,True,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,7,,,0.65,0.54,0,-9.9,False,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,8,,,0.68,0.68,1,1.74,True,ARG 2-0 AUT,
+arg_aut_2026-06-22.json,ARG-AUT,2026-06-22,,9,,,0.18,0.43,1,-31.86,False,ARG 2-0 AUT,
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,1,Will Egypt commit more fouls than Belgium?,tier2_realdata,0.46,0.59,0,15.47,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,2,Will there be 2 or more total cards shown in the second half?,tier1_market_blended,0.6,0.58,0,0.75,False,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,3,Will both teams score AND the match have 3 or more total goals?,tier1_market,0.38,0.41,0,5.79,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,4,Will Egypt have more shots on target than Belgium in the second half?,tier2_realdata,0.11,0.31,0,10.71,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,5,Will there be 4 or more total shots on target in the second half?,tier2_realdata,0.78,0.64,1,10.28,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,6,Will Belgium be caught offside 2 or more times?,tier2_realdata,0.54,0.5,0,-1.57,False,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,7,Will Belgium win the match?,match_winner_deferred_market,0.61,0.66,0,8.23,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,8,"At halftime, will the match be tied?",tier1_market,0.41,0.42,0,2.61,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,9,Will Youri Tielemans have at least 1 shot on target?,tier1_market,0.38,0.44,0,8.28,True,Belgium 1 - 1 Egypt,63.72
+bel_egy_2026-06-15.json,BEL-EGY,2026-06-15,,10,Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?,tier1_market,0.25,0.26,0,3.18,True,Belgium 1 - 1 Egypt,63.72
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,1,,,0.45,0.58,1,-10.51,False,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,2,,,0.44,0.56,0,14.44,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,3,,,0.37,0.38,0,2.9,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,4,,,0.72,0.66,1,5.6,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,5,,,0.61,0.63,1,0.65,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,6,,,0.7,0.69,0,-0.25,False,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,7,,,0.52,0.5,0,0.32,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,8,,,0.38,0.43,1,-3.33,False,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,9,,,0.27,0.31,0,4.14,True,BEL 0-0 IRN,9.63
+bel_irn_2026-06-21.json,BEL-IRN,2026-06-21,,10,,,0.58,0.52,0,-4.32,False,BEL 0-0 IRN,9.63
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,1,,,0.25,0.35,0,8.56,True,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,2,,,0.1,0.4,1,-42.56,False,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,3,,,0.58,0.54,1,7.4,True,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,4,,,0.22,0.32,1,-12.03,False,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,5,,,0.55,0.55,1,1.8,False,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,6,,,0.88,0.86,1,1.9,True,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,7,,,0.85,0.78,0,-10.2,False,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,8,,,0.38,0.41,1,0.18,False,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,9,,,0.64,0.59,1,6.36,True,BRA 3-0 HAI,-32.11
+bra_hai_2026-06-20.json,BRA-HAI,2026-06-20,,10,,,0.25,0.3,0,6.46,True,BRA 3-0 HAI,-32.11
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,1,Will Brazil be caught offside 2 or more times?,tier2_realdata,0.43,0.59,0,20.36,True,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,2,Will Morocco commit more fouls than Brazil?,tier2_realdata,0.64,0.61,0,-0.44,False,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,3,Will Morocco score the first goal of the second half?,tier2_realdata,0.35,0.32,0,0.47,False,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,4,Will Brazil score more goals than Morocco in the second half?,tier1_market_deviated,0.58,0.55,0,0.47,False,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,5,Will Morocco have more shots on target than Brazil in the second half?,tier2_realdata,0.23,0.33,0,8.46,True,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,6,Will Brazil receive more cards than Morocco?,tier1_market_deviated,0.41,0.39,1,4.72,True,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,7,Will both teams score AND the match have 3 or more total goals?,tier1_market_deviated,0.4,0.47,0,10.79,True,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,8,Will Brazil win the match?,match_winner_gut_override,1.0,0.67,0,-51.97,False,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,9,Will Morocco have 5 or more corner kicks?,tier1_market_deviated,0.42,0.38,0,0.34,False,Brazil 1 - 1 Morocco,-16.33
+bra_mar_2026-06-13.json,BRA-MAR,2026-06-13,,10,Will the match be tied at halftime?,tier1_market_deviated,0.32,0.42,1,-9.52,False,Brazil 1 - 1 Morocco,-16.33
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,1,BIH fouls > Canada,tier2_realdata,0.67,0.64,1,5.08,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,2,4+ 2H total SOT,tier2_realdata,0.7,0.59,1,11.76,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,3,Penalty OR red card,compound_market_proxy,0.43,0.41,0,2.8,False,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,4,Canada win,match_winner_internal_model,0.75,0.62,0,-14.53,False,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,5,HT tied,tier1_market,0.46,0.47,0,3.86,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,6,2H 2+ goals,tier1_market,0.37,0.38,0,4.47,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,7,BIH 5+ corners,stats_proxy,0.27,0.36,0,9.46,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,8,Jonathan David scores,tier1_market,0.33,0.38,0,6.88,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,9,Dzeko 1+ SOT,tier2_realdata,0.6,0.58,0,2.89,False,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_bih_2026-06-12.json,CAN vs BIH,2026-06-12,,10,BIH score in 2H,tier1_market,0.37,0.44,0,9.98,True,Canada 1 - 1 Bosnia-Herzegovina,42.65
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,1,,,0.6,0.575,1,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,2,,,0.62,0.587,1,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,3,,,0.38,0.447,1,,False,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,4,,,0.44,0.477,,,,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,5,,,0.77,0.7,1,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,6,,,0.58,0.56,1,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,7,,,0.75,0.7,1,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,8,,,0.13,0.2,0,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,9,,,0.22,0.343,0,,True,CAN 6-0 QAT,61.88
+can_qat_2026-06-18.json,CAN-QAT,2026-06-18,,10,,,0.31,0.37,0,,True,CAN 6-0 QAT,61.88
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,1,Will Ecuador commit more fouls than Ivory Coast?,tier2_realdata_RULE8_shrunk,0.57,0.52,1,6.97,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,2,"At halftime, will Ecuador have more corner kicks than Ivory Coast?",tier2_realdata_market_blended,0.42,0.48,0,8.42,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,3,Will Ivory Coast be caught offside 2 or more times?,tier2_realdata,0.41,0.49,0,9.97,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,4,Will Ecuador have more shots on target than Ivory Coast in the second half?,tier2_realdata,0.48,0.5,0,2.0,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,5,Will the second half have more total goals than the first half?,tier1_market,0.4,0.51,1,-9.02,False,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,6,Will Ivory Coast win the match?,tier1_market_match_winner_deferred,0.29,0.34,1,-7.0,False,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,7,Will Ivory Coast score in the second half?,tier1_market,0.41,0.45,1,-2.57,False,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,8,Will there be 4 or more total cards shown?,tier1_market,0.54,0.52,1,4.43,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+civ_ecu_2026-06-14.json,CIV-ECU,2026-06-14,,9,Will Ibrahim Sangare have at least 1 shot on target?,stats_proxy,0.18,0.33,0,8.0,True,Cote d'Ivoire 1 - 0 Ecuador,19.86
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,1,Panama 2+ offsides,,0.32,0.44,0,11.69,True,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,2,Panama more 2H SOT than Croatia,,0.3,0.27,0,0.39,True,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,3,Croatia first goal of 2H,,0.42,0.54,1,-9.8,False,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,4,Panama more fouls than Croatia,,0.5,0.57,1,-4.7,False,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,5,Croatia more cards than Panama,,0.38,0.36,0,-0.14,False,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,6,Panama scores ≥1 goal,,0.55,0.5,0,-3.09,False,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,7,9+ total corners,,0.3,0.51,1,-21.77,False,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,8,Panama 3+ SOT,,0.45,0.49,0,6.8,True,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,9,Fajardo ≥1 SOT,,0.28,0.4,0,10.62,True,0-1 (Croatia wins),-0.47
+cro_pan_2026-06-23.json,Croatia vs Panama,2026-06-23,L,10,Luka Sučić ≥1 SOT,,0.3,0.37,0,9.53,True,0-1 (Croatia wins),-0.47
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,1,CZE more fouls than MEX,,0.62,0.56,0,-5.25,False,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,2,MEX 2+ offsides,,0.58,0.5,0,-6.51,False,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,3,CZE more 2H SOT than MEX,,0.28,0.38,0,9.02,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,4,MEX more corners,,0.52,0.54,0,4.72,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,5,BTTS AND 3+ goals,,0.32,0.37,0,5.66,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,6,CZE win,,0.3,0.27,0,0.31,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,7,CZE score in 2H,,0.38,0.44,0,6.88,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,8,4+ total cards,,0.45,0.47,0,4.58,True,Czechia 0-3 Mexico,-6.01
+cze_mex_2026-06-24.json,Czechia vs Mexico,2026-06-24,Group A — GD3,9,Schick 1+ SOT,,0.48,0.47,0,-25.42,False,Czechia 0-3 Mexico,-6.01
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,1,,,0.56,0.56,0,2.88,False,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,2,,,0.28,0.44,0,14.27,True,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,3,,,0.46,0.5,0,6.24,True,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,4,,,0.17,0.27,0,7.63,True,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,5,,,0.44,0.39,0,-2.34,False,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,6,,,0.4,,,,,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,7,,,0.87,0.8,0,-9.29,False,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,8,,,0.61,0.57,0,-2.47,False,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,9,,,0.76,0.63,1,11.1,True,ECU 0-0 CUW,35.87
+ecu_cur_2026-06-21.json,ECU-CUR,2026-06-21,,10,,,0.38,0.35,1,7.83,True,ECU 0-0 CUW,35.87
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,1,,,0.2,0.35,0,10.15,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,2,,,0.26,0.45,0,15.73,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,3,,,0.76,0.72,1,4.42,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,4,,,0.37,0.41,1,-1.83,False,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,5,,,0.35,0.36,1,0.54,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,6,,,0.15,0.43,0,18.82,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,7,,,0.2,0.59,1,-44.54,False,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,8,,,0.6,0.62,1,0.12,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,9,,,0.59,0.6,1,1.24,True,ENG 4-2 CRO,1.23
+eng_cro_2026-06-17.json,ENG-CRO,2026-06-17,,10,,,0.43,0.34,0,-3.42,False,ENG 4-2 CRO,1.23
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,1,,,0.23,0.61,0,35.5,True,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,2,,,0.58,0.61,1,0.09,True,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,3,,,0.52,0.66,1,-9.28,False,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,4,,,0.3,0.37,0,7.51,True,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,5,,,0.45,0.37,0,-4.09,False,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,6,,,0.18,0.22,0,3.6,True,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,7,,,0.86,0.8,0,-7.56,False,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,8,,,0.68,0.65,0,-0.71,False,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,9,,,0.28,0.45,0,15.14,True,0-0,44.4
+eng_gha_2026-06-23.json,England vs Ghana,2026-06-23,Group L,10,,,0.25,0.28,0,4.19,True,0-0,44.4
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,1,,,0.33,0.42,1,-7.12,False,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,2,,,0.88,0.75,1,7.16,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,3,,,0.89,0.77,1,6.37,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,4,,,0.37,0.38,0,3.36,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,5,,,0.5,0.54,1,-0.51,False,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,6,,,0.33,0.33,0,2.53,False,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,7,,,0.91,0.85,1,3.17,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,8,,,0.24,0.28,0,4.05,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,9,,,0.84,0.65,1,12.9,True,4-0,37.39
+esp_ksa_2026-06-21.json,ESP-KSA,2026-06-21,,10,,,0.07,0.18,0,5.47,True,4-0,37.39
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,1,,,0.56,0.57,1,1.51,False,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,2,,,0.65,0.65,1,2.63,False,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,3,,,0.46,0.52,1,-3.72,False,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,4,,,0.43,0.49,0,8.15,True,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,5,,,0.22,0.27,0,4.88,True,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,6,,,0.18,0.44,0,18.7,True,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,7,,,0.53,0.54,0,2.65,True,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,8,,,0.66,0.69,1,0.07,False,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,9,,,0.4,0.46,0,7.5,True,GER 2-1 CIV,44.16
+ger_civ_2026-06-20.json,GER-CIV,2026-06-20,,10,,,0.7,0.69,1,1.78,True,GER 2-1 CIV,44.16
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,1,Will Curacao be caught offside 2 or more times?,tier2_realdata,0.38,0.39,0,5.05,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,2,"In the second half, will Germany have more shots on target than Curacao?",tier2_realdata,0.83,0.84,1,1.77,False,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,3,Will Curacao commit more fouls than Germany?,tier2_realdata,0.48,0.66,0,23.36,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,4,Will Curacao receive more cards than Germany?,tier1_market,0.59,0.61,0,4.85,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,5,Will Germany be caught offside 2 or more times?,tier2_realdata,0.43,0.54,0,13.79,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,6,Will Germany win the match?,match_winner_deferred_market,0.94,0.92,1,1.64,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,7,Will the match have 2 or fewer total goals?,tier1_market,0.16,0.25,0,7.17,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,8,Will the second half have 2 or more total goals?,tier1_market,0.67,0.6,1,8.19,True,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,9,Will Curacao have 3 or more shots on target?,tier2_realdata,0.42,0.32,0,-3.11,False,Germany 7 - 1 Curacao,72.47
+ger_cur_2026-06-14.json,GER-CUR,2026-06-14,,10,Will Leandro Bacuna have at least 1 shot on target?,tier1_market,0.21,0.32,0,9.76,True,Germany 7 - 1 Curacao,72.47
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,1,,,0.42,0.48,0,7.02,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,2,,,0.28,0.44,0,13.61,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,3,,,0.32,0.34,0,2.93,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,4,,,0.5,0.46,1,5.63,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,5,,,0.4,0.54,0,16.23,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,6,,,0.4,0.48,1,-6.43,False,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,7,,,0.36,0.4,0,5.39,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,8,,,0.45,0.66,0,25.69,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,9,,,0.68,0.56,1,11.74,True,GHA 1-0 PAN,68.01
+gha_pan_2026-06-17.json,GHA-PAN,2026-06-17,,10,,,0.57,0.39,0,-13.8,False,GHA 1-0 PAN,68.01
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,1,Jordan more fouls than Algeria?,,,,1,-23.23,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,2,4+ total SOT in 2H?,,,,1,-6.6,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,3,Jordan first AND Algeria 2H?,,,,1,-6.03,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,4,Algeria 2+ offsides?,,,,0,8.98,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,5,Penalty OR red card?,,,,0,-3.2,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,6,Mahrez 1+ SOT in 2H?,,,,0,3.59,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,7,Jordan scores 1+ goal?,,,,1,6.4,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,8,HT tied?,,,,0,0.01,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,9,3+ total goals?,,,,1,1.38,,Jordan 1-2 Algeria,-5.6
+jor_alg_2026-06-22.json,JOR-ALG,2026-06-22,,10,Al-Taamari 1+ SOT?,,,,1,13.11,,Jordan 1-2 Algeria,-5.6
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,1,Will Japan commit more fouls than Netherlands?,tier2_realdata,0.72,0.49,0,-25.37,False,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,2,Will Netherlands be caught offside 2 or more times?,tier2_realdata,0.44,0.54,0,12.02,True,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,3,Will both teams have at least 1 shot on target in the second half?,tier2_realdata,0.83,0.76,1,5.23,True,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,4,Will both teams score AND the match have 3 or more total goals?,tier1_market,0.39,0.44,1,-2.69,False,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,5,Will Japan receive more cards than Netherlands?,tier1_market,0.44,0.43,0,1.06,False,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,6,Will Netherlands win the match?,match_winner_deferred_market,0.47,0.53,0,9.32,True,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,7,Will Japan score in the second half?,tier1_market,0.45,0.5,1,-2.95,False,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,8,Will there be 8 or more total shots on target?,tier1_market,0.59,0.56,1,6.02,True,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,9,Will Cody Gakpo have at least 1 shot on target?,tier1_market,0.61,0.61,1,2.5,False,Netherlands 2 - 2 Japan,0.47
+jpn_ned_2026-06-14.json,JPN-NED,2026-06-14,,10,Will Takefusa Kubo score or assist a goal (excluding own goals)?,tier1_market,0.3,0.36,1,-4.65,False,Netherlands 2 - 2 Japan,0.47
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,1,,,0.25,0.39,1,-17.65,False,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,2,,,0.25,0.28,0,3.9,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,3,,,0.45,0.47,0,4.7,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,4,,,0.36,0.37,0,2.44,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,5,,,0.12,0.17,0,3.23,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,6,,,0.54,0.5,0,-1.86,False,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,7,,,0.63,0.51,1,12.09,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,8,,,0.65,0.64,1,1.98,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,9,,,0.18,0.29,0,8.5,True,JPN 4-0 TUN,17.34
+jpn_tun_2026-06-21.json,JPN-TUN,2026-06-21,,10,,,0.58,,,,,JPN 4-0 TUN,17.34
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,1,Will both teams score AND the match have 3 or more total goals?,compound_market_proxy,0.4,0.38,1,6.44,True,Korea Republic 2 - 1 Czechia,22.81
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,2,Will a penalty kick be awarded in the match?,tier1_market_deviated,0.42,0.33,0,-3.2,False,Korea Republic 2 - 1 Czechia,22.81
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,3,Will South Korea have more shots on target than Czechia in the second half?,stats_proxy,0.6,0.55,1,7.21,True,Korea Republic 2 - 1 Czechia,22.81
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,4,Will South Korea win the match?,match_winner_internal_model,0.46,0.51,1,-0.08,False,Korea Republic 2 - 1 Czechia,22.81
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,5,Will Son Heung-min score a goal (excluding own goals)?,tier1_market_deviated,0.38,0.4,0,6.52,True,Korea Republic 2 - 1 Czechia,22.81
+kor_cze_2026-06-11.json,KOR vs CZE,2026-06-11,,6,Will Patrik Schick have at least 1 shot on target?,tier1_market,0.65,0.67,0,5.91,True,Korea Republic 2 - 1 Czechia,22.81
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,1,Will Haiti commit more fouls than Morocco?,,0.65,0.61,1,5.47,True,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,2,"At halftime, will Haiti have more corner kicks than Morocco?",,0.35,0.25,0,-3.62,False,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,3,Will Haiti receive more cards than Morocco?,,0.72,0.55,1,13.91,True,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,4,Will Morocco have more shots on target than Haiti in the second half?,,0.7,0.72,1,1.03,True,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,5,Will there be 4 or more total shots on target in the second half?,,0.45,0.62,1,-13.51,False,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,6,Will a penalty kick be awarded OR a red card be shown?,,0.38,0.35,0,-0.13,False,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,7,Will Morocco win the match?,,0.8,0.8,1,1.66,True,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,8,Will Morocco score in the first half?,,0.7,0.66,1,4.22,True,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,9,Will Duckens Nazon have at least 1 shot on target?,,0.25,0.28,1,-1.23,False,Morocco 4-2 Haiti,11.07
+mar_hai_2026-06-24.json,Morocco vs Haiti,2026-06-24,Group C,10,Will Haiti score in the second half?,,0.25,0.28,0,3.27,True,Morocco 4-2 Haiti,11.07
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,1,,,0.43,0.52,1,-6.73,False,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,2,,,0.79,0.73,1,5.05,True,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,3,,,0.47,0.47,1,2.55,False,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,4,,,0.47,0.49,1,-0.16,False,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,5,,,0.42,0.47,1,-3.64,False,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,6,,,0.32,0.5,0,18.04,True,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,7,,,0.56,0.59,1,-0.2,False,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,8,,,0.38,0.43,0,5.57,True,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,9,,,0.63,0.58,1,6.6,True,NED 5-1 SWE,32.05
+ned_swe_2026-06-20.json,NED-SWE,2026-06-20,,10,,,0.64,0.61,1,4.96,True,NED 5-1 SWE,32.05
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,1,Will Senegal be caught offside 2+ times?,,,,1,22.07,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,2,Will Norway score more 2H goals than Senegal?,,,,0,2.63,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,3,Penalty kick OR red card?,,,,0,2.91,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,4,Will Senegal commit more fouls than Norway?,,,,0,8.46,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,5,4+ total 2H SOT?,,,,1,-5.3,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,6,Norway win?,,,,1,-1.24,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,7,HT tied?,,,,0,3.29,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,8,9+ total corners?,,,,1,-0.37,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,9,Norway 6+ SOT?,,,,1,-1.58,,Norway 3-2 Senegal,36.49
+nor_sen_2026-06-22.json,NOR-SEN,2026-06-22,,10,Sadio Mané scores?,,,,0,5.63,,Norway 3-2 Senegal,36.49
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,1,Will New Zealand commit more fouls than Egypt?,,0.33,0.51,1,-18.43,False,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,2,"In the second half, will New Zealand have more shots on target than Egypt?",,0.22,0.33,0,8.47,True,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,3,Will the second half have more goals than the first half?,,0.42,0.49,1,-6.16,False,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,4,Will Egypt finish with more corner kicks than New Zealand?,,0.42,0.62,0,22.85,True,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,5,Will New Zealand win the match?,,0.15,0.23,0,5.45,True,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,6,Will the match have 2 or fewer total goals?,,0.54,0.52,0,-0.45,False,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,7,Will there be 4 or more total cards shown?,,0.3,0.43,0,11.91,True,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,8,Will Ben Waine have at least 1 shot on target?,,0.48,0.32,0,-9.15,False,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,9,Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?,,0.52,0.28,1,32.04,True,NZL 1-3 Egypt,46.54
+nzl_egy_2026-06-22.json,NZL-EGY,2026-06-22,,10,Will Egypt be caught offside 2 or more times?,,0.5,0.49,0,0.0,False,NZL 1-3 Egypt,46.54
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",1,UZB 2+ offsides?,,,,1,-26.35,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",2,POR more 2H SOT than UZB?,,,,1,4.99,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",3,POR 2+ offsides?,,,,1,9.38,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",4,Penalty OR red card?,,,,0,-0.32,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",5,Shomurodov 2H SOT?,,,,0,8.78,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",6,BTTS AND 3+ goals?,,,,0,5.72,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",7,Portugal win?,,,,1,5.49,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",8,2H had 2+ goals?,,,,1,-8.38,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",9,UZB 4+ total SOT?,,,,0,10.61,,Portugal 5-0 Uzbekistan,-1.11
+por_uzb_2026-06-23.json,POR-UZB,2026-06-23,"Group K (Portugal, DR Congo, Colombia, Uzbekistan)",10,Ramos scores?,,,,0,-11.03,,Portugal 5-0 Uzbekistan,-1.11
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,1,"At halftime, will both teams have at least 1 shot on target?",tier2_realdata,0.2,0.59,1,-42.51,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,2,Will Switzerland be caught offside 2 or more times?,tier2_realdata,0.6,0.53,0,-3.84,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,3,Will Switzerland receive at least 1 card in the second half?,tier2_realdata,0.4,0.57,0,19.86,True,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,4,Will both teams score AND the match have 3 or more total goals?,tier1_market,0.32,0.31,0,2.85,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,5,Will Qatar have 2 or more shots on target in the second half?,tier2_realdata,0.3,0.39,1,-7.61,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,6,Will Qatar commit more fouls than Switzerland?,tier2_realdata,0.46,0.64,1,-13.81,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,7,Will Qatar score at least 1 goal?,tier1_market_deviated_down,0.38,0.4,1,2.0,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,8,Will Qatar have 2 or more shots on target?,tier2_realdata,0.39,0.57,1,-14.3,False,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,9,Will Akram Afif have at least 1 shot on target?,tier1_market,0.42,0.46,0,7.26,True,Qatar 1 - 1 Switzerland,-39.21
+qat_sui_2026-06-13.json,Qatar vs Switzerland,2026-06-13,,10,Will Granit Xhaka have at least 1 shot on target?,tier1_market,0.41,0.48,0,10.91,True,Qatar 1 - 1 Switzerland,-39.21
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,1,KOR 2+ offsides,,0.7,0.52,0,-19.17,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,2,KOR card in 2H,,0.52,0.55,1,-0.7,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,3,BTTS AND 3+ goals,,0.3,0.35,0,5.66,True,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,4,KOR more 2H SOT than RSA,,0.72,0.6,1,10.81,True,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,5,RSA more fouls than KOR,,0.6,0.57,0,-1.77,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,6,HT tied,,0.4,0.43,1,-2.18,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,7,RSA 3+ SOT,,0.4,0.52,1,-10.69,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,8,Appollis 1+ SOT,,0.38,0.4,1,0.29,True,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,9,Son 1+ SOT,,0.72,0.56,0,-16.33,False,South Africa 1-0 South Korea,-39.56
+rsa_kor_2026-06-24.json,South Africa vs South Korea,2026-06-24,Group A — GD3,10,South Africa win the match,,0.17,0.22,1,-5.47,False,South Africa 1-0 South Korea,-39.56
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,1,,tier2_realdata,0.34,0.44,0,10.87,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,2,,tier2_realdata,0.74,0.67,0,-7.76,False,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,3,,tier2_realdata,0.52,0.49,1,4.73,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,4,,tier1_market,0.57,0.56,1,3.09,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,5,,tier1_market,0.26,0.32,0,5.87,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,6,,tier2_realdata,0.41,0.53,1,-9.88,False,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,7,,tier2_realdata,0.3,0.67,1,-35.66,False,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,8,,match_winner_deferred_market,0.11,0.18,0,4.4,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,9,,tier1_market,0.2,0.27,0,5.31,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sau_uru_2026-06-15.json,SAU-URU,2026-06-15,,10,,tier1_market,0.38,0.41,0,5.28,True,Saudi Arabia 1 - 1 Uruguay,-13.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,1,Will Brazil have more shots on target than Scotland in the second half?,,0.7,0.71,0,3.93,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,2,Will Scotland be caught offside 2 or more times?,,0.32,0.42,0,9.65,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,3,Will Scotland score the first goal of the game and Brazil score in the second half?,,0.13,0.2,0,4.49,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,4,Will Brazil finish with more corner kicks than Scotland?,,0.78,0.72,0,-7.83,False,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,5,Will Scotland score at least 1 goal?,,0.45,0.44,0,1.86,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,6,Will the match have 3 or more total goals?,,0.52,0.54,1,0.16,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,7,Will Brazil score in the second half?,,0.62,0.69,1,-3.33,False,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,8,Will there be 4 or more total cards shown?,,0.62,0.44,0,-16.78,False,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,9,Will Scott McTominay have at least 1 shot on target?,,0.5,0.43,1,10.39,True,Scotland 0-3 Brazil,2.75
+sco_bra_2026-06-24.json,Scotland vs Brazil,2026-06-24,Group C,10,Will Brazil score in the first half?,,0.62,0.64,1,0.22,True,Scotland 0-3 Brazil,2.75
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,1,,,0.4,0.49,0,10.64,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,2,,,0.33,0.44,0,10.98,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,3,,,0.5,0.58,0,10.35,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,4,,,0.29,0.36,0,7.07,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,5,,,0.32,0.32,0,1.93,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,6,,,0.22,0.41,0,14.49,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,7,,,0.16,0.24,0,5.43,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,8,,,0.55,0.5,0,-2.05,False,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,9,,,0.37,0.48,0,11.94,True,SCO 0-1 MAR,71.5
+sco_mar_2026-06-19.json,SCO-MAR,2026-06-19,,10,,,0.6,0.59,0,0.73,True,SCO 0-1 MAR,71.5
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,1,,,0.75,0.666,1,,True,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,2,,,0.04,0.233,0,,True,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,3,,,0.44,0.477,1,,False,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,4,,,0.37,0.435,1,,False,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,5,,,0.44,0.477,1,,False,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,6,,,0.62,0.587,1,,True,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,7,,,0.67,0.618,1,,True,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,8,,,0.39,0.447,1,,False,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,9,,,0.72,0.648,,,,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,10,,,0.45,0.484,,,,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,11,,,0.38,0.455,,,,SUI 4-1 BIH,26.9
+sui_bih_2026-06-18.json,SUI-BIH,2026-06-18,,12,,,0.62,0.587,1,,True,SUI 4-1 BIH,26.9
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,1,Will Canada commit more fouls than Switzerland?,,0.63,0.53,0,-9.59,False,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,2,Will Switzerland be caught offside 2 or more times?,,0.42,0.5,0,9.88,True,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,3,Will there be 2 or more total cards shown in the second half?,,0.6,0.54,0,-3.71,False,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,4,Will both teams score AND the match have 3 or more total goals?,,0.3,0.41,1,-11.74,False,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,5,Will a penalty kick be awarded in the match?,,0.33,0.29,0,-0.61,False,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,6,Will Switzerland have more shots on target than Canada in the second half?,,0.48,0.51,0,5.27,True,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,7,Will Switzerland win the match?,,0.44,0.45,1,1.16,True,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,8,Will the second half have 2 or more total goals?,,0.3,0.43,1,-14.28,False,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,9,Will Granit Xhaka have at least 1 shot on target?,,0.25,0.4,0,13.4,True,Switzerland 2-1 Canada,-21.56
+sui_can_2026-06-24.json,Switzerland vs Canada,2026-06-24,Group B,10,Will Jonathan David have at least 1 shot on target?,,0.7,0.59,0,-11.34,False,Switzerland 2-1 Canada,-21.56
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,1,"At halftime, will Tunisia have more corner kicks than Sweden?",tier2_realdata,0.28,0.34,0,6.06,True,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,2,Will Sweden commit more fouls than Tunisia?,tier2_realdata,0.15,0.4,1,-33.9,False,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,3,Will the second half have more total goals than the first half?,tier1_market,0.42,0.51,0,10.28,True,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,4,Will Sweden score the first goal of the game and Tunisia score in the second half?,compound_market_proxy,0.24,0.31,0,7.0,True,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,5,Will Tunisia have more shots on target than Sweden in the second half?,tier2_realdata,0.27,0.33,0,5.71,True,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,6,Will a penalty kick be awarded OR a red card be shown in the match?,compound_market_proxy,0.21,0.37,0,11.68,True,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,7,Will Sweden win the match?,match_winner_deferred_market,0.52,0.59,1,-3.2,False,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,8,Will the match have 3 or more total goals?,tier1_market,0.43,0.44,1,1.57,False,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,9,Will Viktor Gyokeres score or assist a goal (excluding own goals)?,tier1_market,0.49,0.5,1,1.4,False,Sweden 5 - 1 Tunisia,17.37
+swe_tun_2026-06-14.json,SWE-TUN,2026-06-14,,10,Will Ellyes Skhiri have at least 1 shot on target?,tier1_market,0.16,0.31,0,10.77,True,Sweden 5 - 1 Tunisia,17.37
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,1,Will United States be caught offside 2 or more times?,tier2_realdata,0.58,0.56,1,5.31,True,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,2,Will United States score the first goal of the game and Paraguay score in the second half?,compound_independence,0.22,0.31,1,-9.25,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,3,Will Paraguay finish with more corner kicks than United States?,skellam_market_hybrid,0.35,0.35,0,4.28,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,4,Will United States win the match?,match_winner_deferred_market,0.46,0.6,1,-8.81,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,5,"At halftime, will the match be tied?",tier1_market,0.47,0.45,0,1.28,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,6,Will the match have 3 or more total goals?,tier1_market,0.38,0.42,1,-1.47,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,7,Will Paraguay score in the second half?,tier1_market,0.4,0.44,1,-1.54,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,8,Will there be 4 or more total cards shown?,tier1_market,0.57,0.49,1,12.18,True,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,9,Will Folarin Balogun have at least 1 shot on target?,tier1_market,0.62,0.63,1,2.38,False,United States 4 - 1 Paraguay,19.11
+usa_par_2026-06-13.json,USA vs Paraguay,2026-06-13,,10,Will Julio Enciso have at least 1 shot on target in the second half?,tier2_realdata,0.2,0.37,0,14.77,True,United States 4 - 1 Paraguay,19.11
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,1,,,0.45,0.42,0,0.04,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,2,,,0.62,0.69,0,11.47,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,3,,,0.37,0.37,0,1.55,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,4,,,0.58,0.55,1,5.92,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,5,,,0.47,0.43,1,6.52,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,6,,,0.39,0.41,0,3.16,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,7,,,0.52,0.48,0,-1.81,False,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,8,,,0.67,0.66,1,2.12,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,9,,,0.2,0.29,0,6.64,True,UZB 1-3 COL,39.73
+uzb_col_2026-06-18.json,UZB-COL,2026-06-18,,10,,,0.24,0.28,0,4.12,True,UZB 1-3 COL,39.73
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,1,Paraguay more cards,,0.5,0.52,1,-0.21,False,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,2,Turkey 2+ offsides,,0.32,0.51,1,-20.26,False,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,3,Turkey more 2H corners,,0.57,0.57,1,1.35,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,4,Paraguay more fouls,,0.52,0.58,1,-3.69,False,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,5,Turkey more 2H SOT,,0.62,0.59,1,4.42,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,6,Penalty or red card,,0.4,0.39,1,3.15,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,7,Turkey wins,,0.48,0.54,0,8.0,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,8,2 or fewer total goals,,0.54,0.5,1,5.35,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,9,Kökçü SOT,,0.4,0.41,0,3.87,True,Turkey 0-1 Paraguay,5.34
+tur_par_2026-06-20.json,TUR-PAR,2026-06-20,,10,Enciso SOT,,0.47,0.48,0,3.37,True,Turkey 0-1 Paraguay,5.34
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,1,URU 2plus offsides,,0.92,0.52,1,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,2,both 1plus SOT 2H,,0.62,0.6,0,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,3,CPV more cards,,0.45,0.49,0,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,4,penalty,,0.28,0.3,0,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,5,URU more fouls,,0.42,0.47,1,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,6,CPV 2plus SOT 2H,,0.28,0.35,1,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,7,URU wins,,0.72,0.69,0,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,8,CPV scores 2H,,0.27,0.29,1,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,9,Nunez G or A,,0.55,0.38,0,,,URU 2-2 CPV,0.0
+uru_cpv_2026-06-21.json,URU-CPV,2026-06-21,,10,URU 6plus SOT,,0.56,0.53,0,,,URU 2-2 CPV,0.0
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,1,Will United States commit more fouls than Türkiye?,,0.6,0.47,0,-12.14,False,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,2,Will Türkiye be caught offside 2 or more times?,,0.65,0.5,1,14.82,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,3,Will the second half have more total goals than the first half?,,0.46,0.48,0,3.52,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,4,Will Türkiye score the first goal of the game AND United States score in the second half?,,0.27,0.28,0,2.81,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,5,Will a penalty kick be awarded OR a red card be shown in the match?,,0.36,0.34,0,0.31,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,6,Will Türkiye win the match?,,0.25,0.31,1,-6.85,False,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,7,Will the match have 3 or more total goals?,,0.61,0.53,1,8.24,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,8,Will Türkiye have 5 or more corner kicks?,,0.52,0.52,0,2.71,True,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,9,Will Orkun Kökçü score or assist a goal (excluding own goals)?,,0.26,0.28,1,-0.39,False,Turkey 3-2 United States,8.34
+tur_usa_2026-06-25.json,TUR-USA,2026-06-25,,10,Will Folarin Balogun score a goal (excluding own goals)?,,0.4,0.28,0,-4.7,False,Turkey 3-2 United States,8.34
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,1,Will Australia be caught offside 2 or more times?,,0.12,0.44,0,20.13,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,2,Will Australia commit more fouls than Paraguay?,,0.45,0.46,0,2.62,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,3,Will Paraguay be caught offside 2 or more times?,,0.55,0.47,0,-6.47,False,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,4,Will Australia have more shots on target than Paraguay in the second half?,,0.55,0.44,0,-8.68,False,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,5,Will the second half have more total goals than the first half?,,0.36,0.45,0,9.4,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,6,Will Paraguay win the match?,,0.36,0.37,0,2.73,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,7,Will the second half have 2 or more total goals?,,0.28,0.37,0,7.63,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,8,Will there be 4 or more total cards shown?,,0.27,0.47,0,16.91,True,Paraguay 0-0 Australia,49.57
+par_aus_2026-06-25.json,PAR-AUS,2026-06-25,,9,Will Julio Enciso have at least 1 shot on target?,,0.45,0.48,0,5.29,True,Paraguay 0-0 Australia,49.57
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,1,Will Sweden be caught offside 2 or more times?,,0.78,0.51,1,21.58,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,2,"In the second half, will Japan have more shots on target than Sweden?",,0.2,0.51,0,23.98,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,3,Will Sweden score more goals than Japan in the second half?,,0.28,0.33,0,5.08,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,4,Will a penalty kick be awarded OR a red card be shown?,,0.33,0.34,0,2.29,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,5,Will Japan win the match?,,0.47,0.52,0,7.79,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,6,Will the match have 2 or fewer total goals?,,0.5,0.45,1,7.61,True,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,7,Will Sweden have 5 or more corner kicks?,,0.4,0.46,1,-2.87,False,Japan 1-1 Sweden,70.49
+jpn_swe_2026-06-25.json,JPN-SWE,2026-06-25,,8,Will Viktor Gyökeres score a goal (excluding own goals)?,,0.29,0.34,0,5.03,True,Japan 1-1 Sweden,70.49
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,1,Will Tunisia commit more fouls than Netherlands?,,0.45,0.58,1,-10.79,False,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,2,Will both teams have at least 1 shot on target in the second half?,,0.38,0.59,1,-18.24,False,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,3,Will both teams score AND the match have 3 or more total goals?,,0.33,0.32,1,3.29,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,4,Will Netherlands receive more cards than Tunisia?,,0.23,0.34,0,8.4,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,5,Will Tunisia score at least 1 goal?,,0.39,0.38,1,3.26,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,6,"At halftime, will the match be tied?",,0.28,0.31,0,3.15,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,7,Will Tunisia score in the second half?,,0.24,0.28,1,-4.74,False,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,8,Will Ellyes Skhiri have at least 1 shot on target?,,0.07,0.26,0,8.9,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,9,Will there be 8 or more total shots on target?,,0.61,0.6,1,3.43,True,Tunisia 1-3 Netherlands,-13.62
+tun_ned_2026-06-25.json,TUN-NED,2026-06-25,,10,Will Cody Gakpo score or assist a goal (excluding own goals)?,,0.66,0.55,0,-10.28,False,Tunisia 1-3 Netherlands,-13.62
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,1,"At halftime, will both teams have at least 1 shot on target?",,0.85,0.67,1,11.7,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,2,Will Ecuador commit more fouls than Germany?,,0.35,0.57,1,-22.01,False,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,3,"In the second half, will Ecuador have more corner kicks than Germany?",,0.43,0.35,1,12.13,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,4,Will Germany score more goals than Ecuador in the second half?,,0.46,0.54,0,10.5,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,5,Will Germany have more shots on target than Ecuador in the second half?,,0.5,0.62,0,16.37,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,6,Will a penalty kick be awarded OR a red card be shown?,,0.28,0.34,0,5.66,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,7,Will Ecuador be caught offside 2 or more times?,,0.1,0.45,0,21.43,True,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,8,Will both teams score AND the match have 3 or more total goals?,,0.22,0.41,1,-24.1,False,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,9,Will Ecuador score at least 1 goal?,,0.5,0.56,1,-2.62,False,Ecuador 2-1 Germany,8.05
+ger_ecu_2026-06-25.json,GER-ECU,2026-06-25,,10,Will the match have 2 or fewer total goals?,,0.65,0.43,0,-21.02,False,Ecuador 2-1 Germany,8.05
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,1,Will Curaçao be caught offside 2 or more times?,,0.37,0.41,1,-1.89,False,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,2,Will Ivory Coast commit more fouls than Curaçao?,,0.28,0.42,0,11.64,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,3,Will Ivory Coast score the first goal of the second half?,,0.65,0.6,1,6.96,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,4,Will the second half have more goals than the first half?,,0.38,0.5,0,12.97,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,5,Will Curaçao have more shots on target than Ivory Coast in the second half?,,0.35,0.23,0,-4.37,False,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,6,Will Curaçao receive more cards than Ivory Coast?,,0.63,0.52,1,11.85,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,7,Will Curaçao score at least 1 goal?,,0.4,0.42,0,4.43,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,8,Will Ivory Coast have 5 or more corner kicks?,,0.5,0.64,1,-9.32,False,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,9,Will Leandro Bacuna have at least 1 shot on target?,,0.26,0.33,0,6.53,True,Curacao 0-2 Ivory Coast,45.21
+cur_civ_2026-06-25.json,CUR-CIV,2026-06-25,,10,Will Ibrahim Sangaré have at least 1 shot on target?,,0.35,0.39,0,6.41,True,Curacao 0-2 Ivory Coast,45.21
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,1,"At halftime, will Iraq have more corner kicks than France?",,0.07,0.21,0,6.28,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,2,Will France commit more fouls than Iraq?,,0.45,0.34,1,14.7,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,3,Will Iraq receive at least 1 card in the second half?,,0.65,0.62,0,-1.37,False,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,4,Will both teams score AND the match have 3 or more total goals?,,0.28,0.32,0,4.96,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,5,Will Iraq have 2 or more shots on target in the second half?,,0.15,0.34,0,12.44,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,6,Will France win the match?,,0.88,0.86,1,2.12,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,7,Will Iraq score in the second half?,,0.18,0.27,0,5.47,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,8,Will Iraq have 4 or more shots on target?,,0.08,0.25,0,8.43,True,France 3-0 Iraq,46.55
+fra_irq_2026-06-22.json,FRA-IRQ,2026-06-22,,9,Will France score in the first half?,,0.6,0.72,1,-6.47,False,France 3-0 Iraq,46.55
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,1,Will Colombia have more shots on target than DR Congo in the second half?,,0.72,0.66,1,6.06,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,2,Will Colombia score more goals than DR Congo in the second half?,,0.55,0.55,1,2.34,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,3,Will a penalty kick be awarded OR a red card be shown in the match?,,0.38,0.36,0,0.95,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,4,Will Colombia commit more fouls than DR Congo?,,0.42,0.41,0,1.22,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,5,Will Colombia win the match?,,0.72,0.66,1,5.28,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,6,"At halftime, will Colombia be winning?",,0.52,0.49,0,-1.18,False,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,7,Will the match have 2 or fewer total goals?,,0.56,0.51,1,6.26,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,8,Will Colombia have 5 or more corner kicks?,,0.48,0.58,1,-7.4,False,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,9,Will Luis Díaz score or assist a goal (excluding own goals)?,,0.48,0.5,0,5.12,True,Colombia 1-0 DR Congo,29.11
+col_cdr_2026-06-23.json,COL-CDR,2026-06-23,,10,Will Cédric Bakambu have at least 1 shot on target?,,0.32,0.43,0,10.45,True,Colombia 1-0 DR Congo,29.11
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,1,Will Qatar be caught offside 2 or more times?,,0.25,0.43,1,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,2,Will Bosnia have more 2H corners than Qatar?,,0.58,0.61,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,3,Will Bosnia score more goals than Qatar in 2H?,,0.42,0.54,1,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,4,Will Qatar have more shots on target than Bosnia in 2H?,,0.22,0.29,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,5,Will a penalty kick be awarded OR a red card be shown?,,0.38,0.38,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,6,Will Qatar commit more fouls than Bosnia?,,0.55,0.5,1,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,7,Will Bosnia receive more cards than Qatar?,,0.4,0.41,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,8,Will Bosnia and Herzegovina win the match?,,0.62,0.64,1,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,9,Will the match have 2 or fewer total goals?,,0.52,0.46,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+bih_qat_2026-06-24.json,BIH-QAT,2026-06-24,,10,Will Edin Dzeko have at least 1 shot on target?,,0.7,0.59,0,0,,Bosnia-Herzegovina 3-1 Qatar,0
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,1,Will Cape Verde commit more fouls than Saudi Arabia?,,0.22,0.45,0,17.76,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,2,Will both teams have at least 1 shot on target in the second half?,,0.45,0.66,1,-16.16,False,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,3,Will a penalty kick be awarded in the match?,,0.25,0.28,0,3.3,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,4,Will Cape Verde be caught offside 2 or more times?,,0.32,0.47,1,-15.32,False,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,5,Will Saudi Arabia have more shots on target than Cape Verde in the second half?,,0.3,0.44,0,12.5,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,6,Will Cape Verde win the match?,,0.37,0.39,0,3.8,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,7,Will Cape Verde score in the second half?,,0.49,0.49,0,1.87,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,8,Will Ryan Mendes score or assist a goal (excluding own goals)?,,0.34,0.3,0,-0.74,False,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,9,Will Salem Al-Dawsari score a goal (excluding own goals)?,,0.24,0.25,0,2.54,True,Cape Verde 0-0 Saudi Arabia,1.45
+cpv_sau_2026-06-26.json,CPV-SAU,2026-06-26,,10,Will Saudi Arabia receive more cards than Cape Verde?,,0.38,0.46,1,-8.09,False,Cape Verde 0-0 Saudi Arabia,1.45
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,1,"Will a card be shown after the second hydration break, including any extra time?",,0.78,0.61,0,-39.68,False,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,2,Will both teams score in regulation (90 minutes + stoppage time)?,,0.46,0.47,0,8.49,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,3,Will either team be ruled offside before the first hydration break?,,0.5,0.52,0,11.21,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,4,Will a substitute score a goal in regulation (90 minutes + stoppage time)?,,0.28,0.29,0,6.22,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,5,Will a goal be scored before the first hydration break?,,0.4,0.41,0,6.81,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,6,Will there be 9 or more total corner kicks in regulation (90 minutes + stoppage time)?,,0.56,0.54,0,0.82,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,7,Will regulation (90 minutes + stoppage time) end in a tie?,,0.29,0.3,0,5.19,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,8,Will Canada be ahead at halftime?,,0.38,0.44,0,13.27,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,9,Will South Africa advance to the Round of 16?,,0.27,0.31,0,8.92,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,10,Will a penalty kick be awarded during regulation (90 minutes + stoppage time)?,,0.26,0.29,0,7.21,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,11,"Will the second half produce more goals than the first half in regulation (90 minutes + stoppage time), excluding extra time?",,0.41,0.49,1,-13.97,False,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,12,Will any player score more than 1 goal (excluding own goals) in regulation (90 minutes + stoppage time)?,,0.18,0.25,0,11.94,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,13,Will Cyle Larin score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?,,0.28,0.25,0,1.14,True,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,14,Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?,,0.57,0.5,0,-10.43,False,South Africa 0-1 Canada,-9.1
+rsa_can_2026-06-28.json,RSA-CAN,2026-06-28,Round of 32,15,Will Iqraam Rayners have at least 1 shot on target in regulation (90 minutes + stoppage time)?,,0.52,0.32,0,-26.23,False,South Africa 0-1 Canada,-9.1
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,1,Will United States commit more fouls than Australia?,,0.4,0.44,0,5.95,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,2,Will Australia be caught offside 2 or more times?,,0.15,0.45,0,20.74,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,3,Will United States score more goals than Australia in the second half?,,0.47,0.52,0,8.01,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,4,Will United States have more shots on target than Australia in the second half?,,0.62,0.63,0,3.03,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,5,Will Australia finish with more corner kicks than United States?,,0.2,0.34,0,10.03,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,6,Will both teams score AND the match have 3 or more total goals?,,0.39,0.43,0,6.53,True,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,7,Will United States win the match?,,0.59,0.62,1,-0.01,False,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,8,Will there be 4 or more total cards shown?,,0.4,0.45,1,-3.06,False,USA 2-0 Australia,42.83
+usa_aus_2026-06-19.json,USA-AUS,2026-06-19,,9,Will Folarin Balogun have at least 1 shot on target?,,0.73,0.65,0,-8.39,False,USA 2-0 Australia,42.83
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,1,Mexico 2plus offsides,,0.47,0.5,1,-1.31,False,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,2,Mexico first AND Korea 2H goal,,0.26,0.35,0,7.3,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,3,Korea more corners,,0.38,0.44,1,-0.81,False,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,4,Mexico wins,,0.48,0.49,1,1.02,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,5,Mexico HT winning,,0.35,0.42,0,5.29,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,6,3plus total goals,,0.43,0.47,0,7.03,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,7,Korea scores 2H,,0.42,0.46,0,9.05,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,8,4plus total cards,,0.48,0.52,0,2.82,True,Mexico 1-0 Korea,40.23
+mex_kor_2026-06-19.json,MEX-KOR,2026-06-19,,9,Son score or assist,,0.33,0.42,0,9.84,True,Mexico 1-0 Korea,40.23
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,1,Will Morocco be ahead at halftime?,,0.23,0.28,0,9.28,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,2,"Will a card be shown after the second hydration break, including any extra time?",,0.65,0.61,0,-3.51,False,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,3,Will a goal be scored in first-half stoppage time?,,0.1,0.2,0,13.38,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,4,Will a goal be scored after the second hydration break?,,0.47,0.5,1,-2.71,False,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,5,Will a red card be shown in the match?,,0.13,0.19,0,6.83,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,6,"Will the second half produce more goals than the first half in regulation (90 minutes + stoppage time), excluding extra time?",,0.43,0.48,1,-7.34,False,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,7,Will the Netherlands score the first goal of the match?,,0.52,0.52,1,3.47,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,8,Will Brian Brobbey have 2 or more shots on target in regulation (90 minutes + stoppage time)?,,0.21,0.36,0,24.84,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,9,Will the Netherlands have more corner kicks than Morocco in regulation (90 minutes + stoppage time)?,,0.52,0.55,0,8.49,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,10,Will the Netherlands win in regulation (90 minutes + stoppage time)?,,0.4,0.46,0,15.16,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,11,Will Ismael Saibari score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?,,0.32,0.35,0,8.0,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,12,Will both teams score in regulation (90 minutes + stoppage time)?,,0.53,0.55,1,0.82,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,13,Will both teams receive at least one card in regulation (90 minutes + stoppage time)?,,0.57,0.65,0,23.37,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,14,Will the first half produce 2 or more goals?,,0.27,0.34,0,12.71,True,Netherlands 1-1 Morocco,120.3
+ned_mar_2026-06-30.json,NED-MAR,2026-06-30,Round of 32,15,Will a penalty kick be awarded during regulation (90 minutes + stoppage time)?,,0.23,0.27,0,7.52,True,Netherlands 1-1 Morocco,120.3
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,1,Will Kai Havertz (Germany) score a goal (excluding own goals) in regulation?,,0.38,0.39,1,3.32,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,2,Will a goal be scored before the first hydration break?,,0.48,0.46,0,1.08,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,3,Will Germany win in regulation?,,0.72,0.72,0,3.5,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,4,Will Jamal Musiala (Germany) have 2 or more shots on target in regulation?,,0.28,0.33,0,17.21,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,5,Will there be 4 or more total cards shown in regulation?,,0.39,0.46,0,16.06,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,6,Will Germany score the first goal of the match?,,0.72,0.7,0,-1.99,False,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,7,Will Germany have 7 or more shots on target in regulation?,,0.5,0.5,0,5.34,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,8,Will Julio Enciso (Paraguay) have 1 or more shots on target in regulation?,,0.32,0.45,1,-26.3,False,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,9,Will both teams score in regulation?,,0.47,0.44,1,9.08,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,10,Will Germany score in both halves in regulation?,,0.45,0.49,0,12.03,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,11,Will Florian Wirtz (Germany) score or assist a goal (excluding own goals) in regulation?,,0.47,0.46,1,6.55,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,12,Will Germany have 7 or more corner kicks in regulation?,,0.44,0.49,1,-6.58,False,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,13,Will Germany be ahead at halftime?,,0.55,0.56,0,4.92,True,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,14,Will there be 3 or more offside calls in regulation?,,0.3,0.53,1,-48.68,False,Germany 4-5 Paraguay,-0.17
+ger_par_2026-06-29.json,GER-PAR,2026-06-29,Round of 32,15,Will the match have 3 or more total goals in regulation?,,0.56,0.57,0,4.3,True,Germany 4-5 Paraguay,-0.17
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,1,Will Brazil score 2 or more goals in regulation?,,0.47,0.55,1,-9.47,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,2,Will there be 8 or more total shots on target in regulation?,,0.49,0.61,1,-15.0,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,3,Will any player record 2 or more shots on target in regulation?,,0.6,0.7,1,-6.85,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,4,Will Japan advance to the Round of 16?,,0.28,0.32,0,10.33,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,5,Will there be 9 or more total corner kicks in regulation?,,0.44,0.52,0,20.5,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,6,Will a goal be scored before the first hydration break?,,0.41,0.44,0,9.68,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,7,Will there be 4 or more total cards shown in regulation?,,0.38,0.42,1,-5.54,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,8,Will a substitute score a goal in regulation?,,0.29,0.32,1,-2.13,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,9,Will Matheus Cunha score a goal (excluding own goals) in regulation?,,0.28,0.33,0,10.04,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,10,Will any player score more than 1 goal (excluding own goals) in regulation?,,0.19,0.29,0,17.28,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,11,Will either team be ruled offside before the first hydration break?,,0.52,0.52,0,6.27,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,12,Will the match have 3 or more total goals in regulation?,,0.43,0.51,1,-12.13,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,13,Will Brazil score in both halves of regulation?,,0.3,0.42,0,23.79,True,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,14,Will Ayase Ueda have at least 1 shot on target in regulation?,,0.44,0.49,1,-6.24,False,Brazil 2-1 Japan,47.33
+bra_jpn_2026-06-29.json,BRA-JPN,2026-06-29,Round of 32,15,Will regulation end in a tie?,,0.26,0.29,0,6.81,True,Brazil 2-1 Japan,47.33

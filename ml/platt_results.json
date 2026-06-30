@@ -1,0 +1,117 @@
+{
+  "n_questions": 246,
+  "date_range": "2026-06-11 to 2026-06-22",
+  "global_platt": {
+    "a": -0.210986,
+    "b": 0.510434,
+    "interpretation": {
+      "a_near_zero": false,
+      "b_near_one": false,
+      "b_ci_95": [
+        0.1233,
+        1.2865
+      ],
+      "b_includes_1": true
+    },
+    "brier_raw": 0.218778,
+    "brier_platt_calib": 0.223687,
+    "brier_crowd": 0.217157,
+    "brier_improvement": -0.00491
+  },
+  "walk_forward": {
+    "train_n": 147,
+    "test_n": 99,
+    "a": -0.412927,
+    "b": 0.196024,
+    "brier_raw": 0.214364,
+    "brier_calib": 0.242109,
+    "brier_crowd": 0.216168,
+    "improvement": -0.027746
+  },
+  "reliability_diagram": [
+    {
+      "bucket_i": 1,
+      "n": 24,
+      "mean_pred": 0.1629,
+      "mean_outcome": 0.1667,
+      "gap": 0.0037
+    },
+    {
+      "bucket_i": 2,
+      "n": 24,
+      "mean_pred": 0.2487,
+      "mean_outcome": 0.1667,
+      "gap": -0.0821
+    },
+    {
+      "bucket_i": 3,
+      "n": 24,
+      "mean_pred": 0.3287,
+      "mean_outcome": 0.3333,
+      "gap": 0.0046
+    },
+    {
+      "bucket_i": 4,
+      "n": 24,
+      "mean_pred": 0.3808,
+      "mean_outcome": 0.4167,
+      "gap": 0.0358
+    },
+    {
+      "bucket_i": 5,
+      "n": 24,
+      "mean_pred": 0.4083,
+      "mean_outcome": 0.3333,
+      "gap": -0.075
+    },
+    {
+      "bucket_i": 6,
+      "n": 24,
+      "mean_pred": 0.4408,
+      "mean_outcome": 0.375,
+      "gap": -0.0658
+    },
+    {
+      "bucket_i": 7,
+      "n": 24,
+      "mean_pred": 0.4846,
+      "mean_outcome": 0.5,
+      "gap": 0.0154
+    },
+    {
+      "bucket_i": 8,
+      "n": 24,
+      "mean_pred": 0.555,
+      "mean_outcome": 0.5833,
+      "gap": 0.0283
+    },
+    {
+      "bucket_i": 9,
+      "n": 24,
+      "mean_pred": 0.6129,
+      "mean_outcome": 0.5417,
+      "gap": -0.0713
+    },
+    {
+      "bucket_i": 10,
+      "n": 24,
+      "mean_pred": 0.7383,
+      "mean_outcome": 0.7083,
+      "gap": -0.03
+    },
+    {
+      "bucket_i": 11,
+      "n": 6,
+      "mean_pred": 0.9167,
+      "mean_outcome": 0.8333,
+      "gap": -0.0833
+    }
+  ],
+  "overall_stats": {
+    "beat_crowd_rate": 0.7236,
+    "mean_rbp": 2.4968,
+    "std_rbp": 10.4778,
+    "total_rbp": 614.22,
+    "yes_rate": 0.4228
+  }
+}

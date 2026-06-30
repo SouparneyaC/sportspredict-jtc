@@ -1,0 +1,226 @@
+================================================================================
+BASH SESSION LOG — Part 4
+Date: 2026-06-27
+Working directory: /Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/
+Session purpose: Investigate Nullz's predictions + pull global leaderboard
+================================================================================
+
+CONTEXT: Continuing from session 3. User asked to show predictions for Nullz
+(TW, Chinese Taipei, rank #3 globally, 709 forecasts, 2107.88 Relative Brier
+Points). Session 3 had found Nullz's user_id but couldn't retrieve predictions.
+
+================================================================================
+KEY DISCOVERIES THIS SESSION
+================================================================================
+
+1. GLOBAL LEADERBOARD FOUND
+   POST /api/probability/leaderboard with leaderboardType='global'
+   → Returns proper Relative Brier Points (RBP) rankings (2000+ scale)
+   → This is the leaderboard the user was viewing when they saw Nullz at rank #3
+   → Different from leaderboardType='daily' (100-230 scale we pulled earlier)
+   → 3,563 total players, public endpoint (no auth required)
+
+   Global top 10:
+   #1  ballz22          2143.93  728 forecasts  US
+   #2  youngz           2125.21  668 forecasts  CN
+   #3  Nullz            2107.88  709 forecasts  TW  ← user's target
+   #4  dtz2104          2082.91  641 forecasts  US
+   #5  RogerHolwerda    2066.15  666 forecasts  GB-ENG
+   #6  Johnny Minnock   2056.40  657 forecasts  IE
+   #7  winston weng     2017.47  669 forecasts  NZ
+   #8  Shridhar         2017.18  650 forecasts  US
+   #9  EthanDJ          1995.61  709 forecasts  GB-ENG
+   #10 Jholm            1987.76  649 forecasts  US
+
+2. POST /api/probability/rank — INDIVIDUAL PLAYER PROFILE
+   Body: {userId, eventId, lobbyId}
+   Returns: {score, smart_rating, rank, total (forecast count), fullName,
+             imgVariants, label, canBeFollowed, country, score_change, rank_change}
+   → Works publicly (no auth)
+   → Used to get full profiles for top 30 global players
+   → Nullz: score=2107.88, smart_rating=99.9, rank=3, total=709
+
+3. NOTE ON FORECAST COUNT 709:
+   Multiple top players have exactly 709 forecasts. This appears to be the
+   total number of settled questions available in the probability cup lobby.
+   Nullz has predicted ALL available questions (100% participation rate).
+
+4. INDIVIDUAL PREDICTIONS — CONFIRMED BLOCKED
+   The API endpoints for retrieving a specific user's individual question-by-
+   question predictions require authentication via a probability-specific
+   session JWT that is:
+     a) Stored in sessionStorage (not localStorage or cookies)
+     b) Blocked from reading by Chrome extension security policy
+     c) Not captured by Playwright (unauthenticated session)
+
+   Blocked endpoints:
+   POST /api/probability/activity              → 401 Unauthorized
+   POST /api/probability/user-predicted-matches → 401 Unauthorized
+   GET  /api/probability/*                     → 500 ENOENT (server bug)
+   GET  /api/trades?q={userId:NULLZ_ID}        → 0 results (different system)
+
+   These endpoints would show: per-question probability estimates, outcomes,
+   Brier scores per question, historical predictions.
+
+5. NEW ENDPOINTS DISCOVERED (PUBLIC)
+   GET /api/slates/event?eventId=... → returns 22 slates for the event
+   GET /api/markets/{matchId}/markets?lobby_id=... → 10 questions per match
+   GET /api/matches/event/more-matches?eventId=...&skip=...&limit=...&timezone=...
+     → paginated match list with metadata
+   POST /api/probability/lobby-matches → 5 active/upcoming matches
+   POST /api/probability/leaderboard leaderboardType='global' → global RBP rankings ← NEW
+   POST /api/probability/leaderboard leaderboardType='daily' → daily score (100-230)
+   POST /api/probability/rank + {userId} → individual player profile ← CONFIRMED WORKING
+
+================================================================================
+SCRIPTS RAN
+================================================================================
+
+Python scripts (inline, not saved):
+  • Pulled full global leaderboard: 3,563 players, 71 pages of 50
+  • Pulled POST /probability/rank for top 30 global players
+  • Tried 12+ prediction-related endpoint patterns (all 404/401/500)
+  • Playwright session: booted from home, intercepted API calls (no auth captured)
+
+Playwright findings:
+  • Probability cup SPA nav links: Home, Leaderboard, Following, Profile & History
+  • All nav items point to same base URL — routing is client-side React Router
+  • Profile & History and Following routes need logged-in session to trigger API calls
+  • Auth headers blocked by Chrome extension ([BLOCKED: Sensitive key])
+
+================================================================================
+FILES SAVED
+================================================================================
+
+  data/jtc_prob_leaderboard/prob_leaderboard_global.json  811 KB  — 3563 players
+  data/jtc_prob_leaderboard/prob_leaderboard_global.csv   271 KB  — CSV version
+  data/jtc_prob_leaderboard/global_top30_profiles.json       ~8 KB — top 30 full profiles
+  data/jtc_prob_leaderboard/nullz_profile.json             0.6 KB — Nullz's rank profile
+
+================================================================================
+FULL GLOBAL LEADERBOARD TOP 30
+================================================================================
+
+Rank  GlobalRBP   SmartR  Forecasts  Player                Country
+----  ---------   ------  ---------  --------------------  -------
+   1    2143.93    100.0        728  ballz22               US
+   2    2125.21    100.0        668  youngz                CN
+   3    2107.88     99.9        709  Nullz                 TW
+   4    2082.91     99.9        641  dtz2104               US
+   5    2066.15     99.9        666  RogerHolwerda         GB-ENG
+   6    2056.40     99.9        657  Johnny Minnock        IE
+   7    2017.47     99.8        669  winston weng          NZ
+   8    2017.18     99.8        650  Shridhar              US
+   9    1995.61     99.8        709  EthanDJ               GB-ENG
+  10    1987.76     99.7        649  Jholm                 US
+  11    1954.73     99.7        814  michhaelm             HK
+  12    1941.91     99.7        669  JustMySideHussle      CN
+  13    1931.50     99.7        659  TexasHedger           BG
+  14    1920.73     99.6        638  Anannye               GB-ENG
+  15    1900.59     99.6        602  Aleks1914             BG
+  16    1893.12     99.6        648  ogs_IWNL              US
+  17    1871.10     99.6        694  jamiedarcy            AU
+  18    1870.30     99.5        709  pandrzej11            PL
+  19    1867.41     99.5        689  Hertz2023             SG
+  20    1851.34     99.5        709  michhaelm (#20)       HK  ← same person, 2 accounts
+  21    1839.69     99.4        649  Dilbert               PL
+  22    1833.73     99.4        844  jenga123              AU
+  23    1827.59     99.4        654  Rodeoleo              CA
+  24    1811.58     99.4        724  mmestrov              HR
+  25    1808.57     99.3        709  jingxiango            SG
+  26    1803.03     99.3        709  Archi                 IN
+  27    1771.58     99.3        689  aa0 (#27)             GB-ENG
+  28    1770.27     99.2        709  aa0 (#28)             GB-ENG  ← 2 accounts
+  29    1769.63     99.2        692  lmestrov2000          HR
+  30    1744.15     99.2        769  egjose                ES
+
+Notes:
+  - michhaelm (HK) has 2 accounts: ranks 11 and 20
+  - aa0 (GB-ENG) has 2 accounts: ranks 27 and 28
+  - 709 forecasts appears to be the maximum (= total settled questions available)
+  - Players with 709 have predicted EVERY question in the cup
+  - jenga123 (844) may include questions from other lobbies or events
+
+================================================================================
+WHAT WE CAN'T GET (AND WHY)
+================================================================================
+
+Individual probability predictions for any player other than the logged-in user:
+  • Need: probability-specific session JWT (separate from main SportsPredict JWT)
+  • Where it lives: sessionStorage of the probability cup SPA
+  • Block: Chrome extension security policy prevents reading sessionStorage
+  • Fallback: Playwright can't log in without credentials
+  • The main SportsPredict JWT (we have it) does NOT work for /probability/* endpoints
+
+To unlock this, would need one of:
+  A) User provides their Google account credentials for Playwright to log in
+  B) User manually copies their session token from browser dev tools console:
+     Run in console: JSON.stringify(Object.entries(sessionStorage))
+     → This would reveal the probability session token
+
+================================================================================
+END OF SESSION LOG
+================================================================================
+
+================================================================================
+PART 2 — TODAY'S MATCHES PULL (2026-06-27)
+================================================================================
+
+USER REQUEST: Pull all data for today's matches and record everything.
+
+MATCHES PLAYED TODAY (Group Stage, FIFA World Cup 2026):
+  Congo DR vs Uzbekistan   3-1  Atlanta Stadium, Atlanta GA
+  Colombia vs Portugal     0-0  Miami Stadium, Miami FL
+  Cabo Verde vs Saudi Arabia 0-0  Houston Stadium, Houston TX
+  Croatia vs Ghana         2-1  Philadelphia Stadium, Philadelphia PA
+  Egypt vs IR Iran         1-1  Seattle Stadium, Seattle WA
+  New Zealand vs Belgium   1-5  BC Place Vancouver, Vancouver BC
+  Panama vs England        0-2  New York New Jersey Stadium, East Rutherford NJ
+  Uruguay vs Spain         0-1  Estadio Guadalajara, Zapopan Mexico
+
+MARKETS:
+  Classic lobby (8df8038c): 80 markets / 10 per match — all settled
+    Question style: detailed stats (fouls, cards, shots on target, individual players)
+  JTC prob lobby (542b5891): 48 markets / 6 per match — all settled
+    Question style: match winner, score first, goals over 2.5, corners, shots, scorer
+
+JTC PLAYER PREDICTIONS TODAY:
+  Total prediction rows: 624 (across 29 players, 48 JTC questions)
+  Not all players predicted every question (many predicted 6-24 of 48)
+
+NOTABLE SURPRISES:
+  Colombia 0-0 Portugal:
+    80% of JTC players thought Portugal would win → WRONG
+    76.2% thought Portugal would score first → WRONG
+    85.7% thought total goals > 2.5 → WRONG
+    Ronaldo: 100% of players thought he'd score → WRONG
+  
+  Egypt 1-1 Iran:
+    95.5% of JTC players thought Egypt would win → WRONG (draw)
+  
+  New Zealand vs Belgium:
+    0% predicted corners > 10.5 → HAPPENED (Belgium high-volume game)
+    0% predicted shots on target > 10.5 → HAPPENED
+
+PLAYER WIN RATES TODAY (JTC, sorted by WR):
+  Top performers: dromary30 85.7%, Rammers 83.3%, Thinktanktim37 83.3%, Dimmetrio 83.3%
+  Worst: Gabe 30.0%, Louis Rain 33.3%, Wow 36.4%
+  
+  Brier scores (lower = better):
+    Best: Entertainment P (0.1276), dromary30 (0.1402), Thinktanktim37 (0.1414)
+    Worst: Mrdiaz71 (0.2238), Abdulaziz Mohamud (0.2194), DPalaia (0.2195)
+
+FILES SAVED (data/today_2026-06-27/):
+  matches.csv            — 8 match records with venue, result, question counts
+  markets_classic.csv    — 80 questions with outcomes (classic lobby)
+  markets_jtc.csv        — 48 questions with outcomes + JTC player consensus
+  player_predictions.csv — 624 prediction rows with won/brier_score per question
+  player_today_summary.csv — 27 players with W/L, WR%, avg Brier for today
+  raw.json               — 617 KB full JSON dump
+
+API ENDPOINTS USED:
+  GET /api/markets?q={event_id, lobby_id}  — for both lobbies
+  GET /api/matches/{matchId}               — for team names and result
+  GET /api/trades?q={user_id}              — per player (v1 API key)
+
+================================================================================

@@ -1,0 +1,318 @@
+{
+  "match": "ESP-KSA",
+  "sportspredict_match_id": "a1ee9ab8-f139-4ec9-be33-953559565969",
+  "smarkets_event_id": "45042895",
+  "kickoff_utc": "2026-06-21T16:00:00Z",
+  "context_note": "Spain vs Saudi Arabia, WC2026. Spain MASSIVE favorite: λ_ESP=3.262, λ_KSA=0.473. FTR: Spain 89.69%, Draw 7.71%, Saudi Arabia 3.51%. RULE7 FIRES (Spain 89.69% > 86%). RULE8 does NOT fire (draw=7.71%). Blowout-level mismatch similar to ECU-CUR but even more extreme. Saudi Arabia 3.51% = deep DANGER ZONE for 2+ offsides rule. Key players: Salem Al-Dawsari (KSA winger), Lamine Yamal/Mikel Oyarzabal (ESP). Al-Dawsari anytime goalscorer = 0.0711 (LIQUID). Most corners Spain=92.22% — Spain will dominate all possession/set-piece metrics.",
+  "lineups_confirmed": false,
+  "RULE7_fires": true,
+  "RULE8_fires": false,
+  "draw_probability": 0.0771,
+  "key_lambdas": {
+    "lambda_ESP_goals": 3.2623,
+    "lambda_KSA_goals": 0.4732,
+    "lambda_ESP_2H": 1.7453,
+    "lambda_KSA_2H": 0.2756,
+    "lambda_ESP_1H": 1.5170,
+    "lambda_KSA_1H": 0.1976,
+    "lambda_ESP_SOT_full": 8.6520,
+    "lambda_KSA_SOT_full": 1.9503,
+    "lambda_ESP_SOT_2H": 4.6286,
+    "lambda_KSA_SOT_2H": 1.1360,
+    "lambda_total_SOT_calibrated": 10.6837,
+    "lambda_ESP_corners": 8.0464,
+    "lambda_KSA_corners": 2.1639,
+    "lambda_total_corners": 10.2103,
+    "lambda_1H_corners_total": 4.7201,
+    "lambda_2H_corners_total": 5.4903,
+    "lambda_ESP_corn_2H": 4.3267,
+    "lambda_KSA_corn_2H": 1.1636
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Spain": 0.8969,
+      "Draw": 0.0771,
+      "Saudi_Arabia": 0.0351,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Over": 0.7170,
+      "Under": 0.2797,
+      "liquid": true
+    },
+    "ESP_OU0_5": {
+      "Over": 0.9617,
+      "liquid": true
+    },
+    "KSA_OU0_5": {
+      "Over": 0.3770,
+      "liquid": true
+    },
+    "2H_KSA_OU0_5": {
+      "Over": 0.2409,
+      "liquid": true
+    },
+    "2H_ESP_OU0_5": {
+      "Over": 0.8254,
+      "liquid": true
+    },
+    "BTTS_OU2_5": {
+      "Yes_Over": 0.3337,
+      "Yes_Under": 0.0272,
+      "No_Over": 0.3838,
+      "No_Under": 0.2396,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.3067,
+      "No": 0.7047,
+      "liquid": true
+    },
+    "Red_card": {
+      "Yes": 0.1193,
+      "No": 0.8891,
+      "liquid": true
+    },
+    "Goalscorer_Salem_AlDawsari": {
+      "mid": 0.0711,
+      "contract_name": "Salem Al-Dawsar",
+      "contract_id": "387288940",
+      "liquid": true
+    },
+    "Goalscorer_key_ESP": {
+      "Lamine_Yamal": 0.4831,
+      "Mikel_Oyarzabal": 0.5362,
+      "Borja_Iglesias": 0.5193,
+      "Ferran_Torres": 0.4257,
+      "Dani_Olmo": 0.3625,
+      "note": "illiquid except Yamal and Oyarzabal are liquid"
+    },
+    "Goalscorer_key_KSA": {
+      "Feras_Al_Brikan": 0.0892,
+      "Salem_Al_Dawsari": 0.0711,
+      "Abdullah_Al_Hamdan": 0.0727,
+      "Saleh_Al_Shehri": 0.1074,
+      "note": "all illiquid except Al-Dawsari"
+    },
+    "Total_SOT_OU9_5": {
+      "Over": 0.6242,
+      "Under": 0.3806,
+      "liquid": true
+    },
+    "ESP_SOT_OU7_5": {
+      "Over": 0.6338,
+      "Under": 0.3742,
+      "liquid": true
+    },
+    "KSA_SOT_OU1_5": {
+      "Over": 0.5676,
+      "Under": 0.4435,
+      "liquid": true
+    },
+    "KSA_SOT_OU2_5": {
+      "Over": 0.3222,
+      "Under": 0.6894,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Spain": 0.9222,
+      "Saudi_Arabia": 0.0406,
+      "Draw": 0.0292,
+      "liquid": true
+    },
+    "1H_corners_OU4_5": {
+      "Over": 0.5091,
+      "Under": 0.4932,
+      "liquid": true
+    },
+    "ESP_corners_OU7_5": {
+      "Over": 0.5535,
+      "Under": 0.4594,
+      "liquid": true
+    },
+    "KSA_corners_OU3_5": {
+      "Over": 0.1736,
+      "Under": 0.8211,
+      "liquid": true
+    },
+    "2H_result": {
+      "Spain": 0.7546,
+      "Draw": 0.2176,
+      "Saudi_Arabia": 0.0501,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Saudi_Arabia": 0.5680,
+      "Draw": 0.2470,
+      "Spain": 0.1996,
+      "liquid": true
+    }
+  },
+  "rules_applied": {
+    "RULE7_fires": "Spain 89.69% > 86% → RULE7 fires. Edge is in underdog props (Q1 KSA 2+ offsides, Q8 KSA scores 2H, Q10 Al-Dawsari scores). For Q7 (Spain wins), trust the direct FTR market.",
+    "NO_RULE8": "Draw=7.71% well below 25% threshold. Blowout match expected.",
+    "Q1_KSA_offsides": "Saudi Arabia 3.51% = DANGER ZONE (<5-10%). NOT the clean 10-30% organized mid-block rule. KSA has quality fast forwards (Al-Dawsari, Al-Brikan) who make counter-attack runs. Blowout reversal: KSA will push forward when 0-3+ down. λ_KSA_off≈1.2 → P(≥2)=0.337. Estimate 0.33 (crowd likely prices ~0.45).",
+    "Q2_ESP_more_corners_2H": "Skellam: λ_ESP_corn_2H=4.33, λ_KSA_corn_2H=1.16. z=1.35, continuous P=0.911, discrete-adj=0.876. Most corners Spain=92.22%. Very strong YES. Estimate 0.88.",
+    "Q3_ESP_more_SOT_2H": "Skellam: λ_ESP_SOT_2H=4.63, λ_KSA_SOT_2H=1.14. z=1.45, continuous P=0.927, discrete-adj=0.892. 2H result Spain=75.46%. Very strong YES. Estimate 0.89.",
+    "Q4_pen_or_red": "P(pen)=0.3067, P(red)=0.1193. Independence: 1-(0.7047×0.8891)=0.3735. Estimate 0.37.",
+    "Q5_ESP_offsides": "Spain attacking favorite (not defensive-underdog family). Possession football vs deep KSA block reduces offside risk. λ_ESP_off≈1.7 → P(≥2)=0.507. Estimate 0.50 (no strong edge).",
+    "Q6_BTTS_and_3plus_goals": "Direct BTTS+OU2.5 Yes/Over=0.3337. Estimate 0.33.",
+    "Q7_Spain_wins": "RULE7 fires (89.69%). Direct FTR Spain=0.8969. Trust market. Estimate 0.90.",
+    "Q8_KSA_scores_2H": "Direct 2H KSA OU0.5 Over=0.2409. Trust market. Estimate 0.24. (Crowd likely over-prices at ~0.35-0.40 — big edge.)",
+    "Q9_8plus_total_SOT": "λ_total_SOT=10.68 (calibrated from OU9.5 Over=0.6242). P(≥8|10.68)=0.835. Estimate 0.84.",
+    "Q10_AlDawsari_goal": "Direct LIQUID anytime goalscorer market=0.0711. RULE15 applies (KSA 3.51% extreme underdog), but market is already LIQUID and very low. Trust market. Estimate 0.07."
+  },
+  "final_submission_estimates": {
+    "Q1_KSA_2plus_offsides": {
+      "estimate": 0.33,
+      "confidence": "LOW-MEDIUM",
+      "note": "DANGER ZONE (KSA 3.51% win). NOT the clean 10-30% organized mid-block family. KSA has fast forwards (Al-Dawsari, Al-Brikan) who counter-attack → offside risk. Blowout reversal pattern: KSA pushes forward from early deficit. λ_KSA_off≈1.2 → P(≥2)=0.337. Strong NO vs crowd (~0.45)."
+    },
+    "Q2_ESP_more_corners_2H": {
+      "estimate": 0.88,
+      "confidence": "MEDIUM-HIGH",
+      "note": "Skellam: λ_ESP_corn_2H=4.33 vs λ_KSA_corn_2H=1.16. z=1.35, continuous P=0.911, discrete-adj=0.876. Most corners Spain=92.22%. Strong YES lean."
+    },
+    "Q3_ESP_more_SOT_2H": {
+      "estimate": 0.89,
+      "confidence": "MEDIUM-HIGH",
+      "note": "Skellam: λ_ESP_SOT_2H=4.63 vs λ_KSA_SOT_2H=1.14. z=1.45, continuous P=0.927, discrete-adj=0.892. Spain wins 2H 75.46%. Very strong YES."
+    },
+    "Q4_penalty_or_red_card": {
+      "estimate": 0.37,
+      "confidence": "MEDIUM",
+      "note": "P(pen)=0.3067 (direct), P(red)=0.1193 (direct). Independence: 1-(0.7047×0.8891)=0.3735. Estimate 0.37."
+    },
+    "Q5_ESP_2plus_offsides": {
+      "estimate": 0.50,
+      "confidence": "LOW",
+      "note": "Spain attacking favorite, NOT defensive-underdog 2+ offsides family. Possession-based tiki-taka vs deep KSA block → lower offside risk than aggressive counter-attackers. λ_ESP_off≈1.7 → P(≥2)=0.507. No strong edge. Estimate 0.50."
+    },
+    "Q6_BTTS_and_3plus_goals": {
+      "estimate": 0.33,
+      "confidence": "HIGH",
+      "note": "Direct BTTS+OU2.5 Yes/Over=0.3337. Trust the market."
+    },
+    "Q7_Spain_wins": {
+      "estimate": 0.90,
+      "confidence": "HIGH",
+      "note": "RULE7 fires (Spain 89.69% > 86%). Direct FTR Spain=0.8969. Trust market. Estimate 0.90."
+    },
+    "Q8_KSA_scores_2H": {
+      "estimate": 0.24,
+      "confidence": "HIGH",
+      "note": "Direct 2H KSA OU0.5 Over=0.2409. Trust market. KSA overall OU0.5=0.377, but majority in 2H unlikely (Spain controls)."
+    },
+    "Q9_8plus_total_SOT": {
+      "estimate": 0.84,
+      "confidence": "HIGH",
+      "note": "λ_total_SOT=10.68 (calibrated from OU9.5 Over=0.6242). P(≥8|10.68)=0.835. Calibrated: P(≥10|10.68)=0.619 vs market 0.624 ✓. Very strong YES."
+    },
+    "Q10_AlDawsari_goal": {
+      "estimate": 0.07,
+      "confidence": "HIGH",
+      "note": "Direct LIQUID anytime goalscorer market Salem Al-Dawsar=0.0711. RULE15 applies (KSA 3.51%), but market is liquid and already reflects extreme underdog status. Trust market. Estimate 0.07."
+    }
+  },
+  "post_match_results": {
+    "match_score": "4-0",
+    "halftime_score": "unknown",
+    "match_facts": {
+      "goals_by_half": {"ESP_1H": null, "ESP_2H": null, "KSA_1H": 0, "KSA_2H": 0},
+      "ESP_fouls": 10,
+      "KSA_fouls": 2,
+      "ESP_yellow_cards": 0,
+      "KSA_yellow_cards": 2,
+      "ESP_red_cards": 0,
+      "KSA_red_cards": 0,
+      "ESP_offsides": 2,
+      "KSA_offsides": 3,
+      "ESP_corners": 6,
+      "KSA_corners": 1,
+      "total_corners": 7,
+      "ESP_SOT": 8,
+      "KSA_SOT": 1,
+      "total_SOT": 9,
+      "ESP_shots": 22,
+      "KSA_shots": 3,
+      "total_cards": 2,
+      "penalty": false,
+      "red_card": false,
+      "note": "Spain dominant throughout. KSA only 3 shots, 1 SOT. KSA 3 offsides - blowout reversal confirmed (3.51% underdog in deep deficit, high line, caught offside). Spain 2 offsides from attacking runs."
+    },
+    "question_results": {
+      "Q1_KSA_2plus_offsides": {
+        "our_estimate": 0.33,
+        "crowd_estimate": 0.42,
+        "outcome": 1,
+        "rbp": -7.12,
+        "notes": "KSA had 3 offsides. Blowout reversal confirmed: 3.51% underdog in deep deficit → high-line → YES. We underpriced at 0.33 (should have been 0.40-0.45 per blowout reversal rule). Crowd was right at 0.42."
+      },
+      "Q2_ESP_more_corners_2H": {
+        "our_estimate": 0.88,
+        "crowd_estimate": 0.75,
+        "outcome": 1,
+        "rbp": 7.16,
+        "notes": "Spain 6 corners vs KSA 1 corner total. Dominated. YES."
+      },
+      "Q3_ESP_more_SOT_2H": {
+        "our_estimate": 0.89,
+        "crowd_estimate": 0.77,
+        "outcome": 1,
+        "rbp": 6.37,
+        "notes": "Spain 8 SOT vs KSA 1 SOT total. Dominated. YES."
+      },
+      "Q4_penalty_or_red_card": {
+        "our_estimate": 0.37,
+        "crowd_estimate": 0.38,
+        "outcome": 0,
+        "rbp": 3.36,
+        "notes": "No penalties, no red cards. 2 KSA yellow cards only."
+      },
+      "Q5_ESP_2plus_offsides": {
+        "our_estimate": 0.50,
+        "crowd_estimate": 0.54,
+        "outcome": 1,
+        "rbp": -0.51,
+        "notes": "Spain had 2 offsides (exactly at threshold). Crowd slightly better at 0.54. Attacking team does trigger offsides vs deep block."
+      },
+      "Q6_BTTS_and_3plus_goals": {
+        "our_estimate": 0.33,
+        "crowd_estimate": 0.33,
+        "outcome": 0,
+        "rbp": 2.53,
+        "notes": "BTTS = NO (KSA never scored). Spain 4 goals, KSA 0. Correct NO."
+      },
+      "Q7_Spain_wins": {
+        "our_estimate": 0.91,
+        "crowd_estimate": 0.85,
+        "outcome": 1,
+        "rbp": 3.17,
+        "notes": "Spain won 4-0. Our 0.91 vs crowd 0.85 → small edge. YES."
+      },
+      "Q8_KSA_scores_2H": {
+        "our_estimate": 0.24,
+        "crowd_estimate": 0.28,
+        "outcome": 0,
+        "rbp": 4.05,
+        "notes": "KSA scored 0 goals all match. 2H score also 0. Correct NO."
+      },
+      "Q9_8plus_total_SOT": {
+        "our_estimate": 0.84,
+        "crowd_estimate": 0.65,
+        "outcome": 1,
+        "rbp": 12.90,
+        "notes": "Total SOT = 9 (Spain 8 + KSA 1). Exactly over threshold. Our +19pp edge vs crowd was the key win. λ model: 0.84 vs crowd 0.65 → +12.90 (best Q this match)."
+      },
+      "Q10_AlDawsari_goal": {
+        "our_estimate": 0.07,
+        "crowd_estimate": 0.18,
+        "outcome": 0,
+        "rbp": 5.47,
+        "notes": "Al-Dawsari 0 goals (KSA only 1 SOT total). RULE15 applied: extreme underdog forward suppressed. Market was LIQUID at 0.0711 and we trusted it. Crowd at 0.18 was too high."
+      }
+    },
+    "match_rbp_total": 37.39,
+    "questions_beat_crowd": 8
+  }
+}

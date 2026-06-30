@@ -1,0 +1,221 @@
+{
+  "match": "Norway vs Ivory Coast",
+  "date": "2026-06-30",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {"this_match": 760490, "NOR_vs_IRQ": 760430, "SEN_vs_NOR": 760454, "FRA_vs_NOR": 760475, "ECU_vs_CIV": 760423, "CIV_vs_GER": 760448, "CIV_vs_CUR": 760473},
+  "smarkets_event_id": 45159661,
+  "prior_lessons_consulted": ["nor_sen_2026-06-22.json", "civ_ecu_2026-06-14.json", "ger_civ_2026-06-20.json", "cur_civ_2026-06-25.json", "STEPS_FOR_HIGH_POINTS.md (all Win/Loss patterns)", "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md (this is the 5th knockout match; explicitly applying the technique-level findings from the prior 4)"],
+  "knockout_context": {
+    "Norway": {"group_record": "2W-1L, 6pts, GD+1 (W4-1 IRQ, W3-2 SEN, L1-4 FRA)", "status": "Mild favorite (45.5% straight win, 63.7% to qualify)"},
+    "Ivory Coast": {"group_record": "2W-1L, 6pts, GD+2 (W1-0 ECU, L1-2 GER, W2-0 CUR)", "status": "Underdog but NOT a mismatch — better GD than Norway despite fewer goals scored, consistent with their AFCON-2023-champion pedigree noted in the GER-CIV file"}
+  },
+  "wc2026_espn_stats": {
+    "NOR": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760430, "opponent": "Iraq", "result": "W 4-1 (away)", "fouls": 13, "SOT": 5, "offsides": 0, "YC": 0, "RC": 0, "corners": 5, "possession": 61.3},
+        {"event_id": 760454, "opponent": "Senegal", "result": "W 3-2", "fouls": 13, "SOT": 7, "offsides": 0, "YC": 0, "RC": 0, "corners": 5, "possession": 41.7},
+        {"event_id": 760475, "opponent": "France", "result": "L 1-4", "fouls": 9, "SOT": 4, "offsides": 1, "YC": 1, "RC": 0, "corners": 4, "possession": 43.3}
+      ],
+      "averages": {"fouls": 11.67, "SOT": 5.33, "offsides": 0.33, "YC": 0.33, "RC": 0.0, "corners": 4.67},
+      "HAALAND_GD1_PROFILE": "From nor_sen_2026-06-22.json's haaland_profile block: 2 goals in GD1 (29', 43', both 1H), 5 shots, 4 SOT. 57 international goals in 51 caps. Confirms he is a genuine, proven high-volume threat, not a name riding a hot streak.",
+      "NOR_SOT_PRECEDENT": "nor_sen_2026-06-22.json Q9 ('Norway 6+ SOT') settled YES (outcome confirmed in that file's match_facts) — direct precedent for today's identical question type. Norway is a real high-SOT-volume team, not just a name-brand favorite.",
+      "FRANCE_LOSS_CONTEXT": "Norway lost 1-4 to France in their final group match — unlike Germany's GER-ECU rotation loss, no explicit rotation note exists in this file, so treat this as a genuine quality-gap result (France) rather than assuming a discounted/rotated performance. Do not over-extrapolate weakness from it given the much smaller talent gap to Ivory Coast."
+    },
+    "CIV": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760423, "opponent": "Ecuador", "result": "W 1-0", "fouls": 10, "SOT": 4, "offsides": 0, "YC": 3, "RC": 0, "corners": 3, "possession": 48.4},
+        {"event_id": 760448, "opponent": "Germany", "result": "L 1-2", "fouls": 7, "SOT": 2, "offsides": 1, "YC": 0, "RC": 0, "corners": 3, "possession": 40.5},
+        {"event_id": 760473, "opponent": "Curacao", "result": "W 2-0 (away)", "fouls": 6, "SOT": 3, "offsides": 1, "YC": 1, "RC": 0, "corners": 6, "possession": 63.3}
+      ],
+      "averages": {"fouls": 7.67, "SOT": 3.0, "offsides": 0.67, "YC": 1.33, "RC": 0.0, "corners": 4.0},
+      "GER_CIV_DIRECT_LESSON": "ger_civ_2026-06-20.json: CIV 2+ offsides settled NO (only 1 offside total) and our 0.18 beat the crowd by +18.70 — CIV is a genuinely disciplined, low-offside team against strong opposition, not just on paper. Also 0 total cards for the ENTIRE match that day and CIV actually led 1-0 at HT before Germany's 2H comeback — confirms 'AFCON 2023 champions, not a mismatch like Haiti' framing explicitly noted in that file. Amad Diallo (Man Utd), Diomande, Adingra, Pepe, Kessie all flagged as real quality depth."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Ivory Coast": 0.2564, "Norway": 0.4545, "Draw": 0.2703, "liquid": true},
+    "To_qualify": {"Ivory Coast": 0.3817, "Norway": 0.6369, "liquid": true},
+    "Will_there_be_ET": {"Yes": 0.3279, "No": 0.7692, "liquid": true},
+    "BTTS": {"Yes": 0.5848, "No": 0.4348, "liquid": true},
+    "OU2_5_goals": {"Under": 0.5025, "Over": 0.5155, "liquid": true},
+    "OU3_5_goals": {"Under": 0.7246, "Over": 0.2985, "liquid": true},
+    "Cards_OU1_5": {"Under": 0.3125, "Over": 0.7692, "liquid": true},
+    "Cards_OU2_5": {"Under": 0.5263, "Over": 0.5882, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.7353, "Over": 0.3226, "liquid": true},
+    "Penalty": {"Yes": 0.3077, "No": 0.7576, "liquid": true},
+    "Most_corners": {"Ivory Coast": 0.3175, "Norway": 0.6061, "Draw": 0.1220, "liquid": true},
+    "Norway_SOT_OU4_5": {"Under": 0.5000, "Over": 0.5814, "liquid": true, "implied_lambda": 5.13},
+    "Goal_1_time_bracket": {"1-10": 0.2174, "11-20": 0.2000, "21-30": 0.1613, "31-40": 0.1250, "41-50": 0.1163, "51-60": 0.0800, "61-70": 0.0588, "71-80": 0.0435, "81-90": 0.0455, "None": 0.0870, "liquid": true},
+    "Team_to_score_first_goal": {"Ivory Coast": 0.4167, "Norway": 0.5236, "No goal": 0.0909, "liquid": true},
+    "player_markets": {"Erling_Haaland_anytime_goalscorer": {"bid": 0.5128, "offer": 0.5155, "mid": 0.5142, "liquid": true}, "Martin_Odegaard_score_or_assist": {"offer": 0.3571, "adjusted": 0.3375}, "Amad_Diallo_1plus_SOT": {"offer": 0.5882, "adjusted": 0.5558}, "Alexander_Sorloth_2plus_SOT": {"bid": 0.20, "offer": 0.2597, "mid": 0.2299, "liquid": true}}
+  },
+  "context_flags": [
+    "FIFTH KNOCKOUT MATCH — DEEP DIVE LESSONS APPLIED DIRECTLY: per KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md, two categories are reliably profitable across the first 4 matches (direct-market trust at 73.5% beat-crowd, team-level decomposition, liquid player markets at 66.7-100% beat-crowd) and two are reliably weak (illiquid offer-only player props with fat-tailed downside, and self-built timing decomposition especially for LATE-window/full-match-chaos-sensitive count questions, which lost on 4 of 7 instances including the two worst results of the season). Both weak-category lessons are directly load-bearing on today's Q12 and Q14 below.",
+    "CIV_NOT_A_MISMATCH: Ivory Coast finished the group stage with a BETTER goal difference than Norway (+2 vs +1) despite being the underdog today — the GER-CIV file explicitly warns against treating them like a true minnow. Their defensive discipline (1 total offside across 3 matches, 0 cards in one full match) is real and repeats, unlike a single-game outlier.",
+    "Q12_FULL_MATCH_OFFSIDE_COUNT_IS_THE_EXACT_GER_PAR_FAILURE_PATTERN: both teams show very clean offside records (NOR 0.33/game, CIV 0.67/game, combined raw Poisson lambda ~1.0 implying a naive P(4+)≈0.02) — this is structurally identical to Germany's clean 0-offside-in-3-games record that still failed catastrophically (-48.68 RBP) in GER-PAR when the actual match turned out high-pressing and chaotic. Deliberately shaded this estimate far above the naive model output per that lesson, rather than trusting the clean team data at face value.",
+    "Q14_LATE_WINDOW_TIMING_SHADED_PER_DEEP_DIVE: 'goal after 2nd hydration break' is the exact question type that went 0-for-3 across the prior 4 matches. The naive lambda-scaling model happens to land near 0.50 anyway, which conveniently aligns with the lesson's prescription to shade hard toward 0.45-0.55 regardless of model output — used with high confidence in this case since model and lesson agree.",
+    "ILLIQUID_PLAYER_PROPS_TREATED_WITH_THE_RAYNERS_ENCISO_LESSON: Ødegaard and Amad Diallo are both offer-only markets. Per the deep dive, the safest move for an illiquid one-sided price is NOT to assert a confident departure in either direction without a specific, strong reason — both are kept close to their ×0.945-adjusted values rather than further suppressed or inflated, since neither has the kind of repeated same-player precedent that would justify a bigger deviation."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Norway win in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct regulation-scoped market: Full-time result Norway = 45.45%.",
+      "final_estimate": 0.45,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will Erling Haaland (Norway) score a goal (excluding own goals) in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Genuinely liquid market (bid 0.5128, offer 0.5155) — mid = 0.5142. Trusted near-raw per the deep-dive liquid-market lesson, strongly corroborated by his GD1 profile (2 goals, 4 SOT in a single match) confirming this isn't an inflated market price.",
+      "final_estimate": 0.51,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will Ivory Coast have more corner kicks than Norway in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct 3-way market: 'Most corners' Ivory Coast = 31.75%. Used this over the 0.5-line corner handicap market specifically because the handicap's '+0.5' side includes ties, which would overstate the strict-inequality probability this question requires.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Martin Ødegaard (Norway) score or assist a goal (excluding own goals) in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — ILLIQUID, KEPT NEAR MARKET",
+      "reasoning": "Illiquid offer-only price (0.3571, adjusted ×0.945=0.3375). No specific reason to deviate further in either direction — kept close to the adjusted value per the deep-dive lesson against confident departures from thin one-sided markets.",
+      "final_estimate": 0.34,
+      "direction": "NO lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 5,
+      "text": "Will both teams score in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: BTTS Yes = 58.48%, the highest of any knockout match this stage — consistent with two teams that both have proven, repeating attacking output (Norway's Haaland/SOT volume, Ivory Coast's competitive scoring against Ecuador/Curacao).",
+      "final_estimate": 0.58,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Amad Diallo (Ivory Coast) have 1 or more shots on target in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — ILLIQUID, KEPT NEAR MARKET",
+      "reasoning": "Illiquid offer-only price (0.5882, adjusted ×0.945=0.5558). Ivory Coast is a moderate, not extreme, underdog (25.6% win prob) and Diallo is their clear primary attacking outlet — no specific same-player or team-ceiling precedent argues for further suppression the way Enciso's did, so kept close to the adjusted market value with only a small trim for general illiquid-market caution.",
+      "final_estimate": 0.53,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 7,
+      "text": "Will the match have 3 or more total goals in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over2.5 goals = 51.55%.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will a goal be scored before the first hydration break?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "'Goal 1 time bracket' market, the early-window version of this question type that has gone 3-for-3 positive across the prior 4 matches: P(first goal ≤24') = 0.2174+0.2000+0.4×0.1613 = 0.4819.",
+      "final_estimate": 0.48,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will Norway have 6 or more shots on target in regulation?",
+      "pick_tier": "HIGH CONFIDENCE — MARKET-DERIVED + DIRECT PRECEDENT",
+      "reasoning": "Market-implied lambda from the Norway SOT Over4.5 line (58.14%→λ=5.13) gives P(≥6)=0.4062. Bumped up slightly given the direct nor_sen_2026-06-22.json precedent: Norway already cleared 6+ SOT against Senegal this tournament, and our prior estimate on that exact question (0.38) was itself too low (lost narrowly, -1.58) — applying that calibration lesson here.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will Alexander Sørloth (Norway) have 2 or more shots on target in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Genuinely liquid market (bid 0.20, offer 0.2597) — mid = 0.2299. Trusted near-raw per the deep-dive liquid-market lesson.",
+      "final_estimate": 0.23,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 11,
+      "text": "Will Norway score the first goal of the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: 'Team to score first goal' Norway = 52.36%.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will there be 4 or more offside calls in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, DELIBERATELY SHADED PER LOSS PATTERN",
+      "reasoning": "No structured offside market exists for this event. Combined ESPN team offside averages (NOR 0.33/game + CIV 0.67/game = λ≈1.0) give a naive Poisson P(≥4)≈0.02 — but this is structurally the EXACT same setup (clean group-stage offside record on both sides) that produced GER-PAR's -48.68 RBP, the season's 2nd-worst result, when the actual match turned out far more chaotic than the team data predicted. Deliberately shaded far above the naive model output to respect that lesson, while not abandoning the real data entirely (both teams' offside discipline is genuinely well-established, including a repeat confirmation for Ivory Coast specifically in GER-CIV).",
+      "final_estimate": 0.42,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "medium"
+    },
+    {
+      "q": 13,
+      "text": "Will there be 4 or more total cards shown in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over3.5 cards = 32.26%. Consistent with both teams' clean disciplinary histories this tournament (Ivory Coast notably had a 0-card match against Germany).",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 14,
+      "text": "Will a goal be scored after the second hydration break in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — LATE-WINDOW TIMING, LESSON-SHADED",
+      "reasoning": "No direct market for this. Naive lambda-scaling (combined goal lambda ≈2.75 from OU2.5/OU3.5, scaled to the ~25-minute post-69' window) gives 0.5184 — this is the exact question type that went 0-for-3 across the prior 4 matches (RSA-CAN, NED-MAR×2), so the deep-dive lesson is to shade hard toward 0.45-0.55 regardless of model output. Convenient convergence here: the naive model already lands inside that band, giving more confidence in this particular instance than the category's track record alone would suggest.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "medium"
+    },
+    {
+      "q": 15,
+      "text": "Will a penalty kick be awarded during regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Penalty to be awarded = 30.77%.",
+      "final_estimate": 0.31,
+      "direction": "NO lean",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_NOR_wins_regulation": 0.45,
+    "Q2_Haaland_scores": 0.51,
+    "Q3_CIV_more_corners": 0.32,
+    "Q4_Odegaard_score_or_assist": 0.34,
+    "Q5_BTTS": 0.58,
+    "Q6_AmadDiallo_SOT": 0.53,
+    "Q7_3plus_goals": 0.52,
+    "Q8_goal_before_1st_break": 0.48,
+    "Q9_NOR_6plus_SOT": 0.43,
+    "Q10_Sorloth_2plus_SOT": 0.23,
+    "Q11_NOR_scores_first": 0.52,
+    "Q12_4plus_offside_calls": 0.42,
+    "Q13_4plus_cards": 0.32,
+    "Q14_goal_after_2nd_break": 0.50,
+    "Q15_penalty": 0.31
+  },
+  "strongest_picks": [
+    "Q3: Ivory Coast more corners = 0.32 (HIGH CONFIDENCE — clean 3-way market, correctly avoids the tie-inclusive handicap-line trap)",
+    "Q9: Norway 6+ SOT = 0.43 (HIGH CONFIDENCE — market-derived lambda directly corroborated by a same-question, same-team precedent from nor_sen)",
+    "Q12/Q14: deliberately humility-shaded against the two specific, named failure modes (full-match chaos-sensitive counts; late-window timing decomposition) identified in KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md — the explicit point of today's exercise was applying those lessons rather than re-deriving them from scratch"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-30"
+}

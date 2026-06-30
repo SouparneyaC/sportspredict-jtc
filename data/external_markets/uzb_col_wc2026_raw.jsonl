@@ -1,0 +1,7 @@
+{"team": "Colombia", "opponent": "Canada", "date": "2026-03-01", "venue": "A", "result": "W1-0", "event_id": "401846986", "fouls": 12, "offsides": 0, "sot": 4, "yellow": 1, "red": 0, "goals": 1}
+{"team": "Colombia", "opponent": "France", "date": "2026-03-29", "venue": "H", "result": "D1-1", "event_id": "762453", "fouls": 13, "offsides": 2, "sot": 5, "yellow": 1, "red": 0, "goals": 1}
+{"team": "Colombia", "opponent": "Costa Rica", "date": "2026-06-01", "venue": "H", "result": "W3-1", "event_id": "401866134", "fouls": 12, "offsides": 0, "sot": 6, "yellow": 2, "red": 0, "goals": 3}
+{"team": "Colombia", "opponent": "Jordan", "date": "2026-06-07", "venue": "H", "result": "W2-0", "event_id": "401862320", "fouls": 7, "offsides": 3, "sot": 5, "yellow": 0, "red": 0, "goals": 2}
+{"team": "Uzbekistan", "opponent": "China", "date": "2026-03-06", "venue": "H", "result": "D0-0", "event_id": "401845587", "fouls": 12, "offsides": 0, "sot": 0, "yellow": 6, "red": 0, "goals": 0, "note": "SOT=0 is suspect (data quality); 6 YC is high, possibly VAR/contentious game"}
+{"team": "Uzbekistan", "opponent": "Gabon", "date": "2026-03-27", "venue": "H", "result": "W3-0", "event_id": "401866483", "fouls": 8, "offsides": 1, "sot": 7, "yellow": 0, "red": 0, "goals": 3}
+{"team": "Uzbekistan", "opponent": "Canada", "date": "2026-06-02", "venue": "A", "result": "L0-2", "event_id": "401853575", "fouls": 15, "offsides": 3, "sot": 2, "yellow": 2, "red": 0, "goals": 0}

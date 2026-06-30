@@ -1,0 +1,83 @@
+=== BEL-IRN 2026-06-21 Match Analysis Bash Log ===
+Date: 2026-06-21, ~18:02 UTC
+
+--- ESPN Event Discovery ---
+CMD: curl ESPN scoreboard 20260621 for event IDs
+RESULT: Belgium vs Iran = ESPN event 760451, kickoff 2026-06-21T19:00Z
+
+--- ESPN Prior Match Stats ---
+CMD: curl ESPN summary event 760426 (BEL-EGY)
+RESULT:
+Belgium: Fouls=15, YC=2, RC=0, Offsides=0, Corners=2, SOT=3, Shots=15, Poss=53.6%
+Egypt: Fouls=15, YC=2, RC=0, Offsides=1, Corners=7, SOT=3, Shots=14
+
+CMD: curl ESPN summary event 760427 (IRN-NZL)
+RESULT:
+Iran: Fouls=10, YC=1, RC=0, Offsides=2, Corners=4, SOT=4, Shots=17, Poss=48.5%
+New Zealand: Fouls=8, YC=0, RC=0, Offsides=0, Corners=1, SOT=8, Shots=14
+
+--- Smarkets Event Discovery ---
+CMD: curl Smarkets parent_id=42791414 upcoming events
+RESULT: Belgium vs Iran = Smarkets event 45067766, kickoff 2026-06-21T19:00:00Z
+
+--- Smarkets Market Listing ---
+CMD: curl Smarkets events/45067766/markets/
+RESULT: 100+ markets including FTR, HT, BTTS+OU2.5, cards, SOT, corners, player markets
+
+--- Smarkets Key Quotes (after rate limit reset at 18:02 UTC) ---
+FTR: Belgium 0.6945, Draw 0.2001, Iran 0.1087
+HT: Belgium 0.5182, Draw 0.3706, Iran 0.1178
+BTTS+OU2.5: Yes/Over 0.3665, Yes/Under 0.0948, No/Over 0.1634, No/Under 0.3748
+OU2.5 cards: Over 0.6175
+OU3.5 cards: Over 0.4240
+OU8.5 total SOT: Over 0.5463 (NOTE: thin market, BEL/IRN individual SOT same price)
+OU8.5 corners: Over 0.5769
+OU9.5 corners: Over 0.4683
+Penalty Yes: 0.3332
+Red card Yes: 0.1283
+2H OU1.5: Over 0.4659
+1H OU0.5: Over 0.7144
+BEL OU0.5 goals: Over 0.8851
+BEL OU1.5 goals: Over 0.6234
+IRN OU0.5 goals: Over 0.5238
+IRN OU1.5 goals: Over 0.1690
+
+--- Player Markets ---
+Player SOT 0.5 (market 145808701):
+  Lukaku: bid=0.7194, offer=0.7353, mid=0.7273 (LIQUID)
+  KDB: bid=0.6061, offer=0.6135, mid=0.6098 (LIQUID)
+  Trossard: bid=0.5747, offer=0.578, mid=0.5763 (LIQUID)
+  Taremi: bid=0.4464, offer=0.4505, mid=0.4485 (LIQUID)
+  Tielemans: bid=0.3788, offer=0.3817, mid=0.3802 (LIQUID)
+  Saelemaekers: mid=0.4294 (illiquid)
+
+Player score/assist (market 145808722):
+  Taremi: offer=0.25 (offer-only, no bid)
+
+--- Derived Lambdas ---
+λ_BEL_goals = 2.1637 (from BEL OU0.5 = 88.51%)
+λ_IRN_goals = 0.7419 (from IRN OU0.5 = 52.38%)
+λ_total_goals = 2.9056
+λ_1H_total = 1.2532 (from 1H OU0.5 = 71.44%)
+λ_2H_total = 1.6524
+λ_BEL_SOT = 5.7 (midpoint player-derived 5.4 and market-implied 6.3)
+λ_IRN_SOT = 2.6 (midpoint player-derived 2.3 and market-implied 2.7)
+λ_total_SOT = 8.3 (model), market thin at implied ~9.0
+λ_corners = 9.3 (from OU8.5=0.5769, OU9.5=0.4683)
+λ_total_cards = 3.2 (from OU2.5=0.6175)
+
+--- Final Estimates ---
+Q1 Iran more fouls than Belgium: 0.45 (LOW CONFIDENCE, coin-flip, λ_BEL≈13 λ_IRN≈14)
+Q2 2+ cards in 2H: 0.44 (λ_2H_cards=1.50, P(≥2)=0.442)
+Q3 BTTS+3+ goals: 0.37 (direct market 0.3665)
+Q4 Belgium more 2H SOT: 0.72 (Skellam λ_BEL_2H_SOT=2.96 vs λ_IRN=1.25)
+Q5 4+ total 2H SOT: 0.61 (λ_total_2H_SOT=4.21)
+Q6 Belgium wins: 0.70 (FTR direct 0.6945)
+Q7 Belgium HT winning: 0.52 (HT direct 0.5182)
+Q8 Tielemans 1+ SOT: 0.38 (LIQUID market 0.3802)
+Q9 Taremi G or A: 0.27 (RULE15 shade, market offer 0.25)
+Q10 9+ corners: 0.58 (direct market OU8.5=0.5769)
+
+Files saved:
+- /Users/aki/Desktop/QK Rstudio/sportspredict_research/data/external_markets/bel_irn_2026-06-21.json
+- /Users/aki/Desktop/QK Rstudio/sportspredict_research/data/external_markets/bel_irn_smarkets_quotes.json

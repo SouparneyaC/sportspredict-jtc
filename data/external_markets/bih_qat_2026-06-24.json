@@ -1,0 +1,389 @@
+{
+  "match": "Bosnia and Herzegovina vs Qatar",
+  "match_code": "BIH-QAT",
+  "competition": "FIFA World Cup 2026",
+  "group": "Group B",
+  "game_day": "GD3",
+  "date": "2026-06-24",
+  "venue": "Lumen Field, Seattle",
+  "kickoff": "12:00 PT / 15:00 ET",
+  "analysis_date": "2026-06-24",
+
+  "model_inputs": {
+    "bih_elo": 1652.8208,
+    "qat_elo": 1564.5424,
+    "elo_diff": 88.28,
+    "venue": "neutral",
+    "home_advantage_applied": false,
+    "poisson_coefs": {
+      "intercept": 0.10408,
+      "elo_diff_coef": 0.0018099
+    },
+    "ordered_logit_coefs": {
+      "b_elo": 0.005199,
+      "c1": -0.7702,
+      "c2": 0.5549
+    }
+  },
+
+  "model_outputs": {
+    "lambda_bih": 1.3019,
+    "lambda_qat": 0.9458,
+    "lambda_total": 2.2478,
+    "p_bih_scores": 0.7280,
+    "p_qat_scores": 0.6116,
+    "p_btts": 0.4453,
+    "p_total_le2": 0.6099,
+    "p_total_ge3": 0.3901,
+    "p_btts_and_ge3": 0.3152,
+    "p_bih_win": 0.4760,
+    "p_draw": 0.2976,
+    "p_qat_win": 0.2263,
+    "p_2h_ge2_goals": 0.3504,
+    "p_bih_more_2h_sot": 0.5005,
+    "p_qat_more_2h_sot": 0.2799,
+    "p_bih_more_2h_corners": 0.5195
+  },
+
+  "rules_applied": {
+    "RULE7": "Does NOT fire based on model (QAT 22.63% > 15%). BUT market prices QAT at 12.6% (below 15%). Apply near-RULE7 caution for Qatar player props.",
+    "RULE8": "FIRES — Draw 29.76% > 25%. HOWEVER: both teams need to WIN for 3rd-place advancement. This reduces the effective draw probability (market says 18.2%). RULE8's 'cagey match' assumption is LESS applicable here — both teams attack.",
+    "RULE15": "Near-applicable for QAT forwards. Market QAT win 12.6% is in RULE15 territory. Apply moderate SOT suppression to Qatar attacker props.",
+    "FLOOR_0.25": "Applied to Q8 (Qatar 2+ offsides) — Qatar had 0 offsides in GD1 (90 min), very limited attacking runs. Floor binds.",
+    "RULE_FOULS": "BIH expected to dominate possession and attack. QAT defends → QAT fouls more. Direction: Qatar more fouls.",
+    "SURVIVAL_MATCH_CORNERS": "Partially applicable — both teams need to WIN (not draw) for advancement. This is motivation-wise similar to a survival match. However the stakes are slightly lower (3rd place chance, not elimination). Treat Q1 (corners) with moderate caution but less extreme than full survival match.",
+    "BOTH_TEAMS_MUST_WIN_CONTEXT": "A draw nearly eliminates both teams from 3rd-place qualification. This creates an OPEN, ATTACKING match dynamic from both sides. Reduces RULE8's 'fewer goals' assumption. Both teams will press forward."
+  },
+
+  "suspensions": {
+    "BIH_out": "Tarik Muharemovic (CB) — straight red card GD2 vs Switzerland. Hadzikadunic replaces him.",
+    "QAT_out_1": "Homam Al Amin (defender) — red card GD2 vs Canada. Sultan Al Brake replaces.",
+    "QAT_out_2": "Assim Madibo (midfielder) — red card GD2 vs Canada. Karim Boudiaf comes in.",
+    "significance": "Qatar loses more quality — both a defender AND midfielder, while BIH loses only 1 CB."
+  },
+
+  "group_context": {
+    "standings_after_gd2": {
+      "Canada": "4 pts, GD +6 — QUALIFIED",
+      "Switzerland": "4 pts, GD +3 — QUALIFIED",
+      "Bosnia": "1 pt, GD -3 (conceded 5, scored 2)",
+      "Qatar": "1 pt, GD -6 (conceded 7, scored 1)"
+    },
+    "advancement_scenarios": {
+      "winner_of_this_match": "Goes to 4pts. With 8 of 12 3rd-place teams advancing, 4pts gives realistic 3rd-place shot IF GD improves. BIH needs to win +1 GD (-2 net) or better; QAT needs win AND big margin.",
+      "draw": "Both stay at 2pts — virtually eliminated. 2pts as 3rd-place team will NOT be in 8 best.",
+      "conclusion": "Both teams NEED TO WIN. This is functionally a must-win match for both."
+    }
+  },
+
+  "gd_evidence": {
+    "BIH_GD1_vs_Canada": {
+      "score": "1-1",
+      "bih_shots": 8,
+      "bih_sot": "~4 (estimated — 0.98 xG consistent with 4 SOT)",
+      "can_shots": 13,
+      "can_sot": 4,
+      "bih_goal": "Jovo Lukic 21' (header, corner delivery) — Džeko ABSENT (shoulder injury)",
+      "can_goal": "Cyle Larin 78' (sub, 121 seconds after entering)",
+      "bih_key_players": ["Jovo Lukic (scorer, deputy CF)", "Sead Kolasinac (assist)", "Ivan Basic (corner delivery)", "Alajbegovic (attack)"],
+      "note": "Creditable draw vs Canada. Lukic deputized for absent Džeko"
+    },
+    "BIH_GD2_vs_Switzerland": {
+      "score": "1-4",
+      "bih_shots": 5,
+      "bih_sot": 3,
+      "bih_xg": 0.24,
+      "bih_fouls": 18,
+      "bih_goal": "Mahmic 90+3' (consolation)",
+      "red_card": "Tarik Muharemovic — straight red 80' (dangerous tackle on Embolo — 1st red card of WC2026 at that point). SUSPENDED for GD3.",
+      "bih_yellow_cards": ["Amar Dedic 59'", "Edin Dzeko 61'"],
+      "dzeko_gd2": {"started": true, "goals": 0, "sot": 0, "xg": 0.12, "yellow_card": "61'"},
+      "note": "Dominated by Switzerland. 18 fouls shows Bosnia's combative style when defending. All SUI goals came after 74' (Bosnia red card at 80' compounded)."
+    },
+    "QAT_GD1_vs_Switzerland": {
+      "score": "1-1",
+      "qat_shots": 6,
+      "qat_sot": 3,
+      "qat_xg": 0.76,
+      "qat_fouls": 12,
+      "sui_shots": 26,
+      "sui_sot": 7,
+      "qat_corners": 3,
+      "qat_offsides": 0,
+      "qat_possession": "28%",
+      "qat_goal": "Boualem Khoukhi 90+4' (ACTUAL Qatar goal — header equalizer. NOT an own goal. First ever WC point for Qatar via this goal.)",
+      "qat_yellow_cards": ["Abunada (pen foul)", "Jassem Gaber 22'"],
+      "key_observation": "Qatar had 0 offsides in 90 minutes of defending vs Switzerland — they do NOT run in behind lines"
+    },
+    "QAT_GD2_vs_Canada": {
+      "score": "0-6",
+      "qat_shots": 2,
+      "qat_sot": 0,
+      "qat_possession": "20%",
+      "qat_fouls": "~1 (Canada 19)",
+      "qat_red_cards": ["Homam Al Amin (defender, VAR upgrade ~30')", "Assim Madibo (midfielder 53', foul on Koné — Koné suffered broken leg)"],
+      "note": "Historic humiliation. Qatar had 2 shots, 0 SOT. Both red-carded players are SUSPENDED for GD3. First AFC team with 2 reds in single WC match."
+    }
+  },
+
+  "player_profiles": {
+    "Edin_Dzeko": {
+      "nationality": "Bosnia",
+      "born": "1986-03-17",
+      "age_in_2026": 40,
+      "club_2025_26": "Schalke 04 (2. Bundesliga) — signed January 22, 2026",
+      "club_stats_2025_26": "6 goals, 3 assists, 599 minutes in 2. Bundesliga",
+      "goals_per_90": 0.90,
+      "international": "All-time Bosnia top scorer — 73 goals, 149 caps. Captain.",
+      "gd1_played": false,
+      "gd1_reason": "Shoulder injury — Jovo Lukic started as deputy CF",
+      "gd2_played": true,
+      "gd2_stats": {"started": true, "goals": 0, "sot": 0, "xg": 0.12, "yellow_card_minute": 61},
+      "fanduel_anytime_scorer_gd3": "-110 (implied 52.4% probability)",
+      "dzeko_sot_calculation": {
+        "p_scorer_market": 0.524,
+        "conversion_rate_assumed": 0.275,
+        "implied_lambda_sot": 2.45,
+        "p_ge1_sot_market_implied": 0.914,
+        "p_ge1_sot_from_gd2_evidence": 0.0,
+        "p_ge1_sot_vs_qatar_adjusted": 0.73,
+        "final_estimate": 0.70,
+        "note": "GD2 0 SOT was vs Switzerland (real defense). Qatar had 0 SOT allowed vs Canada. Market -110 scorer = very high SOT implied. Discounted to 0.70 for age (40) and uncertainty."
+      }
+    },
+    "Akram_Afif": {
+      "nationality": "Qatar",
+      "role": "Qatar's primary creative threat",
+      "caps": 127,
+      "international_goals": 40,
+      "note": "Not suspended for GD3. Qatar's best player by far. If Qatar attacks, it's through Afif.",
+      "gd1_sot": "Part of Qatar's 3 SOT total vs Switzerland"
+    },
+    "Jovo_Lukic": {
+      "nationality": "Bosnia",
+      "role": "CF deputy (started when Džeko absent in GD1)",
+      "gd1": "Scored vs Canada (21' header from corner)"
+    }
+  },
+
+  "referee": {
+    "name": "Jesus Valenzuela",
+    "nationality": "Venezuela",
+    "wc_experience": "Second World Cup (also officiated Qatar 2022 GS + R16)",
+    "career_yc_per_game": "~3.5-4.0 (estimated — exact career stats unavailable)",
+    "career_rc_per_game": "~0.15-0.20",
+    "career_pens_per_game": "~0.15-0.25",
+    "reputation": "Fair, disciplined but not known as extreme card-giver (unlike Abatti)",
+    "p_pen_or_red_baseline": 0.38
+  },
+
+  "market_data": {
+    "match_winner": {
+      "BIH": "-270 (~72.97% raw, ~69.1% de-vigged)",
+      "Draw": "+420 (~19.23% raw, ~18.2% de-vigged)",
+      "QAT": "+650 (~13.33% raw, ~12.6% de-vigged)"
+    },
+    "model_vs_market_gap": {
+      "BIH_win": "Model 47.60% vs Market 69.1% — major gap. Market correctly prices QAT form collapse.",
+      "Draw": "Model 29.76% vs Market 18.2% — model overestimates draw; both teams attack",
+      "QAT_win": "Model 22.63% vs Market 12.6% — QAT is near RULE7 territory on market basis"
+    },
+    "totals": {
+      "over_2.5": "+100 (~50% implied)",
+      "under_2.5": "approximately -120 (~54.5% implied)"
+    },
+    "btts": {
+      "yes": "-141 (~58.5% implied)",
+      "no": "+112"
+    },
+    "player_props": {
+      "Dzeko_anytime_scorer": "-110 (FanDuel) — implied 52.4%",
+      "Demirovic_anytime_scorer": "listed (exact odds unavailable)",
+      "Alajbegovic_anytime_scorer": "listed (exact odds unavailable)"
+    }
+  },
+
+  "question_analysis": {
+    "Q1": {
+      "question": "Will Bosnia have more 2H corners than Qatar?",
+      "estimate": 0.58,
+      "direction": "YES_LEAN",
+      "crowd_estimate": 0.50,
+      "key_drivers": [
+        "Model: P(BIH more 2H corners) = 51.95%",
+        "Market BIH -270 = dominant team → more possession → more corners",
+        "QAT GD1: only 3 corners vs Switzerland (vs SUI 10); QAT barely attacks",
+        "Bosnia attacking team → corners from sustained pressure"
+      ]
+    },
+    "Q2": {
+      "question": "Will Bosnia score more goals than Qatar in 2H?",
+      "estimate": 0.42,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.48,
+      "key_drivers": [
+        "P(BIH 2H goals > QAT 2H goals) from model: ~37-40%",
+        "RULE8 fires (draw 29.76%) — draws have equal 2H goals → shade down",
+        "However: both teams want to win = more open → offset",
+        "Net: slight NO lean; if BIH dominates heavily, this could be closer to 0.48"
+      ]
+    },
+    "Q3": {
+      "question": "Will Qatar have more shots on target than Bosnia in 2H?",
+      "estimate": 0.22,
+      "direction": "STRONG NO",
+      "crowd_estimate": 0.37,
+      "key_drivers": [
+        "Model: P(QAT more 2H SOT) = 27.99% — already below 50%",
+        "Qatar GD2: 0 SOT total vs Canada (complete attacking shutdown)",
+        "Qatar GD1: 3 SOT vs Switzerland but from passive defensive style",
+        "Market prices QAT at 12.6% win — near RULE7 threshold",
+        "Bosnia will dominate SOT output; Qatar barely generates shots",
+        "MAJOR EDGE: crowd likely ~0.37; we're at 0.22. ~15pp NO edge."
+      ]
+    },
+    "Q4": {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "estimate": 0.38,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.45,
+      "key_drivers": [
+        "Valenzuela career rate: baseline P(pen OR red) ≈ 0.38",
+        "Historical pattern: consistent overpricing of penalty/red card questions",
+        "Qatar missing 2 suspended players — remaining players might be cautious about further bans",
+        "But: Qatar NEEDS to win → desperation fouls in 2H could produce cards/penalties"
+      ]
+    },
+    "Q5": {
+      "question": "Will Qatar commit more fouls than Bosnia?",
+      "estimate": 0.55,
+      "direction": "YES_LEAN",
+      "crowd_estimate": 0.53,
+      "key_drivers": [
+        "RULE_FOULS: BIH attacks → QAT defends → QAT fouls more while defending",
+        "QAT GD1 vs SUI: 12 fouls while defending (vs SUI 11) — competitive foul rate when trying",
+        "QAT GD2 vs CAN: ~1 foul (complete capitulation) — but that was post-2-red-cards",
+        "BIH GD2 vs SUI: 18 fouls but they were being dominated (defending team fouls more)",
+        "In a match where BIH attacks and QAT defends: QAT expected to foul more"
+      ]
+    },
+    "Q6": {
+      "question": "Will Bosnia receive more cards than Qatar?",
+      "estimate": 0.40,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.48,
+      "key_drivers": [
+        "Qatar defends → Qatar fouls more → Qatar gets more cards",
+        "QAT GD2: 2 red cards (though suspended players are now out)",
+        "BIH GD2: red card (Muharemovic, also suspended now) + Dedic/Džeko yellows",
+        "In GD3: Qatar's desperation defending likely generates more cards than BIH's attacking",
+        "DUPLICATE QUESTION WARNING: Q6 and Q7 appear identical. One may be 'Qatar more cards.'"
+      ]
+    },
+    "Q7": {
+      "question": "[ASSUMED: Will Qatar receive more cards than Bosnia? — Q6/Q7 appear to be duplicates]",
+      "estimate": 0.52,
+      "direction": "YES_LEAN",
+      "crowd_estimate": 0.52,
+      "note": "FLAG TO USER: If this IS the same as Q6, use 0.40. If it's the inverse (Qatar more cards), use 0.52."
+    },
+    "Q8": {
+      "question": "Will Qatar be caught offside 2 or more times?",
+      "estimate": 0.25,
+      "direction": "STRONG NO (FLOOR)",
+      "crowd_estimate": 0.40,
+      "key_drivers": [
+        "Qatar GD1 vs Switzerland: 0 OFFSIDES in 90 minutes of play",
+        "Qatar GD2 vs Canada: likely 0-1 (they barely attacked)",
+        "Qatar style: set-piece based and defensive. They do NOT run in behind defensive lines.",
+        "Against Bosnia's defense, Qatar won't run forward aggressively",
+        "Computed probability: P(≥2 | λ=0.8) = 19%. FLOOR_0.25 applied.",
+        "MAJOR EDGE: crowd likely ~0.40; we're at 0.25 (floor). ~15pp NO edge."
+      ]
+    },
+    "Q9": {
+      "question": "Will Bosnia and Herzegovina win the match?",
+      "estimate": 0.62,
+      "direction": "YES",
+      "crowd_estimate": 0.57,
+      "key_drivers": [
+        "Model: P(BIH win) = 47.60%; Market: 69.1% de-vigged",
+        "Blend (40% model, 60% market): ~60.5%",
+        "Both teams need win → open match → dominant team (BIH) benefits",
+        "Qatar depleted: missing 2 suspension players (Al Amin + Madibo)",
+        "Bosnia motivated: Džeko finally starting after missing GD1",
+        "RULE8 note: effective draw probability lower than model (both teams attack)"
+      ]
+    },
+    "Q10": {
+      "question": "Will the match have 2 or fewer total goals?",
+      "estimate": 0.52,
+      "direction": "COIN-FLIP",
+      "crowd_estimate": 0.48,
+      "key_drivers": [
+        "Model: P(≤2 goals) = 60.99%; Market: ~50% (Over 2.5 at +100)",
+        "Both teams attacking = more open play = more goals shade (toward market)",
+        "BTTS Yes at -141 (58.5%) from market — high goal probability",
+        "Blend: ~52-54% probability of Under 2.5",
+        "Uncertain — market and model diverge 11pp. Near coin-flip."
+      ]
+    },
+    "Q11": {
+      "question": "Will Edin Dzeko have at least 1 shot on target?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_estimate": 0.58,
+      "key_drivers": [
+        "FanDuel -110 scorer (52% implied) → computed P(≥1 SOT) ≈ 73-91%",
+        "Džeko expected to start: age 40, captain, all-time scorer",
+        "Qatar allowed 0 SOT total to Canada — Bosnia will dominate shots",
+        "GD2 vs SUI: 0 SOT — but that was Switzerland's proper defense",
+        "Age discount + starting uncertainty → final estimate 0.70",
+        "EDGE: crowd likely ~0.58; our estimate 0.70. ~12pp YES edge."
+      ]
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q3", "estimate": 0.22, "direction": "STRONG_NO", "note": "Qatar more 2H SOT than Bosnia. Qatar 0 SOT in GD2. Model 28%, market QAT 12.6%. Crowd ~0.37."},
+    {"rank": 2, "q": "Q8", "estimate": 0.25, "direction": "STRONG_NO_FLOOR", "note": "Qatar 2+ offsides. Qatar 0 offsides in GD1 (90 min!). They don't run in behind. Crowd ~0.40."},
+    {"rank": 3, "q": "Q11", "estimate": 0.70, "direction": "YES", "note": "Džeko SOT. Market -110 scorer. Qatar 0 SOT defense. Crowd ~0.58."},
+    {"rank": 4, "q": "Q9", "estimate": 0.62, "direction": "YES", "note": "Bosnia win. Market 69.1%, blend 60.5%. Both need win = open match."},
+    {"rank": 5, "q": "Q5", "estimate": 0.55, "direction": "YES_LEAN", "note": "Qatar more fouls. RULE_FOULS defending team direction."},
+    {"rank": 6, "q": "Q6", "estimate": 0.40, "direction": "NO_LEAN", "note": "Bosnia more cards than Qatar. Qatar defending = Qatar cards. ~8pp edge."},
+    {"rank": 7, "q": "Q2", "estimate": 0.42, "direction": "NO_LEAN", "note": "BIH more 2H goals. Below 50% despite BIH dominance."},
+    {"rank": 8, "q": "Q1", "estimate": 0.58, "direction": "YES_LEAN", "note": "BIH more 2H corners. Model 51.95%; dominance adds more."},
+    {"rank": 9, "q": "Q10", "estimate": 0.52, "direction": "COIN_FLIP", "note": "≤2 goals. Model vs market diverge. Near coin-flip."},
+    {"rank": 10, "q": "Q4", "estimate": 0.38, "direction": "NO_LEAN", "note": "Penalty/red card. Valenzuela baseline; historical overpricing."},
+    {"rank": 11, "q": "Q7", "estimate": 0.52, "direction": "UNCERTAIN", "note": "FLAGGED: possible duplicate of Q6. If duplicate, use 0.40."}
+  ],
+
+  "duplicate_flag": {
+    "issue": "Q6 and Q7 in the user's question list are identically worded: 'Will Bosnia and Herzegovina receive more cards than Qatar?'",
+    "assumption": "Q7 is assumed to be 'Will Qatar receive more cards than Bosnia?' — the inverse question",
+    "action_required": "User should confirm Q7 text before submitting"
+  },
+
+  "post_match": {
+    "actual_score": "Bosnia-Herzegovina 3-1 Qatar",
+    "match_played": true,
+    "NO_SUBMISSION_FLAG": "CRITICAL: Platform shows zero 'YOU' values for every question on this match — only crowd estimate + outcome + a qualitative note ('The Crowd played it safe' / 'The Crowd called it perfectly!'). Total RBP = 0. This means our final_submission_estimates from this file (Q1-Q11 in question_analysis) were computed but NEVER SUBMITTED to the platform before the deadline. This is a pure process failure (missed submission), not a methodology failure — see STEPS_FOR_HIGH_POINTS.md for the full writeup. Estimates below are recorded as 'our_est' from this file purely for retrospective grading (what RBP WOULD have been), not actual submissions.",
+    "questions": [
+      {"q": 1, "question": "Will Qatar be caught offside 2 or more times?", "our_est_unsubmitted": 0.25, "crowd": 0.43, "outcome": "YES", "submitted": null, "rbp": 0, "note": "Would have been a massive win if submitted — our 0.25 vs crowd 0.43 vs actual YES."},
+      {"q": 2, "question": "Will Bosnia have more 2H corners than Qatar?", "our_est_unsubmitted": 0.58, "crowd": 0.61, "outcome": "NO", "submitted": null, "rbp": 0},
+      {"q": 3, "question": "Will Bosnia score more goals than Qatar in 2H?", "our_est_unsubmitted": 0.42, "crowd": 0.54, "outcome": "YES", "submitted": null, "rbp": 0, "note": "Would have lost — crowd's higher 54% was closer to actual YES."},
+      {"q": 4, "question": "Will Qatar have more shots on target than Bosnia in 2H?", "our_est_unsubmitted": 0.22, "crowd": 0.29, "outcome": "NO", "submitted": null, "rbp": 0, "note": "Would have won — our STRONG_NO call was directionally right and crowd's 'called it perfectly' note suggests the crowd was also low, just not as low as us."},
+      {"q": 5, "question": "Will a penalty kick be awarded OR a red card be shown?", "our_est_unsubmitted": 0.38, "crowd": 0.38, "outcome": "NO", "submitted": null, "rbp": 0},
+      {"q": 6, "question": "Will Qatar commit more fouls than Bosnia?", "our_est_unsubmitted": 0.55, "crowd": 0.50, "outcome": "YES", "submitted": null, "rbp": 0},
+      {"q": 7, "question": "Will Bosnia receive more cards than Qatar?", "our_est_unsubmitted": 0.40, "crowd": 0.41, "outcome": "NO", "submitted": null, "rbp": 0},
+      {"q": 8, "question": "Will Bosnia and Herzegovina win the match?", "our_est_unsubmitted": 0.62, "crowd": 0.64, "outcome": "YES", "submitted": null, "rbp": 0},
+      {"q": 9, "question": "Will the match have 2 or fewer total goals?", "our_est_unsubmitted": 0.52, "crowd": 0.46, "outcome": "NO", "submitted": null, "rbp": 0},
+      {"q": 10, "question": "Will Edin Dzeko have at least 1 shot on target?", "our_est_unsubmitted": 0.70, "crowd": 0.59, "outcome": "NO", "submitted": null, "rbp": 0, "note": "Would have lost — our 0.70 YES-lean was wrong, Dzeko did not register a SOT."}
+    ],
+    "total_rbp": 0,
+    "beat_crowd_count": "N/A — not submitted",
+    "key_learnings": [
+      "Process failure: analysis was completed (11 questions modeled in question_analysis) but never submitted to the platform. Zero RBP earned or lost — pure opportunity cost. Root cause unknown (deadline missed, submission step skipped, or platform/session issue) — needs a process safeguard (e.g. a submission checklist or reminder) so a completed analysis never goes unsubmitted again."
+    ]
+  }
+}

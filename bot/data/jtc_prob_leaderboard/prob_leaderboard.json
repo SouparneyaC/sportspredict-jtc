@@ -1,0 +1,64 @@
+{
+  "count": 8,
+  "data": [
+    {
+      "user_id": "5cb94de8-e772-4eee-9c1b-95311751b823",
+      "score": 212.72747453251475,
+      "img_variants": null,
+      "country": "US",
+      "rank": 1
+    },
+    {
+      "user_id": "f9fcdbfe-575d-414a-8aad-ef3b0e9a8623",
+      "score": 202.04747453251477,
+      "img_variants": null,
+      "country": "US",
+      "label": "wains",
+      "rank": 2
+    },
+    {
+      "user_id": "f2196977-aee7-4154-a61b-8c9823d337e2",
+      "score": 202.0474745325147,
+      "img_variants": null,
+      "country": "US",
+      "label": "brains",
+      "rank": 3
+    },
+    {
+      "user_id": "de8cd1b1-f674-43f3-80e7-197bc36dcd5d",
+      "score": 201.91747453251475,
+      "img_variants": null,
+      "country": "BG",
+      "rank": 4
+    },
+    {
+      "user_id": "02928b5b-f399-4a56-bc58-58f1910d4e2c",
+      "score": 201.80747453251473,
+      "img_variants": null,
+      "country": "US",
+      "rank": 5
+    },
+    {
+      "user_id": "29776753-34f7-4e9a-8356-e6bbea31ab75",
+      "score": 200.82747453251474,
+      "img_variants": null,
+      "country": null,
+      "rank": 6
+    },
+    {
+      "user_id": "0c7a8e06-435c-4275-80dc-2e067f2b17e6",
+      "score": 197.85747453251474,
+      "img_variants": null,
+      "country": null,
+      "label": "Make no mistakes",
+      "rank": 7
+    },
+    {
+      "user_id": "37c678be-91d1-4567-8836-f552609902d9",
+      "score": 194.20747453251477,
+      "img_variants": null,
+      "country": "CN",
+      "rank": 8
+    }
+  ]
+}

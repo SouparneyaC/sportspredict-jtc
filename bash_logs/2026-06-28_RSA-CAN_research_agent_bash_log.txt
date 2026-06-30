@@ -1,0 +1,214 @@
+=== RSA-CAN 2026-06-28 New Question Types Research Log ===
+Started: Sun Jun 28 12:34:16 CDT 2026
+
+## Command 1
+curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760440"
+Result: HTTP 200, 471566 bytes. Top-level keys include: boxscore, format, gameInfo, lastFiveGames,
+headToHeadGames, leaders, broadcasts, pickcenter, odds, hasOdds, news, rosters, article, videos,
+header, keyEvents, commentary, wallclockAvailable, meta, standings.
+KEY FINDING: keyEvents array (52 entries for this match) contains minute-stamped events with type.type
+in: kickoff, yellow-card, goal, start-delay, end-delay, red-card, substitution, halftime,
+start-2nd-half, goal---free-kick, own-goal, end-regular-time.
+
+## Command 2 - drinks break / hydration break detection
+Filtered keyEvents for type in (start-delay, end-delay) with text containing "drinks break":
+  Period 1, clock 25' -> "Delay in match for a drinks break." (start) ... ends 27'
+  Period 2, clock 68' -> "Delay in match for a drinks break." (start) ... ends 71'
+ESPN's own text NEVER uses the literal word "hydration" - always "drinks break".
+
+## Command 3
+curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760463" -> HTTP 200, 444963 bytes
+Drinks break events: Period 1 clock 23' (ends 25'); Period 2 clock 71' (ends 74')
+
+## Command 4
+curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760466" -> HTTP 200, 416886 bytes
+Drinks break events: Period 1 clock 23' (ends 26'); Period 2 clock 69' (ends 71')
+
+## Command 5
+curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760486" (today's RSA-CAN match) -> HTTP 200, 172308 bytes
+header.competitions[0].status.type = STATUS_SCHEDULED, completed:false, detail "Sun, June 28th at 3:00 PM EDT"
+Teams: South Africa (home), Canada (away). NOTE: no keyEvents array populated yet (pre-game; confirmed
+structure only appears once match begins/completes).
+gameInfo.venue = SoFi Stadium, Inglewood, California, USA. No indoor/roof/grass field exposed in JSON.
+
+## Command 6 - goal event structure (substitute-scorer / multi-goal verification)
+Extracted all type.type in (goal, own-goal, goal---free-kick) from 760440 keyEvents:
+  16' Cyle Larin (Canada) - starter
+  29' Jonathan David (Canada) - starter
+  45'+3' Jonathan David (Canada) - starter  [2nd goal]
+  64' Nathan Saliba (Canada), Goal - Free-kick - SUBSTITUTE (subbed on 57' per substitution event below)
+  75' Own Goal by Mohamed Manai (Qatar) (credited to Canada)
+  90'+2' Jonathan David (Canada) - starter [3rd goal -> brace/hat-trick]
+Each goal event includes "participants":[{"athlete":{"id":..,"displayName":..}}] - directly usable
+for grouping goals by scorer (multi-goal/brace detection).
+
+## Command 7 - substitution event structure
+Extracted all type.type == substitution from 760440 (10 events). Example:
+  57' "Substitution, Canada. Nathan Saliba replaces Ismael Kone because of an injury."
+  participants: [{"athlete":{"displayName":"Nathan Saliba"}}, {"athlete":{"displayName":"Ismael Kone"}}]
+Cross-referencing goal at 64' (Saliba) against sub-on at 57' (Saliba) confirms a real substitute-scored
+goal purely from minute-stamps in keyEvents, no extra flag required - but a better flag exists (next).
+
+## Command 8 - roster-level starter/subbedIn/stats fields (BEST source for sub-goal & brace detection)
+d['rosters'][team]['roster'][player] structure includes DIRECT fields:
+  "active": true, "starter": false/true, "subbedIn": true/false, "subbedOut": true/false,
+  "subbedInFor": {"athlete":{"displayName":"Ismael Kone"}},
+  "stats": [...,{"name":"totalGoals","value":N},{"name":"subIns","value":0/1},...],
+  "plays": [{"clock":{"displayValue":"64'"},"scoringPlay":true,"didScore":true,...}]
+VERIFIED: Nathan Saliba roster entry = starter:false, subbedIn:true, totalGoals:1.0 -> definitive,
+single-field confirmation of a substitute-scored goal (no manual cross-referencing needed).
+VERIFIED: Jonathan David roster entry = starter:true, totalGoals:3.0 -> definitive single-field
+confirmation of a multi-goal (brace+) performance.
+
+## Command 9 - commentary feed text search
+Searched d['commentary'] (132/121/88 entries across the 3 matches) for substring "hydrat" / "drinks
+break" / "water break". Result: 2 hits per match, always phrased "Delay in match for a drinks break."
+Confirms ESPN commentary text never says "hydration break" literally - same underlying event though.
+
+## Command 10
+curl -s "https://api.smarkets.com/v3/events/?type=football_match&name=South%20Africa%20vs%20Canada"
+-> HTTP 200 but returned UNRELATED events (e.g. "Exchange Specials - Real Madrid", various South
+American club matches). CONFIRMS: name= query parameter on this endpoint is NOT functioning as a
+filter - it is silently ignored.
+
+## Command 11
+curl -s "https://api.smarkets.com/v3/events/?type=football_match&name=Canada" -> same generic
+20-event unrelated listing (Copa Sudamericana, Allsvenskan matches, none containing "Canada").
+Confirms name= filter ignored regardless of query string.
+
+## Command 12
+curl -s "https://api.smarkets.com/v3/search/?q=South%20Africa%20Canada" -> HTTP 404 NOT_FOUND.
+No dedicated /search/ endpoint exists at that path.
+
+curl -s "https://api.smarkets.com/v3/events/?q=South+Africa+Canada" -> HTTP 200, generic top-level
+sport listing (Cycling, Tennis, ...). q= also ignored.
+
+curl -s "https://api.smarkets.com/v3/events/?type=football_match&competition=fifa-world-cup-2026"
+-> HTTP 200, same generic unrelated listing. competition= also ignored.
+
+## Command 13
+curl -s "https://api.smarkets.com/v3/events/?type=top_level_event" -> found Football sport node id=121005.
+curl -s "https://api.smarkets.com/v3/events/121005/children/" -> HTTP 404 (no such sub-resource).
+curl -s "https://api.smarkets.com/v3/events/?type=football_match&parent_id=121005" -> HTTP 200, 0 events
+(direct children of node 121005 are not football_match type; nesting is deeper).
+
+## Command 14 - WORKING APPROACH: increase limit and filter client-side
+curl -s "https://api.smarkets.com/v3/events/?type=football_match&limit=300" -> HTTP 200, 234 events
+returned. Client-side filter for name containing "canada" or "south africa" (case-insensitive) found:
+  id=45155173, name="South Africa vs Canada", full_slug="/sport/football/world-cup/2026/06/28/19-00/
+  south-africa-vs-canada", start_datetime="2026-06-28T19:00:00Z", venue: SoFi Stadium, capacity 70240.
+  id=45161803, name="Enhanced Specials - South Africa vs Canada" (props/specials parent event, not
+  the main match market set).
+CONCLUSION: Smarkets v3 events listing endpoint DOES contain the correct event, but only reachable
+via pagination + client-side substring filtering on the `name` field returned in the JSON body -
+the query-string filters (name=, q=, competition=, parent_id=) do not function as filters server-side.
+
+## Command 15
+curl -s "https://api.smarkets.com/v3/events/45155173/markets/" -> HTTP 200, 174 markets returned.
+Full list captured (see deliverable MD for complete listing). Searched market names (lowercased) for
+keywords: hydrat (0 hits), substitut (0 hits), card (13 hits), corner (16 hits), offside (0 hits),
+"shots on target" (8 hits), penalty (2 hits), advance (0 hits), qualif (2 hits: "To qualify" id
+147758349, "Method of qualification" id 147758284), winner (8 hits), brace (0 hits), "2 goals"
+(1 hit: "Player to score at least 2 goals" id 147758693), hat-trick (1 hit, id 147758695),
+"extra time" (1 hit: "Will there be Extra Time" id 147758350).
+
+## Command 16
+curl -s "https://api.smarkets.com/v3/markets/147758349/contracts/" ("To qualify") -> HTTP 200,
+2 contracts only: South Africa (HOME), Canada (AWAY). No draw contract.
+curl -s "https://api.smarkets.com/v3/markets/147758216/contracts/" ("Full-time result") -> HTTP 200,
+3 contracts: South Africa (HOME), Draw (DRAW), Canada (AWAY).
+CONFIRMS structural distinction: "To qualify" (147758349) is the correct market type for Q9 (knockout
+advancement incl. ET/penalties, no draw possible), separate and structurally different from "Full-time
+result" (147758216) which is the plain 90-minute regulation-result market with a draw outcome.
+
+## Command 17
+curl -s "https://api.smarkets.com/v3/markets/147758349/" -> HTTP 200. market_type.name = "TO_QUALIFY"
+(a formally distinct market_type in Smarkets' own schema, not just a coincidental name string).
+
+## Command 18
+curl -s "https://api.smarkets.com/v3/markets/147758693/contracts/" ("Player to score at least 2
+goals") -> HTTP 200, 44 player contracts returned (named individual players from both squads,
+including Moise Bombito, Nathan-Dylan Saliba, Alistair Johnston, Aubrey Modiba, Khuliso Mudau,
+Oswin Appollis, Derek Cornelius, Mbekezeli Mbokazi, etc).
+NOTE: attempted /prices/ sub-path on market 147758349 returned HTTP 404 - correct live-price retrieval
+needs a different endpoint (not pursued further; out of scope - structural market existence was the
+research question, not live pricing for this deliverable).
+
+Finished: command log complete.
+Finished: Sun Jun 28 12:44:36 CDT 2026
+
+## FOLLOW-UP RESEARCH: Resolving SoFi Stadium hydration-break likelihood (requested by coordinator)
+
+## Command 19 - ESPN scoreboard sweep to find prior WC2026 matches at SoFi Stadium
+curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=YYYYMMDD"
+for dates 20260611 through 20260628 (18 dates total). All HTTP 200. Parsed each for
+competitions[0].venue containing "SoFi" or "Inglewood". Found 6 total events at SoFi Stadium
+(5 completed prior to today + today's RSA-CAN match):
+  760417 | Paraguay at United States   | 2026-06-13T01:00Z (local evening) | Full Time
+  760427 | New Zealand at Iran          | 2026-06-16T01:00Z (local evening) | Full Time
+  760439 | Bosnia-Herzegovina at Switzerland | 2026-06-18T19:00Z (local ~noon) | Full Time
+  760451 | Iran at Belgium              | 2026-06-21T19:00Z (local ~noon) | Full Time
+  760470 | United States at Türkiye     | 2026-06-26T02:00Z (local evening) | Full Time
+  760486 | Canada at South Africa (today) | 2026-06-28T19:00Z | Scheduled
+
+## Command 20 - pulled ESPN summary?event= for all 5 completed SoFi matches
+curl -s ".../summary?event=760417" -> HTTP 200, 490094 bytes
+curl -s ".../summary?event=760427" -> HTTP 200, 434976 bytes
+curl -s ".../summary?event=760439" -> HTTP 200, 433010 bytes
+curl -s ".../summary?event=760451" -> HTTP 200, 431820 bytes
+curl -s ".../summary?event=760470" -> HTTP 200, 462748 bytes
+Parsed keyEvents[] of each for type in (start-delay,end-delay) with text containing "drink":
+  760417 (Paraguay-USA, evening ko):    1H 24' start / 2H 68' start  -> drinks break PRESENT, both halves
+  760427 (NZ-Iran, evening ko):          1H 25' start / 2H 68' start  -> drinks break PRESENT, both halves
+  760439 (Bosnia-Switzerland, noon ko):  1H 23' start / 2H 69' start  -> drinks break PRESENT, both halves
+  760451 (Iran-Belgium, noon ko):        1H 30' start / 2H 70' start  -> drinks break PRESENT, both halves
+  760470 (USA-Türkiye, evening ko):      1H 23' start / 2H 67' start  -> drinks break PRESENT, both halves
+RESULT: 5/5 prior matches at SoFi Stadium had a drinks-break event in BOTH halves, regardless of
+kickoff time-of-day (both midday and evening kickoffs included in the sample).
+
+## Command 21 - WebSearch: SoFi Stadium roof/structure
+Query: "SoFi Stadium roof structure open sides translucent canopy not air conditioned"
+Result (per Wikipedia, HKS architects, AccuWeather, Athletic Business sources): SoFi Stadium has an
+independently-supported translucent ETFE canopy (302 panels, 46 operable for ventilation) covering the
+bowl; the bowl itself has OPEN SIDES on three sides (not a sealed dome); relies on natural
+ocean-breeze ventilation, NOT mechanical air conditioning. Confirms user's recollection was directionally
+correct: NOT a climate-controlled indoor venue in the sealed-dome sense.
+
+## Command 22 - WebSearch: FIFA WC2026 heat protocol trigger mechanism
+Query: "FIFA World Cup 2026 heat protocol cooling break wet bulb globe temperature trigger threshold"
+Initial AI-summarized result was internally contradictory (said both "regardless of temperature" and
+cited a 32C WBGT threshold), so followed up with direct WebFetch on two primary articles:
+
+## Command 23 - WebFetch verification of primary sources
+WebFetch https://kestrelinstruments.com/blog/fifas-hydration-break-rule-explained-what-it-means-for-the-2026-world-cup
+  -> "Three-minute hydration breaks will be imposed midway through each half of every game,
+     regardless of weather conditions." Trigger: NOT based on temperature thresholds - automatic in
+     all matches. Contrasted explicitly with PRIOR practice (pre-2026) which used a 32C WBGT
+     conditional trigger - WC2026 eliminated that conditional approach.
+WebFetch https://www.foxnews.com/outkick-sports/fifa-implements-mandatory-water-breaks-2026-world-cup
+  -> "FIFA has implemented mandatory water breaks in all 2026 World Cup matches, regardless of weather
+     conditions... at approximately the 22-minute mark of each half... unlike the 2014 World Cup's
+     optional cooling breaks that only triggered during extreme heat (WBGT threshold), the 2026 rule
+     mandates breaks in every single match as a permanent structural feature."
+RESULT: WC2026 hydration breaks are a FIXED RULE-BOOK FEATURE of every match, independent of venue,
+roof, climate control, or measured conditions. This is a deliberate change from the pre-2026
+conditional/WBGT-triggered approach.
+
+## Command 24 - WebSearch: other-sport corroboration (NFL heat issues at SoFi)
+Query: "Rams Chargers SoFi Stadium heat hot field temperature complaints"
+Result (Fox Weather, Athletic Business, fan forums): SoFi's interior averages ~10F HOTTER than outside
+ambient temperature despite open sides, because the glass/ETFE canopy still allows solar heating while
+limiting full convective cooling (not a true open-air stadium, not a true sealed dome - hybrid).
+Documented example: outside temp 85F at 12:30pm vs measured 96F at field-level seating same day.
+2024 Chargers-Raiders game: forecast 94F/41% humidity, felt-like 96F sustained throughout. CONCLUSION:
+SoFi's structure does NOT meaningfully suppress on-field heat buildup relative to an open stadium -
+corroborates (Tier 2, NFL not soccer) that heat/hydration concerns are realistic at this venue, though
+moot given WC2026's unconditional mandatory-break rule found above.
+
+## Command 25 - WebSearch: today's forecast for Inglewood, CA
+Query: "Inglewood California weather forecast June 28 2026"
+Result (NWS/AccuWeather aggregated): High 73F, low 62F, 5-6% precip chance, partly cloudy - a mild day,
+nowhere near a heat-stress threshold. NOTE: irrelevant to the actual outcome since FIFA's WC2026 rule
+is unconditional or weather, but recorded for completeness per the coordinator's request.
+
+Finished follow-up research.

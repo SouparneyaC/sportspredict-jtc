@@ -1,0 +1,144 @@
+SCOTLAND vs BRAZIL — WC2026 Group C GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24 | Venue: Hard Rock Stadium, Miami | KO: 6:00 PM ET
+
+=== COMMANDS RUN ===
+
+1. grep -i "scotland|brazil" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Brazil,2068.6320 | Scotland,1852.1502
+
+2. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff (BRA-SCO): 216.48
+  lambda_BRA: 1.6420 | lambda_SCO: 0.7500 | total: 2.3919
+  P(BRA scores): 0.8064 | P(SCO scores): 0.5276 | P(BTTS): 0.4255
+  P(total<=2): 0.5718 | P(total>=3): 0.4282
+  P(BTTS AND >=3): 0.3128
+  P(BRA win): 0.6389 | P(Draw): 0.2305 | P(SCO win): 0.1306  <- RULE7 FIRES
+  P(2H>=2 goals): 0.3787
+  P(BRA more 2H SOT): 0.6668
+  P(BRA more corners full match): 0.8204
+  P(BRA 2H scores): 0.5947
+  P(BRA 1H scores): 0.5224
+
+3. Compound Q3 calculation (SCO first AND BRA 2H):
+  P(SCO first scorer, raw model): 0.2849
+  P(SCO first scorer, market-adjusted at 37.5%): 0.2025
+  P(BRA 2H scores): 0.5947
+  Compound P: 0.1204 to 0.1694 → Final estimate: 0.13
+
+4. Referee cards calculation (Cesar Ramos):
+  Career: 4.17 YC/game → P(4+ cards): 0.5990
+  WC average: 4.0 YC/game → P(4+ cards): 0.5665
+  Final estimate with survival match uplift: 0.62
+
+5. Scotland offsides calculation:
+  P(SCO 2+ offsides | lambda=0.75): 0.1733  → FLOOR zone
+  FLOOR_0.25, adjusted upward for survival attacking: 0.32
+
+6. Research agent spawned — Key findings below.
+
+=== RULES APPLIED ===
+
+RULE7: FIRES — SCO win 13.06% < 15%
+  → Submit unshaded estimates
+  → RULE15 technically fires for McTominay BUT:
+    - He is a box-to-box CM (not a forward)
+    - Scotland MUST ATTACK (survival match) — opposite of forward suppression scenario
+    - Bet365 prices McTominay SOT at 11-10 (~52%) — market agrees NO suppression
+    - Use 0.50 (market-aligned), NOT the 0.25-0.35 RULE15 range
+
+RULE8: Does NOT fire (draw 23.05% < 25%)
+
+SURVIVAL_MATCH_SCOTLAND:
+  → Scotland NEED to WIN (or draw) to advance
+  → They will push men forward aggressively in 2H
+  → Leaves space for Brazil counter-attacks
+  → Elevates: BRA 2H goals, total goals, BRA corner advantage
+
+=== KEY FINDINGS ===
+
+GROUP C CONTEXT:
+Same group: Brazil, Morocco, Scotland, Haiti
+After GD2: Brazil 4pts, Morocco 4pts, Scotland 3pts, Haiti 0pts (eliminated)
+Scotland MUST win or draw vs Brazil to qualify with confidence
+Morocco and Brazil playing in final GD3 simultaneously
+Scotland: Win = auto qualification; Draw = 73.57% qualification (Opta). Loss = uncertain.
+Haiti: ELIMINATED. Playing Morocco simultaneously (dead rubber for Haiti).
+
+SCOTLAND GD1 vs Haiti (1-0):
+- Shots: 9 total, 2 SOT. Fouls: 21. Cards: 3 SCO YC + 1 HAI YC = 4 total
+- McGinn 28' (deflected). Formation: 4-4-2
+- McTominay: shot hit crossbar/post at 17' — NOT on target. 0 confirmed SOT.
+
+SCOTLAND GD2 vs Morocco (0-1):
+- Shots: 6 total, 0 SOT (only 2nd time in WC history). Possession: 39%.
+- Morocco dominated (78% possession in 1H). Conceded 2nd minute goal.
+- Cards: Robertson YC 65'
+- McTominay: shots at 85' and 88' — both missed target. Still 0 confirmed WC SOT.
+- McTominay WC2026 total: 4 shots, 0 SOT. But 1.0 SOT/90 at Napoli (33 SOT in 33 games).
+
+BRAZIL GD1 vs Morocco (1-1):
+- Shots: 12 total, 5 SOT. Corners: 6. Cards: 2 YC (Ibanez, Casemiro both 45').
+- Vinicius Jr 32' (1H goal)
+
+BRAZIL GD2 vs Haiti (3-0):
+- All 3 goals in FIRST HALF (23', 36', 45+3'). Only 2 shots in ENTIRE 2H.
+- Shots: 7 total, 4 SOT. Fouls: 13 (Haiti 15). Haiti cards: 3 YC.
+- Brazil's 4 WC2026 goals: ALL IN FIRST HALF. 0 second-half goals.
+- Context: went 3-0 at HT → no incentive to push in 2H. This is an artifact.
+- Vinicius subbed at 81' specifically to rest for this SCO match.
+
+KEY PLAYER NOTES:
+- Raphinha: OUT (hamstring). Rayan (19, Bournemouth) replaces.
+- Vinicius Jr: 2 WC goals (both 1H), rested in GD2 81'. Expected to be sharp.
+- McTominay (Napoli): 10 goals, 3 assists in 33 Serie A games. Advanced CM role. Scotland captain.
+- Scotland scorers all +500 or longer → expected to score rarely.
+
+REFEREE — Cesar Ramos (Mexico):
+- Career 395 matches: 4.17 YC/game, 0.25 RC/game
+- WC career 7 matches: 4.0 YC/game, 0.29 RC/game
+- 2022 WC semi-final referee (France vs Morocco)
+- P(4+ cards in match): 57-60% base rate. With survival match: 62%.
+
+MARKETS:
+- Brazil -280 to -336 (implicitly ~73% de-vigged)
+- Draw +410 (~19%); Scotland +700-900 (~10-12%)
+- Over 2.5: -126 to -130 (56% implied). Under 2.5: +100-113.
+- BTTS No -165 (62% → Scotland not scoring at ~37.5%)
+- McTominay anytime scorer +550; SOT at bet365: 11-10 (~52%)
+- Vinicius Jr anytime scorer +110
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.70 — Brazil more 2H SOT [YES: model 66.68%; SCO avg 0-1 SOT/game; survival = space for BRA]
+Q2: 0.32 — Scotland 2+ offsides [NO near floor: model 17%; survival attacking; floor 0.25 → 0.32]
+Q3: 0.13 — Scotland 1st goal AND Brazil 2H goal [STRONG_NO: compound 12-17%; no floor applies to scenarios]
+Q4: 0.78 — Brazil more corners [YES: model 82%; BRA possession; wide attackers; GD2 SCO had 2 corners]
+Q5: 0.45 — Scotland scores 1+ goals [NO_LEAN: model 53%, market 37.5%; survival upward; blend 0.45]
+Q6: 0.52 — 3+ total goals [YES_LEAN: market -126; survival = more open play]
+Q7: 0.62 — Brazil scores in 2H [YES: GD2 2H 0 goals = artifact of 3-0 lead; vs fighting SCO different]
+Q8: 0.62 — 4+ total cards [YES: Ramos 4.0 WC avg; survival Scotland physical = more cards]
+Q9: 0.50 — McTominay >=1 SOT [COIN-FLIP: market 52%; Napoli 1.0 SOT/90; WC 0 SOT history; survival upward]
+Q10: 0.62 — Brazil scores in 1H [YES: 4/4 goals in 1H across 2 WC games; SCO conceded 2nd min vs Morocco]
+
+=== EDGE RANKING ===
+
+RANK 1: Q3 0.13 STRONG_NO — Compound question (SCO first AND BRA 2H). ~12-17% probability. Crowd likely ~0.22. Major ~9pp NO edge.
+RANK 2: Q4 0.78 YES — Brazil more corners. Model 82%. GD2: Scotland got 2 corners. Crowd ~0.68.
+RANK 3: Q2 0.32 NO — Scotland offsides. Near floor. Model 17%, floor 0.25, survival +adjustment = 0.32. Crowd ~0.42.
+RANK 4: Q10 0.62 YES — Brazil 1H goal. 100% of WC goals in 1H. Evidence very strong.
+RANK 5: Q7 0.62 YES — Brazil 2H goal. Situation-driven. vs attacking Scotland = space.
+RANK 6: Q8 0.62 YES — 4+ cards. Ramos + survival physical match.
+RANK 7: Q1 0.70 YES — Brazil more 2H SOT. Scotland avg 0-1 SOT/game.
+RANK 8: Q5 0.45 NO_LEAN — Scotland scores. Model-market diverge.
+RANK 9: Q6 0.52 YES_LEAN — 3+ goals. Market supports.
+RANK 10: Q9 0.50 COIN_FLIP — McTominay SOT. No significant edge.
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/sco_bra_2026-06-24.json
+2. THIS FILE: bash_logs/2026-06-24_SCO-BRA_match_analysis_bash_log.txt
+3. ML_EXPERIMENTS_NOTEBOOK.md — Appended SCO-BRA section
+
+=== END LOG ===

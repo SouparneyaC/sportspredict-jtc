@@ -1,0 +1,347 @@
+{
+  "match": "FRA-IRQ",
+  "sportspredict_match_id": null,
+  "smarkets_event_id": "PENDING",
+  "espn_event_id": null,
+  "closing_time": "2026-06-22T00:00:00.000Z",
+  "context_note": "France vs Iraq - WC2026 Group D, Philadelphia. France are massive favorites (Elo FTR: FRA 81.5% / Draw 12.8% / IRQ 5.7%). Elo diff = 392.5 — LARGER than ARG-AUT (304.5), making Iraq an even more extreme underdog. RULE7 fires hard (IRQ 5.7% < 15%). RULE8 does NOT fire (draw 12.8% < 25%). GD1 DATA NOW CONFIRMED (see gd1_evidence). France scored all 3 goals after 66' vs Senegal; Iraq had only 1 SOT in 90' vs Norway. These are critical calibration inputs that revised MULTIPLE estimates from the preliminary pass.",
+  "elo_ratings": {
+    "fra": 2129.0524,
+    "irq": 1736.5496,
+    "elo_diff": 392.5028,
+    "source": "data/processed/elo_current_ratings.csv",
+    "comparison": "FRA-IRQ elo_diff (392.5) > ARG-AUT elo_diff (304.5) — Iraq is a bigger underdog than Austria was"
+  },
+  "model_outputs": {
+    "poisson_goals": {
+      "lambda_fra": 2.2580,
+      "lambda_irq": 0.5454,
+      "lambda_total": 2.8033
+    },
+    "ordered_logit_match_winner": {
+      "p_fra_win": 0.8154,
+      "p_draw": 0.1278,
+      "p_irq_win": 0.0568
+    }
+  },
+  "gd1_evidence": {
+    "fra_vs_sen_result": "France 3-1 Senegal (all 3 France goals after 66th minute)",
+    "fra_vs_sen_halftime": "0-0",
+    "fra_vs_sen_stats": {
+      "fra_shots": 11, "fra_sot": 8, "fra_corners": 6, "fra_fouls": 8, "fra_xg": 1.79,
+      "sen_shots": 6, "sen_sot": 2, "sen_corners": 4, "sen_fouls": 5, "sen_xg": 0.53,
+      "cards": 0,
+      "referee": "Alireza Faghani (very clean match)"
+    },
+    "fra_first_half_only": {
+      "fra_shots": 1, "fra_sot": 0, "fra_corners": 3, "fra_xg": 0.02,
+      "sen_shots": 5, "sen_sot": 1, "sen_corners": 2,
+      "note": "BOMBSHELL: France were abysmal in 1H. Mbappe had only 14 touches. All 3 goals came 66-90+. Mbappe career WC: 12 2H goals vs only 1 1H goal."
+    },
+    "irq_vs_nor_result": "Iraq 1-4 Norway (Iraq scored in 39', then conceded late)",
+    "irq_vs_nor_halftime": "1-2 (Iraq scored first 39', but Norway 29', 43')",
+    "irq_vs_nor_stats": {
+      "irq_shots": 10, "irq_sot": 1, "irq_fouls": 12,
+      "nor_shots": 12, "nor_sot": 5, "nor_fouls": 13,
+      "irq_cards": 1, "irq_card_detail": "Zaid Tahseen YC 86th minute (serious foul)",
+      "note": "DEVASTATING: Iraq had only 1 SOT in 90 minutes total. ZERO shots after the 63rd minute. Iraq scored via counter (39') then defensive collapse: 3 goals conceded in 2H."
+    },
+    "key_discipline_notes": {
+      "irq_tahseen_yellow": "Tahseen YC vs Norway (86') — one yellow, no ban",
+      "zaid_ismael_risk": "Racing Post tip: Ismael 3 YC in 7 caps, 10 bookings in 30 club appearances. Bet365 2/1 him to be carded.",
+      "fra_tchouameni_out": "Tchouameni did not train pre-match. Manu Kone starts instead.",
+      "irq_ali_jasim": "Neck knock, game-time decision, likely to start per RotoWire."
+    }
+  },
+  "external_market_data": {
+    "france_win_implied": "92-94% (Betfair 1/14, bet365 -1200 to -1500)",
+    "opta_supercomputer": "France 88.5%, Draw 8.5%, Iraq 3%",
+    "btts_yes_implied": "36-42% (+140 to +180)",
+    "btts_no_implied": "67-68% (-200 to -215 favorite)",
+    "over_3_5_goals": "-122 (favored to land)",
+    "over_2_5_goals": "-357 (near certainty)",
+    "total_corners_over_7_5": "-315",
+    "france_corners_over_7_5": "-110",
+    "iraq_to_score": "implied ~35-40% (via BTTS market)",
+    "source_note": "Betfair, bet365, CBS, Racing Post, FanDuel, Goal.com — all pre-match as of 2026-06-22",
+    "weather_risk": "Philadelphia flood watch, 65% storm probability at kickoff (5pm ET). FIFA halts for lightning within 8 miles. Gates delayed. FanDuel explicitly passed on volume props. ALL COUNTING STATS (SOT, corners, fouls, cards) could be affected by stoppage/delay."
+  },
+  "referee": {
+    "name": "Drew Fischer (Canada)",
+    "assistants": ["Micheal Barwegen", "Lyes Arfa"],
+    "yc_per_game_career": 3.35,
+    "yc_per_game_wc2026": 3.6,
+    "tournament_yc_average": 2.17,
+    "assessment": "Fischer is SIGNIFICANTLY above WC2026 tournament average. Higher card rate directly boosts Q3 probability (Iraq 1+ card in 2H)."
+  },
+  "rules_in_effect": {
+    "RULE7": "IRQ 5.7% win prob (< 15%) = EXTREME underdog. Stay near model for all IRQ-positive props. Do not allow crowd compression.",
+    "RULE15": "Fires for any Iraq forward/player SOT question. No individual player prop in this batch.",
+    "RULE8_NOT_FIRED": "Draw 12.8% — well below 25% threshold.",
+    "RULE1_PENDING": "Q6 France win: Smarkets not yet pulled (quota constraint). Market signals at 92-94% used instead. Preliminary 0.88.",
+    "ARG_AUT_LESSONS": {
+      "france_1H_slow_start": "CONFIRMED BY GD1: France 0 SOT in 1H vs Senegal. Directly lowers Q9 (France scores 1H) from 0.70 to 0.60.",
+      "iraq_sot_devastation": "CONFIRMED BY GD1: Iraq 1 SOT in 90' vs Norway. Directly lowers Q5 (Iraq 2+ SOT in 2H) to 0.15 and Q8 (Iraq 4+ SOT) to 0.08.",
+      "blowout_vs_competitive": "France vs Iraq expected to be a BLOWOUT (Elo diff 392.5 >> 2-goal expected margin). Apply blowout script: Iraq gives up = fewer cards, fewer Iraq SOT. BUT referee Fischer is card-happy which partially offsets.",
+      "corner_caution": "Q1 is HALFTIME corners — at HT France will still be actively pressing. No chasing-team corner reversal applies at HT. HT corner is safe to push extreme."
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "Q1_iraq_more_ht_corners": {
+      "question": "At halftime, will Iraq have more corner kicks than France?",
+      "preliminary_estimate": 0.08,
+      "method": "Poisson HT corners: lambda_FRA_HT=3.16, lambda_IRQ_HT=0.76. P(IRQ>FRA)=5.7%. RULE7 fires. AUT-JOR confirmed: extreme underdog gets fewer corners. France had 3 corners in 1H vs Senegal; Iraq only 3 total in 90' vs Spain.",
+      "gd1_update": "GD1 confirms France win 3 HT corners vs Senegal. Iraq-Norway: Iraq corner count unclear but Iraq only created 10 shots — very few would generate corners vs deep-block. No reason to change.",
+      "alt_data": {
+        "fra_sen_1h_corners": 3,
+        "irq_spa_total_corners": 3,
+        "market_signal": "Total corners over 7.5 at -315 (France dominant); 'each team 2+ corners' at -150",
+        "note": "France corners over 7.5 at -110 — market expects France to generate the bulk of corners"
+      },
+      "crowd_expected_range": "0.18-0.25",
+      "edge_direction": "STRONG NO (model 5.7% vs crowd ~21% = 15pp gap)",
+      "FINAL_estimate": 0.07,
+      "revision_note": "Revised 0.08 → 0.07. GD1 France had 3 HT corners (vs 0 SOT) — France win corners even when poor. Iraq physically incapable of generating HT corners vs France."
+    },
+    "Q2_france_more_fouls_than_iraq": {
+      "question": "Will France commit more fouls than Iraq?",
+      "preliminary_estimate": 0.55,
+      "method": "P(FRA>IRQ fouls) = 58.2% from model.",
+      "gd1_update": "CONFLICTING DATA: France 8 fouls vs Senegal 5 (France committed MORE). But Iraq committed 10-12 when defending deep (vs Norway 12, vs Spain 10). Pattern: Iraq as underdog defender fouls 10-12; France as attacking team 8-10. Iraq fouling more is slightly more likely.",
+      "alt_data": {
+        "fra_fouls_vs_sen": 8,
+        "irq_fouls_vs_nor": 12,
+        "irq_fouls_vs_spa": 10,
+        "key_tension": "France pressed and fouled more than Senegal (8-5). But Iraq's survival-mode defending generates 10-12 fouls. Which team hits 10+ vs the other's 8-10?"
+      },
+      "crowd_expected_range": "0.42-0.52",
+      "edge_direction": "NOW: slight NO lean — Iraq fouls more when defending deep (10-12 vs France's likely 8-10)",
+      "FINAL_estimate": 0.45,
+      "revision_note": "Revised 0.55 → 0.45. France pressed and fouled 8 times vs Senegal. But Iraq is in DEEPER defensive survival mode and committed 10-12 fouls in both GD1 and Spain friendly. On balance Iraq more likely to foul more."
+    },
+    "Q3_iraq_1plus_card_2h": {
+      "question": "Will Iraq receive at least 1 card in the second half?",
+      "preliminary_estimate": 0.50,
+      "method": "lambda_IRQ_2H_cards=0.75, P(>=1)=52.8%.",
+      "gd1_update": "STRONG UPWARD REVISION: (1) Tahseen YC in 86' vs Norway = Iraq DID get a second-half card in GD1. (2) Fischer averages 3.35-3.6 YC/game vs tournament average 2.17. (3) Ismael = 3 cards in 7 caps, Racing Post explicit tip. (4) Iraq tires in 2H and makes cynical fouls (Norway: 0 shots after 63', but still fouled and got carded in 86').",
+      "alt_data": {
+        "irq_2h_card_vs_norway": "Tahseen YC 86th minute — Iraq got a 2H card in GD1",
+        "fischer_yc_rate": 3.35,
+        "tournament_yc_average": 2.17,
+        "ismael_booking_risk": "3 cards in 7 caps; 10 bookings in 30 club apps; bet365 2/1 for a card",
+        "iraq_fatigue_pattern": "After 63' vs Norway: 0 shots, still fouling, carded in 86'"
+      },
+      "crowd_expected_range": "0.42-0.55",
+      "edge_direction": "YES lean: GD1 direct confirmation + Fischer above-average rate + Ismael risk",
+      "FINAL_estimate": 0.65,
+      "revision_note": "Revised 0.50 → 0.65. THREE independent signals all point YES: (1) Iraq literally got a 2H card in GD1. (2) Fischer is a stricter-than-average referee. (3) Ismael is extremely card-prone. This is now a confident lean."
+    },
+    "Q4_both_score_and_3plus_goals": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "preliminary_estimate": 0.24,
+      "method": "Double Poisson P(both AND 3+) = 30.2% raw model. Revised down to 0.24 for extreme underdog.",
+      "gd1_update": "BTTS market at 36-42% (higher than our model). France failed to keep clean sheet in 6 straight. Iraq scored in GD1 (39' vs Norway) and vs Spain (28'). However BTTS No is the market favourite (-200). Iraq's 1 SOT in 90' vs Norway is concerning for their ability to score.",
+      "alt_data": {
+        "btts_yes_market": "36-42% implied (+140 to +180)",
+        "btts_no_market": "favourite at -200 to -215",
+        "france_clean_sheet_streak": "No clean sheet in last 6 matches",
+        "iraq_gd1_goal": "Iraq scored in 39' vs Norway (1H counter/header)",
+        "iraq_sot_context": "Iraq had only 1 SOT in 90' vs Norway — scoring despite minimal SOT = their 1 chance went in (efficient)",
+        "over_3_5": "-122 favored — France expected to score 3+"
+      },
+      "crowd_expected_range": "0.28-0.38",
+      "edge_direction": "Slight upward revision — market BTTS 36-42% above our original 24%. But binding constraint = Iraq scores.",
+      "FINAL_estimate": 0.28,
+      "revision_note": "Revised 0.24 → 0.28. Market BTTS at 36-42% is above our model. France no clean sheet in 6. But BTTS No is still the market favourite. Middle ground: P(Iraq scores) ~32-35%, P(3+ total | Iraq scores) ~85%. ~0.28."
+    },
+    "Q5_iraq_2plus_sot_2h": {
+      "question": "Will Iraq have 2 or more shots on target in the second half?",
+      "preliminary_estimate": 0.22,
+      "method": "lambda_IRQ_SOT_2H (x3.3)=0.990, P(>=2)=26.1%. RULE7 pushed down to 0.22.",
+      "gd1_update": "DEVASTATING DOWNWARD REVISION: Iraq had only 1 SOT in ALL 90 MINUTES vs Norway. Zero shots after the 63rd minute. Norway are weaker than France defensively (Upamecano/Saliba vs Norway's CBs). Getting 2+ SOT specifically in just the 2H when they couldn't get 2 in 90' total vs a weaker team = extremely unlikely.",
+      "alt_data": {
+        "irq_sot_total_vs_norway": 1,
+        "irq_shots_after_63min": 0,
+        "irq_sot_vs_spain": 2,
+        "note": "Spain data was with a weakened squad. Norway data is most relevant (competitive, current team)."
+      },
+      "crowd_expected_range": "0.28-0.38",
+      "edge_direction": "STRONG NO: GD1 shows Iraq barely shots on target at all",
+      "FINAL_estimate": 0.15,
+      "revision_note": "Revised 0.22 → 0.15. Iraq 1 SOT in 90' vs Norway is the decisive data point. France are BETTER defensively than Norway. Getting 2 SOT in just the 2H when they got 1 total vs a weaker team is a very low probability event. RULE7 + GD1 combined."
+    },
+    "Q6_france_win": {
+      "question": "Will France win the match?",
+      "preliminary_estimate": 0.81,
+      "method": "Elo model 81.5%. RULE1: avg(crowd, Smarkets) pending.",
+      "gd1_update": "MAJOR UPWARD REVISION: Multiple sharp signals converge above our model. France won 3-1 vs Senegal (form confirmation). Iraq lost 1-4 to Norway (confirmation of fragility). Market moved significantly above our model.",
+      "alt_data": {
+        "betfair_implied": "93.3% (1/14)",
+        "bet365_implied": "92-94%",
+        "opta_supercomputer": "88.5%",
+        "france_gd1": "Won 3-1, strong performance despite slow 1H start",
+        "iraq_gd1": "Lost 1-4, only 1 SOT in 90 minutes — complete defensive collapse",
+        "head_to_head": "FIRST EVER meeting between France and Iraq",
+        "crowd_formula_at_0_88": "0.514 + 0.61*(0.88-0.5) = 0.746"
+      },
+      "crowd_expected_range": "0.75-0.82",
+      "edge_direction": "YES: Market 90-93% >> our model 81.5%. GD1 confirms gap. Submit high.",
+      "FINAL_estimate": 0.88,
+      "revision_note": "Revised 0.81 → 0.88. Opta at 88.5%, sharp markets at 92-94%, Iraq 1-4 collapse in GD1. Our Elo model is conservative and doesn't capture form/lineup dynamics. 0.88 is the convergence point between our model (81.5%) and sharp market signals (90-93%)."
+    },
+    "Q7_iraq_scores_2h": {
+      "question": "Will Iraq score in the second half?",
+      "preliminary_estimate": 0.26,
+      "method": "lambda_IRQ_2H=0.300, P(IRQ scores 2H)=25.9%.",
+      "gd1_update": "SIGNIFICANT DOWNWARD REVISION: Iraq's goal vs Norway came in 39' (1H). Iraq's goal vs Spain came in 28' (1H). Iraq's pattern is FIRST HALF goals only — counter/set-piece early when fresh. After 63' vs Norway: zero shots. Iraq's 2H attacking output collapses completely under sustained pressure.",
+      "alt_data": {
+        "irq_norway_goal_timing": "39th minute (first half)",
+        "irq_spain_goal_timing": "28th minute (first half)",
+        "irq_shots_after_63": 0,
+        "late_consolation_precedent": "Senegal scored 90+5' vs France (garbage time) when France were at 2-1 up. This template applies here.",
+        "btts_market": "Iraq total scoring probability ~35-40% (via BTTS market)"
+      },
+      "crowd_expected_range": "0.28-0.38",
+      "edge_direction": "Strong NO lean: pattern is all Iraq goals come in 1H. 2H goals extremely rare vs top opponents.",
+      "FINAL_estimate": 0.18,
+      "revision_note": "Revised 0.26 → 0.18. Both Iraq goals in this tournament (vs Norway) and recent (vs Spain) came in the first half. Iraq has zero second-half attacking output under sustained pressure. ~35-40% total Iraq scoring probability × ~25% 2H share ≈ 0.09-0.10 base, plus ~8% late consolation (garbage time) = ~0.17-0.18."
+    },
+    "Q8_iraq_4plus_sot": {
+      "question": "Will Iraq have 4 or more shots on target?",
+      "preliminary_estimate": 0.14,
+      "method": "Poisson (×3.3): lambda=1.80, P(>=4)=10.9%. RULE7 → 0.14.",
+      "gd1_update": "CRITICAL DOWNWARD REVISION: Iraq had 1 SOT in 90 minutes vs Norway. 4+ SOT would be 4× their GD1 output against a better defensive team. This is essentially off the table barring a chaos scenario.",
+      "alt_data": {
+        "irq_sot_vs_norway": 1,
+        "irq_sot_vs_spain": 2,
+        "france_def_better_than_norway": "Upamecano + Saliba > Norway's CB pairing. France also had 8 SOT vs Senegal — disciplined defensive unit.",
+        "goalkeeper_projection": "FanDuel projects France keeper Maignan for 5 saves — implying 5 Iraq shots in total, at maybe 30-40% on target rate = ~1-2 SOT total"
+      },
+      "crowd_expected_range": "0.20-0.30",
+      "edge_direction": "EXTREME NO: Iraq 1 SOT in 90' vs weaker opponent. This is our single strongest edge of the batch.",
+      "FINAL_estimate": 0.08,
+      "revision_note": "Revised 0.14 → 0.08. Iraq had 1 SOT in 90' vs Norway (weaker than France). 4+ SOT vs France would require them to 4× their recent best. This is essentially impossible short of a bizarre game-state. This is the HIGHEST CONFIDENCE position in the batch — push hard NO."
+    },
+    "Q9_france_scores_1h": {
+      "question": "Will France score in the first half?",
+      "preliminary_estimate": 0.70,
+      "method": "lambda_FRA_1H=1.016, P(scores)=63.8%. Revised UP to 0.70 based on pre-tournament form.",
+      "gd1_update": "DOWNWARD REVISION: France had 1 total shot, 0 on target, 0.02 xG in 1H vs Senegal. All 3 goals came after 66'. Deschamps' system is historically slow-starting. Mbappe has only 1 career WC goal before HT vs 12 after. Pre-tournament form (scored in 1H of last 3 wins) less relevant than actual GD1 data.",
+      "alt_data": {
+        "fra_1h_sot_vs_sen": 0,
+        "fra_1h_shots_vs_sen": 1,
+        "fra_1h_xg_vs_sen": 0.02,
+        "mbappe_wc_1h_goals": 1,
+        "mbappe_wc_2h_goals": 12,
+        "norway_scored_vs_iraq_timing": "29th and 43rd minutes (France better than Norway)",
+        "tension": "France slow starters (0.02 xG in 1H vs Senegal) vs Iraq far weaker than Senegal defensively"
+      },
+      "crowd_expected_range": "0.62-0.70",
+      "edge_direction": "GD1 data pulls strongly toward NO (0 SOT in 1H vs Senegal is alarming). Iraq weakness partially offsets.",
+      "FINAL_estimate": 0.60,
+      "revision_note": "Revised 0.70 → 0.60. France's GD1 1H was nearly goalless despite eventually winning 3-1. This is a repeatable pattern for Deschamps' France (methodical build, second-half surge). But Iraq are much weaker than Senegal defensively, and Norway scored in 29' vs Iraq. Best estimate: 60% that France score in 1H. Submit 0.60 not 0.70."
+    }
+  },
+  "final_submission_estimates": {
+    "Q1": {
+      "estimate": 0.07,
+      "tier": "TIER 1 — push extreme",
+      "notes": "STRONG NO. Model 5.7% + RULE7 + France had 3 HT corners vs Senegal + Iraq only 3 total corners vs Spain. Iraq cannot win HT corner count vs France."
+    },
+    "Q2": {
+      "estimate": 0.45,
+      "tier": "TIER 3 — slight NO lean",
+      "notes": "Near coin-flip revised slightly toward NO. Iraq fouls 10-12 when defending deep (Norway, Spain). France fouls ~8-10 as pressing attacker. Iraq may foul more."
+    },
+    "Q3": {
+      "estimate": 0.65,
+      "tier": "TIER 2 — YES lean",
+      "notes": "Revised UP from 0.50. Fischer 3.35 YC/game (above WC avg 2.17) + Ismael card-prone + Iraq LITERALLY got a 2H card (86') in GD1 vs Norway. Three independent YES signals."
+    },
+    "Q4": {
+      "estimate": 0.28,
+      "tier": "TIER 3 — slight YES lean vs model",
+      "notes": "Revised from 0.24 to 0.28. BTTS market 36-42%. France no clean sheet in 6. But BTTS No is still the market favourite. Iraq scored once in GD1 despite only 1 SOT."
+    },
+    "Q5": {
+      "estimate": 0.15,
+      "tier": "TIER 1 — push extreme",
+      "notes": "STRONG NO. Iraq had 1 total SOT in 90' vs Norway. Zero shots after 63'. France are better defensively. Getting 2+ SOT specifically in 2H is essentially impossible based on GD1 evidence."
+    },
+    "Q6": {
+      "estimate": 0.88,
+      "tier": "TIER 1 — push high",
+      "notes": "Revised UP from 0.81. Market 92-94%, Opta 88.5%. France GD1 win confirmed, Iraq GD1 collapse confirmed. 0.88 is midpoint between our model (81.5%) and sharp markets (90-93%)."
+    },
+    "Q7": {
+      "estimate": 0.18,
+      "tier": "TIER 2 — NO lean",
+      "notes": "Revised DOWN from 0.26. Both Iraq goals in tournament play came in 1H (39' vs Norway, 28' vs Spain). Iraq's 2H output: 0 shots after 63'. Rare late consolation scenario is the main residual probability."
+    },
+    "Q8": {
+      "estimate": 0.08,
+      "tier": "TIER 1 — push extreme",
+      "notes": "EXTREME NO. HIGHEST CONFIDENCE estimate in this batch. Iraq 1 SOT in 90' vs Norway. 4× that vs a BETTER defensive team = essentially impossible. RULE7 + devastating GD1 evidence."
+    },
+    "Q9": {
+      "estimate": 0.60,
+      "tier": "TIER 2 — moderate YES",
+      "notes": "Revised DOWN from 0.70. France had 0 SOT in 1H vs Senegal; all 3 goals after 66'. Mbappe 1 career WC 1H goal vs 12 2H goals. Iraq weak defense partially offsets but GD1 pattern is strong."
+    }
+  },
+  "edge_ranking": {
+    "1_Q8_iraq_4plus_sot": "0.08 — extreme NO, 1 SOT in 90' vs Norway, highest confidence",
+    "2_Q1_iraq_ht_corners": "0.07 — extreme NO, France press dominates corners from minute 1",
+    "3_Q5_iraq_2plus_sot_2h": "0.15 — strong NO, Iraq literally had 0 shots after 63' in GD1",
+    "4_Q3_iraq_1plus_card_2h": "0.65 — YES lean, Fischer + Ismael + GD1 2H card confirmed",
+    "5_Q6_france_win": "0.88 — YES, strong market consensus above our model",
+    "6_Q7_iraq_scores_2h": "0.18 — NO, all Iraq goals are 1H in tournament play",
+    "7_Q9_france_scores_1h": "0.60 — moderate YES, GD1 slow start partially offset by Iraq weakness",
+    "8_Q4_btts_and_3plus": "0.28 — slight upward revision from market BTTS data",
+    "9_Q2_france_more_fouls": "0.45 — near coin-flip, Iraq fouls more when defending deep"
+  },
+  "recovery_context": {
+    "running_total_before_fra_irq": "~699.76 RBP (was 742.0, dropped from ARG-AUT -42.24)",
+    "rank": "#234 worldwide (down from #195)",
+    "recovery_plan": "Push hard on TIER 1 questions (Q8, Q1, Q5, Q6) where confidence is highest. Avoid ARG-AUT mistake of applying wrong match script (blowout vs competitive). FRA-IRQ expected to be a blowout (Elo 392.5 gap) — apply BLOWOUT script: Iraq gives up, fewer Iraq SOT, corners go to France, Iraq tired = cards late.",
+    "arg_aut_lessons_applied": {
+      "Q1": "HT corner question — blowout script: France dominates corners from first whistle",
+      "Q5_Q8": "Iraq SOT devastatingly low in GD1 (1 in 90') — confirms BLOWOUT script: underdog gives up",
+      "Q3": "Cards: unlike ARG-AUT where cards came from AUT fighting hard (competitive), Iraq collapses in 2H but still fouls late = Fischer ensures at least 1 2H YC",
+      "Q9": "France 1H slow start — same Deschamps pattern as ARG-AUT (ARG scored but second half was when they added). France may replicate the 0-0 HT from GD1."
+    }
+  },
+  "crowd_estimates_live": {
+    "captured_at": "2026-06-22T00:00:00Z",
+    "match_state": "LIVE 0-0",
+    "live_rbp": 10.35,
+    "note": "Captured during live match at 0-0. RBP +10.35 reflects live scoring of open questions.",
+    "Q1": {"us": 0.07, "crowd": 0.21, "if_yes": -21, "if_no": 6, "at_stake": 27, "gap": -14, "gap_note": "We are MUCH lower than crowd — correctly — our best edge in the batch"},
+    "Q2": {"us": 0.45, "crowd": 0.34, "if_yes": 15, "if_no": -6, "at_stake": 21, "gap": 11, "gap_note": "We think France fouls more; crowd thinks Iraq fouls more"},
+    "Q3": {"us": 0.65, "crowd": 0.62, "if_yes": 4, "if_no": -1, "at_stake": 5, "gap": 3, "gap_note": "Near-aligned; small edge YES"},
+    "Q4": {"us": 0.28, "crowd": 0.32, "if_yes": -3, "if_no": 5, "at_stake": 9, "gap": -4, "gap_note": "Near-aligned; small edge NO from us"},
+    "Q5": {"us": 0.15, "crowd": 0.34, "if_yes": -26, "if_no": 13, "at_stake": 39, "gap": -19, "gap_note": "Second largest edge — we are correctly much lower on Iraq 2H SOT"},
+    "Q6": {"us": 0.88, "crowd": 0.87, "if_yes": 2, "if_no": -1, "at_stake": 3, "gap": 1, "gap_note": "Essentially aligned with crowd on France win"},
+    "Q7": {"us": 0.18, "crowd": 0.27, "if_yes": -12, "if_no": 6, "at_stake": 17, "gap": -9, "gap_note": "We are lower on Iraq 2H goal — correctly, all Iraq goals came in 1H"},
+    "Q8": {"us": 0.08, "crowd": 0.25, "if_yes": -25, "if_no": 8, "at_stake": 33, "gap": -17, "gap_note": "Third largest edge — Iraq 4+ SOT, we correctly near-zero vs crowd at 25%"},
+    "Q9": {"us": 0.60, "crowd": 0.72, "if_yes": -6, "if_no": 18, "at_stake": 25, "gap": -12, "gap_note": "We are lower than crowd on France 1H goal — consistent with GD1 slow start"}
+  },
+  "post_match_results": {
+    "match_score": "France 3-0 Iraq",
+    "halftime_score": null,
+    "match_facts": null,
+    "total_rbp": 46.55,
+    "beat_crowd_count": "7/9",
+    "question_results": {
+      "Q1": {"question": "At halftime, will Iraq have more corner kicks than France?", "outcome": "NO", "us": 0.07, "crowd": 0.21, "rbp": 6.28, "beat_crowd": true},
+      "Q2": {"question": "Will France commit more fouls than Iraq?", "outcome": "YES", "us": 0.45, "crowd": 0.34, "rbp": 14.70, "beat_crowd": true},
+      "Q3": {"question": "Will Iraq receive at least 1 card in the second half?", "outcome": "NO", "us": 0.65, "crowd": 0.62, "rbp": -1.37, "beat_crowd": false},
+      "Q4": {"question": "Will both teams score AND the match have 3 or more total goals?", "outcome": "NO", "us": 0.28, "crowd": 0.32, "rbp": 4.96, "beat_crowd": true},
+      "Q5": {"question": "Will Iraq have 2 or more shots on target in the second half?", "outcome": "NO", "us": 0.15, "crowd": 0.34, "rbp": 12.44, "beat_crowd": true},
+      "Q6": {"question": "Will France win the match?", "outcome": "YES", "us": 0.88, "crowd": 0.86, "rbp": 2.12, "beat_crowd": true},
+      "Q7": {"question": "Will Iraq score in the second half?", "outcome": "NO", "us": 0.18, "crowd": 0.27, "rbp": 5.47, "beat_crowd": true},
+      "Q8": {"question": "Will Iraq have 4 or more shots on target?", "outcome": "NO", "us": 0.08, "crowd": 0.25, "rbp": 8.43, "beat_crowd": true},
+      "Q9": {"question": "Will France score in the first half?", "outcome": "YES", "us": 0.60, "crowd": 0.72, "rbp": -6.47, "beat_crowd": false}
+    }
+  }
+}

@@ -1,0 +1,49 @@
+NED vs MAR (2026-06-30) — bash log
+====================================
+
+# 1. Checked existing team history — 6 prior files found
+#    NED: jpn_ned (D2-2, +0.47), ned_swe (W5-1, +32.05), tun_ned (W3-1 away, -13.62)
+#         Key lesson from tun_ned: "Tunisia's 0-SOT crisis broke against a Netherlands
+#         team that had eased off after getting a lead" — do NOT extrapolate to Morocco.
+#         Also: Gakpo (liquid 66%) failed in tun_ned — individual player market missed
+#         when team won via distributed contributions. Applied as caution to Brobbey.
+#    MAR: bra_mar (D1-1, -16.33), sco_mar (W1-0 away, +71.50), mar_hai (W4-2, +11.07)
+#         Key finding: Saibari scored in BOTH GD1 (21' vs Brazil) AND GD2 (2' vs Scotland)
+#         with Brahim Diaz assisting both times; player_profiles in mar_hai confirms this.
+#         Saibari listed with bid AND offer (liquid market) today at mid 0.2864 — bumped
+#         slightly to 0.32 reflecting his 2-for-2 streak plus 'score or assist' wider bar.
+
+# 2. ESPN team IDs: Netherlands=449, Morocco=2869
+#    NED: 760425 (JPN, 6/14), 760447 (SWE, 6/20), 760472 (TUN, 6/25)
+#    MAR: 760419 (BRA, 6/13), 760445 (SCO, 6/19), 760464 (HAI, 6/24)
+#    today's match: confirmed via scoreboard?dates=20260630 -> 760488 Morocco at Netherlands
+
+# 3. ESPN box scores pulled for all 6 group matches -> wc2026_espn_stats block.
+#    Key: Morocco's attacking stats are bimodal — Haiti game (11 SOT, 5 offsides, 9 corners)
+#    is a clear outlier vs quality opponents (Brazil: 3 SOT 1 offside; Scotland: 2 SOT 0 offsides).
+#    Applied competitive-match average (0.5 offsides vs 2.0 raw) for modeling.
+
+# 4. Smarkets event discovery (limit=300 filter):
+#    -> found event 45156985 "Netherlands vs Morocco" 2026-06-30T01:00:00Z
+
+# 5. Key quotes fetched: FTR (NED 40.32%, MAR 26.59%, Draw 31.5%), To qualify (NED 58.82%
+#    MAR 41.84%), HT result (NED 30.09% MAR 23.02% Draw 46.74%), BTTS (52.98%),
+#    OU2.5 (43.67%), OU3.5 (23.02%), Cards OU1.5 (0.8441), Cards OU3.5 (0.4742),
+#    Any sent off (13.13%), Penalty (22.73%), Highest scoring half (2H=42.81%),
+#    1H OU1.5 goals (27.22%), Goal 1 time bracket, Team to score first goal (NED 52.02%
+#    MAR 40.53% No-goal 9.27%), Netherlands -0.5 corners (51.74%), NED SOT OU3.5 (58.23%),
+#    MAR SOT OU3.5 (45.66%), NED/MAR cards OU1.5 (54.07% / 51.80%), Most cards (MAR 40.14%
+#    NED 34.70% Draw 25.19%), player markets: Brobbey 2+SOT LIQUID mid=0.2108, Saibari
+#    score/assist LIQUID mid=0.2864.
+
+# 6. Computed via scipy (python3):
+#    - Total goal lambda ~2.43 (from OU2.5=0.4367 and OU3.5=0.2302)
+#    - Q3 goal in 1H stoppage: λ_4min=2.43*(4/94)=0.1034 -> P(>=1)=0.0984 -> final 0.10
+#    - Q4 goal after 2nd break: λ_25min=2.43*(25/94)=0.647 -> P(>=1)=0.4765 -> final 0.47
+#    - Q2 card timing: total card lambda avg ~3.44 (OU1.5/OU3.5 fits), 40% post-69' fraction
+#      -> P(late reg card)=0.75, P(ET card add-on)=+0.02, raw total 0.77.
+#      TRIMMED MORE AGGRESSIVELY than RSA-CAN (0.77->0.65) per Loss Pattern #8 lesson.
+#    - Q13 both teams 1+ card: individual team lambdas (NED~1.52, MAR~1.46) give P(NED>=1)=0.78
+#      P(MAR>=1)=0.77, joint=0.60, trimmed to 0.57.
+
+# Output: data/external_markets/ned_mar_2026-06-30.json (full 15-question estimates)

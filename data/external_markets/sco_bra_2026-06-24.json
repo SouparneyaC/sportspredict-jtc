@@ -1,0 +1,370 @@
+{
+  "match": "Scotland vs Brazil",
+  "match_code": "SCO-BRA",
+  "competition": "FIFA World Cup 2026",
+  "group": "Group C",
+  "game_day": "GD3",
+  "date": "2026-06-24",
+  "venue": "Hard Rock Stadium, Miami",
+  "kickoff": "6:00 PM ET",
+  "analysis_date": "2026-06-24",
+
+  "model_inputs": {
+    "bra_elo": 2068.6320,
+    "sco_elo": 1852.1502,
+    "elo_diff": 216.48,
+    "venue": "neutral",
+    "poisson_coefs": {"intercept": 0.10408, "elo_diff_coef": 0.0018099},
+    "ordered_logit_coefs": {"b_elo": 0.005199, "c1": -0.7702, "c2": 0.5549}
+  },
+
+  "model_outputs": {
+    "lambda_bra": 1.6420,
+    "lambda_sco": 0.7500,
+    "lambda_total": 2.3919,
+    "p_bra_scores": 0.8064,
+    "p_sco_scores": 0.5276,
+    "p_btts": 0.4255,
+    "p_total_le2": 0.5718,
+    "p_total_ge3": 0.4282,
+    "p_btts_and_ge3": 0.3128,
+    "p_bra_win": 0.6389,
+    "p_draw": 0.2305,
+    "p_sco_win": 0.1306,
+    "p_2h_ge2_goals": 0.3787,
+    "p_bra_more_2h_sot": 0.6668,
+    "p_bra_more_corners_full": 0.8204,
+    "p_bra_2h_scores": 0.5947,
+    "p_bra_1h_scores": 0.5224,
+    "p_sco_first_scorer_raw": 0.2849,
+    "p_sco_first_market_adj": 0.2025
+  },
+
+  "rules_applied": {
+    "RULE7": "FIRES — SCO win 13.06% < 15%. Submit unshaded model estimates. RULE15 applies for McTominay (Q9) — BUT survival match context overrides standard suppression (Scotland MUST attack).",
+    "RULE8": "Does NOT fire — Draw 23.05% < 25%.",
+    "RULE15": "Near-applicable for McTominay (SCO 13.06% win). HOWEVER: survival match overrides. Scotland MUST attack aggressively. Do NOT fully suppress McTominay SOT. Use ~50% vs the 0.25-0.35 range that strict RULE15 would impose.",
+    "FLOOR_0.25": "Applied to Q2 (Scotland 2+ offsides) — computed ~17%, floor at 0.25 adjusted upward to 0.32 for survival attacking context.",
+    "RULE_FOULS": "Not the primary driver here. Scotland fouls while defending AND attacking (21 fouls in GD1). Brazil more disciplined. Foul direction unclear.",
+    "SURVIVAL_MATCH_SCOTLAND": "Scotland MUST WIN or DRAW to advance with highest confidence. They will attack aggressively, push men forward, and leave space for Brazil counter-attacks. This elevates: Brazil goals in 2H, total goals, BRA corner count."
+  },
+
+  "group_context": {
+    "group": "Group C — Brazil, Morocco, Scotland, Haiti",
+    "standings_after_gd2": {
+      "Brazil": "4 pts, GD +3 — QUALIFIED",
+      "Morocco": "4 pts, GD +1 — QUALIFIED",
+      "Scotland": "3 pts, GD 0 — NOT YET QUALIFIED",
+      "Haiti": "0 pts, GD -4 — ELIMINATED"
+    },
+    "gd1_gd2_results": [
+      "Brazil 1-1 Morocco (GD1): Saibari 21' / Vinicius 32'",
+      "Scotland 1-0 Haiti (GD1): McGinn 28'",
+      "Scotland 0-1 Morocco (GD2): Saibari 2'",
+      "Brazil 3-0 Haiti (GD2): Cunha 23'/36', Vinicius 45+3'"
+    ],
+    "gd3_stakes": {
+      "Scotland": "WIN = automatic knockout qualification. DRAW = very likely through as best 3rd-place (Opta 73.57% odds with draw). LOSS = depends on scoreline and Morocco-Haiti result. SURVIVAL MATCH.",
+      "Brazil": "WIN = group winner. DRAW = qualified. Raphinha OUT. Can afford a draw but want to win.",
+      "simultaneous": "Morocco vs Haiti playing at same time."
+    }
+  },
+
+  "gd_evidence": {
+    "SCO_GD1_vs_Haiti": {
+      "score": "1-0",
+      "sco_shots": 9,
+      "sco_sot": 2,
+      "sco_fouls": 21,
+      "sco_cards": "3 YC (Hickey 46', Curtis 83', McLean 90+5')",
+      "hat_card": 1,
+      "sco_goal": "McGinn 28' (deflected)",
+      "mctominay_gd1": "Shot hit post/crossbar at 17' — NOT on target. 0 confirmed SOT."
+    },
+    "SCO_GD2_vs_Morocco": {
+      "score": "0-1",
+      "sco_shots": 6,
+      "sco_sot": 0,
+      "sco_possession": "39%",
+      "sco_cards": "1 YC (Robertson 65')",
+      "note": "Scotland had 0 SOT in 90 minutes — only 2nd time in WC history. McTominay shots at 85'/88' both missed target.",
+      "mctominay_gd2": "2 shot attempts (85', 88') — both off target. 0 SOT. 4 total shots across 2 WC games, 0 SOT."
+    },
+    "BRA_GD1_vs_Morocco": {
+      "score": "1-1",
+      "bra_shots": 12,
+      "bra_sot": 5,
+      "bra_corners": 6,
+      "bra_cards": "2 YC (Roger Ibanez, Casemiro both 45')",
+      "bra_goal": "Vinicius Jr 32' (assist Bruno Guimaraes)"
+    },
+    "BRA_GD2_vs_Haiti": {
+      "score": "3-0",
+      "bra_shots_1h": "~5 (all goals in 1H: 23', 36', 45+3')",
+      "bra_shots_2h_total": 2,
+      "bra_sot": 4,
+      "bra_fouls": 13,
+      "hai_fouls": 15,
+      "bra_offsides": 4,
+      "bra_cards": "1 YC",
+      "hai_cards": "3 YC",
+      "bra_goals": "Cunha 23'/36' (first Brazilian 1H WC brace since Neymar 2014), Vinicius 45+3'",
+      "critical_note": "Brazil had only 2 shots in 2H after going 3-0 up. Zero 2H goals across BOTH WC matches (artifact of leads). But no incentive to push in 2H when up 3-0."
+    }
+  },
+
+  "player_profiles": {
+    "Scott_McTominay": {
+      "club_2025_26": "Napoli (Serie A) — moved from Manchester United summer 2024",
+      "position": "Box-to-box CM / advanced CM — frequent goalscorer",
+      "napoli_stats_2025_26": {"apps": 33, "goals": 10, "assists": 3, "sot": 33, "minutes": 2793, "sot_per_90": 1.06},
+      "wc2026_shots": 4,
+      "wc2026_sot": 0,
+      "gd1_notable": "Shot hit crossbar/post at 17' — borderline, counted as miss",
+      "gd2_notable": "2 shots at 85' and 88' — both missed target. Scotland 0 SOT total.",
+      "fanduel_anytime_scorer": "+550",
+      "bet365_sot_market": "11-10 (implied ~52%) — Racing Post flagged as best bet",
+      "rule15_assessment": "RULE15 technically fires (SCO 13.06% < 15%). BUT McTominay is an advanced CM, not a forward. MORE IMPORTANTLY: Scotland survival match = Scotland MUST attack = he gets forward constantly. Standard RULE15 forward-suppression does NOT apply in survival attacking context. Use ~0.50 (market-aligned)."
+    },
+    "Vinicius_Jr": {
+      "goals_wc2026": 2,
+      "gd1_goal": "32' vs Morocco (in first half)",
+      "gd2_goal": "45+3' vs Haiti (first half)",
+      "gd2_minutes": "Subbed off 81' specifically to rest for SCO-BRA",
+      "fanduel_anytime_scorer": "+110",
+      "note": "All goals in 1H across WC. Rested in GD2 intentionally. Expected to be fresh and aggressive."
+    },
+    "Matheus_Cunha": {
+      "gd2_goals": 2,
+      "gd2_detail": "Cunha 23' and 36' — first Brazilian 1H WC brace since Neymar vs Cameroon 2014",
+      "fanduel_anytime": "+170",
+      "note": "Starting CF with Raphinha out."
+    },
+    "Raphinha": {
+      "status": "OUT (hamstring)",
+      "replacement": "Rayan (19-year-old Bournemouth forward) — +190 anytime"
+    }
+  },
+
+  "referee": {
+    "name": "Cesar Ramos",
+    "nationality": "Mexico",
+    "career_matches": 395,
+    "career_yc": 1648,
+    "career_rc": 97,
+    "yc_per_game_career": 4.17,
+    "rc_per_game_career": 0.25,
+    "wc_matches": 7,
+    "wc_yc_total": 28,
+    "wc_rc_total": 2,
+    "wc_yc_per_game": 4.0,
+    "wc_rc_per_game": 0.29,
+    "p_4plus_cards_career": 0.599,
+    "p_4plus_cards_wc": 0.567,
+    "note": "2022 WC semi-final referee (France vs Morocco). High-card disciplinarian."
+  },
+
+  "market_data": {
+    "match_winner": {
+      "BRA": "-280 to -336 (~73% de-vigged)",
+      "Draw": "+410 (~19% de-vigged)",
+      "SCO": "+700 to +900 (~10-12% de-vigged)"
+    },
+    "totals": {
+      "over_2.5": "-126 to -130 (~56% implied)",
+      "under_2.5": "+100 to +113"
+    },
+    "btts": {
+      "no": "-165 (~62% implied — Scotland NOT scoring)",
+      "yes": "+135 (~43% implied)"
+    },
+    "corners": {
+      "over_10.5": "+200",
+      "under_9.5": "~-130 (referenced)"
+    },
+    "anytime_scorers": {
+      "Vinicius_Jr": "+110",
+      "Endrick": "+165",
+      "Cunha": "+170",
+      "Rayan": "+190",
+      "Paqueta": "+220",
+      "Shankland_SCO": "+500",
+      "McTominay_SCO": "+550",
+      "Adams_SCO": "+600",
+      "McGinn_SCO": "+850"
+    },
+    "mctominay_sot": "11-10 / ~+110 at bet365 (implied ~52%)"
+  },
+
+  "question_analysis": {
+    "Q1": {
+      "question": "Will Brazil have more shots on target than Scotland in the second half?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_estimate": 0.62,
+      "key_drivers": [
+        "Model: P(BRA more 2H SOT) = 66.68%",
+        "Scotland WC avg: 0-1 SOT per match. GD2: 0 SOT total.",
+        "Brazil counter-attacks off Scotland's desperate forward pushes",
+        "Survival match = Scotland leaves space = more Brazil shots"
+      ]
+    },
+    "Q2": {
+      "question": "Will Scotland be caught offside 2 or more times?",
+      "estimate": 0.32,
+      "direction": "NO (near floor)",
+      "crowd_estimate": 0.42,
+      "key_drivers": [
+        "Model proxy: P(SCO 2+ offsides | lambda=0.75) = 17.33%",
+        "FLOOR_0.25 binds as minimum; adjusted to 0.32 for survival attacking context",
+        "Scotland GD2 vs Morocco: 1 offside in full match",
+        "Brazil's high defensive line (Marquinhos, Gabriel) = some offside trap risk",
+        "Scotland pushing 3+ forwards forward = some runs behind line"
+      ]
+    },
+    "Q3": {
+      "question": "Will Scotland score the first goal AND Brazil score in the second half?",
+      "estimate": 0.13,
+      "direction": "STRONG NO",
+      "crowd_estimate": 0.22,
+      "key_drivers": [
+        "Compound question requires both events",
+        "P(SCO first scorer): model 28.5%, market-adjusted 20.25%",
+        "P(BRA 2H scores): 59.47%",
+        "Compound: 0.20 × 0.59 = 0.12 to 0.17",
+        "FLOOR_0.25 does NOT apply to compound scenario questions",
+        "MAJOR NO EDGE: crowd likely ~0.22; we're at 0.13"
+      ]
+    },
+    "Q4": {
+      "question": "Will Brazil finish with more corner kicks than Scotland?",
+      "estimate": 0.78,
+      "direction": "YES",
+      "crowd_estimate": 0.68,
+      "key_drivers": [
+        "Model: P(BRA more corners full match) = 82.04%",
+        "Brazil GD1 vs Morocco: 6 corners vs Morocco's 2",
+        "Scotland GD2 vs Morocco: only 2 corners (while Morocco had 5)",
+        "Brazil wide attackers Vinicius left / Rayan right create corner pressure",
+        "Scotland defending deep = more Brazil territory"
+      ]
+    },
+    "Q5": {
+      "question": "Will Scotland score at least 1 goal?",
+      "estimate": 0.45,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.48,
+      "key_drivers": [
+        "Model: P(SCO scores) = 52.76%",
+        "Market (BTTS No -165): P(Scotland scores) implied ~37.5%",
+        "Blend with survival match uplift: ~45%",
+        "Scotland GD2: 0 SOT in 90 minutes — very poor recent form",
+        "RULE7: don't suppress too far below model (submit near-model estimate for extreme underdog)"
+      ]
+    },
+    "Q6": {
+      "question": "Will the match have 3 or more total goals?",
+      "estimate": 0.52,
+      "direction": "YES_LEAN",
+      "crowd_estimate": 0.55,
+      "key_drivers": [
+        "Model: P(total ≥ 3) = 42.82%",
+        "Market: Over 2.5 at -126 to -130 (~56% implied)",
+        "Survival match = Scotland attacks open = Brazil counters = more goals",
+        "Blend: ~50%. Survival match adjustment: +2pp → 0.52"
+      ]
+    },
+    "Q7": {
+      "question": "Will Brazil score in the second half?",
+      "estimate": 0.62,
+      "direction": "YES",
+      "crowd_estimate": 0.60,
+      "key_drivers": [
+        "Model: P(BRA 2H scores) = 59.47%",
+        "Brazil WC record: 0 second-half goals in 2 matches — BUT both were leads (1H: 1-1 vs Morocco, 3-0 vs Haiti → no incentive to attack in 2H)",
+        "Against Scotland (who must attack): Brazil will have space to counter in 2H",
+        "Vinicius Jr rested from 81' specifically for this match",
+        "Situation-adjusted from 59% to 62%"
+      ]
+    },
+    "Q8": {
+      "question": "Will there be 4 or more total cards shown?",
+      "estimate": 0.62,
+      "direction": "YES",
+      "crowd_estimate": 0.55,
+      "key_drivers": [
+        "Ramos career: 4.17 YC/game → P(4+) = 59.9%",
+        "Ramos WC average: 4.0 YC/game → P(4+) = 56.7%",
+        "Scotland GD1: 4 total cards (3 SCO + 1 HAI) — Scotland physical team",
+        "Scotland committed 21 fouls in GD1 — physical approach expected vs Brazil",
+        "Survival match = more desperate fouls = more cards"
+      ]
+    },
+    "Q9": {
+      "question": "Will Scott McTominay have at least 1 shot on target?",
+      "estimate": 0.50,
+      "direction": "COIN-FLIP",
+      "crowd_estimate": 0.50,
+      "key_drivers": [
+        "Napoli 2025-26: 33 SOT in 33 games = 1.0 SOT/90 (genuine shooting CM)",
+        "WC2026: 4 shots total, 0 confirmed SOT across 2 games",
+        "Bet365 prices at 11-10 (~52%) — near even money. Racing Post best bet.",
+        "Scotland survival match = McTominay gets forward more than usual",
+        "RULE15 technically fires (SCO 13%) BUT survival match overrides standard suppression",
+        "WC 0-SOT record and Brazil's quality defense slightly pull estimate below market (0.52 → 0.50)"
+      ]
+    },
+    "Q10": {
+      "question": "Will Brazil score in the first half?",
+      "estimate": 0.62,
+      "direction": "YES",
+      "crowd_estimate": 0.57,
+      "key_drivers": [
+        "Model: P(BRA 1H scores) = 52.24%",
+        "Evidence: Brazil scored in 1H in BOTH WC matches (4 first-half goals: 32', 23', 36', 45+3'). 0 second-half goals.",
+        "Scotland conceded in the 2nd minute vs Morocco — vulnerable to early pressure",
+        "Vinicius Jr fresh after being subbed 81' in GD2",
+        "Evidence-adjusted upward from model: 0.62"
+      ]
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q3", "estimate": 0.13, "direction": "STRONG_NO", "note": "Compound: SCO first AND BRA 2H. ~12-17% prob. Crowd ~0.22. Major ~9pp NO edge."},
+    {"rank": 2, "q": "Q4", "estimate": 0.78, "direction": "YES", "note": "Brazil more corners. Model 82%. Crowd ~0.68."},
+    {"rank": 3, "q": "Q2", "estimate": 0.32, "direction": "NO", "note": "Scotland 2+ offsides. Near floor. Crowd ~0.42."},
+    {"rank": 4, "q": "Q10", "estimate": 0.62, "direction": "YES", "note": "Brazil 1H goal. 4/4 WC 1H goals (100%). Crowd ~0.57."},
+    {"rank": 5, "q": "Q7", "estimate": 0.62, "direction": "YES", "note": "Brazil 2H goal. Situation-adjusted from model 59%."},
+    {"rank": 6, "q": "Q8", "estimate": 0.62, "direction": "YES", "note": "4+ cards. Ramos rate + survival match."},
+    {"rank": 7, "q": "Q1", "estimate": 0.70, "direction": "YES", "note": "Brazil more 2H SOT. Scotland avg 0-1 SOT/game."},
+    {"rank": 8, "q": "Q5", "estimate": 0.45, "direction": "NO_LEAN", "note": "Scotland scores. Model-market split."},
+    {"rank": 9, "q": "Q6", "estimate": 0.52, "direction": "YES_LEAN", "note": "3+ goals. Market -126."},
+    {"rank": 10, "q": "Q9", "estimate": 0.50, "direction": "COIN_FLIP", "note": "McTominay SOT. Market ~52%. No edge."}
+  ],
+
+  "post_match": {
+    "actual_score": "Scotland 0-3 Brazil",
+    "match_played": true,
+    "questions": [
+      {"q": 1, "submitted": 0.70, "crowd": 0.71, "outcome": 0, "rbp": 3.93, "beat_crowd": true, "question": "Will Brazil have more shots on target than Scotland in the second half?"},
+      {"q": 2, "submitted": 0.32, "crowd": 0.42, "outcome": 0, "rbp": 9.65, "beat_crowd": true, "question": "Will Scotland be caught offside 2 or more times?"},
+      {"q": 3, "submitted": 0.13, "crowd": 0.20, "outcome": 0, "rbp": 4.49, "beat_crowd": true, "question": "Will Scotland score the first goal of the game and Brazil score in the second half?"},
+      {"q": 4, "submitted": 0.78, "crowd": 0.72, "outcome": 0, "rbp": -7.83, "beat_crowd": false, "question": "Will Brazil finish with more corner kicks than Scotland?"},
+      {"q": 5, "submitted": 0.45, "crowd": 0.44, "outcome": 0, "rbp": 1.86, "beat_crowd": true, "question": "Will Scotland score at least 1 goal?"},
+      {"q": 6, "submitted": 0.52, "crowd": 0.54, "outcome": 1, "rbp": 0.16, "beat_crowd": true, "question": "Will the match have 3 or more total goals?"},
+      {"q": 7, "submitted": 0.62, "crowd": 0.69, "outcome": 1, "rbp": -3.33, "beat_crowd": false, "question": "Will Brazil score in the second half?"},
+      {"q": 8, "submitted": 0.62, "crowd": 0.44, "outcome": 0, "rbp": -16.78, "beat_crowd": false, "question": "Will there be 4 or more total cards shown?"},
+      {"q": 9, "submitted": 0.50, "crowd": 0.43, "outcome": 1, "rbp": 10.39, "beat_crowd": true, "question": "Will Scott McTominay have at least 1 shot on target?"},
+      {"q": 10, "submitted": 0.62, "crowd": 0.64, "outcome": 1, "rbp": 0.22, "beat_crowd": true, "question": "Will Brazil score in the first half?"}
+    ],
+    "total_rbp": 2.75,
+    "beat_crowd_count": "7/10",
+    "key_learnings": [
+      "BRA more corners (Q4) = NO despite 3-0 win — Brazil won 3-0 but Scotland got more corners. Confirms corner volatility even in dominant wins. Third consecutive data point after MEX-KOR (KOR more corners despite losing) and CZE-MEX (CZE more corners despite losing 0-3). CORNER ANOMALY: losing team's corners are not reliably suppressed.",
+      "BRA more 2H SOT (Q1) = NO — Brazil likely scored all 3 goals in 1H and coasted. Scotland in desperate mode pushed forward in 2H, generating more 2H SOT than Brazil. RULE10 analog: in blowouts, chasing team can dominate 2H shooting stats even from losing position.",
+      "4+ total cards (Q8) = NO despite Ramos high card rate (4.17 YC/game) — a 3-0 win reduces card incentive. Cards need match tension; a decided blowout = no reason for either side to foul desperately. Our 0.62 was too high.",
+      "McTominay SOT (Q9) = YES — survival-match override of RULE15 was fully validated. Scotland's must-win context forced McTominay forward; he delivered a SOT. +10.39 RBP from a coin-flip estimate that beat crowd's 0.43.",
+      "Q3 (Scotland first AND Brazil 2H) = NO — extreme NO (0.13) was correct, compound question logic held, beat crowd (0.20) by 7pp. +4.49 RBP."
+    ]
+  }
+}

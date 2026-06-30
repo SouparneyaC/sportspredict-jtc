@@ -1,0 +1,163 @@
+================================================================================
+BASH SESSION LOG — Part 2
+Date: 2026-06-27
+Working directory: /Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/
+Session purpose: Scrape all publicly accessible competitor data (16 players)
+================================================================================
+
+--------------------------------------------------------------------------------
+CMD 1 — Create output directory
+--------------------------------------------------------------------------------
+INPUT:
+  mkdir -p "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot/data/competitor_data"
+
+OUTPUT:
+  (no output — directory created successfully)
+
+--------------------------------------------------------------------------------
+CMD 2 — Run full competitor scraper (scrape_competitors.py)
+--------------------------------------------------------------------------------
+INPUT:
+  cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research/bot" && \
+  python3 scrape_competitors.py
+
+OUTPUT:
+  Step 1: Fetching all trades for event...
+    → 73 trades
+    → 16 unique competitors found
+
+  Step 2: Fetching all markets for this event/lobby...
+    → 844 markets total
+       Settled: 649  |  Open/Pending: 195
+
+  Step 3: Fetching per-user data for all 16 competitors...
+    [All 16 users]: score → empty list []
+    [All 16 users]: user-events → 401 Unauthorized
+    [All 16 users]: events-summary → 401 Unauthorized
+
+  Step 4: Fetching full leaderboard (all pages)...
+    → 0 leaderboard entries total (empty — needs session auth)
+
+  Step 5: Fetching trades filtered per user...
+    bulawa                    → 14 trades
+    Leciamarko                → 1 trades
+    Cmrick                    → 5 trades
+    Aidan Meagher             → 1 trades
+    mani                      → 1 trades
+    sarangobongo              → 6 trades
+    PlanC                     → 10 trades
+    Igotlikehellamoney        → 10 trades
+    Kash                      → 5 trades
+    Alexandre Corchia         → 4 trades
+    abhiveerk                 → 1 trades
+    pokerbot                  → 1 trades
+    Saujas                    → 1 trades
+    saksham26                 → 7 trades
+    chiccytendies             → 3 trades
+    aderosiere                → 3 trades
+
+  Step 6: Building enriched competitor profiles...
+    → Profiles built for 16 competitors
+
+  Step 7: Writing CSV files...
+    → competitors_summary.csv (16 rows)
+    → trades_enriched.csv (73 rows)
+    → markets_settled.csv (649 rows)
+    → markets_open.csv (195 rows)
+
+  Files written:
+    competitors_profiles.json    41 KB
+    competitors_summary.csv       1 KB
+    markets_open.csv             39 KB
+    markets_settled.csv         137 KB
+    raw_leaderboard.json          0 KB
+    raw_markets.json           1100 KB
+    raw_per_user_trades.json     26 KB
+    raw_trades.json              51 KB
+    raw_user_events.json          0 KB
+    raw_user_events_summary.json  0 KB
+    raw_user_scores.json          0 KB
+    trades_enriched.csv          17 KB
+
+  COMPETITOR SUMMARY (by win rate):
+    Name                      Picks      W/L    Win%  Avg Price
+    -------------------------------------------------------
+    Leciamarko                    1      1/0    100%       51.0
+    abhiveerk                     1      1/0    100%       50.0
+    Saujas                        1      1/0    100%       50.0
+    aderosiere                    3      3/0    100%       50.0
+    saksham26                     7      6/1     86%       50.3
+    bulawa                       14     10/2     83%       50.1
+    Cmrick                        5      3/1     75%       50.0
+    chiccytendies                 3      2/1     67%       49.7
+    Igotlikehellamoney           10      5/5     50%       50.1
+    PlanC                        10      4/6     40%       50.4
+    Kash                          5      2/3     40%       49.8
+    Alexandre Corchia             4      1/3     25%       50.2
+    sarangobongo                  6      1/5     17%       49.8
+    Aidan Meagher                 1      0/1      0%       50.0
+    mani                          1      0/1      0%       49.0
+    pokerbot                      1      0/1      0%       50.0
+
+  KEY FINDINGS:
+  - /api/users/score/{id} returns 200 but empty list [] for all 16 users
+    (the API key doesn't scope to other users' score history)
+  - /api/events/user-events and /api/events/user-events/summary both 401
+    (require session auth for cross-user access)
+  - /api/lobbies/leaderboard with {eventId, lobbyId} returns empty []
+    (requires session auth)
+  - Trades PER user work fine: e.g. bulawa=14, saksham26=7
+  - All entry_price values are 48-52 — confirms these are default-price clickers
+  - 649 settled question outcomes captured in markets_settled.csv
+  - 195 open questions captured in markets_open.csv
+
+--------------------------------------------------------------------------------
+CMD 3 — Inspect raw_user_scores.json contents
+--------------------------------------------------------------------------------
+INPUT:
+  cd ".../bot" && python3 -c "
+  import json
+  scores = json.load(open('data/competitor_data/raw_user_scores.json'))
+  for uid, val in scores['data'].items():
+      if val: print(uid, json.dumps(val)[:400]); break
+      else: print(f'uid: {uid} → empty list []')
+  "
+
+OUTPUT:
+  uid: 00ce36ec-... → empty list []
+  uid: 10702399-... → empty list []
+  [... all 16 users returned empty list []]
+
+  KEY FINDING: /api/users/score/{userId} returns [] for all other users.
+  The endpoint likely only returns data for the authenticated user's own account.
+
+================================================================================
+SESSION SUMMARY
+================================================================================
+
+Scripts created:
+  bot/scrape_competitors.py — full competitor data scraper (rerunnable)
+
+Data collected and saved to bot/data/competitor_data/:
+  raw_trades.json              — 73 raw trade records (all lobby trades)
+  raw_markets.json             — 844 market records (open + settled, 1.1 MB)
+  raw_per_user_trades.json     — trades broken down per user_id
+  raw_user_scores.json         — empty (API key not authorized)
+  raw_user_events.json         — empty (401 for all users)
+  raw_user_events_summary.json — empty (401 for all users)
+  raw_leaderboard.json         — empty (401)
+  competitors_profiles.json    — enriched per-user profiles with picks + outcomes
+  competitors_summary.csv      — 16-row summary table
+  trades_enriched.csv          — 73-row trades table with questions + outcomes joined
+  markets_settled.csv          — 649 settled question outcomes (the key post_match data)
+  markets_open.csv             — 195 open questions still pending
+
+What's accessible with API key alone:
+  ✅ All 73 public trades + per-user breakdown
+  ✅ 844 market questions (649 with YES/NO outcomes)
+  ✅ Per-trade: user identity, email, direction, entry_price, outcome
+  ❌ User scores / event history / leaderboard (need session cookie)
+
+================================================================================
+END OF SESSION LOG
+================================================================================

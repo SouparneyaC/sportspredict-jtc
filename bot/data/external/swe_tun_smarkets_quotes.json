@@ -1,0 +1,152 @@
+{
+  "134463928": {
+    "label": "Full-time result",
+    "quotes": {
+      "HOME": {
+        "bid": 51.81,
+        "offer": 52.36,
+        "mid": 52.085
+      },
+      "AWAY": {
+        "bid": 19.61,
+        "offer": 20.41,
+        "mid": 20.009999999999998
+      },
+      "DRAW": {
+        "bid": 27.78,
+        "offer": 28.17,
+        "mid": 27.975
+      }
+    }
+  },
+  "134463946": {
+    "label": "Highest scoring half",
+    "quotes": {
+      "FIRST_HALF": {
+        "bid": 27.4,
+        "offer": 30.77,
+        "mid": 29.085
+      },
+      "EQUAL": {
+        "bid": 27.03,
+        "offer": 30.77,
+        "mid": 28.9
+      },
+      "SECOND_HALF": {
+        "bid": 40.65,
+        "offer": 44.25,
+        "mid": 42.45
+      }
+    }
+  },
+  "134463965": {
+    "label": "Over/under 2.5 goals (total)",
+    "quotes": {
+      "UNDER": {
+        "bid": 56.18,
+        "offer": 58.48,
+        "mid": 57.33
+      },
+      "OVER": {
+        "bid": 41.67,
+        "offer": 43.48,
+        "mid": 42.575
+      }
+    }
+  },
+  "134463953": {
+    "label": "Penalty to be awarded",
+    "quotes": {
+      "YES": {
+        "bid": null,
+        "offer": 28.57,
+        "mid": 28.57
+      },
+      "NO": {
+        "bid": 71.94,
+        "offer": 77.52,
+        "mid": 74.72999999999999
+      }
+    }
+  },
+  "134464075": {
+    "label": "Any player sent off",
+    "quotes": {
+      "YES": {
+        "bid": 11.63,
+        "offer": 16.95,
+        "mid": 14.29
+      },
+      "NO": {
+        "bid": 83.33,
+        "offer": 87.72,
+        "mid": 85.525
+      }
+    }
+  },
+  "134463983": {
+    "label": "2H Sweden O/U 0.5 goals",
+    "quotes": {
+      "UNDER": {
+        "bid": 40.0,
+        "offer": 45.45,
+        "mid": 42.725
+      },
+      "OVER": {
+        "bid": 54.64,
+        "offer": 60.24,
+        "mid": 57.44
+      }
+    }
+  },
+  "134463993": {
+    "label": "2H Tunisia O/U 0.5 goals",
+    "quotes": {
+      "UNDER": {
+        "bid": 58.48,
+        "offer": 64.1,
+        "mid": 61.28999999999999
+      },
+      "OVER": {
+        "bid": 35.97,
+        "offer": 41.32,
+        "mid": 38.644999999999996
+      }
+    }
+  },
+  "134464120": {
+    "label": "Team to score first goal",
+    "quotes": {
+      "HOME": {
+        "bid": 54.35,
+        "offer": 61.35,
+        "mid": 57.85
+      },
+      "AWAY": {
+        "bid": 30.3,
+        "offer": 36.23,
+        "mid": 33.265
+      },
+      "NO_GOAL": {
+        "bid": 6.67,
+        "offer": 11.36,
+        "mid": 9.015
+      }
+    }
+  },
+  "134464050": {
+    "label": "Sweden -0.5 corners / Tunisia +0.5 corners (full match)",
+    "quotes": {
+      "HOME": {
+        "bid": 57.8,
+        "offer": 65.79,
+        "mid": 61.795
+      },
+      "AWAY": {
+        "bid": 34.72,
+        "offer": 42.74,
+        "mid": 38.730000000000004
+      }
+    }
+  }
+}

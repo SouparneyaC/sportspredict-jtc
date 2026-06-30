@@ -1,0 +1,276 @@
+{
+  "match": "SCO-MAR",
+  "sportspredict_match_id": "4abe80dd-92c4-4331-98fb-83c7f923b410",
+  "smarkets_event_id": "45067767",
+  "espn_event_id": "760445",
+  "kickoff_utc": "2026-06-19T22:00:00Z",
+  "context_note": "Scotland vs Morocco, WC2026, Jun 19 22:00 UTC. Morocco heavy favorite: \u03bb_MAR=1.677, \u03bb_SCO=0.725. Morocco wins ~63%, Draw ~22%, Scotland ~15%. Cards market: Scotland 46% most cards vs Morocco 30% \u2014 Scotland fouls more as defending underdog. RULE8 fires mildly (draw ~22-24%). 2+ offsides family applies to Scotland (Q6), NOT to Morocco (Q2, Morocco is the attacking team).",
+  "lineups_confirmed": false,
+  "key_lambdas": {
+    "lambda_MAR_goals": 1.677,
+    "lambda_SCO_goals": 0.725,
+    "lambda_MAR_sot_full": 4.5,
+    "lambda_SCO_sot_full": 2.5
+  },
+  "smarkets_prices": {
+    "SCO_OU0.5_goals": {
+      "Over": 0.5156,
+      "liquid": true
+    },
+    "MAR_OU0.5_goals": {
+      "Over": 0.8131,
+      "liquid": true
+    },
+    "2H_MAR_OU0.5": {
+      "Over": 0.6032,
+      "liquid": true
+    },
+    "2H_SCO_OU0.5": {
+      "Over": 0.3148,
+      "liquid": true
+    },
+    "2H_result": {
+      "Morocco": 0.4788,
+      "Draw": 0.3684,
+      "Scotland": 0.1528,
+      "liquid": true
+    },
+    "HT_result": {
+      "Morocco": 0.4184,
+      "Draw": 0.4446,
+      "Scotland": 0.143,
+      "liquid": true
+    },
+    "OU2.5": {
+      "Over": 0.4167,
+      "Under": 0.5867,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.433,
+      "No": 0.5682,
+      "liquid": true
+    },
+    "BTTS_OU2.5": {
+      "Yes_Over": 0.2904,
+      "liquid": true
+    },
+    "Cards_OU2.5": {
+      "Over": 0.6882,
+      "liquid": true
+    },
+    "Cards_OU3.5": {
+      "Over": 0.5278,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Scotland": 0.462,
+      "Draw": 0.2295,
+      "Morocco": 0.2983,
+      "liquid": true
+    },
+    "SCO_cards_OU1.5": {
+      "Over": 0.5833,
+      "liquid": true
+    },
+    "MAR_cards_OU1.5": {
+      "Over": 0.516,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Morocco": 0.6099,
+      "Scotland": 0.2949,
+      "Draw": 0.1041,
+      "liquid": true
+    },
+    "Corner_SCO_plus0.5": {
+      "SCO_plus0.5": 0.4009,
+      "MAR_minus0.5": 0.6037,
+      "liquid": true
+    },
+    "Corner_SCO_plus1.5": {
+      "SCO_plus1.5": 0.5118,
+      "MAR_minus1.5": 0.4877,
+      "liquid": true
+    },
+    "SCO_corner_OU3.5": {
+      "Over": 0.4898,
+      "liquid": true
+    },
+    "MAR_corner_OU4.5": {
+      "Over": 0.5524,
+      "liquid": true
+    },
+    "SCO_SOT_OU2.5": {
+      "Over": 0.5463,
+      "liquid": true
+    },
+    "MAR_SOT_OU4.5": {
+      "Over": 0.5373,
+      "liquid": true
+    },
+    "Team_score_first": {
+      "Morocco": 0.6236,
+      "Scotland": 0.287,
+      "No_goal": 0.094,
+      "liquid": true
+    },
+    "2H_OU0.5_total": {
+      "Over": 0.7248,
+      "liquid": true
+    },
+    "Player_SOT": {
+      "McTominay": {
+        "mid": 0.4115,
+        "liquid": true
+      },
+      "John_McGinn": {
+        "mid": 0.3007,
+        "liquid": true
+      },
+      "Ismael_Saibari_MAR": {
+        "mid": 0.6461,
+        "liquid": true
+      },
+      "Brahim_Diaz_MAR": {
+        "mid": 0.6083,
+        "liquid": true
+      },
+      "Achraf_Hakimi_MAR": {
+        "mid": 0.3861,
+        "liquid": true
+      }
+    }
+  },
+  "rules_applied": {
+    "RULE_cards_proxy_fouls": "Q1: Most cards SCO=46% > MAR=30% \u2192 Scotland fouls more as defending underdog \u2192 P(MAR more fouls) LOW at 0.33.",
+    "RULE_2plus_offsides_Q6": "Q6: Scotland 2+ offsides \u2014 2+ offsides family applies (SCO underdog, will defend). \u03bb_SCO=0.725 (scores sometimes) so NOT as extreme as Bosnia/Qatar. \u03bb_off=0.8 \u2192 P(2+)=0.19, estimate 0.22.",
+    "RULE_2plus_offsides_Q2_NOT_applied": "Q2: Morocco 2+ offsides \u2014 Morocco is the ATTACKING FAVORITE. The 9/9 NO family does NOT apply. Morocco has high attacking output \u2192 genuine P(2+)\u22480.40.",
+    "RULE15_McTominay": "Q9: McTominay mild RULE15 (SCO ~15% win prob, underdog midfielder). Liquid market 0.4115 \u2212 4pp \u2192 0.37.",
+    "RULE1_matchwin": "Q7: Scotland wins \u2014 RULE1 avg(crowd ~0.22, market ~0.13) = 0.17 \u2192 0.16.",
+    "RULE_direct_markets": "Q4 (BTTS+OU2.5=0.29), Q8 (SCO SOT OU2.5=0.55), Q10 (2H MAR OU0.5=0.60) \u2014 all direct liquid Smarkets markets, trust them.",
+    "RULE14_consistency": "Q5: P(SCO more 2H SOT) = 0.32 \u2265 P(SCO more 2H goals) = P(SCO wins 2H) = 0.15 \u2713"
+  },
+  "final_submission_estimates": {
+    "Q1_MAR_more_fouls": {
+      "estimate": 0.33,
+      "crowd_pred": 0.46,
+      "confidence": "MEDIUM",
+      "note": "Card market: SCO 46% most cards vs MAR 30%. Scotland fouls more as underdog defender. RULE12: no direct fouls market but card proxy is strong."
+    },
+    "Q2_MAR_2plus_offsides": {
+      "estimate": 0.4,
+      "crowd_pred": 0.5,
+      "confidence": "MEDIUM",
+      "note": "Morocco attacking heavily (\u03bb=1.677, high shots). \u03bb_off\u22481.3 \u2192 P(2+)=0.37. NOT the 9/9 NO family (Morocco is attacker). Estimate 0.40."
+    },
+    "Q3_MAR_1plus_card_2H": {
+      "estimate": 0.5,
+      "crowd_pred": 0.56,
+      "confidence": "LOW-MEDIUM",
+      "note": "\u03bb_MAR_cards\u22481.4 full match. 2H split \u03bb=0.70 \u2192 P(\u22651 in 2H)=0.503. Essentially 50/50."
+    },
+    "Q4_BTTS_3plus": {
+      "estimate": 0.29,
+      "crowd_pred": 0.38,
+      "confidence": "HIGH",
+      "note": "DIRECT Smarkets BTTS+OU2.5 market = 0.2904. OU2.5 leans under (0.587). Trust the market."
+    },
+    "Q5_SCO_more_2H_SOT": {
+      "estimate": 0.32,
+      "crowd_pred": 0.42,
+      "confidence": "MEDIUM",
+      "note": "Skellam \u03bb(1.25 vs 2.25) = 0.296 raw. RULE12 slight shrink \u2192 0.32. RULE14 floor: must be \u2265 0.15 \u2713"
+    },
+    "Q6_SCO_2plus_offsides": {
+      "estimate": 0.22,
+      "crowd_pred": 0.37,
+      "confidence": "HIGH",
+      "note": "2+ offsides family: Scotland underdog will defend. \u03bb_SCO_off=0.8 \u2192 P(2+)=0.19. Floor 0.22 (SCO does attack somewhat, \u03bb_goals=0.725)."
+    },
+    "Q7_SCO_wins": {
+      "estimate": 0.16,
+      "crowd_pred": 0.22,
+      "confidence": "HIGH",
+      "note": "RULE1: avg(crowd~0.22, market~0.13)=0.17 \u2192 0.16. Morocco heavy favorite."
+    },
+    "Q8_SCO_3plus_SOT": {
+      "estimate": 0.55,
+      "crowd_pred": 0.61,
+      "confidence": "HIGH",
+      "note": "DIRECT Smarkets SCO SOT OU2.5 Over = 0.5463. Trust the liquid market."
+    },
+    "Q9_McTominay_SOT": {
+      "estimate": 0.37,
+      "crowd_pred": 0.46,
+      "confidence": "MEDIUM-HIGH",
+      "note": "LIQUID market = 0.4115. Mild RULE15 (SCO underdog, midfielder) -4pp \u2192 0.37."
+    },
+    "Q10_MAR_score_2H": {
+      "estimate": 0.6,
+      "crowd_pred": 0.6,
+      "confidence": "HIGH",
+      "note": "DIRECT Smarkets 2H MAR OU0.5 Over = 0.6032. No edge vs crowd on this one \u2014 both should be ~0.60."
+    }
+  },
+  "post_match_results": {
+    "match_score": "SCO 0-1 MAR",
+    "halftime_score": "0-1",
+    "goals_by_half": {"SCO": {"1H": 0, "2H": 0}, "MAR": {"1H": 1, "2H": 0}},
+    "match_facts": {
+      "SCO_fouls": 11, "MAR_fouls": 8,
+      "SCO_YC": 1, "MAR_YC": 1, "SCO_RC": 0, "MAR_RC": 0,
+      "SCO_offsides": 1, "MAR_offsides": 0,
+      "SCO_corners": 2, "MAR_corners": 5,
+      "SCO_SOT": 0, "MAR_SOT": 2,
+      "SCO_shots": 6, "MAR_shots": 12,
+      "cards_note": "MAR 1 YC was in 1H (confirmed: Q3 Morocco 1+ card 2H = NO per platform RBP +10.35)",
+      "source": "ESPN event 760445 + Jump Trading Competition platform"
+    },
+    "question_results": {
+      "Q1_MAR_2plus_offsides": {
+        "our_estimate": 0.40, "crowd_estimate": 0.49, "outcome": 0, "rbp": 10.64, "beat_crowd": true,
+        "notes": "Morocco 0 offsides. 2+ offsides for attacking team correctly estimated at 40% (vs wrongly applying family)."
+      },
+      "Q2_MAR_more_fouls": {
+        "our_estimate": 0.33, "crowd_estimate": 0.44, "outcome": 0, "rbp": 10.98, "beat_crowd": true,
+        "notes": "Scotland 11 fouls > Morocco 8. Morocco as dominant team fouled less (confirmed dominant-team-fouls-less pattern)."
+      },
+      "Q3_MAR_1plus_card_2H": {
+        "our_estimate": 0.50, "crowd_estimate": 0.58, "outcome": 0, "rbp": 10.35, "beat_crowd": true,
+        "notes": "Morocco's 1 YC was in 1H not 2H. Q3=NO. Our 50% vs crowd 58% — edge."
+      },
+      "Q4_BTTS_3plus_goals": {
+        "our_estimate": 0.29, "crowd_estimate": 0.36, "outcome": 0, "rbp": 7.07, "beat_crowd": true,
+        "notes": "SCO 0 goals, no BTTS. Direct Smarkets market 0.29 trusted correctly."
+      },
+      "Q5_SCO_more_2H_SOT": {
+        "our_estimate": 0.32, "crowd_estimate": 0.32, "outcome": 0, "rbp": 1.93, "beat_crowd": true,
+        "notes": "SCO 0 total SOT. Both at 32% — tiny edge from rounding."
+      },
+      "Q6_SCO_2plus_offsides": {
+        "our_estimate": 0.22, "crowd_estimate": 0.41, "outcome": 0, "rbp": 14.49, "beat_crowd": true,
+        "notes": "Scotland 1 offside. 2+ offsides family fired correctly: Scotland defending underdog (~15%)."
+      },
+      "Q7_SCO_wins": {
+        "our_estimate": 0.16, "crowd_estimate": 0.24, "outcome": 0, "rbp": 5.43, "beat_crowd": true,
+        "notes": "Scotland lost 0-1. RULE1 applied: our 0.16 slightly below market 0.13. Well calibrated."
+      },
+      "Q8_SCO_3plus_SOT": {
+        "our_estimate": 0.55, "crowd_estimate": 0.50, "outcome": 0, "rbp": -2.05, "beat_crowd": false,
+        "notes": "Scotland 0 SOT (!). Our 0.55 badly wrong. Direct Smarkets SOT OU2.5 = 0.5463 we trusted — market was wrong too."
+      },
+      "Q9_McTominay_1plus_SOT": {
+        "our_estimate": 0.37, "crowd_estimate": 0.48, "outcome": 0, "rbp": 11.94, "beat_crowd": true,
+        "notes": "McTominay 0 SOT (Scotland 0 total SOT). Mild RULE15 (-4pp) applied to 0.4115 market → 0.37. Worked."
+      },
+      "Q10_MAR_score_2H": {
+        "our_estimate": 0.60, "crowd_estimate": 0.59, "outcome": 0, "rbp": 0.73, "beat_crowd": true,
+        "notes": "Morocco only scored in 1H (scored 1, managed game 2H). Both at ~60%; tiny edge."
+      }
+    },
+    "match_rbp_total": 71.50,
+    "questions_beat_crowd": 9,
+    "learning_notes": "Our 2nd-best match ever. Scotland had 0 total SOT (incredible). Every defensive underdog metric fired. Q8 loss (-2.05) from direct Smarkets SOT market being wrong about Scotland's output. Morocco scored only in 1H and managed game — both Q2 (dominant team fouls less: MAR 8 fouls) and Q10 (no 2H goal) confirmed these patterns."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "match": "NZL-EGY",
+  "smarkets_event_id": "45042849",
+  "kickoff_utc": "2026-06-22T01:00:00Z",
+  "fetched_utc": "2026-06-21",
+  "smarkets_full_slug": "/sport/football/world-cup/2026/06/22/01-00/new-zealand-vs-egypt",
+  "note": "Fetched ~5-7 hours before kickoff. Primary goals/corners/FTR markets liquid. Secondary markets (cards, penalty, player SOT, player G/A) returned NO PRICES — illiquid. SOT market slugs (egypt-over-under-5.5-shots-on-target, new-zealand-over-under-2.5-shots-on-target) exist with IDs 143912760/143912709 but returned no quotes — used as Smarkets implied lines for λ derivation only.",
+
+  "raw_quotes": {
+    "FTR_winner": {
+      "New_Zealand": 0.1493,
+      "Draw": 0.2354,
+      "Egypt": 0.6117
+    },
+    "OU_goals": {
+      "OU05_Over": 0.9134,
+      "OU05_Under": 0.0801,
+      "OU15_Over": 0.7273,
+      "OU15_Under": 0.2760,
+      "OU25_Over": 0.4630,
+      "OU25_Under": 0.5363,
+      "OU35_Over": 0.2470,
+      "OU35_Under": 0.7520
+    },
+    "halves": {
+      "1H_OU05_Over": 0.6827,
+      "1H_OU05_Under": 0.3202,
+      "2H_OU05_Over": 0.7610,
+      "2H_OU05_Under": 0.2393,
+      "2H_OU15_Over": 0.3978,
+      "2H_OU15_Under": 0.5977,
+      "HT_winner_NZL": 0.1430,
+      "HT_winner_Draw": 0.4168,
+      "HT_winner_EGY": 0.4446,
+      "2H_winner_NZL": 0.1577,
+      "2H_winner_Draw": 0.3465,
+      "2H_winner_EGY": 0.4897,
+      "highest_scoring_half_1H": 0.2952,
+      "highest_scoring_half_Equal": 0.2808,
+      "highest_scoring_half_2H": 0.4209
+    },
+    "team_goals": {
+      "NZL_OU05_Over": 0.5422,
+      "NZL_OU05_Under": 0.4527,
+      "NZL_OU15_Over": 0.1874,
+      "NZL_OU15_Under": 0.8165,
+      "EGY_OU05_Over": 0.8334,
+      "EGY_OU05_Under": 0.1643,
+      "EGY_OU15_Over": 0.5334,
+      "EGY_OU15_Under": 0.4698
+    },
+    "corners": {
+      "corners_winner_NZL": 0.2481,
+      "corners_winner_Draw": 0.0966,
+      "corners_winner_EGY": 0.6492,
+      "NZL_corners_OU35_Over": 0.4437,
+      "NZL_corners_OU35_Under": 0.5584,
+      "NZL_corners_OU45_Over": 0.2765,
+      "NZL_corners_OU45_Under": 0.7256,
+      "EGY_corners_OU45_Over": 0.5917,
+      "EGY_corners_OU45_Under": 0.4167
+    },
+    "illiquid_note": "cards_OU25/35/45, penalty_in_match, cards_winner, player SOT markets (143912709, 143912760), 2H team OU05, btts_2H: all returned NO PRICES. SOT market slugs exist (egypt-OU5.5-SOT, new-zealand-OU2.5-SOT) — used as Smarkets implied lines for expected SOT without prices."
+  }
+}

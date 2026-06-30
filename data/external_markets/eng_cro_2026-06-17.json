@@ -1,0 +1,165 @@
+{
+  "match": "ENG-CRO",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "b4185014-269b-42f0-aeef-5d600646770a",
+  "smarkets_event_id": "44754854",
+  "espn_event_id": "760437",
+  "closing_time": "2026-06-17T22:30:00.000Z",
+  "context_note": "England vs Croatia. FTR (vig-adj): England 58.8% / Draw 24.8% / Croatia 16.4%. Draw price 24.8% is borderline (just under the 25% RULE8 threshold for extra shrinkage on count-comparison props) - noted but not triggered. England a clear moderate favorite. Croatia is a decent side (not a minnow like Curacao/Egypt) with a 2022 WC semi-final pedigree, but England's stats have been strong in recent tune-ups (Costa Rica 8-SOT game, Japan 11-corner game). KEY DATA: England corners extremely high (5-11 per match, avg 8.4); Croatia fouls consistently high (13-18, avg 13.0); Croatia offsides dominated by one outlier (0,1,0,4,0 - the 4 was vs Belgium). Posture: 'be aggressive on grounded estimates' - Q4, Q6, Q7 are the high-edge low-probability calls where ESPN data strongly supports extremity and crowd will compress toward 50%.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "raw_file": "eng_cro_smarkets_quotes.json",
+      "markets_used": {
+        "full_time_result": {"England": 0.5880, "Draw": 0.2476, "Croatia": 0.1644},
+        "btts_and_over2.5_goals": {"Yes_Over_3plus": 0.3673},
+        "penalty_to_be_awarded": {"Yes": 0.2818, "note": "two-sided liquid"},
+        "highest_scoring_half": {"FIRST_HALF": 0.2968, "EQUAL": 0.2692, "SECOND_HALF": 0.4342},
+        "2h_england_ou_0.5_goals": {"OVER": 0.6270, "lambda_derived": 0.986},
+        "2h_croatia_ou_0.5_goals": {"OVER": 0.3728, "lambda_derived": 0.466},
+        "harry_kane_0.5plus_sot_full_match": {"mid": 0.6734, "note": "liquid two-sided (bid=0.6711/offer=0.6757); 2H-scaled to 0.4285 via P_2H=1-e^(-lambda/2)"},
+        "luka_sucic_0.5plus_sot_full_match": {"mid": 0.4587, "note": "offer-only illiquid x0.945 = 0.4335"}
+      },
+      "no_market_exists_for": ["team fouls (either direction)", "team offsides", "2nd-half team SOT"],
+      "illiquid_unusable": ["England -0.5 corners / Croatia +0.5 corners (119427167) - zero quotes, completely illiquid"]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "raw_file": "eng_cro_wc2026_raw.jsonl",
+      "england_n5": {
+        "matches": ["Albania(A) 2025-11-16", "Uruguay(H) 2026-03-27", "Japan(H) 2026-03-31", "NewZealand(H) 2026-06-06", "CostaRica(H) 2026-06-10"],
+        "fouls": [10,7,7,10,7], "avg_fouls": 8.2,
+        "offsides": [2,2,0,2,0], "avg_offsides": 1.2,
+        "sot": [7,5,4,4,8], "avg_sot_full": 5.6,
+        "corners": [5,7,11,8,11], "avg_corners": 8.4,
+        "note": "very consistent low-foul, high-corner, moderate-offside team; one away game (Albania) shows reduced corner output (5 vs ~9.25 home avg)"
+      },
+      "croatia_n5": {
+        "matches": ["Montenegro(A) 2025-11-17", "Colombia(A) 2026-03-26", "Brazil(A) 2026-04-01", "Belgium(H) 2026-06-02", "Slovenia(H) 2026-06-07"],
+        "fouls": [16,18,13,13,5], "avg_fouls": 13.0,
+        "offsides": [0,1,0,4,0], "avg_offsides": 1.0,
+        "sot": [7,3,3,1,6], "avg_sot_full": 4.0,
+        "corners": [3,4,2,3,8], "avg_corners": 4.0,
+        "note": "fouls: 5 vs Slovenia is a low outlier (all others 13-18); offsides: 4 vs Belgium is the sole outlier (others all 0-1). Without respective outliers: fouls avg ~15.0, offsides avg ~0.25"
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_england_more_2h_sot_than_croatia": {
+      "category": "tier2_realdata",
+      "method": "ESPN 2H-scaled Skellam (lambda_ENG=2.8, lambda_CRO=2.0). Raw P=0.642, continuity-corrected P=0.554. RULE7: submit near-raw unshaded. RULE14 check: P(England more 2H SOT)=0.60 > P(England more 2H goals)=0.507 (market-derived) - constraint holds (SOT>=goals). England's SOT avg 5.6 vs Croatia's 4.0 reflects England's recent dominance in attack.",
+      "raw_skellam": 0.642, "continuity_corrected": 0.554,
+      "recommended_estimate": 0.60
+    },
+    "q2_btts_and_3plus_goals": {
+      "category": "tier1_market",
+      "method": "Direct Smarkets 'Both teams to score and over/under 2.5' market, Yes/Over contract vig-adjusted 36.73%. Undeviated.",
+      "recommended_estimate": 0.37
+    },
+    "q3_penalty_or_red_card": {
+      "category": "compound_market_proxy",
+      "method": "P(penalty)=28.18% (vig-adj liquid Smarkets market). P(red card)~10% (base rate for competitive international; Smarkets 'any player sent off' market has unusual structure with >90% implied red-card rate - likely a booking/yellow-card market mislabeled, excluded). P(A or B)=0.2818+0.10-0.0282=0.354.",
+      "recommended_estimate": 0.35
+    },
+    "q4_england_more_fouls_than_croatia": {
+      "category": "tier2_realdata",
+      "method": "Skellam: England avg=8.2 (n=5, range 7-10, very consistent), Croatia avg=13.0 (n=5, range 5-18). Raw P(ENG>CRO)=0.149. RULE12 sensitivity: Croatia outlier (5-foul game vs Slovenia) - without it Croatia avg=15.0, gap even larger (P even lower ~0.07). England outlier (10-foul game) - without it England avg=7.0, gap again larger. Signal is ROBUST and gets stronger on outlier removal - no RULE12 concern. Draw price 24.8% (barely under 25% RULE8 threshold): no extra shrinkage applied. RULE10 check: England is a moderate (not blowout) favorite, so blowout-regime does not apply. HIGH CONFIDENCE low estimate. Key strategic note: crowd will compress this toward ~0.30-0.35 (per crowd_pred formula), creating the largest potential edge on this match.",
+      "raw_skellam": 0.149,
+      "recommended_estimate": 0.15
+    },
+    "q5_kane_1plus_sot_2h": {
+      "category": "tier1_market",
+      "method": "Derived from Smarkets 'Player to have over 0.5 shots on target' full-match market, Kane contract (liquid two-sided: bid=0.6711/offer=0.6757, mid=0.6734). Question is 2H-specific: P(1+ in 2H) = 1 - exp(-lambda/2) where lambda = -ln(1-0.6734) = 1.119, lambda_2H = 0.560 -> P = 0.4285. Kane is England's primary striker, expected to be on pitch for full match.",
+      "full_match_price": 0.6734, "lambda_full": 1.119, "lambda_2h": 0.560,
+      "recommended_estimate": 0.43
+    },
+    "q6_croatia_more_corners_than_england_ht": {
+      "category": "tier2_realdata",
+      "method": "ESPN corners: England avg=8.4/match (5,7,11,8,11 - notable: 5 was the only away game; neutral-venue estimate ~7). Croatia avg=4.0/match (3,4,2,3,8 - 8 was the only notable home game; neutral estimate ~4). 1H-scaled lambdas: England=3.5, Croatia=2.0. Skellam raw P(Croatia>England)=0.261. Corner-handicap market completely illiquid (England -0.5 / Croatia +0.5: zero quotes). RULE7: England corners are the single most dominant stat in our data (8.4 avg, all matches 5-11). Even at a neutral venue England should generate far more corners than Croatia. High-edge, well-grounded low estimate.",
+      "raw_skellam_neutral_venue": 0.261, "espn_england_corner_avg": 8.4, "espn_croatia_corner_avg": 4.0,
+      "recommended_estimate": 0.20
+    },
+    "q7_croatia_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson: Croatia offsides n=5 (0,1,0,4,0), avg=1.0, lambda=1.0. P(X>=2)=1-e^-1*(1+1)=0.2642. RULE7 unshaded - this is the 7th data point for the '2+ offsides' family (all 6 prior resolved NO, unshaded wins net +54.57/6). OUTLIER NOTE: Croatia's 4-offside game vs Belgium dominates the avg; without it, lambda=0.25 and P(X>=2)=0.026. Large outlier sensitivity (0.026 to 0.264, >10pp swing). However, the outlier makes the estimate HIGHER (not LOWER), and direction is already on NO-side of 50%. Staying unshaded as RULE7 prescribes - the direction (well below 0.5) is unaffected by the sensitivity.",
+      "raw_poisson": 0.2642, "deoutliered_estimate": 0.026,
+      "recommended_estimate": 0.26
+    },
+    "q8_both_teams_1plus_sot_2h": {
+      "category": "tier2_realdata",
+      "method": "ESPN 2H-scaled: P(England 1+ SOT in 2H)=1-e^-2.8=0.939. P(Croatia 1+ SOT in 2H)=1-e^-2.0=0.865. Naive independence product=0.812. RULE4: don't trust a low independence product for this question type (QAT-SUI Q1 showed we can go too low). SAU-URU Q2 caution: when one team takes a lead and sits back, the defending team can get 0 SOT in 2H. Shade from 0.812 to 0.76 for match-script risk (neither team is guaranteed to be attacking in 2H - if England goes up early, Croatia might not create chances, or vice versa). Still well above RULE4's 'don't go too low' guidance.",
+      "naive_product": 0.812,
+      "recommended_estimate": 0.76
+    },
+    "q9_england_win": {
+      "category": "tier1_market (match-winner deferred)",
+      "method": "Direct from Smarkets full-time-result market, vig-adjusted England 58.80%. Treated as tier1_market undeviated per RULE1/2.",
+      "recommended_estimate": 0.59
+    },
+    "q10_sucic_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to have over 0.5 shots on target' market, Luka Sucic contract (offer-only illiquid, mid=45.87%), x0.945 ratio = 0.4335. Full match (no 2H restriction on Q10). Note: separate 'Petar Sucic' contract also exists (14.49%) - confirmed the correct Luka Sucic at 45.87% (attacking midfielder for Croatia, regularly creates and shoots).",
+      "raw_offer": 0.4587, "illiquid_adjusted": 0.4335,
+      "recommended_estimate": 0.43
+    }
+  },
+  "crowd_pred_estimates": {
+    "formula": "crowd_pred = 0.514 + 0.61*(us-0.5)",
+    "note": "predicted crowd values for out-of-sample formula test",
+    "q1": 0.575, "q2": 0.435, "q3": 0.422, "q4": 0.301, "q5": 0.471,
+    "q6": 0.331, "q7": 0.368, "q8": 0.673, "q9": 0.569, "q10": 0.471
+  },
+  "post_match_results": {
+    "match_score": "ENG 4-2 CRO",
+    "halftime_score": null,
+    "match_facts": {
+      "note": "England won 4-2. High scoring game. England dominated.",
+      "source": "Jump Trading Competition platform"
+    },
+    "question_results": {
+      "Q1_Croatia_HT_more_corners": {
+        "our_estimate": 0.20, "crowd_estimate": 0.35, "outcome": 0, "rbp": 10.15, "beat_crowd": true,
+        "notes": "Croatia did NOT have more HT corners. England's corner dominance confirmed. 2+ offsides family style win."
+      },
+      "Q2_Croatia_2plus_offsides": {
+        "our_estimate": 0.26, "crowd_estimate": 0.45, "outcome": 0, "rbp": 15.73, "beat_crowd": true,
+        "notes": "Croatia <2 offsides. 2+ offsides family win (now n+1). Croatia avg 1.0 offsides. Our 26% correct."
+      },
+      "Q3_both_teams_1plus_SOT_2H": {
+        "our_estimate": 0.76, "crowd_estimate": 0.72, "outcome": 1, "rbp": 4.42, "beat_crowd": true,
+        "notes": "Both teams had 1+ SOT in 2H. England scored 4 total so YES easily."
+      },
+      "Q4_BTTS_3plus_goals": {
+        "our_estimate": 0.37, "crowd_estimate": 0.41, "outcome": 1, "rbp": -1.83, "beat_crowd": false,
+        "notes": "BTTS AND 3+ goals: YES (4-2). Outcome YES, crowd 41% slightly closer than our 37%."
+      },
+      "Q5_penalty_or_red_card": {
+        "our_estimate": 0.35, "crowd_estimate": 0.36, "outcome": 1, "rbp": 0.54, "beat_crowd": true,
+        "notes": "Penalty or red card: YES. Tiny edge over crowd."
+      },
+      "Q6_England_more_fouls": {
+        "our_estimate": 0.15, "crowd_estimate": 0.43, "outcome": 0, "rbp": 18.82, "beat_crowd": true,
+        "notes": "England did NOT have more fouls. England avg 8.2 fouls vs Croatia 13.0 — our 15% was extremely well-grounded."
+      },
+      "Q7_Kane_1plus_SOT_2H": {
+        "our_estimate": 0.20, "crowd_estimate": 0.59, "outcome": 1, "rbp": -44.54, "beat_crowd": false,
+        "notes": "WORST Q this match. SUBMISSION ERROR — model recommended 0.43 (from Smarkets market) but 0.20 was submitted. Kane DID have a 2H SOT. Loss of -44.54 RBP from error."
+      },
+      "Q8_England_more_2H_SOT": {
+        "our_estimate": 0.60, "crowd_estimate": 0.62, "outcome": 1, "rbp": 0.12, "beat_crowd": true,
+        "notes": "England more 2H SOT: YES (won 4-2). Tiny edge."
+      },
+      "Q9_England_wins": {
+        "our_estimate": 0.59, "crowd_estimate": 0.60, "outcome": 1, "rbp": 1.24, "beat_crowd": true,
+        "notes": "England wins: YES. Both near-identical; slight edge."
+      },
+      "Q10_Sucic_1plus_SOT": {
+        "our_estimate": 0.43, "crowd_estimate": 0.34, "outcome": 0, "rbp": -3.42, "beat_crowd": false,
+        "notes": "Sucic 0 SOT. Crowd 34% closer to truth than our 43%. RULE15 should have applied (Croatia losing team)."
+      }
+    },
+    "match_rbp_total": 1.23,
+    "questions_beat_crowd": 6,
+    "learning_notes": "Q7 Kane (-44.54) was a SUBMISSION ERROR (submitted 0.20 vs model recommendation 0.43). Without error: +45.77 RBP. This is the 2nd-worst single question ever. Q6 England fouls (+18.82) was our best and confirmed low-foul dominant team pattern. Sucic (-3.42) shows RULE15 should apply to expected-loser secondary forwards too."
+  }
+}

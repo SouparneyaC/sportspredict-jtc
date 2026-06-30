@@ -1,0 +1,768 @@
+{
+  "match": "CAN vs BIH",
+  "sportspredict_closing_time": "2026-06-12T21:30:00.000Z",
+  "fetched_at_utc": "2026-06-12T18:00:00Z",
+  "sportspredict_questions": {
+    "5ce9274e-e6a2-4fba-9b30-a25aa3c65b02": "Will Bosnia and Herzegovina commit more fouls than Canada?",
+    "135f6145-c05f-465d-b078-56f142787754": "Will there be 4 or more total shots on target in the second half?",
+    "ad1e7582-0d8d-493f-8379-ad878e425d19": "Will a penalty kick be awarded OR a red card be shown?",
+    "27a8f2b6-2220-4065-a3e1-acd4899fad9b": "Will Canada win the match?",
+    "18e552dd-4bfe-42de-84de-cddda65ee76c": "At halftime, will the match be tied?",
+    "c977c9c2-8f75-4349-8c17-d16f5581c6e3": "Will the second half have 2 or more total goals?",
+    "fa7aef4a-0024-4fa2-935b-ec34103a7fae": "Will Bosnia and Herzegovina have 5 or more corner kicks?",
+    "9b567f11-be28-4cc0-9dc9-a38a4a3a9d80": "Will Jonathan David score a goal (excluding own goals)?",
+    "29bb38af-3c07-4c7b-a7fd-5742c6dba099": "Will Edin Dzeko have at least 1 shot on target?",
+    "4764e2ed-3934-489e-89ba-c807860043bc": "Will Bosnia and Herzegovina score in the second half?"
+  },
+  "data_quality_audit": {
+    "performed": "2026-06-12, session 3",
+    "reason": "WebFetch summarization on blocked/error pages (403/404) was observed fabricating plausible-sounding bookmaker odds. One source object (polymarket.corners_market) was directly disproven this session via the real gamma-api (only 3 markets exist for this event). All sources below are now tagged with a 'verification' field.",
+    "verification_levels": {
+      "VERIFIED_API": "Direct structured API/JSON response (Smarkets API, Pinnacle guest API, Polymarket gamma-api) or a direct successful page fetch (jina.ai reader proxy returning real rendered content) - treat as real.",
+      "UNVERIFIED_SEARCH_SUMMARY": "Obtained only via WebSearch result snippets or a WebFetch summary of a page that may not have loaded correctly. Plausible but not independently re-confirmed. DO NOT count as an independent corroborating source for sources_count - context/color only.",
+      "DISPROVEN_REMOVED": "Actively contradicted by a VERIFIED_API check this session; entry deleted from this file."
+    },
+    "removed_entries": [
+      "polymarket.corners_market (Over/Under 11 total combined corners) - DISPROVEN: gamma-api for slug fifwc-can-bih-2026-06-12 returns only 3 markets total (CAN win / Draw / BIH win). This sub-market does not exist.",
+      "kalshi_extended.corners_partial (RotoWire 'Over 4.5 corners -130' reference) - self-flagged in prior session as unconfirmed/ambiguous source; removed rather than carried forward as a gap-filler."
+    ]
+  },
+  "sources": {
+    "smarkets": {
+      "verification": "VERIFIED_API",
+      "event_id": "44986338",
+      "markets": {
+        "134464279": {
+          "name": "Full-time result",
+          "maps_to": "27a8f2b6 (Canada win)",
+          "contracts": {
+            "Canada": {
+              "bid": 0.5376,
+              "offer": 0.5376
+            },
+            "Draw": {
+              "bid": 0.2703,
+              "offer": 0.2778
+            },
+            "Bosnia-Herzegovina": {
+              "bid": 0.1887,
+              "offer": 0.1923
+            }
+          }
+        },
+        "134464286": {
+          "name": "Half-time result",
+          "maps_to": "18e552dd (HT tied)",
+          "contracts": {
+            "Canada": {
+              "bid": 0.3704,
+              "offer": 0.3846
+            },
+            "Draw": {
+              "bid": 0.4505,
+              "offer": 0.463
+            },
+            "Bosnia-Herzegovina": {
+              "bid": 0.1613,
+              "offer": 0.1724
+            }
+          }
+        },
+        "134464325": {
+          "name": "Second half over/under 1.5 goals",
+          "maps_to": "c977c9c2 (2H 2+ goals)",
+          "contracts": {
+            "Under 1.5": {
+              "bid": 0.6061,
+              "offer": 0.6579
+            },
+            "Over 1.5": {
+              "bid": 0.3448,
+              "offer": 0.3968
+            }
+          }
+        },
+        "134464459": {
+          "name": "Bosnia-Herzegovina over/under 4.5 corners",
+          "maps_to": "fa7aef4a (BIH 5+ corners)",
+          "contracts": {
+            "Under 4.5": {
+              "bid": 0.6897,
+              "offer": 0.7937
+            },
+            "Over 4.5": {
+              "bid": 0.2174,
+              "offer": 0.3125
+            }
+          }
+        },
+        "134464344": {
+          "name": "Second half Bosnia-Herzegovina over/under 0.5 goals",
+          "maps_to": "4764e2ed (BIH scores 2H)",
+          "contracts": {
+            "Under 0.5": {
+              "bid": 0.6024,
+              "offer": 0.6667
+            },
+            "Over 0.5": {
+              "bid": 0.3378,
+              "offer": 0.4
+            }
+          }
+        },
+        "134464304": {
+          "name": "Penalty to be awarded",
+          "maps_to": "ad1e7582 (penalty OR red card, component A)",
+          "contracts": {
+            "Yes": {
+              "bid": 0.303,
+              "offer": 0.3175
+            },
+            "No": {
+              "bid": 0.6897,
+              "offer": 0.7143
+            }
+          }
+        },
+        "134464424": {
+          "name": "Any player to be sent off",
+          "maps_to": "ad1e7582 (penalty OR red card, component B)",
+          "contracts": {
+            "Yes": {
+              "bid": 0.1754,
+              "offer": 0.1852
+            },
+            "No": {
+              "bid": 0.813,
+              "offer": 0.8403
+            }
+          }
+        },
+        "134464577": {
+          "name": "Anytime goalscorer",
+          "maps_to": "9b567f11 (Jonathan David scores)",
+          "contracts": {
+            "Jonathan David": {
+              "bid": 0.2941,
+              "offer": 0.3333
+            },
+            "Edin Dzeko": {
+              "bid": null,
+              "offer": 0.2326
+            }
+          }
+        },
+        "144300661": {
+          "name": "Player to have over 0.5 shots on target",
+          "maps_to": "29bb38af (Edin Dzeko 1+ SOT)",
+          "contracts": {
+            "Edin Dzeko": {
+              "bid": null,
+              "offer": 0.578
+            },
+            "Jonathan David": {
+              "bid": 0.5917,
+              "offer": 0.5952
+            }
+          }
+        }
+      },
+      "full_market_list_checked": "208 markets enumerated via smarkets_markets_by_match.jsonl this session - confirmed NO team-fouls-comparison market and NO 2nd-half-SOT market exist on Smarkets (only per-player foul props and full-match/per-half goal/corner markets).",
+      "gaps": [
+        "5ce9274e (BIH more fouls than CAN) - confirmed absent from full 208-market list",
+        "135f6145 (2nd half total SOT >=4) - confirmed absent from full 208-market list"
+      ]
+    },
+    "pinnacle_guest_api": {
+      "verification": "VERIFIED_API",
+      "note": "Session 3: direct hit on Pinnacle's open guest API (guest.api.arcadia.pinnacle.com/0.1/matchups/1627278050/markets/related/straight) - returns real JSON, no auth needed for mainline markets. 'Special' markets (fouls, corners, cards, player props, half-splits) return 401 Unauthorized - not accessible without login.",
+      "full_match_moneyline": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": {
+          "american": -119,
+          "decimal": 1.84,
+          "implied": 0.543
+        },
+        "draw": {
+          "american": 257,
+          "decimal": 3.57,
+          "implied": 0.28
+        },
+        "bih": {
+          "american": 399,
+          "decimal": 5.0,
+          "implied": 0.2
+        },
+        "caveat": "raw, sums >100% (vig)"
+      },
+      "team_totals": {
+        "bih_over_0.5": {
+          "american": -140,
+          "implied": 0.583
+        },
+        "canada_over_1.5": {
+          "american": 115
+        }
+      },
+      "full_game_total_2.25": {
+        "over": 108,
+        "under": -119
+      },
+      "first_half_moneyline": {
+        "canada": 158,
+        "draw": -113,
+        "bih": 466,
+        "note": "American odds, period 1 (1st half) - exists but no period 2 (2nd half) exposed on open endpoint"
+      },
+      "ht_ft_combo_market": {
+        "note": "A 'Half-Time/Full-Time' 9-outcome market exists (market id ~1631458788) per the /related listing, but price extraction failed - that endpoint returns 401 (auth-gated 'special' market)."
+      }
+    },
+    "polymarket_gamma_api": {
+      "verification": "VERIFIED_API",
+      "note": "Session 3: direct hit on https://gamma-api.polymarket.com/events?slug=fifwc-can-bih-2026-06-12 - CONFIRMED this event has ONLY 3 markets total.",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": 0.535,
+        "draw": 0.275,
+        "bih": 0.195
+      },
+      "confirmed_market_count": 3,
+      "note2": "Any prior/future claims of Polymarket corner, half, or player-prop sub-markets for this event should be treated as false unless re-verified via this same API."
+    },
+    "oddschecker_via_jina": {
+      "verification": "VERIFIED_API",
+      "note": "Session 3: direct page fetch via r.jina.ai reader-proxy on oddschecker.com main match page succeeded (oddschecker.com returns 403 to direct WebFetch but jina.ai got through with real rendered content).",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": {
+          "fractional": "20/23",
+          "decimal": 1.87,
+          "implied": 0.535
+        },
+        "draw": {
+          "fractional": "27/10",
+          "decimal": 3.7,
+          "implied": 0.27
+        },
+        "bih": {
+          "fractional": "4/1",
+          "decimal": 5.0,
+          "implied": 0.2
+        }
+      },
+      "anytime_goalscorer": {
+        "jonathan_david": {
+          "maps_to": "9b567f11 (Jonathan David scores)",
+          "fractional": "19/10",
+          "decimal": 2.9,
+          "implied": 0.345
+        },
+        "edin_dzeko": {
+          "maps_to": "9b567f11 context only (not Dzeko's question)",
+          "fractional": "31/10",
+          "decimal": 4.1,
+          "implied": 0.244
+        }
+      },
+      "gaps": [
+        "Sub-pages for half-time/full-time, corners, bookings, total-goals all returned 404 at guessed URLs (these are likely JS-loaded tabs on the main page, not separate URLs) - main page itself didn't surface those sections in the rendered markdown either."
+      ]
+    },
+    "kalshi": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "17 live markets for this fixture (match winner, spread, totals, BTTS, scorers, corners, etc) per search-summary descriptions. NOT independently re-verified via direct API this session (the session-3 attempt only confirmed 3 moneyline + 2 player score-or-assist markets via v2/markets?series_ticker= - did not find a corners/cards/fouls series at all).",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada_90min": 0.54,
+        "draw": 0.27,
+        "bih_implied": 0.19
+      },
+      "goal_totals": {
+        "over_2_5": 0.42,
+        "under_2_5_favored": true
+      },
+      "score_or_assist_props_session3": {
+        "verification": "VERIFIED_API (ticker format consistent with real Kalshi naming, obtained via series_ticker query)",
+        "jonathan_david": {
+          "ticker": "KXWCSOA-26JUN12CANBIH-CANJDAVID30",
+          "question": "score or assist? (NOT pure anytime-goalscorer - broader, includes assists)",
+          "yes_bid": 0.33,
+          "yes_ask": 0.41
+        },
+        "edin_dzeko": {
+          "ticker": "KXWCSOA-26JUN12CANBIH-BIHEDZEKONA",
+          "question": "score or assist? (NOT shots-on-target - different question entirely)",
+          "yes_bid": 0.11,
+          "yes_ask": 0.26
+        }
+      },
+      "gaps": [
+        "Corners/fouls/SOT/HT market category claims from prior sessions NOT confirmed by direct API enumeration this session - downgrade confidence on the '17 live markets' / 'corners' claims."
+      ]
+    },
+    "robinhood": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Found via web search summaries only. Not re-checked this session.",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": 0.54,
+        "volume_contracts": 480000
+      },
+      "gaps": [
+        "Prop-market breadth (fouls/corners/SOT) not confirmed - treat match_winner number as directional color only"
+      ]
+    },
+    "betfair_exchange": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Found via betting.betfair.com preview articles, not direct exchange API. Session 3: Betfair Exchange and betting.betfair.com BOTH returned 403/geo-block even through the jina.ai proxy - cannot independently re-verify.",
+      "match_winner_back_prices_raw": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": "4/5 (~1.80, implied ~55.6% raw)",
+        "draw": "13/5 (~3.60, implied ~27.8% raw)",
+        "bih": "15/4 (~4.75, implied ~21.1% raw)",
+        "caveat": "raw back prices, not de-vigged, sum >100%"
+      },
+      "full_match_bih_sot": {
+        "market": "Over 4.5 Bosnia and Herzegovina shots on target",
+        "price": "11/4 (implied ~26.7% raw)",
+        "note": "full-match team total, NOT 2nd-half combined - does not directly answer 135f6145"
+      },
+      "cards": {
+        "kone_carded": "9/2",
+        "red_card_in_match": "6/1",
+        "both_teams_red_card": "66/1",
+        "two_plus_cards_each_team": "7/5"
+      },
+      "gaps": [
+        "No team-fouls-comparison or 2nd-half-SOT-total market found",
+        "Betfair fully inaccessible to fetch tools (direct + jina + geo-block) - cannot re-verify any of the above"
+      ]
+    },
+    "oddschecker_aggregator_OLD": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "SUPERSEDED by oddschecker_via_jina (VERIFIED_API) above, which got slightly different numbers via a direct fetch. Kept for reference only - the jina-verified numbers should be preferred.",
+      "match_winner_devigged_draftkings": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": 0.515,
+        "draw": 0.271,
+        "bih": 0.214
+      },
+      "best_prices_raw": {
+        "canada": "1.88 (1xBet)",
+        "draw": "3.55-3.62 (Tonybet/Bet365)",
+        "bih": "4.6-4.8 (Bet365/Tonybet)"
+      },
+      "goal_totals": {
+        "line": 2.5,
+        "lean": "under"
+      },
+      "cards": {
+        "two_plus_cards_each_team": "7/5 (~41.7% implied raw)"
+      },
+      "bet_builders": [
+        "Canada win + David 1+SOT + Larin 1+SOT + Under 3.5 goals @ 17/1 (Paddy Power)",
+        "Canada win + BTTS No + Alajbegovic(BIH) Over 1.5 shots"
+      ],
+      "gaps": [
+        "No team-fouls-total or 2nd-half-SOT-total market found"
+      ]
+    },
+    "polymarket_OLD": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY - PARTIALLY DISPROVEN",
+      "note": "SUPERSEDED by polymarket_gamma_api (VERIFIED_API) above. The corners_market sub-entry that used to be here has been REMOVED (see data_quality_audit.removed_entries) - gamma-api proves it doesn't exist.",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": 0.525,
+        "draw": 0.275,
+        "bih": 0.205,
+        "note": "close to polymarket_gamma_api verified numbers (0.535/0.275/0.195) - this part was likely real, odds just moved slightly"
+      }
+    },
+    "kalshi_extended": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Additional Kalshi market structure claims via squawka.com coverage article. corners_partial sub-entry REMOVED (see data_quality_audit.removed_entries).",
+      "confirmed_market_types": [
+        "match winner (90min)",
+        "spread",
+        "totals (goals)",
+        "BTTS yes/no",
+        "1st Half Winner (maps to HT result, relevant to 18e552dd)",
+        "team-specific over/unders",
+        "corners",
+        "scorer props"
+      ],
+      "1st_half_winner_market": {
+        "maps_to": "18e552dd (HT tied)",
+        "note": "Confirmed to exist per search-summary (ticker pattern kxwc1h...), but NOT independently verified via direct API this session - the session-3 API enumeration only found 3 moneyline + 2 score-or-assist markets, no 1H-winner series located."
+      },
+      "gaps": [
+        "1st half winner exact prices not retrieved",
+        "no team fouls or 2nd-half SOT market category found"
+      ]
+    },
+    "betfair_anytime_goalscorer": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Found via dimers.com / sportshandle.com search summaries. Not re-verified (Betfair inaccessible).",
+      "jonathan_david_anytime": {
+        "maps_to": "9b567f11 (Jonathan David scores)",
+        "price": "9/5 (2.80)",
+        "implied_prob_raw": 0.357,
+        "source_label": "Betfair (favourite anytime scorer)"
+      }
+    },
+    "sports_interaction": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Canadian-licensed sportsbook (news.sportsinteraction.com), found via search summaries. Not re-verified.",
+      "match_winner": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": "-120",
+        "draw": "+240/+270 (varies by article)",
+        "bih": "+360/+400"
+      },
+      "jonathan_david_anytime": {
+        "maps_to": "9b567f11 (Jonathan David scores)",
+        "price": "+150",
+        "implied_prob_raw": 0.4
+      }
+    },
+    "dimers_simulation": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Dimers.com proprietary simulation model, not a real-money market - found via search summary, not re-verified. Treat as a (possibly fabricated) quant-model data point, not a market.",
+      "jonathan_david_anytime": {
+        "maps_to": "9b567f11 (Jonathan David scores)",
+        "probability": 0.305,
+        "expected_shots": 2.4,
+        "alt_figure_cited_elsewhere": 0.34
+      },
+      "match_winner_opta_supercomputer": {
+        "maps_to": "27a8f2b6 (Canada win)",
+        "canada": 0.527,
+        "draw": 0.253,
+        "bih": 0.22,
+        "source_label": "Opta/theanalyst.com supercomputer simulation (also via dimers/FanDuel aggregation)"
+      }
+    },
+    "sportytrader_aggregator": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "French odds aggregator, event id 7937375. Session 3: sportytrader.com returned 403 directly; the jina.ai retry was not completed (interrupted). Not re-verified.",
+      "match_winner_best_prices_raw": {
+        "canada": "1.88 (1xBet)",
+        "draw": "3.55 (Tonybet)",
+        "bih": "4.8 (Bet365)"
+      }
+    },
+    "1xbet_specials": {
+      "verification": "UNVERIFIED_SEARCH_SUMMARY",
+      "note": "Press coverage (rg.org) of 1xBet's CAN-BIH special markets, content summary only. 1xbet.com itself returned 403/blocked across all sessions including jina retries.",
+      "description": "1xBet confirmed (per press summary) to have launched 'World Cup Specials' for this match including combo bets pairing match result with corner totals, card counts, and halftime scores, plus player-specials for Jonathan David and Tani Oluwaseyi.",
+      "gaps": [
+        "Exact odds/lines never retrieved across 3 sessions - treat existence claim itself as unverified"
+      ]
+    }
+  },
+  "derived_estimates_draft": {
+    "27a8f2b6-2220-4065-a3e1-acd4899fad9b": {
+      "question": "Will Canada win the match?",
+      "smarkets_mid": 0.5376,
+      "verified_corroboration": {
+        "pinnacle": 0.543,
+        "polymarket_gamma": 0.535,
+        "oddschecker_jina": 0.535
+      },
+      "unverified_corroboration": {
+        "kalshi_search_summary": 0.54,
+        "robinhood_search_summary": 0.54,
+        "betfair_back_raw_unverified": 0.556,
+        "dimers_simulation_unverified": 0.527
+      },
+      "sources_count_verified": 4,
+      "note": "Four INDEPENDENTLY VERIFIED sources (Smarkets, Pinnacle API, Polymarket gamma-api, Oddschecker-via-jina) cluster 53.5-54.3% - tight, high-confidence cluster. Our model says 75% - LARGE divergence flagged for separate review."
+    },
+    "5ce9274e-e6a2-4fba-9b30-a25aa3c65b02": {
+      "question": "Will BIH commit more fouls than Canada?",
+      "estimate": "NO REAL MARKET FOUND across 3 sessions, ~25+ sites, including full enumeration of Smarkets' 208 markets. Confirmed structural gap.",
+      "old_stats_proxy_estimate": 0.55,
+      "old_confidence_note": "previously flagged as effectively a ghost number - traced to unsourced search-summary claims",
+      "session4_real_data": {
+        "BIH_fouls_per_match": {
+          "espn_boxscore_last5_competitive": [
+            18,
+            20,
+            9,
+            15,
+            19
+          ],
+          "espn_mean": 16.2,
+          "footystats_10match_mean": 16.33,
+          "footystats_home_away_split": {
+            "home_4_matches": 15.25,
+            "away_6_matches": 17.2
+          },
+          "sources": [
+            "ESPN site API per-match boxscores (fifa.worldq.uefa, VERIFIED_API, 5 matches)",
+            "footystats.org/clubs/bosnia-herzegovina-national-team-8003 (VERIFIED, 10-match WCQ Europe sample)"
+          ]
+        },
+        "CAN_fouls_per_match": {
+          "footystats_10match_mean": 12.2,
+          "footystats_home_away_split": {
+            "home_8_matches": 10.75,
+            "away_2_matches": 18.0
+          },
+          "sources": [
+            "footystats.org/clubs/canada-national-team-8655 (VERIFIED, 10-match cycle sample)"
+          ],
+          "note": "ESPN fifa.friendly boxscores for Canada did not expose team-level fouls (only partial player stats) - footystats is the only fouls source for Canada"
+        },
+        "model": "Poisson(lambda_BIH=16.3) vs Poisson(lambda_CAN=12.2), independent, P(X_BIH > X_CAN)",
+        "model_raw_output": 0.7503,
+        "model_tie_prob": 0.0561,
+        "context_note": "BIH away avg (17.2) > BIH home avg (15.25); CAN home avg (10.75) < CAN away avg (18.0, n=2 only). Canada is host nation playing at BMO Field (effectively home) - both context effects point toward WIDENING the BIH-Canada foul gap, i.e. raw 0.75 may even be conservative. However sample sizes are small (10 matches each) and foul counts are referee/game-state dependent (high variance, overdispersed).",
+        "recommended_estimate": 0.65,
+        "recommendation_rationale": "Shrunk from raw Poisson model output (0.75) toward 0.50 to account for small-sample uncertainty in both team rates and referee variance not captured by independent-Poisson assumption. Two independent real sources (ESPN boxscores, footystats) agree closely on BIH's rate (16.2 vs 16.33) which is reassuring, but Canada's rate rests on a single source (footystats) only."
+      },
+      "confidence": "medium - now backed by 2 independent verified real-data sources for BIH and 1 for Canada, plus an explicit probability model (Poisson difference). Up from 'low/ghost-number'.",
+      "sources_count_verified": 2
+    },
+    "135f6145-c05f-465d-b078-56f142787754": {
+      "question": "Will there be 4+ total SOT in the 2nd half?",
+      "old_stats_proxy_estimate": 0.65,
+      "old_confidence_note": "previously flagged as effectively a ghost number - traced to unsourced search-summary claims (Sofascore 'Group B opener built on numbers')",
+      "session4_real_data": {
+        "BIH_SOT_per_match": {
+          "espn_boxscore_last5_competitive": [
+            11,
+            5,
+            1,
+            4,
+            6
+          ],
+          "mean": 5.4,
+          "source": "ESPN site API per-match boxscores (fifa.worldq.uefa, VERIFIED_API, 5 matches)"
+        },
+        "CAN_SOT_per_match": {
+          "estimate": "~4.0-4.2 (inferred: footystats 11.9 shots/match x ~33-35% SOT-conversion, the ratio observed in BIH's own shots->SOT data, since no direct Canada team SOT source found)",
+          "note": "weakest link in the chain - Canada's SOT rate is inferred, not measured"
+        },
+        "combined_full_match_SOT_estimate": "9.4-9.6",
+        "half_split_assumption": "~50-55% of shots/SOT occur in the 2nd half (generic league-wide heuristic - more fatigue/open play/chasing-the-game in 2H). Attempted to get a team-specific split via ESPN commentary/playbyplay feed for the same 5 BIH matches - DEAD END: ESPN's summary endpoint for this league has no timestamped shot-event commentary (only goals carry minutes; saves/blocks/off-target attempts are not in the feed). Other providers with full shot timelines (Sofascore/FotMob/WhoScored) are the same Cloudflare-blocked sites ruled out elsewhere in this research.",
+        "model": "Poisson(lambda = combined_full_match_SOT * half_share)",
+        "model_output_range": "P(2H_SOT>=4) = 0.69-0.80 across lambda in [4.70, 5.50], center ~0.72",
+        "recommended_estimate": 0.7
+      },
+      "confidence": "medium-low - full-match SOT rate for BIH is now real (2 sources roughly agree: ESPN 5.4 vs the old unverified 6.33), Canada's SOT rate is inferred not measured, and the half-split is a generic heuristic not team-specific (confirmed dead end on getting a real split). Net: better-grounded than the old ghost number, but still has 2 soft assumptions.",
+      "sources_count_verified": 1
+    },
+    "18e552dd-4bfe-42de-84de-cddda65ee76c": {
+      "question": "At halftime, will the match be tied?",
+      "estimate_mid": 0.4568,
+      "source": "Smarkets HT result Draw (VERIFIED_API)",
+      "verified_corroboration": {
+        "pinnacle_FT_draw_proxy": 0.28,
+        "polymarket_FT_draw_proxy": 0.275,
+        "oddschecker_FT_draw_proxy": 0.27,
+        "note": "these are FULL-TIME draw probabilities (not HT), directionally useful but not a substitute - HT draws are typically MORE likely than FT draws in low-scoring games, consistent with Smarkets' HT estimate (0.457) being notably higher than the FT draw cluster (~0.27-0.28)"
+      },
+      "sources_count_verified": 1,
+      "note": "Still 1 direct HT-specific source (Smarkets). The 3 FT-draw numbers from VERIFIED sources are consistent in direction but answer a different question."
+    },
+    "c977c9c2-8f75-4349-8c17-d16f5581c6e3": {
+      "question": "Will the second half have 2+ total goals?",
+      "estimate_mid": 0.3708,
+      "source": "Smarkets 2H over 1.5 (VERIFIED_API)",
+      "verified_corroboration": {
+        "pinnacle_full_match_total": "2.25 line, Over +108 (~48% implied for the FT over) - full-match, not 2H-specific, but directionally consistent with an under-leaning game"
+      },
+      "sources_count_verified": 1
+    },
+    "fa7aef4a-0024-4fa2-935b-ec34103a7fae": {
+      "question": "Will BIH have 5+ corners?",
+      "estimate_mid": 0.265,
+      "source": "Smarkets BIH over 4.5 corners (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "note": "The previously-cited Polymarket 'combined Over/Under 11 corners' corroboration has been REMOVED - confirmed not to exist via gamma-api. This question is effectively single-sourced (Smarkets only), confirmed across 3 sessions."
+    },
+    "4764e2ed-3934-489e-89ba-c807860043bc": {
+      "question": "Will BIH score in 2nd half?",
+      "estimate_mid": 0.3689,
+      "source": "Smarkets 2H BIH over 0.5 goals (VERIFIED_API)",
+      "sources_count_verified": 1,
+      "note": "No corroborating 2nd-half team-goals market found anywhere across 3 sessions - confirmed structural gap, single-sourced."
+    },
+    "9b567f11-be28-4cc0-9dc9-a38a4a3a9d80": {
+      "question": "Will Jonathan David score?",
+      "estimate_mid": 0.3137,
+      "source": "Smarkets anytime goalscorer (VERIFIED_API)",
+      "verified_corroboration": {
+        "oddschecker_jina_anytime": 0.345,
+        "kalshi_score_or_assist_caveat": "0.33-0.41, but this is score-OR-assist (broader question, true scorer prob likely lower)"
+      },
+      "unverified_corroboration": {
+        "betfair_search_summary": 0.357,
+        "sports_interaction_search_summary": 0.4,
+        "dimers_simulation_unverified": 0.305
+      },
+      "sources_count_verified": 2,
+      "note": "Smarkets (0.294-0.333) and Oddschecker-via-jina (0.345) are both VERIFIED and tightly clustered. Kalshi's score-or-assist props are a related-but-broader market. Good confidence around 0.30-0.35."
+    },
+    "29bb38af-3c07-4c7b-a7fd-5742c6dba099": {
+      "question": "Will Edin Dzeko have 1+ SOT?",
+      "estimate_mid": 0.578,
+      "source": "Smarkets player SOT (VERIFIED_API, offer-only, no bid - illiquid)",
+      "sources_count_verified": 1,
+      "session4_real_data": {
+        "espn_boxscores_last5_BIH_matches": {
+          "vs_Italy_2026-03-31": {
+            "played": true,
+            "minutes": "90+ET (subbed 115')",
+            "shots": 3,
+            "sot": 1,
+            "fouls": 2,
+            "result": "1 SOT"
+          },
+          "vs_Wales_2026-03-26": {
+            "played": false,
+            "note": "not in matchday squad/lineup"
+          },
+          "vs_Austria_2025-11-18": {
+            "played": "unclear - no individual stats found, likely rested"
+          },
+          "vs_Romania_2025-11-15": {
+            "played": true,
+            "minutes": 90,
+            "shots": 5,
+            "sot": 1,
+            "fouls": 2,
+            "goals": 1,
+            "result": "1 SOT"
+          },
+          "vs_Cyprus_2025-10-09": {
+            "played": false,
+            "note": "not in matchday squad/lineup"
+          }
+        },
+        "footystats_campaign_totals": {
+          "matches": 9,
+          "minutes": 688,
+          "goals": 6,
+          "competition": "WC Qualification Europe 2025-26"
+        },
+        "interpretation": "In the 2 matches he actually played meaningful minutes (both 'big' fixtures - playoff final vs Italy, must-win vs Romania), he recorded exactly 1 SOT each (100% in n=2). He's being rotated/rested against weaker sides (Wales, Cyprus - both of which BIH won/drew comfortably). Given this is BIH's World Cup OPENER (highest-stakes group game), the pattern strongly suggests he starts, similar to the Italy/Romania games. His 6 goals in 9 WCQ appearances (688 min) shows he's still BIH's primary central striker and focal point.",
+        "recommended_estimate": 0.6,
+        "recommendation_rationale": "Real per-match data (n=2 meaningful appearances, both 1 SOT) is directionally consistent with and slightly supportive of the existing Smarkets 0.578 ask price. Small nudge up to 0.60 given his clear 'starts the big games' pattern and continued high involvement (6 goals/9 caps this campaign) - but n=2 is too small to move far from the market-derived number."
+      },
+      "note": "Confirmed single-sourced market across 3 sessions - no other site offers a Dzeko SOT prop specifically. One agent this session flagged an UNVERIFIED rumor that Dzeko may not be in the squad - real data above (6 goals in 9 WCQ caps this season, including the playoff final 3 weeks ago) makes that rumor look unlikely, but worth a final lineup check before submission given this market is illiquid (offer-only)."
+    },
+    "ad1e7582-0d8d-493f-8379-ad878e425d19": {
+      "question": "Penalty OR red card?",
+      "estimate": "P(A)+P(B)-P(A)P(B) using A=0.310 (penalty mid), B=0.180 (red card mid) -> ~0.434",
+      "source": "Smarkets, both components (VERIFIED_API), assumes independence",
+      "unverified_corroboration": {
+        "betfair_red_card_search_summary": 0.143,
+        "oddschecker_2plus_cards_each_team_unverified": 0.417
+      },
+      "sources_count_verified": 1,
+      "note": "Penalty component remains single-sourced (Smarkets only) across all 3 sessions and ~25 sites - confirmed structural gap for that component."
+    }
+  },
+  "post_match_results": {
+    "settled_date": "2026-06-12",
+    "final_score": "Canada 1 - 1 Bosnia-Herzegovina",
+    "total_rbp": 42.65,
+    "beat_crowd_count": "8/10",
+    "source_note": "Full narrative writeup in can_bih_research_log.md POST-MATCH RESULTS section",
+    "questions": [
+      {
+        "q": 1,
+        "question": "BIH fouls > Canada",
+        "category": "tier2_realdata",
+        "us": 0.67,
+        "crowd": 0.64,
+        "outcome": 1,
+        "rbp": 5.08
+      },
+      {
+        "q": 2,
+        "question": "4+ 2H total SOT",
+        "category": "tier2_realdata",
+        "us": 0.7,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": 11.76
+      },
+      {
+        "q": 3,
+        "question": "Penalty OR red card",
+        "category": "compound_market_proxy",
+        "us": 0.43,
+        "crowd": 0.41,
+        "outcome": 0,
+        "rbp": 2.8
+      },
+      {
+        "q": 4,
+        "question": "Canada win",
+        "category": "match_winner_internal_model",
+        "us": 0.75,
+        "crowd": 0.62,
+        "outcome": 0,
+        "rbp": -14.53
+      },
+      {
+        "q": 5,
+        "question": "HT tied",
+        "category": "tier1_market",
+        "us": 0.46,
+        "crowd": 0.47,
+        "outcome": 0,
+        "rbp": 3.86
+      },
+      {
+        "q": 6,
+        "question": "2H 2+ goals",
+        "category": "tier1_market",
+        "us": 0.37,
+        "crowd": 0.38,
+        "outcome": 0,
+        "rbp": 4.47
+      },
+      {
+        "q": 7,
+        "question": "BIH 5+ corners",
+        "category": "stats_proxy",
+        "us": 0.27,
+        "crowd": 0.36,
+        "outcome": 0,
+        "rbp": 9.46
+      },
+      {
+        "q": 8,
+        "question": "Jonathan David scores",
+        "category": "tier1_market",
+        "us": 0.33,
+        "crowd": 0.38,
+        "outcome": 0,
+        "rbp": 6.88
+      },
+      {
+        "q": 9,
+        "question": "Dzeko 1+ SOT",
+        "category": "tier2_realdata",
+        "us": 0.6,
+        "crowd": 0.58,
+        "outcome": 0,
+        "rbp": 2.89
+      },
+      {
+        "q": 10,
+        "question": "BIH score in 2H",
+        "category": "tier1_market",
+        "us": 0.37,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 9.98
+      }
+    ]
+  }
+}

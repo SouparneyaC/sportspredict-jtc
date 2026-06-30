@@ -1,0 +1,247 @@
+{
+  "match": "South Africa vs South Korea",
+  "date": "2026-06-24",
+  "group": "Group A — GD3",
+  "venue": "Estadio BBVA, Monterrey",
+  "kickoff": "9:00 PM ET (simultaneous with CZE-MEX)",
+  "source_url": "https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=d6eae6b4-74f1-469b-8d4c-25c01622a272",
+
+  "model_inputs": {
+    "rsa_elo": 1663.3169,
+    "kor_elo": 1879.9769,
+    "elo_diff_rsa_minus_kor": -216.66,
+    "lambda_rsa": 0.7497,
+    "lambda_kor": 1.6425,
+    "lambda_total": 2.3922,
+    "p_rsa_win": 0.1569,
+    "p_draw": 0.2550,
+    "p_kor_win": 0.5881,
+    "p_btts": 0.4254,
+    "p_btts_and_3plus": 0.3128,
+    "p_3plus_goals": 0.4282,
+    "p_4plus_goals": 0.2196,
+    "p_rsa_2h_scores": 0.3126,
+    "p_kor_2h_scores": 0.5601,
+    "p_kor_more_corners": 0.8206,
+    "p_kor_2plus_offside_proxy": 0.8714,
+    "p_kor_more_2h_sot": 0.8438,
+    "p_rsa_more_2h_sot": 0.1562,
+    "lambda_rsa_sot": 2.249,
+    "lambda_kor_sot": 4.928,
+    "lambda_son_sot_proxy": 1.872,
+    "p_son_1plus_sot_model": 0.8463,
+    "lambda_appollis_sot_proxy": 0.495,
+    "p_appollis_1plus_sot_model": 0.3903,
+    "p_rsa_3plus_sot": 0.3904,
+    "p_ht_tied": 0.4029,
+    "p_ht_00": 0.3024,
+    "p_ht_11": 0.0931
+  },
+
+  "group_context": {
+    "standings_after_gd2": {
+      "Mexico": {"pts": 6, "status": "QUALIFIED"},
+      "South_Korea": {"pts": 3, "status": "DRAW OR WIN = safe advance to 2nd. Even loss = may advance as 3rd."},
+      "Czechia": {"pts": 1, "status": "needs win vs MEX"},
+      "South_Africa": {"pts": 1, "gd": "-2", "status": "MUST WIN + need CZE to not win OR win by larger margin"}
+    },
+    "qualification_math": {
+      "South_Korea": "A DRAW advances them to 2nd place (guaranteed). Win = 1st in group (ahead on GD). They do NOT need to win.",
+      "South_Africa": "Must win. AND need CZE to drop points, OR win by bigger margin than CZE."
+    }
+  },
+
+  "gd_evidence": {
+    "rsa_gd1_vs_mex": {
+      "score": "RSA 0-2 MEX",
+      "conceded": "9' (Quinones), 67' (Jimenez)",
+      "mex_shots": 16, "mex_sot": 4,
+      "mex_corners": 3, "rsa_corners": 1,
+      "rsa_yellow_cards": "Mokoena 17', Sibisi 74'",
+      "rsa_red_cards": "Sithole 49', Zwane 84' (RSA played 9 men from 49')",
+      "note": "RSA stats heavily distorted by going to 9 men at 49'"
+    },
+    "rsa_gd2_vs_cze": {
+      "score": "RSA 1-1 CZE",
+      "rsa_shots": 17, "rsa_sot": 4, "rsa_possession": "68%",
+      "rsa_goal": "Mokoena pen 83'",
+      "conceded": "Sadílek 6'",
+      "rsa_cards": "Mokoena Y 33', Mbatha Y 40'",
+      "note": "RSA DOMINATED possession (68%) and shots (17), scored late. Better than Elo suggests."
+    },
+    "kor_gd1_vs_cze": {
+      "score": "KOR 2-1 CZE",
+      "kor_shots": 15, "kor_sot": 6,
+      "goals": "Hwang In-beom 67', Oh Hyeon-gyu 80'",
+      "son_stats": "69 minutes, 6 shots, 1 SOT (SOT = YES, but only 1 in 69 min)"
+    },
+    "kor_gd2_vs_mex": {
+      "score": "KOR 0-1 MEX",
+      "kor_possession": "58%", "kor_xg": 0.67, "mex_xg": 0.48,
+      "goal_conceded": "Romo 50' (GK error)",
+      "lee_kangIn_card": "4' (Y)", "paik_seungho_card": "58' (Y)",
+      "son_stats": "subbed 57', 0 goals, 0 assists",
+      "note": "Korea dominated but lost. GK error cost them. Son substituted - possible precaution."
+    }
+  },
+
+  "key_players": {
+    "Son_Heung_min": {
+      "club": "Los Angeles FC (MLS)",
+      "mls_2025_26": "0 goals, 9 assists in 13 appearances (deeper role)",
+      "wc2026_gd1_vs_cze": {"minutes": 69, "shots": 6, "sot": 1, "goals": 0},
+      "wc2026_gd2_vs_mex": {"minutes": 57, "shots_confirmed": false, "goals": 0, "note": "subbed off, possible precautionary rest"},
+      "expected_gd3": "STARTING, expected full 90 — chasing WC goals (56 int'l, 2 from all-time KOR record)",
+      "rule15_applies": false,
+      "rule15_note": "KOR is the DOMINANT team (58.8% win) — no forward suppression applies"
+    },
+    "Oswin_Appollis": {
+      "club": "Orlando Pirates (PSL, South Africa)",
+      "position": "Left winger",
+      "age": 24,
+      "club_2025_26": "11 goals, 9 assists across all competitions",
+      "wc2026_starts": "GD1 and GD2 (both confirmed)",
+      "wc2026_sot": "not confirmed from available sources",
+      "expected_gd3": "STARTING — primary attacking outlet for RSA",
+      "rule15_note": "RSA at 15.7% win (borderline RULE7) — mild suppression applied"
+    },
+    "Teboho_Mokoena": {
+      "status": "SUSPENDED — 2nd yellow in GD2. Critical loss for RSA midfield (their DM/engine)."
+    },
+    "Themba_Zwane": {
+      "status": "SUSPENDED — red card in GD1. Another creative/attack player missing."
+    },
+    "Lee_Kang_in": {
+      "club": "PSG",
+      "yellow_cards": 1,
+      "note": "On 1 yellow — caution risk with Tello refereeing"
+    },
+    "Kim_Min_jae": {
+      "club": "Bayern Munich",
+      "note": "KOR's CB anchor — excellent defensive reading"
+    }
+  },
+
+  "referee": {
+    "name": "Facundo Tello",
+    "nationality": "Argentina",
+    "card_rate_note": "HIGH CARD RATE — infamous for refereeing 10-red-card Boca vs Racing Champions Trophy Final",
+    "impact": "Elevate card-related questions. Q2 (KOR card 2H) gets Tello uplift."
+  },
+
+  "rules_applied": {
+    "RULE8": "FIRES (barely) — draw 25.50% ≥ 25%. Mild shrink of extreme attacking props. Less aggressive than CZE-MEX since draw is barely over threshold.",
+    "RULE7": "Does NOT fire — RSA 15.69% > 15%. Borderline. Monitor.",
+    "RULE15": "Does NOT fully fire for Appollis (RSA 15.69% > 15%). Mild near-RULE15 applied.",
+    "RULE15_SON": "DOES NOT APPLY — Son plays for the EXPECTED WINNER (KOR 58.8%). Dominant team forward = no suppression.",
+    "RULE_FOULS": "RSA is underdog, defends → fouls more. MODERATED: Mokoena (main DM/fouler) SUSPENDED.",
+    "TELLO_EFFECT": "High-card referee. Elevates P(cards) for Q2. Tello is likely to show cards in tense physical RSA defending vs KOR attackers.",
+    "RSA_SUSPENSIONS": "Mokoena + Zwane both OUT. Weakens RSA midfield and attack. Reduces: BTTS probability, RSA fouls (Mokoena was their main fouler), RSA 3+ SOT slightly."
+  },
+
+  "crowd_formula": "crowd ≈ 0.514 + 0.61 × (us - 0.5)",
+
+  "pre_match_estimates": {
+    "Q1": {
+      "question": "Will South Korea be caught offside 2 or more times?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_est": 0.64,
+      "edge": "+0.06",
+      "rationale": "Model 0.871, RULE8 mild. KOR was highly active in GD1 (15 shots, 6 SOT). RSA midfield depleted (Mokoena/Zwane suspended) → KOR runs freely. KOR plays high line = offsides come from quick runs."
+    },
+    "Q2": {
+      "question": "Will South Korea receive at least 1 card in the second half?",
+      "estimate": 0.52,
+      "direction": "YES_LEAN",
+      "crowd_est": 0.53,
+      "edge": "-0.01",
+      "rationale": "Facundo Tello = high-card referee. Lee Kang-in on 1 yellow (caution risk). RSA's physical desperate defending will draw KOR fouls. But KOR only needs a draw = might not take risks. Near coin-flip.",
+      "warning": "Very small crowd edge. Tello uplift justifies YES_LEAN."
+    },
+    "Q3": {
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "estimate": 0.30,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.39,
+      "edge": "-0.09",
+      "rationale": "Model 0.313, RULE8. RSA missing Mokoena/Zwane weakens their attack. KOR defense (Kim Min-jae) is excellent. RSA had 4 SOT in GD2 but against much weaker CZE. BEST EDGE in RSA-KOR."
+    },
+    "Q4": {
+      "question": "Will South Korea have more shots on target than South Africa in the second half?",
+      "estimate": 0.72,
+      "direction": "YES",
+      "crowd_est": 0.65,
+      "edge": "+0.07",
+      "rationale": "Model 0.844. KOR much stronger, Son playing full 90. RSA without key midfielders — less creative threat. KOR will dominate 2H even if score is level (they hold to secure draw = less desperate pressing). Strong YES."
+    },
+    "Q5": {
+      "question": "Will South Africa commit more fouls than South Korea?",
+      "estimate": 0.60,
+      "direction": "YES",
+      "crowd_est": 0.57,
+      "edge": "+0.03",
+      "rationale": "RULE_FOULS: RSA is underdog (15.7%), defends → fouls more. MODERATED from 0.65 because Mokoena (their main DM/fouler) is suspended. RSA GD2 had 68% possession — they can attack too."
+    },
+    "Q6": {
+      "question": "At halftime, will the match be tied?",
+      "estimate": 0.40,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.45,
+      "edge": "-0.05",
+      "rationale": "Model HT-tie P=0.403 (P(0-0)=0.302, P(1-1)=0.093). KOR more likely to score early with RSA's depleted midfield. Slightly below model. RULE8 mild pushes toward draw family."
+    },
+    "Q7": {
+      "question": "Will South Africa have 3 or more shots on target?",
+      "estimate": 0.40,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.45,
+      "edge": "-0.05",
+      "rationale": "Model 0.390. RSA had 4 SOT in GD2 vs CZE (they CAN do 3+, even exceeded it). Must-win = aggressive attack. But Mokoena/Zwane absent weakens creative output. Near-model estimate."
+    },
+    "Q8": {
+      "question": "Will Oswin Appollis have at least 1 shot on target?",
+      "estimate": 0.38,
+      "direction": "NO_LEAN",
+      "crowd_est": 0.44,
+      "edge": "-0.06",
+      "rationale": "Model 0.390. Primary RSA wide attacker, must-win = gets forward. BUT: RSA at 15.7% win (near RULE15), KOR defense is excellent. Club form good (11G+9A). No confirmed WC SOT data."
+    },
+    "Q9": {
+      "question": "Will Son Heung-min have at least 1 shot on target?",
+      "estimate": 0.72,
+      "direction": "YES",
+      "crowd_est": 0.65,
+      "edge": "+0.07",
+      "rationale": "Model 0.846. GD1 vs CZE: 6 shots, 1 SOT in 69 min (YES outcome). Expected full 90 today vs much weaker RSA (missing Mokoena/Zwane). RULE15 does NOT apply (KOR is the dominant team). Son chasing WC record goals."
+    }
+  },
+
+  "post_match_results": {
+    "final_score": "South Africa 1-0 South Korea",
+    "total_rbp": -39.56,
+    "beat_crowd_count": "3/10",
+    "platform_note": "Platform renumbered Q6-Q10 from our JSON order. Our Q10 (RSA win) was platform Q6; our Q6-Q9 shifted to platform Q7-Q10. Results mapped back to our original question numbering.",
+    "question_results": {
+      "Q1": {"question": "KOR 2+ offsides", "our_estimate": 0.70, "crowd_estimate": 0.52, "outcome": 0, "rbp": -19.17, "beat_crowd": false},
+      "Q2": {"question": "KOR card in 2H", "our_estimate": 0.52, "crowd_estimate": 0.55, "outcome": 1, "rbp": -0.70, "beat_crowd": false},
+      "Q3": {"question": "BTTS AND 3+ goals", "our_estimate": 0.30, "crowd_estimate": 0.35, "outcome": 0, "rbp": 5.66, "beat_crowd": true},
+      "Q4": {"question": "KOR more 2H SOT than RSA", "our_estimate": 0.72, "crowd_estimate": 0.60, "outcome": 1, "rbp": 10.81, "beat_crowd": true},
+      "Q5": {"question": "RSA more fouls than KOR", "our_estimate": 0.60, "crowd_estimate": 0.57, "outcome": 0, "rbp": -1.77, "beat_crowd": false},
+      "Q6": {"question": "HT tied", "our_estimate": 0.40, "crowd_estimate": 0.43, "outcome": 1, "rbp": -2.18, "beat_crowd": false},
+      "Q7": {"question": "RSA 3+ SOT", "our_estimate": 0.40, "crowd_estimate": 0.52, "outcome": 1, "rbp": -10.69, "beat_crowd": false},
+      "Q8": {"question": "Appollis 1+ SOT", "our_estimate": 0.38, "crowd_estimate": 0.40, "outcome": 1, "rbp": 0.29, "beat_crowd": true},
+      "Q9": {"question": "Son 1+ SOT", "our_estimate": 0.72, "crowd_estimate": 0.56, "outcome": 0, "rbp": -16.33, "beat_crowd": false},
+      "Q10": {"question": "South Africa win the match", "our_estimate": 0.17, "crowd_estimate": 0.22, "outcome": 1, "rbp": -5.47, "beat_crowd": false}
+    },
+    "key_learnings": [
+      "RSA 1-0 KOR — MASSIVE UPSET. Model had RSA at 15.7% win. Mokoena+Zwane both suspended. RSA still won. Once-in-a-tournament underdog result. Our 0.17 estimate was the correct approach (closest credible YES answer) but still a large loss (-5.47).",
+      "Son SOT (Q9) = NO — Son in a DOMINANT team context (58.8% win probability) still went 0 SOT. This extends the Son-SOT-0 pattern to even non-RULE15 contexts. RSA's desperate defending (even without Mokoena) shut down Son entirely. NEW OBSERVATION: Son's 6-shots/1-SOT conversion rate in GD1 suggested shot-quality issues. Consider lowering Son SOT estimates systematically.",
+      "KOR 2+ offsides (Q1) = NO — our 0.70 was very wrong (-19.17 RBP). KOR was the dominant team but apparently didn't get caught offside 2+ times. In retrospect, RSA's low block defending (not a high line) reduces offside trap opportunities. Dominant team running into a deep defensive block ≠ high offside count.",
+      "RSA 3+ SOT (Q7) = YES — despite suspensions, RSA had 3+ shots on target in a match they WON. They needed to attack to win; the desperation + must-win context drove their shot volume. Our 0.40 was too low vs the must-win context.",
+      "RSA more fouls (Q5) = NO — Mokoena's absence plus RSA's winning possession may have meant KOR fouled more while chasing. RULE_FOULS fired but was wrong. When RSA ended up CONTROLLING the match (given they won), the foul-more-underdog prior inverted.",
+      "BTTS NO confirmed (Q3) — KOR scored 0 goals. Our 0.30 estimate was correct direction. RSA defensive solidity (despite depleted midfield) denied KOR. Best result of the match (+5.66).",
+      "HT tied = YES (Q6) — the 1-0 final score suggests RSA scored in 2H (or at end of 1H). Match was 0-0 at HT, consistent with a late RSA winner."
+    ]
+  }
+}

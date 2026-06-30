@@ -1,0 +1,118 @@
+{
+  "match": "GER-CUR",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "2267a04a-4b5e-4452-b300-610b20e3c863",
+  "sportspredict_market_id": "52212b40-84b3-453f-a8df-edfd10cc7ba8",
+  "smarkets_event_id": "44754848",
+  "closing_time": "2026-06-14T19:30:00.000Z",
+  "context_note": "Germany vs Curacao - one of the most lopsided fixtures of the group stage (Curacao is the smallest-population nation ever to qualify for a World Cup, debuting via CONCACAF). Smarkets prices Germany at ~94.6% to win.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "endpoint": "api.smarkets.com/v3/markets/{id}/quotes?contract_ids=...",
+      "method": "mid-price = avg(best_bid, best_offer) per contract (1/100ths of a percent), vig-removed via normalization across all contracts in a market",
+      "markets_used": {
+        "full_time_result": {"Germany": 0.9459, "Draw": 0.0350, "Curacao": 0.0191},
+        "most_cards": {"Germany": 0.1685, "Draw": 0.2433, "Curacao": 0.5882},
+        "total_goals_over_under_2.5": {"Under2.5": 0.1591, "Over2.5": 0.8409},
+        "second_half_over_under_1.5": {"Under1.5": 0.3257, "Over1.5": 0.6743},
+        "leandro_bacuna_1plus_sot": {"price": 0.2222, "note": "offer-only, no bid (illiquid)"}
+      },
+      "no_market_exists_for": ["team fouls (either direction)", "team offsides (either direction)", "team SOT by half or full match"]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "endpoint": "site.api.espn.com/apis/site/v2/sports/soccer/{league}/summary?event={id}",
+      "file": "ger_cur_wc2026_raw.jsonl",
+      "germany_n8": {
+        "matches": ["USA(A) 2026-06-06","Finland(H) 2026-05-31","Ghana(H) 2026-03-30","Switzerland(A) 2026-03-27","Slovakia(H) 2025-11-17","Luxembourg(H) 2025-11-14","N.Ireland(A) 2025-10-13","Luxembourg(A) 2025-10-10"],
+        "avg_fouls": 10.875,
+        "avg_offsides": 1.5,
+        "avg_sot_full": 7.25,
+        "avg_cards": 1.25
+      },
+      "curacao_n3": {
+        "matches": ["Scotland(A) 2026-05-30","Australia(A) 2026-03-31","China(A) 2026-03-27"],
+        "note": "Most recent pre-WC tune-up friendlies vs varied opposition. 4th friendly (vs Aruba) and 4 CONCACAF WCQ matches were in ESPN schedule but returned empty boxscore.statistics - excluded.",
+        "avg_fouls": 10.0,
+        "avg_offsides": 1.333,
+        "avg_sot_full": 2.667,
+        "avg_cards": 1.667
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_curacao_more_fouls_than_germany": {
+      "category": "tier2_realdata",
+      "method": "Skellam normal approx on per-match foul rates (n=8 GER, n=3 CUR): raw P=0.42 (CUR avg fouls 10.0 < GER avg 10.875). BLENDED UP toward 0.48: QAT-SUI Q6 ('Qatar more fouls than Switzerland', a similar huge-underdog-vs-favorite question) had outcome=YES and crowd (0.64) beat our reversed model (0.46) - the underdog-defends-deep-and-fouls-more pattern was real there, and Curacao's n=3 sample (vs Scotland/Australia/China) doesn't capture the game-state of being THIS outclassed.",
+      "raw_skellam": 0.4241,
+      "recommended_estimate": 0.48
+    },
+    "q2_curacao_offsides_2plus": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson, Curacao offsides n=3 (0,3,1), lambda=1.333, P(X>=2)=1-e^-lambda(1+lambda)",
+      "recommended_estimate": 0.38
+    },
+    "q3_germany_more_2h_sot_than_curacao": {
+      "category": "tier2_realdata",
+      "method": "Skellam on 2H-scaled SOT (lambda=full/2): GER 2H lambda=3.625, CUR 2H lambda=1.333. Largest gap of any question - reflects the scale of the SOT differential (7.25 vs 2.67 full-match average).",
+      "raw_skellam": 0.8483,
+      "recommended_estimate": 0.83
+    },
+    "q4_curacao_more_cards_than_germany": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Most cards' market, vig-adjusted (Curacao 58.82%). Undeviated per RULE2 - our most consistent category (+5.00 avg, 85% correct side over 13 questions).",
+      "recommended_estimate": 0.59
+    },
+    "q5_germany_offsides_2plus": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson, Germany offsides n=8, lambda=1.5, P(X>=2)=1-e^-lambda(1+lambda). Same structure and nearly identical value (0.43) to BRA-MAR Q1 (Brazil 2+ offsides vs Morocco's deep defense), which was our biggest win of that match (+20.36) - reinforces using the raw first-pass number unshaded.",
+      "raw_poisson": 0.4422,
+      "recommended_estimate": 0.43
+    },
+    "q6_germany_win": {
+      "category": "tier1_market (match-winner)",
+      "method": "RULE1 (avg(crowd,market)) cannot be computed pre-match (crowd unobservable). Smarkets full-time-result market = 94.59% Germany, vig-adjusted - itself an extreme but genuinely liquid sharp-market price reflecting a real talent gap (Curacao is the smallest-population WC debutant ever). RULE6 (never submit 0%/100%, cap ~90-95%) is naturally satisfied by submitting the market price undeviated - no need for an artificial cap below it. Treating as tier1_market undeviated (our most proven category) rather than a 'gut' number.",
+      "recommended_estimate": 0.94
+    },
+    "q7_total_goals_2_or_fewer": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets Under 2.5 goals market, vig-adjusted (15.91%). Undeviated.",
+      "recommended_estimate": 0.16
+    },
+    "q8_2h_total_goals_2plus": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 2H Over 1.5 goals market, vig-adjusted (67.43%). Undeviated.",
+      "recommended_estimate": 0.67
+    },
+    "q9_curacao_3plus_sot": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson, Curacao SOT n=3, lambda=2.667, raw P(X>=3)=0.498. Shaded DOWN to 0.42: this is a MECHANICAL adjustment (less possession/fewer total touches vs a team that dominates the ball even more than Scotland/Australia/China did), not a vague morale narrative - similar in kind to the USA-PAR Enciso exception (verified, match-specific factor affecting shot SUPPLY).",
+      "raw_poisson": 0.4982,
+      "recommended_estimate": 0.42
+    },
+    "q10_bacuna_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets player-SOT market, Leandro Bacuna 1+ SOT offer=22.22% (no bid, illiquid). Submitted close to but slightly below the one-sided offer per usual practice on illiquid quotes.",
+      "recommended_estimate": 0.21
+    }
+  },
+  "post_match_results": {
+    "final_score": "Germany 7 - 1 Curacao",
+    "total_rbp": 72.47,
+    "beat_crowd_count": "9/10",
+    "questions": [
+      {"q": 1, "leaderboard_question": "Will Curacao be caught offside 2 or more times?", "maps_to": "q2_curacao_offsides_2plus", "us": 0.38, "crowd": 0.39, "outcome": 0, "rbp": 5.05, "category": "tier2_realdata"},
+      {"q": 2, "leaderboard_question": "In the second half, will Germany have more shots on target than Curacao?", "maps_to": "q3_germany_more_2h_sot_than_curacao", "us": 0.83, "crowd": 0.84, "outcome": 1, "rbp": 1.77, "category": "tier2_realdata"},
+      {"q": 3, "leaderboard_question": "Will Curacao commit more fouls than Germany?", "maps_to": "q1_curacao_more_fouls_than_germany", "us": 0.48, "crowd": 0.66, "outcome": 0, "rbp": 23.36, "category": "tier2_realdata"},
+      {"q": 4, "leaderboard_question": "Will Curacao receive more cards than Germany?", "maps_to": "q4_curacao_more_cards_than_germany", "us": 0.59, "crowd": 0.61, "outcome": 0, "rbp": 4.85, "category": "tier1_market"},
+      {"q": 5, "leaderboard_question": "Will Germany be caught offside 2 or more times?", "maps_to": "q5_germany_offsides_2plus", "us": 0.43, "crowd": 0.54, "outcome": 0, "rbp": 13.79, "category": "tier2_realdata"},
+      {"q": 6, "leaderboard_question": "Will Germany win the match?", "maps_to": "q6_germany_win", "us": 0.94, "crowd": 0.92, "outcome": 1, "rbp": 1.64, "category": "match_winner_deferred_market"},
+      {"q": 7, "leaderboard_question": "Will the match have 2 or fewer total goals?", "maps_to": "q7_total_goals_2_or_fewer", "us": 0.16, "crowd": 0.25, "outcome": 0, "rbp": 7.17, "category": "tier1_market"},
+      {"q": 8, "leaderboard_question": "Will the second half have 2 or more total goals?", "maps_to": "q8_2h_total_goals_2plus", "us": 0.67, "crowd": 0.60, "outcome": 1, "rbp": 8.19, "category": "tier1_market"},
+      {"q": 9, "leaderboard_question": "Will Curacao have 3 or more shots on target?", "maps_to": "q9_curacao_3plus_sot", "us": 0.42, "crowd": 0.32, "outcome": 0, "rbp": -3.11, "category": "tier2_realdata", "note": "our only loss this match - crowd was MORE bearish on Curacao than our mechanically-shaded 0.42 (raw 0.498), and crowd was right. In a blowout-favorite scenario, underdog-offense props may need an even larger shade than a single mechanical adjustment captures."},
+      {"q": 10, "leaderboard_question": "Will Leandro Bacuna have at least 1 shot on target?", "maps_to": "q10_bacuna_1plus_sot", "us": 0.21, "crowd": 0.32, "outcome": 0, "rbp": 9.76, "category": "tier1_market"}
+    ],
+    "summary": "Best match yet by a wide margin: +72.47 RBP, 9/10 beat crowd, all 10 submissions matched the researched recommendation exactly (zero gut overrides). Germany won 7-1, an even MORE dominant result than the already-lopsided 94.6% market price implied. Every 'Curacao does X' question resolved NO and every 'Germany dominates / high-scoring' question resolved YES - exactly the direction both the verified Smarkets market and our tier2_realdata first-pass models leaned. Crowd was systematically more bullish on Curacao than us on 5/6 props (Q1,Q3,Q4,Q5,Q10) and lost on all of them; the lone exception (Q9) is where crowd was MORE bearish on Curacao than us and crowd won. Full postmortem: MATCH_LOG.md 'GER vs CUR postmortem' section."
+  }
+}

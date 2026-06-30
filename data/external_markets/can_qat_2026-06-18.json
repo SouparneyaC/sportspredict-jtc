@@ -1,0 +1,499 @@
+{
+  "match": "CAN-QAT",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "c7a4c58a-f8ca-41b1-a2ec-0d95757c152c",
+  "smarkets_event_id": "45042835",
+  "espn_event_id": "760440",
+  "kickoff_utc": "2026-06-18T22:00:00Z",
+  "context_note": "Canada vs Qatar, WC2026 Group B, Round 2 (BC Place, Vancouver). Canada drew 1-1 vs BIH in R1, Qatar drew 1-1 vs SUI in R1. Canada heavy favorite at home (FTR 76.63%). Qatar 7.55% win prob. Canada needs a win to advance comfortably. Referee: Juan Benitez (PAR) - CONMEBOL ref, assumed average card rate (~3.5 YC/game) without specific stats. Both lineups confirmed starting: David (CAN), Afif (QAT).",
+  "referee": {
+    "name": "Juan Benitez",
+    "nationality": "Paraguay (CONMEBOL)",
+    "confirmed": true,
+    "card_rate": "assumed avg ~3.5 YC/game (no specific data available - worldfootball.net Cloudflare blocked)",
+    "note": "CONMEBOL refs at WC tend to be average in terms of card issuance. No upward or downward adjustment applied to card estimates."
+  },
+  "confirmed_lineups": {
+    "canada_xi": [
+      "Cr\u00e9peau (G)",
+      "Johnston (D)",
+      "Cornelius (D)",
+      "De Fougerolles (D)",
+      "Laryea (D)",
+      "Ali Ahmed (M)",
+      "Buchanan (M)",
+      "Eust\u00e1quio (M)",
+      "Kon\u00e9 (M)",
+      "Larin (F)",
+      "David (F)"
+    ],
+    "qatar_xi": [
+      "Abunada (G)",
+      "Homam Ahmed (D)",
+      "Al-Oui (D)",
+      "Pedro Miguel (D)",
+      "Khoukhi (D)",
+      "Jassem Gaber (M)",
+      "Madibo (M)",
+      "Issa Laye (M)",
+      "Yusuf Abdurisag (F)",
+      "Edm\u00edlson Junior (F)",
+      "Akram Afif (F)"
+    ]
+  },
+  "sources": {
+    "espn_canada_wc2026r1": {
+      "event_id": 760416,
+      "opponent": "Bosnia (N, Vancouver)",
+      "date": "2026-06-12",
+      "fouls": 10,
+      "sot": 4,
+      "shots": 13,
+      "poss_pct": 61.1,
+      "offsides": 1,
+      "corners": 9,
+      "yc": 2,
+      "rc": 0,
+      "result": "1-1"
+    },
+    "espn_qatar_wc2026r1": {
+      "event_id": 760420,
+      "opponent": "Switzerland (N)",
+      "date": "2026-06-13",
+      "fouls": 12,
+      "sot": 3,
+      "shots": 6,
+      "poss_pct": 32,
+      "offsides": 0,
+      "corners": 3,
+      "yc": 2,
+      "rc": 0,
+      "result": "1-1"
+    },
+    "espn_qatar_historical": {
+      "wc2022_n3_avg_fouls": 10.33,
+      "wc2022_n3_avg_sot": 2.0,
+      "afc2024_n7_avg_fouls": 12.7,
+      "afc2024_n7_avg_sot": 4.7,
+      "pre_wc_2026_n2_avg_fouls": 13.0,
+      "pre_wc_2026_n2_avg_sot": 1.0,
+      "blended_tournament_avg_fouls": 11.8,
+      "blended_vs_strong_opps_sot": 1.6,
+      "note": "Qatar vs strong opposition (n=5: El Salvador, Ireland, Ecuador, Senegal, Netherlands): avg SOT=1.6, 2H SOT avg=1.2. In WC2026 R1 vs SUI: 3 SOT (better than avg vs strong). 373 scoreless minutes context but they DID score vs SUI."
+    },
+    "canada_fouls_historical": {
+      "footystats_n10_avg": 12.2,
+      "footystats_home_avg": 10.75,
+      "wc2026r1_fouls": 10,
+      "tournament_context_estimate": 10.5,
+      "note": "Canada plays at home (BC Place). Home context suggests ~10-11 fouls/match. WC2026 R1 confirms 10 fouls vs Bosnia."
+    },
+    "smarkets_live_quotes": {
+      "fetched_utc": "2026-06-18 pre-match",
+      "FTR": {
+        "Canada": 0.7663,
+        "Draw": 0.1614,
+        "Qatar": 0.0755
+      },
+      "OU2.5": {
+        "Over": 0.5781,
+        "Under": 0.4239
+      },
+      "OU1.5": {
+        "Over": 0.81,
+        "Under": 0.1926
+      },
+      "BTTS": {
+        "Yes": 0.4406,
+        "No": 0.5635
+      },
+      "Penalty": {
+        "Yes": 0.2914,
+        "No": 0.7122
+      },
+      "HT_result": {
+        "Canada": 0.5848,
+        "Draw": 0.3328,
+        "Qatar": 0.0935
+      },
+      "1H_AH_CAN_minus0.5": {
+        "Canada": 0.563,
+        "Qatar": 0.4381
+      },
+      "1H_OU1.5": {
+        "Over": 0.3891,
+        "Under": 0.6155
+      },
+      "2H_result": {
+        "Canada": 0.5962,
+        "Draw": 0.2939,
+        "Qatar": 0.1026
+      },
+      "2H_OU1.5": {
+        "Over": 0.4923,
+        "Under": 0.5022
+      },
+      "2H_OU0.5": {
+        "Over": 0.817,
+        "Under": 0.1827
+      },
+      "2H_CAN_OU0.5_goals": {
+        "Over": 0.7256,
+        "lambda_derived": 1.294
+      },
+      "2H_QAT_OU0.5_goals": {
+        "Over": 0.3117,
+        "lambda_derived": 0.373
+      },
+      "Cards_OU1.5": {
+        "Over": 0.8301,
+        "lambda_cards_implied": "~2.5-3.0"
+      },
+      "Cards_OU2.5": {
+        "Over": 0.626,
+        "lambda_cards_implied": "~3.2"
+      },
+      "Most_cards": {
+        "Qatar": 0.5392,
+        "Draw": 0.235,
+        "Canada": 0.2175
+      },
+      "AH_CAN_minus0.5": {
+        "Canada": 0.758,
+        "Qatar": 0.2413
+      },
+      "QAT_corners_OU3.5": {
+        "Over": 0.2445,
+        "Under": 0.7452
+      },
+      "QAT_corners_OU4.5": {
+        "Over": 0.1338,
+        "Under": 0.8627
+      },
+      "CAN_SOT_OU4.5": {
+        "Over": 0.7466,
+        "Under": 0.2608
+      },
+      "QAT_SOT_OU2.5": {
+        "Over": 0.4647,
+        "Under": 0.5463
+      },
+      "PlayerSOT_0.5plus": {
+        "Jonathan_David": {
+          "mid": 0.684,
+          "liquid": true
+        },
+        "Cyle_Larin": {
+          "mid": 0.6365,
+          "liquid": true
+        },
+        "Akram_Afif": {
+          "mid": 0.2899,
+          "liquid": true
+        },
+        "Tajon_Buchanan": {
+          "mid": 0.4811,
+          "liquid": true
+        },
+        "Ismail_Kone": {
+          "mid": 0.3538,
+          "liquid": true
+        },
+        "Edmilson_Junior": {
+          "mid": 0.2282,
+          "liquid": true
+        },
+        "Stephan_Eustaquio": {
+          "mid": 0.2358,
+          "liquid": true
+        },
+        "Yusuf_Abdurisag": {
+          "mid": 0.2481,
+          "liquid": true
+        }
+      }
+    }
+  },
+  "question_analysis": {
+    "Q1": {
+      "question": "Will Qatar commit more fouls than Canada?",
+      "category": "tier2_realdata",
+      "method": "Skellam: \u03bb_QAT=11.8 (blended tournament avg: WC2026 R1=12, WC2022=10.33, AFC2024=12.7), \u03bb_CAN=10.5 (tournament context: WC2026 R1=10 fouls, footystats home avg=10.75). Skellam mean difference=1.3 \u2192 P(QAT>CAN) \u2248 0.59. Market cross-check: Smarkets Most Cards = Qatar 53.92% vs Canada 21.75% (1:2.5 ratio strongly signals Qatar more aggressive/physical). Qatar as heavy underdog (7.55% win prob) will sit deep and foul more to disrupt Canada's high-possession game. Similar to CAN-BIH where BIH (20 fouls) > CAN (10 fouls). Slight upward shade for heavy underdog foul inflation.",
+      "lambda_qat": 11.8,
+      "lambda_can": 10.5,
+      "skellam_raw": 0.59,
+      "market_card_support": "Qatar 53.92% most cards vs Canada 21.75%",
+      "rule_check": "RULE8 fires minimally (draw 16.14%, low) - no shrinkage needed toward 50%",
+      "recommended_estimate": 0.6,
+      "crowd_pred": 0.575
+    },
+    "Q2": {
+      "question": "Will there be 4 or more total shots on target in the second half?",
+      "category": "tier2_realdata_plus_market_anchor",
+      "method": "Poisson compound: \u03bb_CAN_SOT_full\u22486.5 (from CAN SOT OU4.5 = 74.66% over \u2192 Poisson solve), \u03bb_CAN_SOT_2H = 6.5\u00d70.50 = 3.25. \u03bb_QAT_SOT_full\u22482.5 (from QAT SOT OU2.5 = 46.47% over \u2192 Poisson: \u03bb\u22482.55), \u03bb_QAT_SOT_2H = 2.55\u00d70.50 = 1.275. Combined 2H \u03bb = 3.25+1.275 = 4.525. P(X\u22654, \u03bb=4.525) = 0.658. Slight shade down for Qatar 2H SOT uncertainty. Cross-check: CAN-BIH R1 had 4+3=7 SOT, question won at 0.70 estimate. CAN-QAT should have more SOT on both sides.",
+      "lambda_can_sot_2h": 3.25,
+      "lambda_qat_sot_2h": 1.275,
+      "lambda_combined_2h": 4.525,
+      "poisson_raw": 0.658,
+      "recommended_estimate": 0.62,
+      "crowd_pred": 0.587
+    },
+    "Q3": {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "category": "compound_market_proxy",
+      "method": "P(penalty)=0.2914 (direct Smarkets market). P(RC): from Cards OU1.5=83.01%, OU2.5=62.60% \u2192 \u03bb_cards\u22483.2 total cards expected. Historical WC RC rate ~12-15% per match. P(RC)\u22480.13. Compound independence: P(pen OR RC) = 0.2914+0.13-0.2914*0.13 = 0.384. Qatar is physical underdog (Most Cards Qatar 53.92%), slight RC elevation. Average referee (Benitez PAR, no specific data).",
+      "p_penalty": 0.2914,
+      "p_red_card": 0.13,
+      "compound_raw": 0.384,
+      "recommended_estimate": 0.38,
+      "crowd_pred": 0.447
+    },
+    "Q4": {
+      "question": "Will Jonathan David have at least 1 shot on target in the second half?",
+      "category": "tier1_market_2h_derived",
+      "method": "Full-match David SOT market = 0.6840 (liquid). \u03bb_david_full = -ln(1-0.6840) = 1.152. \u03bb_david_2H = 1.152 \u00d7 0.50 = 0.576. P(David 2H SOT \u2265 1) = 1-e^(-0.576) = 0.438. RULE15 check: David is on WINNING team (Canada 76.63%) \u2192 RULE15 does NOT apply (RULE15 = losing team's forward suppressed). Blowout winner adjustment: for FORWARDS (not midfielders), counter-attacking opportunities may increase if Qatar chases \u2192 neutral to slight positive adjustment. David confirmed starting. Slight up-shade from 0.438 for counter-attack bonus in potential blowout.",
+      "market_david_full_sot": 0.684,
+      "lambda_david_full": 1.152,
+      "lambda_david_2h": 0.576,
+      "poisson_2h": 0.438,
+      "rule15_applies": false,
+      "blowout_winner_note": "David is FORWARD (not midfielder) - counter-attack bonus applies vs midfielder Xhaka adjustment",
+      "recommended_estimate": 0.44,
+      "crowd_pred": 0.477
+    },
+    "Q5": {
+      "question": "Will Canada win the match?",
+      "category": "tier1_market",
+      "method": "Direct Smarkets FTR Canada = 0.7663. Tier 1 market, no deviation. Canada is heavy home favorite, needs win to advance. Market reflects all public information.",
+      "market_canada_ftr": 0.7663,
+      "recommended_estimate": 0.77,
+      "crowd_pred": "~0.68-0.72 (crowd may lag market slightly)"
+    },
+    "Q6": {
+      "question": "At halftime, will Canada be winning?",
+      "category": "tier1_market",
+      "method": "Direct Smarkets HT result: Canada = 0.5848. Direct market match. Cross-check: 1H AH Canada -0.5 = 0.5630 (consistent). Canada leads HT 58-59% chance.",
+      "market_ht_canada": 0.5848,
+      "market_1h_ah_canada_minus0.5": 0.563,
+      "recommended_estimate": 0.58,
+      "crowd_pred": "~0.55-0.60 (market-anchored)"
+    },
+    "Q7": {
+      "question": "Will Canada have 5 or more shots on target?",
+      "category": "tier1_market",
+      "method": "Direct Smarkets CAN SOT Over 4.5 = 0.7466. This is an EXACT match to the question (5+ SOT = over 4.5). Tier 1 market, no deviation.",
+      "market_can_sot_over4.5": 0.7466,
+      "recommended_estimate": 0.75,
+      "crowd_pred": "~0.70-0.72 (market-anchored)"
+    },
+    "Q8": {
+      "question": "Will Qatar have 5 or more corner kicks?",
+      "category": "tier1_market",
+      "method": "Direct Smarkets QAT corners Over 4.5 = 0.1338. Exact match. Qatar was expected to get only ~2-3 corners (got 3 in R1 vs SUI). Heavy underdog, minimal territorial pressure expected. This is in the 'underdog 5+ corners' family (similar to CAN-BIH BIH 5+ corners = 0.27 market/estimate, outcome NO \u2192 +9.46). Market already very bearish at 13.38%.",
+      "market_qat_corners_over4.5": 0.1338,
+      "analogy": "CAN-BIH BIH 5+ corners = 0.265 mid, we submitted 0.27, outcome NO",
+      "recommended_estimate": 0.13,
+      "crowd_pred": "~0.29 (formula), but likely market-anchored ~0.20"
+    },
+    "Q9": {
+      "question": "Will Akram Afif have at least 1 shot on target?",
+      "category": "tier1_market_RULE15",
+      "method": "Market: Afif SOT = 0.2899 (liquid). RULE15 applies: Afif is the expected LOSER team's (Qatar 7.55%) primary forward. Historical RULE15 validation: Fajardo (lost 0-1, 0 SOT), Su\u010di\u0107 (lost 4-2, 0 SOT), D\u017eeko (lost 4-1, 0 SOT) = 3/3 confirmed. In QAT-SUI (our submission), we went near-market at 0.42 and Afif had 0 SOT (+7.26). This time market is already at 0.29 (already moved from 0.43 in QAT-SUI), so RULE15 is partially priced in. Half-RULE15 shade: 0.2899 - 0.07 \u2248 0.22. But CAN is an even bigger favorite than SUI was vs QAT, so full RULE15 may be warranted.",
+      "market_afif_sot": 0.2899,
+      "rule15_applies": true,
+      "rule15_evidence": "3/3 confirmed (Fajardo GHA-PAN, Sucic ENG-CRO, Dzeko SUI-BIH). Market has already moved from 0.43 to 0.29.",
+      "full_rule15_shade": 0.1899,
+      "half_rule15_shade": 0.2199,
+      "recommended_estimate": 0.22,
+      "crowd_pred": 0.343
+    },
+    "Q10": {
+      "question": "Will Qatar score in the second half?",
+      "category": "tier1_market",
+      "method": "Direct Smarkets 2H QAT OU0.5 goals = 0.3117. Exact match. Qatar scored in R1 vs SUI (1-1 final). \u03bb_QAT_2H = -ln(1-0.3117) = 0.373. Market already reflects Qatar as extreme underdog. Qatar desperation/chasing game may generate some late chances (historical pattern: Qatar's 2H SOT in WC2022 vs Senegal = 3 when trailing).",
+      "market_2h_qat_goals_over0.5": 0.3117,
+      "lambda_qat_2h": 0.373,
+      "recommended_estimate": 0.31,
+      "crowd_pred": "~0.40 (formula gives 0.398, market-anchored ~0.35)"
+    }
+  },
+  "final_submission_estimates": {
+    "Q1_qatar_more_fouls": {
+      "estimate": 0.6,
+      "crowd_pred": 0.575,
+      "category": "tier2_realdata",
+      "confidence": "MEDIUM-HIGH"
+    },
+    "Q2_4plus_2h_sot": {
+      "estimate": 0.62,
+      "crowd_pred": 0.587,
+      "category": "tier2_realdata",
+      "confidence": "MEDIUM"
+    },
+    "Q3_penalty_or_rc": {
+      "estimate": 0.38,
+      "crowd_pred": 0.447,
+      "category": "compound_market",
+      "confidence": "MEDIUM"
+    },
+    "Q4_david_2h_sot": {
+      "estimate": 0.44,
+      "crowd_pred": 0.477,
+      "category": "tier1_market_2h",
+      "confidence": "MEDIUM"
+    },
+    "Q5_canada_wins": {
+      "estimate": 0.77,
+      "crowd_pred": "~0.70",
+      "category": "tier1_market",
+      "confidence": "HIGH"
+    },
+    "Q6_canada_ht_winning": {
+      "estimate": 0.58,
+      "crowd_pred": "~0.56",
+      "category": "tier1_market",
+      "confidence": "HIGH"
+    },
+    "Q7_canada_5plus_sot": {
+      "estimate": 0.75,
+      "crowd_pred": "~0.70",
+      "category": "tier1_market",
+      "confidence": "HIGH"
+    },
+    "Q8_qatar_5plus_corners": {
+      "estimate": 0.13,
+      "crowd_pred": "~0.20",
+      "category": "tier1_market",
+      "confidence": "HIGH"
+    },
+    "Q9_afif_sot_rule15": {
+      "estimate": 0.22,
+      "crowd_pred": 0.343,
+      "category": "tier1_market_RULE15",
+      "confidence": "HIGH (RULE15 3/3)"
+    },
+    "Q10_qatar_scores_2h": {
+      "estimate": 0.31,
+      "crowd_pred": "~0.37",
+      "category": "tier1_market",
+      "confidence": "HIGH"
+    }
+  },
+  "key_rules_applied": {
+    "RULE15": "Q9 (Afif) - expected loser's primary forward shaded DOWN from market 0.2899 \u2192 0.22. 3/3 validated rule.",
+    "RULE_tier1_no_deviation": "Q5, Q6, Q7, Q8, Q10 - all direct Smarkets market reads, no deviation applied.",
+    "RULE_blowout_winner_forward": "Q4 (David) - on WINNING team, FORWARD (not midfielder), no penalty. Counter-attack bonus slight upside.",
+    "RULE_skellam_fouls": "Q1 - \u03bb_QAT=11.8 vs \u03bb_CAN=10.5, Skellam gives 0.59, rounded to 0.60 with Most Cards market support.",
+    "RULE_no_2plus_offsides_family": "No offsides question in this match (no offside props visible in the 10 questions)."
+  },
+  "post_match_results": {
+    "match_score": "CAN 6-0 QAT",
+    "halftime_score": "3-0",
+    "goals_by_half": {
+      "CAN": {
+        "1H": 3,
+        "2H": 3
+      },
+      "QAT": {
+        "1H": 0,
+        "2H": 0
+      }
+    },
+    "match_facts": {
+      "CAN_fouls": 9,
+      "QAT_fouls": 10,
+      "CAN_YC": 1,
+      "QAT_YC": 1,
+      "CAN_RC": 0,
+      "QAT_RC": 2,
+      "CAN_offsides": 1,
+      "QAT_offsides": 1,
+      "CAN_corners": 19,
+      "QAT_corners": 1,
+      "CAN_SOT": 10,
+      "QAT_SOT": 0,
+      "CAN_shots": 32,
+      "QAT_shots": 2,
+      "source": "ESPN event 760440"
+    },
+    "question_results": {
+      "Q1_qatar_more_fouls": {
+        "our_estimate": 0.6,
+        "crowd_estimate": 0.575,
+        "outcome": 1,
+        "notes": "QAT 10 fouls > CAN 9. Barely YES."
+      },
+      "Q2_4plus_2h_sot": {
+        "our_estimate": 0.62,
+        "crowd_estimate": 0.587,
+        "outcome": 1,
+        "notes": "CAN 10 total SOT (all CAN, QAT 0). CAN scored 3 in 2H. Inference: CAN had 4+ SOT in 2H. HIGH CONFIDENCE YES. Confirm from QK."
+      },
+      "Q3_penalty_or_rc": {
+        "our_estimate": 0.38,
+        "crowd_estimate": 0.447,
+        "outcome": 1,
+        "notes": "QAT had 2 RC. outcome=YES"
+      },
+      "Q4_david_2h_sot": {
+        "our_estimate": 0.44,
+        "crowd_estimate": 0.477,
+        "outcome": null,
+        "notes": "UNKNOWN - no player data from ESPN. CAN had 10 SOT total. Confirm from QK."
+      },
+      "Q5_canada_wins": {
+        "our_estimate": 0.77,
+        "crowd_estimate": 0.7,
+        "outcome": 1,
+        "notes": "CAN 6-0. outcome=YES"
+      },
+      "Q6_canada_ht_winning": {
+        "our_estimate": 0.58,
+        "crowd_estimate": 0.56,
+        "outcome": 1,
+        "notes": "HT 3-0. outcome=YES"
+      },
+      "Q7_canada_5plus_sot": {
+        "our_estimate": 0.75,
+        "crowd_estimate": 0.7,
+        "outcome": 1,
+        "notes": "CAN 10 SOT. outcome=YES"
+      },
+      "Q8_qatar_5plus_corners": {
+        "our_estimate": 0.13,
+        "crowd_estimate": 0.2,
+        "outcome": 0,
+        "notes": "QAT 1 corner only. outcome=NO"
+      },
+      "Q9_afif_sot_rule15": {
+        "our_estimate": 0.22,
+        "crowd_estimate": 0.343,
+        "outcome": 0,
+        "notes": "QAT 0 total SOT. Afif got 0. outcome=NO"
+      },
+      "Q10_qatar_scores_2h": {
+        "our_estimate": 0.31,
+        "crowd_estimate": 0.37,
+        "outcome": 0,
+        "notes": "QAT 0 goals total. outcome=NO"
+      }
+    },
+    "match_rbp_total": 61.88,
+    "questions_beat_crowd": 9,
+    "confirmed_question_results_from_platform": {
+      "Q1_Qatar_more_fouls":     {"our_estimate": 0.60, "crowd_estimate": 0.56, "outcome": 1, "rbp": 5.13, "beat_crowd": true, "notes": "QAT 10 > CAN 9 fouls. Barely YES."},
+      "Q2_4plus_2H_total_SOT":   {"our_estimate": 0.62, "crowd_estimate": 0.60, "outcome": 0, "rbp": 0.31, "beat_crowd": true,
+        "notes": "CONFIRMED NO. Canada scored 3 in 2H but only had 3 SOT in 2H (3 goals from 3 SOT = 100% conversion). Qatar 0 SOT. Total 2H SOT=3 < 4."},
+      "Q3_penalty_or_red_card":  {"our_estimate": 0.38, "crowd_estimate": 0.36, "outcome": 1, "rbp": 4.07, "beat_crowd": true, "notes": "Qatar 2 RC. YES."},
+      "Q4_David_1plus_2H_SOT":   {"our_estimate": 0.44, "crowd_estimate": 0.50, "outcome": 1, "rbp": -3.50, "beat_crowd": false,
+        "notes": "CONFIRMED YES. David had 1+ SOT in 2H. Crowd 50% closer than our 44%."},
+      "Q5_Canada_wins":          {"our_estimate": 0.77, "crowd_estimate": 0.71, "outcome": 1, "rbp": 4.63, "beat_crowd": true},
+      "Q6_Canada_HT_winning":    {"our_estimate": 0.58, "crowd_estimate": 0.52, "outcome": 1, "rbp": 7.67, "beat_crowd": true, "notes": "HT 3-0."},
+      "Q7_Canada_5plus_SOT":     {"our_estimate": 0.75, "crowd_estimate": 0.57, "outcome": 1, "rbp": 15.27, "beat_crowd": true, "notes": "Canada 10 SOT. Direct market worked."},
+      "Q8_Qatar_5plus_corners":  {"our_estimate": 0.13, "crowd_estimate": 0.28, "outcome": 0, "rbp": 8.62, "beat_crowd": true, "notes": "Qatar 1 corner only. Market 0.1338 was spot on."},
+      "Q9_Afif_1plus_SOT":       {"our_estimate": 0.22, "crowd_estimate": 0.42, "outcome": 0, "rbp": 14.81, "beat_crowd": true, "notes": "Afif 0 SOT (Qatar 0 total SOT). RULE15 confirmed n=4."},
+      "Q10_Qatar_scores_2H":     {"our_estimate": 0.31, "crowd_estimate": 0.35, "outcome": 0, "rbp": 4.86, "beat_crowd": true, "notes": "Qatar 0 goals total."}
+    },
+    "learning_notes": "Q7 Canada 5+ SOT (+15.27) confirmed direct-market trust pays off. Q9 Afif RULE15 (+14.81) = 4th confirmed RULE15 case. Q4 David (-3.50) = counter-attack forward on winning team still generates SOT even in blowout. Q2 4+ 2H SOT (NO) = 3 goals from 3 SOT = 100% conversion rate; extreme efficiency means fewer total SOT than expected from goals."
+  }
+}

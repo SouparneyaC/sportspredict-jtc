@@ -1,0 +1,129 @@
+{
+  "match": "SAU-URU",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "2b787085-ca24-4756-b6d5-2610b94d2b2e",
+  "smarkets_event_id": "44754866",
+  "espn_event_id": "760429",
+  "closing_time": "2026-06-16T00:30:00.000Z",
+  "context_note": "Saudi Arabia vs Uruguay - Uruguay a HEAVY favorite (FTR Uruguay 67.76% / Draw 21.49% / Saudi Arabia 10.75%, vig-adj; corroborated by ESPN moneyline Uruguay -225/SAU +700/Draw +340 and Uruguay -1.5 spread). Draw price (21.5%) is below the RULE8 'elevated' threshold (~25%) - moderate-to-low convergence risk, closer to BEL-EGY's regime than JPN-NED's. Posture: 'more aggressive, same risk discipline' - extreme tier1_market/unshaded tier2_realdata numbers submitted near-raw (Q1, Q5, Q8, Q9, Q10, Q4). RULE12 applied to Q7 (2H SOT comparison) due to a genuine market/ESPN-direction conflict (see below) - the ONLY question shrunk beyond normal sample-size considerations. Q3/Q6 (RULE12 zone, 'more than' count props with no/conflicting direct market) handled per watch-item 2 (near-identical or thin-sample averages -> stay near 0.50). Offsides watch-item 1 NOT triggered: Q1's unshaded Poisson (lambda=1.2, P=0.337) is well below 0.50, so no downward nudge needed.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "raw_file": "sau_uru_smarkets_quotes.json",
+      "markets_used": {
+        "full_time_result": {"Saudi Arabia": 0.1075, "Draw": 0.2149, "Uruguay": 0.6776},
+        "penalty_to_be_awarded": {"Yes": 0.2584, "No": 0.7416},
+        "saudi_arabia_ou_1.5_cards": {"Under_1.5": 0.3337, "Over_1.5": 0.6658, "implied_lambda": 2.30},
+        "uruguay_ou_1.5_cards": {"Under_1.5": 0.4589, "Over_1.5": 0.5411, "implied_lambda": 1.81},
+        "second_half_saudi_arabia_ou_0.5_goals": {"Under_0.5": 0.7185, "Over_0.5": 0.2815, "implied_2h_goal_lambda": 0.331},
+        "second_half_uruguay_ou_0.5_goals": {"Under_0.5": 0.3537, "Over_0.5": 0.6463, "implied_2h_goal_lambda": 1.039},
+        "salem_al_dawsar_score_or_assist": {"price": 0.2128, "note": "offer-only, illiquid, x0.945 -> 0.2010, resolved via contract name 'Salem Al-Dawsar' (id 404287122), distinct from a separate 'Nasser Al-Dawsari' contract (id 404287080) which is a different player"},
+        "darwin_nunez_anytime_goalscorer": {"bid": 0.3788, "offer": 0.3846, "mid": 0.3817, "note": "liquid (has both bid and offer), no illiquidity discount needed, resolved via contract name 'Darwin Nunez' (id 374860894)"}
+      },
+      "no_market_exists_for": ["team fouls direct comparison (either direction)", "team offsides direct comparison", "2nd-half team SOT direct market", "most cards / direct cards comparison (only team-specific 1.5-card O/U lines used as dominance proxy)"],
+      "espn_pickcenter_corroboration": {"uruguay_moneyline": -225, "saudi_arabia_moneyline": 700, "draw_moneyline": 340, "spread": "Uruguay -1.5"}
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "raw_file": "sau_uru_wc2026_raw.jsonl",
+      "saudi_arabia_n5": {
+        "matches": ["Egypt(A) 2026-03-27 L0-4", "Serbia(A) 2026-03-31 L1-2", "Ecuador(A) 2026-05-30 D1-1", "Puerto Rico(A) 2026-06-05 W2-0", "Senegal(H) 2026-06-09 D0-0"],
+        "fouls": [12,8,11,15,14], "avg_fouls": 12.0,
+        "offsides": [1,1,0,1,3], "avg_offsides": 1.2,
+        "sot": [0,1,2,6,3], "avg_sot_full": 2.4,
+        "cards_total": [2,2,1,0,3], "avg_cards": 1.6
+      },
+      "uruguay_n2_of_5": {
+        "matches": ["England(A) 2026-03-27 D1-1", "Algeria(A) 2026-03-31 D0-0"],
+        "fouls": [12,16], "avg_fouls": 14.0,
+        "offsides": [1,2], "avg_offsides": 1.5,
+        "sot": [1,1], "avg_sot_full": 1.0,
+        "cards_total": [2,3], "avg_cards": 2.5,
+        "note": "boxscore.statistics unavailable for the other 3 of Uruguay's last 5 (vs US, Mexico, Uzbekistan) across all leagues tried (fifa.world, fifa.friendly, fifa.worldq.concacaf/conmebol). n=2 is thin, both games were low-scoring away draws (England, Algeria) which may understate Uruguay's attacking output as a heavy favorite vs a weaker AFC side."
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_saudi_arabia_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "First-pass Poisson, Saudi Arabia offsides n=5 (1,1,0,1,3), lambda=1.2, P(X>=2)=1-e^-1.2*(1+1.2)=1-0.3012*2.2=0.337. Submitted unshaded per RULE7 - this is well BELOW 0.50 so the BEL-EGY 'offsides watch-item' (downward nudge only applies when unshaded Poisson > 0.50) does not trigger here. The 1.2 average is driven by 4 of 5 games at 0-1 offsides; the one 3-offside game (vs Senegal) is not enough to flip the unshaded estimate above 0.50.",
+      "raw_poisson": 0.337,
+      "recommended_estimate": 0.34
+    },
+    "q2_both_teams_1plus_sot_2h": {
+      "category": "tier2_realdata_compound_basepate_adjusted",
+      "method": "2H-scaled SOT lambdas (full-match avg x0.5): Saudi Arabia lambda=1.2 (P(1+)=0.699), Uruguay lambda=0.5 (P(1+)=0.393). Naive independence product=0.275. Per QAT-SUI Q1 lesson (-42.51, our worst-ever, naive independence-product on a 'both teams achieve low bar' compound was far too low vs actual base rate), and per the explicit guidance for this match, leaned toward the higher empirical base rate for 'both teams 1+ SOT in a half' (most teams manage this). Uruguay's n=2 SOT sample (both =1, in low-scoring away draws vs England/Algeria) is thin and likely understates their attacking output as a heavy favorite here.",
+      "raw_independence_product": 0.275,
+      "recommended_estimate": 0.74
+    },
+    "q3_saudi_arabia_more_cards_than_uruguay": {
+      "category": "tier2_RULE12_conflicting_signals",
+      "method": "No direct cards-comparison market; used team-specific O/U1.5-cards lines as a dominance proxy (RULE10-style). Market-implied Poisson lambdas: Saudi Arabia=2.30 (from Over1.5=66.6%), Uruguay=1.81 (from Over1.5=54.1%) - market sees SAU as MORE likely to be carded, despite ESPN historical averages pointing the OPPOSITE way (SAU avg=1.6 n=5 vs Uruguay avg=2.5 n=2). Skellam on market-implied lambdas: mean_diff=+0.49, var=4.11, continuity-corrected P(SAU>URU)~0.50. Given the market and ESPN signals directly CONTRADICT each other and Uruguay's ESPN sample is n=2 (thin), this sits squarely in 'genuinely uncertain' - landed at 0.52, a small lean toward the more current/liquid market signal (cards O/U lines reflect referee tendencies and expected match tenor for THIS fixture) without overcommitting.",
+      "raw_skellam_market_implied": 0.50,
+      "recommended_estimate": 0.52
+    },
+    "q4_uruguay_more_2h_goals_than_saudi_arabia": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 2H team-goals O/U0.5 markets, vig-normalized: Saudi Arabia 2H Over0.5=28.15% -> implied 2H goal lambda=0.331; Uruguay 2H Over0.5=64.63% -> implied 2H goal lambda=1.039. Skellam P(Uruguay_2H > SaudiArabia_2H), continuity-corrected: mean_diff=0.708, var=1.37, P(D>=1)=0.570. This is derived directly from a verified market on each side (tier1_market), submitted near-raw per RULE2/7 leaning-in posture - Uruguay's much higher market-implied 2H scoring rate as the heavy overall favorite is a coherent, well-grounded signal.",
+      "raw_skellam_market_implied": 0.570,
+      "recommended_estimate": 0.57
+    },
+    "q5_penalty_awarded": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Penalty to be awarded' market, 'Yes' contract, vig-normalized 25.84%. Undeviated per RULE1/2.",
+      "recommended_estimate": 0.26
+    },
+    "q6_saudi_arabia_more_fouls_than_uruguay": {
+      "category": "tier2_realdata_RULE12_thin_sample",
+      "method": "ESPN historical foul averages: Saudi Arabia avg=12.0 (n=5, range 8-15, no single-game outlier), Uruguay avg=14.0 (n=2 only, range 12-16). Raw Skellam (mean_diff=-2.0, var=26.0): continuity-corrected P(SAU>URU)=0.312. Per watch-item 2, the gap (2.0) is borderline-close (just over the '1-2' near-identical band) AND Uruguay's sample is only n=2 (low confidence per RULE12 - no direct fouls market exists to cross-check direction). Shrunk moderately toward 0.50 to reflect both the borderline-close gap and the thin opposing sample, landing roughly midway between the raw Skellam (0.31) and 0.50.",
+      "raw_skellam": 0.312,
+      "recommended_estimate": 0.41
+    },
+    "q7_uruguay_more_2h_sot_than_saudi_arabia": {
+      "category": "tier2_realdata_RULE12_shrunk",
+      "method": "2H-scaled SOT lambdas (full-match avg x0.5): Saudi Arabia lambda=1.2 (n=5, but inflated by a 6-SOT outlier vs weak Puerto Rico - ex-outlier avg=1.5/2H lambda=0.75), Uruguay lambda=0.5 (n=2, both =1, thin). Raw Skellam P(Uruguay_2H>SaudiArabia_2H) ranges 0.18 (with outlier) to 0.25 (outlier removed) - a >10pp swing on removing one game, triggering RULE12's sensitivity check. CRITICALLY, the related Q4 market (2H goal-lambdas: Uruguay 1.039 vs Saudi Arabia 0.331) DIRECTLY CONTRADICTS this direction - the market expects Uruguay to dominate 2H attacking output by a 3:1 lambda ratio, which should mechanically correlate with MORE 2H SOT for Uruguay, not fewer. Per RULE12 (related market exists and DISAGREES -> LOW confidence), shrunk from the ESPN-implied ~0.20-0.25 toward the market-disagreement direction, landing at 0.30 - still below 0.50 (Uruguay's actual recent 2H SOT numbers are genuinely low and shouldn't be ignored) but materially pulled up from the raw ESPN-only Skellam to reflect the contradicting Q4 market signal and Uruguay's thin (n=2) and likely unrepresentative (two low-scoring away draws) sample.",
+      "raw_skellam_espn_only": "0.18-0.25 (sensitive to outlier removal)",
+      "conflicting_market_signal": "Q4 2H-goal-lambda ratio favors Uruguay 3:1",
+      "recommended_estimate": 0.30
+    },
+    "q8_saudi_arabia_win": {
+      "category": "tier1_market (match-winner deferred)",
+      "method": "Direct from Smarkets full-time-result market, vig-normalized (Saudi Arabia 10.75%), corroborated by ESPN/DraftKings moneyline (SAU +700 implies ~12.5% raw, consistent direction). Treated as tier1_market undeviated per RULE1/2 - genuinely extreme (<0.25) and grounded in tier1_market, submit as-is per the 'lean in' posture. Well above RULE6's 5-10% floor.",
+      "recommended_estimate": 0.11
+    },
+    "q9_al_dawsari_score_or_assist": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to score or assist' market. Resolved via contract name 'Salem Al-Dawsar' (id 404287122, param 726632) - Saudi Arabia's captain/star winger, distinct from a separate 'Nasser Al-Dawsari' contract (id 404287080, param 1152559, priced at offer-only 10.2%, a different player) that could have been mis-resolved. Offer-only 21.28% (illiquid, no bid), x0.945 -> 0.2010. Undeviated.",
+      "recommended_estimate": 0.20
+    },
+    "q10_nunez_scores": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Anytime goalscorer' market, contract 'Darwin Nunez' (id 374860894) resolved cleanly via name field. LIQUID two-sided quote (bid 37.88% / offer 38.46%, mid=38.17%) - no illiquidity discount needed. Undeviated per RULE1/2; Uruguay's primary striker as a heavy favorite is a coherent, well-grounded number.",
+      "recommended_estimate": 0.38
+    }
+  },
+  "post_match_results": {
+    "final_score": "Saudi Arabia 1 - 1 Uruguay",
+    "total_rbp": -13.75,
+    "beat_crowd_count": "7/10",
+    "actual_boxscore": {
+      "saudi_arabia": {"fouls_total": 11, "fouls_1h": 5, "fouls_2h": 6, "yellow_cards": 1, "offsides": 0, "sot_total": 3, "sot_1h": 3, "sot_2h": 0, "corners": 4, "possession_pct": 33.2},
+      "uruguay": {"fouls_total": 6, "fouls_1h": 5, "fouls_2h": 1, "yellow_cards": 0, "offsides": 6, "sot_total": 10, "sot_1h": 2, "sot_2h": 8, "corners": 14, "possession_pct": 66.8}
+    },
+    "goal_card_timeline": ["41' GOAL SAU (Al Amri, 1-0)", "44' YC SAU (Al Amri, bad foul)", "80' GOAL URU (Araújo volley, 1-1)"],
+    "match_script": "Saudi Arabia scored at 41' and spent the ENTIRE 2H defending 1-0 with 33.2% possession and ZERO 2H SOT. Committed 6 of their 11 fouls in 2H (vs URU's 1 foul in 2H). Uruguay dominated 2H with 8 SOT but only equalized at 80'.",
+    "questions": [
+      {"q":1,"us":0.34,"crowd":0.44,"outcome":0,"rbp":10.87,"category":"tier2_realdata","note":"SAU 0 offsides. 6th consecutive NO for this family."},
+      {"q":2,"us":0.74,"crowd":0.67,"outcome":0,"rbp":-7.76,"category":"tier2_realdata","note":"SAU had ZERO 2H SOT while defending 1-0. Base-rate correction failed; 2nd datapoint showing 'both teams 1+ SOT in half' is high-variance."},
+      {"q":3,"us":0.52,"crowd":0.49,"outcome":1,"rbp":4.73,"category":"tier2_realdata","note":"SAU 1 YC (Al Amri 44') vs URU 0. Near-50/50 RULE12 call landed on correct side."},
+      {"q":4,"us":0.57,"crowd":0.56,"outcome":1,"rbp":3.09,"category":"tier1_market","note":"URU scored at 80' (2H); SAU's goal was 1H. tier1_market near-raw won."},
+      {"q":5,"us":0.26,"crowd":0.32,"outcome":0,"rbp":5.87,"category":"tier1_market","note":"No penalty. Direct market won."},
+      {"q":6,"us":0.41,"crowd":0.53,"outcome":1,"rbp":-9.88,"category":"tier2_realdata","note":"SAU 11 fouls > URU 6. 1H TIED 5-5; 2H SAU fouled 6 vs URU's 1 - pure match-script (SAU scored, defended, fouled constantly). Our RULE12-shrunk 0.41 (<0.50) was wrong; crowd's 0.53 (>0.50) was right."},
+      {"q":7,"us":0.30,"crowd":0.67,"outcome":1,"rbp":-35.66,"category":"tier2_realdata","note":"OUR 4TH-WORST EVER (-35.66). URU 8 2H-SOT vs SAU 0. RULE14 violation: Q4=0.57 (URU more 2H goals) but Q7=0.30 (URU more 2H SOT) is LOGICALLY INCONSISTENT since P(more SOT) >= P(more goals). RULE12 misapplied: 'conflicting signals' should resolve toward the MARKET SIGNAL (Q4 market), not toward 50%. Crowd_pred formula: predicted 0.39, actual 0.67 (+28pp = largest residual ever) - crowd tracked FTR/Q4 market, not our ESPN-derived thin-sample estimate."},
+      {"q":8,"us":0.11,"crowd":0.18,"outcome":0,"rbp":4.4,"category":"match_winner_deferred_market","note":"SAU drew (did not win). Extreme tier1_market beat crowd."},
+      {"q":9,"us":0.20,"crowd":0.27,"outcome":0,"rbp":5.31,"category":"tier1_market"},
+      {"q":10,"us":0.38,"crowd":0.41,"outcome":0,"rbp":5.28,"category":"tier1_market"}
+    ],
+    "summary": "-13.75, 7/10. Q7 (-35.66) is our 4th-worst result ever, caused by two compounding errors: (1) RULE12 misapplied when a market-derived Q4 (0.57) clearly implied the direction - should have raised Q7 to >=0.57, not stayed near 50%. (2) RULE14 (NEW): P(more 2H goals)=0.57 > P(more 2H SOT)=0.30 is logically impossible - SOT is a prerequisite for goals. If Q4's market says URU likely to outscore SAU in 2H, Q7's SOT comparison must also price URU as dominant (>=0.57). The Q7 crowd_pred residual (+28pp) confirms crowd was tracking market dominance, not our ESPN number. Running total: +189.18, 105 questions, 11 matches."
+  }
+}

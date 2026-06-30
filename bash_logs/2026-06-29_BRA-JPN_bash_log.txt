@@ -1,0 +1,58 @@
+BRA vs JPN (2026-06-29) — bash log
+====================================
+
+# 0. Recorded yesterday's RSA-CAN result first (additive post_match_results into
+#    rsa_can_2026-06-28.json, +15 rows appended to datasets/questions_flat.csv,
+#    Win Pattern #7 + Loss Pattern #8/#9 added to STEPS_FOR_HIGH_POINTS.md).
+#    Final: South Africa 0-1 Canada, match RBP -9.1, 11 beat crowd / 4 below crowd.
+#    Worst: Q1 card-timing-decomposition (-39.68). 2nd-worst: Q15 Rayners illiquid
+#    SOT overpricing (-26.23). Best win: Q12 brace-market-decomposition (+11.94).
+
+# 1. Checked existing history on Brazil/Japan before pulling fresh data (per standing
+#    instruction to consult prior team files)
+$ ls data/external_markets | grep -iE "bra|jpn|tun_|mar_|sco_"
+   -> bra_mar_2026-06-13 (D1-1, total -16.33, contains the -51.97 Q8 conviction-override
+      example, our worst-ever single question), bra_hai_2026-06-20 (W3-0, -32.11, the
+      FLOOR_0.25 Haiti-offsides failure), sco_bra_2026-06-24 (W3-0 away, +2.75),
+      jpn_ned_2026-06-14 (D2-2, +0.47), jpn_tun_2026-06-21 (W4-0 away, +17.34),
+      jpn_swe_2026-06-25 (D1-1, +70.49 -- our best Japan match, pure WINNING TRAIL
+      Poisson/Skellam execution on Q1+Q2 = +45.56 combined)
+
+# 2. ESPN team IDs + schedules
+$ Brazil=205, Japan=627
+$ team schedules -> BRA: 760419 (MAR, 6/13), 760444 (HAI, 6/20), 760465 (SCO, 6/24)
+                    JPN: 760425 (NED, 6/14), 760449 (TUN, 6/21), 760471 (SWE, 6/25)
+$ today's match: 760487 Japan at Brazil, 2026-06-29T17:00Z (confirmed via scoreboard?dates=20260629)
+
+# 3. Pulled full ESPN box scores for all 6 group matches -> see wc2026_espn_stats block
+   in bra_jpn_2026-06-29.json. Key finds: Brazil 8 offsides in one match (vs Haiti,
+   flagged as likely opponent-specific outlier, NOT trusted near-raw unlike Colombia's
+   repeating 3-then-7 pattern); Japan very clean cards (0.33 YC/game) despite high fouls.
+
+# 4. Smarkets event discovery (used the limit=300 + client-side filter method the
+   research agent established for RSA-CAN, since name= filters are non-functional):
+$ curl ".../events/?type=football_match&limit=300" | filter name contains 'Brazil'/'Japan'
+   -> found event 45156984 "Brazil vs Japan" 2026-06-29T17:00:00Z directly (also a
+      duplicate "Enhanced Specials" event, ignored)
+
+# 5. Pulled full market list (150+ markets) for event 45156984, then fetched quotes for
+   every market needed across the 15 questions: FTR, To qualify, Method of qualification,
+   Will there be ET/pens, BTTS, OU2.5/3.5 goals, Cards OU1.5/2.5/3.5, total SOT OU8.5,
+   corners OU8.5, Goal 1 time bracket (10 contracts), Brazil score both halves, team goal
+   O/U markets (both teams), Brazil SOT OU4.5, Cunha anytime-goalscorer (LIQUID, both
+   bid+offer present), Ueda SOT 0.5 (LIQUID, both bid+offer present).
+
+# 6. Local python (scipy poisson/brentq/binom) modeling for the 3 question types with no
+   direct market, reusing methodology validated/refined from RSA-CAN:
+   - Q2 (any player 2+ SOT): team SOT lambdas (BRA~5.02 from Over4.5 market, JPN~3.57
+     derived as total-minus-Brazil from the combined Over8.5 SOT market) -> Poisson-binomial
+     top-player-share decomposition (30%/35%) -> 0.63, trimmed to 0.60.
+   - Q9 (any player brace): same Win Pattern #7 methodology that just won +11.94 RBP
+     yesterday -> team goal lambdas (BRA~1.60, JPN~0.86) -> 0.186, rounded to 0.19.
+   - Q10 (offside before 1st hydration break ~24'): combined ESPN offside average, with
+     Brazil's contribution deliberately trimmed (3.0 raw -> ~2.0 used) to discount the
+     Haiti-game 8-offside outlier -> lambda_pre24~0.84 -> naive 0.57, trimmed to 0.52 for
+     general no-market uncertainty.
+
+# Output: data/external_markets/bra_jpn_2026-06-29.json (full 15-question estimates +
+# reasoning, explicitly citing 6 prior team files plus yesterday's RSA-CAN postmortem)

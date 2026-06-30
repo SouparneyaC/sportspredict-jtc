@@ -1,0 +1,342 @@
+{
+  "match": "BRA-HAI",
+  "sportspredict_match_id": "87ba330f-8791-4bd9-9b2b-fd5c27c081ab",
+  "smarkets_event_id": "45067720",
+  "kickoff_utc": "2026-06-20T00:30:00Z",
+  "context_note": "Brazil vs Haiti, WC2026 Group G. Brazil MASSIVE favorite: \u03bb_BRA=3.387, \u03bb_HAI=0.585. FTR: Brazil 88.51%, Draw 7.55%, Haiti 4.01%. Essentially a GER-CUR level mismatch. 2+ offsides family applies to Haiti (defensive underdog). RULE15 applies to Nazon (Haiti primary forward). NO RULE8 (draw=7.55% \u2014 well below 25% threshold). Most corners: Brazil 90.15%, Haiti 5.73%.",
+  "lineups_confirmed": false,
+  "key_lambdas": {
+    "lambda_BRA_goals": 3.387,
+    "lambda_HAI_goals": 0.585,
+    "lambda_HAI_SOT_full": 2.0,
+    "lambda_HAI_SOT_2H": 1.0,
+    "lambda_HAI_corners": 2.25
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Brazil": 0.8851,
+      "Haiti": 0.0401,
+      "Draw": 0.0755,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Over": 0.7408,
+      "Under": 0.2532,
+      "liquid": true
+    },
+    "OU3_5": {
+      "Over": 0.5405,
+      "Under": 0.4609,
+      "liquid": true
+    },
+    "OU4_5": {
+      "Over": 0.3414,
+      "Under": 0.6603,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.4275,
+      "No": 0.5781,
+      "liquid": true
+    },
+    "BRA_OU0_5": {
+      "Over": 0.9662,
+      "liquid": true
+    },
+    "BRA_OU1_5": {
+      "Over": 0.844,
+      "liquid": true
+    },
+    "BRA_OU2_5": {
+      "Over": 0.6391,
+      "liquid": true
+    },
+    "BRA_OU3_5": {
+      "Over": 0.4123,
+      "liquid": true
+    },
+    "HAI_OU0_5": {
+      "Over": 0.443,
+      "liquid": true
+    },
+    "HAI_OU1_5": {
+      "Over": 0.1253,
+      "liquid": true
+    },
+    "2H_BRA_OU0_5": {
+      "Over": 0.849,
+      "liquid": true
+    },
+    "2H_BRA_OU1_5": {
+      "Over": 0.5424,
+      "liquid": true
+    },
+    "2H_HAI_OU0_5": {
+      "Over": 0.2656,
+      "liquid": true
+    },
+    "2H_HAI_OU1_5": {
+      "Over": 0.0374,
+      "liquid": true
+    },
+    "1H_BRA_OU0_5": {
+      "Over": 0.7637,
+      "liquid": true
+    },
+    "1H_BRA_OU1_5": {
+      "Over": 0.4526,
+      "liquid": true
+    },
+    "HT_result": {
+      "Brazil": 0.6969,
+      "Haiti": 0.0616,
+      "Draw": 0.2501,
+      "liquid": true
+    },
+    "2H_result": {
+      "Brazil": 0.7318,
+      "Haiti": 0.0617,
+      "Draw": 0.2163,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Brazil": 0.9015,
+      "Haiti": 0.0573,
+      "Draw": 0.0406,
+      "liquid": true
+    },
+    "HAI_corners_OU3_5": {
+      "Over": 0.1918,
+      "liquid": true
+    },
+    "HAI_corners_OU4_5": {
+      "Over": 0.0953,
+      "liquid": true
+    },
+    "HAI_SOT_OU1_5": {
+      "Over": 0.6014,
+      "liquid": true
+    },
+    "BRA_SOT_OU7_5": {
+      "Over": 0.4895,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Haiti": 0.5561,
+      "Brazil": 0.192,
+      "Draw": 0.2512,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Over": 0.5629,
+      "liquid": true
+    },
+    "Cards_OU3_5": {
+      "Over": 0.3322,
+      "liquid": true
+    },
+    "Cards_OU4_5": {
+      "Over": 0.1778,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.3601,
+      "liquid": true
+    },
+    "Player_SOT": {
+      "Duckens_Nazon": {
+        "mid": 0.3526,
+        "liquid": false,
+        "note": "illiq offer\u00d70.945"
+      },
+      "Frantzdy_Pierrot": {
+        "mid": 0.3351,
+        "liquid": false
+      },
+      "Wilson_Isidor": {
+        "mid": 0.3526,
+        "liquid": false
+      },
+      "Vinicius_Jr": {
+        "mid": 0.7875,
+        "liquid": false
+      },
+      "Gabriel_Martinelli": {
+        "mid": 0.7214,
+        "liquid": false
+      },
+      "Endrick": {
+        "mid": 0.7875,
+        "liquid": false
+      }
+    }
+  },
+  "rules_applied": {
+    "RULE15_Nazon": "Haiti win prob ~4%. Nazon is expected-loser primary forward. Full RULE15: -10pp from illiq-adj market 0.3526 \u2192 0.25.",
+    "2plus_offsides_family_Q2": "Haiti 2+ offsides: Haiti barely attacks (\u03bb_goals=0.585). 10/10 NO family. \u03bb_offside_HAI estimated 0.25-0.30. P(\u22652) \u2248 0.03-0.04. Floor at 0.10.",
+    "RULE7_dominant_favorite": "Brazil >88% favorite. Like GER-CUR. All 'Haiti does something attacking' props are likely NO. Crowd will over-credit Haiti.",
+    "NO_RULE8": "Draw price only 7.55% \u2014 well below 25% threshold. RULE8 does NOT fire. This is a blowout-script match.",
+    "direct_markets": "Q6 BRA FTR=0.885, Q7 2H BRA OU0.5=0.849, Q9 BRA OU2.5=0.639, Q5 most cards Haiti=0.556 \u2014 all liquid direct markets.",
+    "RULE10_fouls": "Most cards market: Haiti 55.6%, Brazil 19.2%. Haiti fouls more as defensive underdog. Q1 (Brazil more fouls) = LOW at 0.25."
+  },
+  "final_submission_estimates": {
+    "Q1_BRA_more_fouls": {
+      "estimate": 0.25,
+      "confidence": "MEDIUM-HIGH",
+      "note": "Card market: Haiti 55.6% most cards vs Brazil 19.2%. Haiti fouls much more as deep-defending underdog."
+    },
+    "Q2_HAI_2plus_offsides": {
+      "estimate": 0.1,
+      "confidence": "HIGH",
+      "note": "10/10 NO family. Haiti barely attacks (\u03bb_goals=0.585). \u03bb_off estimated 0.25-0.30 \u2192 P(\u22652)\u22480.03-0.04. Floor at 0.10."
+    },
+    "Q3_HAI_1plus_SOT_2H": {
+      "estimate": 0.58,
+      "confidence": "MEDIUM",
+      "note": "\u03bb_HAI_SOT_2H=1.0 \u2192 P(\u22651)=0.632. Slight shade for dominant blowout suppression \u2192 0.58."
+    },
+    "Q4_HAI_2plus_SOT_2H": {
+      "estimate": 0.22,
+      "confidence": "MEDIUM",
+      "note": "P(\u22652|\u03bb=1.0)=0.264. Shade for blowout suppression \u2192 0.22."
+    },
+    "Q5_HAI_more_cards": {
+      "estimate": 0.55,
+      "confidence": "HIGH",
+      "note": "DIRECT most cards market: Haiti 55.61%. Trust the market."
+    },
+    "Q6_BRA_wins": {
+      "estimate": 0.88,
+      "confidence": "HIGH",
+      "note": "RULE1: FTR market 0.8851. avg(crowd_est ~0.86, market 0.885) = 0.87-0.88. RULE6: don't go to 1.00."
+    },
+    "Q7_BRA_score_2H": {
+      "estimate": 0.85,
+      "confidence": "HIGH",
+      "note": "DIRECT 2H BRA OU0.5 Over = 0.8490. Trust the market."
+    },
+    "Q8_HAI_3plus_corners": {
+      "estimate": 0.38,
+      "confidence": "MEDIUM",
+      "note": "\u03bb_HAI_corners=2.25 \u2192 P(\u22653)=0.391. Cross-check: OU3.5 Over=0.1918 \u2248 P(\u22654)=0.191 \u2713. Slight shade for dominant possession."
+    },
+    "Q9_BRA_3plus_goals": {
+      "estimate": 0.64,
+      "confidence": "HIGH",
+      "note": "DIRECT BRA OU2.5 Over = 0.6391. Trust the market. Brazil expected to score 3.4 goals."
+    },
+    "Q10_Nazon_SOT": {
+      "estimate": 0.25,
+      "confidence": "MEDIUM-HIGH",
+      "note": "Illiq market 0.3526. Full RULE15 (Haiti 4% win prob, Nazon primary forward). -10pp \u2192 0.25."
+    }
+  },
+  "post_match_results": {
+    "match_score": "BRA 3-0 HAI",
+    "halftime_score": "3-0",
+    "goals_by_half": {
+      "BRA": {
+        "1H": 3,
+        "2H": 0
+      },
+      "HAI": {
+        "1H": 0,
+        "2H": 0
+      }
+    },
+    "match_facts": {
+      "BRA_fouls": 13,
+      "HAI_fouls": 14,
+      "BRA_YC": 1,
+      "HAI_YC": 3,
+      "BRA_RC": 0,
+      "HAI_RC": 0,
+      "BRA_offsides": 8,
+      "HAI_offsides": 4,
+      "BRA_corners": 4,
+      "HAI_corners": 4,
+      "BRA_SOT": 5,
+      "HAI_SOT": 3,
+      "BRA_shots": 8,
+      "HAI_shots": 7,
+      "source": "ESPN event 760444",
+      "notable": "ALL 3 Brazil goals scored in 1H. BRA had 0 goals in 2H despite 0.85 estimate. Haiti got 4 offsides (vs our 0.10 estimate)."
+    },
+    "question_results": {
+      "Q1_BRA_more_fouls": {
+        "our_estimate": 0.25,
+        "crowd_estimate": 0.35,
+        "outcome": 0,
+        "rbp": 8.56,
+        "notes": "HAI 14 > BRA 13 fouls. outcome=NO. Beat crowd."
+      },
+      "Q2_HAI_2plus_offsides": {
+        "our_estimate": 0.1,
+        "crowd_estimate": 0.4,
+        "outcome": 1,
+        "rbp": -42.56,
+        "notes": "HAI 4 offsides. outcome=YES. CATASTROPHIC MISS. Worst single question loss ever? We estimated 0.10, crowd 0.40. HAI chased from 0-3 down and pushed high line."
+      },
+      "Q3_HAI_1plus_SOT_2H": {
+        "our_estimate": 0.58,
+        "crowd_estimate": 0.54,
+        "outcome": 1,
+        "rbp": 7.4,
+        "notes": "Haiti got \u22651 SOT in 2H. outcome=YES. Beat crowd slightly."
+      },
+      "Q4_HAI_2plus_SOT_2H": {
+        "our_estimate": 0.22,
+        "crowd_estimate": 0.32,
+        "outcome": 1,
+        "rbp": -12.03,
+        "notes": "Haiti got 2+ SOT in 2H. outcome=YES. MISS \u2014 Haiti was chasing and got shots."
+      },
+      "Q5_HAI_more_cards": {
+        "our_estimate": 0.55,
+        "crowd_estimate": 0.55,
+        "outcome": 1,
+        "rbp": 1.8,
+        "notes": "HAI 3 YC > BRA 1. outcome=YES. Tied."
+      },
+      "Q6_BRA_wins": {
+        "our_estimate": 0.88,
+        "crowd_estimate": 0.86,
+        "outcome": 1,
+        "rbp": 1.9,
+        "notes": "BRA 3-0. outcome=YES. Slight beat."
+      },
+      "Q7_BRA_score_2H": {
+        "our_estimate": 0.85,
+        "crowd_estimate": 0.78,
+        "outcome": 0,
+        "rbp": -10.2,
+        "notes": "BRA scored ALL 3 in 1H, 0 in 2H. outcome=NO. Big miss. Both us and crowd badly off."
+      },
+      "Q8_HAI_3plus_corners": {
+        "our_estimate": 0.38,
+        "crowd_estimate": 0.41,
+        "outcome": 1,
+        "rbp": 0.18,
+        "notes": "HAI 4 corners. outcome=YES. Virtually tied."
+      },
+      "Q9_BRA_3plus_goals": {
+        "our_estimate": 0.64,
+        "crowd_estimate": 0.59,
+        "outcome": 1,
+        "rbp": 6.36,
+        "notes": "BRA 3 goals. outcome=YES. Beat crowd."
+      },
+      "Q10_Nazon_SOT": {
+        "our_estimate": 0.25,
+        "crowd_estimate": 0.3,
+        "outcome": 0,
+        "rbp": 6.46,
+        "notes": "Nazon did NOT get SOT. outcome=NO. Beat crowd (we had lower estimate)."
+      }
+    },
+    "match_rbp_total": -32.11,
+    "questions_beat_crowd": "7/10",
+    "crowd_data_needed": false,
+    "note": "Net loss despite 7/10 beat crowd because Q2 HAI 2+ offsides miss was catastrophic (-42.56). HAI 4 offsides vs our 0.10 estimate."
+  }
+}

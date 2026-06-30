@@ -1,0 +1,63 @@
+NOR vs CIV (2026-06-30) — bash log
+====================================
+
+# 0. Per user instruction: reviewed STEPS_FOR_HIGH_POINTS.md (all 9 win patterns, 9 loss
+#    patterns) and KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md (technique-level breakdown across
+#    the prior 4 knockout matches) before starting any data pull. Two specific lessons
+#    flagged for direct application today given today's question list:
+#    - Q12 (4+ offside calls, full-match count, no market) = structurally identical setup
+#      to GER-PAR Q14's -48.68 disaster (clean group-stage offside record on both sides).
+#    - Q14 (goal after 2nd hydration break) = the exact "late-window timing, no market"
+#      category that went 0-for-3 across the prior 4 matches (-45.90 combined for the
+#      whole TIMING_NO_MARKET late-window bucket).
+
+# 1. Checked existing team history before any API call
+$ ls data/external_markets | grep -iE "nor_|civ_"
+   -> nor_sen (W3-2, +36.49, contains a haaland_profile block: 2 goals/4SOT in GD1, plus
+      a direct Norway-6+-SOT precedent that settled YES), civ_ecu (W1-0, +19.86),
+      ger_civ (L1-2, +44.16, CIV 2+ offsides NO confirmed +18.70, 0 cards entire match,
+      explicit "AFCON 2023 champions, not a mismatch" framing), cur_civ (W2-0 away, +45.21)
+
+# 2. ESPN team IDs: Norway=464, Ivory Coast=4789
+$ NOR: 760430 (IRQ, 6/16), 760454 (SEN, 6/23), 760475 (FRA, 6/26)
+$ CIV: 760423 (ECU, 6/14), 760448 (GER, 6/20), 760473 (CUR, 6/25)
+$ today's match found via scoreboard?dates=20260630 -> 760490 Norway at Ivory Coast
+
+# 3. ESPN box scores pulled for all 6 group matches -> wc2026_espn_stats block.
+#    Key: both teams have very clean offside records (NOR 0,0,1; CIV 0,1,1) -- flagged
+#    explicitly as the same pattern that failed in GER-PAR, used to justify shading
+#    Q12 up rather than trusting the clean data at face value.
+
+# 4. Smarkets event discovery (limit=300 + client-side filter): found 45159661
+#    "Ivory Coast vs Norway" 2026-06-30T17:00:00Z directly.
+
+# 5. Recreated the scratchpad fetch_quotes.py helper (missing from a fresh scratchpad)
+#    before pulling quotes. Fetched: FTR (NOR 45.45% CIV 25.64% Draw 27.03%), To qualify,
+#    Will there be ET (32.79%, notably high - signals a closer match than FTR alone
+#    suggests), BTTS (58.48%, highest BTTS price of any knockout match this stage), OU2.5/
+#    OU3.5 goals, Cards OU1.5/2.5/3.5, Penalty (30.77%), Most corners (3-way: NOR 60.61%
+#    CIV 31.75% Draw 12.20% -- used over the 0.5-line handicap market specifically to
+#    avoid the tie-inclusive ambiguity in a strict "more than" question), Norway SOT
+#    OU4.5 (58.14%), Goal 1 time bracket, Team to score first goal.
+
+# 6. Player markets: Haaland anytime goalscorer LIQUID (bid 0.5128/offer 0.5155, mid
+#    0.5142), Odegaard score-or-assist ILLIQUID (offer 0.3571 -> adj 0.3375), Amad Diallo
+#    1+SOT ILLIQUID (offer 0.5882 -> adj 0.5558), Sorloth 2+SOT LIQUID (bid 0.20/offer
+#    0.2597, mid 0.2299). Illiquid markets kept close to adjusted value per the deep-dive
+#    lesson against confident departures without a specific same-player precedent.
+
+# 7. Computed via scipy (python3):
+#    - Norway SOT lambda (5.13, from Over4.5 market) -> P(>=6 SOT)=0.4062, bumped to 0.43
+#      using the direct nor_sen 6+SOT precedent (settled YES there, our prior estimate
+#      was too low that time).
+#    - Combined goal lambda (~2.75, from OU2.5/OU3.5) -> Q14 late-window naive estimate
+#      0.5184, conveniently already inside the lesson-prescribed 0.45-0.55 shading band.
+#    - Combined offside lambda (~1.0, from ESPN team averages) -> Q12 naive P(>=4)=0.02,
+#      deliberately shaded up to 0.42 per the GER-PAR lesson rather than trusted raw.
+
+# 8. Validated the written JSON immediately with json.load() per the deep dive's own
+#    recommendation #5 -- confirmed valid on first write this time.
+
+# Output: data/external_markets/nor_civ_2026-06-30.json (full 15-question estimates,
+# explicitly citing STEPS_FOR_HIGH_POINTS.md and KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md
+# as load-bearing context for Q12 and Q14 specifically)

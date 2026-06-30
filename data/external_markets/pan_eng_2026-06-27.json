@@ -1,0 +1,158 @@
+{
+  "match": "Panama vs England",
+  "date": "2026-06-27",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"CRO_vs_ENG_GD1": 760437, "PAN_vs_GHA_GD1": 760434, "GHA_vs_ENG_GD2": 760458, "CRO_vs_PAN_GD2": 760460},
+  "smarkets_event_id": 45086933,
+  "group_context": {
+    "England": {"pts": 4, "record": "1-1-0 (W4-2 CRO, D0-0 GHA)", "status": "Top of group on GD, effectively safe"},
+    "Panama": {"pts": 0, "record": "0-0-2 (L0-1 GHA, L0-1 CRO)", "status": "ELIMINATED — no realistic path to advancement"}
+  },
+  "wc2026_espn_stats": {
+    "ENG": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760437, "opponent": "Croatia", "result": "W 4-2", "fouls": 10, "SOT": 11, "offsides": 0, "YC": 0, "RC": 0, "corners": 8, "possession": 51.7},
+        {"event_id": 760458, "opponent": "Ghana", "result": "D 0-0", "fouls": 14, "SOT": 3, "offsides": 2, "YC": 1, "RC": 0, "corners": 9, "possession": 78.9}
+      ],
+      "averages": {"fouls": 12.0, "SOT": 7.0, "offsides": 1.0, "cards": 0.5, "corners": 8.5}
+    },
+    "PAN": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760434, "opponent": "Ghana", "result": "L 0-1", "fouls": 11, "SOT": 4, "offsides": 1, "YC": 2, "RC": 0, "corners": 2, "possession": 62.0},
+        {"event_id": 760460, "opponent": "Croatia", "result": "L 0-1", "fouls": 19, "SOT": 1, "offsides": 1, "YC": 1, "RC": 0, "corners": 7, "possession": 42.0},
+        {"_note": "Panama's foul count nearly doubled (11→19) as their possession fell (62%→42%) — clean defending-team-fouls-more signal, and they'll have far less of the ball against England than against either prior opponent."}
+      ],
+      "averages": {"fouls": 15.0, "SOT": 2.5, "offsides": 1.0, "cards": 1.5, "corners": 4.5}
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Panama": 0.0426, "England": 0.8511, "Draw": 0.1031, "liquid": true},
+    "HT_result": {"Panama": 0.0636, "England": 0.6827, "Draw": 0.2582, "liquid": true},
+    "OU2_5": {"Under": 0.3080, "Over": 0.6923, "liquid": true},
+    "Penalty": {"Yes": 0.3548, "liquid": "one-sided, no liquid No"},
+    "Any_sent_off": {"Yes": 0.1110, "No": 0.8935, "liquid": true},
+    "Team_score_first": {"Panama": 0.1482, "England": 0.8119, "No_goal": 0.0224, "liquid": true},
+    "ENG_2H_OU0_5_goals": {"Under": 0.2024, "Over": 0.8048, "liquid": true},
+    "PAN_OU0_5_goals": {"Under": 0.5764, "Over": 0.4279, "liquid": true},
+    "player_SOT": {"Harry_Kane": {"bid": 0.8065, "note": "bid-only, used as-is"}, "Jose_Fajardo": {"offer": 0.4464, "adjusted": 0.422}}
+  },
+  "context_flags": [
+    "EXTREME_MISMATCH: England 85.11% favorite — comparable in scale to NED-TUN/POR-UZB blowout regime. Panama is mathematically eliminated.",
+    "PRIOR_LESSON_RULE15_FAJARDO: We have DIRECT history on this exact player — GHA-PAN Q10, we submitted 0.57 on Fajardo SOT (vs an extreme-underdog discount that should have given 0.25-0.30), he had 0 SOT, cost us -13.8 RBP. Today Panama is an even bigger underdog (4.3% vs ~13% then) — apply RULE15 fully this time, do not anchor on the market-adjusted illiquid price alone.",
+    "PRIOR_LESSON_FOULS_PATTERN: ENG-CRO confirmed 'low-foul dominant team' (England fouled less while dominant, +18.82 win). Panama's own foul count already nearly doubled from their highest-possession match (62%, 11 fouls) to their lowest (42%, 19 fouls) — today they'll have less possession than either, reinforcing a high foul count.",
+    "SUBMISSION_DISCIPLINE_FLAG: ENG-CRO's single worst process error was a Kane-related submission (typo'd 0.20 instead of 0.43, cost -44.54). Kane appears again today — double check the submitted value against this file before confirming."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Panama commit more fouls than England?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Raw normal-approx off ESPN averages (PAN 15.0 vs ENG 12.0) gives 0.76. Context reinforces rather than contradicts: Panama's foul rate already scales inversely with their possession share (62%→11 fouls, 42%→19 fouls), and they'll see less of the ball against England than against either prior opponent. Direct lesson from ENG-CRO (dominant teams foul less) and CRO-PAN (defending underdogs should be priced higher, not coin-flip) both point the same way.",
+      "final_estimate": 0.72,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will there be 4 or more total shots on target in the second half?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Combined full-match SOT average (ENG 7.0 + PAN 2.5 = 9.5), half-split λ≈4.75 → raw Poisson P(≥4)=0.70. Trimmed slightly for the chance England eases off once comfortably ahead (seen in other blowout 2H patterns, e.g. CUR-IVC, ARG-AUT).",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 3,
+      "text": "Will Panama score the first goal of the game and England score in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Compound: P(Panama scores first)=0.1482, P(England scores in 2H)=0.8048. Naive product=0.119. Small positive-correlation bump (if Panama somehow scores first, England's chase intensity in 2H only rises further) per the same adjustment used in USA-PAR and TUR-USA.",
+      "final_estimate": 0.13,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will a penalty kick be awarded OR a red card be shown?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Penalty Yes=35.48% (one-sided/illiquid but usable), Any sent off Yes=11.10%. P(OR)=1-(0.6452×0.889)=0.4264. This question family has been a reliable source of edge all tournament.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will Panama score at least 1 goal?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Panama over 0.5 goals = 42.79%. Trust it — Panama has scored 0 goals across 2 WC2026 matches, but the market already reflects some chance of a consolation goal against a rotated/comfortable England backline.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "At halftime, will the match be tied?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT market: Draw = 25.82%. Trust it.",
+      "final_estimate": 0.26,
+      "direction": "NO",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will the match have 3 or more total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over2.5 = 69.23%. England has scored 4+ goals already this tournament; consistent with a comfortable, goal-heavy expected result.",
+      "final_estimate": 0.69,
+      "direction": "YES",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will there be 5 or more total corner kicks in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Combined full-match corner average (ENG 8.5 + PAN 4.5 = 13.0), half-split λ≈6.5 → raw Poisson P(≥5)=0.78. Trimmed down for uncertainty in the even-split assumption — England may front-load corners in 1H if they race to an early lead.",
+      "final_estimate": 0.70,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will José Fajardo have at least 1 shot on target?",
+      "pick_tier": "HIGH CONFIDENCE — RULE15 APPLIED",
+      "reasoning": "Illiquid offer-adjusted market gives 0.422, but we have a direct, painful prior lesson on this EXACT player: GHA-PAN Q10, we trusted a similar market-adjusted number (0.57) over RULE15, Fajardo had 0 SOT, cost -13.8 RBP, and the postmortem explicitly said 'should have been ~0.25-0.30.' Panama is an even bigger underdog today (4.3% win prob) than in that match. Apply the lesson fully this time.",
+      "final_estimate": 0.28,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will Harry Kane have at least 1 shot on target?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Liquid-side bid of 0.8065 (no offer side, used as-is). Kane is England's central striker in an 85% favorite blowout against the weakest defense in the group — consistent with a high SOT probability. No RULE15 concern (England is the dominant side). NOTE: double-check this value on submission — Kane was the subject of our single worst-ever submission error (ENG-CRO, -44.54 from a typo).",
+      "final_estimate": 0.78,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_PAN_more_fouls": 0.72,
+    "Q2_4plus_2H_SOT": 0.65,
+    "Q3_PAN_first_AND_ENG_2H": 0.13,
+    "Q4_penalty_or_red": 0.43,
+    "Q5_PAN_scores": 0.43,
+    "Q6_HT_tied": 0.26,
+    "Q7_3plus_total_goals": 0.69,
+    "Q8_5plus_2H_corners": 0.70,
+    "Q9_Fajardo_SOT": 0.28,
+    "Q10_Kane_SOT": 0.78
+  },
+  "strongest_picks": [
+    "Q9: Fajardo SOT = 0.28 (HIGH CONFIDENCE — direct corrective application of a documented prior mistake on this exact player)",
+    "Q1: Panama more fouls = 0.72 (HIGH CONFIDENCE — clean possession-foul relationship, reinforced by ENG-CRO and CRO-PAN history)",
+    "Q10: Kane SOT = 0.78 (HIGH CONFIDENCE — liquid market, dominant favorite; flagged for submission-accuracy double-check)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-27"
+}

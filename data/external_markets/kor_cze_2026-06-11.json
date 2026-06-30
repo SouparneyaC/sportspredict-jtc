@@ -1,0 +1,228 @@
+{
+  "match": "KOR vs CZE",
+  "sportspredict_closing_time": "2026-06-12T04:30:00.000Z",
+  "fetched_at_utc": "2026-06-12T01:04:00Z",
+  "sources": {
+    "kalshi": {
+      "KXWC1H-26JUN11KORCZE-KOR": {
+        "title": "Will Republic of Korea win the 1st Half?",
+        "yes_bid": 0.28,
+        "yes_ask": 0.29,
+        "last_price": 0.29,
+        "volume": 44633.92,
+        "open_interest": 37091.49
+      },
+      "KXWCSOA-26JUN11KORCZE-KORSHEUNG7": {
+        "title": "Son Heung-min: score or assist?",
+        "yes_bid": 0.42,
+        "yes_ask": 0.43,
+        "last_price": 0.43
+      },
+      "KXWCAST-26JUN11KORCZE-KORSHEUNG7-1": {
+        "title": "Son Heung-min: 1+ assists?",
+        "yes_bid": 0.21,
+        "yes_ask": 0.25
+      },
+      "KXWCSOA-26JUN11KORCZE-CZEPSCHIC14": {
+        "title": "Patrik Schick: score or assist?",
+        "yes_bid": 0.32,
+        "yes_ask": 0.34,
+        "last_price": 0.34
+      },
+      "KXWCTCORNERS-26JUN11KORCZE-KOR5": {
+        "title": "South Korea: 5+ corners",
+        "yes_bid": 0.54,
+        "yes_ask": 0.55
+      },
+      "KXWCTCORNERS-26JUN11KORCZE-KOR7": {
+        "title": "South Korea: 7+ corners",
+        "yes_bid": 0.19,
+        "yes_ask": 0.22
+      },
+      "KXWCTCORNERS-26JUN11KORCZE-CZE5": {
+        "title": "Czechia: 5+ corners",
+        "yes_bid": 0.38,
+        "yes_ask": 0.4
+      },
+      "KXWCTCORNERS-26JUN11KORCZE-CZE7": {
+        "title": "Czechia: 7+ corners",
+        "yes_bid": 0.09,
+        "yes_ask": 0.12
+      }
+    },
+    "polymarket": {
+      "event_slug": "fifwc-kr-cze-2026-06-11",
+      "match_winner": {
+        "korea_win": 0.375,
+        "czechia_win": 0.315,
+        "draw": 0.315
+      },
+      "event_slug_player_score": "world-cup-player-to-score",
+      "son_heung_min_score_tournament": 0.745,
+      "patrik_schick_score_tournament": null
+    },
+    "smarkets": {
+      "event_id": "44986394",
+      "markets": {
+        "134484999": {
+          "name": "Anytime goalscorer",
+          "contracts": {
+            "Heung-Min Son": {
+              "id": "377432411",
+              "bid": 0.3125,
+              "ask": 0.3175
+            },
+            "No Goalscorer": {
+              "id": "377432414",
+              "bid": null,
+              "ask": 0.1136
+            }
+          }
+        },
+        "144300625": {
+          "name": "Player to have over 0.5 shots on target",
+          "contracts": {
+            "Patrik Schick": {
+              "id": "403063452",
+              "bid": 0.565,
+              "ask": 0.6329
+            }
+          }
+        },
+        "134484726": {
+          "name": "Penalty to be awarded",
+          "contracts": {
+            "Yes": {
+              "id": "377431581",
+              "bid": 0.3125,
+              "ask": 0.3333
+            },
+            "No": {
+              "id": "377431582",
+              "bid": 0.3226,
+              "ask": 0.7143
+            }
+          }
+        },
+        "134484756": {
+          "name": "Second half South Korea over/under 0.5 goals",
+          "contracts": {
+            "Under 0.5": {
+              "id": "377431671",
+              "bid": 0.4762,
+              "ask": 0.5263
+            },
+            "Over 0.5": {
+              "id": "377431672",
+              "bid": 0.4808,
+              "ask": 0.5291
+            }
+          }
+        }
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "841314ca-dd2b-4024-98d3-6b7a565f25ad": {
+      "question": "Will Son Heung-min score a goal (excluding own goals)?",
+      "estimate": 0.28,
+      "method": "Three sources converge: Kalshi SOA-minus-assist decomposition = 0.253; Polymarket tournament-wide 74.5% over ~3-4 group matches implies per-match ~0.25-0.30; Smarkets 'Anytime goalscorer' direct mid = 0.315. Averaged/rounded to 0.28.",
+      "confidence": "high"
+    },
+    "9479126a-6f7a-4617-8dd5-9404e7d7c023": {
+      "question": "Will Patrik Schick have at least 1 shot on target?",
+      "estimate": 0.6,
+      "method": "Smarkets 'Player to have over 0.5 shots on target' direct mid (bid 0.565 / ask 0.633). Wide spread (illiquid) -- single source only.",
+      "confidence": "medium"
+    },
+    "93b14829-1e24-4d3b-bfdd-cddc0bfce74b": {
+      "question": "Will a penalty kick be awarded in the match?",
+      "estimate": 0.32,
+      "method": "Smarkets 'Penalty to be awarded - Yes' direct mid (bid 0.3125 / ask 0.3333). Single source, but consistent with typical base rates (~0.25-0.30 per match).",
+      "confidence": "medium"
+    },
+    "0e157f1d-fc6e-42f6-82c6-90529ac15f32": {
+      "question": "Will South Korea score in the second half?",
+      "estimate": 0.5,
+      "method": "Smarkets 'Second half South Korea over/under 0.5 goals - Over' direct mid (bid 0.4808 / ask 0.5291). Single source.",
+      "confidence": "medium"
+    },
+    "b7995310-71f3-4a96-a11b-1332843d65b9": {
+      "question": "At halftime, will Czechia have more corner kicks than South Korea?",
+      "estimate": 0.38,
+      "method": "Kalshi full-match corner totals show KOR generates more corners than CZE (5+ corners: 54.5% vs 39%). Directional signal only -- full match not halftime, treat as weak prior shaded below 50%.",
+      "confidence": "low"
+    }
+  },
+  "validation": {
+    "e7d19c59-aa0a-42b7-afe9-5db6ab9e601c": {
+      "question": "Will South Korea win the match?",
+      "our_submission": 0.37,
+      "polymarket": 0.375,
+      "kalshi_implied_prior_research": "~0.36-0.37",
+      "note": "Three independent sources converge near 37% -- corroborates the downward adjustment from our raw model's 46%."
+    }
+  },
+  "post_match_results": {
+    "settled_date": "2026-06-11",
+    "final_score": "Korea Republic 2 - 1 Czechia",
+    "total_rbp": 22.81,
+    "beat_crowd_count": "5/6",
+    "questions": [
+      {
+        "q": 1,
+        "question": "Will both teams score AND the match have 3 or more total goals?",
+        "category": "compound_market_proxy",
+        "us": 0.4,
+        "crowd": 0.38,
+        "outcome": 1,
+        "rbp": 6.44
+      },
+      {
+        "q": 2,
+        "question": "Will a penalty kick be awarded in the match?",
+        "category": "tier1_market_deviated",
+        "us": 0.42,
+        "crowd": 0.33,
+        "outcome": 0,
+        "rbp": -3.2
+      },
+      {
+        "q": 3,
+        "question": "Will South Korea have more shots on target than Czechia in the second half?",
+        "category": "stats_proxy",
+        "us": 0.6,
+        "crowd": 0.55,
+        "outcome": 1,
+        "rbp": 7.21
+      },
+      {
+        "q": 4,
+        "question": "Will South Korea win the match?",
+        "category": "match_winner_internal_model",
+        "us": 0.46,
+        "crowd": 0.51,
+        "outcome": 1,
+        "rbp": -0.08
+      },
+      {
+        "q": 5,
+        "question": "Will Son Heung-min score a goal (excluding own goals)?",
+        "category": "tier1_market_deviated",
+        "us": 0.38,
+        "crowd": 0.4,
+        "outcome": 0,
+        "rbp": 6.52
+      },
+      {
+        "q": 6,
+        "question": "Will Patrik Schick have at least 1 shot on target?",
+        "category": "tier1_market",
+        "us": 0.65,
+        "crowd": 0.67,
+        "outcome": 0,
+        "rbp": 5.91
+      }
+    ]
+  }
+}

@@ -1,0 +1,1813 @@
+{
+  "FTR": {
+    "387270144": {
+      "bids": [
+        {
+          "price": 7634,
+          "quantity": 10917959
+        },
+        {
+          "price": 7576,
+          "quantity": 230618050
+        },
+        {
+          "price": 7519,
+          "quantity": 22269457
+        },
+        {
+          "price": 7463,
+          "quantity": 243100013
+        },
+        {
+          "price": 7407,
+          "quantity": 185032197
+        }
+      ],
+      "offers": [
+        {
+          "price": 7692,
+          "quantity": 818926260
+        },
+        {
+          "price": 7752,
+          "quantity": 31760100
+        },
+        {
+          "price": 7812,
+          "quantity": 20071668
+        },
+        {
+          "price": 9999,
+          "quantity": 494949
+        }
+      ]
+    },
+    "387270145": {
+      "bids": [
+        {
+          "price": 741,
+          "quantity": 482384449
+        },
+        {
+          "price": 714,
+          "quantity": 104231672
+        },
+        {
+          "price": 645,
+          "quantity": 107250100
+        }
+      ],
+      "offers": [
+        {
+          "price": 769,
+          "quantity": 23560640
+        },
+        {
+          "price": 800,
+          "quantity": 1362024
+        },
+        {
+          "price": 833,
+          "quantity": 779123268
+        },
+        {
+          "price": 870,
+          "quantity": 283217
+        },
+        {
+          "price": 909,
+          "quantity": 7857100
+        }
+      ]
+    },
+    "387270146": {
+      "bids": [
+        {
+          "price": 1613,
+          "quantity": 261024
+        },
+        {
+          "price": 1562,
+          "quantity": 378232852
+        },
+        {
+          "price": 1515,
+          "quantity": 93694695
+        }
+      ],
+      "offers": [
+        {
+          "price": 1667,
+          "quantity": 20919636
+        },
+        {
+          "price": 1695,
+          "quantity": 767381269
+        },
+        {
+          "price": 1724,
+          "quantity": 8875499
+        },
+        {
+          "price": 1754,
+          "quantity": 222919
+        },
+        {
+          "price": 1818,
+          "quantity": 330033
+        }
+      ]
+    }
+  },
+  "BTTS": {
+    "387270166": {
+      "bids": [
+        {
+          "price": 4386,
+          "quantity": 7490183
+        },
+        {
+          "price": 4274,
+          "quantity": 2001693
+        },
+        {
+          "price": 4132,
+          "quantity": 17286700
+        }
+      ],
+      "offers": [
+        {
+          "price": 4464,
+          "quantity": 1694057
+        },
+        {
+          "price": 4545,
+          "quantity": 22263395
+        },
+        {
+          "price": 4630,
+          "quantity": 13298900
+        }
+      ]
+    },
+    "387270167": {
+      "bids": [
+        {
+          "price": 5556,
+          "quantity": 24859314
+        },
+        {
+          "price": 5525,
+          "quantity": 5330677
+        },
+        {
+          "price": 5405,
+          "quantity": 13215300
+        }
+      ],
+      "offers": [
+        {
+          "price": 5714,
+          "quantity": 25788701
+        },
+        {
+          "price": 5747,
+          "quantity": 2177011
+        },
+        {
+          "price": 5848,
+          "quantity": 3027995
+        },
+        {
+          "price": 5882,
+          "quantity": 17345500
+        },
+        {
+          "price": 5988,
+          "quantity": 2057237
+        }
+      ]
+    }
+  },
+  "OU2.5": {
+    "387270308": {
+      "bids": [
+        {
+          "price": 4167,
+          "quantity": 2100424
+        },
+        {
+          "price": 4132,
+          "quantity": 7068730
+        },
+        {
+          "price": 4000,
+          "quantity": 17857100
+        }
+      ],
+      "offers": [
+        {
+          "price": 4310,
+          "quantity": 157264570
+        },
+        {
+          "price": 4386,
+          "quantity": 1528692
+        },
+        {
+          "price": 4545,
+          "quantity": 220022
+        }
+      ]
+    },
+    "387270309": {
+      "bids": [
+        {
+          "price": 5714,
+          "quantity": 12588104
+        },
+        {
+          "price": 5650,
+          "quantity": 49273081
+        },
+        {
+          "price": 5618,
+          "quantity": 14232792
+        },
+        {
+          "price": 5435,
+          "quantity": 1605520
+        },
+        {
+          "price": 5405,
+          "quantity": 634595
+        }
+      ],
+      "offers": [
+        {
+          "price": 5848,
+          "quantity": 4811333
+        },
+        {
+          "price": 5917,
+          "quantity": 228460815
+        },
+        {
+          "price": 5988,
+          "quantity": 17803700
+        }
+      ]
+    }
+  },
+  "OU1.5": {
+    "387270306": {
+      "bids": [
+        {
+          "price": 1818,
+          "quantity": 57756252
+        },
+        {
+          "price": 1786,
+          "quantity": 9798432
+        },
+        {
+          "price": 1754,
+          "quantity": 34010885
+        }
+      ],
+      "offers": [
+        {
+          "price": 1923,
+          "quantity": 1040041
+        },
+        {
+          "price": 1961,
+          "quantity": 105863840
+        },
+        {
+          "price": 2000,
+          "quantity": 8928600
+        },
+        {
+          "price": 2041,
+          "quantity": 1623905
+        }
+      ]
+    },
+    "387270307": {
+      "bids": [
+        {
+          "price": 7937,
+          "quantity": 35242256
+        },
+        {
+          "price": 7874,
+          "quantity": 10270603
+        }
+      ],
+      "offers": [
+        {
+          "price": 8264,
+          "quantity": 195012591
+        },
+        {
+          "price": 8333,
+          "quantity": 4938015
+        }
+      ]
+    }
+  },
+  "Penalty": {
+    "387270254": {
+      "bids": [
+        {
+          "price": 2703,
+          "quantity": 184979
+        },
+        {
+          "price": 2597,
+          "quantity": 192529
+        }
+      ],
+      "offers": [
+        {
+          "price": 3125,
+          "quantity": 8434010
+        }
+      ]
+    },
+    "387270255": {
+      "bids": [
+        {
+          "price": 6944,
+          "quantity": 3836271
+        },
+        {
+          "price": 6711,
+          "quantity": 3277
+        },
+        {
+          "price": 6667,
+          "quantity": 1012449
+        }
+      ],
+      "offers": [
+        {
+          "price": 7299,
+          "quantity": 1395534
+        }
+      ]
+    }
+  },
+  "2H_result": {
+    "387270182": {
+      "bids": [
+        {
+          "price": 5780,
+          "quantity": 1505633
+        },
+        {
+          "price": 5587,
+          "quantity": 1610882
+        },
+        {
+          "price": 5495,
+          "quantity": 1637852
+        }
+      ],
+      "offers": [
+        {
+          "price": 6250,
+          "quantity": 2320682
+        },
+        {
+          "price": 6369,
+          "quantity": 2478656
+        }
+      ]
+    },
+    "387270183": {
+      "bids": [
+        {
+          "price": 870,
+          "quantity": 10002941
+        },
+        {
+          "price": 588,
+          "quantity": 15306122
+        }
+      ],
+      "offers": [
+        {
+          "price": 1250,
+          "quantity": 1142857
+        },
+        {
+          "price": 1316,
+          "quantity": 1036388
+        }
+      ]
+    },
+    "387270184": {
+      "bids": [
+        {
+          "price": 2703,
+          "quantity": 6549226
+        }
+      ],
+      "offers": [
+        {
+          "price": 3226,
+          "quantity": 1284700
+        },
+        {
+          "price": 3356,
+          "quantity": 1354605
+        },
+        {
+          "price": 3378,
+          "quantity": 1359106
+        }
+      ]
+    }
+  },
+  "2H_OU1.5": {
+    "387270326": {
+      "bids": [
+        {
+          "price": 4854,
+          "quantity": 2060157
+        },
+        {
+          "price": 4762,
+          "quantity": 1886937
+        }
+      ],
+      "offers": [
+        {
+          "price": 5263,
+          "quantity": 2111041
+        },
+        {
+          "price": 5650,
+          "quantity": 2072413
+        },
+        {
+          "price": 5814,
+          "quantity": 2153606
+        }
+      ]
+    },
+    "387270327": {
+      "bids": [
+        {
+          "price": 4808,
+          "quantity": 2079867
+        },
+        {
+          "price": 4386,
+          "quantity": 2055402
+        },
+        {
+          "price": 4202,
+          "quantity": 2145406
+        }
+      ],
+      "offers": [
+        {
+          "price": 5181,
+          "quantity": 2075119
+        },
+        {
+          "price": 5263,
+          "quantity": 1896896
+        },
+        {
+          "price": 5291,
+          "quantity": 1433426
+        }
+      ]
+    }
+  },
+  "2H_OU0.5": {
+    "387270324": {
+      "bids": [
+        {
+          "price": 1667,
+          "quantity": 5998800
+        },
+        {
+          "price": 1562,
+          "quantity": 5761843
+        }
+      ],
+      "offers": [
+        {
+          "price": 2083,
+          "quantity": 1263105
+        },
+        {
+          "price": 2500,
+          "quantity": 1200000
+        }
+      ]
+    },
+    "387270325": {
+      "bids": [
+        {
+          "price": 8000,
+          "quantity": 1250000
+        },
+        {
+          "price": 7519,
+          "quantity": 1196967
+        },
+        {
+          "price": 7463,
+          "quantity": 1205949
+        },
+        {
+          "price": 6667,
+          "quantity": 3749
+        }
+      ],
+      "offers": [
+        {
+          "price": 8403,
+          "quantity": 6261741
+        },
+        {
+          "price": 8475,
+          "quantity": 5901639
+        }
+      ]
+    }
+  },
+  "2H_CAN_OU0.5_goals": {
+    "387270344": {
+      "bids": [
+        {
+          "price": 2532,
+          "quantity": 7503949
+        }
+      ],
+      "offers": [
+        {
+          "price": 3030,
+          "quantity": 1434720
+        },
+        {
+          "price": 3356,
+          "quantity": 1354605
+        },
+        {
+          "price": 3425,
+          "quantity": 1368821
+        }
+      ]
+    },
+    "387270345": {
+      "bids": [
+        {
+          "price": 7042,
+          "quantity": 1420051
+        },
+        {
+          "price": 6667,
+          "quantity": 1349932
+        },
+        {
+          "price": 6579,
+          "quantity": 1367989
+        }
+      ],
+      "offers": [
+        {
+          "price": 7576,
+          "quantity": 7838284
+        },
+        {
+          "price": 7752,
+          "quantity": 3002678
+        }
+      ]
+    }
+  },
+  "2H_QAT_OU0.5_goals": {
+    "387270364": {
+      "bids": [
+        {
+          "price": 6623,
+          "quantity": 1509890
+        },
+        {
+          "price": 6536,
+          "quantity": 1372055
+        }
+      ],
+      "offers": [
+        {
+          "price": 7143,
+          "quantity": 3500175
+        },
+        {
+          "price": 7463,
+          "quantity": 3553408
+        },
+        {
+          "price": 7752,
+          "quantity": 3002678
+        }
+      ]
+    },
+    "387270365": {
+      "bids": [
+        {
+          "price": 2941,
+          "quantity": 3400204
+        },
+        {
+          "price": 2597,
+          "quantity": 3471311
+        }
+      ],
+      "offers": [
+        {
+          "price": 3425,
+          "quantity": 1520913
+        },
+        {
+          "price": 3472,
+          "quantity": 1373736
+        }
+      ]
+    }
+  },
+  "Cards_OU1.5": {
+    "387270568": {
+      "bids": [
+        {
+          "price": 1190,
+          "quantity": 7563025
+        }
+      ],
+      "offers": [
+        {
+          "price": 2222,
+          "quantity": 1157109
+        }
+      ]
+    },
+    "387270569": {
+      "bids": [
+        {
+          "price": 7752,
+          "quantity": 1160990
+        }
+      ],
+      "offers": [
+        {
+          "price": 8850,
+          "quantity": 7826086
+        },
+        {
+          "price": 9091,
+          "quantity": 9900990
+        }
+      ]
+    }
+  },
+  "Cards_OU2.5": {
+    "387270572": {
+      "bids": [
+        {
+          "price": 3356,
+          "quantity": 2897577
+        },
+        {
+          "price": 3077,
+          "quantity": 2953016
+        }
+      ],
+      "offers": [
+        {
+          "price": 4000,
+          "quantity": 562500
+        },
+        {
+          "price": 4098,
+          "quantity": 540140
+        }
+      ]
+    },
+    "387270573": {
+      "bids": [
+        {
+          "price": 5618,
+          "quantity": 48059
+        },
+        {
+          "price": 5405,
+          "quantity": 74929
+        }
+      ],
+      "offers": [
+        {
+          "price": 7143,
+          "quantity": 5300686
+        }
+      ]
+    }
+  },
+  "Cards_OU3.5": {
+    "387270576": {
+      "bids": [
+        {
+          "price": 5263,
+          "quantity": 1140034
+        }
+      ],
+      "offers": [
+        {
+          "price": 6024,
+          "quantity": 848843
+        },
+        {
+          "price": 6211,
+          "quantity": 1336105
+        }
+      ]
+    },
+    "387270577": {
+      "bids": [
+        {
+          "price": 4545,
+          "quantity": 550055
+        },
+        {
+          "price": 3968,
+          "quantity": 122934
+        },
+        {
+          "price": 3788,
+          "quantity": 121830
+        }
+      ],
+      "offers": [
+        {
+          "price": 4762,
+          "quantity": 3818251
+        }
+      ]
+    }
+  },
+  "Most_cards": {
+    "387270251": {
+      "bids": [
+        {
+          "price": 1786,
+          "quantity": 3779395
+        }
+      ],
+      "offers": [
+        {
+          "price": 2564,
+          "quantity": 907745
+        }
+      ]
+    },
+    "387270252": {
+      "bids": [
+        {
+          "price": 4902,
+          "quantity": 1376988
+        }
+      ],
+      "offers": [
+        {
+          "price": 5882,
+          "quantity": 1639145
+        },
+        {
+          "price": 5952,
+          "quantity": 1667490
+        }
+      ]
+    },
+    "387270253": {
+      "bids": [
+        {
+          "price": 1923,
+          "quantity": 9345937
+        },
+        {
+          "price": 1754,
+          "quantity": 3848348
+        }
+      ],
+      "offers": [
+        {
+          "price": 2778,
+          "quantity": 934644
+        }
+      ]
+    }
+  },
+  "CAN_cards": {
+    "387270410": {
+      "bids": [
+        {
+          "price": 4202,
+          "quantity": 803189
+        }
+      ],
+      "offers": [
+        {
+          "price": 4854,
+          "quantity": 655849
+        }
+      ]
+    },
+    "387270411": {
+      "bids": [
+        {
+          "price": 5181,
+          "quantity": 651418
+        }
+      ],
+      "offers": [
+        {
+          "price": 5814,
+          "quantity": 806258
+        }
+      ]
+    }
+  },
+  "Corners_OU8.5": {
+    "387270598": {
+      "bids": [
+        {
+          "price": 3226,
+          "quantity": 1287116
+        },
+        {
+          "price": 3175,
+          "quantity": 9810200
+        },
+        {
+          "price": 2857,
+          "quantity": 38501
+        }
+      ],
+      "offers": [
+        {
+          "price": 3497,
+          "quantity": 10982300
+        },
+        {
+          "price": 3521,
+          "quantity": 7717240
+        }
+      ]
+    },
+    "387270599": {
+      "bids": [
+        {
+          "price": 6410,
+          "quantity": 11072500
+        },
+        {
+          "price": 6289,
+          "quantity": 1787941
+        },
+        {
+          "price": 6250,
+          "quantity": 1799135
+        }
+      ],
+      "offers": [
+        {
+          "price": 6803,
+          "quantity": 25271463
+        }
+      ]
+    }
+  },
+  "Corners_OU9.5": {
+    "387270600": {
+      "bids": [
+        {
+          "price": 4673,
+          "quantity": 361117
+        },
+        {
+          "price": 4386,
+          "quantity": 9769021
+        }
+      ],
+      "offers": [
+        {
+          "price": 4902,
+          "quantity": 30493
+        },
+        {
+          "price": 5025,
+          "quantity": 14357500
+        },
+        {
+          "price": 5556,
+          "quantity": 379725
+        },
+        {
+          "price": 5587,
+          "quantity": 382393
+        }
+      ]
+    },
+    "387270601": {
+      "bids": [
+        {
+          "price": 4950,
+          "quantity": 14430000
+        },
+        {
+          "price": 4425,
+          "quantity": 381356
+        },
+        {
+          "price": 4237,
+          "quantity": 398277
+        }
+      ],
+      "offers": [
+        {
+          "price": 5236,
+          "quantity": 6156
+        },
+        {
+          "price": 5556,
+          "quantity": 9053700
+        }
+      ]
+    }
+  },
+  "QAT_corners_OU3.5": {
+    "387270620": {
+      "bids": [
+        {
+          "price": 7092,
+          "quantity": 10001200
+        },
+        {
+          "price": 6849,
+          "quantity": 98554
+        },
+        {
+          "price": 6667,
+          "quantity": 101245
+        }
+      ],
+      "offers": [
+        {
+          "price": 7812,
+          "quantity": 29260400
+        },
+        {
+          "price": 7874,
+          "quantity": 317498
+        },
+        {
+          "price": 8065,
+          "quantity": 348837
+        }
+      ]
+    },
+    "387270621": {
+      "bids": [
+        {
+          "price": 2222,
+          "quantity": 19247080
+        },
+        {
+          "price": 2000,
+          "quantity": 337500
+        }
+      ],
+      "offers": [
+        {
+          "price": 2703,
+          "quantity": 9787400
+        },
+        {
+          "price": 3175,
+          "quantity": 98901
+        },
+        {
+          "price": 3356,
+          "quantity": 101595
+        }
+      ]
+    }
+  },
+  "QAT_corners_OU4.5": {
+    "387270624": {
+      "bids": [
+        {
+          "price": 8403,
+          "quantity": 8429100
+        },
+        {
+          "price": 8065,
+          "quantity": 83695
+        },
+        {
+          "price": 7576,
+          "quantity": 89097
+        }
+      ],
+      "offers": [
+        {
+          "price": 8929,
+          "quantity": 44932800
+        },
+        {
+          "price": 9174,
+          "quantity": 817199
+        }
+      ]
+    },
+    "387270625": {
+      "bids": [
+        {
+          "price": 1042,
+          "quantity": 43440100
+        },
+        {
+          "price": 909,
+          "quantity": 742577
+        }
+      ],
+      "offers": [
+        {
+          "price": 1562,
+          "quantity": 8465100
+        },
+        {
+          "price": 1961,
+          "quantity": 83965
+        }
+      ]
+    }
+  },
+  "PlayerSOT_0.5plus": {
+    "405451253": {
+      "bids": [
+        {
+          "price": 2083,
+          "quantity": 2688425
+        },
+        {
+          "price": 1887,
+          "quantity": 2967668
+        }
+      ],
+      "offers": [
+        {
+          "price": 2632,
+          "quantity": 160112
+        }
+      ]
+    },
+    "405451254": {
+      "bids": [],
+      "offers": []
+    },
+    "405451255": {
+      "bids": [
+        {
+          "price": 6536,
+          "quantity": 684616
+        },
+        {
+          "price": 6494,
+          "quantity": 127917
+        },
+        {
+          "price": 6135,
+          "quantity": 147024
+        }
+      ],
+      "offers": [
+        {
+          "price": 7143,
+          "quantity": 350017
+        },
+        {
+          "price": 7246,
+          "quantity": 110405
+        }
+      ]
+    },
+    "405451256": {
+      "bids": [],
+      "offers": []
+    },
+    "405451257": {
+      "bids": [],
+      "offers": []
+    },
+    "405451258": {
+      "bids": [],
+      "offers": []
+    },
+    "405451259": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 6329,
+          "quantity": 1838737
+        }
+      ]
+    },
+    "405451260": {
+      "bids": [
+        {
+          "price": 1429,
+          "quantity": 629810
+        },
+        {
+          "price": 1389,
+          "quantity": 3100104
+        }
+      ],
+      "offers": [
+        {
+          "price": 2899,
+          "quantity": 12771950
+        }
+      ]
+    },
+    "405451261": {
+      "bids": [],
+      "offers": []
+    },
+    "405451262": {
+      "bids": [],
+      "offers": []
+    },
+    "405451263": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 6494,
+          "quantity": 1925274
+        }
+      ]
+    },
+    "405451264": {
+      "bids": [],
+      "offers": []
+    },
+    "405451265": {
+      "bids": [
+        {
+          "price": 1316,
+          "quantity": 404177
+        },
+        {
+          "price": 1136,
+          "quantity": 468219
+        }
+      ],
+      "offers": [
+        {
+          "price": 1923,
+          "quantity": 123808
+        }
+      ]
+    },
+    "405451266": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 2174,
+          "quantity": 862509
+        }
+      ]
+    },
+    "405451267": {
+      "bids": [],
+      "offers": []
+    },
+    "405451268": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 6536,
+          "quantity": 1948615
+        }
+      ]
+    },
+    "405451269": {
+      "bids": [
+        {
+          "price": 4673,
+          "quantity": 7066541
+        }
+      ],
+      "offers": [
+        {
+          "price": 4950,
+          "quantity": 198019
+        }
+      ]
+    },
+    "405451270": {
+      "bids": [],
+      "offers": []
+    },
+    "405451271": {
+      "bids": [],
+      "offers": []
+    },
+    "405451272": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 4950,
+          "quantity": 1336633
+        }
+      ]
+    },
+    "405451273": {
+      "bids": [],
+      "offers": []
+    },
+    "405451274": {
+      "bids": [
+        {
+          "price": 3077,
+          "quantity": 3912963
+        },
+        {
+          "price": 2703,
+          "quantity": 3382534
+        }
+      ],
+      "offers": [
+        {
+          "price": 4000,
+          "quantity": 5452585
+        }
+      ]
+    },
+    "405451275": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 7634,
+          "quantity": 130992
+        },
+        {
+          "price": 8065,
+          "quantity": 3488386
+        }
+      ]
+    },
+    "405451276": {
+      "bids": [],
+      "offers": []
+    },
+    "405451277": {
+      "bids": [],
+      "offers": []
+    },
+    "405451278": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 2041,
+          "quantity": 2873036
+        }
+      ]
+    },
+    "405451279": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 2817,
+          "quantity": 939719
+        }
+      ]
+    },
+    "405451280": {
+      "bids": [],
+      "offers": []
+    },
+    "405451281": {
+      "bids": [],
+      "offers": []
+    },
+    "405451282": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 7812,
+          "quantity": 128008
+        },
+        {
+          "price": 8130,
+          "quantity": 3609637
+        }
+      ]
+    },
+    "405451283": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 3279,
+          "quantity": 1004315
+        }
+      ]
+    },
+    "405451284": {
+      "bids": [
+        {
+          "price": 37,
+          "quantity": 36479554
+        }
+      ],
+      "offers": [
+        {
+          "price": 6098,
+          "quantity": 10054774
+        }
+      ]
+    },
+    "405451285": {
+      "bids": [],
+      "offers": []
+    },
+    "405451286": {
+      "bids": [],
+      "offers": []
+    },
+    "405451287": {
+      "bids": [],
+      "offers": []
+    },
+    "405451288": {
+      "bids": [],
+      "offers": []
+    },
+    "405451289": {
+      "bids": [],
+      "offers": []
+    },
+    "405451290": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 5780,
+          "quantity": 1599528
+        }
+      ]
+    },
+    "405451291": {
+      "bids": [],
+      "offers": []
+    },
+    "405451292": {
+      "bids": [
+        {
+          "price": 5882,
+          "quantity": 537776
+        },
+        {
+          "price": 5650,
+          "quantity": 398229
+        },
+        {
+          "price": 5556,
+          "quantity": 156227
+        },
+        {
+          "price": 5525,
+          "quantity": 274569
+        }
+      ],
+      "offers": [
+        {
+          "price": 6849,
+          "quantity": 146006
+        },
+        {
+          "price": 7092,
+          "quantity": 343878
+        }
+      ]
+    },
+    "405451293": {
+      "bids": [],
+      "offers": []
+    },
+    "405451294": {
+      "bids": [
+        {
+          "price": 2083,
+          "quantity": 240039
+        },
+        {
+          "price": 1282,
+          "quantity": 631821
+        }
+      ],
+      "offers": [
+        {
+          "price": 2740,
+          "quantity": 137741
+        }
+      ]
+    },
+    "405451295": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 4950,
+          "quantity": 1336633
+        }
+      ]
+    },
+    "405451296": {
+      "bids": [],
+      "offers": []
+    },
+    "405451297": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 7042,
+          "quantity": 2281949
+        }
+      ]
+    },
+    "405451298": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1613,
+          "quantity": 804817
+        }
+      ]
+    },
+    "405451299": {
+      "bids": [],
+      "offers": []
+    },
+    "405451300": {
+      "bids": [],
+      "offers": []
+    },
+    "405451301": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1190,
+          "quantity": 113507
+        }
+      ]
+    },
+    "405451302": {
+      "bids": [
+        {
+          "price": 2222,
+          "quantity": 607560
+        },
+        {
+          "price": 357,
+          "quantity": 4430252
+        }
+      ],
+      "offers": [
+        {
+          "price": 2740,
+          "quantity": 10925839
+        },
+        {
+          "price": 3077,
+          "quantity": 11198725
+        }
+      ]
+    },
+    "405451303": {
+      "bids": [],
+      "offers": []
+    },
+    "405451304": {
+      "bids": [],
+      "offers": []
+    },
+    "405451305": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1389,
+          "quantity": 783881
+        }
+      ]
+    },
+    "405451306": {
+      "bids": [],
+      "offers": []
+    },
+    "405451307": {
+      "bids": [],
+      "offers": []
+    },
+    "405451308": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1471,
+          "quantity": 1272035
+        }
+      ]
+    },
+    "405451309": {
+      "bids": [],
+      "offers": []
+    },
+    "405451310": {
+      "bids": [],
+      "offers": []
+    },
+    "405451311": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 3497,
+          "quantity": 1037982
+        }
+      ]
+    },
+    "405451312": {
+      "bids": [],
+      "offers": []
+    },
+    "405451313": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1190,
+          "quantity": 113507
+        }
+      ]
+    },
+    "405451314": {
+      "bids": [],
+      "offers": []
+    },
+    "405451315": {
+      "bids": [],
+      "offers": []
+    },
+    "405451316": {
+      "bids": [],
+      "offers": []
+    },
+    "405451317": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 2817,
+          "quantity": 939719
+        }
+      ]
+    },
+    "405451318": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1316,
+          "quantity": 777291
+        }
+      ]
+    },
+    "405451319": {
+      "bids": [],
+      "offers": []
+    },
+    "405451320": {
+      "bids": [],
+      "offers": []
+    },
+    "405451321": {
+      "bids": [],
+      "offers": []
+    },
+    "405451322": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 3425,
+          "quantity": 1026616
+        }
+      ]
+    },
+    "405451323": {
+      "bids": [
+        {
+          "price": 1786,
+          "quantity": 339865
+        }
+      ],
+      "offers": [
+        {
+          "price": 2778,
+          "quantity": 6295875
+        }
+      ]
+    },
+    "405451324": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 3546,
+          "quantity": 1045863
+        },
+        {
+          "price": 3571,
+          "quantity": 1049930
+        }
+      ]
+    },
+    "405451325": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1316,
+          "quantity": 777291
+        }
+      ]
+    },
+    "405451326": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 2273,
+          "quantity": 873560
+        }
+      ]
+    },
+    "405451327": {
+      "bids": [],
+      "offers": []
+    },
+    "405451328": {
+      "bids": [
+        {
+          "price": 133,
+          "quantity": 3383374
+        }
+      ],
+      "offers": [
+        {
+          "price": 1562,
+          "quantity": 9800241
+        }
+      ]
+    },
+    "405451329": {
+      "bids": [],
+      "offers": []
+    },
+    "405451330": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 3968,
+          "quantity": 1119031
+        }
+      ]
+    },
+    "405451331": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1786,
+          "quantity": 821767
+        }
+      ]
+    },
+    "405451332": {
+      "bids": [],
+      "offers": []
+    },
+    "405451333": {
+      "bids": [
+        {
+          "price": 2326,
+          "quantity": 486241
+        },
+        {
+          "price": 2083,
+          "quantity": 542966
+        }
+      ],
+      "offers": [
+        {
+          "price": 3472,
+          "quantity": 14368881
+        }
+      ]
+    },
+    "405451334": {
+      "bids": [],
+      "offers": []
+    },
+    "405451335": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 1282,
+          "quantity": 114705
+        }
+      ]
+    },
+    "405451336": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 4717,
+          "quantity": 1277684
+        },
+        {
+          "price": 4854,
+          "quantity": 1311700
+        }
+      ]
+    },
+    "405451337": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 4950,
+          "quantity": 1336633
+        }
+      ]
+    },
+    "405451338": {
+      "bids": [],
+      "offers": [
+        {
+          "price": 667,
+          "quantity": 3946507
+        }
+      ]
+    },
+    "405451339": {
+      "bids": [],
+      "offers": []
+    }
+  },
+  "CAN_OU4.5_SOT": {
+    "data": {
+      "count": 21,
+      "expiry": "Thu, 18 Jun 2026 21:13:17 GMT",
+      "limit": 20
+    },
+    "error_type": "RATE_LIMIT_EXCEEDED"
+  },
+  "CAN_OU6.5_SOT": {
+    "data": {
+      "count": 22,
+      "expiry": "Thu, 18 Jun 2026 21:13:17 GMT",
+      "limit": 20
+    },
+    "error_type": "RATE_LIMIT_EXCEEDED"
+  },
+  "QAT_OU2.5_SOT": {
+    "data": {
+      "count": 23,
+      "expiry": "Thu, 18 Jun 2026 21:13:17 GMT",
+      "limit": 20
+    },
+    "error_type": "RATE_LIMIT_EXCEEDED"
+  },
+  "QAT_OU3.5_SOT": {
+    "data": {
+      "count": 24,
+      "expiry": "Thu, 18 Jun 2026 21:13:17 GMT",
+      "limit": 20
+    },
+    "error_type": "RATE_LIMIT_EXCEEDED"
+  },
+  "AH_CAN_minus0.5": {
+    "data": {
+      "count": 25,
+      "expiry": "Thu, 18 Jun 2026 21:13:17 GMT",
+      "limit": 20
+    },
+    "error_type": "RATE_LIMIT_EXCEEDED"
+  }
+}

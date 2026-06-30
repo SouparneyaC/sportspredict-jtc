@@ -1,0 +1,268 @@
+{
+  "match": "UZB-COL",
+  "sportspredict_match_id": "2f8032ea-ab51-4872-ae34-93feb909a39a",
+  "smarkets_event_id": "44754808",
+  "espn_event_id": null,
+  "closing_time": "2026-06-18T04:30:00.000Z",
+  "context_note": "Uzbekistan vs Colombia - Colombia are heavy favorites (FTR: COL 70.4% / Draw 20.1% / UZB 9.5%, vig-adj Smarkets). Uzbekistan qualified via AFC; Colombia via CONMEBOL (2nd in qualifying, Copa America 2024 finalists). Draw price 20.1% is just below the RULE8 'elevated' threshold (~25%) - moderate regime, similar to SAU-URU (21.5% draw, posture: 'aggressive'). Uzbekistan's ESPN data is thin (n=3) and the China match has suspect SOT=0; use Gabon+Canada for SOT estimates. Colombia's n=4 data is clean and internally consistent.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "raw_file": "uzb_col_smarkets_quotes.json",
+      "markets_used": {
+        "full_time_result": {
+          "Uzbekistan": 0.095,
+          "Draw": 0.2013,
+          "Colombia": 0.7037
+        },
+        "penalty_to_be_awarded": {
+          "Yes": 0.2867,
+          "No": 0.7133
+        },
+        "uzbekistan_ou_0.5_goals": {
+          "Under_0.5": 0.5262,
+          "Over_0.5": 0.4738,
+          "implied_p_uzb_scores": 0.474
+        },
+        "second_half_colombia_ou_0.5_goals": {
+          "Under_0.5": 0.3206,
+          "Over_0.5": 0.6794,
+          "implied_p_col_scores_2h": 0.679
+        },
+        "second_half_uzbekistan_ou_0.5_goals": {
+          "Under_0.5": 0.7177,
+          "Over_0.5": 0.2823,
+          "implied_p_uzb_scores_2h": 0.282
+        },
+        "uzbekistan_ou_4.5_corners": {
+          "Under_4.5": 0.7943,
+          "Over_4.5": 0.2057,
+          "implied_p_uzb_5plus_corners": 0.206
+        },
+        "over_under_2.5_goals": {
+          "Under_2.5": 0.5025,
+          "Over_2.5": 0.4975,
+          "implied_p_le2_goals": 0.503
+        },
+        "halftime_result": {
+          "Uzbekistan": 0.0959,
+          "Draw": 0.3941,
+          "Colombia": 0.5101
+        },
+        "uzbekistan_ou_1.5_cards": {
+          "Under_1.5": 0.4639,
+          "Over_1.5": 0.5361,
+          "implied_lambda_cards": 1.47
+        },
+        "uzbekistan_ou_2.5_cards": {
+          "Under_2.5": 0.732,
+          "Over_2.5": 0.268
+        },
+        "colombia_ou_1.5_cards": {
+          "Under_1.5": 0.6434,
+          "Over_1.5": 0.3566
+        },
+        "luis_diaz_ou_0.5_sot_full_match": {
+          "offer_only": 0.8772,
+          "illiquidity_discounted_x0945": 0.829,
+          "note": "Full-match 0.5 SOT line; Diaz is offer-only (no bid) = illiquid"
+        },
+        "shomurodov_score_or_assist": {
+          "offer_only": 0.2597,
+          "illiquidity_discounted_x0945": 0.245
+        }
+      },
+      "no_market_exists_for": [
+        "team offsides direct comparison",
+        "2H team SOT direct comparison",
+        "team fouls (either direction)"
+      ]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "raw_file": "uzb_col_wc2026_raw.jsonl",
+      "colombia_n4": {
+        "matches": [
+          "Canada(A) 2026-03-01 W1-0",
+          "France(H) 2026-03-29 D1-1",
+          "Costa Rica(H) 2026-06-01 W3-1",
+          "Jordan(H) 2026-06-07 W2-0"
+        ],
+        "fouls": [12, 13, 12, 7],
+        "avg_fouls": 11.0,
+        "offsides": [0, 2, 0, 3],
+        "avg_offsides": 1.25,
+        "sot": [4, 5, 6, 5],
+        "avg_sot_full": 5.0,
+        "yellow": [1, 1, 2, 0],
+        "avg_yellow": 1.0,
+        "goals": [1, 1, 3, 2],
+        "avg_goals": 1.75
+      },
+      "uzbekistan_n3": {
+        "matches": [
+          "China(H) 2026-03-06 D0-0",
+          "Gabon(H) 2026-03-27 W3-0",
+          "Canada(A) 2026-06-02 L0-2"
+        ],
+        "fouls": [12, 8, 15],
+        "avg_fouls": 11.67,
+        "offsides": [0, 1, 3],
+        "avg_offsides_n3": 1.33,
+        "avg_offsides_n2_ex_china": 2.0,
+        "sot": [0, 7, 2],
+        "avg_sot_full_n3": 3.0,
+        "avg_sot_full_n2_ex_china": 4.5,
+        "note_china": "China match SOT=0 is suspect data quality (ESPN API artifact for this match). 6 yellow cards also unusual. Use n=2 (Gabon+Canada) for SOT-based estimates; n=3 for fouls/cards.",
+        "yellow": [6, 0, 2],
+        "avg_yellow_n3": 2.67,
+        "avg_yellow_n2_ex_china": 1.0,
+        "goals": [0, 3, 0],
+        "avg_goals": 1.0
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_colombia_more_2h_sot_than_uzbekistan": {
+      "market_id": "ede1bef6-89d1-4dc9-9480-4786b402d5aa",
+      "category": "tier2_realdata",
+      "method": "Skellam on 2H-scaled SOT: COL lambda_2H = 5.0/2 = 2.5 (n=4). UZB lambda_2H = 4.5/2 = 2.25 (n=2 ex-China, SOT=0 excluded). mu_diff = 0.25; P(COL>UZB) = Phi(0.25/sqrt(2.5+2.25)) = Phi(0.25/2.179) = Phi(0.115) ~ 0.546. If using n=3 (incl China SOT=0): UZB lambda_2H=1.5, P~0.69. Draw price=20.1% (below RULE8 25% threshold), so no major shrinkage needed. Colombia is heavy favorite so ~0.62-0.67 is reasonable.",
+      "raw_skellam_n2": 0.546,
+      "raw_skellam_n3_incl_china": 0.691,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q2_uzbekistan_2plus_offsides": {
+      "market_id": "15bd0238-9c26-4363-a5fc-98254850998b",
+      "category": "tier2_realdata",
+      "method": "Poisson, UZB offsides: n=2 ex-China (1,3) lambda=2.0 -> P(>=2) = 1-e^-2*(1+2) = 0.594; n=3 incl China (0,1,3) lambda=1.33 -> P(>=2) = 1-e^-1.33*(1+1.33) = 0.383. Draw price 20.1% means moderate-competition regime. RULE8 (draw-price shrink) not triggered strongly. Best estimate: blend toward ~0.45-0.50 given thin sample.",
+      "raw_poisson_n2": 0.594,
+      "raw_poisson_n3": 0.383,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q3_penalty_or_red_card": {
+      "market_id": "c082d55b-54c6-4996-95e2-41e19c9f0c68",
+      "category": "tier1_market",
+      "method": "Smarkets: P(penalty) = 28.7%. Red card estimate: historical ~10-12% per match base rate; UZB ou 1.5 cards = 53.6% and ou 2.5 cards = 26.8% (implied lambda_uzb_cards~1.47), COL ou 1.5 cards = 35.7% (implied lambda_col~0.90). P(any red card) rough estimate ~10-12%. P(penalty OR red card) ~ P(penalty) + P(red) - P(both) ~ 0.287 + 0.11 - 0.03 ~ 0.37. Note: the UZB-China game had 6 YCs - UZB can be physical. Use Smarkets penalty market as anchor.",
+      "smarkets_penalty_price": 0.2867,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q4_luis_diaz_1plus_2h_sot": {
+      "market_id": "251d0368-783b-4600-bf6f-9bc4a3fe9a21",
+      "category": "tier2_realdata",
+      "method": "Smarkets full-match ou 0.5 SOT for Diaz: offer-only 0.877, discounted x0.945 = 0.829. Convert to 2H: assume lambda_full = -ln(1-0.829) = 1.77 -> lambda_2H = 0.885 -> P(>=1 in 2H) = 1-e^-0.885 = 0.588. Cross-check via Colombia avg SOT=5.0/match, Diaz as top-3 attacker gets ~1/3 = 1.67 SOT/match = 0.835 per half -> P(>=1 in 2H) = 1-e^-0.835 = 0.566. Two methods: 0.57-0.59 range.",
+      "smarkets_full_match_discounted": 0.829,
+      "poisson_2h_from_full_market": 0.588,
+      "poisson_2h_from_espn_share": 0.566,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q5_uzbekistan_score_1plus_goal": {
+      "market_id": "d158164c-7d2f-4082-b05b-67f52edab115",
+      "category": "tier1_market",
+      "method": "Direct Smarkets market: P(UZB scores >=1) = 47.4%. Cross-check: FTR gives P(draw)=0.201 + P(UZB win)=0.095 = 0.296 guaranteed UZB scores. Plus P(UZB scores in COL win) ~ rough 0.17 -> total ~0.47. Both routes converge at 47%. Use Smarkets 0.474 directly.",
+      "smarkets_price": 0.474,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q6_halftime_tied": {
+      "market_id": "00d6c55f-abdd-4c14-9651-0226732b702a",
+      "category": "tier1_market",
+      "method": "Direct Smarkets half-time result market: P(HT draw) = 39.4%. Tier-1 market, use directly per RULE2.",
+      "smarkets_price": 0.394,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q7_match_2_or_fewer_goals": {
+      "market_id": "b3819333-a5da-40db-9ed1-0a93a8cfa648",
+      "category": "tier1_market",
+      "method": "Smarkets Over/Under 2.5 total goals: Under 2.5 = 50.3%. Our Dixon-Coles NB model: 56.7%. Gap = 6.4pp. Blend: (0.567+0.503)/2 = 0.535. Dixon-Coles likely overestimates 'low-scoring' given Colombia's recent 3-1 and 2-0 results - Smarkets is probably better calibrated here.",
+      "model_dixon_coles_nb": 0.567,
+      "smarkets_price": 0.503,
+      "blended": 0.535,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q8_colombia_score_in_2h": {
+      "market_id": "345837fc-5ea7-4c7b-95b8-42d30a38f1eb",
+      "category": "tier1_market",
+      "method": "Smarkets second half Colombia over 0.5 goals: 67.9%. First-pass Poisson: Colombia avg goals full=1.75, lambda_2H=0.875, P(>=1 in 2H)=1-e^-0.875=0.583. Smarkets is 9.6pp higher, possibly because Colombia's recent games were high-scoring (3-1, 2-0). Use Smarkets 0.679 as anchor - it's a liquid, direct market.",
+      "smarkets_price": 0.679,
+      "poisson_first_pass": 0.583,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q9_uzbekistan_5plus_corners": {
+      "market_id": "3793fe3c-30dd-47a0-853e-8841e6d7890c",
+      "category": "tier1_market",
+      "method": "Smarkets Uzbekistan ou 4.5 corners: Over 4.5 = 20.6%. ESPN corner data is always null (API does not return corners). No first-pass model available. Use Smarkets 0.206 directly per RULE2.",
+      "smarkets_price": 0.206,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    },
+    "q10_shomurodov_score_or_assist": {
+      "market_id": "cd1f31ec-e62a-43c4-9ed1-2bd6e4b0b49c",
+      "category": "tier2_realdata",
+      "method": "Smarkets Shomurodov score/assist: offer-only 0.2597, discounted x0.945 = 0.245. Cross-check: P(UZB scores >=1) = 0.474; if Shomurodov is main striker, P(involvement | UZB scores) ~ 0.50 -> 0.474*0.50 = 0.237. Both methods: ~0.24-0.25.",
+      "smarkets_offer_discounted": 0.245,
+      "conditional_estimate": 0.237,
+      "crowd_consensus": null,
+      "recommended_estimate": null
+    }
+  },
+  "post_match_results": {
+    "match_score": "UZB 1-3 COL",
+    "halftime_score": null,
+    "match_facts": {
+      "note": "Colombia won 3-1. Uzbekistan scored 1 goal. Colombia was 70% favorite. In 2H, UZB had MORE SOT than Colombia despite losing — defensive game management by Colombia.",
+      "source": "Jump Trading Competition platform"
+    },
+    "question_results": {
+      "Q1_UZB_2plus_offsides": {
+        "our_estimate": 0.45, "crowd_estimate": 0.42, "outcome": 0, "rbp": 0.04, "beat_crowd": true,
+        "notes": "UZB <2 offsides: NO. Tiny edge (both near 50%)."
+      },
+      "Q2_COL_more_2H_SOT": {
+        "our_estimate": 0.62, "crowd_estimate": 0.69, "outcome": 0, "rbp": 11.47, "beat_crowd": true,
+        "notes": "Colombia did NOT have more 2H SOT. Colombia won 3-1 but managed game in 2H — UZB was chasing and created more 2H shots. Crowd 69% badly wrong; our 62% less wrong."
+      },
+      "Q3_penalty_or_red_card": {
+        "our_estimate": 0.37, "crowd_estimate": 0.37, "outcome": 0, "rbp": 1.55, "beat_crowd": true,
+        "notes": "No penalty or red card. Both at 37%; tiny edge from rounding."
+      },
+      "Q4_Luis_Diaz_1plus_2H_SOT": {
+        "our_estimate": 0.58, "crowd_estimate": 0.55, "outcome": 1, "rbp": 5.92, "beat_crowd": true,
+        "notes": "Diaz had 1+ SOT in 2H: YES. Our 58% vs crowd 55% — slight edge, both correct direction."
+      },
+      "Q5_UZB_score_1plus_goal": {
+        "our_estimate": 0.47, "crowd_estimate": 0.43, "outcome": 1, "rbp": 6.52, "beat_crowd": true,
+        "notes": "Uzbekistan scored 1 goal: YES. Our 47% vs crowd 43% — both near 50%, we slightly more right."
+      },
+      "Q6_HT_tied": {
+        "our_estimate": 0.39, "crowd_estimate": 0.41, "outcome": 0, "rbp": 3.16, "beat_crowd": true,
+        "notes": "Match was NOT tied at HT. Both on NO side (good); our 39% vs crowd 41% — slight edge."
+      },
+      "Q7_2_or_fewer_goals": {
+        "our_estimate": 0.52, "crowd_estimate": 0.48, "outcome": 0, "rbp": -1.81, "beat_crowd": false,
+        "notes": "4 total goals (1-3). Our 52% on wrong YES side; crowd 48% also wrong but less."
+      },
+      "Q8_COL_scores_2H": {
+        "our_estimate": 0.67, "crowd_estimate": 0.66, "outcome": 1, "rbp": 2.12, "beat_crowd": true,
+        "notes": "Colombia scored in 2H: YES. Both confident YES; tiny edge from rounding."
+      },
+      "Q9_UZB_5plus_corners": {
+        "our_estimate": 0.20, "crowd_estimate": 0.29, "outcome": 0, "rbp": 6.64, "beat_crowd": true,
+        "notes": "UZB <5 corners: NO. Market-based 0.20 vs crowd 0.29 — underdog corners suppressed."
+      },
+      "Q10_Shomurodov_G_or_A": {
+        "our_estimate": 0.24, "crowd_estimate": 0.28, "outcome": 0, "rbp": 4.12, "beat_crowd": true,
+        "notes": "Shomurodov no G+A: NO. Our 24% vs crowd 28% — both correctly on NO side."
+      }
+    },
+    "match_rbp_total": 39.73,
+    "questions_beat_crowd": 9,
+    "learning_notes": "Solid 9/10 beat crowd. Q2 (COL more 2H SOT: NO) was a key insight — dominant team manages game in 2H, underdog chases. Q4 Diaz SOT (+5.92) confirmed Luis Diaz delivers. Q7 goals total was our only loss (-1.81)."
+  }
+}

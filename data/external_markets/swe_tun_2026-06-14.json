@@ -1,0 +1,127 @@
+{
+  "match": "SWE-TUN",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "91db8577-a17e-41b2-bd90-3d80c91054c9",
+  "smarkets_event_id": "44986337",
+  "espn_event_id": "760424",
+  "closing_time": "2026-06-15T04:30:00.000Z",
+  "context_note": "Sweden vs Tunisia - Sweden is a clear favorite (FTR 52.1% / Draw 27.95% / Tunisia 20.0%, vig-adj). Draw price is high (same RULE8 trigger as JPN-NED, 27.9%), but the favorite-underdog gap (32pp) is bigger than JPN-NED's (21pp) - closer to the GER-CUR/QAT-SUI 'underdog gets outclassed' regime than JPN-NED's 'even terms' regime. Applied refined RULE8 distinction (game_dynamics_analysis.md): direction of count-prop estimates kept strong where the underdog-outclassed pattern applies (Q2), shrunk where ESPN-vs-market signals conflict (Q1).",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "raw_file": "swe_tun_smarkets_quotes.json",
+      "markets_used": {
+        "full_time_result": {"Sweden": 0.5205, "Draw": 0.2795, "Tunisia": 0.1999},
+        "highest_scoring_half": {"FIRST_HALF": 0.2895, "EQUAL": 0.2878, "SECOND_HALF": 0.4227},
+        "over_under_2.5_goals": {"OVER_3plus": 0.4262, "UNDER": 0.5738},
+        "penalty_to_be_awarded": {"YES": 0.2857, "note": "offer-only, illiquid, x0.945 ratio applied -> 0.27"},
+        "any_player_sent_off": {"YES": 0.1429, "note": "liquid two-sided"},
+        "2h_sweden_ou_0.5_goals": {"OVER": 0.5744, "UNDER": 0.4273},
+        "2h_tunisia_ou_0.5_goals": {"OVER": 0.3867, "UNDER": 0.6129},
+        "team_to_score_first_goal": {"Sweden": 0.5785, "Tunisia": 0.3327, "NO_GOAL": 0.0902},
+        "full_match_corner_handicap_sweden_minus0.5": {"Sweden_more_corners": 0.6149, "Tunisia_gte_corners": 0.3851},
+        "gyokeres_score_or_assist": {"price": 0.5208, "note": "offer-only, illiquid, x0.945 -> 0.492"},
+        "skhiri_1plus_sot": {"bid": 0.1471, "offer": 0.1695, "mid": 0.1583, "note": "liquid two-sided"}
+      },
+      "no_market_exists_for": ["team fouls (either direction)", "2nd-half team SOT"]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "raw_file": "swe_tun_wc2026_raw.jsonl",
+      "sweden_n5": {
+        "matches": ["Slovenia(H) 2025-11-18", "Ukraine(A) 2026-03-26", "Poland(H) 2026-03-31", "Norway(A) 2026-06-01", "Greece(H) 2026-06-04"],
+        "fouls": [6,10,15,6,6], "avg_fouls": 8.6,
+        "offsides": [2,0,1,2,0], "avg_offsides": 1.0,
+        "sot": [2,4,5,5,5], "avg_sot_full": 4.2,
+        "corners": [6,3,2,1,1], "avg_corners": 2.6
+      },
+      "tunisia_n5": {
+        "matches": ["Mali(A) 2026-01-03", "Haiti(A) 2026-03-29", "Canada(A) 2026-04-01", "Austria(A) 2026-06-01", "Belgium(A) 2026-06-06"],
+        "fouls": [29,13,14,12,9], "avg_fouls": 15.4,
+        "offsides": [4,3,0,2,3], "avg_offsides": 2.4,
+        "sot": [4,5,2,2,1], "avg_sot_full": 2.8,
+        "corners": [11,3,1,4,0], "avg_corners": 3.8
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_tunisia_more_corners_than_sweden_ht": {
+      "category": "tier2_realdata_market_led",
+      "method": "ESPN raw (Tunisia avg 3.8 vs Sweden 2.6 corners, 1H-scaled lambdas 1.9/1.3, continuity-corrected Skellam) gives ~0.52 for 'Tunisia>Sweden'. But full-match corner-handicap market says the OPPOSITE: Sweden>Tunisia 61.5% vs Tunisia>=Sweden only 38.5% - a large conflict. Trusted the market for THIS specific matchup (Sweden a clear favorite, likely to dominate territory vs Tunisia specifically; Tunisia's 3.8 avg is inflated by an 11-corner game vs Mali, a much weaker side). Shaded below the tie-inclusive 38.5% for HT tie-proneness and the strict '>' requirement.",
+      "raw_espn_skellam": 0.52,
+      "market_implied_tie_inclusive": 0.385,
+      "recommended_estimate": 0.28
+    },
+    "q2_sweden_more_fouls_than_tunisia": {
+      "category": "tier2_realdata",
+      "method": "Skellam on historical foul rates: Sweden avg=8.6 (n=5, range 6-15), Tunisia avg=15.4 (n=5, range 9-29) - large, consistent gap (mean_diff=-6.8, raw P=0.08). This is the GER-CUR/QAT-SUI 'favorite fouls less / outclassed underdog fouls more' pattern (RULE7-consistent), NOT the JPN-NED pattern (Japan played on even terms, fouls converged to exact tie). Sweden's favorite-gap here (32pp) is larger than JPN-NED's (21pp), supporting the outclassed-underdog read. Modest shrinkage 0.08->0.15 for RULE8 general caution given the still-high draw price (27.95%), but direction kept strong.",
+      "raw_skellam": 0.08,
+      "recommended_estimate": 0.15
+    },
+    "q3_2h_more_goals_than_1h": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Highest scoring half' market, SECOND_HALF contract, vig-adjusted (FIRST_HALF 28.95% / EQUAL 28.78% / SECOND_HALF 42.27%). Undeviated.",
+      "recommended_estimate": 0.42
+    },
+    "q4_sweden_scores_first_and_tunisia_scores_2h": {
+      "category": "compound_market_proxy",
+      "method": "Naive independence product: P(Sweden scores first)=57.85% (vig-adj 'Team to score first goal' market) x P(Tunisia scores 1+ in 2H)=38.67% (vig-adj '2H Tunisia O/U 0.5 goals') = 0.224. Per USA-PAR Q2 (similar compound, naive product 0.22 was TOO LOW vs actual YES/crowd 0.31 - the 'blowout consolation goal' dynamic: a dominant favorite scoring first often leads to a one-sided 2H where the trailing underdog gets a late/garbage-time goal). Nudged up slightly to account for this.",
+      "naive_independence_product": 0.224,
+      "recommended_estimate": 0.24
+    },
+    "q5_tunisia_more_2h_sot_than_sweden": {
+      "category": "tier2_realdata",
+      "method": "ESPN full-match SOT: Tunisia avg=2.8 (n=5) vs Sweden avg=4.2 (n=5). 2H-scaled Skellam (lambda_Tunisia=1.4, lambda_Sweden=2.1), continuity-corrected for strict inequality: P(Tunisia>Sweden)=0.26. Submitted near-raw per RULE7 (unshaded first-pass models win).",
+      "raw_skellam_continuity_corrected": 0.26,
+      "recommended_estimate": 0.27
+    },
+    "q6_penalty_or_red_card": {
+      "category": "compound_market_proxy",
+      "method": "P(A or B) = P(A)+P(B)-P(A)*P(B). P(penalty)=28.57% (offer-only illiquid, x0.945 ratio -> 0.27). P(red card)=14.29% (liquid, 'Any player sent off'). P(A or B)=0.27+0.1429-(0.27*0.1429)=0.374.",
+      "recommended_estimate": 0.37
+    },
+    "q7_sweden_win": {
+      "category": "tier1_market (match-winner deferred)",
+      "method": "Direct from Smarkets full-time-result market, vig-adjusted (Sweden 52.05%). Treated as tier1_market undeviated per established convention.",
+      "recommended_estimate": 0.52
+    },
+    "q8_3plus_total_goals": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Over/under 2.5 goals' market, OVER contract = 3+ goals, vig-adjusted 42.62%. Undeviated.",
+      "recommended_estimate": 0.43
+    },
+    "q9_gyokeres_score_or_assist": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to score or assist' market, Viktor Gyokeres contract resolved cleanly (name field on contract object - the CIV-ECU player-ID resolution issue was a str/int key bug, now fixed). Offer-only 52.08% (illiquid, no bid), x0.945 ratio -> 0.492. Sweden's focal striker in a match they're favored to win comfortably.",
+      "recommended_estimate": 0.49
+    },
+    "q10_skhiri_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to have over 0.5 shots on target' market, Ellyes Skhiri contract resolved cleanly. LIQUID two-sided quote (bid 14.71% / offer 16.95%, mid 15.83%). Undeviated - Skhiri is Tunisia's defensive midfielder, low shot-volume role consistent with a low SOT line.",
+      "recommended_estimate": 0.16
+    }
+  },
+  "post_match_results": {
+    "final_score": "Sweden 5 - 1 Tunisia",
+    "total_rbp": 17.37,
+    "beat_crowd_count": "8/10",
+    "actual_boxscore": {
+      "sweden": {"fouls": 10, "yellow_cards": 0, "offsides": 3, "sot": 7, "corners": 4, "possession_pct": 49.1},
+      "tunisia": {"fouls": 8, "yellow_cards": 1, "offsides": 6, "sot": 2, "corners": 2, "possession_pct": 50.9}
+    },
+    "goal_timeline": ["7' SWE 1-0 (Ayari)", "30' SWE 2-0 (Isak)", "43' TUN 2-1 (Rekik header, 1H)", "59' SWE 3-1 (Gyokeres)", "84' SWE 4-1 (Svanberg)", "90+6' SWE 5-1 (Ayari)"],
+    "questions": [
+      {"q": 1, "leaderboard_question": "At halftime, will Tunisia have more corner kicks than Sweden?", "maps_to": "q1_tunisia_more_corners_than_sweden_ht", "us": 0.28, "crowd": 0.34, "outcome": 0, "rbp": 6.06, "category": "tier2_realdata", "note": "WON by trusting the market over Tunisia's ESPN average. Full-match corners ended Sweden 4 - Tunisia 2, the SAME pattern as the Q2 foul miss (Tunisia's historical corner avg of 3.8 did not transfer to this match) - but here the corner-handicap market (Sweden favored 61.5%) had already priced that in, and we deferred to it."},
+      {"q": 2, "leaderboard_question": "Will Sweden commit more fouls than Tunisia?", "maps_to": "q2_sweden_more_fouls_than_tunisia", "us": 0.15, "crowd": 0.40, "outcome": 1, "rbp": -33.9, "category": "tier2_realdata", "note": "OUR 3RD-WORST RESULT EVER. Outcome=YES: Sweden 10 fouls > Tunisia 8. Sweden's 10 is close to their own n=5 average (8.6) - Sweden played roughly true to form. Tunisia's 8 is WAY below their n=5 average (15.4, range 9-29) - Tunisia's historical foul rate did NOT transfer to this match. Sweden won 5-1 (a blowout); Tunisia, on the wrong end of it, fouled far less than usual (disengagement/'blowout fatigue', same mechanism as GER-CUR's Curacao going 19min without a foul after falling further behind). See RULE10 in project_crowd_bias_model.md - this is now 2/2 (GER-CUR, SWE-TUN): in BLOWOUTS, the WINNING team fouls >= the LOSING team, regardless of which team's historical average was higher."},
+      {"q": 3, "leaderboard_question": "Will the second half have more total goals than the first half?", "maps_to": "q3_2h_more_goals_than_1h", "us": 0.42, "crowd": 0.51, "outcome": 0, "rbp": 10.28, "category": "tier1_market", "note": "1H had 3 goals (7',30',43'), 2H had 3 goals (59',84',90+6') - EQUAL, not '2H more than 1H'. tier1_market undeviated won."},
+      {"q": 4, "leaderboard_question": "Will Sweden score the first goal of the game and Tunisia score in the second half?", "maps_to": "q4_sweden_scores_first_and_tunisia_scores_2h", "us": 0.24, "crowd": 0.31, "outcome": 0, "rbp": 7.0, "category": "compound_market_proxy", "note": "Sweden scored first (7') TRUE, but Tunisia's only goal (Rekik, 43') was in 1H not 2H - AND=FALSE. Naive independence product (0.224->0.24) beat crowd."},
+      {"q": 5, "leaderboard_question": "Will Tunisia have more shots on target than Sweden in the second half?", "maps_to": "q5_tunisia_more_2h_sot_than_sweden", "us": 0.27, "crowd": 0.33, "outcome": 0, "rbp": 5.71, "category": "tier2_realdata", "note": "Sweden SOT=7 (3 2H goals among them), Tunisia SOT=2 total. Unshaded first-pass Skellam (RULE7) correct again."},
+      {"q": 6, "leaderboard_question": "Will a penalty kick be awarded OR a red card be shown in the match?", "maps_to": "q6_penalty_or_red_card", "us": 0.21, "crowd": 0.37, "outcome": 0, "rbp": 11.68, "category": "compound_market_proxy", "note": "Only 1 yellow card in the whole match, no penalty. Low estimate (0.21, illiquid-ratio-adjusted) won big."},
+      {"q": 7, "leaderboard_question": "Will Sweden win the match?", "maps_to": "q7_sweden_win", "us": 0.52, "crowd": 0.59, "outcome": 1, "rbp": -3.2, "category": "match_winner_deferred_market", "note": "Sweden won 5-1 (much bigger than the 52% market implied). Crowd's 59% was closer. Small loss, same pattern as other tier1_market match-winner deferrals."},
+      {"q": 8, "leaderboard_question": "Will the match have 3 or more total goals?", "maps_to": "q8_3plus_total_goals", "us": 0.43, "crowd": 0.44, "outcome": 1, "rbp": 1.57, "category": "tier1_market", "note": "6 total goals (way more than '3+'), but both us and crowd were <50% - tiny win on a near-tie."},
+      {"q": 9, "leaderboard_question": "Will Viktor Gyokeres score or assist a goal (excluding own goals)?", "maps_to": "q9_gyokeres_score_or_assist", "us": 0.49, "crowd": 0.50, "outcome": 1, "rbp": 1.4, "category": "tier1_market", "note": "Gyokeres scored at 59' (Sweden's 3rd goal). Direct market resolution paid off."},
+      {"q": 10, "leaderboard_question": "Will Ellyes Skhiri have at least 1 shot on target?", "maps_to": "q10_skhiri_1plus_sot", "us": 0.16, "crowd": 0.31, "outcome": 0, "rbp": 10.77, "category": "tier1_market", "note": "Tunisia's total SOT=2 (neither apparently Skhiri's). Liquid market price (15.83%) much closer than crowd's 31%."}
+    ],
+    "summary": "Sweden won 5-1, a blowout well beyond the 52% pre-match favorite price. 8/10 beat crowd, total +17.37 - a strong match overall, EXCEPT for Q2 (Sweden more fouls than Tunisia, -33.9, our 3rd-worst-ever single result). Q2's failure mechanism: Tunisia's strong, consistent historical foul average (15.4, range 9-29 across n=5) completely failed to transfer to this match - Tunisia fouled only 8 (Sweden, playing near its own average of 8.6, fouled 10). This is the SAME mechanism as GER-CUR's Q3 win (Curacao fouled below their implied rate after falling further behind) but in REVERSE: there, the underdog's LOW relative foul rate matched our (already-low) estimate; here, the underdog's (Tunisia's) historical foul rate was HIGH, but the blowout collapsed it anyway, inverting our estimate's direction entirely. New RULE10: in BLOWOUTS, the WINNING team fouls >= the LOSING team (2/2: GER-CUR Germany 18>Curacao 11; SWE-TUN Sweden 10>Tunisia 8), independent of either team's historical average. Q1 (corners, same Tunisia-average-doesn't-transfer pattern) WON because a market existed and we deferred to it instead of the ESPN average - Q2 had no such market to fall back on."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "match": "URU-CPV",
+  "smarkets_event_id": "45042894",
+  "fetched_utc": "2026-06-21",
+  "notes": "Fetched ~3-4 hours before kickoff (22:00 UTC). Secondary markets (corners, cards, penalty, player SOT/G+A) returned no prices — illiquid. Key goal and SOT markets liquid.",
+
+  "raw_quotes": {
+    "FTR": {
+      "Uruguay": {"mid": 0.7118},
+      "Draw": {"mid": 0.2041},
+      "Cape_Verde": {"mid": 0.0871}
+    },
+    "HT_result": {
+      "Uruguay": {"mid": 0.5181},
+      "Draw": {"mid": 0.3984},
+      "Cape_Verde": {"mid": 0.0852}
+    },
+    "BTTS_OU25": {
+      "Yes_Over": 0.2863,
+      "Yes_Under": 0.0921,
+      "No_Over": 0.1651,
+      "No_Under": 0.4571
+    },
+    "OU_goals": {
+      "OU05_Over": 0.9134,
+      "OU15_Over": 0.7120,
+      "OU25_Over": 0.4505,
+      "OU35_Over": 0.2440
+    },
+    "1H_goals": {
+      "1H_OU05_Over": 0.6668,
+      "1H_OU15_Over": 0.3103
+    },
+    "2H_goals": {
+      "2H_OU05_Over": 0.7555,
+      "2H_OU15_Over": 0.4012,
+      "2H_winner_Uruguay": 0.5443,
+      "2H_winner_Draw": 0.3399,
+      "2H_winner_Cape_Verde": 0.1152
+    },
+    "team_goals": {
+      "URU_OU05_Over": 0.8588,
+      "URU_OU15_Over": 0.5817,
+      "URU_OU25_Over": 0.3058,
+      "CPV_OU05_Over": 0.4294
+    },
+    "SOT_markets": {
+      "URU_OU55_SOT_Over": 0.5556,
+      "CPV_OU25_SOT_Over": 0.4231,
+      "CPV_OU25_SOT_Under": 0.5893,
+      "total_OU85_SOT_Over": 0.4647,
+      "total_OU75_SOT_Over": 0.5676
+    },
+    "secondary_markets_note": "corners_OU65-105, penalty_in_match, cards_winner, cards_handicap_URU_plus05, URU/CPV corner lines: ALL returned NO PRICES (illiquid ~3-4h before KO)"
+  }
+}

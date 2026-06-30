@@ -1,0 +1,1160 @@
+{
+  "_schema": {
+    "description": "Aggregated settled-markets ledger across all SportsPredict World Cup matches. Each row's source-of-truth is the 'post_match_results.questions' block in that match's own <match>_<date>.json file - this file is a DERIVED rollup for cross-match analysis, regenerate from those files if they change.",
+    "fields": {
+      "match": "match identifier, e.g. KOR-CZE",
+      "q": "question number on SportsPredict's leaderboard for that match",
+      "question": "short question text",
+      "category": "our internal classification of the methodology used (see category_definitions below)",
+      "us": "our submitted probability (0-1)",
+      "crowd": "SportsPredict crowd consensus revealed post-settlement (0-1)",
+      "outcome": "1 = YES/happened, 0 = NO/didn't happen",
+      "rbp": "Relative Brier Points awarded for this question (positive = beat crowd)"
+    },
+    "category_definitions": {
+      "tier2_realdata": "No listed market existed; built a real per-match-data model (ESPN hidden API + footystats) with Poisson/Skellam. UPDATED after QAT-SUI (2026-06-13): n=11, avg -2.04 (was 5/5 +7.96 before QAT-SUI). The pre-QAT-SUI wins AND QAT-SUI's one win (Q3, +19.86) were all SIMPLE FIRST-PASS models (focal team's own recent-match Poisson/Skellam, sometimes blended with a market anchor). QAT-SUI's 5 losses ALL involved an extra layer on top of a first-pass estimate: correlated-error false validation (Q1), vague team-morale narrative shading (Q5/Q8), or large late revisions based on a DIFFERENT team's cross-match sample (Q2/Q6). Lesson: trust the first-pass real-data model; treat any further 'creative' layer as a flag, not a feature. See project_sportspredict_edge_analysis.md.",
+      "tier1_market": "Direct or near-direct mapping from a verified external market (Smarkets/Polymarket/Kalshi), submitted close to that value.",
+      "tier1_market_deviated": "A verified external market existed but we submitted a value notably different from it (upward deviation in both observed cases). 1/2, +1.66 avg - worse than undeviated tier1_market.",
+      "stats_proxy": "No direct market; used season/team stat averages or general base rates (not a full per-match Poisson model) as the estimate.",
+      "compound_market_proxy": "Compound (AND) question where component probabilities were each market-sourced.",
+      "compound_independence": "Compound (AND) question estimated via naive P(A)*P(B) independence assumption (with or without a small correlation adjustment).",
+      "skellam_market_hybrid": "Used a Skellam/Poisson-difference model calibrated against a verified market handicap price.",
+      "match_winner_internal_model": "'Will Team X win' question, estimate driven primarily by our internal ordered-logit/Elo model.",
+      "match_winner_deferred_market": "'Will Team X win' question, estimate driven primarily by deferring to verified external markets over our internal model.",
+      "match_winner_gut_override": "'Will Team X win' question where our researched recommendation (tier1_market / RULE1 avg(crowd,market), ~0.58-0.62) was OVERRIDDEN at submission time by personal conviction toward a near-certain value (BRA-MAR Q8: recommended ~0.60, submitted 1.00). n=1, -51.97 - our worst-ever single RBP. The 100% submission guarantees the maximum possible squared error (1.0) if wrong, with no offsetting benefit (the marginal gain over ~0.90 if right is tiny). See project_crowd_bias_model.md RULE 6.",
+      "tier1_market_blended": "A direct question-specific market doesn't exist, but related team-specific markets (e.g. team cards O/U lines) can be combined/scaled into a market-implied estimate, optionally cross-checked against ESPN history. n=1 (BEL-EGY Q2, +0.75)."
+    },
+    "key_finding": "BEL-EGY (2026-06-15, +63.72, 9/10 beat crowd, Belgium 1-1 Egypt) is our 2ND-BEST MATCH EVER. Egypt (15.3% underdog) scored early (19') and led at HT; Belgium's equalizer was an EGYPTIAN OWN GOAL (66'). Headline pattern: EGYPT'S DEFENSE SUPPRESSED BELGIUM'S OUTPUT TO EGYPT'S OWN LEVEL across nearly every stat - fouls EXACT TIE 15-15 (Q1, us=0.46 vs crowd=0.59, +15.47 - this is the SECOND time 'near-identical historical averages -> stay near 50%' produced a literal tie, after JPN-NED's 7-7, VALIDATING this as a real pattern not just a hedge), SOT EXACT TIE 3-3 (Q4, Belgium's avg is 8.2 - their output collapsed by >half; our extreme 0.11 still landed correctly since tie=NO either way), Belgium offsides=0 vs avg 1.8 (Q6, the ONLY loss this match, -1.57 - 5th data point for the 'X 2+ offsides' family, all 5 resolved NO, this is the FIRST time the unshaded Poisson exceeded 0.50 (0.54) and the first small loss - watch item, not yet overriding RULE7's +54.57/5 net record). Arguably the MIRROR of RULE10: instead of a blowout favorite's stats staying high while the loser's collapse, here a RESILIENT UNDERDOG caused the FAVORITE's stats to collapse toward the underdog's level. Out-of-sample test of the crowd-prediction regression (crowd_correlation_analysis.md, crowd~=0.514+0.61*(us-0.5)): predicted crowd values had RMSE=5.8pp vs actual crowd (consistent with/better than the in-sample 7.1pp residual std) - the regression holds up. SWE-TUN (2026-06-15, +17.37, 8/10 beat crowd, Sweden 5-1 Tunisia) prior key finding: Q2 ('Sweden more fouls than Tunisia', -33.9, 3RD-WORST-EVER) is RULE10's origin (n=2 with GER-CUR: in blowouts, winning team fouls >= losing team regardless of historical averages). CIV-ECU (+19.86): Q9 (Sangare 1+ SOT) validated RULE9 (positional priors beat crowd, +RBP despite weak grounding). GER-CUR remains our best match ever: +72.47, 9/10, zero gut overrides.",
+    "last_updated": "2026-06-15 (post SAU-URU, 105 questions, 11 matches, running total +189.18)",
+    "matches_covered": [
+      "KOR-CZE (2026-06-11, +22.81, 6/6 questions)",
+      "CAN-BIH (2026-06-12, +42.65, 10/10 questions)",
+      "USA-PAR (2026-06-12, +19.11, 10/10 questions)",
+      "QAT-SUI (2026-06-13, -39.21, 10/10 questions)",
+      "BRA-MAR (2026-06-14, -16.33, 10/10 questions, 7/10 beat crowd - our best beat-crowd RATE; the entire net loss traces to Q8 alone)",
+      "GER-CUR (2026-06-14, +72.47, 9/10 beat crowd - our BEST match ever, zero gut overrides)",
+      "JPN-NED (2026-06-14, +0.47, 6/10 beat crowd - near-wash, but Q1/Q7 both turned on a single 88th-minute equalizer, see key_finding)",
+      "CIV-ECU (2026-06-14, +19.86, Q1-Q9 confirmed/approx, Q10 status unknown - see key_finding for Q9 player-prop validation)",
+      "SWE-TUN (2026-06-15, +17.37, 8/10 beat crowd - Q2 (-33.9, 3rd-worst-ever) is the RULE10 'blowout fouls' finding, see key_finding)",
+      "BEL-EGY (2026-06-15, +63.72, 9/10 beat crowd - our 2ND-BEST match ever, near-tie fouls validation + offsides watch-item, see key_finding)",
+      "SAU-URU (2026-06-15, -13.75, 7/10 beat crowd - Q7 (-35.66, 4th-worst-ever) was RULE14 violation: P(URU more 2H goals)=0.57 > P(URU more 2H SOT)=0.30 is logically inconsistent)"
+    ],
+    "category_summary_2026-06-14": {
+      "compound_market_proxy": {
+        "n": 4,
+        "avg_rbp": 6.98,
+        "total_rbp": 27.92
+      },
+      "tier1_market_deviated": {
+        "n": 7,
+        "avg_rbp": 1.45,
+        "total_rbp": 10.12
+      },
+      "stats_proxy": {
+        "n": 3,
+        "avg_rbp": 8.22,
+        "total_rbp": 24.67
+      },
+      "match_winner_internal_model": {
+        "n": 2,
+        "avg_rbp": -7.3,
+        "total_rbp": -14.61
+      },
+      "tier1_market": {
+        "n": 38,
+        "avg_rbp": 3.96,
+        "total_rbp": 150.48
+      },
+      "tier2_realdata": {
+        "n": 39,
+        "avg_rbp": 1.0669,
+        "total_rbp": 41.61
+      },
+      "compound_independence": {
+        "n": 1,
+        "avg_rbp": -9.25,
+        "total_rbp": -9.25
+      },
+      "skellam_market_hybrid": {
+        "n": 1,
+        "avg_rbp": 4.28,
+        "total_rbp": 4.28
+      },
+      "match_winner_deferred_market": {
+        "n": 7,
+        "avg_rbp": 0.6543,
+        "total_rbp": 4.58
+      },
+      "tier1_market_deviated_down": {
+        "n": 1,
+        "avg_rbp": 2.0,
+        "total_rbp": 2
+      },
+      "match_winner_gut_override": {
+        "n": 1,
+        "avg_rbp": -51.97,
+        "total_rbp": -51.97
+      },
+      "tier1_market_blended": {
+        "n": 1,
+        "avg_rbp": 0.75,
+        "total_rbp": 0.75
+      }
+    }
+  },
+  "rows": [
+    {
+      "match": "KOR-CZE",
+      "q": 1,
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "category": "compound_market_proxy",
+      "us": 0.4,
+      "crowd": 0.38,
+      "outcome": 1,
+      "rbp": 6.44
+    },
+    {
+      "match": "KOR-CZE",
+      "q": 2,
+      "question": "Will a penalty kick be awarded in the match?",
+      "category": "tier1_market_deviated",
+      "us": 0.42,
+      "crowd": 0.33,
+      "outcome": 0,
+      "rbp": -3.2
+    },
+    {
+      "match": "KOR-CZE",
+      "q": 3,
+      "question": "Will South Korea have more shots on target than Czechia in the second half?",
+      "category": "stats_proxy",
+      "us": 0.6,
+      "crowd": 0.55,
+      "outcome": 1,
+      "rbp": 7.21
+    },
+    {
+      "match": "KOR-CZE",
+      "q": 4,
+      "question": "Will South Korea win the match?",
+      "category": "match_winner_internal_model",
+      "us": 0.46,
+      "crowd": 0.51,
+      "outcome": 1,
+      "rbp": -0.08
+    },
+    {
+      "match": "KOR-CZE",
+      "q": 5,
+      "question": "Will Son Heung-min score a goal (excluding own goals)?",
+      "category": "tier1_market_deviated",
+      "us": 0.38,
+      "crowd": 0.4,
+      "outcome": 0,
+      "rbp": 6.52
+    },
+    {
+      "match": "KOR-CZE",
+      "q": 6,
+      "question": "Will Patrik Schick have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.65,
+      "crowd": 0.67,
+      "outcome": 0,
+      "rbp": 5.91
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 1,
+      "question": "BIH fouls > Canada",
+      "category": "tier2_realdata",
+      "us": 0.67,
+      "crowd": 0.64,
+      "outcome": 1,
+      "rbp": 5.08
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 2,
+      "question": "4+ 2H total SOT",
+      "category": "tier2_realdata",
+      "us": 0.7,
+      "crowd": 0.59,
+      "outcome": 1,
+      "rbp": 11.76
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 3,
+      "question": "Penalty OR red card",
+      "category": "compound_market_proxy",
+      "us": 0.43,
+      "crowd": 0.41,
+      "outcome": 0,
+      "rbp": 2.8
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 4,
+      "question": "Canada win",
+      "category": "match_winner_internal_model",
+      "us": 0.75,
+      "crowd": 0.62,
+      "outcome": 0,
+      "rbp": -14.53
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 5,
+      "question": "HT tied",
+      "category": "tier1_market",
+      "us": 0.46,
+      "crowd": 0.47,
+      "outcome": 0,
+      "rbp": 3.86
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 6,
+      "question": "2H 2+ goals",
+      "category": "tier1_market",
+      "us": 0.37,
+      "crowd": 0.38,
+      "outcome": 0,
+      "rbp": 4.47
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 7,
+      "question": "BIH 5+ corners",
+      "category": "stats_proxy",
+      "us": 0.27,
+      "crowd": 0.36,
+      "outcome": 0,
+      "rbp": 9.46
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 8,
+      "question": "Jonathan David scores",
+      "category": "tier1_market",
+      "us": 0.33,
+      "crowd": 0.38,
+      "outcome": 0,
+      "rbp": 6.88
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 9,
+      "question": "Dzeko 1+ SOT",
+      "category": "tier2_realdata",
+      "us": 0.6,
+      "crowd": 0.58,
+      "outcome": 0,
+      "rbp": 2.89
+    },
+    {
+      "match": "CAN-BIH",
+      "q": 10,
+      "question": "BIH score in 2H",
+      "category": "tier1_market",
+      "us": 0.37,
+      "crowd": 0.44,
+      "outcome": 0,
+      "rbp": 9.98
+    },
+    {
+      "match": "USA-PAR",
+      "q": 1,
+      "question": "Will United States be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.58,
+      "crowd": 0.56,
+      "outcome": 1,
+      "rbp": 5.31
+    },
+    {
+      "match": "USA-PAR",
+      "q": 2,
+      "question": "Will United States score the first goal of the game and Paraguay score in the second half?",
+      "category": "compound_independence",
+      "us": 0.22,
+      "crowd": 0.31,
+      "outcome": 1,
+      "rbp": -9.25
+    },
+    {
+      "match": "USA-PAR",
+      "q": 3,
+      "question": "Will Paraguay finish with more corner kicks than United States?",
+      "category": "skellam_market_hybrid",
+      "us": 0.35,
+      "crowd": 0.35,
+      "outcome": 0,
+      "rbp": 4.28
+    },
+    {
+      "match": "USA-PAR",
+      "q": 4,
+      "question": "Will United States win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.46,
+      "crowd": 0.6,
+      "outcome": 1,
+      "rbp": -8.81
+    },
+    {
+      "match": "USA-PAR",
+      "q": 5,
+      "question": "At halftime, will the match be tied?",
+      "category": "tier1_market",
+      "us": 0.47,
+      "crowd": 0.45,
+      "outcome": 0,
+      "rbp": 1.28
+    },
+    {
+      "match": "USA-PAR",
+      "q": 6,
+      "question": "Will the match have 3 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.38,
+      "crowd": 0.42,
+      "outcome": 1,
+      "rbp": -1.47
+    },
+    {
+      "match": "USA-PAR",
+      "q": 7,
+      "question": "Will Paraguay score in the second half?",
+      "category": "tier1_market",
+      "us": 0.4,
+      "crowd": 0.44,
+      "outcome": 1,
+      "rbp": -1.54
+    },
+    {
+      "match": "USA-PAR",
+      "q": 8,
+      "question": "Will there be 4 or more total cards shown?",
+      "category": "tier1_market",
+      "us": 0.57,
+      "crowd": 0.49,
+      "outcome": 1,
+      "rbp": 12.18
+    },
+    {
+      "match": "USA-PAR",
+      "q": 9,
+      "question": "Will Folarin Balogun have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.62,
+      "crowd": 0.63,
+      "outcome": 1,
+      "rbp": 2.38
+    },
+    {
+      "match": "USA-PAR",
+      "q": 10,
+      "question": "Will Julio Enciso have at least 1 shot on target in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.2,
+      "crowd": 0.37,
+      "outcome": 0,
+      "rbp": 14.77
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 1,
+      "question": "At halftime, will both teams have at least 1 shot on target?",
+      "category": "tier2_realdata",
+      "us": 0.2,
+      "crowd": 0.59,
+      "outcome": 1,
+      "rbp": -42.51
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 2,
+      "question": "Will Switzerland be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.6,
+      "crowd": 0.53,
+      "outcome": 0,
+      "rbp": -3.84
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 3,
+      "question": "Will Switzerland receive at least 1 card in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.4,
+      "crowd": 0.57,
+      "outcome": 0,
+      "rbp": 19.86
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 4,
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.32,
+      "crowd": 0.31,
+      "outcome": 0,
+      "rbp": 2.85
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 5,
+      "question": "Will Qatar have 2 or more shots on target in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.3,
+      "crowd": 0.39,
+      "outcome": 1,
+      "rbp": -7.61
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 6,
+      "question": "Will Qatar commit more fouls than Switzerland?",
+      "category": "tier2_realdata",
+      "us": 0.46,
+      "crowd": 0.64,
+      "outcome": 1,
+      "rbp": -13.81
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 7,
+      "question": "Will Qatar score at least 1 goal?",
+      "category": "tier1_market_deviated_down",
+      "us": 0.38,
+      "crowd": 0.4,
+      "outcome": 1,
+      "rbp": 2
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 8,
+      "question": "Will Qatar have 2 or more shots on target?",
+      "category": "tier2_realdata",
+      "us": 0.39,
+      "crowd": 0.57,
+      "outcome": 1,
+      "rbp": -14.3
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 9,
+      "question": "Will Akram Afif have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.42,
+      "crowd": 0.46,
+      "outcome": 0,
+      "rbp": 7.26
+    },
+    {
+      "match": "QAT-SUI",
+      "q": 10,
+      "question": "Will Granit Xhaka have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.41,
+      "crowd": 0.48,
+      "outcome": 0,
+      "rbp": 10.91
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 1,
+      "question": "Will Brazil be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.43,
+      "crowd": 0.59,
+      "outcome": 0,
+      "rbp": 20.36
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 2,
+      "question": "Will Morocco commit more fouls than Brazil?",
+      "category": "tier2_realdata",
+      "us": 0.64,
+      "crowd": 0.61,
+      "outcome": 0,
+      "rbp": -0.44
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 3,
+      "question": "Will Morocco score the first goal of the second half?",
+      "category": "tier2_realdata",
+      "us": 0.35,
+      "crowd": 0.32,
+      "outcome": 0,
+      "rbp": 0.47
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 4,
+      "question": "Will Brazil score more goals than Morocco in the second half?",
+      "category": "tier1_market_deviated",
+      "us": 0.58,
+      "crowd": 0.55,
+      "outcome": 0,
+      "rbp": 0.47
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 5,
+      "question": "Will Morocco have more shots on target than Brazil in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.23,
+      "crowd": 0.33,
+      "outcome": 0,
+      "rbp": 8.46
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 6,
+      "question": "Will Brazil receive more cards than Morocco?",
+      "category": "tier1_market_deviated",
+      "us": 0.41,
+      "crowd": 0.39,
+      "outcome": 1,
+      "rbp": 4.72
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 7,
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "category": "tier1_market_deviated",
+      "us": 0.4,
+      "crowd": 0.47,
+      "outcome": 0,
+      "rbp": 10.79
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 8,
+      "question": "Will Brazil win the match?",
+      "category": "match_winner_gut_override",
+      "us": 1.0,
+      "crowd": 0.67,
+      "outcome": 0,
+      "rbp": -51.97
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 9,
+      "question": "Will Morocco have 5 or more corner kicks?",
+      "category": "tier1_market_deviated",
+      "us": 0.42,
+      "crowd": 0.38,
+      "outcome": 0,
+      "rbp": 0.34
+    },
+    {
+      "match": "BRA-MAR",
+      "q": 10,
+      "question": "Will the match be tied at halftime?",
+      "category": "tier1_market_deviated",
+      "us": 0.32,
+      "crowd": 0.42,
+      "outcome": 1,
+      "rbp": -9.52
+    },
+    {
+      "match": "GER-CUR",
+      "q": 1,
+      "question": "Will Curacao be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.38,
+      "crowd": 0.39,
+      "outcome": 0,
+      "rbp": 5.05
+    },
+    {
+      "match": "GER-CUR",
+      "q": 2,
+      "question": "In the second half, will Germany have more shots on target than Curacao?",
+      "category": "tier2_realdata",
+      "us": 0.83,
+      "crowd": 0.84,
+      "outcome": 1,
+      "rbp": 1.77
+    },
+    {
+      "match": "GER-CUR",
+      "q": 3,
+      "question": "Will Curacao commit more fouls than Germany?",
+      "category": "tier2_realdata",
+      "us": 0.48,
+      "crowd": 0.66,
+      "outcome": 0,
+      "rbp": 23.36
+    },
+    {
+      "match": "GER-CUR",
+      "q": 4,
+      "question": "Will Curacao receive more cards than Germany?",
+      "category": "tier1_market",
+      "us": 0.59,
+      "crowd": 0.61,
+      "outcome": 0,
+      "rbp": 4.85
+    },
+    {
+      "match": "GER-CUR",
+      "q": 5,
+      "question": "Will Germany be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.43,
+      "crowd": 0.54,
+      "outcome": 0,
+      "rbp": 13.79
+    },
+    {
+      "match": "GER-CUR",
+      "q": 6,
+      "question": "Will Germany win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.94,
+      "crowd": 0.92,
+      "outcome": 1,
+      "rbp": 1.64
+    },
+    {
+      "match": "GER-CUR",
+      "q": 7,
+      "question": "Will the match have 2 or fewer total goals?",
+      "category": "tier1_market",
+      "us": 0.16,
+      "crowd": 0.25,
+      "outcome": 0,
+      "rbp": 7.17
+    },
+    {
+      "match": "GER-CUR",
+      "q": 8,
+      "question": "Will the second half have 2 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.67,
+      "crowd": 0.6,
+      "outcome": 1,
+      "rbp": 8.19
+    },
+    {
+      "match": "GER-CUR",
+      "q": 9,
+      "question": "Will Curacao have 3 or more shots on target?",
+      "category": "tier2_realdata",
+      "us": 0.42,
+      "crowd": 0.32,
+      "outcome": 0,
+      "rbp": -3.11
+    },
+    {
+      "match": "GER-CUR",
+      "q": 10,
+      "question": "Will Leandro Bacuna have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.21,
+      "crowd": 0.32,
+      "outcome": 0,
+      "rbp": 9.76
+    },
+    {
+      "match": "JPN-NED",
+      "q": 1,
+      "question": "Will Japan commit more fouls than Netherlands?",
+      "category": "tier2_realdata",
+      "us": 0.72,
+      "crowd": 0.49,
+      "outcome": 0,
+      "rbp": -25.37
+    },
+    {
+      "match": "JPN-NED",
+      "q": 2,
+      "question": "Will Netherlands be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.44,
+      "crowd": 0.54,
+      "outcome": 0,
+      "rbp": 12.02
+    },
+    {
+      "match": "JPN-NED",
+      "q": 3,
+      "question": "Will both teams have at least 1 shot on target in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.83,
+      "crowd": 0.76,
+      "outcome": 1,
+      "rbp": 5.23
+    },
+    {
+      "match": "JPN-NED",
+      "q": 4,
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.39,
+      "crowd": 0.44,
+      "outcome": 1,
+      "rbp": -2.69
+    },
+    {
+      "match": "JPN-NED",
+      "q": 5,
+      "question": "Will Japan receive more cards than Netherlands?",
+      "category": "tier1_market",
+      "us": 0.44,
+      "crowd": 0.43,
+      "outcome": 0,
+      "rbp": 1.06
+    },
+    {
+      "match": "JPN-NED",
+      "q": 6,
+      "question": "Will Netherlands win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.47,
+      "crowd": 0.53,
+      "outcome": 0,
+      "rbp": 9.32
+    },
+    {
+      "match": "JPN-NED",
+      "q": 7,
+      "question": "Will Japan score in the second half?",
+      "category": "tier1_market",
+      "us": 0.45,
+      "crowd": 0.5,
+      "outcome": 1,
+      "rbp": -2.95
+    },
+    {
+      "match": "JPN-NED",
+      "q": 8,
+      "question": "Will there be 8 or more total shots on target?",
+      "category": "tier1_market",
+      "us": 0.59,
+      "crowd": 0.56,
+      "outcome": 1,
+      "rbp": 6.02
+    },
+    {
+      "match": "JPN-NED",
+      "q": 9,
+      "question": "Will Cody Gakpo have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.61,
+      "crowd": 0.61,
+      "outcome": 1,
+      "rbp": 2.5
+    },
+    {
+      "match": "JPN-NED",
+      "q": 10,
+      "question": "Will Takefusa Kubo score or assist a goal (excluding own goals)?",
+      "category": "tier1_market",
+      "us": 0.3,
+      "crowd": 0.36,
+      "outcome": 1,
+      "rbp": -4.65
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 1,
+      "question": "Will Ecuador commit more fouls than Ivory Coast?",
+      "category": "tier2_realdata",
+      "us": 0.57,
+      "crowd": 0.52,
+      "outcome": 1,
+      "rbp": 6.97
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 2,
+      "question": "At halftime, will Ecuador have more corner kicks than Ivory Coast?",
+      "category": "tier2_realdata",
+      "us": 0.42,
+      "crowd": 0.48,
+      "outcome": 0,
+      "rbp": 8.42
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 3,
+      "question": "Will Ivory Coast be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.41,
+      "crowd": 0.49,
+      "outcome": 0,
+      "rbp": 9.97
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 4,
+      "question": "Will Ecuador have more shots on target than Ivory Coast in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.48,
+      "crowd": 0.5,
+      "outcome": 0,
+      "rbp": 2.0,
+      "note": "approximate, from live IF-NO display"
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 5,
+      "question": "Will the second half have more total goals than the first half?",
+      "category": "tier1_market",
+      "us": 0.4,
+      "crowd": 0.51,
+      "outcome": 1,
+      "rbp": -9.02
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 6,
+      "question": "Will Ivory Coast win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.29,
+      "crowd": 0.34,
+      "outcome": 1,
+      "rbp": -7.0,
+      "note": "approximate, from live IF-YES display"
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 7,
+      "question": "Will Ivory Coast score in the second half?",
+      "category": "tier1_market",
+      "us": 0.41,
+      "crowd": 0.45,
+      "outcome": 1,
+      "rbp": -2.57
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 8,
+      "question": "Will there be 4 or more total cards shown?",
+      "category": "tier1_market",
+      "us": 0.54,
+      "crowd": 0.52,
+      "outcome": 1,
+      "rbp": 4.43
+    },
+    {
+      "match": "CIV-ECU",
+      "q": 9,
+      "question": "Will Ibrahim Sangare have at least 1 shot on target?",
+      "category": "stats_proxy",
+      "us": 0.18,
+      "crowd": 0.33,
+      "outcome": 0,
+      "rbp": 8.0,
+      "note": "approximate, from live IF-NO display; outcome confirmed via ESPN athlete boxscore (0 SOT)"
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 1,
+      "question": "At halftime, will Tunisia have more corner kicks than Sweden?",
+      "category": "tier2_realdata",
+      "us": 0.28,
+      "crowd": 0.34,
+      "outcome": 0,
+      "rbp": 6.06
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 2,
+      "question": "Will Sweden commit more fouls than Tunisia?",
+      "category": "tier2_realdata",
+      "us": 0.15,
+      "crowd": 0.4,
+      "outcome": 1,
+      "rbp": -33.9
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 3,
+      "question": "Will the second half have more total goals than the first half?",
+      "category": "tier1_market",
+      "us": 0.42,
+      "crowd": 0.51,
+      "outcome": 0,
+      "rbp": 10.28
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 4,
+      "question": "Will Sweden score the first goal of the game and Tunisia score in the second half?",
+      "category": "compound_market_proxy",
+      "us": 0.24,
+      "crowd": 0.31,
+      "outcome": 0,
+      "rbp": 7.0
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 5,
+      "question": "Will Tunisia have more shots on target than Sweden in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.27,
+      "crowd": 0.33,
+      "outcome": 0,
+      "rbp": 5.71
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 6,
+      "question": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "category": "compound_market_proxy",
+      "us": 0.21,
+      "crowd": 0.37,
+      "outcome": 0,
+      "rbp": 11.68
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 7,
+      "question": "Will Sweden win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.52,
+      "crowd": 0.59,
+      "outcome": 1,
+      "rbp": -3.2
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 8,
+      "question": "Will the match have 3 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.43,
+      "crowd": 0.44,
+      "outcome": 1,
+      "rbp": 1.57
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 9,
+      "question": "Will Viktor Gyokeres score or assist a goal (excluding own goals)?",
+      "category": "tier1_market",
+      "us": 0.49,
+      "crowd": 0.5,
+      "outcome": 1,
+      "rbp": 1.4
+    },
+    {
+      "match": "SWE-TUN",
+      "q": 10,
+      "question": "Will Ellyes Skhiri have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.16,
+      "crowd": 0.31,
+      "outcome": 0,
+      "rbp": 10.77
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 1,
+      "question": "Will Egypt commit more fouls than Belgium?",
+      "category": "tier2_realdata",
+      "us": 0.46,
+      "crowd": 0.59,
+      "outcome": 0,
+      "rbp": 15.47
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 2,
+      "question": "Will there be 2 or more total cards shown in the second half?",
+      "category": "tier1_market_blended",
+      "us": 0.6,
+      "crowd": 0.58,
+      "outcome": 0,
+      "rbp": 0.75
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 3,
+      "question": "Will both teams score AND the match have 3 or more total goals?",
+      "category": "tier1_market",
+      "us": 0.38,
+      "crowd": 0.41,
+      "outcome": 0,
+      "rbp": 5.79
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 4,
+      "question": "Will Egypt have more shots on target than Belgium in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.11,
+      "crowd": 0.31,
+      "outcome": 0,
+      "rbp": 10.71
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 5,
+      "question": "Will there be 4 or more total shots on target in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.78,
+      "crowd": 0.64,
+      "outcome": 1,
+      "rbp": 10.28
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 6,
+      "question": "Will Belgium be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.54,
+      "crowd": 0.5,
+      "outcome": 0,
+      "rbp": -1.57
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 7,
+      "question": "Will Belgium win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.61,
+      "crowd": 0.66,
+      "outcome": 0,
+      "rbp": 8.23
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 8,
+      "question": "At halftime, will the match be tied?",
+      "category": "tier1_market",
+      "us": 0.41,
+      "crowd": 0.42,
+      "outcome": 0,
+      "rbp": 2.61
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 9,
+      "question": "Will Youri Tielemans have at least 1 shot on target?",
+      "category": "tier1_market",
+      "us": 0.38,
+      "crowd": 0.44,
+      "outcome": 0,
+      "rbp": 8.28
+    },
+    {
+      "match": "BEL-EGY",
+      "q": 10,
+      "question": "Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?",
+      "category": "tier1_market",
+      "us": 0.25,
+      "crowd": 0.26,
+      "outcome": 0,
+      "rbp": 3.18
+    },
+    {
+      "match": "SAU-URU",
+      "q": 1,
+      "question": "Will Saudi Arabia be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "us": 0.34,
+      "crowd": 0.44,
+      "outcome": 0,
+      "rbp": 10.87
+    },
+    {
+      "match": "SAU-URU",
+      "q": 2,
+      "question": "Will both teams have at least 1 shot on target in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.74,
+      "crowd": 0.67,
+      "outcome": 0,
+      "rbp": -7.76
+    },
+    {
+      "match": "SAU-URU",
+      "q": 3,
+      "question": "Will Saudi Arabia receive more cards than Uruguay?",
+      "category": "tier2_realdata",
+      "us": 0.52,
+      "crowd": 0.49,
+      "outcome": 1,
+      "rbp": 4.73
+    },
+    {
+      "match": "SAU-URU",
+      "q": 4,
+      "question": "Will Uruguay score more goals than Saudi Arabia in the second half?",
+      "category": "tier1_market",
+      "us": 0.57,
+      "crowd": 0.56,
+      "outcome": 1,
+      "rbp": 3.09
+    },
+    {
+      "match": "SAU-URU",
+      "q": 5,
+      "question": "Will a penalty kick be awarded in the match?",
+      "category": "tier1_market",
+      "us": 0.26,
+      "crowd": 0.32,
+      "outcome": 0,
+      "rbp": 5.87
+    },
+    {
+      "match": "SAU-URU",
+      "q": 6,
+      "question": "Will Saudi Arabia commit more fouls than Uruguay?",
+      "category": "tier2_realdata",
+      "us": 0.41,
+      "crowd": 0.53,
+      "outcome": 1,
+      "rbp": -9.88
+    },
+    {
+      "match": "SAU-URU",
+      "q": 7,
+      "question": "Will Uruguay have more shots on target than Saudi Arabia in the second half?",
+      "category": "tier2_realdata",
+      "us": 0.3,
+      "crowd": 0.67,
+      "outcome": 1,
+      "rbp": -35.66
+    },
+    {
+      "match": "SAU-URU",
+      "q": 8,
+      "question": "Will Saudi Arabia win the match?",
+      "category": "match_winner_deferred_market",
+      "us": 0.11,
+      "crowd": 0.18,
+      "outcome": 0,
+      "rbp": 4.4
+    },
+    {
+      "match": "SAU-URU",
+      "q": 9,
+      "question": "Will Salem Al-Dawsari score or assist a goal?",
+      "category": "tier1_market",
+      "us": 0.2,
+      "crowd": 0.27,
+      "outcome": 0,
+      "rbp": 5.31
+    },
+    {
+      "match": "SAU-URU",
+      "q": 10,
+      "question": "Will Darwin Nunez score a goal?",
+      "category": "tier1_market",
+      "us": 0.38,
+      "crowd": 0.41,
+      "outcome": 0,
+      "rbp": 5.28
+    }
+  ]
+}

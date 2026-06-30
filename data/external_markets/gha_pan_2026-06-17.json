@@ -1,0 +1,174 @@
+{
+  "match": "GHA-PAN",
+  "sportspredict_event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+  "sportspredict_match_id": "9f7ef351-627f-48fb-9815-6a17a744931d",
+  "smarkets_event_id": "44754858",
+  "espn_event_id": "760434",
+  "closing_time": "2026-06-18T01:30:00.000Z",
+  "context_note": "Ghana vs Panama. FTR (vig-adj): Ghana 40.5% / Draw 30.2% / Panama 29.3%. Draw price 30.2% is the HIGHEST we have ever seen - even higher than SAU-URU (24.8%) and JPN-NED (27.9%). This is essentially a three-way split: RULE8 fires at maximum strength, meaning ALL comparison 'more than' props need extra shrinkage toward 50%. RULE13 (near-identical averages -> stay near 50%) also applies strongly here. Corner handicap market (Ghana -0.5 / Panama +0.5) is essentially 50/50 (48.6% vs 51.7%), confirming the market sees these teams as very evenly matched for territorial dominance. Key data issues: Panama only n=3 usable (2 games vs South Africa, 1 vs Brazil; Dominican Republic and Bosnia games had empty stats); Panama's SOT and offsides data both have massive outliers (9 SOT vs Brazil, 5 offsides vs South Africa) that dominate the averages and require RULE12 sensitivity checks.",
+  "sources": {
+    "smarkets": {
+      "tier": "VERIFIED_API",
+      "raw_file": "gha_pan_smarkets_quotes.json",
+      "markets_used": {
+        "full_time_result": {"Ghana": 0.4050, "Draw": 0.3019, "Panama": 0.2931},
+        "highest_scoring_half": {"FIRST_HALF": 0.2818, "EQUAL": 0.2963, "SECOND_HALF": 0.4219},
+        "2h_OU_1.5_total_goals": {"OVER_2plus": 0.3630, "note": "direct market for Q4"},
+        "penalty_to_be_awarded": {"Yes": 0.2631},
+        "2h_ghana_ou_0.5_goals": {"OVER": 0.5087, "lambda_derived": 0.713},
+        "2h_panama_ou_0.5_goals": {"OVER": 0.4332, "lambda_derived": 0.567},
+        "ghana_minus0.5_corners": {"Ghana_more": 0.4841, "Panama_gte": 0.5159, "note": "essentially 50/50 - market sees no meaningful corner advantage"},
+        "antoine_semenyo_0.5plus_sot": {"mid": 0.7143, "note": "offer-only illiquid x0.945 = 0.6750"},
+        "jose_fajardo_0.5plus_sot": {"mid": 0.6061, "note": "offer-only illiquid x0.945 = 0.5728"}
+      },
+      "no_market_exists_for": ["team fouls (either direction)", "team offsides", "2nd-half team SOT"]
+    },
+    "espn_recent_form": {
+      "tier": "VERIFIED_API",
+      "raw_file": "gha_pan_wc2026_raw.jsonl",
+      "ghana_n4": {
+        "matches": ["Austria(A) 2026-03-27", "Germany(A) 2026-03-30", "Mexico(H) 2026-05-23", "Wales(A) 2026-06-02"],
+        "fouls": [6,10,9,13], "avg_fouls": 9.5,
+        "offsides": [2,2,1,4], "avg_offsides": 2.25,
+        "sot": [1,1,3,5], "avg_sot_full": 2.5,
+        "corners": [3,4,3,4], "avg_corners": 3.5,
+        "note": "SOT is highly opposition-dependent: 1,1 vs Austria/Germany (strong), 3,5 vs Mexico/Wales (moderate). Panama likely closer to Wales-level opposition for Ghana."
+      },
+      "panama_n3": {
+        "matches": ["SouthAfrica(A) 2026-03-27", "SouthAfrica(A) 2026-03-31", "Brazil(A) 2026-05-31"],
+        "note": "2 additional games (Dominican Republic, Bosnia) had empty/zero boxscore statistics and were excluded",
+        "fouls": [16,13,5], "avg_fouls": 11.33,
+        "offsides": [5,0,1], "avg_offsides": 2.0,
+        "sot": [2,4,9], "avg_sot_full": 5.0,
+        "corners": [1,1,1], "avg_corners": 1.0,
+        "outlier_warnings": {
+          "sot": "9 SOT vs Brazil is a massive outlier; without it avg=3.0",
+          "offsides": "5 offsides vs South Africa is a massive outlier; without it avg=0.5",
+          "fouls": "5 fouls vs Brazil is low outlier (RULE10 blowout pattern); without it avg=14.5"
+        }
+      }
+    }
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "q1_ghana_more_2h_sot_than_panama": {
+      "category": "tier2_realdata",
+      "method": "2H-scaled Skellam. Ghana 2H lambda=1.25 (avg SOT 2.5/2). Panama 2H lambda: full sample (incl Brazil outlier)=2.5 gives P(Ghana>Panama)=0.26; de-outlied (avg 3.0, lambda=1.5) gives P=0.44. RULE12 sensitivity: 18pp swing -> LOW CONFIDENCE. Corner-handicap market is 50/50 (no dominant team in territory), supporting uncertainty. Ghana is modest favorite (40.5%) but the market sees no meaningful attacking dominance. RULE8 max strength (draw 30.2%) -> extra shrinkage toward 50%. Settled between de-outlied (0.44) and raw (0.26), acknowledging corner market's 50/50 signal.",
+      "raw_full_sample_skellam": 0.26, "de_outlied_skellam": 0.44,
+      "recommended_estimate": 0.40
+    },
+    "q2_ghana_more_fouls_than_panama": {
+      "category": "tier2_realdata",
+      "method": "Skellam: Ghana avg=9.5 (n=4, 6-13 range), Panama avg=11.33 (n=3, 5-16 range). Raw P(Ghana>Panama fouls)=0.344. RULE12: removing Panama's 5-foul outlier (vs Brazil blowout) pushes Panama avg to 14.5, making P even LOWER (~0.14) - outlier inflates Panama, signal gets STRONGER when removed. Signal is robustly 'Panama fouls more.' RULE8: draw price 30.2% (MAX trigger) -> shrink from 0.34 toward 50%, land at 0.42. RULE13: averages 9.5 vs 11.33 not near-identical but not extreme either.",
+      "raw_skellam": 0.344, "deoutliered_panama": 0.14,
+      "recommended_estimate": 0.42
+    },
+    "q3_ghana_win": {
+      "category": "tier1_market (match-winner deferred)",
+      "method": "Direct from Smarkets FTR market, Ghana vig-adjusted 40.50%. Undeviated.",
+      "recommended_estimate": 0.40
+    },
+    "q4_2h_2plus_total_goals": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Second half over/under 1.5' market, OVER contract vig-adjusted 36.3%. Undeviated. Cross-check: Poisson from 2H team goal lambdas (Ghana 0.713 + Panama 0.567 = 1.28 total) gives P(X>=2) = 1-e^-1.28*(1+1.28) = 0.366 - consistent.",
+      "poisson_crosscheck": 0.366,
+      "recommended_estimate": 0.36
+    },
+    "q5_ghana_3plus_sot": {
+      "category": "tier2_realdata",
+      "method": "Full-match Poisson: Ghana avg SOT=2.5 (n=4), lambda=2.5. P(X>=3)=1-e^-2.5*(1+2.5+3.125)=1-0.082*6.625=0.457. RULE12: removing Wales outlier (5 SOT) -> lambda=1.67, P=0.236; removing Austria/Germany low games -> P goes higher. 20pp+ sensitivity. Settled near full-sample Poisson given Panama is a similar-level opponent to Wales (Ghana's best SOT game). Lightly shaded for draw-price conservatism.",
+      "full_sample_poisson": 0.457,
+      "recommended_estimate": 0.45
+    },
+    "q6_semenyo_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to have over 0.5 shots on target' market, Antoine Semenyo contract: offer-only (illiquid), mid=71.43%, x0.945 ratio = 67.5%. Full match (no 2H qualifier). Semenyo is Ghana's winger/forward, high SOT probability.",
+      "raw_offer": 0.7143, "illiquid_adjusted": 0.6750,
+      "recommended_estimate": 0.68
+    },
+    "q7_fajardo_1plus_sot": {
+      "category": "tier1_market",
+      "method": "Direct from Smarkets 'Player to have over 0.5 shots on target' market, Jose Fajardo contract: offer-only (illiquid), mid=60.61%, x0.945 ratio = 57.3%. Full match. Fajardo is Panama's attacker/forward.",
+      "raw_offer": 0.6061, "illiquid_adjusted": 0.5728,
+      "recommended_estimate": 0.57
+    },
+    "q8_panama_more_cards_than_ghana": {
+      "category": "tier2_realdata",
+      "method": "Skellam: Ghana avg YC=2.0 (n=4), Panama avg YC=2.33 (n=3). Near-identical averages (diff=0.33). RULE13 (near-identical) + RULE8 (draw 30.2% max) both strongly indicate 50/50. Raw Skellam P(Panama>Ghana cards)=0.563, but with draw price this high and averages this close, shrink to 50%.",
+      "raw_skellam": 0.563,
+      "recommended_estimate": 0.50
+    },
+    "q9_panama_scores_first_2h_goal": {
+      "category": "compound_market_proxy",
+      "method": "Poisson race model using 2H team goal lambdas from Smarkets markets. λ_Ghana_2H=0.713 (from 2H Ghana O/U 0.5 market), λ_Panama_2H=0.567. P(Panama scores first 2H goal) = λ_PAN/(λ_GHA+λ_PAN) × P(at least one 2H goal) = 0.567/1.28 × (1-e^{-1.28}) = 0.443 × 0.722 = 0.320.",
+      "lambda_ghana_2h": 0.713, "lambda_panama_2h": 0.567,
+      "poisson_race_result": 0.320,
+      "recommended_estimate": 0.32
+    },
+    "q10_panama_2plus_offsides": {
+      "category": "tier2_realdata",
+      "method": "Poisson: Panama offsides n=3 (5,0,1), avg=2.0, lambda=2.0. P(X>=2)=1-e^-2*(1+2)=0.594. RULE12: removing outlier (5-offside vs S.Africa) -> lambda=0.5, P=0.090. MASSIVE sensitivity (50pp swing) -> LOW CONFIDENCE. This is the 8th data point in the '2+ offsides' family; all 7 prior resolved NO (RULE7 unshaded wins net +X/7). But this is the first time raw P>0.50 SIGNIFICANTLY (0.594 vs BEL-EGY's borderline 0.54). Outlier is entirely driving the >0.50 estimate. Shade DOWN heavily toward the de-outlied estimate and family pattern (NO side), landing well below 0.50.",
+      "raw_poisson": 0.594, "deoutliered_poisson": 0.090,
+      "recommended_estimate": 0.28
+    }
+  },
+  "crowd_pred_estimates": {
+    "formula": "crowd_pred = 0.514 + 0.61*(us-0.5)",
+    "q1": 0.453, "q2": 0.465, "q3": 0.453, "q4": 0.435, "q5": 0.484,
+    "q6": 0.624, "q7": 0.557, "q8": 0.514, "q9": 0.404, "q10": 0.380
+  },
+  "post_match_results": {
+    "match_score": "GHA 1-0 PAN",
+    "halftime_score": null,
+    "match_facts": {
+      "GHA_SOT": 2,
+      "PAN_SOT": 4,
+      "note": "Ghana won 1-0 but with only 2 SOT while Panama had 4 SOT and 62% possession — statistical paradox. Ghana efficient.",
+      "source": "Jump Trading Competition platform"
+    },
+    "question_results": {
+      "Q1_Ghana_more_fouls": {
+        "our_estimate": 0.42, "crowd_estimate": 0.48, "outcome": 0, "rbp": 7.02, "beat_crowd": true,
+        "notes": "Ghana did NOT have more fouls. Both on YES side but crowd further wrong."
+      },
+      "Q2_Panama_2plus_offsides": {
+        "our_estimate": 0.28, "crowd_estimate": 0.44, "outcome": 0, "rbp": 13.61, "beat_crowd": true,
+        "notes": "Panama <2 offsides. 2+ offsides family confirmed again."
+      },
+      "Q3_Panama_scores_first_2H_goal": {
+        "our_estimate": 0.32, "crowd_estimate": 0.34, "outcome": 0, "rbp": 2.93, "beat_crowd": true,
+        "notes": "Panama did not score first 2H goal (nor at all). Slight edge."
+      },
+      "Q4_Panama_more_cards": {
+        "our_estimate": 0.50, "crowd_estimate": 0.46, "outcome": 1, "rbp": 5.63, "beat_crowd": true,
+        "notes": "Panama more cards: YES. Our 50% vs crowd 46% — both near middle, we slightly less wrong."
+      },
+      "Q5_Ghana_more_2H_SOT": {
+        "our_estimate": 0.40, "crowd_estimate": 0.54, "outcome": 0, "rbp": 16.23, "beat_crowd": true,
+        "notes": "Ghana did NOT have more 2H SOT (won 1-0 with only 2 total SOT vs Panama's 4). Crowd 54% badly wrong."
+      },
+      "Q6_Ghana_wins": {
+        "our_estimate": 0.40, "crowd_estimate": 0.48, "outcome": 1, "rbp": -6.43, "beat_crowd": false,
+        "notes": "Ghana won 1-0. Our 40% vs crowd 48% — both on YES side, we were further from 1."
+      },
+      "Q7_2H_2plus_goals": {
+        "our_estimate": 0.36, "crowd_estimate": 0.40, "outcome": 0, "rbp": 5.39, "beat_crowd": true,
+        "notes": "2H had <2 goals (Ghana only scored in 1H or neither scored in 2H). Slight edge."
+      },
+      "Q8_Ghana_3plus_SOT": {
+        "our_estimate": 0.45, "crowd_estimate": 0.66, "outcome": 0, "rbp": 25.69, "beat_crowd": true,
+        "notes": "Ghana only 2 SOT despite winning 1-0. Crowd 66% heavily overestimated Ghana's attacking volume (winner narrative inflation). Our 45% much more accurate."
+      },
+      "Q9_Semenyo_1plus_SOT": {
+        "our_estimate": 0.68, "crowd_estimate": 0.56, "outcome": 1, "rbp": 11.74, "beat_crowd": true,
+        "notes": "Semenyo had 1+ SOT. Our 68% vs crowd 56% — we were more right."
+      },
+      "Q10_Fajardo_1plus_SOT": {
+        "our_estimate": 0.57, "crowd_estimate": 0.39, "outcome": 0, "rbp": -13.80, "beat_crowd": false,
+        "notes": "Fajardo 0 SOT. RULE15 should have applied (Panama expected loser). We submitted 57% — should have been ~0.25-0.30. Crowd 39% was more correct."
+      }
+    },
+    "match_rbp_total": 68.01,
+    "questions_beat_crowd": 8,
+    "learning_notes": "Our best match at the time. Q8 Ghana 3+ SOT (+25.69) confirmed winner-narrative crowd inflation: crowd priced 66% for Ghana attacking output but Ghana only got 2 SOT despite winning. Q10 Fajardo (-13.80) confirmed RULE15 should apply to expected-loser forwards. Statistical paradox: Ghana won 1-0 with 2 SOT while Panama had 4 SOT and 62% possession."
+  }
+}

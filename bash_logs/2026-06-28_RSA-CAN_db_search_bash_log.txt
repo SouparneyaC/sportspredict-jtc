@@ -1,0 +1,117 @@
+RSA vs CAN (2026-06-28) — pre-research database audit
+=========================================================
+
+# 1. Check what files exist for South Africa / Canada
+$ ls data/external_markets | grep -iE "rsa|kor|can_|sui_can|south.?africa|canada"
+bih_canada_dzeko_realdata.md
+can_bih_2026-06-12.json
+can_bih_research_log.md
+can_qat_2026-06-18.json
+can_qat_smarkets_parsed.json
+can_qat_smarkets_raw.json
+kor_cze_2026-06-11.json
+mex_kor_2026-06-19.json
+mex_kor_smarkets_parsed.json
+rsa_kor_2026-06-24.json
+sui_can_2026-06-24.json
+
+-> We have group-stage GD1-GD3 history for both teams (rsa_kor = South Africa GD3,
+   sui_can = Canada GD3, can_bih = Canada GD1, can_qat = Canada GD2) but NO prior
+   South Africa vs Canada meeting (first time these two teams have played each other
+   this tournament — expected, since RSA and CAN were in different groups).
+
+# 2. Search ALL recorded files/notes for any precedent on the NEW obscure question
+#    types appearing today (hydration break timing, substitute-scored goal,
+#    multi-goal scorer, knockout-stage "advance" markets)
+$ grep -rliE "hydration|extra time|round of (16|32)|substitute.*(scor|goal)|knockout" data/external_markets/*.json
+data/external_markets/col_cdr_2026-06-23.json
+data/external_markets/can_bih_2026-06-12.json
+data/external_markets/cur_civ_2026-06-25.json
+data/external_markets/cze_mex_2026-06-24.json
+data/external_markets/jor_alg_2026-06-22.json
+data/external_markets/nzl_egy_2026-06-22.json
+data/external_markets/sco_bra_2026-06-24.json
+data/external_markets/por_uzb_2026-06-23.json
+
+$ grep -rliE "hydration|knockout|round of (16|32)" . --include="*.md"
+ML_EXPERIMENTS_NOTEBOOK.md
+datasets/MASTER_DATASET_DICTIONARY.md
+research_notes.md
+bot/FORECASTING_DATASET_DESIGN.md
+data/code_audit_findings.md
+data/ml_methodology_deep_dive_notes.md
+data/edge_research.md
+data/DATA_XRAY.md
+data/ML_RESEARCH_AGENT_NOTES.md
+
+$ grep -inE "hydration|round of (16|32)|knockout" data/external_markets/can_bih_2026-06-12.json \
+    data/external_markets/col_cdr_2026-06-23.json data/external_markets/cur_civ_2026-06-25.json
+data/external_markets/cur_civ_2026-06-25.json:9: "Ivory Coast": {"pts": 3, "record": "1-0-1", "status": "DRAW = ADVANCE to Round of 32"}
+data/external_markets/col_cdr_2026-06-23.json:88: "stakes_note": "Colombia can clinch knockout round qualification with a win. DR Congo
+   Congo effectively must win — a draw only keeps them alive if Portugal drops points vs Uzbekistan."
+
+-> CONFIRMED: every hit is an incidental "Round of 32 qualification" stakes mention from
+   GROUP-STAGE context notes. ZERO prior questions, ZERO prior data sourcing, and ZERO
+   methodology exist anywhere in this database for:
+     - hydration-break-timed markets (card/offside/goal before or after a specific break)
+     - substitute-scored-goal markets
+     - any-player-multi-goal (brace/hat-trick) markets
+   This is a genuinely new question category, introduced with the knockout stage.
+
+# 3. Confirm questions_flat.csv has no infrastructure for time-bucketed/substitute/
+#    multi-scorer markets (would need new columns if we build this out later)
+$ head -1 datasets/questions_flat.csv | tr ',' '\n'
+file
+match
+date
+stage
+q_num
+question_text
+category
+our_estimate
+crowd_estimate
+outcome
+rbp
+beat_crowd
+final_score
+match_rbp_total
+
+-> Confirmed: no minute-level, substitute-flag, or multi-scorer columns exist.
+
+# 4. Pulled what ESPN box-score data we DO have on file for both teams (for the
+#    "normal" question types in today's list: cards, corners, fouls, penalties)
+$ python3 -c "... json.load(open('rsa_kor_2026-06-24.json'))['post_match_results'] ..."
+rsa_kor: South Africa 1-0 South Korea (match_facts: not populated in this file)
+sui_can: Switzerland 2-1 Canada (match_facts: not populated in this file)
+can_bih: Canada 1-1 Bosnia-Herzegovina (match_facts: not populated in this file)
+can_qat: Canada 6-0 Qatar — match_facts POPULATED:
+    CAN_fouls=9 QAT_fouls=10 CAN_YC=1 QAT_YC=1 CAN_RC=0 QAT_RC=2 CAN_offsides=1
+    QAT_offsides=1 CAN_corners=19 QAT_corners=1 CAN_SOT=10 QAT_SOT=0 CAN_shots=32
+    QAT_shots=2 (source: ESPN event 760440)
+
+-> Only CAN-QAT has a fully populated match_facts block on file; the other 3 files
+   recorded final scores but not full box-score stat lines at the time they were
+   written. Live ESPN site API pulls will be needed for RSA-KOR, SUI-CAN, and
+   CAN-BIH box-score detail before finalizing today's "normal" prop estimates
+   (cards, corners, fouls, offsides, SOT for both South Africa and Canada).
+
+# 5. Checked bot/discover_endpoints.py (file the user had open) — this is a
+#    one-off SportsPredict platform API endpoint discovery script (NOT a match-data
+#    source), already run previously. Read-only inspection of its cached output,
+#    no new API calls made (preserves QK daily quota):
+$ cat bot/data/endpoint_discovery.jsonl | python3 -c "... print status codes ..."
+   -> All candidate endpoints returned 500 except GET /markets (200). Confirms
+      SportsPredict's own API exposes nothing structurally useful for these new
+      question types either (no minute-event feed, no settlement detail beyond
+      /markets). Not relevant to today's data-sourcing problem beyond ruling it out.
+
+CONCLUSION: Local database confirms (a) genuine group-stage form data for both
+South Africa and Canada exists and remains usable for standard props, (b) ZERO
+precedent anywhere for hydration-break-timed, substitute-goal, or multi-scorer
+question types — external research agent dispatched next to find reliable sources
+for exactly these three new obscure categories, calibrated against this session's
+own Tier-1/Tier-2/Tier-3 data source reliability hierarchy (feedback_data_source_reliability
+memory: ESPN/Opta GD-stats, main sportsbook consensus, FootyMetrics referee stats,
+top-5-league club SOT/90, FIFA WC-specific records, Polymarket >$1M = reliable;
+niche aggregator odds absent from main books, GD1 extrapolated into 4+ goal blowouts
+without FLOOR_0.25, base-rate foul data without match-script prediction = unreliable).

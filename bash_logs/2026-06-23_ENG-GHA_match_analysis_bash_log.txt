@@ -1,0 +1,115 @@
+ENGLAND vs GHANA — WC2026 Group L GD2
+Pre-match Analysis Bash Log
+Date: 2026-06-23
+
+=== COMMANDS RUN ===
+
+1. grep -i "england|ghana" .../sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: England,2090.3687 | Ghana,1625.5008
+
+2. cat .../data/processed/poisson_goals_coefs.json
+OUTPUT: intercept=0.10408, elo_diff_coef=0.0018099, home_advantage=0.23022
+
+3. cat .../data/processed/ordered_logit_coefs.json
+OUTPUT: b_elo=0.005199, b_home=0.3771, c1=-0.7702, c2=0.5549
+
+4. python3 model calculation (Poisson + ordered logit):
+OUTPUT:
+  Elo diff: 464.8679 (LARGEST IN SERIES — exceeds FRA-IRQ 392.5)
+  lambda_ENG: 2.574
+  lambda_GHA: 0.478
+  lambda_total: 3.052
+  P(ENG scores): 0.9238
+  P(GHA scores): 0.3800
+  P(BTTS): 0.3512
+  P(total >= 3): 0.5883
+  P(total >= 4): 0.3644
+  P(BTTS AND 3+): 0.2929
+  P(ENG win): 0.8655
+  P(Draw): 0.0948
+  P(GHA win): 0.0397
+  P(HT tied): 0.2896
+
+5. python3 compound calculations:
+OUTPUT:
+  Q1 P(BOTH HT SOT) = 0.92 × 0.25 = 0.23
+  Q3 P(BOTH 2H SOT) = 0.98 × 0.60 = 0.59 → adjusted to 0.52
+  Q4 P(BTTS AND 3+) Poisson: 0.2929 → market-adjusted 0.3087
+  Q7 market implied: 0.8571 | model: 0.8655 | avg: 0.8613
+  Q8 P(Kane scores): 0.5918 → P(score or assist): 0.68
+
+6. Research agent spawned: GD1 stats, player profiles, referee, market data
+   - 60 tool uses, 386 seconds
+   - Sources: ESPN, FOX Sports, Opta Analyst, Stats Player, StatMuse, CBS Sports,
+     RotoWire, Sports Mole, bet365, FanDuel, RefStats.app, playerstats.football,
+     GHANAsoccernet, Al Jazeera
+
+=== KEY FINDINGS ===
+
+RULES:
+- RULE7: FIRES — Ghana 3.97% win probability (most extreme underdog in our analysis series)
+- RULE8: Does NOT fire — draw 9.48% < 25%
+- RULE15: FIRES — Semenyo as expected-losing-team forward (Q9)
+- RULE1: Market -600 England (86%) + model (86.6%) → Q7 = 0.86
+- RULE_FOULS: Ghana defends from kickoff → Ghana fouls more (Q2)
+- FLOOR_0.25: Applied to Q10, Q9
+
+ENGLAND GD1 (4-2 Croatia):
+- 22 shots, 11 SOT, 8 corners, 10 fouls
+- HT: 2-2 (active HT scorers at 12' and 42')
+- Kane: 2 goals, 3 SOT, 90 min
+- Tuchel high-press, high-line system
+
+GHANA GD1 (1-0 Panama):
+- 7 shots, 2 SOT (all in 2H), 9 fouls, 38% possession
+- CRITICAL: 0 TOTAL shots in 1H (not just 0 SOT — zero shots)
+- Semenyo: 0 SOT in 90 min (ESPN confirmed; pre-match sources cited 2 — corrected)
+- Deep block 4-3-3 counter-attacking setup
+- Thomas Partey absent GD1 (visa); RETURNS for GD2
+- Ati-Zigi (GK) injured HT; Asare likely starts GD2
+
+REFEREE: Said Martínez Sorto (Honduras)
+- Career 4.17 YC/game, 0.18 RC/game (165 matches)
+- WC2026 GD1: 3 YC, 0 RC, 1 penalty (Qatar-Switzerland)
+- High card-giver; penalty in first WC match
+
+KANE: 1.74 SOT/90 at Bayern 2024-25. Anytime scorer market: -145 (~59%).
+"Score or assist" adds ~10-12% → Q8 = 0.68.
+
+SEMENYO: 0 GD1 SOT (ESPN confirmed). ~0.9 SOT/90 club career estimate.
+No FanDuel/DraftKings scorer market found. Q9 = 0.28 (RULE15 + RULE7 + GD1 evidence).
+
+MARKETS:
+- FanDuel: England -600, Draw +600, Ghana +1500
+- Opta: England 78.8%, Draw 13.3%, Ghana 7.9%
+- BTTS Yes: +125 (~44%), BTTS No: -175 (~63%)
+- Over 2.5: -184 (~65%), Over 3.5: +130 (~43%)
+- Kane anytime scorer: -145 (~59%)
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.23 — Both teams ≥1 HT SOT [STRONG NO: Ghana 0 1H shots in GD1]
+Q2: 0.58 — Ghana more fouls [YES: Ghana defends deep; Partey returns]
+Q3: 0.52 — Both teams ≥1 2H SOT [Compound; Ghana had 2 total 2H SOT vs Panama]
+Q4: 0.30 — BTTS AND 3+ goals [P(GHA scores)=38% is binding constraint]
+Q5: 0.45 — Penalty OR red card [High-card ref; Ghana fouling to defend]
+Q6: 0.18 — Ghana more 2H SOT than England [STRONG NO: RULE7 + England dominates]
+Q7: 0.86 — England win [Market -600 + model 86.6%]
+Q8: 0.68 — Kane score or assist [Market -145 for scoring alone; add assist]
+Q9: 0.28 — Semenyo ≥1 SOT [RULE15 + RULE7 + GD1 evidence 0 SOT]
+Q10: 0.25 — Ghana 5+ corners [RULE7 + deep block; FLOOR_0.25]
+
+=== EDGE RANKING ===
+
+1. Q1 0.23 — Biggest edge: crowd ~0.40, Ghana had 0 1H total shots
+2. Q6 0.18 — Second biggest: crowd ~0.32, RULE7 unshaded
+3. Q7 0.86 — Push high: crowd may anchor low (~0.78)
+4. Q9 0.28 — RULE15 + 0 GD1 SOT; crowd overprices club form (~0.42)
+5. Q10 0.25 — Deep block underdog; crowd likely ~0.38
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/eng_gha_2026-06-23.json — Full match analysis
+2. THIS FILE: bash_logs/2026-06-23_ENG-GHA_match_analysis_bash_log.txt
+
+=== END LOG ===

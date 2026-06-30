@@ -1,0 +1,573 @@
+{
+  "match": "JOR-ALG",
+  "sportspredict_match_id": "5398e565-2759-4c71-abea-77f209bd75f9",
+  "sportspredict_url": "https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=5398e565-2759-4c71-abea-77f209bd75f9&marketId=4bde0b61-f7be-491d-b904-6f77a66d6324",
+  "venue": "Levi's Stadium, Santa Clara, CA",
+  "kickoff": "2026-06-22 (evening ET)",
+  "conditions": "73°F cooling to 63°F. Favorable conditions.",
+  "context_note": "Jordan vs Algeria — WC2026 Group J. GD2. SURVIVAL MATCH — both teams lost GD1 (Jordan 1-3 Austria, Algeria 0-3 Argentina). Loser is essentially eliminated. This drives BOTH teams to attack far more aggressively than Elo model predicts. Algeria Elo slight favorite but market has Algeria at 62-65% (vs model 48.9%). Algeria's star striker AMOURA is OUT with hamstring injury. RULE7: does NOT fire. RULE8: FIRES (draw 29.4%).",
+  "elo_ratings": {
+    "alg": 1872.4250,
+    "jor": 1774.1438,
+    "elo_diff_alg_minus_jor": 98.28,
+    "source": "data/processed/elo_current_ratings.csv"
+  },
+  "model_outputs": {
+    "ordered_logit_match_winner": {
+      "p_alg_win": 0.489,
+      "p_draw": 0.294,
+      "p_jor_win": 0.217,
+      "market_implied_alg_win": "62-65% (Betfair -185, bet365 -188)",
+      "model_vs_market_gap": "Model 48.9% vs market 62-65% = significant gap. Market has upgraded Algeria post-GD1 context (JOR only won 21.7% model but market sees Jordan as 14-17%).",
+      "script": "model/predict_ordered_logit.py Algeria Jordan --neutral true"
+    },
+    "poisson_goals": {
+      "lambda_alg": 1.3258,
+      "lambda_jor": 0.9289,
+      "lambda_total": 2.2546,
+      "p_alg_scores": 0.7344,
+      "p_jor_scores": 0.6050,
+      "p_total_ge3": 0.3919,
+      "p_total_lt3": 0.6081,
+      "p_ht_tie": 0.4588,
+      "lambda_total_sot_2h_x3_0": 3.720,
+      "p_4plus_sot_2h": 0.5100,
+      "p_jor_more_fouls_model": 0.4997,
+      "lambda_alg_offsides": 1.80,
+      "p_alg_2plus_offsides_model": 0.5372,
+      "lambda_mahrez_sot_2h": 0.8313,
+      "p_mahrez_sot_2h_model": 0.5645,
+      "lambda_altaamari_sot": 0.8917,
+      "p_altaamari_sot_model": 0.5900,
+      "p_jor_scores_first": 0.3688,
+      "p_alg_scores_2h": 0.5177,
+      "p_q3_compound_model": 0.1909
+    }
+  },
+  "group_context": {
+    "group": "J",
+    "teams": ["Argentina", "Austria", "Jordan", "Algeria"],
+    "standings_after_gd1": {
+      "Argentina": {"pts": 3, "gd": "+3", "gd1": "Won 3-0 vs Algeria (Messi hat-trick)"},
+      "Austria": {"pts": 3, "gd": "+2", "gd1": "Won 3-1 vs Jordan"},
+      "Jordan": {"pts": 0, "gd": "-2", "gd1": "Lost 1-3 to Austria"},
+      "Algeria": {"pts": 0, "gd": "-3", "gd1": "Lost 0-3 to Argentina"}
+    },
+    "simultaneous_gd2_match": "Argentina vs Austria (also happening today — both group leaders, relaxed)",
+    "survival_match_analysis": {
+      "jordan": "Must win to have knockout path. A draw keeps them mathematically alive but would require beating Argentina in GD3. GD3: Jordan vs Argentina = essentially impossible. Jordan MUST WIN.",
+      "algeria": "Must win to have knockout path. GD3: Algeria vs Austria — also very difficult. Algeria MUST WIN.",
+      "dynamic": "Both teams are playing to win. Neither can afford to play conservatively. Expect an open, attacking match with both teams willing to take risks. THIS IS DIFFERENT FROM MOST MATCHES WE ANALYZE — normally one team is the underdog that defends. Here BOTH teams must attack.",
+      "mutual_must_win_effects": [
+        "Elevated attacking intensity from both sides",
+        "Higher foul rate as both teams desperate for tackles",
+        "Higher penalty risk — desperation in the box from both sides",
+        "More likely to be an open, back-and-forth game",
+        "Goals in 2H when exhausted players make mistakes",
+        "Cards accumulate as tackles become more desperate in 2H"
+      ]
+    }
+  },
+  "rules_in_effect": {
+    "RULE7": "Does NOT fire — ALG 48.9% and JOR 21.7% are both above 15%",
+    "RULE8": "FIRES — Draw 29.4% >= 25%. Pull attacking props ~5-8pp toward 50%.",
+    "SURVIVAL_MATCH_OVERRIDE": "Both teams at 0pts = both must attack = override RULE8's 'draw-heavy = conservative' assumption. This match is COMPETITIVE BUT ATTACKING, not conservative.",
+    "MODEL_VS_MARKET_NOTE": "For Q match winner (Q7/Jordan scores), use market-weighted estimates. Market has Algeria winning at 62-65% vs our model's 48.9%. This is a significant post-GD1 market adjustment we should partly respect.",
+    "AMOURA_OUT": "Mohamed Amoura (Algeria's top qualifier scorer, 10 goals) is OUT with hamstring injury. Reduces Q2, Q6, Q9 probabilities from model-based levels.",
+    "COMPOUND_Q3": "Q3 requires both Jordan scores first AND Algeria scores in 2H. Calculate carefully — neither alone is sufficient."
+  },
+  "gd1_evidence": {
+    "arg_vs_alg": {
+      "result": "Argentina 3-0 Algeria",
+      "goals_timing": "Messi 17', 60', 76' (hat-trick equalling Klose's WC record)",
+      "alg_shots": 7,
+      "alg_sot": 0,
+      "alg_fouls": 8,
+      "alg_corners": 2,
+      "alg_offsides": 1,
+      "alg_possession": "52%",
+      "alg_xg": 0.32,
+      "penalties_red_cards": false,
+      "mahrez_gd1": {
+        "started": false,
+        "came_on": "~64th minute",
+        "minutes": 26,
+        "shots": 1,
+        "sot": 0,
+        "note": "Benched in favor of Hadj Moussa. Had 1 shot at 86'. Expected to START vs Jordan."
+      },
+      "amoura_status": "OUT — confirmed hamstring injury, ruled out for weeks. NOT available vs Jordan.",
+      "key_insight": "ALGERIA HAD ZERO SOT IN 90 MINUTES vs ARGENTINA. Historic underperformance. BUT vs much stronger opponent and with Mahrez benched and Amoura absent from the jump. Jordan's defense is substantially weaker than Argentina's."
+    },
+    "aut_vs_jor": {
+      "result": "Austria 3-1 Jordan",
+      "goals_timing": "Romano Schmid 21' (AUT); Jordan Ali Olwan 50' (first-ever WC goal); Yazan Al-Arab OG 76'; Arnautovic penalty 90+12'",
+      "jor_shots": 11,
+      "jor_sot": 4,
+      "jor_fouls": "~10-12 (estimate, not confirmed in box score)",
+      "jor_possession": "~42%",
+      "penalty_awarded": true,
+      "penalty_note": "VAR handball review in stoppage time. Austria were awarded penalty at 90+12'. Jordan concede penalties frequently (3 in last 10 matches).",
+      "altaamari_gd1": {
+        "started": true,
+        "minutes": 87,
+        "goals": 0,
+        "assists": 0,
+        "shots": "Multiple (at least 1-2 attempts per match narrative — solo run dragged wide in stoppage time)",
+        "sot": "At least 1 (confirmed from AUT-JOR Q10 = YES 100% — he had ≥1 SOT)",
+        "note": "Jordan had 4 total SOT in GD1. Al-Taamari was primary attacker for 87 min. Likely had 1-2 of the 4 SOT."
+      },
+      "key_insight": "Jordan generated 11 shots and 4 SOT vs Austria — much better attacking output than a 3-1 loser typically shows. Ali Olwan scored Jordan's first-ever WC goal. Jordan is NOT a toothless team."
+    }
+  },
+  "external_market_data": {
+    "algeria_win_implied": "62-65% (BetMGM -175, DraftKings -180, bet365 -188, Betfair 8/15)",
+    "draw_implied": "19-22% (+300 to +333)",
+    "jordan_win_implied": "14-17% (+475 to +500)",
+    "over_2_5_goals": "-104 to -110 (~51-52% implied — market basically 50/50)",
+    "btts_yes": "-102 to -105 (~50-51% YES) — Note: BTTS No is slight favourite at -124 to -132",
+    "corners_market": "Under 9.5 corners favoured 7/10",
+    "mahrez_anytime_scorer": "+160 (~38% implied)",
+    "altaamari_anytime_scorer": "+350 (~22% implied)",
+    "olwan_anytime_scorer": "+360 (~22% implied)",
+    "gouiri_anytime_scorer": "+175 (~36% implied)",
+    "ht_draw_market": "+130 (~43% implied)",
+    "expert_consensus": "Split on over/under 2.5. CBS picks under, Covers picks over. Football Whispers cites 'over 2.5 in 5 of Jordan's last 6'. Algeria: BTTS in only 3 of last 10 matches.",
+    "notable_stat": "Jordan wins penalties at HIGH RATE (5 of last 10 matches) AND concedes penalties (3 of last 10). Jordan is a high-penalty-involvement team."
+  },
+  "referee": {
+    "name": "Slavko Vincic (Slovenia)",
+    "career_matches": "330-374 (varies by source)",
+    "yc_per_game_career": 4.13,
+    "yc_per_game_wc": 3.33,
+    "rc_per_game": 0.10,
+    "penalty_per_game_career": 0.27,
+    "fouls_per_game": 21.66,
+    "style": "Balanced and serene. Lets the game flow. Not trigger-happy. Firm but measured.",
+    "wc_experience": "2022 Qatar: Argentina-Saudi Arabia, England-Wales. Well-controlled matches.",
+    "wc_note": "His WC YC/game (3.33) is LOWER than career (4.13) — he is more restrained at the highest level.",
+    "assessment": "Moderate card-giver. Penalty rate ~0.27/match (~1 in 4 matches). Will use VAR. Does not artificially inflate cards. Reliable but not lenient. For Q5, Jordan's team tendency to win/concede pens is more relevant than referee tendency."
+  },
+  "player_profiles": {
+    "riyad_mahrez": {
+      "age": 35,
+      "club": "Al-Ahli (Saudi Pro League)",
+      "international_caps": 95,
+      "international_goals": 38,
+      "gd1_started": false,
+      "gd1_minutes": 26,
+      "gd1_sot": 0,
+      "expected_vs_jordan": "Expected to START (widespread pre-match reports)",
+      "club_stats_2025_26": {
+        "matches": 27,
+        "minutes": 2311,
+        "goals": 4,
+        "assists": 8,
+        "shots": 38,
+        "shots_on_target": 11,
+        "sot_per_game": 0.41,
+        "shot_accuracy": "29%"
+      },
+      "fitness_note": "Rarely plays full 90 minutes. 'Last full match for Algeria was January 2024.' Likely starts and plays 60-75 minutes.",
+      "role": "Right winger — inverted left-foot cutter. Primary set-piece taker (corners, free kicks, penalties). Algeria's creative focal point.",
+      "q6_note": "Q6 asks for 2H SOT specifically. If he's subbed off at 65-70', he may not register a 2H SOT. This is the primary risk for Q6."
+    },
+    "mousa_altaamari": {
+      "age": 29,
+      "club": "Stade Rennais (Rennes, Ligue 1)",
+      "international_caps": 91,
+      "international_goals": 24,
+      "position": "Right winger (inverted, left-footed)",
+      "gd1_started": true,
+      "gd1_minutes": 87,
+      "gd1_sot": "At least 1 (confirmed from prior Q10 data: AUT-JOR Q10 Al-Taamari 1+ SOT = YES 100%)",
+      "club_stats_2025_26": {
+        "matches": 33,
+        "shots": 61,
+        "shots_on_target": 25,
+        "sot_per_game": 0.76,
+        "shot_accuracy": "41%",
+        "goals": "6-7",
+        "assists": 11
+      },
+      "qualification_goals": 7,
+      "role": "Jordan's primary attacking weapon and counter-attack focal point. Primary set-piece taker. First-choice penalty taker.",
+      "injury_status": "None reported. Available and expected to start.",
+      "q10_note": "0.76 SOT/game at Rennes in Ligue 1 — best club-level base rate in this analysis. GD1 confirmed SOT vs Austria. Jordan explicitly play to 'spring Al-Taamari on the counter.'"
+    }
+  },
+  "team_data": {
+    "jordan": {
+      "formation": "3-4-2-1 or 3-4-3 (compact defensive unit with 3 CBs)",
+      "style": "Low block, compact, counter-attack oriented. Vertical and direct when in possession.",
+      "fouls_per_match": 10.44,
+      "cards_per_match": "Under 4.5 in 9 of last 10 matches",
+      "penalties_won_last_10": 5,
+      "penalties_conceded_last_10": 3,
+      "scoring_rate": "Failed to score in only 1 of last 10 matches (90%+ scoring rate)",
+      "recent_form": "Winless in last 6-9 matches. Conceded 2+ goals in every recent game.",
+      "over_2_5_last_5": "4 of last 5 matches exceeded 2.5 goals",
+      "gd1_attacks": "11 shots, 4 SOT vs Austria — strong attacking output",
+      "key_players": ["Mousa Al-Taamari (primary attacker)", "Ali Olwan (lethal striker, 8 goals in last 10)", "Yazan Al-Arab (CB but scored OG vs Austria — liability)"]
+    },
+    "algeria": {
+      "formation": "4-2-3-1 base (sometimes 3-4-2-1)",
+      "style": "Possession-based, technical, wing-focused creative play. High-energy pressing.",
+      "fouls_per_match": 14.78,
+      "clean_sheet_rate": "70% (7 of last 10 matches)",
+      "goals_conceded_per_match": 0.6,
+      "shots_per_match": 11.22,
+      "btts_last_10": "3 of 10 matches (Algeria very often keeps clean sheets)",
+      "gd1_sot": 0,
+      "gd1_key_absence": "Amoura OUT (hamstring). Was Algeria's top scorer with 10 WC qualifying goals.",
+      "replacement_attack": "Without Amoura: Mahrez + Gouiri (Marseille) + Maza/Chaibi. Gouiri scored in 2 of 4 pre-tournament friendlies.",
+      "qualifying_stats": "8W-1D-1L, 25pts/30, 24 goals scored. Dominant CAF qualifying campaign.",
+      "key_players": ["Riyad Mahrez (creative focal point)", "Amine Gouiri (Amoura replacement)", "Ramiz Zerrouki (defensive midfielder)", "Mehdi Zerkane (wide player)"]
+    }
+  },
+  "head_to_head": {
+    "all_time_meetings": 3,
+    "prior_meetings": [
+      {"year": 1974, "competition": "Kuneitra Cup", "result": "Algeria 6-0 Jordan"},
+      {"year": 1988, "competition": "Arab Cup (competitive)", "result": "Jordan 2-1 Algeria"},
+      {"year": 2004, "competition": "International Friendly", "result": "Algeria 1-1 Jordan"}
+    ],
+    "competitive_meeting": "Only one prior competitive meeting (1988 Arab Cup) — Jordan WON 2-1.",
+    "last_meeting": "2004 (22 years ago). No recent data applicable."
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "Q1_jor_more_fouls_than_alg": {
+      "question": "Will Jordan commit more fouls than Algeria?",
+      "model_p": 0.4997,
+      "method": "Poisson coin flip.",
+      "gd1_update": "DECISIVE: Algeria fouls 14.78/game (footystats recent 10). Jordan fouls 10.44/game. Algeria fouls 41% MORE per match on average. In GD1 vs Argentina: Algeria committed 8 fouls (below their avg, vs more dominant opponent). Jordan's compact defending style (sitting back, letting Algeria have ball) means Algeria's high-press style will generate THEIR fouls. Algeria will attack, chase, press → they foul more.",
+      "survival_match_effect": "Algeria MUST win → they press aggressively → pressing = fouling. Jordan sits in low block → they don't press = fewer fouls from Jordan.",
+      "amoura_replacement": "Without Amoura, Algeria relies on Mahrez cutting inside + Gouiri's runs. These attackers draw fouls on themselves (Jordan defenders will hold them) but Algeria's midfield press also fouls Jordan's builds.",
+      "rule8_adjustment": "RULE8 fires but this isn't an attacking/scoring prop — apply minimally.",
+      "crowd_expected_range": "0.40-0.55 (crowd won't know the foul data; may submit near 50%)",
+      "edge_direction": "STRONG NO — Algeria fouls much more per game. Jordan submitting more fouls is unlikely.",
+      "FINAL_estimate": 0.32,
+      "revision_from_preliminary": "0.50-0.55 → 0.32. Algeria 14.78 vs Jordan 10.44 fouls/game is the decisive data point. Our preliminary was a coin flip — GD1 and team stats strongly say NO."
+    },
+    "Q2_4plus_sot_2h": {
+      "question": "Will there be 4 or more total shots on target in the second half?",
+      "model_p": 0.5100,
+      "method": "Poisson: lambda_total_SOT_2H=3.72, P(>=4)=51.0%.",
+      "gd1_update": "TENSION: Jordan had 4 total SOT in GD1 (11 shots) → ~2 per half. Algeria had 0 TOTAL SOT vs Argentina (devastating). But vs Jordan who is much weaker defensively, Algeria's SOT should improve — especially with Mahrez starting and must-win urgency. For 4+ total in 2H: need ~2 from Algeria + 2 from Jordan, or one team getting 4. Jordan's 4 total GD1 SOT suggests ~2 per half. Algeria getting 2 in 2H vs Jordan seems achievable (Jordan defence conceded to Austria) but Algeria's 0-SOT GD1 is alarming.",
+      "amoura_out_effect": "Amoura out reduces Algeria's attacking output. Gouiri is a capable replacement but not equal. Revises Algeria 2H SOT projection down slightly.",
+      "survival_match_effect": "Both teams MUST attack in 2H if the match is close → elevates 2H SOT total.",
+      "crowd_expected_range": "0.48-0.58",
+      "edge_direction": "Near coin-flip. Jordan offensive output supports YES; Algeria's 0 GD1 SOT suppresses.",
+      "FINAL_estimate": 0.50,
+      "revision_from_preliminary": "0.50-0.55 → 0.50. Algeria's 0-SOT GD1 is a stronger downward signal than initially modeled. But Jordan's 4-SOT GD1 and must-attack context keep it at 50%."
+    },
+    "Q3_jor_first_goal_and_alg_2h_goal": {
+      "question": "Will Jordan score the first goal AND Algeria score in the second half?",
+      "model_p": 0.1909,
+      "method": "P(JOR first goal)=36.9% × P(ALG scores 2H)=51.8% ≈ 19.1%.",
+      "gd1_update": "Jordan's first-goal probability: Market has Jordan at 14-17% win prob but Jordan can score and lose. Jordan's first-goal scoring chance based on market = maybe 25-30% (lower than model's 37% since market has Algeria as stronger). P(Jordan scores first) ≈ 28-30%. If Jordan leads, Algeria MUST chase → P(ALG scores in 2H | Jordan scored first) ≈ 65-75%. Combined: 0.28 × 0.70 = ~0.196.",
+      "scenario_analysis": "The specific scenario: 0-0 or Jordan leading at HT → Algeria scores in 2H after chasing. In matches where Jordan score first (maybe 28% of the time), they typically get counter-attacked by a desperate opponent, who usually manages a goal. So ~20% probability for this compound.",
+      "compound_note": "Both conditions binding. Jordan scoring first is the hard constraint (they're the underdog). Algeria scoring in 2H is more likely than not if they trail.",
+      "crowd_expected_range": "0.15-0.25",
+      "edge_direction": "Model 19.1% is our best anchor. Market view of Jordan (lower win prob) pulls it slightly down.",
+      "FINAL_estimate": 0.18,
+      "revision_from_preliminary": "0.18-0.22 → 0.18. Market's downgraded Jordan view (14-17% win prob) suppresses Jordan's first-goal probability slightly from model level."
+    },
+    "Q4_alg_2plus_offsides": {
+      "question": "Will Algeria be caught offside 2 or more times?",
+      "model_p": 0.5372,
+      "method": "Poisson: lambda_ALG_offsides=1.80, P(>=2)=53.7%.",
+      "gd1_update": "Algeria was caught offside only ONCE in GD1 vs Argentina (Chaibi's 8' disallowed goal). Algeria plays controlled, possession-based football — they don't rely on speculative runs behind defensive lines. Their tactical shape is NOT an offside-trap-challenging style.",
+      "amoura_replacement": "Amoura was Algeria's primary channel runner (10 WC qualifying goals — many from behind-line runs). Without him, Gouiri (more of a central technical striker) and Mahrez (winger who cuts inside) replace him. Neither is as offside-prone as Amoura.",
+      "jordan_line": "Jordan plays 3 center-backs — their defensive line is organized but not necessarily ultra-high. Counter-attack teams don't need a high line. Algeria may not face the same offside trap opportunity as vs a high-line team.",
+      "rule8_adjustment": "RULE8 fires: pull 53.7% toward 50% = ~50%. GD1 evidence pulls further down.",
+      "crowd_expected_range": "0.45-0.58 (crowd thinks Algeria will attack aggressively = more offsides)",
+      "edge_direction": "SLIGHT NO lean: Algeria's controlled style + only 1 GD1 offside + Amoura replacements = lower than model suggests",
+      "FINAL_estimate": 0.44,
+      "revision_from_preliminary": "0.48-0.53 → 0.44. Algeria only 1 offside in GD1. Controlled possession style. Amoura (the runner) is out. RULE8 pulls toward 50% but GD1 evidence pulls the other way."
+    },
+    "Q5_penalty_or_red_card": {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "model_p": 0.38,
+      "method": "Vincic 0.27 pens/game career. Red card ~0.10/game. Combined ~35%.",
+      "jordan_penalty_data": "CRITICAL: Jordan BOTH won 5 penalties AND conceded 3 penalties in last 10 matches. They are involved in 8 penalties in 10 games. This is an extremely high rate. Jordan habitually creates and concedes penalty situations.",
+      "gd1_penalty": "AUT-JOR: Austria got a penalty in 90+12' via VAR handball. Jordan concede penalties regularly.",
+      "referee_vincic": "0.27 pens/game career, 0.33 in UCL. Moderate rate. Uses VAR. Won't shy away from giving pens when warranted.",
+      "survival_match_effect": "Both teams desperate in 2H → cynical fouls, deliberate blocks, hand-ball risks = elevated penalty probability.",
+      "algeria_btts": "BTTS No is more common for Algeria (7/10 clean sheets). But this survival match is different.",
+      "crowd_expected_range": "0.38-0.52",
+      "edge_direction": "SLIGHT YES lean: Jordan's extreme penalty involvement rate + survival desperation in 2H",
+      "FINAL_estimate": 0.45,
+      "revision_from_preliminary": "0.42-0.50 → 0.45. Jordan's 8 penalty involvements in 10 matches is the decisive signal. Vincic at 0.27/game plus survival desperation pushes toward 45%."
+    },
+    "Q6_mahrez_sot_2h": {
+      "question": "Will Riyad Mahrez have at least 1 shot on target in the second half?",
+      "model_p": 0.5645,
+      "method": "Poisson: lambda_Mahrez_SOT_2H=0.831, P(>=1)=56.5%.",
+      "gd1_update": "Mahrez was BENCHED in GD1 — came on 64' for 26 minutes, had 1 shot (86'), 0 SOT. He's EXPECTED TO START vs Jordan. Starting gives him 90 minutes of potential SOT opportunities.",
+      "club_data": "0.41 SOT/game at Al-Ahli across 27 matches (2,311 min). If he plays full 90 vs Jordan, he'd get ~0.41 SOT expected. In 2H specifically (~0.22 SOT expected in 2H alone based on proportional distribution).",
+      "fitness_risk": "Does not routinely play full 90. Last full Algeria match was January 2024. He may be subbed off at 60-70' → if subbed before 2H SOT, Q6 becomes NO.",
+      "amoura_out_effect": "Without Amoura, Algeria's attack relies more heavily on Mahrez → he'll have more license to shoot and create, potentially increasing his 2H shots.",
+      "jordan_defense": "Jordan's 3-CB setup is organized but not elite. They conceded 11 shots vs Austria. Mahrez cutting inside from right wing will find opportunities vs Jordan's defenders.",
+      "algeria_0_sot_warning": "Algeria generated 0 SOT in GD1. Vs Jordan's weaker defense, Mahrez should do better. But Algeria's collective attacking mechanism is showing signs of dysfunction.",
+      "market_signal": "Mahrez anytime scorer +160 (~38%). SOT probability should be meaningfully higher (maybe 40-50%).",
+      "crowd_expected_range": "0.50-0.65 (crowd will see 'star player starting' and submit high)",
+      "edge_direction": "LEAN NO vs model: Algeria's 0 GD1 SOT + Mahrez sub-risk + 2H specific condition",
+      "FINAL_estimate": 0.42,
+      "revision_from_preliminary": "0.48-0.58 → 0.42. Model was 56.5% — too high. Mahrez likely starts but: (1) 2H SOT is a specific condition, not full match; (2) Algeria had 0 total SOT in GD1; (3) Mahrez rarely plays full 90, may be subbed off before he can register 2H SOT. Market at +160 scorer implies ~38% scorer prob; SOT probability approximately 42%."
+    },
+    "Q7_jordan_scores_1plus": {
+      "question": "Will Jordan score at least 1 goal?",
+      "model_p": 0.6050,
+      "method": "P(JOR scores)=60.5%.",
+      "gd1_update": "Jordan scored in GD1 (Ali Olwan 50' vs Austria). Jordan had 11 shots, 4 SOT. Their attacking output was impressive for a losing team. Jordan's scoring rate in last 10 matches: 90% (only 1 scoreless game). Al-Taamari (0.76 SOT/game), Olwan (8 goals in last 10) are both active threats.",
+      "market_signal": "Algeria 'win to nil' at +140 = ~42% probability → Jordan scores in ~58% of scenarios. BTTS Yes at ~50% also consistent.",
+      "algeria_defense": "Algeria's 70% clean sheet rate is strong. But: (1) Amoura out = more defensive focus has to compensate; (2) Jordan showed 4 SOT vs Austria; (3) Survival match = Jordan attacks more aggressively than model predicts.",
+      "rule8_adjustment": "RULE8: pull from 60.5% toward 50% = ~57%. Market convergence at ~58%. These align.",
+      "crowd_expected_range": "0.50-0.60",
+      "edge_direction": "Moderate YES. Jordan's scoring history + attacking output + must-win context. But Algeria defends well.",
+      "FINAL_estimate": 0.57,
+      "revision_from_preliminary": "0.55-0.62 → 0.57. Market win-to-nil at +140 = ~42% no Jordan goal. RULE8 adjustment. Jordan's GD1 attacking output supports the higher end. Settle at 0.57."
+    },
+    "Q8_ht_tied": {
+      "question": "At halftime, will the match be tied?",
+      "model_p": 0.4588,
+      "method": "Double Poisson: P(HT 0-0 + 1-1 + 2-2...)=45.9%.",
+      "gd1_update": "Algeria's attack was limited in GD1 (Mahrez benched, Amoura out — conditions improving for JOR match). Jordan's defense conceded 21' (Austria) — they can be broken early. But Jordan are well-organized defensively.",
+      "market_signal": "HT Draw at +130 = ~43% implied.",
+      "jordan_ht_pattern": "Jordan 'trailed at HT in 5 of last 6 matches' — but vs superior opposition. Algeria with Mahrez starting but Amoura out may not break Jordan down in the first 45.",
+      "0_0_likelihood": "0-0 at HT is the single most likely individual HT score. Algeria's attack is limited (Amoura out), Jordan defends in numbers. A goalless first half is very plausible.",
+      "crowd_expected_range": "0.40-0.50",
+      "edge_direction": "Slight YES: Both teams cautious early in survival match + Algeria attack limited without Amoura in 1H",
+      "FINAL_estimate": 0.44,
+      "revision_from_preliminary": "0.42-0.48 → 0.44. Market at 43%, model at 45.9%. Jordan's HT-trailing pattern is concerning but vs weaker Algeria attack (without Amoura). Settle at 0.44."
+    },
+    "Q9_3plus_total_goals": {
+      "question": "Will the match have 3 or more total goals?",
+      "model_p": 0.3919,
+      "method": "Poisson: P(total>=3)=39.2%.",
+      "gd1_update": "AUT-JOR had 4 goals. ARG-ALG had 3 goals. Both GD1 matches in this group exceeded 3 goals. This is a significant base rate signal — the tournament and group are producing high-scoring games.",
+      "market_signal": "Over 2.5 at -104 to -110 = ~51-52%. Market is essentially 50/50. Covers experts pick OVER, CBS picks UNDER. Football Whispers: 'Over in 5 of Jordan's last 6 matches.'",
+      "amoura_out_effect": "Amoura out reduces Algeria's attack. BUT Jordan's high-scoring recent form compensates. Jordan scored in GD1; if they score and Algeria scores 2 = 3 goals total easily.",
+      "btts_note": "BTTS Yes only 50-51% implied. If both teams score (50%), total goals likely 2+. For 3+ specifically: need one team to score 2. Algeria clean sheet 70% normally — but survival match disrupts this.",
+      "rule8_adjustment": "RULE8: pull from 39.2% toward 50% = ~43%.",
+      "crowd_expected_range": "0.42-0.52",
+      "edge_direction": "Moderate YES: RULE8 pull + market ~51% + GD1 pattern + Jordan's over-2.5 history (5/6). Model underestimates.",
+      "FINAL_estimate": 0.48,
+      "revision_from_preliminary": "0.38-0.44 → 0.48. Market at 51-52%, RULE8 pulls model up, GD1 pattern (both groups matches had 3+ goals), Jordan's recent history. But Algeria's 0-SOT GD1 creates uncertainty about their scoring ability. Settle at 0.48."
+    },
+    "Q10_altaamari_sot": {
+      "question": "Will Mousa Al-Taamari have at least 1 shot on target?",
+      "model_p": 0.5900,
+      "method": "Poisson: lambda_Al-Taamari_SOT (32% of JOR)=0.892, P(>=1)=59.0%.",
+      "club_data": "0.76 SOT/game across 33 Rennes (Ligue 1) matches — BEST INDIVIDUAL CLUB BASE RATE IN THIS ANALYSIS SESSION. Plays in European top 5 league. This is a genuinely strong shooter.",
+      "gd1_confirmation": "CONFIRMED: Al-Taamari had at least 1 SOT vs Austria in GD1 (from prior Q10 AUT-JOR = YES 100%). Jordan generated 4 total SOT in GD1. Al-Taamari played 87 minutes as their primary attacker.",
+      "jordan_game_plan": "Jordan explicitly play to 'spring Al-Taamari on the counter.' He's the designated counter-attack weapon. Every Jordan build-up aims to find him in space.",
+      "market_signal": "Al-Taamari anytime scorer at +350 (~22%). SOT probability is typically 2-3× goal probability = ~44-66%. The club rate (0.76 SOT/game) gives the upper bound.",
+      "rule8_adjustment": "RULE8: pull from 59% toward 50% = ~56%. But club data is very strong.",
+      "crowd_expected_range": "0.45-0.58",
+      "edge_direction": "Moderate YES: club SOT rate, GD1 confirmation, central role in Jordan attack. Main risk: if Jordan absorbs heavy pressure and never breaks out on counter.",
+      "FINAL_estimate": 0.58,
+      "revision_from_preliminary": "0.55-0.62 → 0.58. Club base rate 0.76 SOT/game is very strong. GD1 confirmed. RULE8 pulls slightly down. Settle at 0.58."
+    }
+  },
+  "final_submission_estimates": {
+    "Q1": {
+      "estimate": 0.32,
+      "tier": "TIER 1 — push hard NO",
+      "notes": "STRONGEST EDGE IN BATCH. Algeria fouls 14.78/game vs Jordan 10.44/game. Algeria fouls 41% more per match. Algeria pressing must-win = THEY foul more. Jordan sits deep = fewer fouls. Crowd will submit near 50% (not knowing the data)."
+    },
+    "Q2": {
+      "estimate": 0.50,
+      "tier": "TIER 3 — coin flip",
+      "notes": "Jordan 4 SOT in GD1 (~2/half). Algeria had 0 total SOT in GD1 (alarming). Amoura out. Must-attack 2H offsets. Net = genuine 50/50."
+    },
+    "Q3": {
+      "estimate": 0.18,
+      "tier": "TIER 3 — slight NO",
+      "notes": "Compound: JOR first goal (~28-30%) × ALG 2H goal if JOR leads (~70%). = ~0.20. Slightly below model given market's lower Jordan view."
+    },
+    "Q4": {
+      "estimate": 0.44,
+      "tier": "TIER 2 — NO lean",
+      "notes": "Algeria only 1 offside in GD1. Controlled possession style. Amoura (the channel runner) is OUT. Jordan's 3-CB is organized but not an extreme offside trap. Model 53.7% is too high."
+    },
+    "Q5": {
+      "estimate": 0.45,
+      "tier": "TIER 2 — YES lean",
+      "notes": "Jordan involved in 8 penalties in last 10 matches (5 won, 3 conceded) — extreme penalty rate. Vincic 0.27/game. Survival desperation in 2H. Elevated above base rate."
+    },
+    "Q6": {
+      "estimate": 0.42,
+      "tier": "TIER 2 — NO lean",
+      "notes": "Model was 56.5% — too high. Mahrez likely starts but Q6 is 2H SOT SPECIFICALLY. He rarely plays full 90 (sub risk at 65-70'). Algeria had 0 total SOT in GD1. 2H-specific condition is hard even if he starts. Crowd will over-estimate (see star player starting)."
+    },
+    "Q7": {
+      "estimate": 0.57,
+      "tier": "TIER 2 — YES lean",
+      "notes": "Jordan scored in 90% recent matches. 4 SOT in GD1. Al-Taamari + Olwan are both threats. Market win-to-nil at +140 = ~42% no Jordan goal. RULE8 adjustment. 0.57 is right."
+    },
+    "Q8": {
+      "estimate": 0.44,
+      "tier": "TIER 3 — near model",
+      "notes": "Model 45.9%, market 43%. Both teams cautious early but attacking from start. Algeria's attack limited without Amoura in 1H. 0-0 at HT is most likely single score. 0.44 bridges model and market."
+    },
+    "Q9": {
+      "estimate": 0.48,
+      "tier": "TIER 2 — slight YES lean vs model",
+      "notes": "Model 39.2% too low. RULE8 pulls toward 50%. Market at 51-52%. Both GD1 matches in this group had 3+ goals. Jordan over-2.5 in 5/6 recent matches. But Algeria 0 SOT in GD1 creates uncertainty. 0.48."
+    },
+    "Q10": {
+      "estimate": 0.58,
+      "tier": "TIER 1 — YES lean",
+      "notes": "SECOND STRONGEST EDGE. Club rate 0.76 SOT/game (Ligue 1). GD1 confirmed SOT vs Austria. Jordan's primary counter-attack weapon. Crowd may under-estimate (Jordan underdog, less well-known player). RULE8 pulls slightly from model 59%."
+    }
+  },
+  "edge_ranking": {
+    "1_Q1_jor_fouls": "0.32 STRONG NO — Algeria 14.78 fouls/game vs Jordan 10.44. Crowd at ~50% doesn't know this data.",
+    "2_Q10_altaamari_sot": "0.58 YES — 0.76 SOT/game at Ligue 1. GD1 confirmed. Jordan's designated weapon.",
+    "3_Q6_mahrez_sot_2h": "0.42 NO lean — Model was 56.5%; 2H-specific condition + fitness risk + Algeria 0 GD1 SOT.",
+    "4_Q4_alg_offsides": "0.44 NO lean — Algeria controlled 1 GD1 offside; Amoura out; model 53.7% was too high.",
+    "5_Q5_penalty_rc": "0.45 YES — Jordan's extreme penalty involvement rate (8 in 10 matches).",
+    "6_Q7_jor_scores": "0.57 YES — Jordan's 90% scoring rate, 4 GD1 SOT, must-win attacking.",
+    "7_Q9_3plus_goals": "0.48 near-50 — RULE8 + market + GD1 pattern vs Algeria 0-SOT concern.",
+    "8_Q8_ht_tie": "0.44 near-model — Algeria attack limited 1H without Amoura; 0-0 most likely HT score.",
+    "9_Q2_4plus_sot_2h": "0.50 coin flip — Jordan's GD1 SOT output vs Algeria's 0-SOT GD1.",
+    "10_Q3_compound": "0.18 — compound requires JOR scores first (~28-30%) AND ALG 2H (~70%); rare conjunction."
+  },
+  "crowd_estimates_live": {
+    "Q1": {"us": 0.32, "crowd": 0.54},
+    "Q2": {"us": 0.50, "crowd": 0.60},
+    "Q3": {"us": 0.18, "crowd": 0.23},
+    "Q4": {"us": 0.44, "crowd": 0.51},
+    "Q5": {"us": 0.45, "crowd": 0.38},
+    "Q6": {"us": 0.42, "crowd": 0.43},
+    "Q7": {"us": 0.57, "crowd": 0.52},
+    "Q8": {"us": 0.44, "crowd": 0.42},
+    "Q9": {"us": 0.48, "crowd": 0.48},
+    "Q10": {"us": 0.58, "crowd": 0.47}
+  },
+  "post_match_results": {
+    "match_score": "Jordan 1-2 Algeria",
+    "winner": "Algeria",
+    "halftime_score": "1-0 Jordan (derived: Q3 YES + Q8 NO = Jordan led at HT)",
+    "match_narrative": "Jordan scored first and led 1-0 at HT. Algeria mounted a comeback in the 2H, scoring twice to win 2-1. Jordan defended their lead for 45+ minutes, committing MORE fouls than Algeria (who had the ball attacking). Al-Taamari registered at least 1 SOT. Mahrez did not register a 2H SOT. No penalty or red card. Exactly 3 goals in the match. Clean, tactical match with a clear comeback arc.",
+    "total_rbp": -5.60,
+    "questions_beat_crowd": 6,
+    "questions_below_crowd": 4,
+    "question_results": {
+      "Q1": {
+        "question": "Jordan more fouls than Algeria?",
+        "outcome": "YES",
+        "us": 0.32,
+        "crowd": 0.54,
+        "rbp": -23.23,
+        "vs_crowd": "below",
+        "notes": "CATASTROPHIC MISS. Our strongest call (0.32 TIER 1 STRONG NO) was completely wrong. Jordan committed MORE fouls than Algeria despite Algeria averaging 14.78/game vs Jordan's 10.44/game. ROOT CAUSE: We used static base-rate foul data without accounting for the actual match script. Jordan scored first → led 1-0 at HT → spent 2H DEFENDING against desperate Algeria attacks → Jordan fouls more DEFENDING their lead. Algeria, the pressing team in base rates, was now ATTACKING with the ball in 2H — attacking teams don't commit fouls, they draw them. The match script flipped the foul dynamic completely. THIS IS A STRUCTURAL RULE FAILURE, not just variance."
+      },
+      "Q2": {
+        "question": "4+ total SOT in 2H?",
+        "outcome": "YES",
+        "us": 0.50,
+        "crowd": 0.60,
+        "rbp": -6.60,
+        "vs_crowd": "below",
+        "notes": "YES — abundant 2H SOT in a match where Algeria attacked relentlessly to get back into the game. Crowd at 60% was better calibrated. We anchored too hard on Algeria's 0-SOT GD1, not accounting for the much higher SOT output when they're chasing in 2H."
+      },
+      "Q3": {
+        "question": "Jordan first AND Algeria 2H?",
+        "outcome": "YES",
+        "us": 0.18,
+        "crowd": 0.23,
+        "rbp": -6.03,
+        "vs_crowd": "below",
+        "notes": "The rare compound event occurred: Jordan scored first AND Algeria scored in 2H (twice, to win 2-1). Both we (0.18) and crowd (0.23) were well below 50% — neither called this. Small loss. This was a low-probability event that happened; not a systematic mistake in the same way as Q1."
+      },
+      "Q4": {
+        "question": "Algeria 2+ offsides?",
+        "outcome": "NO",
+        "us": 0.44,
+        "crowd": 0.51,
+        "rbp": 8.98,
+        "vs_crowd": "beat",
+        "notes": "Algeria had fewer than 2 offsides. Our reasoning (Algeria only 1 GD1 offside, controlled possession style, Amoura out) was correct. +8.98 from crowd 51%."
+      },
+      "Q5": {
+        "question": "Penalty OR red card?",
+        "outcome": "NO",
+        "us": 0.45,
+        "crowd": 0.38,
+        "rbp": -3.20,
+        "vs_crowd": "below",
+        "notes": "No penalty or red card. We overestimated Jordan's penalty tendency (0.45 vs crowd 0.38). Jordan's 8 penalty involvements in 10 matches did NOT manifest here. Crowd was more accurate."
+      },
+      "Q6": {
+        "question": "Mahrez 1+ SOT in 2H?",
+        "outcome": "NO",
+        "us": 0.42,
+        "crowd": 0.43,
+        "rbp": 3.59,
+        "vs_crowd": "beat",
+        "notes": "Mahrez did NOT register a 2H SOT. Our downward revision from model (56.5% → 42%) was correct. He likely started but either was subbed before a 2H SOT opportunity or didn't connect. Algeria's attack found other channels."
+      },
+      "Q7": {
+        "question": "Jordan scores 1+ goal?",
+        "outcome": "YES",
+        "us": 0.57,
+        "crowd": 0.52,
+        "rbp": 6.40,
+        "vs_crowd": "beat",
+        "notes": "Jordan scored (the opening goal! — scoring first per Q3). Our 0.57 vs crowd 0.52 = +6.40. Jordan's 90% recent scoring rate was validated. Al-Taamari's contribution likely central."
+      },
+      "Q8": {
+        "question": "HT tied?",
+        "outcome": "NO",
+        "us": 0.44,
+        "crowd": 0.42,
+        "rbp": 0.01,
+        "vs_crowd": "beat",
+        "notes": "HT was NOT tied — Jordan led 1-0. Negligible RBP. Both we and crowd were near 43-44%; tiny win."
+      },
+      "Q9": {
+        "question": "3+ total goals?",
+        "outcome": "YES",
+        "us": 0.48,
+        "crowd": 0.48,
+        "rbp": 1.38,
+        "vs_crowd": "beat",
+        "notes": "Exactly 3 goals (Jordan 1 + Algeria 2). Both we and crowd at 0.48 — essentially even. Small win from being tied with crowd."
+      },
+      "Q10": {
+        "question": "Al-Taamari 1+ SOT?",
+        "outcome": "YES",
+        "us": 0.58,
+        "crowd": 0.47,
+        "rbp": 13.11,
+        "vs_crowd": "beat",
+        "notes": "BIGGEST WIN. Al-Taamari confirmed SOT. Our 0.58 vs crowd 0.47 = +13.11. Club base rate (0.76 SOT/game at Rennes) was the right signal. He was Jordan's primary weapon and delivered."
+      }
+    },
+    "analysis": {
+      "biggest_loss": "Q1 -23.23 — THE STRUCTURAL FAILURE. Our most confident call (0.32 TIER 1) was completely wrong. The fundamental error was using static foul base rates without accounting for match-script dynamics.",
+      "biggest_win": "Q10 +13.11 — Al-Taamari club-rate data was the right signal. 0.76 SOT/game at Rennes translated directly.",
+      "root_cause_q1": {
+        "our_reasoning": "Algeria fouls 14.78/game vs Jordan 10.44/game (from footystats recent 10). Algeria pressing must-win style = they foul. Jordan sits deep = fewer fouls.",
+        "what_actually_happened": "Jordan scored first and spent 60-70+ minutes DEFENDING their lead against desperate Algeria attacks. A team DEFENDING fouls more, not the team ATTACKING. Algeria, the pressing team in base rates, now had the ball in possession trying to equalize — they drew fouls rather than committing them. Jordan's defenders had to make tackle after tackle to hold the result.",
+        "structural_error": "BASE RATE FOUL DATA IS A PROXY FOR 'WHO DEFENDS MORE IN THEIR TYPICAL MATCHES', not for this specific match. Algeria fouls 14.78/game because THEY typically defend or press more aggressively in their matches. But in this match, JORDAN ended up doing most of the defending.",
+        "analogous_failures": [
+          "JPN-TUN: Japan (pressing team) fouled MORE than Tunisia despite Tunisia being the 'defensive underdog'. Japan's pressing style = they foul when pressing. In THIS match: Jordan defending their lead = Jordan fouls.",
+          "The pattern is consistent: the team that DEFENDS in the actual match fouls more. Historical base rates only predict this if the team's defensive/offensive role in the actual match matches their typical role."
+        ],
+        "new_rule_derived": "RULE_FOULS_NEW: For 'which team fouls more' questions, first predict which team will DEFEND more in this specific match. The defending team fouls more. Use base rate foul data only to calibrate HOW MUCH the defending team fouls, not to determine WHO the defending team will be. Specifically: if the underdog is likely to score first and defend a lead (as Jordan did here), the underdog will foul more despite lower base rate."
+      },
+      "q3_lesson": "Jordan scoring first was a ~30% event. When Jordan leads at HT, Algeria MUST attack in 2H and will score — this compound event was correctly assessed as unlikely but happened. No systematic error here beyond variance.",
+      "q2_lesson": "When a team is chasing a deficit in 2H in a must-win, their 2H SOT dramatically exceeds their GD1 performance. Algeria had 0 SOT in GD1 but was in an entirely different match state in 2H here. We should have been higher (closer to 60-65%) given the almost-certain chasing scenario once Jordan scored.",
+      "what_worked": [
+        "Q4 +8.98: Algeria's controlled style → low offsides CONFIRMED",
+        "Q6 +3.59: Mahrez 2H SOT risk (sub risk + Algeria attack mechanism) → CONFIRMED",
+        "Q7 +6.40: Jordan's 90% scoring rate → CONFIRMED (they scored first!)",
+        "Q10 +13.11: Al-Taamari club rate (0.76 SOT/game) → CONFIRMED and best return"
+      ]
+    }
+  }
+}

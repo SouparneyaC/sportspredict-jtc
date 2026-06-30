@@ -1,0 +1,181 @@
+{
+  "match": "Türkiye vs United States",
+  "date": "2026-06-25",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"TUR_vs_AUS_GD1": 760421, "PAR_vs_USA_GD1": 760417, "TUR_vs_PAR_GD2": 760443, "USA_vs_AUS_GD2": 760442},
+  "smarkets_event_id": "45086559",
+  "group_context": {
+    "Turkey": {"pts": 0, "record": "0-0-2 (L0-2 AUS, L0-1 PAR)", "status": "ELIMINATED — no mathematical path to advancement."},
+    "United States": {"pts": 6, "record": "2-0-0 (W4-1 PAR, W2-0 AUS)", "status": "Already qualified, guaranteed top spot regardless of result today. Possible squad rotation."}
+  },
+  "wc2026_espn_stats": {
+    "TUR": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760421, "opponent": "Australia", "result": "L 0-2", "fouls": 4, "SOT": 8, "offsides": 3, "YC": 1, "RC": 0, "corners": 8, "possession": 71.6, "shots": 30},
+        {"event_id": 760443, "opponent": "Paraguay", "result": "L 0-1", "fouls": 14, "SOT": 5, "offsides": 2, "YC": 1, "RC": 0, "corners": 12, "possession": 78.5, "shots": 32}
+      ],
+      "averages": {"fouls": 9.0, "SOT": 6.5, "offsides": 2.5, "cards": 1.0, "corners": 10.0},
+      "CRITICAL": "Turkey dominates possession (71.6%, 78.5%) and shot volume (30, 32 shots) in BOTH matches yet has lost both 0-2 and 0-1 — elite underlying numbers, terrible conversion. This is NOT a defensive-underdog team; it's an attacking team that can't finish. Offsides (3, 2) and corners (8, 12) are genuine attacking-volume signals, not noise."
+    },
+    "USA": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760417, "opponent": "Paraguay", "result": "W 4-1", "fouls": 13, "SOT": 6, "offsides": 2, "YC": 1, "RC": 0, "corners": 3, "possession": 65.3},
+        {"event_id": 760442, "opponent": "Australia", "result": "W 2-0", "fouls": 12, "SOT": 2, "offsides": 1, "YC": 3, "RC": 0, "corners": 7, "possession": 61.9}
+      ],
+      "averages": {"fouls": 12.5, "SOT": 4.0, "offsides": 1.5, "cards": 2.0, "corners": 5.0}
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Turkey": 0.2532, "USA": 0.4796, "Draw": 0.2327, "liquid": true},
+    "OU2_5": {"Over": 0.6062, "Under": 0.3971, "liquid": true},
+    "Penalty": {"Yes": 0.2848, "No": 0.7357, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1101, "No": 0.9012, "liquid": true},
+    "TUR_corners_OU4_5": {"Over": 0.4785, "Under": 0.5232, "liquid": true},
+    "Team_score_first": {"Turkey": 0.3930, "USA": 0.5718, "No_goal": 0.0385, "liquid": true},
+    "2H_USA_OU0_5": {"Over": 0.6360, "Under": 0.3679, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.3023, "Equal": 0.2412, "Second_Half": 0.4601, "liquid": true},
+    "player_goalscorer_anytime": {"Folarin_Balogun": {"offer": 0.4274, "adjusted": 0.404}, "Orkun_Kokcu": {"offer": 0.1515, "adjusted": 0.143}},
+    "player_score_or_assist": {"Orkun_Kokcu": {"offer": 0.2778, "adjusted": 0.262}, "Folarin_Balogun": {"offer": 0.5495, "adjusted": 0.519}}
+  },
+  "context_flags": [
+    "TUR_ELIMINATED_BUT_DANGEROUS: Turkey has 0 points but dominates possession and shot volume in every match — pride/dead-rubber framing does NOT mean low output.",
+    "USA_ALREADY_QUALIFIED: USA may rotate personnel since group position is locked. Slight downgrade to USA attacking intensity possible, no hard data on lineup yet.",
+    "TUR_OFFSIDE_LESSON: In the most recent TUR-PAR match we wrongly applied the defensive-underdog 2+ offsides NO-family to Turkey and lost -20.26 RBP — Turkey is an ATTACKING team that racks up offsides from sheer volume of forward play, win or lose. Do NOT shade this down today.",
+    "TUR_CORNERS_VS_MARKET_GAP: ESPN average corners for Turkey is 10.0/game (8, 12) but the market prices Over4.5 at only 47.85%. Likely explanation: Turkey's first two opponents (AUS, PAR) sat in very deep low-possession blocks (28%, 21.5%), funneling play wide and generating corners; USA holds the ball themselves (61-65% possession), which should reduce Turkey's territorial share and corner count relative to the first two matches.",
+    "USA_more_fouls_signal: USA fouls 13,12 (tight, consistent) vs TUR fouls 4,14 (highly variable, driven by possession share — TUR fouls less when they have the ball). Turkey will likely have more possession again today even against USA, supporting USA fouling more."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will United States commit more fouls than Türkiye?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "USA fouls consistently 12-13/game. Turkey fouls inversely track their possession share (4 fouls at 71.6% possession vs AUS; 14 fouls at 78.5% possession vs PAR — so possession share alone doesn't fully explain it, but TUR's foul count is erratic vs USA's stable ~12.5). Turkey likely holds more of the ball again today even against USA, supporting USA fouling more. Normal-approximation comparison gives ~0.70 raw; shaded down for Turkey's small-sample volatility.",
+      "final_estimate": 0.60,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 2,
+      "text": "Will Türkiye be caught offside 2 or more times?",
+      "pick_tier": "HIGHEST CONFIDENCE — LESSON APPLIED",
+      "reasoning": "TUR offsides: 3 (vs AUS), 2 (vs PAR). λ=2.5 → Poisson P(≥2)=0.71. Direct correction from the TUR-PAR postmortem: we previously misapplied the defensive-underdog NO-family to Turkey and lost badly (-20.26 RBP) because Turkey is actually a high-possession, high-volume attacking team regardless of scoreline or elimination status. Today we trust the raw rate, shaded only slightly down for USA being a tougher defensive opponent than AUS/PAR.",
+      "final_estimate": 0.65,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will the second half have more total goals than the first half?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct market: Highest-scoring-half, Second_Half = 46.01%. Trust the liquid market.",
+      "final_estimate": 0.46,
+      "direction": "NO lean (narrow)",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Türkiye score the first goal of the game AND United States score in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Compound: P(TUR scores first)=0.393, P(USA scores in 2H)=0.636. Naive independence product = 0.250. If Turkey scores first, USA likely needs to chase, slightly raising their 2H scoring odds (positive correlation) — small upward bump applied, consistent with the same compound-question adjustment used in USA-PAR.",
+      "final_estimate": 0.27,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Penalty Yes=28.48%, Red/sent-off Yes=11.01%. P(OR) = 1-(0.7152×0.8899) = 0.3635. This question family has been a reliable +EV source all tournament.",
+      "final_estimate": 0.36,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Türkiye win the match?",
+      "pick_tier": "DIRECT MARKET",
+      "reasoning": "Smarkets FTR: Turkey 25.32%. Direct tier-1 market.",
+      "final_estimate": 0.25,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will the match have 3 or more total goals?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over2.5 = 60.62%. Both teams have shown attacking output (TUR shot volume, USA conversion) — consistent with an over-leaning market.",
+      "final_estimate": 0.61,
+      "direction": "YES",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Türkiye have 5 or more corner kicks?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "ESPN average is a huge 10.0 corners/game (8, 12) — but those came against AUS/PAR who sat extremely deep (28%, 21.5% possession). USA holds the ball themselves (61-65% possession), which should compress Turkey's territorial dominance relative to the first two matches. Market prices Over4.5 at 47.85%. Blend: weight Turkey's genuine attacking-volume skill against the reduced territorial gap vs a possession-based opponent.",
+      "final_estimate": 0.52,
+      "direction": "YES lean (narrow)",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Orkun Kökçü score or assist a goal (excluding own goals)?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Smarkets offer-only (illiquid): 0.2778, adjusted ×0.945 = 0.262. Kökçü is Turkey's primary creative outlet on a team generating huge shot volume (30, 32 shots) — some directional support for involvement, but illiquid market and 0 points in 2 matches caps confidence.",
+      "final_estimate": 0.26,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will Folarin Balogun score a goal (excluding own goals)?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Anytime goalscorer offer-only: 0.4274, adjusted ×0.945 = 0.404. Balogun is USA's lead striker; USA has scored in every match (4, 2 goals). Caveat: Balogun had 0 SOT in the AUS game despite a liquid 0.73 SOT market — known variance risk on this specific player's props.",
+      "final_estimate": 0.40,
+      "direction": "YES lean",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_USA_more_fouls": 0.60,
+    "Q2_TUR_2plus_offsides": 0.65,
+    "Q3_2H_more_goals_than_1H": 0.46,
+    "Q4_TUR_first_AND_USA_2H": 0.27,
+    "Q5_penalty_or_red_card": 0.36,
+    "Q6_TUR_wins": 0.25,
+    "Q7_3plus_total_goals": 0.61,
+    "Q8_TUR_5plus_corners": 0.52,
+    "Q9_Kokcu_score_or_assist": 0.26,
+    "Q10_Balogun_scores": 0.40
+  },
+  "strongest_picks": [
+    "Q2: Turkey 2+ offsides = 0.65 (HIGHEST CONFIDENCE — direct lesson from TUR-PAR loss; Turkey is an attacking-volume team, not a defensive underdog, regardless of elimination status)",
+    "Q6: Turkey wins = 0.25 (HIGH CONFIDENCE — direct market)",
+    "Q5: Penalty or red card = 0.36 (HIGH CONFIDENCE — reliable compound market family all tournament)",
+    "Q7: 3+ total goals = 0.61 (HIGH CONFIDENCE — direct market)"
+  ],
+  "post_match_results": {
+    "final_score": "Turkey 3-2 United States",
+    "total_rbp": 8.34,
+    "beat_crowd_count": "6/10",
+    "results": {
+      "Q1_USA_more_fouls": {"outcome": "NO", "our_est": 0.60, "crowd": 0.47, "rbp": -12.14, "beat_crowd": false, "note": "USA did NOT foul more than Turkey despite the possession-inverse pattern from GD1/GD2. We over-trusted the foul-vs-possession heuristic; Turkey's foul count surged in this match (likely chasing/defending a lead at different points in a back-and-forth 3-2 game)."},
+      "Q2_TUR_2plus_offsides": {"outcome": "YES", "our_est": 0.65, "crowd": 0.50, "rbp": 14.82, "beat_crowd": true, "note": "Direct vindication of the TUR-PAR lesson applied here — Turkey is a high-possession, high-volume attacking team and racked up offsides again. Biggest single win of the match."},
+      "Q3_2H_more_goals_than_1H": {"outcome": "NO", "our_est": 0.46, "crowd": 0.48, "rbp": 3.52, "beat_crowd": true},
+      "Q4_TUR_first_AND_USA_2H": {"outcome": "NO", "our_est": 0.27, "crowd": 0.28, "rbp": 2.81, "beat_crowd": true},
+      "Q5_penalty_or_red_card": {"outcome": "NO", "our_est": 0.36, "crowd": 0.34, "rbp": 0.31, "beat_crowd": true},
+      "Q6_TUR_wins": {"outcome": "YES", "our_est": 0.25, "crowd": 0.31, "rbp": -6.85, "beat_crowd": false, "note": "Turkey won 3-2 — a genuine upset relative to both our 25% and crowd's 31%. Direct market (Smarkets FTR 25.3%) was wrong; high-shot-volume, low-conversion teams can break through given enough chances."},
+      "Q7_3plus_total_goals": {"outcome": "YES", "our_est": 0.61, "crowd": 0.53, "rbp": 8.24, "beat_crowd": true},
+      "Q8_TUR_5plus_corners": {"outcome": "NO", "our_est": 0.52, "crowd": 0.52, "rbp": 2.71, "beat_crowd": true, "note": "Essentially a push — the possession-compression theory (USA holds the ball more than AUS/PAR did) was directionally correct; Turkey's corner volume came down from their 8/12 average."},
+      "Q9_Kokcu_score_or_assist": {"outcome": "YES", "our_est": 0.26, "crowd": 0.28, "rbp": -0.39, "beat_crowd": false},
+      "Q10_Balogun_scores": {"outcome": "NO", "our_est": 0.40, "crowd": 0.28, "rbp": -4.70, "beat_crowd": false, "note": "Second straight match Balogun's prop missed (0 SOT vs AUS in GD2, no goal here). Pattern building: illiquid/moderate Balogun goal/SOT props have now failed 2/2 — treat his attacking props with more skepticism going forward."}
+    },
+    "key_confirmations": [
+      "Q2 Turkey 2+ offsides CONFIRMED the corrected read from TUR-PAR — Turkey's attacking-volume offside rate is a real, repeatable signal, not noise from one match.",
+      "Q6 Turkey win at 25% was the single biggest miss — a true upset (3-2) that no market or model signal flagged. Worth flagging as tournament-stage variance: eliminated teams with elite underlying shot volume (30, 32 shots/game) can convert when it doesn't matter to the bigger picture."
+    ]
+  },
+  "created": "2026-06-25"
+}

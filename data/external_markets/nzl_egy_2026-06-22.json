@@ -1,0 +1,297 @@
+{
+  "match": "NZL-EGY",
+  "sportspredict_match_id": "19a6ff2c-4d39-491d-8f19-085531f55120",
+  "smarkets_event_id": "45042849",
+  "espn_event_id": "760452",
+  "kickoff_utc": "2026-06-22T01:00:00Z",
+  "context_note": "New Zealand vs Egypt, WC2026 Group Stage (Group G). EGY 61.17% FTR; NZL 14.93%. Draw 23.54% — just below RULE8 threshold (25%), no RULE8. Not extreme favorite — no RULE7 (61.17% < 86%). NZL 14.93% = deep underdog → RULE15 applies to NZL primary forwards (Ben Waine, Elijah Just). Prior data: NZL 2-2 Iran (NZL 8 fouls, 0 YC, 0 offsides, 1 corner, 8 SOT, 14 shots, 51.5% poss); EGY 1-1 Belgium (EGY 15 fouls, 2 YC, 1 offside, 7 corners, 3 SOT, 14 shots, 46.4% poss). KEY FINDING: EGY had 7 corners vs Belgium while NZL had 1 corner vs Iran — massive asymmetry. NZL shot-to-SOT conversion rate was 57% (8/14) vs Egypt's 21% (3/14). Trezeguet was a SUBSTITUTE vs Belgium (GD1 bench role). Ben Waine is Port Vale (League One) striker.",
+  "lineups_confirmed": false,
+  "RULE7_fires": false,
+  "RULE8_fires": false,
+  "draw_probability": 0.2354,
+  "RULE8_note": "Draw 23.54% is just below 25% threshold. Match is fairly competitive (Egypt ~61%, NZL ~15%, Draw ~24%). No formal RULE8 fire but the close-but-below 25% draw suggests some moderate-scoring tendencies consistent with RULE8 adjacent matches. Watch for low-goal outcomes (OU25 Under=53.63% supports ≤2 goals majority of the time).",
+
+  "prior_match_espn_data": {
+    "NZL_vs_Iran_ESPN_760427": {
+      "result": "IRN 2-2 NZL",
+      "NZL_fouls": 8,
+      "NZL_yellow_cards": 0,
+      "NZL_red_cards": 0,
+      "NZL_offsides": 0,
+      "NZL_corners": 1,
+      "NZL_SOT": 8,
+      "NZL_shots": 14,
+      "NZL_possession_pct": 51.5,
+      "NZL_shot_to_SOT_rate": 0.571,
+      "IRN_fouls": 10,
+      "IRN_yellow_cards": 1,
+      "IRN_offsides": 2,
+      "IRN_corners": 4,
+      "IRN_SOT": 4,
+      "IRN_shots": 17
+    },
+    "EGY_vs_Belgium_ESPN_760426": {
+      "result": "BEL 1-1 EGY",
+      "EGY_fouls": 15,
+      "EGY_yellow_cards": 2,
+      "EGY_red_cards": 0,
+      "EGY_offsides": 1,
+      "EGY_corners": 7,
+      "EGY_SOT": 3,
+      "EGY_shots": 14,
+      "EGY_possession_pct": 46.4,
+      "EGY_shot_to_SOT_rate": 0.214,
+      "BEL_fouls": 15,
+      "BEL_yellow_cards": 2,
+      "BEL_offsides": 0,
+      "BEL_corners": 2,
+      "BEL_SOT": 3,
+      "BEL_shots": 15,
+      "BEL_possession_pct": 53.6
+    }
+  },
+
+  "key_lambdas": {
+    "lambda_EGY_goals": 1.7922,
+    "lambda_NZL_goals": 0.7813,
+    "lambda_total_goals": 2.5735,
+    "lambda_1H_total": 1.1479,
+    "lambda_2H_total": 1.4313,
+    "lambda_EGY_2H": 0.9967,
+    "lambda_NZL_2H": 0.4345,
+    "lambda_NZL_corners": 3.5,
+    "lambda_EGY_corners": 5.2,
+    "lambda_total_corners": 8.7,
+    "lambda_NZL_SOT_implied": 2.5,
+    "lambda_EGY_SOT_implied": 5.5,
+    "derivation_notes": {
+      "EGY_goals": "From EGY OU05 Over=83.34%: -ln(0.1666)=1.7922. Check: EGY OU15 Over model=0.5348 vs market=0.5334 ✓",
+      "NZL_goals": "From NZL OU05 Over=54.22%: -ln(0.4578)=0.7813. Check: NZL OU15 Over model=0.1845 vs market=0.1874 ✓",
+      "total_check": "P(≥3|2.5735)=0.4749 vs market OU25 Over=0.463 — close ✓",
+      "1H_2H_split": "λ_1H=-ln(0.3173)=1.1479 from 1H_OU05=68.27%. λ_2H=-ln(0.239)=1.4313 from 2H_OU05=76.10%",
+      "corners_NZL": "From NZL OU45 Over=27.65%: P(≥5|λ=3.5)=0.2746 ✓. Cross-check NZL OU35 Over=44.37%: P(≥4|3.5)=0.4633 ✓",
+      "corners_EGY": "From EGY OU45 Over=59.17%: P(≥5|λ=5.2)=0.5939 ✓",
+      "SOT_implied_lines": "Smarkets created markets: egypt-OU5.5-SOT (143912760) and new-zealand-OU2.5-SOT (143912709) — illiquid but lines imply λ_EGY_SOT≈5.5 and λ_NZL_SOT≈2.5. These lines are set by Smarkets near expected value (verified pattern from prior matches). CRITICAL for Q3 and Q9."
+    }
+  },
+
+  "smarkets_prices": {
+    "FTR": {"New_Zealand": 0.1493, "Draw": 0.2354, "Egypt": 0.6117, "liquid": true},
+    "OU05_goals": {"Over": 0.9134, "Under": 0.0801, "liquid": true},
+    "OU15_goals": {"Over": 0.7273, "Under": 0.2760, "liquid": true},
+    "OU25_goals": {"Over": 0.4630, "Under": 0.5363, "liquid": true},
+    "OU35_goals": {"Over": 0.2470, "Under": 0.7520, "liquid": true},
+    "1H_OU05": {"Over": 0.6827, "Under": 0.3202, "liquid": true},
+    "2H_OU05": {"Over": 0.7610, "Under": 0.2393, "liquid": true},
+    "2H_OU15": {"Over": 0.3978, "Under": 0.5977, "liquid": true},
+    "HT_winner": {"New_Zealand": 0.1430, "Draw": 0.4168, "Egypt": 0.4446, "liquid": true},
+    "2H_winner": {"New_Zealand": 0.1577, "Draw": 0.3465, "Egypt": 0.4897, "liquid": true},
+    "NZL_OU05_goals": {"Over": 0.5422, "Under": 0.4527, "liquid": true},
+    "NZL_OU15_goals": {"Over": 0.1874, "Under": 0.8165, "liquid": true},
+    "EGY_OU05_goals": {"Over": 0.8334, "Under": 0.1643, "liquid": true},
+    "EGY_OU15_goals": {"Over": 0.5334, "Under": 0.4698, "liquid": true},
+    "highest_scoring_half": {"1H": 0.2952, "Equal": 0.2808, "2H": 0.4209, "liquid": true},
+    "corners_winner": {"New_Zealand": 0.2481, "Draw": 0.0966, "Egypt": 0.6492, "liquid": true},
+    "NZL_corners_OU35": {"Over": 0.4437, "Under": 0.5584, "liquid": true},
+    "NZL_corners_OU45": {"Over": 0.2765, "Under": 0.7256, "liquid": true},
+    "EGY_corners_OU45": {"Over": 0.5917, "Under": 0.4167, "liquid": true},
+    "illiquid_markets": "cards_OU25/35/45, penalty, cards_winner, all player markets, 2H team goals OU05, btts_2H: NO PRICES",
+    "SOT_implied_lines_only": {
+      "EGY_SOT_OU55_line_only": "market exists (ID 143912760), no price, implies λ_EGY_SOT≈5.5",
+      "NZL_SOT_OU25_line_only": "market exists (ID 143912709), no price, implies λ_NZL_SOT≈2.5"
+    }
+  },
+
+  "rules_applied": {
+    "NO_RULE7": "Egypt 61.17% < 86% threshold.",
+    "NO_RULE8": "Draw 23.54% is just below 25% threshold. Not formally triggered. BUT note: OU25 Under=53.63% suggests market prices this as more likely to be ≤2 goals than ≥3 — consistent with borderline RULE8 dynamics.",
+    "RULE15_NZL_Waine": "NZL 14.93% win prob = deep underdog range. RULE15 applies to Ben Waine (primary NZL striker) and potentially Elijah Just. Q9 estimate shaded DOWN from naive SOT model. With λ_NZL_SOT≈2.5 (implied line) and Waine ~35% of NZL SOT: λ_Waine≈0.875 → P(≥1)=0.583. RULE15 shade → 0.48.",
+    "Q1_EGY_offsides": "Egypt had 1 offside vs Belgium. As dominant team here (61%), Egypt pushes forward more. But NZL likely defends deep (14.93% underdog) → low defensive line → fewer offside traps. Competing effects roughly cancel. Estimate: 0.50. No strong edge direction.",
+    "Q2_NZL_more_fouls": "NZL: 8 fouls vs Iran (possession/attack style). Egypt: 15 fouls vs Belgium (defensive style). Here roles SWITCH: Egypt has possession (fewer fouls), NZL defends (more fouls). BUT Egypt is fundamentally a physical team (15 fouls even with 46% poss) and NZL is fundamentally disciplined (8 fouls even in tight game). Skellam with λ_NZL=11, λ_EGY=13 gives P(NZL>EGY)=0.305. Estimate: 0.33.",
+    "Q3_NZL_more_2H_SOT": "KEY INSIGHT: Smarkets implied lines show EGY SOT≈5.5 vs NZL SOT≈2.5 total match. These are not priced but the line placement is calibrated. Despite NZL's 8 SOT vs Iran (57% shot-to-SOT rate), the market prices Egypt as dominant in SOT. λ_EGY_SOT_2H≈3.05, λ_NZL_SOT_2H≈1.39. Skellam P(NZL>EGY 2H SOT)=0.153. Also note Egypt 21% shot-to-SOT rate is low — they'll get many shots vs few SOT. NZL efficient (57% rate) but fewer shots overall. Estimate: 0.22 (lean NO; market lines dominate the ESPN 1-match extrapolation).",
+    "Q4_2H_more_goals_than_1H": "Direct from highest_scoring_half market: 2H=42.09%, Equal=28.08%, 1H=29.52%. Market directly answers this question. Estimate: 0.42.",
+    "Q5_EGY_more_corners": "Direct corners_winner market: Egypt 64.92%. STRONGLY supported by ESPN prior: Egypt 7 corners vs Belgium, NZL 1 corner vs Iran — enormous asymmetry. Skellam with λ_EGY=5.2 vs λ_NZL=3.5 gives P(EGY>NZL)=0.658 — consistent with market 0.649. Trust market: estimate 0.65.",
+    "Q6_NZL_wins": "Direct FTR NZL=14.93%. Trust market. Estimate: 0.15.",
+    "Q7_le2_total_goals": "Direct OU25 Under=53.63%. Trust market. Estimate: 0.54.",
+    "Q8_4plus_cards": "No market price (illiquid). Prior: NZL 0 YC vs Iran; Egypt 2 YC vs Belgium. In this match, NZL defending might pick up cards; Egypt as possession team might pick up fewer. λ_total_cards≈3.0 → P(≥4)=0.353. Estimate 0.30 (conservative without market anchor).",
+    "Q9_Ben_Waine_SOT": "RULE15 applies. NZL 14.93% underdog. Smarkets implied line: NZL OU2.5 SOT → λ_NZL_SOT≈2.5. Waine ~35% of NZL's SOT → λ_Waine≈0.875 → P(≥1)=0.583. RULE15 shade: 0.583 - 0.10 = 0.48. If Egypt scores early and NZL defends deep (most likely script), Waine gets fewer counter-attack opportunities. Estimate: 0.48.",
+    "Q10_Trezeguet_G_or_A": "Trezeguet was a SUBSTITUTE vs Belgium (GD1). Expected to start in GD2 (must-win context for both teams). Egypt dominant team (61.17%, λ_EGY_goals=1.79). RULE15 does NOT apply to Trezeguet (Egypt is the expected WINNER). Trezeguet ~25-28% of Egypt's G+A events: P≈0.50-0.55. No market price available. Estimate: 0.52."
+  },
+
+  "final_submission_estimates": {
+    "Q1_EGY_2plus_offsides": {
+      "estimate": 0.50,
+      "confidence": "LOW",
+      "note": "Egypt had 1 offside vs Belgium. Uncertain: Egypt attacks more (→ more offsides) but NZL defends deep (→ lower line, fewer traps). Prior: 1 offside in 1 match. 50/50 with no strong edge."
+    },
+    "Q2_NZL_more_fouls": {
+      "estimate": 0.33,
+      "confidence": "MEDIUM",
+      "note": "Egypt is a fundamentally physical team (15 fouls vs Belgium even with 46% possession). NZL is disciplined (8 fouls). Skellam λ_NZL=11, λ_EGY=13 → P=0.305. Roles partially switch (NZL now defends) but Egypt's physical style persists. Lean: Egypt fouls more. Crowd likely ~0.40-0.45."
+    },
+    "Q3_NZL_more_2H_SOT": {
+      "estimate": 0.22,
+      "confidence": "MEDIUM",
+      "note": "Smarkets implied lines: EGY SOT≈5.5, NZL SOT≈2.5 (strong signal even without prices). Despite NZL's 57% shot-to-SOT conversion rate and 8 SOT vs Iran, Egypt will dominate possession and get more SOT opportunities. λ_EGY_SOT_2H≈3.05 vs λ_NZL_SOT_2H≈1.39 → P(NZL>EGY 2H SOT)=0.153. Estimate 0.22 (slight buffer given NZL efficiency uncertainty). Crowd likely prices 0.30-0.35 based on NZL's Iran performance. EDGE: lean harder NO."
+    },
+    "Q4_2H_more_goals_than_1H": {
+      "estimate": 0.42,
+      "confidence": "HIGH",
+      "note": "Direct from highest_scoring_half market: 2H=42.09%. Trust market."
+    },
+    "Q5_EGY_more_corners": {
+      "estimate": 0.65,
+      "confidence": "HIGH",
+      "note": "Direct corners_winner market: Egypt 64.92%. Strongly supported by ESPN prior: Egypt 7 corners vs Belgium (7!) vs NZL 1 corner vs Iran. Skellam model (λ_EGY=5.2 vs λ_NZL=3.5) gives 65.8%. Trust market."
+    },
+    "Q6_NZL_wins": {
+      "estimate": 0.15,
+      "confidence": "HIGH",
+      "note": "Direct FTR NZL=14.93%. Trust market."
+    },
+    "Q7_le2_total_goals": {
+      "estimate": 0.54,
+      "confidence": "HIGH",
+      "note": "Direct OU25 Under=53.63%. Poisson model: P(≤2|λ=2.57)=0.525 — consistent. Trust market."
+    },
+    "Q8_4plus_cards": {
+      "estimate": 0.30,
+      "confidence": "LOW",
+      "note": "No market price (illiquid). Prior: NZL 0 YC vs Iran, Egypt 2 YC vs Belgium. λ_total_cards≈3.0 → P(≥4)=0.353. Conservative estimate without market anchor. Crowd likely 0.25-0.35."
+    },
+    "Q9_Ben_Waine_1plus_SOT": {
+      "estimate": 0.48,
+      "confidence": "MEDIUM",
+      "note": "RULE15 applies (NZL 14.93% underdog). Smarkets implied line NZL OU2.5 SOT → λ_NZL_SOT≈2.5. Waine ~35% share → λ_Waine≈0.875 → P(≥1)=0.583, RULE15 shade to 0.48. Script: Egypt likely dominates, NZL defends deep, fewer counter-attack Waine SOT opportunities. Crowd probably ~0.55-0.65 (overweighting Waine's 8-SOT NZL vs Iran). EDGE: lean NO."
+    },
+    "Q10_Trezeguet_G_or_A": {
+      "estimate": 0.52,
+      "confidence": "MEDIUM-LOW",
+      "note": "Trezeguet was substitute vs Belgium (GD1), expected to START in GD2. Egypt dominant (61.17%, λ_EGY=1.79). RULE15 does NOT apply (Egypt is expected winner). ~25-28% of Egypt's G+A → P≈0.50-0.55. No player market price available (illiquid). No strong edge direction; crowd probably similar."
+    }
+  },
+
+  "crowd_estimates": {
+    "Q1_NZL_more_fouls": 0.51,
+    "Q2_NZL_more_2H_SOT": 0.33,
+    "Q3_2H_more_goals_than_1H": 0.49,
+    "Q4_EGY_more_corners": 0.62,
+    "Q5_NZL_wins": 0.23,
+    "Q6_le2_total_goals": 0.52,
+    "Q7_4plus_cards": 0.43,
+    "Q8_Ben_Waine_SOT": 0.32,
+    "Q9_Trezeguet_G_or_A": 0.28,
+    "Q10_EGY_2plus_offsides": 0.49
+  },
+  "post_match_results": {
+    "result": "NZL 1-3 Egypt",
+    "winner": "Egypt",
+    "total_goals": 4,
+    "match_rbp_total": 46.54,
+    "questions_beat_crowd": 6,
+    "submission_note": "Q4 (Egypt more corners) appears to have been submitted at 42% (matching our 2H-goals estimate) rather than our intended 65% — possible off-by-one position error. Fortuitously, outcome was NO (Egypt did NOT win corners), so the wrong submission still beat crowd (42% closer to 0% than crowd's 62%).",
+    "questions": {
+      "Q1_NZL_more_fouls": {
+        "question": "Will New Zealand commit more fouls than Egypt?",
+        "our_estimate": 0.33,
+        "crowd_estimate": 0.51,
+        "outcome": "YES",
+        "outcome_numeric": 1,
+        "rbp": -18.43,
+        "beat_crowd": false,
+        "note": "NZL DID foul more. Egypt with dominant possession fouled far less than their 15 vs Belgium. NZL defending deep → 11-14 fouls. KEY LESSON: Egypt as DOMINANT TEAM (60%+ poss) fouls much less than when defending. Should have priced 0.45-0.50."
+      },
+      "Q2_NZL_more_2H_SOT": {
+        "question": "In the second half, will New Zealand have more shots on target than Egypt?",
+        "our_estimate": 0.22,
+        "crowd_estimate": 0.33,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": 8.47,
+        "beat_crowd": true,
+        "note": "Egypt dominated 2H SOT as expected from market-implied lines (EGY≈5.5, NZL≈2.5). Strong call."
+      },
+      "Q3_2H_more_goals_than_1H": {
+        "question": "Will the second half have more goals than the first half?",
+        "our_estimate": 0.42,
+        "crowd_estimate": 0.49,
+        "outcome": "YES",
+        "outcome_numeric": 1,
+        "rbp": -6.16,
+        "beat_crowd": false,
+        "note": "2H had more goals (Egypt likely scored 2 in 2H vs 1 in 1H). We were slightly below crowd."
+      },
+      "Q4_EGY_more_corners": {
+        "question": "Will Egypt finish with more corner kicks than New Zealand?",
+        "our_estimate": 0.42,
+        "intended_estimate": 0.65,
+        "crowd_estimate": 0.62,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": 22.85,
+        "beat_crowd": true,
+        "note": "SURPRISE: Egypt did NOT win corners despite 7 vs Belgium. NZL won the corners battle! Model failure: Egypt dominant team + NZL chasing deficit → NZL generated corners from desperate attacks. Egypt managing game from 3-1 up → no need to push for corners. NEW RULE CANDIDATE: Blowout corner reversal. Submitted estimate was 42% (not our intended 65%) — submission mapping error that paradoxically helped."
+      },
+      "Q5_NZL_wins": {
+        "question": "Will New Zealand win the match?",
+        "our_estimate": 0.15,
+        "crowd_estimate": 0.23,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": 5.45,
+        "beat_crowd": true,
+        "note": "Egypt won 3-1. Market was right, we were tighter than crowd."
+      },
+      "Q6_le2_total_goals": {
+        "question": "Will the match have 2 or fewer total goals?",
+        "our_estimate": 0.54,
+        "crowd_estimate": 0.52,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": -0.45,
+        "beat_crowd": false,
+        "note": "4 goals total (1-3). Both we and crowd priced ≤2 above 50%. Both wrong. Very small loss."
+      },
+      "Q7_4plus_cards": {
+        "question": "Will there be 4 or more total cards shown?",
+        "our_estimate": 0.30,
+        "crowd_estimate": 0.43,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": 11.91,
+        "beat_crowd": true,
+        "note": "Fewer than 4 cards. Egypt dominant possession team → clean game. NZL disciplined (0 YC vs Iran). Strong call against crowd's 43%."
+      },
+      "Q8_Ben_Waine_SOT": {
+        "question": "Will Ben Waine have at least 1 shot on target?",
+        "our_estimate": 0.48,
+        "crowd_estimate": 0.32,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": -9.15,
+        "beat_crowd": false,
+        "note": "Waine had 0 SOT. Crowd at 32% was MORE right than us (48%). RULE15 should have fired harder → shade closer to crowd's 32% or below. Egypt dominated to the point NZL barely had possession → Waine near-invisible. RULE15 anchor: in a 3-1 blowout by 2H, NZL's forwards get even more suppressed. Should have priced 0.30-0.35."
+      },
+      "Q9_Trezeguet_G_or_A": {
+        "question": "Will Mahmoud Trezeguet score or assist a goal (excluding own goals)?",
+        "our_estimate": 0.52,
+        "crowd_estimate": 0.28,
+        "outcome": "YES",
+        "outcome_numeric": 1,
+        "rbp": 32.04,
+        "beat_crowd": true,
+        "note": "BEST Q this match (+32.04). We at 52% vs crowd 28%. Trezeguet started (was sub vs Belgium) and scored/assisted. KEY RULE: Sub-to-starter upgrade = crowd anchors on bench role and under-prices. Egypt λ_goals=1.79, Trezeguet as starter got 25-30% of G+A. Market lesson: check GD1 lineups for players who were benched but expected to start GD2."
+      },
+      "Q10_EGY_2plus_offsides": {
+        "question": "Will Egypt be caught offside 2 or more times?",
+        "our_estimate": 0.50,
+        "crowd_estimate": 0.49,
+        "outcome": "NO",
+        "outcome_numeric": 0,
+        "rbp": 0.0,
+        "beat_crowd": false,
+        "note": "Egypt 0 offsides (or 1). Crowd played it safe at 49%, we at 50% — essentially same estimate. No edge attempted, correct to treat as coin-flip."
+      }
+    }
+  }
+}

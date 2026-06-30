@@ -1,0 +1,152 @@
+{
+  "match": "Uruguay vs Spain",
+  "date": "2026-06-26",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"CPV_vs_ESP_GD1": 760428, "URU_vs_SAU_GD1": 760429, "CPV_vs_URU_GD2": 760450, "SAU_vs_ESP_GD2": 760453},
+  "smarkets_event_id": 45086936,
+  "group_context": {
+    "Spain": {"pts": 4, "record": "1-1-0 (D0-0 CPV, W4-0 SAU)", "status": "Leading group, draw today likely enough to top the group"},
+    "Uruguay": {"pts": 2, "record": "0-2-0 (D1-1 SAU, D2-2 CPV)", "status": "Needs a result to control 2nd-place qualification; two draws so far"}
+  },
+  "wc2026_espn_stats": {
+    "ESP": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760428, "opponent": "Cape Verde", "result": "D 0-0", "fouls": 10, "SOT": 7, "offsides": 2, "YC": 1, "RC": 0, "corners": 11, "possession": 74.3},
+        {"event_id": 760453, "opponent": "Saudi Arabia", "result": "W 4-0", "fouls": 10, "SOT": 8, "offsides": 2, "YC": 0, "RC": 0, "corners": 6, "possession": 67.1}
+      ],
+      "averages": {"fouls": 10.0, "SOT": 7.5, "offsides": 2.0, "cards": 0.5, "corners": 8.5},
+      "CRITICAL": "Spain has NOT conceded a single goal in 2 WC2026 matches (0-0, 4-0). Elite, consistent defense. High possession (67-74%) in both."
+    },
+    "URU": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760429, "opponent": "Saudi Arabia", "result": "D 1-1", "fouls": 6, "SOT": 10, "offsides": 6, "YC": 0, "RC": 0, "corners": 14, "possession": 66.8},
+        {"event_id": 760450, "opponent": "Cape Verde", "result": "D 2-2", "fouls": 11, "SOT": 2, "offsides": 3, "YC": 2, "RC": 0, "corners": 11, "possession": 65.2}
+      ],
+      "averages": {"fouls": 8.5, "SOT": 6.0, "offsides": 4.5, "cards": 1.0, "corners": 12.5},
+      "NOTE": "Highly volatile SOT output (10 vs a low-block SAU, only 2 vs a disciplined CPV) — Uruguay's shot generation depends heavily on opponent quality, and Spain's defense is the best they've faced yet."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Uruguay": 0.1493, "Spain": 0.5731, "Draw": 0.2759, "liquid": true},
+    "HT_result": {"Uruguay": 0.1390, "Spain": 0.4066, "Draw": 0.4547, "liquid": true},
+    "OU2_5": {"Under": 0.6099, "Over": 0.3892, "liquid": true},
+    "OU3_5": {"Under": 0.8067, "Over": 0.1961, "liquid": true},
+    "2H_OU1_5_goals": {"Under": 0.65, "Over": 0.3491, "liquid": true},
+    "URU_OU0_5_goals": {"Under": 0.6953, "Over": 0.3042, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.2958, "Equal": 0.2996, "Second_Half": 0.4078, "liquid": true},
+    "Corners_OU8_5": {"Under": 0.5083, "Over": 0.4783, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.5625, "Over": 0.4395, "liquid": true},
+    "player_SOT_fullmatch": {"Dani_Olmo": {"offer": 0.6536, "adjusted": 0.618}, "Darwin_Nunez": {"offer": 0.5917, "adjusted": 0.559}}
+  },
+  "context_flags": [
+    "SPAIN_CLEAN_SHEETS: 0 goals conceded in 2 WC2026 matches — strongest defensive signal in the dataset so far. Heavily suppresses Uruguay-scores and Uruguay-SOT questions.",
+    "RULE8_WATCH: HT Draw priced at 45.47% — elevated, consistent with Spain's pattern of slow/cagey first halves (0-0 vs CPV at full time) before pulling away or staying tight.",
+    "POSSESSION_FOULS_FLIP: Uruguay's raw foul average (8.5) is lower than Spain's (10.0), but Uruguay will almost certainly have far less possession today (Spain ran 67-74% in both matches) — the defending team typically fouls more than its own average suggests, which pushes this toward a coin-flip rather than a clean Spain-fouls-more read.",
+    "URU_SOT_VOLATILITY: Uruguay's SOT swung from 10 (vs a sat-back Saudi Arabia) to 2 (vs a disciplined Cape Verde) — small sample, high variance, and today's opponent (Spain) has the best defense of the three by a wide margin.",
+    "LOW_CARD_HISTORY: combined card history is very low (Spain 1 total YC in 2 matches, Uruguay 2 total YC) — softens the case for a high-card outcome despite a competitive fixture.",
+    "PLATFORM_DUPLICATE_QUESTION: the platform's slide 7/10 ('Will the second half have 2 or more total goals?') is IDENTICAL in wording to Q6 below. Same pattern previously seen in BIH-QAT (Q6/Q7 dupe). Use the same estimate (0.35) for both slides — there is no new information to differentiate them."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Uruguay commit more fouls than Spain?",
+      "pick_tier": "LOW-MEDIUM CONFIDENCE",
+      "reasoning": "Raw historical average favors NO (URU 8.5 < ESP 10.0, normal-approx P=0.33), but Spain will again dominate possession, meaning Uruguay is the defending side today — defending teams typically foul above their own average. Net: shade up from the raw 0.33 toward a coin-flip.",
+      "final_estimate": 0.40,
+      "direction": "NO lean (soft)",
+      "confidence": "low-medium"
+    },
+    {
+      "q": 2,
+      "text": "In the second half, will Uruguay have more shots on target than Spain?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Half-split Skellam off full-match averages (URU 3.0, ESP 3.75 in 2H) gives 0.31 raw. Shaded further down because Spain's defense has been the best Uruguay has faced (0 goals conceded by Spain all tournament) and Uruguay's SOT output is known to collapse against organized defenses (2 SOT vs Cape Verde).",
+      "final_estimate": 0.25,
+      "direction": "NO (strong)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 3,
+      "text": "Will Dani Olmo have at least 1 shot on target in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Illiquid full-match offer (0.6536, adjusted ×0.945=0.618) implies λ_full≈0.96. The match's Highest-Scoring-Half market leans 2H (40.8% vs 29.6% 1H), so weighting ~55% of shot volume into the second half gives λ_2H≈0.53 → P(≥1)=0.41.",
+      "final_estimate": 0.40,
+      "direction": "YES lean (narrow)",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will Uruguay score at least 1 goal?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets market: Uruguay over 0.5 goals = 30.42%. Consistent with Spain's perfect defensive record (0 conceded in 2 matches). Trust the market.",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "At halftime, will the match be tied?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT market: Draw = 45.47%. Consistent with Spain's pattern of starting slowly (0-0 HT vs Cape Verde) even when they eventually dominate.",
+      "final_estimate": 0.45,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will the second half have 2 or more total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: 2H Over1.5 goals = 34.91%. Low-event match expected overall (Under 2.5 at 61%, Under 3.5 at 81%).",
+      "final_estimate": 0.35,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will there be 9 or more total corner kicks in the match?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Direct market: Over8.5 corners = 47.83%. Uruguay's elevated corner generation (12.5 avg, including 14 in one match) plus Spain's own solid 8.5 avg both point slightly higher than the market's near-50/50 read — small nudge up.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP (slight YES lean)",
+      "confidence": "medium"
+    },
+    {
+      "q": 8,
+      "text": "Will there be 4 or more total cards shown?",
+      "pick_tier": "MARKET-ANCHORED, ESPN-CORRECTED",
+      "reasoning": "Direct market: Over3.5 cards = 43.95%. But combined card history is very low — Spain 1 total YC across 2 matches, Uruguay 2 total YC. Shade down from the market toward the disciplined real-world history.",
+      "final_estimate": 0.35,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Darwin Núñez have at least 1 shot on target?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Illiquid full-match offer (0.5917, adjusted ×0.945=0.559). Uruguay sits right at the ~15% win-probability RULE15 threshold as a near-extreme underdog, and Spain's defense has shut out both opponents — mild downward shade from the market price.",
+      "final_estimate": 0.48,
+      "direction": "TOSS-UP (slight NO lean)",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_URU_more_fouls": 0.40,
+    "Q2_URU_more_2H_SOT": 0.25,
+    "Q3_Olmo_2H_SOT": 0.40,
+    "Q4_URU_scores": 0.30,
+    "Q5_HT_tied": 0.45,
+    "Q6_2H_2plus_goals": 0.35,
+    "Q7_9plus_corners": 0.50,
+    "Q8_4plus_cards": 0.35,
+    "Q9_Nunez_SOT": 0.48
+  },
+  "strongest_picks": [
+    "Q4: Uruguay scores = 0.30 (HIGH CONFIDENCE — direct market, backed by Spain's perfect defensive record)",
+    "Q2: Uruguay more 2H SOT = 0.25 (MEDIUM-HIGH — Skellam + Spain's elite defense compounding)",
+    "Q5: HT tied = 0.45 (HIGH CONFIDENCE — direct market, Spain's slow-start pattern)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-26"
+}

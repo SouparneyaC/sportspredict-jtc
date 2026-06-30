@@ -1,0 +1,251 @@
+{
+  "match": "Brazil vs Japan",
+  "date": "2026-06-29",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {"this_match": 760487, "BRA_vs_MAR": 760419, "BRA_vs_HAI": 760444, "SCO_vs_BRA": 760465, "JPN_vs_NED": 760425, "JPN_vs_TUN": 760449, "JPN_vs_SWE": 760471},
+  "smarkets_event_id": 45156984,
+  "prior_lessons_consulted": ["bra_mar_2026-06-13.json", "bra_hai_2026-06-20.json", "sco_bra_2026-06-24.json", "jpn_ned_2026-06-14.json", "jpn_tun_2026-06-21.json", "jpn_swe_2026-06-25.json", "rsa_can_2026-06-28.json (same question format + same RBP postmortem just settled)"],
+  "knockout_context": {
+    "Brazil": {"group_record": "1W-1D-1L... actually 2W-1D, 7pts, GD+6 (1 goal conceded in 3 matches)", "status": "Group winner, dominant favorite today on every market"},
+    "Japan": {"group_record": "1W-2D, 5pts, GD+4", "status": "Solid but clearly second-tier favorite today; conceded more than Brazil across the group stage"}
+  },
+  "wc2026_espn_stats": {
+    "BRA": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760419, "opponent": "Morocco", "result": "D 1-1", "fouls": 16, "SOT": 5, "offsides": 0, "YC": 2, "RC": 0, "corners": 6, "possession": 51.4},
+        {"event_id": 760444, "opponent": "Haiti", "result": "W 3-0", "fouls": 13, "SOT": 5, "offsides": 8, "YC": 1, "RC": 0, "corners": 4, "possession": 56.7},
+        {"event_id": 760465, "opponent": "Scotland", "result": "W 3-0 (away)", "fouls": 11, "SOT": 9, "offsides": 1, "YC": 2, "RC": 0, "corners": 7, "possession": 54.0}
+      ],
+      "averages": {"fouls": 13.33, "SOT": 6.33, "offsides": 3.0, "YC": 1.67, "RC": 0.0, "corners": 5.67},
+      "OFFSIDE_OUTLIER_FLAG": "8 offsides in a single match (vs Haiti) is a major outlier vs 0 and 1 in the other two games — likely opponent-specific (Haiti's high defensive line got repeatedly exploited) rather than representative of Brazil's true rate against a more organized opponent like Japan. Trimmed the offside average down for this match's Q10 modeling rather than using the raw 3.0.",
+      "PRIOR_LESSON_BRA_MAR": "do not blindly assume Brazil dominance. bra_mar_2026-06-13.json Q8 ('Will Brazil win the match?') was submitted at 1.00 via personal-conviction override of a researched 0.58-0.60 — Brazil actually DREW 1-1 with Morocco. -51.97 RBP, our worst-ever single result, and the single clearest example of Loss Pattern #2 in STEPS_FOR_HIGH_POINTS.md. Lesson directly applied today: every Brazil-related estimate below is taken straight from the live market, never inflated by conviction that Brazil 'should' dominate just because they're a big favorite on paper."
+    },
+    "JPN": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760425, "opponent": "Netherlands", "result": "D 2-2", "fouls": 7, "SOT": 3, "offsides": 0, "YC": 0, "RC": 0, "corners": 4, "possession": 40.2},
+        {"event_id": 760449, "opponent": "Tunisia", "result": "W 4-0 (away)", "fouls": 15, "SOT": 5, "offsides": 1, "YC": 0, "RC": 0, "corners": 5, "possession": 62.1},
+        {"event_id": 760471, "opponent": "Sweden", "result": "D 1-1", "fouls": 20, "SOT": 3, "offsides": 3, "YC": 1, "RC": 0, "corners": 2, "possession": 52.3}
+      ],
+      "averages": {"fouls": 14.0, "SOT": 3.67, "offsides": 1.33, "YC": 0.33, "RC": 0.0, "corners": 3.67},
+      "DISCIPLINE_NOTE": "Very clean disciplinary record (only 1 YC across 3 matches, 0.33/game average) despite a high foul count (up to 20 in one match) — low card-conversion-per-foul rate. Suppresses card expectation somewhat relative to what the foul count alone would suggest.",
+      "PRIOR_LESSON_JPN_SWE": "jpn_swe_2026-06-25.json was our best Japan match (+70.49 RBP), won almost entirely on Q1+Q2 (+45.56 combined) by trusting pure ESPN-boxscore Poisson/Skellam reads near-raw with no narrative shading — direct reapplication of WINNING TRAIL. No specific player/market carryover to today's question set, but reinforces trusting today's direct-market numbers near-raw rather than shading them."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Brazil": 0.5420, "Japan": 0.1818, "Draw": 0.2590, "liquid": true},
+    "To_qualify": {"Brazil": 0.7220, "Japan": 0.2818, "liquid": true},
+    "Method_of_qualification": {"BRA_normal_time": 0.5538, "JPN_normal_time": 0.1824, "BRA_ET": 0.1010, "JPN_ET": 0.0406, "BRA_pens": 0.0788, "JPN_pens": 0.0716, "liquid": true},
+    "Will_there_be_ET": {"Yes": 0.2650, "No": 0.7409, "liquid": true},
+    "Will_there_be_pen_shootout": {"Yes": 0.1641, "No": 0.8610, "liquid": true},
+    "BTTS": {"Yes": 0.4963, "No": 0.5076, "liquid": true},
+    "OU2_5_goals": {"Under": 0.5732, "Over": 0.4258, "liquid": true},
+    "OU3_5_goals": {"Under": 0.7634, "Over": 0.2302, "liquid": true},
+    "Cards_OU1_5": {"Under": 0.2209, "Over": 0.7775, "liquid": true},
+    "Cards_OU2_5": {"Under": 0.4470, "Over": 0.5730, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.6351, "Over": 0.3825, "liquid": true},
+    "Total_SOT_OU8_5": {"Under": 0.5210, "Over": 0.4895, "liquid": true},
+    "Corners_OU8_5": {"Under": 0.5635, "Over": 0.4448, "liquid": true},
+    "Goal_1_time_bracket": {"1-10": 0.1834, "11-20": 0.1683, "21-30": 0.1367, "31-40": 0.1101, "41-50": 0.1036, "51-60": 0.0720, "61-70": 0.0530, "71-80": 0.0394, "81-90": 0.0442, "None": 0.0960, "liquid": true},
+    "Brazil_score_both_halves": {"Yes": 0.3002, "No": 0.7074, "liquid": true},
+    "Brazil_goals_OU0_5": {"Under": 0.1842, "Over": 0.8199, "liquid": true},
+    "Brazil_goals_OU1_5": {"Under": 0.5322, "Over": 0.4677, "liquid": true},
+    "Brazil_goals_OU2_5": {"Under": 0.8002, "Over": 0.1946, "liquid": true},
+    "Japan_goals_OU0_5": {"Under": 0.4221, "Over": 0.5849, "liquid": true},
+    "Japan_goals_OU1_5": {"Under": 0.7970, "Over": 0.2087, "liquid": true},
+    "Brazil_SOT_OU4_5": {"Under": 0.4613, "Over": 0.5630, "liquid": true},
+    "player_markets": {"Matheus_Cunha_anytime_goalscorer": {"bid": 0.274, "offer": 0.2778, "mid": 0.2759, "liquid": true}, "Ayase_Ueda_SOT_0_5": {"bid": 0.463, "offer": 0.495, "mid": 0.479, "liquid": true}}
+  },
+  "context_flags": [
+    "SECOND KNOCKOUT MATCH analyzed this season — same regulation-scoped question format as RSA-CAN (2026-06-28), which settled yesterday at -9.1 RBP. Two fresh lessons from that postmortem directly applied here: (1) avoid the illiquid-many-contract-sum trap for any-player-X markets (Win Pattern #7) — used for Q2 and Q9 below; (2) do not build multi-step unverified timing-decomposition models when a simpler direct market or ESPN-average model is available — today's card question (Q6) is a plain total-threshold market, not a timing-split, so this risk doesn't recur here.",
+    "BRA_OFFSIDE_OUTLIER: Brazil's 8-offside game vs Haiti is very likely opponent-specific (exploiting an unusually high Haitian back line), not a stable rate — trimmed down for Q10's modeling rather than trusted at face value, unlike Colombia's similarly extreme-looking but CONSISTENT (3-then-7) offside pattern from COL-POR which was trusted near-raw specifically because it repeated across two different opponents.",
+    "BOTH UEDA AND CUNHA MARKETS ARE GENUINELY LIQUID (bid AND offer both present) — a meaningfully stronger signal than RSA-CAN's Rayners price, which was offer-only and got badly overpriced by us (-26.23 RBP) relative to a much-better-calibrated crowd. Still applied a modest trim to Ueda given Japan's team SOT average (3.67/game) is in a similar range to South Africa's (3.33/game) that burned us yesterday — splitting the difference between trusting the liquid market and respecting the cross-match lesson.",
+    "BRA_MAR_DISCIPLINE: never inflate a Brazil-related estimate beyond what the live market shows, regardless of how dominant they look on paper — see PRIOR_LESSON_BRA_MAR above (our single worst-ever result was overconfidence on a Brazil match)."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will there be 8 or more total shots on target in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over8.5 total SOT = 48.95%.",
+      "final_estimate": 0.49,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will any player record 2 or more shots on target in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — MODELED, ILLIQUID-SUM TRAP AVOIDED",
+      "reasoning": "No usable direct market (same illiquid-many-contract issue as RSA-CAN's brace market). Backed out team SOT lambdas from the team/total SOT markets (BRA≈5.02, JPN≈3.57 derived as total-minus-Brazil) and ran a Poisson-binomial top-player-share decomposition (BRA share 30%, reflecting several attacking outlets; JPN share 35%, more reliant on Ueda as focal point). Model gives 0.63; trimmed slightly for share-assumption uncertainty.",
+      "final_estimate": 0.60,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 3,
+      "text": "Will Japan advance to the Round of 16?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets 'To qualify' market (correctly distinct from the regulation-only FTR, same structure verified for RSA-CAN): Japan = 28.18%.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will there be 9 or more total corner kicks in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over8.5 corners = 44.48%.",
+      "final_estimate": 0.44,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will a goal be scored before the first hydration break?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "'Goal 1 time bracket' market: P(first goal ≤24') = bracket(1-10)+bracket(11-20)+0.4×bracket(21-30) = 0.1834+0.1683+0.4×0.1367 = 0.4064.",
+      "final_estimate": 0.41,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will there be 4 or more total cards shown in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over3.5 cards = 38.25%. Consistent with Japan's genuinely clean disciplinary record (0.33 YC/game) despite a high foul count — no timing-decomposition needed this time, learning directly from yesterday's Loss Pattern #8 (RSA-CAN's card-timing model was the worst result of that match; today's card question is a plain total threshold, so the market can be trusted directly with no derived steps).",
+      "final_estimate": 0.38,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will a substitute score a goal in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, MODELED",
+      "reasoning": "No direct market. Used combined total-goal lambda (2.47, from team goal markets) with the same ~13%-per-goal substitute-scorer base rate validated (directionally) in RSA-CAN: P(≥1 sub goal) ≈ 1-(1-0.13)^2.47 ≈ 0.29.",
+      "final_estimate": 0.29,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 8,
+      "text": "Will Matheus Cunha score a goal (excluding own goals) in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Genuinely liquid market (bid 0.274, offer 0.2778) — mid = 0.2759. No illiquidity discount needed.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will any player score more than 1 goal (excluding own goals) in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — MODELED, ILLIQUID-SUM TRAP AVOIDED",
+      "reasoning": "Same Win Pattern #7 methodology that won +11.94 RBP yesterday on the equivalent RSA-CAN question: team goal lambdas (BRA≈1.60, JPN≈0.86) decomposed via Poisson-binomial top-scorer-share (40%/45%) rather than summing the illiquid 'Player to score 2+ goals' contract list. Gives P(BRA brace)=0.136, P(JPN brace)=0.059, combined 0.186.",
+      "final_estimate": 0.19,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will either team be ruled offside before the first hydration break?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, MODELED",
+      "reasoning": "No structured source exists (same confirmed gap as RSA-CAN). Combined ESPN offside average, but trimmed Brazil's contribution down from the raw 3.0 average to ~2.0 to discount the Haiti-game outlier (8 offsides, likely opponent-specific) — combined λ_full≈3.33, scaled to the ~24-minute pre-break window gives λ_pre24≈0.84, P(≥1)=0.57. Trimmed further for general no-market uncertainty and a cautious knockout-match start.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP",
+      "confidence": "medium"
+    },
+    {
+      "q": 11,
+      "text": "Will the match have 3 or more total goals in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over2.5 goals = 42.58%.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will Brazil score in both halves of regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market that exactly matches the question wording: 'Brazil to score in both halves' Yes = 30.02%. Taken straight from the market per the BRA_MAR lesson — no conviction-based inflation of Brazil's attacking output.",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 13,
+      "text": "Will Ayase Ueda have at least 1 shot on target in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — LIQUID MARKET, LESSON-TRIMMED",
+      "reasoning": "Genuinely liquid market (bid 0.463, offer 0.495) — mid = 0.479. Trimmed modestly given Japan's team SOT average (3.67/game) sits in a similar range to South Africa's (3.33/game), whose forward (Rayners) was badly overpriced by us yesterday at a similar level. The liquidity here (two-sided market, unlike Rayners' offer-only price) is real grounds for more trust, so only a partial trim rather than a full RULE15-style suppression.",
+      "final_estimate": 0.44,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 14,
+      "text": "Will regulation end in a tie?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Full-time result Draw = 25.90%. Note Brazil HAS drawn once already this tournament as a big favorite (vs Morocco) — this isn't ignored, it's exactly why we're trusting the market's real draw price rather than assuming a dominant Brazil performance suppresses it further.",
+      "final_estimate": 0.26,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 15,
+      "text": "Will Brazil score 2 or more goals in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Brazil Over1.5 goals = 46.77%.",
+      "final_estimate": 0.47,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_8plus_total_SOT": 0.49,
+    "Q2_any_player_2plus_SOT": 0.60,
+    "Q3_JPN_advance": 0.28,
+    "Q4_9plus_corners": 0.44,
+    "Q5_goal_before_1st_break": 0.41,
+    "Q6_4plus_cards": 0.38,
+    "Q7_sub_scores": 0.29,
+    "Q8_Cunha_scores": 0.28,
+    "Q9_any_player_brace": 0.19,
+    "Q10_offside_before_1st_break": 0.52,
+    "Q11_3plus_goals": 0.43,
+    "Q12_BRA_scores_both_halves": 0.30,
+    "Q13_Ueda_SOT": 0.44,
+    "Q14_regulation_tie": 0.26,
+    "Q15_BRA_2plus_goals": 0.47
+  },
+  "strongest_picks": [
+    "Q3: Japan advance to R16 = 0.28 (HIGH CONFIDENCE — direct 'To qualify' market, correctly distinct from the regulation-only FTR)",
+    "Q9: Any player brace = 0.19 (MEDIUM CONFIDENCE — direct reapplication of yesterday's vindicated Win Pattern #7 methodology, avoiding the illiquid-contract-sum trap)",
+    "Q6: 4+ cards = 0.38 (HIGH CONFIDENCE — plain direct market, deliberately NOT building a timing-decomposition model after yesterday's Loss Pattern #8)"
+  ],
+  "post_match_results": {
+    "actual_score": "Brazil 2-1 Japan",
+    "winner": "Brazil",
+    "match_rbp_total": 47.33,
+    "questions_beat_crowd": 8,
+    "questions_below_crowd": 7,
+    "note": "Solid win, but with a clear directional bias in the misses: every single below-crowd result was on a YES outcome where we were too conservative relative to the crowd on Brazil's attacking volume (goals, SOT, cards, sub-scoring, total goals). All the beat-crowd wins were predominantly NO outcomes where staying below the crowd was correct. Net positive only because the modeled (non-direct-market) picks — any-player-brace, Brazil-scores-both-halves, Japan-advance — were very well-calibrated and outweighed the volume-suppression misses.",
+    "question_results": {
+      "Q1": {"question": "Brazil 2+ goals?", "outcome": "YES", "us": 0.47, "crowd": 0.55, "rbp": -9.47, "vs_crowd": "below"},
+      "Q2": {"question": "8+ total SOT?", "outcome": "YES", "us": 0.49, "crowd": 0.61, "rbp": -15.0, "vs_crowd": "below", "notes": "Part of a directional pattern: we under-shot Brazil's attacking volume across Q1/Q2/Q7/Q12, likely from over-applying the 'elite teams in clinical/low-event wins' lesson that was specifically derived from ARGENTINA (ARG-AUT, JOR-ARG), not Brazil. This looks like a cross-team extrapolation error — a known failure mode (see data-source-reliability memory's 'Cross-Team GD1 Extrapolations' Tier-3 warning) applied here across an entire match rather than one question."},
+      "Q3": {"question": "Any player 2+ SOT?", "outcome": "YES", "us": 0.60, "crowd": 0.70, "rbp": -6.85, "vs_crowd": "below"},
+      "Q4": {"question": "Japan advance to R16?", "outcome": "NO", "us": 0.28, "crowd": 0.32, "rbp": 10.33, "vs_crowd": "beat"},
+      "Q5": {"question": "9+ corners?", "outcome": "NO", "us": 0.44, "crowd": 0.52, "rbp": 20.5, "vs_crowd": "beat"},
+      "Q6": {"question": "Goal before 1st break?", "outcome": "NO", "us": 0.41, "crowd": 0.44, "rbp": 9.68, "vs_crowd": "beat"},
+      "Q7": {"question": "4+ cards?", "outcome": "YES", "us": 0.38, "crowd": 0.42, "rbp": -5.54, "vs_crowd": "below"},
+      "Q8": {"question": "Substitute scores?", "outcome": "YES", "us": 0.29, "crowd": 0.32, "rbp": -2.13, "vs_crowd": "below"},
+      "Q9": {"question": "Cunha scores?", "outcome": "NO", "us": 0.28, "crowd": 0.33, "rbp": 10.04, "vs_crowd": "beat"},
+      "Q10": {"question": "Any player brace?", "outcome": "NO", "us": 0.19, "crowd": 0.29, "rbp": 17.28, "vs_crowd": "beat", "notes": "Direct reapplication of the Win Pattern #7 team-level Poisson/binomial decomposition (avoiding the illiquid-contract-sum trap) — confirmed correct for a second straight match."},
+      "Q11": {"question": "Offside before 1st break?", "outcome": "NO", "us": 0.52, "crowd": 0.52, "rbp": 6.27, "vs_crowd": "beat"},
+      "Q12": {"question": "3+ total goals?", "outcome": "YES", "us": 0.43, "crowd": 0.51, "rbp": -12.13, "vs_crowd": "below"},
+      "Q13": {"question": "Brazil scores both halves?", "outcome": "NO", "us": 0.30, "crowd": 0.42, "rbp": 23.79, "vs_crowd": "beat", "notes": "BIGGEST WIN. Direct market trust, taken explicitly per the BRA-MAR lesson against inflating Brazil's dominance narrative — paid off clearly."},
+      "Q14": {"question": "Ueda 1+ SOT?", "outcome": "YES", "us": 0.44, "crowd": 0.49, "rbp": -6.24, "vs_crowd": "below", "notes": "The deliberate trim below the liquid market mid (0.479->0.44), applied out of caution from the RSA-CAN Rayners lesson, ended up costing a small amount here — Ueda's liquid market was actually closer to correct than our lesson-based trim. Contrast with NED-MAR's Brobbey, where trusting the liquid market directly (no trim) won big. Tentative refinement: a genuinely two-sided liquid market should be trusted MORE, not trimmed, even when a surface-level team-stat parallel exists to a previous loss."},
+      "Q15": {"question": "Regulation ends in a tie?", "outcome": "NO", "us": 0.26, "crowd": 0.29, "rbp": 6.81, "vs_crowd": "beat"}
+    }
+  },
+  "created": "2026-06-29"
+}

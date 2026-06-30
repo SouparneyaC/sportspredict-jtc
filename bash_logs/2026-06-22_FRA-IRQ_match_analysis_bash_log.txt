@@ -1,0 +1,213 @@
+BASH LOG: FRA vs IRQ Match Analysis Session
+Date: 2026-06-22
+Session context: Pre-match analysis for France vs Iraq (WC2026 Group D, Philadelphia). Recovery session after ARG-AUT loss (-42.24 RBP). GD1 data confirmed via deep research agent. All 9 questions finalized.
+
+===========================================================================
+COMMAND 1: Poisson goal model + ordered logit match winner — FRA vs IRQ
+===========================================================================
+(Computed in previous session addendum; reproduced here for record)
+
+OUTPUT:
+  FRA Elo: 2129.0524  IRQ Elo: 1736.5496  Elo diff: 392.5028
+  P(FRA win): 0.8154  P(Draw): 0.1278  P(IRQ win): 0.0568
+  lambda_FRA: 2.2580  lambda_IRQ: 0.5454  lambda_total: 2.8033
+
+  RULE7 fires: IRQ 5.7% < 15% threshold
+  RULE8 does NOT fire: Draw 12.8% < 25% threshold
+
+  Q1  Iraq more HT corners
+      lambda_FRA_HT_corners: 3.16 | lambda_IRQ_HT_corners: 0.76
+      P(IRQ>FRA): 5.74%
+      ESTIMATE (preliminary): 0.08
+
+  Q2  France more fouls than Iraq
+      P(FRA>IRQ fouls): 58.2% (lambda_FRA=12.5, lambda_IRQ=11.0)
+      ESTIMATE (preliminary): 0.55
+
+  Q3  Iraq 1+ card in 2H
+      lambda_IRQ_2H_cards: 0.75 | P(>=1): 52.8%
+      ESTIMATE (preliminary): 0.50
+
+  Q4  Both score AND 3+ goals
+      P(FRA scores)=89.5% | P(IRQ scores)=42.0% | P(total>=3)=53.1%
+      P(both AND 3+) = 30.2% | Revised to 0.24 (RULE7 suppression)
+      ESTIMATE (preliminary): 0.24
+
+  Q5  Iraq 2+ SOT in 2H
+      lambda_IRQ_SOT_2H (x3.3): 0.990 | P(>=2): 26.1%
+      lambda_IRQ_SOT_2H (x3.7): 1.110 | P(>=2): 30.5%
+      RULE7 → push down | ESTIMATE (preliminary): 0.22
+
+  Q6  France win
+      Model: 81.5% | Crowd formula: 0.706 | Smarkets pending
+      ESTIMATE (preliminary): 0.81
+
+  Q7  Iraq scores in 2H
+      lambda_IRQ_2H_goals: 0.300 | P(scores): 25.9%
+      ESTIMATE (preliminary): 0.26
+
+  Q8  Iraq 4+ SOT
+      lambda_IRQ_SOT (x3.3): 1.800 | P(>=4): 10.9%
+      lambda_IRQ_SOT (x3.7): 2.018 | P(>=4): 14.6%
+      RULE7 → stay at low end | ESTIMATE (preliminary): 0.14
+
+  Q9  France scores in 1H
+      lambda_FRA_1H_goals: 1.016 | P(scores): 63.8%
+      Pre-tournament form (scored 1H in last 3 wins) → revised UP to 0.70
+      ESTIMATE (preliminary): 0.70
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 2: Deep research agent — GD1 results + alt data + market data
+===========================================================================
+[Subagent spawned: general-purpose research agent]
+[Searches: France vs Senegal WC2026, Iraq vs Norway WC2026, France Iraq odds, Drew Fischer referee, Iraq lineup France, Sofascore FotMob StatsBomb match data]
+
+CONFIRMED GD1 RESULTS:
+
+  France 3-1 Senegal (June 16, New York/New Jersey)
+  ---------------------------------------------------
+  HT score: 0-0
+  Goals: Mbappe 66', 90+6'; Barcola 82'; Mbaye (SEN) 90+5'
+  ALL 3 FRANCE GOALS AFTER 66th MINUTE
+  Full-match stats:
+    FRA: 11 shots, 8 SOT, 6 corners, 8 fouls, 1.79 xG
+    SEN: 6 shots, 2 SOT, 4 corners, 5 fouls, 0.53 xG
+    Cards: 0 (referee Faghani — very clean)
+  First-half only (from Sofascore halftime review):
+    FRA: 1 shot, 0 SOT, 3 corners, 0.02 xG
+    SEN: 5 shots, 1 SOT, 2 corners
+  KEY INSIGHT: France had essentially ZERO first-half threat. Mbappe: 14 touches in 1H.
+  KEY INSIGHT: Mbappe career WC — 12 second-half goals vs only 1 first-half goal.
+
+  Iraq 1-4 Norway (June 16, Boston/Gillette)
+  -------------------------------------------
+  HT score: 1-2 (Iraq: Hussein 39'; Norway: Haaland 29', 43')
+  Final: Haaland x2, Ostigard 76', own goal 90+6'
+  IRAQ GD1 STATS:
+    IRQ: ~10 shots, 1 SOT, 12 fouls, 1 yellow card
+    NOR: 12 shots, 5 SOT, 13 fouls
+    IRQ cards: Tahseen YC 86th minute (serious foul)
+  IRAQ: ZERO shots after 63rd minute vs Norway
+  IRAQ'S GOAL: 39th minute counter-attack header (first half)
+
+CONFIRMED REFEREE:
+  Drew Fischer (Canada)
+  YC rate (career): 3.35/game
+  YC rate (WC2026): 3.6/game
+  WC2026 tournament average YC/game: 2.17
+  Fischer is SIGNIFICANTLY above average
+
+CONFIRMED MARKET DATA:
+  France win: Betfair 1/14 (~93.3% implied), bet365 -1200 to -1500 (~92-94%)
+  Opta supercomputer: FRA 88.5%, Draw 8.5%, IRQ 3%
+  BTTS Yes: +140 to +180 (~36-42% implied)
+  BTTS No: -200 to -215 (favourite)
+  Over 3.5 goals: -122 (market favourite)
+  Over 2.5 goals: -357 (near certainty)
+  Total corners Over 7.5: -315
+  France corners Over 7.5: -110/-120
+
+KEY LINEUP NOTES:
+  FRA: Tchouameni OUT (not trained). Kone starts.
+  IRQ: Ali Jasim (neck knock, game-time). Zaid Ismael starting (3 cards in 7 caps, 10 bookings in 30 club apps — Racing Post explicit card tip).
+
+WEATHER WARNING:
+  Philadelphia: active flood watch, 65% storm probability at kickoff (5pm ET)
+  FIFA halts play if lightning within 8 miles
+  FanDuel explicitly passed on volume props due to weather risk
+  THIS IS A KNOWN WILDCARD for all counting stats
+
+EXIT CODE: 0
+
+===========================================================================
+COMMAND 3: GD1 calibration — revised estimates (all 9 questions)
+===========================================================================
+[No code — pure analytical pass applying GD1 + alt data to preliminary estimates]
+
+  Q1  Iraq more HT corners
+      GD1 update: France 3 corners in 1H vs Senegal; Iraq only 3 total in 90' vs Spain
+      No change to direction. Slight tightening.
+      PRELIMINARY: 0.08 → FINAL: 0.07
+
+  Q2  France more fouls than Iraq
+      GD1 tension: France 8 fouls (attacking) vs Senegal 5; Iraq 12 fouls (defending) vs Norway
+      Iraq as deep-defender fouls 10-12; France as attacker fouls 8-10 → Iraq fouls more likely
+      PRELIMINARY: 0.55 → FINAL: 0.45
+
+  Q3  Iraq 1+ card in 2H
+      GD1: Iraq GOT a 2H card (Tahseen 86') in GD1. Fischer 3.35 YC/game. Ismael card-prone.
+      THREE independent YES signals.
+      PRELIMINARY: 0.50 → FINAL: 0.65
+
+  Q4  Both score AND 3+ goals
+      GD1: Iraq scored in 39' vs Norway (1 SOT → scored). BTTS market 36-42%. France no clean sheet in 6.
+      PRELIMINARY: 0.24 → FINAL: 0.28
+
+  Q5  Iraq 2+ SOT in 2H
+      GD1 BOMBSHELL: Iraq 1 SOT in ALL 90 minutes vs Norway. Zero shots after 63'.
+      France better defensively than Norway. 2+ SOT in just 2H = essentially impossible.
+      PRELIMINARY: 0.22 → FINAL: 0.15
+
+  Q6  France win
+      Market: 92-94%. Opta: 88.5%. Iraq GD1 collapse (1-4). France GD1 win (3-1).
+      PRELIMINARY: 0.81 → FINAL: 0.88
+
+  Q7  Iraq scores in 2H
+      GD1: Iraq's goal was in 39' (1H). Spain friendly goal was 28' (1H). Pattern = 1H goals only.
+      0 shots after 63' vs Norway. 2H scoring essentially requires late garbage time consolation.
+      PRELIMINARY: 0.26 → FINAL: 0.18
+
+  Q8  Iraq 4+ SOT
+      GD1 DEVASTATION: Iraq 1 SOT in 90' vs Norway. 4× that vs a BETTER defensive team = off the table.
+      HIGHEST CONFIDENCE estimate in batch.
+      PRELIMINARY: 0.14 → FINAL: 0.08
+
+  Q9  France scores in 1H
+      GD1 DOWNWARD PULL: France 0 SOT in 1H vs Senegal. 0.02 xG at HT. All 3 goals after 66'.
+      Mbappe: 1 career WC 1H goal vs 12 2H goals.
+      Iraq weak defense (Norway scored 29', 43') partially offsets.
+      PRELIMINARY: 0.70 → FINAL: 0.60
+
+EXIT CODE: 0
+
+===========================================================================
+FINAL SUBMISSION ESTIMATES: France vs Iraq
+===========================================================================
+  Q1:  0.07  (Iraq more HT corners)         — TIER 1 EXTREME NO
+  Q2:  0.45  (France more fouls than Iraq)  — TIER 3 near coin-flip
+  Q3:  0.65  (Iraq 1+ card in 2H)           — TIER 2 YES lean
+  Q4:  0.28  (Both score AND 3+ goals)      — TIER 3 slight YES vs model
+  Q5:  0.15  (Iraq 2+ SOT in 2H)            — TIER 1 EXTREME NO
+  Q6:  0.88  (France win)                   — TIER 1 push high
+  Q7:  0.18  (Iraq scores in 2H)            — TIER 2 NO lean
+  Q8:  0.08  (Iraq 4+ SOT)                  — TIER 1 EXTREME NO (highest confidence)
+  Q9:  0.60  (France scores in 1H)          — TIER 2 moderate YES
+
+EDGE RANKING (by confidence):
+  #1  Q8  0.08 — Iraq 4+ SOT (1 SOT in 90' vs Norway; France better defensively)
+  #2  Q1  0.07 — Iraq HT corners (France dominates from whistle)
+  #3  Q5  0.15 — Iraq 2+ SOT in 2H (zero shots after 63' in GD1)
+  #4  Q3  0.65 — Iraq 1+ card in 2H (Fischer + Ismael + GD1 2H card)
+  #5  Q6  0.88 — France win (market convergence at 90-93%)
+  #6  Q7  0.18 — Iraq scores in 2H (all goals were 1H in tournament)
+  #7  Q9  0.60 — France 1H goal (downgraded from 0.70 on GD1 slow start)
+  #8  Q4  0.28 — BTTS + 3+ goals (slight upward revision on market data)
+  #9  Q2  0.45 — France more fouls (near coin-flip; Iraq fouls more when defending)
+
+RECOVERY CONTEXT:
+  Running total before FRA-IRQ: ~699.76 RBP | Rank: #234
+  Target: recover position with confident pushes on TIER 1 questions
+
+===========================================================================
+FILES WRITTEN THIS SESSION:
+  - sportspredict_research/data/external_markets/fra_irq_2026-06-22.json
+      (full pre-match analysis JSON with preliminary + revised estimates + all GD1 + alt data)
+  - sportspredict_research/bash_logs/2026-06-22_FRA-IRQ_match_analysis_bash_log.txt
+      (this file)
+
+PENDING:
+  - ML_EXPERIMENTS_NOTEBOOK.md: append FRA-IRQ match analysis session
+  - Match results: update post_match_results in JSON when settled
+  - Weather risk: monitor for game delays/stoppages on day of match

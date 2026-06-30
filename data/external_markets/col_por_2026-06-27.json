@@ -1,0 +1,158 @@
+{
+  "match": "Colombia vs Portugal",
+  "date": "2026-06-27",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"CDR_vs_POR_GD1": 760435, "COL_vs_UZB_GD1": 760436, "CDR_vs_COL_GD2": 760459, "UZB_vs_POR_GD2": 760461},
+  "smarkets_event_id": 45083777,
+  "group_context": {
+    "Colombia": {"pts": 6, "record": "2-0-0 (W3-1 UZB, W1-0 CDR)", "status": "Already qualified, top of group on points"},
+    "Portugal": {"pts": 4, "record": "1-1-0 (D1-1 CDR, W5-0 UZB)", "status": "Already qualified, massive +5 GD edge — market actually favors Portugal today over Colombia"}
+  },
+  "wc2026_espn_stats": {
+    "COL": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760436, "opponent": "Uzbekistan", "result": "W 3-1", "fouls": 11, "SOT": 4, "offsides": 3, "YC": 1, "RC": 0, "corners": 4, "possession": 61.4},
+        {"event_id": 760459, "opponent": "Congo DR", "result": "W 1-0", "fouls": 12, "SOT": 9, "offsides": 7, "YC": 2, "RC": 0, "corners": 5, "possession": 63.5}
+      ],
+      "averages": {"fouls": 11.5, "SOT": 6.5, "offsides": 5.0, "cards": 1.5, "corners": 4.5},
+      "CRITICAL": "Colombia's offside count is extreme and consistent in direction (3, then 7) — a genuinely aggressive, high-line-breaking attacking team, not noise.",
+      "PRIOR_LESSON": "UZB-COL GD1 showed Uzbekistan out-SOT'd Colombia in the 2H despite losing 1-3 — Colombia 'manages' a lead in the 2H rather than piling on. This dynamic requires COLOMBIA TO BE COMFORTABLY AHEAD to kick in; today Colombia is actually the underdog (24.85%), so this pattern is less likely to apply the same way."
+    },
+    "POR": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760435, "opponent": "Congo DR", "result": "D 1-1", "fouls": 9, "SOT": 1, "offsides": 3, "YC": 3, "RC": 0, "corners": 5, "possession": 75.4},
+        {"event_id": 760461, "opponent": "Uzbekistan", "result": "W 5-0", "fouls": 14, "SOT": 9, "offsides": 2, "YC": 1, "RC": 0, "corners": 3, "possession": 65.9}
+      ],
+      "averages": {"fouls": 11.5, "SOT": 5.0, "offsides": 2.5, "cards": 2.0, "corners": 4.0},
+      "PRIOR_LESSON_RAMOS": "POR-UZB: Ramos did NOT score in the 5-0 win; main books didn't list him and a niche book's high price was stale/wrong — 'main book absence = probability <35%' was the lesson. TODAY Ramos IS present in the main Smarkets market at a high price (0.74 raw) — the absence-signal condition does NOT apply this time, so the discount rule should not be blindly reused; treat this as a genuine market read with modest trim for general player-prop variance."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Colombia": 0.2485, "Portugal": 0.5102, "Draw": 0.2440, "liquid": true},
+    "OU2_5": {"Under": 0.4369, "Over": 0.5636, "liquid": true},
+    "BTTS_and_OU2_5": {"Yes_Over": 0.4407, "Yes_Under": 0.1146, "No_Over": 0.0978, "No_Under": 0.3251, "liquid": true},
+    "Penalty": {"Yes": 0.2659, "No": 0.7409, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1336, "No": 0.8736, "liquid": true},
+    "COL_SOT_OU3_5_fullmatch": {"Under": 0.5159, "Over": 0.4844, "liquid": true},
+    "POR_SOT_OU4_5_fullmatch": {"Under": 0.4584, "Over": 0.5424, "liquid": true, "implied_lambda": 4.90},
+    "player_markets": {"Goncalo_Ramos_SOT": {"offer": 0.7407, "adjusted": 0.700}, "Luis_Diaz_anytime_goalscorer": {"offer": 0.2564, "adjusted": 0.242}}
+  },
+  "context_flags": [
+    "MARKET_FAVORS_POR_DESPITE_COL_TOPPING_TABLE: Colombia has more points (6 vs 4) but Portugal is the clear market favorite (51.0% vs 24.9%) — reflects Portugal's superior quality and +5 GD vs Colombia's grittier 1-0/3-1 wins.",
+    "COL_OFFSIDE_EXTREME: 3 then 7 offsides across 2 matches — among the most extreme, consistent attacking-line signals in the whole dataset. Trust near-raw per WINNING TRAIL.",
+    "RAMOS_LESSON_DOES_NOT_DIRECTLY_TRANSFER: the POR-UZB discount on Ramos was specifically about market absence as a signal of bench role; he's liquid and highly priced here, so apply only a small generic trim, not the blowout-discount logic."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Colombia be caught offside 2 or more times?",
+      "pick_tier": "HIGHEST CONFIDENCE",
+      "reasoning": "Colombia offsides: 3 (vs UZB) and 7 (vs CDR). λ=5.0 raw Poisson gives P(≥2)=0.96. Trimmed only slightly for the chance the 7-offside game was partly opponent-specific (CDR's exploitable deep line) — still extremely high confidence.",
+      "final_estimate": 0.85,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "In the second half, will Colombia have more shots on target than Portugal?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Skellam off full-match averages (COL λ_2H=3.25, POR λ_2H=2.5) gives 0.54 raw. Colombia's known 'ease off once ahead' 2H pattern (UZB-COL GD1) doesn't apply cleanly here since Colombia is the underdog today, not a team nursing a lead — nets out close to the raw calculation with a small trim for Portugal's overall quality edge.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will a penalty kick be awarded OR a red card be shown?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Penalty Yes=26.59%, Any sent off Yes=13.36%. P(OR)=1-(0.7341×0.8664)=0.3640.",
+      "final_estimate": 0.36,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will both teams score AND the match have 3 or more total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Yes/Over=44.07%. Trust it — both teams have scored freely this tournament (Colombia 4 goals, Portugal 6 goals across 2 matches each).",
+      "final_estimate": 0.44,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will Colombia win the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets FTR: Colombia 24.85%. Direct tier-1 market — trust it over Colombia's superior points total, since the market already reflects Portugal's quality and goal-difference edge.",
+      "final_estimate": 0.25,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Colombia have 4 or more shots on target?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Colombia Over3.5 SOT = 48.44%. Trust it.",
+      "final_estimate": 0.48,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will Portugal have 4 or more shots on target?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Market only lists the 4.5 threshold (52.32%→ wait 54.24% Over4.5); backing out the implied lambda (4.90) and computing P(≥4) directly gives 0.72.",
+      "final_estimate": 0.72,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will there be 5 or more total corner kicks in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Combined full-match corner average (COL 4.5 + POR 4.0 = 8.5), half-split λ≈4.25 → Poisson P(≥5)=0.42. No specific market exists for this exact split; ESPN-based estimate used directly since neither team's corner history this tournament includes the kind of stale-history pitfall we corrected for in CRO-GHA (both teams' corner counts have been fairly stable, not hiding a single outlier game).",
+      "final_estimate": 0.42,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 9,
+      "text": "Will Luis Díaz score a goal (excluding own goals)?",
+      "pick_tier": "MARKET-ANCHORED",
+      "reasoning": "Illiquid full-match offer (0.2564, adjusted ×0.945=0.242). Note this question asks specifically about SCORING (not score-or-assist, which is a higher-probability superset) — trust the direct goalscorer market rather than reusing the broader score-or-assist number from COL-CDR (0.48 there was for a different, easier-to-clear bar).",
+      "final_estimate": 0.24,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will Gonçalo Ramos have at least 1 shot on target?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Illiquid full-match offer (0.7407, adjusted ×0.945=0.700). Unlike POR-UZB (where Ramos was absent from main books, a signal he'd barely play), he's liquid and high-priced here — the absence-discount lesson doesn't apply. Small generic trim for standard player-prop variance.",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_COL_2plus_offsides": 0.85,
+    "Q2_COL_more_2H_SOT": 0.50,
+    "Q3_penalty_or_red": 0.36,
+    "Q4_BTTS_3plus": 0.44,
+    "Q5_COL_wins": 0.25,
+    "Q6_COL_4plus_SOT": 0.48,
+    "Q7_POR_4plus_SOT": 0.72,
+    "Q8_5plus_2H_corners": 0.42,
+    "Q9_Diaz_scores": 0.24,
+    "Q10_Ramos_SOT": 0.65
+  },
+  "strongest_picks": [
+    "Q1: Colombia 2+ offsides = 0.85 (HIGHEST CONFIDENCE — among the most extreme, consistent attacking-line signals in the whole dataset)",
+    "Q7: Portugal 4+ SOT = 0.72 (HIGH CONFIDENCE — market-derived lambda)",
+    "Q5: Colombia wins = 0.25 (HIGH CONFIDENCE — direct market, correctly overrides the points-table narrative)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-27"
+}

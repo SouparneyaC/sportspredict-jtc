@@ -1,0 +1,254 @@
+{
+  "match": "South Africa vs Canada",
+  "date": "2026-06-28",
+  "stage": "Round of 32 (knockout stage — first knockout match analyzed this season)",
+  "venue": "SoFi Stadium, Inglewood, CA",
+  "espn_event_ids": {"this_match": 760486, "RSA_vs_MEX": 760415, "RSA_vs_CZE": 760438, "RSA_vs_KOR": 760466, "CAN_vs_BIH": 760416, "CAN_vs_QAT": 760440, "CAN_vs_SUI": 760463},
+  "smarkets_event_id": 45155173,
+  "research_files": ["rsa_can_2026-06-28_research_log.md", "rsa_can_2026-06-28_new_question_types_sources.md"],
+  "knockout_context": {
+    "South Africa": {"group_record": "1W-1D-1L, 4pts, GD-1 (3rd place advancer)", "status": "Clear underdog today (Canada favored on every market)"},
+    "Canada": {"group_record": "1W-1D-1L, 4pts, GD+5 (driven by a 6-0 demolition of Qatar)", "status": "Favored on every market; home-continent advantage at SoFi Stadium"}
+  },
+  "wc2026_espn_stats": {
+    "RSA": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760415, "opponent": "Mexico", "result": "L 0-2", "fouls": 11, "SOT": 2, "offsides": 1, "YC": 2, "RC": 2, "corners": 1, "possession": 39.5},
+        {"event_id": 760438, "opponent": "Czechia", "result": "D 1-1", "fouls": 10, "SOT": 4, "offsides": 3, "YC": 2, "RC": 0, "corners": 5, "possession": 61.7},
+        {"event_id": 760466, "opponent": "South Korea", "result": "W 1-0", "fouls": 7, "SOT": 4, "offsides": 3, "YC": 1, "RC": 0, "corners": 4, "possession": 31.6}
+      ],
+      "averages": {"fouls": 9.33, "SOT": 3.33, "offsides": 2.33, "YC": 1.67, "RC": 0.67, "corners": 3.33},
+      "DISCIPLINE_FLAG": "2 red cards in a single match (vs Mexico) plus 1-2 YC every game — a genuinely ill-disciplined team, not just a noisy sample. Elevates confidence on card-heavy questions today (Q1, Q14)."
+    },
+    "CAN": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760416, "opponent": "Bosnia-Herzegovina", "result": "D 1-1", "fouls": 10, "SOT": 4, "offsides": 1, "YC": 2, "RC": 0, "corners": 9, "possession": 61.1},
+        {"event_id": 760440, "opponent": "Qatar", "result": "W 6-0", "fouls": 9, "SOT": 10, "offsides": 1, "YC": 1, "RC": 0, "corners": 19, "possession": 79.0},
+        {"event_id": 760463, "opponent": "Switzerland", "result": "L 1-2", "fouls": 13, "SOT": 7, "offsides": 3, "YC": 2, "RC": 0, "corners": 7, "possession": 44.7}
+      ],
+      "averages": {"fouls": 10.67, "SOT": 7.0, "offsides": 1.67, "YC": 1.67, "RC": 0.0, "corners": 11.67},
+      "BIMODAL_FLAG": "Corner average (11.67) is heavily skewed by the 19-corner Qatar blowout — same pattern as Algeria's bimodal SOT/corners in ALG-AUT (2026-06-27). Competitive-match corner output is really 7-9, not 11.67.",
+      "DAVID_PRECEDENT": "Jonathan David scored a hat-trick in the CAN 6-0 QAT blowout (29', 45'+3', 90'+2') — direct, real precedent for Q12 (any player 2+ goals) that the research agent independently surfaced and verified via ESPN keyEvents/rosters. Real but should not be over-weighted: that was an extreme mismatch (Qatar), today's opponent is tougher."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"South Africa": 0.1770, "Canada": 0.5435, "Draw": 0.2878, "liquid": true},
+    "To_qualify": {"South Africa": 0.2686, "Canada": 0.7353, "liquid": true},
+    "Method_of_qualification": {"SA_normal_time": 0.1715, "CAN_normal_time": 0.5309, "SA_ET": 0.0347, "CAN_ET": 0.0861, "SA_pens": 0.0801, "CAN_pens": 0.0945, "liquid": true},
+    "Will_there_be_ET": {"Yes": 0.2830, "No": 0.7248, "liquid": true},
+    "Will_there_be_pen_shootout": {"Yes": 0.1548, "No": 0.8537, "liquid": true},
+    "BTTS": {"Yes": 0.4609, "No": 0.5422, "liquid": true},
+    "OU2_5_goals": {"Under": 0.5866, "Over": 0.4100, "liquid": true},
+    "OU3_5_goals": {"Under": 0.7876, "Over": 0.2107, "liquid": true},
+    "Cards_OU1_5": {"Under": 0.1156, "Over": 0.8840, "liquid": true},
+    "Cards_OU2_5": {"Under": 0.2265, "Over": 0.7417, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.4693, "Over": 0.5688, "liquid": true, "implied_lambda_total_cards": 4.01},
+    "Cards_OU4_5": {"Under": 0.6291, "Over": 0.3689, "liquid": true},
+    "Corners_OU8_5": {"Under": 0.4430, "Over": 0.5593, "liquid": true},
+    "Penalty": {"Yes": 0.2636, "No": 0.7503, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1625, "No": 0.8484, "liquid": true},
+    "Highest_scoring_half": {"First Half": 0.2885, "Equal": 0.2952, "Second Half": 0.4121, "liquid": true},
+    "HT_result": {"South Africa": 0.1588, "Canada": 0.3775, "Draw": 0.4674, "liquid": true},
+    "First_half_OU0_5_goals": {"Under": 0.1031, "Over": 0.8971, "liquid": true},
+    "Goal_1_time_bracket": {"1-10": 0.1768, "11-20": 0.1666, "21-30": 0.1367, "31-40": 0.1086, "41-50": 0.1036, "51-60": 0.0720, "61-70": 0.0530, "71-80": 0.0417, "81-90": 0.0456, "None": 0.1049, "liquid": true, "NOTE": "directly answers Q5 (goal before first hydration break) — sum brackets up to the break minute"},
+    "SA_goals_OU0_5": {"Under": 0.4336, "Over": 0.5561, "liquid": true},
+    "SA_goals_OU1_5": {"Under": 0.8165, "Over": 0.1857, "liquid": true},
+    "CAN_goals_OU0_5": {"Under": 0.2000, "Over": 0.7937, "liquid": true},
+    "CAN_goals_OU1_5": {"Under": 0.5425, "Over": 0.4695, "liquid": true},
+    "CAN_goals_OU2_5": {"Under": 0.8067, "Over": 0.1926, "liquid": true},
+    "player_markets": {"Cyle_Larin_anytime_goalscorer": {"offer": 0.2941, "adjusted": 0.278}, "Iqraam_Rayners_SOT_0_5": {"offer": 0.5495, "adjusted": 0.519}, "player_to_score_2plus_44_contracts_sum_offers": 0.7611}
+  },
+  "context_flags": [
+    "FIRST_KNOCKOUT_MATCH: every question is scoped to 'regulation (90 min + stoppage)' except Q9 (advance), reflecting the new ET/penalties possibility. Smarkets correctly distinguishes a 'To qualify' market (no draw, 147758349) from the regulation-scoped 'Full-time result' (147758216) — used Q9 from the former, everything else from the regulation-scoped equivalents.",
+    "HYDRATION_BREAK_NOW_MANDATORY: per dedicated research (rsa_can_2026-06-28_new_question_types_sources.md, Section A.1), FIFA made hydration breaks unconditional for every WC2026 match regardless of venue/weather, and 5/5 prior matches at this exact venue (SoFi Stadium) confirm it empirically (~23-25' and ~67-70'). Used 24' and 69' as the representative break minutes for Q1/Q3/Q5 modeling.",
+    "PLAYER_TO_SCORE_2PLUS_MARKET_IS_A_TRAP: summing all 44 individual illiquid offer-side player contracts gives 0.76, which is NOT a valid probability for Q12 — illiquid offer-side overpricing compounds badly across many contracts. Used a proper Poisson/binomial decomposition off the TEAM goal markets instead (see Q12 reasoning). Flagging this so the same mistake (summing many illiquid offers) isn't repeated on a future multi-contract market.",
+    "RSA_DISCIPLINE: 2 red cards in one match plus consistent 1-2 YC/game — combined with Canada's own 1.67 YC/game average and the market's own elevated card lambda (~4.0, well above either team's individual history), this is a genuinely high-card-expectation match, consistent with the ARG-AUT-derived lesson that competitive/stakes-driven matches produce more cards than dominant-win comparisons suggest.",
+    "NO_STRUCTURED_SOURCE_FOR_OFFSIDE_TIMING: confirmed gap from the research agent — ESPN's keyEvents has no discrete offside event type, so Q3 has no direct market or structured-data anchor. Modeled via ESPN team-average Poisson scaled to the pre-break time window, with a downward trim for a cautious knockout-match start; treat this estimate as lower-confidence than the rest."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will a card be shown after the second hydration break, including any extra time?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "No direct market for card timing exists beyond the 1st-10-minutes bracket. Backed out total-match card lambda (~4.0) from 3 separate O/U card thresholds (consistent fits: 3.87/4.01/3.99). Assumed ~40% of cards land in the final ~25 min of regulation (69' onward) given known late-match card clustering (fatigue, time-wasting, professional fouls) — gives λ_post69≈1.58, P(≥1)=0.79. Added the chance of an additional card in extra time (28.3% chance ET happens × ~55% chance of a card in a 30-min knockout ET period, applied only if no card already occurred). Combined: 0.83, trimmed to account for the timing-share assumption not being directly market-verified.",
+      "final_estimate": 0.78,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: BTTS Yes = 46.09%.",
+      "final_estimate": 0.46,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will either team be ruled offside before the first hydration break?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, MODELED",
+      "reasoning": "No structured source exists (confirmed gap — see context_flags). Combined ESPN offside average (RSA 2.33 + CAN 1.67 = 4.0 full match), scaled to the ~24-minute pre-break window (24/95≈25% of match) gives a naive λ≈1.01, P(≥1)=0.64. Trimmed down for the typically cautious opening exchanges of a high-stakes knockout match (teams probing rather than committing players forward early), and for the general lack of market anchor.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will a substitute score a goal in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, MODELED",
+      "reasoning": "No direct market. Used the market-implied total-goal lambda (2.34, from O/U2.5/O/U3.5 goals) combined with a standard ~13% per-goal substitute-scorer share, giving P(≥1 sub goal) ≈ 1-(1-0.13)^2.34 ≈ 0.27. Canada has a concrete precedent this tournament (Nathan Saliba scored as a substitute in the 6-0 Qatar win), supporting the base rate rather than requiring an upward adjustment beyond it.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will a goal be scored before the first hydration break?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets' 'Goal 1 time bracket' market directly answers this: P(first goal ≤24') = bracket(1-10) + bracket(11-20) + 40% of bracket(21-30) [partial credit for the ~24' break landing inside that bracket] = 0.1768+0.1666+0.4×0.1367 = 0.398.",
+      "final_estimate": 0.40,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will there be 9 or more total corner kicks in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over8.5 corners = 55.93%. Trust it over Canada's skewed 11.67 ESPN average (see BIMODAL_FLAG) — the market already reflects their real competitive-match output.",
+      "final_estimate": 0.56,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will regulation (90 minutes + stoppage time) end in a tie?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Full-time result Draw = 28.78%.",
+      "final_estimate": 0.29,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Canada be ahead at halftime?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT market: Canada = 37.75%. The high HT-draw price (46.74%) suppresses this below Canada's full-match favorite status, consistent with a cautious knockout-match start.",
+      "final_estimate": 0.38,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will South Africa advance to the Round of 16?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Smarkets 'To qualify' market (the correct knockout-scoped market, distinct from the regulation-only FTR): South Africa = 26.86%.",
+      "final_estimate": 0.27,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will a penalty kick be awarded during regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Penalty Yes = 26.36%.",
+      "final_estimate": 0.26,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 11,
+      "text": "Will the second half produce more goals than the first half in regulation, excluding extra time?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: 'Highest scoring half' → Second Half = 41.21%. Exactly matches the question's wording.",
+      "final_estimate": 0.41,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will any player score more than 1 goal (excluding own goals) in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — MODELED, MARKET-SUM TRAP AVOIDED",
+      "reasoning": "The literal Smarkets 'Player to score 2+ goals' market sums to 0.76 across 44 illiquid offer-side contracts — not usable (see PLAYER_TO_SCORE_2PLUS_MARKET_IS_A_TRAP flag). Instead modeled properly: backed out team goal lambdas from the team O/U goal markets (SA≈0.80, CAN≈1.54), then used a Poisson-binomial decomposition assuming a top-scorer goal-share of ~38% for Canada (multiple attacking outlets) and ~45% for South Africa (more reliant on a single forward when they do score) to get P(team brace). Combined: P(CAN brace)=0.118, P(SA brace)=0.051, P(any)=0.163. Nudged up slightly for Canada's concrete hat-trick precedent this tournament (Jonathan David, CAN-QAT) without over-weighting an extreme-mismatch outlier game.",
+      "final_estimate": 0.18,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 13,
+      "text": "Will Cyle Larin score a goal (excluding own goals) in regulation?",
+      "pick_tier": "MARKET-ANCHORED — HIGH CONFIDENCE",
+      "reasoning": "Illiquid offer (0.2941, adjusted ×0.945=0.278).",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 14,
+      "text": "Will there be 4 or more total cards shown in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over3.5 cards = 56.88%, consistent with South Africa's own poor disciplinary record (2 red cards in one match alone) and the market's elevated implied card lambda (~4.0) relative to either team's individual season average.",
+      "final_estimate": 0.57,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 15,
+      "text": "Will Iqraam Rayners have at least 1 shot on target in regulation?",
+      "pick_tier": "MARKET-ANCHORED — HIGH CONFIDENCE",
+      "reasoning": "Illiquid offer (0.5495, adjusted ×0.945=0.519).",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_card_after_2nd_break_incl_ET": 0.78,
+    "Q2_BTTS_regulation": 0.46,
+    "Q3_offside_before_1st_break": 0.50,
+    "Q4_sub_scores_regulation": 0.28,
+    "Q5_goal_before_1st_break": 0.40,
+    "Q6_9plus_corners": 0.56,
+    "Q7_regulation_tie": 0.29,
+    "Q8_CAN_ahead_HT": 0.38,
+    "Q9_RSA_advance": 0.27,
+    "Q10_penalty_regulation": 0.26,
+    "Q11_2H_more_goals": 0.41,
+    "Q12_any_player_brace": 0.18,
+    "Q13_Larin_scores": 0.28,
+    "Q14_4plus_cards": 0.57,
+    "Q15_Rayners_SOT": 0.52
+  },
+  "strongest_picks": [
+    "Q1: Card after 2nd hydration break, incl. ET = 0.78 (HIGH CONFIDENCE — high market-implied card lambda combined with South Africa's confirmed poor disciplinary record)",
+    "Q6: 9+ corners = 0.56 (HIGH CONFIDENCE — direct market, correctly overrides Canada's blowout-skewed ESPN corner average)",
+    "Q12: Any player brace = 0.18 (MEDIUM CONFIDENCE — avoided a real trap: the naive sum of 44 illiquid player contracts gave a badly wrong 0.76; proper team-level Poisson/binomial decomposition gives 0.18)"
+  ],
+  "post_match_results": {
+    "actual_score": "South Africa 0-1 Canada",
+    "winner": "Canada",
+    "match_rbp_total": -9.1,
+    "questions_beat_crowd": 11,
+    "questions_below_crowd": 4,
+    "question_results": {
+      "Q1": {"question": "Card after 2nd hydration break, incl ET?", "outcome": "NO", "us": 0.78, "crowd": 0.61, "rbp": -39.68, "vs_crowd": "below", "notes": "WORST RESULT. Our self-constructed timing-decomposition (total-card lambda 4.0 x 40% post-69' share + ET add-on) was badly wrong. Combined with Q14 also missing low, actual total match cards were apparently very low (likely 0-2), well below what the O/U card market's own implied lambda suggested. A derived sub-question built on an unverified timing-share assumption carries much more risk than a direct market, even when the base-rate market (cards O/U) pointed a real direction."},
+      "Q2": {"question": "BTTS regulation?", "outcome": "NO", "us": 0.46, "crowd": 0.47, "rbp": 8.49, "vs_crowd": "beat"},
+      "Q3": {"question": "Offside before 1st break?", "outcome": "NO", "us": 0.50, "crowd": 0.52, "rbp": 11.21, "vs_crowd": "beat"},
+      "Q4": {"question": "Substitute scores in regulation?", "outcome": "NO", "us": 0.28, "crowd": 0.29, "rbp": 6.22, "vs_crowd": "beat"},
+      "Q5": {"question": "Goal before 1st break?", "outcome": "NO", "us": 0.40, "crowd": 0.41, "rbp": 6.81, "vs_crowd": "beat"},
+      "Q6": {"question": "9+ corners?", "outcome": "NO", "us": 0.56, "crowd": 0.54, "rbp": 0.82, "vs_crowd": "beat"},
+      "Q7": {"question": "Regulation ends tie?", "outcome": "NO", "us": 0.29, "crowd": 0.30, "rbp": 5.19, "vs_crowd": "beat"},
+      "Q8": {"question": "Canada ahead at HT?", "outcome": "NO", "us": 0.38, "crowd": 0.44, "rbp": 13.27, "vs_crowd": "beat", "notes": "Confirms the only goal came in the 2H (consistent with Q11 outcome) — our RULE8-style HT suppression below Canada's full-match favorite status was correct."},
+      "Q9": {"question": "RSA advance to R16?", "outcome": "NO", "us": 0.27, "crowd": 0.31, "rbp": 8.92, "vs_crowd": "beat"},
+      "Q10": {"question": "Penalty in regulation?", "outcome": "NO", "us": 0.26, "crowd": 0.29, "rbp": 7.21, "vs_crowd": "beat"},
+      "Q11": {"question": "2H more goals than 1H?", "outcome": "YES", "us": 0.41, "crowd": 0.49, "rbp": -13.97, "vs_crowd": "below", "notes": "The single match goal came in the 2H. Both we and the direct 'Highest scoring half' market (41.21%) underpriced this relative to the crowd's better-calibrated 49%."},
+      "Q12": {"question": "Any player 2+ goals?", "outcome": "NO", "us": 0.18, "crowd": 0.25, "rbp": 11.94, "vs_crowd": "beat", "notes": "METHODOLOGY WIN. Directly vindicates avoiding the illiquid-44-contract-sum trap (which gave a misleading 0.76) in favor of a proper team-level Poisson/binomial brace decomposition."},
+      "Q13": {"question": "Larin scores?", "outcome": "NO", "us": 0.28, "crowd": 0.25, "rbp": 1.14, "vs_crowd": "beat"},
+      "Q14": {"question": "4+ total cards?", "outcome": "NO", "us": 0.57, "crowd": 0.50, "rbp": -10.43, "vs_crowd": "below", "notes": "Paired with Q1 — actual total cards were lower than our market-lambda-implied fit (4.0) suggested. The card O/U market itself may have been pricing in extra-time-inclusive card risk that didn't materialize since the match never went to ET."},
+      "Q15": {"question": "Rayners 1+ SOT in regulation?", "outcome": "NO", "us": 0.52, "crowd": 0.32, "rbp": -26.23, "vs_crowd": "below", "notes": "SECOND-WORST RESULT. Trusted an illiquid offer-side player SOT price near-raw (0.52) despite South Africa being a 17.7% extreme underdog who ultimately lost. The crowd (32%) was much better calibrated. Unlike the Sabitzer/ARG-AUT case (where a competitive underdog's creative player was correctly NOT suppressed), South Africa's own team SOT average all tournament was already low (3.33/game) — team-level shot-shyness should be weighted ahead of the generic 'competitive underdog = more shots' heuristic when the team's underlying attacking output is already weak."}
+    }
+  },
+  "created": "2026-06-28"
+}

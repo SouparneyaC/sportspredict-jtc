@@ -1,0 +1,145 @@
+BASH LOG: ARG vs AUT Match Analysis Session
+Date: 2026-06-22
+Session context: Pre-match analysis for Argentina vs Austria (WC2026 Group C, Arlington TX). Both teams have played GD1 matches. Full model + GD1 calibration session.
+
+===========================================================================
+COMMAND 1: Poisson goal model + ordered logit match winner + full 10-Q calibration
+===========================================================================
+$ cd "/Users/aki/Desktop/QK Rstudio/sportspredict_research" && python3 -c "[inline calibration script]"
+
+OUTPUT:
+  === CALIBRATED ESTIMATES: ARG vs AUT ===
+  P(ARG win): 0.737  P(Draw): 0.177  P(AUT win): 0.087
+  λ_ARG: 1.925  λ_AUT: 0.640  λ_total: 2.565
+
+  Q1  AUT 2+ offsides
+      Base Poisson (λ=1.3): 0.373
+      ARG high-line revised (λ=1.5): 0.442
+      Crowd pred (if we submit 0.40): 0.453
+      ESTIMATE: 0.38-0.44  |  Crowd expected: ~0.38-0.45
+
+  Q2  AUT more 2H SOT than ARG
+      λ_ARG_2H_SOT: 3.92  λ_AUT_2H_SOT: 1.30
+      P(AUT>ARG in 2H SOT): 0.0765
+      AUT-JOR CONFIRMS: Jordan (extreme underdog) had fewer 2H SOT than Austria
+      Crowd pred (if we submit 0.12): 0.282
+      ESTIMATE: 0.10-0.14  |  Crowd expected ~0.20-0.28 (RULE7 edge)
+
+  Q3  2H more goals than 1H
+      λ_1H: 1.154  λ_2H: 1.411  P(2H>1H): 0.429  P(tie): 0.263
+      Both teams scored in 2H of GD1 (AUT and ARG). Generic WC pattern holds.
+      ESTIMATE: 0.42-0.46  |  Crowd expected: ~0.40-0.50
+
+  Q4  AUT more corners than ARG
+      λ_ARG_corners: 5.39  λ_AUT_corners: 1.79
+      P(AUT>ARG corners): 0.0553
+      AUT-JOR CONFIRMS: Jordan (underdog) had FEWER corners than Austria
+      ESTIMATE: 0.15-0.20  |  Crowd expected: ~0.22-0.30 (RULE7 edge)
+
+  Q5  Argentina win
+      Model: 0.737
+      Crowd pred formula: 0.658
+      ALG match Q7: crowd priced ARG win at 75% (very close to our model 73.7%)
+      RULE1: need avg(crowd, Smarkets market)
+      ESTIMATE: 0.72-0.75 (PENDING Smarkets data)
+
+  Q6  Total goals <= 2
+      P(0)=0.077  P(1)=0.197  P(2)=0.253  P(3)=0.216
+      P(<=2): 0.5273
+      NOTE: AUT-JOR had 4 goals, ARG-ALG had 3 goals — but those were vs weaker opponents
+      ARG vs AUT is different matchup: AUT defensive depth will suppress total goals
+      ESTIMATE: 0.50-0.53  |  Crowd likely: 0.42-0.48 -> genuine edge on YES
+
+  Q7  4+ total cards
+      lambda_cards: 2.5 (WC avg 2.86, reduced for dominant match)
+      P(4+): 0.2424
+      AUT-JOR CONFIRMS: 4+ cards = NO (crowd 44%) in a 3-1 Austria win
+      Pattern: dominant wins = fewer cards (GER-CUR 0, AUT-JOR <4)
+      ESTIMATE: 0.25-0.30  |  Crowd expected: ~0.35-0.42
+
+  Q8  Argentina 6+ SOT
+      lambda_ARG_SOT (x3.7): 7.12 -> P(>=6): 0.7149
+      lambda_ARG_SOT (x3.3, revised): 6.35 -> P(>=6): 0.6094
+      AUT-JOR WARNING: Austria won 3-1 but had <6 SOT (crowd 50%, outcome NO)
+      BUT: ARG much more dominant than AUT, and vs harder opponent -> moderating downward
+      Crowd INFLATES winner SOT props by +10-17pp above formula
+      ESTIMATE: 0.63-0.68  |  Crowd likely: 0.70-0.78 -> slight edge on NO side
+
+  Q9  Argentina scores in 2H
+      lambda_ARG_2H: 1.0590  P(score): 0.6532
+      ARG-ALG: Argentina scored 3 total, almost certainly scored in 2H
+      AUT-JOR Q5: Austria scored in 2H = YES (crowd 65%) -> general pattern holds
+      ESTIMATE: 0.65-0.70  |  Crowd expected: ~0.60-0.68
+
+  Q10 Sabitzer 1+ SOT
+      AUT-JOR BOMBSHELL: Sabitzer 0 SOT when Austria DOMINANT (3-1 win, crowd 57%)
+      Sabitzer does not shoot much regardless of match situation
+      RULE15: AUT 8.7% (<15%) -> suppressed forward service even further
+      lambda_Sabitzer revised: 0.30  P(>=1 SOT): 0.2592
+      Crowd likely: 0.33-0.42 (anchored on GD1 role, doesn't know he shoots rarely)
+      ESTIMATE: 0.15-0.22  |  STRONG RULE7+RULE15+PERSONAL DATA edge on NO side
+
+  === SUMMARY TABLE ===
+  Q    Estimate           Exp Crowd        Key driver
+  ---------------------------------------------------------------
+  Q1   0.38-0.44          ~0.40-0.48       ARG high-line confirmed; AUT chasing mode
+  Q2   0.10-0.14          ~0.22-0.30       RULE7 strong; Jordan data confirms underdogs get fewer 2H SOT
+  Q3   0.42-0.46          ~0.40-0.50       No strong rule; model-based
+  Q4   0.15-0.20          ~0.22-0.30       Jordan FEWER corners than Austria confirms dominance pattern
+  Q5   0.72-0.75          ~0.65-0.72       RULE1: need Smarkets; ALG crowd was 75% for ARG
+  Q6   0.50-0.53          ~0.42-0.48       Model says 52.7%; crowd likely under-prices
+  Q7   0.25-0.30          ~0.35-0.42       AUT-JOR: 3-1 win had <4 cards. Dominant match pattern.
+  Q8   0.63-0.68          ~0.70-0.78       AUT-JOR warning: dominant team <6 SOT. Crowd inflates winner SOT.
+  Q9   0.65-0.70          ~0.60-0.68       ARG-ALG 3 goals, AUT-JOR Q5 YES. Strong.
+  Q10  0.15-0.22          ~0.33-0.42       BOMBSHELL: 0 SOT even as DOMINANT player. Best edge of the batch.
+
+EXIT CODE: 0
+
+===========================================================================
+FILES WRITTEN THIS SESSION:
+  - sportspredict_research/data/external_markets/arg_aut_2026-06-22.json
+      (full pre-match analysis JSON with model outputs, GD1 evidence, rule applications, estimates)
+  - sportspredict_research/ML_EXPERIMENTS_NOTEBOOK.md
+      (Match Analysis Session section appended — ARG vs AUT)
+  - sportspredict_research/bash_logs/2026-06-22_ARG-AUT_match_analysis_bash_log.txt
+      (this file)
+
+FINAL SUBMISSION ESTIMATES:
+  Q1:  0.40  (Austria 2+ offsides)
+  Q2:  0.12  (Austria more 2H SOT than ARG)
+  Q3:  0.44  (2H more goals than 1H)
+  Q4:  0.16  (Austria more corners than ARG)
+  Q5:  0.73  (Argentina win) [PRELIMINARY — Smarkets pending]
+  Q6:  0.52  (<=2 total goals)
+  Q7:  0.28  (4+ total cards)
+  Q8:  0.65  (ARG 6+ SOT)
+  Q9:  0.68  (ARG scores 2H)
+  Q10: 0.18  (Sabitzer 1+ SOT) [BEST EDGE — 0 SOT even as dominant player]
+
+PENDING:
+  - Q5: Smarkets API pull for RULE1 — need user permission (10k daily quota)
+  - Lineup confirmation: Sabitzer starter vs sub?
+
+===========================================================================
+ADDENDUM: France vs Iraq pre-match analysis (same session, 2026-06-22)
+===========================================================================
+$ python3 -c "[France vs Iraq model analysis script]"
+
+KEY OUTPUTS:
+  FRA Elo: 2129.05  IRQ Elo: 1736.55  Elo diff: 392.5 (> ARG-AUT diff of 304.5)
+  P(FRA win): 0.8154  P(Draw): 0.1278  P(IRQ win): 0.0568
+  lambda_FRA: 2.2580  lambda_IRQ: 0.5454  lambda_total: 2.8033
+  RULE7: FIRES (IRQ 5.7% < 15%)  RULE8: does NOT fire (draw 12.8%)
+
+  Q1  Iraq more HT corners: P(IRQ>FRA) = 5.74%  → ESTIMATE 0.08
+  Q2  France more fouls: P(FRA>IRQ) = 58.2%     → ESTIMATE 0.55
+  Q3  Iraq 1+ card 2H: P = 52.8%                → ESTIMATE 0.50
+  Q4  Both score AND 3+ goals: P = 30.2%         → ESTIMATE 0.24
+  Q5  Iraq 2+ SOT 2H: P = 26-30%               → ESTIMATE 0.22 (RULE7 down)
+  Q6  France win: Model 81.5%                   → ESTIMATE 0.81 (Smarkets pending)
+  Q7  Iraq scores 2H: P = 25.9%                 → ESTIMATE 0.26
+  Q8  Iraq 4+ SOT: P = 11-15%                  → ESTIMATE 0.14 (RULE7)
+  Q9  France scores 1H: P = 63.8% + form adj   → ESTIMATE 0.70
+
+FILES WRITTEN:
+  - sportspredict_research/data/external_markets/fra_irq_2026-06-22.json

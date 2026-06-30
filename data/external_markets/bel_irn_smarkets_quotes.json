@@ -1,0 +1,120 @@
+{
+  "event_id": "45067766",
+  "event_name": "Belgium vs Iran",
+  "fetched_at": "2026-06-21T18:02Z",
+  "kickoff_utc": "2026-06-21T19:00:00Z",
+  "markets": {
+    "full_time_result": {
+      "Belgium": 0.6945,
+      "Draw": 0.2001,
+      "Iran": 0.1087,
+      "liquid": true
+    },
+    "half_time_result": {
+      "Belgium": 0.5182,
+      "Draw": 0.3706,
+      "Iran": 0.1178,
+      "liquid": true
+    },
+    "btts_and_ou25": {
+      "Yes_Over": 0.3665,
+      "Yes_Under": 0.0948,
+      "No_Over": 0.1634,
+      "No_Under": 0.3748,
+      "liquid": true
+    },
+    "ou25_cards": {
+      "Over": 0.6175,
+      "Under": 0.4091,
+      "liquid": true
+    },
+    "ou35_cards": {
+      "Over": 0.4240,
+      "Under": 0.5783,
+      "liquid": true
+    },
+    "ou85_total_sot": {
+      "Over": 0.5463,
+      "Under": 0.4647,
+      "note": "BEL_OU55_SOT and IRN_OU25_SOT returned identical prices - thin markets, use total only",
+      "liquid": false
+    },
+    "ou85_corners": {
+      "Over": 0.5769,
+      "Under": 0.4276,
+      "liquid": true
+    },
+    "ou95_corners": {
+      "Over": 0.4683,
+      "Under": 0.5389,
+      "liquid": true
+    },
+    "penalty": {
+      "Yes": 0.3332,
+      "No": 0.7225,
+      "liquid": true
+    },
+    "red_card": {
+      "Yes": 0.1283,
+      "No": 0.8853,
+      "liquid": true
+    },
+    "2h_ou15": {
+      "Over": 0.4659,
+      "Under": 0.5369,
+      "liquid": true
+    },
+    "1h_ou05": {
+      "Over": 0.7144,
+      "Under": 0.2901,
+      "liquid": true
+    },
+    "1h_ou15": {
+      "Over": 0.3509,
+      "Under": 0.6517,
+      "liquid": true
+    },
+    "bel_ou05_goals": {
+      "Over": 0.8851,
+      "Under": 0.1157,
+      "liquid": true
+    },
+    "bel_ou15_goals": {
+      "Over": 0.6234,
+      "Under": 0.3778,
+      "liquid": true
+    },
+    "irn_ou05_goals": {
+      "Over": 0.5238,
+      "Under": 0.4766,
+      "liquid": true
+    },
+    "irn_ou15_goals": {
+      "Over": 0.1690,
+      "Under": 0.8336,
+      "liquid": true
+    },
+    "player_sot_05": {
+      "Romelu_Lukaku": {"mid": 0.7273, "bid": 0.7194, "offer": 0.7353, "liquid": true},
+      "Kevin_De_Bruyne": {"mid": 0.6098, "bid": 0.6061, "offer": 0.6135, "liquid": true},
+      "Leandro_Trossard": {"mid": 0.5763, "bid": 0.5747, "offer": 0.578, "liquid": true},
+      "Alexis_Saelemaekers": {"mid": 0.4294, "bid": 0.4, "offer": 0.4587, "liquid": false},
+      "Mehdi_Taremi": {"mid": 0.4485, "bid": 0.4464, "offer": 0.4505, "liquid": true},
+      "Youri_Tielemans": {"mid": 0.3802, "bid": 0.3788, "offer": 0.3817, "liquid": true},
+      "Maxim_De_Cuyper": {"mid": 0.2985, "bid": 0.2941, "offer": 0.303, "liquid": false},
+      "Nicolas_Raskin": {"mid": 0.2886, "bid": 0.2439, "offer": 0.3333, "liquid": false},
+      "Ramin_Rezaeian": {"mid": 0.1906, "bid": 0.1852, "offer": 0.1961, "liquid": false},
+      "Ehsan_Hajsafi": {"mid": 0.1251, "bid": 0.122, "offer": 0.1282, "liquid": false},
+      "Hossein_Kanaani": {"mid": 0.1181, "bid": 0.1111, "offer": 0.125, "liquid": false},
+      "Saman_Ghoddos": {"mid": 0.1777, "bid": 0.1471, "offer": 0.2083, "liquid": false},
+      "Ali_Nemati": {"mid": 0.0713, "bid": 0.0556, "offer": 0.087, "liquid": false}
+    },
+    "player_score_or_assist": {
+      "Romelu_Lukaku": {"offer": 0.5882},
+      "Kevin_De_Bruyne": {"offer": 0.5},
+      "Leandro_Trossard": {"offer": 0.5076},
+      "Mehdi_Taremi": {"offer": 0.25, "note": "offer-only, illiquid"},
+      "Youri_Tielemans": {"offer": 0.3788}
+    }
+  }
+}

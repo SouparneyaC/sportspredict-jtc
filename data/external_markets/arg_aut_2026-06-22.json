@@ -1,0 +1,270 @@
+{
+  "match": "ARG-AUT",
+  "sportspredict_match_id": null,
+  "smarkets_event_id": "PENDING",
+  "espn_event_id": null,
+  "closing_time": "2026-06-22T00:00:00.000Z",
+  "context_note": "Argentina vs Austria - WC2026 Group C, AT&T Stadium, Arlington TX. Argentina are massive favorites (Elo-based FTR: ARG 73.7% / Draw 17.7% / AUT 8.7%). RULE8 does NOT fire (draw 17.7% < 25% threshold). RULE7 fires: AUT at 8.7% (<15%) is extreme underdog — submit unshaded model estimates for all AUT-positive props and apply RULE15 (losing-team forwards SOT suppressed). Both teams' GD1 results: ARG beat Algeria 3-0 (confirmed high-line play, ARG caught 2+ offsides vs Algeria themselves); AUT beat Jordan 3-1 (BOMBSHELL: Sabitzer 0 SOT even as dominant player). Smarkets data pending for Q5 (RULE1: Argentina win = avg(crowd_estimate, Smarkets_market)).",
+  "elo_ratings": {
+    "arg": 2189.5282,
+    "aut": 1885.0498,
+    "elo_diff": 304.4784,
+    "source": "data/processed/elo_current_ratings.csv"
+  },
+  "model_outputs": {
+    "poisson_goals": {
+      "intercept": 0.10408044,
+      "elo_diff_coef": 0.001809897,
+      "lambda_arg": 1.9254,
+      "lambda_aut": 0.6395,
+      "lambda_total": 2.5650,
+      "note": "Neutral venue (no home_adv term). Source: data/processed/poisson_goals_coefs.json"
+    },
+    "ordered_logit_match_winner": {
+      "b_elo": 0.005198651,
+      "b_home": 0.3771,
+      "c1": -0.7701763,
+      "c2": 0.5548681,
+      "p_arg_win": 0.7370,
+      "p_draw": 0.1770,
+      "p_aut_win": 0.0870,
+      "note": "Neutral venue — b_home term not applied. Source: data/processed/ordered_logit_coefs.json"
+    },
+    "nb_dispersion": {
+      "alpha": 0.09922,
+      "source": "data/processed/nb_dispersion_coefs.json"
+    }
+  },
+  "gd1_evidence": {
+    "arg_vs_alg_result": "ARG 3-0 ALG (2026-06-19)",
+    "arg_vs_alg_relevant_findings": [
+      "ARG caught 2+ offsides vs Algeria themselves — confirms ARG plays AGGRESSIVE HIGH LINE",
+      "ARG scored 3 goals — strong attacking form",
+      "ARG scored in 1H (Q9: ARG scores 1H = YES) — confirms ARG attacks from the start",
+      "Algeria 2+ offsides (YES) further confirms ARG high-line trap works against opponents",
+      "No penalty/red card (Q6 NO) — ARG won cleanly without incidents"
+    ],
+    "aut_vs_jor_result": "AUT 3-1 JOR (2026-06-16)",
+    "aut_vs_jor_relevant_findings": [
+      "BOMBSHELL Q10: Sabitzer 0 SOT (crowd was 57%) even when Austria DOMINANT and WON 3-1",
+      "Q8: Austria <6 SOT (crowd 50%, outcome NO) — dominant team still fell below 6 SOT threshold",
+      "Q7: <4 total cards (crowd 44%, outcome NO) — dominant win had low card count",
+      "Q6: Jordan fewer corners than Austria (crowd 28%, outcome NO) — confirms dominant team gets more corners",
+      "Q3: Jordan fewer 2H SOT than Austria (crowd 27%, outcome NO) — confirms extreme underdog gets fewer 2H SOT",
+      "Q2: Jordan did NOT have more fouls than Austria (crowd 58%, outcome NO) — dominant team fouls similar or more",
+      "Q5: Austria scored in 2H (YES) — pattern holds: favorites score in 2H"
+    ]
+  },
+  "rules_in_effect": {
+    "RULE7": "AUT 8.7% win prob (<15%) = EXTREME underdog. Submit unshaded model estimates for all AUT-positive props. Do not let crowd pull us toward midpoint for underdog props.",
+    "RULE15": "Losing-team forward SOT suppressed. AUT <15% → 0.25-0.35 range regardless of model. FURTHER REVISED by Sabitzer GD1 data: 0 SOT even when dominant. Final: 0.15-0.22.",
+    "RULE8_NOT_FIRED": "Draw only 17.7% — below 25% threshold. No general shrinkage of attacking props.",
+    "RULE1_PENDING": "Q5 Argentina win: avg(crowd_estimate, Smarkets_market). Smarkets API pull needed (quota-controlled — must ask user permission).",
+    "RULE14": "Consistency check: P(ARG more SOT) must be >= P(ARG more goals). Q8 (ARG 6+ SOT = 0.65) vs Q9 (ARG scores 2H ~ implies high SOT). Check passes."
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "Q1_aut_2plus_offsides": {
+      "question": "Will Austria be caught offside 2 or more times?",
+      "category": "tier2_realdata",
+      "method": "Poisson model with ARG high-line adjustment. Base: lambda_aut_offsides = 1.3 (Poisson of typical underdog), P(>=2) = 0.373. Revised: lambda = 1.5 given ARG confirmed high-line play (ARG themselves caught 2+ offsides vs Algeria — direct evidence of trap defense). P(>=2) = 0.442. RULE7 applies: stay near model not crowd. Austria will chase late with runners = more offside risk.",
+      "poisson_base_lambda_1_3": 0.373,
+      "poisson_revised_lambda_1_5": 0.442,
+      "crowd_formula_pred_at_0_40": 0.453,
+      "crowd_expected_range": "0.40-0.48",
+      "edge_direction": "NEUTRAL (both directions close to model)",
+      "recommended_estimate": 0.40
+    },
+    "Q2_aut_more_2h_sot_than_arg": {
+      "question": "Will Austria have more shots on target than Argentina in the second half?",
+      "category": "tier2_realdata",
+      "method": "Skellam: lambda_ARG_2H_SOT = 1.9254 * 0.55 * 3.7 = 3.92; lambda_AUT_2H_SOT = 0.6395 * 0.55 * 3.7 = 1.30. P(AUT > ARG in 2H SOT) = 7.65% from Skellam calculation. RULE7: extreme underdog -> AUT will have fewer opportunities in 2H. AUT-JOR CONFIRMS: Jordan (extreme underdog) had fewer 2H SOT than Austria (crowd 27%, outcome NO). Direct analogy. Crowd likely anchors at 0.20-0.28 due to compression; our estimate stays near model.",
+      "skellam_model_p": 0.0765,
+      "lambda_arg_2h_sot": 3.92,
+      "lambda_aut_2h_sot": 1.30,
+      "aut_jor_confirmation": "Jordan (extreme underdog) had fewer 2H SOT than Austria — AUT vs JOR Q3 = NO at crowd 27%",
+      "crowd_expected_range": "0.20-0.28",
+      "edge_direction": "STRONG NO (model 7.7% vs crowd ~24% = 16pp gap, RULE7)",
+      "recommended_estimate": 0.12
+    },
+    "Q3_2h_more_goals_than_1h": {
+      "question": "Will the second half have more goals than the first half?",
+      "category": "tier2_model",
+      "method": "Poisson: lambda_1H = 2.565 * 0.45 = 1.154, lambda_2H = 2.565 * 0.55 = 1.411. P(2H > 1H) = 0.429. P(equal) = 0.263. Both teams have scored in 2H in GD1 (generic pattern). RULE8 not fired. No strong rule overrides. Model-based estimate.",
+      "lambda_1h": 1.154,
+      "lambda_2h": 1.411,
+      "p_2h_gt_1h": 0.429,
+      "p_equal": 0.263,
+      "crowd_expected_range": "0.40-0.50",
+      "edge_direction": "NEUTRAL",
+      "recommended_estimate": 0.44
+    },
+    "Q4_aut_more_corners_than_arg": {
+      "question": "Will Austria finish with more corner kicks than Argentina?",
+      "category": "tier2_realdata",
+      "method": "Poisson on corners: lambda_ARG_corners = 1.9254 * 2.8 = 5.39; lambda_AUT_corners = 0.6395 * 2.8 = 1.79. P(AUT > ARG) = 5.5%. AUT-JOR CONFIRMS: Jordan (extreme underdog) had FEWER corners than Austria (Q6 of AUT-JOR = NO at crowd 28%). Dominant team gets more corners. RULE7: stay near model.",
+      "lambda_arg_corners": 5.39,
+      "lambda_aut_corners": 1.79,
+      "p_aut_more_corners": 0.0553,
+      "aut_jor_confirmation": "Austria had more corners than Jordan (underdog) — Q6 of AUT-JOR = NO (crowd 28%, Jordan fewer corners)",
+      "crowd_expected_range": "0.22-0.30",
+      "edge_direction": "STRONG NO (model 5.5% vs crowd ~26% = 20pp gap, RULE7)",
+      "recommended_estimate": 0.16
+    },
+    "Q5_argentina_win": {
+      "question": "Will Argentina win the match?",
+      "category": "tier1_market",
+      "method": "RULE1: avg(crowd_consensus, Smarkets_market). Elo model: ARG 73.7%. Crowd formula pred: 0.514 + 0.61*(0.737-0.5) = 0.658. ALG match Q7: crowd priced ARG win at 75% (very close to our model 73.7%). Preliminary estimate: 0.73. SMARKETS DATA PENDING — must pull ARG-AUT full_time_result market and average with crowd consensus before final submission.",
+      "elo_model_p_arg_win": 0.7370,
+      "crowd_formula_pred": 0.658,
+      "gd1_context": "ARG-ALG crowd priced ARG at 75%, actual outcome YES — crowd well-calibrated here",
+      "smarkets_pull_needed": true,
+      "smarkets_status": "PENDING — ask user permission before API call (10k daily quota)",
+      "crowd_expected_range": "0.65-0.72",
+      "edge_direction": "ARG is underpriced by crowd formula; preliminary estimate above crowd",
+      "recommended_estimate": 0.73,
+      "preliminary_note": "Use 0.73 if Smarkets unavailable. Update to avg(crowd, Smarkets) once data arrives."
+    },
+    "Q6_total_2_or_fewer_goals": {
+      "question": "Will the match have 2 or fewer total goals?",
+      "category": "tier2_model",
+      "method": "Poisson double-Poisson: P(0)=0.077, P(1)=0.197, P(2)=0.253, total P(<=2) = 52.7%. AUT defensive depth will suppress scoring compared to ARG-ALG (3-0) and AUT-JOR (3-1) — those opponents were weaker. This is a different regime: AUT will park and defend, ARG will grind. Crowd likely prices 42-48% (under-prices low-scoring probability given both teams just scored 3 in GD1).",
+      "p_0_goals": 0.077,
+      "p_1_goals": 0.197,
+      "p_2_goals": 0.253,
+      "p_le2_total": 0.5273,
+      "note_gd1_context": "AUT-JOR had 4 goals and ARG-ALG had 3 goals, but those vs weaker opponents. AUT will be MUCH more defensive vs ARG.",
+      "crowd_expected_range": "0.42-0.48",
+      "edge_direction": "YES edge: model 52.7%, crowd likely 45% → ~8pp gap",
+      "recommended_estimate": 0.52
+    },
+    "Q7_4plus_total_cards": {
+      "question": "Will there be 4 or more total cards shown?",
+      "category": "tier2_model",
+      "method": "Poisson: lambda_cards = 2.5 (WC average 2.86, reduced for dominant match pattern). P(>=4) = 24.2%. AUT-JOR CONFIRMS: 4+ cards = NO (crowd 44%) in a 3-1 Austria win. Pattern: dominant team wins cleanly = fewer cards. GER-CUR (0 cards) and AUT-JOR (<4 cards) both confirm. Crowd likely 0.35-0.42 — we stay below.",
+      "lambda_cards": 2.5,
+      "p_4plus_cards": 0.2424,
+      "aut_jor_confirmation": "Austria won 3-1 vs Jordan with fewer than 4 total cards (crowd 44%, outcome NO)",
+      "ger_cur_confirmation": "Germany beat Curacao with 0 total cards in dominant win",
+      "crowd_expected_range": "0.35-0.42",
+      "edge_direction": "NO edge: model 24% vs crowd ~38% = 14pp gap",
+      "recommended_estimate": 0.28
+    },
+    "Q8_argentina_6plus_sot": {
+      "question": "Will Argentina have 6 or more shots on target?",
+      "category": "tier2_model",
+      "method": "Poisson: lambda_ARG_SOT = 1.9254 * 3.3 = 6.35 (revised multiplier from 3.7 to 3.3 after AUT-JOR warning). P(>=6) = 60.9%. AUT-JOR WARNING: Austria (dominant, 3-1 win, 72% favorites) had FEWER than 6 SOT (crowd 50%, outcome NO). However ARG is more dominant than AUT was vs JOR, and vs a harder opponent. Crowd typically inflates winner SOT props by +10-17pp above formula. Preliminary estimate at lower end of revised range.",
+      "lambda_arg_sot_x37": 7.12,
+      "p_ge6_x37": 0.7149,
+      "lambda_arg_sot_x33_revised": 6.35,
+      "p_ge6_x33_revised": 0.6094,
+      "aut_jor_warning": "Austria won 3-1 but had <6 SOT even as dominant team (crowd 50%, outcome NO) — calibrates SOT multiplier downward",
+      "crowd_inflation_expected": "+10-17pp above formula",
+      "crowd_expected_range": "0.70-0.78",
+      "edge_direction": "NO lean: model 61-71%, crowd likely 73% — moderate edge on NO side",
+      "recommended_estimate": 0.65
+    },
+    "Q9_argentina_scores_2h": {
+      "question": "Will Argentina score in the second half?",
+      "category": "tier2_model",
+      "method": "Poisson: lambda_ARG_2H = 1.9254 * 0.55 = 1.059. P(ARG scores in 2H) = 1-e^-1.059 = 65.3%. ARG-ALG: Argentina scored 3 total goals, almost certainly scored in 2H. AUT-JOR Q5: Austria scored in 2H = YES (crowd 65%) — general pattern that dominant favorites score in 2H is confirmed.",
+      "lambda_arg_2h_goals": 1.059,
+      "p_arg_scores_2h": 0.6532,
+      "arg_alg_context": "ARG scored 3 vs Algeria — highly likely scored in 2H",
+      "aut_jor_pattern": "Dominant team (AUT) scored in 2H vs Jordan = YES (crowd 65%) — same question type",
+      "crowd_expected_range": "0.60-0.68",
+      "edge_direction": "YES lean — model and crowd aligned here, small YES edge from high-line ARG style",
+      "recommended_estimate": 0.68
+    },
+    "Q10_sabitzer_1plus_sot": {
+      "question": "Will Marcel Sabitzer have at least 1 shot on target?",
+      "category": "tier2_realdata",
+      "method": "RULE15 + RULE7 + GD1 personal data. RULE15: AUT <15% underdog -> player SOT suppressed, estimate 0.25-0.35 regardless of model. RULE7: extreme underdog, further suppression. GD1 BOMBSHELL: Sabitzer had 0 SOT when Austria was the DOMINANT team (won 3-1 vs Jordan, crowd 57%). If he doesn't shoot even as dominant team, in this match as massive underdog he will have even fewer opportunities. λ_Sabitzer = Austria_total_SOT * Sabitzer_share = 2.37 * 0.25 = 0.59 base, BUT revised DOWN to ~0.30 given GD1 0-SOT data. P(>=1 SOT) at lambda=0.30: 25.9%.",
+      "rule15_range": "0.25-0.35 (AUT <15%)",
+      "gd1_sabitzer_data": {
+        "aut_vs_jor": {"sabitzer_sot": 0, "crowd_was": 0.57, "outcome": "NO", "austria_won": true, "score": "3-1"},
+        "interpretation": "Sabitzer does not shoot regardless of match situation. In underdog role, will have even fewer opportunities."
+      },
+      "lambda_sabitzer_revised": 0.30,
+      "p_ge1_sot_at_lambda030": 0.2592,
+      "crowd_expected_range": "0.33-0.42 (anchored on Austria's roster role, unaware of GD1 0-SOT data)",
+      "edge_direction": "STRONGEST EDGE: model+GD1 = 0.16-0.22, crowd likely 0.35-0.42 = 15-20pp gap on NO side",
+      "recommended_estimate": 0.18
+    }
+  },
+  "post_match_results": {
+    "match_score": "ARG 1-0 AUT (LIVE at time of Q9 settlement)",
+    "halftime_score": null,
+    "match_facts": {
+      "note": "Match live, 1-0 Argentina at time of first question settlement (Q9). Sabitzer recorded 1+ SOT as underdog — DIRECTLY CONTRADICTS our GD1 evidence from AUT-JOR where he had 0 SOT as dominant player. KEY LEARNING: Sabitzer's 0-SOT pattern in AUT-JOR was when Austria WAS THE DOMINANT TEAM — the trailing/desperate context in ARG-AUT may have actually INCREASED his shot attempts.",
+      "source": "Jump Trading Competition live platform"
+    },
+    "question_results": {
+      "Q6_4plus_total_cards": {
+        "our_estimate": 0.28,
+        "crowd_estimate": 0.45,
+        "outcome": 1,
+        "rbp": -19.17,
+        "beat_crowd": false,
+        "settled_live": true,
+        "notes": "4+ cards = YES in a 2-0 Argentina win. AUT-JOR pattern (dominant win = <4 cards) DID NOT transfer. Root cause: AUT-JOR was 3-1, Austria dominant. ARG-AUT was 2-0, Austria fighting hard to come back from 1-0 deficit. Competitive underdog context → more physical play → more cards. SAME ROOT CAUSE AS Q9 SABITZER: we modeled this as a blowout when it was a competitive match. Both Q6 AND Q9 failed for the same reason."
+      },
+      "Q1_aut_2plus_offsides": {
+        "our_estimate": 0.40, "crowd_estimate": 0.48, "outcome": 0, "rbp": 9.90, "beat_crowd": true,
+        "notes": "Austria <2 offsides: NO. Team-level RULE7 worked — AUT didn't accumulate offsides in chasing mode."
+      },
+      "Q2_aut_more_2h_sot": {
+        "our_estimate": 0.12, "crowd_estimate": 0.27, "outcome": 0, "rbp": 8.22, "beat_crowd": true,
+        "notes": "Austria NOT more 2H SOT than ARG: NO. Team-level RULE7 confirmed. Even in competitive match, ARG dominated SOT."
+      },
+      "Q3_2h_more_goals_than_1h": {
+        "our_estimate": 0.44, "crowd_estimate": 0.51, "outcome": 0, "rbp": 8.29, "beat_crowd": true,
+        "notes": "2H NOT more goals than 1H: NO. 1 goal each half (ARG scored 1H, 1 in 2H). Model-based, no rule override."
+      },
+      "Q4_aut_more_corners": {
+        "our_estimate": 0.16, "crowd_estimate": 0.30, "outcome": 1, "rbp": -19.91, "beat_crowd": false,
+        "notes": "AUSTRIA HAD MORE CORNERS THAN ARGENTINA IN A 2-0 LOSS. Corner reversal: Austria chased from 1-0 deficit throughout match, repeatedly attacked, got repelled by ARG, accumulated corners. ARG at 2-0 sat back and defended — didn't need corners. LESSON: in competitive match where trailing team chases late, CHASING team accumulates corners from failed attacks. 'Dominant team gets more corners' only holds in genuine blowouts where dominant team keeps attacking. In a managed 2-0, the chasing team is the one attacking into corners."
+      },
+      "Q5_total_le2_goals": {
+        "our_estimate": 0.52, "crowd_estimate": 0.44, "outcome": 1, "rbp": 10.46, "beat_crowd": true,
+        "notes": "≤2 total goals: YES. Match ended 2-0. Model was right that AUT defensive setup would suppress total goals."
+      },
+      "Q7_arg_6plus_sot": {
+        "our_estimate": 0.65, "crowd_estimate": 0.54, "outcome": 0, "rbp": -9.90, "beat_crowd": false,
+        "notes": "ARG scored 2 goals but had FEWER THAN 6 SOT. This is now a pattern: AUT scored 3 in AUT-JOR with <6 SOT, ARG scored 2 here with <6 SOT. Elite teams in managed wins are CLINICAL — high goal-to-SOT conversion, low total SOT. SOT multiplier of 3.3-3.7x lambda may be too high. Revise down to 2.8-3.0x for elite teams expected to win by 2-goal margin."
+      },
+      "Q8_arg_scores_2h": {
+        "our_estimate": 0.68, "crowd_estimate": 0.68, "outcome": 1, "rbp": 1.74, "beat_crowd": true,
+        "notes": "ARG scored in 2H. Small win due to identical crowd estimate."
+      },
+      "Q9_sabitzer_1plus_sot": {
+        "our_estimate": 0.18,
+        "crowd_estimate": 0.43,
+        "outcome": 1,
+        "rbp": -31.86,
+        "beat_crowd": false,
+        "settled_live": true,
+        "notes": "RULE15 FAILED. Sabitzer got 1+ SOT as a massive underdog (AUT 8.7% win prob). Our GD1 evidence (0 SOT in AUT-JOR) was from Sabitzer as DOMINANT team — NOT as underdog. Competitive chasing context = more shots. Crowd 43% was significantly closer to truth than our 18%."
+      }
+    },
+    "match_score": "ARG 2-0 AUT",
+    "final_rbp": -42.24,
+    "questions_beat_crowd": 5,
+    "questions_submitted": 9,
+    "questions_won": "Q1(+9.90), Q2(+8.22), Q3(+8.29), Q5(+10.46), Q8(+1.74)",
+    "questions_lost": "Q4(-19.91), Q6(-19.17), Q7(-9.90), Q9(-31.86)",
+    "q10_note": "Argentina win (Q10): we did NOT submit an estimate (Smarkets data was pending). Crowd 70% was correct. Platform showed 'The Crowd called it perfectly!' We missed a small positive RBP here.",
+    "UNIFIED_LESSON_ARG_AUT": "Q6 (cards) and Q9 (Sabitzer SOT) failed for IDENTICAL reasons: we assumed a blowout match script (like AUT-JOR 3-1) but ARG-AUT was a COMPETITIVE 2-0. Austria fought the whole match. Competitive underdogs trailing 1-0 or 2-0 = more cards (fighting to come back) AND more player SOT (desperate captain). Our AUT-JOR calibration assumed Austria would be comfortable — wrong context. Going forward: if expected winning margin is 2 goals or fewer, treat as COMPETITIVE match. Only suppress cards/player-SOT in genuine BLOWOUT territory (3+ goal expected margin)."
+  },
+  "final_submission_estimates": {
+    "Q1": {"estimate": 0.40, "notes": "ARG high-line confirmed; AUT runners in chasing mode"},
+    "Q2": {"estimate": 0.12, "notes": "RULE7 + AUT-JOR confirmation: extreme underdogs get fewer 2H SOT"},
+    "Q3": {"estimate": 0.44, "notes": "Model-based; no strong rule overrides"},
+    "Q4": {"estimate": 0.16, "notes": "RULE7 + AUT-JOR: dominant team always gets more corners"},
+    "Q5": {"estimate": 0.73, "notes": "PRELIMINARY - pending Smarkets for RULE1 avg. Use 0.73 if no API pull."},
+    "Q6": {"estimate": 0.52, "notes": "Model 52.7%; crowd likely under-prices due to GD1 high-scoring bias"},
+    "Q7": {"estimate": 0.28, "notes": "AUT-JOR confirms: dominant wins have <4 cards"},
+    "Q8": {"estimate": 0.65, "notes": "AUT-JOR warns: dominant teams can fall below 6 SOT; revised multiplier"},
+    "Q9": {"estimate": 0.68, "notes": "ARG form + lambda; dominant favorites score in 2H pattern"},
+    "Q10": {"estimate": 0.18, "notes": "BOMBSHELL: Sabitzer 0 SOT as dominant player. Best edge in batch."}
+  }
+}

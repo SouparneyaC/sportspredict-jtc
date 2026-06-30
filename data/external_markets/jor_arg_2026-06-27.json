@@ -1,0 +1,159 @@
+{
+  "match": "Jordan vs Argentina",
+  "date": "2026-06-27",
+  "stage": "Group Stage 3 (GD3)",
+  "espn_event_ids": {"ALG_vs_ARG_GD1": 760433, "JOR_vs_AUT_GD1": 760431, "ALG_vs_JOR_GD2": 760455, "AUT_vs_ARG_GD2": 760456},
+  "smarkets_event_id": 45086951,
+  "group_context": {
+    "Argentina": {"pts": 6, "record": "2-0-0 (W3-0 ALG, W2-0 AUT)", "status": "Already qualified, perfect record, ZERO goals conceded all tournament"},
+    "Jordan": {"pts": 0, "record": "0-0-2 (L1-3 AUT, L1-2 ALG)", "status": "ELIMINATED — facing the toughest remaining test in the group"}
+  },
+  "wc2026_espn_stats": {
+    "ARG": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760433, "opponent": "Algeria", "result": "W 3-0", "fouls": 13, "SOT": 6, "offsides": 3, "YC": 0, "RC": 0, "corners": 2, "possession": 47.8},
+        {"event_id": 760456, "opponent": "Austria", "result": "W 2-0", "fouls": 13, "SOT": 5, "offsides": 2, "YC": 2, "RC": 0, "corners": 1, "possession": 53.6}
+      ],
+      "averages": {"fouls": 13.0, "SOT": 5.5, "offsides": 2.5, "cards": 1.0, "corners": 1.5},
+      "PRIOR_LESSON": "ARG-AUT Q7 confirmed Argentina is a CLINICAL, low-event winner — scored 2 with fewer than 6 SOT, and corners were also unusually low (1) despite dominance. Naive goals-to-SOT multipliers overestimate their shot/corner volume; their wins come from conversion efficiency, not overwhelming volume."
+    },
+    "JOR": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760431, "opponent": "Austria", "result": "L 1-3", "fouls": 7, "SOT": 4, "offsides": 1, "YC": 0, "RC": 0, "corners": 3, "possession": 36.8},
+        {"event_id": 760455, "opponent": "Algeria", "result": "L 1-2", "fouls": 11, "SOT": 4, "offsides": 1, "YC": 1, "RC": 0, "corners": 1, "possession": 27.9}
+      ],
+      "averages": {"fouls": 9.0, "SOT": 4.0, "offsides": 1.0, "cards": 0.5, "corners": 2.0},
+      "PRIOR_LESSON_FOULS": "JOR-ALG Q1 was our worst result of that match (-23.23): we trusted Jordan's lower season-average fouls (vs Algeria's higher one) and ignored match script — Jordan led 1-0 and spent the second half DEFENDING, fouling MORE than their average because the defending team fouls more regardless of historical base rates. Jordan will be defending for nearly the ENTIRE match against Argentina (much more so than against Algeria) — apply this lesson with full force, not partial.",
+      "PRIOR_LESSON_ALTAMARI": "JOR-ALG Q10 was our biggest win of that match (+13.11): Al-Tamari (also spelled Al-Taamari) delivered 1+ SOT off his club base rate (0.76 SOT/game at Rennes) as Jordan's primary attacking outlet, beating a too-low crowd. He remains Jordan's main threat, but today's bar is harder (score OR assist, not just SOT) against a defense that has conceded zero goals all tournament."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Jordan": 0.0401, "Argentina": 0.8659, "Draw": 0.0986, "liquid": true},
+    "Penalty": {"Yes": 0.3275, "No": 0.6756, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1103, "No": 0.8930, "liquid": true},
+    "OU2_5": {"Under": 0.3691, "Over": 0.6310, "liquid": true},
+    "JOR_OU0_5_goals_fullmatch": {"Under": 0.6175, "Over": 0.3819, "liquid": true},
+    "JOR_2H_OU0_5_goals": {"Under": 0.7728, "Over": 0.2261, "liquid": true},
+    "ARG_SOT_OU6_5_fullmatch": {"Under": 0.5630, "Over": 0.4365, "liquid": true, "implied_lambda": 6.27},
+    "player_score_or_assist": {"Musa_Al_Tamari": {"offer": 0.1562, "adjusted": 0.148}}
+  },
+  "context_flags": [
+    "ARGENTINA_PERFECT_DEFENSE: 0 goals conceded across 2 WC2026 matches — the strongest defensive record of any team analyzed this session, even ahead of Spain's. Suppresses every Jordan attacking prop hard.",
+    "EXTREME_MISMATCH: Argentina 86.59% favorite, comparable in scale to NZL-BEL and PAN-ENG.",
+    "ARG_CLINICAL_NOT_VOLUME: per the ARG-AUT lesson, do not assume Argentina's dominance translates into huge SOT/corner counts — they win efficiently, not by overwhelming shot volume.",
+    "JOR_FOUL_SCRIPT_OVERRIDE: today is the clearest possible case for the JOR-ALG foul-script lesson — Jordan will defend almost the entire match, which should push their foul count well above the raw historical average."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Argentina have at least 1 corner kick in the first half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Argentina's corner average is surprisingly low (1.5/game) even in dominant wins — consistent with their clinical, low-volume profile. Even half-split (λ_1H≈0.75) gives P(≥1)=0.53. Against a much weaker Jordan than either prior opponent, nudge up slightly for the extra pressure expected.",
+      "final_estimate": 0.58,
+      "direction": "YES lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 2,
+      "text": "Will Jordan be caught offside 2 or more times?",
+      "pick_tier": "MEDIUM CONFIDENCE — FLOOR APPLIED",
+      "reasoning": "Jordan offsides: exactly 1 in both prior matches. Raw Poisson (λ=1.0) gives only 0.26, but per the standing floor rule ('never go below 0.25 on any 2+ offsides question') and the blowout-reversal pattern (a team being run over can abandon shape and chase late, raising offside risk), set modestly above the raw number given this is their most lopsided matchup yet.",
+      "final_estimate": 0.32,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "medium"
+    },
+    {
+      "q": 3,
+      "text": "Will Jordan commit more fouls than Argentina?",
+      "pick_tier": "HIGH CONFIDENCE — LESSON APPLIED",
+      "reasoning": "Raw season-average comparison (JOR 9.0 vs ARG 13.0) gives only 0.06 — but this is exactly the setup that cost us -23.23 in JOR-ALG: ignoring match script. Jordan will spend almost the entire match defending against a vastly superior opponent, which the JOR-ALG postmortem explicitly identified as the dominant driver of foul counts, overriding season averages. Apply the lesson with full force given this is an even more lopsided matchup.",
+      "final_estimate": 0.42,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Argentina have more shots on target than Jordan in the second half?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Half-split Skellam off full-match averages (ARG λ_2H=2.75, JOR λ_2H=2.0) gives 0.54. Jordan's own SOT output (4.0 avg) has actually been respectable even in losses, and Argentina's clinical/low-volume profile caps this from going much higher.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "pick_tier": "HIGH CONFIDENCE",
+      "reasoning": "Direct compound market: Penalty Yes=32.75%, Any sent off Yes=11.03%. P(OR)=1-(0.6725×0.8897)=0.4017.",
+      "final_estimate": 0.40,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Jordan score at least 1 goal?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Jordan over 0.5 goals = 38.19%. Jordan has scored in both WC2026 matches so far, but Argentina's zero-goals-conceded record this tournament is the toughest defensive test they've faced. Trust the market.",
+      "final_estimate": 0.38,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will the match have 2 or fewer total goals?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Under2.5 = 36.91%. Despite the mismatch, Argentina's clinical (not high-volume) scoring style keeps total goals from ballooning as much as the raw FTR gap might suggest.",
+      "final_estimate": 0.37,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Jordan score in the second half?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Jordan 2H over 0.5 goals = 22.61%.",
+      "final_estimate": 0.23,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will Mousa Al-Taamari score or assist a goal (excluding own goals)?",
+      "pick_tier": "MEDIUM CONFIDENCE",
+      "reasoning": "Illiquid offer (0.1562, adjusted ×0.945=0.148). He's Jordan's confirmed primary attacking weapon (delivered 1+ SOT vs Algeria off a strong club base rate), but the bar today is higher (score OR assist) against the tournament's best defense by goals-conceded. Trust the market near-raw.",
+      "final_estimate": 0.16,
+      "direction": "NO (strong)",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will Argentina have 6 or more shots on target?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Market-implied lambda from the Over6.5 SOT line (4.37 multiplier→λ=6.27) gives P(≥6)=0.60. Trimmed down per the ARG-AUT lesson that Argentina's clinical wins consistently produce lower SOT counts than naive market/lambda extrapolation suggests (they had fewer than 6 SOT in BOTH of their wins so far, including a game with similar lambda assumptions).",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_ARG_1plus_1H_corner": 0.58,
+    "Q2_JOR_2plus_offsides": 0.32,
+    "Q3_JOR_more_fouls": 0.42,
+    "Q4_ARG_more_2H_SOT": 0.52,
+    "Q5_penalty_or_red": 0.40,
+    "Q6_JOR_scores": 0.38,
+    "Q7_2_or_fewer_goals": 0.37,
+    "Q8_JOR_scores_2H": 0.23,
+    "Q9_AlTamari_score_or_assist": 0.16,
+    "Q10_ARG_6plus_SOT": 0.50
+  },
+  "strongest_picks": [
+    "Q3: Jordan more fouls = 0.42 (HIGH CONFIDENCE — direct corrective application of the JOR-ALG match-script lesson, the clearest such case yet)",
+    "Q8: Jordan scores in 2H = 0.23 (HIGH CONFIDENCE — direct market against the tournament's best defense)",
+    "Q10: Argentina 6+ SOT = 0.50 (MEDIUM-HIGH — direct correction of the market's naive lambda using Argentina's own clinical-win pattern)"
+  ],
+  "post_match_results": null,
+  "created": "2026-06-27"
+}

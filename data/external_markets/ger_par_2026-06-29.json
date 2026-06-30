@@ -1,0 +1,243 @@
+{
+  "match": "Germany vs Paraguay",
+  "date": "2026-06-29",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {"this_match": 760489, "GER_vs_CUR": 760422, "CIV_vs_GER": 760448, "GER_vs_ECU": 760468, "PAR_vs_USA": 760417, "PAR_vs_TUR": 760443, "PAR_vs_AUS": 760469},
+  "smarkets_event_id": 45159782,
+  "prior_lessons_consulted": ["ger_cur_2026-06-14.json", "ger_civ_2026-06-20.json", "ger_ecu_2026-06-25.json", "usa_par_2026-06-13.json", "tur_par_2026-06-20.json", "par_aus_2026-06-25.json"],
+  "knockout_context": {
+    "Germany": {"group_record": "2W-1L, 6pts, GD+6 (7-1 CUR, 2-1 CIV, then a 1-2 LOSS to Ecuador)", "status": "Heavy favorite today (71.9% straight win, 85.8% to qualify) despite the group-stage loss"},
+    "Paraguay": {"group_record": "1W-1D-1L, 4pts, GD-2 (1-4 loss to USA, 1-0 win at Turkey, 0-0 draw vs Australia)", "status": "Clear underdog (9.5% straight win)"}
+  },
+  "wc2026_espn_stats": {
+    "GER": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760422, "opponent": "Curacao", "result": "W 7-1", "fouls": 18, "SOT": 12, "offsides": 0, "YC": 0, "RC": 0, "corners": 8, "possession": 64.6},
+        {"event_id": 760448, "opponent": "Ivory Coast", "result": "W 2-1", "fouls": 5, "SOT": 7, "offsides": 0, "YC": 0, "RC": 0, "corners": 8, "possession": 59.5},
+        {"event_id": 760468, "opponent": "Ecuador", "result": "L 1-2", "fouls": 10, "SOT": 3, "offsides": 0, "YC": 1, "RC": 0, "corners": 2, "possession": 61.1}
+      ],
+      "averages": {"fouls": 11.0, "SOT": 7.33, "offsides": 0.0, "YC": 0.33, "RC": 0.0, "corners": 6.0},
+      "OFFSIDE_FLAG": "Zero offsides in all 3 matches — a fully consistent, not small-sample, signal. Germany's attacking line either plays very disciplined timing or the opposition's defensive setups haven't caught them out. Strongly suppresses Germany's contribution to today's combined-offside question (Q14).",
+      "CRITICAL_LESSON_GER_ECU_ROTATION": "the Ecuador loss was explicitly a ROTATED-SQUAD performance (ger_ecu_2026-06-25.json's own postmortem: 'a rotated Germany,' 'RULE_OFFSIDE_DEFENSIVE_SHAPE — rotated Germany plays a lower defensive line'). Germany's SOT collapsed to 3 in that game vs 12 and 7 in the other two. Today is a must-win knockout match — Germany should field a full-strength XI, so the GER-CUR/GER-CIV attacking output (SOT 12, 7) is the more representative baseline for today's player props (Havertz, Musiala, Wirtz) than the rotated Ecuador numbers. Do NOT let the most recent (Ecuador) result anchor today's confidence downward — that was a low-stakes, weakened-lineup match by design."
+    },
+    "PAR": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760417, "opponent": "United States", "result": "L 1-4", "fouls": 17, "SOT": 1, "offsides": 1, "YC": 5, "RC": 0, "corners": 1, "possession": 34.7},
+        {"event_id": 760443, "opponent": "Türkiye", "result": "W 1-0 (away)", "fouls": 15, "SOT": 2, "offsides": 3, "YC": 1, "RC": 1, "corners": 0, "possession": 21.5},
+        {"event_id": 760469, "opponent": "Australia", "result": "D 0-0", "fouls": 9, "SOT": 2, "offsides": 0, "YC": 1, "RC": 0, "corners": 1, "possession": 44.0}
+      ],
+      "averages": {"fouls": 13.67, "SOT": 1.67, "offsides": 1.33, "YC": 2.33, "RC": 0.33, "corners": 0.67},
+      "ATTACKING_OUTPUT_FLAG": "Extremely low attacking output across the board — 1.67 team SOT/game, 0.67 corners/game. This is a genuinely low-volume attacking team, not just an underdog having one bad game (consistent across a win, a loss, and a draw).",
+      "PRIOR_LESSON_ENCISO_DIRECT": "tur_par_2026-06-20.json Q10 is a DIRECT precedent on the exact same player and question type: Enciso recorded 0 SOT despite Paraguay winning 0-1, and a 'mild RULE15' suppression on the Paraguay forward was confirmed correct (+3.37 RBP). Today's Enciso question (Q8) should apply the same suppression logic, reinforced further by Paraguay's even-lower-than-that-game team SOT ceiling and a much bigger talent gap against Germany than they faced against Turkey."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Germany": 0.7194, "Paraguay": 0.0952, "Draw": 0.1852, "liquid": true},
+    "To_qualify": {"Germany": 0.8584, "Paraguay": 0.1472, "liquid": true},
+    "Will_there_be_ET": {"Yes": 0.1899, "No": 0.8156, "liquid": true},
+    "Will_there_be_pen_shootout": {"Yes": 0.0896, "No": 0.9156, "liquid": true},
+    "BTTS": {"Yes": 0.4674, "No": 0.5392, "liquid": true},
+    "OU2_5_goals": {"Under": 0.4330, "Over": 0.5636, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.6270, "Over": 0.3854, "liquid": true},
+    "Germany_SOT_OU6_5": {"Under": 0.4985, "Over": 0.4985, "liquid": true},
+    "Germany_corners_OU6_5": {"Under": 0.5648, "Over": 0.4404, "liquid": true},
+    "Germany_score_both_halves": {"Yes": 0.4500, "No": 0.5503, "liquid": true},
+    "HT_result": {"Germany": 0.5450, "Paraguay": 0.1032, "Draw": 0.3521, "liquid": true},
+    "Goal_1_time_bracket": {"1-10": 0.2240, "11-20": 0.1957, "21-30": 0.1509, "31-40": 0.1151, "41-50": 0.1003, "51-60": 0.0634, "61-70": 0.0436, "71-80": 0.0306, "81-90": 0.0319, "None": 0.0550, "liquid": true},
+    "Team_to_score_first_goal": {"Germany": 0.7189, "Paraguay": 0.2375, "No goal": 0.0477, "liquid": true},
+    "player_markets": {"Kai_Havertz_anytime_goalscorer": {"offer": 0.40, "adjusted": 0.378}, "Jamal_Musiala_2plus_SOT": {"offer": 0.2941, "adjusted": 0.278}, "Julio_Enciso_1plus_SOT": {"offer": 0.4808, "adjusted": 0.454}, "Florian_Wirtz_score_or_assist": {"offer": 0.50, "adjusted": 0.4725}}
+  },
+  "context_flags": [
+    "ROTATED_GAME_DO_NOT_ANCHOR: Germany's most recent result (the Ecuador loss) was a rotated-squad, low-stakes performance per the GER-ECU postmortem — explicitly do not treat it as representative of today's full-strength knockout lineup. Player props (Havertz, Musiala, Wirtz) are anchored to the live market plus the GER-CUR/GER-CIV full-strength baseline, not the Ecuador numbers.",
+    "GER_ZERO_OFFSIDES_3_FOR_3: a fully consistent (not small-sample) signal — suppresses Germany's contribution to the combined offside question (Q14) toward Paraguay's side almost entirely.",
+    "PAR_LOW_ATTACKING_CEILING: 1.67 team SOT/game and 0.67 corners/game across a win, loss, and draw — this is a durable team trait, not match-specific variance. Directly informs the Enciso suppression (Q8) beyond just the RULE15 underdog logic.",
+    "ENCISO_DIRECT_PRECEDENT: same exact player, same exact question type, already confirmed once this tournament (TUR-PAR, +3.37 RBP) — applying the same suppression logic again, reinforced by an even bigger talent gap and Paraguay's measured team SOT ceiling."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Kai Havertz (Germany) score a goal (excluding own goals) in regulation?",
+      "pick_tier": "MARKET-ANCHORED — HIGH CONFIDENCE",
+      "reasoning": "Illiquid offer-only price (0.40, adjusted ×0.945=0.378). Trusted near-raw — Germany should field a full-strength front line in a must-win knockout match, consistent with their GER-CUR/GER-CIV output rather than the rotated Ecuador game.",
+      "final_estimate": 0.38,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will a goal be scored before the first hydration break?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "'Goal 1 time bracket' market: P(first goal ≤24') = 0.2240+0.1957+0.4×0.1509 = 0.4801. Given Germany's heavy favorite status and tendency to score early/often against weaker opposition (7-1, 2-1 group wins), this is plausibly a slight underestimate, but the market already prices Germany's quality in — trust it directly.",
+      "final_estimate": 0.48,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will Germany win in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct regulation-scoped market: Full-time result Germany = 71.94%. (Distinct from the 'To qualify' market at 85.84%, which includes ET/penalties and is not what this question asks.)",
+      "final_estimate": 0.72,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Jamal Musiala (Germany) have 2 or more shots on target in regulation?",
+      "pick_tier": "MARKET-ANCHORED — HIGH CONFIDENCE",
+      "reasoning": "Illiquid offer-only price (0.2941, adjusted ×0.945=0.278). Trusted near-raw for the same full-strength-lineup reasoning as Havertz.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will there be 4 or more total cards shown in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over3.5 cards = 38.54%. Consistent with Germany's very clean disciplinary record (0.33 YC/game) somewhat offsetting Paraguay's more combative one (2.33 YC/game, plus a red card vs Turkey).",
+      "final_estimate": 0.39,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Germany score the first goal of the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: 'Team to score first goal' Germany = 71.89%.",
+      "final_estimate": 0.72,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will Germany have 7 or more shots on target in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Germany Over6.5 SOT = 49.85%. Note this sits well above Germany's rotated-game SOT of 3 but in line with their full-strength games (12, 7) — the market has already correctly anchored to a full-strength expectation, consistent with the ROTATED_GAME_DO_NOT_ANCHOR flag.",
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Julio Enciso (Paraguay) have 1 or more shots on target in regulation?",
+      "pick_tier": "MEDIUM-HIGH CONFIDENCE — LESSON-SUPPRESSED",
+      "reasoning": "Illiquid offer-only price (0.4808, adjusted ×0.945=0.454) is too high given direct precedent: this exact player, same question type, already showed 0 SOT in a Paraguay WIN (TUR-PAR, mild RULE15 confirmed, +3.37 RBP). Paraguay's team-wide SOT ceiling is just 1.67/game — asking one player to clear even a 1-SOT bar against a much stronger Germany defense than Turkey's is a harder ask than the market reflects. Suppressed meaningfully below the market-adjusted figure.",
+      "final_estimate": 0.32,
+      "direction": "NO lean",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 9,
+      "text": "Will both teams score in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: BTTS Yes = 46.74%.",
+      "final_estimate": 0.47,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will Germany score in both halves of regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market that exactly matches the question wording: 'Germany to score in both halves' Yes = 45.00%.",
+      "final_estimate": 0.45,
+      "direction": "TOSS-UP",
+      "confidence": "high"
+    },
+    {
+      "q": 11,
+      "text": "Will Florian Wirtz (Germany) score or assist a goal (excluding own goals) in regulation?",
+      "pick_tier": "MARKET-ANCHORED — HIGH CONFIDENCE",
+      "reasoning": "Illiquid offer-only price (0.50, adjusted ×0.945=0.4725). Trusted near-raw — Wirtz is one of Germany's most heavily-involved creative players and should see a full-strength role today.",
+      "final_estimate": 0.47,
+      "direction": "TOSS-UP (slight NO)",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will Germany have 7 or more corner kicks in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Germany Over6.5 corners = 44.04%.",
+      "final_estimate": 0.44,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 13,
+      "text": "Will Germany be ahead at halftime?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct HT market: Germany = 54.50%. The relatively high HT-draw price (35.21%) keeps this below Germany's full-match win probability, a sensible cautious-start discount the market already applies.",
+      "final_estimate": 0.55,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 14,
+      "text": "Will there be 3 or more offside calls in regulation?",
+      "pick_tier": "MEDIUM CONFIDENCE — NO MARKET, MODELED, FLOOR APPLIED",
+      "reasoning": "No structured offside market exists for this event (confirmed, same gap as prior knockout matches). Combined ESPN offside average (GER 0.0 + PAR 1.33 = 1.33) gives a raw Poisson P(≥3)=0.15 — below the standing FLOOR_0.25 rule for count-stat threshold questions. Set at the floor plus a small buffer for blowout-chasing risk, since Germany's heavy favorite status raises the chance Paraguay pushes players forward desperately if behind, elevating late-match offside risk on their side specifically.",
+      "final_estimate": 0.30,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 15,
+      "text": "Will the match have 3 or more total goals in regulation?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct market: Over2.5 goals = 56.36%.",
+      "final_estimate": 0.56,
+      "direction": "YES lean",
+      "confidence": "high"
+    }
+  ],
+  "summary_table": {
+    "Q1_Havertz_scores": 0.38,
+    "Q2_goal_before_1st_break": 0.48,
+    "Q3_GER_wins_regulation": 0.72,
+    "Q4_Musiala_2plus_SOT": 0.28,
+    "Q5_4plus_cards": 0.39,
+    "Q6_GER_scores_first": 0.72,
+    "Q7_GER_7plus_SOT": 0.50,
+    "Q8_Enciso_SOT": 0.32,
+    "Q9_BTTS_regulation": 0.47,
+    "Q10_GER_scores_both_halves": 0.45,
+    "Q11_Wirtz_score_or_assist": 0.47,
+    "Q12_GER_7plus_corners": 0.44,
+    "Q13_GER_ahead_HT": 0.55,
+    "Q14_3plus_offsides": 0.30,
+    "Q15_3plus_goals": 0.56
+  },
+  "strongest_picks": [
+    "Q3 / Q6: Germany wins in regulation / scores first = 0.72 each (HIGH CONFIDENCE — direct markets, correctly NOT anchored to the rotated-squad Ecuador loss)",
+    "Q8: Enciso 1+ SOT = 0.32 (MEDIUM-HIGH — direct repeat of an already-confirmed RULE15 suppression on this exact player, reinforced by Paraguay's measured team SOT ceiling)",
+    "Q14: 3+ offsides = 0.30 (MEDIUM — floor-respecting model given Germany's fully consistent 0-offside record across 3 matches)"
+  ],
+  "post_match_results": {
+    "actual_score": "Germany 4-5 Paraguay",
+    "winner": "Paraguay",
+    "match_rbp_total": -0.17,
+    "questions_beat_crowd": 10,
+    "questions_below_crowd": 5,
+    "note": "MASSIVE UPSET, but the shape matters: Q15 ('3+ total goals in regulation') settled NO, meaning regulation itself was low-scoring (<3 goals) and the wild 4-5 aggregate was disproportionately built in extra time — this was a tense, high-pressing, low-conversion regulation period (high offside count, Enciso breaking through on SOT) followed by an ET goal-fest, NOT Germany simply getting outscored in normal play. This is the SAME opponent (Germany) and a structurally similar mechanism to the GER-ECU group-stage upset two matches ago (an underdog's knockout-stakes performance breaking their measured ceiling) — Germany has now been upset by an underperforming-on-paper opponent twice in a row, though the GER-PAR upset specifically required extra time to complete.",
+    "question_results": {
+      "Q1": {"question": "Havertz scores?", "outcome": "YES", "us": 0.38, "crowd": 0.39, "rbp": 3.32, "vs_crowd": "beat"},
+      "Q2": {"question": "Goal before 1st break?", "outcome": "NO", "us": 0.48, "crowd": 0.46, "rbp": 1.08, "vs_crowd": "beat"},
+      "Q3": {"question": "Germany wins in regulation?", "outcome": "NO", "us": 0.72, "crowd": 0.72, "rbp": 3.5, "vs_crowd": "beat", "notes": "Tied with crowd almost exactly — both badly wrong direction (Germany lost), but RBP was still mildly positive due to tie-break. The market itself (71.9% German win) was the source of the miscalibration, not our application of it."},
+      "Q4": {"question": "Musiala 2+ SOT?", "outcome": "NO", "us": 0.28, "crowd": 0.33, "rbp": 17.21, "vs_crowd": "beat"},
+      "Q5": {"question": "4+ cards?", "outcome": "NO", "us": 0.39, "crowd": 0.46, "rbp": 16.06, "vs_crowd": "beat"},
+      "Q6": {"question": "Germany scores first?", "outcome": "NO", "us": 0.72, "crowd": 0.70, "rbp": -1.99, "vs_crowd": "below", "notes": "Paraguay scored first in a match that ended up a 9-goal shootout — directly contradicts the favorite-scores-first assumption in a chaotic, high-event match."},
+      "Q7": {"question": "Germany 7+ SOT?", "outcome": "NO", "us": 0.50, "crowd": 0.50, "rbp": 5.34, "vs_crowd": "beat"},
+      "Q8": {"question": "Enciso 1+ SOT?", "outcome": "YES", "us": 0.32, "crowd": 0.45, "rbp": -26.3, "vs_crowd": "below", "notes": "WORST RESULT. Directly contradicts the TUR-PAR RULE15-suppression precedent we trusted (Enciso 0 SOT there). In a wild 5-goal attacking explosion, Paraguay's whole team — including their previously-suppressed forward — broke through. The lesson 'this exact player was suppressed before' does NOT transfer when the team's entire attacking ceiling is shattered by match context; RULE15 precedent on an individual player is only as good as the team-context assumptions underneath it."},
+      "Q9": {"question": "BTTS regulation?", "outcome": "YES", "us": 0.47, "crowd": 0.44, "rbp": 9.08, "vs_crowd": "beat"},
+      "Q10": {"question": "Germany scores both halves?", "outcome": "NO", "us": 0.45, "crowd": 0.49, "rbp": 12.03, "vs_crowd": "beat"},
+      "Q11": {"question": "Wirtz score or assist?", "outcome": "YES", "us": 0.47, "crowd": 0.46, "rbp": 6.55, "vs_crowd": "beat"},
+      "Q12": {"question": "Germany 7+ corners?", "outcome": "YES", "us": 0.44, "crowd": 0.49, "rbp": -6.58, "vs_crowd": "below"},
+      "Q13": {"question": "Germany ahead at HT?", "outcome": "NO", "us": 0.55, "crowd": 0.56, "rbp": 4.92, "vs_crowd": "beat"},
+      "Q14": {"question": "3+ offside calls?", "outcome": "YES", "us": 0.30, "crowd": 0.53, "rbp": -48.68, "vs_crowd": "below", "notes": "2ND-WORST RESULT EVER (after BRA-MAR's -51.97). We floored this at 0.30 per FLOOR_0.25 logic, treating Germany's 0-offside record as suppressive — but per Q15, regulation itself was tense and low-scoring (<3 goals), meaning this was a high-pressing, transition-heavy, low-conversion 90 minutes (lots of attacking forays breaking down at the back line) rather than a clinical match. The crowd's 0.53 correctly priced in that kind of grinding, end-to-end-without-finishing match shape that our floor-based model, anchored to Germany's clean group-stage offside record, didn't weight heavily enough. CRITICAL: FLOOR_0.25 prevents going TOO low but doesn't protect against a genuinely scrappy, high-pressing match blowing past a moderate floor."},
+      "Q15": {"question": "3+ total goals in regulation?", "outcome": "NO", "us": 0.56, "crowd": 0.57, "rbp": 4.3, "vs_crowd": "beat", "notes": "KEY DIAGNOSTIC: confirms regulation itself stayed under 3 total goals despite the 4-5 final aggregate — the dramatic scoring happened disproportionately in extra time. Reframes Q14's offside outcome (YES, 3+ in regulation) and Q8's Enciso breakthrough as a high-pressing, transition-heavy, low-conversion regulation period rather than an open shootout, with the actual goal explosion arriving later in ET."}
+    }
+  },
+  "created": "2026-06-29"
+}

@@ -1,0 +1,17 @@
+date_discovered,namespace,method,endpoint,auth_required,status_observed,description,confirmed,notes
+2026-06-27,v1,GET,/api/v1/matches,Bearer token,200,All matches (open + closed) with IDs and closing times,TRUE,Existing - used by fetch_markets.py
+2026-06-27,v1,GET,/api/v1/markets?match_id={id},Bearer token,200,Open markets for a specific match,TRUE,Existing - used by fetch_markets.py
+2026-06-27,v1,GET,/api/v1/markets?match_id={id}&status=settled,Bearer token,200 empty,Settled markets - returns empty array,TRUE,Empty array even for long-settled matches - data withheld
+2026-06-27,web,GET,/api/trades?q={user_id+event_id},Session cookie,200,All user predictions in event - outcomes + RBP scores,PARTIAL,AbirC had 0 trades; response shape unconfirmed; primary target endpoint
+2026-06-27,web,GET,/api/lobbies/second-chance/rank/{eventId}/{lobbyId},Session cookie + Bearer,200,User rank position in a specific lobby,PARTIAL,Confirmed captured by network tool; 401 from manual JS call - needs Playwright
+2026-06-27,web,POST,/api/lobbies/leaderboard,Session cookie + Bearer,201,Full lobby leaderboard paginated,PARTIAL,Confirmed by network tool; request body shape unknown
+2026-06-27,web,GET,/api/lobbies/lobby-stats/me,Session cookie + Bearer,200,Current user lobby stats summary,PARTIAL,Confirmed by network tool
+2026-06-27,web,GET,/api/users/score/{userId},Session cookie,200,Overall aggregate score for user,PARTIAL,Returns array; AbirC had empty array
+2026-06-27,web,GET,/api/events/user-events?userId={userId},Session cookie + Bearer,200,List of events user is participating in,PARTIAL,Confirmed by network tool; 401 from manual JS call
+2026-06-27,web,GET,/api/events/user-events/summary?userId={userId},Session cookie + Bearer,200,Per-event score and rank summary,PARTIAL,Confirmed by network tool; 401 from manual JS call
+2026-06-27,web,GET,/api/markets?q={event_id+lobby_id},Session cookie,200,Markets in event/lobby (web query format),PARTIAL,Different query format from v1 - uses JSON object in q param
+2026-06-27,web,GET,/api/notifications/list-open-market/{eventId},Session cookie,200,Open market notifications for event,PARTIAL,Confirmed by network tool
+2026-06-27,web,GET,/api/notifications/list,Session cookie,200,All notifications for current user,PARTIAL,Confirmed by network tool
+2026-06-27,web,GET,/api/users/achievements/fetch,Session cookie,200,User achievements,PARTIAL,Confirmed by network tool
+2026-06-27,web,GET,/api/users/trades/check-25,Session cookie,200,Check if user has reached 25 trades milestone,PARTIAL,Confirmed by network tool
+2026-06-27,web,POST,/api/users/smart-rating,Session cookie,201,SMART rating for global leaderboard,PARTIAL,Confirmed by network tool on /leaderboard page load

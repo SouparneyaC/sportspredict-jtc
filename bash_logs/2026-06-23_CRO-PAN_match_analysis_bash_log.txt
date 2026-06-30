@@ -1,0 +1,158 @@
+CROATIA vs PANAMA — WC2026 Group L GD2
+Pre-match Analysis Bash Log
+Date: 2026-06-23
+
+=== COMMANDS RUN ===
+
+1. grep -i "croatia|panama" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Croatia,1973.5928 | Panama,1859.0601
+
+2. cat sportspredict_research/data/processed/poisson_goals_coefs.json
+OUTPUT: intercept=0.10408, elo_diff_coef=0.0018099, home_advantage=0.23022
+
+3. cat sportspredict_research/data/processed/ordered_logit_coefs.json
+OUTPUT: b_elo=0.005199, b_home=0.3771, c1=-0.7702, c2=0.5549
+
+4. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff: 114.53 (CRO − PAN; highly competitive range)
+  lambda_CRO: 1.3653
+  lambda_PAN: 0.9019
+  lambda_total: 2.2672
+  P(CRO scores): 0.7447
+  P(PAN scores): 0.5942
+  P(BTTS): 0.4425
+  P(total >= 3): 0.4038
+  P(CRO win): 0.5101
+  P(Draw): 0.2865  → RULE8 FIRES
+  P(PAN win): 0.2034
+
+5. python3 compound calculations:
+OUTPUT:
+  Q2 P(Panama 2+ offsides | lambda=1.0): 0.2642
+  Q4 P(Croatia first 2H goal): 0.4084
+  Q4 P(at least 1 2H goal): 0.6781
+  Q4 CRO rate share in 2H: 0.6022
+  Q7 P(9+ corners | lambda_total=7): 0.2710
+  Q7 P(9+ corners | lambda_total=6): 0.1528
+  Q8 P(Panama 3+ SOT | lambda=3.0): 0.5768
+  Q8 P(Panama 3+ SOT | lambda=4.0 GD1 base): 0.7619
+  Market Croatia win: 0.6875
+  Model Croatia win: 0.5101
+  Market/Model gap: 0.1774
+  Blended Croatia win: 0.5988
+  BTTS Yes market implied: 0.5349
+  BTTS No market implied: 0.5215
+  Model P(PAN scores): 0.5942
+  Model P(CRO scores): 0.7447
+
+6. Read data/external_markets/eng_cro_2026-06-17.json
+OUTPUT:
+  Luka Sučić: listed as "UNUSED SUBSTITUTE" in ENG-CRO (Real Sociedad)
+  Petar Sučić: starter, 90 min (Inter Milan) — set up Baturina goal
+  Croatia fouls in GD1: 12 (vs England)
+  Croatia corners in GD1: 2 (vs England)
+  Croatia historical avg fouls: 13.0/game
+  CRITICAL IDENTITY CHECK: Two different players share surname "Sučić"
+
+7. Research agent spawned (research-only, no API calls):
+   Sources: FIFA, ESPN, FootyMetrics, FanDuel, DraftKings, FOX Sports, BBC Sport,
+   Sports Mole, Opta Analyst, RefStats.app, WhoScored, footystats
+   Key findings recorded below.
+
+=== KEY FINDINGS ===
+
+RULES APPLIED:
+- RULE8: FIRES (draw 28.65% > 25%). Survival match for BOTH teams (JOR-ALG caveat: apply cautiously; do NOT suppress attacking props aggressively; both teams will attack hard regardless of score)
+- RULE7: Does NOT fire on model (PAN 20.3% > 15%). DOES fire on market (PAN 14.3% < 15%). Partial RULE7 applied to Q9 (Fajardo player prop).
+- RULE15: FIRES for Fajardo (expected-losing-team forward; market PAN 14.3% = RULE7 territory). Does NOT apply to Croatia players.
+- RULE_FOULS: Croatia slight possession/control team. Panama expected to defend → Panama fouls more (direction). Croatia historical 13.0/game (magnitude — high baseline complicates Q1).
+- FLOOR_0.25: Applied as minimum on Q2 (offsides), Q7 (corners), Q9 (Fajardo), Q10 (Sučić).
+
+MARKET vs MODEL GAP:
+- CRO: Model 51% win, Market 68.75%. Gap: 17.7pp.
+- This is one of the largest model/market gaps in our analysis series.
+- Market accounts for Croatia's WC pedigree (finalist 2018, 3rd 2022) that Elo may underweight.
+- Downstream effect: Panama attacking props revised down 3-5pp; Croatia first-goal props revised up.
+- For Q3 (Panama more 2H SOT): crowd likely ~0.40; our estimate 0.30.
+
+CROATIA GD1 DATA (vs England, L 2-4):
+- Shots: 10, SOT: 8, Fouls: 12, Corners: 2, Offsides: 1, Possession: 38%
+- Both CRO goals in 1H. 0 goals in 2H despite chasing.
+- Historical WC corner record: under 6.5 corners in 8 consecutive WC matches.
+- Historical avg fouls: 13.0/game.
+- Luka Sučić (Real Sociedad) = UNUSED SUBSTITUTE in ENG-CRO.
+- Petar Sučić (Inter Milan) = STARTED ENG-CRO, 90 min, set up Baturina goal.
+
+PANAMA GD1 DATA (vs Ghana, L 0-1):
+- Shots: 12, SOT: 4, Fouls: 11, Corners: 2, Offsides: 1, Possession: 62%, Tackles: 29
+- 29 tackles = most by any team in WC2026 Round 1.
+- Scored 0 goals despite 62% possession. Ghana conceded one late goal (Jordi Mboula 85').
+- Blackman (YC 70') + Harvey (YC 90') both on YELLOW CARD WARNINGS for GD2.
+- Fajardo: came on at 62', 0 SOT in 28 min.
+- Despite 62% possession: only 2 corners. NOT a corner-generating team.
+
+LUKA SUČIĆ (Q10 subject):
+- Club: Real Sociedad (La Liga), Position: AM/W, Age: 23
+- Season SOT/90: 0.78 at Real Sociedad
+- GD1: UNUSED SUBSTITUTE vs England. Zero tournament minutes.
+- Expected to potentially start vs Panama (Croatia switching to 4-3-3 with fresh options needed)
+- Starting probability estimated at 42%. Sub 30%. Unused 28%.
+- No GD1 data is a significant handicap for calibration.
+- CROWD RISK: public may conflate Luka (Real Sociedad) with Petar (Inter Milan, started GD1).
+
+FAJARDO (Q9 subject):
+- Club: Universidad Católica (Ecuador), Position: ST, Age: 32
+- Season SOT/90: ~0.78
+- GD1: sub (62' on), 0 SOT in 28 min vs compact Ghana block defending 1-0 lead
+- Likely to START vs Croatia (must-win, Panama needs goals → use best striker from kick off)
+- Not listed on FanDuel/DraftKings scorer markets = MAIN_BOOK_ABSENCE rule signals <35%
+- RULE15 FULLY FIRES: Market PAN 14.3% win = RULE7-adjacent for player props
+- Reference: GHA-PAN Q10 history — crowd 0.39 (too high), correct was ~0.25-0.30 (RULE15 not applied)
+
+REFEREE — Pierre Atcho (Gabon):
+- Career avg: ~4.5 YC/game, ~0.2 RC/game
+- WC2026 GD1 assignment: Iraq vs Norway
+- Gave 4 yellows in GD1 — consistent with high-card profile
+- Both Panama's Blackman + Harvey already carded by Atcho or other referees in GD1
+- High-card environment favors Q5 = more cards overall, split likely to Panama (defending + on warnings)
+
+CORNER ANALYSIS (Q7):
+- Croatia GD1: 2 corners vs England (England had 8). Croatia under 6.5 in 8 WC matches.
+- Panama GD1: 2 corners despite 62% possession. Not a crossing/corner-forcing team.
+- Market: Under 9.5 corners at -150 (60% implied for under = 40% implied for ≥10).
+- Our P(≥9) with generous λ=7: 27.1%. With conservative λ=6: 15.3%.
+- GD1 hierarchy trumps market corner lines. Estimate: 0.30.
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.50 — Panama more fouls [COIN-FLIP: defending team (0.52 lean) vs Croatia 13.0/game avg]
+Q2: 0.32 — Panama 2+ offsides [Poisson 0.264; survival match adds minor counter-attack offside risk]
+Q3: 0.30 — Panama more 2H SOT [STRONG NO: market says Croatia 69% win; Croatia quality dominant in 2H]
+Q4: 0.42 — Croatia first 2H goal [Model 40.8%; survival match intensity calibrates upward slightly]
+Q5: 0.38 — Croatia more cards [NO: Panama physical + 2 players on warnings = Panama gets more]
+Q6: 0.55 — Panama scores ≥1 goal [YES: must-win attack + GD1 capability; model 59.4%]
+Q7: 0.30 — 9+ total corners [STRONG NO: 2+2=4 in GD1; Croatia WC history; generous Poisson 27%]
+Q8: 0.45 — Panama 3+ SOT [SLIGHT NO: GD1 4 SOT but vs Ghana; Croatia better defense; near coin-flip]
+Q9: 0.28 — Fajardo ≥1 SOT [RULE15 full + GD1 0 SOT + market absence + FLOOR_0.25 applied]
+Q10: 0.30 — Luka Sučić ≥1 SOT [Unused vs England; uncertain start status; identity confusion risk]
+
+=== EDGE RANKING ===
+
+RANK 1: Q7 0.30 STRONG NO — 9+ corners. GD1 evidence dominant. Crowd likely ~0.43.
+RANK 2: Q3 0.30 STRONG NO — Panama more 2H SOT. Croatia 69% market win dominance.
+RANK 3: Q9 0.28 NO — Fajardo. RULE15 full. GDA-PAN lesson confirmed.
+RANK 4: Q10 0.30 NO — Luka Sučić. Unused sub vs England. Crowd may mis-price (Luka/Petar confusion).
+RANK 5: Q5 0.38 NO — Croatia more cards. Panama physical + on warnings.
+RANK 6: Q6 0.55 YES — Panama scores. Survival attack + GD1 form.
+RANK 7: Q4 0.42 YES_LEAN — Croatia first 2H goal. Model ~41%.
+RANK 8: Q2 0.32 NO — Panama offsides. 1 in GD1; above floor.
+RANK 9: Q8 0.45 SLIGHT_NO — Panama 3+ SOT. Near coin-flip.
+RANK 10: Q1 0.50 COIN_FLIP — Fouls. Truly undecided.
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/cro_pan_2026-06-23.json — Full match analysis JSON
+2. THIS FILE: bash_logs/2026-06-23_CRO-PAN_match_analysis_bash_log.txt
+
+=== END LOG ===

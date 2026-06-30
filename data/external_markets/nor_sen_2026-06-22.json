@@ -1,0 +1,516 @@
+{
+  "match": "NOR-SEN",
+  "sportspredict_match_id": "c83e4786-8b8d-4f53-8aec-809f721a0555",
+  "sportspredict_url": "https://play.sportspredict.com/probability-events/aa5572ec-5930-4d99-b06b-f8966333d172/markets?matchId=c83e4786-8b8d-4f53-8aec-809f721a0555&marketId=0cc6a8f7-c900-49c4-a63d-2690d7062aa8",
+  "closing_time": "2026-06-22T00:00:00.000Z",
+  "venue": "MetLife Stadium, Philadelphia area",
+  "kickoff": "2026-06-22T20:00:00 ET",
+  "context_note": "Norway vs Senegal — WC2026 Group D/I. CRITICALLY COMPETITIVE match. Elo diff only 71 points (NOR-SEN). RULE7 does NOT fire. RULE8 FIRES (draw 30.4% >= 25%). Group: Norway 3pts after GD1 win (can absorb draw). Senegal 0pts (MUST get points — plays much more aggressively than Elo suggests).",
+  "elo_ratings": {
+    "nor": 1983.8379,
+    "sen": 1912.8104,
+    "elo_diff": 71.03,
+    "source": "data/processed/elo_current_ratings.csv"
+  },
+  "model_outputs": {
+    "ordered_logit_match_winner": {
+      "p_nor_win": 0.454,
+      "p_draw": 0.304,
+      "p_sen_win": 0.242,
+      "script": "model/predict_ordered_logit.py Norway Senegal --neutral true"
+    },
+    "poisson_goals": {
+      "lambda_nor": 1.2620,
+      "lambda_sen": 0.9758,
+      "lambda_total": 2.2378,
+      "p_nor_scores": 0.7169,
+      "p_sen_scores": 0.6231,
+      "p_btts_and_3plus": 0.3153,
+      "p_total_ge3": 0.3874,
+      "p_nor_more_2h_goals": 0.3438,
+      "p_equal_2h_goals": 0.4114,
+      "p_sen_more_2h_goals": 0.2448,
+      "p_ht_tie": 0.4622,
+      "lambda_nor_sot_x3_0": 3.786,
+      "p_nor_6plus_sot_x3_0": 0.1824,
+      "lambda_total_corners_x3_3": 7.38,
+      "p_9plus_corners_x3_3": 0.344,
+      "lambda_total_sot_2h": 3.692,
+      "p_4plus_sot_2h": 0.5042,
+      "lambda_sen_offsides": 1.80,
+      "p_sen_2plus_offsides_model": 0.5372,
+      "p_sen_more_fouls_model": 0.4997,
+      "lambda_mane_35pct": 0.3415,
+      "p_mane_scores_model": 0.2893
+    }
+  },
+  "group_context": {
+    "group": "D (Group I)",
+    "standings_after_gd1": {
+      "France": {"pts": 3, "gd": "+2", "gd1": "Won 3-1 vs Senegal"},
+      "Norway": {"pts": 3, "gd": "+3", "gd1": "Won 4-1 vs Iraq"},
+      "Senegal": {"pts": 0, "gd": "-2", "gd1": "Lost 1-3 to France"},
+      "Iraq": {"pts": 0, "gd": "-3", "gd1": "Lost 1-4 to Norway"}
+    },
+    "simultaneous_match": "France vs Iraq (0-0 at time of analysis — France heavy favs at 88%+)",
+    "norway_situation": "Can absorb a draw (4pts = very likely qualify). Playing to win but not desperate.",
+    "senegal_situation": "MUST get points. A loss essentially eliminates them unless France loses to Iraq (very unlikely). They will attack aggressively from minute 1.",
+    "strategic_implication": "Senegal's attacking intensity is ELEVATED beyond Elo model prediction. This is a primary non-Elo input for Q1, Q4, Q5, Q10."
+  },
+  "rules_in_effect": {
+    "RULE7": "Does NOT fire — NOR 45.4% and SEN 24.2% are both above 15% threshold",
+    "RULE8": "FIRES — Draw 30.4% >= 25%. Pull all extreme attacking/threshold props 5-8pp toward 50%. Competitive match = tighter, lower-scoring script is more likely than in blowouts.",
+    "RULE1": "Q6 Norway win: RULE1 applies. Market data confirmed at 43-44%. Use market as primary input.",
+    "GROUP_DYNAMICS": "Senegal must-attack context overrides pure Elo model on attacking props. Jackson caught offside 3+ times in GD1 already — Norway's high defensive line will replicate this.",
+    "RULE15": "Not applicable — no blowout, no extreme underdog individual player suppression."
+  },
+  "gd1_evidence": {
+    "nor_vs_irq": {
+      "result": "Norway 4-1 Iraq (HT 2-1)",
+      "goals_timing": "Haaland 29', 43' (1H); Iraq Hussein 39' (1H). Ostigard 76', Hussein OG 90+6' (2H).",
+      "nor_shots": 12,
+      "nor_sot": 5,
+      "nor_xg": 2.59,
+      "nor_big_chances": 5,
+      "nor_fouls": 13,
+      "irq_fouls": 12,
+      "irq_sot": 1,
+      "penalty_or_red_card": false,
+      "haaland_individual": {
+        "goals": 2,
+        "shots": 5,
+        "sot": 4,
+        "fouls_drawn": 3,
+        "played_full_match": true
+      },
+      "tactical_notes": "Norway 4-3-3 high press. Dominated possession 61-62%. Scored twice in 1H, managed the 2H with full control. Iraq allowed just 2 shots in the entire 2nd half. Norway's high defensive line = offside trap weapon."
+    },
+    "fra_vs_sen": {
+      "result": "France 3-1 Senegal (HT 0-0)",
+      "goals_timing": "Mbappe 66', 90+6'; Barcola 82' (all after 66'). Mbaye 90+5' (consolation).",
+      "sen_shots": 6,
+      "sen_sot": 1,
+      "sen_xg": 0.53,
+      "sen_2h_shots_total": 1,
+      "sen_corners": 4,
+      "sen_fouls": 5,
+      "fra_fouls": 8,
+      "penalty_or_red_card": false,
+      "jackson_offsides": "3+ times (multiple confirmed in match reports; one disallowed goal, multiple runs behind French line caught offside)",
+      "mane_individual": {
+        "started": true,
+        "played_full_match": true,
+        "goals": 0,
+        "key_shot": "Shot at 40' — one of Senegal's only clear chances",
+        "foul_drawn_on_mbappe": "Mbappe sought penalty after Mane challenge — not awarded by referee",
+        "note": "Active but ineffective. Created chance for Sarr near half time (Sarr couldn't convert)."
+      },
+      "tactical_notes": "Senegal compact in 1H (0-0 at HT), then completely broke down in 2H. Conceded 3 goals in last 25 minutes. Koulibaly marshaled the defense; he starts again vs Norway. CRITICAL: Senegal had only 1 total shot in the entire 2nd half vs France."
+    }
+  },
+  "external_market_data": {
+    "norway_win_implied": "43-44% (+125 to +135 moneyline)",
+    "draw_implied": "29-31% (+220 to +240)",
+    "senegal_win_implied": "25-28% (+206 to +230)",
+    "polymarket": "Norway 43%, Draw 21%, Senegal 28% ($3.6M+ traded)",
+    "btts_yes_implied": "~54%",
+    "over_2_5_goals": "~50/50 (-110 to -115 both sides)",
+    "mane_anytime_scorer": "+310 (~24% implied)",
+    "haaland_anytime_scorer": "~-150 range (strong favorite)",
+    "corners_market_line": "~9-10 total corners (Robinhood/Kalshi)",
+    "norway_corners_avg": "5.6 per match",
+    "senegal_corners_avg": "6.1 taken per match, 4.3 allowed"
+  },
+  "referee": {
+    "name": "Ismail Elfath (USA, Moroccan-American)",
+    "assistants": ["Corey Parker", "Kyle Atkins"],
+    "fourth_official": "Khalid Al-Turais (Saudi Arabia)",
+    "career_matches": 249,
+    "yc_per_game_career": 3.84,
+    "yc_per_game_2025_26": 3.73,
+    "rc_per_game_2025_26": 0.18,
+    "fouls_per_game_career": 21.66,
+    "fouls_per_game_2025_26": 21.82,
+    "penalty_per_game_career": 0.27,
+    "penalty_per_game_2025_26": 0.18,
+    "wc_experience": "Reffed Portugal vs Ghana at Qatar 2022 — awarded Portugal penalty in 63'",
+    "assessment": "Above-average card rate. Career penalty rate 0.27/match (1 in ~4 games). This season slightly lower at 0.18/match. NOT a pocket-happy ref but willing to use VAR. KEY: Group D has had ZERO penalties in 2 GD1 matches."
+  },
+  "head_to_head": {
+    "all_time_meetings": 2,
+    "only_prior_meeting": "March 2006 friendly: Senegal 2-1 Norway",
+    "first_competitive_meeting": "This match (WC2026) is the first-ever competitive meeting between Norway and Senegal"
+  },
+  "lineup_notes": {
+    "norway_predicted_xi": "Nyland; Ryerson, Heggem, Ajer, Wolfe; Odegaard, Berge, Aursnes; Sorloth, Haaland, Nusa",
+    "senegal_predicted_xi": "Full attacking lineup. Jackson-Mane-Sarr front three. Koulibaly anchors defense.",
+    "haaland_fitness": "Played full match vs Iraq, no injury concerns",
+    "mane_fitness": "Healthy and fit — fully recovered. This is his redemption WC (missed 2022 entire tournament with injury).",
+    "koulibaly_fitness": "Expected to start — KEY matchup vs Haaland.",
+    "odegaard_role": "Set piece taker, primary creator. Ryerson takes right-side corners.",
+    "norway_tactical": "4-3-3 high press under Solbakken. High defensive line = offside trap.",
+    "senegal_tactical": "4-2-3-1 or 4-3-3. Jackson-Mane-Sarr. Pace and width are weapons. Vulnerable to sustained 2H pressure (showed vs France)."
+  },
+  "mane_profile": {
+    "age": 34,
+    "club": "Al-Nassr (Saudi Arabia)",
+    "club_form_2025_26": "10+ goals, 6 assists in Saudi Pro League. Won Saudi title.",
+    "international_caps": 129,
+    "international_goals": 55,
+    "goals_per_cap": 0.426,
+    "wc_career_goals": 1,
+    "wc_career_matches": 4,
+    "wc_goals_per_match": 0.25,
+    "gd1_stats": {"goals": 0, "shots_on_target": 1, "played": true},
+    "afcon_2026": "Scored vs Egypt in semi-final (Jan 2026). Named Player of Tournament.",
+    "wc_qualifying_goals": 5,
+    "foul_drawing_rate": "Fouled 3+ times in 6 of 7 recent competitive starts",
+    "positional_role": "Left winger who cuts inside — NOT a pure box striker. Less likely to score from center box than Jackson.",
+    "anytime_scorer_market": "+310 (~24% implied)"
+  },
+  "haaland_profile": {
+    "international_goals": 57,
+    "international_caps": 51,
+    "wc_goals": "2 in GD1 alone",
+    "wc_qualifying_goals": 16,
+    "gd1_stats": {"goals": 2, "shots": 5, "sot": 4, "timing": "29', 43' (both 1H)"},
+    "anytime_scorer_market": "~-150 (strong favorite)",
+    "koulibaly_matchup": "Physical contest vs Senegal captain — will define match tempo"
+  },
+  "derived_estimates_for_sportspredict_markets": {
+    "Q1_sen_2plus_offsides": {
+      "question": "Will Senegal be caught offside 2 or more times?",
+      "model_p": 0.5372,
+      "method": "Poisson lambda_SEN_offsides=1.80, P(>=2)=53.7%.",
+      "gd1_update": "DECISIVE: Jackson alone was caught offside 3+ times in GD1 vs France (confirmed multiple instances including one disallowed goal). Norway's 4-3-3 plays a HIGH DEFENSIVE LINE — identical to the high line that France used to catch Jackson repeatedly. Mane, Sarr, and Jackson are all pace-dependent runners who time runs behind defensive lines = maximum offside exposure.",
+      "rule8_adjustment": "RULE8 fires but the GD1 evidence is so strong that shrinkage is minimal.",
+      "group_dynamics": "Senegal MUST attack from minute 1 → forwards commit to runs behind Norway line early and often → more offside exposure than in a neutral match.",
+      "counterargument": "If Senegal's coach adjusts to play more to feet (Mane receiving, not running behind), offside count drops. But their system relies on pace runs.",
+      "crowd_expected_range": "0.45-0.58 (crowd may not appreciate how high Jackson's offside rate was)",
+      "edge_direction": "STRONG YES — model 53.7% well below GD1+tactical evidence of ~80%+",
+      "FINAL_estimate": 0.78,
+      "revision_from_preliminary": "0.52-0.58 → 0.78. Jackson 3+ GD1 + Norway high line is decisive evidence."
+    },
+    "Q2_nor_more_2h_goals": {
+      "question": "Will Norway score more goals than Senegal in the second half?",
+      "model_p": 0.3438,
+      "method": "P(NOR 2H goals > SEN 2H goals) = 34.4%.",
+      "gd1_update": "Senegal had 1 total shot in the entire 2H vs France — near-zero 2H attacking output. Norway scored 2 second-half goals vs Iraq (76', 90+6'). In most game scripts where Norway leads at HT (likely given their early scoring), they'll protect the lead while Senegal can't generate 2H chances.",
+      "rule8_adjustment": "RULE8 fires → pull model 34.4% toward 50% = ~38-42%. But Senegal 2H evidence pushes it further up.",
+      "halftime_dependency": "If Norway lead at HT: NOR >SEN in 2H is highly likely. If tied or Senegal leads: more uncertain. P(Norway lead at HT) ≈ 40-45% (Norway tends to score early, Haaland 29', 43' in GD1).",
+      "counterargument": "Haaland scored both GD1 goals in 1H. If Norway protect a lead in 2H and Senegal desperately attacks, it becomes a more even contest. Norway may not score again in 2H if sitting deeper.",
+      "crowd_expected_range": "0.38-0.48",
+      "edge_direction": "YES lean: RULE8 pull + Senegal poor 2H pattern + Norway attacking quality",
+      "FINAL_estimate": 0.45,
+      "revision_from_preliminary": "0.38-0.42 → 0.45. Senegal's 1-shot 2H vs France is stronger evidence than RULE8 suppression alone."
+    },
+    "Q3_penalty_or_red_card": {
+      "question": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "model_p": 0.38,
+      "method": "Empirical: Elfath career 0.27 penalty/match. WC2026 avg ~0.40/match. Red card add ~10-15%.",
+      "gd1_update": "BOTH GD1 matches in this group had ZERO penalties and ZERO red cards. Elfath is below his career penalty rate this season (0.18 in 2025/26). Mane challenged Mbappe and no penalty given — this referee did NOT award it even with VAR.",
+      "referee_context": "Elfath: 0.27 penalties/match career but only 0.18 this season. Not pocket-happy. WC2022: did award a penalty vs Portugal-Ghana (so he CAN give them). Fouls/match ~22 = busy but not card-happy at WC rate.",
+      "elevating_factors": "Must-win Senegal = desperation late → cynical fouls possible. Haaland draws 3+ fouls/match — some in the box. Mane drawn contact before (Mbappe incident).",
+      "suppressing_factors": "Group D's zero penalty trend in GD1. Elfath below career rate this season. Two clean GD1 matches suggest refereeing culture in this group is lenient.",
+      "crowd_expected_range": "0.38-0.50",
+      "edge_direction": "SLIGHT NO lean: group zero-penalty trend + Elfath's below-career-rate season",
+      "FINAL_estimate": 0.38,
+      "revision_from_preliminary": "0.40-0.46 → 0.38. Group zero-penalty GD1 data and Elfath's current season rate pull lower."
+    },
+    "Q4_sen_more_fouls_than_nor": {
+      "question": "Will Senegal commit more fouls than Norway?",
+      "model_p": 0.4997,
+      "method": "Near coin flip. lambda_NOR=11.0, lambda_SEN=11.5.",
+      "gd1_update": "SIGNIFICANT TENSION: Senegal committed only 5 fouls vs France (vs France's 8). Norway committed 13 vs Iraq. But opponent quality matters enormously — France were a harder pressing team than Norway, and Iraq was more physical than Senegal will be. Direct comparison is unreliable.",
+      "key_context": "Koulibaly defending Haaland physically → Koulibaly fouls Haaland in the box. Norway's high press means THEY foul in midfield too. Mane fouls in 26 of 33 tournament appearances. Elfath calls ~22 fouls/match combined (11 each at average). Ryerson (Norway RB) commits 2+ fouls in 6 of last 7 Norway starts.",
+      "must_attack_effect": "Senegal must attack → they have the ball at times → they press when defending → pressing = fouling. But Norway with Haaland creates more foul opportunities FOR Senegal when they defend.",
+      "crowd_expected_range": "0.42-0.52",
+      "edge_direction": "Coin flip. Lean slightly NO (Norway fouls more based on their pressing style and GD1 foul count).",
+      "FINAL_estimate": 0.48,
+      "revision_from_preliminary": "0.48-0.52 → 0.48. GD1 shows Senegal as a low-fouling team (5 vs France). Norway more foul-prone (13 vs Iraq). Even accounting for opponent differences, slight lean to Norway fouling more."
+    },
+    "Q5_4plus_total_sot_2h": {
+      "question": "Will there be 4 or more total shots on target in the second half?",
+      "model_p": 0.5042,
+      "method": "Poisson: lambda_total_SOT_2H=3.69, P(>=4)=50.4%.",
+      "gd1_update": "Senegal had 1 total shot in 2H vs France. Iraq had ~2 total shots in 2H vs Norway. But these were blowout match scripts where the losing team shut down. NOR vs SEN is a COMPETITIVE match where Senegal must attack in 2H → much higher expected Senegal 2H SOT than vs France. Norway's attacking quality (Haaland) also generates 2H shots.",
+      "rule8_adjustment": "RULE8 fires but it pulls both ways — draw-heavy = competitive = both teams creating chances in 2H.",
+      "senegal_must_attack": "Senegal MUST score → they'll generate 2H shots desperately. Even vs France they had only 1 2H shot but they were already 0-3 down and demoralized. Vs Norway in a must-win, they'll push harder even if trailing.",
+      "crowd_expected_range": "0.48-0.58",
+      "edge_direction": "Slight YES: competitive open game + Senegal must-attack context in 2H",
+      "FINAL_estimate": 0.55,
+      "revision_from_preliminary": "0.48-0.52 → 0.55. Competitive match dynamics + Senegal must-attack in 2H elevates above model. Norway's Haaland adds 2H SOT regardless."
+    },
+    "Q6_nor_win": {
+      "question": "Will Norway win the match?",
+      "model_p": 0.454,
+      "method": "RULE1: avg(crowd, sharp market). Market: 43-44%. Model: 45.4%.",
+      "market_data": {
+        "moneyline": "+125 to +135 (43-44% implied)",
+        "polymarket": "43% ($3.6M traded — liquid, sharp signal)",
+        "btts_implied": "54% — suggests competitive game, not a blowout"
+      },
+      "gd1_update": "Norway dominant (4-1 vs Iraq). Senegal lost (1-3 to France). But Iraq and France are very different opponents. Norway's performance vs Iraq overstates their edge vs Senegal.",
+      "haaland_factor": "Haaland vs Koulibaly is the defining physical contest. If Haaland wins = Norway likely wins.",
+      "crowd_formula": "If we submit 0.45, expected crowd = 0.514 + 0.61*(0.45-0.5) = 0.514 - 0.031 = 0.483",
+      "crowd_expected_range": "0.44-0.52",
+      "edge_direction": "Aligned with market and model. No strong edge — submit model/market consensus.",
+      "FINAL_estimate": 0.45,
+      "revision_from_preliminary": "0.48-0.52 → 0.45. Market is at 43-44%; Polymarket $3.6M confirms this. Our model also 45.4%. Converge on 0.45."
+    },
+    "Q7_ht_tied": {
+      "question": "At halftime, will the match be tied?",
+      "model_p": 0.4622,
+      "method": "Double Poisson: P(any tied HT score)=46.2%.",
+      "gd1_update": "Norway scored in 29' AND 43' vs Iraq (both 1H). They were leading 2-1 at HT. Haaland is an early-game threat. France vs Senegal WAS 0-0 at HT (all goals after 66') — supporting the HT tie scenario for Senegal matches.",
+      "competing_evidence": "Norway's GD1 shows they CAN score in the first 45 mins (2 goals). BUT vs Iraq (much weaker). Senegal's defense with Koulibaly will be harder to break early. 0-0 or 1-1 at HT is plausible. Norway-first-half dominance is the primary risk for NO.",
+      "wc_empirical": "WC group stage HT tie rate historically ~40-45%. Model 46.2% is at the higher end.",
+      "crowd_expected_range": "0.40-0.50",
+      "edge_direction": "Slight NO lean: Norway's early-goal tendency (scored 29', 43' in GD1) makes a NOR lead at HT plausible.",
+      "FINAL_estimate": 0.42,
+      "revision_from_preliminary": "0.42-0.46 → 0.42. Norway's GD1 showed them scoring twice in first 45 — suggests they lead at HT more often than draw. Haaland is an early-game threat."
+    },
+    "Q8_9plus_corners": {
+      "question": "Will there be 9 or more total corner kicks?",
+      "model_p_x3_3": 0.344,
+      "method": "Revised Poisson multiplier 3.3: lambda_total=7.38, P(>=9)=34.4%. Model with 2.6 was too low (13.5%).",
+      "gd1_update": "France vs Senegal full match: France 6 corners, Senegal 4 corners = 10 TOTAL. Already above 9. Norway vs Iraq: Norway corner count not confirmed but Odegaard's corner led to 76' goal; Norway averaged 5.6/match. Iraq ~2-3 corners in full match.",
+      "combined_averages": "Norway averages 5.6 corners/match. Senegal averages 6.1 corners taken/match. Combined projection = ~10-11 expected. P(9+) at this expectation is ~55-60%.",
+      "must_attack_effect": "Senegal attacking desperately = more crosses into box = more corners. Norway's wide attackers (Nusa on left, Odegaard) also generate corners.",
+      "market_signal": "Corners market line at ~9-10 total (Robinhood/Kalshi). Right at the threshold.",
+      "counterargument": "Model underestimates expected corners vs team averages. But GD1 France-Senegal had 10 total supporting the higher number. However France-Senegal had weaker teams defensively clearing corners.",
+      "crowd_expected_range": "0.38-0.52",
+      "edge_direction": "Near coin-flip. Combined averages favor YES; model alone says NO. Market right at the line.",
+      "FINAL_estimate": 0.50,
+      "revision_from_preliminary": "0.28-0.35 → 0.50. Fra-Sen GD1 had 10 total corners (above 9 already). Combined team averages project 10-11. Market at the borderline. This is genuinely ~50/50."
+    },
+    "Q9_nor_6plus_sot": {
+      "question": "Will Norway have 6 or more shots on target?",
+      "model_p_x3_0": 0.1824,
+      "method": "Poisson: lambda_NOR_SOT (x3.0)=3.786, P(>=6)=18.2%.",
+      "gd1_update": "Norway had 5 SOT vs Iraq in GD1 (from 12 shots). Haaland alone had 4 SOT. They fell 1 short of 6 against a MUCH weaker opponent (Iraq: 1-4 loss, only 1 SOT). Senegal's defense is meaningfully better than Iraq's — Koulibaly, organized shape.",
+      "haaland_factor": "Haaland generated 4 SOT vs Iraq. He will generate 2-3 SOT vs Senegal even if Koulibaly is effective. But 3 additional SOT from teammates needed for total 6.",
+      "open_game_effect": "Senegal must attack = they leave space on counter → Norway get more shots on transition. Could push NOR toward 5-6 SOT. But Senegal's defensive organization is better than Iraq's.",
+      "counterargument": "5 SOT vs Iraq (the weakest team) = ceiling for Norway given they typically score from limited chances (clinical). Model gives 18.2% for 6+. The open-game dynamic could push toward 30-38%.",
+      "crowd_expected_range": "0.32-0.48",
+      "edge_direction": "SLIGHT NO: Norway baseline is 5 SOT vs weak Iraq. 6+ vs stronger Senegal requires exceeding GD1 output.",
+      "FINAL_estimate": 0.38,
+      "revision_from_preliminary": "0.30-0.40 → 0.38. Norway had 5 SOT in GD1 vs weaker opponent. Open game dynamic from Senegal must-attack partially offsets Senegal's better defense. Settle just below 40%."
+    },
+    "Q10_mane_scores": {
+      "question": "Will Sadio Mane score a goal (excluding own goals)?",
+      "model_p": 0.2893,
+      "method": "Poisson: lambda_Mane (35% of SEN lambda)=0.342, P>=1=28.9%.",
+      "market_data": "Anytime scorer +310 (~24% implied probability).",
+      "gd1_update": "Mane did NOT score vs France in GD1. Had 1 shot on target (40' effort). Created chance for Sarr near HT. Active but ineffective. Norway conceded 0 goals to Senegal-caliber attacks in their defensive shape.",
+      "wc_career_record": "1 goal in 4 career WC matches = 0.25 goals/WC game. Scored only vs Japan in 2018.",
+      "mane_profile": "34 years old, left winger (cuts inside), NOT a pure box striker. Jackson is the primary penalty-area target. Mane draws fouls (3+ in 6 of 7 recent starts) but creates more than he finishes in big matches.",
+      "must_win_boost": "This is Mane's last WC chance (missed 2022 entirely with injury). Maximum motivation. Will take shots, will be in dangerous positions. If Senegal get a penalty → Mane likely taker → big probability boost.",
+      "norway_defense": "Koulibaly vs Haaland is the key matchup, but Norway's CBs and Ryerson will track Mane. Norway conceded just 1 goal in GD1 to an inferior Iraq attack.",
+      "counterargument": "Mane is the player most likely to create something out of nothing (55 career international goals). His pace and dribbling can beat Ryerson. At +310, the market may slightly undervalue his in a must-win scenario.",
+      "crowd_expected_range": "0.28-0.38",
+      "edge_direction": "ALIGN WITH MARKET: market at ~24% is well-informed. Model 28.9% slightly above market. Settle near market.",
+      "FINAL_estimate": 0.24,
+      "revision_from_preliminary": "0.26-0.32 → 0.24. Market +310 is the sharpest signal. GD1 no goal. WC record 1/4. Settle at market implied probability."
+    }
+  },
+  "final_submission_estimates": {
+    "Q1": {
+      "estimate": 0.78,
+      "tier": "TIER 1 — push hard YES",
+      "notes": "STRONGEST EDGE IN BATCH. Jackson caught offside 3+ times in GD1 alone. Norway plays the exact same high defensive line that France used. Senegal must-attack from minute 1. Near-certainty."
+    },
+    "Q2": {
+      "estimate": 0.45,
+      "tier": "TIER 2 — YES lean",
+      "notes": "Model 34.4% + RULE8 pull + Senegal's 1-shot 2H vs France. Norway scored 2 in 2H vs Iraq. YES is the right direction."
+    },
+    "Q3": {
+      "estimate": 0.38,
+      "tier": "TIER 3 — slight NO lean",
+      "notes": "Elfath 0.27/match career but only 0.18 this season. Zero penalties in 2 GD1 matches in this group. Slight NO lean. Must-win desperation elevates but doesn't overcome trend."
+    },
+    "Q4": {
+      "estimate": 0.48,
+      "tier": "TIER 3 — near coin-flip",
+      "notes": "Genuine coin flip. SEN only 5 fouls in GD1 (very low). NOR 13 fouls in GD1. But matchup context differs. Submit near 50%."
+    },
+    "Q5": {
+      "estimate": 0.55,
+      "tier": "TIER 2 — YES lean",
+      "notes": "Competitive open game. Senegal must-attack in 2H. Norway's attacking quality. RULE8 slightly shrinks but competitive dynamic offsets. Slight YES."
+    },
+    "Q6": {
+      "estimate": 0.45,
+      "tier": "TIER 2 — aligned with market",
+      "notes": "Market 43-44%, Polymarket $3.6M at 43%, model 45.4%. No strong edge. Submit 0.45 — Norway is the most likely single outcome but still below 50%."
+    },
+    "Q7": {
+      "estimate": 0.42,
+      "tier": "TIER 3 — slight NO lean",
+      "notes": "Norway scored in 29' and 43' in GD1 — early scorers. A Norway HT lead is the single most likely HT state. Model 46.2% is slightly high. Revise to 0.42."
+    },
+    "Q8": {
+      "estimate": 0.50,
+      "tier": "TIER 3 — coin flip",
+      "notes": "FRA-SEN had 10 total corners. Combined team averages project 10-11. Market at the 9-10 line. Genuine 50/50. Submit at 0.50."
+    },
+    "Q9": {
+      "estimate": 0.38,
+      "tier": "TIER 2 — NO lean",
+      "notes": "Norway only got 5 SOT vs much weaker Iraq. 6+ vs Senegal (better defense, Koulibaly) requires exceeding GD1 output. Open-game dynamic partially offsets. Submit 0.38."
+    },
+    "Q10": {
+      "estimate": 0.24,
+      "tier": "TIER 2 — NO lean",
+      "notes": "Market +310 (~24%). 1 WC goal in 4 career matches. GD1: no goal from Mane. Must-win context is positive but market has priced it in. Align with market at 0.24."
+    }
+  },
+  "edge_ranking": {
+    "1_Q1_offside": "0.78 YES — highest confidence. Jackson 3+ GD1 offsides + Norway high line = near certainty",
+    "2_Q6_nor_win": "0.45 — aligned with sharp market ($3.6M Polymarket). No model edge but accurate.",
+    "3_Q9_nor_sot": "0.38 NO lean — Norway only got 5 SOT vs weaker Iraq; 6+ vs stronger Senegal unlikely",
+    "4_Q2_nor_2h_goals": "0.45 YES — Senegal's 1-shot 2H vs France. NOR scored 2 in 2H vs Iraq.",
+    "5_Q10_mane": "0.24 NO lean — market +310, 1 WC goal in 4 career, no GD1 goal",
+    "6_Q5_2h_sot": "0.55 YES — open competitive game; Senegal must-attack 2H",
+    "7_Q3_penalty_rc": "0.38 NO — zero penalties in group GD1, Elfath below-career-rate season",
+    "8_Q7_ht_tie": "0.42 slight NO — Norway scored 29' and 43' in GD1 (early scorers)",
+    "9_Q8_corners": "0.50 coin flip — combined averages project 10-11; market at the 9-10 line",
+    "10_Q4_sen_fouls": "0.48 coin flip — genuine uncertainty; align near 50%"
+  },
+  "crowd_estimates_live": {
+    "Q1": {"us": 0.78, "crowd": 0.50},
+    "Q2": {"us": 0.45, "crowd": 0.45},
+    "Q3": {"us": 0.38, "crowd": 0.39},
+    "Q4": {"us": 0.48, "crowd": 0.55},
+    "Q5": {"us": 0.55, "crowd": 0.64},
+    "Q6": {"us": 0.45, "crowd": 0.49},
+    "Q7": {"us": 0.42, "crowd": 0.44},
+    "Q8": {"us": 0.50, "crowd": 0.53},
+    "Q9": {"us": 0.38, "crowd": 0.42},
+    "Q10": {"us": 0.24, "crowd": 0.30}
+  },
+  "post_match_results": {
+    "match_score": "Norway 3-2 Senegal",
+    "winner": "Norway",
+    "halftime_score": null,
+    "total_rbp": 36.49,
+    "questions_beat_crowd": 6,
+    "questions_below_crowd": 4,
+    "match_facts": "Norway won 3-2. Full scoreline confirmed. Final score shows BTTS YES (both teams scored) — a real match, not a blowout. Senegal scored 2 goals in this match (more than the 1-shot 2H vs France suggested possible). Corner count confirmed at 9+ (Q8 YES). Norway confirmed 6+ SOT (Q9 YES).",
+    "question_results": {
+      "Q1": {
+        "question": "Will Senegal be caught offside 2+ times?",
+        "outcome": "YES",
+        "us": 0.78,
+        "crowd": 0.50,
+        "rbp": 22.07,
+        "vs_crowd": "beat",
+        "notes": "BIGGEST WIN OF THE MATCH. Us 78% vs crowd 50% = +22.07 RBP. Jackson's GD1 offsides and Norway's high line called perfectly. This was the best single-question call across all sessions today."
+      },
+      "Q2": {
+        "question": "Will Norway score more 2H goals than Senegal?",
+        "outcome": "NO",
+        "us": 0.45,
+        "crowd": 0.45,
+        "rbp": 2.63,
+        "vs_crowd": "beat",
+        "notes": "Outcome NO — both teams scored in some half distribution. Norway did NOT outscore Senegal in 2H specifically. Our 45% estimate was right direction but tied with crowd. Small RBP gain."
+      },
+      "Q3": {
+        "question": "Penalty kick OR red card?",
+        "outcome": "NO",
+        "us": 0.38,
+        "crowd": 0.39,
+        "rbp": 2.91,
+        "vs_crowd": "beat",
+        "notes": "No penalty or red card in the match. Our 38% NO lean was correct. Small edge vs crowd (39%). Group D penalty drought confirmed."
+      },
+      "Q4": {
+        "question": "Will Senegal commit more fouls than Norway?",
+        "outcome": "NO",
+        "us": 0.48,
+        "crowd": 0.55,
+        "rbp": 8.46,
+        "vs_crowd": "beat",
+        "notes": "Senegal committed FEWER fouls than Norway. Our 48% (vs crowd 55%) was the right lean — we correctly suspected Norway fouled more (13 fouls in GD1). +8.46 RBP. Crowd over-estimated Senegal's fouls."
+      },
+      "Q5": {
+        "question": "4+ total 2H SOT?",
+        "outcome": "YES",
+        "us": 0.55,
+        "crowd": 0.64,
+        "rbp": -5.30,
+        "vs_crowd": "below",
+        "notes": "YES — 4+ total 2H SOT happened. Our 55% was correct direction but crowd at 64% was more confident in the right outcome. Small loss. This was a competitive Norway 3-2 scoreline suggesting high 2H activity."
+      },
+      "Q6": {
+        "question": "Norway win?",
+        "outcome": "YES",
+        "us": 0.45,
+        "crowd": 0.49,
+        "rbp": -1.24,
+        "vs_crowd": "below",
+        "notes": "Norway won. Both we (0.45) and crowd (0.49) were below 50%, so both were surprised by the win. Tiny loss vs crowd. Norway winning at 3-2 was an exciting match result."
+      },
+      "Q7": {
+        "question": "HT tied?",
+        "outcome": "NO",
+        "us": 0.42,
+        "crowd": 0.44,
+        "rbp": 3.29,
+        "vs_crowd": "beat",
+        "notes": "HT was NOT tied — Norway likely led at HT (given final 3-2 and their early goal tendency: 29', 43' in GD1). Our 42% NO lean was correct. Small gain vs crowd."
+      },
+      "Q8": {
+        "question": "9+ total corners?",
+        "outcome": "YES",
+        "us": 0.50,
+        "crowd": 0.53,
+        "rbp": -0.37,
+        "vs_crowd": "below",
+        "notes": "9+ corners occurred. Tiny loss (crowd was marginally more confident). Our 50% coin-flip estimate was essentially correct — we correctly revised up from initial 13.5% model output. Negligible vs crowd."
+      },
+      "Q9": {
+        "question": "Norway 6+ SOT?",
+        "outcome": "YES",
+        "us": 0.38,
+        "crowd": 0.42,
+        "rbp": -1.58,
+        "vs_crowd": "below",
+        "notes": "Norway had 6+ SOT in the match. We underestimated (0.38) — Norway's open-game SOT opportunity in a 3-2 match exceeded our GD1-calibrated estimate (5 SOT vs weaker Iraq). Norway generating 6+ SOT in a competitive 3-2 fight vs a good Senegal team is expected. Small loss."
+      },
+      "Q10": {
+        "question": "Sadio Mané scores?",
+        "outcome": "NO",
+        "us": 0.24,
+        "crowd": 0.30,
+        "rbp": 5.63,
+        "vs_crowd": "beat",
+        "notes": "Mané did NOT score despite Senegal scoring 2 goals (own goals or other Senegal scorers). Our WC-record-based 0.24 estimate vs crowd 0.30 = +5.63 RBP. The WC goal-record distinction (1 in 4 WC matches vs 0.43/cap career) paid off."
+      }
+    },
+    "analysis": {
+      "biggest_win": "Q1 +22.07 — Jackson offside data from GD1 + Norway high line. Single best call of the entire 2026-06-22 session.",
+      "biggest_loss": "Q5 -5.30 — we said 55%, crowd 64%, YES occurred. Both correct direction but crowd was more confident.",
+      "what_worked": [
+        "Q1: GD1 offside behavioral data is a near-perfect predictor when the tactical context replicates (high line vs pace runners). 0.78 vs crowd 0.50 = +22.07.",
+        "Q4: Norway fouls more than Senegal — recognized from Norway GD1 (13 fouls) vs Senegal GD1 (5 fouls). +8.46.",
+        "Q10: WC-specific vs career record distinction for Mané. 1 WC goal in 4 matches. +5.63.",
+        "Q7: Norway scores early (GD1: 29', 43') → HT not tied. +3.29.",
+        "Q3: Group D zero-penalty trend continued. Elfath below career rate. +2.91."
+      ],
+      "what_missed": [
+        "Q5: Should have pushed harder on 2H SOT YES. Senegal had to score 2 goals = they generated shots. Our 55% was correct direction but crowd at 64% was better calibrated.",
+        "Q9: Norway 6+ SOT in a 3-2 competitive match is expected. Our GD1 ceiling estimate (5 SOT vs Iraq) was too conservative. Should have revised further toward 45-50% given the open-game dynamics.",
+        "Q6: Both we and crowd were below 50% on Norway winning. No one called the outcome well — small loss.",
+        "Q8: Corners at 50% was right; crowd at 53% was marginally better. No real miss."
+      ],
+      "rule_validations": {
+        "Q1_offside_rule": "VALIDATED — GD1 behavioral data for 'offside-prone' forwards vs high lines is near-deterministic. Consider making this an explicit rule: if forward caught offside 2+ times in GD1 AND opponent plays high line, submit 0.75-0.85 YES on 2+ offsides.",
+        "Q4_foul_rate_data": "VALIDATED — foul rate data (footystats recent 10) correctly identified Norway as the higher-fouling team. +8.46 reward. Always pull foul/game data for 'who fouls more' questions.",
+        "Q10_wc_record": "VALIDATED — separating WC-specific record from career average on individual scoring questions is meaningful. Mané 0.43 career vs 0.25 WC should always be the 'true probability' for WC predictions."
+      }
+    }
+  }
+}

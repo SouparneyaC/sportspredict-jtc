@@ -1,0 +1,168 @@
+SOUTH AFRICA vs SOUTH KOREA — WC2026 Group A GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24 | Venue: Estadio BBVA, Monterrey | KO: 9:00 PM ET (simultaneous with CZE-MEX)
+
+=== COMMANDS RUN ===
+
+1. grep -iE "south africa|south korea|korea republic" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: South Korea,1879.9769 | South Africa,1663.3169
+
+2. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff (RSA-KOR): -216.66 (South Korea favored)
+  lambda_RSA: 0.7497 | lambda_KOR: 1.6425 | total: 2.3922
+  P(RSA scores): 0.5274 | P(KOR scores): 0.8065
+  P(BTTS): 0.4254 | P(BTTS AND >=3): 0.3128
+  P(3+ goals): 0.4282 | P(4+ goals): 0.2196
+  P(RSA win): 0.1569 | P(Draw): 0.2550 | P(KOR win): 0.5881  <- RULE8 FIRES (barely)
+  P(RSA 2H scores): 0.3126 | P(KOR 2H scores): 0.5601
+  P(KOR more 2H SOT): 0.8438 | P(RSA more 2H SOT): 0.1562
+  P(KOR 2+ offsides proxy): 0.8714
+  P(RSA 3+ SOT): 0.3904
+  λ_son_proxy (38% share of KOR SOT): 1.872 → P(Son >=1 SOT): 0.846
+  λ_appollis_proxy (22% share of RSA SOT): 0.495 → P(Appollis >=1 SOT): 0.390
+
+3. HT-tie probability calculation:
+  λ_RSA_1H: 0.375 | λ_KOR_1H: 0.821
+  P(0-0 at HT): 0.302 | P(1-1 at HT): 0.093 | P(2-2 at HT): 0.007
+  P(HT tied): 0.403
+
+4. Existing match files checked:
+  - kor_cze_2026-06-11.json: KOR 2-1 CZE; KOR: 15 shots, 6 SOT; Son: 69min, 6 shots, 1 SOT
+  - mex_kor_2026-06-19.json: MEX 1-0 KOR; Son subbed 57', 0 goals. Q9 (Son G/A) = NO, +9.84 RBP.
+
+5. Research agent spawned — key findings below.
+
+=== GROUP A CONTEXT ===
+
+After GD2:
+  Mexico:       6pts | W-W | qualified
+  South Korea:  3pts | W-L | DRAW OR WIN = advance (2nd place guaranteed with draw)
+  Czechia:      1pt  | L-D | must win vs MEX (playing simultaneously)
+  South Africa: 1pt  | L-D | MUST WIN + need other results
+
+RSA scenario: Must win. Also need CZE to not win, OR win by larger margin to close GD gap.
+KOR scenario: A DRAW is enough to advance. WIN = 1st place. Not desperate but motivated.
+
+=== KEY FINDINGS ===
+
+SOUTH AFRICA GD1 vs Mexico (RSA 0-2 MEX):
+- Conceded: 9' (Quiñones), 67' (Jiménez).
+- RSA played with 9 men from 49' (Sithole R 49', Zwane R 84').
+- Corners: RSA 1, MEX 3. Fouls: RSA 11, MEX 12 (through ~30 min; stats affected by reds).
+- RSA cards: Mokoena Y 17', Sibisi Y 74', Sithole R 49', Zwane R 84'.
+- NOTE: RSA GD1 stats heavily distorted by going to 9 men at 49 minutes.
+
+SOUTH AFRICA GD2 vs Czechia (RSA 1-1 CZE):
+- RSA: 17 shots, 4 SOT. DOMINANT: 68% possession.
+- RSA goal: Mokoena pen 83'. Conceded: Sadílek 6'.
+- RSA cards: Mokoena Y 33', Mbatha Y 40'. [Mokoena accumulated 2 yellows = SUSPENDED GD3]
+- RSA was the ATTACKING team here (68% possession, 17 shots). Better than Elo suggests.
+
+SOUTH KOREA GD1 vs Czechia (KOR 2-1 CZE):
+- KOR: 15 shots, 6 SOT. Goals: Hwang 67', Oh 80' (both 2H comeback).
+- Son: 69 minutes, 6 shots, 1 SOT, 0 goals. Substituted off.
+
+SOUTH KOREA GD2 vs Mexico (KOR 0-1 MEX) — WE PLAYED THIS:
+- KOR had 58% poss, xG 0.67 vs MEX 0.48. Lost to GK error (Romo 50').
+- Lee Kang-in Y 4', Paik Seung-ho Y 58'. Son subbed 57'.
+- Son: 0 goals, 0 assists. RULE15-lite confirmed — 0 contribution as expected-loser's forward.
+- Our result: +40.22 RBP, 8/9 beat crowd. Q9 (Son): 0.33 vs crowd 0.42, outcome NO, +9.84 RBP.
+
+CRITICAL SUSPENSIONS FOR RSA:
+1. Teboho MOKOENA (DM): SUSPENDED — 2 yellows (GD1: 17', GD2: 33'). KEY LOSS.
+   - Scored the GD2 equalizer (pen). Their defensive midfield engine. Big absence.
+2. Themba ZWANE: SUSPENDED — red card GD1 (84'). Attacking/creative player.
+   - Double absence: RSA missing BOTH first-choice central midfielders.
+
+RSA GD3 lineup consequences:
+- Sphephelo Sithole (previously suspended for GD2 red) now AVAILABLE.
+- Appollis (LW), Mofokeng/Maseko (RW) remain as pace threats.
+- Mbatha on 1 yellow (caution risk with Tello).
+
+SON HEUNG-MIN:
+- Club: Los Angeles FC (MLS). 2025-26: 0 goals, 9 assists in 13 MLS matches (deeper role).
+- WC2026 GD1 vs CZE: 69 min, 6 shots, 1 SOT. Subbed off.
+- WC2026 GD2 vs MEX: 57 min (precautionary sub), 0 goals. Specific SOT not confirmed.
+- GD3 expected: STARTING, full 90 minutes.
+- Chasing WC records: 56 international goals (2 from South Korea all-time record).
+- RULE15 analysis: DOES NOT APPLY. Son plays for the DOMINANT team (KOR 58.8% win).
+  KOR vs weaker RSA = Son gets MORE forward time, not less. Prior RULE15 context was Son as
+  losing team's star (KOR vs MEX). Today KOR is the EXPECTED WINNER.
+
+OSWIN APPOLLIS:
+- Club: Orlando Pirates (PSL). Position: LW. Age: 24.
+- Club 2025-26: 11G + 9A across all competitions. Good form.
+- WC2026: Started both GD1 and GD2. No confirmed per-match SOT data.
+- GD3: Expected starter. Primary RSA wide attacking outlet.
+- Near-RULE15 applies (RSA at 15.7% win, just above 15% threshold).
+
+REFEREE — Facundo TELLO (Argentina):
+- HIGH-CARD referee. Famous for refereeing 10-red-card Champions Trophy Final (Boca vs Racing).
+- Key impact: Elevates card probability for Q2 (KOR card in 2H).
+- Lee Kang-in already on 1 yellow — extra risk.
+- Mbatha (RSA) also on 1 yellow.
+
+=== RULES APPLIED ===
+
+RULE8: FIRES (barely) — draw 25.50% >= 25%
+  → Mild shrink of extreme attacking props
+  → Less aggressive than CZE-MEX rule8 (barely over threshold)
+
+RULE7: Does NOT fire (RSA 15.69% > 15% threshold — BORDERLINE)
+  → Appollis gets mild near-RULE15 suppression but not full floor
+
+RULE_FOULS: RSA underdog defends → fouls more
+  → MODERATED: Mokoena (main DM/fouler) SUSPENDED
+  → RSA had 68% possession in GD2 (they can attack!) but today facing stronger KOR
+
+RULE15: Does NOT apply to Son (he's on the DOMINANT team)
+  → KOR 58.8% win = Son is NOT the expected-loser forward
+  → Contrast: in MEX-KOR, Son was on the LOSING team (KOR only 35% win)
+
+TELLO_EFFECT: Elevates Q2 (KOR card in 2H) upward from baseline
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.70 — KOR 2+ offsides [YES: model 0.871, RULE8 mild, RSA depleted midfield = KOR runs free]
+Q2: 0.52 — KOR card in 2H [YES_LEAN: Tello high-card ref, Lee Kang-in on 1 yellow, RSA physical]
+Q3: 0.30 — BTTS AND 3+ goals [NO_LEAN: model 0.313, RULE8, RSA missing key creators]
+Q4: 0.72 — KOR more 2H SOT [YES: model 0.844, KOR stronger, Son full 90, RSA midfield gap]
+Q5: 0.60 — RSA more fouls [YES: RULE_FOULS, but moderated from 0.65 due to Mokoena suspension]
+Q6: 0.40 — HT tied [NO_LEAN: model 0.403, KOR likely scores early vs depleted RSA midfield]
+Q7: 0.40 — RSA 3+ SOT [NO_LEAN: model 0.390, RSA had 4 SOT in GD2, but missing Mokoena/Zwane]
+Q8: 0.38 — Appollis >=1 SOT [NO_LEAN: near-RULE15, KOR defense excellent, but RSA must-win]
+Q9: 0.72 — Son >=1 SOT [YES: GD1: 1 SOT in 69min (YES), full 90 vs weaker RSA, NO RULE15]
+
+=== EDGE RANKING ===
+
+RANK 1: Q3 0.30 NO — BTTS+3+. Crowd ~0.39. -9pp NO edge. RULE8 + Mokoena/Zwane absent.
+RANK 2: Q4 0.72 YES — KOR more 2H SOT. Crowd ~0.65. +7pp YES edge.
+RANK 3: Q9 0.72 YES — Son SOT. Crowd ~0.65. +7pp YES edge.
+RANK 4: Q1 0.70 YES — KOR 2+ offsides. Crowd ~0.64. +6pp YES edge.
+RANK 5: Q8 0.38 NO — Appollis SOT. Crowd ~0.44. -6pp NO edge.
+RANK 6: Q6 0.40 NO — HT tied. Crowd ~0.45. -5pp NO edge.
+RANK 7: Q7 0.40 NO — RSA 3+ SOT. Crowd ~0.45. -5pp NO edge.
+RANK 8: Q5 0.60 YES — RSA more fouls. Crowd ~0.57. +3pp YES edge.
+RANK 9: Q2 0.52 YES — KOR card 2H. Crowd ~0.53. -1pp, near coin-flip.
+
+=== KEY WATCH ITEMS ===
+
+- Son SOT: GD1 showed 6 shots but only 1 SOT — Son often shoots off target. Watch whether
+  his shot volume translates to on-target vs RSA's defenders (even without Mokoena/Zwane).
+  If Son gets 4+ shots in 90 min, likely 1+ SOT. Full 90 today vs GD1's 69 min.
+- RSA missing Mokoena: Biggest single factor in this match. He was their scorer (pen GD2),
+  their engine, and their fouler. His absence weakens RSA on both ends.
+- Tello card behavior: Watch early bookings. Lee Kang-in on 1 yellow — if he gets another
+  early card, South Korea might play more cautiously in 2H (affecting Q2 and Q4).
+- HT score: If KOR goes 1-0 up early (as they often did in GD1), the match changes structure.
+  RSA needs to chase → opens spaces → potentially MORE shots for both teams.
+- KOR only needs a draw: Might defend a lead rather than push for more goals — affects Q4 (2H SOT).
+
+=== FILES WRITTEN ===
+
+1. data/external_markets/rsa_kor_2026-06-24.json
+2. THIS FILE: bash_logs/2026-06-24_RSA-KOR_match_analysis_bash_log.txt
+3. ML_EXPERIMENTS_NOTEBOOK.md — Appended RSA-KOR section
+
+=== END LOG ===

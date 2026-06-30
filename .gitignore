@@ -1,0 +1,26 @@
+# --- secrets: never commit ---
+bot/secrets.json
+**/playwright_cookies.json
+**/*cookies*.json
+.env
+*.env
+
+# --- large third-party raw bulk downloads ---
+# Regeneratable via data/external/transfermarkt/extract_relevant.py and
+# data/external/odds/extract_international_odds.py against a fresh public download.
+# The small, already-filtered outputs those scripts produce ARE committed:
+#   data/external/transfermarkt/extracted/*.csv
+#   data/external/odds/international_fixture_odds.csv
+data/external/transfermarkt/transfermarkt-datasets/
+data/external/odds/fixtures.csv
+data/external/odds/odds.csv
+
+# --- OS / editor / tool cruft ---
+.DS_Store
+__pycache__/
+*.pyc
+.Rproj.user/
+.Rhistory
+.obsidian/
+.RData
+.Rproj.user

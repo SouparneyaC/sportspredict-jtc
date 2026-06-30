@@ -1,0 +1,270 @@
+{
+  "match": "Curacao vs Ivory Coast",
+  "date": "2026-06-25",
+  "stage": "Group D Group Stage 3 (GD3)",
+  "espn_event_id": 760473,
+  "smarkets_event_id": 45086950,
+  "venue": "Neutral (USA WC2026)",
+  "group_context": {
+    "Ivory Coast": {"pts": 3, "record": "1-0-1", "status": "DRAW = ADVANCE to Round of 32"},
+    "Curacao": {"pts": 1, "record": "0-1-1", "status": "MUST WIN to advance"}
+  },
+  "elo": {
+    "IVC": 1728,
+    "CUR": 1453,
+    "diff_ivc_minus_cur": 275,
+    "source": "eloratings.net World.tsv 2026-06-25"
+  },
+  "wc2026_espn_stats": {
+    "IVC": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760423, "opponent": "Ecuador", "result": "W (beat ECU in GD1)", "fouls": 10, "SOT": 4, "shots": 15, "offsides": 0, "YC": 3, "RC": 0},
+        {"event_id": 760448, "opponent": "Germany", "result": "L 1-2", "fouls": 7, "SOT": 2, "shots": 9, "offsides": 1, "YC": 0, "RC": 0}
+      ],
+      "averages": {"fouls": 8.5, "SOT": 3.0, "shots": 12.0, "offsides": 0.5, "YC": 1.5}
+    },
+    "CUR": {
+      "n_matches": 2,
+      "matches": [
+        {"event_id": 760422, "opponent": "Germany", "result": "L 1-7", "fouls": 11, "SOT": 2, "shots": 8, "offsides": 1, "YC": 0, "RC": 0},
+        {"event_id": 760446, "opponent": "Ecuador", "result": "D 0-0", "fouls": 10, "SOT": 3, "shots": 10, "offsides": 2, "YC": 5, "RC": 0}
+      ],
+      "averages": {"fouls": 10.5, "SOT": 2.5, "shots": 9.0, "offsides": 1.5, "YC": 2.5},
+      "CRITICAL_NOTE": "CUR committed 5 YC in 0-0 survival match vs ECU. Extreme foul rate in desperation."
+    }
+  },
+  "model": {
+    "type": "Poisson_GLM + Dixon-Coles + Skellam",
+    "elo_calibrated": {
+      "elo_diff_used": 275,
+      "lambda_IVC": 1.825,
+      "lambda_CUR": 0.675
+    },
+    "market_calibrated": {
+      "effective_elo_diff": 480,
+      "lambda_IVC": 2.645,
+      "lambda_CUR": 0.466,
+      "note": "Calibrated to match Smarkets FTR: IVC=83.7%, Draw=11.1%, CUR=5.0%"
+    },
+    "ftr_probabilities": {
+      "IVC_win": 0.837,
+      "Draw": 0.111,
+      "CUR_win": 0.050,
+      "source": "Smarkets market mid-price 2026-06-25"
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {
+      "market_id": "141597507",
+      "CUR": {"contract_id": "396683116", "mid": 0.050},
+      "IVC": {"contract_id": "396683117", "mid": 0.837},
+      "Draw": {"contract_id": "396683118", "mid": 0.111}
+    },
+    "BTTS": {
+      "market_id": "141597509",
+      "YES": {"mid": 0.4033},
+      "NO": {"mid": 0.6006}
+    },
+    "OU0_5": {"market_id": "141597542", "UNDER": 0.0335, "OVER": 0.9617},
+    "OU1_5": {"market_id": "141597543", "UNDER": 0.1390, "OVER": 0.8621},
+    "OU2_5": {"market_id": "141597544", "UNDER": 0.3302, "OVER": 0.6668},
+    "OU3_5": {"market_id": "141597545", "UNDER": 0.5453, "OVER": 0.4526},
+    "player_SOT_0_5plus": {
+      "market_id": "146501285",
+      "Leandro Bacuna (CUR)": 0.225,
+      "Ibrahim Sangare (IVC)": 0.356,
+      "Simon Adingra (IVC)": 0.752,
+      "Amad Diallo (IVC)": 0.690,
+      "Nicolas Pepe (IVC)": 0.598,
+      "Guela Doue (IVC)": 0.226,
+      "Sontje Hansen (CUR)": 0.312,
+      "Joshua Brenet (CUR)": 0.111
+    }
+  },
+  "context_flags": [
+    "IVC_DRAW_ADVANCE: IVC only needs a draw → may park bus after scoring first goal",
+    "CUR_MUST_WIN: CUR extremely desperate (GD -6 makes 3rd place path impossible)",
+    "CUR_CARD_PATTERN: 5 YC vs ECU in GD2 (0-0 survival) → expect high cards in 2H desperation",
+    "CUR_SCORING: 1 goal in 2 WC2026 matches (consolation in 7-1 loss to GER)",
+    "IVC_DEFENSIVE_SHAPE: IVC likely plays MID-BLOCK (not high line) since draw = advance",
+    "CUR_OFFSIDE_LAMBDA: 1.5 avg offsides (1+2/2), but IVC mid-block reduces trap frequency"
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Curaçao be caught offside 2 or more times?",
+      "type": "OFFSIDE_GEQ2",
+      "data": {"CUR_avg_offsides": 1.5, "lambda": 1.5},
+      "model_raw": 0.442,
+      "context": "CUR must-win = aggressive forward runs = more offside risk. BUT IVC plays MID-BLOCK (draw = enough) not high line → fewer offside traps sprung. CUR's offside avg is 1.5 from GD1=1 and GD2=2. Moderate discount for IVC's defensive positioning.",
+      "rule_applied": "RULE_OFFSIDE_DEFENSIVE_SHAPE: IVC mid-block → discount from raw 44.2%",
+      "crowd_estimate": 0.43,
+      "final_estimate": 0.37,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 2,
+      "text": "Will Ivory Coast commit more fouls than Curaçao?",
+      "type": "FOULS_COMPARISON",
+      "data": {"IVC_avg_fouls": 8.5, "CUR_avg_fouls": 10.5},
+      "model_raw": 0.282,
+      "context": "CUR historically commits more fouls (10.5 vs 8.5). Must-win context if anything increases CUR's defensive fouling. IVC needing only a draw → cautious play → few attacking fouls. Strong model signal.",
+      "crowd_estimate": 0.36,
+      "final_estimate": 0.28,
+      "direction": "NO",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 3,
+      "text": "Will Ivory Coast score the first goal of the second half?",
+      "type": "IVC_FIRST_2H_GOAL",
+      "model": {
+        "lambda_IVC_2H": 1.323,
+        "lambda_CUR_2H": 0.233,
+        "P_IVC_first_2H_goal": 0.711
+      },
+      "context": "Market-calibrated IVC expected to score freely. P(IVC first 2H goal) = P(IVC ≥1 in 2H AND scores before CUR). If IVC leads at HT → may conserve energy → lower 2H rate. Conservative discount applied.",
+      "crowd_estimate": 0.60,
+      "final_estimate": 0.65,
+      "direction": "YES",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will the second half have more goals than the first half?",
+      "type": "2H_GOALS_GT_1H",
+      "model": {
+        "P_2H_gt_1H": 0.374,
+        "note": "Equal per-half rates assumed. With λ_IVC_2H=1.323, λ_CUR_2H=0.233: P(2H > 1H) < 50%"
+      },
+      "context": "IVC likely to lead at HT (83.7% win prob) → may slow down in 2H to protect lead → fewer 2H goals. CUR's desperation might push 2H goals but unlikely to match a dominant IVC 1H tally. Under 50% likely.",
+      "crowd_estimate": 0.44,
+      "final_estimate": 0.38,
+      "direction": "NO",
+      "confidence": "medium"
+    },
+    {
+      "q": 5,
+      "text": "Will Curaçao have more shots on target than Ivory Coast in the second half?",
+      "type": "2H_SOT_COMPARISON",
+      "data": {"CUR_avg_SOT": 2.5, "IVC_avg_SOT": 3.0},
+      "model_raw": 0.316,
+      "context": "Raw model says 31.6% for CUR > IVC. CUR must-win in 2H (if trailing) = more aggressive SOT. IVC sitting on lead = fewer 2H SOT. Moderate upward adjustment for CUR's survival urgency. But IVC is still much higher quality.",
+      "crowd_estimate": 0.40,
+      "final_estimate": 0.35,
+      "direction": "NO",
+      "confidence": "medium"
+    },
+    {
+      "q": 6,
+      "text": "Will Curaçao receive more cards than Ivory Coast?",
+      "type": "CARDS_COMPARISON",
+      "data": {"CUR_avg_YC": 2.5, "IVC_avg_YC": 1.5},
+      "model_raw": 0.594,
+      "context": "STRONG SIGNAL: CUR committed 5 YC in GD2 vs ECU (desperate 0-0). Must-win survival match = maximum fouling from CUR. IVC only needs a draw → conservative play → fewer YC. Historical CUR avg 2.5 YC vs IVC 1.5 YC.",
+      "crowd_estimate": 0.59,
+      "final_estimate": 0.63,
+      "direction": "YES",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 7,
+      "text": "Will Curaçao score at least 1 goal?",
+      "type": "CUR_SCORE_GEQ1",
+      "model_raw": 0.372,
+      "market_anchor": "BTTS YES = 40.3% → P(CUR ≥1 goal) ≈ BTTS + P(CUR wins without IVC scoring) ≈ 40%",
+      "context": "CUR scored 1 goal in 2 WC2026 matches (consolation in 7-1 loss). vs IVC defense (weaker than GER), CUR has slightly better chance. But market prices CUR win at only 5%. BTTS YES = 40.3% provides best anchor for CUR scoring.",
+      "crowd_estimate": 0.44,
+      "final_estimate": 0.40,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 8,
+      "text": "Will Ivory Coast have 5 or more corner kicks?",
+      "type": "IVC_CORNERS_GEQ5",
+      "data_note": "NO ESPN corner data available for WC2026 matches (corners return '?' from API)",
+      "model_estimate": {
+        "IVC_shots_avg": 12.0,
+        "corner_rate_per_shot": 0.3,
+        "estimated_IVC_corners_lambda": 5.0,
+        "P_GEQ5_at_lambda5": 0.560
+      },
+      "context": "IVC dominant (market 83.7% win, λ_IVC_goals=2.645). Many shots vs CUR who parks bus → corners. But IVC avg shots vs ECU/GER were moderate (15 and 9). Against weak CUR, likely higher. Estimate λ_corners ≈ 5 for IVC.",
+      "crowd_estimate": 0.51,
+      "final_estimate": 0.50,
+      "direction": "TOSS-UP",
+      "confidence": "low - no verified corner data, highly uncertain"
+    },
+    {
+      "q": 9,
+      "text": "Will Leandro Bacuna have at least 1 shot on target?",
+      "type": "PLAYER_SOT",
+      "player": "Leandro Bacuna",
+      "team": "Curacao",
+      "role": "Captain / Midfielder",
+      "market": 0.225,
+      "context": "Market at 22.5%. CUR must-win = Bacuna more involved. vs IVC defense (weaker than GER). In GER-CUR GD1, we estimated 0.21 (market 0.32) → NO was correct. Now vs weaker IVC: slight upward vs GD1 estimate. Must-win urgency increases involvement slightly.",
+      "prior_similar": "GER-CUR GD1: Bacuna estimated 0.21 vs crowd 0.32 → NO → +9.76 RBP. Now vs weaker IVC.",
+      "crowd_estimate": 0.33,
+      "final_estimate": 0.26,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 10,
+      "text": "Will Ibrahim Sangaré have at least 1 shot on target?",
+      "type": "PLAYER_SOT",
+      "player": "Ibrahim Sangaré",
+      "team": "Ivory Coast",
+      "role": "Defensive Midfielder (DM / Holding)",
+      "market": 0.356,
+      "context": "Sangaré is IVC's DM. In IVC's dominant performance, he may push forward. Market at 35.6%. IVC expected to dominate (λ=2.645 goals) → many attacking players shooting. As DM, Sangaré shoots less frequently but in a dominant win might get chances. Submit near market.",
+      "crowd_estimate": 0.42,
+      "final_estimate": 0.35,
+      "direction": "NO lean",
+      "confidence": "medium-low - DM player prop uncertain"
+    }
+  ],
+  "summary_table": {
+    "Q1_CUR_offside_2plus": 0.37,
+    "Q2_IVC_more_fouls": 0.28,
+    "Q3_IVC_first_2H_goal": 0.65,
+    "Q4_2H_goals_gt_1H": 0.38,
+    "Q5_CUR_more_2H_SOT": 0.35,
+    "Q6_CUR_more_cards": 0.63,
+    "Q7_CUR_scores": 0.40,
+    "Q8_IVC_5plus_corners": 0.50,
+    "Q9_Bacuna_SOT": 0.26,
+    "Q10_Sangare_SOT": 0.35
+  },
+  "strongest_signals": [
+    "Q2: IVC more fouls than CUR = 0.28 (NO - strong structural, CUR averages much higher fouls)",
+    "Q6: CUR more cards than IVC = 0.63 (YES - CUR 5YC in GD2, must-win desperation, strong pattern)",
+    "Q3: IVC first 2H goal = 0.65 (YES - dominant IVC, high market-calibrated goal rate)"
+  ],
+  "post_match_results": {
+    "final_score": "Curacao 0-2 Ivory Coast",
+    "total_rbp": 45.21,
+    "beat_crowd_count": "7/10",
+    "results": {
+      "Q1_CUR_offside_2plus": {"outcome": "YES", "our_est": 0.37, "crowd": 0.41, "rbp": -1.89, "beat_crowd": false, "note": "Small loss, near-push. RULE_OFFSIDE_DEFENSIVE_SHAPE discount (IVC mid-block) was directionally too aggressive — CUR's must-win desperation still generated enough forward runs to clear 2."},
+      "Q2_IVC_more_fouls": {"outcome": "NO", "our_est": 0.28, "crowd": 0.42, "rbp": 11.64, "beat_crowd": true},
+      "Q3_IVC_first_2H_goal": {"outcome": "YES", "our_est": 0.65, "crowd": 0.60, "rbp": 6.96, "beat_crowd": true},
+      "Q4_2H_goals_gt_1H": {"outcome": "NO", "our_est": 0.38, "crowd": 0.50, "rbp": 12.97, "beat_crowd": true, "note": "IVC, only needing a draw to advance, conserved energy in 2H exactly as modeled rather than piling on more goals."},
+      "Q5_CUR_more_2H_SOT": {"outcome": "NO", "our_est": 0.35, "crowd": 0.23, "rbp": -4.37, "beat_crowd": false, "note": "Crowd's lower 23% was closer to the truth — we over-credited CUR's survival urgency translating into 2H shot volume."},
+      "Q6_CUR_more_cards": {"outcome": "YES", "our_est": 0.63, "crowd": 0.52, "rbp": 11.85, "beat_crowd": true, "note": "The 5-YC desperation pattern from GD2 (0-0 vs ECU) repeated. Strong structural read on a team facing elimination."},
+      "Q7_CUR_scores": {"outcome": "NO", "our_est": 0.40, "crowd": 0.42, "rbp": 4.43, "beat_crowd": true},
+      "Q8_IVC_5plus_corners": {"outcome": "YES", "our_est": 0.50, "crowd": 0.64, "rbp": -9.32, "beat_crowd": false, "note": "Biggest loss of the match — this was flagged as our lowest-confidence pick going in (no verified ESPN corner data, pure shots-to-corners heuristic at λ=5). The crowd's higher 64% had it right; IVC's corner generation against a parked-bus CUR exceeded our estimate."},
+      "Q9_Bacuna_SOT": {"outcome": "NO", "our_est": 0.26, "crowd": 0.33, "rbp": 6.53, "beat_crowd": true, "note": "Second consecutive correct NO call on Bacuna (after GER-CUR GD1's +9.76), now a confirmed 2/2 pattern for this player prop."},
+      "Q10_Sangare_SOT": {"outcome": "NO", "our_est": 0.35, "crowd": 0.39, "rbp": 6.41, "beat_crowd": true}
+    },
+    "key_confirmations": [
+      "Q8 is the clean lesson here: we explicitly flagged this as 'low confidence — no verified corner data' and it was the only meaningful loss. When ESPN doesn't have ground-truth for a stat, the shots-derived heuristic underestimates a dominant team's corner output against a deep-block opponent — lean the estimate UP, not toward 50/50, when confidence is genuinely low due to missing data (the uncertainty itself was correctly flagged, but the central estimate should have been adjusted toward the team-quality direction rather than parked at a toss-up).",
+      "Q9 (Bacuna) is now 2-for-2 across GER-CUR and CUR-IVC — worth tracking as a repeatable low-confidence player-prop NO."
+    ]
+  },
+  "created": "2026-06-25"
+}

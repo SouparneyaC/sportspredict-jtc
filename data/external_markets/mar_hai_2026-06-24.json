@@ -1,0 +1,394 @@
+{
+  "match": "Morocco vs Haiti",
+  "match_code": "MAR-HAI",
+  "competition": "FIFA World Cup 2026",
+  "group": "Group C",
+  "game_day": "GD3",
+  "date": "2026-06-24",
+  "venue": "Mercedes-Benz Stadium, Atlanta",
+  "kickoff": "6:00 PM ET",
+  "analysis_date": "2026-06-24",
+
+  "model_inputs": {
+    "mar_elo": 1984.8491,
+    "hai_elo": 1717.2284,
+    "elo_diff": 267.62,
+    "venue": "neutral",
+    "poisson_coefs": {"intercept": 0.10408, "elo_diff_coef": 0.0018099},
+    "ordered_logit_coefs": {"b_elo": 0.005199, "c1": -0.7702, "c2": 0.5549}
+  },
+
+  "model_outputs": {
+    "lambda_mar": 1.8012,
+    "lambda_hai": 0.6837,
+    "lambda_total": 2.4849,
+    "p_mar_scores": 0.8349,
+    "p_hai_scores": 0.4952,
+    "p_btts": 0.4135,
+    "p_total_le2": 0.5477,
+    "p_total_ge3": 0.4523,
+    "p_btts_and_ge3": 0.3108,
+    "p_mar_win": 0.6977,
+    "p_draw": 0.1990,
+    "p_hai_win": 0.1033,
+    "p_2h_ge2_goals": 0.3966,
+    "p_mar_more_2h_sot": 0.7275,
+    "p_mar_more_corners_full": 0.8813,
+    "p_mar_2h_scores": 0.6287,
+    "p_mar_1h_scores": 0.5554,
+    "p_hai_2h_scores": 0.3134
+  },
+
+  "rules_applied": {
+    "RULE7": "FIRES — HAI win 10.33% < 15%. Submit unshaded estimates. Apply RULE15 fully to Nazon (Q9).",
+    "RULE8": "Does NOT fire — Draw 19.90% < 25%.",
+    "RULE15": "FIRES FULLY for Nazon (Q9). HAI <15% win probability. Use 0.25-0.35 range for underdog forward SOT. Additional factor: Nazon is DOUBTFUL and did NOT start GD1 or GD2. Floor at 0.25.",
+    "FLOOR_0.25": "Applied to Q9 (Nazon SOT) — RULE15 + doubtful + 0 WC minutes = computed ~11%, floored at 0.25.",
+    "RULE_FOULS": "Morocco attacks → Haiti defends → Haiti fouls more. Evidence: Haiti 18.5 fouls/game vs Morocco 12/game. Clear direction: Haiti more fouls (Q1 YES).",
+    "DEAD_RUBBER_HAITI": "Haiti is ELIMINATED. This is a dead rubber for Haiti. Less intense defending, potential rotations, less motivated. But Morocco also has less urgency (already qualified). Match may be more open than usual but Morocco still wins comfortably.",
+    "DEAD_RUBBER_EFFECT_ON_CORNERS": "Haiti dead rubber = potentially more open play = more attacking from both sides = more corners. This slightly offsets Morocco's natural corner advantage. Makes Q2 (HT corners) more uncertain."
+  },
+
+  "group_context": {
+    "group": "Group C — Brazil, Morocco, Scotland, Haiti",
+    "standings_after_gd2": {
+      "Brazil": "4 pts, GD +3 — QUALIFIED",
+      "Morocco": "4 pts, GD +1 — QUALIFIED",
+      "Scotland": "3 pts, GD 0 — Not yet qualified",
+      "Haiti": "0 pts, GD -4 — ELIMINATED"
+    },
+    "gd1_gd2_results": [
+      "Brazil 1-1 Morocco (GD1): Saibari 21' / Vinicius 32'",
+      "Scotland 1-0 Haiti (GD1): McGinn 28'",
+      "Scotland 0-1 Morocco (GD2): Saibari 2'",
+      "Brazil 3-0 Haiti (GD2): Cunha 23'/36', Vinicius 45+3'"
+    ],
+    "gd3_stakes": {
+      "Morocco": "Already qualified. Win = likely Group C winners. No desperation.",
+      "Haiti": "Eliminated. 0 pts. Dead rubber.",
+      "simultaneous": "Brazil vs Scotland playing at same time."
+    }
+  },
+
+  "gd_evidence": {
+    "MAR_GD1_vs_Brazil": {
+      "score": "1-1",
+      "mar_shots": 14,
+      "mar_sot": 3,
+      "mar_corners": 2,
+      "mar_fouls_fk": 16,
+      "mar_possession": "49%",
+      "mar_cards": "0 YC",
+      "mar_goal": "Saibari 21' (assist Brahim Diaz)"
+    },
+    "MAR_GD2_vs_Scotland": {
+      "score": "1-0",
+      "mar_shots": 12,
+      "mar_sot": 2,
+      "mar_corners": 5,
+      "mar_fouls": 8,
+      "sco_fouls": 11,
+      "mar_cards": "1 YC (Issa Diop 23')",
+      "mar_possession": "54%",
+      "mar_goal": "Saibari 2' (earliest WC winning goal in 1-0 result in history; assist Brahim Diaz)"
+    },
+    "HAI_GD1_vs_Scotland": {
+      "score": "0-1",
+      "hai_shots": 13,
+      "hai_sot": 2,
+      "hai_corners": 4,
+      "hai_fouls": 23,
+      "sco_fouls": 21,
+      "hai_offsides": 3,
+      "hai_cards": "1 YC (Bellegarde 39')",
+      "note": "Haiti fouled 23 times — high-foul match. Despite 13 shots, 0 goals."
+    },
+    "HAI_GD2_vs_Brazil": {
+      "score": "0-3",
+      "hai_shots": 7,
+      "hai_sot": 3,
+      "hai_corners": 4,
+      "bra_corners": 4,
+      "hai_fouls": 14,
+      "bra_fouls": 13,
+      "hai_offsides": 4,
+      "bra_offsides": 8,
+      "hai_cards": "3 YC (Arcus 4', Pierrot 45+4', Jean Jacques 72')",
+      "note": "Haiti had 3 SOT vs Brazil (blowout). Haiti 0 goals in 2 WC matches, 0 GF."
+    },
+    "morocco_totals": {
+      "total_shots": 26,
+      "total_sot": 5,
+      "total_corners": 7,
+      "fouls_per_game": 12.0,
+      "yc_total": 1,
+      "goals_scored": 2,
+      "goals_conceded": 1
+    },
+    "haiti_totals": {
+      "total_shots": 20,
+      "total_sot": 5,
+      "total_corners": 8,
+      "fouls_per_game": 18.5,
+      "yc_total": 4,
+      "goals_scored": 0,
+      "goals_conceded": 4
+    }
+  },
+
+  "player_profiles": {
+    "Duckens_Nazon": {
+      "club_2025_26": "Esteghlal F.C. (Persian Gulf Pro League, Iran)",
+      "club_stats": "10 apps, 429 minutes, 1 goal, 1 assist",
+      "nationality": "Haiti",
+      "age": "~31-32 (born 1994)",
+      "role": "CF, Haiti all-time top scorer (44 goals in 82 caps)",
+      "gd1_status": "UNUSED SUBSTITUTE — did not play vs Scotland",
+      "gd2_status": "Did NOT start vs Brazil. Fitness doubt reported.",
+      "gd3_status": "DOUBTFUL (unspecified issue). Sports Mole reports Isidor pushing to start.",
+      "wc2026_minutes": 0,
+      "wc2026_sot": 0,
+      "fanduel_odds": "Not prominently listed in major scorer markets",
+      "nazon_sot_calculation": {
+        "p_plays_at_all": 0.50,
+        "p_sot_if_sub_20min": 0.22,
+        "computed_p_sot": 0.11,
+        "floor_applied": 0.25,
+        "final_estimate": 0.25,
+        "note": "RULE15 fires (HAI <15%). FLOOR_0.25 binds. CRITICAL: 0 WC minutes, doubtful, Morocco's solid defense."
+      }
+    },
+    "Ismael_Saibari": {
+      "role": "Morocco CF / ST — only scorer in both WC matches",
+      "goals_wc2026": 2,
+      "gd1_goal": "21' vs Brazil",
+      "gd2_goal": "2' vs Scotland (earliest WC winning goal in 1-0 in history)",
+      "fanduel_anytime_scorer": "-110",
+      "note": "Both goals in 1H. Scored in 2nd and 21st minute — extremely early goals."
+    },
+    "Brahim_Diaz": {
+      "role": "Morocco #10 / RAM (Real Madrid)",
+      "gd1_assist": "Assisted Saibari vs Brazil",
+      "gd2_assist": "Assisted Saibari vs Scotland",
+      "fanduel_anytime": "+156",
+      "note": "2 assists in 2 WC matches. Creative hub."
+    }
+  },
+
+  "referee": {
+    "name": "Danny Makkelie",
+    "nationality": "Netherlands",
+    "career_matches": 506,
+    "career_yc_total": 1718,
+    "career_yc_per_game": 3.40,
+    "career_rc_per_game": 0.20,
+    "career_pens_per_game": 0.33,
+    "p_4plus_cards_career": 0.4416,
+    "wc_experience": "Qatar 2022 (GS + R16). Second World Cup.",
+    "note": "Not an extreme card-giver (3.40/game vs Ramos 4.17). Pens at 0.33/game is notable — awards them at meaningful rate."
+  },
+
+  "market_data": {
+    "match_winner": {
+      "MAR": "-600 (~85.7% de-vigged)",
+      "Draw": "+600 (~14.3% de-vigged)",
+      "HAI": "+1500 (~6.25% de-vigged)"
+    },
+    "totals": {
+      "over_2.5": "-188 (heavily implied YES)",
+      "over_3.5": "+140",
+      "note": "Market prices extremely heavy on Morocco goals"
+    },
+    "btts": {
+      "no": "-172 (~63.2% implied — Haiti NOT scoring)",
+      "yes": "+145 (~40.8% implied)"
+    },
+    "corners": {
+      "over_7.5": "4/11 implied (~73%) — considered well-priced"
+    },
+    "anytime_scorers": {
+      "Saibari_MAR": "-110",
+      "Brahim_Diaz_MAR": "+156",
+      "El_Kaabi_MAR": "21/5"
+    }
+  },
+
+  "question_analysis": {
+    "Q1": {
+      "question": "Will Haiti commit more fouls than Morocco?",
+      "estimate": 0.65,
+      "direction": "YES",
+      "crowd_estimate": 0.58,
+      "key_drivers": [
+        "RULE_FOULS: Morocco attacks → Haiti defends → Haiti fouls more",
+        "Haiti GD1 vs Scotland: 23 fouls. GD2 vs Brazil: 14 fouls. Average: 18.5/match",
+        "Morocco GD1 vs Brazil: ~16 fouls. GD2 vs Scotland: 8 fouls. Average: ~12/match",
+        "Haiti fouls more in BOTH their matches (vs Scotland AND vs Brazil)",
+        "Dead rubber Haiti: slight downward adjustment (less desperate fouls) → 0.65"
+      ]
+    },
+    "Q2": {
+      "question": "At halftime, will Haiti have more corner kicks than Morocco?",
+      "estimate": 0.35,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.40,
+      "key_drivers": [
+        "Morocco expected to win corner battle (model 88.13% full match)",
+        "BUT: Morocco only had 2 corners vs Brazil in full match (very low!); Haiti had 4/game",
+        "HT corners are volatile — hard to predict half-specific distribution",
+        "Dead rubber Haiti may be more open = could generate some corners",
+        "Morocco scores early typically (2' and 21') = if leading at HT, fewer late attacking corners"
+      ]
+    },
+    "Q3": {
+      "question": "Will Haiti receive more cards than Morocco?",
+      "estimate": 0.72,
+      "direction": "YES",
+      "crowd_estimate": 0.60,
+      "key_drivers": [
+        "Haiti YC total in WC: 4 (2/game average)",
+        "Morocco YC total in WC: 1 (0.5/game average)",
+        "Ratio: Haiti 4x more cards than Morocco per game",
+        "Makkelie 3.40 YC/game will issue them proportionally based on fouls",
+        "Haiti defending = more fouls = more cards",
+        "STRONG EDGE: crowd likely ~0.60; we're at 0.72. ~12pp YES edge."
+      ]
+    },
+    "Q4": {
+      "question": "Will Morocco have more shots on target than Haiti in the second half?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_estimate": 0.63,
+      "key_drivers": [
+        "Model: P(MAR more 2H SOT) = 72.75%",
+        "Morocco dominant attack vs Haiti's weak defense (conceded 4 goals in 2 games)",
+        "Haiti generated 3 SOT vs Brazil in GD2 — some upside risk for Haiti SOT",
+        "Slight shade from 72.75% to 0.70 for Haiti's surprising SOT output in blowouts"
+      ]
+    },
+    "Q5": {
+      "question": "Will there be 4 or more total shots on target in the second half?",
+      "estimate": 0.45,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.50,
+      "key_drivers": [
+        "Model proxy: P(4+ combined 2H SOT | lambda=3.73 combined) = 51%",
+        "Evidence calibration: Morocco GD2 vs Scotland had only 2 SOT for full match!",
+        "Combined 2H SOT estimate using actual WC avg (2.5/team): ~1.25 per team = 2.5 combined",
+        "P(combined 2H SOT ≥ 4 | lambda=2.5): only 24.2%",
+        "Blend of model and evidence: ~40-45%",
+        "Morocco may ease off in 2H if winning comfortably (dead rubber context)"
+      ]
+    },
+    "Q6": {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "estimate": 0.38,
+      "direction": "NO_LEAN",
+      "crowd_estimate": 0.42,
+      "key_drivers": [
+        "Makkelie: 0.33 pens/game career. P(pen OR red) baseline ~0.41",
+        "Historical overpricing pattern: shade below theoretical",
+        "Both teams' previous 4 WC matches combined: 0 penalties awarded",
+        "Makkelie 0.09 straight reds/game — red card unlikely",
+        "Haiti desperate defending could produce penalty if Brahim Diaz/Saibari drive in box"
+      ]
+    },
+    "Q7": {
+      "question": "Will Morocco win the match?",
+      "estimate": 0.80,
+      "direction": "YES",
+      "crowd_estimate": 0.78,
+      "key_drivers": [
+        "Model: P(MAR win) = 69.77%",
+        "Market: -600 (85.7% de-vigged)",
+        "Haiti ELIMINATED — less motivated",
+        "Blend 40% model, 60% market: 0.40 × 0.698 + 0.60 × 0.857 = 0.793 ≈ 0.80",
+        "Morocco scored in 2nd and 21st minute in previous matches — early damage likely"
+      ]
+    },
+    "Q8": {
+      "question": "Will Morocco score in the first half?",
+      "estimate": 0.70,
+      "direction": "YES",
+      "crowd_estimate": 0.63,
+      "key_drivers": [
+        "Model: P(MAR 1H scores) = 55.54%",
+        "Evidence: Morocco scored in 1H in BOTH WC matches (21' vs Brazil, 2' vs Scotland)",
+        "Both goals came from Saibari + Brahim Diaz quick transitions — their signature move",
+        "Haiti weaker than Scotland (who couldn't prevent 2nd-minute goal)",
+        "Evidence-adjusted from model 55.54% to 0.70"
+      ]
+    },
+    "Q9": {
+      "question": "Will Duckens Nazon have at least 1 shot on target?",
+      "estimate": 0.25,
+      "direction": "STRONG NO (FLOOR)",
+      "crowd_estimate": 0.42,
+      "key_drivers": [
+        "RULE15 FIRES FULLY: HAI win 10.33% < 15%",
+        "Nazon did NOT play GD1 (unused sub) or start GD2",
+        "WC2026 minutes: 0. WC2026 SOT: 0.",
+        "FITNESS DOUBTFUL for GD3 (Sports Mole reports 'Nazon decision')",
+        "Computed P(Nazon SOT): ~11% (P(plays) × P(SOT | plays))",
+        "FLOOR_0.25 applied",
+        "MAJOR EDGE: crowd ~0.42; we're at 0.25. ~17pp NO edge.",
+        "Market doesn't even list him prominently in anytime scorer markets"
+      ]
+    },
+    "Q10": {
+      "question": "Will Haiti score in the second half?",
+      "estimate": 0.25,
+      "direction": "STRONG NO",
+      "crowd_estimate": 0.35,
+      "key_drivers": [
+        "Haiti: 0 goals in 2 WC matches (0 GF across 180 minutes)",
+        "Model: P(Haiti 2H scores) = 31.34%",
+        "Market (BTTS No -172): P(Haiti scores at all) ≈ 36.8% → P(Haiti 2H score) ≈ 20-22%",
+        "Morocco conceded only 1 goal in 2 matches (to Vinicius Jr in GD1)",
+        "Model-market blend: ~25-26%. Consistent with FLOOR proximity.",
+        "FLOOR_0.25 does NOT apply (team goal question, not player SOT). Can go below 0.25.",
+        "Keeping at 0.25 acknowledging consolation goal possibility in dead rubber."
+      ]
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q9", "estimate": 0.25, "direction": "STRONG_NO_FLOOR", "note": "Nazon RULE15 + doubtful + 0 WC min. Crowd ~0.42. Major ~17pp NO edge."},
+    {"rank": 2, "q": "Q10", "estimate": 0.25, "direction": "STRONG_NO", "note": "Haiti 2H goal. 0 goals in 2 games. Morocco solid defense. Crowd ~0.35."},
+    {"rank": 3, "q": "Q3", "estimate": 0.72, "direction": "YES", "note": "Haiti more cards. 4 vs 1 YC in tournament. Very clear. Crowd ~0.60."},
+    {"rank": 4, "q": "Q8", "estimate": 0.70, "direction": "YES", "note": "Morocco 1H goal. Scored 2nd min and 21st min. Haiti weakest opponent yet."},
+    {"rank": 5, "q": "Q1", "estimate": 0.65, "direction": "YES", "note": "Haiti more fouls. 18.5 vs 12 per game — clear evidence."},
+    {"rank": 6, "q": "Q7", "estimate": 0.80, "direction": "YES", "note": "Morocco win. Market -600. No real edge vs crowd."},
+    {"rank": 7, "q": "Q4", "estimate": 0.70, "direction": "YES", "note": "Morocco more 2H SOT. Model 72.75%."},
+    {"rank": 8, "q": "Q6", "estimate": 0.38, "direction": "NO_LEAN", "note": "Penalty/red card. Makkelie baseline; historical overpricing."},
+    {"rank": 9, "q": "Q5", "estimate": 0.45, "direction": "NO_LEAN", "note": "4+ 2H SOT. Model-evidence diverge; Morocco may ease off."},
+    {"rank": 10, "q": "Q2", "estimate": 0.35, "direction": "NO_LEAN", "note": "Haiti HT corners. Morocco expected more but volatile."}
+  ],
+
+  "post_match": {
+    "actual_score": "Morocco 4-2 Haiti",
+    "match_played": true,
+    "questions": [
+      {"q": 1, "submitted": 0.65, "crowd": 0.61, "outcome": 1, "rbp": 5.47, "beat_crowd": true, "question": "Will Haiti commit more fouls than Morocco?"},
+      {"q": 2, "submitted": 0.35, "crowd": 0.25, "outcome": 0, "rbp": -3.62, "beat_crowd": false, "question": "At halftime, will Haiti have more corner kicks than Morocco?"},
+      {"q": 3, "submitted": 0.72, "crowd": 0.55, "outcome": 1, "rbp": 13.91, "beat_crowd": true, "question": "Will Haiti receive more cards than Morocco?"},
+      {"q": 4, "submitted": 0.70, "crowd": 0.72, "outcome": 1, "rbp": 1.03, "beat_crowd": true, "question": "Will Morocco have more shots on target than Haiti in the second half?"},
+      {"q": 5, "submitted": 0.45, "crowd": 0.62, "outcome": 1, "rbp": -13.51, "beat_crowd": false, "question": "Will there be 4 or more total shots on target in the second half?"},
+      {"q": 6, "submitted": 0.38, "crowd": 0.35, "outcome": 0, "rbp": -0.13, "beat_crowd": false, "question": "Will a penalty kick be awarded OR a red card be shown?"},
+      {"q": 7, "submitted": 0.80, "crowd": 0.80, "outcome": 1, "rbp": 1.66, "beat_crowd": true, "question": "Will Morocco win the match?"},
+      {"q": 8, "submitted": 0.70, "crowd": 0.66, "outcome": 1, "rbp": 4.22, "beat_crowd": true, "question": "Will Morocco score in the first half?"},
+      {"q": 9, "submitted": 0.25, "crowd": 0.28, "outcome": 1, "rbp": -1.23, "beat_crowd": false, "question": "Will Duckens Nazon have at least 1 shot on target?"},
+      {"q": 10, "submitted": 0.25, "crowd": 0.28, "outcome": 0, "rbp": 3.27, "beat_crowd": true, "question": "Will Haiti score in the second half?"}
+    ],
+    "total_rbp": 11.07,
+    "beat_crowd_count": "6/10",
+    "key_learnings": [
+      "Morocco 4-2 Haiti — much higher scoring than model expected (model λ_total = 2.49). Dead rubber matches can be very open and high-scoring for both sides.",
+      "Q9 (Nazon SOT) = YES — he was doubtful (0 WC minutes) but apparently played and got a SOT. RULE15 floor 0.25 minimized loss (-1.23). Lesson: doubt reports in dead rubbers can be misleading; players may play when nothing is at stake.",
+      "Q10 (Haiti score in 2H) = NO — both Haiti goals apparently came in 1H (4-2 final, 0 Haiti 2H goals). Dead rubber Haiti may have sat back in 2H after early action.",
+      "Q5 (4+ total 2H SOT) = YES and we missed it (0.45 vs crowd 0.62, -13.51 RBP). In a 4-2 open game, 2H SOT was high. Our model calibrated with Morocco's 2-SOT GD2 performance was too conservative.",
+      "Q3 (Haiti more cards) = YES, +13.91 RBP, BEST result of the match. Haiti 4 cards vs Morocco 1 card in WC = clear structural signal. RULE_FOULS on defending/less-motivated underdog validated.",
+      "Q2 (Haiti HT corners) = NO — our 0.35 was directionally right (Morocco wins corners) but we were ABOVE crowd's 0.25. We lost -3.62 while crowd also lost; we lost more because we gave Haiti more credit."
+    ]
+  }
+}

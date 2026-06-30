@@ -1,0 +1,155 @@
+# BASH LOG: GER-ECU and CUR-IVC GD3 Match Analysis
+# Date: 2026-06-25
+# Session resumed from prior context (GD3 predictions interrupted mid-process)
+
+## STEP 1: ESPN Scoreboard June 25 - Get GD3 Event IDs
+Command: curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260625"
+Output (key events):
+  760473 Ivory Coast at Curaçao STATUS_SCHEDULED
+  760468 Germany at Ecuador STATUS_SCHEDULED
+  760471 Sweden at Japan STATUS_SCHEDULED
+  760472 Netherlands at Tunisia STATUS_SCHEDULED
+
+## STEP 2: ESPN Scoreboard June 14 - Get GD1 Event IDs
+Command: curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260614"
+Output:
+  760421 | Türkiye at Australia | 2026-06-14
+  760422 | Curaçao at Germany | 2026-06-14 (GD1 GER-CUR)
+  760425 | Japan at Netherlands | 2026-06-14
+  760423 | Ecuador at Ivory Coast | 2026-06-14 (GD1 IVC-ECU)
+  760424 | Tunisia at Sweden | 2026-06-15
+
+## STEP 3: ESPN GD1 Box Scores (760422=GER-CUR, 760423=IVC-ECU)
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+Output GD1 GER-CUR (760422):
+  Germany: fouls=18, SOT=12, shots=26, corners=?, offsides=0, YC=0, RC=0
+  Curaçao: fouls=11, SOT=2, shots=8, corners=?, offsides=1, YC=0, RC=0
+  Result: Germany 7-1 Curacao
+
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760423"
+Output GD1 IVC-ECU (760423):
+  Ivory Coast: fouls=10, SOT=4, shots=15, corners=?, offsides=0, YC=3, RC=0
+  Ecuador: fouls=13, SOT=1, shots=12, corners=?, offsides=0, YC=1, RC=0
+  Result: Ivory Coast beat Ecuador (IVC 3pts, ECU 0 from GD1)
+
+## STEP 4: ESPN GD2 Box Scores (760448=GER-IVC, 760446=ECU-CUR)
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760448"
+Output GD2 GER-IVC:
+  Germany: fouls=5, SOT=7, shots=16, corners=?, offsides=0, YC=0, RC=0
+  Ivory Coast: fouls=7, SOT=2, shots=9, corners=?, offsides=1, YC=0, RC=0
+  Result: Germany 2-1 Ivory Coast
+
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760446"
+Output GD2 ECU-CUR:
+  Ecuador: fouls=7, SOT=15, shots=27, corners=?, offsides=1, YC=1, RC=0
+  Curaçao: fouls=10, SOT=3, shots=10, corners=?, offsides=2, YC=5, RC=0
+  Result: Ecuador 0-0 Curaçao (ECU 15 SOT 27 shots = 0 GOALS)
+
+NOTE: ESPN corners API returns "?" for these matches - no corner data available.
+
+## STEP 5: GD3 ESPN Pre-Match Summary
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+Output: Ecuador (0-1-1, 1pt) vs Germany (2-0-0, 6pts) STATUS_SCHEDULED
+
+Command: curl "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760473"
+Output: Curaçao (0-1-1, 1pt) vs Ivory Coast (1-0-1, 3pts) STATUS_SCHEDULED
+
+## STEP 6: Elo Ratings from eloratings.net/World.tsv
+Command: curl -s "https://www.eloratings.net/World.tsv"
+Key results:
+  Germany (DE): Elo=1954 (rank 9)
+  Ecuador (EC): Elo=1864 (rank 19)
+  Ivory Coast (CI): Elo=1728 (rank 38)
+  Curaçao (CW): Elo=1453 (rank 89)
+
+## STEP 7: Smarkets Event IDs
+Command: curl -s "https://api.smarkets.com/v3/events/?type=football_match&name=Germany+Ecuador"
+  Result 1 for GER-ECU: 45086929 "Ecuador vs Germany" 2026-06-25T20:00
+
+Command: curl -s "https://api.smarkets.com/v3/events/?type=football_match&name=Curacao"
+  Found: 45086950 "Curaçao vs Ivory Coast" 2026-06-25T20:00
+
+## STEP 8: Smarkets Market Lists
+GER-ECU (event 45086929):
+  141594374 FTR, 141594376 BTTS, 141594409 OU0.5, 141594410 OU1.5
+  141594411 OU2.5... wait
+  141594412 OU2.5, 141594413 OU3.5
+  146501319 Player SOT 0.5+
+
+CUR-IVC (event 45086950):
+  141597507 FTR, 141597509 BTTS, 141597542 OU0.5, 141597543 OU1.5
+  141597544 OU2.5, 141597545 OU3.5
+  146501285 Player SOT 0.5+
+
+KEY DISCOVERY: Smarkets quotes require ?depth=1 parameter to return data.
+  Working endpoint: curl "https://api.smarkets.com/v3/markets/{id}/quotes/?depth=1"
+
+## STEP 9: Smarkets FTR Quotes (via contracts + ?depth=1)
+GER-ECU FTR (market 141594374):
+  Contracts: 396672260=Ecuador, 396672261=Germany, 396672262=Draw
+  Quotes: Ecuador bid/ask → mid=18.4%, Germany mid=61.6%, Draw mid=19.6%
+  NOTE: Smarkets event = "Ecuador vs Germany" so Ecuador listed as HOME team
+
+GER-ECU BTTS (141594376):
+  396672282: mid=0.5495 → BTTS NO (since model BTTS YES=41.9%)
+  396672283: mid=0.4567 → BTTS YES
+
+GER-ECU OU0.5: UNDER=5.2%, OVER=94.8%
+GER-ECU OU1.5: UNDER=20.8%, OVER=79.1%
+GER-ECU OU2.5: UNDER=66.5%, OVER=33.9%
+GER-ECU OU3.5: UNDER=82.0%, OVER=18.0%
+
+CUR-IVC FTR (market 141597507):
+  396683116=Curacao(5.0%), 396683117=IVC(83.7%), 396683118=Draw(11.1%)
+
+CUR-IVC BTTS (141597509):
+  396683138: mid=0.4033 → BTTS YES (model BTTS YES=34.5%)
+  396683139: mid=0.6006 → BTTS NO
+
+CUR-IVC OU0.5: UNDER=3.4%, OVER=96.2%
+CUR-IVC OU1.5: UNDER=13.9%, OVER=86.2%
+CUR-IVC OU2.5: UNDER=33.0%, OVER=66.7%
+CUR-IVC OU3.5: UNDER=54.5%, OVER=45.3%
+
+## STEP 10: Player SOT Market Contracts
+GER-ECU Player SOT (market 146501319) - key quotes:
+  Enner Valencia (ECU): 53.2%
+  Kai Havertz (GER): 60.7%
+  Florian Wirtz (GER): 49.0%
+  Jamal Musiala (GER): 50.5%
+  Gonzalo Plata (ECU): 36.0%
+  Leroy Sane (GER): 42.2%
+  Joshua Kimmich (GER): 23.5%
+  Moises Caicedo (ECU): 15.6%
+
+CUR-IVC Player SOT (market 146501285) - key quotes:
+  Leandro Bacuna (CUR): 22.5%
+  Ibrahim Sangaré (IVC): 35.6%
+  Simon Adingra (IVC): 75.2%
+  Amad Diallo (IVC): 69.0%
+  Nicolas Pepe (IVC): 59.8%
+  Guela Doue (IVC): 22.6%
+  Sontje Hansen (CUR): 31.2%
+  Joshua Brenet (CUR): 11.1%
+
+## STEP 11: Poisson Model Computation
+Command: python3 [Poisson GLM script]
+
+GER-ECU (Elo diff=90): λ_GER=1.306, λ_ECU=0.943 (Elo-based)
+Market-calibrated (d=245): λ_GER=1.729, λ_ECU=0.712 (matches market FTR 61.6%/19.6%/18.4%)
+
+CUR-IVC (Elo diff=275): λ_IVC=1.825, λ_CUR=0.675 (Elo-based)
+Market-calibrated (d=480): λ_IVC=2.645, λ_CUR=0.466 (matches market FTR 83.7%/11.9%/4.5%)
+
+KEY COMPUTED VALUES:
+GER-ECU:
+  BTTS YES (model)=41.9% (market=45.7%)
+  OVER 2.5 (model)=44.1% (market=33.9%) ← market more pessimistic on goals
+  P(GER 2H goals > ECU 2H goals)=46.1% (with λ_2H=0.865 vs 0.356)
+  P(ECU ≥1 offside)=9.0% raw from λ=0.5
+
+CUR-IVC:
+  IVC FTR (model)=83.5% matches market 83.7%
+  BTTS YES (model)=34.5% (market=40.3%)
+  P(IVC first 2H goal)=71.1% (market-calibrated λ_IVC_2H=1.323)
+  P(2H goals > 1H goals)=37.4%

@@ -1,0 +1,406 @@
+{
+  "match": "Colombia vs DR Congo",
+  "tournament": "FIFA World Cup 2026",
+  "group": "K",
+  "game_day": 2,
+  "date": "2026-06-23",
+  "kickoff_et": "22:00",
+  "venue": "Estadio Akron, Guadalajara (Zapopan), Mexico",
+  "analysis_date": "2026-06-23",
+
+  "model_inputs": {
+    "col_elo": 2063.7111,
+    "cdr_elo": 1763.2036,
+    "elo_diff": 300.51,
+    "intercept": 0.10408,
+    "elo_diff_coef": 0.0018099,
+    "home_advantage": 0.0
+  },
+
+  "model_outputs": {
+    "lambda_col": 1.9117,
+    "lambda_cdr": 0.6442,
+    "lambda_total": 2.5558,
+    "p_col_win": 0.7325,
+    "p_draw": 0.1790,
+    "p_cdr_win": 0.0885,
+    "p_col_scores": 0.8522,
+    "p_cdr_scores": 0.4749,
+    "p_btts": 0.4047,
+    "p_total_le2": 0.5296,
+    "p_total_ge3": 0.4704,
+    "p_col_leads_ht": 0.5067,
+    "p_ht_draw": 0.3712,
+    "p_cdr_leads_ht": 0.1221,
+    "p_col_more_2h_goals": 0.5067,
+    "p_cdr_more_2h_goals": 0.1221,
+    "p_col_more_2h_sot_model": 0.7637,
+    "lambda_sot_col_3x": 5.7350,
+    "lambda_sot_cdr_3x": 1.9325,
+    "p_col_ge5_corners_lambda5": 0.5595
+  },
+
+  "market_data": {
+    "fanduel_col_ml": -195,
+    "fanduel_draw": 300,
+    "fanduel_cdr_ml": 600,
+    "market_col_win_implied_raw": 0.6610,
+    "market_col_win_devigged": 0.627,
+    "market_draw_devigged": 0.237,
+    "market_cdr_win_devigged": 0.136,
+    "over_2p5_line": 125,
+    "under_2p5_line": -155,
+    "under_2p5_implied": 0.608,
+    "over_2p5_implied": 0.444,
+    "btts_yes_approx": 0.40,
+    "btts_no_approx": 0.60,
+    "corners_note": "Under 10.5 total corners flagged as value; no exact line retrieved",
+    "diaz_anytime_scorer_fanduel": 185,
+    "diaz_anytime_scorer_implied": 0.351,
+    "bakambu_anytime_scorer_fanduel": 490,
+    "bakambu_anytime_scorer_implied": 0.169,
+    "bakambu_score_or_assist_fanduel": 230,
+    "bakambu_score_or_assist_implied": 0.303,
+    "market_model_gap_col_win": 0.1055,
+    "note": "Market (63%) and model (73%) have a 10pp gap on Colombia win. Market gives more weight to draw and CDR. Blended used: 0.68."
+  },
+
+  "rules_fired": {
+    "RULE7": true,
+    "RULE7_note": "DR Congo 8.85% model win / 13.6% market win. Both below 15% threshold. RULE7 fires. Submit unshaded model estimates for UNDERDOG props. For Bakambu (losing-team striker): use 0.25-0.35 range per RULE15 revised <15% underdog framework.",
+    "RULE8": false,
+    "RULE8_note": "Draw 17.90% < 25%. RULE8 does NOT fire. No draw-shrinkage adjustment needed.",
+    "RULE15": true,
+    "RULE15_note": "Bakambu (Q10). DR Congo <15% win = full RULE15 suppression. Use 0.25-0.35 range regardless of club rate.",
+    "RULE_FOULS": true,
+    "RULE_FOULS_note": "Colombia has possession (56% in GD1). DR Congo defends (25% vs Portugal). Defending team fouls more = DR Congo fouls more direction. BUT: Colombia is a HIGH-PRESS team (11 fouls while attacking in GD1 — JPN-TUN lesson applies). Q4 estimate moderately NO but not aggressively.",
+    "FLOOR_0p25": true,
+    "FLOOR_0p25_note": "Applied to Q10 (Bakambu SOT). Estimate 0.32 > floor.",
+    "RULE1": true,
+    "RULE1_note": "Q5 (Colombia win): avg(model 73.25%, market 62.7%) = 68%. Blended to 0.72 (model weighted slightly higher given RULE7 context)."
+  },
+
+  "group_standings_after_gd1": {
+    "Colombia": "3 pts (won vs Uzbekistan 3-1, GD +2)",
+    "Portugal": "1 pt (drew vs DR Congo 1-1, GD 0)",
+    "DR Congo": "1 pt (drew vs Portugal 1-1, GD 0)",
+    "Uzbekistan": "0 pts (lost vs Colombia 1-3, GD -2)",
+    "stakes_note": "Colombia can clinch knockout round qualification with a win. DR Congo effectively must win — a draw only keeps them alive if Portugal drops points vs Uzbekistan."
+  },
+
+  "gd1_evidence": {
+    "colombia_gd1": {
+      "opponent": "Uzbekistan",
+      "result": "3-1 W",
+      "shots_total": 15,
+      "sot": 4,
+      "fouls": 11,
+      "corners": 4,
+      "offsides": 3,
+      "possession_pct": 56,
+      "goals_1h": 1,
+      "goals_2h": 2,
+      "goals_by": "Muñoz 40' (1H), Díaz 65', Campaz 90+9' (both 2H). Uzbekistan: Fayzullaev 60'.",
+      "ht_score": "1-0 Colombia",
+      "formation": "4-2-3-1",
+      "key_note": "Only 4 SOT from 15 shots (26.7% conversion). Luis Díaz: 1 goal + 1 assist + hit woodwork. First WC2026 player with goal+assist+woodwork in same match."
+    },
+    "dr_congo_gd1": {
+      "opponent": "Portugal",
+      "result": "1-1 D",
+      "shots_total": 8,
+      "sot": 2,
+      "fouls": 10,
+      "corners": 4,
+      "offsides": 2,
+      "possession_pct": 25,
+      "goals_1h": 1,
+      "goals_2h": 0,
+      "goals_by": "Wissa 45+5' (CDR). Neves 6' (Portugal).",
+      "ht_score": "1-1",
+      "formation": "5-3-2",
+      "key_note": "Held Portugal (dominant possession 68%) to only 1 total SOT in 7 shots — exceptional defensive efficiency. 0 goals in 2H despite being threatened. Bakambu started, had ~1 SOT (forced Costa save in 2H), rated 7/10. Two yellow cards: Bernardo Silva (POR), Mbemba (CDR).",
+      "both_ht_sot": true,
+      "both_2h_sot": true
+    }
+  },
+
+  "player_profiles": {
+    "luis_diaz": {
+      "club": "Liverpool FC / Bayern Munich (transferred 2025-26 per reports)",
+      "position": "LW",
+      "age": 27,
+      "pl_2024_25_goals": 13,
+      "sot_per_90_estimated": 1.6,
+      "sot_per_90_note": "Exact figure not public; estimated from 13 PL goals in ~35 apps (~1.5-1.8 SOT/90)",
+      "gd1_goals": 1,
+      "gd1_assists": 1,
+      "gd1_contributions": "1 goal (65') + 1 assist (Muñoz 40') + woodwork. 6 touches in opposition box. Only 2nd Colombian to score and assist in a WC match (after James vs Japan 2014).",
+      "gd1_sot_confirmed": "≥1 (the goal; post strike classification ambiguous)",
+      "fanduel_anytime_scorer": 185,
+      "fanduel_anytime_scorer_implied": 0.351,
+      "score_or_assist_estimated_prob": 0.47,
+      "rule15_applies": false,
+      "note": "Colombia is the EXPECTED WINNER — RULE15 does not apply. RULE7 context for opponent (CDR <15% win) means Díaz will have MORE opportunities than usual."
+    },
+    "cedric_bakambu": {
+      "club": "Real Betis (La Liga)",
+      "position": "ST",
+      "age": 34,
+      "betis_2024_25_apps": 25,
+      "betis_2024_25_starts": 6,
+      "betis_2024_25_minutes": 561,
+      "betis_2024_25_goals": 3,
+      "betis_2024_25_sot": 9,
+      "sot_per_90": 1.44,
+      "sot_per_90_note": "From 561 min; primarily a sub role at Betis (19/25 apps from bench)",
+      "gd1_sot": 1,
+      "gd1_role": "Starter (90 min)",
+      "gd1_details": "1 confirmed SOT (forced save from Diogo Costa in 2H). Had 2 total attempts. Rattled post (ruled foul in build-up). Fired over from cutback.",
+      "fanduel_anytime_scorer": 490,
+      "fanduel_anytime_scorer_implied": 0.169,
+      "fanduel_score_or_assist": 230,
+      "fanduel_score_or_assist_implied": 0.303,
+      "rule15_applies": true,
+      "rule15_framework": "DR Congo <15% win probability (model 8.85%, market 13.6%). RULE15 revised framework: <15% underdog → use 0.25-0.35 range REGARDLESS of club SOT rate.",
+      "dr_congo_all_time_top_scorer": true,
+      "note": "FanDuel lists him at +490 scorer / +230 score-or-assist. Market presence confirmed — MAIN_BOOK_ABSENCE rule does not suppress further (he IS listed). Score-or-assist +230 implies ~30% for that prop; SOT should be 35-40% range, but RULE15 revised framework caps at 0.35 for <15% underdog."
+    }
+  },
+
+  "referee_profile": {
+    "name": "Maurizio Mariani",
+    "association": "Italy (UEFA)",
+    "career_matches": 289,
+    "career_yc_per_match": 4.81,
+    "career_rc_per_match": 0.18,
+    "career_pen_per_match": 0.37,
+    "season_2025_26_matches": 21,
+    "season_2025_26_yc_per_match": 3.95,
+    "season_2025_26_rc_per_match": 0.14,
+    "season_2025_26_pen_per_match": 0.24,
+    "season_2025_26_fouls_per_match": 24.29,
+    "wc2026_gd1": "Saudi Arabia vs Uruguay",
+    "penalty_note": "Career rate 0.37/game HIGH; current season 0.24/game. Base P(penalty) ≈ 0.30. P(pen OR RC) ≈ 0.30 + 0.14 = 0.43 theoretical, but our historical pattern is to OVERPRICE this question type. Shade to 0.38.",
+    "card_note": "High-card referee (4.81 career) but current season lower (3.95). Both teams relatively disciplined in GD1 (10-11 fouls each). However DR Congo defending desperately (RULE7) may trigger more cards."
+  },
+
+  "compound_calculations": {
+    "bakambu_sot": {
+      "club_rate_sot_per_90": 1.44,
+      "p_ge1_sot_90min_club_rate": 0.763,
+      "rule15_revised_cap": "0.25-0.35 for <15% underdog (both model and market trigger this)",
+      "gd1_adjustment": "1 SOT confirmed in GD1 vs Portugal — above zero, supports being at 0.32 not 0.25",
+      "final_estimate": 0.32
+    },
+    "diaz_score_or_assist": {
+      "fanduel_anytime_scorer_implied": 0.351,
+      "assist_addon_typical": 0.12,
+      "joint_correction_overlap": -0.02,
+      "market_score_or_assist_estimate": 0.47,
+      "gd1_form_boost": "goal+assist in GD1; in excellent form",
+      "rule7_context": "CDR is extreme underdog; COL will dominate; more chances for Díaz",
+      "final_estimate": 0.48
+    },
+    "corners_col": {
+      "gd1_corners": 4,
+      "lambda_estimate": 4.5,
+      "p_ge5_lambda4p5": 0.467,
+      "note": "Against compact DR Congo block, Colombia attacking heavily = corners generated. GD1 baseline 4; expect slightly more vs CDR's low block.",
+      "final_estimate": 0.48
+    },
+    "penalty_or_red_card": {
+      "mariani_pen_current_season": 0.24,
+      "mariani_rc_current_season": 0.14,
+      "theoretical_p": 0.358,
+      "historical_overpricing_note": "We have consistently overpriced this question type. Shade to 0.38.",
+      "rule7_upward_pressure": "CDR defending desperately → more box fouls → higher penalty risk",
+      "final_estimate": 0.38
+    }
+  },
+
+  "final_estimates": {
+    "Q1": {
+      "question": "Will Colombia have more shots on target than DR Congo in the second half?",
+      "estimate": 0.72,
+      "direction": "YES",
+      "key_drivers": [
+        "Model: P(COL more 2H SOT) = 76.37%",
+        "RULE7 fires: CDR extreme underdog → Colombia will dominate SOT in 2H",
+        "Colombia GD1: 4 total SOT (2 expected in 2H); CDR GD1: 2 total SOT (1 expected in 2H)",
+        "CDR's compact 5-3-2 is excellent (held Portugal to 1 SOT total!) — slight shade from 76.37% down",
+        "BUT Colombia is the 73% favorite with λ_SOT ratio 3:1 → they should still dominate 2H SOT"
+      ],
+      "crowd_expected": 0.65,
+      "edge": "moderate YES above crowd"
+    },
+    "Q2": {
+      "question": "Will Colombia score more goals than DR Congo in the second half?",
+      "estimate": 0.55,
+      "direction": "YES_LEAN",
+      "key_drivers": [
+        "Model: P(COL more 2H goals) = 50.67% (includes 0-0 in 2H = NO)",
+        "Colombia GD1: 2 goals in 2H (strong 2H scoring pattern)",
+        "DR Congo GD1: 0 goals in 2H vs Portugal (compact block held well in 2H)",
+        "Colombia's quality advantage → they score more when goals are scored",
+        "Market O/U 2.5 at +125/-155 suggests lower total goals → might reduce this estimate slightly"
+      ],
+      "crowd_expected": 0.52,
+      "edge": "slight YES"
+    },
+    "Q3": {
+      "question": "Will a penalty kick be awarded OR a red card be shown in the match?",
+      "estimate": 0.38,
+      "direction": "NO_LEAN",
+      "key_drivers": [
+        "Mariani current season: 0.24 pen/game, 0.14 RC/game → theoretical P(pen OR RC) ≈ 0.36",
+        "Both teams relatively disciplined (10-11 fouls in GD1)",
+        "RULE7 upward pressure: CDR defending desperately → more box fouls → penalty risk",
+        "HISTORICAL PATTERN: we consistently overprice this question type (ENG-GHA Q5 -4.09, others)",
+        "Shade from theoretical 0.36 slightly upward for RULE7 context: 0.38"
+      ],
+      "crowd_expected": 0.42,
+      "edge": "slight NO"
+    },
+    "Q4": {
+      "question": "Will Colombia commit more fouls than DR Congo?",
+      "estimate": 0.42,
+      "direction": "NO_LEAN",
+      "key_drivers": [
+        "RULE_FOULS: Colombia has possession → DR Congo defends → DR Congo fouls more direction",
+        "BUT: JPN-TUN LESSON — Colombia is a HIGH-PRESS team (11 fouls in GD1 while attacking!)",
+        "Colombia pressed aggressively vs Uzbekistan even with 56% possession",
+        "DR Congo GD1: only 10 fouls while defending vs Portugal (compact, disciplined block)",
+        "GD1 foul comparison: COL 11 vs CDR 10 — nearly identical. Near coin-flip.",
+        "RULE_FOULS direction gives slight NO lean: estimate 0.42"
+      ],
+      "crowd_expected": 0.47,
+      "edge": "slight NO"
+    },
+    "Q5": {
+      "question": "Will Colombia win the match?",
+      "estimate": 0.72,
+      "direction": "YES",
+      "key_drivers": [
+        "Model: P(COL win) = 73.25%",
+        "Market: COL -195 → de-vigged ~62.7% win",
+        "Blended (model+market): ~68%; our estimate 0.72 slightly above blend given RULE7 context",
+        "RULE1: sharp market heavily weighted; DR Congo GD1 showed they can draw (1-1 vs Portugal) but are extreme underdogs",
+        "DR Congo effectively must win (need result if Portugal beats Uzbekistan) → they attack → might be open at back → Colombia on the break"
+      ],
+      "crowd_expected": 0.67,
+      "edge": "moderate YES"
+    },
+    "Q6": {
+      "question": "At halftime, will Colombia be winning?",
+      "estimate": 0.52,
+      "direction": "YES_LEAN",
+      "key_drivers": [
+        "Model: P(COL leads at HT) = 50.67%",
+        "Colombia GD1: led at HT 1-0 vs Uzbekistan (Muñoz 40')",
+        "DR Congo GD1: 1-1 at HT vs Portugal (Wissa 45+5' equalizer)",
+        "CDR's compact 5-3-2 makes 1H opening difficult — they absorb pressure well",
+        "Colombia's λ_1H = 0.956 goals: P(COL scores 1H) ≈ 0.615; P(CDR scores 1H) ≈ 0.278",
+        "Slight YES lean given Colombia quality advantage; very close to coin-flip"
+      ],
+      "crowd_expected": 0.50,
+      "edge": "minimal"
+    },
+    "Q7": {
+      "question": "Will the match have 2 or fewer total goals?",
+      "estimate": 0.56,
+      "direction": "YES_LEAN",
+      "key_drivers": [
+        "Model: P(total ≤ 2) = 52.96%",
+        "Market: Under 2.5 at -155 → de-vigged 57-58% implied",
+        "DR Congo GD1: held Portugal to only 1 SOT in 7 shots — exceptional defensive discipline",
+        "Colombia GD1: 4 SOT from 15 shots (low conversion) — against compact CDR block, might struggle",
+        "Blended model/market estimate: 0.55-0.58. Settle at 0.56."
+      ],
+      "crowd_expected": 0.52,
+      "edge": "slight YES above crowd"
+    },
+    "Q8": {
+      "question": "Will Colombia have 5 or more corner kicks?",
+      "estimate": 0.48,
+      "direction": "NO_LEAN",
+      "key_drivers": [
+        "Colombia GD1: 4 corners vs Uzbekistan (just below threshold)",
+        "Against compact CDR 5-3-2 low block, Colombia will generate more deflected shots → more corners",
+        "Model: P(COL 5+ | λ=4.5) ≈ 0.47; P(COL 5+ | λ=5) = 0.56",
+        "Market: Under 10.5 total corners flagged as value; DR Congo had only 4 corners vs Portugal",
+        "Corner rate vs deep defensive block tends to be higher (more deflections from blocked shots)",
+        "Near coin-flip: 0.48"
+      ],
+      "crowd_expected": 0.50,
+      "edge": "minimal"
+    },
+    "Q9": {
+      "question": "Will Luis Díaz score or assist a goal (excluding own goals)?",
+      "estimate": 0.48,
+      "direction": "YES_LEAN",
+      "key_drivers": [
+        "FanDuel anytime scorer: +185 → 35.1% to score. Assist addon ~12%. Combined ~47%.",
+        "GD1: goal + assist (exceptional form — 2 contributions in 1 match)",
+        "RULE7 context: CDR extreme underdog → Colombia dominates → Díaz gets more chances than usual",
+        "CDR's 5-3-2 defensive block could limit his space on the left wing",
+        "No RULE15 (Colombia is the expected winner)",
+        "Estimate: 0.48 (market-anchored with slight upward adjustment for RULE7 + GD1 form)"
+      ],
+      "crowd_expected": 0.50,
+      "edge": "slight YES"
+    },
+    "Q10": {
+      "question": "Will Cédric Bakambu have at least 1 shot on target?",
+      "estimate": 0.32,
+      "direction": "NO",
+      "key_drivers": [
+        "RULE15 FIRES FULLY: DR Congo <15% win (model 8.85%, market 13.6%)",
+        "RULE15 revised framework: <15% underdog → use 0.25-0.35 range regardless of club rate",
+        "Club rate at Real Betis: 1.44 SOT/90 (La Liga), but primarily as a sub (19/25 apps off bench)",
+        "GD1: 1 confirmed SOT in 90 min vs Portugal (forced Costa save) — confirms he CAN get SOT",
+        "Market: FanDuel score/assist +230 (30.3% implied) → SOT probability somewhat higher (~35%)",
+        "Against Colombia (high-press 4-2-3-1 cutting off supply to CDR forwards), Bakambu isolated",
+        "FLOOR_0.25 confirmed as minimum. Estimate 0.32 (above floor; GD1 SOT warrants slight uplift from 0.25)"
+      ],
+      "crowd_expected": 0.43,
+      "edge": "SIGNIFICANT NO — RULE15 full application"
+    }
+  },
+
+  "edge_ranking": [
+    {"rank": 1, "q": "Q10", "estimate": 0.32, "direction": "NO", "note": "Bakambu RULE15 full. CDR <15% win. Crowd likely ~0.43. Pattern from Semenyo (+15.14), Fajardo x2 confirmed."},
+    {"rank": 2, "q": "Q5", "estimate": 0.72, "direction": "YES", "note": "Colombia win. Model 73% vs market 63%. Crowd likely ~0.67. Moderate YES edge."},
+    {"rank": 3, "q": "Q1", "estimate": 0.72, "direction": "YES", "note": "Colombia more 2H SOT. Model 76.37%. CDR compact defense slight shade. Crowd ~0.65."},
+    {"rank": 4, "q": "Q3", "estimate": 0.38, "direction": "NO", "note": "Penalty/red card. Historical overpricing. Crowd likely ~0.42."},
+    {"rank": 5, "q": "Q7", "estimate": 0.56, "direction": "YES", "note": "≤2 total goals. Market Under -155 confirms. CDR defensive excellence."},
+    {"rank": 6, "q": "Q2", "estimate": 0.55, "direction": "YES", "note": "Colombia more 2H goals. Colombia scored 2 in 2H in GD1; CDR scored 0 in 2H."},
+    {"rank": 7, "q": "Q4", "estimate": 0.42, "direction": "NO_LEAN", "note": "Colombia fouls. RULE_FOULS vs JPN-TUN high-press lesson. Near coin-flip."},
+    {"rank": 8, "q": "Q9", "estimate": 0.48, "direction": "YES_LEAN", "note": "Díaz score or assist. Market-anchored at ~47%. GD1 form excellent."},
+    {"rank": 9, "q": "Q8", "estimate": 0.48, "direction": "NO_LEAN", "note": "Colombia 5+ corners. GD1 baseline 4; compact CDR block adds corners. Coin-flip."},
+    {"rank": 10, "q": "Q6", "estimate": 0.52, "direction": "YES_LEAN", "note": "Colombia leads HT. Model 50.67%. GD1 led HT vs Uzbekistan. Coin-flip."}
+  ],
+
+  "post_match": {
+    "final_score": "Colombia 1-0 DR Congo",
+    "total_rbp": 29.11,
+    "settled_date": "2026-06-23",
+    "beat_crowd_count": "8/10",
+    "outcomes": {
+      "Q1_COL_more_2H_SOT": {"question": "Will Colombia have more shots on target than DR Congo in the second half?", "outcome": "YES", "our_est": 0.72, "crowd": 0.66, "rbp": 6.06, "beat_crowd": true},
+      "Q2_COL_more_2H_goals": {"question": "Will Colombia score more goals than DR Congo in the second half?", "outcome": "YES", "our_est": 0.55, "crowd": 0.55, "rbp": 2.34, "beat_crowd": true},
+      "Q3_penalty_or_red": {"question": "Will a penalty kick be awarded OR a red card be shown in the match?", "outcome": "NO", "our_est": 0.38, "crowd": 0.36, "rbp": 0.95, "beat_crowd": true},
+      "Q4_COL_more_fouls": {"question": "Will Colombia commit more fouls than DR Congo?", "outcome": "NO", "our_est": 0.42, "crowd": 0.41, "rbp": 1.22, "beat_crowd": true},
+      "Q5_COL_wins": {"question": "Will Colombia win the match?", "outcome": "YES", "our_est": 0.72, "crowd": 0.66, "rbp": 5.28, "beat_crowd": true},
+      "Q6_HT_COL_winning": {"question": "At halftime, will Colombia be winning?", "outcome": "NO", "our_est": 0.52, "crowd": 0.49, "rbp": -1.18, "beat_crowd": false, "note": "Colombia's eventual 1-0 winner came in the 2nd half — our slight YES lean on an early HT lead was wrong by a narrow margin."},
+      "Q7_2_or_fewer_goals": {"question": "Will the match have 2 or fewer total goals?", "outcome": "YES", "our_est": 0.56, "crowd": 0.51, "rbp": 6.26, "beat_crowd": true},
+      "Q8_COL_5plus_corners": {"question": "Will Colombia have 5 or more corner kicks?", "outcome": "YES", "our_est": 0.48, "crowd": 0.58, "rbp": -7.40, "beat_crowd": false, "note": "Flagged ourselves as 'near coin-flip' going in — the crowd's higher 58% (closer to actual YES) beat our 48%. Biggest loss of the match, from our lowest-conviction pick."},
+      "Q9_Diaz_score_or_assist": {"question": "Will Luis Díaz score or assist a goal (excluding own goals)?", "outcome": "NO", "our_est": 0.48, "crowd": 0.50, "rbp": 5.12, "beat_crowd": true},
+      "Q10_Bakambu_SOT": {"question": "Will Cédric Bakambu have at least 1 shot on target?", "outcome": "NO", "our_est": 0.32, "crowd": 0.43, "rbp": 10.45, "beat_crowd": true, "note": "Biggest win of the match. RULE15 (extreme-underdog forward SOT suppression) confirmed cleanly against a much higher crowd estimate."}
+    },
+    "key_confirmations": [
+      "Q10 (Bakambu, RULE15) was the standout win — extreme-underdog (DR Congo <15% win prob) forward SOT suppression continues to be one of the most reliable rules in the whole tournament.",
+      "Q8 (corners) was our only real miss, and it was the one question we explicitly flagged as a coin-flip going in — confirms that flagged low-conviction picks are exactly where crowd-beating edge disappears."
+    ]
+  }
+}

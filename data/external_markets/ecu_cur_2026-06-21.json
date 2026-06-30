@@ -1,0 +1,391 @@
+{
+  "match": "ECU-CUR",
+  "sportspredict_match_id": "dccc5a8c-427e-4d58-810a-8b8a3cc5d4d1",
+  "smarkets_event_id": "45042869",
+  "kickoff_utc": "2026-06-21T00:00:00Z",
+  "context_note": "Ecuador vs Cura\u00e7ao, WC2026. Ecuador MASSIVE favorite: \u03bb_ECU=2.612, \u03bb_CUR=0.416. FTR: Ecuador 86.59%, Draw 9.76%, Cura\u00e7ao 3.77%. This is a GER-CUR/BRA-HAI level mismatch. RULE7 applies (>86% favorite). RULE8 does NOT fire (draw=9.76%). Blowout-script likely: Cura\u00e7ao will chase from early. Player SOT markets NOT YET POPULATED (no prices). Q10 Bacuna is CUR's key midfielder (Cardiff City); mild RULE15 applies (blowout reversal partially offsets). Q6 Sarmiento is ECU attacking winger (Benfica); NO RULE15 (ECU expected winner). Most corners: ECU 85.12% dominant. Cards: CUR gets more cards as defensive underdog (CUR 53.17% most cards).",
+  "lineups_confirmed": false,
+  "RULE8_fires": false,
+  "draw_probability": 0.0976,
+  "player_markets_populated": false,
+  "key_lambdas": {
+    "lambda_ECU_goals": 2.612,
+    "lambda_CUR_goals": 0.416,
+    "lambda_ECU_2H": 1.543,
+    "lambda_CUR_2H": 0.234,
+    "lambda_ECU_1H": 1.282,
+    "lambda_CUR_1H": 0.175,
+    "lambda_ECU_SOT_full_est": 7.2,
+    "lambda_CUR_SOT_full_est": 2.05,
+    "lambda_ECU_SOT_1H_est": 3.44,
+    "lambda_ECU_SOT_2H_est": 4.14,
+    "lambda_CUR_SOT_1H_est": 0.86,
+    "lambda_CUR_SOT_2H_est": 1.2,
+    "lambda_total_cards_est": 3.2,
+    "lambda_ECU_first_goal_prob": 0.821
+  },
+  "smarkets_prices": {
+    "FTR": {
+      "Ecuador": 0.8659,
+      "Draw": 0.0976,
+      "Curacao": 0.0377,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Over": 0.6118,
+      "Under": 0.3907,
+      "liquid": true
+    },
+    "OU3_5": {
+      "Over": 0.3732,
+      "Under": 0.6271,
+      "liquid": true
+    },
+    "OU4_5": {
+      "Over": 0.2022,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.3033,
+      "No": 0.6995,
+      "liquid": true
+    },
+    "BTTS_OU2_5": {
+      "Yes_Over": 0.2946,
+      "Yes_Under": 0.0418,
+      "No_Over": 0.3174,
+      "No_Under": 0.3467,
+      "liquid": true
+    },
+    "ECU_OU0_5": {
+      "Over": 0.9266,
+      "liquid": true
+    },
+    "ECU_OU1_5": {
+      "Over": 0.7635,
+      "liquid": true
+    },
+    "ECU_OU2_5": {
+      "Over": 0.5182,
+      "liquid": true
+    },
+    "ECU_OU3_5": {
+      "Over": 0.2797,
+      "liquid": true
+    },
+    "CUR_OU0_5": {
+      "Over": 0.34,
+      "liquid": true
+    },
+    "CUR_OU1_5": {
+      "Over": 0.0694,
+      "liquid": true
+    },
+    "2H_ECU_OU0_5": {
+      "Over": 0.7863,
+      "liquid": true
+    },
+    "2H_ECU_OU1_5": {
+      "Over": 0.4404,
+      "liquid": true
+    },
+    "2H_CUR_OU0_5": {
+      "Over": 0.2084,
+      "liquid": true
+    },
+    "1H_ECU_OU0_5": {
+      "Over": 0.7225,
+      "liquid": true
+    },
+    "1H_ECU_OU1_5": {
+      "Over": 0.3604,
+      "liquid": true
+    },
+    "1H_CUR_OU0_5": {
+      "Over": 0.1605,
+      "liquid": true
+    },
+    "HT_result": {
+      "Ecuador": 0.6645,
+      "Draw": 0.2964,
+      "Curacao": 0.0484,
+      "liquid": true
+    },
+    "2H_result": {
+      "Ecuador": 0.701,
+      "Draw": 0.2545,
+      "Curacao": 0.0554,
+      "liquid": true
+    },
+    "Highest_scoring_half": {
+      "First_Half": 0.3086,
+      "Equal": 0.2372,
+      "Second_Half": 0.4594,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.3298,
+      "No": 0.6956,
+      "liquid": true
+    },
+    "Red_card": {
+      "Yes": 0.1736,
+      "No": 0.8274,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Ecuador": 0.8512,
+      "Curacao": 0.0811,
+      "Draw": 0.0563,
+      "liquid": true
+    },
+    "ECU_corners_OU4_5": {
+      "Over": 0.7587,
+      "Under": 0.2397,
+      "liquid": true
+    },
+    "ECU_corners_OU5_5": {
+      "Over": 0.6327,
+      "Under": 0.3667,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Curacao": 0.5317,
+      "Draw": 0.2334,
+      "Ecuador": 0.2332,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Over": 0.6181,
+      "Under": 0.4016,
+      "liquid": true
+    },
+    "Cards_OU3_5": {
+      "Over": 0.4505,
+      "Under": 0.5986,
+      "liquid": true
+    },
+    "Cards_OU4_5": {
+      "Over": 0.2699,
+      "liquid": true
+    },
+    "ECU_cards_OU1_5": {
+      "Over": 0.3989,
+      "liquid": true
+    },
+    "CUR_cards_OU1_5": {
+      "Over": 0.5887,
+      "liquid": true
+    },
+    "CUR_cards_OU2_5": {
+      "Over": 0.3352,
+      "liquid": true
+    },
+    "ECU_plus0_5_cards_handicap": {
+      "CUR_minus0_5_covers": 0.5182,
+      "ECU_plus0_5": 0.479,
+      "liquid": true
+    },
+    "Total_SOT_OU8_5": {
+      "Over": 0.5243,
+      "Under": 0.4761,
+      "liquid": true
+    },
+    "ECU_SOT_OU6_5": {
+      "Over": 0.5676,
+      "Under": 0.4435,
+      "liquid": true
+    },
+    "CUR_SOT_OU1_5": {
+      "Over": 0.6014,
+      "Under": 0.4064,
+      "liquid": true
+    },
+    "2H_BTTS": {
+      "Yes": 0.1551,
+      "No": 0.849,
+      "liquid": true
+    },
+    "1H_BTTS": {
+      "Yes": 0.1157,
+      "No": 0.8815,
+      "liquid": true
+    },
+    "Player_SOT": {
+      "note": "PLAYER MARKETS NOT YET POPULATED \u2014 no prices available at time of research",
+      "Jeremy_Sarmiento": null,
+      "Leandro_Bacuna": null
+    }
+  },
+  "rules_applied": {
+    "RULE7_heavy_favorite": "Ecuador 86.59% \u2192 RULE7 applies. All 'Cura\u00e7ao does something attacking' props lean NO. Crowd will over-credit CUR.",
+    "NO_RULE8": "Draw=9.76% well below 25% threshold. Blowout-script match expected (like BRA-HAI).",
+    "Q10_Bacuna_mild_RULE15": "CUR win=3.77% \u2192 blowout territory. Bacuna is CUR's key midfielder (NOT primary striker like Nazon). Full RULE15 (-10pp) moderated: blowout reversal pattern (CUR will push forward from early deficit) + Bacuna not pure forward \u2192 apply mild RULE15 (-5pp). Base from model (\u03bb_CUR_SOT=2.05, Bacuna 28% share \u2192 \u03bb_Bacuna=0.574, P(\u22651)=0.437). With -5pp \u2192 0.39.",
+    "Q6_no_RULE15_Sarmiento": "Ecuador is expected winner (86.59%). Sarmiento is ECU's attacking winger. No RULE15. Estimate from model (ECU SOT 2H share \u224813-15%).",
+    "Q2_fouls_reverse": "Q2 asks if ECU fouls MORE than CUR \u2014 this is the REVERSE of the expected pattern. CUR as defensive underdog fouls more. Cards proxy: CUR most cards 53.17% vs ECU 23.32%. For fouls: P(ECU more fouls) \u2248 0.25-0.30. Strong NO lean.",
+    "Q4_compound": "Q4 = P(ECU scores first goal) \u00d7 P(CUR scores in 2H). P(ECU first) = \u03bb_ECU/(\u03bb_ECU+\u03bb_CUR) \u00d7 P(\u22651 goal) = 0.863 \u00d7 0.951 = 0.821. P(CUR in 2H) = 0.2084. Combined \u2248 0.171.",
+    "Q5_pen_or_red": "P(penalty OR red) = 1 - P(no pen) \u00d7 P(no red) = 1 - 0.670 \u00d7 0.826 = 0.446. Slight independence assumption.",
+    "Q1_both_SOT_HT": "No direct 1H BTTS SOT market. Model: \u03bb_ECU_SOT_1H=3.44 \u2192 P(ECU\u22651)=0.968. \u03bb_CUR_SOT_1H=0.86 \u2192 P(CUR\u22651)=0.578. Combined=0.560. CUR SOT OU1.5 Over=0.601 confirms they DO get shots despite being outclassed.",
+    "direct_markets": "Q3=highest scoring half 2H(0.459); Q7=FTR ECU(0.866); Q8=OU2.5 Over(0.612); Q9=ECU_corners_OU4_5 Over(0.759)."
+  },
+  "final_submission_estimates": {
+    "Q1_both_SOT_at_HT": {
+      "estimate": 0.56,
+      "confidence": "MEDIUM",
+      "note": "Model: \u03bb_CUR_SOT_1H=0.86 \u2192 P(CUR\u22651 SOT in 1H)=0.578. \u03bb_ECU_SOT_1H=3.44 \u2192 P(ECU\u22651)=0.968. P(both)=0.560. CUR_SOT_OU1.5 Over=0.601 confirms CUR still gets shots despite being outclassed. Round up slightly \u2192 0.56."
+    },
+    "Q2_ECU_more_fouls": {
+      "estimate": 0.28,
+      "confidence": "MEDIUM-HIGH",
+      "note": "CUR is the defensive underdog who fouls more. Cards proxy: CUR most cards 53.17% vs ECU 23.32%. Cards handicap: CUR>ECU on cards = 51.82%. For fouls, the pattern is even stronger (defensive fouling without yellow cards). P(ECU more fouls) \u2248 0.25-0.30. Strong NO lean \u2192 0.28."
+    },
+    "Q3_2H_more_goals_than_1H": {
+      "estimate": 0.46,
+      "confidence": "HIGH",
+      "note": "DIRECT highest scoring half market: Second Half = 0.4594. Trust the market."
+    },
+    "Q4_ECU_first_AND_CUR_2H_goal": {
+      "estimate": 0.17,
+      "confidence": "MEDIUM",
+      "note": "Compound question. P(ECU first goal) = \u03bb_ECU/(\u03bb_ECU+\u03bb_CUR) \u00d7 P(\u22651 goal) = 0.863 \u00d7 0.951 = 0.821. P(CUR scores in 2H) = 0.2084 (direct 2H CUR OU0.5 market). P(Q4) \u2248 0.821 \u00d7 0.2084 = 0.171. Approximate independence assumption valid since CUR's 2H scoring is unlikely regardless of who scores first."
+    },
+    "Q5_penalty_or_red_card": {
+      "estimate": 0.44,
+      "confidence": "MEDIUM",
+      "note": "P(pen)=0.3298, P(red)=0.1736. Using independence: P(OR) = 1-(1-0.3298)(1-0.1736) = 0.446. Both markets are liquid. Round to 0.44."
+    },
+    "Q6_Sarmiento_SOT_2H": {
+      "estimate": 0.4,
+      "confidence": "LOW",
+      "note": "NO PLAYER MARKET AVAILABLE. Model: \u03bb_ECU_SOT_2H=4.14. Sarmiento as one of 4-5 ECU attacking options \u2192 ~13-15% SOT share. \u03bb_Sarmiento_2H=0.55-0.62 \u2192 P(\u22651)=0.42-0.46. No RULE15 (ECU expected winner). LOW confidence without direct market. Estimate 0.40."
+    },
+    "Q7_ECU_wins": {
+      "estimate": 0.87,
+      "confidence": "HIGH",
+      "note": "RULE1: FTR market ECU = 0.8659 (liquid). avg(crowd~0.87, market 0.866) \u2248 0.87. RULE6: don't push to 1.00."
+    },
+    "Q8_3plus_goals": {
+      "estimate": 0.61,
+      "confidence": "HIGH",
+      "note": "DIRECT OU2.5 Over = 0.6118. Trust the market."
+    },
+    "Q9_ECU_5plus_corners": {
+      "estimate": 0.76,
+      "confidence": "HIGH",
+      "note": "DIRECT ECU_corners_OU4_5 Over = 0.7587. Trust the market. Most corners ECU=85.12% confirms dominance."
+    },
+    "Q10_Bacuna_SOT": {
+      "estimate": 0.38,
+      "confidence": "LOW",
+      "note": "NO PLAYER MARKET AVAILABLE. Model: \u03bb_CUR_SOT=2.05. Bacuna as key CUR midfielder (~28% share) \u2192 \u03bb_Bacuna=0.574, P(\u22651)=0.437. Mild RULE15: CUR 3.77% win (blowout territory), but Bacuna is midfielder NOT striker AND blowout reversal pattern (CUR pushes forward desperately) partially offsets RULE15. Net: -5pp \u2192 0.39 \u2192 0.38. LOW confidence without direct market. MUST update when player markets populate."
+    }
+  },
+  "post_match_results": {
+    "match_score": "ECU 0-0 CUW",
+    "halftime_score": "0-0",
+    "goals_by_half": {
+      "ECU": {
+        "1H": 0,
+        "2H": 0
+      },
+      "CUW": {
+        "1H": 0,
+        "2H": 0
+      }
+    },
+    "match_facts": {
+      "ECU_fouls": 7,
+      "CUW_fouls": 10,
+      "ECU_YC": 1,
+      "CUW_YC": 5,
+      "ECU_RC": 0,
+      "CUW_RC": 0,
+      "ECU_offsides": 1,
+      "CUW_offsides": 2,
+      "ECU_corners": 9,
+      "CUW_corners": 0,
+      "ECU_SOT": 15,
+      "CUW_SOT": 3,
+      "ECU_shots": 27,
+      "CUW_shots": 10,
+      "source": "ESPN event 760446",
+      "notable": "MASSIVE UPSET: Ecuador 86.59% favorite drew 0-0 with Cura\u00e7ao. ECU 15 SOT 27 shots 0 goals. CUW 5 YC (massive disciplinary issues). Cura\u00e7ao 0 corners."
+    },
+    "question_results": {
+      "Q1_both_SOT_at_HT": {
+        "our_estimate": 0.56,
+        "crowd_estimate": 0.56,
+        "outcome": 0,
+        "rbp": 2.88,
+        "notes": "outcome=NO \u2014 CUW had 0 SOT in 1H (all 3 CUW SOT were in 2H). Beat crowd because tied estimates."
+      },
+      "Q2_ECU_more_fouls": {
+        "our_estimate": 0.28,
+        "crowd_estimate": 0.44,
+        "outcome": 0,
+        "rbp": 14.27,
+        "notes": "CUW 10 fouls > ECU 7. outcome=NO. Big beat crowd."
+      },
+      "Q3_2H_more_goals_than_1H": {
+        "our_estimate": 0.46,
+        "crowd_estimate": 0.5,
+        "outcome": 0,
+        "rbp": 6.24,
+        "notes": "0 goals total. outcome=NO."
+      },
+      "Q4_ECU_first_AND_CUR_2H_goal": {
+        "our_estimate": 0.17,
+        "crowd_estimate": 0.27,
+        "outcome": 0,
+        "rbp": 7.63,
+        "notes": "ECU scored 0. outcome=NO."
+      },
+      "Q5_penalty_or_red_card": {
+        "our_estimate": 0.44,
+        "crowd_estimate": 0.39,
+        "outcome": 0,
+        "rbp": -2.34,
+        "notes": "No red cards, no penalty. outcome=NO. MISS (we estimated higher than crowd)."
+      },
+      "Q6_Sarmiento_SOT_2H_NOT_IN_QK": {
+        "our_estimate": 0.4,
+        "crowd_estimate": null,
+        "outcome": null,
+        "rbp": null,
+        "notes": "NOT A QK QUESTION \u2014 Sarmiento SOT was not on the platform for this match."
+      },
+      "Q7_ECU_wins": {
+        "our_estimate": 0.87,
+        "crowd_estimate": 0.8,
+        "outcome": 0,
+        "rbp": -9.29,
+        "notes": "ECU 0-0 draw. MASSIVE UPSET. outcome=NO. Both us and crowd badly missed. We were worse (0.87 vs crowd 0.80)."
+      },
+      "Q8_3plus_goals": {
+        "our_estimate": 0.61,
+        "crowd_estimate": 0.57,
+        "outcome": 0,
+        "rbp": -2.47,
+        "notes": "0 total goals. outcome=NO. MISS."
+      },
+      "Q9_ECU_5plus_corners": {
+        "our_estimate": 0.76,
+        "crowd_estimate": 0.63,
+        "outcome": 1,
+        "rbp": 11.1,
+        "notes": "ECU 9 corners. outcome=YES. Beat crowd."
+      },
+      "Q10_Bacuna_SOT": {
+        "our_estimate": 0.38,
+        "crowd_estimate": 0.35,
+        "outcome": 1,
+        "rbp": 7.83,
+        "notes": "CUW 3 total SOT. Bacuna got 1 SOT. outcome=YES."
+      }
+    },
+    "match_rbp_total": 35.87,
+    "questions_beat_crowd": "6/9",
+    "crowd_data_needed": true,
+    "note": "Only 9 questions on QK platform. Q6 Sarmiento SOT was NOT a QK question. ECU wins = QK Q6, 3+ goals = QK Q7, ECU 5+ corners = QK Q8, Bacuna SOT = QK Q9."
+  }
+}

@@ -1,0 +1,337 @@
+team,elo_rating
+Spain,2225.5610
+Argentina,2189.5282
+France,2129.0524
+England,2090.3687
+Brazil,2068.6320
+Colombia,2063.7111
+Portugal,2056.5074
+Ecuador,2028.0889
+Netherlands,2009.2805
+Germany,2000.3014
+Japan,1992.7287
+Morocco,1984.8491
+Mexico,1984.7936
+Norway,1983.8379
+Uruguay,1975.0705
+Turkey,1974.4414
+Croatia,1973.5928
+Switzerland,1951.7868
+Belgium,1944.7165
+Denmark,1938.4700
+Italy,1935.4058
+Paraguay,1917.7456
+Senegal,1912.8104
+Canada,1901.9781
+Australia,1900.7948
+Iran,1894.4322
+Nigeria,1885.6620
+Austria,1885.0498
+South Korea,1879.9769
+Yugoslavia,1873.2779
+Algeria,1872.4250
+Panama,1859.0601
+Scotland,1852.1502
+Ukraine,1837.4734
+Russia,1836.7172
+United States,1827.4984
+Venezuela,1824.0436
+Uzbekistan,1818.9133
+Greece,1815.3575
+Ivory Coast,1814.7168
+Serbia,1812.0911
+Egypt,1809.7527
+Czech Republic,1806.3989
+Jersey,1805.3213
+Czechoslovakia,1804.8013
+Chile,1803.1404
+Basque Country,1797.8956
+Kosovo,1782.0339
+Sweden,1775.2510
+Jordan,1774.1438
+Peru,1771.5664
+Poland,1765.1302
+DR Congo,1763.2036
+Republic of Ireland,1761.2714
+Hungary,1759.6840
+Costa Rica,1751.4923
+Guernsey,1745.6263
+Wales,1744.9406
+Slovenia,1737.4697
+Tunisia,1737.4518
+Iraq,1736.5496
+German DR,1732.1997
+New Zealand,1730.8705
+Bolivia,1728.6866
+Cameroon,1723.8787
+Honduras,1720.7956
+Slovakia,1718.3139
+Haiti,1717.2284
+Georgia,1712.0632
+Israel,1709.6458
+Isle of Man,1709.1689
+Mali,1707.5984
+Romania,1703.1823
+Saudi Arabia,1693.8249
+Northern Cyprus,1689.4311
+Occitania,1686.7885
+Padania,1686.2436
+Albania,1672.3558
+Jamaica,1663.6569
+South Africa,1663.3169
+United Arab Emirates,1663.2705
+Northern Ireland,1660.5720
+Isle of Wight,1660.2713
+Catalonia,1655.0158
+Cape Verde,1653.4535
+Guatemala,1652.8821
+Bosnia and Herzegovina,1652.8208
+North Macedonia,1651.0852
+Burkina Faso,1650.7315
+Iraqi Kurdistan,1645.2783
+Ynys Môn,1639.6907
+Abkhazia,1628.1657
+Ghana,1625.5008
+Iceland,1621.9197
+Curaçao,1611.4457
+Kárpátalja,1606.7544
+Suriname,1597.8997
+Syria,1595.2495
+Kernow,1593.1030
+Andalusia,1592.4431
+Rhodes,1591.7345
+County of Nice,1591.0134
+New Caledonia,1590.0380
+Angola,1588.6910
+Palestine,1586.3502
+Panjab,1585.6816
+Finland,1585.0173
+Belarus,1583.3497
+Tamil Eelam,1580.5552
+Réunion,1579.7535
+Oman,1576.4846
+Guinea,1576.3548
+Ellan Vannin,1569.8100
+Kurdistan,1567.0153
+Menorca,1566.1378
+Qatar,1564.5424
+Artsakh,1557.3056
+Corsica,1555.5988
+Yorkshire,1553.3015
+Chameria,1552.7096
+China,1551.6213
+Zambia,1549.9148
+Arameans Suryoye,1546.3291
+Quebec,1546.1520
+Cascadia,1545.3324
+Trinidad and Tobago,1542.3018
+Bahrain,1538.7397
+Benin,1538.6480
+Gambia,1538.3010
+Zanzibar,1533.8615
+Thailand,1531.5790
+Libya,1530.1339
+Bulgaria,1528.8994
+Maule Sur,1528.3458
+Galicia,1527.4023
+Guadeloupe,1525.6232
+Gabon,1521.3667
+Asturias,1520.5298
+Western Armenia,1518.6069
+Surrey,1516.2130
+Montenegro,1515.3487
+Nicaragua,1515.2508
+Canary Islands,1515.0521
+Biafra,1514.7073
+Parishes of Jersey,1513.8863
+Uganda,1512.2926
+Donetsk PR,1511.8359
+Madagascar,1509.6408
+Mapuche,1508.4708
+Felvidék,1507.4794
+Silesia,1506.8865
+Elba Island,1506.7552
+Tahiti,1505.1216
+Crimea,1504.8221
+Shetland,1503.2469
+Indonesia,1502.7316
+Brittany,1502.5105
+Kazakhstan,1501.8937
+United Koreans in Japan,1501.1351
+Délvidék,1500.2243
+Guyana,1499.5172
+Niger,1497.8040
+Central Spain,1495.3172
+Togo,1494.9334
+El Salvador,1494.7473
+Saugeais,1494.7403
+Mozambique,1493.8029
+North Korea,1491.6444
+Cilento,1490.6492
+Sápmi,1489.7521
+Madrid,1489.4802
+Luhansk PR,1489.1603
+Comoros,1488.0332
+Dominican Republic,1487.9465
+North Vietnam,1487.7190
+Seborga,1486.4329
+Sealand,1483.9342
+Yoruba Nation,1483.5040
+Székely Land,1483.4577
+Matabeleland,1482.0716
+Martinique,1481.8415
+Republic of St. Pauli,1480.8197
+Malaysia,1480.4829
+Franconia,1478.1584
+Somaliland,1477.6873
+South Ossetia,1475.6066
+Zimbabwe,1474.8935
+Ryūkyū,1474.4366
+West Papua,1474.3180
+Åland Islands,1473.3469
+Kenya,1471.0128
+Sudan,1470.6557
+Sierra Leone,1469.4741
+Gozo,1469.3014
+South Yemen,1468.9075
+Vietnam,1467.1454
+Kuwait,1467.0327
+Greenland,1465.4346
+Romani people,1463.7762
+Aymara,1463.1834
+East Turkestan,1463.1599
+Provence,1460.1312
+Hmong,1459.7182
+Kabylia,1455.7937
+Mayotte,1453.7911
+Monaco,1451.9881
+Chechnya,1451.2803
+Kyrgyzstan,1451.1347
+Mauritania,1450.8106
+Luxembourg,1450.3253
+Faroe Islands,1447.7014
+Rwanda,1447.6483
+Saarland,1447.3617
+Lebanon,1445.1906
+Gotland,1443.7743
+Equatorial Guinea,1443.4455
+Papua New Guinea,1442.1477
+Malawi,1437.1355
+Liberia,1436.5450
+Western Isles,1436.0629
+Tajikistan,1436.0002
+Manchukuo,1430.3537
+Găgăuzia,1429.5318
+Vanuatu,1428.7047
+Ticino,1426.4990
+Niue,1425.8058
+Estonia,1423.9150
+Namibia,1422.8216
+Palau,1420.7515
+Cuba,1418.6791
+Vatican City,1418.4634
+Lesotho,1417.8223
+Two Sicilies,1417.3493
+Marshall Islands,1416.6119
+Tanzania,1416.4012
+Saint Barthélemy,1415.3439
+Armenia,1413.3298
+Fiji,1407.4888
+Western Sahara,1400.1545
+French Guiana,1397.9308
+Orkney,1397.3225
+Western Australia,1395.1800
+Ambazonia,1392.2011
+Ethiopia,1391.5774
+Raetia,1391.2337
+Botswana,1386.5878
+Burundi,1386.3400
+Turkmenistan,1385.0799
+Azerbaijan,1379.8291
+Cyprus,1369.0742
+Puerto Rico,1362.0772
+Saint Vincent and the Grenadines,1361.4836
+Central African Republic,1361.2497
+Guinea-Bissau,1360.1975
+Chagos Islands,1359.4850
+Barawa,1358.3973
+Yemen DPR,1355.0883
+Saint Helena,1348.6292
+Solomon Islands,1347.4110
+Vietnam Republic,1346.9679
+Malta,1345.1254
+Hitra,1343.5599
+Saare County,1340.8430
+Philippines,1339.3732
+Saint Martin,1337.5537
+Bermuda,1335.0187
+Congo,1328.6370
+Sark,1327.7245
+Moldova,1327.6633
+Micronesia,1320.4875
+Latvia,1319.6974
+Lithuania,1318.5843
+Eswatini,1315.9435
+Sint Maarten,1311.6653
+Hong Kong,1306.3448
+Yemen,1306.0257
+Singapore,1292.7238
+Grenada,1291.9129
+Belize,1291.7278
+Wallis Islands and Futuna,1291.5088
+Saint Pierre and Miquelon,1284.8269
+Darfur,1274.7754
+South Sudan,1271.6788
+Tibet,1266.7321
+Saint Kitts and Nevis,1265.5062
+Chad,1245.6673
+India,1235.2939
+Kiribati,1224.5987
+Montserrat,1221.1553
+Samoa,1215.8240
+Falkland Islands,1214.6129
+Tuvalu,1207.6156
+Mauritius,1207.5930
+Saint Lucia,1205.8492
+Aruba,1202.7154
+Eritrea,1196.2995
+Afghanistan,1195.5932
+Frøya,1194.5321
+São Tomé and Príncipe,1180.6648
+Dominica,1158.1394
+Andorra,1137.6564
+Myanmar,1134.9757
+Cook Islands,1130.5477
+Bangladesh,1130.0826
+Gibraltar,1126.9108
+Barbados,1119.1781
+Bonaire,1109.0462
+Nepal,1101.6144
+Pakistan,1091.6577
+Antigua and Barbuda,1083.3558
+Alderney,1076.9692
+Cambodia,1076.9578
+Djibouti,1076.5340
+Somalia,1059.3640
+Tonga,1056.2301
+Taiwan,1055.8369
+British Virgin Islands,1026.7338
+Cayman Islands,1024.9726
+Sri Lanka,1011.7245
+Seychelles,1009.6248
+Maldives,996.2165
+Mongolia,994.7860
+Northern Mariana Islands,979.6104
+Guam,977.3809
+Turks and Caicos Islands,955.4537
+Liechtenstein,948.6567
+United States Virgin Islands,948.4554
+Laos,937.6369
+Bahamas,935.9005
+American Samoa,921.7994
+San Marino,916.3242
+Timor-Leste,909.1541
+Brunei,906.2777
+Anguilla,891.5755
+Bhutan,861.8285
+Macau,847.0312

@@ -1,0 +1,170 @@
+SWITZERLAND vs CANADA — WC2026 Group B GD3
+Pre-match Analysis Bash Log
+Date: 2026-06-24
+
+=== COMMANDS RUN ===
+
+1. grep -i "switzerland|canada" sportspredict_research/data/processed/elo_current_ratings.csv
+OUTPUT: Switzerland,1951.7900 | Canada,1901.9800
+
+2. cat sportspredict_research/data/processed/poisson_goals_coefs.json
+OUTPUT: intercept=0.10408, elo_diff_coef=0.0018099, home_advantage=0.23022
+
+3. cat sportspredict_research/data/processed/ordered_logit_coefs.json
+OUTPUT: b_elo=0.005199, b_home=0.3771, c1=-0.7702, c2=0.5549
+
+4. python3 model calculation (Poisson + ordered logit, neutral venue):
+OUTPUT:
+  Elo diff: 49.81 (Switzerland slight favorite)
+  lambda_SUI: 1.2144
+  lambda_CAN: 1.0140
+  lambda_total: 2.2284
+  P(SUI scores): 0.7033
+  P(CAN scores): 0.6370
+  P(BTTS): 0.4481
+  P(total <= 2): 0.6151
+  P(total >= 3): 0.3849
+  P(BTTS AND >=3): 0.3154
+  P(SUI win): 0.4265
+  P(Draw): 0.3102  <- RULE8 FIRES (>25%)
+  P(CAN win): 0.2632
+  P(2H >= 2 goals): 0.3062
+  P(SUI more 2H SOT): 0.4497
+
+5. Xhaka SOT calculation:
+  P(natural open-play SOT | 0.09/90): 0.0861
+  P(penalty path SOT): 0.33*0.50*0.80*0.95 = 0.1254
+  P(Xhaka >=1 SOT total): ~0.201 → FLOOR_0.25 applied → 0.25
+
+6. David SOT calculation:
+  P(David >=1 SOT | lambda=1.5): 0.7769
+  P(David >=1 SOT | lambda=1.8): 0.8347
+  Mild RULE15 discount (CAN 26.32% win): -7pp → 0.70
+
+7. Fouls model (Skellam/Poisson difference):
+  P(CAN > SUI fouls | lam_can=13, lam_sui=10): 0.6990
+  P(CAN > SUI fouls | lam_can=14, lam_sui=9): 0.8271
+  Midpoint estimate: 0.63
+
+8. Cards 2H (Abatti referee):
+  Expected 2H cards: 4.85 * 0.50 = 2.43
+  P(>=2 in 2H | lambda=2.43): 0.6970
+  Conservative (45% in 2H): 4.85 * 0.45 = 2.18 → P(>=2) = 0.6406
+  Final estimate: 0.60
+
+9. Research agent output:
+  Sources: ESPN, FIFA, FootyStats, FanDuel, DraftKings, Opta, BBC Sport, RefStats
+  Key GD1/GD2 data, player profiles, referee stats, market data — all captured below.
+
+=== RULES APPLIED ===
+
+RULE8: FIRES — Draw 31.02% > 25%
+  → Shrink extreme attacking props (BTTS AND ≥3, 2H ≥2 goals)
+  → Cagey, tactical match expected
+  → Note: NOT a survival match — both teams already qualified. Different from CRO-PAN.
+  → SURVIVAL_MATCH_CORNERS rule does NOT apply.
+
+RULE7: Does NOT fire — CAN 26.32% > 15%
+
+RULE15: Mild consideration for David (CAN slight underdog at 26.32%)
+  → Not full RULE15 (threshold is <15% win prob)
+  → Discount applied via Swiss defensive quality adjustment instead
+
+FLOOR_0.25: Applied to Q9 (Xhaka SOT) — computed probability ~20%, floored at 0.25
+
+RULE_FOULS: Canada high-press (19 fouls in GD2 vs Qatar attacking!) vs SUI compact (7 fouls GD2)
+  → Canada more fouls: YES direction with ~63% confidence
+
+MOTIVATION ASYMMETRY: SUI needs WIN; CAN needs only DRAW to top group on GD
+  → SUI more aggressive, CAN potentially sits slightly deeper in 2H
+  → Added +3pp to SUI WIN probability (Q7: 42.65% → 0.44)
+
+=== KEY FINDINGS ===
+
+GROUP CONTEXT:
+- After GD2: Canada 4pts (+6 GD), Switzerland 4pts (+3 GD), Bosnia 1pt, Qatar 1pt
+- Both Canada and Switzerland ALREADY QUALIFIED for R32
+- This match determines WHO finishes 1st (gets favorable bracket position)
+- Venue: BC Place, Vancouver = technical Canada home advantage (home fans)
+- Switzerland: must WIN to top group
+- Canada: DRAW is sufficient to top on GD (+6 vs +3)
+
+SWITZERLAND GD1 vs Qatar (1-1):
+- 23 shots, 7 SOT; led 1-0 until 90+1' set-piece equalized (Muheim OG)
+- Embolo scored penalty 36'
+
+SWITZERLAND GD2 vs Bosnia (4-1):
+- 7 SOT, 7 fouls (SUI), 18 fouls (BIH), 7 corners
+- 0-0 at HT! ALL SUI goals after 74' (Bosnia red card 80' was key)
+- Late burst: 3 goals in final 16 minutes — not representative of normal match script
+
+CANADA GD1 vs Bosnia (1-1):
+- 13 shots, 4 SOT, 9 corners
+- Larin sub 83' equalized. David started, didn't score.
+
+CANADA GD2 vs Qatar (6-0):
+- 32 shots, 10 SOT, 19 fouls (CAN), 1 foul (QAT)
+- David hat trick (29', 45+3', 90+2'): 8 shots, 5 SOT
+- Qatar: 2 shots, 0 SOT (BLOWOUT — Qatar to 9 men)
+- Koné: BROKEN LEG — OUT FOR TOURNAMENT
+
+GRANIT XHAKA:
+- Club 2025-26: Sunderland FC (PL) — moved from Leverkusen July 2025
+- 2024-25 Bundesliga: only 3 SOT in 33 games = 0.09 SOT/90
+- Pure ball distributor, not a shooter
+- GD2 SOT: 1 (converted penalty 90+7') — only SOT route
+- FanDuel scorer: +1600 (5.9% implied — market confirms extremely low output)
+
+JONATHAN DAVID:
+- Club 2025-26: Juventus (Serie A) — free transfer from Lille
+- Historical Lille SOT/90: ~2.0-2.5; Juventus slightly lower
+- GD2: Hat trick (3 goals) + 5 SOT from 8 shots vs Qatar
+- FanDuel scorer: +225-275 vs Switzerland (~30% implied)
+
+REFEREE — Ramon Abatti Abel (Brazil):
+- Career: 4.85 YC/game, 0.22 RC/game, ~0.32 pens/game
+- 2025-26 sample: 4.5 YC (2 matches, tiny sample)
+- Known high-card disciplinarian
+
+MARKET:
+- SUI +145 (~40.8%), Draw +195 (~33.1%), CAN +220 (~26.9%)
+- Over 2.5 at +110-120 (47.6% implied); Under 2.5 at -127 to -140
+- BTTS Yes -135 (57.5% implied)
+- Market and model are very well aligned on match winner probabilities
+- Gap: market prices BTTS Yes much higher (57.5% vs model's 44.81%)
+  → Market probably overweighting both teams' recent form (SUI 4-1, CAN 6-0)
+  → Those were vs exhausted/reduced opposition; SUI-CAN is competitive
+
+=== FINAL ESTIMATES ===
+
+Q1: 0.63 — Canada more fouls [YES: high-press CAN 19 fouls GD2; SUI 7 fouls GD2; lambda model ~70%]
+Q2: 0.42 — Switzerland 2+ offsides [NO_LEAN: Canada high line + SUI fast wingers; lambda~1.3-1.5]
+Q3: 0.60 — 2+ total cards 2H [YES: Abatti 4.85 YC/game; physical match; P(>=2 in 2H)=64-70%]
+Q4: 0.30 — BTTS AND >=3 goals [NO_LEAN: model 31.54%; RULE8 shade; market-implied ~30-31%]
+Q5: 0.33 — Penalty kick [NO_LEAN: Abatti ~0.32/game; historical overpricing pattern]
+Q6: 0.48 — Switzerland more 2H SOT [COIN-FLIP: model 44.97%; RULE8 compresses to ~48%]
+Q7: 0.44 — Switzerland win [YES_LEAN: model 42.65%, market 40%; +3pp motivation asymmetry]
+Q8: 0.30 — 2H total goals >=2 [NO_LEAN: model 30.62%; RULE8 cagey match]
+Q9: 0.25 — Xhaka >=1 SOT [STRONG_NO — FLOOR: 0.09 SOT/90; computed ~20%; floored at 0.25]
+Q10: 0.70 — David >=1 SOT [YES: 2.0+ SOT/90; hat trick GD2; SUI defense discount; mild RULE15]
+
+=== EDGE RANKING ===
+
+RANK 1: Q9 0.25 STRONG_NO — Xhaka 0.09 SOT/90 structural limit. Computed ~20%, floored 0.25. Crowd likely ~0.40. ~15pp edge.
+RANK 2: Q10 0.70 YES — David world-class striker. Crowd likely ~0.60. ~10pp edge.
+RANK 3: Q1 0.63 YES — Canada high-press (19 fouls GD2). Clear foul-style evidence.
+RANK 4: Q7 0.44 YES_LEAN — SUI must win, CAN happy with draw. Motivation asymmetry.
+RANK 5: Q8 0.30 NO_LEAN — Low 2H goals. RULE8 + cagey match context.
+RANK 6: Q4 0.30 NO_LEAN — BTTS AND >=3. RULE8 shade. Market-calibrated.
+RANK 7: Q3 0.60 YES — Abatti high card rate. Physical pressing teams.
+RANK 8: Q2 0.42 NO_LEAN — SUI offsides. Canada high line.
+RANK 9: Q5 0.33 NO_LEAN — Penalty. Historical overpricing.
+RANK 10: Q6 0.48 COIN_FLIP — SUI more 2H SOT. No significant edge.
+
+=== FILES WRITTEN ===
+
+1. sportspredict_research/data/external_markets/sui_can_2026-06-24.json — Full match analysis JSON
+2. THIS FILE: sportspredict_research/bash_logs/2026-06-24_SUI-CAN_match_analysis_bash_log.txt
+3. sportspredict_research/ML_EXPERIMENTS_NOTEBOOK.md — Appended SUI-CAN section
+
+=== END LOG ===

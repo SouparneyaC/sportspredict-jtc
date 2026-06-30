@@ -1,0 +1,132 @@
+closing_date,match_name,category,question,market_id
+2026-06-11T19:00:00.000Z,MEX vs RSA,Match result,Will Mexico win the match?,912738d1-fab4-4d77-a6c9-8038caf2de6d
+2026-06-11T19:00:00.000Z,MEX vs RSA,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,d432c4f3-a677-40e4-8fbe-e64f03aa4ecb
+2026-06-12T02:00:00.000Z,KOR vs CZE,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,a9025eb4-f089-49dc-b9af-85e04b4615bb
+2026-06-12T02:00:00.000Z,KOR vs CZE,Match result,Will South Korea win the match?,e7d19c59-aa0a-42b7-afe9-5db6ab9e601c
+2026-06-12T19:00:00.000Z,CAN vs BIH,Match result,Will Canada win the match?,27a8f2b6-2220-4065-a3e1-acd4899fad9b
+2026-06-13T01:00:00.000Z,USA vs PAR,Match result,Will United States win the match?,80b7efe8-2509-496c-acf1-b30196edfe57
+2026-06-13T01:00:00.000Z,USA vs PAR,Goals/BTTS/Totals,Will the match have 3 or more total goals?,4b53c9c5-e9b5-4aab-a65a-93513050a97c
+2026-06-13T19:00:00.000Z,QAT vs SUI,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,157a5c1f-b769-49c6-aec9-c305df9d55de
+2026-06-13T19:00:00.000Z,QAT vs SUI,Goals/BTTS/Totals,Will Qatar score at least 1 goal?,6bf2d51d-eda0-48eb-a902-e3a1fb5b7ca6
+2026-06-13T22:00:00.000Z,BRA vs MAR,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,ee73b2d5-00bd-4ec2-9ebb-e2736692cc35
+2026-06-13T22:00:00.000Z,BRA vs MAR,Match result,Will Brazil win the match?,59d22f53-3ee9-44a6-af0e-ab58b39c7dfd
+2026-06-14T01:00:00.000Z,Haiti vs SCO,Goals/BTTS/Totals,Will Haiti score at least 1 goal?,37fec408-3084-4038-9ae5-d99cff1afa7b
+2026-06-14T01:00:00.000Z,Haiti vs SCO,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,9f40d93a-86fc-4fb0-8d00-c757e7a51d93
+2026-06-14T04:00:00.000Z,AUS vs TUR,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,312a3ad2-59b4-4018-ae30-5de804380f94
+2026-06-14T04:00:00.000Z,AUS vs TUR,Match result,Will Australia win the match?,b31760ef-6f32-411f-99e1-12fd75797e48
+2026-06-14T17:00:00.000Z,GER vs Curacao,Match result,Will Germany win the match?,0cd374c4-b3e1-4a77-a1fc-e2b13430a4db
+2026-06-14T17:00:00.000Z,GER vs Curacao,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,e87dd35c-15aa-4ba1-9941-5b1a8c1992fb
+2026-06-14T20:00:00.000Z,NED vs JPN,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,f78ed766-6a49-4281-b306-8622031c2d27
+2026-06-14T20:00:00.000Z,NED vs JPN,Match result,Will Netherlands win the match?,1169a121-7bb1-453a-a387-70273f4fbadb
+2026-06-14T23:00:00.000Z,CIV vs ECU,Match result,Will Ivory Coast win the match?,fa87e071-d211-45ac-9de3-6598fdf34648
+2026-06-15T02:00:00.000Z,SWE vs TUN,Match result,Will Sweden win the match?,5551fc68-4ade-469a-84ae-9936ed8942c5
+2026-06-15T02:00:00.000Z,SWE vs TUN,Goals/BTTS/Totals,Will the match have 3 or more total goals?,85cfbce7-f6de-4460-a9d7-1f8d4d5141ac
+2026-06-15T16:00:00.000Z,ESP vs CPV,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,2bac5bdd-b7a4-43eb-ade6-c85111147806
+2026-06-15T16:00:00.000Z,ESP vs CPV,Match result,Will Spain win the match?,1cbfc96e-1b33-4091-a1a4-7bf38cb87bb1
+2026-06-15T19:00:00.000Z,BEL vs EGY,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,1ae49fdb-7bb6-4c34-b455-440ce6a2591f
+2026-06-15T19:00:00.000Z,BEL vs EGY,Match result,Will Belgium win the match?,a1dada8c-83db-4210-a5d1-964f06152889
+2026-06-15T22:00:00.000Z,KSA vs URU,Match result,Will Saudi Arabia win the match?,4b464b8d-e135-496e-acfe-8ce3b50b9835
+2026-06-16T01:00:00.000Z,IRN vs New Zealand,Match result,Will Iran win the match?,82c386cf-7320-4ad3-90d2-30ae93fd4e28
+2026-06-16T01:00:00.000Z,IRN vs New Zealand,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,1fe93f70-d895-450d-8727-b06457f49a1b
+2026-06-16T19:00:00.000Z,FRA vs SEN,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,b86d03ef-3e9b-4029-bf1a-2a7706a53a86
+2026-06-16T19:00:00.000Z,FRA vs SEN,Match result,Will France win the match?,9c5459a1-4edc-429b-bdaf-1223d3764b5a
+2026-06-16T22:00:00.000Z,IRQ vs NOR,Goals/BTTS/Totals,Will Iraq score at least 1 goal?,adc3af02-6228-409d-b473-dec0ed759e6c
+2026-06-16T22:00:00.000Z,IRQ vs NOR,Goals/BTTS/Totals,Will the match have 3 or more total goals?,9dc4dd23-6d85-4a02-a6b2-fa07b782aac1
+2026-06-17T01:00:00.000Z,ARG vs ALG,Match result,Will Argentina win the match?,38f2e44c-f225-4ec6-8fda-83c06438c7d9
+2026-06-17T01:00:00.000Z,ARG vs ALG,Goals/BTTS/Totals,Will the match have 3 or more total goals?,97c9f7f5-b3b9-4b6a-8884-f24331a561d5
+2026-06-17T04:00:00.000Z,AUT vs JOR,Match result,Will Austria win the match?,0e4aecca-bdbd-4278-9517-eb414017bd76
+2026-06-17T04:00:00.000Z,AUT vs JOR,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,68bbc647-cd6a-46dc-808e-0f5361ebfc62
+2026-06-17T17:00:00.000Z,POR vs COD,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,8b7a645d-ecbb-49bd-b32b-fe028a6bbfb5
+2026-06-17T17:00:00.000Z,POR vs COD,Match result,Will Portugal win the match?,bc3718ea-7b3e-44ac-87d7-d2e65c5e26d8
+2026-06-17T20:00:00.000Z,ENG vs CRO,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,59f99220-fc6e-4c1d-9662-071cde4819a3
+2026-06-17T20:00:00.000Z,ENG vs CRO,Match result,Will England win the match?,6a92f8d8-287d-46aa-9f1d-b3729ff46d72
+2026-06-17T23:00:00.000Z,GHA vs PAN,Match result,Will Ghana win the match?,0873eda8-36b7-4ff7-8cab-4eb21bfac11c
+2026-06-18T02:00:00.000Z,UZB vs COL,Goals/BTTS/Totals,Will Uzbekistan score at least 1 goal?,d158164c-7d2f-4082-b05b-67f52edab115
+2026-06-18T02:00:00.000Z,UZB vs COL,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,b3819333-a5da-40db-9ed1-0a93a8cfa648
+2026-06-18T16:00:00.000Z,CZE vs RSA,Match result,Will Czechia win the match?,c7d1165e-1dbd-44ce-bcba-555248ce0a84
+2026-06-18T16:00:00.000Z,CZE vs RSA,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,d18561f9-e0de-49af-aed0-29e17d4246cb
+2026-06-18T19:00:00.000Z,SUI vs BIH,Match result,Will Switzerland win the match?,801c0468-352b-416a-b329-25ee20c2d849
+2026-06-18T19:00:00.000Z,SUI vs BIH,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,a9fc11bd-0ba8-4a71-bf47-c7e377a7113a
+2026-06-18T22:00:00.000Z,CAN vs QAT,Match result,Will Canada win the match?,b0d6666e-eaed-445a-ac24-75b6cc626052
+2026-06-19T01:00:00.000Z,MEX vs KOR,Match result,Will Mexico win the match?,df5f18de-18d7-4648-a53d-92eab32bb186
+2026-06-19T01:00:00.000Z,MEX vs KOR,Goals/BTTS/Totals,Will the match have 3 or more total goals?,2f55d0d3-dce5-4a54-a73a-ce67f9054be6
+2026-06-19T19:00:00.000Z,USA vs AUS,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,e03c3ca0-6ea7-4dfe-9806-b248d2bc88af
+2026-06-19T19:00:00.000Z,USA vs AUS,Match result,Will United States win the match?,4434b4fc-4448-4f8a-999c-76cd16ed1974
+2026-06-19T22:00:00.000Z,SCO vs MAR,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,bf10e473-c5d8-4df6-bbf1-a28ee4b7d595
+2026-06-19T22:00:00.000Z,SCO vs MAR,Match result,Will Scotland win the match?,5db7c9e7-10a9-45a1-bd7b-94b3705d1272
+2026-06-20T01:00:00.000Z,BRA vs Haiti,Match result,Will Brazil win the match?,dc710aaf-b6e2-4183-9f73-bfcaed3a51a7
+2026-06-20T01:00:00.000Z,BRA vs Haiti,Goals/BTTS/Totals,Will Brazil score 3 or more total goals?,b422bf83-218d-48e3-936b-8cd55702bf97
+2026-06-20T03:00:00.000Z,TUR vs PAR,Match result,Will Türkiye win the match?,b4947769-e37e-4109-b2c6-8e96e205ec7a
+2026-06-20T03:00:00.000Z,TUR vs PAR,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,92378570-8f55-4a66-9712-3839b94a8db4
+2026-06-20T17:00:00.000Z,NED vs SWE,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,bc3e6963-fad2-4874-b786-9c599d0cbb6b
+2026-06-20T17:00:00.000Z,NED vs SWE,Match result,Will Netherlands win the match?,5a2413cb-0332-4f7c-9952-2b669852fef4
+2026-06-20T20:00:00.000Z,GER vs CIV,Match result,Will Germany win the match?,652b439c-a224-4d74-b860-d0cfb0350344
+2026-06-21T00:00:00.000Z,ECU vs Curacao,Match result,Will Ecuador win the match?,8e9d2004-c69a-4dc7-8b1f-a0a634536d8a
+2026-06-21T00:00:00.000Z,ECU vs Curacao,Goals/BTTS/Totals,Will the match have 3 or more total goals?,2ae983d2-6f98-4894-bcfe-25d45f44798e
+2026-06-21T04:00:00.000Z,TUN vs JPN,Match result,Will Tunisia win the match?,c77f6258-f2ab-4bce-a833-77b219f5fee9
+2026-06-21T04:00:00.000Z,TUN vs JPN,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,bedf500c-0540-4b4c-8e94-b90e19042415
+2026-06-21T16:00:00.000Z,ESP vs KSA,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,d7c7a60b-7294-44b3-8a46-cac466525bd5
+2026-06-21T16:00:00.000Z,ESP vs KSA,Match result,Will Spain win the match?,66d2a883-12a6-442d-b4a8-d3cefc67e9f8
+2026-06-21T19:00:00.000Z,BEL vs IRN,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,0834c43f-e082-4aef-a90b-7248ce4822d6
+2026-06-21T19:00:00.000Z,BEL vs IRN,Match result,Will Belgium win the match?,48f23fba-8390-47f6-ab76-1f8e6b64d19c
+2026-06-21T22:00:00.000Z,URU vs CPV,Match result,Will Uruguay win the match?,f2a1202e-7832-4461-b534-2b0448090a98
+2026-06-22T01:00:00.000Z,New Zealand vs EGY,Match result,Will New Zealand win the match?,fa64cacb-6459-4ab3-8196-d22fe617e5f6
+2026-06-22T01:00:00.000Z,New Zealand vs EGY,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,ff42a0c1-0d22-49d4-bad0-239f210bbc5b
+2026-06-22T17:00:00.000Z,ARG vs AUT,Match result,Will Argentina win the match?,2e319b9e-222b-42d3-899a-c02ebb50a02a
+2026-06-22T17:00:00.000Z,ARG vs AUT,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,47c70f44-d6da-4dd4-9486-5bda8a49a50d
+2026-06-22T21:00:00.000Z,FRA vs IRQ,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,0a389ffb-8dd7-4cfc-8c8e-3bba3f3eee0a
+2026-06-22T21:00:00.000Z,FRA vs IRQ,Match result,Will France win the match?,183fa7fb-ffc9-476b-8da8-b7c327217fc8
+2026-06-23T00:00:00.000Z,NOR vs SEN,Match result,Will Norway win the match?,74361392-bbd2-4537-a6a9-76cb154852c0
+2026-06-23T03:00:00.000Z,JOR vs ALG,Goals/BTTS/Totals,Will Jordan score at least 1 goal?,95627759-e55e-42b2-b16f-f5ea520179a2
+2026-06-23T03:00:00.000Z,JOR vs ALG,Goals/BTTS/Totals,Will the match have 3 or more total goals?,fb5633a1-f376-4427-915b-8b155f53da1e
+2026-06-23T17:00:00.000Z,POR vs UZB,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,c68e9b78-6ae8-47c7-861e-6996a2cf8280
+2026-06-23T17:00:00.000Z,POR vs UZB,Match result,Will Portugal win the match?,a4940da6-3dba-440c-8b9e-580cd50ea272
+2026-06-23T20:00:00.000Z,ENG vs GHA,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,dd84b0a3-c391-4489-8945-2fac1c7241d1
+2026-06-23T20:00:00.000Z,ENG vs GHA,Match result,Will England win the match?,1a5f47ed-33e1-48ff-8830-75995570683c
+2026-06-23T23:00:00.000Z,PAN vs CRO,Goals/BTTS/Totals,Will Panama score at least 1 goal?,8a5bd6ce-c769-42e7-afdc-7804e2404513
+2026-06-24T02:00:00.000Z,COL vs COD,Match result,Will Colombia win the match?,30f665b2-681e-47c9-a37d-3686ad1acb46
+2026-06-24T02:00:00.000Z,COL vs COD,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,541a410d-204f-48eb-a53f-87f76127c090
+2026-06-24T19:00:00.000Z,BIH vs QAT,Match result,Will Bosnia and Herzegovina win the match?,ea3afc71-5f40-4719-97ef-6e667f31d91a
+2026-06-24T19:00:00.000Z,BIH vs QAT,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,5e2e012e-3dcf-432f-82be-8df20b05a15d
+2026-06-24T19:00:00.000Z,SUI vs CAN,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,f3bdf6c3-bc7b-43b0-886f-8707005a377f
+2026-06-24T19:00:00.000Z,SUI vs CAN,Match result,Will Switzerland win the match?,9dd1e577-fd76-4e44-a816-c40851a454c5
+2026-06-24T22:00:00.000Z,MAR vs Haiti,Match result,Will Morocco win the match?,3a0b2520-f5f9-4f91-b160-ff38946d30c5
+2026-06-24T22:00:00.000Z,SCO vs BRA,Goals/BTTS/Totals,Will Scotland score at least 1 goal?,3c8d80cf-6644-4bea-889b-bcf4e745e743
+2026-06-24T22:00:00.000Z,SCO vs BRA,Goals/BTTS/Totals,Will the match have 3 or more total goals?,2be23a87-2fee-4f79-a4f8-8360c5a3e302
+2026-06-25T01:00:00.000Z,CZE vs MEX,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,664519ef-75f9-4537-8833-874c3b2767c4
+2026-06-25T01:00:00.000Z,CZE vs MEX,Match result,Will Czechia win the match?,399c0c0c-dcd0-4e51-a95c-1289efc7aa8d
+2026-06-25T01:00:00.000Z,RSA vs KOR,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,a11f8a6d-fa76-49b8-8d02-f02f2dc7ed35
+2026-06-25T01:00:00.000Z,RSA vs KOR,Match result,Will South Africa win the match?,7d85ba3b-8446-4e7f-81a9-c8423e4d6281
+2026-06-25T20:00:00.000Z,Curacao vs CIV,Goals/BTTS/Totals,Will Curaçao score at least 1 goal?,6d41b943-0e83-4a74-873a-9a43e0daff1f
+2026-06-25T20:00:00.000Z,ECU vs GER,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,ce748c16-45f0-49ab-9b34-915bc39b59d4
+2026-06-25T20:00:00.000Z,ECU vs GER,Goals/BTTS/Totals,Will Ecuador score at least 1 goal?,fffde7cb-d69d-49c6-92c3-f311404a0240
+2026-06-25T20:00:00.000Z,ECU vs GER,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,b386c19f-c40d-4429-9299-7f3577d9645e
+2026-06-25T23:00:00.000Z,JPN vs SWE,Match result,Will Japan win the match?,6acf741f-5327-4cc1-a8ff-aa459d4d3a34
+2026-06-25T23:00:00.000Z,JPN vs SWE,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,1ad780fa-173e-4f9b-bbfc-b3064a76bc5c
+2026-06-25T23:00:00.000Z,TUN vs NED,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,217bd562-df1a-4823-822f-d27849f03904
+2026-06-25T23:00:00.000Z,TUN vs NED,Goals/BTTS/Totals,Will Tunisia score at least 1 goal?,24b509b2-e109-42a3-9fcc-6945a1d5b7d9
+2026-06-26T02:00:00.000Z,PAR vs AUS,Match result,Will Paraguay win the match?,72103e92-79ab-46f5-9655-56c82b11537e
+2026-06-26T02:00:00.000Z,TUR vs USA,Match result,Will Türkiye win the match?,d542391d-73f9-4ffa-997f-60fd781954d7
+2026-06-26T02:00:00.000Z,TUR vs USA,Goals/BTTS/Totals,Will the match have 3 or more total goals?,ae075ae1-947a-46e2-8ed4-18970d0d5869
+2026-06-26T19:00:00.000Z,NOR vs FRA,Match result,Will Norway win the match?,e769d43d-68d7-45da-a2bc-e3952c9b14d4
+2026-06-26T19:00:00.000Z,NOR vs FRA,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,79a582c4-cd85-42c0-96cb-62d02d76df39
+2026-06-26T19:00:00.000Z,NOR vs FRA,Goals/BTTS/Totals,Will Norway score at least 1 goal?,7d3e7e2f-9431-43b0-8c28-85b85cea10c0
+2026-06-26T19:00:00.000Z,SEN vs IRQ,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,5618e01b-c0f1-4e26-b591-a4642f0a57da
+2026-06-26T19:00:00.000Z,SEN vs IRQ,Match result,Will Senegal win the match?,770ad5f3-f151-4774-8ce8-648ed9fedda4
+2026-06-27T00:00:00.000Z,CPV vs KSA,Match result,Will Cape Verde win the match?,1e222611-391d-4b26-af5a-0ef123f62151
+2026-06-27T00:00:00.000Z,URU vs ESP,Goals/BTTS/Totals,Will Uruguay score at least 1 goal?,d65224ff-c16d-4f3a-ab5c-e389871cecf1
+2026-06-27T00:00:00.000Z,URU vs ESP,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,0399ea52-41c2-48b7-b304-5d915cffa527
+2026-06-27T03:00:00.000Z,EGY vs IRN,Match result,Will Egypt win the match?,9d76af0a-07d6-4e3e-83e7-a7fcfcc5f6c0
+2026-06-27T03:00:00.000Z,EGY vs IRN,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,b749e570-1132-4c04-ad87-eb084a4f8b2f
+2026-06-27T03:00:00.000Z,New Zealand vs BEL,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,37014a9f-5ab2-43f5-baa4-6bd2dbc1bd97
+2026-06-27T03:00:00.000Z,New Zealand vs BEL,Goals/BTTS/Totals,Will New Zealand score at least 1 goal?,ae0232d1-b5ec-440f-a0aa-fd816ce7550e
+2026-06-27T21:00:00.000Z,CRO vs GHA,Match result,Will Croatia win the match?,0e3f5b26-a800-414a-8c74-d3056ea293c0
+2026-06-27T21:00:00.000Z,PAN vs ENG,Goals/BTTS/Totals,Will Panama score at least 1 goal?,00f8764b-b25b-4da2-8b8b-2a0e53eede10
+2026-06-27T21:00:00.000Z,PAN vs ENG,Goals/BTTS/Totals,Will the match have 3 or more total goals?,b394df3c-cd76-4d91-a9e6-d654162adab2
+2026-06-27T23:30:00.000Z,COD vs UZB,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,2392f003-e56a-4289-a3b1-b07e7de291b2
+2026-06-27T23:30:00.000Z,COD vs UZB,Match result,Will DR Congo win the match?,41bdce13-bfca-4c36-a0bb-12ad94b54db8
+2026-06-27T23:30:00.000Z,COL vs POR,Goals/BTTS/Totals,Will both teams score AND the match have 3 or more total goals?,3b9f27bf-b9ca-4604-9112-ef8e99dfbe36
+2026-06-27T23:30:00.000Z,COL vs POR,Match result,Will Colombia win the match?,9abcb31a-2213-49d2-a515-43b9cc9a71ab
+2026-06-28T02:00:00.000Z,ALG vs AUT,Match result,Will Algeria win the match?,3d4d7f4a-ad8a-43f4-a5a6-f777e18c7c76
+2026-06-28T02:00:00.000Z,JOR vs ARG,Goals/BTTS/Totals,Will Jordan score at least 1 goal?,eaf3a69b-22c2-43f1-bde5-80dc167fd331
+2026-06-28T02:00:00.000Z,JOR vs ARG,Goals/BTTS/Totals,Will the match have 2 or fewer total goals?,3d98c4bc-7429-44d1-ba22-f94b9e89a24f
