@@ -1,0 +1,679 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{natbib}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.25}
+
+\title{Pricing a Quarterfinal Under a Cold-Start Crowd: \\
+Integrating StatsBomb Event-Level History into the JTC Forecasting Pipeline \\
+for France versus Morocco (2026 FIFA World Cup)}
+\author{Souparneya Chakrabarti}
+\date{July 9, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper documents the pricing of fifteen probability-market questions for the France
+versus Morocco quarterfinal of the 2026 FIFA World Cup, submitted to the Jump Probability
+Cup (JTC) on \textit{play.sportspredict.com}. The exercise differs from the forty-nine
+prior matches priced in this campaign in two respects. First, no crowd consensus or sharp
+market price was available for any of the fifteen questions at pricing time, so the
+campaign's usual anchor---an average of crowd consensus and a verified sharp market---could
+not be applied to any question; every estimate had to be built from first principles.
+Second, this is the first match priced with access to a newly constructed StatsBomb
+event-level panel spanning the 2018 and 2022 World Cups (128 matches, 6{,}131
+player-match rows, 257 team-match rows), including the one prior competitive meeting
+between these two sides, the 2022 semifinal (France 2--0 Morocco). The paper's central
+methodological concern is stated directly by the research brief that motivated it: with
+a much richer data surface available than in any previous match, the risk shifts from
+data scarcity to indiscriminate application---fitting a tool to data that happens to
+exist rather than data that is actually informative for the question at hand. Section
+\ref{sec:data} inventories every locally available data source and classifies each as
+relevant or irrelevant to this specific match. Section \ref{sec:methods} re-derives the
+project's core statistical machinery---a point-in-time Elo rating system, a Poisson
+goal-rate regression with Dixon--Coles low-score correction and Negative-Binomial
+overdispersion, and an ordered logit outcome model---and reports the coefficients each
+model contributes to this match. Section \ref{sec:questionmapping} maps each of the
+fifteen questions to the specific data source and tool judged appropriate to it, with an
+explicit rationale for rejecting the StatsBomb-only or model-only alternative in each
+case where prior campaign evidence recommends blending. Section \ref{sec:results}
+reports the fifteen final prices. Section \ref{sec:discussion} evaluates the exercise
+against the campaign's own accumulated record of successes and catastrophic failures,
+in particular the finding that projecting a team shot-on-target or corner count upward
+from a thin empirical sample---absent a market to anchor to---has been the single most
+expensive repeated error of the campaign (net $-155.64$ relative Brier points across
+five prior matches), a risk this match faces acutely on two of its fifteen questions
+given the complete absence of a market anchor. Section \ref{sec:marketrevision}
+documents a subsequent revision of these estimates after live external market data was
+retrieved. An initial check of the JTC platform's own web API was misread as showing a
+still-unformed crowd consensus; a follow-up validation against markets with known trade
+activity and known settlement outcomes shows this reading was incorrect, and that the
+field in question is a binary open/settled flag rather than a probability at all---this
+project's pre-existing finding that the pre-close crowd consensus is simply not
+observable via any known API endpoint stands uncorrected. A public Smarkets sharp-market
+query, unaffected by this issue, supplied a real, liquid price for twelve of the fifteen
+questions, most consequentially raising the match-winner estimate from an
+ordered-logit-only 0.52 to a market-anchored 0.60.
+\end{abstract}
+
+\section{Introduction}
+
+The Jump Probability Cup (JTC) is a season-long forecasting tournament in which
+participants submit a probability for each of a fixed set of yes/no questions attached to
+a football match, and are scored against the platform's own aggregate crowd consensus
+using a Relative Brier Points (RBP) metric: positive when the submission beats the crowd
+on a given question, negative when it does not. Because RBP is scored relative to the
+crowd rather than against an absolute outcome, the object of interest throughout this
+campaign has never been calibration in the abstract but calibration relative to a
+specific, empirically compressible crowd. Prior work in this campaign (documented in
+\texttt{CROWD\_BIAS\_REGRESSION\_UPDATE.md}) established that the JTC crowd systematically
+compresses extreme probabilities toward one half: fit on 384 previously scored group-stage
+questions, $\hat p_{\text{crowd}} \approx 0.511 + 0.600\,(\hat p_{\text{model}} - 0.5)$,
+with a 95\% confidence interval on the slope of $[0.559, 0.641]$ that excludes both zero
+and one. Because the crowd under-moves relative to a well-calibrated model, a genuinely
+informative model that is not itself compressed toward 50\% has a structural, repeatable
+edge.
+
+That structural edge, however, depends on having a crowd to compress against. The match
+addressed in this paper---France versus Morocco, kickoff July 9, 2026, a Quarterfinal of
+the 2026 World Cup---presented a condition not previously encountered at this stage of the
+campaign: at pricing time, the question set had just opened and no crowd consensus, and no
+Smarkets or other sharp market quote, existed for any of the fifteen questions. A
+repository-wide search of every location where market or crowd data is recorded in this
+project (\texttt{bot/data/markets\_raw.jsonl}, \texttt{bot/data/matches.json},
+\texttt{data/external\_markets/}, and the \texttt{matches/} directory) confirmed that all
+fifteen markets carried a bare \texttt{status: open} field with no accompanying price. The
+campaign's foundational rule for match-winner pricing---submit the average of the crowd
+consensus and a verified sharp market (\texttt{RULE1})---and its counterpart for
+props---submit at the market price when a market exists (\texttt{RULE2})---were therefore
+inapplicable to every one of the fifteen questions. This paper is, in effect, a controlled
+test of what the project's statistical and heuristic apparatus can produce with no live
+external anchor at all, leaning instead on point-in-time historical models and a newly
+available body of event-level data.
+
+The second novel feature of this match is data abundance rather than data scarcity. Over
+the preceding several days the project constructed, validated, and documented (in
+\texttt{STATSBOMB\_DATASET\_AUDIT.md} and
+\texttt{STATSBOMB\_INTEGRATION\_AND\_STATS\_TESTS\_2026-07-08.md}) a flattened panel of
+StatsBomb open-data event and lineup files covering the 2018 and 2022 World Cups, giving,
+for the first time in this campaign, individual shot, shot-on-target, card, and minutes
+data for named players across an entire major tournament history rather than only the
+current tournament's four-or-five-game sample. This is a genuine increase in the
+information available for this match: three of the four named players in the question
+set (Mbapp\'e, Dembel\'e, Hakimi) have ten-to-fourteen-match StatsBomb histories, and the
+2022 semifinal between these exact two teams is itself in the panel. The methodological
+risk this introduces is the one identified in the brief that motivated this paper: a
+richer data surface increases the temptation to apply a sophisticated tool because the
+data to feed it exists, rather than because the tool is the right one for the specific
+question and because the resulting estimate has actually been validated against this
+campaign's own record. Section \ref{sec:questionmapping} treats this concern explicitly,
+and Section \ref{sec:discussion} reports a diagnostic already run on exactly this
+question in \texttt{STATSBOMB\_INTEGRATION\_AND\_STATS\_TESTS\_2026-07-08.md}: a
+pure StatsBomb historical base-rate model, run head-to-head against the campaign's actual
+submission on a different quarterfinal-adjacent match (Portugal versus Croatia), scored
+93.01 RBP-equivalent against the submission's actual 120.30---losing overall despite
+individually beating six of fourteen comparable questions. The documented conclusion of
+that diagnostic, adopted as governing practice here, is that StatsBomb history is best
+used as a shrinkage prior underneath the current tournament's thin live sample, not as a
+standalone replacement for it.
+
+\section{Data Inventory and Reliability Classification}
+\label{sec:data}
+
+Before any model was fit or any question priced, every locally available data source was
+inventoried and classified by whether it carries information specific to France, Morocco,
+or the four named players in this question set (Kylian Mbapp\'e, Ousmane Dembel\'e,
+Achraf Hakimi, Brahim D\'iaz), as opposed to being generically available but uninformative
+for this particular match. Table \ref{tab:datainventory} summarizes the classification.
+
+\begin{table}[H]
+\centering
+\caption{Data source inventory, classified by relevance to France vs. Morocco.}
+\label{tab:datainventory}
+\begin{tabular}{p{4.6cm}p{3.0cm}p{6.2cm}}
+\toprule
+Source & Classification & Note \\
+\midrule
+StatsBomb event/lineup JSON, WC2018+WC2022 (\texttt{data/external/statsbomb/open-data/}) &
+Rich and relevant & Contains the exact 2022 France--Morocco semifinal (match\_id 3869552); full events, lineups, and 360$^\circ$ tracking. \\
+StatsBomb player-match panel (\texttt{statsbomb\_player\_match\_panel.csv}) &
+Rich and relevant, uneven & 14 rows for Mbapp\'e, 21 for Dembel\'e, 10 for Hakimi, 0 for Brahim D\'iaz (uncapped by Morocco during 2018/2022). \\
+StatsBomb team-match panel (\texttt{statsbomb\_team\_match\_panel.csv}) &
+Rich and relevant & 28 France rows, 20 Morocco rows across WC2018/2022; includes the 2022 h2h team-level line. \\
+ESPN match/rolling panels (\texttt{espn\_match\_panel.csv}, \texttt{espn\_rolling\_averages.csv}) &
+Rich and relevant & Full 2026 group-stage box scores for both teams; does not yet include the R32/R16 knockout matches (those live only in the \texttt{matches/} folder artifacts). \\
+Elo panel and current ratings (\texttt{elo\_match\_panel.csv}, \texttt{elo\_current\_ratings.csv}) &
+Rich and relevant & Point-in-time ratings through the most recent settled match for both teams; source of the Elo differential used throughout Section \ref{sec:methods}. \\
+\texttt{matches/France\_vs\_Paraguay/}, \texttt{matches/Canada\_vs\_Morocco/} &
+Rich and relevant & Each team's most recent completed match, full pipeline artifacts including settled outcomes for the same named players. \\
+\texttt{data/international\_results/results.csv} &
+Rich and relevant & Full France--Morocco head-to-head since 1988 (49{,}473 total historical matches); score-only, no shot/card granularity outside the StatsBomb-covered 2022 fixture. \\
+Transfermarkt national-team roster extract &
+Present but unreliable & Zero France rows and 45 Morocco rows, none of which include Hakimi or Brahim D\'iaz; flagged as a gap rather than used. \\
+StatsBomb open-data outside WC2018/2022 (club competitions, other tournaments) &
+Rich but not relevant & Excellent for generic base-rate construction but contributes no team- or player-specific signal for this match beyond what the WC2018/2022 subset already provides. \\
+Historical odds (\texttt{data/external/odds/}) &
+Historically relevant only & Contains the actual closing odds for the 2022 semifinal but no 2026 quotes for this fixture. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The single most consequential negative finding in this inventory is the confirmed absence
+of any crowd consensus or market quote for this match anywhere in the repository, discussed
+in the Introduction. The single most consequential positive finding is that the 2022
+World Cup semifinal between these exact two teams is fully covered by the StatsBomb
+event data, giving a genuine (if small, $n=1$) head-to-head precedent at the shot and
+shot-on-target level, not merely the scoreline: in that match Mbapp\'e recorded three shots
+and zero shots on target in 95 minutes, Dembel\'e recorded zero shots, and Hakimi recorded
+one shot and zero shots on target, against a Morocco defense that conceded only once across
+the entire 2022 tournament before that game.
+
+\section{Methodology}
+\label{sec:methods}
+
+The forecasting pipeline used in this campaign, and applied here, follows the structure
+of \citet{dixoncoles1997} and \citet{karlisntzoufras2003} for the goal-scoring process,
+supplemented by an Elo-based outcome model following \citet{hvattum2010}. Each component
+is re-derived below with the coefficients actually fitted on this project's own historical
+panel of 49{,}400 international matches (1872--present), and the specific inputs this
+match supplies to each.
+
+\subsection{Point-in-Time Elo Ratings}
+
+Ratings are updated match-by-match using the standard World Football Elo formula,
+\[
+R_{\text{new}} = R_{\text{old}} + K \cdot G \cdot (W - W_e),
+\]
+where $K$ is drawn from a tournament-tier lookup table (60 for World Cup finals matches,
+30 for most qualifiers, 20 for friendlies), $G$ scales with margin of victory
+($G=1$ for a one-goal difference, rising to $(11+|\Delta|)/8$ for a three-or-more-goal
+difference), $W \in \{1, 0.5, 0\}$ is the match result from the home team's perspective,
+and
+\[
+W_e = \frac{1}{10^{-\Delta r / 400} + 1}, \qquad
+\Delta r = \begin{cases} (R_{\text{home}} - R_{\text{away}}) + 100 & \text{if not neutral} \\ R_{\text{home}} - R_{\text{away}} & \text{if neutral.} \end{cases}
+\]
+Because the ratings are recomputed strictly forward through time with no re-fitting on
+future results, they carry no lookahead bias. As of the most recent settled match for each
+side, France's rating stands at 2129.05 and Morocco's at 1984.85, an Elo differential of
+$+144.2$ in France's favor. Because the 2026 World Cup is co-hosted by the United States,
+Mexico, and Canada, and neither France nor Morocco is a host nation, this fixture is
+treated as a neutral-venue match: no home-advantage term is applied to either side in any
+downstream model.
+
+\subsection{Poisson Goal-Rate Regression}
+
+Goals are modeled as a Poisson process with rate
+\[
+\log(\lambda) = b_0 + b_1 \cdot \mathrm{home\_adv} + b_2 \cdot \Delta\mathrm{Elo},
+\]
+fit by maximum likelihood with an exponential recency weight
+($\xi = 0.0008\text{/day}$, an approximately 2.4-year half-life) on 49{,}400 matches
+(98{,}800 team-match goal observations). Table \ref{tab:poissoncoefs} reports the fitted
+coefficients.
+
+\begin{table}[H]
+\centering
+\caption{Poisson goal-rate regression coefficients.}
+\label{tab:poissoncoefs}
+\begin{tabular}{lrr}
+\toprule
+Parameter & Estimate & Std.\ Error \\
+\midrule
+Intercept ($b_0$) & 0.1041 & --- \\
+Home advantage ($b_1$) & 0.2302 & 0.0211 \\
+Elo differential ($b_2$, per Elo point) & 0.001810 & 0.0000368 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+With $\mathrm{home\_adv} = 0$ for both sides (neutral venue) and $\Delta\mathrm{Elo} =
+\pm 144.2$, this gives
+\[
+\lambda_{\text{France}} = \exp(0.1041 + 0.001810 \times 144.2) = 1.441, \qquad
+\lambda_{\text{Morocco}} = \exp(0.1041 - 0.001810 \times 144.2) = 0.855,
+\]
+a combined expected total of 2.295 goals. This total is markedly below the average goal
+output either team has actually produced this tournament (France 2.8 goals scored per
+game across five matches; Morocco 2.0), a discrepancy attributable to the relative
+weakness of the group-stage and early-knockout opposition both sides have faced so far
+(Senegal, Iraq, Norway, Sweden, and Paraguay for France; Brazil, Scotland, Haiti, and the
+Netherlands for Morocco) rather than to any deficiency in the model, since $\Delta$Elo
+already reflects the quality of today's specific opponent rather than the average quality
+of past opponents.
+
+\subsection{Dixon--Coles Correction and Negative-Binomial Overdispersion}
+
+Following \citet{dixoncoles1997}, the independent-Poisson joint distribution is corrected
+at the four low-score cells $(0,0), (1,0), (0,1), (1,1)$ by a multiplicative factor
+$\tau(\cdot)$ governed by a single dependence parameter $\rho$:
+\[
+\tau(0,0) = 1 - \lambda_h \lambda_a \rho, \quad
+\tau(1,0) = 1 + \lambda_a \rho, \quad
+\tau(0,1) = 1 + \lambda_h \rho, \quad
+\tau(1,1) = 1 - \rho.
+\]
+The project's own maximum-likelihood fit on the Poisson marginals gives $\hat\rho =
+-0.06$; a Negative-Binomial refit of the marginals (to address a separately documented
+overdispersion pattern in the goals-based pipeline) gives $\hat\rho_{\text{NB}} = -0.05$
+alongside a dispersion parameter $\hat\alpha = 0.0992$ (SE $= 0.0131$, $n=98{,}800$),
+confirming mild but statistically real overdispersion relative to the pure Poisson case
+($\alpha = 0$). Under the independent-Poisson total ($\lambda_{\text{total}} = 2.295$),
+$P(\text{total goals} \le 2) = 0.597$; the Negative-Binomial correction reallocates a
+small amount of mass into the tails, which combined with the observation that the sole
+StatsBomb-verified prior meeting between these two sides finished 2--0 (itself a
+$\le 2$-goal outcome), motivates the slightly higher final estimate reported in Section
+\ref{sec:results}.
+
+\subsection{Ordered Logit Match Outcome Model}
+
+The Poisson/Dixon--Coles pipeline is known, from an expanding-window backtest across the
+full historical panel, to systematically underpredict the win probability of the stronger
+side by roughly five to eight percentage points at every decile of predicted home-win
+probability---a compression bias whose leading explanation is attenuation from
+measurement noise in the Elo covariate itself, though this has not been fully closed out
+diagnostically. To avoid inheriting this bias, match-winner probabilities in this campaign
+are instead taken from an ordered logit fit directly on historical Win/Draw/Loss outcomes,
+following the Elo-based outcome regression approach of \citet{hvattum2010}:
+\[
+\eta = b_{\text{elo}} \cdot \Delta\mathrm{Elo} + b_{\text{home}} \cdot \mathrm{home\_adv},
+\qquad
+P(\text{away win}) = \sigma(c_1 - \eta), \quad
+P(\text{draw}) = \sigma(c_2 - \eta) - \sigma(c_1 - \eta), \quad
+P(\text{home win}) = 1 - \sigma(c_2 - \eta),
+\]
+with $\sigma(\cdot)$ the logistic function. Table \ref{tab:ologitcoefs} reports the fitted
+coefficients (49{,}400 matches).
+
+\begin{table}[H]
+\centering
+\caption{Ordered logit match-outcome coefficients.}
+\label{tab:ologitcoefs}
+\begin{tabular}{lrr}
+\toprule
+Parameter & Estimate & Std.\ Error \\
+\midrule
+Elo differential ($b_{\text{elo}}$, per point) & 0.005199 & 0.000176 \\
+Home advantage ($b_{\text{home}}$) & 0.3771 & 0.0745 \\
+Cutpoint 1 ($c_1$) & $-0.7702$ & --- \\
+Cutpoint 2 ($c_2$) & 0.5549 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+With $\Delta\mathrm{Elo} = 144.2$ and $\mathrm{home\_adv} = 0$, $\eta = 0.7497$, giving
+$P(\text{France win}) = 0.549$, $P(\text{draw}) = 0.272$, $P(\text{Morocco win}) = 0.180$.
+This raw model output is adjusted downward by two to three percentage points in the final
+submission (Section \ref{sec:results}) to reflect Morocco's demonstrated big-match
+resilience this tournament---forcing the Netherlands to extra time and penalties in the
+Round of 32, and a 3--0 defeat of Canada in the Round of 16---a qualitative adjustment kept
+deliberately small in light of a separate finding in this campaign
+(\texttt{STRATEGIC\_MARGIN\_PUSH\_RESEARCH.md}) that deliberately pushing a submitted
+probability past one's honestly calibrated belief is strictly negative in expectation under
+RBP's proper-scoring structure, except in a narrow leaderboard-cutoff scenario that does
+not apply here.
+
+\subsection{StatsBomb Empirical-Bayes Shrinkage for Player and Team Props}
+
+For the player- and team-count questions (shots on target, corners, cards) that the
+goals-based and ordered-logit models do not directly address, the campaign's existing
+shrinkage methodology (\texttt{ml/statsbomb\_baserate\_test.py}) is applied: a team's rate
+for a given statistic is shrunk toward the WC2018/2022 tournament-wide mean using
+\[
+\hat\mu_{\text{team}} = \frac{n \cdot \bar x_{\text{team}} + k \cdot \bar x_{\text{global}}}{n + k}, \qquad k = 5 \text{ pseudo-matches (team level)},
+\]
+and a named player's rate is shrunk toward a fixed weak prior (rather than a tournament
+mean, there being too few directly comparable players to construct one) with $k = 3$
+pseudo-matches. As documented in
+\texttt{STATSBOMB\_INTEGRATION\_AND\_STATS\_TESTS\_2026-07-08.md}, a live test of this
+exact method against an actual settled match (Portugal versus Croatia) found that the pure
+StatsBomb-history model loses in aggregate to a tournament-aware blended judgment (93.01
+versus 120.30 RBP-equivalent, on fourteen comparable questions), even though it wins
+individually on six of the fourteen. The governing rule adopted here, consistent with that
+finding, is that every StatsBomb-derived rate in Section \ref{sec:questionmapping} is used
+as a prior to be blended with and generally subordinated to this tournament's own live
+five-game form for each team, never as a standalone replacement for it.
+
+\section{Question-by-Question Data and Tool Mapping}
+\label{sec:questionmapping}
+
+Table \ref{tab:mapping} states, for each of the fifteen questions, the primary data source
+and pricing tool selected, together with the specific reason a plausible alternative tool
+was not used instead. The purpose of this table is to make the avoid-overfitting discipline
+requested for this exercise auditable rather than implicit: for every question, at least
+one data-rich alternative existed that was deliberately not applied, and the table states
+why.
+
+\begin{longtable}{p{1.6cm}p{4.6cm}p{3.0cm}p{5.0cm}}
+\caption{Question-to-tool mapping and the alternative deliberately rejected.} \label{tab:mapping} \\
+\toprule
+Q & Question (abbreviated) & Tool used & Rejected alternative and reason \\
+\midrule
+\endfirsthead
+\toprule
+Q & Question (abbreviated) & Tool used & Rejected alternative and reason \\
+\midrule
+\endhead
+1 & Mbapp\'e anytime goal & StatsBomb career rate (0.857/game) blended down for opponent-specific regime check & A flat current-tournament hot-streak rate (4 of 5 games) was rejected as the sole input because it has never faced a defense of Morocco's caliber this cycle; the one StatsBomb-covered meeting with this exact opponent shows suppression. \\
+2 & Hakimi 1+ SOT & StatsBomb career rate (0/10 tracked matches) & A generic starting-fullback positional prior was rejected in favor of his own, unusually informative, zero-SOT ten-match record. \\
+3 & Brahim D\'iaz 1+ SOT & Current-tournament personal rate (1 of 5 games) & A team-context or positional prior was rejected because his own five-game personal sample is directly on point and this exact suppression pattern already won twice this campaign. \\
+4 & Dembel\'e 2+ SOT & Current-tournament bimodal-by-opponent-quality pattern & A StatsBomb career average was rejected because it does not capture the opponent-quality gating that a direct within-tournament comparison (blanked vs.\ tougher sides, including the most recent match) already demonstrates. \\
+5 & Morocco 3+ SOT & Team-level empirical floor from competitive games only & Blending upward toward a market-implied ceiling was rejected outright since no market exists to blend toward, and this exact move (projecting a team SOT count upward from a thin sample) produced the single worst result of the campaign in a prior match. \\
+6 & Total goals $\le 2$ & Poisson/Dixon--Coles/NB total-goal model & A pure current-tournament scoring-rate average was rejected as it reflects weak group-stage opposition, not two elite defenses facing each other. \\
+7 & 5+ total cards & Team disciplinary rate, deliberately not taken at face value & The raw historical average (very low for both teams) was not used unadjusted, since elimination-stage matches carry a documented general uplift in foul/card risk that a group-stage average cannot see. \\
+8 & Tied at halftime & Tournament-wide empirical base rate & A team-specific first-half scoring model was rejected for lack of a large enough within-tournament first-half sample; the tournament-wide rate is the more stable estimator here. \\
+9 & Both halves same goals & Derived consistency check against Q6/Q8 & No standalone tool exists for this question type in the project; priced for consistency with the two related direct questions rather than independently, to satisfy the project's internal logical-consistency check. \\
+10 & Penalty or red card & Tournament-wide compound empirical rate & An independence-product of separate penalty and red-card base rates was rejected, since compound "or" questions have a documented history of overstating extremity under an independence assumption. \\
+11 & Substitute scores or assists & Base-rate formula validated in the most recent prior match & A per-substitute player-level model was rejected for lack of a stable individual sample for either bench. \\
+12 & France 5+ corners & Team-level empirical trend (Poisson at $\hat\lambda \approx 6.3$) & Extrapolating the corner trend's most recent peak (9, against the toughest opponent yet) as if it were the expected value was rejected; the estimate is anchored to the four-game mean, not the peak. \\
+13 & Goal after second hydration break & Flat late-window shading, not a fitted lambda-scaling model & A time-fraction-scaled Poisson projection was available and was deliberately not used at face value; this exact question category has the worst documented track record in the campaign. \\
+14 & Card in stoppage time & Flat late-window shading & Same rejection as Q13, for a narrower sub-window. \\
+15 & France win in regulation & Ordered logit + qualitative Elo cross-check & The Poisson/Dixon--Coles goal model's implied win probability was rejected as the primary source because of its documented systematic compression bias against the stronger side. \\
+\bottomrule
+\end{longtable}
+
+\section{Results}
+\label{sec:results}
+
+Table \ref{tab:finalprices} reports the fifteen final submitted probabilities. No question
+was priced outside the range $[0.25, 0.74]$, consistent with the campaign's standing
+practice of never submitting at the extreme bounds of the probability simplex.
+
+\begin{table}[H]
+\centering
+\caption{Final submitted probabilities, France vs. Morocco, 2026-07-09.}
+\label{tab:finalprices}
+\begin{tabular}{p{0.6cm}p{9.6cm}r}
+\toprule
+Q & Question & $\hat p$ \\
+\midrule
+1 & Mbapp\'e (FRA) to score & 0.54 \\
+2 & Hakimi (MAR) 1+ shots on target & 0.30 \\
+3 & Brahim D\'iaz (MAR) 1+ shots on target & 0.25 \\
+4 & Dembel\'e (FRA) 2+ shots on target & 0.30 \\
+5 & Morocco 3+ shots on target & 0.60 \\
+6 & Total goals $\le 2$ & 0.60 \\
+7 & 5+ total cards & 0.32 \\
+8 & Tied at halftime & 0.45 \\
+9 & Both halves same number of goals & 0.32 \\
+10 & Penalty kick awarded OR red card shown & 0.38 \\
+11 & Substitute scores or assists & 0.34 \\
+12 & France 5+ corner kicks & 0.74 \\
+13 & Goal scored after second hydration break & 0.50 \\
+14 & Card shown during 1st- or 2nd-half stoppage time & 0.28 \\
+15 & France win in regulation & 0.52 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Because no crowd or market data exists for this match at the time of writing, no
+Relative Brier Points figure can yet be computed for these fifteen submissions; the
+settlement record will be appended to this document once the match concludes and the
+platform publishes outcomes and crowd consensus values, following the same
+per-question audit format used in the campaign's other match-level case studies.
+
+\section{Incorporating Live Market Data}
+\label{sec:marketrevision}
+
+The estimates in Table \ref{tab:finalprices} were built with no external market
+whatsoever. This section documents a subsequent revision after two live external data
+sources were queried: the JTC platform's own web API, to check whether a crowd consensus
+had begun to form since the initial pricing pass, and the public Smarkets exchange API,
+to obtain a sharp-market anchor of the kind used routinely elsewhere in this campaign.
+
+\subsection{Checking the JTC Crowd Consensus Directly, and a Correction}
+
+Every question record returned by the JTC web API's market endpoint
+(\texttt{GET /api/markets}, queried with the event and lobby identifiers) carries a
+\texttt{current\_value} field alongside an \texttt{initial\_value} field, both on a
+0--100 scale. A direct query of this endpoint, filtered to the fifteen market
+identifiers for this fixture, returned \texttt{current\_value} equal to
+\texttt{initial\_value} (50) for all fifteen questions. This was initially reported as
+confirmation that no net crowd trading activity had occurred on any of the fifteen
+questions---that is, as a live crowd-consensus reading of exactly 50\% on every
+question.
+
+That reading is incorrect, and the error is worth documenting rather than silently
+fixing, since it illustrates a specific and avoidable failure: a newly observed API
+field was assumed to mean what its name suggested without being checked against a case
+whose answer was already known. The correction was made by pulling every trade recorded
+against this event (\texttt{GET /api/trades}) and matching each trade's \texttt{market\_id}
+field against the \emph{record} \texttt{id} field of the corresponding market---not, as
+first attempted, against that market's own \texttt{market\_id} field, a distinct
+identifier that happens to co-exist on the same record and produces zero matches if used
+by mistake. This match yielded 209 markets elsewhere in the same event that carry both a
+nonzero trade count and a settled status, meaning their true outcomes are independently
+known. Across all 209, \texttt{current\_value} takes exactly one of three values, 0, 50,
+or 100, with no intermediate readings whatsoever: 50 while a market remains open,
+regardless of how many trades have been recorded against it, and 0 or 100 immediately
+upon settlement, matching the realized outcome. The field is a binary
+open/resolved-no/resolved-yes flag, not a probability, and it is architecturally
+incapable of reporting a crowd consensus at any point before a market closes.
+
+This finding does not overturn Section \ref{sec:questionmapping}'s conclusion that no
+crowd anchor is available for this match; it removes the basis for having claimed to
+verify that conclusion by this particular means. The project's own prior research
+(catalogued outside this paper, in a dedicated review of crowd-consensus prediction
+literature) had already established that no API access to the platform's pre-close crowd
+consensus exists. That finding was correct, is not contradicted by anything reported
+here, and should have been the first thing checked before this section's initial claim
+was written. \texttt{RULE1}'s crowd-plus-market average remains inapplicable for this
+match, for the reason the project's own prior research already gave, not for the reason
+first reported.
+
+\subsection{Smarkets Sharp-Market Data}
+
+A query of the public Smarkets event list for World Cup 2026 football fixtures located
+event 45178292 (``France vs Morocco'', 2026-07-09), carrying 173 distinct betting
+markets. Twelve of these correspond directly or near-directly to questions in this
+match's fifteen-question set; contracts and live bid/offer quotes were retrieved for each
+and converted to mid prices. Table \ref{tab:marketquotes} reports the key quotes used.
+
+\begin{table}[H]
+\centering
+\caption{Smarkets mid prices used to revise the fifteen estimates.}
+\label{tab:marketquotes}
+\begin{tabular}{p{6.4cm}rl}
+\toprule
+Market & Mid price & Liquidity \\
+\midrule
+Full-time result: France & 0.608 & Liquid \\
+Full-time result: Draw & 0.252 & Liquid \\
+Full-time result: Morocco & 0.141 & Liquid \\
+Total goals under 2.5 & 0.536 & Liquid \\
+Total cards over 4.5 & 0.227 & Liquid (wide spread) \\
+Half-time result: Draw & 0.439 & Liquid \\
+Penalty to be awarded: No & 0.722 & Liquid (Yes side unquoted; inferred by complementarity) \\
+Any player sent off: Yes & 0.147 & Liquid \\
+Mbapp\'e anytime goalscorer & 0.503 & Liquid \\
+Hakimi 0.5+ shots on target & 0.363 & Liquid \\
+Brahim D\'iaz 0.5+ shots on target & 0.435 & Illiquid (offer only) \\
+Dembel\'e 1.5+ shots on target & 0.244 & Liquid \\
+Morocco 3.5+ shots on target & 0.437 & Liquid \\
+France 6.5+ corners & 0.428 & Liquid \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two of these quotes require conversion before they can be compared to the fifteen
+questions as worded, since Smarkets does not offer a line at exactly the threshold asked.
+For Morocco's shots-on-target total, the market's own line sits at 3.5, giving
+$P(\text{SOT} \ge 4) = 0.437$; solving for the Poisson rate implied by this figure gives
+$\hat\lambda = 3.377$, from which $P(\text{SOT} \ge 3) = 0.656$---a figure that agrees
+closely with the pre-market empirical estimate built from Morocco's own competitive-game
+average ($\hat\lambda \approx 3.33$), a convergence between an independent market and this
+paper's own empirical construction that substantially de-risks Question 5 relative to the
+analogous team-count question in a prior match that produced this campaign's worst single
+result. The same conversion applied to France's corner line (market at 6.5, giving
+$\hat\lambda = 6.212$ and $P(\text{corners} \ge 5) = 0.742$) shows an equally close
+agreement with the pre-market empirical estimate of 0.74. For the compound
+penalty-or-red-card question, the two Smarkets markets are combined under an
+independence assumption, $P(\text{pen or red}) = 1 - (1 - 0.278)(1 - 0.147) = 0.384$,
+again closely matching the pre-market tournament-wide base rate of 0.38.
+
+No Smarkets market was found, after checking the full 173-market list, for four of the
+fifteen questions: both halves recording the same number of goals, a substitute scoring
+or assisting, a goal scored after the second hydration break, and a card shown
+specifically during stoppage time. These four retain their pre-market, model- or
+base-rate-derived estimates unchanged.
+
+\subsection{Revised Estimates}
+
+Table \ref{tab:revisedprices} reports the fifteen estimates after this revision. The
+single largest change is to Question 15: the raw ordered-logit win probability (0.549)
+had already been shaded downward to 0.52 for a qualitative adjustment reflecting
+Morocco's tournament-long resilience, but the live market places France's win probability
+at 0.608, seven percentage points above even the model's unshaded output. Because a
+liquid, DIRECT-tier market is this campaign's single most reliable pricing category, and
+because the market's number already reflects real money's own assessment of the same
+qualitative context that motivated the manual shade, the qualitative adjustment is
+retired in favour of the market figure, rounded to 0.60. Player-prop questions with
+liquid two-sided Smarkets quotes (Questions 1, 2, 4) were blended toward, rather than
+fully replaced by, the market price, consistent with this campaign's standing practice of
+retaining a documented personal-history signal alongside a market anchor rather than
+discarding it outright. The one illiquid, offer-only quote in the set (Question 3,
+Brahim D\'iaz) was deliberately not adopted at face value: the pre-market personal-zero
+production evidence for this exact player has already produced the single largest win of
+a prior match (Canada versus Morocco, $+44.06$ relative Brier points) against an equally
+generous illiquid quote, so the estimate was moved only partway toward the market,
+from 0.25 to 0.32, rather than converging on it.
+
+\begin{table}[H]
+\centering
+\caption{Revised final probabilities after incorporating live Smarkets data.}
+\label{tab:revisedprices}
+\begin{tabular}{p{0.6cm}p{8.4cm}rrr}
+\toprule
+Q & Question & Pre-market $\hat p$ & Revised $\hat p$ & Source \\
+\midrule
+1 & Mbapp\'e (FRA) to score & 0.54 & 0.52 & Blended, liquid \\
+2 & Hakimi (MAR) 1+ shots on target & 0.30 & 0.34 & Blended, liquid \\
+3 & Brahim D\'iaz (MAR) 1+ shots on target & 0.25 & 0.32 & Partial override, illiquid \\
+4 & Dembel\'e (FRA) 2+ shots on target & 0.30 & 0.27 & Blended, liquid \\
+5 & Morocco 3+ shots on target & 0.60 & 0.63 & Market-fit lambda \\
+6 & Total goals $\le 2$ & 0.60 & 0.57 & Blended, liquid \\
+7 & 5+ total cards & 0.32 & 0.26 & Blended, liquid \\
+8 & Tied at halftime & 0.45 & 0.44 & Direct, liquid \\
+9 & Both halves same number of goals & 0.32 & 0.32 & Unchanged, no market \\
+10 & Penalty kick awarded OR red card shown & 0.38 & 0.38 & Combined, corroborated \\
+11 & Substitute scores or assists & 0.34 & 0.34 & Unchanged, no market \\
+12 & France 5+ corner kicks & 0.74 & 0.74 & Market-fit lambda, corroborated \\
+13 & Goal scored after second hydration break & 0.50 & 0.50 & Unchanged, no market \\
+14 & Card shown during 1st/2nd-half stoppage time & 0.28 & 0.28 & Unchanged, no market \\
+15 & France win in regulation & 0.52 & 0.60 & Direct, liquid \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+\label{sec:discussion}
+
+Two features of this pricing exercise depart from the campaign's typical practice and
+merit direct discussion.
+
+First, at the time of the initial pricing pass (Sections \ref{sec:questionmapping}--
+\ref{sec:results}), the absence of any market anchor removed the single most reliable
+pricing tool in the entire project. Across the four-match knockout-stage audit that
+preceded this match, the DIRECT tier---submitting at or near a real market price---beat
+the crowd on 73.5\% of thirty-four questions for a net gain of 142.39 relative Brier
+points, the strongest and most consistent category the campaign has identified. None of
+the fifteen questions in this match could draw on that tier at that stage. The two
+team-count questions that substitute for it in the absence of a market, Morocco's
+shots-on-target threshold (Question 5) and France's corner threshold (Question 12), are
+exactly the question type responsible for the campaign's single worst individual result
+to date: a $-80.83$ relative-Brier-point loss on a nearly identical Canada
+shots-on-target question, caused by projecting a team's own short-run empirical ceiling
+upward without having verified that the team's sample covered a plausible adverse game
+state. Both questions were initially priced at or below the empirical floor implied by
+each team's performance in its more competitive recent fixtures, rather than blended
+upward toward any more optimistic reading of the data, precisely to avoid repeating that
+failure mode in a setting with no market price available to soften the consequences of a
+miss. Section \ref{sec:marketrevision} subsequently found that a live Smarkets query
+independently implies almost the same rate for both statistics (Morocco SOT $\hat\lambda
+= 3.377$ against an empirical $\hat\lambda \approx 3.33$; France corners $\hat\lambda =
+6.212$ against an empirical estimate of 6.0--6.3), which is the strongest evidence
+available that this match's particular application of the empirical-floor approach was
+not a repeat of the earlier failure, since a genuinely thin or mis-specified empirical
+estimate would have had no reason to agree this closely with an independent market.
+
+Second, the richer StatsBomb data available for this match changes what a plausible but
+wrong estimate looks like. In every previous match this campaign priced, a data-poor
+question (an illiquid player prop, an obscure derived timing statistic) was recognizable
+as fragile because the underlying sample was visibly thin. With ten-to-fourteen-match
+StatsBomb histories now available for three of the four named players, an estimate built
+purely from that history acquires an unearned appearance of statistical solidity. The
+project's own diagnostic test of this exact risk---a live comparison of a pure
+StatsBomb-history model against the campaign's actual tournament-aware submission on a
+different match---found that the historical model loses in aggregate (93.01 versus
+120.30 relative-Brier-point equivalent) despite individually beating the tournament-aware
+approach on six of fourteen comparable questions. This paper's estimates therefore treat
+every StatsBomb-derived rate, including the specific 2022 France--Morocco semifinal, as a
+prior to be weighed against and generally subordinated to the two teams' live
+2026 form, rather than as a source of authority in its own right. The clearest instance of
+this discipline is Question 1: Mbapp\'e's WC2018/2022 scoring rate (0.857 goals per match)
+and his current five-game tournament form (a goal in four of five matches) both argue for
+an estimate well above 0.7, but the one StatsBomb-covered meeting between these exact two
+sides shows him held to zero shots on target, and Morocco's 2026 defensive record (four
+goals conceded in five matches, including clean sheets against Scotland and Canada) is
+consistent with the same defensive identity that produced that result in 2022. The final
+estimate of 0.54 reflects a genuine, opponent-specific regime check rather than either the
+career base rate or the current hot streak taken alone.
+
+A further limitation, distinct from data quality, is that this paper's match-winner and
+several prop estimates incorporate a small, explicitly qualitative downward adjustment to
+France's raw model-implied win probability, on the stated grounds of Morocco's demonstrated
+resilience in high-stakes knockout matches this tournament. This adjustment was kept to two
+to three percentage points precisely because the campaign's own research on deliberate
+probability-shading (\texttt{STRATEGIC\_MARGIN\_PUSH\_RESEARCH.md}) shows that the Relative
+Brier Points scoring rule is strictly proper: any deliberate departure from one's honestly
+calibrated belief carries a guaranteed expected cost proportional to the square of the
+departure, with no rational justification outside of a narrow, discrete leaderboard-cutoff
+scenario that does not apply to this campaign's current standing. The adjustment made here
+is better understood as a revision to the calibrated belief itself, informed by qualitative
+evidence the quantitative model does not directly encode, rather than as an extremizing
+strategy, but the paper flags it explicitly so that any future audit of this match's
+settled result can attribute error correctly between the model and this adjustment.
+
+\section{Conclusion}
+
+This match required pricing fifteen questions with no crowd or market anchor whatsoever,
+a first for this campaign, using a substantially expanded historical data surface whose
+main risk was overapplication rather than scarcity. The paper's methodology addressed both
+conditions by (i) re-deriving the campaign's core statistical pipeline---Elo, Poisson/
+Dixon--Coles/Negative-Binomial goal modeling, and ordered logit outcome modeling---directly
+from this project's own historical panel rather than from any live market, and (ii)
+explicitly mapping each question to a single primary tool while recording, for every
+question, the plausible alternative tool that was considered and rejected, together with
+the reason. The resulting fifteen estimates remain within the campaign's standard
+$[0.05, 0.95]$ bounds, apply the two highest-confidence validated patterns from the
+campaign's accumulated record (personal-zero-production suppression for Brahim D\'iaz and
+Hakimi; refusal to project a team shot or corner ceiling upward from a thin sample absent
+a market), and explicitly avoid the two lowest-confidence patterns the campaign has
+identified (trusting a raw late-window timing model; treating deliberate probability
+extremizing as free upside). A subsequent live check (Section \ref{sec:marketrevision})
+found that the JTC crowd consensus is not observable pre-close by any means available to
+this project, correcting an initial misreading of an unrelated settlement-status field,
+and supplied a public Smarkets sharp-market anchor for twelve of the fifteen questions
+instead, most importantly revising the match-winner estimate from 0.52 to a
+market-anchored 0.60 and independently corroborating, via closely agreeing implied
+Poisson rates, the two team-count estimates
+that carried this match's largest single-question tail risk in the absence of a market.
+Settlement data will be appended to this document once the match concludes.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
