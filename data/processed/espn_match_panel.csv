@@ -1,0 +1,171 @@
+event_id,date,match_slug,team_code,team_espn_abbr,home_away,goals,opponent_goals,fouls,yellow_cards,red_cards,offsides,corners,saves,possession_pct,total_shots,shots_on_target,blocked_shots,passes,pass_pct,interceptions,effective_tackles,clearances,venue,venue_city
+760414,2026-06-11,KOR-CZE,KOR,KOR,home,2,1,9,1,0,2,4,3,61.5,15,6,4,541,0.9,9,4,32,Estadio Akron,Guadalajara
+760414,2026-06-11,KOR-CZE,CZE,CZE,away,1,2,16,0,0,2,5,4,38.5,7,4,1,327,0.7,6,7,21,Estadio Akron,Guadalajara
+760415,2026-06-11,MEX-RSA,MEX,MEX,home,2,0,12,1,1,1,3,2,60.5,16,4,5,520,0.9,8,6,15,Estadio Banorte,Mexico City
+760415,2026-06-11,MEX-RSA,RSA,RSA,away,0,2,11,2,2,1,1,2,39.5,3,2,0,334,0.8,7,7,17,Estadio Banorte,Mexico City
+760416,2026-06-12,CAN-BIH,CAN,CAN,home,1,1,10,2,0,1,9,2,61.1,13,4,4,421,0.7,4,15,21,BMO Field,Toronto
+760416,2026-06-12,CAN-BIH,BIH,BIH,away,1,1,20,3,0,0,4,1,38.9,8,3,1,271,0.6,11,12,70,BMO Field,Toronto
+760417,2026-06-12,USA-PAR,USA,USA,home,4,1,13,1,0,2,3,1,65.3,16,6,4,598,0.9,9,7,15,SoFi Stadium,"Inglewood, California"
+760417,2026-06-12,USA-PAR,PAR,PAR,away,1,4,17,5,0,1,1,3,34.7,9,1,5,319,0.7,10,16,33,SoFi Stadium,"Inglewood, California"
+760418,2026-06-13,HAI-SCO,HAI,HAI,home,0,1,23,1,0,3,4,1,53.7,15,2,4,431,0.9,6,7,20,Gillette Stadium,"Foxborough, Massachusetts"
+760418,2026-06-13,HAI-SCO,SCO,SCO,away,1,0,21,3,0,1,3,2,46.3,9,2,2,374,0.8,6,5,17,Gillette Stadium,"Foxborough, Massachusetts"
+760419,2026-06-13,BRA-MAR,BRA,BRA,home,1,1,16,2,0,0,6,2,51.4,12,5,3,514,0.9,5,13,23,MetLife Stadium,"East Rutherford, New Jersey"
+760419,2026-06-13,BRA-MAR,MAR,MAR,away,1,1,14,0,0,1,2,4,48.6,14,3,6,486,0.9,5,18,17,MetLife Stadium,"East Rutherford, New Jersey"
+760420,2026-06-13,QAT-SUI,QAT,QAT,home,1,1,12,2,0,0,3,5,32.0,6,3,0,278,0.7,11,9,31,Levi's Stadium,"Santa Clara, California"
+760420,2026-06-13,QAT-SUI,SUI,SUI,away,1,1,11,1,0,1,10,3,68.0,26,7,9,576,0.9,7,6,13,Levi's Stadium,"Santa Clara, California"
+760421,2026-06-14,AUS-TUR,AUS,AUS,home,2,0,12,0,0,1,5,8,28.4,9,4,1,271,0.7,7,5,55,BC Place,Vancouver
+760421,2026-06-14,AUS-TUR,TUR,TUR,away,0,2,4,1,0,3,8,2,71.6,30,8,12,704,0.9,4,8,29,BC Place,Vancouver
+760422,2026-06-14,GER-CUR,GER,GER,home,7,1,18,0,0,0,8,1,64.6,26,12,8,637,0.9,12,13,8,NRG Stadium,"Houston, Texas"
+760422,2026-06-14,GER-CUR,CUR,CUW,away,1,7,11,0,0,1,1,4,35.4,8,2,0,343,0.8,16,8,25,NRG Stadium,"Houston, Texas"
+760423,2026-06-14,CIV-ECU,CIV,CIV,home,1,0,10,3,0,0,3,1,48.4,15,4,3,470,0.8,11,9,29,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760423,2026-06-14,CIV-ECU,ECU,ECU,away,0,1,13,1,0,0,6,3,51.6,12,1,3,492,0.9,13,15,18,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760424,2026-06-14,SWE-TUN,SWE,SWE,home,5,1,10,0,0,3,4,1,48.7,13,7,3,356,0.8,6,9,23,Estadio BBVA,Guadalupe
+760424,2026-06-14,SWE-TUN,TUN,TUN,away,1,5,8,1,0,6,2,1,51.3,6,2,1,371,0.8,6,12,13,Estadio BBVA,Guadalupe
+760425,2026-06-14,NED-JPN,NED,NED,home,2,2,7,3,0,1,5,1,59.8,10,6,1,524,0.9,7,5,23,AT&T Stadium,"Arlington, Texas"
+760425,2026-06-14,NED-JPN,JPN,JPN,away,2,2,7,0,0,0,4,4,40.2,10,3,1,341,0.8,4,10,32,AT&T Stadium,"Arlington, Texas"
+760426,2026-06-15,BEL-EGY,BEL,BEL,home,1,1,15,2,0,0,2,2,53.6,15,3,5,455,0.9,10,11,25,Lumen Field,"Seattle, Washington"
+760426,2026-06-15,BEL-EGY,EGY,EGY,away,1,1,15,2,0,1,7,3,46.4,14,3,7,398,0.8,16,17,17,Lumen Field,"Seattle, Washington"
+760427,2026-06-15,IRN-NZL,IRN,IRN,home,2,2,10,1,0,2,4,6,48.5,17,4,5,409,0.8,11,10,27,SoFi Stadium,"Inglewood, California"
+760427,2026-06-15,IRN-NZL,NZL,NZL,away,2,2,8,0,0,0,1,2,51.5,14,8,2,446,0.8,15,10,26,SoFi Stadium,"Inglewood, California"
+760428,2026-06-15,ESP-CPV,ESP,ESP,home,0,0,10,1,0,2,11,1,74.3,27,7,8,800,0.9,6,12,7,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760428,2026-06-15,ESP-CPV,CPV,CPV,away,0,0,1,1,0,3,1,7,25.7,6,1,2,278,0.7,15,11,46,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760429,2026-06-15,SAU-URU,SAU,KSA,home,1,1,11,1,0,0,4,9,33.2,7,3,1,322,0.7,9,8,43,Hard Rock Stadium,"Miami Gardens, Florida"
+760429,2026-06-15,SAU-URU,URU,URU,away,1,1,6,0,0,6,14,2,66.8,27,10,7,612,0.9,10,2,17,Hard Rock Stadium,"Miami Gardens, Florida"
+760430,2026-06-16,IRQ-NOR,IRQ,IRQ,home,1,4,12,1,0,1,2,2,38.7,11,1,2,334,0.8,5,13,20,Gillette Stadium,"Foxborough, Massachusetts"
+760430,2026-06-16,IRQ-NOR,NOR,NOR,away,4,1,13,0,0,0,5,0,61.3,12,5,3,537,0.9,2,10,22,Gillette Stadium,"Foxborough, Massachusetts"
+760432,2026-06-16,FRA-SEN,FRA,FRA,home,3,1,5,0,0,1,6,2,53.4,11,8,2,575,0.9,7,14,14,MetLife Stadium,"East Rutherford, New Jersey"
+760432,2026-06-16,FRA-SEN,SEN,SEN,away,1,3,9,0,0,3,4,5,46.6,6,2,1,502,0.9,8,10,17,MetLife Stadium,"East Rutherford, New Jersey"
+760433,2026-06-16,ARG-ALG,ARG,ARG,home,3,0,13,0,0,3,2,0,47.8,10,6,1,561,0.9,10,19,17,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760433,2026-06-16,ARG-ALG,ALG,ALG,away,0,3,8,0,0,1,2,3,52.2,7,1,3,609,0.9,8,10,12,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760431,2026-06-17,AUT-JOR,AUT,AUT,home,3,1,12,1,0,3,4,3,63.2,11,4,1,580,0.8,15,7,24,Levi's Stadium,"Santa Clara, California"
+760431,2026-06-17,AUT-JOR,JOR,JOR,away,1,3,7,0,0,1,3,1,36.8,11,4,2,332,0.7,12,6,39,Levi's Stadium,"Santa Clara, California"
+760434,2026-06-17,GHA-PAN,GHA,GHA,home,1,0,9,1,0,4,2,4,38.0,7,2,1,352,0.8,8,9,28,BMO Field,Toronto
+760434,2026-06-17,GHA-PAN,PAN,PAN,away,0,1,11,2,0,1,2,2,62.0,11,4,2,583,0.9,5,11,17,BMO Field,Toronto
+760435,2026-06-17,POR-CDR,POR,POR,home,1,1,9,3,0,3,5,1,75.4,7,1,2,783,0.9,3,6,10,NRG Stadium,"Houston, Texas"
+760435,2026-06-17,POR-CDR,CDR,COD,away,1,1,10,1,0,2,4,0,24.6,8,2,3,249,0.8,5,9,27,NRG Stadium,"Houston, Texas"
+760436,2026-06-17,UZB-COL,UZB,UZB,home,1,3,14,1,0,0,3,1,38.6,8,2,2,319,0.8,7,7,24,Estadio Banorte,Mexico City
+760436,2026-06-17,UZB-COL,COL,COL,away,3,1,11,1,0,3,4,1,61.4,15,4,4,519,0.9,6,3,20,Estadio Banorte,Mexico City
+760437,2026-06-17,ENG-CRO,ENG,ENG,home,4,2,10,0,0,0,8,3,51.7,22,11,5,474,0.9,7,7,16,AT&T Stadium,"Arlington, Texas"
+760437,2026-06-17,ENG-CRO,CRO,CRO,away,2,4,12,0,0,1,2,7,48.3,10,5,2,443,0.9,9,8,17,AT&T Stadium,"Arlington, Texas"
+760438,2026-06-18,CZE-RSA,CZE,CZE,home,1,1,12,1,0,2,5,3,38.3,14,3,3,341,0.8,9,4,22,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760438,2026-06-18,CZE-RSA,RSA,RSA,away,1,1,10,2,0,3,5,2,61.7,17,4,8,563,0.9,9,11,24,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760439,2026-06-18,SUI-BIH,SUI,SUI,home,4,1,7,1,0,3,7,2,62.3,13,7,3,586,0.9,5,13,17,SoFi Stadium,"Inglewood, California"
+760439,2026-06-18,SUI-BIH,BIH,BIH,away,1,4,18,2,1,1,3,3,37.7,5,3,1,354,0.8,11,3,36,SoFi Stadium,"Inglewood, California"
+760440,2026-06-18,CAN-QAT,CAN,CAN,home,6,0,9,1,0,1,19,0,79.0,32,10,14,567,0.9,6,5,3,BC Place,Vancouver
+760440,2026-06-18,CAN-QAT,QAT,QAT,away,0,6,10,1,2,1,1,4,21.0,2,0,1,162,0.6,10,10,61,BC Place,Vancouver
+760441,2026-06-18,MEX-KOR,MEX,MEX,home,1,0,9,0,0,3,1,2,42.4,8,4,1,427,0.8,6,7,20,Estadio Akron,Guadalajara
+760441,2026-06-18,MEX-KOR,KOR,KOR,away,0,1,7,2,0,6,2,3,57.6,9,2,3,578,0.8,5,10,12,Estadio Akron,Guadalajara
+760442,2026-06-19,USA-AUS,USA,USA,home,2,0,12,3,0,1,7,2,61.9,10,2,6,523,0.8,20,8,31,Lumen Field,"Seattle, Washington"
+760442,2026-06-19,USA-AUS,AUS,AUS,away,0,2,16,4,0,0,4,1,38.1,5,2,0,310,0.7,6,11,24,Lumen Field,"Seattle, Washington"
+760443,2026-06-19,TUR-PAR,TUR,TUR,home,0,1,14,1,0,2,12,1,78.5,32,5,12,629,0.9,6,11,29,Levi's Stadium,"Santa Clara, California"
+760443,2026-06-19,TUR-PAR,PAR,PAR,away,1,0,15,1,1,3,0,5,21.5,7,2,2,178,0.5,9,15,48,Levi's Stadium,"Santa Clara, California"
+760444,2026-06-19,BRA-HAI,BRA,BRA,home,3,0,13,1,0,8,4,3,56.7,8,5,1,525,0.9,10,10,14,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760444,2026-06-19,BRA-HAI,HAI,HAI,away,0,3,14,3,0,4,4,2,43.3,7,3,1,399,0.8,9,10,22,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760445,2026-06-19,SCO-MAR,SCO,SCO,home,0,1,11,1,0,1,2,1,41.1,6,0,3,456,0.9,9,12,17,Gillette Stadium,"Foxborough, Massachusetts"
+760445,2026-06-19,SCO-MAR,MAR,MAR,away,1,0,8,1,0,0,5,0,58.9,12,2,4,670,0.9,5,6,14,Gillette Stadium,"Foxborough, Massachusetts"
+760446,2026-06-20,ECU-CUR,ECU,ECU,home,0,0,7,1,0,1,9,3,74.6,27,15,2,644,0.9,7,11,17,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760446,2026-06-20,ECU-CUR,CUR,CUW,away,0,0,10,5,0,2,0,15,25.4,10,3,3,227,0.7,8,7,32,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760447,2026-06-20,NED-SWE,NED,NED,home,5,1,9,0,0,3,2,7,50.9,10,7,1,449,0.9,8,8,24,NRG Stadium,"Houston, Texas"
+760447,2026-06-20,NED-SWE,SWE,SWE,away,1,5,12,3,0,3,5,2,49.1,16,8,3,425,0.8,5,9,14,NRG Stadium,"Houston, Texas"
+760448,2026-06-20,GER-CIV,GER,GER,home,2,1,5,0,0,0,8,1,59.5,16,7,4,624,0.9,8,17,14,BMO Field,Toronto
+760448,2026-06-20,GER-CIV,CIV,CIV,away,1,2,7,0,0,1,3,5,40.5,9,2,5,431,0.9,13,11,26,BMO Field,Toronto
+760449,2026-06-21,TUN-JPN,TUN,TUN,home,0,4,8,0,0,1,3,1,37.9,2,0,1,354,0.8,14,16,23,Estadio BBVA,Guadalupe
+760449,2026-06-21,TUN-JPN,JPN,JPN,away,4,0,15,0,0,1,5,0,62.1,11,5,3,583,0.9,7,12,25,Estadio BBVA,Guadalupe
+760450,2026-06-21,URU-CPV,URU,URU,home,2,2,11,2,0,3,11,2,65.2,17,2,7,511,0.8,7,8,11,Hard Rock Stadium,"Miami Gardens, Florida"
+760450,2026-06-21,URU-CPV,CPV,CPV,away,2,2,4,2,0,0,4,0,34.8,12,4,4,278,0.7,13,15,48,Hard Rock Stadium,"Miami Gardens, Florida"
+760451,2026-06-21,BEL-IRN,BEL,BEL,home,0,0,7,1,1,3,4,3,70.1,23,7,6,621,0.9,3,7,11,SoFi Stadium,"Inglewood, California"
+760451,2026-06-21,BEL-IRN,IRN,IRN,away,0,0,9,1,0,4,2,7,29.9,7,3,1,270,0.7,12,11,51,SoFi Stadium,"Inglewood, California"
+760452,2026-06-21,NZL-EGY,NZL,NZL,home,1,3,14,2,0,3,4,4,44.4,11,5,3,421,0.8,4,6,22,BC Place,Vancouver
+760452,2026-06-21,NZL-EGY,EGY,EGY,away,3,1,8,1,0,0,4,4,55.6,19,7,6,526,0.9,6,13,37,BC Place,Vancouver
+760453,2026-06-21,ESP-SAU,ESP,ESP,home,4,0,10,0,0,2,6,1,67.1,22,8,2,726,0.9,13,8,17,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760453,2026-06-21,ESP-SAU,SAU,KSA,away,0,4,2,2,0,3,1,5,32.9,3,1,1,364,0.8,13,12,35,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760454,2026-06-22,NOR-SEN,NOR,NOR,home,3,2,13,0,0,0,5,2,41.7,13,7,3,353,0.8,8,9,26,MetLife Stadium,"East Rutherford, New Jersey"
+760454,2026-06-22,NOR-SEN,SEN,SEN,away,2,3,5,0,0,4,4,3,58.3,16,4,5,489,0.9,10,7,18,MetLife Stadium,"East Rutherford, New Jersey"
+760455,2026-06-22,JOR-ALG,JOR,JOR,home,1,2,11,1,0,1,1,6,27.9,8,4,0,251,0.7,3,17,36,Levi's Stadium,"Santa Clara, California"
+760455,2026-06-22,JOR-ALG,ALG,ALG,away,2,1,6,1,0,0,10,3,72.1,17,8,5,641,0.9,11,18,15,Levi's Stadium,"Santa Clara, California"
+760456,2026-06-22,ARG-AUT,ARG,ARG,home,2,0,13,2,0,2,1,1,53.6,12,5,3,554,0.9,8,11,35,AT&T Stadium,"Arlington, Texas"
+760456,2026-06-22,ARG-AUT,AUT,AUT,away,0,2,13,2,0,0,3,2,46.4,6,1,0,468,0.9,9,7,15,AT&T Stadium,"Arlington, Texas"
+760457,2026-06-22,FRA-IRQ,FRA,FRA,home,3,0,8,0,0,1,4,0,55.6,19,5,4,603,0.9,5,9,9,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760457,2026-06-22,FRA-IRQ,IRQ,IRQ,away,0,3,4,1,0,0,2,2,44.4,4,0,1,481,0.9,10,8,28,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760458,2026-06-23,ENG-GHA,ENG,ENG,home,0,0,14,1,0,2,9,0,78.9,19,3,6,633,0.9,1,7,6,Gillette Stadium,"Foxborough, Massachusetts"
+760458,2026-06-23,ENG-GHA,GHA,GHA,away,0,0,24,1,0,2,2,3,21.1,2,1,1,172,0.7,8,17,39,Gillette Stadium,"Foxborough, Massachusetts"
+760459,2026-06-23,COL-CDR,COL,COL,home,1,0,12,2,0,7,5,1,63.5,20,9,6,541,0.9,10,6,18,Estadio Akron,Guadalajara
+760459,2026-06-23,COL-CDR,CDR,COD,away,0,1,16,1,0,0,4,8,36.5,7,1,2,299,0.8,7,10,19,Estadio Akron,Guadalajara
+760460,2026-06-23,PAN-CRO,PAN,PAN,home,0,1,19,1,0,1,7,1,42.0,8,1,2,352,0.8,5,5,29,BMO Field,Toronto
+760460,2026-06-23,PAN-CRO,CRO,CRO,away,1,0,12,1,0,2,2,1,58.0,6,2,1,512,0.8,5,7,38,BMO Field,Toronto
+760461,2026-06-23,POR-UZB,POR,POR,home,5,0,14,1,0,2,3,2,65.9,17,9,3,624,0.9,6,10,16,NRG Stadium,"Houston, Texas"
+760461,2026-06-23,POR-UZB,UZB,UZB,away,0,5,15,1,0,2,2,4,34.1,7,2,3,327,0.8,14,13,30,NRG Stadium,"Houston, Texas"
+760462,2026-06-24,BIH-QAT,BIH,BIH,home,3,1,9,1,0,1,5,2,54.4,14,5,5,515,0.9,4,9,22,Lumen Field,"Seattle, Washington"
+760462,2026-06-24,BIH-QAT,QAT,QAT,away,1,3,14,1,0,3,5,3,45.6,9,3,0,434,0.9,4,5,24,Lumen Field,"Seattle, Washington"
+760463,2026-06-24,SUI-CAN,SUI,SUI,home,2,1,19,1,0,1,2,6,55.3,6,4,1,443,0.8,4,7,44,BC Place,Vancouver
+760463,2026-06-24,SUI-CAN,CAN,CAN,away,1,2,13,2,0,3,7,2,44.7,13,7,3,339,0.8,13,5,19,BC Place,Vancouver
+760464,2026-06-24,MAR-HAI,MAR,MAR,home,4,2,10,0,0,5,9,1,69.1,22,11,5,541,0.9,8,8,14,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760464,2026-06-24,MAR-HAI,HAI,HAI,away,2,4,18,3,0,0,1,8,30.9,9,2,3,247,0.8,16,12,26,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760465,2026-06-24,SCO-BRA,SCO,SCO,home,0,3,10,1,0,0,7,5,46.0,14,5,3,500,0.9,2,8,13,Hard Rock Stadium,"Miami Gardens, Florida"
+760465,2026-06-24,SCO-BRA,BRA,BRA,away,3,0,11,2,0,1,7,5,54.0,21,9,5,605,0.9,13,6,24,Hard Rock Stadium,"Miami Gardens, Florida"
+760466,2026-06-24,RSA-KOR,RSA,RSA,home,1,0,7,1,0,3,4,2,31.6,13,4,4,340,0.8,15,7,40,Estadio BBVA,Guadalupe
+760466,2026-06-24,RSA-KOR,KOR,KOR,away,0,1,9,1,0,0,6,3,68.4,8,3,1,719,0.9,4,9,16,Estadio BBVA,Guadalupe
+760467,2026-06-24,CZE-MEX,CZE,CZE,home,0,3,9,0,0,1,5,2,51.9,13,1,4,398,0.8,5,7,20,Estadio Banorte,Mexico City
+760467,2026-06-24,CZE-MEX,MEX,MEX,away,3,0,13,1,0,0,1,1,48.1,11,5,2,386,0.9,7,8,30,Estadio Banorte,Mexico City
+760468,2026-06-25,ECU-GER,ECU,ECU,home,2,1,15,3,0,1,3,2,38.9,7,3,2,378,0.8,12,16,30,MetLife Stadium,"East Rutherford, New Jersey"
+760468,2026-06-25,ECU-GER,GER,GER,away,1,2,10,1,0,0,2,1,61.1,11,3,5,592,0.9,4,13,15,MetLife Stadium,"East Rutherford, New Jersey"
+760469,2026-06-25,PAR-AUS,PAR,PAR,home,0,0,9,1,0,0,1,5,44.0,7,2,1,426,0.8,8,17,24,Levi's Stadium,"Santa Clara, California"
+760469,2026-06-25,PAR-AUS,AUS,AUS,away,0,0,6,1,0,0,3,2,56.0,12,5,3,537,0.8,7,12,10,Levi's Stadium,"Santa Clara, California"
+760470,2026-06-25,TUR-USA,TUR,TUR,home,3,2,13,0,0,2,2,5,47.4,9,3,2,434,0.8,9,20,24,SoFi Stadium,"Inglewood, California"
+760470,2026-06-25,TUR-USA,USA,USA,away,2,3,13,1,0,5,9,1,52.6,18,7,5,471,0.8,9,9,27,SoFi Stadium,"Inglewood, California"
+760471,2026-06-25,JPN-SWE,JPN,JPN,home,1,1,20,1,0,3,2,4,52.3,8,3,2,445,0.8,4,7,40,AT&T Stadium,"Arlington, Texas"
+760471,2026-06-25,JPN-SWE,SWE,SWE,away,1,1,11,2,0,2,8,2,47.7,11,5,3,395,0.8,5,3,21,AT&T Stadium,"Arlington, Texas"
+760472,2026-06-25,TUN-NED,TUN,TUN,home,1,3,11,0,0,2,4,4,28.6,10,4,1,258,0.8,8,9,35,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760472,2026-06-25,TUN-NED,NED,NED,away,3,1,10,0,0,1,6,3,71.4,20,7,5,647,0.9,10,5,17,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760473,2026-06-25,CUR-CIV,CUR,CUW,home,0,2,11,2,0,2,4,1,36.7,11,2,2,355,0.8,15,11,17,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760473,2026-06-25,CUR-CIV,CIV,CIV,away,2,0,6,1,0,1,6,2,63.3,7,3,1,624,0.9,12,9,19,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760474,2026-06-26,SEN-IRQ,SEN,SEN,home,5,0,10,2,0,1,12,1,69.2,28,12,5,590,0.9,2,9,10,BMO Field,Toronto
+760474,2026-06-26,SEN-IRQ,IRQ,IRQ,away,0,5,11,2,1,0,3,7,30.8,6,1,4,266,0.7,7,13,34,BMO Field,Toronto
+760475,2026-06-26,NOR-FRA,NOR,NOR,home,1,4,9,1,0,1,4,5,43.3,10,4,3,421,0.8,13,11,16,Gillette Stadium,"Foxborough, Massachusetts"
+760475,2026-06-26,NOR-FRA,FRA,FRA,away,4,1,11,1,0,2,5,3,56.7,18,9,3,555,0.9,11,12,19,Gillette Stadium,"Foxborough, Massachusetts"
+760476,2026-06-26,EGY-IRN,EGY,EGY,home,1,1,11,3,0,0,8,2,61.4,15,3,6,589,0.9,7,10,38,Lumen Field,"Seattle, Washington"
+760476,2026-06-26,EGY-IRN,IRN,IRN,away,1,1,16,4,0,3,2,2,38.6,13,4,3,367,0.8,8,17,32,Lumen Field,"Seattle, Washington"
+760477,2026-06-26,NZL-BEL,NZL,NZL,home,1,5,10,2,0,1,5,5,45.5,6,2,1,436,0.8,6,6,35,BC Place,Vancouver
+760477,2026-06-26,NZL-BEL,BEL,BEL,away,5,1,7,0,0,1,8,1,54.5,35,10,12,525,0.9,10,8,27,BC Place,Vancouver
+760478,2026-06-26,CPV-SAU,CPV,CPV,home,0,0,10,1,0,2,4,3,51.0,15,2,5,451,0.8,13,12,29,NRG Stadium,"Houston, Texas"
+760478,2026-06-26,CPV-SAU,SAU,KSA,away,0,0,16,3,0,0,2,2,49.0,7,3,3,444,0.8,11,15,25,NRG Stadium,"Houston, Texas"
+760479,2026-06-26,URU-ESP,URU,URU,home,0,1,14,3,1,5,1,0,33.1,5,1,1,301,0.8,14,15,14,Estadio Akron,Guadalajara
+760479,2026-06-26,URU-ESP,ESP,ESP,away,1,0,14,1,0,2,6,2,66.9,6,1,1,622,0.9,9,10,23,Estadio Akron,Guadalajara
+760480,2026-06-27,CRO-GHA,CRO,CRO,home,2,1,9,1,0,1,3,0,53.3,8,4,2,523,0.9,4,8,23,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760480,2026-06-27,CRO-GHA,GHA,GHA,away,1,2,13,1,0,2,2,2,46.7,6,1,2,455,0.9,9,7,11,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760481,2026-06-27,COL-POR,COL,COL,home,0,0,12,1,0,3,5,2,54.6,24,6,7,544,0.9,6,8,16,Hard Rock Stadium,"Miami Gardens, Florida"
+760481,2026-06-27,COL-POR,POR,POR,away,0,0,6,0,0,2,2,6,45.4,13,2,4,446,0.9,13,5,22,Hard Rock Stadium,"Miami Gardens, Florida"
+760482,2026-06-27,CDR-UZB,CDR,COD,home,3,1,6,3,0,3,2,1,57.6,19,4,1,485,0.8,7,13,25,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760482,2026-06-27,CDR-UZB,UZB,UZB,away,1,3,16,2,0,1,4,1,42.4,3,1,0,355,0.8,12,18,38,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760483,2026-06-27,JOR-ARG,JOR,JOR,home,1,3,13,3,0,1,2,1,26.7,5,1,2,285,0.8,19,8,13,AT&T Stadium,"Arlington, Texas"
+760483,2026-06-27,JOR-ARG,ARG,ARG,away,3,1,7,0,0,3,6,0,73.3,12,4,1,801,0.9,12,5,9,AT&T Stadium,"Arlington, Texas"
+760484,2026-06-27,ALG-AUT,ALG,ALG,home,3,3,3,0,0,1,0,1,65.0,12,5,2,754,0.9,4,5,18,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760484,2026-06-27,ALG-AUT,AUT,AUT,away,3,3,7,1,0,3,3,2,35.0,10,3,1,396,0.9,10,4,19,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760485,2026-06-27,PAN-ENG,PAN,PAN,home,0,2,16,2,0,4,3,4,32.9,13,2,3,268,0.8,6,11,34,MetLife Stadium,"East Rutherford, New Jersey"
+760485,2026-06-27,PAN-ENG,ENG,ENG,away,2,0,13,1,0,4,7,2,67.1,17,6,3,558,0.9,5,17,20,MetLife Stadium,"East Rutherford, New Jersey"
+760486,2026-06-28,RSA-CAN,RSA,RSA,home,0,1,10,0,0,1,1,5,58.4,6,1,1,554,0.8,15,13,33,SoFi Stadium,"Inglewood, California"
+760486,2026-06-28,RSA-CAN,CAN,CAN,away,1,0,16,2,0,0,4,1,41.6,12,7,0,379,0.8,8,15,16,SoFi Stadium,"Inglewood, California"
+760487,2026-06-29,BRA-JPN,BRA,BRA,home,2,1,4,2,0,1,6,1,68.6,19,7,6,682,0.9,9,7,19,NRG Stadium,"Houston, Texas"
+760487,2026-06-29,BRA-JPN,JPN,JPN,away,1,2,13,3,0,0,2,4,31.4,5,2,2,313,0.8,6,4,45,NRG Stadium,"Houston, Texas"
+760488,2026-06-29,NED-MAR,NED,NED,home,1,1,18,0,0,3,5,5,29.9,6,2,3,371,0.8,11,10,22,Estadio BBVA,Guadalupe
+760488,2026-06-29,NED-MAR,MAR,MAR,away,1,1,15,1,0,0,8,1,70.1,11,5,2,879,0.9,11,14,34,Estadio BBVA,Guadalupe
+760489,2026-06-29,GER-PAR,GER,GER,home,1,1,18,2,0,4,16,2,75.6,21,6,8,805,0.9,4,7,23,Gillette Stadium,"Foxborough, Massachusetts"
+760489,2026-06-29,GER-PAR,PAR,PAR,away,1,1,12,2,0,1,6,6,24.4,7,3,2,255,0.6,13,20,55,Gillette Stadium,"Foxborough, Massachusetts"
+760490,2026-06-30,CIV-NOR,CIV,CIV,home,1,2,6,0,0,2,14,1,47.0,14,5,1,401,0.8,4,18,11,AT&T Stadium,"Arlington, Texas"
+760490,2026-06-30,CIV-NOR,NOR,NOR,away,2,1,7,1,0,2,3,4,53.0,9,4,3,474,0.9,5,11,37,AT&T Stadium,"Arlington, Texas"
+760491,2026-06-30,MEX-ECU,MEX,MEX,home,2,0,10,0,0,0,3,1,42.8,15,3,3,316,0.8,7,5,39,Estadio Banorte,Mexico City
+760491,2026-06-30,MEX-ECU,ECU,ECU,away,0,2,14,3,1,1,8,1,57.2,7,1,1,410,0.8,6,8,19,Estadio Banorte,Mexico City
+760492,2026-06-30,FRA-SWE,FRA,FRA,home,3,0,14,0,0,3,9,3,61.0,25,12,4,551,0.9,5,7,23,MetLife Stadium,"East Rutherford, New Jersey"
+760492,2026-06-30,FRA-SWE,SWE,SWE,away,0,3,10,0,0,1,1,9,39.0,8,3,1,350,0.8,12,9,26,MetLife Stadium,"East Rutherford, New Jersey"
+760493,2026-07-01,BEL-SEN,BEL,BEL,home,3,2,22,1,0,2,4,3,52.3,19,5,5,701,0.9,8,5,28,Lumen Field,"Seattle, Washington"
+760493,2026-07-01,BEL-SEN,SEN,SEN,away,2,3,12,1,0,2,2,3,47.7,19,5,3,639,0.8,11,4,31,Lumen Field,"Seattle, Washington"
+760494,2026-07-01,USA-BIH,USA,USA,home,2,0,7,0,1,3,4,3,48.4,8,2,2,415,0.8,7,8,28,Levi's Stadium,"Santa Clara, California"
+760494,2026-07-01,USA-BIH,BIH,BIH,away,0,2,13,1,0,0,3,0,51.6,10,3,3,447,0.8,7,12,26,Levi's Stadium,"Santa Clara, California"
+760495,2026-07-01,ENG-CDR,ENG,ENG,home,2,1,10,1,0,0,5,1,59.7,16,7,3,517,0.9,7,6,23,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760495,2026-07-01,ENG-CDR,CDR,COD,away,1,2,12,1,0,4,3,5,40.3,7,2,2,365,0.8,3,8,36,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760496,2026-07-02,POR-CRO,POR,POR,home,2,1,6,1,0,1,9,5,60.4,15,3,4,585,0.9,5,9,19,BMO Field,Toronto
+760496,2026-07-02,POR-CRO,CRO,CRO,away,1,2,12,2,0,4,5,2,39.6,13,6,2,370,0.8,10,11,19,BMO Field,Toronto
+760497,2026-07-02,ESP-AUT,ESP,ESP,home,3,0,8,0,0,2,9,0,64.4,23,10,7,629,0.9,6,12,15,SoFi Stadium,"Inglewood, California"
+760497,2026-07-02,ESP-AUT,AUT,AUT,away,0,3,15,1,0,5,0,6,35.6,5,0,1,347,0.8,6,8,21,SoFi Stadium,"Inglewood, California"
+760498,2026-07-02,SUI-ALG,SUI,SUI,home,2,0,10,0,0,0,4,2,44.5,11,5,2,438,0.8,17,14,23,BC Place,Vancouver
+760498,2026-07-02,SUI-ALG,ALG,ALG,away,0,2,12,2,0,2,2,2,55.5,8,2,3,563,0.8,10,9,14,BC Place,Vancouver

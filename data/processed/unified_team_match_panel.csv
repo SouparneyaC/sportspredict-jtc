@@ -1,0 +1,427 @@
+season_year,data_source,match_id,match_date,competition_stage,team_code,team_name,opponent_code,opponent_name,is_home,goals,opponent_goals,result,total_shots,shots_on_target,blocked_shots,xg_total,fouls_committed,fouls_won,yellow_cards,red_cards,corners,offsides,passes,passes_completed,pass_pct,clearances,interceptions,possession_pct,saves,effective_tackles,venue,venue_city,referee_name
+2026,espn_boxscore,760414,2026-06-11,,KOR,South Korea,CZE,Czech Republic,True,2,1,W,15,6,4,,9,,1,0,4,2,541,,90.0,32,9,61.5,3,4,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760414,2026-06-11,,CZE,Czech Republic,KOR,South Korea,False,1,2,L,7,4,1,,16,,0,0,5,2,327,,70.0,21,6,38.5,4,7,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760415,2026-06-11,,MEX,Mexico,RSA,South Africa,True,2,0,W,16,4,5,,12,,1,1,3,1,520,,90.0,15,8,60.5,2,6,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760415,2026-06-11,,RSA,South Africa,MEX,Mexico,False,0,2,L,3,2,0,,11,,2,2,1,1,334,,80.0,17,7,39.5,2,7,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760416,2026-06-12,,CAN,Canada,BIH,Bosnia and Herzegovina,True,1,1,D,13,4,4,,10,,2,0,9,1,421,,70.0,21,4,61.1,2,15,BMO Field,Toronto,
+2026,espn_boxscore,760416,2026-06-12,,BIH,Bosnia and Herzegovina,CAN,Canada,False,1,1,D,8,3,1,,20,,3,0,4,0,271,,60.0,70,11,38.9,1,12,BMO Field,Toronto,
+2026,espn_boxscore,760417,2026-06-12,,USA,United States,PAR,Paraguay,True,4,1,W,16,6,4,,13,,1,0,3,2,598,,90.0,15,9,65.3,1,7,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760417,2026-06-12,,PAR,Paraguay,USA,United States,False,1,4,L,9,1,5,,17,,5,0,1,1,319,,70.0,33,10,34.7,3,16,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760418,2026-06-13,,HAI,Haiti,SCO,Scotland,True,0,1,L,15,2,4,,23,,1,0,4,3,431,,90.0,20,6,53.7,1,7,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760418,2026-06-13,,SCO,Scotland,HAI,Haiti,False,1,0,W,9,2,2,,21,,3,0,3,1,374,,80.0,17,6,46.3,2,5,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760419,2026-06-13,,BRA,Brazil,MAR,Morocco,True,1,1,D,12,5,3,,16,,2,0,6,0,514,,90.0,23,5,51.4,2,13,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760419,2026-06-13,,MAR,Morocco,BRA,Brazil,False,1,1,D,14,3,6,,14,,0,0,2,1,486,,90.0,17,5,48.6,4,18,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760420,2026-06-13,,QAT,Qatar,SUI,Switzerland,True,1,1,D,6,3,0,,12,,2,0,3,0,278,,70.0,31,11,32.0,5,9,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760420,2026-06-13,,SUI,Switzerland,QAT,Qatar,False,1,1,D,26,7,9,,11,,1,0,10,1,576,,90.0,13,7,68.0,3,6,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760421,2026-06-14,,AUS,Australia,TUR,Turkey,True,2,0,W,9,4,1,,12,,0,0,5,1,271,,70.0,55,7,28.4,8,5,BC Place,Vancouver,
+2026,espn_boxscore,760421,2026-06-14,,TUR,Turkey,AUS,Australia,False,0,2,L,30,8,12,,4,,1,0,8,3,704,,90.0,29,4,71.6,2,8,BC Place,Vancouver,
+2026,espn_boxscore,760422,2026-06-14,,GER,Germany,CUR,Curaçao,True,7,1,W,26,12,8,,18,,0,0,8,0,637,,90.0,8,12,64.6,1,13,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760422,2026-06-14,,CUR,Curaçao,GER,Germany,False,1,7,L,8,2,0,,11,,0,0,1,1,343,,80.0,25,16,35.4,4,8,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760423,2026-06-14,,CIV,Ivory Coast,ECU,Ecuador,True,1,0,W,15,4,3,,10,,3,0,3,0,470,,80.0,29,11,48.4,1,9,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760423,2026-06-14,,ECU,Ecuador,CIV,Ivory Coast,False,0,1,L,12,1,3,,13,,1,0,6,0,492,,90.0,18,13,51.6,3,15,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760424,2026-06-14,,SWE,Sweden,TUN,Tunisia,True,5,1,W,13,7,3,,10,,0,0,4,3,356,,80.0,23,6,48.7,1,9,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760424,2026-06-14,,TUN,Tunisia,SWE,Sweden,False,1,5,L,6,2,1,,8,,1,0,2,6,371,,80.0,13,6,51.3,1,12,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760425,2026-06-14,,NED,Netherlands,JPN,Japan,True,2,2,D,10,6,1,,7,,3,0,5,1,524,,90.0,23,7,59.8,1,5,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760425,2026-06-14,,JPN,Japan,NED,Netherlands,False,2,2,D,10,3,1,,7,,0,0,4,0,341,,80.0,32,4,40.2,4,10,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760426,2026-06-15,,BEL,Belgium,EGY,Egypt,True,1,1,D,15,3,5,,15,,2,0,2,0,455,,90.0,25,10,53.6,2,11,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760426,2026-06-15,,EGY,Egypt,BEL,Belgium,False,1,1,D,14,3,7,,15,,2,0,7,1,398,,80.0,17,16,46.4,3,17,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760427,2026-06-15,,IRN,Iran,NZL,New Zealand,True,2,2,D,17,4,5,,10,,1,0,4,2,409,,80.0,27,11,48.5,6,10,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760427,2026-06-15,,NZL,New Zealand,IRN,Iran,False,2,2,D,14,8,2,,8,,0,0,1,0,446,,80.0,26,15,51.5,2,10,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760428,2026-06-15,,ESP,Spain,CPV,Cape Verde,True,0,0,D,27,7,8,,10,,1,0,11,2,800,,90.0,7,6,74.3,1,12,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760428,2026-06-15,,CPV,Cape Verde,ESP,Spain,False,0,0,D,6,1,2,,1,,1,0,1,3,278,,70.0,46,15,25.7,7,11,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760429,2026-06-15,,SAU,Saudi Arabia,URU,Uruguay,True,1,1,D,7,3,1,,11,,1,0,4,0,322,,70.0,43,9,33.2,9,8,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760429,2026-06-15,,URU,Uruguay,SAU,Saudi Arabia,False,1,1,D,27,10,7,,6,,0,0,14,6,612,,90.0,17,10,66.8,2,2,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760430,2026-06-16,,IRQ,Iraq,NOR,Norway,True,1,4,L,11,1,2,,12,,1,0,2,1,334,,80.0,20,5,38.7,2,13,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760430,2026-06-16,,NOR,Norway,IRQ,Iraq,False,4,1,W,12,5,3,,13,,0,0,5,0,537,,90.0,22,2,61.3,0,10,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760432,2026-06-16,,FRA,France,SEN,Senegal,True,3,1,W,11,8,2,,5,,0,0,6,1,575,,90.0,14,7,53.4,2,14,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760432,2026-06-16,,SEN,Senegal,FRA,France,False,1,3,L,6,2,1,,9,,0,0,4,3,502,,90.0,17,8,46.6,5,10,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760433,2026-06-16,,ARG,Argentina,ALG,Algeria,True,3,0,W,10,6,1,,13,,0,0,2,3,561,,90.0,17,10,47.8,0,19,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760433,2026-06-16,,ALG,Algeria,ARG,Argentina,False,0,3,L,7,1,3,,8,,0,0,2,1,609,,90.0,12,8,52.2,3,10,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760431,2026-06-17,,AUT,Austria,JOR,Jordan,True,3,1,W,11,4,1,,12,,1,0,4,3,580,,80.0,24,15,63.2,3,7,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760431,2026-06-17,,JOR,Jordan,AUT,Austria,False,1,3,L,11,4,2,,7,,0,0,3,1,332,,70.0,39,12,36.8,1,6,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760434,2026-06-17,,GHA,Ghana,PAN,Panama,True,1,0,W,7,2,1,,9,,1,0,2,4,352,,80.0,28,8,38.0,4,9,BMO Field,Toronto,
+2026,espn_boxscore,760434,2026-06-17,,PAN,Panama,GHA,Ghana,False,0,1,L,11,4,2,,11,,2,0,2,1,583,,90.0,17,5,62.0,2,11,BMO Field,Toronto,
+2026,espn_boxscore,760435,2026-06-17,,POR,Portugal,CDR,DR Congo,True,1,1,D,7,1,2,,9,,3,0,5,3,783,,90.0,10,3,75.4,1,6,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760435,2026-06-17,,CDR,DR Congo,POR,Portugal,False,1,1,D,8,2,3,,10,,1,0,4,2,249,,80.0,27,5,24.6,0,9,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760436,2026-06-17,,UZB,Uzbekistan,COL,Colombia,True,1,3,L,8,2,2,,14,,1,0,3,0,319,,80.0,24,7,38.6,1,7,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760436,2026-06-17,,COL,Colombia,UZB,Uzbekistan,False,3,1,W,15,4,4,,11,,1,0,4,3,519,,90.0,20,6,61.4,1,3,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760437,2026-06-17,,ENG,England,CRO,Croatia,True,4,2,W,22,11,5,,10,,0,0,8,0,474,,90.0,16,7,51.7,3,7,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760437,2026-06-17,,CRO,Croatia,ENG,England,False,2,4,L,10,5,2,,12,,0,0,2,1,443,,90.0,17,9,48.3,7,8,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760438,2026-06-18,,CZE,Czech Republic,RSA,South Africa,True,1,1,D,14,3,3,,12,,1,0,5,2,341,,80.0,22,9,38.3,3,4,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760438,2026-06-18,,RSA,South Africa,CZE,Czech Republic,False,1,1,D,17,4,8,,10,,2,0,5,3,563,,90.0,24,9,61.7,2,11,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760439,2026-06-18,,SUI,Switzerland,BIH,Bosnia and Herzegovina,True,4,1,W,13,7,3,,7,,1,0,7,3,586,,90.0,17,5,62.3,2,13,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760439,2026-06-18,,BIH,Bosnia and Herzegovina,SUI,Switzerland,False,1,4,L,5,3,1,,18,,2,1,3,1,354,,80.0,36,11,37.7,3,3,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760440,2026-06-18,,CAN,Canada,QAT,Qatar,True,6,0,W,32,10,14,,9,,1,0,19,1,567,,90.0,3,6,79.0,0,5,BC Place,Vancouver,
+2026,espn_boxscore,760440,2026-06-18,,QAT,Qatar,CAN,Canada,False,0,6,L,2,0,1,,10,,1,2,1,1,162,,60.0,61,10,21.0,4,10,BC Place,Vancouver,
+2026,espn_boxscore,760441,2026-06-18,,MEX,Mexico,KOR,South Korea,True,1,0,W,8,4,1,,9,,0,0,1,3,427,,80.0,20,6,42.4,2,7,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760441,2026-06-18,,KOR,South Korea,MEX,Mexico,False,0,1,L,9,2,3,,7,,2,0,2,6,578,,80.0,12,5,57.6,3,10,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760442,2026-06-19,,USA,United States,AUS,Australia,True,2,0,W,10,2,6,,12,,3,0,7,1,523,,80.0,31,20,61.9,2,8,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760442,2026-06-19,,AUS,Australia,USA,United States,False,0,2,L,5,2,0,,16,,4,0,4,0,310,,70.0,24,6,38.1,1,11,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760443,2026-06-19,,TUR,Turkey,PAR,Paraguay,True,0,1,L,32,5,12,,14,,1,0,12,2,629,,90.0,29,6,78.5,1,11,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760443,2026-06-19,,PAR,Paraguay,TUR,Turkey,False,1,0,W,7,2,2,,15,,1,1,0,3,178,,50.0,48,9,21.5,5,15,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760444,2026-06-19,,BRA,Brazil,HAI,Haiti,True,3,0,W,8,5,1,,13,,1,0,4,8,525,,90.0,14,10,56.7,3,10,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760444,2026-06-19,,HAI,Haiti,BRA,Brazil,False,0,3,L,7,3,1,,14,,3,0,4,4,399,,80.0,22,9,43.3,2,10,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760445,2026-06-19,,SCO,Scotland,MAR,Morocco,True,0,1,L,6,0,3,,11,,1,0,2,1,456,,90.0,17,9,41.1,1,12,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760445,2026-06-19,,MAR,Morocco,SCO,Scotland,False,1,0,W,12,2,4,,8,,1,0,5,0,670,,90.0,14,5,58.9,0,6,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760446,2026-06-20,,ECU,Ecuador,CUR,Curaçao,True,0,0,D,27,15,2,,7,,1,0,9,1,644,,90.0,17,7,74.6,3,11,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760446,2026-06-20,,CUR,Curaçao,ECU,Ecuador,False,0,0,D,10,3,3,,10,,5,0,0,2,227,,70.0,32,8,25.4,15,7,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760447,2026-06-20,,NED,Netherlands,SWE,Sweden,True,5,1,W,10,7,1,,9,,0,0,2,3,449,,90.0,24,8,50.9,7,8,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760447,2026-06-20,,SWE,Sweden,NED,Netherlands,False,1,5,L,16,8,3,,12,,3,0,5,3,425,,80.0,14,5,49.1,2,9,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760448,2026-06-20,,GER,Germany,CIV,Ivory Coast,True,2,1,W,16,7,4,,5,,0,0,8,0,624,,90.0,14,8,59.5,1,17,BMO Field,Toronto,
+2026,espn_boxscore,760448,2026-06-20,,CIV,Ivory Coast,GER,Germany,False,1,2,L,9,2,5,,7,,0,0,3,1,431,,90.0,26,13,40.5,5,11,BMO Field,Toronto,
+2026,espn_boxscore,760449,2026-06-21,,TUN,Tunisia,JPN,Japan,True,0,4,L,2,0,1,,8,,0,0,3,1,354,,80.0,23,14,37.9,1,16,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760449,2026-06-21,,JPN,Japan,TUN,Tunisia,False,4,0,W,11,5,3,,15,,0,0,5,1,583,,90.0,25,7,62.1,0,12,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760450,2026-06-21,,URU,Uruguay,CPV,Cape Verde,True,2,2,D,17,2,7,,11,,2,0,11,3,511,,80.0,11,7,65.2,2,8,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760450,2026-06-21,,CPV,Cape Verde,URU,Uruguay,False,2,2,D,12,4,4,,4,,2,0,4,0,278,,70.0,48,13,34.8,0,15,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760451,2026-06-21,,BEL,Belgium,IRN,Iran,True,0,0,D,23,7,6,,7,,1,1,4,3,621,,90.0,11,3,70.1,3,7,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760451,2026-06-21,,IRN,Iran,BEL,Belgium,False,0,0,D,7,3,1,,9,,1,0,2,4,270,,70.0,51,12,29.9,7,11,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760452,2026-06-21,,NZL,New Zealand,EGY,Egypt,True,1,3,L,11,5,3,,14,,2,0,4,3,421,,80.0,22,4,44.4,4,6,BC Place,Vancouver,
+2026,espn_boxscore,760452,2026-06-21,,EGY,Egypt,NZL,New Zealand,False,3,1,W,19,7,6,,8,,1,0,4,0,526,,90.0,37,6,55.6,4,13,BC Place,Vancouver,
+2026,espn_boxscore,760453,2026-06-21,,ESP,Spain,SAU,Saudi Arabia,True,4,0,W,22,8,2,,10,,0,0,6,2,726,,90.0,17,13,67.1,1,8,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760453,2026-06-21,,SAU,Saudi Arabia,ESP,Spain,False,0,4,L,3,1,1,,2,,2,0,1,3,364,,80.0,35,13,32.9,5,12,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760454,2026-06-22,,NOR,Norway,SEN,Senegal,True,3,2,W,13,7,3,,13,,0,0,5,0,353,,80.0,26,8,41.7,2,9,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760454,2026-06-22,,SEN,Senegal,NOR,Norway,False,2,3,L,16,4,5,,5,,0,0,4,4,489,,90.0,18,10,58.3,3,7,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760455,2026-06-22,,JOR,Jordan,ALG,Algeria,True,1,2,L,8,4,0,,11,,1,0,1,1,251,,70.0,36,3,27.9,6,17,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760455,2026-06-22,,ALG,Algeria,JOR,Jordan,False,2,1,W,17,8,5,,6,,1,0,10,0,641,,90.0,15,11,72.1,3,18,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760456,2026-06-22,,ARG,Argentina,AUT,Austria,True,2,0,W,12,5,3,,13,,2,0,1,2,554,,90.0,35,8,53.6,1,11,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760456,2026-06-22,,AUT,Austria,ARG,Argentina,False,0,2,L,6,1,0,,13,,2,0,3,0,468,,90.0,15,9,46.4,2,7,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760457,2026-06-22,,FRA,France,IRQ,Iraq,True,3,0,W,19,5,4,,8,,0,0,4,1,603,,90.0,9,5,55.6,0,9,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760457,2026-06-22,,IRQ,Iraq,FRA,France,False,0,3,L,4,0,1,,4,,1,0,2,0,481,,90.0,28,10,44.4,2,8,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760458,2026-06-23,,ENG,England,GHA,Ghana,True,0,0,D,19,3,6,,14,,1,0,9,2,633,,90.0,6,1,78.9,0,7,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760458,2026-06-23,,GHA,Ghana,ENG,England,False,0,0,D,2,1,1,,24,,1,0,2,2,172,,70.0,39,8,21.1,3,17,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760459,2026-06-23,,COL,Colombia,CDR,DR Congo,True,1,0,W,20,9,6,,12,,2,0,5,7,541,,90.0,18,10,63.5,1,6,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760459,2026-06-23,,CDR,DR Congo,COL,Colombia,False,0,1,L,7,1,2,,16,,1,0,4,0,299,,80.0,19,7,36.5,8,10,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760460,2026-06-23,,PAN,Panama,CRO,Croatia,True,0,1,L,8,1,2,,19,,1,0,7,1,352,,80.0,29,5,42.0,1,5,BMO Field,Toronto,
+2026,espn_boxscore,760460,2026-06-23,,CRO,Croatia,PAN,Panama,False,1,0,W,6,2,1,,12,,1,0,2,2,512,,80.0,38,5,58.0,1,7,BMO Field,Toronto,
+2026,espn_boxscore,760461,2026-06-23,,POR,Portugal,UZB,Uzbekistan,True,5,0,W,17,9,3,,14,,1,0,3,2,624,,90.0,16,6,65.9,2,10,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760461,2026-06-23,,UZB,Uzbekistan,POR,Portugal,False,0,5,L,7,2,3,,15,,1,0,2,2,327,,80.0,30,14,34.1,4,13,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760462,2026-06-24,,BIH,Bosnia and Herzegovina,QAT,Qatar,True,3,1,W,14,5,5,,9,,1,0,5,1,515,,90.0,22,4,54.4,2,9,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760462,2026-06-24,,QAT,Qatar,BIH,Bosnia and Herzegovina,False,1,3,L,9,3,0,,14,,1,0,5,3,434,,90.0,24,4,45.6,3,5,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760463,2026-06-24,,SUI,Switzerland,CAN,Canada,True,2,1,W,6,4,1,,19,,1,0,2,1,443,,80.0,44,4,55.3,6,7,BC Place,Vancouver,
+2026,espn_boxscore,760463,2026-06-24,,CAN,Canada,SUI,Switzerland,False,1,2,L,13,7,3,,13,,2,0,7,3,339,,80.0,19,13,44.7,2,5,BC Place,Vancouver,
+2026,espn_boxscore,760464,2026-06-24,,MAR,Morocco,HAI,Haiti,True,4,2,W,22,11,5,,10,,0,0,9,5,541,,90.0,14,8,69.1,1,8,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760464,2026-06-24,,HAI,Haiti,MAR,Morocco,False,2,4,L,9,2,3,,18,,3,0,1,0,247,,80.0,26,16,30.9,8,12,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760465,2026-06-24,,SCO,Scotland,BRA,Brazil,True,0,3,L,14,5,3,,10,,1,0,7,0,500,,90.0,13,2,46.0,5,8,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760465,2026-06-24,,BRA,Brazil,SCO,Scotland,False,3,0,W,21,9,5,,11,,2,0,7,1,605,,90.0,24,13,54.0,5,6,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760466,2026-06-24,,RSA,South Africa,KOR,South Korea,True,1,0,W,13,4,4,,7,,1,0,4,3,340,,80.0,40,15,31.6,2,7,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760466,2026-06-24,,KOR,South Korea,RSA,South Africa,False,0,1,L,8,3,1,,9,,1,0,6,0,719,,90.0,16,4,68.4,3,9,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760467,2026-06-24,,CZE,Czech Republic,MEX,Mexico,True,0,3,L,13,1,4,,9,,0,0,5,1,398,,80.0,20,5,51.9,2,7,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760467,2026-06-24,,MEX,Mexico,CZE,Czech Republic,False,3,0,W,11,5,2,,13,,1,0,1,0,386,,90.0,30,7,48.1,1,8,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760468,2026-06-25,,ECU,Ecuador,GER,Germany,True,2,1,W,7,3,2,,15,,3,0,3,1,378,,80.0,30,12,38.9,2,16,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760468,2026-06-25,,GER,Germany,ECU,Ecuador,False,1,2,L,11,3,5,,10,,1,0,2,0,592,,90.0,15,4,61.1,1,13,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760469,2026-06-25,,PAR,Paraguay,AUS,Australia,True,0,0,D,7,2,1,,9,,1,0,1,0,426,,80.0,24,8,44.0,5,17,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760469,2026-06-25,,AUS,Australia,PAR,Paraguay,False,0,0,D,12,5,3,,6,,1,0,3,0,537,,80.0,10,7,56.0,2,12,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760470,2026-06-25,,TUR,Turkey,USA,United States,True,3,2,W,9,3,2,,13,,0,0,2,2,434,,80.0,24,9,47.4,5,20,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760470,2026-06-25,,USA,United States,TUR,Turkey,False,2,3,L,18,7,5,,13,,1,0,9,5,471,,80.0,27,9,52.6,1,9,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760471,2026-06-25,,JPN,Japan,SWE,Sweden,True,1,1,D,8,3,2,,20,,1,0,2,3,445,,80.0,40,4,52.3,4,7,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760471,2026-06-25,,SWE,Sweden,JPN,Japan,False,1,1,D,11,5,3,,11,,2,0,8,2,395,,80.0,21,5,47.7,2,3,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760472,2026-06-25,,TUN,Tunisia,NED,Netherlands,True,1,3,L,10,4,1,,11,,0,0,4,2,258,,80.0,35,8,28.6,4,9,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760472,2026-06-25,,NED,Netherlands,TUN,Tunisia,False,3,1,W,20,7,5,,10,,0,0,6,1,647,,90.0,17,10,71.4,3,5,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760473,2026-06-25,,CUR,Curaçao,CIV,Ivory Coast,True,0,2,L,11,2,2,,11,,2,0,4,2,355,,80.0,17,15,36.7,1,11,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760473,2026-06-25,,CIV,Ivory Coast,CUR,Curaçao,False,2,0,W,7,3,1,,6,,1,0,6,1,624,,90.0,19,12,63.3,2,9,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760474,2026-06-26,,SEN,Senegal,IRQ,Iraq,True,5,0,W,28,12,5,,10,,2,0,12,1,590,,90.0,10,2,69.2,1,9,BMO Field,Toronto,
+2026,espn_boxscore,760474,2026-06-26,,IRQ,Iraq,SEN,Senegal,False,0,5,L,6,1,4,,11,,2,1,3,0,266,,70.0,34,7,30.8,7,13,BMO Field,Toronto,
+2026,espn_boxscore,760475,2026-06-26,,NOR,Norway,FRA,France,True,1,4,L,10,4,3,,9,,1,0,4,1,421,,80.0,16,13,43.3,5,11,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760475,2026-06-26,,FRA,France,NOR,Norway,False,4,1,W,18,9,3,,11,,1,0,5,2,555,,90.0,19,11,56.7,3,12,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760476,2026-06-26,,EGY,Egypt,IRN,Iran,True,1,1,D,15,3,6,,11,,3,0,8,0,589,,90.0,38,7,61.4,2,10,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760476,2026-06-26,,IRN,Iran,EGY,Egypt,False,1,1,D,13,4,3,,16,,4,0,2,3,367,,80.0,32,8,38.6,2,17,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760477,2026-06-26,,NZL,New Zealand,BEL,Belgium,True,1,5,L,6,2,1,,10,,2,0,5,1,436,,80.0,35,6,45.5,5,6,BC Place,Vancouver,
+2026,espn_boxscore,760477,2026-06-26,,BEL,Belgium,NZL,New Zealand,False,5,1,W,35,10,12,,7,,0,0,8,1,525,,90.0,27,10,54.5,1,8,BC Place,Vancouver,
+2026,espn_boxscore,760478,2026-06-26,,CPV,Cape Verde,SAU,Saudi Arabia,True,0,0,D,15,2,5,,10,,1,0,4,2,451,,80.0,29,13,51.0,3,12,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760478,2026-06-26,,SAU,Saudi Arabia,CPV,Cape Verde,False,0,0,D,7,3,3,,16,,3,0,2,0,444,,80.0,25,11,49.0,2,15,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760479,2026-06-26,,URU,Uruguay,ESP,Spain,True,0,1,L,5,1,1,,14,,3,1,1,5,301,,80.0,14,14,33.1,0,15,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760479,2026-06-26,,ESP,Spain,URU,Uruguay,False,1,0,W,6,1,1,,14,,1,0,6,2,622,,90.0,23,9,66.9,2,10,Estadio Akron,Guadalajara,
+2026,espn_boxscore,760480,2026-06-27,,CRO,Croatia,GHA,Ghana,True,2,1,W,8,4,2,,9,,1,0,3,1,523,,90.0,23,4,53.3,0,8,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760480,2026-06-27,,GHA,Ghana,CRO,Croatia,False,1,2,L,6,1,2,,13,,1,0,2,2,455,,90.0,11,9,46.7,2,7,Lincoln Financial Field,"Philadelphia, Pennsylvania",
+2026,espn_boxscore,760481,2026-06-27,,COL,Colombia,POR,Portugal,True,0,0,D,24,6,7,,12,,1,0,5,3,544,,90.0,16,6,54.6,2,8,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760481,2026-06-27,,POR,Portugal,COL,Colombia,False,0,0,D,13,2,4,,6,,0,0,2,2,446,,90.0,22,13,45.4,6,5,Hard Rock Stadium,"Miami Gardens, Florida",
+2026,espn_boxscore,760482,2026-06-27,,CDR,DR Congo,UZB,Uzbekistan,True,3,1,W,19,4,1,,6,,3,0,2,3,485,,80.0,25,7,57.6,1,13,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760482,2026-06-27,,UZB,Uzbekistan,CDR,DR Congo,False,1,3,L,3,1,0,,16,,2,0,4,1,355,,80.0,38,12,42.4,1,18,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760483,2026-06-27,,JOR,Jordan,ARG,Argentina,True,1,3,L,5,1,2,,13,,3,0,2,1,285,,80.0,13,19,26.7,1,8,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760483,2026-06-27,,ARG,Argentina,JOR,Jordan,False,3,1,W,12,4,1,,7,,0,0,6,3,801,,90.0,9,12,73.3,0,5,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760484,2026-06-27,,ALG,Algeria,AUT,Austria,True,3,3,D,12,5,2,,3,,0,0,0,1,754,,90.0,18,4,65.0,1,5,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760484,2026-06-27,,AUT,Austria,ALG,Algeria,False,3,3,D,10,3,1,,7,,1,0,3,3,396,,90.0,19,10,35.0,2,4,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri",
+2026,espn_boxscore,760485,2026-06-27,,PAN,Panama,ENG,England,True,0,2,L,13,2,3,,16,,2,0,3,4,268,,80.0,34,6,32.9,4,11,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760485,2026-06-27,,ENG,England,PAN,Panama,False,2,0,W,17,6,3,,13,,1,0,7,4,558,,90.0,20,5,67.1,2,17,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760486,2026-06-28,,RSA,South Africa,CAN,Canada,True,0,1,L,6,1,1,,10,,0,0,1,1,554,,80.0,33,15,58.4,5,13,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760486,2026-06-28,,CAN,Canada,RSA,South Africa,False,1,0,W,12,7,0,,16,,2,0,4,0,379,,80.0,16,8,41.6,1,15,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760487,2026-06-29,,BRA,Brazil,JPN,Japan,True,2,1,W,19,7,6,,4,,2,0,6,1,682,,90.0,19,9,68.6,1,7,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760487,2026-06-29,,JPN,Japan,BRA,Brazil,False,1,2,L,5,2,2,,13,,3,0,2,0,313,,80.0,45,6,31.4,4,4,NRG Stadium,"Houston, Texas",
+2026,espn_boxscore,760488,2026-06-29,,NED,Netherlands,MAR,Morocco,True,1,1,D,6,2,3,,18,,0,0,5,3,371,,80.0,22,11,29.9,5,10,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760488,2026-06-29,,MAR,Morocco,NED,Netherlands,False,1,1,D,11,5,2,,15,,1,0,8,0,879,,90.0,34,11,70.1,1,14,Estadio BBVA,Guadalupe,
+2026,espn_boxscore,760489,2026-06-29,,GER,Germany,PAR,Paraguay,True,1,1,D,21,6,8,,18,,2,0,16,4,805,,90.0,23,4,75.6,2,7,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760489,2026-06-29,,PAR,Paraguay,GER,Germany,False,1,1,D,7,3,2,,12,,2,0,6,1,255,,60.0,55,13,24.4,6,20,Gillette Stadium,"Foxborough, Massachusetts",
+2026,espn_boxscore,760490,2026-06-30,,CIV,Ivory Coast,NOR,Norway,True,1,2,L,14,5,1,,6,,0,0,14,2,401,,80.0,11,4,47.0,1,18,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760490,2026-06-30,,NOR,Norway,CIV,Ivory Coast,False,2,1,W,9,4,3,,7,,1,0,3,2,474,,90.0,37,5,53.0,4,11,AT&T Stadium,"Arlington, Texas",
+2026,espn_boxscore,760491,2026-06-30,,MEX,Mexico,ECU,Ecuador,True,2,0,W,15,3,3,,10,,0,0,3,0,316,,80.0,39,7,42.8,1,5,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760491,2026-06-30,,ECU,Ecuador,MEX,Mexico,False,0,2,L,7,1,1,,14,,3,1,8,1,410,,80.0,19,6,57.2,1,8,Estadio Banorte,Mexico City,
+2026,espn_boxscore,760492,2026-06-30,,FRA,France,SWE,Sweden,True,3,0,W,25,12,4,,14,,0,0,9,3,551,,90.0,23,5,61.0,3,7,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760492,2026-06-30,,SWE,Sweden,FRA,France,False,0,3,L,8,3,1,,10,,0,0,1,1,350,,80.0,26,12,39.0,9,9,MetLife Stadium,"East Rutherford, New Jersey",
+2026,espn_boxscore,760493,2026-07-01,,BEL,Belgium,SEN,Senegal,True,3,2,W,19,5,5,,22,,1,0,4,2,701,,90.0,28,8,52.3,3,5,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760493,2026-07-01,,SEN,Senegal,BEL,Belgium,False,2,3,L,19,5,3,,12,,1,0,2,2,639,,80.0,31,11,47.7,3,4,Lumen Field,"Seattle, Washington",
+2026,espn_boxscore,760494,2026-07-01,,USA,United States,BIH,Bosnia and Herzegovina,True,2,0,W,8,2,2,,7,,0,1,4,3,415,,80.0,28,7,48.4,3,8,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760494,2026-07-01,,BIH,Bosnia and Herzegovina,USA,United States,False,0,2,L,10,3,3,,13,,1,0,3,0,447,,80.0,26,7,51.6,0,12,Levi's Stadium,"Santa Clara, California",
+2026,espn_boxscore,760495,2026-07-01,,ENG,England,CDR,DR Congo,True,2,1,W,16,7,3,,10,,1,0,5,0,517,,90.0,23,7,59.7,1,6,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760495,2026-07-01,,CDR,DR Congo,ENG,England,False,1,2,L,7,2,2,,12,,1,0,3,4,365,,80.0,36,3,40.3,5,8,Mercedes-Benz Stadium,"Atlanta, Georgia",
+2026,espn_boxscore,760496,2026-07-02,,POR,Portugal,CRO,Croatia,True,2,1,W,15,3,4,,6,,1,0,9,1,585,,90.0,19,5,60.4,5,9,BMO Field,Toronto,
+2026,espn_boxscore,760496,2026-07-02,,CRO,Croatia,POR,Portugal,False,1,2,L,13,6,2,,12,,2,0,5,4,370,,80.0,19,10,39.6,2,11,BMO Field,Toronto,
+2026,espn_boxscore,760497,2026-07-02,,ESP,Spain,AUT,Austria,True,3,0,W,23,10,7,,8,,0,0,9,2,629,,90.0,15,6,64.4,0,12,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760497,2026-07-02,,AUT,Austria,ESP,Spain,False,0,3,L,5,0,1,,15,,1,0,0,5,347,,80.0,21,6,35.6,6,8,SoFi Stadium,"Inglewood, California",
+2026,espn_boxscore,760498,2026-07-02,,SUI,Switzerland,ALG,Algeria,True,2,0,W,11,5,2,,10,,0,0,4,0,438,,80.0,23,17,44.5,2,14,BC Place,Vancouver,
+2026,espn_boxscore,760498,2026-07-02,,ALG,Algeria,SUI,Switzerland,False,0,2,L,8,2,3,,12,,2,0,2,2,563,,80.0,14,10,55.5,2,9,BC Place,Vancouver,
+2018,statsbomb_event_data,7525,2018-06-14,Group Stage,,Russia,SAU,Saudi Arabia,True,5,0,W,14,7,4,1.2816,23,12,1,0,6,0,388,272,70.1,9,4,,,,Stadion Luzhniki,,Néstor Fabián Pitana
+2018,statsbomb_event_data,7525,2018-06-14,Group Stage,SAU,Saudi Arabia,,Russia,False,0,5,L,6,0,3,0.2488,12,23,1,0,2,0,572,458,80.1,16,7,,,,Stadion Luzhniki,,Néstor Fabián Pitana
+2018,statsbomb_event_data,7529,2018-06-16,Group Stage,CRO,Croatia,,Nigeria,True,2,0,W,11,2,3,1.6945,21,12,2,0,6,0,503,389,77.3,22,14,,,,Rostec Arena,,Sandro Ricci
+2018,statsbomb_event_data,7529,2018-06-16,Group Stage,,Nigeria,CRO,Croatia,False,0,2,L,13,2,6,0.7623,15,20,1,0,4,0,425,319,75.1,16,6,,,,Rostec Arena,,Sandro Ricci
+2018,statsbomb_event_data,7530,2018-06-16,Group Stage,FRA,France,AUS,Australia,True,2,1,W,12,4,5,1.5616,17,20,1,0,5,0,549,445,81.1,9,7,,,,Ak Bars Arena,,Andrés Cunha
+2018,statsbomb_event_data,7530,2018-06-16,Group Stage,AUS,Australia,FRA,France,False,1,2,L,5,2,1,0.98,20,15,3,0,1,0,444,342,77.0,19,15,,,,Ak Bars Arena,,Andrés Cunha
+2018,statsbomb_event_data,7531,2018-06-16,Group Stage,ARG,Argentina,,Iceland,True,1,1,D,28,7,12,2.0805,11,17,0,0,10,0,796,694,87.2,10,3,,,,Otkritie Bank Arena,,Szymon Marciniak
+2018,statsbomb_event_data,7531,2018-06-16,Group Stage,,Iceland,ARG,Argentina,False,1,1,D,9,2,2,1.0321,17,9,0,0,2,0,224,137,61.2,20,28,,,,Otkritie Bank Arena,,Szymon Marciniak
+2018,statsbomb_event_data,7532,2018-06-16,Group Stage,,Peru,,Denmark,True,0,1,L,17,6,3,1.9264,12,19,1,0,3,1,435,347,79.8,20,8,,,,Mordovia Arena,,Bakary Papa Gassama
+2018,statsbomb_event_data,7532,2018-06-16,Group Stage,,Denmark,,Peru,False,1,0,W,11,3,3,1.1216,21,11,2,0,7,0,402,302,75.1,16,11,,,,Mordovia Arena,,Bakary Papa Gassama
+2018,statsbomb_event_data,7533,2018-06-17,Group Stage,BRA,Brazil,SUI,Switzerland,True,1,1,D,21,4,7,1.8666,12,21,1,0,7,1,555,473,85.2,11,22,,,,Rostov Arena,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7533,2018-06-17,Group Stage,SUI,Switzerland,BRA,Brazil,False,1,1,D,7,2,1,0.4721,21,11,2,0,2,0,458,363,79.3,21,15,,,,Rostov Arena,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7534,2018-06-17,Group Stage,GER,Germany,MEX,Mexico,True,0,1,L,26,9,8,2.2993,13,13,2,0,6,0,619,521,84.2,4,6,,,,Stadion Luzhniki,,Alireza Faghani
+2018,statsbomb_event_data,7534,2018-06-17,Group Stage,MEX,Mexico,GER,Germany,False,1,0,W,12,4,2,0.9933,15,11,2,0,1,0,324,247,76.2,23,17,,,,Stadion Luzhniki,,Alireza Faghani
+2018,statsbomb_event_data,7535,2018-06-17,Group Stage,,Costa Rica,,Serbia,True,0,1,L,10,3,4,0.596,18,13,2,0,5,1,481,376,78.2,12,9,,,,Solidarnost Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7535,2018-06-17,Group Stage,,Serbia,,Costa Rica,False,1,0,W,12,2,3,1.9926,13,18,2,0,4,0,439,335,76.3,23,6,,,,Solidarnost Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7536,2018-06-18,Group Stage,BEL,Belgium,PAN,Panama,True,3,0,W,15,6,2,1.2121,17,20,3,0,9,0,610,513,84.1,7,12,,,,Olimpiyskiy Stadion Fisht,,Janny Sikazwe
+2018,statsbomb_event_data,7536,2018-06-18,Group Stage,PAN,Panama,BEL,Belgium,False,0,3,L,7,2,0,0.6254,20,16,5,0,3,1,364,284,78.0,19,15,,,,Olimpiyskiy Stadion Fisht,,Janny Sikazwe
+2018,statsbomb_event_data,7537,2018-06-18,Group Stage,TUN,Tunisia,ENG,England,True,1,2,L,6,1,2,0.9457,15,9,0,0,2,0,368,285,77.4,12,13,,,,Volgograd Arena,,Wilmar Alexander Roldán Pérez
+2018,statsbomb_event_data,7537,2018-06-18,Group Stage,ENG,England,TUN,Tunisia,False,2,1,W,18,7,3,2.6264,9,14,1,0,7,1,570,484,84.9,4,6,,,,Volgograd Arena,,Wilmar Alexander Roldán Pérez
+2018,statsbomb_event_data,7538,2018-06-18,Group Stage,SWE,Sweden,KOR,South Korea,True,1,0,W,16,4,8,2.0151,19,22,1,0,6,0,477,371,77.8,17,7,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Joel Antonio Aguilar Chicas
+2018,statsbomb_event_data,7538,2018-06-18,Group Stage,KOR,South Korea,SWE,Sweden,False,0,1,L,5,0,3,0.4144,22,19,2,0,5,0,382,289,75.7,23,8,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Joel Antonio Aguilar Chicas
+2018,statsbomb_event_data,7539,2018-06-19,Group Stage,,Poland,SEN,Senegal,True,1,2,L,10,3,1,1.0423,7,16,1,0,3,1,585,482,82.4,12,11,,,,Otkritie Bank Arena,,Nawaf Abdulla Ghayyath Shukralla
+2018,statsbomb_event_data,7539,2018-06-19,Group Stage,SEN,Senegal,,Poland,False,2,1,W,7,1,3,1.4278,17,7,1,0,3,0,382,286,74.9,16,18,,,,Otkritie Bank Arena,,Nawaf Abdulla Ghayyath Shukralla
+2018,statsbomb_event_data,7540,2018-06-19,Group Stage,,Russia,EGY,Egypt,True,3,1,W,12,4,3,0.9812,10,11,2,0,7,0,467,321,68.7,26,8,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Enrique Cáceres
+2018,statsbomb_event_data,7540,2018-06-19,Group Stage,EGY,Egypt,,Russia,False,1,3,L,15,2,5,1.6975,11,9,1,0,4,0,484,360,74.4,22,13,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Enrique Cáceres
+2018,statsbomb_event_data,7541,2018-06-19,Group Stage,COL,Colombia,JPN,Japan,True,1,2,L,10,3,4,0.8063,15,11,2,1,3,1,422,314,74.4,7,13,,,,Mordovia Arena,,Damir Skomina
+2018,statsbomb_event_data,7541,2018-06-19,Group Stage,JPN,Japan,COL,Colombia,False,2,1,W,14,6,3,2.3207,11,14,0,0,6,0,630,530,84.1,16,19,,,,Mordovia Arena,,Damir Skomina
+2018,statsbomb_event_data,7542,2018-06-20,Group Stage,POR,Portugal,MAR,Morocco,True,1,0,W,12,2,4,0.885,18,21,1,0,5,0,397,281,70.8,27,6,,,,Stadion Luzhniki,,Mark Geiger
+2018,statsbomb_event_data,7542,2018-06-20,Group Stage,MAR,Morocco,POR,Portugal,False,0,1,L,17,4,2,1.4551,23,17,1,0,7,0,519,382,73.6,13,14,,,,Stadion Luzhniki,,Mark Geiger
+2018,statsbomb_event_data,7543,2018-06-20,Group Stage,IRN,Iran,ESP,Spain,True,0,1,L,6,0,0,0.4265,14,15,2,0,2,0,262,158,60.3,20,12,,,,Ak Bars Arena,,Andrés Cunha
+2018,statsbomb_event_data,7543,2018-06-20,Group Stage,ESP,Spain,IRN,Iran,False,1,0,W,18,3,9,2.197,15,14,0,0,6,0,816,719,88.1,10,6,,,,Ak Bars Arena,,Andrés Cunha
+2018,statsbomb_event_data,7544,2018-06-20,Group Stage,URU,Uruguay,SAU,Saudi Arabia,True,1,0,W,14,3,5,1.8074,13,12,0,0,3,1,511,429,84.0,13,10,,,,Rostov Arena,,Clément Turpin
+2018,statsbomb_event_data,7544,2018-06-20,Group Stage,SAU,Saudi Arabia,URU,Uruguay,False,0,1,L,8,2,3,0.2735,12,11,0,0,2,0,584,499,85.4,8,18,,,,Rostov Arena,,Clément Turpin
+2018,statsbomb_event_data,7545,2018-06-21,Group Stage,ARG,Argentina,CRO,Croatia,True,0,3,L,10,3,4,1.2181,20,22,4,0,5,0,535,413,77.2,7,11,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Ravshan Irmatov
+2018,statsbomb_event_data,7545,2018-06-21,Group Stage,CRO,Croatia,ARG,Argentina,False,3,0,W,14,5,3,1.8317,23,19,4,0,2,0,382,274,71.7,15,12,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Ravshan Irmatov
+2018,statsbomb_event_data,7546,2018-06-21,Group Stage,FRA,France,,Peru,True,1,0,W,12,4,2,1.8624,11,14,2,0,5,0,435,332,76.3,12,24,,,,Ekaterinburg Arena,,Mohamed Abdulla Hassan Mohd
+2018,statsbomb_event_data,7546,2018-06-21,Group Stage,,Peru,FRA,France,False,0,1,L,12,2,2,0.6252,14,9,2,0,2,0,548,436,79.6,12,11,,,,Ekaterinburg Arena,,Mohamed Abdulla Hassan Mohd
+2018,statsbomb_event_data,7547,2018-06-21,Group Stage,,Denmark,AUS,Australia,True,1,1,D,10,5,1,1.0144,7,6,2,0,3,0,478,396,82.8,18,10,,,,Solidarnost Arena,,Antonio Miguel Mateu Lahoz
+2018,statsbomb_event_data,7547,2018-06-21,Group Stage,AUS,Australia,,Denmark,False,1,1,D,13,5,4,1.4122,6,6,0,0,5,0,533,442,82.9,15,4,,,,Solidarnost Arena,,Antonio Miguel Mateu Lahoz
+2018,statsbomb_event_data,7548,2018-06-22,Group Stage,BRA,Brazil,,Costa Rica,True,2,0,W,23,9,5,3.0964,11,16,2,0,10,2,750,661,88.1,9,4,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Björn Kuipers
+2018,statsbomb_event_data,7548,2018-06-22,Group Stage,,Costa Rica,BRA,Brazil,False,0,2,L,4,0,1,0.1587,17,11,1,0,1,2,294,205,69.7,28,8,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Björn Kuipers
+2018,statsbomb_event_data,7549,2018-06-22,Group Stage,,Nigeria,,Iceland,True,2,0,W,17,4,6,1.3122,10,12,1,0,6,0,529,413,78.1,22,8,,,,Volgograd Arena,,Matthew Conger
+2018,statsbomb_event_data,7549,2018-06-22,Group Stage,,Iceland,,Nigeria,False,0,2,L,10,3,1,1.5522,12,10,0,0,5,0,339,224,66.1,20,7,,,,Volgograd Arena,,Matthew Conger
+2018,statsbomb_event_data,7550,2018-06-22,Group Stage,,Serbia,SUI,Switzerland,True,1,2,L,12,3,1,1.1535,20,13,4,0,3,0,347,263,75.8,12,13,,,,Rostec Arena,,Felix Brych
+2018,statsbomb_event_data,7550,2018-06-22,Group Stage,SUI,Switzerland,,Serbia,False,2,1,W,19,5,6,1.5573,13,20,1,0,7,0,554,467,84.3,9,8,,,,Rostec Arena,,Felix Brych
+2018,statsbomb_event_data,7551,2018-06-23,Group Stage,GER,Germany,SWE,Sweden,True,2,1,W,18,5,8,1.3181,12,16,1,1,5,2,718,619,86.2,11,3,,,,Olimpiyskiy Stadion Fisht,,Szymon Marciniak
+2018,statsbomb_event_data,7551,2018-06-23,Group Stage,SWE,Sweden,GER,Germany,False,1,2,L,7,6,1,0.8152,17,10,2,0,3,0,234,164,70.1,38,9,,,,Olimpiyskiy Stadion Fisht,,Szymon Marciniak
+2018,statsbomb_event_data,7552,2018-06-23,Group Stage,BEL,Belgium,TUN,Tunisia,True,5,2,W,23,11,4,5.3364,13,15,0,0,3,0,475,392,82.5,10,16,,,,Otkritie Bank Arena,,Jair Marrufo
+2018,statsbomb_event_data,7552,2018-06-23,Group Stage,TUN,Tunisia,BEL,Belgium,False,2,5,L,17,5,3,1.1882,15,12,1,0,2,0,467,374,80.1,9,9,,,,Otkritie Bank Arena,,Jair Marrufo
+2018,statsbomb_event_data,7553,2018-06-23,Group Stage,KOR,South Korea,MEX,Mexico,True,1,2,L,17,6,9,0.8218,26,8,3,0,7,0,360,279,77.5,10,5,,,,Rostov Arena,,Milorad Mažić
+2018,statsbomb_event_data,7553,2018-06-23,Group Stage,MEX,Mexico,KOR,South Korea,False,2,1,W,14,5,2,1.8776,8,23,0,0,4,0,495,422,85.3,9,13,,,,Rostov Arena,,Milorad Mažić
+2018,statsbomb_event_data,7554,2018-06-24,Group Stage,ENG,England,PAN,Panama,True,6,1,W,11,7,2,3.1683,14,12,1,0,3,0,607,552,90.9,12,5,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Ghead Grisha
+2018,statsbomb_event_data,7554,2018-06-24,Group Stage,PAN,Panama,ENG,England,False,1,6,L,8,2,1,1.08,13,14,3,0,2,0,406,349,86.0,8,7,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Ghead Grisha
+2018,statsbomb_event_data,7555,2018-06-24,Group Stage,,Poland,COL,Colombia,True,0,3,L,11,2,5,1.1142,17,10,2,0,7,0,448,340,75.9,25,18,,,,Ak Bars Arena,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7555,2018-06-24,Group Stage,COL,Colombia,,Poland,False,3,0,W,13,3,5,1.3869,11,17,0,0,5,0,548,427,77.9,22,9,,,,Ak Bars Arena,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7556,2018-06-24,Group Stage,JPN,Japan,SEN,Senegal,True,2,2,D,7,3,2,0.9822,9,15,2,0,2,0,476,368,77.3,20,8,,,,Ekaterinburg Arena,,Gianluca Rocchi
+2018,statsbomb_event_data,7556,2018-06-24,Group Stage,SEN,Senegal,JPN,Japan,False,2,2,D,15,7,1,1.8783,15,9,3,0,5,0,392,285,72.7,7,9,,,,Ekaterinburg Arena,,Gianluca Rocchi
+2018,statsbomb_event_data,7557,2018-06-25,Group Stage,IRN,Iran,POR,Portugal,True,1,1,D,9,2,2,1.577,16,8,1,0,0,0,239,154,64.4,11,18,,,,Mordovia Arena,,Enrique Cáceres
+2018,statsbomb_event_data,7557,2018-06-25,Group Stage,POR,Portugal,IRN,Iran,False,1,1,D,15,4,3,1.5224,9,16,2,0,5,0,630,534,84.8,10,7,,,,Mordovia Arena,,Enrique Cáceres
+2018,statsbomb_event_data,7558,2018-06-25,Group Stage,URU,Uruguay,,Russia,True,3,0,W,16,6,5,2.4826,19,18,1,0,4,0,526,436,82.9,9,6,,,,Solidarnost Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7558,2018-06-25,Group Stage,,Russia,URU,Uruguay,False,0,3,L,3,1,1,0.1802,19,19,1,1,2,0,380,290,76.3,20,7,,,,Solidarnost Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7559,2018-06-25,Group Stage,SAU,Saudi Arabia,EGY,Egypt,True,2,1,W,21,7,5,2.5458,9,15,0,0,6,0,674,589,87.4,6,19,,,,Volgograd Arena,,Wilmar Alexander Roldán Pérez
+2018,statsbomb_event_data,7559,2018-06-25,Group Stage,EGY,Egypt,SAU,Saudi Arabia,False,1,2,L,8,1,1,0.9237,17,9,2,0,1,0,379,292,77.0,21,12,,,,Volgograd Arena,,Wilmar Alexander Roldán Pérez
+2018,statsbomb_event_data,7560,2018-06-25,Group Stage,ESP,Spain,MAR,Morocco,True,2,2,D,18,3,2,2.6045,6,18,0,0,7,0,753,675,89.6,3,9,,,,Rostec Arena,,Ravshan Irmatov
+2018,statsbomb_event_data,7560,2018-06-25,Group Stage,MAR,Morocco,ESP,Spain,False,2,2,D,8,3,1,1.0718,18,6,6,0,1,0,251,187,74.5,18,8,,,,Rostec Arena,,Ravshan Irmatov
+2018,statsbomb_event_data,7561,2018-06-26,Group Stage,,Iceland,CRO,Croatia,True,1,2,L,17,6,4,2.1327,14,11,3,0,10,0,331,224,67.7,10,9,,,,Rostov Arena,,Antonio Miguel Mateu Lahoz
+2018,statsbomb_event_data,7561,2018-06-26,Group Stage,CRO,Croatia,,Iceland,False,2,1,W,13,2,3,0.6739,13,13,1,0,5,0,535,451,84.3,25,7,,,,Rostov Arena,,Antonio Miguel Mateu Lahoz
+2018,statsbomb_event_data,7562,2018-06-26,Group Stage,AUS,Australia,,Peru,True,0,2,L,16,2,4,1.6293,12,12,3,0,8,0,575,489,85.0,11,5,,,,Olimpiyskiy Stadion Fisht,,Sergey Karasev
+2018,statsbomb_event_data,7562,2018-06-26,Group Stage,,Peru,AUS,Australia,False,2,0,W,4,3,0,0.3364,12,12,2,0,3,0,431,341,79.1,22,6,,,,Olimpiyskiy Stadion Fisht,,Sergey Karasev
+2018,statsbomb_event_data,7563,2018-06-26,Group Stage,,Denmark,FRA,France,True,0,0,D,5,1,3,0.139,11,10,1,0,4,0,342,236,69.0,20,10,,,,Stadion Luzhniki,,Sandro Ricci
+2018,statsbomb_event_data,7563,2018-06-26,Group Stage,FRA,France,,Denmark,False,0,0,D,11,4,1,0.4181,10,11,0,0,2,0,699,592,84.7,8,5,,,,Stadion Luzhniki,,Sandro Ricci
+2018,statsbomb_event_data,7564,2018-06-26,Group Stage,,Nigeria,ARG,Argentina,True,1,2,L,9,3,1,1.3053,21,17,2,0,3,0,322,210,65.2,9,27,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Cüneyt Çakιr
+2018,statsbomb_event_data,7564,2018-06-26,Group Stage,ARG,Argentina,,Nigeria,False,2,1,W,8,3,1,0.8506,17,19,3,0,5,0,595,479,80.5,13,13,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Cüneyt Çakιr
+2018,statsbomb_event_data,7565,2018-06-27,Group Stage,,Serbia,BRA,Brazil,True,0,2,L,11,1,4,0.9483,14,7,3,0,5,1,447,337,75.4,20,6,,,,Otkritie Bank Arena,,Alireza Faghani
+2018,statsbomb_event_data,7565,2018-06-27,Group Stage,BRA,Brazil,,Serbia,False,2,0,W,15,7,5,1.4198,7,12,0,0,8,3,653,553,84.7,23,10,,,,Otkritie Bank Arena,,Alireza Faghani
+2018,statsbomb_event_data,7566,2018-06-27,Group Stage,MEX,Mexico,SWE,Sweden,True,0,3,L,22,3,9,1.6107,16,17,3,0,7,1,508,404,79.5,5,12,,,,Ekaterinburg Arena,,Néstor Fabián Pitana
+2018,statsbomb_event_data,7566,2018-06-27,Group Stage,SWE,Sweden,MEX,Mexico,False,3,0,W,15,5,1,2.7905,18,14,2,0,3,0,254,152,59.8,24,12,,,,Ekaterinburg Arena,,Néstor Fabián Pitana
+2018,statsbomb_event_data,7567,2018-06-27,Group Stage,KOR,South Korea,GER,Germany,True,2,0,W,12,5,1,1.7746,16,6,4,0,3,0,259,184,71.0,31,6,,,,Ak Bars Arena,,Mark Geiger
+2018,statsbomb_event_data,7567,2018-06-27,Group Stage,GER,Germany,KOR,South Korea,False,0,2,L,29,6,10,2.7064,7,15,0,0,8,0,734,631,86.0,7,8,,,,Ak Bars Arena,,Mark Geiger
+2018,statsbomb_event_data,7568,2018-06-27,Group Stage,SUI,Switzerland,,Costa Rica,True,2,2,D,13,3,4,1.2197,10,15,2,0,6,0,595,502,84.4,11,7,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Clément Turpin
+2018,statsbomb_event_data,7568,2018-06-27,Group Stage,,Costa Rica,SUI,Switzerland,False,2,2,D,14,6,2,1.5762,15,10,2,0,3,0,362,280,77.3,17,13,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Clément Turpin
+2018,statsbomb_event_data,7569,2018-06-28,Group Stage,PAN,Panama,TUN,Tunisia,True,1,2,L,9,4,2,0.6908,20,19,1,0,0,0,291,202,69.4,24,15,,,,Mordovia Arena,,Nawaf Abdulla Ghayyath Shukralla
+2018,statsbomb_event_data,7569,2018-06-28,Group Stage,TUN,Tunisia,PAN,Panama,False,2,1,W,15,6,3,2.8525,20,18,3,0,6,1,648,547,84.4,2,13,,,,Mordovia Arena,,Nawaf Abdulla Ghayyath Shukralla
+2018,statsbomb_event_data,7570,2018-06-28,Group Stage,ENG,England,BEL,Belgium,True,0,1,L,12,1,4,1.2007,14,15,0,0,7,0,514,432,84.0,3,6,,,,Rostec Arena,,Damir Skomina
+2018,statsbomb_event_data,7570,2018-06-28,Group Stage,BEL,Belgium,ENG,England,False,1,0,W,14,3,7,0.9653,16,14,2,0,2,0,569,487,85.6,18,7,,,,Rostec Arena,,Damir Skomina
+2018,statsbomb_event_data,7571,2018-06-28,Group Stage,SEN,Senegal,COL,Colombia,True,0,1,L,7,3,0,0.3609,15,15,1,0,1,1,328,234,71.3,16,16,,,,Solidarnost Arena,,Milorad Mažić
+2018,statsbomb_event_data,7571,2018-06-28,Group Stage,COL,Colombia,SEN,Senegal,False,1,0,W,4,2,1,0.2849,16,15,1,0,3,0,466,358,76.8,15,5,,,,Solidarnost Arena,,Milorad Mažić
+2018,statsbomb_event_data,7572,2018-06-28,Group Stage,JPN,Japan,,Poland,True,0,1,L,11,3,2,0.8906,12,9,1,0,5,0,587,491,83.6,17,3,,,,Volgograd Arena,,Janny Sikazwe
+2018,statsbomb_event_data,7572,2018-06-28,Group Stage,,Poland,JPN,Japan,False,1,0,W,11,2,4,1.0407,9,12,0,0,7,0,499,400,80.2,13,6,,,,Volgograd Arena,,Janny Sikazwe
+2018,statsbomb_event_data,7576,2018-06-15,Group Stage,POR,Portugal,ESP,Spain,True,3,3,D,10,3,3,1.4346,13,11,1,0,3,0,388,318,82.0,8,6,,,,Olimpiyskiy Stadion Fisht,,Gianluca Rocchi
+2018,statsbomb_event_data,7576,2018-06-15,Group Stage,ESP,Spain,POR,Portugal,False,3,3,D,12,5,2,1.6609,11,12,1,0,5,1,780,714,91.5,8,12,,,,Olimpiyskiy Stadion Fisht,,Gianluca Rocchi
+2018,statsbomb_event_data,7577,2018-06-15,Group Stage,MAR,Morocco,IRN,Iran,True,0,1,L,14,3,5,1.0592,22,16,1,0,5,0,492,397,80.7,14,9,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Cüneyt Çakιr
+2018,statsbomb_event_data,7577,2018-06-15,Group Stage,IRN,Iran,MAR,Morocco,False,1,0,W,8,2,2,0.6976,16,21,3,0,2,0,267,144,53.9,12,9,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Cüneyt Çakιr
+2018,statsbomb_event_data,7578,2018-06-15,Group Stage,EGY,Egypt,URU,Uruguay,True,0,1,L,8,3,3,0.3645,16,6,1,0,0,0,469,344,73.3,13,16,,,,Ekaterinburg Arena,,Björn Kuipers
+2018,statsbomb_event_data,7578,2018-06-15,Group Stage,URU,Uruguay,EGY,Egypt,False,1,0,W,16,4,6,1.9408,7,16,0,0,5,0,623,513,82.3,9,21,,,,Ekaterinburg Arena,,Björn Kuipers
+2018,statsbomb_event_data,7579,2018-06-30,Round of 16,URU,Uruguay,POR,Portugal,True,2,1,W,7,3,1,0.476,14,12,0,0,2,0,291,190,65.3,25,11,,,,Olimpiyskiy Stadion Fisht,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7579,2018-06-30,Round of 16,POR,Portugal,URU,Uruguay,False,1,2,L,21,4,8,0.9956,13,14,1,0,9,0,593,486,82.0,10,10,,,,Olimpiyskiy Stadion Fisht,,César Arturo Ramos Palazuelos
+2018,statsbomb_event_data,7580,2018-06-30,Round of 16,FRA,France,ARG,Argentina,True,4,3,W,9,4,1,1.638,23,14,2,0,0,0,350,283,80.9,16,8,,,,Ak Bars Arena,,Alireza Faghani
+2018,statsbomb_event_data,7580,2018-06-30,Round of 16,ARG,Argentina,FRA,France,False,3,4,L,12,4,6,1.4466,14,23,4,0,4,0,535,448,83.7,5,7,,,,Ak Bars Arena,,Alireza Faghani
+2018,statsbomb_event_data,7581,2018-07-01,Round of 16,CRO,Croatia,,Denmark,True,1,1,D,21,6,7,2.1702,7,19,0,0,5,1,665,517,77.7,30,9,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Néstor Fabián Pitana
+2018,statsbomb_event_data,7581,2018-07-01,Round of 16,,Denmark,CRO,Croatia,False,1,1,D,14,3,3,0.6965,19,6,1,0,4,0,581,445,76.6,18,13,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Néstor Fabián Pitana
+2018,statsbomb_event_data,7582,2018-07-01,Round of 16,ESP,Spain,,Russia,True,1,1,D,24,9,7,1.4411,6,19,1,0,6,0,1157,1026,88.7,8,3,,,,Stadion Luzhniki,,Björn Kuipers
+2018,statsbomb_event_data,7582,2018-07-01,Round of 16,,Russia,ESP,Spain,False,1,1,D,8,1,4,1.4064,21,5,2,0,5,0,326,215,66.0,28,21,,,,Stadion Luzhniki,,Björn Kuipers
+2018,statsbomb_event_data,7583,2018-07-02,Round of 16,BRA,Brazil,MEX,Mexico,True,2,0,W,19,10,4,3.3204,8,19,2,0,8,0,410,330,80.5,16,9,,,,Solidarnost Arena,,Gianluca Rocchi
+2018,statsbomb_event_data,7583,2018-07-02,Round of 16,MEX,Mexico,BRA,Brazil,False,0,2,L,14,1,8,0.5828,19,8,4,0,7,2,429,353,82.3,11,4,,,,Solidarnost Arena,,Gianluca Rocchi
+2018,statsbomb_event_data,7584,2018-07-02,Round of 16,BEL,Belgium,JPN,Japan,True,3,2,W,28,7,7,2.9178,13,10,0,0,8,1,618,524,84.8,10,5,,,,Rostov Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7584,2018-07-02,Round of 16,JPN,Japan,BEL,Belgium,False,2,3,L,12,4,4,0.6938,11,12,1,0,4,0,457,363,79.4,33,12,,,,Rostov Arena,,Malang Diedhiou
+2018,statsbomb_event_data,7585,2018-07-03,Round of 16,COL,Colombia,ENG,England,True,1,1,D,14,4,3,0.8312,23,13,6,0,2,0,556,429,77.2,28,7,,,,Otkritie Bank Arena,,Mark Geiger
+2018,statsbomb_event_data,7585,2018-07-03,Round of 16,ENG,England,COL,Colombia,False,1,1,D,17,2,5,2.2443,13,22,2,0,7,0,605,477,78.8,22,5,,,,Otkritie Bank Arena,,Mark Geiger
+2018,statsbomb_event_data,7586,2018-07-03,Round of 16,SWE,Sweden,SUI,Switzerland,True,1,0,W,12,3,3,0.9105,12,15,1,0,3,0,304,202,66.4,27,6,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Damir Skomina
+2018,statsbomb_event_data,7586,2018-07-03,Round of 16,SUI,Switzerland,SWE,Sweden,False,0,1,L,16,3,9,0.533,16,12,2,1,11,0,615,510,82.9,13,7,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Damir Skomina
+2018,statsbomb_event_data,8649,2018-07-06,Quarter-finals,URU,Uruguay,FRA,France,True,0,2,L,10,4,1,0.6932,22,18,2,0,4,0,352,217,61.6,13,14,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Néstor Fabián Pitana
+2018,statsbomb_event_data,8649,2018-07-06,Quarter-finals,FRA,France,URU,Uruguay,False,2,0,W,11,2,1,0.5388,18,21,2,0,3,0,567,445,78.5,32,17,,,,Stadion Nizhny Novgorod (Nizhniy Novgorod),,Néstor Fabián Pitana
+2018,statsbomb_event_data,8650,2018-07-06,Quarter-finals,BRA,Brazil,BEL,Belgium,True,1,2,L,25,9,9,2.6092,20,17,2,0,8,0,532,459,86.3,7,9,,,,Ak Bars Arena,,Milorad Mažić
+2018,statsbomb_event_data,8650,2018-07-06,Quarter-finals,BEL,Belgium,BRA,Brazil,False,2,1,W,8,3,2,0.4053,18,20,2,0,4,0,385,310,80.5,36,3,,,,Ak Bars Arena,,Milorad Mažić
+2018,statsbomb_event_data,8651,2018-07-07,Quarter-finals,SWE,Sweden,ENG,England,True,0,2,L,8,3,1,0.8342,14,8,2,0,1,0,400,291,72.8,35,9,,,,Solidarnost Arena,,Björn Kuipers
+2018,statsbomb_event_data,8651,2018-07-07,Quarter-finals,ENG,England,SWE,Sweden,False,2,0,W,12,2,7,0.7582,8,12,1,0,6,0,563,426,75.7,7,4,,,,Solidarnost Arena,,Björn Kuipers
+2018,statsbomb_event_data,8652,2018-07-07,Quarter-finals,,Russia,CRO,Croatia,True,2,2,D,13,6,2,1.0709,24,15,1,0,6,0,417,266,63.8,46,9,,,,Olimpiyskiy Stadion Fisht,,Sandro Ricci
+2018,statsbomb_event_data,8652,2018-07-07,Quarter-finals,CRO,Croatia,,Russia,False,2,2,D,18,4,4,1.6505,18,23,4,0,8,0,771,607,78.7,28,7,,,,Olimpiyskiy Stadion Fisht,,Sandro Ricci
+2018,statsbomb_event_data,8655,2018-07-10,Semi-finals,FRA,France,BEL,Belgium,True,1,0,W,19,5,5,1.6817,6,17,2,0,4,0,367,301,82.0,21,8,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Andrés Cunha
+2018,statsbomb_event_data,8655,2018-07-10,Semi-finals,BEL,Belgium,FRA,France,False,0,1,L,9,2,1,0.5669,17,6,3,0,5,0,623,549,88.1,11,5,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Andrés Cunha
+2018,statsbomb_event_data,8656,2018-07-11,Semi-finals,CRO,Croatia,ENG,England,True,2,1,W,22,7,5,2.1413,26,12,2,0,8,0,656,492,75.0,21,6,,,,Stadion Luzhniki,,Cüneyt Çakιr
+2018,statsbomb_event_data,8656,2018-07-11,Semi-finals,ENG,England,CRO,Croatia,False,1,2,L,11,1,4,0.5467,13,24,1,0,4,0,537,403,75.0,41,5,,,,Stadion Luzhniki,,Cüneyt Çakιr
+2018,statsbomb_event_data,8657,2018-07-14,3rd Place Final,BEL,Belgium,ENG,England,True,2,0,W,11,4,4,1.3207,12,4,1,0,4,0,499,427,85.6,21,9,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Alireza Faghani
+2018,statsbomb_event_data,8657,2018-07-14,3rd Place Final,ENG,England,BEL,Belgium,False,0,2,L,15,5,3,1.3354,4,11,2,0,5,0,685,619,90.4,8,13,,,,Saint-Petersburg Stadium ( Gazprom Arena ),,Alireza Faghani
+2018,statsbomb_event_data,8658,2018-07-15,Final,FRA,France,CRO,Croatia,True,4,2,W,8,6,1,1.098,14,13,1,0,2,0,292,202,69.2,24,11,,,,Stadion Luzhniki,,Néstor Fabián Pitana
+2018,statsbomb_event_data,8658,2018-07-15,Final,CRO,Croatia,FRA,France,False,2,4,L,15,3,4,1.4803,14,14,1,0,6,0,554,448,80.9,13,6,,,,Stadion Luzhniki,,Néstor Fabián Pitana
+2022,statsbomb_event_data,3857254,2022-11-22,Group Stage,,Denmark,TUN,Tunisia,True,0,0,D,11,5,2,1.5666,13,9,2,0,11,0,646,544,84.2,20,10,,,,Education City Stadium ,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3857254,2022-11-22,Group Stage,TUN,Tunisia,,Denmark,False,0,0,D,13,1,7,1.0599,10,13,1,0,9,0,417,315,75.5,33,12,,,,Education City Stadium ,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3857255,2022-12-01,Group Stage,JPN,Japan,ESP,Spain,True,2,1,W,6,3,1,1.1578,11,8,3,0,0,0,253,177,70.0,22,14,,,,Sheikh Khalifa International Stadium,,Victor Miguel de Freitas Gomes
+2022,statsbomb_event_data,3857255,2022-12-01,Group Stage,ESP,Spain,JPN,Japan,False,1,2,L,12,5,5,0.8577,8,11,0,0,2,0,1093,993,90.9,4,9,,,,Sheikh Khalifa International Stadium,,Victor Miguel de Freitas Gomes
+2022,statsbomb_event_data,3857256,2022-12-02,Group Stage,,Serbia,SUI,Switzerland,True,2,3,L,12,4,2,1.189,21,14,7,0,2,0,521,407,78.1,9,5,,,,Stadium 974,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3857256,2022-12-02,Group Stage,SUI,Switzerland,,Serbia,False,3,2,W,14,7,4,3.1035,14,20,4,0,0,0,445,346,77.8,27,18,,,,Stadium 974,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3857257,2022-11-30,Group Stage,AUS,Australia,,Denmark,True,1,0,W,8,4,3,0.4697,12,9,2,0,2,0,350,219,62.6,29,11,,,,Al Janoub Stadium   ,,Mustapha Ghorbal
+2022,statsbomb_event_data,3857257,2022-11-30,Group Stage,,Denmark,AUS,Australia,False,0,1,L,14,4,5,0.7372,10,11,1,0,6,0,715,590,82.5,27,12,,,,Al Janoub Stadium   ,,Mustapha Ghorbal
+2022,statsbomb_event_data,3857258,2022-11-24,Group Stage,BRA,Brazil,,Serbia,True,2,0,W,23,9,5,2.1239,8,11,0,0,5,0,618,539,87.2,22,8,,,,Lusail Stadium,,Alireza Faghani
+2022,statsbomb_event_data,3857258,2022-11-24,Group Stage,,Serbia,BRA,Brazil,False,0,2,L,5,0,2,0.1633,11,7,3,0,4,0,446,351,78.7,19,11,,,,Lusail Stadium,,Alireza Faghani
+2022,statsbomb_event_data,3857259,2022-11-28,Group Stage,,Cameroon,,Serbia,True,3,3,D,13,8,3,2.0703,9,15,2,0,4,0,395,276,69.9,23,20,,,,Al Janoub Stadium   ,,Mohamed Abdulla Hassan Mohd
+2022,statsbomb_event_data,3857259,2022-11-28,Group Stage,,Serbia,,Cameroon,False,3,3,D,15,5,2,1.7381,16,9,2,0,3,1,536,428,79.9,33,9,,,,Al Janoub Stadium   ,,Mohamed Abdulla Hassan Mohd
+2022,statsbomb_event_data,3857260,2022-11-30,Group Stage,SAU,Saudi Arabia,MEX,Mexico,True,1,2,L,10,2,1,1.0761,21,16,6,0,1,0,322,194,60.2,30,15,,,,Lusail Stadium,,Michael Oliver
+2022,statsbomb_event_data,3857260,2022-11-30,Group Stage,MEX,Mexico,SAU,Saudi Arabia,False,2,1,W,26,10,9,2.3221,18,21,1,0,8,0,488,367,75.2,21,15,,,,Lusail Stadium,,Michael Oliver
+2022,statsbomb_event_data,3857261,2022-11-29,Group Stage,,Wales,ENG,England,True,0,3,L,7,1,3,0.208,19,11,2,0,1,0,351,274,78.1,14,4,,,,Ahmad bin Ali Stadium,,Slavko Vinčić
+2022,statsbomb_event_data,3857261,2022-11-29,Group Stage,ENG,England,,Wales,False,3,0,W,18,7,4,2.9155,11,17,0,0,6,0,630,553,87.8,9,9,,,,Ahmad bin Ali Stadium,,Slavko Vinčić
+2022,statsbomb_event_data,3857262,2022-12-02,Group Stage,KOR,South Korea,POR,Portugal,True,2,1,W,12,6,4,1.399,9,10,2,0,5,1,388,309,79.6,29,7,,,,Education City Stadium ,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3857262,2022-12-02,Group Stage,POR,Portugal,KOR,South Korea,False,1,2,L,13,6,4,0.9737,10,9,0,0,4,0,619,534,86.3,19,6,,,,Education City Stadium ,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3857263,2022-11-27,Group Stage,ESP,Spain,GER,Germany,True,1,1,D,7,2,2,0.6395,14,15,1,0,6,0,663,578,87.2,16,12,,,,Al Bayt Stadium,,Danny Desmond Makkelie
+2022,statsbomb_event_data,3857263,2022-11-27,Group Stage,GER,Germany,ESP,Spain,False,1,1,D,11,4,3,1.147,15,13,3,0,5,0,371,291,78.4,15,19,,,,Al Bayt Stadium,,Danny Desmond Makkelie
+2022,statsbomb_event_data,3857264,2022-11-30,Group Stage,,Poland,ARG,Argentina,True,0,2,L,4,0,2,0.1976,9,12,1,0,1,0,337,267,79.2,32,10,,,,Stadium 974,,Danny Desmond Makkelie
+2022,statsbomb_event_data,3857264,2022-11-30,Group Stage,ARG,Argentina,,Poland,False,2,0,W,24,13,4,3.0767,12,9,1,0,8,0,909,826,90.9,7,7,,,,Stadium 974,,Danny Desmond Makkelie
+2022,statsbomb_event_data,3857265,2022-11-22,Group Stage,MEX,Mexico,,Poland,True,0,0,D,11,4,3,0.5291,14,14,2,0,6,1,544,437,80.3,21,8,,,,Stadium 974,,Chris Beath
+2022,statsbomb_event_data,3857265,2022-11-22,Group Stage,,Poland,MEX,Mexico,False,0,0,D,6,2,2,1.1379,15,14,1,0,5,0,362,259,71.5,28,8,,,,Stadium 974,,Chris Beath
+2022,statsbomb_event_data,3857266,2022-11-26,Group Stage,FRA,France,,Denmark,True,2,1,W,21,6,8,1.9336,4,11,1,0,6,0,540,464,85.9,17,15,,,,Stadium 974,,Szymon Marciniak
+2022,statsbomb_event_data,3857266,2022-11-26,Group Stage,,Denmark,FRA,France,False,1,2,L,10,2,2,0.8885,11,4,2,0,4,0,567,479,84.5,17,11,,,,Stadium 974,,Szymon Marciniak
+2022,statsbomb_event_data,3857267,2022-11-29,Group Stage,ECU,Ecuador,SEN,Senegal,True,1,2,L,9,4,2,1.0017,23,8,0,0,3,0,465,362,77.8,29,9,,,,Sheikh Khalifa International Stadium,,Clément Turpin
+2022,statsbomb_event_data,3857267,2022-11-29,Group Stage,SEN,Senegal,ECU,Ecuador,False,2,1,W,13,3,4,1.7075,10,22,1,0,6,1,311,213,68.5,39,7,,,,Sheikh Khalifa International Stadium,,Clément Turpin
+2022,statsbomb_event_data,3857268,2022-11-23,Group Stage,BEL,Belgium,CAN,Canada,True,1,0,W,9,3,3,0.67,11,15,3,0,4,0,534,451,84.5,30,9,,,,Ahmad bin Ali Stadium,,Janny Sikazwe
+2022,statsbomb_event_data,3857268,2022-11-23,Group Stage,CAN,Canada,BEL,Belgium,False,0,1,L,22,3,8,2.5462,15,10,2,0,4,1,480,401,83.5,10,12,,,,Ahmad bin Ali Stadium,,Janny Sikazwe
+2022,statsbomb_event_data,3857269,2022-11-28,Group Stage,BRA,Brazil,SUI,Switzerland,True,1,0,W,13,5,5,0.9227,10,18,1,0,8,1,597,507,84.9,11,14,,,,Stadium 974,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3857269,2022-11-28,Group Stage,SUI,Switzerland,BRA,Brazil,False,0,1,L,6,0,4,0.2886,18,10,1,0,3,0,513,428,83.4,27,8,,,,Stadium 974,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3857270,2022-11-28,Group Stage,POR,Portugal,URU,Uruguay,True,2,0,W,15,3,6,1.2137,11,13,3,0,6,0,626,525,83.9,31,7,,,,Lusail Stadium,,Alireza Faghani
+2022,statsbomb_event_data,3857270,2022-11-28,Group Stage,URU,Uruguay,POR,Portugal,False,0,2,L,11,3,1,1.2167,16,10,2,0,2,0,438,324,74.0,12,9,,,,Lusail Stadium,,Alireza Faghani
+2022,statsbomb_event_data,3857271,2022-11-21,Group Stage,ENG,England,IRN,Iran,True,6,2,W,13,7,3,1.9872,9,17,0,0,8,0,846,746,88.2,7,6,,,,Sheikh Khalifa International Stadium,,Raphael Claus
+2022,statsbomb_event_data,3857271,2022-11-21,Group Stage,IRN,Iran,ENG,England,False,2,6,L,8,2,1,1.4557,21,9,2,0,0,0,247,163,66.0,21,21,,,,Sheikh Khalifa International Stadium,,Raphael Claus
+2022,statsbomb_event_data,3857272,2022-11-25,Group Stage,ENG,England,USA,United States,True,0,0,D,8,3,1,0.4606,11,15,0,0,3,0,582,500,85.9,20,7,,,,Al Bayt Stadium,,Jesús Valenzuela Sáez
+2022,statsbomb_event_data,3857272,2022-11-25,Group Stage,USA,United States,ENG,England,False,0,0,D,10,1,4,0.5143,16,11,0,0,7,0,456,377,82.7,16,4,,,,Al Bayt Stadium,,Jesús Valenzuela Sáez
+2022,statsbomb_event_data,3857273,2022-11-25,Group Stage,,Wales,IRN,Iran,True,0,2,L,10,3,2,0.6156,9,10,1,1,2,0,559,438,78.4,35,10,,,,Ahmad bin Ali Stadium,,Mario Alberto Escobar Toca
+2022,statsbomb_event_data,3857273,2022-11-25,Group Stage,IRN,Iran,,Wales,False,2,0,W,21,6,10,1.454,10,9,2,0,7,0,363,227,62.5,16,15,,,,Ahmad bin Ali Stadium,,Mario Alberto Escobar Toca
+2022,statsbomb_event_data,3857274,2022-11-25,Group Stage,NED,Netherlands,ECU,Ecuador,True,1,1,D,2,1,0,0.1045,16,12,0,0,2,0,552,457,82.8,24,5,,,,Sheikh Khalifa International Stadium,,Mustapha Ghorbal
+2022,statsbomb_event_data,3857274,2022-11-25,Group Stage,ECU,Ecuador,NED,Netherlands,False,1,1,D,15,4,6,1.6511,13,14,1,0,5,1,463,359,77.5,18,15,,,,Sheikh Khalifa International Stadium,,Mustapha Ghorbal
+2022,statsbomb_event_data,3857275,2022-11-30,Group Stage,TUN,Tunisia,FRA,France,True,1,0,W,5,3,0,0.2983,16,8,1,0,7,0,361,275,76.2,34,13,,,,Education City Stadium ,,Matthew Conger
+2022,statsbomb_event_data,3857275,2022-11-30,Group Stage,FRA,France,TUN,Tunisia,False,0,1,L,10,3,4,0.477,8,16,0,0,8,1,661,564,85.3,19,12,,,,Education City Stadium ,,Matthew Conger
+2022,statsbomb_event_data,3857276,2022-12-01,Group Stage,CAN,Canada,MAR,Morocco,True,1,2,L,5,0,1,1.0956,16,15,4,0,6,0,562,480,85.4,12,10,,,,Al Thumama Stadium,,Raphael Claus
+2022,statsbomb_event_data,3857276,2022-12-01,Group Stage,MAR,Morocco,CAN,Canada,False,2,1,W,7,2,2,0.4264,15,16,0,0,2,1,393,310,78.9,29,13,,,,Al Thumama Stadium,,Raphael Claus
+2022,statsbomb_event_data,3857277,2022-11-23,Group Stage,MAR,Morocco,CRO,Croatia,True,0,0,D,8,2,6,0.3626,18,12,1,0,0,0,384,301,78.4,22,15,,,,Al Bayt Stadium,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3857277,2022-11-23,Group Stage,CRO,Croatia,MAR,Morocco,False,0,0,D,5,1,2,0.8499,12,17,0,0,5,0,686,577,84.1,9,12,,,,Al Bayt Stadium,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3857278,2022-11-29,Group Stage,IRN,Iran,USA,United States,True,0,1,L,4,1,0,0.9208,21,11,3,0,1,0,515,402,78.1,11,11,,,,Al Thumama Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3857278,2022-11-29,Group Stage,USA,United States,IRN,Iran,False,1,0,W,12,5,3,1.1697,13,17,1,0,5,0,517,426,82.4,31,8,,,,Al Thumama Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3857279,2022-11-22,Group Stage,FRA,France,AUS,Australia,True,4,1,W,23,6,8,3.1705,4,14,0,0,8,0,763,680,89.1,11,11,,,,Al Janoub Stadium   ,,Victor Miguel de Freitas Gomes
+2022,statsbomb_event_data,3857279,2022-11-22,Group Stage,AUS,Australia,FRA,France,False,1,4,L,4,1,0,0.3233,14,4,3,0,1,0,475,394,82.9,21,11,,,,Al Janoub Stadium   ,,Victor Miguel de Freitas Gomes
+2022,statsbomb_event_data,3857280,2022-12-02,Group Stage,,Cameroon,BRA,Brazil,True,1,0,W,7,3,1,0.3834,17,15,4,1,3,0,333,254,76.3,25,11,,,,Lusail Stadium,,Ismail Elfath
+2022,statsbomb_event_data,3857280,2022-12-02,Group Stage,BRA,Brazil,,Cameroon,False,0,1,L,21,8,3,2.3782,15,14,2,0,11,0,593,512,86.3,13,4,,,,Lusail Stadium,,Ismail Elfath
+2022,statsbomb_event_data,3857281,2022-11-27,Group Stage,CRO,Croatia,CAN,Canada,True,4,1,W,13,10,0,2.6102,15,5,2,0,5,0,507,411,81.1,18,17,,,,Sheikh Khalifa International Stadium,,Andrés Matonte
+2022,statsbomb_event_data,3857281,2022-11-27,Group Stage,CAN,Canada,CRO,Croatia,False,1,4,L,8,2,3,0.2868,6,15,2,0,2,0,529,437,82.6,29,10,,,,Sheikh Khalifa International Stadium,,Andrés Matonte
+2022,statsbomb_event_data,3857282,2022-11-21,Group Stage,USA,United States,,Wales,True,1,1,D,6,1,1,0.6025,17,10,4,0,5,0,610,520,85.2,24,13,,,,Ahmad bin Ali Stadium,,Abdulrahman Ibrahim Al Jassim
+2022,statsbomb_event_data,3857282,2022-11-21,Group Stage,,Wales,USA,United States,False,1,1,D,7,3,1,1.3953,10,16,2,0,3,0,443,339,76.5,29,10,,,,Ahmad bin Ali Stadium,,Abdulrahman Ibrahim Al Jassim
+2022,statsbomb_event_data,3857283,2022-11-27,Group Stage,BEL,Belgium,MAR,Morocco,True,0,2,L,10,4,2,0.6426,10,16,1,0,9,1,703,604,85.9,6,2,,,,Al Thumama Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3857283,2022-11-27,Group Stage,MAR,Morocco,BEL,Belgium,False,2,0,W,10,4,0,0.9911,16,9,1,0,1,1,347,287,82.7,22,8,,,,Al Thumama Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3857284,2022-11-23,Group Stage,GER,Germany,JPN,Japan,True,1,2,L,26,9,6,2.768,7,13,0,0,6,2,826,723,87.5,8,3,,,,Sheikh Khalifa International Stadium,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3857284,2022-11-23,Group Stage,JPN,Japan,GER,Germany,False,2,1,W,12,4,4,1.2493,15,7,0,0,6,0,294,215,73.1,41,8,,,,Sheikh Khalifa International Stadium,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3857285,2022-11-21,Group Stage,SEN,Senegal,NED,Netherlands,True,0,2,L,15,4,4,0.6915,13,16,2,0,6,1,430,344,80.0,34,9,,,,Al Thumama Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3857285,2022-11-21,Group Stage,NED,Netherlands,SEN,Senegal,False,2,0,W,10,3,3,1.1239,16,12,1,0,7,1,491,393,80.0,16,11,,,,Al Thumama Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3857286,2022-11-20,Group Stage,QAT,Qatar,ECU,Ecuador,True,0,2,L,5,0,0,0.3042,17,14,4,0,1,0,468,382,81.6,21,5,,,,Al Bayt Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3857286,2022-11-20,Group Stage,ECU,Ecuador,QAT,Qatar,False,2,0,W,6,3,0,1.154,14,17,2,0,3,1,519,432,83.2,4,8,,,,Al Bayt Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3857287,2022-11-24,Group Stage,URU,Uruguay,KOR,South Korea,True,0,0,D,10,1,2,0.4173,7,11,1,0,4,0,570,475,83.3,31,17,,,,Education City Stadium ,,Clément Turpin
+2022,statsbomb_event_data,3857287,2022-11-24,Group Stage,KOR,South Korea,URU,Uruguay,False,0,0,D,7,0,1,0.493,11,7,1,0,3,0,463,351,75.8,20,13,,,,Education City Stadium ,,Clément Turpin
+2022,statsbomb_event_data,3857288,2022-11-26,Group Stage,TUN,Tunisia,AUS,Australia,True,0,1,L,14,4,6,1.0522,15,14,3,0,5,0,548,406,74.1,35,8,,,,Al Janoub Stadium   ,,Daniel Siebert
+2022,statsbomb_event_data,3857288,2022-11-26,Group Stage,AUS,Australia,TUN,Tunisia,False,1,0,W,9,2,3,0.359,16,12,0,0,2,0,404,274,67.8,34,11,,,,Al Janoub Stadium   ,,Daniel Siebert
+2022,statsbomb_event_data,3857289,2022-11-26,Group Stage,ARG,Argentina,MEX,Mexico,True,2,0,W,5,2,0,0.3252,15,20,1,0,4,0,567,476,84.0,20,5,,,,Lusail Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3857289,2022-11-26,Group Stage,MEX,Mexico,ARG,Argentina,False,0,2,L,4,1,1,0.2064,21,14,4,0,2,0,403,304,75.4,15,16,,,,Lusail Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3857290,2022-11-24,Group Stage,SUI,Switzerland,,Cameroon,True,1,0,W,7,3,1,1.4265,14,10,2,0,11,0,549,461,84.0,28,8,,,,Al Janoub Stadium   ,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3857290,2022-11-24,Group Stage,,Cameroon,SUI,Switzerland,False,0,1,L,8,5,1,0.6131,10,13,1,0,5,0,533,440,82.6,19,15,,,,Al Janoub Stadium   ,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3857291,2022-11-23,Group Stage,ESP,Spain,,Costa Rica,True,7,0,W,17,8,2,2.7619,8,13,0,0,5,0,1090,1009,92.6,5,7,,,,Al Thumama Stadium,,
+2022,statsbomb_event_data,3857291,2022-11-23,Group Stage,,Costa Rica,ESP,Spain,False,0,7,L,0,0,0,0.0,14,7,2,0,0,1,250,172,68.8,21,9,,,,Al Thumama Stadium,,
+2022,statsbomb_event_data,3857292,2022-12-01,Group Stage,,Costa Rica,GER,Germany,True,2,4,L,7,5,1,1.0347,4,9,1,0,1,0,374,284,75.9,37,15,,,,Al Bayt Stadium,,Stéphanie Frappart
+2022,statsbomb_event_data,3857292,2022-12-01,Group Stage,GER,Germany,,Costa Rica,False,4,2,W,31,11,5,4.3161,9,4,0,0,14,1,766,669,87.3,8,11,,,,Al Bayt Stadium,,Stéphanie Frappart
+2022,statsbomb_event_data,3857293,2022-12-02,Group Stage,GHA,Ghana,URU,Uruguay,True,0,2,L,9,4,2,1.3927,21,11,2,0,5,0,493,384,77.9,26,6,,,,Al Janoub Stadium   ,,Daniel Siebert
+2022,statsbomb_event_data,3857293,2022-12-02,Group Stage,URU,Uruguay,GHA,Ghana,False,2,0,W,12,6,1,1.6366,11,19,5,0,2,0,469,364,77.6,30,10,,,,Al Janoub Stadium   ,,Daniel Siebert
+2022,statsbomb_event_data,3857294,2022-11-29,Group Stage,NED,Netherlands,QAT,Qatar,True,2,0,W,13,4,3,1.714,19,7,1,0,4,0,832,747,89.8,8,4,,,,Al Bayt Stadium,,Bakary Papa Gassama
+2022,statsbomb_event_data,3857294,2022-11-29,Group Stage,QAT,Qatar,NED,Netherlands,False,0,2,L,5,3,0,0.1437,8,18,0,0,2,0,486,396,81.5,11,12,,,,Al Bayt Stadium,,Bakary Papa Gassama
+2022,statsbomb_event_data,3857295,2022-11-27,Group Stage,JPN,Japan,,Costa Rica,True,0,1,L,13,3,7,0.7735,24,13,3,0,5,0,619,527,85.1,9,8,,,,Ahmad bin Ali Stadium,,Michael Oliver
+2022,statsbomb_event_data,3857295,2022-11-27,Group Stage,,Costa Rica,JPN,Japan,False,1,0,W,4,1,1,0.1994,13,23,3,0,0,0,470,374,79.6,23,12,,,,Ahmad bin Ali Stadium,,Michael Oliver
+2022,statsbomb_event_data,3857296,2022-12-01,Group Stage,CRO,Croatia,BEL,Belgium,True,0,0,D,11,4,1,0.695,11,10,0,0,2,0,609,514,84.4,26,12,,,,Ahmad bin Ali Stadium,,Anthony Taylor
+2022,statsbomb_event_data,3857296,2022-12-01,Group Stage,BEL,Belgium,CRO,Croatia,False,0,0,D,16,3,6,2.3818,10,10,1,0,4,0,630,543,86.2,30,12,,,,Ahmad bin Ali Stadium,,Anthony Taylor
+2022,statsbomb_event_data,3857297,2022-11-26,Group Stage,,Poland,SAU,Saudi Arabia,True,2,0,W,9,3,2,1.7342,18,15,3,0,4,0,337,259,76.9,29,12,,,,Education City Stadium ,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3857297,2022-11-26,Group Stage,SAU,Saudi Arabia,,Poland,False,0,2,L,17,5,3,1.972,16,17,2,0,5,0,582,489,84.0,17,5,,,,Education City Stadium ,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3857298,2022-11-24,Group Stage,POR,Portugal,GHA,Ghana,True,3,2,W,11,5,3,2.0969,15,20,2,0,3,0,665,576,86.6,18,3,,,,Stadium 974,,Ismail Elfath
+2022,statsbomb_event_data,3857298,2022-11-24,Group Stage,GHA,Ghana,POR,Portugal,False,2,3,L,9,3,1,0.78,20,15,4,0,3,0,415,336,81.0,13,12,,,,Stadium 974,,Ismail Elfath
+2022,statsbomb_event_data,3857299,2022-11-28,Group Stage,KOR,South Korea,GHA,Ghana,True,2,3,L,21,6,10,1.3678,15,10,2,0,12,0,605,499,82.5,17,5,,,,Education City Stadium ,,Anthony Taylor
+2022,statsbomb_event_data,3857299,2022-11-28,Group Stage,GHA,Ghana,KOR,South Korea,False,3,2,W,7,3,0,1.1805,10,15,2,0,5,0,340,266,78.2,56,9,,,,Education City Stadium ,,Anthony Taylor
+2022,statsbomb_event_data,3857300,2022-11-22,Group Stage,ARG,Argentina,SAU,Saudi Arabia,True,1,2,L,15,6,3,2.4916,7,22,0,0,9,0,646,542,83.9,18,11,,,,Lusail Stadium,,Slavko Vinčić
+2022,statsbomb_event_data,3857300,2022-11-22,Group Stage,SAU,Saudi Arabia,ARG,Argentina,False,2,1,W,3,2,1,0.1535,22,6,6,0,2,0,286,197,68.9,29,21,,,,Lusail Stadium,,Slavko Vinčić
+2022,statsbomb_event_data,3857301,2022-11-25,Group Stage,QAT,Qatar,SEN,Senegal,True,1,3,L,10,3,3,0.9601,11,13,3,0,6,1,452,362,80.1,24,10,,,,Al Thumama Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3857301,2022-11-25,Group Stage,SEN,Senegal,QAT,Qatar,False,3,1,W,12,4,2,0.903,13,10,3,0,6,1,547,462,84.5,19,6,,,,Al Thumama Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3869117,2022-12-03,Round of 16,NED,Netherlands,USA,United States,True,3,1,W,11,6,1,1.4819,11,4,2,0,4,0,439,332,75.6,35,7,,,,Sheikh Khalifa International Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3869117,2022-12-03,Round of 16,USA,United States,NED,Netherlands,False,1,3,L,18,6,5,1.6521,5,11,0,0,5,1,618,499,80.7,11,15,,,,Sheikh Khalifa International Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3869118,2022-12-04,Round of 16,ENG,England,SEN,Senegal,True,3,0,W,8,4,0,1.02,16,13,0,0,3,0,626,536,85.6,11,15,,,,Al Bayt Stadium,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3869118,2022-12-04,Round of 16,SEN,Senegal,ENG,England,False,0,3,L,10,1,4,0.9728,13,16,1,0,3,0,408,323,79.2,21,9,,,,Al Bayt Stadium,,Ivan Arcides Barton Cisneros
+2022,statsbomb_event_data,3869151,2022-12-03,Round of 16,ARG,Argentina,AUS,Australia,True,2,1,W,14,5,2,1.4816,9,16,0,0,1,0,728,646,88.7,25,16,,,,Ahmad bin Ali Stadium,,Szymon Marciniak
+2022,statsbomb_event_data,3869151,2022-12-03,Round of 16,AUS,Australia,ARG,Argentina,False,1,2,L,5,1,3,0.4261,18,8,2,0,3,0,478,384,80.3,11,9,,,,Ahmad bin Ali Stadium,,Szymon Marciniak
+2022,statsbomb_event_data,3869152,2022-12-04,Round of 16,FRA,France,,Poland,True,3,1,W,16,8,2,1.1264,11,10,1,0,7,0,593,505,85.2,12,15,,,,Al Thumama Stadium,,Jesús Valenzuela Sáez
+2022,statsbomb_event_data,3869152,2022-12-04,Round of 16,,Poland,FRA,France,False,1,3,L,12,2,6,1.5935,10,10,2,0,1,1,488,406,83.2,22,8,,,,Al Thumama Stadium,,Jesús Valenzuela Sáez
+2022,statsbomb_event_data,3869219,2022-12-05,Round of 16,JPN,Japan,CRO,Croatia,True,1,1,D,13,4,4,1.069,13,15,0,0,8,0,582,436,74.9,34,21,,,,Al Janoub Stadium   ,,Ismail Elfath
+2022,statsbomb_event_data,3869219,2022-12-05,Round of 16,CRO,Croatia,JPN,Japan,False,1,1,D,17,4,7,0.8544,16,13,2,0,5,0,796,657,82.5,43,10,,,,Al Janoub Stadium   ,,Ismail Elfath
+2022,statsbomb_event_data,3869220,2022-12-06,Round of 16,MAR,Morocco,ESP,Spain,True,0,0,D,6,2,0,0.5704,19,14,1,0,0,0,365,250,68.5,35,18,,,,Education City Stadium ,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3869220,2022-12-06,Round of 16,ESP,Spain,MAR,Morocco,False,0,0,D,12,1,5,0.495,14,18,1,0,8,0,1068,960,89.9,10,9,,,,Education City Stadium ,,Fernando Andrés Rapallini
+2022,statsbomb_event_data,3869253,2022-12-05,Round of 16,BRA,Brazil,KOR,South Korea,True,4,1,W,18,10,2,3.2614,8,11,0,0,5,0,641,566,88.3,10,8,,,,Stadium 974,,Clément Turpin
+2022,statsbomb_event_data,3869253,2022-12-05,Round of 16,KOR,South Korea,BRA,Brazil,False,1,4,L,8,6,0,0.3448,12,8,1,0,4,1,555,476,85.8,15,22,,,,Stadium 974,,Clément Turpin
+2022,statsbomb_event_data,3869254,2022-12-06,Round of 16,POR,Portugal,SUI,Switzerland,True,6,1,W,15,9,3,2.2843,14,15,0,0,6,0,488,404,82.8,16,10,,,,Lusail Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3869254,2022-12-06,Round of 16,SUI,Switzerland,POR,Portugal,False,1,6,L,10,3,4,1.2718,15,14,2,0,6,0,528,438,83.0,15,9,,,,Lusail Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3869321,2022-12-09,Quarter-finals,NED,Netherlands,ARG,Argentina,True,2,2,D,7,2,3,0.5695,37,20,7,1,2,0,691,572,82.8,27,24,,,,Lusail Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3869321,2022-12-09,Quarter-finals,ARG,Argentina,NED,Netherlands,False,2,2,D,14,5,4,1.9392,22,37,8,0,8,0,640,531,83.0,27,10,,,,Lusail Stadium,,Antonio Miguel Mateu Lahoz
+2022,statsbomb_event_data,3869354,2022-12-10,Quarter-finals,ENG,England,FRA,France,True,1,2,L,16,7,5,2.3526,10,15,1,0,5,0,554,465,83.9,11,9,,,,Al Bayt Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3869354,2022-12-10,Quarter-finals,FRA,France,ENG,England,False,2,1,W,8,5,1,0.8394,15,10,3,0,2,0,412,328,79.6,17,7,,,,Al Bayt Stadium,,Wilton Pereira Sampaio
+2022,statsbomb_event_data,3869420,2022-12-09,Quarter-finals,CRO,Croatia,BRA,Brazil,True,1,1,D,9,1,3,0.6329,23,23,2,0,3,1,737,639,86.7,34,14,,,,Education City Stadium ,,Michael Oliver
+2022,statsbomb_event_data,3869420,2022-12-09,Quarter-finals,BRA,Brazil,CRO,Croatia,False,1,1,D,20,11,6,1.8163,25,23,3,0,7,0,747,652,87.3,13,8,,,,Education City Stadium ,,Michael Oliver
+2022,statsbomb_event_data,3869486,2022-12-10,Quarter-finals,MAR,Morocco,POR,Portugal,True,1,0,W,9,3,0,0.972,18,9,2,1,3,0,249,184,73.9,35,15,,,,Al Thumama Stadium,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3869486,2022-12-10,Quarter-finals,POR,Portugal,MAR,Morocco,False,0,1,L,12,3,3,0.7441,9,17,1,0,9,0,731,616,84.3,3,4,,,,Al Thumama Stadium,,Facundo Tello Figueroa
+2022,statsbomb_event_data,3869519,2022-12-13,Semi-finals,ARG,Argentina,CRO,Croatia,True,3,0,W,9,7,1,1.8644,20,10,2,0,2,0,432,358,82.9,18,8,,,,Lusail Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3869519,2022-12-13,Semi-finals,CRO,Croatia,ARG,Argentina,False,0,3,L,12,2,3,0.4101,10,20,2,0,4,0,648,559,86.3,8,12,,,,Lusail Stadium,,Daniele Orsato
+2022,statsbomb_event_data,3869552,2022-12-14,Semi-finals,FRA,France,MAR,Morocco,True,2,0,W,14,2,6,2.0024,14,13,0,0,2,1,387,316,81.7,19,20,,,,Al Bayt Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3869552,2022-12-14,Semi-finals,MAR,Morocco,FRA,France,False,0,2,L,13,1,6,1.2304,14,14,1,0,3,0,615,529,86.0,12,4,,,,Al Bayt Stadium,,César Arturo Ramos Palazuelos
+2022,statsbomb_event_data,3869684,2022-12-17,3rd Place Final,CRO,Croatia,MAR,Morocco,True,2,1,W,12,4,3,0.8493,14,15,0,0,6,0,528,439,83.1,19,8,,,,Sheikh Khalifa International Stadium,,Abdulrahman Ibrahim Al Jassim
+2022,statsbomb_event_data,3869684,2022-12-17,3rd Place Final,MAR,Morocco,CRO,Croatia,False,1,2,L,9,2,2,0.9915,15,14,2,0,3,0,512,431,84.2,16,16,,,,Sheikh Khalifa International Stadium,,Abdulrahman Ibrahim Al Jassim
+2022,statsbomb_event_data,3869685,2022-12-18,Final,ARG,Argentina,FRA,France,True,3,3,D,20,10,4,2.7583,29,18,5,0,6,1,693,560,80.8,26,13,,,,Lusail Stadium,,Szymon Marciniak
+2022,statsbomb_event_data,3869685,2022-12-18,Final,FRA,France,ARG,Argentina,False,3,3,D,10,5,3,2.2726,19,26,3,0,5,0,570,434,76.1,19,15,,,,Lusail Stadium,,Szymon Marciniak
