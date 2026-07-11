@@ -1,0 +1,27 @@
+{
+  "_description": "Smarkets event 45166893 -- key market prices for Brazil vs Norway R16 2026-07-05",
+  "event_id": 45166893,
+  "total_markets": 177,
+  "key_prices": {
+    "FTR": {"Brazil": 0.542, "Draw": 0.2581, "Norway": 0.20, "market_id": 148807749},
+    "BTTS_yes": {"mid": 0.6079, "market_id": 148807751},
+    "OU1.5_over": {"mid": 0.8067, "market_id": 148807785},
+    "OU2.5_over": {"mid": 0.5653, "market_id": 148807786},
+    "OU3.5_over": {"mid": 0.3352, "market_id": 148807787},
+    "HT_result": {"Brazil": 0.4001, "Draw": 0.415, "Norway": 0.1906, "market_id": 148807756},
+    "To_qualify": {"Brazil": 0.6993, "Norway": 0.3077, "market_id": 148807882},
+    "Penalty_shootout_yes": {"mid": 0.1428, "market_id": 148807884},
+    "Exact_goals": {"0": 0.0585, "1": 0.1528, "2": 0.2283, "3": 0.2337, "4": 0.1634, "5": 0.099, "6+": 0.0767, "market_id": 148807768},
+    "BRA_SOT_OU4.5_over": {"mid": 0.577, "market_id": 148808067, "note": "only line available (5+); fitted lambda=5.10 to evaluate P(>=6)"},
+    "NOR_SOT_OU3.5_over": {"mid": 0.5779, "market_id": 148808114, "note": "exact match for '4+ SOT' question"},
+    "Cards_OU3.5_over": {"mid": 0.3801, "market_id": 148807916},
+    "BRA_corners_OU5.5_over": {"mid": 0.4925, "market_id": 148807941, "note": "exact match for '6+ corners' question"},
+    "Highest_scoring_half": {"First_Half": 0.2882, "Equal": 0.247, "Second_Half": 0.4589, "market_id": 148807767}
+  },
+  "player_market_data": {
+    "vinicius_anytime_scorer": {"mid": 0.3775, "liquid": true},
+    "haaland_anytime_scorer": {"mid": 0.4098, "liquid": true},
+    "odegaard_score_or_assist": {"mid": 0.2542, "liquid": true},
+    "cunha_sot_ou0.5": {"mid": 0.5652, "liquid": true}
+  }
+}

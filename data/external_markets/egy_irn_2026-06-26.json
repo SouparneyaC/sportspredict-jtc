@@ -2,39 +2,141 @@
   "match": "Egypt vs Iran",
   "date": "2026-06-26",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"EGY_vs_BEL_GD1": 760426, "NZL_vs_IRN_GD1": 760427, "IRN_vs_BEL_GD2": 760451, "EGY_vs_NZL_GD2": 760452},
+  "espn_event_ids": {
+    "EGY_vs_BEL_GD1": 760426,
+    "NZL_vs_IRN_GD1": 760427,
+    "IRN_vs_BEL_GD2": 760451,
+    "EGY_vs_NZL_GD2": 760452
+  },
   "smarkets_event_id": 45086927,
   "group_context": {
-    "Egypt": {"pts": 4, "record": "1-1-0 (D1-1 BEL, W3-1 NZL)", "status": "Leading the group, a draw today likely secures top spot outright"},
-    "Iran": {"pts": 2, "record": "0-2-0 (D2-2 NZL, D0-0 BEL)", "status": "Needs a win today to keep real control of 2nd place, since Belgium is a heavy favorite in the other GD3 fixture"}
+    "Egypt": {
+      "pts": 4,
+      "record": "1-1-0 (D1-1 BEL, W3-1 NZL)",
+      "status": "Leading the group, a draw today likely secures top spot outright"
+    },
+    "Iran": {
+      "pts": 2,
+      "record": "0-2-0 (D2-2 NZL, D0-0 BEL)",
+      "status": "Needs a win today to keep real control of 2nd place, since Belgium is a heavy favorite in the other GD3 fixture"
+    }
   },
   "wc2026_espn_stats": {
     "EGY": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760426, "opponent": "Belgium", "result": "D 1-1", "fouls": 15, "SOT": 3, "offsides": 1, "YC": 2, "RC": 0, "corners": 7, "possession": 46.4},
-        {"event_id": 760452, "opponent": "New Zealand", "result": "W 3-1", "fouls": 8, "SOT": 7, "offsides": 0, "YC": 1, "RC": 0, "corners": 4, "possession": 55.6}
+        {
+          "event_id": 760426,
+          "opponent": "Belgium",
+          "result": "D 1-1",
+          "fouls": 15,
+          "SOT": 3,
+          "offsides": 1,
+          "YC": 2,
+          "RC": 0,
+          "corners": 7,
+          "possession": 46.4
+        },
+        {
+          "event_id": 760452,
+          "opponent": "New Zealand",
+          "result": "W 3-1",
+          "fouls": 8,
+          "SOT": 7,
+          "offsides": 0,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 55.6
+        }
       ],
-      "averages": {"fouls": 11.5, "SOT": 5.0, "offsides": 0.5, "cards": 1.5, "corners": 5.5}
+      "averages": {
+        "fouls": 11.5,
+        "SOT": 5.0,
+        "offsides": 0.5,
+        "cards": 1.5,
+        "corners": 5.5
+      }
     },
     "IRN": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760427, "opponent": "New Zealand", "result": "D 2-2", "fouls": 10, "SOT": 4, "offsides": 2, "YC": 1, "RC": 0, "corners": 4, "possession": 48.5},
-        {"event_id": 760451, "opponent": "Belgium", "result": "D 0-0", "fouls": 9, "SOT": 3, "offsides": 4, "YC": 1, "RC": 0, "corners": 2, "possession": 29.9},
-        {"_note": "Iran's offside count (2, then 4) held up or RISE even as their possession collapsed from 48.5% to 29.9% — this is a counter-attacking, transition-based team, not a settle-and-defend team. Do not apply the defensive-underdog 2+ offsides NO-family here without checking this."}
+        {
+          "event_id": 760427,
+          "opponent": "New Zealand",
+          "result": "D 2-2",
+          "fouls": 10,
+          "SOT": 4,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 48.5
+        },
+        {
+          "event_id": 760451,
+          "opponent": "Belgium",
+          "result": "D 0-0",
+          "fouls": 9,
+          "SOT": 3,
+          "offsides": 4,
+          "YC": 1,
+          "RC": 0,
+          "corners": 2,
+          "possession": 29.9
+        },
+        {
+          "_note": "Iran's offside count (2, then 4) held up or RISE even as their possession collapsed from 48.5% to 29.9% — this is a counter-attacking, transition-based team, not a settle-and-defend team. Do not apply the defensive-underdog 2+ offsides NO-family here without checking this."
+        }
       ],
-      "averages": {"fouls": 9.5, "SOT": 3.5, "offsides": 3.0, "cards": 1.0, "corners": 3.0}
+      "averages": {
+        "fouls": 9.5,
+        "SOT": 3.5,
+        "offsides": 3.0,
+        "cards": 1.0,
+        "corners": 3.0
+      }
     }
   },
   "smarkets_markets": {
-    "FTR": {"Egypt": 0.3610, "Iran": 0.2858, "Draw": 0.3597, "liquid": true},
-    "OU2_5": {"Under": 0.6539, "Over": 0.3438, "liquid": true},
-    "2H_OU1_5_goals": {"Under": 0.6786, "Over": 0.3227, "liquid": true},
-    "Cards_OU2_5": {"Under": 0.4940, "Over": 0.5341, "liquid": true},
-    "EGY_SOT_OU3_5_fullmatch": {"Under": 0.4601, "Over": 0.5407, "liquid": true},
-    "Iran_plus0_5_corners": {"Iran_more_or_equal": 0.5983, "Iran_strictly_more": 0.4017, "liquid": true, "note": "derived: Egypt+0.5 covers (ties+Egypt more)=0.5983, so P(Iran>Egypt)=0.4017"},
-    "player_SOT_fullmatch": {"Mehdi_Taremi": {"offer": 0.6135, "adjusted": 0.580}},
+    "FTR": {
+      "Egypt": 0.361,
+      "Iran": 0.2858,
+      "Draw": 0.3597,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Under": 0.6539,
+      "Over": 0.3438,
+      "liquid": true
+    },
+    "2H_OU1_5_goals": {
+      "Under": 0.6786,
+      "Over": 0.3227,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Under": 0.494,
+      "Over": 0.5341,
+      "liquid": true
+    },
+    "EGY_SOT_OU3_5_fullmatch": {
+      "Under": 0.4601,
+      "Over": 0.5407,
+      "liquid": true
+    },
+    "Iran_plus0_5_corners": {
+      "Iran_more_or_equal": 0.5983,
+      "Iran_strictly_more": 0.4017,
+      "liquid": true,
+      "note": "derived: Egypt+0.5 covers (ties+Egypt more)=0.5983, so P(Iran>Egypt)=0.4017"
+    },
+    "player_SOT_fullmatch": {
+      "Mehdi_Taremi": {
+        "offer": 0.6135,
+        "adjusted": 0.58
+      }
+    },
     "Mahmoud_Trezeguet": "NOT LISTED in any player market for this match (SOT, anytime goalscorer, or score-or-assist) — same structural absence pattern as McGree (USA-AUS) and Berterame (MEX-KOR), both of whom were confirmed not in the matchday squad."
   },
   "context_flags": [
@@ -67,7 +169,7 @@
       "text": "Will Iran finish with more corner kicks than Egypt?",
       "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
       "reasoning": "Derived from the Egypt+0.5/Iran-0.5 corners handicap market: P(Iran strictly more) = 1 - 0.5983 = 0.40.",
-      "final_estimate": 0.40,
+      "final_estimate": 0.4,
       "direction": "NO lean",
       "confidence": "high"
     },
@@ -112,7 +214,7 @@
       "text": "Will Egypt have 3 or more shots on target?",
       "pick_tier": "HIGH CONFIDENCE",
       "reasoning": "ESPN-history Poisson (λ=5.0) gives P(≥3)=0.88; the market-implied rate from the Over3.5 SOT line (54.1%, λ≈3.87) gives P(≥3)=0.74. Blend toward the middle, weighting the matchup-specific market somewhat since Iran is a tougher defensive test than New Zealand.",
-      "final_estimate": 0.80,
+      "final_estimate": 0.8,
       "direction": "YES (strong)",
       "confidence": "high"
     },
@@ -121,7 +223,7 @@
       "text": "Will Mahmoud Trezeguet have at least 1 shot on target?",
       "pick_tier": "HIGHEST CONFIDENCE — ABSENCE SIGNAL",
       "reasoning": "Trezeguet does not appear in ANY player market for this match (SOT, goalscorer, or score-or-assist) — identical structural pattern to McGree (USA-AUS, confirmed absent, won us +20.74) and Berterame (MEX-KOR, confirmed absent). The crowd will likely anchor on his heroic NZL-EGY performance and price him generously; we price near-zero on the absence signal.",
-      "final_estimate": 0.10,
+      "final_estimate": 0.1,
       "direction": "NO (maximum confidence)",
       "confidence": "very high"
     },
@@ -138,13 +240,13 @@
   "summary_table": {
     "Q1_IRN_2plus_offsides": 0.75,
     "Q2_IRN_more_2H_SOT": 0.27,
-    "Q3_IRN_more_corners": 0.40,
+    "Q3_IRN_more_corners": 0.4,
     "Q4_EGY_wins": 0.36,
     "Q5_2_or_fewer_goals": 0.65,
     "Q6_2H_2plus_goals": 0.32,
     "Q7_4plus_cards": 0.28,
-    "Q8_EGY_3plus_SOT": 0.80,
-    "Q9_Trezeguet_SOT": 0.10,
+    "Q8_EGY_3plus_SOT": 0.8,
+    "Q9_Trezeguet_SOT": 0.1,
     "Q10_Taremi_SOT": 0.58
   },
   "strongest_picks": [
@@ -152,6 +254,103 @@
     "Q1: Iran 2+ offsides = 0.75 (HIGH CONFIDENCE — genuine counter-attacking signal that held up even as possession collapsed, NOT a defensive-underdog situation)",
     "Q8: Egypt 3+ SOT = 0.80 (HIGH CONFIDENCE — blended ESPN + market both point strongly YES)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Egypt 1 - 1 IR Iran",
+    "total_rbp": 14.28,
+    "beat_crowd_count": "8/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Iran be caught offside 2 or more times?",
+        "us": 0.75,
+        "crowd": 0.47,
+        "outcome": 1,
+        "rbp": 23.8,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Iran have more shots on target than Egypt in the second half?",
+        "us": 0.27,
+        "crowd": 0.4,
+        "outcome": 0,
+        "rbp": 10.22,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Iran finish with more corner kicks than Egypt?",
+        "us": 0.4,
+        "crowd": 0.42,
+        "outcome": 0,
+        "rbp": 3.26,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Egypt win the match?",
+        "us": 0.36,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": 8.09,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will the match have 2 or fewer total goals?",
+        "us": 0.65,
+        "crowd": 0.58,
+        "outcome": 1,
+        "rbp": 7.04,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will the second half have 2 or more total goals?",
+        "us": 0.32,
+        "crowd": 0.37,
+        "outcome": 0,
+        "rbp": 5.28,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will there be 4 or more total cards shown?",
+        "us": 0.28,
+        "crowd": 0.45,
+        "outcome": 1,
+        "rbp": -19.16,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Egypt have 3 or more shots on target?",
+        "us": 0.8,
+        "crowd": 0.66,
+        "outcome": 1,
+        "rbp": 9.78,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Mahmoud Trezeguet have at least 1 shot on target?",
+        "us": 0.1,
+        "crowd": 0.42,
+        "outcome": 1,
+        "rbp": -44.84,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Mehdi Taremi have at least 1 shot on target?",
+        "us": 0.58,
+        "crowd": 0.49,
+        "outcome": 1,
+        "rbp": 10.82,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-26"
 }

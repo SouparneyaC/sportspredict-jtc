@@ -1,0 +1,31 @@
+{
+  "match": "MEX-RSA",
+  "date": "2026-06-11",
+  "stage": null,
+  "post_match_results": {
+    "final_score": "Mexico 2 - 0 South Africa",
+    "total_rbp": -0.7,
+    "beat_crowd_count": "1/2",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Mexico win the match?",
+        "us": 0.81,
+        "crowd": 0.73,
+        "outcome": 1,
+        "rbp": 6.45,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will the match have 2 or fewer total goals?",
+        "us": 0.41,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": -7.16,
+        "note": null
+      }
+    ]
+  }
+}

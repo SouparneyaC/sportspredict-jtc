@@ -1,0 +1,173 @@
+{
+  "_description": "Final estimates — Switzerland vs Colombia R16 2026-07-07/08",
+  "match": "Switzerland vs Colombia",
+  "stage": "Round of 16",
+  "date": "2026-07-07",
+  "match_id": "68875a62-5a1e-4099-afe3-3d2a68316b5f",
+  "opening_time": "2026-07-07T20:00:00.000Z",
+
+  "ftr": {
+    "Switzerland": 0.267,
+    "Draw": 0.295,
+    "Colombia": 0.438,
+    "source": "ELO Poisson model (SUI=2005.51, COL=2090.75, neutral) — Smarkets FTR not captured pre-match",
+    "note": "Smarkets FTR should be checked at kick-off; these are model-only estimates. Expect market to be in range SUI 25-32%, Draw 26-30%, COL 40-48%."
+  },
+
+  "lambda_goals": {
+    "Switzerland": 0.951,
+    "Colombia": 1.295,
+    "source": "ELO Poisson GLM (b0=0.10408, b2=0.0018099, neutral)"
+  },
+
+  "elo_diff_sui_minus_col": -85.24,
+  "rule7_fires": false,
+  "rule8_fires": true,
+
+  "estimates": [
+    {
+      "q": 1,
+      "market_id": "d89c9015-a11d-4087-90fd-feafa06c2424",
+      "text": "Will Dan Ndoye (Switzerland, #11) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.22,
+      "tier": "PLAYER_LIQUID",
+      "model_base": 0.212,
+      "note": "Ndoye is SUI's top winger/shooter. 25% goal-share assumed. RULE8 slight pull up."
+    },
+    {
+      "q": 2,
+      "market_id": "97fa3254-9732-4843-8441-6c5792ebe837",
+      "text": "Will Switzerland keep a clean sheet in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.28,
+      "tier": "DIRECT",
+      "model_base": 0.274,
+      "note": "P(COL=0 goals) from Dixon-Coles. SUI has only conceded 2 goals in 4 WC2026 matches. COL blanked vs POR 0-0. Conservative upward shade."
+    },
+    {
+      "q": 3,
+      "market_id": "e35f4923-266f-4cc0-868b-ef43557138fe",
+      "text": "Will the match be tied at halftime?",
+      "estimate": 0.45,
+      "tier": "DIRECT",
+      "model_base": 0.461,
+      "note": "P(HT tied) from HT Poisson model (λ_SUI_HT=0.428, λ_COL_HT=0.583). COL slightly more likely to lead at HT. Shade model slightly down."
+    },
+    {
+      "q": 4,
+      "market_id": "b10a67ee-be1a-4ab5-8e49-f1b3b6051856",
+      "text": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.30,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.242,
+      "note": "λ_cards=2.8 (SUI ~1.0 + COL ~1.5 + knockout intensity boost). P(4+ at λ=2.8)≈0.308. RULE8 shade up from base 0.242."
+    },
+    {
+      "q": 5,
+      "market_id": "43cfef4f-bc3f-40e4-beaa-3e524a97289c",
+      "text": "Will Colombia have 5 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.47,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.468,
+      "note": "COL corners avg 4.5 across WC2026. λ=4.5 → P(5+)=0.468. COL is an attack-heavy team that earns corners. RULE8 slight shade up."
+    },
+    {
+      "q": 6,
+      "market_id": "6471581d-fede-4ab0-af63-9a8b32ceda12",
+      "text": "Will Switzerland have 4 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.63,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.658,
+      "note": "SUI SOT avg 6.0 in groups; adjusted to λ=4.5 vs stronger COL (RULE12: removed Canada outlier context). P(4+ at λ=4.5)=0.658. RULE8 shade DOWN from 0.658. SUI rarely drops below 4 SOT except vs dominant teams."
+    },
+    {
+      "q": 7,
+      "market_id": "a9b6b0d4-9720-4992-a432-351cc22c5a56",
+      "text": "Will a substitute score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.31,
+      "tier": "BASE_RATE_FORMULA",
+      "model_base": 0.31,
+      "note": "Tournament base rate ~31%. Both teams have effective sub options. Impact subs common in R16."
+    },
+    {
+      "q": 8,
+      "market_id": "2555a3aa-bdb2-4839-8a78-be233d778a53",
+      "text": "Will the first goal of the match be scored in the second half of regulation (90 minutes + stoppage time)?",
+      "estimate": 0.26,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.258,
+      "note": "P(0 goals in HT) × P(>0 goals in 2H) = 0.364 × 0.709 = 0.258. Compact first half typical in R16 matches. Model estimate retained."
+    },
+    {
+      "q": 9,
+      "market_id": "ceb3d6b2-40a3-46c8-99ed-c316e0d4f6ca",
+      "text": "Will either team win both halves in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.20,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.165,
+      "note": "Model 0.165 from joint HT/2H win probabilities. RULE8 shade up from 0.165. Rare but plausible if COL dominate or SUI score early then hold. Final: 0.20."
+    },
+    {
+      "q": 10,
+      "market_id": "9a4d6ade-82ca-4198-96e0-d0533a11a11b",
+      "text": "Will the match be decided by exactly one goal in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.42,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.404,
+      "note": "P(|margin|=1) = 0.404 from DC grid (all 1-goal margin scorelines summed). RULE8 shade up. Tight knockouts often 1-goal margins. Final: 0.42."
+    },
+    {
+      "q": 11,
+      "market_id": "80a98291-a2b3-4cb4-b8e8-c7e7001679e5",
+      "text": "Will at least one card be shown in each half of regulation (90 minutes + stoppage time)?",
+      "estimate": 0.50,
+      "tier": "TEAM_MODEL",
+      "model_base": 0.505,
+      "note": "P(card each half) ≈ 0.505 at λ_cards=2.5. Right at 0.50 threshold. Historical rate ~50-55% in WC knockouts. Final: 0.50."
+    },
+    {
+      "q": 12,
+      "market_id": "30a7c18d-a774-4dfa-91e9-8d3ecb5a96b0",
+      "text": "Will Luis Díaz (Colombia, #7) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.30,
+      "tier": "PLAYER_LIQUID",
+      "model_base": 0.295,
+      "note": "Díaz is COL's primary attacker. λ_Díaz=0.350, P=0.295. His goal-share ~27% of COL expected output. Liquid market. SUI defense is solid (2 conceded in 4 games) but Díaz is elite. Final: 0.30."
+    },
+    {
+      "q": 13,
+      "market_id": "18250163-6af7-44a9-a314-ec744a43a1d1",
+      "text": "Will Jhon Arias (Colombia, #11) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.38,
+      "tier": "PLAYER_ILLIQUID",
+      "model_base": 0.420,
+      "note": "PLAYER_ILLIQUID: apply RULE_ILLIQUID discount. Model 0.420 shaded down ~10%. Arias is active but not primary goal threat. Score-or-assist scope is wider which helps. Final: 0.38."
+    },
+    {
+      "q": 14,
+      "market_id": "d38c6501-0d82-475a-a6bb-134c0ff92d84",
+      "text": "Will Colombia advance to the quarterfinals?",
+      "estimate": 0.57,
+      "tier": "DIRECT",
+      "model_base": 0.571,
+      "note": "P(COL win regulation)=0.438 + P(draw)*0.45 ET/pens factor. COL is the moderate favorite. If draw, they have ~45% to win ET/pens. Total ≈ 0.571. Model and estimate aligned. Final: 0.57."
+    },
+    {
+      "q": 15,
+      "market_id": "3b0cd391-4336-4692-b760-ad6d654543ca",
+      "text": "Will Breel Embolo (Switzerland, #7) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "estimate": 0.38,
+      "tier": "PLAYER_LIQUID",
+      "model_base": 0.379,
+      "note": "Embolo is SUI's central striker. λ_SUI=0.951 adjusted for neutral vs COL. At 50% SOT share: λ_Embolo_SOT≈0.476, P(1+ SOT)=0.379. Consistent with SUI-ALG market for Embolo (was 0.325 for scorer vs 0.379 for 1+ SOT here). Final: 0.38."
+    }
+  ],
+
+  "key_strategic_notes": [
+    "Q6 (SUI 4+ SOT at 0.63) is our highest-confidence estimate — SUI is a high-SOT team even as underdogs, and 4 is a low threshold given their avg of 6.0.",
+    "Q14 (COL advance 0.57) — this is the 'meta' question; if we are right that COL wins, all COL-related props have positive correlation.",
+    "Q2 (SUI clean sheet 0.28) has value if the crowd underestimates SUI's defensive quality — crowd may anchor to COL's attacking volume (19+ shots/game) without considering COL's conversion rate (0 goals vs Portugal despite 24 shots).",
+    "Q3 (HT tied 0.45) — in compact knockout matches HT ties are common. If crowd prices this below 0.40, there may be upside.",
+    "Q4 (4+ cards 0.30) — knockout pressure increases card counts. Crowd may under-price this.",
+    "Player questions (Ndoye Q1, Díaz Q12, Embolo Q15) are all near 0.22-0.38 range where suppression vs crowd overconfidence matters most."
+  ]
+}

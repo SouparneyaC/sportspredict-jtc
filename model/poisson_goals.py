@@ -82,6 +82,30 @@ def build_design_matrix(rows, xi=XI_DEFAULT):
         elo_home = float(r["elo_home_pre"])
         elo_away = float(r["elo_away_pre"])
         hs, as_ = int(r["home_score"]), int(r["away_score"])
+
+        # FIX (2026-07-10): neutral-venue matches must get home_adv=0 for
+        # BOTH teams during training, exactly as predict.py / backtest_harness.py
+        # / backtest_diagnostics.py / fit_rho.py have always done.
+        #
+        # The original bug: this line used to unconditionally assign home_adv=1
+        # to whichever team was labeled "home_team" in the CSV, with no check
+        # of the "neutral" column.  ~26% of the 49k-match panel (≈13,100 rows)
+        # are neutral-venue matches where the "home_team" label is arbitrary
+        # (roughly alphabetical/seeding convention), so those rows were feeding
+        # the regression a spurious home-advantage signal.
+        #
+        # Consequence -- attenuation bias: the GLM saw "home_adv=1 but no
+        # extra goals" on 26% of home-team rows, so it fit a home_advantage
+        # coefficient (~0.23) well below the true effect (~0.35).  This
+        # compressed all predicted win probabilities toward 50/50 on
+        # non-neutral matches -- the same persistent calibration gap observed
+        # in backtest_harness.py's decile table.
+        #
+        # The fix is the single check below: zero out home_adv whenever
+        # neutral=="TRUE".  All other files in this pipeline were already
+        # doing this correctly; training was the only outlier.  Re-fitting
+        # after this fix should raise b1 (home_advantage) toward ~0.35 and
+        # reduce the non-neutral calibration gap.
         home_adv = 0.0 if r["neutral"] == "TRUE" else 1.0
 
         # home team's goal-scoring observation

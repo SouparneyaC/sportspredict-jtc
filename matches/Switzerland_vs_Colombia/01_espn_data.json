@@ -1,0 +1,194 @@
+{
+  "_description": "ESPN team/player stats for Switzerland (3 group + R32 vs ALG) and Colombia (3 group + R32 vs GHA) — R16 SUI vs COL 2026-07-07/08",
+  "match": "Switzerland vs Colombia",
+  "stage": "Round of 16",
+  "date": "2026-07-07",
+  "espn_event_id": null,
+
+  "switzerland_wc2026": {
+    "team_id_espn": 475,
+    "group_matches": [
+      {
+        "opponent": "Qatar",
+        "ha": "away",
+        "result": "D 1-1",
+        "sot": 7,
+        "shots": 26,
+        "corners": 10,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Dan Ndoye (6 shots)"
+      },
+      {
+        "opponent": "Bosnia-Herzegovina",
+        "ha": "home",
+        "result": "W 4-1",
+        "sot": 7,
+        "shots": 13,
+        "corners": 7,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 3,
+        "top_shooter": "Dan Ndoye (4 shots)"
+      },
+      {
+        "opponent": "Canada",
+        "ha": "home",
+        "result": "W 2-1",
+        "sot": 4,
+        "shots": 6,
+        "corners": 2,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Johan Manzambi (2 shots)"
+      }
+    ],
+    "group_averages": {
+      "sot": 6.0,
+      "shots": 15.0,
+      "corners": 6.33,
+      "yc": 1.0,
+      "offsides": 1.67
+    },
+    "r32_vs_algeria": {
+      "result": "W 2-0",
+      "note": "SUI dominated; scored 2 in regulation. Detailed ESPN match stats not captured — see matches/Switzerland_vs_Algeria/. SUI had high SOT (estimated 7+) consistent with group form.",
+      "sot_estimate": 7,
+      "yc_estimate": 1
+    },
+    "wc2026_totals": {
+      "goals_scored": 9,
+      "goals_conceded": 2,
+      "clean_sheets": 2,
+      "record": "W3 D1 L0"
+    },
+    "elo_progression": {
+      "pre_wc": 1951.79,
+      "post_qat_draw": 1927.62,
+      "post_bih_win": 1945.52,
+      "post_can_win": 1971.78,
+      "post_alg_win": 2005.51,
+      "note": "ELO updated from pre-WC base using K=60 and WFE formula; WC2026 results not yet in elo_current_ratings.csv"
+    },
+    "key_players": {
+      "dan_ndoye": {
+        "role": "Right winger / primary attacker",
+        "wc2026_shots": "top shooter vs QAT (6) and BIH (4); lower vs CAN (2)",
+        "goals_assists_estimate": "1-2 goals in WC2026 based on shot volume",
+        "note": "Ndoye is SUI's most dangerous winger; scores and assists regularly"
+      },
+      "breel_embolo": {
+        "role": "Centre forward / primary striker",
+        "note": "Primary target man. Shot-on-target rate high in open matches; reduced when SUI defending deep (vs CAN)."
+      },
+      "granit_xhaka": {
+        "role": "Midfielder / captain",
+        "note": "Deep-lying playmaker, rarely makes final third shots. Not a scorer question."
+      }
+    },
+    "notes": [
+      "SOT very consistent at 7 in first 2 games — drops sharply when defending deep (4 vs dominant CAN)",
+      "Vs COL (favored), expect SUI SOT in 4-6 range — adjusted lambda 4.5-5.0",
+      "SUI corners highest vs open opponents (10 vs QAT away). Vs COL who also attacks, corners likely moderate 4-6.",
+      "SUI conceded only 2 goals in 4 WC2026 matches — solid defensive structure",
+      "Dan Ndoye is the player most likely to score; Embolo is the most likely SOT accumulator"
+    ]
+  },
+
+  "colombia_wc2026": {
+    "team_id_espn": 208,
+    "group_matches": [
+      {
+        "opponent": "Uzbekistan",
+        "ha": "away",
+        "result": "W 3-1",
+        "possession_pct": 61.4,
+        "shots": 15,
+        "sot": 4,
+        "corners": 4,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 3
+      },
+      {
+        "opponent": "DR Congo",
+        "ha": "home",
+        "result": "W 1-0",
+        "possession_pct": 63.5,
+        "shots": 20,
+        "sot": 9,
+        "corners": 5,
+        "yc": 2,
+        "rc": 0,
+        "offsides": 7
+      },
+      {
+        "opponent": "Portugal",
+        "ha": "home",
+        "result": "D 0-0",
+        "possession_pct": 54.6,
+        "shots": 24,
+        "sot": 6,
+        "corners": 5,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 3
+      }
+    ],
+    "r32_vs_ghana": {
+      "result": "W 1-0",
+      "note": "Colombia 1-0 Ghana. COL controlled game; limited ESPN detailed stats captured. Corners estimated ~4.",
+      "sot_estimate": 5,
+      "yc_estimate": 1
+    },
+    "group_averages": {
+      "shots": 19.67,
+      "sot": 6.33,
+      "corners": 4.67,
+      "yc": 1.33,
+      "offsides": 4.33,
+      "possession_pct": 59.8
+    },
+    "wc2026_totals": {
+      "goals_scored": 5,
+      "goals_conceded": 1,
+      "clean_sheets": 3,
+      "record": "W3 D1 L0"
+    },
+    "elo_progression": {
+      "pre_wc": 2063.71,
+      "post_uzb_win": 2081.38,
+      "post_cdr_win": 2089.67,
+      "post_por_draw": 2086.81,
+      "post_gha_win": 2090.75
+    },
+    "key_players": {
+      "luis_diaz": {
+        "role": "Left winger / primary attacker (#7)",
+        "wc2026_g_a": "1 goal, 1 assist in group stage (excl. R32)",
+        "note": "COL's most dangerous attacker; Liverpool pedigree; high involvement in attacks"
+      },
+      "jhon_arias": {
+        "role": "Right winger / second attacker (#11)",
+        "note": "Active in transitions; goal/assist probability moderate. Less info on his WC2026 specific production."
+      },
+      "james_rodriguez": {
+        "role": "Attacking midfielder / captain (#10)",
+        "note": "0 goals, 0 assists in all 3 group games despite starting every game. Market tends to overestimate James due to name recognition."
+      },
+      "daniel_munoz": {
+        "role": "Right back with goals",
+        "note": "2 WC2026 goals including the 1-0 winner vs CDR. Attacks in from right flank."
+      }
+    },
+    "notes": [
+      "COL's shot volume is very high (15-24 per game); SOT avg 6.33 in groups",
+      "COL's corners avg 4.67; expect 4-5 vs SUI who defend compactly",
+      "James Rodriguez: 0 G/0A in 3 group games — apply RULE9 discount if market prices him generously",
+      "COL's offense converted poorly vs Portugal (24 shots, 0 goals) — finishing inconsistency",
+      "Offsides notably elevated; COL plays high offensive line (avg 4.33/game)"
+    ]
+  }
+}

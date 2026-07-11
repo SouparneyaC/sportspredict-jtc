@@ -2,41 +2,155 @@
   "match": "Panama vs England",
   "date": "2026-06-27",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"CRO_vs_ENG_GD1": 760437, "PAN_vs_GHA_GD1": 760434, "GHA_vs_ENG_GD2": 760458, "CRO_vs_PAN_GD2": 760460},
+  "espn_event_ids": {
+    "CRO_vs_ENG_GD1": 760437,
+    "PAN_vs_GHA_GD1": 760434,
+    "GHA_vs_ENG_GD2": 760458,
+    "CRO_vs_PAN_GD2": 760460
+  },
   "smarkets_event_id": 45086933,
   "group_context": {
-    "England": {"pts": 4, "record": "1-1-0 (W4-2 CRO, D0-0 GHA)", "status": "Top of group on GD, effectively safe"},
-    "Panama": {"pts": 0, "record": "0-0-2 (L0-1 GHA, L0-1 CRO)", "status": "ELIMINATED — no realistic path to advancement"}
+    "England": {
+      "pts": 4,
+      "record": "1-1-0 (W4-2 CRO, D0-0 GHA)",
+      "status": "Top of group on GD, effectively safe"
+    },
+    "Panama": {
+      "pts": 0,
+      "record": "0-0-2 (L0-1 GHA, L0-1 CRO)",
+      "status": "ELIMINATED — no realistic path to advancement"
+    }
   },
   "wc2026_espn_stats": {
     "ENG": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760437, "opponent": "Croatia", "result": "W 4-2", "fouls": 10, "SOT": 11, "offsides": 0, "YC": 0, "RC": 0, "corners": 8, "possession": 51.7},
-        {"event_id": 760458, "opponent": "Ghana", "result": "D 0-0", "fouls": 14, "SOT": 3, "offsides": 2, "YC": 1, "RC": 0, "corners": 9, "possession": 78.9}
+        {
+          "event_id": 760437,
+          "opponent": "Croatia",
+          "result": "W 4-2",
+          "fouls": 10,
+          "SOT": 11,
+          "offsides": 0,
+          "YC": 0,
+          "RC": 0,
+          "corners": 8,
+          "possession": 51.7
+        },
+        {
+          "event_id": 760458,
+          "opponent": "Ghana",
+          "result": "D 0-0",
+          "fouls": 14,
+          "SOT": 3,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 9,
+          "possession": 78.9
+        }
       ],
-      "averages": {"fouls": 12.0, "SOT": 7.0, "offsides": 1.0, "cards": 0.5, "corners": 8.5}
+      "averages": {
+        "fouls": 12.0,
+        "SOT": 7.0,
+        "offsides": 1.0,
+        "cards": 0.5,
+        "corners": 8.5
+      }
     },
     "PAN": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760434, "opponent": "Ghana", "result": "L 0-1", "fouls": 11, "SOT": 4, "offsides": 1, "YC": 2, "RC": 0, "corners": 2, "possession": 62.0},
-        {"event_id": 760460, "opponent": "Croatia", "result": "L 0-1", "fouls": 19, "SOT": 1, "offsides": 1, "YC": 1, "RC": 0, "corners": 7, "possession": 42.0},
-        {"_note": "Panama's foul count nearly doubled (11→19) as their possession fell (62%→42%) — clean defending-team-fouls-more signal, and they'll have far less of the ball against England than against either prior opponent."}
+        {
+          "event_id": 760434,
+          "opponent": "Ghana",
+          "result": "L 0-1",
+          "fouls": 11,
+          "SOT": 4,
+          "offsides": 1,
+          "YC": 2,
+          "RC": 0,
+          "corners": 2,
+          "possession": 62.0
+        },
+        {
+          "event_id": 760460,
+          "opponent": "Croatia",
+          "result": "L 0-1",
+          "fouls": 19,
+          "SOT": 1,
+          "offsides": 1,
+          "YC": 1,
+          "RC": 0,
+          "corners": 7,
+          "possession": 42.0
+        },
+        {
+          "_note": "Panama's foul count nearly doubled (11→19) as their possession fell (62%→42%) — clean defending-team-fouls-more signal, and they'll have far less of the ball against England than against either prior opponent."
+        }
       ],
-      "averages": {"fouls": 15.0, "SOT": 2.5, "offsides": 1.0, "cards": 1.5, "corners": 4.5}
+      "averages": {
+        "fouls": 15.0,
+        "SOT": 2.5,
+        "offsides": 1.0,
+        "cards": 1.5,
+        "corners": 4.5
+      }
     }
   },
   "smarkets_markets": {
-    "FTR": {"Panama": 0.0426, "England": 0.8511, "Draw": 0.1031, "liquid": true},
-    "HT_result": {"Panama": 0.0636, "England": 0.6827, "Draw": 0.2582, "liquid": true},
-    "OU2_5": {"Under": 0.3080, "Over": 0.6923, "liquid": true},
-    "Penalty": {"Yes": 0.3548, "liquid": "one-sided, no liquid No"},
-    "Any_sent_off": {"Yes": 0.1110, "No": 0.8935, "liquid": true},
-    "Team_score_first": {"Panama": 0.1482, "England": 0.8119, "No_goal": 0.0224, "liquid": true},
-    "ENG_2H_OU0_5_goals": {"Under": 0.2024, "Over": 0.8048, "liquid": true},
-    "PAN_OU0_5_goals": {"Under": 0.5764, "Over": 0.4279, "liquid": true},
-    "player_SOT": {"Harry_Kane": {"bid": 0.8065, "note": "bid-only, used as-is"}, "Jose_Fajardo": {"offer": 0.4464, "adjusted": 0.422}}
+    "FTR": {
+      "Panama": 0.0426,
+      "England": 0.8511,
+      "Draw": 0.1031,
+      "liquid": true
+    },
+    "HT_result": {
+      "Panama": 0.0636,
+      "England": 0.6827,
+      "Draw": 0.2582,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Under": 0.308,
+      "Over": 0.6923,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.3548,
+      "liquid": "one-sided, no liquid No"
+    },
+    "Any_sent_off": {
+      "Yes": 0.111,
+      "No": 0.8935,
+      "liquid": true
+    },
+    "Team_score_first": {
+      "Panama": 0.1482,
+      "England": 0.8119,
+      "No_goal": 0.0224,
+      "liquid": true
+    },
+    "ENG_2H_OU0_5_goals": {
+      "Under": 0.2024,
+      "Over": 0.8048,
+      "liquid": true
+    },
+    "PAN_OU0_5_goals": {
+      "Under": 0.5764,
+      "Over": 0.4279,
+      "liquid": true
+    },
+    "player_SOT": {
+      "Harry_Kane": {
+        "bid": 0.8065,
+        "note": "bid-only, used as-is"
+      },
+      "Jose_Fajardo": {
+        "offer": 0.4464,
+        "adjusted": 0.422
+      }
+    }
   },
   "context_flags": [
     "EXTREME_MISMATCH: England 85.11% favorite — comparable in scale to NED-TUN/POR-UZB blowout regime. Panama is mathematically eliminated.",
@@ -113,7 +227,7 @@
       "text": "Will there be 5 or more total corner kicks in the second half?",
       "pick_tier": "MEDIUM CONFIDENCE",
       "reasoning": "Combined full-match corner average (ENG 8.5 + PAN 4.5 = 13.0), half-split λ≈6.5 → raw Poisson P(≥5)=0.78. Trimmed down for uncertainty in the even-split assumption — England may front-load corners in 1H if they race to an early lead.",
-      "final_estimate": 0.70,
+      "final_estimate": 0.7,
       "direction": "YES lean",
       "confidence": "medium"
     },
@@ -144,7 +258,7 @@
     "Q5_PAN_scores": 0.43,
     "Q6_HT_tied": 0.26,
     "Q7_3plus_total_goals": 0.69,
-    "Q8_5plus_2H_corners": 0.70,
+    "Q8_5plus_2H_corners": 0.7,
     "Q9_Fajardo_SOT": 0.28,
     "Q10_Kane_SOT": 0.78
   },
@@ -153,6 +267,103 @@
     "Q1: Panama more fouls = 0.72 (HIGH CONFIDENCE — clean possession-foul relationship, reinforced by ENG-CRO and CRO-PAN history)",
     "Q10: Kane SOT = 0.78 (HIGH CONFIDENCE — liquid market, dominant favorite; flagged for submission-accuracy double-check)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Panama 0 - 2 England",
+    "total_rbp": -10.69,
+    "beat_crowd_count": "5/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Panama commit more fouls than England?",
+        "us": 0.72,
+        "crowd": 0.62,
+        "outcome": 1,
+        "rbp": 8.54,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will there be 4 or more total shots on target in the second half?",
+        "us": 0.65,
+        "crowd": 0.66,
+        "outcome": 1,
+        "rbp": 1.63,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Panama score the first goal of the game and England score in the second half?",
+        "us": 0.13,
+        "crowd": 0.19,
+        "outcome": 0,
+        "rbp": 4.32,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will a penalty kick be awarded OR a red card be shown?",
+        "us": 0.43,
+        "crowd": 0.36,
+        "outcome": 0,
+        "rbp": -2.99,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Panama score at least 1 goal?",
+        "us": 0.43,
+        "crowd": 0.39,
+        "outcome": 0,
+        "rbp": -0.33,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "At halftime, will the match be tied?",
+        "us": 0.26,
+        "crowd": 0.32,
+        "outcome": 1,
+        "rbp": -6.96,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will the match have 3 or more total goals?",
+        "us": 0.69,
+        "crowd": 0.59,
+        "outcome": 0,
+        "rbp": -10.13,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will there be 5 or more total corner kicks in the second half?",
+        "us": 0.7,
+        "crowd": 0.56,
+        "outcome": 0,
+        "rbp": -15.61,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will José Fajardo have at least 1 shot on target?",
+        "us": 0.28,
+        "crowd": 0.31,
+        "outcome": 0,
+        "rbp": 4.65,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Harry Kane have at least 1 shot on target?",
+        "us": 0.78,
+        "crowd": 0.72,
+        "outcome": 1,
+        "rbp": 6.19,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-27"
 }

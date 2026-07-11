@@ -1,0 +1,1970 @@
+{
+  "FTR": {
+    "Switzerland": {
+      "bid": 0.4854,
+      "offer": 0.4902,
+      "mid": 0.4878,
+      "liquid": true,
+      "cid": "412603396"
+    },
+    "Draw": {
+      "bid": 0.2985,
+      "offer": 0.303,
+      "mid": 0.3007,
+      "liquid": true,
+      "cid": "412603398"
+    },
+    "Algeria": {
+      "bid": 0.2083,
+      "offer": 0.2128,
+      "mid": 0.2106,
+      "liquid": true,
+      "cid": "412603397"
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.5128,
+      "offer": 0.5155,
+      "mid": 0.5141,
+      "liquid": true,
+      "cid": "412603418"
+    },
+    "No": {
+      "bid": 0.4808,
+      "offer": 0.5128,
+      "mid": 0.4968,
+      "liquid": true,
+      "cid": "412603419"
+    }
+  },
+  "OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.0909,
+      "offer": 0.0952,
+      "mid": 0.093,
+      "liquid": true,
+      "cid": "412603556"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.8929,
+      "offer": 0.9174,
+      "mid": 0.9052,
+      "liquid": true,
+      "cid": "412603557"
+    }
+  },
+  "OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.2817,
+      "offer": 0.2941,
+      "mid": 0.2879,
+      "liquid": true,
+      "cid": "412603558"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.6944,
+      "offer": 0.7194,
+      "mid": 0.7069,
+      "liquid": true,
+      "cid": "412603559"
+    }
+  },
+  "OU2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.5525,
+      "offer": 0.5747,
+      "mid": 0.5636,
+      "liquid": true,
+      "cid": "412603560"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.4274,
+      "offer": 0.4425,
+      "mid": 0.435,
+      "liquid": true,
+      "cid": "412603561"
+    }
+  },
+  "OU3_5": {
+    "Under 3.5 goals": {
+      "bid": 0.7519,
+      "offer": 0.7874,
+      "mid": 0.7696,
+      "liquid": true,
+      "cid": "412603562"
+    },
+    "Over 3.5 goals": {
+      "bid": 0.2222,
+      "offer": 0.2381,
+      "mid": 0.2302,
+      "liquid": true,
+      "cid": "412603563"
+    }
+  },
+  "OU4_5": {
+    "Under 4.5 goals": {
+      "bid": 0.8929,
+      "offer": 0.9091,
+      "mid": 0.901,
+      "liquid": true,
+      "cid": "412603564"
+    },
+    "Over 4.5 goals": {
+      "bid": 0.0952,
+      "offer": 0.102,
+      "mid": 0.0986,
+      "liquid": true,
+      "cid": "412603565"
+    }
+  },
+  "HT_result": {
+    "Switzerland": {
+      "bid": 0.3472,
+      "offer": 0.3597,
+      "mid": 0.3535,
+      "liquid": true,
+      "cid": "412603437"
+    },
+    "Draw": {
+      "bid": 0.4762,
+      "offer": 0.4808,
+      "mid": 0.4785,
+      "liquid": true,
+      "cid": "412603439"
+    },
+    "Algeria": {
+      "bid": 0.1724,
+      "offer": 0.1786,
+      "mid": 0.1755,
+      "liquid": true,
+      "cid": "412603438"
+    }
+  },
+  "SUI_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.1923,
+      "offer": 0.2222,
+      "mid": 0.2072,
+      "liquid": true,
+      "cid": "412603582"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7812,
+      "offer": 0.8,
+      "mid": 0.7906,
+      "liquid": true,
+      "cid": "412603583"
+    }
+  },
+  "SUI_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.5495,
+      "offer": 0.565,
+      "mid": 0.5573,
+      "liquid": true,
+      "cid": "412603584"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.431,
+      "offer": 0.4505,
+      "mid": 0.4407,
+      "liquid": true,
+      "cid": "412603585"
+    }
+  },
+  "SUI_OU2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.8065,
+      "offer": 0.8333,
+      "mid": 0.8199,
+      "liquid": true,
+      "cid": "412603586"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.1667,
+      "offer": 0.1852,
+      "mid": 0.1759,
+      "liquid": true,
+      "cid": "412603587"
+    }
+  },
+  "ALG_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.3571,
+      "offer": 0.3937,
+      "mid": 0.3754,
+      "liquid": true,
+      "cid": "412603602"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6061,
+      "offer": 0.6452,
+      "mid": 0.6257,
+      "liquid": true,
+      "cid": "412603603"
+    }
+  },
+  "ALG_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.7519,
+      "offer": 0.7752,
+      "mid": 0.7635,
+      "liquid": true,
+      "cid": "412603604"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2222,
+      "offer": 0.2381,
+      "mid": 0.2302,
+      "liquid": true,
+      "cid": "412603605"
+    }
+  },
+  "ALG_OU2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.9346,
+      "offer": 0.9434,
+      "mid": 0.939,
+      "liquid": true,
+      "cid": "412603606"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.0571,
+      "offer": 0.0667,
+      "mid": 0.0619,
+      "liquid": true,
+      "cid": "412603607"
+    }
+  },
+  "To_qualify": {
+    "Switzerland": {
+      "bid": 0.6667,
+      "offer": 0.6803,
+      "mid": 0.6735,
+      "liquid": true,
+      "cid": "412603802"
+    },
+    "Algeria": {
+      "bid": 0.3279,
+      "offer": 0.3378,
+      "mid": 0.3328,
+      "liquid": true,
+      "cid": "412603803"
+    }
+  },
+  "Will_ET": {
+    "Yes": {
+      "bid": 0.2564,
+      "offer": 0.3401,
+      "mid": 0.2983,
+      "liquid": true,
+      "cid": "412603804"
+    },
+    "No": {
+      "bid": 0.6579,
+      "offer": 0.7519,
+      "mid": 0.7049,
+      "liquid": true,
+      "cid": "412603805"
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": 0.2273,
+      "offer": 0.2532,
+      "mid": 0.2402,
+      "liquid": true,
+      "cid": "412603506"
+    },
+    "No": {
+      "bid": 0.7634,
+      "offer": 0.7812,
+      "mid": 0.7723,
+      "liquid": true,
+      "cid": "412603507"
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.1282,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412603854"
+    },
+    "No": {
+      "bid": 0.8547,
+      "offer": 0.8929,
+      "mid": 0.8738,
+      "liquid": true,
+      "cid": "412603855"
+    }
+  },
+  "Cards_OU3_5": {
+    "Under 3.5 cards": {
+      "bid": 0.6494,
+      "offer": 0.7143,
+      "mid": 0.6819,
+      "liquid": true,
+      "cid": "412603886"
+    },
+    "Over 3.5 cards": {
+      "bid": 0.3175,
+      "offer": 0.3448,
+      "mid": 0.3311,
+      "liquid": true,
+      "cid": "412603887"
+    }
+  },
+  "Cards_OU4_5": {
+    "Under 4.5 cards": {
+      "bid": 0.7692,
+      "offer": 0.8772,
+      "mid": 0.8232,
+      "liquid": true,
+      "cid": "412603890"
+    },
+    "Over 4.5 cards": {
+      "bid": 0.1282,
+      "offer": 0.2273,
+      "mid": 0.1778,
+      "liquid": true,
+      "cid": "412603891"
+    }
+  },
+  "Cards_OU5_5": {
+    "Under 5.5 cards": {
+      "bid": 0.885,
+      "offer": 0.9346,
+      "mid": 0.9098,
+      "liquid": true,
+      "cid": "412603894"
+    },
+    "Over 5.5 cards": {
+      "bid": 0.0667,
+      "offer": 0.1111,
+      "mid": 0.0889,
+      "liquid": true,
+      "cid": "412603895"
+    }
+  },
+  "Cards_OU2_5": {
+    "Under 2.5 cards": {
+      "bid": 0.4587,
+      "offer": 0.4854,
+      "mid": 0.472,
+      "liquid": true,
+      "cid": "412603882"
+    },
+    "Over 2.5 cards": {
+      "bid": 0.5263,
+      "offer": 0.5682,
+      "mid": 0.5473,
+      "liquid": true,
+      "cid": "412603883"
+    }
+  },
+  "Most_corners": {
+    "Switzerland": {
+      "bid": 0.5025,
+      "offer": 0.5556,
+      "mid": 0.5291,
+      "liquid": true,
+      "cid": "412603500"
+    },
+    "Draw": {
+      "bid": 0.0833,
+      "offer": 0.122,
+      "mid": 0.1026,
+      "liquid": true,
+      "cid": "412603502"
+    },
+    "Algeria": {
+      "bid": 0.3175,
+      "offer": 0.3279,
+      "mid": 0.3227,
+      "liquid": true,
+      "cid": "412603501"
+    }
+  },
+  "Corners_ALG_handicap": {
+    "Switzerland -0.5 corners": {
+      "bid": 0.5,
+      "offer": 0.5848,
+      "mid": 0.5424,
+      "liquid": true,
+      "cid": "412603792"
+    },
+    "Algeria +0.5 corners": {
+      "bid": 0.4202,
+      "offer": 0.5025,
+      "mid": 0.4613,
+      "liquid": true,
+      "cid": "412603793"
+    }
+  },
+  "Corners_OU7_5": {
+    "Under 7.5 corners": {
+      "bid": 0.2703,
+      "offer": 0.3279,
+      "mid": 0.2991,
+      "liquid": true,
+      "cid": "412603906"
+    },
+    "Over 7.5 corners": {
+      "bid": 0.6711,
+      "offer": 0.7299,
+      "mid": 0.7005,
+      "liquid": true,
+      "cid": "412603907"
+    }
+  },
+  "Corners_OU8_5": {
+    "Under 8.5 corners": {
+      "bid": 0.4032,
+      "offer": 0.4348,
+      "mid": 0.419,
+      "liquid": true,
+      "cid": "412603908"
+    },
+    "Over 8.5 corners": {
+      "bid": 0.565,
+      "offer": 0.6098,
+      "mid": 0.5874,
+      "liquid": true,
+      "cid": "412603909"
+    }
+  },
+  "Corners_OU9_5": {
+    "Under 9.5 corners": {
+      "bid": 0.5181,
+      "offer": 0.5714,
+      "mid": 0.5448,
+      "liquid": true,
+      "cid": "412603910"
+    },
+    "Over 9.5 corners": {
+      "bid": 0.3968,
+      "offer": 0.4464,
+      "mid": 0.4216,
+      "liquid": true,
+      "cid": "412603911"
+    }
+  },
+  "First_half_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.3759,
+      "offer": 0.3846,
+      "mid": 0.3802,
+      "liquid": true,
+      "cid": "412603570"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6211,
+      "offer": 0.6329,
+      "mid": 0.627,
+      "liquid": true,
+      "cid": "412603571"
+    }
+  },
+  "First_half_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.7299,
+      "offer": 0.7353,
+      "mid": 0.7326,
+      "liquid": true,
+      "cid": "412603572"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2667,
+      "offer": 0.274,
+      "mid": 0.2703,
+      "liquid": true,
+      "cid": "412603573"
+    }
+  },
+  "Team_score_first": {
+    "Switzerland": {
+      "bid": 0.5236,
+      "offer": 0.5917,
+      "mid": 0.5576,
+      "liquid": true,
+      "cid": "412603955"
+    },
+    "No goal": {
+      "bid": 0.0714,
+      "offer": 0.119,
+      "mid": 0.0952,
+      "liquid": true,
+      "cid": "412603957"
+    },
+    "Algeria": {
+      "bid": 0.3226,
+      "offer": 0.3817,
+      "mid": 0.3521,
+      "liquid": true,
+      "cid": "412603956"
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.1613,
+      "offer": 0.1961,
+      "mid": 0.1787,
+      "liquid": true,
+      "cid": "412604015"
+    },
+    "11-20": {
+      "bid": 0.1515,
+      "offer": 0.1818,
+      "mid": 0.1666,
+      "liquid": true,
+      "cid": "412604016"
+    },
+    "21-30": {
+      "bid": 0.122,
+      "offer": 0.1515,
+      "mid": 0.1367,
+      "liquid": true,
+      "cid": "412604017"
+    },
+    "31-40": {
+      "bid": 0.0952,
+      "offer": 0.122,
+      "mid": 0.1086,
+      "liquid": true,
+      "cid": "412604018"
+    },
+    "41-50": {
+      "bid": 0.0909,
+      "offer": 0.1163,
+      "mid": 0.1036,
+      "liquid": true,
+      "cid": "412604019"
+    },
+    "51-60": {
+      "bid": 0.0606,
+      "offer": 0.0833,
+      "mid": 0.072,
+      "liquid": true,
+      "cid": "412604020"
+    },
+    "61-70": {
+      "bid": 0.0435,
+      "offer": 0.0625,
+      "mid": 0.053,
+      "liquid": true,
+      "cid": "412604021"
+    },
+    "71-80": {
+      "bid": 0.0312,
+      "offer": 0.0476,
+      "mid": 0.0394,
+      "liquid": true,
+      "cid": "412604022"
+    },
+    "81-90": {
+      "bid": 0.0357,
+      "offer": 0.0526,
+      "mid": 0.0442,
+      "liquid": true,
+      "cid": "412604023"
+    },
+    "None": {
+      "bid": 0.0909,
+      "offer": 0.1163,
+      "mid": 0.1036,
+      "liquid": true,
+      "cid": "412604024"
+    }
+  },
+  "SUI_shots_OU12_5": {
+    "Under 12.5 shots": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604466"
+    },
+    "Over 12.5 shots": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604467"
+    }
+  },
+  "Anytime_goalscorer": {
+    "Ramy Bensebaini": {
+      "bid": 0.0182,
+      "offer": 0.0625,
+      "mid": 0.0403,
+      "liquid": true,
+      "cid": "412604973"
+    },
+    "A\u00efssa Mandi": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604970"
+    },
+    "Breel Donald Embolo": {
+      "bid": 0.3175,
+      "offer": 0.3333,
+      "mid": 0.3254,
+      "liquid": true,
+      "cid": "412604942"
+    },
+    "Dan Ndoye": {
+      "bid": 0.1316,
+      "offer": 0.1754,
+      "mid": 0.1535,
+      "liquid": true,
+      "cid": "412604931"
+    },
+    "Denis Zakaria": {
+      "bid": 0.0357,
+      "offer": 0.0606,
+      "mid": 0.0481,
+      "liquid": true,
+      "cid": "412604945"
+    },
+    "Fares Chaibi": {
+      "bid": 0.0769,
+      "offer": 0.102,
+      "mid": 0.0895,
+      "liquid": true,
+      "cid": "412604960"
+    },
+    "Granit Xhaka": {
+      "bid": 0.08,
+      "offer": 0.1316,
+      "mid": 0.1058,
+      "liquid": true,
+      "cid": "412604939"
+    },
+    "Houssem Aouar": {
+      "bid": 0.0769,
+      "offer": 0.1351,
+      "mid": 0.106,
+      "liquid": true,
+      "cid": "412604974"
+    },
+    "Ibrahim Maza": {
+      "bid": 0.1282,
+      "offer": 0.1562,
+      "mid": 0.1422,
+      "liquid": true,
+      "cid": "412604962"
+    },
+    "Johan Manzambi": {
+      "bid": 0.1818,
+      "offer": 0.2128,
+      "mid": 0.1973,
+      "liquid": true,
+      "cid": "412604936"
+    },
+    "Manuel Akanji": {
+      "bid": 0.0345,
+      "offer": 0.0588,
+      "mid": 0.0466,
+      "liquid": true,
+      "cid": "412604946"
+    },
+    "Nabil Bentaleb": {
+      "bid": 0.0238,
+      "offer": 0.0606,
+      "mid": 0.0422,
+      "liquid": true,
+      "cid": "412604971"
+    },
+    "Nico Elvedi": {
+      "bid": 0.0312,
+      "offer": 0.0556,
+      "mid": 0.0434,
+      "liquid": true,
+      "cid": "412604943"
+    },
+    "Rafik Belghali": {
+      "bid": 0.0182,
+      "offer": 0.0571,
+      "mid": 0.0377,
+      "liquid": true,
+      "cid": "412604963"
+    },
+    "Ramiz Zerrouki": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604956"
+    },
+    "Rayan A\u00eft-Nouri": {
+      "bid": 0.0238,
+      "offer": 0.0571,
+      "mid": 0.0404,
+      "liquid": true,
+      "cid": "412604953"
+    },
+    "Remo Freuler": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604940"
+    },
+    "Ricardo Rodriguez": {
+      "bid": 0.0238,
+      "offer": 0.0645,
+      "mid": 0.0442,
+      "liquid": true,
+      "cid": "412604938"
+    },
+    "Riyad Mahrez": {
+      "bid": 0.1786,
+      "offer": 0.1961,
+      "mid": 0.1874,
+      "liquid": true,
+      "cid": "412604972"
+    },
+    "Ruben Vargas": {
+      "bid": 0.1818,
+      "offer": 0.2041,
+      "mid": 0.193,
+      "liquid": true,
+      "cid": "412604952"
+    },
+    "Zineddine Belaid": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604964"
+    },
+    "Jaouen Hadjam": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604957"
+    },
+    "Achref Abada": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604969"
+    },
+    "Luca Jaquez": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604937"
+    },
+    "Samir Sophian Chergui": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604954"
+    },
+    "Michel Aebischer": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604951"
+    },
+    "Adil Boulbina": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604968"
+    },
+    "Miro Muheim": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604944"
+    },
+    "Amine Gouiri": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604975"
+    },
+    "Anis Hadj Moussa": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604966"
+    },
+    "Ardon Jashari": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604932"
+    },
+    "Aurele Amenda": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604934"
+    },
+    "Mohamed Amine Tougai": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604958"
+    },
+    "Cedric Itten": {
+      "bid": null,
+      "offer": 0.3125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604949"
+    },
+    "Christian Fassnacht": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604950"
+    },
+    "Silvan Widmer": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604941"
+    },
+    "Nadhir Benbouali": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604961"
+    },
+    "Djibril Sow": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604948"
+    },
+    "Eray Comert": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604947"
+    },
+    "Fabian Rieder": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604933"
+    },
+    "Yassine Titraoui": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604967"
+    },
+    "Far\u00e8s Ghedjemis": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604965"
+    },
+    "Noah Okafor": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604930"
+    },
+    "Hicham Boudaoui": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604955"
+    },
+    "Zeki Amdouni": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": null,
+      "liquid": false,
+      "cid": "412604935"
+    }
+  },
+  "Player_SOT_OU0_5": {
+    "Manuel Akanji": {
+      "bid": 0.087,
+      "offer": 0.1515,
+      "mid": 0.1192,
+      "liquid": true,
+      "cid": "412621496"
+    },
+    "Dan Ndoye": {
+      "bid": 0.5,
+      "offer": 0.5848,
+      "mid": 0.5424,
+      "liquid": true,
+      "cid": "412621481"
+    },
+    "Fares Chaibi": {
+      "bid": 0.3623,
+      "offer": 0.3937,
+      "mid": 0.378,
+      "liquid": true,
+      "cid": "412621510"
+    },
+    "Denis Zakaria": {
+      "bid": 0.1064,
+      "offer": 0.2439,
+      "mid": 0.1752,
+      "liquid": true,
+      "cid": "412621495"
+    },
+    "Nabil Bentaleb": {
+      "bid": 0.125,
+      "offer": 0.2,
+      "mid": 0.1625,
+      "liquid": true,
+      "cid": "412621521"
+    },
+    "Nico Elvedi": {
+      "bid": 0.0909,
+      "offer": 0.1429,
+      "mid": 0.1169,
+      "liquid": true,
+      "cid": "412621493"
+    },
+    "Granit Xhaka": {
+      "bid": 0.2857,
+      "offer": 0.3876,
+      "mid": 0.3367,
+      "liquid": true,
+      "cid": "412621489"
+    },
+    "Rafik Belghali": {
+      "bid": 0.1,
+      "offer": 0.1515,
+      "mid": 0.1258,
+      "liquid": true,
+      "cid": "412621513"
+    },
+    "Ramiz Zerrouki": {
+      "bid": null,
+      "offer": 0.1087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621506"
+    },
+    "Ramy Bensebaini": {
+      "bid": 0.0714,
+      "offer": 0.1852,
+      "mid": 0.1283,
+      "liquid": true,
+      "cid": "412621523"
+    },
+    "Rayan A\u00eft-Nouri": {
+      "bid": 0.0833,
+      "offer": 0.1515,
+      "mid": 0.1174,
+      "liquid": true,
+      "cid": "412621503"
+    },
+    "Remo Freuler": {
+      "bid": 0.1282,
+      "offer": 0.2174,
+      "mid": 0.1728,
+      "liquid": true,
+      "cid": "412621490"
+    },
+    "Ricardo Rodriguez": {
+      "bid": 0.0714,
+      "offer": 0.1316,
+      "mid": 0.1015,
+      "liquid": true,
+      "cid": "412621488"
+    },
+    "Riyad Mahrez": {
+      "bid": 0.4673,
+      "offer": 0.4808,
+      "mid": 0.474,
+      "liquid": true,
+      "cid": "412621522"
+    },
+    "Ruben Vargas": {
+      "bid": 0.4902,
+      "offer": 0.5,
+      "mid": 0.4951,
+      "liquid": true,
+      "cid": "412621502"
+    },
+    "A\u00efssa Mandi": {
+      "bid": 0.0667,
+      "offer": 0.1429,
+      "mid": 0.1048,
+      "liquid": true,
+      "cid": "412621520"
+    },
+    "Houssem Aouar": {
+      "bid": 0.1961,
+      "offer": 0.3125,
+      "mid": 0.2543,
+      "liquid": true,
+      "cid": "412621524"
+    },
+    "Ibrahim Maza": {
+      "bid": 0.3846,
+      "offer": 0.431,
+      "mid": 0.4078,
+      "liquid": true,
+      "cid": "412621512"
+    },
+    "Breel Donald Embolo": {
+      "bid": 0.6135,
+      "offer": 0.7463,
+      "mid": 0.6799,
+      "liquid": true,
+      "cid": "412621492"
+    },
+    "Johan Manzambi": {
+      "bid": 0.5155,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621486"
+    },
+    "Yassine Titraoui": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621517"
+    },
+    "Zeki Amdouni": {
+      "bid": null,
+      "offer": 0.6289,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621485"
+    },
+    "Zineddine Belaid": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621514"
+    },
+    "Mohamed Amine Tougai": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621508"
+    },
+    "Adil Boulbina": {
+      "bid": null,
+      "offer": 0.5495,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621518"
+    },
+    "Amine Gouiri": {
+      "bid": null,
+      "offer": 0.6173,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621525"
+    },
+    "Anis Hadj Moussa": {
+      "bid": null,
+      "offer": 0.5208,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621516"
+    },
+    "Ardon Jashari": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621482"
+    },
+    "Aurele Amenda": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621484"
+    },
+    "Cedric Itten": {
+      "bid": null,
+      "offer": 0.7519,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621499"
+    },
+    "Christian Fassnacht": {
+      "bid": null,
+      "offer": 0.6173,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621500"
+    },
+    "Djibril Sow": {
+      "bid": null,
+      "offer": 0.3876,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621498"
+    },
+    "Eray Comert": {
+      "bid": null,
+      "offer": 0.3472,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621497"
+    },
+    "Fabian Rieder": {
+      "bid": null,
+      "offer": 0.5495,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621483"
+    },
+    "Far\u00e8s Ghedjemis": {
+      "bid": null,
+      "offer": 0.5319,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621515"
+    },
+    "Hicham Boudaoui": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621505"
+    },
+    "Jaouen Hadjam": {
+      "bid": null,
+      "offer": 0.1695,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621507"
+    },
+    "Michel Aebischer": {
+      "bid": null,
+      "offer": 0.3472,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621501"
+    },
+    "Miro Muheim": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621494"
+    },
+    "Achref Abada": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621519"
+    },
+    "Noah Okafor": {
+      "bid": null,
+      "offer": 0.6024,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621480"
+    },
+    "Samir Sophian Chergui": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621504"
+    },
+    "Silvan Widmer": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621491"
+    }
+  },
+  "Player_SOT_OU1_5": {
+    "Manuel Akanji": {
+      "bid": 0.0034,
+      "offer": 0.0333,
+      "mid": 0.0184,
+      "liquid": true,
+      "cid": "412621590"
+    },
+    "Breel Donald Embolo": {
+      "bid": 0.274,
+      "offer": 0.365,
+      "mid": 0.3195,
+      "liquid": true,
+      "cid": "412621586"
+    },
+    "Dan Ndoye": {
+      "bid": 0.1613,
+      "offer": 0.2222,
+      "mid": 0.1918,
+      "liquid": true,
+      "cid": "412621575"
+    },
+    "Nabil Bentaleb": {
+      "bid": 0.0067,
+      "offer": 0.0333,
+      "mid": 0.02,
+      "liquid": true,
+      "cid": "412621615"
+    },
+    "Nico Elvedi": {
+      "bid": 0.0033,
+      "offer": 0.0133,
+      "mid": 0.0083,
+      "liquid": true,
+      "cid": "412621587"
+    },
+    "Fares Chaibi": {
+      "bid": 0.04,
+      "offer": 0.0909,
+      "mid": 0.0654,
+      "liquid": true,
+      "cid": "412621604"
+    },
+    "Rafik Belghali": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621607"
+    },
+    "Ramiz Zerrouki": {
+      "bid": null,
+      "offer": 0.0067,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621600"
+    },
+    "Ramy Bensebaini": {
+      "bid": 0.0034,
+      "offer": 0.0167,
+      "mid": 0.01,
+      "liquid": true,
+      "cid": "412621617"
+    },
+    "Rayan A\u00eft-Nouri": {
+      "bid": 0.0034,
+      "offer": 0.0154,
+      "mid": 0.0094,
+      "liquid": true,
+      "cid": "412621597"
+    },
+    "Remo Freuler": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621584"
+    },
+    "Ricardo Rodriguez": {
+      "bid": 0.0034,
+      "offer": 0.0385,
+      "mid": 0.0209,
+      "liquid": true,
+      "cid": "412621582"
+    },
+    "Riyad Mahrez": {
+      "bid": 0.1471,
+      "offer": 0.2083,
+      "mid": 0.1777,
+      "liquid": true,
+      "cid": "412621616"
+    },
+    "Ruben Vargas": {
+      "bid": 0.1136,
+      "offer": 0.1429,
+      "mid": 0.1283,
+      "liquid": true,
+      "cid": "412621596"
+    },
+    "Denis Zakaria": {
+      "bid": 0.0067,
+      "offer": 0.0217,
+      "mid": 0.0142,
+      "liquid": true,
+      "cid": "412621589"
+    },
+    "Granit Xhaka": {
+      "bid": 0.0294,
+      "offer": 0.1,
+      "mid": 0.0647,
+      "liquid": true,
+      "cid": "412621583"
+    },
+    "A\u00efssa Mandi": {
+      "bid": null,
+      "offer": 0.0278,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621614"
+    },
+    "Houssem Aouar": {
+      "bid": 0.0227,
+      "offer": 0.0625,
+      "mid": 0.0426,
+      "liquid": true,
+      "cid": "412621618"
+    },
+    "Ibrahim Maza": {
+      "bid": 0.0476,
+      "offer": 0.1111,
+      "mid": 0.0794,
+      "liquid": true,
+      "cid": "412621606"
+    },
+    "Johan Manzambi": {
+      "bid": 0.1667,
+      "offer": 0.2083,
+      "mid": 0.1875,
+      "liquid": true,
+      "cid": "412621580"
+    },
+    "Zeki Amdouni": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621579"
+    },
+    "Amine Gouiri": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621619"
+    },
+    "Anis Hadj Moussa": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621610"
+    },
+    "Ardon Jashari": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621576"
+    },
+    "Cedric Itten": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621593"
+    },
+    "Christian Fassnacht": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621594"
+    },
+    "Djibril Sow": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621592"
+    },
+    "Eray Comert": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621591"
+    },
+    "Fabian Rieder": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621577"
+    },
+    "Far\u00e8s Ghedjemis": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621609"
+    },
+    "Hicham Boudaoui": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621599"
+    },
+    "Michel Aebischer": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621595"
+    },
+    "Miro Muheim": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621588"
+    },
+    "Noah Okafor": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621574"
+    },
+    "Silvan Widmer": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621585"
+    },
+    "Yassine Titraoui": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621611"
+    },
+    "Adil Boulbina": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": null,
+      "liquid": false,
+      "cid": "412621612"
+    }
+  },
+  "Score_or_assist": {
+    "A\u00efssa Mandi": {
+      "bid": 0.0045,
+      "offer": 0.0952,
+      "mid": 0.0499,
+      "liquid": true,
+      "cid": "412622507"
+    },
+    "Breel Donald Embolo": {
+      "bid": 0.3937,
+      "offer": 0.4854,
+      "mid": 0.4395,
+      "liquid": true,
+      "cid": "412622479"
+    },
+    "Dan Ndoye": {
+      "bid": 0.2083,
+      "offer": 0.4587,
+      "mid": 0.3335,
+      "liquid": true,
+      "cid": "412622468"
+    },
+    "Denis Zakaria": {
+      "bid": null,
+      "offer": 0.4902,
+      "mid": null,
+      "liquid": false,
+      "cid": "412622482"
+    },
+    "Fares Chaibi": {
+      "bid": 0.0217,
+      "offer": 0.2778,
+      "mid": 0.1497,
+      "liquid": true,
+      "cid": "412622497"
+    },
+    "Granit Xhaka": {
+      "bid": 0.122,
+      "offer": 0.2857,
+      "mid": 0.2039,
+      "liquid": true,
+      "cid": "412622476"
+    },
+    "Houssem Aouar": {
+      "bid": 0.0238,
+      "offer": 0.2899,
+      "mid": 0.1568,
+      "liquid": true,
+      "cid": "412622511"
+    },
+    "Ibrahim Maza": {
+      "bid": 0.1136,
+      "offer": 0.2326,
+      "mid": 0.1731,
+      "liquid": true,
+      "cid": "412622499"
+    },
+    "Johan Manzambi": {
+      "bid": 0.2985,
+      "offer": 0.3597,
+      "mid": 0.3291,
+      "liquid": true,
+      "cid": "412622473"
+    },
+    "Manuel Akanji": {
+      "bid": 0.0062,
+      "offer": 0.1316,
+      "mid": 0.0689,
+      "liquid": true,
+      "cid": "412622483"
+    },
+    "Nabil Bentaleb": {
+      "bid": 0.0083,
+      "offer": 0.1562,
+      "mid": 0.0823,
+      "liquid": true,
+      "cid": "412622508"
+    },
+    "Nico Elvedi": {
+      "bid": 0.0062,
+      "offer": 0.125,
+      "mid": 0.0656,
+      "liquid": true,
+      "cid": "412622480"
+    },
+    "Rafik Belghali": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": null,
+      "liquid": false,
+      "cid": "412622500"
+    },
+    "Ramiz Zerrouki": {
+      "bid": null,
+      "offer": 0.4808,
+      "mid": null,
+      "liquid": false,
+      "cid": "412622493"
+    },
+    "Ramy Bensebaini": {
+      "bid": 0.0111,
+      "offer": 0.1429,
+      "mid": 0.077,
+      "liquid": true,
+      "cid": "412622510"
+    },
+    "Rayan A\u00eft-Nouri": {
+      "bid": 0.0125,
+      "offer": 0.1667,
+      "mid": 0.0896,
+      "liquid": true,
+      "cid": "412622490"
+    },
+    "Remo Freuler": {
+      "bid": 0.0167,
+      "offer": 0.2326,
+      "mid": 0.1246,
+      "liquid": true,
+      "cid": "412622477"
+    },
+    "Ricardo Rodriguez": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412622475"
+    },
+    "Riyad Mahrez": {
+      "bid": 0.1667,
+      "offer": 0.3731,
+      "mid": 0.2699,
+      "liquid": true,
+      "cid": "412622509"
+    },
+    "Ruben Vargas": {
+      "bid": 0.2041,
+      "offer": 0.3817,
+      "mid": 0.2929,
+      "liquid": true,
+      "cid": "412622489"
+    }
+  },
+  "Anytime_header_scorer": {
+    "Ramy Bensebaini": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605255"
+    },
+    "A\u00efssa Mandi": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605252"
+    },
+    "Breel Donald Embolo": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605224"
+    },
+    "Dan Ndoye": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605213"
+    },
+    "Denis Zakaria": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605227"
+    },
+    "Fares Chaibi": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605242"
+    },
+    "Granit Xhaka": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605221"
+    },
+    "Houssem Aouar": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605256"
+    },
+    "Ibrahim Maza": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605244"
+    },
+    "Johan Manzambi": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605218"
+    },
+    "Manuel Akanji": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605228"
+    },
+    "Nabil Bentaleb": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605253"
+    },
+    "Nico Elvedi": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605225"
+    },
+    "Rafik Belghali": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605245"
+    },
+    "Ramiz Zerrouki": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605238"
+    },
+    "Rayan A\u00eft-Nouri": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605235"
+    },
+    "Remo Freuler": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605222"
+    },
+    "Ricardo Rodriguez": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605220"
+    },
+    "Riyad Mahrez": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605254"
+    },
+    "Ruben Vargas": {
+      "bid": null,
+      "offer": 0.0455,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605234"
+    },
+    "Zineddine Belaid": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605246"
+    },
+    "Jaouen Hadjam": {
+      "bid": null,
+      "offer": 0.0071,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605239"
+    },
+    "Achref Abada": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605251"
+    },
+    "Luca Jaquez": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605219"
+    },
+    "Samir Sophian Chergui": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605236"
+    },
+    "Michel Aebischer": {
+      "bid": null,
+      "offer": 0.0133,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605233"
+    },
+    "Adil Boulbina": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605250"
+    },
+    "Miro Muheim": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605226"
+    },
+    "Amine Gouiri": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605257"
+    },
+    "Anis Hadj Moussa": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605248"
+    },
+    "Ardon Jashari": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605214"
+    },
+    "Aurele Amenda": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605216"
+    },
+    "Mohamed Amine Tougai": {
+      "bid": null,
+      "offer": 0.0455,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605240"
+    },
+    "Cedric Itten": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605231"
+    },
+    "Christian Fassnacht": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605232"
+    },
+    "Silvan Widmer": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605223"
+    },
+    "Nadhir Benbouali": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605243"
+    },
+    "Djibril Sow": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605230"
+    },
+    "Eray Comert": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605229"
+    },
+    "Fabian Rieder": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605215"
+    },
+    "Yassine Titraoui": {
+      "bid": null,
+      "offer": 0.0133,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605249"
+    },
+    "Far\u00e8s Ghedjemis": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605247"
+    },
+    "Noah Okafor": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605212"
+    },
+    "Hicham Boudaoui": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605237"
+    },
+    "Zeki Amdouni": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": null,
+      "liquid": false,
+      "cid": "412605217"
+    }
+  },
+  "SH_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.2326,
+      "offer": 0.274,
+      "mid": 0.2533,
+      "liquid": true,
+      "cid": "412603576"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7246,
+      "offer": 0.7692,
+      "mid": 0.7469,
+      "liquid": true,
+      "cid": "412603577"
+    }
+  },
+  "SH_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.5882,
+      "offer": 0.6329,
+      "mid": 0.6105,
+      "liquid": true,
+      "cid": "412603578"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.3676,
+      "offer": 0.4098,
+      "mid": 0.3887,
+      "liquid": true,
+      "cid": "412603579"
+    }
+  }
+}

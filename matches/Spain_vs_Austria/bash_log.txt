@@ -1,0 +1,134 @@
+=== SPAIN vs AUSTRIA — FULL SESSION LOG ===
+Date: 2026-07-02
+Match: ESP vs AUT, R32 WC2026
+Kickoff: 19:00 UTC (3pm ET)
+ESPN Event ID: 760497
+Smarkets Event ID: 45161536
+SportsPredict Match ID: 11bcf2a2-6564-4ade-9cf7-43ee2ecbedd1
+
+--- ESPN GROUP STAGE DATA ---
+Fetched raw ESPN match summaries for 6 group games:
+  Spain vs CPV: espn_spain_cape_verde.json
+  Spain vs KSA: espn_spain_saudi_arabia.json
+  Spain vs URU: espn_spain_uruguay.json
+  Austria vs JOR: espn_austria_jordan.json
+  Austria vs ARG: espn_austria_argentina.json
+  Austria vs ALG: espn_austria_algeria.json
+
+Player stat route in ESPN: d["leaders"][team]["leaders"][category]["leaders"][0]["displayName"]
+Team stat route: d["boxscore"]["teams"][i]["statistics"][j]
+
+Team stats extracted:
+SPAIN:  SOT=[7,8,1], Shots=[27,22,6], Corners=[11,6,6], YC=[1,0,1], Offsides=[2,2,2]
+  Opp offsides in Spain games: [3, 3, 5] (avg 3.67) — Spain's high defensive line creates offside traps
+AUSTRIA: SOT=[4,1,3], Shots=[11,6,10], Corners=[4,3,3], YC=[1,2,1], Offsides=[3,0,3]
+
+Player leaders by match:
+  ESP vs CPV: Oyarzabal 5 shots (top)
+  ESP vs KSA: Yamal 5 shots (top)
+  ESP vs URU: Cubarsí 1 shot (only 1 team SOT total)
+  AUT vs JOR: Posch 2 shots (top — Sabitzer not top)
+  AUT vs ARG: Sabitzer 3 shots (top — but only 1 total SOT for AUT)
+  AUT vs ALG: Seiwald 2 shots (top — Sabitzer not top)
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3
+Event: 45161536 → 167 markets catalogued
+
+Fetch approach:
+  GET /v3/events/45161536/markets/?limit=300 → all 167 markets with metadata
+  GET /v3/markets/{mid}/contracts/ → contract ID → name mapping
+  GET /v3/markets/{mid}/quotes/ → {contract_id: {bids: [{price: int×10000}], offers: [...]}}
+  Price parsing: price/10000 = decimal probability (e.g., 7634 = 0.7634)
+  Liquid = bid+offer both present. Illiquid = offer only → use offer×0.945
+
+Rate limit hit after ~30 calls. Used 0.8s delay between contract+quote pairs.
+
+Key prices:
+  FTR Spain: bid=0.7634, offer=0.7692, mid=0.7663
+  FTR Austria: bid=0.0714, offer=0.0741, mid=0.0728
+  FTR Draw: bid=0.1613, offer=0.1667, mid=0.164
+  BTTS Yes: mid=0.4465
+  Total OU2.5 Over: mid=0.5765
+  Spain_SOT_OU6.5 Over: mid=0.4365 (contracts say "shots on target")
+  Austria_shots_OU6.5 Over: mid=0.563 (contracts say "shots" — NOT SOT market)
+  Spain_corners_OU6.5 Over: mid=0.4294
+  Cards_OU3.5 Over: mid=0.2542
+  Team_score_first Spain: mid=0.7587
+  HT result Spain: mid=0.5602
+  Spain_score_both_halves: mid=0.4768
+  1H_OU0.5 Over: mid=0.7463
+  Spain_1H_OU0.5 Over: mid=0.6603
+  Will_ET Yes: mid=0.1667
+
+Player markets:
+  Yamal anytime_goalscorer: mid=0.41 [LIQUID]
+  Oyarzabal anytime_goalscorer: mid=0.4536 [LIQUID]
+  Sabitzer anytime_goalscorer: offer=0.125 [ILLIQUID]
+  Yamal score_or_assist: mid=0.5391 [LIQUID]
+  Sabitzer score_or_assist: offer=0.2222 [ILLIQUID]
+  Yamal SOT_OU0.5: mid=0.7483 [LIQUID]
+  Yamal SOT_OU1.5: mid=0.4652 [LIQUID]
+  Oyarzabal SOT_OU0.5: mid=0.6955 [LIQUID]
+  Oyarzabal SOT_OU1.5: mid=0.4084 [LIQUID]
+  Sabitzer SOT_OU0.5: offer=0.365 [ILLIQUID]
+
+--- SPORTSPREDICT API ---
+Endpoint: https://api.sportspredict.com/api/v1
+Fetched via: python3 bot/fetch_markets.py
+Match ID: 11bcf2a2-6564-4ade-9cf7-43ee2ecbedd1
+
+15 questions confirmed:
+Q1: Yamal 2+ SOT [d7a2e383]
+Q2: Oyarzabal score [15ef3b72]
+Q3: Sabitzer score or assist [7c63bc5a]
+Q4: 3+ total goals [99c182e7]
+Q5: Spain scores first [5a166126]
+Q6: Spain 8+ SOT [5bc19a3f]
+Q7: Austria 4+ SOT [061aeb81]
+Q8: Spain 7+ corners [48406c6e]
+Q9: Spain HT lead [e0c1df27]
+Q10: BTTS [29ee5b9f]
+Q11: Spain score both halves [d7655d0b]
+Q12: 4+ total cards [1df0c901]
+Q13: 4+ offsides [16a5ab92]
+Q14: Goal before hydration break [6b27e4f8]
+Q15: Spain wins regulation [aea8fb01]
+
+--- MODEL DERIVATIONS ---
+Lambda fitting (brentq from market OU lines):
+  Spain λ_goals: OU1.5→2.484, OU2.5→2.311, OU3.5→2.246 → avg=2.347
+  Austria λ_goals: OU0.5→0.651, OU1.5→0.630 → avg=0.641
+  Spain λ_SOT=6.267 (from OU6.5 Over=0.4365)
+  Austria λ_shots=7.086 (from OU6.5 Over=0.563) → λ_SOT=2.102 (×0.296 conversion)
+  Spain λ_shots=17.251 (from OU17.5 Over=0.4601)
+
+  Q6 Spain 8+ SOT: Poisson(λ=6.267) → P(X≥8)=0.294
+  Q7 Austria 4+ SOT: Poisson(λ=2.102) → P(X≥4)=0.162 → RULE7 shade → 0.180
+  Q13 4+ offsides: Spain own=2 + Austria vs Spain~2 = λ=4.0 → P(X≥4)=0.567 → conservative 0.550
+  Q14 goal before break: 1H_OU0.5→λ_1H=1.372 → scaled 24/45 → λ_break=0.732 → P=0.519
+
+Rules checked:
+  RULE6: clear
+  RULE7: FIRES (Austria 7.28%). Q3, Q7 shaded.
+  RULE8: inactive (draw 16.4%)
+  RULE12: flagged Q6 (Spain SOT bimodal). Keep 0.294.
+  RULE15: Scenario A fires. Confirms Q7 suppression.
+
+--- FINAL ESTIMATES ---
+Q1: 0.465 [PLAYER_LIQUID]
+Q2: 0.454 [PLAYER_LIQUID]
+Q3: 0.200 [PLAYER_ILLIQUID+RULE7]
+Q4: 0.577 [DIRECT]
+Q5: 0.759 [DIRECT]
+Q6: 0.294 [TEAM_MODEL]
+Q7: 0.180 [TEAM_MODEL+RULE7]
+Q8: 0.429 [DIRECT]
+Q9: 0.560 [DIRECT]
+Q10: 0.447 [DIRECT]
+Q11: 0.477 [DIRECT]
+Q12: 0.254 [DIRECT]
+Q13: 0.550 [TEAM_MODEL]
+Q14: 0.519 [TIMING_EARLY]
+Q15: 0.766 [DIRECT]
+

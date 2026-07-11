@@ -95,7 +95,12 @@ for fpath in sorted(BASE.glob("*.json")):
             files_skipped += 1
             continue
 
-    pm = d.get("post_match_results")
+    # Era-1/2 files use "post_match_results"; era-3 files (col_cdr, cro_pan,
+    # bih_qat, eng_gha, mar_hai, sco_bra, sui_can) use "post_match" instead.
+    # build_master_dataset.py already handles this fallback; mirroring it here
+    # so the same 7 files are no longer silently dropped from feature_matrix.csv.
+    # Fix added 2026-07-10 (identified in DATASET_AUDIT_2026-06-26.md §1 step 8).
+    pm = d.get("post_match_results") or d.get("post_match")
     if not pm:
         print(f"  [SKIP no-pm] {fname}")
         files_skipped += 1

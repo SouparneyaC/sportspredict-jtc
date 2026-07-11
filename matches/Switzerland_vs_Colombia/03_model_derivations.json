@@ -1,0 +1,131 @@
+{
+  "_description": "Model derivations for Switzerland vs Colombia R16 2026-07-07/08",
+  "match": "Switzerland vs Colombia",
+  "date": "2026-07-07",
+  "stage": "Round of 16",
+  "venue": "Neutral",
+
+  "elo_context": {
+    "method": "Computed by running WC2026 match history through WFE formula (K=60, neutral=TRUE for all WC matches)",
+    "switzerland": {
+      "pre_wc": 1951.79,
+      "wc_path": [
+        {"match": "vs Qatar",   "result": "D 1-1", "elo_post": 1927.62},
+        {"match": "vs Bosnia",  "result": "W 4-1", "elo_post": 1945.52},
+        {"match": "vs Canada",  "result": "W 2-1", "elo_post": 1971.78},
+        {"match": "vs Algeria (R32)", "result": "W 2-0", "elo_post": 2005.51}
+      ],
+      "elo_entering_r16": 2005.51
+    },
+    "colombia": {
+      "pre_wc": 2063.71,
+      "wc_path": [
+        {"match": "vs Uzbekistan", "result": "W 3-1", "elo_post": 2081.38},
+        {"match": "vs DR Congo",   "result": "W 1-0", "elo_post": 2089.67},
+        {"match": "vs Portugal",   "result": "D 0-0", "elo_post": 2086.81},
+        {"match": "vs Ghana (R32)","result": "W 1-0", "elo_post": 2090.75}
+      ],
+      "elo_entering_r16": 2090.75
+    },
+    "elo_diff_sui_minus_col": -85.24,
+    "note_arg_alg_score": "ARG vs ALG (Jun 16) result not in local data — assumed ARG 2-0 ALG for ELO calc. ALG ELO entering SUI-ALG was ~1882.9. Final ALG ELO used ≈1850 after SUI-ALG loss."
+  },
+
+  "lambda_fits": {
+    "note": "ELO Poisson model (b0=0.10408, b2=0.0018099, neutral venue, b1 term=0). No Smarkets individual team goal markets available pre-match to fit from; using ELO-derived lambdas as base.",
+    "switzerland_goals": 0.951,
+    "colombia_goals": 1.295,
+    "total_goals": 2.246,
+    "cards_total": 2.5,
+    "notes_on_lambda": [
+      "λ_SUI=0.951 reflects COL's superior ELO (85-point advantage). SUI's WC form is strong (W3D1) but ELO already incorporates those results.",
+      "λ_COL=1.295 consistent with COL's attacking output (avg 19.7 shots per group game). Colombia has been the better attacking team in WC2026.",
+      "Total λ=2.246 → expect ~2.2 goals per regulation (moderate scoring, competitive R16 match).",
+      "Cards λ=2.5 uses SUI avg 1.0 YC + COL avg ~1.5 YC with small knockout intensity boost."
+    ]
+  },
+
+  "derived_probs": {
+    "ftr": {
+      "switzerland_win": 0.267,
+      "draw": 0.295,
+      "colombia_win": 0.438
+    },
+    "p_sui_clean_sheet": 0.274,
+    "p_col_clean_sheet": 0.386,
+    "p_btts": 0.452,
+    "p_over_15": 0.663,
+    "p_over_25": 0.390,
+    "p_over_35": 0.190,
+    "p_ht_tied": 0.461,
+    "p_sui_wins_ht": 0.218,
+    "p_col_wins_ht": 0.322,
+    "p_sui_wins_2h": 0.236,
+    "p_col_wins_2h": 0.355,
+    "p_either_wins_both_halves": 0.165,
+    "p_first_goal_2h": 0.258,
+    "p_margin_exactly_1_goal": 0.404,
+    "p_4plus_cards": 0.242,
+    "p_card_each_half": 0.505,
+    "p_col_5plus_corners": 0.468,
+    "p_sui_4plus_sot": 0.658,
+    "p_col_advance_regulation_only": 0.438,
+    "p_col_advance_incl_et_pens": 0.571,
+    "lambda_ht_sui": 0.428,
+    "lambda_ht_col": 0.583,
+    "lambda_2h_sui": 0.523,
+    "lambda_2h_col": 0.712
+  },
+
+  "player_derivations": {
+    "dan_ndoye": {
+      "role": "SUI right winger / top shooter",
+      "lam_goal_share": 0.25,
+      "lambda_goals": 0.238,
+      "p_scores": 0.212,
+      "note": "Ndoye has been SUI's top shooter in 2 of 3 group games. ~25% goal share estimate; liquid market likely 22-28%."
+    },
+    "breel_embolo": {
+      "role": "SUI centre forward",
+      "lam_sot_share": 0.50,
+      "lambda_sot": 0.476,
+      "p_1plus_sot": 0.379,
+      "note": "Embolo as striker gets roughly 50% of SUI's SOT at his position. Under Poisson."
+    },
+    "luis_diaz": {
+      "role": "COL left winger / primary attacker (#7)",
+      "lam_goal_share": 0.27,
+      "lambda_goals": 0.350,
+      "p_scores": 0.295,
+      "note": "Díaz scored 1 goal + 1 assist in group stage. Among COL's most consistent attackers."
+    },
+    "jhon_arias": {
+      "role": "COL right winger (#11)",
+      "lam_ga_share": 0.42,
+      "lambda_goal_assist": 0.544,
+      "p_scores_or_assists": 0.420,
+      "note": "Score-or-assist is wider scope. Arias is active in COL's attacks. Production unclear from group stage notes."
+    }
+  },
+
+  "rule_checks": {
+    "RULE7": "INACTIVE — SUI win=26.7% ≥ 15% threshold. Not a heavy underdog scenario.",
+    "RULE8": "FIRES — Draw=29.5% ≥ 25%. Competitive match; shade model-derived estimates toward 0.50.",
+    "RULE6": "All final estimates should fall in 0.13-0.87 range. Flag any outlier estimates.",
+    "RULE9": "James Rodríguez: NOT asked about in platform questions. If Arias market shows inflated prices for sub-contributors, trim.",
+    "RULE12": "Q6 (SUI 4+ SOT): SUI's SOT is volatile (7,7,4 in groups). Removing the 4-SOT Canada game (when SUI were dominated) shifts P(4+) up significantly. Adjusted λ=4.5 reflects SUI vs stronger opponent but maintains their high-SOT tendency.",
+    "RULE15": "NOT applicable — SUI 26.7% win prob > 10% blowout threshold."
+  },
+
+  "espn_insight": {
+    "switzerland_sot_wc2026": [7, 7, 4],
+    "switzerland_sot_avg": 6.0,
+    "switzerland_sot_adj_for_col": 4.5,
+    "colombia_corners_wc2026": [4, 5, 5, 4],
+    "colombia_corners_avg": 4.5,
+    "colombia_sot_wc2026": [4, 9, 6],
+    "colombia_sot_avg": 6.33,
+    "colombia_goals_from": "Luis Díaz (1), Jaminton Campaz (1), Daniel Muñoz (2), Colombia team total = 5 goals in 4 games",
+    "note_on_match_dynamics": "Both teams have W3D1 records in WC2026. COL is ELO-favored. SUI is resilient and low-conceding. Expect compact match, potential for low-scoring encounter. Over 2.5 goals only 39% likely."
+  }
+}

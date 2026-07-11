@@ -29,6 +29,7 @@ from datetime import date as date_cls
 
 ROOT = Path(__file__).parent.parent
 EXT_MARKETS = ROOT / "data" / "external_markets"
+MATCHES_DIR = ROOT / "matches"
 OUT_CSV = Path(__file__).parent / "master_question_dataset.csv"
 
 SKIP_PATTERNS = ["smarkets_quotes", "smarkets_raw", "smarkets_parsed",
@@ -176,6 +177,42 @@ def load_poisson_coefs():
     return json.loads(path.read_text())
 
 
+# ESPN rolling-average stat columns exposed in the master dataset (prefixed espn_a_/espn_b_)
+ESPN_ROLLING_STATS = [
+    "fouls", "yellow_cards", "red_cards", "offsides", "corners",
+    "saves", "possession_pct", "total_shots", "shots_on_target",
+    "blocked_shots", "passes", "pass_pct", "interceptions",
+    "effective_tackles", "clearances",
+]
+
+
+def load_espn_rolling_lookup():
+    """(team_code, date) -> dict of rolling_* stats for that team going into that match.
+
+    Built from data/processed/espn_rolling_averages.csv.  Returns empty dict if
+    the file does not exist (safe degradation before first panel build).
+    """
+    path = ROOT / "data" / "processed" / "espn_rolling_averages.csv"
+    if not path.exists():
+        return {}
+    lookup = {}
+    with open(path, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            key = (row["team_code"], row["date"])
+            lookup[key] = row
+    return lookup
+
+
+def espn_stats_for(espn_lookup, team_code, date, prefix):
+    """Return a flat dict of ESPN rolling stats for one team, prefixed."""
+    row = espn_lookup.get((team_code, date), {})
+    out = {f"{prefix}espn_n": row.get("rolling_n") or None}
+    for stat in ESPN_ROLLING_STATS:
+        val = row.get(f"rolling_{stat}")
+        out[f"{prefix}espn_{stat}"] = val if val not in ("", None) else None
+    return out
+
+
 def rest_days_for(team_dates_index, team, match_date):
     dates = team_dates_index.get(team)
     if not dates:
@@ -246,6 +283,13 @@ def safe_float(v):
         return float(v)
     except (TypeError, ValueError):
         return None
+
+
+def brier_score(estimate, outcome):
+    """Per-question Brier score: (probability - actual outcome)^2, lower is better."""
+    if estimate is None or outcome is None:
+        return None
+    return round((estimate - outcome) ** 2, 6)
 
 
 RULE_NAMES = [f"RULE{i}" for i in range(1, 16)]
@@ -447,13 +491,32 @@ def extract_post_match(d):
         }
 
     # Schema A/E/G: dict of question_results / questions
-    qr = pm.get("question_results") or pm.get("questions") if isinstance(pm.get("questions"), dict) else pm.get("question_results")
+    # Prefer confirmed_question_results_from_platform when present: it carries
+    # the platform-settled rbp per question. Plain question_results is often
+    # just the pre-match inference (no rbp field) and silently produces
+    # null-rbp rows if used directly (confirmed 2026-07-07 on CAN-QAT/SUI-BIH,
+    # where match_rbp_total matches summing confirmed_question_results_from_platform's
+    # rbp values, not question_results's).
+    qr = pm.get("confirmed_question_results_from_platform")
+    if not (isinstance(qr, dict) and qr):
+        qr = pm.get("question_results") or pm.get("questions") if isinstance(pm.get("questions"), dict) else pm.get("question_results")
     if isinstance(qr, dict) and qr:
         for k, v in qr.items():
             if not isinstance(v, dict):
                 continue
             outcome_raw = v.get("outcome_numeric") if v.get("outcome_numeric") is not None else v.get("outcome")
             add(q_num(k), v.get("question"), v.get("our_estimate"), v.get("crowd_estimate"), outcome_raw, v.get("rbp"), v.get("notes") or v.get("note"), raw_key=k)
+
+    # Schema H: question_results is a flat list of dicts (text/our_estimate/
+    # crowd_estimate/outcome/rbp), no explicit "q" number field at all
+    # (e.g. bel_sen_2026-07-01.json, and several matches/*/06_post_match_results.json)
+    elif isinstance(qr, list) and qr:
+        for i, item in enumerate(qr, start=1):
+            if not isinstance(item, dict):
+                continue
+            qn = f"Q{item['q']}" if "q" in item else f"Q{i}"
+            add(qn, item.get("text") or item.get("question"), item.get("our_estimate"), item.get("crowd_estimate"),
+                item.get("outcome"), item.get("rbp"), item.get("note"), raw_key=qn)
 
     # Schema B: questions is a list (also covers the bih_qat "computed but never
     # submitted" variant, which uses 'our_est_unsubmitted' + 'submitted': null)
@@ -519,7 +582,299 @@ def parse_city_from_venue_string(venue_str):
 
 
 # ──────────────────────────────────────────────────────────────────────────
-# 4. Main build
+# 4. New-format (matches/*/) readers
+#
+# The matches/ directory format separates each data layer into a numbered
+# file (01_espn_data.json, 02_smarkets_markets.json, 03_model_derivations.json,
+# 04_rules_applied.json, 05_estimates.json, 06_post_match_results.json,
+# 07_instrument_trace.json).  Because all layers use the same q-number for
+# the same question, joining is a direct integer match — no Jaccard needed.
+# ──────────────────────────────────────────────────────────────────────────
+
+def is_new_format_dir(dpath):
+    """True if the directory contains at least 05_estimates.json."""
+    return (dpath / "05_estimates.json").exists()
+
+
+# Reverse map: full team name -> 3-letter code (built once at module level)
+_NAME_TO_CODE = {v: k for k, v in CODE_TO_NAME.items()}
+
+# matches/*/ directory names sometimes drop spaces (CapeVerde) or use a
+# short/common name instead of CODE_TO_NAME's official one (USA vs United States)
+_DIR_NAME_ALIASES = {
+    "USA": "United States",
+}
+
+
+def _resolve_dir_team_name(name):
+    if name in _NAME_TO_CODE:
+        return _NAME_TO_CODE[name]
+    if name in _DIR_NAME_ALIASES:
+        return _NAME_TO_CODE.get(_DIR_NAME_ALIASES[name])
+    # Fall back to a space-insensitive match (e.g. "CapeVerde" -> "Cape Verde")
+    collapsed = name.replace(" ", "").lower()
+    for full_name, code in _NAME_TO_CODE.items():
+        if full_name.replace(" ", "").lower() == collapsed:
+            return code
+    return None
+
+
+def parse_new_format_dir_name(dname):
+    """Return (code_a, code_b, date_str) from a matches/ subdirectory name.
+
+    Handles two naming conventions:
+      mex_ecu_2026-06-30       -> ('MEX', 'ECU', '2026-06-30')
+      Portugal_vs_Croatia      -> ('POR', 'CRO', None)
+    """
+    # Pattern 1: code_code_YYYY-MM-DD
+    m = re.match(r'^([a-z]{2,4})_([a-z]{2,4})_(\d{4}-\d{2}-\d{2})$', dname.lower())
+    if m:
+        return m.group(1).upper(), m.group(2).upper(), m.group(3)
+
+    # Pattern 2: TeamName_vs_TeamName (full names, title-cased)
+    m = re.match(r'^(.+?)_vs_(.+)$', dname, re.IGNORECASE)
+    if m:
+        name_a = m.group(1).replace('_', ' ').strip()
+        name_b = m.group(2).replace('_', ' ').strip()
+        code_a = _resolve_dir_team_name(name_a)
+        code_b = _resolve_dir_team_name(name_b)
+        return code_a, code_b, None
+
+    return None, None, None
+
+
+def _date_from_new_format_dir(match_dir, dname):
+    """Best-effort date extraction for a new-format directory.
+
+    Priority: directory name > 06_post_match_results.json > 05_estimates.json.
+    """
+    # Already parsed from directory name in the caller; passed as None if unknown
+    m = re.search(r'(\d{4}-\d{2}-\d{2})', dname)
+    if m:
+        return m.group(1)
+
+    for fname in ("06_post_match_results.json", "05_estimates.json"):
+        fpath = match_dir / fname
+        if fpath.exists():
+            try:
+                d = json.loads(fpath.read_text())
+                dt = d.get("date") or d.get("match_date")
+                if dt and re.match(r'\d{4}-\d{2}-\d{2}', str(dt)):
+                    return str(dt)[:10]
+            except Exception:
+                pass
+    return ""
+
+
+def extract_post_match_new_format(match_dir):
+    """Read 06_post_match_results.json.
+
+    Returns the same tuple as extract_post_match():
+      (key_used, post_match_qs, final_score, match_total_rbp,
+       settled_date, beat_crowd_count, match_no_submission_flag)
+    """
+    pm_path = match_dir / "06_post_match_results.json"
+    if not pm_path.exists():
+        return None, {}, None, None, None, None, False
+
+    pm = json.loads(pm_path.read_text())
+
+    final_score = pm.get("actual_score") or pm.get("final_score")
+    match_total_rbp = pm.get("match_rbp_total") or pm.get("total_rbp")
+    settled_date = pm.get("date") or pm.get("settled_date")
+    beat_crowd_count = pm.get("questions_beat_crowd")
+
+    out = {}
+    for i, item in enumerate(pm.get("question_results", []), start=1):
+        if not isinstance(item, dict):
+            continue
+        # Some match dirs (e.g. Brazil_vs_Norway) omit an explicit "q" field
+        # entirely and rely on list order instead.
+        qn = f"Q{item['q']}" if "q" in item else f"Q{i}"
+        # outcome_value is numeric (1.0/0.0); outcome is text ("YES"/"NO")
+        outcome_raw = item.get("outcome_value")
+        if outcome_raw is None:
+            outcome_raw = item.get("outcome")
+        out[qn] = {
+            "question_text": item.get("text"),
+            "our_estimate":   safe_float(item.get("our_estimate")),
+            "crowd_estimate": safe_float(item.get("crowd_estimate")),
+            "outcome":        to_int_outcome(outcome_raw),
+            "rbp":            safe_float(item.get("rbp")),
+            "note":           item.get("note"),
+            "actually_submitted": True,
+            "raw_key": qn,
+        }
+
+    return "new_format_06", out, final_score, match_total_rbp, settled_date, beat_crowd_count, False
+
+
+def extract_pre_match_new_format(match_dir):
+    """Read 05_estimates.json.
+
+    Returns dict of qn -> estimate metadata (same structure as
+    extract_pre_match_estimates() output values), keyed by 05_estimates.json's
+    OWN "q" number.
+
+    NOTE: this is NOT safe to join directly against 06_post_match_results.json's
+    question order/number -- confirmed by direct comparison (2026-07-06) that
+    most matches/*/ dirs rotate question position between the two files (e.g.
+    Colombia_vs_Ghana: 14 of 15 questions shift position by 1+ between the two
+    files), the same drift documented in DATASET_AUDIT_2026-06-26.md for the
+    old-format schema. Callers must re-key this dict by topic-word match against
+    the post-match question text -- see rekey_pre_match_by_topic() below --
+    before doing a qn-keyed lookup.
+    """
+    est_path = match_dir / "05_estimates.json"
+    if not est_path.exists():
+        return {}
+
+    est = json.loads(est_path.read_text())
+    qs = est.get("questions", [])
+    out = {}
+
+    items = qs if isinstance(qs, list) else (
+        [{"q": k, **v} for k, v in qs.items()] if isinstance(qs, dict) else []
+    )
+    for item in items:
+        if not isinstance(item, dict) or "q" not in item:
+            continue
+        qn = f"Q{item['q']}"
+        # Field name varies between match sessions: final_estimate vs estimate
+        est_val = item.get("final_estimate") if item.get("final_estimate") is not None \
+                  else item.get("estimate")
+        drivers = item.get("key_data") or item.get("key_source")
+        if isinstance(drivers, list):
+            drivers = "; ".join(str(x) for x in drivers)
+        out[qn] = {
+            "recommended_estimate": safe_float(est_val),
+            "question_text":  item.get("text") or item.get("question"),
+            "category":       item.get("category") or item.get("tier"),
+            "confidence":     item.get("confidence"),
+            "direction":      item.get("direction"),
+            "key_drivers":    drivers,
+        }
+    return out
+
+
+def rekey_pre_match_by_topic(pre_match_ests, post_match_qs):
+    """Re-key extract_pre_match_new_format()'s output (keyed by 05_estimates.json's
+    own "q" number) to post_match_qs's keys (settlement order/number), via
+    topic-word Jaccard matching on question text -- the same global-greedy
+    approach extract_pre_match_estimates() uses for the old-format schema.
+    Necessary because 05's "q" and 06's question order/number are NOT the same
+    numbering for most matches (verified directly 2026-07-06); a naive same-qn
+    lookup silently attaches the wrong question's pre-match research (category,
+    confidence, recommended_estimate, key_drivers) to a settled outcome.
+    """
+    candidates = [(qn, text_tokens(v.get("question_text")), v) for qn, v in pre_match_ests.items()]
+    targets = [(qn, text_tokens(pm_data.get("question_text"))) for qn, pm_data in post_match_qs.items()]
+
+    scored = []
+    for qn, ttoks in targets:
+        if not ttoks:
+            continue
+        for idx, (ckey, ctoks, v) in enumerate(candidates):
+            if not ctoks:
+                continue
+            overlap = len(ttoks & ctoks)
+            union = len(ttoks | ctoks)
+            jaccard = overlap / union if union else 0
+            if overlap >= 2 and jaccard >= 0.35:
+                scored.append((jaccard, qn, idx))
+    scored.sort(reverse=True)
+
+    out = {}
+    used_qn, used_idx = set(), set()
+    for jaccard, qn, idx in scored:
+        if qn in used_qn or idx in used_idx:
+            continue
+        used_qn.add(qn)
+        used_idx.add(idx)
+        _, _, v = candidates[idx]
+        out[qn] = v
+    return out
+
+
+def extract_rules_new_format(match_dir):
+    """Read 04_rules_applied.json plus per-question rules in 05_estimates.json.
+
+    Returns (fired_list, rule_bool_dict) — same structure as extract_rules().
+    """
+    rule_bool = {r: None for r in RULE_NAMES}
+    fired = []
+
+    # Top-level rule keys in 04_rules_applied.json
+    rules_path = match_dir / "04_rules_applied.json"
+    if rules_path.exists():
+        d = json.loads(rules_path.read_text())
+        for k in d:
+            m = re.match(r'(RULE\d+)', k.upper())
+            if m:
+                rname = m.group(1)
+                if rname in rule_bool:
+                    rule_bool[rname] = True
+                    fired.append(rname)
+
+    # Per-question rules_applied lists in 05_estimates.json
+    est_path = match_dir / "05_estimates.json"
+    if est_path.exists():
+        est = json.loads(est_path.read_text())
+        for item in (est.get("questions") or []):
+            if not isinstance(item, dict):
+                continue
+            for r_item in (item.get("rules_applied") or []):
+                m = re.match(r'(RULE\d+)', str(r_item).upper())
+                if m:
+                    rname = m.group(1)
+                    if rname in rule_bool and rule_bool[rname] is None:
+                        rule_bool[rname] = True
+                        fired.append(rname)
+
+    return sorted(set(fired)), rule_bool
+
+
+def extract_model_new_format(match_dir, code_a, code_b):
+    """Read 03_model_derivations.json.
+
+    Returns (draw_prob, lambda_a, lambda_b) — None for any value not found.
+    """
+    mod_path = match_dir / "03_model_derivations.json"
+    if not mod_path.exists():
+        return None, None, None
+
+    d = json.loads(mod_path.read_text())
+    draw_prob = lambda_a = lambda_b = None
+
+    # Lambda fits — keyed by team code or home/away
+    for fits_key in ("lambda_fits_via_brentq", "lambda_fits"):
+        fits = d.get(fits_key)
+        if not isinstance(fits, dict):
+            continue
+        for k, v in fits.items():
+            kl = k.lower()
+            val = safe_float(v) if not isinstance(v, dict) else \
+                  safe_float(v.get("implied_lambda") or v.get("lambda") or v.get("value"))
+            if code_a.lower() in kl or kl.startswith("home"):
+                lambda_a = val
+            elif code_b.lower() in kl or kl.startswith("away"):
+                lambda_b = val
+
+    # Draw probability from derived_probs / derived_probabilities / market_anchors
+    for dp_key in ("derived_probs", "derived_probabilities", "market_anchors_used"):
+        dp = d.get(dp_key)
+        if not isinstance(dp, dict):
+            continue
+        for k, v in dp.items():
+            if "draw" in k.lower():
+                draw_prob = safe_float(v)
+                break
+
+    return draw_prob, lambda_a, lambda_b
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# 5. Main build
 # ──────────────────────────────────────────────────────────────────────────
 
 def main():
@@ -531,12 +886,15 @@ def main():
     squad_lookup = load_squad_lookup()
     ordered_logit = load_ordered_logit_coefs()
     poisson_coefs = load_poisson_coefs()
+    espn_lookup = load_espn_rolling_lookup()
+    print(f"  ESPN rolling lookup: {len(espn_lookup)} team-match entries")
 
     rows = []
     files_processed = 0
     files_skipped = []
     post_match_key_counts = {"post_match_results": 0, "post_match": 0, "none": 0}
     squad_unmatched = set()
+    processed_match_codes = set()  # de-duplication: skip new-format if already in old-format
 
     for fpath in sorted(EXT_MARKETS.glob("*.json")):
         fname = fpath.name
@@ -642,6 +1000,9 @@ def main():
             lambda_a = math.exp(intercept + coef * elo_diff)
             lambda_b = math.exp(intercept + coef * (-elo_diff))
 
+        espn_a = espn_stats_for(espn_lookup, code_a, date, "a_")
+        espn_b = espn_stats_for(espn_lookup, code_b, date, "b_")
+
         match_meta = dict(
             file=fname, match=match_code, team_a=team_a, team_b=team_b,
             team_a_code=code_a, team_b_code=code_b, date=date,
@@ -666,6 +1027,8 @@ def main():
             rules_fired_list=";".join(rules_fired_list),
             rule_fired_count=len(rules_fired_list),
             **{f"{r.lower()}_fired": rule_bool[r] for r in RULE_NAMES},
+            **espn_a,
+            **espn_b,
         )
 
         for qn, pm_data in post_match_qs.items():
@@ -684,6 +1047,9 @@ def main():
             outcome = pm_data.get("outcome")
             rbp = pm_data.get("rbp") if actually_submitted else None
             beat_crowd = None if rbp is None else (rbp > 0)
+            crowd_est = pm_data.get("crowd_estimate")
+            our_brier_score = brier_score(our_est, outcome) if actually_submitted else None
+            crowd_brier_score = brier_score(crowd_est, outcome)
 
             row = dict(match_meta)
             row.update(dict(
@@ -698,11 +1064,13 @@ def main():
                 our_estimate=our_est,
                 submission_diff=submission_diff,
                 submission_error_flag=submission_error_flag,
-                crowd_estimate=pm_data.get("crowd_estimate"),
+                crowd_estimate=crowd_est,
                 outcome=outcome,
                 outcome_known=outcome is not None,
                 rbp=rbp,
                 beat_crowd=beat_crowd,
+                our_brier_score=our_brier_score,
+                crowd_brier_score=crowd_brier_score,
                 actually_submitted=actually_submitted,
                 is_player_prop=is_player_prop,
                 player_key=player_key,
@@ -711,6 +1079,197 @@ def main():
             rows.append(row)
 
         files_processed += 1
+        processed_match_codes.add(match_code)
+
+    # ── New-format matches/ directories ───────────────────────────────────
+    new_format_processed = 0
+    new_format_skipped = []
+
+    if MATCHES_DIR.exists():
+        for match_dir in sorted(MATCHES_DIR.iterdir()):
+            if not match_dir.is_dir():
+                continue
+            if not is_new_format_dir(match_dir):
+                continue  # no 05_estimates.json → not a new-format match dir
+
+            dname = match_dir.name
+            code_a, code_b, date = parse_new_format_dir_name(dname)
+            if not code_a or not code_b:
+                new_format_skipped.append((dname, "could not parse team codes from directory name"))
+                continue
+
+            match_code = f"{code_a}-{code_b}"
+            if match_code in processed_match_codes:
+                new_format_skipped.append((dname, f"already processed as {match_code} from data/external_markets/"))
+                continue
+
+            # Date fallback: parse from directory name string directly
+            if not date:
+                date = _date_from_new_format_dir(match_dir, dname) or ""
+
+            key_used, post_match_qs, final_score, match_total_rbp, settled_date, beat_crowd_count, match_no_submission_flag = \
+                extract_post_match_new_format(match_dir)
+
+            if not post_match_qs:
+                new_format_skipped.append((dname, "no 06_post_match_results.json or empty question_results"))
+                continue
+
+            team_a = CODE_TO_NAME.get(code_a, code_a)
+            team_b = CODE_TO_NAME.get(code_b, code_b)
+
+            pre_match_ests = extract_pre_match_new_format(match_dir)
+            pre_match_ests = rekey_pre_match_by_topic(pre_match_ests, post_match_qs)
+            rules_fired_list, rule_bool = extract_rules_new_format(match_dir)
+            draw_prob_nf, lambda_a_nf, lambda_b_nf = extract_model_new_format(match_dir, code_a, code_b)
+
+            # ESPN data: venue, stage, group
+            venue_raw = group = game_day = tournament = None
+            espn_path = match_dir / "01_espn_data.json"
+            if espn_path.exists():
+                try:
+                    espn = json.loads(espn_path.read_text())
+                    venue_raw = espn.get("venue") or espn.get("venue_note")
+                    tournament = espn.get("tournament") or "FIFA World Cup 2026"
+                    group = espn.get("group")
+                    game_day = espn.get("game_day") or espn.get("stage")
+                except Exception:
+                    pass
+            if not tournament:
+                tournament = "FIFA World Cup 2026"
+
+            # Supplementary feature joins (same as old-format loop)
+            elo_a = elo_b = elo_diff = None
+            elo_match = lookup_with_date_tolerance(elo_lookup, team_a, team_b, date)
+            if elo_match:
+                elo_a = elo_match.get(team_a)
+                elo_b = elo_match.get(team_b)
+            if elo_a is not None and elo_b is not None:
+                elo_diff = elo_a - elo_b
+
+            rest_a = rest_days_for(team_dates_index, team_a, date)
+            rest_b = rest_days_for(team_dates_index, team_b, date)
+            rest_diff = (rest_a - rest_b) if (rest_a is not None and rest_b is not None) else None
+
+            venue_city = parse_city_from_venue_string(venue_raw)
+            venue_country = None
+            if not venue_city:
+                vlookup = lookup_with_date_tolerance(venue_lookup, team_a, team_b, date)
+                if vlookup:
+                    venue_city, venue_country = vlookup
+            venue_city_clean = re.sub(r"\s+area$", "", venue_city, flags=re.IGNORECASE) if venue_city else venue_city
+            alt_city = VENUE_CITY_ALIASES.get(venue_city_clean, venue_city_clean)
+            altitude_m = altitude_lookup.get(alt_city) if alt_city else None
+
+            squad_a = squad_lookup.get(TRANSFERMARKT_NAME_ALIASES.get(team_a, team_a))
+            squad_b = squad_lookup.get(TRANSFERMARKT_NAME_ALIASES.get(team_b, team_b))
+            if squad_a is None:
+                squad_unmatched.add(team_a)
+            if squad_b is None:
+                squad_unmatched.add(team_b)
+
+            # Fall back to Poisson/logit estimates if model file lacked them
+            draw_prob = draw_prob_nf
+            lambda_a = lambda_a_nf
+            lambda_b = lambda_b_nf
+            if draw_prob is None and elo_diff is not None:
+                b_elo, b_home = ordered_logit["b_elo"], ordered_logit["b_home"]
+                c1, c2 = ordered_logit["c1"], ordered_logit["c2"]
+                eta = b_elo * elo_diff + b_home * 0
+                p_away_or_less = 1 / (1 + math.exp(-(c1 - eta)))
+                p_home_or_less = 1 / (1 + math.exp(-(c2 - eta)))
+                draw_prob = p_home_or_less - p_away_or_less
+            if lambda_a is None and elo_diff is not None:
+                intercept, coef = poisson_coefs["intercept"], poisson_coefs["elo_diff_coef"]
+                lambda_a = math.exp(intercept + coef * elo_diff)
+                lambda_b = math.exp(intercept + coef * (-elo_diff))
+
+            espn_a = espn_stats_for(espn_lookup, code_a, date, "a_")
+            espn_b = espn_stats_for(espn_lookup, code_b, date, "b_")
+
+            match_meta = dict(
+                file=dname, match=match_code, team_a=team_a, team_b=team_b,
+                team_a_code=code_a, team_b_code=code_b, date=date,
+                tournament=tournament, group=group, game_day=game_day,
+                venue_raw=venue_raw, venue_city=venue_city, venue_country=venue_country,
+                altitude_m=altitude_m,
+                schema_era="new_format", post_match_key_used=key_used,
+                final_score=final_score, match_total_rbp=safe_float(match_total_rbp),
+                settled_date=settled_date,
+                match_submitted=True,
+                match_is_calibration_only=False,
+                elo_team_a_pre=elo_a, elo_team_b_pre=elo_b, elo_diff=elo_diff,
+                rest_days_a=rest_a, rest_days_b=rest_b, rest_days_diff=rest_diff,
+                squad_value_a_eur=(squad_a or {}).get("total_market_value_eur"),
+                squad_value_b_eur=(squad_b or {}).get("total_market_value_eur"),
+                squad_avg_age_a=(squad_a or {}).get("average_age"),
+                squad_avg_age_b=(squad_b or {}).get("average_age"),
+                fifa_ranking_2025_a=(squad_a or {}).get("fifa_ranking_2025"),
+                fifa_ranking_2025_b=(squad_b or {}).get("fifa_ranking_2025"),
+                draw_probability=draw_prob,
+                poisson_lambda_a=lambda_a, poisson_lambda_b=lambda_b,
+                rules_fired_list=";".join(rules_fired_list),
+                rule_fired_count=len(rules_fired_list),
+                **{f"{r.lower()}_fired": rule_bool[r] for r in RULE_NAMES},
+                **espn_a,
+                **espn_b,
+            )
+
+            player_profiles = {}  # new format doesn't have a separate player-profile block
+
+            for qn, pm_data in post_match_qs.items():
+                pre = pre_match_ests.get(qn, {})
+                question_text = pm_data.get("question_text") or pre.get("question_text")
+                our_est = pm_data.get("our_estimate")
+                recommended_est = pre.get("recommended_estimate")
+                actually_submitted = pm_data.get("actually_submitted", True)
+                submission_diff = None
+                submission_error_flag = False
+                if actually_submitted and our_est is not None and recommended_est is not None:
+                    submission_diff = round(recommended_est - our_est, 4)
+                    submission_error_flag = abs(submission_diff) > 0.03
+
+                is_player_prop, player_key = detect_is_player_prop(question_text, player_profiles)
+                outcome = pm_data.get("outcome")
+                rbp = pm_data.get("rbp") if actually_submitted else None
+                beat_crowd = None if rbp is None else (rbp > 0)
+                crowd_est = pm_data.get("crowd_estimate")
+                our_brier_score = brier_score(our_est, outcome) if actually_submitted else None
+                crowd_brier_score = brier_score(crowd_est, outcome)
+
+                row = dict(match_meta)
+                row.update(dict(
+                    question_num=qn,
+                    question_text=question_text,
+                    question_category=pre.get("category"),
+                    confidence=pre.get("confidence"),
+                    direction=pre.get("direction"),
+                    key_drivers=pre.get("key_drivers"),
+                    edge_rank=None,
+                    recommended_estimate=recommended_est,
+                    our_estimate=our_est,
+                    submission_diff=submission_diff,
+                    submission_error_flag=submission_error_flag,
+                    crowd_estimate=crowd_est,
+                    outcome=outcome,
+                    outcome_known=outcome is not None,
+                    rbp=rbp,
+                    beat_crowd=beat_crowd,
+                    our_brier_score=our_brier_score,
+                    crowd_brier_score=crowd_brier_score,
+                    actually_submitted=actually_submitted,
+                    is_player_prop=is_player_prop,
+                    player_key=player_key,
+                    postmortem_note=pm_data.get("note"),
+                ))
+                rows.append(row)
+
+            new_format_processed += 1
+            processed_match_codes.add(match_code)
+
+    if new_format_skipped:
+        print(f"\n[INFO] New-format dirs skipped ({len(new_format_skipped)}):")
+        for dn, reason in new_format_skipped:
+            print(f"  [SKIP] {dn}: {reason}")
 
     if squad_unmatched:
         print(f"\n[INFO] {len(squad_unmatched)} teams have no Transfermarkt squad-value match (left null): {sorted(squad_unmatched)}")
@@ -729,10 +1288,11 @@ def main():
         w.writerows(rows)
 
     print(f"\n{'=' * 70}")
-    print(f"FILES PROCESSED: {files_processed}")
-    print(f"FILES SKIPPED:   {len(files_skipped)}")
+    print(f"OLD-FORMAT FILES PROCESSED: {files_processed}")
+    print(f"OLD-FORMAT FILES SKIPPED:   {len(files_skipped)}")
     for fn, reason in files_skipped:
         print(f"  [SKIP] {fn}: {reason}")
+    print(f"\nNEW-FORMAT DIRS PROCESSED: {new_format_processed}")
     print(f"\npost_match key usage: {post_match_key_counts}")
     print(f"\nTOTAL ROWS: {len(rows)}")
     print(f"TOTAL COLUMNS: {len(fieldnames)}")

@@ -1,0 +1,127 @@
+{
+  "_description": "Final estimates \u2014 Switzerland vs Algeria R32 2026-07-02/03",
+  "match": "Switzerland vs Algeria",
+  "date": "2026-07-02",
+  "match_id": "66a5b1e2-aff3-435f-835b-2ca80de5e571",
+  "smarkets_event": 45161537,
+  "espn_event": 760498,
+  "ftr": {
+    "Switzerland": 0.4878,
+    "Draw": 0.3007,
+    "Algeria": 0.2106
+  },
+  "lambda_goals": {
+    "Switzerland": 1.499,
+    "Algeria": 0.928
+  },
+  "rule8_fires": true,
+  "rule7_fires": false,
+  "questions": [
+    {
+      "q": 1,
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.325,
+      "question": "Will Breel Embolo (Switzerland) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.407
+    },
+    {
+      "q": 2,
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.128,
+      "question": "Will Rub\u00e9n Vargas (Switzerland) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.287
+    },
+    {
+      "q": 3,
+      "tier": "DIRECT",
+      "estimate": 0.514,
+      "question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.523
+    },
+    {
+      "q": 4,
+      "tier": "PLAYER_ILLIQUID",
+      "estimate": 0.21,
+      "question": "Will Amine Gouiri (Algeria) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.337
+    },
+    {
+      "q": 5,
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.27,
+      "question": "Will Riyad Mahrez (Algeria) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.374
+    },
+    {
+      "q": 6,
+      "tier": "DIRECT",
+      "estimate": 0.435,
+      "question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.474
+    },
+    {
+      "q": 7,
+      "tier": "DIRECT",
+      "estimate": 0.323,
+      "question": "Will Algeria have more corner kicks than Switzerland in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.406
+    },
+    {
+      "q": 8,
+      "tier": "DIRECT",
+      "estimate": 0.174,
+      "question": "Will there be 5 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.315
+    },
+    {
+      "q": 9,
+      "tier": "TEAM_MODEL",
+      "estimate": 0.14,
+      "question": "Will any player score 2 or more goals in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.294
+    },
+    {
+      "q": 10,
+      "tier": "TEAM_MODEL",
+      "estimate": 0.6,
+      "question": "Will Switzerland have 5 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.575
+    },
+    {
+      "q": 11,
+      "tier": "DIRECT",
+      "estimate": 0.479,
+      "question": "Will the match be tied at halftime?",
+      "crowd_formula_pred": 0.501
+    },
+    {
+      "q": 12,
+      "tier": "TEAM_MODEL",
+      "estimate": 0.336,
+      "question": "Will a penalty kick be awarded OR a red card be shown in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.414
+    },
+    {
+      "q": 13,
+      "tier": "DIRECT",
+      "estimate": 0.558,
+      "question": "Will Switzerland score the first goal of the match?",
+      "crowd_formula_pred": 0.549
+    },
+    {
+      "q": 14,
+      "tier": "TEAM_MODEL",
+      "estimate": 0.437,
+      "question": "Will a goal be scored after the second hydration break in regulation (90 minutes + stoppage time)?",
+      "crowd_formula_pred": 0.476
+    },
+    {
+      "q": 15,
+      "tier": "DIRECT",
+      "estimate": 0.674,
+      "question": "Will Switzerland advance to the Round of 16?",
+      "crowd_formula_pred": 0.62
+    }
+  ],
+  "post_match_results": null
+}

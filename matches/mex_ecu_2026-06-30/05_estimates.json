@@ -1,0 +1,185 @@
+{
+  "_description": "Final 15 pre-match probability estimates submitted to the platform",
+  "match": "Mexico vs Ecuador",
+  "date": "2026-06-30",
+  "prior_files_consulted": [
+    "mex_kor_2026-06-19.json",
+    "cze_mex_2026-06-24.json",
+    "ger_ecu_2026-06-25.json",
+    "civ_ecu_2026-06-14.json",
+    "ecu_cur_2026-06-21.json",
+    "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md",
+    "STEPS_FOR_HIGH_POINTS.md"
+  ],
+
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Raúl Jiménez (Mexico) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "category": "PLAYER_ILLIQUID",
+      "instrument": "Thinned Poisson (model-only, no Smarkets market)",
+      "key_data": "Jimenez: 1G/2SOT in 2 starts (RSA, KOR). lambda_MEX=1.160, goal_share=33%, lambda_jimenez=0.383",
+      "rules_applied": ["RULE5 (n=2 trim)", "RULE12 (outlier sensitivity trim)"],
+      "final_estimate": 0.27,
+      "confidence": "LOW-MEDIUM"
+    },
+    {
+      "q": 2,
+      "text": "Will the second half produce more goals than the first half in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets 'Highest scoring half' 3-way market — Second Half contract",
+      "key_data": "Second Half = 0.3978, Equal = 0.3275, First Half = 0.2769",
+      "rules_applied": [],
+      "final_estimate": 0.40,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 3,
+      "text": "Will Mexico have more shots on target than Ecuador in regulation (90 minutes + stoppage time)?",
+      "category": "TEAM_MODEL",
+      "instrument": "Skellam distribution + RULE8 blend",
+      "key_data": "lambda_MEX_SOT=3.870, lambda_ECU_SOT=3.025. Skellam raw=0.550. RULE8 blend: 0.65×0.550+0.35×0.50=0.533",
+      "rules_applied": ["RULE8 (draw=34.25%)"],
+      "final_estimate": 0.53,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 4,
+      "text": "Will the match have 2 or fewer total goals in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets OU2.5 Under contract",
+      "key_data": "OU2.5 Under = 0.6996. Combined lambda_goals=1.966 consistent with low-scoring expectation.",
+      "rules_applied": [],
+      "final_estimate": 0.70,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 5,
+      "text": "Will Gonzalo Plata (Ecuador) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "category": "PLAYER_ILLIQUID",
+      "instrument": "Thinned Poisson (model-only, no Smarkets market)",
+      "key_data": "Plata: 1G/0A in 3 starts. lambda_ECU=0.806, goal_share=35%, lambda_plata=0.282. P(score)=0.246, P(score OR assist)=0.321",
+      "rules_applied": ["RULE5 (small sample trim)", "Card-risk adjustment"],
+      "final_estimate": 0.28,
+      "confidence": "LOW-MEDIUM"
+    },
+    {
+      "q": 6,
+      "text": "Will Mexico have 6 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "category": "TEAM_MODEL",
+      "instrument": "Poisson tail probability from market-fitted lambda",
+      "key_data": "lambda_MEX_SOT=3.870. P(>=6 SOT) = 1-poisson.cdf(5, 3.870) = 0.195. Mexico never hit 6 SOT in any WC2026 group match.",
+      "rules_applied": [],
+      "final_estimate": 0.19,
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "q": 7,
+      "text": "Will a goal be scored from outside the penalty area in regulation (90 minutes + stoppage time)?",
+      "category": "BASE_RATE",
+      "instrument": "Historical WC knockout base rate (no market, no ESPN precedent)",
+      "key_data": "Base rate ~8-12% of goals are OTB. Expected goals ~2.0. P(>=1 OTB goal) ≈ 0.18",
+      "rules_applied": [],
+      "final_estimate": 0.18,
+      "confidence": "LOW"
+    },
+    {
+      "q": 8,
+      "text": "Will an own goal be scored in regulation (90 minutes + stoppage time)?",
+      "category": "BASE_RATE",
+      "instrument": "Historical WC knockout base rate",
+      "key_data": "WC2022: 6 OGs in 64 matches = 9.4% match rate. Conservative end given tight match and Mexico's clean defensive profile.",
+      "rules_applied": [],
+      "final_estimate": 0.08,
+      "confidence": "LOW"
+    },
+    {
+      "q": 9,
+      "text": "Will Mexico win in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets FTR market — Mexico contract",
+      "key_data": "FTR: Mexico 0.4329, Draw 0.3425, Ecuador 0.2300",
+      "rules_applied": [],
+      "final_estimate": 0.43,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 10,
+      "text": "Will there be 9 or more total corner kicks in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets corners OU8.5 Over contract (market trusted over ESPN model)",
+      "key_data": "OU8.5 Over = 0.4007. ESPN model predicted ~6.2 corners (MEX avg 1.67 + ECU competitive avg 4.5). Market overruled ESPN-only estimate.",
+      "rules_applied": ["Direct market trust protocol"],
+      "final_estimate": 0.40,
+      "confidence": "HIGH (trusting market)"
+    },
+    {
+      "q": 11,
+      "text": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets cards OU3.5 Over contract",
+      "key_data": "OU3.5 Over = 0.5371. ECU group YC: 1, 1, 3 (avg 1.67). MEX group YC: 1, 0, 1 (avg 0.67). Combined 2.33 avg.",
+      "rules_applied": [],
+      "final_estimate": 0.54,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 12,
+      "text": "Will there be 3 or more offside calls in regulation (90 minutes + stoppage time)?",
+      "category": "TEAM_MODEL",
+      "instrument": "Poisson from ESPN offside averages + RULE8 context shade",
+      "key_data": "MEX avg 1.33 offsides/game, ECU avg 0.67. Combined lambda=2.0. Raw P(>=3)=0.323. Shaded to 0.28 per RULE8 context and ECU's structural low-offside profile.",
+      "rules_applied": ["RULE8 context (tight match)"],
+      "final_estimate": 0.28,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 13,
+      "text": "Will a goal be scored before the first hydration break?",
+      "category": "TIMING_EARLY",
+      "instrument": "Time-window Poisson scaling + time bracket market cross-check",
+      "key_data": "lambda_0_to_25 = 1.966 × (25/90) = 0.546 → P = 0.421. Time bracket: 1-10+11-20+partial21-25 ≈ 0.354. Central estimate: 0.40",
+      "rules_applied": [],
+      "final_estimate": 0.40,
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "q": 14,
+      "text": "Will a penalty kick be awarded during regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets penalty market — Yes contract",
+      "key_data": "Penalty Yes = 0.258 (wide spread: bid=0.2083, offer=0.3077)",
+      "rules_applied": [],
+      "final_estimate": 0.26,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 15,
+      "text": "Will there be 20 or more total shots (on and off target) in regulation (90 minutes + stoppage time)?",
+      "category": "DIRECT_MARKET",
+      "instrument": "Smarkets shots OU20.5 + OU21.5 markets, lambda-fitted",
+      "key_data": "OU20.5 Over=0.521 → lambda=20.91; OU21.5 Over=0.465 → lambda=21.26. Avg lambda=21.08. P(>=20)=0.623. Cross-check: MEX avg 11.67 shots + ECU competitive avg 9.5 = ~21.2.",
+      "rules_applied": [],
+      "final_estimate": 0.62,
+      "confidence": "MEDIUM-HIGH"
+    }
+  ],
+
+  "summary_table": {
+    "Q1_jimenez_scores": 0.27,
+    "Q2_2H_more_goals": 0.40,
+    "Q3_mex_more_sot": 0.53,
+    "Q4_2_or_fewer_goals": 0.70,
+    "Q5_plata_score_or_assist": 0.28,
+    "Q6_mex_6plus_sot": 0.19,
+    "Q7_goal_outside_box": 0.18,
+    "Q8_own_goal": 0.08,
+    "Q9_mex_win_regulation": 0.43,
+    "Q10_9plus_total_corners": 0.40,
+    "Q11_4plus_cards": 0.54,
+    "Q12_3plus_offsides": 0.28,
+    "Q13_goal_before_first_break": 0.40,
+    "Q14_penalty_awarded": 0.26,
+    "Q15_20plus_shots": 0.62
+  }
+}

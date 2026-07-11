@@ -1,0 +1,35 @@
+{
+  "_description": "ESPN team/player stats for Colombia (3 group games) and Ghana (3 group games), R32 COL vs GHA 2026-07-04",
+  "espn_event_id": 760501,
+  "colombia_group_stage": {
+    "team_id_espn": 208,
+    "matches": [
+      {"opponent": "Uzbekistan", "ha": "away", "result": "W 3-1", "possession_pct": 61.4, "shots": 15, "sot": 4, "corners": 4, "yc": 1, "rc": 0, "offsides": 3, "fouls": 11},
+      {"opponent": "Congo DR", "ha": "home", "result": "W 1-0", "possession_pct": 63.5, "shots": 20, "sot": 9, "corners": 5, "yc": 2, "rc": 0, "offsides": 7, "fouls": 12},
+      {"opponent": "Portugal", "ha": "home", "result": "D 0-0", "possession_pct": 54.6, "shots": 24, "sot": 6, "corners": 5, "yc": 1, "rc": 0, "offsides": 3, "fouls": 12}
+    ],
+    "averages": {"shots": 19.67, "sot": 6.33, "corners": 4.67, "yc": 1.33, "offsides": 4.33, "possession_pct": 59.8},
+    "notes": [
+      "Strong group (2W 1D, 7pts): beat Uzbekistan and Congo DR, held Portugal 0-0 despite 24 shots (finishing was the issue, not creation).",
+      "Very high shot volume team -- 24 shots vs Portugal is the biggest single-match shot count of any team we've tracked this campaign.",
+      "Offsides notably elevated: 3, 7(!), 3 -- the 7-offside game vs Congo DR is a real outlier but even excluding it their rate (3,3) is still moderate-high.",
+      "Goals: Daniel Muñoz (2, incl. winner vs CDR), Luis Díaz (1, + 1 assist), Jaminton Campaz (1). James Rodríguez: 0 goals, 0 assists in all 3 group games despite starting every game."
+    ]
+  },
+  "ghana_group_stage": {
+    "team_id_espn": 4469,
+    "matches": [
+      {"opponent": "Panama", "ha": "home", "result": "W 1-0", "possession_pct": 38.0, "shots": 7, "sot": 2, "corners": 2, "yc": 1, "rc": 0, "offsides": 4, "fouls": 9},
+      {"opponent": "England", "ha": "away", "result": "D 0-0", "possession_pct": 21.1, "shots": 2, "sot": 1, "corners": 2, "yc": 1, "rc": 0, "offsides": 2, "fouls": 24},
+      {"opponent": "Croatia", "ha": "away", "result": "L 1-2", "possession_pct": 46.7, "shots": 6, "sot": 1, "corners": 2, "yc": 1, "rc": 0, "offsides": 2, "fouls": 13}
+    ],
+    "averages": {"shots": 5.0, "sot": 1.33, "corners": 2.0, "yc": 1.0, "offsides": 2.67, "possession_pct": 35.3},
+    "notes": [
+      "Advanced as a weaker qualifier (1W 1D 1L, 4pts). Extremely low attacking output -- 2 shots total vs England (21% possession, 24 fouls committed -- a purely defensive, foul-heavy survival performance).",
+      "Remarkably consistent low corner count: 2, 2, 2 across all 3 games regardless of opponent or game state.",
+      "Goals: Caleb Yirenkyi (stoppage-time winner vs Panama), Derrick Luckassen (vs Croatia). NEITHER Jordan Ayew NOR Antoine Semenyo has scored, assisted, or recorded a shot on target in any of the 3 group games.",
+      "Jordan Ayew: 0 shots (0.0) in ALL THREE games despite starting every game -- total attacking anonymity.",
+      "Antoine Semenyo: shots 2,0,1 (avg 1.0), but SOT is 0,0,0 -- zero shots on target across the entire group stage."
+    ]
+  }
+}

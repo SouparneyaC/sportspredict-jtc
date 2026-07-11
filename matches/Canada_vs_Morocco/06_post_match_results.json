@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Canada vs Morocco",
+  "date": "2026-07-04",
+  "actual_score": "Canada 0-3 Morocco",
+  "match_rbp_total": 58.92,
+  "questions_beat_crowd": 12,
+  "questions_below_crowd": 3,
+  "question_results": [
+    {"text": "Will Jonathan David (Canada) score a goal?", "our_estimate": 0.18, "crowd_estimate": 0.28, "outcome": "NO", "rbp": 13.93, "beat_crowd": true},
+    {"text": "Will Achraf Hakimi (Morocco) score or assist a goal?", "our_estimate": 0.30, "crowd_estimate": 0.36, "outcome": "YES", "rbp": -9.77, "beat_crowd": false},
+    {"text": "Will Morocco advance to the quarterfinals?", "our_estimate": 0.71, "crowd_estimate": 0.70, "outcome": "YES", "rbp": 6.21, "beat_crowd": true},
+    {"text": "Will Alphonso Davies (Canada) have 1 or more shots on target?", "our_estimate": 0.12, "crowd_estimate": 0.34, "outcome": "NO", "rbp": 30.97, "beat_crowd": true, "note": "PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT validated -- he didn't play at all in 3 of 4 group games and had 0 shots in his lone cameo."},
+    {"text": "Will the match be decided by a penalty shootout?", "our_estimate": 0.17, "crowd_estimate": 0.22, "outcome": "NO", "rbp": 8.43, "beat_crowd": true},
+    {"text": "Will Brahim Díaz (Morocco) have 1 or more shots on target?", "our_estimate": 0.33, "crowd_estimate": 0.55, "outcome": "NO", "rbp": 44.06, "beat_crowd": true, "note": "Second-biggest win of the match -- same PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT logic (only 1 SOT in his prior 4 games) discounted well below a generous liquid market."},
+    {"text": "Will exactly 1 goal be scored?", "our_estimate": 0.22, "crowd_estimate": 0.27, "outcome": "NO", "rbp": 9.63, "beat_crowd": true},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.45, "crowd_estimate": 0.43, "outcome": "YES", "rbp": 6.68, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.43, "crowd_estimate": 0.42, "outcome": "YES", "rbp": 5.62, "beat_crowd": true},
+    {"text": "Will Ismael Saibari (Morocco) score a goal?", "our_estimate": 0.30, "crowd_estimate": 0.35, "outcome": "NO", "rbp": 12.83, "beat_crowd": true},
+    {"text": "Will Canada have 4 or more shots on target?", "our_estimate": 0.80, "crowd_estimate": 0.46, "outcome": "NO", "rbp": -80.83, "beat_crowd": false, "note": "WORST RESULT OF THE CAMPAIGN. De-shrunk from 0.68 to 0.80 per an over-applied TEAM_SOT_EMPIRICAL_FLOOR + margin-push rule; Canada's 4-for-4 SOT floor had never been tested in a blowout-loss regime, and Canada got blown out 0-3. Full root-cause writeup in JULY3_POSTMORTEM_DEEP_DIVE.md addendum (2026-07-04)."},
+    {"text": "Will Morocco have more corner kicks than Canada?", "our_estimate": 0.52, "crowd_estimate": 0.56, "outcome": "NO", "rbp": 12.98, "beat_crowd": true},
+    {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.34, "crowd_estimate": 0.32, "outcome": "NO", "rbp": 0.77, "beat_crowd": true},
+    {"text": "Will a goal be scored before the first hydration break?", "our_estimate": 0.43, "crowd_estimate": 0.37, "outcome": "NO", "rbp": -5.1, "beat_crowd": false},
+    {"text": "Will both teams score?", "our_estimate": 0.49, "crowd_estimate": 0.48, "outcome": "NO", "rbp": 2.51, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "Biggest loss ever: Canada 4+ SOT (-80.83) -- see JULY3_POSTMORTEM_DEEP_DIVE.md addendum for full root-cause analysis (regime-coverage gap in the empirical floor, compounded by an unwarranted margin-push de-shrink).",
+    "Biggest wins: Brahim Díaz 1+ SOT (+44.06) and Alphonso Davies 1+ SOT (+30.97) -- both PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT, both in the SAME match as the biggest loss. Confirms the asymmetry: suppressing on real personal-negative evidence is safe; projecting up from a team-level positive floor is not.",
+    "Without Q11 this match would have been +139.75, near season-best."
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "FTR": {
+    "Colombia": {
+      "bid": 0.6803,
+      "offer": 0.6897,
+      "mid": 0.685
+    },
+    "Draw": {
+      "bid": 0.2128,
+      "offer": 0.2174,
+      "mid": 0.2151
+    },
+    "Ghana": {
+      "bid": 0.102,
+      "offer": 0.1042,
+      "mid": 0.1031
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.4065,
+      "offer": 0.4202,
+      "mid": 0.4133
+    },
+    "No": {
+      "bid": 0.5882,
+      "offer": 0.5988,
+      "mid": 0.5935
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.2632,
+      "offer": 0.274,
+      "mid": 0.2686
+    },
+    "Over 1.5 goals": {
+      "bid": 0.7194,
+      "offer": 0.7353,
+      "mid": 0.7273
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.5263,
+      "offer": 0.5464,
+      "mid": 0.5363
+    },
+    "Over 2.5 goals": {
+      "bid": 0.4545,
+      "offer": 0.4717,
+      "mid": 0.4631
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.7463,
+      "offer": 0.7692,
+      "mid": 0.7577
+    },
+    "Over 3.5 goals": {
+      "bid": 0.2326,
+      "offer": 0.25,
+      "mid": 0.2413
+    }
+  },
+  "HT_result": {
+    "Colombia": {
+      "bid": 0.4902,
+      "offer": 0.5025,
+      "mid": 0.4963
+    },
+    "Draw": {
+      "bid": 0.4032,
+      "offer": 0.4132,
+      "mid": 0.4082
+    },
+    "Ghana": {
+      "bid": 0.0952,
+      "offer": 0.102,
+      "mid": 0.0986
+    }
+  },
+  "COL_SOT_OU5.5": {
+    "Under 5.5 shots on target": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407
+    },
+    "Over 5.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601
+    }
+  },
+  "GHA_SOT_OU2.5": {
+    "Under 2.5 shots on target": {
+      "bid": 0.5435,
+      "offer": 0.6024,
+      "mid": 0.573
+    },
+    "Over 2.5 shots on target": {
+      "bid": 0.3968,
+      "offer": 0.4673,
+      "mid": 0.432
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.4673,
+      "offer": 0.5,
+      "mid": 0.4837
+    },
+    "Over 2.5 cards": {
+      "bid": 0.5051,
+      "offer": 0.5319,
+      "mid": 0.5185
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.6452,
+      "offer": 0.7353,
+      "mid": 0.6903
+    },
+    "Over 3.5 cards": {
+      "bid": 0.2778,
+      "offer": 0.3175,
+      "mid": 0.2976
+    }
+  },
+  "Team_score_first": {
+    "Colombia": {
+      "bid": 0.6623,
+      "offer": 0.7407,
+      "mid": 0.7015
+    },
+    "No goal": {
+      "bid": 0.0513,
+      "offer": 0.1,
+      "mid": 0.0756
+    },
+    "Ghana": {
+      "bid": 0.2,
+      "offer": 0.2564,
+      "mid": 0.2282
+    }
+  },
+  "COL_corners_OU5.5": {
+    "Under 5.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5405,
+      "mid": 0.4996
+    },
+    "Over 5.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5464,
+      "mid": 0.5026
+    }
+  },
+  "Total_corners_OU8.5": {
+    "Under 8.5 corners": {
+      "bid": 0.4808,
+      "offer": 0.5181,
+      "mid": 0.4995
+    },
+    "Over 8.5 corners": {
+      "bid": 0.4762,
+      "offer": 0.5208,
+      "mid": 0.4985
+    }
+  },
+  "Total_shots_OU23.5": {
+    "Under 23.5 shots": {
+      "bid": 0.4386,
+      "offer": 0.5405,
+      "mid": 0.4895
+    },
+    "Over 23.5 shots": {
+      "bid": 0.4673,
+      "offer": 0.5747,
+      "mid": 0.521
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.1786,
+      "offer": 0.2128,
+      "mid": 0.1957
+    },
+    "11-20": {
+      "bid": 0.1613,
+      "offer": 0.1961,
+      "mid": 0.1787
+    },
+    "21-30": {
+      "bid": 0.1282,
+      "offer": 0.1613,
+      "mid": 0.1447
+    },
+    "31-40": {
+      "bid": 0.1,
+      "offer": 0.125,
+      "mid": 0.1125
+    },
+    "41-50": {
+      "bid": 0.0909,
+      "offer": 0.1163,
+      "mid": 0.1036
+    },
+    "51-60": {
+      "bid": 0.0571,
+      "offer": 0.08,
+      "mid": 0.0685
+    },
+    "61-70": {
+      "bid": 0.04,
+      "offer": 0.0588,
+      "mid": 0.0494
+    },
+    "71-80": {
+      "bid": 0.0294,
+      "offer": 0.0455,
+      "mid": 0.0374
+    },
+    "81-90": {
+      "bid": 0.0312,
+      "offer": 0.0476,
+      "mid": 0.0394
+    },
+    "None": {
+      "bid": 0.069,
+      "offer": 0.0952,
+      "mid": 0.0821
+    }
+  },
+  "To_qualify": {
+    "Colombia": {
+      "bid": 0.8065,
+      "offer": 0.8197,
+      "mid": 0.8131
+    },
+    "Ghana": {
+      "bid": 0.1887,
+      "offer": 0.2,
+      "mid": 0.1944
+    }
+  },
+  "COL_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.4132,
+      "offer": 0.4274,
+      "mid": 0.4203
+    },
+    "Over 1.5 goals": {
+      "bid": 0.5714,
+      "offer": 0.5882,
+      "mid": 0.5798
+    }
+  },
+  "COL_goals_OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.7042,
+      "offer": 0.7246,
+      "mid": 0.7144
+    },
+    "Over 2.5 goals": {
+      "bid": 0.2857,
+      "offer": 0.2985,
+      "mid": 0.2921
+    }
+  }
+}

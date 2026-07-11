@@ -1,0 +1,127 @@
+{
+  "_description": "Rules applied per question for Switzerland vs Algeria 2026-07-02/03",
+  "match_context": {
+    "switzerland_win_prob": 0.4878,
+    "draw_prob": 0.3007,
+    "algeria_win_prob": 0.2106,
+    "lambda_switzerland": 1.499,
+    "lambda_algeria": 0.928,
+    "rule7_fires": false,
+    "rule8_fires": true,
+    "rule8_note": "Draw 30.07% \u2265 25%. RULE8 most relevant for Q10 (model estimate), Q9 (model estimate), Q14 (model estimate)."
+  },
+  "per_question": [
+    {
+      "q": 1,
+      "tier": "PLAYER_LIQUID",
+      "rules": [],
+      "estimate": 0.325,
+      "note": "Embolo anytime scorer liquid mid=0.3254. He's SUI's primary striker; Ndoye was top shooter in group but Embolo typically more clinical in knockouts."
+    },
+    {
+      "q": 2,
+      "tier": "PLAYER_LIQUID",
+      "rules": [],
+      "estimate": 0.128,
+      "note": "Vargas SOT OU1.5 liquid mid=0.1283. Poisson cross-check from OU0.5(0.4951)=0.150. Use direct. Vargas is a wide player; 2+ SOT is a high bar."
+    },
+    {
+      "q": 3,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.514,
+      "note": "BTTS Yes mid=0.5141. ALG OU0.5 Over=62.57%. BTTS price is fair; both teams have reasonable scoring probability."
+    },
+    {
+      "q": 4,
+      "tier": "PLAYER_ILLIQUID",
+      "rules": [
+        "RULE_ILLIQUID_0.945"
+      ],
+      "estimate": 0.21,
+      "note": "Gouiri offer=0.2222 \u00d70.945=0.210. CONCERN: Gouiri was NOT top shooter in any ALG group game (Cha\u00efbi vs ARG, Maza vs JOR and AUT). Market may be overpricing his goal probability."
+    },
+    {
+      "q": 5,
+      "tier": "PLAYER_LIQUID",
+      "rules": [],
+      "estimate": 0.27,
+      "note": "Mahrez score_or_assist liquid mid=0.2699. He's ALG playmaker; consistent creative role even if not top shooter. S+A captures his assist potential too."
+    },
+    {
+      "q": 6,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.435,
+      "note": "OU2.5 Over mid=0.4350 = P(3+ goals). Total \u03bb=2.422; Poisson P(\u22653)=0.437. Consistent."
+    },
+    {
+      "q": 7,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.323,
+      "note": "Most corners Algeria=0.3227 from 3-way market. AH cross-check: P(SUI>ALG)=0.5424. ESPN: SUI avg 6.33 corners, ALG avg 4.0. SUI home team. Algeria corners underdog."
+    },
+    {
+      "q": 8,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.174,
+      "note": "Cards OU4.5 Over=0.1778. Blended with Poisson(\u03bb=2.911)=0.170 \u2192 0.174. Both teams had very clean group stages (SUI: 1 YC/game; ALG: 0.33 YC/game)."
+    },
+    {
+      "q": 9,
+      "tier": "TEAM_MODEL",
+      "rules": [
+        "RULE8_MINOR"
+      ],
+      "estimate": 0.14,
+      "note": "Poisson aggregate P(any brace)=0.135. Brace market offers (illiquid): Embolo=0.08\u21920.064, Itten=0.067\u21920.054. Blended estimate 0.140. RULE8: competitive match reduces dominant individual scores."
+    },
+    {
+      "q": 10,
+      "tier": "TEAM_MODEL",
+      "rules": [
+        "RULE8_PULL",
+        "RULE12_FLAG"
+      ],
+      "estimate": 0.6,
+      "note": "Player-sum \u03bb_SUI_SOT=6.57\u2192P(\u22655)=0.784. ESPN avg=6.0\u2192empirical P(\u22655)=0.667. RULE12: removing Canada (4 SOT) or either Bosnia/Qatar game shifts estimate significantly. RULE8: shade from 0.667 toward 0.60. Algeria conceded avg 4.33 SOT/game."
+    },
+    {
+      "q": 11,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.479,
+      "note": "HT result Draw=0.4785. Very high HT draw probability reflects competitive match. RULE8 confirms high draw environment."
+    },
+    {
+      "q": 12,
+      "tier": "TEAM_MODEL",
+      "rules": [],
+      "estimate": 0.336,
+      "note": "P(pen OR red) = P(pen=0.2402)+P(red\u22480.1262)-P(both=0.0303)=0.336. Red card from 1-mid(No red)=1-0.8738=0.1262."
+    },
+    {
+      "q": 13,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.558,
+      "note": "Team-to-score-first Switzerland=0.5576. Cross-check: FTR SUI win=48.78%, SUI favored \u2192 consistent with 55.76% first scorer."
+    },
+    {
+      "q": 14,
+      "tier": "TEAM_MODEL",
+      "rules": [],
+      "estimate": 0.437,
+      "note": "Second hydration break assumed at ~70'. P(goal 70'-90') using 2H \u03bb scaling=0.457, total \u03bb scaling=0.416. Blended=0.437. Uses SH OU0.5 Over=0.7469 \u2192 \u03bb_2H=1.374."
+    },
+    {
+      "q": 15,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.674,
+      "note": "To_qualify Switzerland=0.6735. FTR SUI win (48.78%) + ET/PK advancement probability = 67.35%."
+    }
+  ]
+}

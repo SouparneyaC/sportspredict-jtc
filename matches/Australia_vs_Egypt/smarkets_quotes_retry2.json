@@ -1,0 +1,436 @@
+{
+  "HT_result": {
+    "Australia": {
+      "bid": 0.1852,
+      "offer": 0.1961,
+      "mid": 0.1906
+    },
+    "Draw": {
+      "bid": 0.5025,
+      "offer": 0.5102,
+      "mid": 0.5063
+    },
+    "Egypt": {
+      "bid": 0.303,
+      "offer": 0.3125,
+      "mid": 0.3077
+    }
+  },
+  "AUS_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.3788,
+      "offer": 0.4032,
+      "mid": 0.391
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6024,
+      "offer": 0.625,
+      "mid": 0.6137
+    }
+  },
+  "AUS_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.7812,
+      "offer": 0.8,
+      "mid": 0.7906
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2,
+      "offer": 0.2222,
+      "mid": 0.2111
+    }
+  },
+  "EGY_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.2703,
+      "offer": 0.3077,
+      "mid": 0.289
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7143,
+      "offer": 0.7246,
+      "mid": 0.7195
+    }
+  },
+  "EGY_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.6623,
+      "offer": 0.6849,
+      "mid": 0.6736
+    },
+    "Over 1.5 goals": {
+      "bid": 0.3125,
+      "offer": 0.3356,
+      "mid": 0.3241
+    }
+  },
+  "Anytime_goalscorer": {
+    "Emam Ashour": {
+      "bid": 0.1,
+      "offer": 0.1087,
+      "mid": 0.1043
+    },
+    "Karim Hafez": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": 0.0497
+    },
+    "Lucas Herrington": {
+      "bid": null,
+      "offer": 0.037,
+      "mid": 0.035
+    },
+    "Aziz Behich": {
+      "bid": 0.02,
+      "offer": 0.04,
+      "mid": 0.03
+    },
+    "Hamdy Fathy": {
+      "bid": 0.0263,
+      "offer": 0.0571,
+      "mid": 0.0417
+    },
+    "Marwan Attia": {
+      "bid": 0.0154,
+      "offer": 0.04,
+      "mid": 0.0277
+    },
+    "Alessandro Circati": {
+      "bid": 0.0294,
+      "offer": 0.0333,
+      "mid": 0.0314
+    },
+    "Mohamed Hany": {
+      "bid": 0.0125,
+      "offer": 0.025,
+      "mid": 0.0188
+    },
+    "Mohamed Salah": {
+      "bid": 0.2817,
+      "offer": 0.2857,
+      "mid": 0.2837
+    },
+    "Harry Souttar": {
+      "bid": 0.0625,
+      "offer": 0.0645,
+      "mid": 0.0635
+    },
+    "Mostafa Ziko": {
+      "bid": 0.1471,
+      "offer": 0.1613,
+      "mid": 0.1542
+    },
+    "Aiden O'Neill": {
+      "bid": 0.0154,
+      "offer": 0.04,
+      "mid": 0.0277
+    },
+    "Nestory Irankunda": {
+      "bid": 0.1923,
+      "offer": 0.2,
+      "mid": 0.1961
+    },
+    "Conor Metcalfe": {
+      "bid": 0.0833,
+      "offer": 0.087,
+      "mid": 0.0852
+    },
+    "Omar Marmoush": {
+      "bid": 0.2174,
+      "offer": 0.2222,
+      "mid": 0.2198
+    },
+    "Jackson Alexander Irvine": {
+      "bid": 0.0769,
+      "offer": 0.087,
+      "mid": 0.0819
+    },
+    "Rami Rabia": {
+      "bid": 0.04,
+      "offer": 0.0556,
+      "mid": 0.0478
+    },
+    "Cristian Volpato": {
+      "bid": 0.119,
+      "offer": 0.122,
+      "mid": 0.1205
+    },
+    "Jordan Bos": {
+      "bid": 0.0667,
+      "offer": 0.08,
+      "mid": 0.0733
+    },
+    "Yasser Ibrahim": {
+      "bid": 0.0294,
+      "offer": 0.04,
+      "mid": 0.0347
+    },
+    "Kai Trewin": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0411
+    },
+    "Ajdin Hrustic": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Awer Mabil": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Cameron Burgess": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.0378
+    },
+    "Cameron Devlin": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.0473
+    },
+    "Haissem Hassan": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Hamza Abdelkarim": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853
+    },
+    "Hossam Abdelmaguid": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": 0.0497
+    },
+    "Ibrahim Adel": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1658
+    },
+    "Jason Geria": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.0236
+    },
+    "Ahmed Mostafa Mohamed Sayed": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Mahmoud Hassan": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.21
+    },
+    "Mahmoud Saber": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": 0.1211
+    },
+    "Milos Degenek": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.0236
+    },
+    "Mohamed Toure": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": 0.225
+    },
+    "Nabil Emad": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": 0.1074
+    },
+    "Nishan Velupillay": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Paul Okon-Engstler": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": 0.0497
+    },
+    "Tarek Alaa": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.0378
+    },
+    "Tete Yengi": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.1929
+    }
+  },
+  "Player_SOT_OU1.5": {
+    "Emam Ashour": {
+      "bid": 0.0417,
+      "offer": 0.1042,
+      "mid": 0.073
+    },
+    "Marwan Attia": {
+      "bid": 0.0067,
+      "offer": 0.037,
+      "mid": 0.0218
+    },
+    "Mohamed Hany": {
+      "bid": 0.0001,
+      "offer": 0.0263,
+      "mid": 0.0132
+    },
+    "Mohamed Salah": {
+      "bid": 0.2128,
+      "offer": 0.25,
+      "mid": 0.2314
+    },
+    "Alessandro Circati": {
+      "bid": 0.0001,
+      "offer": 0.0238,
+      "mid": 0.012
+    },
+    "Mostafa Ziko": {
+      "bid": 0.1111,
+      "offer": 0.122,
+      "mid": 0.1166
+    },
+    "Nestory Irankunda": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Hamdy Fathy": {
+      "bid": 0.004,
+      "offer": 0.0227,
+      "mid": 0.0134
+    },
+    "Omar Marmoush": {
+      "bid": 0.1961,
+      "offer": 0.2174,
+      "mid": 0.2067
+    },
+    "Rami Rabia": {
+      "bid": 0.0033,
+      "offer": 0.0217,
+      "mid": 0.0125
+    },
+    "Aiden O'Neill": {
+      "bid": 0.005,
+      "offer": 0.0227,
+      "mid": 0.0139
+    },
+    "Harry Souttar": {
+      "bid": 0.0045,
+      "offer": 0.0455,
+      "mid": 0.025
+    },
+    "Yasser Ibrahim": {
+      "bid": 0.005,
+      "offer": 0.0167,
+      "mid": 0.0109
+    },
+    "Aziz Behich": {
+      "bid": 0.0056,
+      "offer": 0.02,
+      "mid": 0.0128
+    },
+    "Jackson Alexander Irvine": {
+      "bid": 0.0556,
+      "offer": 0.0625,
+      "mid": 0.059
+    },
+    "Jordan Bos": {
+      "bid": 0.0133,
+      "offer": 0.069,
+      "mid": 0.0412
+    },
+    "Conor Metcalfe": {
+      "bid": 0.0312,
+      "offer": 0.087,
+      "mid": 0.0591
+    },
+    "Karim Hafez": {
+      "bid": 0.005,
+      "offer": 0.0118,
+      "mid": 0.0084
+    },
+    "Lucas Herrington": {
+      "bid": 0.005,
+      "offer": 0.0167,
+      "mid": 0.0109
+    },
+    "Cristian Volpato": {
+      "bid": 0.05,
+      "offer": 0.0952,
+      "mid": 0.0726
+    },
+    "Kai Trewin": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337
+    },
+    "Ajdin Hrustic": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": 0.0822
+    },
+    "Awer Mabil": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Haissem Hassan": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.139
+    },
+    "Hamza Abdelkarim": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Ibrahim Adel": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Ahmed Mostafa Mohamed Sayed": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.139
+    },
+    "Mahmoud Hassan": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175
+    },
+    "Mahmoud Saber": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "Mohamed Toure": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Nishan Velupillay": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Tarek Alaa": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0675
+    },
+    "Tete Yengi": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1658
+    }
+  }
+}

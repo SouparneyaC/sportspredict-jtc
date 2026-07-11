@@ -1,0 +1,149 @@
+{
+  "_source": "Smarkets API — https://api.smarkets.com/v3/",
+  "_fetch_method": "GET /events/{event_id}/markets/?limit=300  (name= param is BROKEN, always use limit+client-side filter)",
+  "_timing": "Markets captured pre-kickoff; some markets suspended near kickoff",
+  "event_id": 45161448,
+  "event_name": "Mexico vs Ecuador",
+  "event_date": "2026-06-30",
+  "total_markets_in_event": 179,
+  "liquidity_context": "Materially reduced vs FRA-SWE: ALL player props (anytime goalscorer, score/assist, player SOT) were illiquid (no bid+offer present). Main match-level markets were liquid but some suspended near kickoff.",
+
+  "markets": {
+    "full_time_result": {
+      "Mexico": 0.4329,
+      "Draw": 0.3425,
+      "Ecuador": 0.2300,
+      "liquid": true,
+      "note": "RULE8 fires: draw=34.25% >> 25% threshold. Highest draw probability of any knockout match this stage."
+    },
+    "both_teams_to_score": {
+      "Yes": 0.4082,
+      "No": 0.6008,
+      "liquid": true
+    },
+    "goals_over_under_2_5": {
+      "Under": 0.6996,
+      "Over": 0.2988,
+      "liquid": true,
+      "implied_lambda_lb": null,
+      "note": "Q4 direct — strong Under signal, low-scoring match expected"
+    },
+    "goals_over_under_3_5": {
+      "Under": 0.8624,
+      "Over": 0.1372,
+      "liquid": true
+    },
+    "highest_scoring_half": {
+      "First_Half": 0.2769,
+      "Equal": 0.3275,
+      "Second_Half": 0.3978,
+      "liquid": true,
+      "note": "Q2 direct — Second Half contract = 0.3978. Equal at 32.75% very high (consistent with low goal total)"
+    },
+    "mexico_SOT_over_under_3_5": {
+      "Under": 0.4601,
+      "Over": 0.5407,
+      "liquid": true,
+      "implied_lambda": 3.870,
+      "note": "Used to fit lambda_MEX_SOT via scipy brentq"
+    },
+    "ecuador_SOT_over_under_2_5": {
+      "Under": 0.4167,
+      "Over": 0.5823,
+      "liquid": true,
+      "implied_lambda": 3.025,
+      "note": "Used to fit lambda_ECU_SOT via scipy brentq"
+    },
+    "total_SOT_over_under_6_5": {
+      "Under": 0.4435,
+      "Over": 0.5676,
+      "liquid": true
+    },
+    "corners_over_under_8_5": {
+      "Under": 0.6047,
+      "Over": 0.4007,
+      "liquid": true,
+      "note": "Q10 direct — trusted at 0.40 despite model suggesting 6.2 expected corners (market higher than ESPN data implied)"
+    },
+    "cards_over_under_3_5": {
+      "Under": 0.4941,
+      "Over": 0.5371,
+      "liquid": true,
+      "note": "Q11 direct — 4+ cards = 0.54"
+    },
+    "penalty": {
+      "Yes": 0.2580,
+      "No": 0.7318,
+      "liquid": true,
+      "spread_note": "Widest spread of any liquid market: bid=0.2083, offer=0.3077. Used raw mid.",
+      "note": "Q14 direct — 0.26"
+    },
+    "any_player_sent_off": {
+      "Yes": 0.1750,
+      "No": 0.8334,
+      "liquid": true,
+      "note": "Used in compound formula for Q14 check (penalty OR red card) — not asked directly in this match's questions"
+    },
+    "shots_over_under_20_5": {
+      "Under": 0.4896,
+      "Over": 0.5210,
+      "liquid": true,
+      "implied_lambda": 20.91,
+      "note": "Q15 lower bound for lambda_total_shots"
+    },
+    "shots_over_under_21_5": {
+      "Under": 0.5463,
+      "Over": 0.4648,
+      "liquid": true,
+      "implied_lambda": 21.26,
+      "note": "Q15 upper bound for lambda_total_shots"
+    },
+    "halftime_result": {
+      "Mexico": 0.2942,
+      "Draw": 0.5278,
+      "Ecuador": 0.1819,
+      "liquid": true,
+      "note": "Used for context on Q12 (HT ahead) — not a direct question"
+    },
+    "goal_1_time_bracket": {
+      "liquid_at_pull": true,
+      "suspended_before_kickoff": true,
+      "1_to_10": 0.1492,
+      "11_to_20": 0.1448,
+      "21_to_30": 0.1219,
+      "31_to_40": 0.1036,
+      "note": "Q13 cross-validation — briefly liquid then suspended. Used alongside time-window scaling."
+    },
+    "mexico_goals_ou": {
+      "1_5_over": 0.3229,
+      "implied_lambda": 1.160,
+      "liquid": true,
+      "note": "Only one liquid MEX goals line — used as primary lambda_MEX_goals anchor"
+    },
+    "ecuador_goals_ou": {
+      "0_5_over": 0.5666,
+      "1_5_over": 0.1771,
+      "implied_lambda": 0.806,
+      "liquid": true,
+      "note": "Two ECU goals lines — used to triangulate lambda_ECU_goals"
+    },
+    "first_half_goals_ou_0_5": {
+      "Over": 0.5451,
+      "liquid": true,
+      "note": "Implied P(at least 1 goal in 1H). Used as cross-check for Q13 (goal before break ≈ Q13)"
+    },
+    "player_markets": {
+      "anytime_goalscorer": "ILLIQUID — no bid/offer",
+      "player_score_or_assist": "ILLIQUID — no bid/offer",
+      "player_SOT": "ILLIQUID — no bid/offer",
+      "note": "Materially different from FRA-SWE where all 4 target players had genuine bid/offer markets. MEX-ECU required full model-based estimation for Q1 and Q5."
+    }
+  },
+
+  "rule8_trigger": {
+    "draw_probability": 0.3425,
+    "threshold": 0.25,
+    "fires": true,
+    "note": "Draw=34.25% is the highest draw probability of any knockout match this stage. RULE8 mandates all comparison props shaded 65/35 toward model+0.50 blend."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_description": "Model derivations for Portugal vs Croatia 2026-07-02 R32",
+  "lambda_fits": {
+    "portugal_goals": 1.933,
+    "croatia_goals": 0.998,
+    "total_goals": 2.931,
+    "portugal_sot": 4.894,
+    "portugal_shots": 14.519,
+    "croatia_shots": 8.387,
+    "total_shots": 22.906,
+    "croatia_sot_derived": 3.848,
+    "portugal_cards": 1.19,
+    "croatia_cards": 1.554,
+    "portugal_corners": 5.586
+  },
+  "derived_probs": {
+    "bruno_2plus_sot_from_ou0.5": 0.22,
+    "portugal_sot_6plus": 0.365,
+    "total_shots_20plus": 0.756,
+    "both_teams_1plus_card": 0.549,
+    "portugal_1plus_card": 0.696,
+    "croatia_1plus_card": 0.789,
+    "penalty_or_redcard": 0.369,
+    "header_goal_aggregated": 0.382
+  },
+  "timing_q14_note": "No hydration break timing question in this match. Q14 is penalty/RC compound.",
+  "rule_checks": {
+    "RULE7": "INACTIVE \u2014 Croatia win=16.4% is \u226515% threshold",
+    "RULE8": "FIRES \u2014 Draw=25.81% \u2265 25%. Shade comparison/directional props toward 0.50. Most questions are count-based so limited direct impact.",
+    "RULE6": "Clear \u2014 all estimates in 0.18-0.76 range",
+    "RULE12": "Check Q10 (Portugal 6+ SOT): removing UZB outlier (9 SOT) drops avg to 1.5. However market prices OU4.5 at 54% \u2192 anchored to market. Keep 0.365.",
+    "RULE14": "P(Portugal more SOT > Croatia) clearly \u2265 P(Portugal more goals). Consistent.",
+    "RULE15": "Not applicable \u2014 Croatia is not a blowout underdog (16.4% > 10%)"
+  }
+}

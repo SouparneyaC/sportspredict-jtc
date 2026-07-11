@@ -1,0 +1,322 @@
+{
+  "FTR": {
+    "Canada": {
+      "bid": 0.1724,
+      "offer": 0.1754,
+      "mid": 0.1739
+    },
+    "Draw": {
+      "bid": 0.2857,
+      "offer": 0.2899,
+      "mid": 0.2878
+    },
+    "Morocco": {
+      "bid": 0.5348,
+      "offer": 0.5376,
+      "mid": 0.5362
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.4854,
+      "offer": 0.495,
+      "mid": 0.4902
+    },
+    "No": {
+      "bid": 0.5051,
+      "offer": 0.5181,
+      "mid": 0.5116
+    }
+  },
+  "Penalty_shootout": {
+    "Yes": {
+      "bid": 0.1282,
+      "offer": 0.2041,
+      "mid": 0.1662
+    },
+    "No": {
+      "bid": 0.8,
+      "offer": 0.8929,
+      "mid": 0.8465
+    }
+  },
+  "Exact_goals": {
+    "No goals": {
+      "bid": 0.087,
+      "offer": 0.1111,
+      "mid": 0.099
+    },
+    "1 goals": {
+      "bid": 0.2083,
+      "offer": 0.2326,
+      "mid": 0.2205
+    },
+    "2 goals": {
+      "bid": 0.25,
+      "offer": 0.274,
+      "mid": 0.262
+    },
+    "3 goals": {
+      "bid": 0.2041,
+      "offer": 0.2273,
+      "mid": 0.2157
+    },
+    "4 goals": {
+      "bid": 0.1064,
+      "offer": 0.1316,
+      "mid": 0.119
+    },
+    "5 goals": {
+      "bid": 0.0476,
+      "offer": 0.0714,
+      "mid": 0.0595
+    },
+    "6 or more goals": {
+      "bid": 0.0182,
+      "offer": 0.0417,
+      "mid": 0.03
+    }
+  },
+  "HT_result": {
+    "Canada": {
+      "bid": 0.1515,
+      "offer": 0.1613,
+      "mid": 0.1564
+    },
+    "Draw": {
+      "bid": 0.4505,
+      "offer": 0.4587,
+      "mid": 0.4546
+    },
+    "Morocco": {
+      "bid": 0.3876,
+      "offer": 0.3937,
+      "mid": 0.3906
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.3546,
+      "offer": 0.3968,
+      "mid": 0.3757
+    },
+    "Over 2.5 cards": {
+      "bid": 0.6135,
+      "offer": 0.6494,
+      "mid": 0.6315
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.5747,
+      "offer": 0.6098,
+      "mid": 0.5922
+    },
+    "Over 3.5 cards": {
+      "bid": 0.4,
+      "offer": 0.4505,
+      "mid": 0.4253
+    }
+  },
+  "CAN_SOT_OU2.5": {
+    "Under 2.5 shots on target": {
+      "bid": 0.3788,
+      "offer": 0.4545,
+      "mid": 0.4167
+    },
+    "Over 2.5 shots on target": {
+      "bid": 0.5435,
+      "offer": 0.6211,
+      "mid": 0.5823
+    }
+  },
+  "MAR_SOT_OU4.5": {
+    "Under 4.5 shots on target": {
+      "bid": 0.495,
+      "offer": 0.5814,
+      "mid": 0.5382
+    },
+    "Over 4.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5025,
+      "mid": 0.4613
+    }
+  },
+  "Most_corners": {
+    "Canada": {
+      "bid": 0.3472,
+      "offer": 0.4132,
+      "mid": 0.3802
+    },
+    "Draw": {
+      "bid": 0.0833,
+      "offer": 0.1282,
+      "mid": 0.1058
+    },
+    "Morocco": {
+      "bid": 0.4854,
+      "offer": 0.5525,
+      "mid": 0.519
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": 0.2174,
+      "offer": 0.25,
+      "mid": 0.2337
+    },
+    "No": {
+      "bid": 0.7576,
+      "offer": 0.7812,
+      "mid": 0.7694
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.119,
+      "offer": 0.1613,
+      "mid": 0.1401
+    },
+    "No": {
+      "bid": 0.8696,
+      "offer": 0.9009,
+      "mid": 0.8853
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.1613,
+      "offer": 0.1961,
+      "mid": 0.1787
+    },
+    "11-20": {
+      "bid": 0.1515,
+      "offer": 0.1818,
+      "mid": 0.1666
+    },
+    "21-30": {
+      "bid": 0.122,
+      "offer": 0.1515,
+      "mid": 0.1367
+    },
+    "31-40": {
+      "bid": 0.0952,
+      "offer": 0.122,
+      "mid": 0.1086
+    },
+    "41-50": {
+      "bid": 0.0909,
+      "offer": 0.1163,
+      "mid": 0.1036
+    },
+    "51-60": {
+      "bid": 0.0588,
+      "offer": 0.08,
+      "mid": 0.0694
+    },
+    "61-70": {
+      "bid": 0.0435,
+      "offer": 0.0625,
+      "mid": 0.053
+    },
+    "71-80": {
+      "bid": 0.0312,
+      "offer": 0.0476,
+      "mid": 0.0394
+    },
+    "81-90": {
+      "bid": 0.0357,
+      "offer": 0.0526,
+      "mid": 0.0442
+    },
+    "None": {
+      "bid": 0.0952,
+      "offer": 0.119,
+      "mid": 0.1071
+    }
+  },
+  "To_qualify": {
+    "Canada": {
+      "bid": 0.2857,
+      "offer": 0.2941,
+      "mid": 0.2899
+    },
+    "Morocco": {
+      "bid": 0.7092,
+      "offer": 0.7194,
+      "mid": 0.7143
+    }
+  },
+  "CAN_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.4065,
+      "offer": 0.4237,
+      "mid": 0.4151
+    },
+    "Over 0.5 goals": {
+      "bid": 0.5747,
+      "offer": 0.6061,
+      "mid": 0.5904
+    }
+  },
+  "CAN_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.7874,
+      "offer": 0.813,
+      "mid": 0.8002
+    },
+    "Over 1.5 goals": {
+      "bid": 0.1887,
+      "offer": 0.2083,
+      "mid": 0.1985
+    }
+  },
+  "MAR_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.1786,
+      "offer": 0.2,
+      "mid": 0.1893
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7874,
+      "offer": 0.8065,
+      "mid": 0.797
+    }
+  },
+  "MAR_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.5236,
+      "offer": 0.5435,
+      "mid": 0.5335
+    },
+    "Over 1.5 goals": {
+      "bid": 0.4545,
+      "offer": 0.4808,
+      "mid": 0.4677
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.2941,
+      "offer": 0.3125,
+      "mid": 0.3033
+    },
+    "Over 1.5 goals": {
+      "bid": 0.6849,
+      "offer": 0.7143,
+      "mid": 0.6996
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.5714,
+      "offer": 0.5882,
+      "mid": 0.5798
+    },
+    "Over 2.5 goals": {
+      "bid": 0.4065,
+      "offer": 0.4202,
+      "mid": 0.4133
+    }
+  }
+}

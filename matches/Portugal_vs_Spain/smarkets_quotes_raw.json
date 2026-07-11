@@ -1,0 +1,1300 @@
+{
+  "149253367": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1276695,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": 0.1783215,
+      "liq": "ILLIQUID_offer"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.051124499999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1049895,
+      "liq": "ILLIQUID_offer"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.350028,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bruno Fernandes": {
+      "bid": 0.125,
+      "offer": 0.1613,
+      "mid": 0.14315,
+      "liq": "LIQUID"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.303,
+      "offer": 0.3226,
+      "mid": 0.31279999999999997,
+      "liq": "LIQUID"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.18172349999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.07002449999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.053959499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.1390095,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.29077649999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189,
+      "liq": "ILLIQUID_offer"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189,
+      "liq": "ILLIQUID_offer"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.048478499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": 0.24872399999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.0417,
+      "mid": 0.0394065,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.067473,
+      "liq": "ILLIQUID_offer"
+    },
+    "Lamine Yamal": {
+      "bid": 0.3125,
+      "offer": 0.3226,
+      "mid": 0.31755,
+      "liq": "LIQUID"
+    },
+    "Marc Cucurella": {
+      "bid": 0.0526,
+      "offer": 0.0645,
+      "mid": 0.058550000000000005,
+      "liq": "LIQUID"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0726705,
+      "liq": "ILLIQUID_offer"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.07002449999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945,
+      "liq": "ILLIQUID_offer"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.3704,
+      "offer": 0.3846,
+      "mid": 0.3775,
+      "liq": "LIQUID"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.048478499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.25893,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.048478499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.051124499999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.0952,
+      "mid": 0.089964,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.0756,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575315,
+      "liq": "ILLIQUID_offer"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.044982,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.0756,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0314685,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.0952,
+      "mid": 0.089964,
+      "liq": "ILLIQUID_offer"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": 0.2250045,
+      "liq": "ILLIQUID_offer"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0609525,
+      "liq": "ILLIQUID_offer"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.209979,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149549557": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.357966,
+      "liq": "ILLIQUID_offer"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.118125,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": 0.23927399999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Bruno Fernandes": {
+      "bid": 0.2667,
+      "offer": 0.2941,
+      "mid": 0.2804,
+      "liq": "LIQUID"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.3448,
+      "offer": 0.3759,
+      "mid": 0.36035,
+      "liq": "LIQUID"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.350028,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3327345,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": 0.450009,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": 0.28208249999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": 0.168777,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": 0.168777,
+      "liq": "ILLIQUID_offer"
+    },
+    "Lamine Yamal": {
+      "bid": 0.4425,
+      "offer": 0.4545,
+      "mid": 0.4485,
+      "liq": "LIQUID"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.1928745,
+      "liq": "ILLIQUID_offer"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.4065,
+      "offer": 0.5,
+      "mid": 0.45325,
+      "liq": "LIQUID"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.4505,
+      "mid": 0.4257225,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.25893,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.23048549999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": 0.24541649999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": 0.27395549999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.20109599999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.07002449999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175014,
+      "liq": "ILLIQUID_offer"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149549536": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.5682,
+      "mid": 0.536949,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.5236,
+      "mid": 0.4948019999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853145,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": 0.2699865,
+      "liq": "ILLIQUID_offer"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.6849,
+      "mid": 0.6472304999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bruno Fernandes": {
+      "bid": 0.25,
+      "offer": 0.4545,
+      "mid": 0.35225,
+      "liq": "LIQUID"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.6135,
+      "offer": 0.6173,
+      "mid": 0.6154,
+      "liq": "LIQUID"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.5682,
+      "mid": 0.536949,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.16575299999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": 0.24872399999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.3846,
+      "mid": 0.36344699999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.6944,
+      "mid": 0.656208,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.4545,
+      "mid": 0.4295025,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.5128,
+      "mid": 0.484596,
+      "liq": "ILLIQUID_offer"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": 0.450009,
+      "liq": "ILLIQUID_offer"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.5988,
+      "mid": 0.565866,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.495,
+      "mid": 0.467775,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": 0.23625,
+      "liq": "ILLIQUID_offer"
+    },
+    "Lamine Yamal": {
+      "bid": 0.7246,
+      "offer": 0.7519,
+      "mid": 0.7382500000000001,
+      "liq": "LIQUID"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189,
+      "liq": "ILLIQUID_offer"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.209979,
+      "liq": "ILLIQUID_offer"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": 0.23927399999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.29077649999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": 0.27792449999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.5988,
+      "mid": 0.565866,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.6757,
+      "offer": 0.7143,
+      "mid": 0.6950000000000001,
+      "liq": "LIQUID"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": 0.1783215,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.6369,
+      "mid": 0.6018705,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.1968435,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": 0.5107725,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3327345,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.357966,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": 0.24541649999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.403893,
+      "liq": "ILLIQUID_offer"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": 0.14316749999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": 0.23927399999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.118125,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.219807,
+      "liq": "ILLIQUID_offer"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.403893,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.147609,
+      "liq": "ILLIQUID_offer"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.6803,
+      "mid": 0.6428834999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.23048549999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.5988,
+      "mid": 0.565866,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149549538": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853145,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575315,
+      "liq": "ILLIQUID_offer"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.044982,
+      "liq": "ILLIQUID_offer"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.3175,
+      "mid": 0.3000375,
+      "liq": "ILLIQUID_offer"
+    },
+    "Bruno Fernandes": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.3175,
+      "offer": 0.3448,
+      "mid": 0.33115,
+      "liq": "LIQUID"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175014,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": 0.0363825,
+      "liq": "ILLIQUID_offer"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.08590049999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.32139449999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1276695,
+      "liq": "ILLIQUID_offer"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": 0.14316749999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": 0.0248535,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Lamine Yamal": {
+      "bid": 0.4,
+      "offer": 0.431,
+      "mid": 0.4155,
+      "liq": "LIQUID"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.023625,
+      "liq": "ILLIQUID_offer"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.048478499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.051124499999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.209979,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.3425,
+      "offer": 0.3704,
+      "mid": 0.35645000000000004,
+      "liq": "LIQUID"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": 0.24541649999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": 0.0248535,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.065205,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.07002449999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.0345,
+      "mid": 0.0326025,
+      "liq": "ILLIQUID_offer"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.10054799999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": 0.304857,
+      "liq": "ILLIQUID_offer"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337365,
+      "liq": "ILLIQUID_offer"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149252927": {
+    "Under 2.5 goals": {
+      "bid": 0.4762,
+      "offer": 0.4808,
+      "mid": 0.47850000000000004,
+      "liq": "LIQUID"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5181,
+      "offer": 0.5263,
+      "mid": 0.5222,
+      "liq": "LIQUID"
+    }
+  },
+  "149253059": {
+    "Under 4.5 cards": {
+      "bid": 0.7463,
+      "offer": 0.8197,
+      "mid": 0.7829999999999999,
+      "liq": "LIQUID"
+    },
+    "Over 4.5 cards": {
+      "bid": 0.2381,
+      "offer": 0.25,
+      "mid": 0.24405,
+      "liq": "LIQUID"
+    }
+  },
+  "149253083": {
+    "Under 5.5 corners": {
+      "bid": 0.4425,
+      "offer": 0.5291,
+      "mid": 0.4858,
+      "liq": "LIQUID"
+    },
+    "Over 5.5 corners": {
+      "bid": 0.5319,
+      "offer": 0.5525,
+      "mid": 0.5422,
+      "liq": "LIQUID"
+    }
+  },
+  "149253024": {
+    "Yes": {
+      "bid": 0.2273,
+      "offer": 0.3175,
+      "mid": 0.2724,
+      "liq": "LIQUID"
+    },
+    "No": {
+      "bid": 0.6849,
+      "offer": 0.7752,
+      "mid": 0.73005,
+      "liq": "LIQUID"
+    }
+  },
+  "149253023": {
+    "Portugal": {
+      "bid": 0.3226,
+      "offer": 0.3425,
+      "mid": 0.33255,
+      "liq": "LIQUID"
+    },
+    "Spain": {
+      "bid": 0.6579,
+      "offer": 0.6667,
+      "mid": 0.6623,
+      "liq": "LIQUID"
+    }
+  },
+  "149252910": {
+    "No goals": {
+      "bid": 0.2857,
+      "offer": 0.3226,
+      "mid": 0.30415000000000003,
+      "liq": "LIQUID"
+    },
+    "1 goals": {
+      "bid": 0.3401,
+      "offer": 0.3704,
+      "mid": 0.35525,
+      "liq": "LIQUID"
+    },
+    "2 goals": {
+      "bid": 0.1923,
+      "offer": 0.2326,
+      "mid": 0.21245,
+      "liq": "LIQUID"
+    },
+    "3 or more goals": {
+      "bid": 0.102,
+      "offer": 0.1316,
+      "mid": 0.11679999999999999,
+      "liq": "LIQUID"
+    }
+  },
+  "149252911": {
+    "No goals": {
+      "bid": 0.1887,
+      "offer": 0.2222,
+      "mid": 0.20545000000000002,
+      "liq": "LIQUID"
+    },
+    "1 goals": {
+      "bid": 0.3226,
+      "offer": 0.3597,
+      "mid": 0.34115,
+      "liq": "LIQUID"
+    },
+    "2 or more goals": {
+      "bid": 0.4348,
+      "offer": 0.4717,
+      "mid": 0.45325000000000004,
+      "liq": "LIQUID"
+    }
+  },
+  "149253091": {
+    "Portugal": {
+      "bid": 0.3521,
+      "offer": 0.3704,
+      "mid": 0.36125,
+      "liq": "LIQUID"
+    },
+    "No goal": {
+      "bid": 0.037,
+      "offer": 0.08,
+      "mid": 0.058499999999999996,
+      "liq": "LIQUID"
+    },
+    "Spain": {
+      "bid": 0.5495,
+      "offer": 0.5525,
+      "mid": 0.5509999999999999,
+      "liq": "LIQUID"
+    }
+  },
+  "149253206": {
+    "Under 2.5 shots on target": {
+      "bid": 0.3623,
+      "offer": 0.4464,
+      "mid": 0.40435,
+      "liq": "LIQUID"
+    },
+    "Over 2.5 shots on target": {
+      "bid": 0.5556,
+      "offer": 0.6369,
+      "mid": 0.59625,
+      "liq": "LIQUID"
+    }
+  },
+  "149549562": {
+    "Unai Simon": {
+      "bid": null,
+      "offer": 0.9615,
+      "mid": 0.9086175,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149549565": {
+    "Diogo Meireles Costa": {
+      "bid": null,
+      "offer": 0.8772,
+      "mid": 0.828954,
+      "liq": "ILLIQUID_offer"
+    },
+    "Unai Simon": {
+      "bid": null,
+      "offer": 0.7812,
+      "mid": 0.738234,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149549568": {
+    "Diogo Meireles Costa": {
+      "bid": null,
+      "offer": 0.7874,
+      "mid": 0.744093,
+      "liq": "ILLIQUID_offer"
+    },
+    "Unai Simon": {
+      "bid": null,
+      "offer": 0.6061,
+      "mid": 0.5727644999999999,
+      "liq": "ILLIQUID_offer"
+    }
+  }
+}

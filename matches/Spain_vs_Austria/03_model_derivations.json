@@ -1,0 +1,202 @@
+{
+  "_description": "Model-fitted lambdas and derived probabilities for Spain vs Austria 2026-07-02",
+  "lambda_fits": {
+    "spain_goals": 2.347,
+    "austria_goals": 0.641,
+    "total_goals": 2.988,
+    "spain_sot": 6.267,
+    "spain_shots": 17.251,
+    "austria_shots_implied": 7.086,
+    "austria_sot_derived": 2.102
+  },
+  "market_anchors_used": {
+    "spain_goals_ou1.5": {
+      "over": 0.7093,
+      "lam_fit": 2.484
+    },
+    "spain_goals_ou2.5": {
+      "over": 0.4068,
+      "lam_fit": 2.311
+    },
+    "spain_goals_ou3.5": {
+      "over": 0.1898,
+      "lam_fit": 2.246
+    },
+    "austria_goals_ou0.5": {
+      "over": 0.4786,
+      "lam_fit": 0.651
+    },
+    "austria_goals_ou1.5": {
+      "over": 0.132,
+      "lam_fit": 0.63
+    },
+    "spain_sot_ou6.5": {
+      "over": 0.4365,
+      "lam_fit": 6.267
+    },
+    "austria_shots_ou6.5": {
+      "over": 0.563,
+      "lam_fit": 7.086
+    }
+  },
+  "derived_probabilities": {
+    "spain_sot_8plus": 0.294,
+    "spain_sot_7plus_check": 0.436,
+    "austria_sot_4plus": 0.162,
+    "total_offsides_4plus": 0.567,
+    "lam_offside_assumed": 4.0,
+    "goal_before_break_24min": 0.519,
+    "lam_1H_from_ou0.5": 1.372,
+    "lam_break_scaled": 0.732
+  },
+  "espn_group_stats": {
+    "spain": {
+      "sot": [
+        7,
+        8,
+        1
+      ],
+      "shots": [
+        27,
+        22,
+        6
+      ],
+      "corners": [
+        11,
+        6,
+        6
+      ],
+      "yellow_cards": [
+        1,
+        0,
+        1
+      ],
+      "offsides": [
+        2,
+        2,
+        2
+      ],
+      "avg_sot": 5.33,
+      "avg_shots": 18.33,
+      "avg_corners": 7.67,
+      "avg_yc": 0.67,
+      "avg_offsides": 2.0
+    },
+    "austria": {
+      "sot": [
+        4,
+        1,
+        3
+      ],
+      "shots": [
+        11,
+        6,
+        10
+      ],
+      "corners": [
+        4,
+        3,
+        3
+      ],
+      "yellow_cards": [
+        1,
+        2,
+        1
+      ],
+      "offsides": [
+        3,
+        0,
+        3
+      ],
+      "avg_sot": 2.67,
+      "avg_shots": 9.0,
+      "avg_corners": 3.33,
+      "avg_yc": 1.33,
+      "avg_offsides": 2.0
+    },
+    "spain_game_totals_offsides": {
+      "vs_cpv": 5,
+      "vs_ksa": 5,
+      "vs_uru": 7,
+      "avg_total": 5.67,
+      "note": "Spain games consistently have 5+ total offsides (high defensive line creates traps)"
+    }
+  },
+  "player_markets": {
+    "yamal_sot_ou0.5": {
+      "mid": 0.7483,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "yamal_sot_ou1.5": {
+      "mid": 0.4652,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "yamal_anytime_score": {
+      "mid": 0.41,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "yamal_score_or_assist": {
+      "mid": 0.5391,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "oyarzabal_sot_ou0.5": {
+      "mid": 0.6955,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "oyarzabal_sot_ou1.5": {
+      "mid": 0.4084,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "oyarzabal_anytime_score": {
+      "mid": 0.4536,
+      "liquid": true,
+      "tier": "PLAYER_LIQUID"
+    },
+    "sabitzer_score_or_assist": {
+      "offer": 0.2222,
+      "liquid": false,
+      "tier": "PLAYER_ILLIQUID",
+      "illiquid_estimate": 0.21
+    },
+    "sabitzer_anytime_score": {
+      "offer": 0.125,
+      "liquid": false,
+      "tier": "PLAYER_ILLIQUID",
+      "illiquid_estimate": 0.118
+    },
+    "sabitzer_sot_ou0.5": {
+      "offer": 0.365,
+      "liquid": false,
+      "tier": "PLAYER_ILLIQUID",
+      "illiquid_estimate": 0.345
+    }
+  },
+  "key_market_mids": {
+    "ftr_spain": 0.7663,
+    "ftr_draw": 0.164,
+    "ftr_austria": 0.0728,
+    "btts_yes": 0.4465,
+    "btts_no": 0.5635,
+    "ou2.5_over": 0.5765,
+    "ou3.5_over": 0.3379,
+    "team_scores_first_spain": 0.7587,
+    "team_scores_first_austria": 0.1944,
+    "ht_result_spain": 0.5602,
+    "ht_result_draw": 0.3402,
+    "spain_ht_ou0.5_over": 0.6603,
+    "total_1h_ou0.5_over": 0.7463,
+    "spain_score_both_halves_yes": 0.4768,
+    "spain_win_to_nil_yes": 0.4763,
+    "spain_sot_ou6.5_over": 0.4365,
+    "spain_corners_ou6.5_over": 0.4294,
+    "cards_ou2.5_over": 0.4922,
+    "cards_ou3.5_over": 0.2542,
+    "will_et_yes": 0.1667
+  }
+}

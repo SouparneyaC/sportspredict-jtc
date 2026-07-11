@@ -1,0 +1,100 @@
+{
+  "_description": "All named rules evaluated for this match — whether they fired, their trigger values, and their effect on estimates",
+
+  "RULE7": {
+    "definition": "When underdog win probability < 15%, do NOT add extra shrinkage to their individual props",
+    "trigger_condition": "underdog_win_prob < 0.15",
+    "ecuador_win_prob": 0.2300,
+    "fires": false,
+    "note": "Ecuador at 23% is above the 15% threshold. RULE7 inactive. Ecuador's player/prop estimates were not suppressed under this rule."
+  },
+
+  "RULE8": {
+    "definition": "When draw probability > 25%, blend all comparison props 65% toward model and 35% toward 0.50",
+    "formula": "final = 0.65 × model_estimate + 0.35 × 0.50",
+    "trigger_condition": "draw_prob > 0.25",
+    "draw_prob": 0.3425,
+    "fires": true,
+    "affected_questions": {
+      "Q3_mex_more_sot": {
+        "model_raw": 0.550,
+        "blended": "0.65×0.550 + 0.35×0.50 = 0.533",
+        "final": 0.533
+      },
+      "Q12_3plus_offsides": {
+        "model_raw": 0.323,
+        "rule8_context_applied": "Shaded to 0.28 — tight match = fewer forward runs",
+        "final": 0.28,
+        "note": "RULE8 provided directional justification for shade, but primary driver was Ecuador's ESPN offside profile"
+      }
+    },
+    "not_affected_by_rule8": "Q4 (absolute goal total, not comparison), Q9 (FTR market already calibrated for draw), Q11/Q14 (direct card/penalty markets)"
+  },
+
+  "RULE5": {
+    "definition": "When player sample size is small (n < 4 starts), apply extra trimming toward 0.25-0.30 floor",
+    "fires": true,
+    "affected_questions": {
+      "Q1_Jimenez": {
+        "n_starts": 2,
+        "model_raw": 0.318,
+        "after_rule5": 0.27,
+        "justification": "n=2 starts is a thin sample for player goal probability estimation"
+      },
+      "Q5_Plata": {
+        "n_starts": 3,
+        "model_raw": 0.321,
+        "after_rule5": 0.28,
+        "justification": "Small sample + card-risk may lead to early substitution"
+      }
+    }
+  },
+
+  "RULE12_outlier_sensitivity": {
+    "definition": "If removing one match from history changes the estimate materially, reduce confidence and trim toward base rate",
+    "fires": true,
+    "affected_questions": {
+      "Q1_Jimenez": {
+        "check": "Jimenez with RSA result: lambda=0.383. Without RSA: lambda≈0.25. Removing one match changes estimate substantially.",
+        "conclusion": "Low confidence confirmed. Trim applied (combined with RULE5 above).",
+        "final": 0.27
+      }
+    }
+  },
+
+  "FLOOR_0_25": {
+    "definition": "Never submit below 0.25 on any count-stat question",
+    "fires": false,
+    "note": "No question breached this floor. Q6 (0.19) and Q7 (0.18) and Q8 (0.08) are player/OTB/OG questions, not count-stat questions — floor does not apply."
+  },
+
+  "RULE14_SOT_goals_cross_check": {
+    "definition": "P(more SOT) >= P(more goals) must hold across all related question pairs",
+    "check": "Q3 (MEX more SOT = 0.53) vs Q4 context (Mexico overwhelmingly expected to outscore). The team-level dominance ordering is consistent.",
+    "fires": false,
+    "note": "Rule satisfied. SOT prop (0.53) consistent with goals hierarchy."
+  },
+
+  "RULE15_underdog_forward_suppression": {
+    "definition": "Scenario A (blowout expected): suppress underdog forward props to 0.20-0.35. Scenario B (underdog chasing): do NOT suppress.",
+    "fires": false,
+    "note": "Mexico-Ecuador is a competitive match (34% draw probability). Not a blowout scenario. Plata estimate already at 0.28 from RULE5 — no additional suppression applied."
+  },
+
+  "direct_market_trust": {
+    "definition": "When a liquid Smarkets market exists (both bid+offer), trust the market mid over raw ESPN-derived estimates",
+    "applied_to": [
+      "Q2 (Highest scoring half 2H = 0.40) — direct market, trusted",
+      "Q4 (OU2.5 Under = 0.70) — direct market, trusted",
+      "Q9 (FTR Mexico = 0.43) — direct market, trusted",
+      "Q10 (OU8.5 corners Over = 0.40) — trusted over ESPN avg (~0.20-0.25)",
+      "Q11 (OU3.5 cards Over = 0.54) — direct market, trusted",
+      "Q13 (goal before break = 0.40) — model+bracket cross-check, trusted",
+      "Q14 (penalty Yes = 0.26) — direct market, trusted (wide spread noted)",
+      "Q15 (20+ shots = 0.62) — direct market, trusted"
+    ],
+    "market_override_case": {
+      "Q10_corners": "Our ESPN model predicted ~6.2 combined expected corners (MEX avg 1.67 + ECU competitive avg 4.5). Market said 40% for 9+. We submitted 0.40 per market. POST-MATCH: 9+ corners DID occur — market was right, ESPN-only estimate would have been wrong."
+    }
+  }
+}

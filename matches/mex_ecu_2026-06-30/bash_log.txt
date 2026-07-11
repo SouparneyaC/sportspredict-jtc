@@ -1,0 +1,67 @@
+MEX vs ECU (2026-06-30) — bash log
+====================================
+
+# 0. Checked existing history:
+#    MEX: mex_kor (W1-0, +40.22 RBP, 8/9, RULE8 fired at draw=30%), cze_mex (W3-0, Mexico rotated
+#         heavily — Jimenez rested for knockout stage). RSA-MEX box score: Jimenez 1 goal 2 SOT.
+#    ECU: civ_ecu (L0-1, 1 SOT, 12 shots), ecu_cur (D0-0, 15 SOT 27 shots 0 goals — the finishing crisis),
+#         ger_ecu (W2-1, Plata scored, 3 SOT total 7 shots — crisis broke). Key lesson from STEPS:
+#         "Ecuador's 0-goal crisis broke at the worst possible moment for a conservative betting strategy."
+
+# 1. ESPN team IDs: Mexico=203, Ecuador=209 (from today's match event 760491).
+#    Mexico schedule: 760415 (RSA, 6/11), 760441 (KOR, 6/19), 760467 (CZE, 6/25).
+#    Ecuador schedule: 760423 (CIV, 6/14), 760446 (CUR, 6/21), 760468 (GER, 6/25).
+
+# 2. ESPN box scores pulled for all 6 group matches.
+#    KEY MEXICO SIGNAL: corners = 3, 1, 1 (avg 1.67) — the lowest corner avg of any team this
+#    tournament. SOT = 4, 4, 5 (avg 4.33, never hit 6 in any group match). Very clinical/efficient
+#    but NOT a high-volume stat-generating team. RC=1 in RSA match (played with 10 men, still won).
+#    KEY ECUADOR SIGNAL: their CUR match (27 shots/15 SOT/0 goals) is a BIMODAL OUTLIER.
+#    Competitive-match profile (vs CIV and GER): avg 2 SOT, 9.5 shots, 4.5 corners. Much more modest.
+#    Their shot total market (OU20.5/OU21.5) implies ~21.1 combined shots — aligns with MEX
+#    group avg 11.67 + ECU competitive avg ~9.5.
+
+# 3. Player stats pulled from rosters[].roster[].stats:
+#    Jimenez: GD1 (1 goal, 4 shots, 2 SOT, starter), GD2 (0 goals, 2 shots, 1 SOT, starter),
+#             GD3 (rested - starter=False, 0 everything). Primary striker. n=2 starts, small sample.
+#    Plata: GD1 (0 goals, 1 shot, 1 SOT), GD2 (0 goals, 5 shots, 3 SOT - CUR outlier),
+#           GD3 (1 goal, 2 shots, 1 SOT, 4 fouls, 1 YC - scored the crucial GER winner). Card-prone.
+
+# 4. Smarkets event: found 45161448 "Mexico vs Ecuador" 2026-07-01, 179 markets.
+#    KEY DIFFERENCE FROM FRA-SWE: All player prop markets (anytime goalscorer, player score/assist,
+#    player SOT) were ILLIQUID (no bid/offer). Main match markets (FTR, BTTS, OU goals, corners,
+#    cards, penalty, shots OU) were liquid when captured but partially suspended near kickoff.
+
+# 5. Liquid markets captured (first batch):
+#    FTR: Mexico 43.29%, Draw 34.25%, Ecuador 23.00% -> RULE8 FIRES (draw=34.25% >> 25%)
+#    BTTS: Yes 40.82%, OU2.5: Under 70.0% (low-scoring match expectation)
+#    Highest scoring half: 1H 27.7%, Equal 32.8%, 2H 39.8%
+#    MEX SOT OU3.5: Over 54.1% (lambda_MEX_SOT=3.870), ECU SOT OU2.5: Over 58.2% (lambda_ECU_SOT=3.025)
+#    Corners OU8.5: Over 40.1% (Q10 direct), Cards OU3.5: Over 53.7% (Q11 direct)
+#    Penalty: Yes 25.8% (Q14 direct), Any sent off: Yes 17.5%
+#    Shots OU20.5: Over 52.1%, OU21.5: Over 46.5%
+#    Goal 1 time bracket: 1-10=14.9%, 11-20=14.5%, 21-30=12.2% (market briefly liquid then suspended)
+#    MEX goals OU1.5: Over 32.3% (lambda_MEX=1.160), ECU goals OU0.5: Over 56.7%, OU1.5: Over 17.7%
+#    (lambda_ECU=0.806)
+
+# 6. Computed via scipy (brentq, least_squares, skellam):
+#    - lambda_total_goals=1.97 (consistent across MEX+ECU individual and total OU2.5/OU3.5 fits)
+#    - lambda_total_shots=21.08 (from OU20.5/OU21.5 brentq fits - these had to be fit separately
+#      since my initial least_squares with x0=2.0 converged to the GOALS lambda, not shots)
+#    - P(MEX SOT > ECU SOT) raw Skellam=0.550, after RULE8 shade=0.533 (Q3)
+#    - P(MEX SOT >= 6)=0.195 -- confirmed by Mexico NEVER hitting 6 SOT in any group match (Q6)
+#    - P(goal before 1st break, 25min window)=0.414 from lambda scaling, ~0.35 from time-bracket
+#      data. Central estimate: 0.40 (Q13). Early-window timing = safe category per deep dive.
+#    - Combined offside lambda=2.0, P(>=3)=0.323, shaded to 0.28 with RULE8 context (Q12)
+
+# 7. Novel question types handled with base rates only (LOW CONFIDENCE flagged):
+#    - Q7 (OTB goal): ~10% base rate × total goals lambda → P(at least one OTB goal) ≈ 0.18
+#    - Q8 (own goal): WC historical ~8%, conservative end given Mexico's clean defensive record → 0.08
+
+# 8. RULE8 impact summary: Fired on Q3 (MEX more SOT -- shaded from 0.55 to 0.53), Q12 (offsides --
+#    shaded from 0.32 to 0.28). Does NOT affect Q4 (absolute goal total), Q9 (FTR market is already
+#    calibrated to include draw), or Q11/Q14 (direct card/penalty markets).
+
+# 9. Validated JSON with json.load() immediately -- VALID, 15 questions.
+
+# Output: data/external_markets/mex_ecu_2026-06-30.json (full 15-question estimates)

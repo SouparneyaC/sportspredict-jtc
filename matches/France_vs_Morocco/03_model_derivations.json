@@ -1,0 +1,77 @@
+{
+  "_description": "Model derivations for France vs Morocco 2026-07-09 (Quarterfinal). First match this campaign priced with the StatsBomb WC2018/2022 player/team panels as a primary data source, blended under this tournament's own live form per STATSBOMB_INTEGRATION_AND_STATS_TESTS_2026-07-08.md's finding that StatsBomb history is a shrinkage prior, not a standalone replacement. REVISED once live Smarkets sharp-market data was pulled (see external_data_check below) -- Smarkets is now the primary anchor for 12 of 15 questions. NOTE (corrected 2026-07-09): an earlier version of this file incorrectly claimed 'current_value' on the web/markets endpoint is the live JTC crowd consensus. It is NOT -- see jtc_crowd_consensus.CORRECTION below. This project's crowd-bias research (data/crowd_consensus_prediction_research.md) already documented that no API access to the pre-close crowd consensus exists; that finding stands.",
+  "external_data_check": {
+    "jtc_crowd_consensus": {
+      "method": "GET https://api.sportspredict.com/api/markets?q={event_id,lobby_id}, filtered to match_id b8499206-a6a8-4951-9bfd-5f60ccab361c. Field checked: 'current_value' (0-100 scale) on each market record.",
+      "CORRECTION": "current_value is NOT a live crowd consensus/probability. Verified by cross-referencing 209 markets across this event that have real recorded trades (via /api/trades, matched on trades[].market_id == markets[].id, not markets[].market_id -- a distinct field, easy to mismatch) AND are already settled: current_value takes ONLY the values {50, 0, 100} across all 209 -- 50 while a market is open regardless of trading volume, then snaps directly to 0 or 100 at settlement based on the realized outcome. It never encodes an intermediate probability. This matches the project's own prior research finding (data/crowd_consensus_prediction_research.md: 'no API access to the in-house crowd's consensus probability before a match closes') -- that finding was correct and should have been checked before claiming otherwise.",
+      "result": "All 15 FRA-MAR markets show current_value=50 (== initial_value=50), but per the correction above this tells us NOTHING about whether real trading/crowd formation has occurred -- it would read identically whether zero people or a thousand people have traded these markets. Snapshot saved to jtc_crowd_snapshot.json for the record, but should not be read as 'crowd unformed.'",
+      "implication": "RULE1's crowd+market average remains genuinely non-computable pre-close, as this project's own prior research already established -- not because trading hasn't happened, but because this API does not expose the crowd's aggregate probability at any point before settlement. RULE2 (submit at/near a verified sharp market) is the correct fallback used here, on its own merits, not because a checked absence of crowd trading recommended it."
+    },
+    "smarkets_sharp_market": {
+      "method": "Public Smarkets v3 API (no auth). Discovered event 45178292 ('France vs Morocco', 2026-07-09) via GET /events/?type=football_match&parent_id=42791414 (WC2026 parent), then pulled the full 173-market list for that event, then contracts+quotes for the 12 markets matching our question set. Script saved at bot/fetch_fra_mar_smarkets.py; raw + processed output saved to smarkets_markets_raw.json / smarkets_quotes_processed.json in this folder.",
+      "key_quotes": {
+        "FTR": {"France_mid": 0.608, "Draw_mid": 0.2516, "Morocco_mid": 0.1409, "liquid": true},
+        "OU2.5_goals_Under_mid": 0.5362,
+        "Cards_OU4.5_Over_mid": 0.2266,
+        "HT_result_Draw_mid": 0.43865,
+        "Penalty_No_mid": 0.7221,
+        "Any_sent_off_Yes_mid": 0.1472,
+        "Mbappe_anytime_scorer_mid": 0.5026,
+        "Hakimi_SOT_OU0.5_mid": 0.3627,
+        "Brahim_Diaz_SOT_OU0.5_offer_only": 0.4348,
+        "Dembele_SOT_OU1.5_mid": 0.24445,
+        "Morocco_SOT_OU3.5_Over_mid": 0.4365,
+        "France_corners_OU6.5_Over_mid": 0.4277
+      },
+      "derived_lambdas": {
+        "morocco_sot_lambda_from_market": 3.377,
+        "morocco_sot_p_ge3_from_market": 0.6557,
+        "france_corners_lambda_from_market": 6.212,
+        "france_corners_p_ge5_from_market": 0.7423,
+        "penalty_or_red_combined_inclusion_exclusion": 0.3842
+      },
+      "no_market_found_for": ["both halves same goals (Q9)", "substitute scores or assists (Q11)", "goal after second hydration break (Q13)", "card during stoppage time specifically (Q14)"]
+    }
+  },
+  "context": {
+    "stage": "Quarterfinal (elimination)",
+    "venue_context": "WC2026 co-hosted by USA/Mexico/Canada; neither France nor Morocco is a host nation -> neutral=TRUE, no home_adv term for either side",
+    "elo_current": {"France": 2129.0524, "Morocco": 1984.8491, "elo_diff_fra_minus_mar": 144.2},
+    "h2h_statsbomb_match": "WC2022 semifinal, 2022-12-14, France 2-0 Morocco, match_id=3869552 -- the only StatsBomb-covered FRA-MAR meeting; Mbappe 3 shots/0 SOT, Dembele 0 shots, Hakimi 1 shot/0 SOT that day"
+  },
+  "lambda_fits": {
+    "poisson_goals_lambda_france": 1.4406,
+    "poisson_goals_lambda_morocco": 0.8548,
+    "poisson_goals_lambda_total": 2.2954,
+    "ordered_logit_eta": 0.7497,
+    "france_corners_empirical_4game": 6.0,
+    "france_corners_trend": "6, 4, 5, 9 (SEN, IRQ, NOR, SWE-R32) -- rising through tournament, peak vs toughest opponent so far",
+    "morocco_sot_avg_all5_incl_haiti_outlier": 5.25,
+    "morocco_sot_avg_competitive_games_only": 3.33,
+    "morocco_sot_log": "3 (BRA), 2 (SCO), 11 (HAI, outlier blowout), 5 (NED-R32)",
+    "france_cards_total_4games": 1,
+    "morocco_cards_rate_per_game": 0.5
+  },
+  "derived_probs": {
+    "p_fra_win_regulation_ordered_logit_raw": 0.5485,
+    "p_draw_ordered_logit_raw": 0.272,
+    "p_mar_win_ordered_logit_raw": 0.1795,
+    "p_total_goals_le2_poisson_indep": 0.5973,
+    "p_fra_corners_5plus_poisson_lambda6.3": 0.76
+  },
+  "rule_checks": {
+    "RULE1": "No market/crowd exists yet for this match (question set just opened; confirmed via repo-wide search of bot/data/, data/external_markets/, matches/) -- match-winner priced from ordered-logit + Elo cross-check only, no crowd/market average available. Revisit if market data becomes available before close.",
+    "RULE6": "All 15 estimates fall within 0.25-0.74; nothing pushed to 0.05/0.95 extremes.",
+    "RULE7": "INACTIVE in the extreme sense -- France is a moderate, not extreme, favorite (52% win prob), so no RULE7 unshaded-tail treatment applied; props priced on their own merits.",
+    "TEAM_SOT_EMPIRICAL_FLOOR_caution": "Morocco 3+ SOT (Q5) and France 5+ corners (Q12) are both team-count-threshold questions of exactly the type that produced the campaign's worst-ever loss (CAN-MOR, -80.83 RBP) when projected upward from a thin empirical sample. No market exists to anchor to here, so estimates were built directly off the empirical distribution rather than blended upward past a market line, and shaded toward the lower end of the plausible range given both team's elite opposing defenses (France conceded 2 goals/5 games; Morocco conceded 4 goals/5 games) -- consistent with the retired rule's lesson to never assume a ceiling transfers against a materially tougher opponent.",
+    "PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT": "Applied to Brahim Diaz (Q3, 1 SOT in 5 tournament games = 20% empirical rate) and, more moderately, to Hakimi (Q2, 0 SOT across all 10 StatsBomb-tracked WC appearances 2018+2022, despite some current-tournament attacking involvement). This pattern has a 3-for-3 track record this campaign (Semenyo, Davies, Brahim Diaz himself in CAN-MOR at +44.06) and is the single highest-confidence repeatable edge documented in WINNING_PATTERNS_SYNTHESIS.md.",
+    "STATSBOMB_AS_SHRINKAGE_PRIOR": "Per STATSBOMB_INTEGRATION_AND_STATS_TESTS_2026-07-08.md, the pure StatsBomb historical base-rate model lost outright to tournament-aware judgment when tested against Portugal vs Croatia (93.01 vs 120.30 RBP-equivalent). Accordingly, StatsBomb WC2018/2022 rates (Mbappe 12 goals/14 games, Hakimi 0 SOT/10 games, the exact 2022 FRA-MAR meeting) are used here as a prior/regime-check, always blended with and generally subordinate to this tournament's own 5-game form for both teams.",
+    "cross_source_measurement_caution": "ESPN (this tournament) and StatsBomb (2018/2022) use different counting conventions for fouls/cards/SOT/corners (documented ~20-38% divergence). France's and Morocco's 2026 corner/card/SOT counts (ESPN) are not pooled directly with their 2018/2022 StatsBomb rates for these stats; each source is used to characterize its own era and combined only qualitatively (trend direction, suppression precedent), not by numeric averaging across sources.",
+    "late_window_timing_discipline": "Q13 (goal after 2nd hydration break) is the confirmed worst-performing question category all campaign (TIMING_NO_MARKET tier, -63.72 RBP/7q; late-window split specifically -45.90/0-for-3). No market exists. Shaded to 0.50 per standing rule, overriding any raw lambda-scaling output."
+  },
+  "espn_insight": {
+    "france_this_tournament": "5 games (SEN, IRQ, NOR, SWE-R32, PAR-R16), all won, 14 goals for/2 against. Mbappe scored in 4/5 (blanked only vs Norway, where he had 2 assists instead); hit 2+ SOT in every game with data (4,3,2,4). Dembele: hat-trick vs Norway (4 goals total this tournament) but bimodal SOT -- blanked vs Senegal, Sweden, AND Paraguay; 2+ SOT only vs weaker/mid sides (Iraq, Norway). Corners rising: 6,4,5,9. Cards near-immaculate: 1 total across first 4 group/R32 games.",
+    "morocco_this_tournament": "5 games (BRA draw, SCO win, HAI win, NED-R32 win on pens/ET, CAN-R16 win 3-0), 4 goals conceded across the 5. Hakimi: goals/assists 0,0,1,0 in first 4 -- both involvements in the Haiti blowout, otherwise anonymous -- then broke through again in CAN-MOR (scored or assisted). Brahim Diaz: SOT 1,0,0,0 in first 4 games, then NO again in CAN-MOR (priced 0.33, won +44.06) -- 1 SOT in 5 tournament games total. Saibari: scored in 3 straight group games, blanked vs Netherlands (toughest opponent) and (per team pattern) generally quieter vs stronger sides.",
+    "h2h_note": "2022 WC semifinal (StatsBomb-verified): France 2-0 Morocco. Morocco's defense (Bounou, Saiss/Aguerd-era back line) held Mbappe to 0 SOT and Dembele to 0 shots that day -- the strongest specific precedent available for suppression, though a single data point 4 tournament cycles removed and against a since-evolved Morocco squad."
+  }
+}

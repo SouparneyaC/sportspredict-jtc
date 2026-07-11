@@ -1,0 +1,284 @@
+{
+  "match": "Mexico vs Ecuador",
+  "date": "2026-06-30",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {"this_match": 760491, "MEX_vs_RSA": 760415, "KOR_vs_MEX": 760441, "MEX_vs_CZE": 760467, "ECU_vs_CIV": 760423, "CUR_vs_ECU": 760446, "GER_vs_ECU": 760468},
+  "smarkets_event_id": 45161448,
+  "kickoff_utc": "2026-07-01T01:00Z",
+  "prior_lessons_consulted": ["mex_kor_2026-06-19.json", "cze_mex_2026-06-24.json", "ger_ecu_2026-06-25.json", "civ_ecu_2026-06-14.json", "ecu_cur_2026-06-21.json", "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md", "STEPS_FOR_HIGH_POINTS.md"],
+  "knockout_context": {
+    "Mexico": {"group_record": "3W-0L, 9pts, GD+6 (W2-0 RSA, W1-0 KOR, W3-0 CZE)", "status": "Moderate favorite (43.3%); CRITICALLY: averaged only 1.67 corners and 4.33 SOT per match despite 3 wins — clinical, not dominant"},
+    "Ecuador": {"group_record": "1W-1L-1D, 4pts, GD+1 (L0-1 CIV, D0-0 CUR, W2-1 GER)", "status": "Live underdog (23.0%); their CUR match (27 shots/15 SOT/0 goals) was a finishing-crisis outlier — their competitive-match attacking profile (CIV: 1 SOT; GER: 3 SOT) is far more modest"}
+  },
+  "rule8_flag": {
+    "fires": true,
+    "draw_probability": 0.3425,
+    "note": "RULE8 fires hard (draw=34.25%, well above 25% threshold). All comparison props shaded toward 0.50. This is the defining context for Q3."
+  },
+  "wc2026_espn_stats": {
+    "MEX": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760415, "opponent": "South Africa", "result": "W 2-0 (home)", "fouls": 12, "SOT": 4, "shots": 16, "offsides": 1, "YC": 1, "RC": 1, "corners": 3},
+        {"event_id": 760441, "opponent": "South Korea", "result": "W 1-0 (home)", "fouls": 9, "SOT": 4, "shots": 8, "offsides": 3, "YC": 0, "RC": 0, "corners": 1},
+        {"event_id": 760467, "opponent": "Czechia", "result": "W 3-0 (away, rotated squad)", "fouls": 13, "SOT": 5, "shots": 11, "offsides": 0, "YC": 1, "RC": 0, "corners": 1}
+      ],
+      "averages": {"fouls": 11.33, "SOT": 4.33, "shots": 11.67, "offsides": 1.33, "YC": 0.67, "RC": 0.33, "corners": 1.67},
+      "CORNER_NOTE": "Mexico's corner count (3,1,1) is the lowest of any team in the knockout stage -- structurally low-corner team regardless of result (dominant win, close win, rotated win). The 1.67 avg is load-bearing for Q10.",
+      "SOT_CEILING_NOTE": "Mexico's SOT ceiling in all 3 group games was 5 (vs Czechia, rotated squad). They have NEVER reached 6 SOT in any WC2026 match. Q6 (6+ SOT) is a genuine above-history threshold.",
+      "DEFENSIVE_NOTE": "Zero goals conceded in 3 group matches. Mexico are extremely organized defensively — clean sheet in every group game vs RSA, KOR, and CZE."
+    },
+    "ECU": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760423, "opponent": "Ivory Coast", "result": "L 0-1", "fouls": 13, "SOT": 1, "shots": 12, "offsides": 0, "YC": 1, "RC": 0, "corners": 6},
+        {"event_id": 760446, "opponent": "Curacao", "result": "D 0-0 (FINISHING CRISIS)", "fouls": 7, "SOT": 15, "shots": 27, "offsides": 1, "YC": 1, "RC": 0, "corners": 9},
+        {"event_id": 760468, "opponent": "Germany", "result": "W 2-1 (CRISIS BROKE)", "fouls": 15, "SOT": 3, "shots": 7, "offsides": 1, "YC": 3, "RC": 0, "corners": 3}
+      ],
+      "averages": {"fouls": 11.67, "SOT": 6.33, "shots": 15.33, "offsides": 0.67, "YC": 1.67, "RC": 0.0, "corners": 6.0},
+      "BIMODAL_FLAG": "ECU's CUR match (27 shots, 15 SOT) is a catastrophic outlier vs any remotely competitive opposition. Their COMPETITIVE-MATCH profile (CIV: 1 SOT, 12 shots, 6 corners; GER: 3 SOT, 7 shots, 3 corners) shows a much more modest attacking output -- avg 2 SOT and 4.5 corners vs quality opponents.",
+      "FINISHING_CRISIS_NOTE": "Per STEPS_FOR_HIGH_POINTS.md Loss Pattern #6: Ecuador scored 0 goals in 2 WC2026 matches despite 16 total SOT (CIV+CUR). The crisis broke vs Germany with 2 goals from only 3 SOT -- low-SOT finishing efficiency in their defining match."
+    }
+  },
+  "player_profiles": {
+    "Raul_Jimenez_MEX": {
+      "matches": [
+        {"opp": "RSA", "goals": 1, "assists": 0, "shots": 4, "SOT": 2, "starter": true},
+        {"opp": "KOR", "goals": 0, "assists": 0, "shots": 2, "SOT": 1, "starter": true},
+        {"opp": "CZE", "goals": 0, "assists": 0, "shots": 0, "SOT": 0, "starter": false, "note": "Mexico rotated heavily -- Jimenez RESTED for knockout stage"}
+      ],
+      "assessment": "Primary striker, started 2/3 group matches (rested in GD3 for today). 1 goal in 2 starts (vs RSA, 67'). No liquid Smarkets market for this match -- model-based estimate only.",
+      "goal_lambda_estimate": 0.383,
+      "p_scores": 0.318,
+      "final_estimate_note": "Trimmed from 0.318 to 0.27 per RULE5 (small sample, n=2 starts) and RULE12 (removing RSA result changes estimate materially, indicating low confidence)"
+    },
+    "Gonzalo_Plata_ECU": {
+      "matches": [
+        {"opp": "CIV", "goals": 0, "assists": 0, "shots": 1, "SOT": 1, "starter": true},
+        {"opp": "CUR", "goals": 0, "assists": 0, "shots": 5, "SOT": 3, "starter": true},
+        {"opp": "GER", "goals": 1, "assists": 0, "shots": 2, "SOT": 1, "fouls": 4, "YC": 1, "starter": true}
+      ],
+      "assessment": "Ecuador's primary attacking outlet. Scored the crucial goal vs Germany (their W2-1) with only 1 SOT that match -- clutch performance in must-win context. Card-prone (4 fouls, 1 YC vs Germany). No liquid Smarkets market.",
+      "goal_lambda_estimate": 0.282,
+      "p_score_or_assist": 0.321,
+      "final_estimate_note": "Trimmed from 0.321 to 0.28 per RULE5 (small sample) and acknowledging his card risk may lead to early substitution in a physical knockout match"
+    },
+    "Enner_Valencia_ECU": {
+      "matches": [
+        {"opp": "CIV", "goals": 0, "shots": 1, "SOT": 0, "starter": true},
+        {"opp": "CUR", "goals": 0, "shots": 7, "SOT": 5, "starter": true, "note": "CUR outlier match"},
+        {"opp": "GER", "goals": 0, "shots": 2, "SOT": 1, "starter": true}
+      ],
+      "assessment": "Key striker, bimodal attacking record. Competitive-match SOT: 0 (CIV) + 1 (GER) = avg 0.5 SOT vs quality opponents."
+    },
+    "Santiago_Gimenez_MEX": {
+      "note": "Bench player in all 3 group matches. If Jimenez is starting, Gimenez contributes only as a late sub. 1 SOT total across 3 matches as sub."
+    }
+  },
+  "smarkets_markets": {
+    "note": "IMPORTANT: Smarkets markets for this match had REDUCED LIQUIDITY vs FRA-SWE. All player props (anytime goalscorer, score/assist, player SOT) were illiquid (no bid/offer present). Main match-level markets (FTR, BTTS, OU goals, corners, cards, penalty) were liquid when captured but may have suspended near kickoff.",
+    "FTR": {"Mexico": 0.4329, "Draw": 0.3425, "Ecuador": 0.2300, "liquid": true},
+    "BTTS": {"Yes": 0.4082, "No": 0.6008, "liquid": true},
+    "OU2_5_goals": {"Under": 0.6996, "Over": 0.2988, "liquid": true},
+    "OU3_5_goals": {"Under": 0.8624, "Over": 0.1372, "liquid": true},
+    "Highest_scoring_half": {"First_Half": 0.2769, "Equal": 0.3275, "Second_Half": 0.3978, "liquid": true},
+    "MEX_SOT_OU3_5": {"Under": 0.4601, "Over": 0.5407, "liquid": true, "implied_lambda": 3.870},
+    "ECU_SOT_OU2_5": {"Under": 0.4167, "Over": 0.5823, "liquid": true, "implied_lambda": 3.025},
+    "Total_SOT_OU6_5": {"Under": 0.4435, "Over": 0.5676, "liquid": true},
+    "Corners_OU8_5": {"Under": 0.6047, "Over": 0.4007, "liquid": true},
+    "Cards_OU3_5": {"Under": 0.4941, "Over": 0.5371, "liquid": true},
+    "Penalty": {"Yes": 0.2580, "No": 0.7318, "liquid": true},
+    "Any_sent_off": {"Yes": 0.1750, "No": 0.8334, "liquid": true},
+    "OU20_5_shots": {"Under": 0.4896, "Over": 0.5210, "liquid": true, "implied_lambda_lb": 20.91},
+    "OU21_5_shots": {"Under": 0.5463, "Over": 0.4648, "liquid": true, "implied_lambda_ub": 21.26},
+    "HT_result": {"Mexico": 0.2942, "Draw": 0.5278, "Ecuador": 0.1819, "liquid": true},
+    "Goal_1_time_bracket": {"note": "Market briefly liquid in initial pull then suspended near kickoff", "1-10": 0.1492, "11-20": 0.1448, "21-30": 0.1219, "31-40": 0.1036},
+    "MEX_OU_goals": {"1.5": {"Over": 0.3229}, "implied_lambda": 1.160},
+    "ECU_OU_goals": {"0.5": {"Over": 0.5666}, "1.5": {"Over": 0.1771}, "implied_lambda": 0.806},
+    "1H_OU0_5": {"Over": 0.5451, "liquid": true},
+    "player_markets": "ALL ILLIQUID -- no bid/offer present for any anytime_goalscorer, score_or_assist, or player_SOT market"
+  },
+  "derived_computations": {
+    "lambda_MEX_goals": 1.160,
+    "lambda_ECU_goals": 0.806,
+    "lambda_total_goals": 1.966,
+    "lambda_MEX_SOT": 3.870,
+    "lambda_ECU_SOT": 3.025,
+    "p_mex_more_sot_raw_skellam": 0.550,
+    "p_mex_more_sot_after_rule8": 0.533,
+    "p_mex_6plus_sot": 0.195,
+    "lambda_total_shots_avg": 21.08,
+    "p_20plus_shots": 0.623,
+    "combined_offside_lambda": 2.0,
+    "p_3plus_offsides": 0.323,
+    "p_goal_before_break_25min": 0.414,
+    "jimenez_thinned_lambda": 0.383,
+    "p_jimenez_scores_model": 0.318,
+    "plata_thinned_lambda": 0.282,
+    "p_plata_scores_model": 0.246,
+    "p_plata_score_or_assist_model": 0.321
+  },
+  "context_flags": [
+    "RULE8_FIRES_HARD: Draw=34.25% is the highest draw probability of any knockout match this stage. ALL comparison props shaded meaningfully toward 50%. This is the primary situational modifier today.",
+    "ALL_PLAYER_MARKETS_ILLIQUID: Unlike FRA-SWE (all four target players had genuine bid/offer), Mexico vs Ecuador has zero liquid player markets on Smarkets. Q1 (Jimenez) and Q5 (Plata) are fully model-based, applying RULE5 (small sample caution) and RULE12 (outlier sensitivity check).",
+    "MEXICO_CORNERS_HISTORICALLY_LOW: Mexico averaged 1.67 corners in 3 group games (3,1,1) — the lowest corner average of any team analyzed this tournament. This combined with Ecuador's competitive-match avg of 4.5 corners (CIV=6, GER=3, excluding the CUR outlier) gives an expected combined total of ~6.2 -- well below the 9+ threshold in Q10. Yet the direct market says 40% for 9+ (OU8.5 Over). Trust the market.",
+    "ECU_SOT_BIMODAL_CRISIS_RESOLVED: Ecuador's 15 SOT vs Curaçao was a genuine outlier on all dimensions. Their competitive-match SOT output (1 vs CIV, 3 vs GER) averages 2.0 -- but the MARKET (ECU SOT OU2.5 = 58% Over) implies a SOT lambda of 3.025, considerably above their competitive-match observed rate. The market likely prices in Ecuador's attacking intent (must-press, possession-forward) and the regression toward their general team quality, not just the CIV/GER defensive collapse scenario.",
+    "NOVEL_QUESTION_TYPES: Q7 (goal from outside penalty area) and Q8 (own goal) have no precedent in our prior match files and no direct Smarkets markets -- pure base-rate estimation. Treated with maximum humility (no confidence claim made, just historical base rates applied).",
+    "Q15_SHOTS_TOTAL: 20+ total shots = 62% from market lambda (21.1). This is the ONLY confidently-YES prop not directly market-anchored. Cross-check: MEX group avg shots 11.67 + ECU competitive avg 9.5 = ~21 -- exactly aligned with the market lambda. Strong signal.",
+    "MEXICO_CLEAN_SHEET_RECORD: Three consecutive clean sheets in group stage. P(Mexico wins to nil) is relevant context -- though not asked directly, it reinforces that Q11 (4+ total cards) might be driven more by Mexico's physical approach than by a two-team firefight."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will Raúl Jiménez (Mexico) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "NO_MARKET — MODEL ONLY, LOW CONFIDENCE",
+      "reasoning": "All Smarkets player markets are illiquid. ESPN data: Jiménez started GD1 (1 goal, 2 SOT vs RSA) and GD2 (0 goals, 1 SOT vs KOR), rested in GD3. Thinned Poisson from Mexico's goal lambda (1.160): P(Jimenez goal) with ~33% goal share = lambda 0.383, P(>=1) = 0.318. Trimmed to 0.27 per RULE5 (n=2 starts is a thin sample) and RULE12 (removing the RSA result collapses the estimate — low confidence). The market's low BTTS expectation (40.82%) and high Under-2.5 (70%) suggest defensive, tight match not conducive to individual strikers hitting landmark totals.",
+      "final_estimate": 0.27,
+      "direction": "NO lean",
+      "confidence": "low-medium"
+    },
+    {
+      "q": 2,
+      "text": "Will the second half produce more goals than the first half in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — MEDIUM CONFIDENCE",
+      "reasoning": "Direct Smarkets 'Highest scoring half' market: Second Half = 0.3978, First Half = 0.2769, Equal = 0.3275. This is a genuine 3-way question where the 'more' outcome is the second-half contract. Note: Equal (32.75%) is unusually high for this question type, consistent with the low expected goal total (many matches end 0-0 or 1-0 with the same number of goals per half). Final estimate is the direct Second Half contract price.",
+      "final_estimate": 0.40,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will Mexico have more shots on target than Ecuador in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "TEAM_MODEL — RULE8_SHADED",
+      "reasoning": "No direct 'most SOT' comparison market. Fitted SOT lambdas from team-specific market lines: lambda_MEX=3.870 (from MEX SOT OU3.5 Over=54.07%), lambda_ECU=3.025 (from ECU SOT OU2.5 Over=58.23%). Skellam P(MEX_SOT > ECU_SOT) = 0.550 raw. RULE8 fires (draw=34.25% >> 25% threshold) -- comparison props are shaded toward 0.50. Applied 0.65/0.35 blend (65% model, 35% toward 0.50): 0.65×0.550 + 0.35×0.50 = 0.533.",
+      "final_estimate": 0.53,
+      "direction": "YES lean (mild)",
+      "confidence": "medium"
+    },
+    {
+      "q": 4,
+      "text": "Will the match have 2 or fewer total goals in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGHEST CONFIDENCE",
+      "reasoning": "Direct Smarkets OU2.5 Under = 0.6996 -- this is a tight, defensive match with low expected goal total (combined lambda ~1.97). Consistent with both teams' knockout-stage defensive focus: Mexico 3 clean sheets in group stage; Ecuador only scored 2 goals in 3 matches, from 3 SOT total in competitive matches.",
+      "final_estimate": 0.70,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will Gonzalo Plata (Ecuador) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "NO_MARKET — MODEL ONLY, LOW CONFIDENCE",
+      "reasoning": "All player markets are illiquid. Plata's record: 1 goal (vs GER), 0 assists in 3 matches. He's Ecuador's primary attacking threat (starter all 3 games). Thinned Poisson: Ecuador goal lambda 0.806 with ~35% Plata goal-share = lambda_Plata 0.282, P(scores)=0.246. Adding assist probability (~10%): P(score OR assist) model = 0.321. Trimmed to 0.28 per RULE5 and given Plata's card-proneness (4 fouls + 1 YC vs Germany) may lead to disciplined/conservative play today under knockout management pressure.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "low-medium"
+    },
+    {
+      "q": 6,
+      "text": "Will Mexico have 6 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "TEAM_MODEL — MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Derived from MEX SOT lambda (3.870, fit from MEX SOT OU3.5 market): P(MEX SOT >= 6) = 0.195. STRONGLY supported by Mexico's own group-stage history: 4, 4, 5 SOT in their 3 matches -- they have NEVER reached 6 SOT in any WC2026 match. The market's implied lambda (3.870) is generous to them, yet still gives only a 19.5% probability for 6+. This is a structurally low-SOT team, not a chance fluctuation.",
+      "final_estimate": 0.19,
+      "direction": "NO (strong)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 7,
+      "text": "Will a goal be scored from outside the penalty area in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "BASE_RATE_ONLY — LOW CONFIDENCE",
+      "reasoning": "No direct market and no prior precedent for this question type in our match files. Historical WC base rate: roughly 8-12% of goals in knockout matches are from outside the box, slightly higher in desperate/must-score contexts. Expected total goals ~2.0 (from combined lambda 1.97). Rough estimate: expected OTB goals = 2.0 × 0.10 = 0.20, P(at least one) = 1-e^-0.20 = 0.18. Ecuador's high shot volume (including from distance) vs Mexico's clinical, shorter-range finishing style are roughly offsetting factors.",
+      "final_estimate": 0.18,
+      "direction": "NO lean",
+      "confidence": "low"
+    },
+    {
+      "q": 8,
+      "text": "Will an own goal be scored in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "BASE_RATE_ONLY — LOW CONFIDENCE",
+      "reasoning": "No market exists. Historical WC knockout stage base rate: approximately 7-10% of matches have at least one own goal (WC2022: 6 OGs in 64 matches = 9.4%). Partially offset by Mexico's clean defensive record (zero OGs in group stage) and the defensive, tight match expected. No specific contextual flags (no particularly cross-heavy attack from either side in their group data). Using conservative end of base rate range.",
+      "final_estimate": 0.08,
+      "direction": "NO (strong)",
+      "confidence": "low"
+    },
+    {
+      "q": 9,
+      "text": "Will Mexico win in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets FTR market: Mexico = 0.4329 (liquid). Note: 'Win in regulation' = FTR market, not knockout-advance market (no ET/penalties). Mexico's 43.3% vs Ecuador's 23.0% with Draw 34.3% -- a notably balanced match with high draw probability (RULE8 context). Trusted at market mid.",
+      "final_estimate": 0.43,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will there be 9 or more total corner kicks in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets OU8.5 corners: Over = 0.4007 (P(>=9 corners) = 0.40). NOTE: Mexico's group-stage average is only 1.67 corners/game (3,1,1 -- consistently ultra-low). Ecuador's competitive-match corner avg is 4.5 (CIV=6, GER=3, excluding the CUR outlier of 9). Combined competitive-match expectation: ~6.2 corners, well below 9. Yet the liquid market prices this at 40%. Trusting the market (it may be pricing in Ecuador's tendency to attack from wide and create corners), with the note that this feels like a case where the ESPN-derived estimate (~20-25% based on team history) diverges from the market -- and per established practice, we trust liquid markets over raw ESPN averages on absolute count thresholds. Final: 0.40 directly from market.",
+      "final_estimate": 0.40,
+      "direction": "NO lean",
+      "confidence": "high (trusting market)"
+    },
+    {
+      "q": 11,
+      "text": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets OU3.5 cards: Over = 0.5371 (P(>=4 total cards) = 0.54). Ecuador's group-stage YC record: 1, 1, 3 (avg 1.67). Mexico's: 1, 0, 1 (avg 0.67). Combined: 2.33 avg. For a physical knockout match with Mexico's slightly fouling profile (avg 11.33 fouls) and Ecuador's physical pressing (avg 11.67 fouls), 4+ cards at 54% is slightly above a coin flip -- the market correctly reflects meaningful card risk without certainty.",
+      "final_estimate": 0.54,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will there be 3 or more offside calls in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "TEAM_MODEL — MEDIUM CONFIDENCE, RULE8_CONTEXT",
+      "reasoning": "No market. ESPN team offside averages: Mexico 1.33/game (1,3,0), Ecuador 0.67/game (0,1,1). Combined lambda=2.0. Raw Poisson P(>=3) = 0.323. Shaded slightly down to 0.28 given: (1) RULE8 context (tight, cautious match = fewer attacking forward runs = fewer offsides), (2) Ecuador's consistent track record of very low offsides (0,1,1 -- rarely caught offside even when attacking heavily vs CUR). Mexico's 3 offsides vs KOR was their outlier match; 0 vs CZE and 1 vs RSA are more typical.",
+      "final_estimate": 0.28,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 13,
+      "text": "Will a goal be scored before the first hydration break?",
+      "pick_tier": "TIMING_WITH_MODEL — EARLY WINDOW",
+      "reasoning": "First hydration break at approximately minute 24-25 in this format. Total goal lambda ~1.97 (from market), scaled to 25 minutes of a 90-minute match: lambda_prebreak = 1.97 × (25/90) = 0.548. P(>=1 goal before break) = 1-e^-0.548 = 0.42. Cross-validated via Goal 1 time bracket (briefly liquid before market suspension): 1-10 (14.9%) + 11-20 (14.5%) + partial 21-30 (about 5/10 × 12.2%) = ~0.35. These two estimates bracket the final at ~0.38-0.42. Using 0.40 as the central estimate. Per the knockout deep-dive, early-window timing questions have gone 3-for-3 positive (all won) -- trusted near-raw, no late-window discount.",
+      "final_estimate": 0.40,
+      "direction": "NO lean (slight)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 14,
+      "text": "Will a penalty kick be awarded during regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — MEDIUM CONFIDENCE",
+      "reasoning": "Direct Smarkets penalty market: Yes = 0.258 (mid between bid 0.2083 and offer 0.3077 -- notably wide spread suggesting this is the least liquid of the main markets). Used raw mid. Ecuador's Plata and Mexico's physical contact play (Mexico 11.33 fouls/game) both create penalty scenarios. Consistent with the wider 25.8% base rate for international knockout matches.",
+      "final_estimate": 0.26,
+      "direction": "NO lean",
+      "confidence": "medium"
+    },
+    {
+      "q": 15,
+      "text": "Will there be 20 or more total shots (on and off target) in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "Fitted total shots lambda from two liquid OU lines: OU20.5 Over=52.10% → lambda=20.91; OU21.5 Over=46.47% → lambda=21.26. Average lambda=21.08. P(total shots >= 20) = 0.623. Cross-validated against ESPN team averages: Mexico competitive avg 11.67 shots/game + Ecuador competitive avg 9.5 shots/game (CIV=12, GER=7 -- excluding CUR outlier) = ~21.2 shots combined. This is the clearest YES in the batch: both the market and the ESPN data agree on a ~21 total shots expectation, and 20+ is just barely below that mean.",
+      "final_estimate": 0.62,
+      "direction": "YES lean",
+      "confidence": "medium-high"
+    }
+  ],
+  "summary_table": {
+    "Q1_jimenez_scores": 0.27,
+    "Q2_2H_more_goals_than_1H": 0.40,
+    "Q3_mex_more_sot_than_ecu": 0.53,
+    "Q4_2_or_fewer_goals": 0.70,
+    "Q5_plata_score_or_assist": 0.28,
+    "Q6_mex_6plus_sot": 0.19,
+    "Q7_otb_goal": 0.18,
+    "Q8_own_goal": 0.08,
+    "Q9_mex_win_regulation": 0.43,
+    "Q10_9plus_total_corners": 0.40,
+    "Q11_4plus_total_cards": 0.54,
+    "Q12_3plus_offside_calls": 0.28,
+    "Q13_goal_before_first_break": 0.40,
+    "Q14_penalty_awarded": 0.26,
+    "Q15_20plus_total_shots": 0.62
+  }
+}

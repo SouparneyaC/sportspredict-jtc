@@ -1,0 +1,66 @@
+=== PORTUGAL vs SPAIN — FULL SESSION LOG ===
+Date: 2026-07-06
+Match: POR vs ESP, Round of 16, WC2026
+Kickoff: 19:00 UTC
+Smarkets Event ID: 45172458
+
+--- DATA GATHERING ---
+Pulled espn_match_panel.csv / espn_rolling_averages.csv rows for POR (4 games) and ESP (4 games).
+Fetched fresh ESPN summary endpoints for R32 games (POR-CRO 760496, ESP-AUT 760497) plus all group-stage
+games via event IDs (760435, 760461, 760481 for POR; 760428, 760453, 760479 for ESP) to pull player-level
+roster stat blocks (goals, SOT, shots, assists, starter/subbedOut/subbedIn) for Ronaldo, Bruno Fernandes,
+Yamal, Oyarzabal, Diogo Costa saves.
+
+Also pulled keyEvents for substitution timing (used for Q10 base rate) and card/goal timing (used for Q15).
+
+--- SMARKETS DATA ---
+Fetched full market catalogue (180 markets) via /v3/events/45172458/markets/.
+Pulled contracts+quotes for: Anytime goalscorer (149253367), Player score-or-assist (149549557),
+Player 0.5/1.5 SOT (149549536/149549538), Player saves 0.5/1.5/2.5 (149549562/565/568),
+Total goals OU2.5 (149252927), Cards OU2.5/3.5 (149253055/149253057), Spain corners OU5.5 (149253083),
+Extra time Yes/No (149253024), To qualify (149253023), H1/H2 exact goals (149252910/911),
+Team to score first (149253091), Portugal team SOT OU2.5 (149253206).
+
+Price parsing: two-sided mid = (bid+offer)/2. Illiquid offer-only = offer x 0.945.
+
+--- MODEL DERIVATIONS ---
+Diogo Costa saves: fit Poisson lambda from 3 illiquid save-market points -> lambda range 2.39-3.88
+(noisy, wide-spread illiquid quotes). Cross-checked vs ESPN saves history [1,2,6,5] - clear bimodality,
+high-save games came against the 2 strongest opponents faced (Colombia, Croatia). Spain (10 SOT vs
+Austria) is the toughest test yet -> blended lambda 3.96, P(>=4 saves)=0.559, shaded to 0.50.
+
+Both-halves-equal-goals: used H1 exact-goal buckets directly, fit Poisson lambda for H2 from P(X=0),
+scaled to match observed 2+ bucket, computed joint match probability = 0.248.
+
+Any-Portugal-player-2+-SOT: compound 1-prod(1-p_i) across Ronaldo/Bruno/Leao/Ramos/Bernardo player
+markets = 0.63, cross-checked against Portugal team Over2.5 SOT market (0.596 for team total >=3,
+which needs shot concentration to translate into a single player reaching 2+) - tempered to 0.52.
+
+9+ substitutions: no direct market. Used substitution counts from keyEvents across the last 4
+knockout-stage games played by these teams: POR-CRO=9, ESP-AUT=10, USA-BIH=8, BEL-SEN=8 (all in
+regulation, pre-ET). Strong precedent clustered at/above the 9 threshold -> 0.58.
+
+--- KEY PLAYER FINDINGS (CLUSTER A APPLICATIONS) ---
+Yamal: suppressed (0.30 vs market 0.4485) - real score/assist rate 25% (only vs weakest opponent),
+0 assists all tournament.
+Bruno Fernandes: BOOSTED (0.58 vs market 0.3523) - hit 1+ SOT in 3/4 games (75%), this is his floor
+not his ceiling (2+ SOT drought already validated separately in POR-CRO).
+Ronaldo: held near market (0.32) - scored in the last knockout game (competitive, not blowout), no
+drought signal.
+
+--- FINAL ESTIMATES ---
+Q1: 0.32 [PLAYER_LIQUID]
+Q2: 0.30 [PLAYER_LIQUID+CLUSTER_A_SUPPRESS]
+Q3: 0.58 [PLAYER_LIQUID+FLOOR_BOOST]
+Q4: 0.25 [BASE_RATE_FORMULA]
+Q5: 0.36 [DIRECT]
+Q6: 0.52 [DIRECT]
+Q7: 0.50 [PLAYER_ILLIQUID+REGIME_CHECK]
+Q8: 0.33 [BASE_RATE_FORMULA]
+Q9: 0.40 [DIRECT]
+Q10: 0.58 [BASE_RATE_FORMULA]
+Q11: 0.54 [DIRECT]
+Q12: 0.27 [DIRECT]
+Q13: 0.52 [TEAM_MODEL]
+Q14: 0.66 [DIRECT]
+Q15: 0.30 [BASE_RATE_FORMULA]

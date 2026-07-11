@@ -1,0 +1,102 @@
+{
+  "_description": "Platform market structure for Switzerland vs Colombia R16 2026-07-07/08 — crowd prices NOT YET AVAILABLE (markets open, no mid-price captured)",
+  "match": "Switzerland vs Colombia",
+  "match_id": "68875a62-5a1e-4099-afe3-3d2a68316b5f",
+  "date": "2026-07-07",
+  "opening_time": "2026-07-07T20:00:00.000Z",
+  "closing_time": "2026-07-08T00:00:00.000Z",
+  "open_market_count": 15,
+  "note": "Platform questions pulled from bot/data/markets_raw.jsonl. Crowd mid-prices NOT captured pre-match — need to be fetched from API or observed during match window. Smarkets external FTR (win/draw/win) data not yet fetched.",
+  "questions": [
+    {
+      "q": 1,
+      "market_id": "d89c9015-a11d-4087-90fd-feafa06c2424",
+      "question": "Will Dan Ndoye (Switzerland, #11) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 2,
+      "market_id": "97fa3254-9732-4843-8441-6c5792ebe837",
+      "question": "Will Switzerland keep a clean sheet in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 3,
+      "market_id": "e35f4923-266f-4cc0-868b-ef43557138fe",
+      "question": "Will the match be tied at halftime?",
+      "crowd_mid": null
+    },
+    {
+      "q": 4,
+      "market_id": "b10a67ee-be1a-4ab5-8e49-f1b3b6051856",
+      "question": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 5,
+      "market_id": "43cfef4f-bc3f-40e4-beaa-3e524a97289c",
+      "question": "Will Colombia have 5 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 6,
+      "market_id": "6471581d-fede-4ab0-af63-9a8b32ceda12",
+      "question": "Will Switzerland have 4 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 7,
+      "market_id": "a9b6b0d4-9720-4992-a432-351cc22c5a56",
+      "question": "Will a substitute score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 8,
+      "market_id": "2555a3aa-bdb2-4839-8a78-be233d778a53",
+      "question": "Will the first goal of the match be scored in the second half of regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 9,
+      "market_id": "ceb3d6b2-40a3-46c8-99ed-c316e0d4f6ca",
+      "question": "Will either team win both halves in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 10,
+      "market_id": "9a4d6ade-82ca-4198-96e0-d0533a11a11b",
+      "question": "Will the match be decided by exactly one goal in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 11,
+      "market_id": "80a98291-a2b3-4cb4-b8e8-c7e7001679e5",
+      "question": "Will at least one card be shown in each half of regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 12,
+      "market_id": "30a7c18d-a774-4dfa-91e9-8d3ecb5a96b0",
+      "question": "Will Luis Díaz (Colombia, #7) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 13,
+      "market_id": "18250163-6af7-44a9-a314-ec744a43a1d1",
+      "question": "Will Jhon Arias (Colombia, #11) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    },
+    {
+      "q": 14,
+      "market_id": "d38c6501-0d82-475a-a6bb-134c0ff92d84",
+      "question": "Will Colombia advance to the quarterfinals?",
+      "crowd_mid": null
+    },
+    {
+      "q": 15,
+      "market_id": "3b0cd391-4336-4692-b760-ad6d654543ca",
+      "question": "Will Breel Embolo (Switzerland, #7) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "crowd_mid": null
+    }
+  ]
+}

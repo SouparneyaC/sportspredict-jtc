@@ -1,0 +1,196 @@
+{
+  "_description": "ESPN team/player stats for Switzerland (3 group games) and Algeria (3 group games)",
+  "switzerland_group_stage": {
+    "team_id_espn": 475,
+    "matches": [
+      {
+        "opponent": "Qatar",
+        "ha": "away",
+        "sot": 7,
+        "shots": 26,
+        "corners": 10,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Dan Ndoye (6 shots)"
+      },
+      {
+        "opponent": "Bosnia-Herzegovina",
+        "ha": "home",
+        "sot": 7,
+        "shots": 13,
+        "corners": 7,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 3,
+        "top_shooter": "Dan Ndoye (4 shots)"
+      },
+      {
+        "opponent": "Canada",
+        "ha": "home",
+        "sot": 4,
+        "shots": 6,
+        "corners": 2,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Johan Manzambi (2 shots)"
+      }
+    ],
+    "averages": {
+      "sot": 6.0,
+      "shots": 15.0,
+      "corners": 6.33,
+      "yc": 1.0,
+      "offsides": 1.67
+    },
+    "notes": [
+      "Dan Ndoye top shooter in games 1 and 2 (6 then 4 shots)",
+      "Game 3 vs Canada: Switzerland dominated by Canada (SUI 4 SOT/6 shots vs CAN 7 SOT/13 shots)",
+      "SOT very consistent at 7 in 2 of 3 games \u2014 high output attack",
+      "Corners: 10, 7, 2 \u2014 high when attacking freely (10 vs Qatar away)"
+    ]
+  },
+  "algeria_group_stage": {
+    "team_id_espn": 624,
+    "matches": [
+      {
+        "opponent": "Argentina",
+        "ha": "away",
+        "sot": 1,
+        "shots": 7,
+        "corners": 2,
+        "yc": 0,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Far\u00e8s Cha\u00efbi (3 shots)"
+      },
+      {
+        "opponent": "Jordan",
+        "ha": "away",
+        "sot": 8,
+        "shots": 17,
+        "corners": 10,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 0,
+        "top_shooter": "Ibrahim Maza (4 shots)"
+      },
+      {
+        "opponent": "Austria",
+        "ha": "home",
+        "sot": 5,
+        "shots": 12,
+        "corners": 0,
+        "yc": 0,
+        "rc": 0,
+        "offsides": 1,
+        "top_shooter": "Ibrahim Maza (3 shots)"
+      }
+    ],
+    "averages": {
+      "sot": 4.67,
+      "shots": 12.0,
+      "corners": 4.0,
+      "yc": 0.33,
+      "offsides": 0.67
+    },
+    "notes": [
+      "Ibrahim Maza top shooter in 2 of 3 ALG games \u2014 primary attacking threat NOT Gouiri/Mahrez",
+      "Cha\u00efbi top shooter vs Argentina (3 shots) \u2014 Algeria's creative hub",
+      "SOT bimodal: 8 vs Jordan, 5 vs Austria, 1 vs Argentina",
+      "Corners: 2, 10, 0 \u2014 very inconsistent; 0 corners vs Austria at home",
+      "Very clean disciplinary record: 1 YC in 3 games total"
+    ]
+  },
+  "player_market_data": {
+    "embolo_anytime_scorer": {
+      "mid": 0.3254,
+      "liquid": true
+    },
+    "embolo_sot_ou0.5": {
+      "mid": 0.6799,
+      "liquid": true
+    },
+    "embolo_sot_ou1.5": {
+      "mid": 0.3195,
+      "liquid": true
+    },
+    "vargas_anytime_scorer": {
+      "mid": 0.193,
+      "liquid": true
+    },
+    "vargas_sot_ou0.5": {
+      "mid": 0.4951,
+      "liquid": true
+    },
+    "vargas_sot_ou1.5": {
+      "mid": 0.1283,
+      "liquid": true
+    },
+    "ndoye_anytime_scorer": {
+      "mid": 0.1535,
+      "liquid": true
+    },
+    "ndoye_sot_ou0.5": {
+      "mid": 0.5424,
+      "liquid": true
+    },
+    "ndoye_sot_ou1.5": {
+      "mid": 0.1918,
+      "liquid": true
+    },
+    "xhaka_score_or_assist": {
+      "mid": 0.2039,
+      "liquid": true
+    },
+    "xhaka_sot_ou0.5": {
+      "mid": 0.3367,
+      "liquid": true
+    },
+    "manzambi_sot_ou1.5": {
+      "mid": 0.1875,
+      "liquid": true
+    },
+    "mahrez_anytime_scorer": {
+      "mid": 0.1874,
+      "liquid": true
+    },
+    "mahrez_sot_ou0.5": {
+      "mid": 0.474,
+      "liquid": true
+    },
+    "mahrez_sot_ou1.5": {
+      "mid": 0.1777,
+      "liquid": true
+    },
+    "mahrez_score_or_assist": {
+      "mid": 0.2699,
+      "liquid": true
+    },
+    "gouiri_anytime_scorer": {
+      "offer": 0.2222,
+      "liquid": false
+    },
+    "gouiri_sot_ou0.5": {
+      "offer": 0.6173,
+      "liquid": false
+    },
+    "gouiri_sot_ou1.5": {
+      "offer": 0.2273,
+      "liquid": false
+    },
+    "gouiri_brace": {
+      "offer": 0.0345,
+      "liquid": false
+    },
+    "embolo_brace": {
+      "offer": 0.08,
+      "liquid": false
+    },
+    "itten_brace": {
+      "offer": 0.0667,
+      "liquid": false
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "_description": "Rules applied per question for Switzerland vs Colombia R16 2026-07-07/08",
+  "match_context": {
+    "switzerland_win_prob": 0.267,
+    "draw_prob": 0.295,
+    "colombia_win_prob": 0.438,
+    "lambda_switzerland": 0.951,
+    "lambda_colombia": 1.295,
+    "rule7_fires": false,
+    "rule8_fires": true,
+    "rule8_note": "Draw 29.5% ≥ 25%. RULE8 most relevant for Q3 (HT tied), Q9 (either wins both halves), Q10 (margin=1), Q4 (4+ cards)."
+  },
+  "per_question": [
+    {
+      "q": 1,
+      "tier": "PLAYER_LIQUID",
+      "question": "Will Dan Ndoye (Switzerland, #11) score a goal?",
+      "model_estimate": 0.212,
+      "rules": [],
+      "estimate": 0.22,
+      "note": "Ndoye is SUI's primary winger and top shooter. λ_Ndoye=0.238 from 25% goal-share assumption. Market for him is liquid — use model. Slight RULE8 shade up from 0.212. Final: 0.22."
+    },
+    {
+      "q": 2,
+      "tier": "DIRECT",
+      "question": "Will Switzerland keep a clean sheet?",
+      "model_estimate": 0.274,
+      "rules": [],
+      "estimate": 0.28,
+      "note": "P(COL=0 goals from DC model)=0.274. COL scored in only 1 of 4 WC2026 games on high-volume attack but blanked vs POR (0-0). SUI has conceded only 2 goals in 4 matches. Slight RULE8 shade up. Final: 0.28."
+    },
+    {
+      "q": 3,
+      "tier": "DIRECT",
+      "question": "Will the match be tied at halftime?",
+      "model_estimate": 0.461,
+      "rules": [],
+      "estimate": 0.45,
+      "note": "P(HT tied)=0.461 from Poisson HT model. Fractionally above 0.45. COL slightly more likely to score first (higher λ). Shade slightly down from model midpoint. Final: 0.45."
+    },
+    {
+      "q": 4,
+      "tier": "TEAM_MODEL",
+      "question": "Will there be 4 or more total cards?",
+      "model_estimate": 0.242,
+      "rules": ["RULE8"],
+      "estimate": 0.30,
+      "note": "Base λ_cards=2.5 → P(4+)=0.242. Knockout intensity boost typical in R16; this is a high-stakes match. SUI averages 1.0 YC + COL 1.33 YC per game. Using λ=2.8 gives P(4+)≈0.308. RULE8 shade up. Final: 0.30."
+    },
+    {
+      "q": 5,
+      "tier": "TEAM_MODEL",
+      "question": "Will Colombia have 5 or more corner kicks?",
+      "model_estimate": 0.468,
+      "rules": ["RULE8"],
+      "estimate": 0.47,
+      "note": "COL corners avg 4.5 across WC2026 (4,5,5,4). λ_col_corners=4.5 → P(5+)=0.468. COL attack-dominant and seeks crosses. vs SUI's organized defense may limit corners to 4-5. RULE8 shade up slightly. Final: 0.47."
+    },
+    {
+      "q": 6,
+      "tier": "TEAM_MODEL",
+      "question": "Will Switzerland have 4 or more shots on target?",
+      "model_estimate": 0.658,
+      "rules": ["RULE8", "RULE12"],
+      "estimate": 0.63,
+      "note": "SUI group SOT: 7,7,4 (avg 6.0). Adjusted λ=4.5 to account for stronger COL defense vs what SUI faced in groups. P(4+ SOT at λ=4.5)=0.658. RULE8 fires: shade DOWN toward 0.50 (since estimate > 0.50). RULE12: Canada 4-SOT game is the outlier when SUI was dominated. COL is strong but SUI are active attackers. Use λ=4.5 (not 6.0). Final: 0.63."
+    },
+    {
+      "q": 7,
+      "tier": "BASE_RATE_FORMULA",
+      "question": "Will a substitute score or assist a goal?",
+      "model_estimate": 0.31,
+      "rules": [],
+      "estimate": 0.31,
+      "note": "Base rate from recent tournament data. WC2026 knockout subs often contribute. Both teams use impact subs. Final: 0.31."
+    },
+    {
+      "q": 8,
+      "tier": "TEAM_MODEL",
+      "question": "Will the first goal be scored in the second half?",
+      "model_estimate": 0.258,
+      "rules": [],
+      "estimate": 0.26,
+      "note": "P(0 goals in HT) × P(>0 goals in 2H) = 0.364 × 0.709 = 0.258. COL is more likely to score first (higher λ), but SUI defends well. First goal in 2H is the minority scenario. Final: 0.26."
+    },
+    {
+      "q": 9,
+      "tier": "TEAM_MODEL",
+      "question": "Will either team win both halves?",
+      "model_estimate": 0.165,
+      "rules": ["RULE8"],
+      "estimate": 0.20,
+      "note": "P=0.165 from model (P(COL wins HT)*P(COL wins 2H) + P(SUI wins HT)*P(SUI wins 2H)). Low probability — most WC R16 matches are tight. RULE8 shade toward 0.50: pull up modestly. Final: 0.20."
+    },
+    {
+      "q": 10,
+      "tier": "TEAM_MODEL",
+      "question": "Will the match be decided by exactly one goal?",
+      "model_estimate": 0.404,
+      "rules": ["RULE8"],
+      "estimate": 0.42,
+      "note": "P(|margin|=1 in regulation)=0.404. Most 1-team wins in competitive matches are by 1 goal. RULE8 shade up (estimate below 0.50). Many scenarios support this (COL 1-0, SUI 1-0, 2-1 either way). Final: 0.42."
+    },
+    {
+      "q": 11,
+      "tier": "TEAM_MODEL",
+      "question": "Will at least one card be shown in each half?",
+      "model_estimate": 0.505,
+      "rules": [],
+      "estimate": 0.50,
+      "note": "P(card each half) = (1-exp(-1.125)) × (1-exp(-1.375)) = 0.675 × 0.748 = 0.505. Right at 0.50. Historical base rate for both halves having cards is about 50-55% in WC knockouts. Final: 0.50."
+    },
+    {
+      "q": 12,
+      "tier": "PLAYER_LIQUID",
+      "question": "Will Luis Díaz (Colombia, #7) score a goal?",
+      "model_estimate": 0.295,
+      "rules": [],
+      "estimate": 0.30,
+      "note": "Díaz is COL's main threat. λ_Díaz=0.350 → P=0.295. He scored 1 goal in group + active in R32. Liquid market. SUI concedes few goals (2 in 4) but Díaz is elite quality. Final: 0.30."
+    },
+    {
+      "q": 13,
+      "tier": "PLAYER_ILLIQUID",
+      "question": "Will Jhon Arias (Colombia, #11) score or assist a goal?",
+      "model_estimate": 0.420,
+      "rules": ["RULE_ILLIQUID"],
+      "estimate": 0.38,
+      "note": "Arias score-or-assist λ=0.544 → P=0.420. PLAYER_ILLIQUID: market price typically unreliable. Arias is active but not primary scorer. Group stage production unclear. Shade down from model's 0.42 by ~10% for illiquid discount. Final: 0.38."
+    },
+    {
+      "q": 14,
+      "tier": "DIRECT",
+      "question": "Will Colombia advance to the quarterfinals?",
+      "model_estimate": 0.571,
+      "rules": [],
+      "estimate": 0.57,
+      "note": "P(COL win in regulation)=0.438 + P(draw)*0.45 = 0.438+0.133=0.571. COL slightly underdog to win ET/pens at 45% (they're the stronger team but ET is more chaotic). This matches market expectation for a moderate favorite. Final: 0.57."
+    },
+    {
+      "q": 15,
+      "tier": "PLAYER_LIQUID",
+      "question": "Will Breel Embolo (Switzerland, #7) have 1 or more shots on target?",
+      "model_estimate": 0.379,
+      "rules": [],
+      "estimate": 0.38,
+      "note": "Embolo as striker gets ~50% of SUI's SOT production. λ_SUI_SOT_adj=4.5 → λ_Embolo_SOT=0.50*0.951=0.476 on the SOT side. P(1+ SOT) = 1-exp(-0.476) = 0.379. Embolo had 0 SOT in 4-SOT Canada game but consistent otherwise. Model estimate close to liquid market expectation. Final: 0.38."
+    }
+  ]
+}

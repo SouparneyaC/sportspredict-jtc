@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Mexico vs England",
+  "date": "2026-07-05/06",
+  "actual_score": "Mexico 2-3 England (high-scoring, open match)",
+  "match_rbp_total": 23.81,
+  "questions_beat_crowd": 8,
+  "questions_below_crowd": 7,
+  "question_results": [
+    {"text": "Will Harry Kane (England) score a goal?", "our_estimate": 0.38, "crowd_estimate": 0.46, "outcome": "YES", "rbp": -12.7, "beat_crowd": false, "note": "Kept close to market rather than bumping despite his 75% group-stage scoring rate; crowd's higher number was better calibrated for this specific open, high-scoring match."},
+    {"text": "Will Jude Bellingham (England) have 2 or more shots on target?", "our_estimate": 0.32, "crowd_estimate": 0.35, "outcome": "YES", "rbp": 1.77, "beat_crowd": true, "note": "Ghana-analogy correction paid off directionally."},
+    {"text": "Will England advance to the quarterfinals?", "our_estimate": 0.53, "crowd_estimate": 0.56, "outcome": "YES", "rbp": -0.51, "beat_crowd": false},
+    {"text": "Will Raúl Jiménez (Mexico) score a goal?", "our_estimate": 0.28, "crowd_estimate": 0.32, "outcome": "YES", "rbp": -5.22, "beat_crowd": false, "note": "Both strikers (Kane AND Jiménez) scored -- underpriced the match's overall attacking/scoring environment."},
+    {"text": "Will Julián Quiñones (Mexico) have 1 or more shots on target?", "our_estimate": 0.63, "crowd_estimate": 0.55, "outcome": "YES", "rbp": 19.42, "beat_crowd": true, "note": "Personal-floor logic (4/4 games hit) validated -- biggest win of the match."},
+    {"text": "Will the match have 2 or fewer total goals?", "our_estimate": 0.61, "crowd_estimate": 0.56, "outcome": "NO", "rbp": -8.31, "beat_crowd": false, "note": "Match finished 2-3 (5 total goals) -- badly underestimated the scoring environment, more confidently wrong than the crowd."},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.48, "crowd_estimate": 0.47, "outcome": "NO", "rbp": 2.36, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.42, "crowd_estimate": 0.45, "outcome": "YES", "rbp": -1.2, "beat_crowd": false},
+    {"text": "Will England have more corner kicks than Mexico?", "our_estimate": 0.60, "crowd_estimate": 0.58, "outcome": "NO", "rbp": -0.17, "beat_crowd": false},
+    {"text": "Will a goal be scored after the second hydration break?", "our_estimate": 0.45, "crowd_estimate": 0.49, "outcome": "NO", "rbp": 11.76, "beat_crowd": true},
+    {"text": "Will England have 5 or more shots on target?", "our_estimate": 0.40, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -16.79, "beat_crowd": false, "note": "BIGGEST LOSS OF THE MATCH. Deliberately stayed at market (0.40) per Cluster-B discipline instead of blending toward England's own empirical SOT average (0.80-0.90) -- this time the discipline cost us, the mirror image of the SAME decision winning big in the BRA-NOR match the same day (Brazil 6+ SOT, +22.57). See chat analysis for the nuance this reveals."},
+    {"text": "Will the match be decided by a penalty shootout?", "our_estimate": 0.19, "crowd_estimate": 0.24, "outcome": "NO", "rbp": 9.82, "beat_crowd": true},
+    {"text": "Will both teams score?", "our_estimate": 0.48, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -0.23, "beat_crowd": false},
+    {"text": "Will there be more total cards than total goals?", "our_estimate": 0.58, "crowd_estimate": 0.57, "outcome": "YES", "rbp": 8.01, "beat_crowd": true},
+    {"text": "Will there be 18 or more total shots?", "our_estimate": 0.78, "crowd_estimate": 0.70, "outcome": "YES", "rbp": 15.82, "beat_crowd": true, "note": "Market-anchored high-confidence lambda fit, validated."}
+  ],
+  "key_lessons": [
+    "8/15 beat crowd, a much more modest showing than BRA-NOR the same day. Net positive only because of two big wins (Quiñones +19.42, 18+ shots +15.82) offsetting one big loss (England 5+ SOT -16.79).",
+    "SINGLE ROOT CAUSE explains 4 of the 5 losses: Q1 (Kane scores), Q4 (Jimenez scores), Q6 (2-or-fewer goals), and Q11 (England 5+ SOT) are all different symptoms of the same underlying miscalibration -- underestimating how open/high-scoring this specific match would be (final: 2-3, 5 goals, both strikers scoring, England well past the SOT threshold). This was one systemic miscalibration wearing four different masks, not four independent mistakes.",
+    "The England 5+ SOT loss (-16.79) is the direct mirror-image test of the SAME Cluster-B discipline decision that won +22.57 on Brazil 6+ SOT the same day. Genuinely mixed evidence within a single day -- worth treating this rule as directional guidance, not an absolute law, and reading match-specific goal/attack-environment signals more carefully going forward."
+  ]
+}

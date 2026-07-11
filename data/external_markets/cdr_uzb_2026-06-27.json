@@ -2,39 +2,146 @@
   "match": "Congo DR vs Uzbekistan",
   "date": "2026-06-27",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"CDR_vs_POR_GD1": 760435, "COL_vs_UZB_GD1": 760436, "CDR_vs_COL_GD2": 760459, "UZB_vs_POR_GD2": 760461},
+  "espn_event_ids": {
+    "CDR_vs_POR_GD1": 760435,
+    "COL_vs_UZB_GD1": 760436,
+    "CDR_vs_COL_GD2": 760459,
+    "UZB_vs_POR_GD2": 760461
+  },
   "smarkets_event_id": 45087299,
   "group_context": {
-    "Congo DR": {"pts": 1, "record": "0-1-1 (D1-1 POR, L0-1 COL)", "status": "Needs a strong win for any realistic 3rd-place wildcard hope"},
-    "Uzbekistan": {"pts": 0, "record": "0-0-2 (L1-3 COL, L0-5 POR)", "status": "ELIMINATED — worst GD in the group (-7)"}
+    "Congo DR": {
+      "pts": 1,
+      "record": "0-1-1 (D1-1 POR, L0-1 COL)",
+      "status": "Needs a strong win for any realistic 3rd-place wildcard hope"
+    },
+    "Uzbekistan": {
+      "pts": 0,
+      "record": "0-0-2 (L1-3 COL, L0-5 POR)",
+      "status": "ELIMINATED — worst GD in the group (-7)"
+    }
   },
   "wc2026_espn_stats": {
     "CDR": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760435, "opponent": "Portugal", "result": "D 1-1", "fouls": 10, "SOT": 2, "offsides": 2, "YC": 1, "RC": 0, "corners": 4, "possession": 24.6},
-        {"event_id": 760459, "opponent": "Colombia", "result": "L 0-1", "fouls": 16, "SOT": 1, "offsides": 0, "YC": 1, "RC": 0, "corners": 4, "possession": 36.5}
+        {
+          "event_id": 760435,
+          "opponent": "Portugal",
+          "result": "D 1-1",
+          "fouls": 10,
+          "SOT": 2,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 24.6
+        },
+        {
+          "event_id": 760459,
+          "opponent": "Colombia",
+          "result": "L 0-1",
+          "fouls": 16,
+          "SOT": 1,
+          "offsides": 0,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 36.5
+        }
       ],
-      "averages": {"fouls": 13.0, "SOT": 1.5, "offsides": 1.0, "cards": 1.0, "corners": 4.0}
+      "averages": {
+        "fouls": 13.0,
+        "SOT": 1.5,
+        "offsides": 1.0,
+        "cards": 1.0,
+        "corners": 4.0
+      }
     },
     "UZB": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760436, "opponent": "Colombia", "result": "L 1-3", "fouls": 14, "SOT": 2, "offsides": 0, "YC": 1, "RC": 0, "corners": 3, "possession": 38.6},
-        {"event_id": 760461, "opponent": "Portugal", "result": "L 0-5", "fouls": 15, "SOT": 2, "offsides": 2, "YC": 1, "RC": 0, "corners": 2, "possession": 34.1},
-        {"_note": "PRIOR LESSON, SAME PLAYER (Shomurodov), SAME 2H-SOT QUESTION: POR-UZB Q5 confirmed RULE15 cleanly — Shomurodov got 0 2H SOT in the 5-0 blowout, our 0.25 vs crowd 0.35 won +8.78. Also: Uzbekistan's offside count in that match (2) came from abandoning their compact shape once the blowout was total — 'the blowout reversal rule DOES apply' and the explicit standing floor is 'never go below 0.25 on any 2+ offsides question.'"}
+        {
+          "event_id": 760436,
+          "opponent": "Colombia",
+          "result": "L 1-3",
+          "fouls": 14,
+          "SOT": 2,
+          "offsides": 0,
+          "YC": 1,
+          "RC": 0,
+          "corners": 3,
+          "possession": 38.6
+        },
+        {
+          "event_id": 760461,
+          "opponent": "Portugal",
+          "result": "L 0-5",
+          "fouls": 15,
+          "SOT": 2,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 2,
+          "possession": 34.1
+        },
+        {
+          "_note": "PRIOR LESSON, SAME PLAYER (Shomurodov), SAME 2H-SOT QUESTION: POR-UZB Q5 confirmed RULE15 cleanly — Shomurodov got 0 2H SOT in the 5-0 blowout, our 0.25 vs crowd 0.35 won +8.78. Also: Uzbekistan's offside count in that match (2) came from abandoning their compact shape once the blowout was total — 'the blowout reversal rule DOES apply' and the explicit standing floor is 'never go below 0.25 on any 2+ offsides question.'"
+        }
       ],
-      "averages": {"fouls": 14.5, "SOT": 2.0, "offsides": 1.0, "cards": 1.0, "corners": 2.5}
+      "averages": {
+        "fouls": 14.5,
+        "SOT": 2.0,
+        "offsides": 1.0,
+        "cards": 1.0,
+        "corners": 2.5
+      }
     }
   },
   "smarkets_markets": {
-    "FTR": {"Congo_DR": 0.5882, "Uzbekistan": 0.1709, "Draw": 0.2410, "liquid": true},
-    "Penalty": {"Yes": 0.2535, "No": 0.7520, "liquid": true},
-    "Any_sent_off": {"Yes": 0.1474, "No": 0.8861, "liquid": true},
-    "BTTS_and_OU2_5": {"Yes_Over": 0.3205, "Yes_Under": 0.1146, "No_Over": 0.1010, "No_Under": 0.4698, "liquid": true},
-    "UZB_corners_OU4_5": {"Under": 0.6731, "Over": 0.3240, "liquid": true},
-    "UZB_SOT_OU3_5_fullmatch": {"Under": 0.5962, "Over": 0.4043, "liquid": true},
-    "player_markets": {"Eldor_Shomurodov_SOT_fullmatch": {"offer": 0.5525, "adjusted": 0.522}, "Cedric_Bakambu_score_or_assist": {"offer": 0.4673, "adjusted": 0.442}}
+    "FTR": {
+      "Congo_DR": 0.5882,
+      "Uzbekistan": 0.1709,
+      "Draw": 0.241,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.2535,
+      "No": 0.752,
+      "liquid": true
+    },
+    "Any_sent_off": {
+      "Yes": 0.1474,
+      "No": 0.8861,
+      "liquid": true
+    },
+    "BTTS_and_OU2_5": {
+      "Yes_Over": 0.3205,
+      "Yes_Under": 0.1146,
+      "No_Over": 0.101,
+      "No_Under": 0.4698,
+      "liquid": true
+    },
+    "UZB_corners_OU4_5": {
+      "Under": 0.6731,
+      "Over": 0.324,
+      "liquid": true
+    },
+    "UZB_SOT_OU3_5_fullmatch": {
+      "Under": 0.5962,
+      "Over": 0.4043,
+      "liquid": true
+    },
+    "player_markets": {
+      "Eldor_Shomurodov_SOT_fullmatch": {
+        "offer": 0.5525,
+        "adjusted": 0.522
+      },
+      "Cedric_Bakambu_score_or_assist": {
+        "offer": 0.4673,
+        "adjusted": 0.442
+      }
+    }
   },
   "context_flags": [
     "ROLE_REVERSAL_FROM_COL_CDR: in COL-CDR (last match), DR Congo was the extreme underdog and RULE15 correctly suppressed Bakambu's SOT (+10.45 win). TODAY DR Congo is the FAVORITE (58.8%) — RULE15 does NOT apply to Bakambu this time; price him on his own merit as the front man of the stronger side.",
@@ -56,7 +163,7 @@
       "text": "Will Uzbekistan be caught offside 2 or more times?",
       "pick_tier": "MEDIUM CONFIDENCE — FLOOR APPLIED",
       "reasoning": "UZB offsides: 0 (vs COL) and 2 (vs POR, in their 5-0 blowout). Raw Poisson at λ=1.0 gives only 0.26, but the explicit standing lesson from POR-UZB is 'never go below 0.25 on any 2+ offsides question' AND that blowouts make a low-block team abandon shape and push forward, raising offside risk. DR Congo (58.8% favorite) is a real but more moderate mismatch than Portugal's was — set above the raw number and the floor, but below the extreme-blowout level.",
-      "final_estimate": 0.40,
+      "final_estimate": 0.4,
       "direction": "TOSS-UP (slight NO)",
       "confidence": "medium"
     },
@@ -135,7 +242,7 @@
   ],
   "summary_table": {
     "Q1_UZB_more_fouls": 0.62,
-    "Q2_UZB_2plus_offsides": 0.40,
+    "Q2_UZB_2plus_offsides": 0.4,
     "Q3_both_SOT_2H": 0.33,
     "Q4_BTTS_3plus": 0.32,
     "Q5_penalty_or_red": 0.36,
@@ -150,6 +257,103 @@
     "Q8: DR Congo wins = 0.59 (HIGH CONFIDENCE — direct market)",
     "Q10: Uzbekistan 5+ corners = 0.32 (HIGH CONFIDENCE — direct market, consistent with their low corner output all tournament)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Congo DR 3 - 1 Uzbekistan",
+    "total_rbp": 76.02,
+    "beat_crowd_count": "8/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Uzbekistan commit more fouls than DR Congo?",
+        "us": 0.62,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": 10.01,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Uzbekistan be caught offside 2 or more times?",
+        "us": 0.4,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 6.14,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will both teams have at least 1 shot on target in the second half?",
+        "us": 0.33,
+        "crowd": 0.65,
+        "outcome": 0,
+        "rbp": 33.25,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will both teams score AND the match have 3 or more total goals?",
+        "us": 0.32,
+        "crowd": 0.35,
+        "outcome": 1,
+        "rbp": -2.14,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will a penalty kick be awarded OR a red card be shown?",
+        "us": 0.36,
+        "crowd": 0.34,
+        "outcome": 1,
+        "rbp": 4.37,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Uzbekistan have more shots on target than DR Congo in the second half?",
+        "us": 0.33,
+        "crowd": 0.36,
+        "outcome": 0,
+        "rbp": 4.46,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will Eldor Shomurodov have at least 1 shot on target in the second half?",
+        "us": 0.22,
+        "crowd": 0.36,
+        "outcome": 0,
+        "rbp": 10.37,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will DR Congo win the match?",
+        "us": 0.59,
+        "crowd": 0.53,
+        "outcome": 1,
+        "rbp": 7.61,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Cédric Bakambu score or assist a goal (excluding own goals)?",
+        "us": 0.44,
+        "crowd": 0.35,
+        "outcome": 0,
+        "rbp": -5.01,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Uzbekistan have 5 or more corner kicks?",
+        "us": 0.32,
+        "crowd": 0.38,
+        "outcome": 0,
+        "rbp": 6.97,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-27"
 }

@@ -2,42 +2,149 @@
   "match": "Algeria vs Austria",
   "date": "2026-06-27",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"ALG_vs_ARG_GD1": 760433, "JOR_vs_AUT_GD1": 760431, "ALG_vs_JOR_GD2": 760455, "AUT_vs_ARG_GD2": 760456},
+  "espn_event_ids": {
+    "ALG_vs_ARG_GD1": 760433,
+    "JOR_vs_AUT_GD1": 760431,
+    "ALG_vs_JOR_GD2": 760455,
+    "AUT_vs_ARG_GD2": 760456
+  },
   "smarkets_event_id": 45086949,
   "group_context": {
-    "Algeria": {"pts": 3, "record": "1-0-1 (L0-3 ARG, W2-1 JOR)", "status": "Tied with Austria on points but behind on GD (-2 vs 0) — needs a win to take clear control of 2nd place"},
-    "Austria": {"pts": 3, "record": "1-0-1 (W3-1 JOR, L0-2 ARG)", "status": "Tied with Algeria on points, ahead on GD — a draw keeps them ahead of Algeria on GD"}
+    "Algeria": {
+      "pts": 3,
+      "record": "1-0-1 (L0-3 ARG, W2-1 JOR)",
+      "status": "Tied with Austria on points but behind on GD (-2 vs 0) — needs a win to take clear control of 2nd place"
+    },
+    "Austria": {
+      "pts": 3,
+      "record": "1-0-1 (W3-1 JOR, L0-2 ARG)",
+      "status": "Tied with Algeria on points, ahead on GD — a draw keeps them ahead of Algeria on GD"
+    }
   },
   "wc2026_espn_stats": {
     "ALG": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760433, "opponent": "Argentina", "result": "L 0-3", "fouls": 8, "SOT": 1, "offsides": 1, "YC": 0, "RC": 0, "corners": 2, "possession": 52.2},
-        {"event_id": 760455, "opponent": "Jordan", "result": "W 2-1", "fouls": 6, "SOT": 8, "offsides": 0, "YC": 1, "RC": 0, "corners": 10, "possession": 72.1}
+        {
+          "event_id": 760433,
+          "opponent": "Argentina",
+          "result": "L 0-3",
+          "fouls": 8,
+          "SOT": 1,
+          "offsides": 1,
+          "YC": 0,
+          "RC": 0,
+          "corners": 2,
+          "possession": 52.2
+        },
+        {
+          "event_id": 760455,
+          "opponent": "Jordan",
+          "result": "W 2-1",
+          "fouls": 6,
+          "SOT": 8,
+          "offsides": 0,
+          "YC": 1,
+          "RC": 0,
+          "corners": 10,
+          "possession": 72.1
+        }
       ],
-      "averages": {"fouls": 7.0, "SOT": 4.5, "offsides": 0.5, "cards": 0.5, "corners": 6.0},
+      "averages": {
+        "fouls": 7.0,
+        "SOT": 4.5,
+        "offsides": 0.5,
+        "cards": 0.5,
+        "corners": 6.0
+      },
       "NOTE": "Algeria's SOT/corner output is highly bimodal — almost nothing vs elite Argentina (1 SOT, 2 corners), excellent vs weaker Jordan (8 SOT, 10 corners). Their genuinely low, consistent trait is FOULS (8, then 6) — a controlled, technical team regardless of opponent quality."
     },
     "AUT": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760431, "opponent": "Jordan", "result": "W 3-1", "fouls": 12, "SOT": 4, "offsides": 3, "YC": 1, "RC": 0, "corners": 4, "possession": 63.2},
-        {"event_id": 760456, "opponent": "Argentina", "result": "L 0-2", "fouls": 13, "SOT": 1, "offsides": 0, "YC": 2, "RC": 0, "corners": 3, "possession": 46.4}
+        {
+          "event_id": 760431,
+          "opponent": "Jordan",
+          "result": "W 3-1",
+          "fouls": 12,
+          "SOT": 4,
+          "offsides": 3,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 63.2
+        },
+        {
+          "event_id": 760456,
+          "opponent": "Argentina",
+          "result": "L 0-2",
+          "fouls": 13,
+          "SOT": 1,
+          "offsides": 0,
+          "YC": 2,
+          "RC": 0,
+          "corners": 3,
+          "possession": 46.4
+        }
       ],
-      "averages": {"fouls": 12.5, "SOT": 2.5, "offsides": 1.5, "cards": 1.5, "corners": 3.5},
+      "averages": {
+        "fouls": 12.5,
+        "SOT": 2.5,
+        "offsides": 1.5,
+        "cards": 1.5,
+        "corners": 3.5
+      },
       "PRIOR_LESSON_SABITZER": "ARG-AUT Q9 was a -31.86 loss: we applied RULE15 (extreme-underdog forward suppression) to Sabitzer when Austria was an 8.7% underdog fighting hard to come back from a deficit — but 'competitive chasing context = more shots,' not fewer. RULE15 only holds when the underdog DISENGAGES (genuine blowout); a team fighting for something generates MORE shot attempts from its creative outlet, not less.",
       "PRIOR_LESSON_CORNERS_AND_CARDS": "ARG-AUT Q4 (-19.91) and Q6 (-19.17): both 'Austria corners' and 'total cards' were modeled assuming a blowout/dominant-win pattern from AUT-JOR, but ARG-AUT was a genuinely competitive, close match — chasing teams accumulate corners from repelled attacks, and competitive matches produce MORE cards than the dominant-win comparison suggested."
     }
   },
   "smarkets_markets": {
-    "FTR": {"Algeria": 0.2650, "Austria": 0.2581, "Draw": 0.4717, "liquid": true},
-    "Most_cards": {"Algeria": 0.3538, "Austria": 0.3537, "Draw": 0.2899, "liquid": true},
-    "Corners_OU8_5": {"Under": 0.7046, "Over": 0.3029, "liquid": true},
-    "ALG_SOT_OU3_5_fullmatch": {"Under": 0.5823, "Over": 0.4167, "liquid": true, "implied_lambda": 3.29},
-    "AUT_SOT_OU3_5_fullmatch": {"Under": 0.4844, "Over": 0.5159, "liquid": true, "implied_lambda": 3.75},
-    "ALG_2H_OU0_5_goals": {"Under": 0.6201, "Over": 0.3850, "liquid": true},
-    "AUT_2H_OU0_5_goals": {"Under": 0.6240, "Over": 0.3808, "liquid": true},
-    "player_SOT_fullmatch": {"Marcel_Sabitzer": {"bid": 0.25, "offer": 0.4386, "mid": 0.344}}
+    "FTR": {
+      "Algeria": 0.265,
+      "Austria": 0.2581,
+      "Draw": 0.4717,
+      "liquid": true
+    },
+    "Most_cards": {
+      "Algeria": 0.3538,
+      "Austria": 0.3537,
+      "Draw": 0.2899,
+      "liquid": true
+    },
+    "Corners_OU8_5": {
+      "Under": 0.7046,
+      "Over": 0.3029,
+      "liquid": true
+    },
+    "ALG_SOT_OU3_5_fullmatch": {
+      "Under": 0.5823,
+      "Over": 0.4167,
+      "liquid": true,
+      "implied_lambda": 3.29
+    },
+    "AUT_SOT_OU3_5_fullmatch": {
+      "Under": 0.4844,
+      "Over": 0.5159,
+      "liquid": true,
+      "implied_lambda": 3.75
+    },
+    "ALG_2H_OU0_5_goals": {
+      "Under": 0.6201,
+      "Over": 0.385,
+      "liquid": true
+    },
+    "AUT_2H_OU0_5_goals": {
+      "Under": 0.624,
+      "Over": 0.3808,
+      "liquid": true
+    },
+    "player_SOT_fullmatch": {
+      "Marcel_Sabitzer": {
+        "bid": 0.25,
+        "offer": 0.4386,
+        "mid": 0.344
+      }
+    }
   },
   "context_flags": [
     "RULE8_MAXIMUM: HT/FT draw probability is 47.17% — the highest of ANY GD3 fixture analyzed this entire session. This is a textbook cagey, even, high-stakes match between two teams tied on points.",
@@ -59,7 +166,7 @@
       "text": "Will Austria have more shots on target than Algeria in the second half?",
       "pick_tier": "MEDIUM CONFIDENCE",
       "reasoning": "Half-split Poisson off full-match averages (AUT λ_2H=1.25, ALG λ_2H=2.25) gives 0.20 raw, but Algeria's SOT average is skewed by one outlier blowout-win game (8 SOT vs Jordan) that may not represent their output in an even, cagey match like today. Nudge up from the raw extreme to reflect that uncertainty.",
-      "final_estimate": 0.30,
+      "final_estimate": 0.3,
       "direction": "NO lean",
       "confidence": "medium"
     },
@@ -104,7 +211,7 @@
       "text": "Will there be 9 or more total corner kicks?",
       "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
       "reasoning": "Direct market: Over8.5 corners = 30.29%. Trust the live market directly here (unlike CRO-GHA, this is already a matchup-specific live price, not a thin historical sample needing correction).",
-      "final_estimate": 0.30,
+      "final_estimate": 0.3,
       "direction": "NO lean",
       "confidence": "high"
     },
@@ -138,12 +245,12 @@
   ],
   "summary_table": {
     "Q1_ALG_more_fouls": 0.18,
-    "Q2_AUT_more_2H_SOT": 0.30,
+    "Q2_AUT_more_2H_SOT": 0.3,
     "Q3_AUT_first_2H_goal": 0.49,
     "Q4_AUT_more_2H_goals": 0.28,
     "Q5_AUT_more_cards": 0.35,
     "Q6_ALG_wins": 0.27,
-    "Q7_9plus_corners": 0.30,
+    "Q7_9plus_corners": 0.3,
     "Q8_AUT_5plus_SOT": 0.32,
     "Q9_Sabitzer_SOT": 0.36,
     "Q10_ALG_3plus_SOT": 0.64
@@ -153,6 +260,103 @@
     "Q10: Algeria 3+ SOT = 0.64 (MEDIUM-HIGH — market-derived)",
     "Q9: Sabitzer SOT = 0.36 (MEDIUM-HIGH — direct corrective application of the RULE15-failure lesson, recognizing today's genuinely even matchup)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Algeria 3 - 3 Austria",
+    "total_rbp": 76.42,
+    "beat_crowd_count": "8/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Algeria commit more fouls than Austria?",
+        "us": 0.18,
+        "crowd": 0.48,
+        "outcome": 0,
+        "rbp": 21.4,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Austria have more shots on target than Algeria in the second half?",
+        "us": 0.3,
+        "crowd": 0.48,
+        "outcome": 0,
+        "rbp": 15.77,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Austria score the first goal of the second half?",
+        "us": 0.49,
+        "crowd": 0.38,
+        "outcome": 1,
+        "rbp": 13.5,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Austria score more goals than Algeria in the second half?",
+        "us": 0.28,
+        "crowd": 0.38,
+        "outcome": 0,
+        "rbp": 8.42,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Austria receive more cards than Algeria?",
+        "us": 0.35,
+        "crowd": 0.43,
+        "outcome": 1,
+        "rbp": -8.64,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Algeria win the match?",
+        "us": 0.28,
+        "crowd": 0.31,
+        "outcome": 0,
+        "rbp": 3.46,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will there be 9 or more total corner kicks?",
+        "us": 0.3,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 13.98,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Algeria have 3 or more shots on target?",
+        "us": 0.64,
+        "crowd": 0.58,
+        "outcome": 1,
+        "rbp": 7.44,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Austria have 5 or more shots on target?",
+        "us": 0.32,
+        "crowd": 0.4,
+        "outcome": 0,
+        "rbp": 8.3,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Marcel Sabitzer have at least 1 shot on target?",
+        "us": 0.36,
+        "crowd": 0.44,
+        "outcome": 1,
+        "rbp": -7.22,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-27"
 }

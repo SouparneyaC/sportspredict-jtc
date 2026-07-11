@@ -1,0 +1,148 @@
+{
+  "_description": "All statistical processing performed for this match — scipy computations, lambda fits, Skellam distributions, thinned Poisson, time-window scaling",
+  "_libraries": ["scipy.optimize.brentq", "scipy.stats.skellam", "scipy.optimize.least_squares", "numpy"],
+
+  "lambda_fits_via_brentq": {
+    "description": "For each market P(X > k) = p, solve lambda via: brentq(lambda l: 1 - poisson.cdf(k, l) - p, 0.001, 100)",
+    "lambda_MEX_goals": {
+      "source_market": "MEX goals OU1.5 Over = 0.3229",
+      "solve": "brentq: 1 - poisson.cdf(1, l) = 0.3229 → lambda = 1.160",
+      "result": 1.160
+    },
+    "lambda_ECU_goals": {
+      "source_market_1": "ECU goals OU0.5 Over = 0.5666",
+      "source_market_2": "ECU goals OU1.5 Over = 0.1771",
+      "solve_1": "brentq: 1 - poisson.cdf(0, l) = 0.5666 → lambda = 0.840",
+      "solve_2": "brentq: 1 - poisson.cdf(1, l) = 0.1771 → lambda = 0.772",
+      "average": 0.806,
+      "result": 0.806
+    },
+    "lambda_total_goals": {
+      "method": "Sum of individual team lambdas",
+      "calculation": "1.160 + 0.806 = 1.966",
+      "result": 1.966
+    },
+    "lambda_MEX_SOT": {
+      "source_market": "MEX SOT OU3.5 Over = 0.5407",
+      "solve": "brentq: 1 - poisson.cdf(3, l) = 0.5407 → lambda = 3.870",
+      "result": 3.870
+    },
+    "lambda_ECU_SOT": {
+      "source_market": "ECU SOT OU2.5 Over = 0.5823",
+      "solve": "brentq: 1 - poisson.cdf(2, l) = 0.5823 → lambda = 3.025",
+      "result": 3.025
+    },
+    "lambda_total_shots": {
+      "source_market_1": "Shots OU20.5 Over = 0.5210",
+      "source_market_2": "Shots OU21.5 Over = 0.4648",
+      "solve_1": "brentq: 1 - poisson.cdf(20, l) = 0.5210 → lambda = 20.91",
+      "solve_2": "brentq: 1 - poisson.cdf(21, l) = 0.4648 → lambda = 21.26",
+      "average": 21.085,
+      "result": 21.085,
+      "convergence_note": "Initial least_squares(x0=2.0) failed — converged to goals lambda (1.97) not shots lambda. Fixed by switching to brentq with explicit bounds (0.001, 100)."
+    }
+  },
+
+  "skellam_computation": {
+    "description": "P(A > B) = 1 - skellam.cdf(0, lambda_A, lambda_B), where Skellam(k; mu1, mu2) models the difference of two independent Poisson random variables",
+    "Q3_mex_more_sot_than_ecu": {
+      "lambda_A": 3.870,
+      "lambda_B": 3.025,
+      "raw_skellam": "1 - skellam.cdf(0, 3.870, 3.025) = 0.550",
+      "result_raw": 0.550,
+      "after_rule8_blend": "0.65 × 0.550 + 0.35 × 0.50 = 0.533",
+      "result_final": 0.533
+    }
+  },
+
+  "poisson_tail_probabilities": {
+    "description": "P(X >= k) = 1 - poisson.cdf(k-1, lambda)",
+    "Q4_2_or_fewer_goals": {
+      "lambda": 1.966,
+      "calc": "poisson.cdf(2, 1.966) = P(X <= 2)",
+      "result": 0.700,
+      "note": "Also directly from OU2.5 Under = 0.6996"
+    },
+    "Q6_mex_6plus_SOT": {
+      "lambda": 3.870,
+      "calc": "1 - poisson.cdf(5, 3.870) = P(X >= 6)",
+      "result": 0.195,
+      "note": "Strong NO signal — Mexico never hit 6 SOT in any WC2026 match"
+    },
+    "Q15_20plus_shots": {
+      "lambda": 21.085,
+      "calc": "1 - poisson.cdf(19, 21.085) = P(X >= 20)",
+      "result": 0.623
+    }
+  },
+
+  "thinned_poisson_player_estimates": {
+    "description": "lambda_player = lambda_team × player_goal_share. P(scores) = 1 - exp(-lambda_player)",
+    "Q1_Jimenez": {
+      "lambda_MEX_goals": 1.160,
+      "jimenez_goal_share": 0.33,
+      "note": "Based on Jimenez as primary striker with ~33% goal share. n=2 starts, small sample.",
+      "lambda_jimenez": 0.383,
+      "p_scores_model": "1 - exp(-0.383) = 0.318",
+      "rule5_trimming": "Trimmed from 0.318 to 0.27 (RULE5: small sample n=2; RULE12: removing RSA result changes estimate materially)",
+      "final_estimate": 0.27
+    },
+    "Q5_Plata": {
+      "lambda_ECU_goals": 0.806,
+      "plata_goal_share": 0.35,
+      "lambda_plata": 0.282,
+      "p_scores_model": "1 - exp(-0.282) = 0.246",
+      "p_score_or_assist_model": "0.246 + ~0.075 (assist prob) = 0.321",
+      "rule5_trimming": "Trimmed from 0.321 to 0.28 (RULE5: small sample; card-risk may lead to early sub)",
+      "final_estimate": 0.28
+    }
+  },
+
+  "time_window_scaling": {
+    "description": "lambda_window = lambda_full × (t_window / 90)",
+    "Q13_goal_before_first_hydration_break": {
+      "first_break_minute": 25,
+      "lambda_full": 1.966,
+      "lambda_0_to_25": "1.966 × (25/90) = 0.546",
+      "p_at_least_1_goal": "1 - exp(-0.546) = 0.421",
+      "bracket_data_cross_check": "Time bracket: 1-10 (14.9%) + 11-20 (14.5%) + partial 21-25 (~6%) ≈ 0.354",
+      "estimate_range": "0.354 to 0.421",
+      "final_estimate": 0.40,
+      "category": "TIMING_EARLY — reliable category (3/3 wins in prior knockout matches)",
+      "note": "Used raw near-estimate, no late-window discount applied"
+    }
+  },
+
+  "base_rate_estimates": {
+    "Q7_goal_outside_box": {
+      "method": "Historical WC base rate",
+      "base_rate": "~8-12% of goals in knockout matches are from outside the box",
+      "expected_goals": 1.966,
+      "rough_calc": "2.0 × 0.10 = 0.20 expected OTB goals → P(>=1) = 1-exp(-0.20) = 0.18",
+      "final_estimate": 0.18,
+      "confidence": "LOW — no market, no ESPN precedent in our files"
+    },
+    "Q8_own_goal": {
+      "method": "Historical WC base rate",
+      "base_rate": "WC2022: 6 OGs in 64 matches = 9.4% match rate",
+      "adjustment": "Trimmed slightly given Mexico's clean defensive record and expected tight match",
+      "final_estimate": 0.08,
+      "confidence": "LOW — no market"
+    }
+  },
+
+  "offside_model": {
+    "Q12_3plus_offsides": {
+      "espn_MEX_offside_avg": 1.33,
+      "espn_ECU_offside_avg": 0.67,
+      "combined_lambda": 2.00,
+      "raw_poisson": "1 - poisson.cdf(2, 2.0) = 0.323",
+      "rule8_context_shade": "Shaded to 0.28 (tight match = fewer forward runs = fewer offsides)",
+      "ECU_low_offside_note": "Ecuador: 0 offsides vs CIV, 1 vs CUR, 1 vs GER. Rarely caught offside even in high-attacking output games.",
+      "final_estimate": 0.28,
+      "crowd_estimate": 0.55,
+      "actual_outcome": "NO — fewer than 3 offsides",
+      "post_match_note": "LARGEST SINGLE WIN: +49.58 RBP. Crowd massively overpriced offsides. Our ESPN data correctly identified Ecuador's structural low-offside profile."
+    }
+  }
+}

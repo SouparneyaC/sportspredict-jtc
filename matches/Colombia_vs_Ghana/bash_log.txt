@@ -1,0 +1,64 @@
+=== COLOMBIA vs GHANA — FULL SESSION LOG ===
+Date: 2026-07-04 (kickoff 01:30 UTC)
+Match: COL vs GHA, R32 WC2026
+ESPN Event ID: 760501
+Smarkets Event ID: 45161510
+
+--- ESPN GROUP STAGE DATA ---
+Fetched raw ESPN summaries for 6 group games (COL vs UZB/CDR/POR; GHA vs PAN/ENG/CRO).
+
+COLOMBIA: 2W 1D (7pts). shots avg=19.67 (huge -- 24 vs Portugal alone), SOT avg=6.33, corners avg=4.67.
+  Offsides elevated: 3, 7(!), 3 -- avg 4.33, driven partly by CDR-game outlier but still moderate-high excl. it.
+  Scorers: Muñoz x2, Díaz x1 (+1 assist), Campaz x1. James Rodríguez: 0G/0A in 3 games despite starting every game.
+GHANA: 1W 1D 1L (4pts), advanced as a weaker qualifier. shots avg=5.0, SOT avg=1.33 -- very low output team.
+  vs England: 21% possession, 2 shots, 24 fouls committed -- pure defensive survival mode.
+  Corners remarkably flat: 2,2,2 every game. Scorers: Yirenkyi, Luckassen -- NOT Ayew or Semenyo.
+  Ayew: 0 shots in ALL 3 games. Semenyo: 0 SOT in ALL 3 games (shots 2,0,1 but never on target).
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45161510, 172 markets.
+FTR: COL 68.5%, Draw 21.51%, GHA 10.31% -- moderate favorite, Ghana right at the RULE15 10% Scenario-A boundary.
+COL SOT OU5.5 Over=46.01% -> lambda=5.436 -> P(7+)=30.4%
+Cards OU3.5 Over=29.76% (matches Poisson fit 29.7%)
+Total shots OU23.5 Over=52.1% -> lambda=23.92 -> P(22+)=68.1%
+Colombia corners OU5.5 Over=50.26% -- exact match for "6+" question
+To_qualify: Colombia 81.31%. Team score first: Colombia 70.15%. HT result: Colombia 49.63% / Draw 40.82%.
+
+Player markets:
+  Díaz anytime scorer: mid=31.93% (liquid) -- matches solid group form
+  James score-or-assist: illiquid, offer=54.05% x0.945=51.08% -- trimmed to 0.42 given 0G/0A in 3 games
+  Ayew anytime scorer: illiquid, offer=13.16% x0.945=12.44% -- trimmed to 0.09, 0 shots in 3 games is an even weaker signal
+  Semenyo SOT OU1.5 (2+): illiquid, offer=11.9% x0.945=11.25% -- confirmed by ESPN (0 SOT/3 games), kept near market at 0.10
+
+--- MODEL DERIVATIONS ---
+Offsides (no market): own-avg combined lambda=7.0 (COL 4.33+GHA 2.67) -> P(3+)=97.0% (outlier-inflated by COL's 7-offside
+  game). Match-environment lambda=4.5 -> P(3+)=82.6%. Even excluding the CDR outlier, COL's other 2 games (3,3) still
+  support a moderate-high rate. Shaded down to 0.75 for outlier caution -- this is a genuinely high-offside matchup,
+  unlike the AUS-EGY analysis two matches ago.
+Goal before 1st hydration break: bracket method=43.2%, lambda-scaling=48.0%, blended 0.46.
+
+Rules checked:
+  RULE1: market primary source
+  RULE6: clear, 0.09-0.81
+  RULE7: borderline (GHA 10.31%, just above Scenario-A floor, below RULE7's 15% threshold)
+  RULE8: inactive (draw 21.51%)
+  RULE9/RULE12: applied to James (Q2) and offsides (Q12) for real-data-vs-market divergence
+
+--- FINAL ESTIMATES ---
+Q1 (Díaz scores): 0.32 [PLAYER_LIQUID]
+Q2 (James score or assist): 0.42 [PLAYER_ILLIQUID, RULE12 trim]
+Q3 (Semenyo 2+ SOT): 0.10 [PLAYER_ILLIQUID]
+Q4 (BTTS): 0.41 [DIRECT]
+Q5 (Ayew scores): 0.09 [PLAYER_ILLIQUID, trimmed]
+Q6 (COL 7+ SOT): 0.30 [TEAM_MODEL]
+Q7 (COL scores first): 0.70 [DIRECT]
+Q8 (4+ total cards): 0.30 [DIRECT]
+Q9 (COL ahead at HT): 0.50 [DIRECT]
+Q10 (22+ total shots): 0.68 [TEAM_MODEL]
+Q11 (COL 6+ corners): 0.50 [DIRECT]
+Q12 (3+ offsides): 0.75 [TEAM_MODEL]
+Q13 (3+ total goals): 0.46 [DIRECT]
+Q14 (goal before 1st hydration break): 0.46 [TIMING_WITH_MARKET]
+Q15 (COL advance to R16): 0.81 [DIRECT]
+
+Output: matches/Colombia_vs_Ghana/{01-05}.json

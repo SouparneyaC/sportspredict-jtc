@@ -1,0 +1,47 @@
+{
+  "_description": "Rules applied per question for Canada vs Morocco 2026-07-04",
+  "match_context": {
+    "canada_win_prob": 0.1739,
+    "draw_prob": 0.2878,
+    "morocco_win_prob": 0.5362,
+    "rule7_fires": false,
+    "rule8_fires": true
+  },
+  "per_question": [
+    {"q": 1, "tier": "PLAYER_LIQUID", "rules": ["RULE12_FLAG"], "estimate": 0.18,
+     "note": "Anytime scorer mid=0.1981 (liquid). Shaded slightly down: all 3 group goals came in the Qatar blowout (2 red cards for Qatar), zero in 3 'normal' competitive games."},
+    {"q": 2, "tier": "PLAYER_ILLIQUID", "rules": ["RULE12_FLAG"], "estimate": 0.30,
+     "note": "Score-or-assist offer=0.3401 (illiquid) x0.945=0.3214. Both his group involvements came in the same Haiti blowout; zero in the other 3 games. Kept close to market given he's still a clearly high-usage, high-touch player (fullback overlaps, set pieces) even in quiet games."},
+    {"q": 3, "tier": "PLAYER_ILLIQUID", "rules": ["PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT"], "estimate": 0.12,
+     "note": "SOT OU0.5 offer=0.2899 (illiquid) x0.945=0.274. Davies did NOT PLAY AT ALL in 3 of 4 Canada games (appearances=0) and recorded 0 shots in his lone cameo vs South Africa. Discounted well below market given both his uncertain minutes and zero shot output when he has played."},
+    {"q": 4, "tier": "DIRECT", "rules": [], "estimate": 0.17,
+     "note": "Penalty shootout Yes mid=0.1662. Direct market use."},
+    {"q": 5, "tier": "PLAYER_LIQUID", "rules": ["PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT"], "estimate": 0.33,
+     "note": "SOT OU0.5 mid=0.5445 (liquid, tight spread), but Díaz has only 1 SOT in 4 games despite starting every game -- discounted below the market's more generous read per the postmortem's lesson that a real personal-zero (or near-zero) signal should not be overridden by team-context optimism."},
+    {"q": 6, "tier": "DIRECT", "rules": [], "estimate": 0.22,
+     "note": "Exact-goals '1 goal' contract mid=0.2205, matches Poisson cross-check (0.219) almost exactly."},
+    {"q": 7, "tier": "DIRECT", "rules": ["RULE8_CONFIRMS"], "estimate": 0.45,
+     "note": "HT result Draw mid=0.4546. Elevated draw probability (RULE8 fires, 28.78% overall) is consistent with a high HT-draw price."},
+    {"q": 8, "tier": "DIRECT", "rules": [], "estimate": 0.43,
+     "note": "Cards OU3.5 Over mid=0.4253, matches Poisson fit (0.418) closely."},
+    {"q": 9, "tier": "PLAYER_LIQUID", "rules": [], "estimate": 0.30,
+     "note": "Anytime scorer mid=0.3103 (liquid). Blanked vs Netherlands (his toughest opponent), but Canada are a considerably weaker opponent (17.4% win prob) -- reverting toward his 3-goals-in-3-earlier-games form rather than anchoring to the NED blank."},
+    {"q": 10, "tier": "TEAM_MODEL", "rules": ["TEAM_SOT_EMPIRICAL_FLOOR", "MARGIN_RESEARCH_DE_SHRINK"], "estimate": 0.80,
+     "note": "Market-fit lambda (3.025, from thin CAN SOT OU2.5 line) implies P(4+)=0.358, but Canada's own 4-game empirical SOT floor is 4 (never below it, in 4/4 games including a loss and a tense R32 win) -- empirical lambda=7.0 implies P(4+)=0.918. Initial blend was 30% market/70% empirical -> 0.68. REVISED per STRATEGIC_MARGIN_PUSH_RESEARCH.md §8.2: this is a genuine Tier-A signal (4-for-4 consistent, not a thin single-team-history guess), which the research says warrants MINIMAL shrinkage toward the less-reliable market line, not the ~30% weight originally given to it. De-shrunk to a 20/80 market/empirical blend -> 0.80. This is NOT a confidence-based push past our true belief (the research explicitly argues against that per-question, since it is strictly negative-EV) -- it is a correction of under-trust in a high-reliability signal, which is the one lever the research found to be legitimate absent any leaderboard-cutoff standing information."},
+    {"q": 11, "tier": "DIRECT", "rules": ["RULE8_MINOR"], "estimate": 0.52,
+     "note": "Most-corners Morocco mid=0.519. Direct market use."},
+    {"q": 12, "tier": "TEAM_MODEL", "rules": [], "estimate": 0.34,
+     "note": "P(pen OR red) = 0.2337 + 0.1401 - 0.2337x0.1401 = 0.341."},
+    {"q": 13, "tier": "TIMING_WITH_MARKET", "rules": [], "estimate": 0.43,
+     "note": "Goal_1_time_bracket sum(1-10,11-20,40% of 21-30)=0.400. Lambda-scaling cross-check=0.460. Blended 0.43."},
+    {"q": 14, "tier": "DIRECT", "rules": [], "estimate": 0.49,
+     "note": "BTTS Yes mid=0.4902."},
+    {"q": 15, "tier": "DIRECT", "rules": [], "estimate": 0.71,
+     "note": "To_qualify Morocco mid=0.7143."}
+  ],
+  "margin_research_summary": {
+    "source": "STRATEGIC_MARGIN_PUSH_RESEARCH.md",
+    "principle_applied": "De-shrink Tier-A (DIRECT market or >=4-for-4 empirical) signals toward their honest estimate; do NOT push any estimate past its honest true-belief value, since per-question RBP is strictly proper and a confidence-driven push is guaranteed negative-EV absent being behind near a discrete leaderboard cutoff (no such standing information available for this match).",
+    "questions_reviewed_for_margin": "All 15. Only Q10 qualified: it was the sole question where a highly reliable Tier-A empirical signal (Canada's 4/4-game SOT floor) was being under-weighted relative to a thin, less-representative market line. All DIRECT-tier questions (Q4,6,7,8,11,14,15) were already un-shrunk market reads with no adjustment needed. Q1/Q3/Q5/Q9 (player props) already reflect real personal-data adjustments rather than crowd-anchoring shrinkage, so no further change was warranted there either."
+  }
+}

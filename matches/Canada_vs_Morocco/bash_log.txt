@@ -1,0 +1,64 @@
+=== CANADA vs MOROCCO — FULL SESSION LOG ===
+Date: 2026-07-04, R16 (first Round of 16 match this campaign -- both teams have now played 4 matches: 3 group + 1 R32)
+ESPN Event ID: 760502
+Smarkets Event ID: 45164869
+
+--- ESPN DATA (4 games each) ---
+CANADA: D1-1 BIH, W6-0 QAT (blowout, QAT had 2 red cards), L1-2 SUI, W1-0 RSA (R32).
+  SOT floor remarkably high and consistent: 4, 10, 7, 7 -- NEVER below 4 in any game, incl. the SUI loss and the tense RSA win.
+  Jonathan David: goals 0,3,0,0 -- all production in the QAT blowout outlier.
+  Alphonso Davies: appearances 0,0,0,1(sub) -- DID NOT PLAY in 3 of 4 games. 0 shots in his one cameo. Likely injury return.
+MOROCCO: D1-1 BRA, W1-0 SCO, W4-2 HAI, D1-1 NED (R32, won on penalties/ET).
+  Very clean disciplinary record (0.5 YC/game avg).
+  Hakimi: both goal involvements (1G,1A) came in the same HAI blowout; zero in BRA/SCO/NED.
+  Saibari: scored in 3 straight group games, blanked (0 shots) vs Netherlands (toughest opponent yet).
+  Brahim Díaz: only 1 SOT in the ENTIRE tournament (4 games) despite starting every game.
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45164869, 180 markets.
+FTR: Canada 17.39%, Draw 28.78%, Morocco 53.62% -- Morocco clear favorite (road team, generally stronger footballing pedigree).
+RULE7: borderline inactive (CAN 17.39% just above 15%). RULE8: FIRES (draw 28.78% >= 25%).
+Penalty shootout Yes=16.62%. Exact-goals '1 goal'=22.05% (matches Poisson cross-check 21.9% almost exactly).
+HT Draw=45.46%. Cards OU3.5 Over=42.53% (matches Poisson 41.8%). Most corners: Morocco 51.9%.
+Pen=23.37%, Any sent off=14.01% -> pen-or-red compound=34.1%. To_qualify Morocco=71.43%.
+
+*** KEY FINDING: Canada SOT OU2.5 market (thin line) fits lambda=3.025 -> P(4+ SOT)=35.8%,
+    but Canada's own 4-game empirical SOT average is 7.0 with a FLOOR of 4 in every single game.
+    This is exactly the TEAM_SOT_EMPIRICAL_FLOOR pattern flagged in JULY3_POSTMORTEM_DEEP_DIVE.md
+    (cost -35.67 RBP across 4 recent matches when the market fit was trusted over empirical data).
+    Applied the new rule here: blended 30% market / 70% empirical -> final estimate 0.68 (Q10),
+    a genuine test of the postmortem's proposed fix. ***
+
+Player markets:
+  Jonathan David anytime scorer: mid=19.81% (liquid) -- shaded slightly for blowout-concentrated production
+  Saibari anytime scorer: mid=31.03% (liquid) -- kept close to market, Canada is a weaker opponent than NED
+  Hakimi score-or-assist: illiquid, offer=34.01% x0.945=32.14% -- kept close to market
+  Davies SOT OU0.5: illiquid, offer=28.99% x0.945=27.4% -- discounted hard to 0.12 (PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT: didn't play 3/4 games, 0 shots in his cameo)
+  Brahim Díaz SOT OU0.5: liquid, mid=54.45% -- discounted to 0.33 (PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT: only 1 SOT in 4 games)
+
+--- RULES CHECKED ---
+RULE1: market primary source
+RULE6: clear, 0.12-0.71
+RULE7: borderline inactive
+RULE8: fires (draw 28.78%)
+TEAM_SOT_EMPIRICAL_FLOOR (new): applied to Q10, first live test since the postmortem
+PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT (new): applied to Q3 (Davies) and Q5 (Brahim Díaz), first live test since the postmortem
+
+--- FINAL ESTIMATES ---
+Q1 (Jonathan David scores): 0.18 [PLAYER_LIQUID]
+Q2 (Hakimi score or assist): 0.30 [PLAYER_ILLIQUID]
+Q3 (Davies 1+ SOT): 0.12 [PLAYER_ILLIQUID, new rule applied]
+Q4 (penalty shootout): 0.17 [DIRECT]
+Q5 (Brahim Díaz 1+ SOT): 0.33 [PLAYER_LIQUID, new rule applied]
+Q6 (exactly 1 goal): 0.22 [DIRECT]
+Q7 (tied at halftime): 0.45 [DIRECT]
+Q8 (4+ total cards): 0.43 [DIRECT]
+Q9 (Saibari scores): 0.30 [PLAYER_LIQUID]
+Q10 (Canada 4+ SOT): 0.68 [TEAM_MODEL, new rule applied]
+Q11 (Morocco more corners): 0.52 [DIRECT]
+Q12 (penalty OR red): 0.34 [TEAM_MODEL]
+Q13 (goal before 1st hydration break): 0.43 [TIMING_WITH_MARKET]
+Q14 (BTTS): 0.49 [DIRECT]
+Q15 (Morocco advance to QF): 0.71 [DIRECT]
+
+Output: matches/Canada_vs_Morocco/{01-05}.json

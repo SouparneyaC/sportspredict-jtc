@@ -1,0 +1,223 @@
+{
+  "_description": "ESPN team/player stats for Portugal (3 group games) and Croatia (3 group games)",
+  "portugal_group_stage": {
+    "team_id_espn": 482,
+    "matches": [
+      {
+        "opponent": "Congo DR",
+        "ha": "home",
+        "result": "?",
+        "sot": 1,
+        "shots": 7,
+        "corners": 5,
+        "yc": 3,
+        "rc": 0,
+        "offsides": 3,
+        "fouls": 9,
+        "opp_sot": 2,
+        "opp_shots": 8,
+        "opp_corners": 4,
+        "opp_yc": 1,
+        "opp_offsides": 2,
+        "top_shooter": "Ronaldo (3)"
+      },
+      {
+        "opponent": "Uzbekistan",
+        "ha": "home",
+        "result": "?",
+        "sot": 9,
+        "shots": 17,
+        "corners": 3,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 2,
+        "fouls": 14,
+        "opp_sot": 2,
+        "opp_shots": 7,
+        "opp_corners": 2,
+        "opp_yc": 1,
+        "opp_offsides": 2,
+        "top_shooter": "Ronaldo (7)"
+      },
+      {
+        "opponent": "Colombia",
+        "ha": "away",
+        "result": "?",
+        "sot": 2,
+        "shots": 13,
+        "corners": 2,
+        "yc": 0,
+        "rc": 0,
+        "offsides": 2,
+        "fouls": 6,
+        "opp_sot": 6,
+        "opp_shots": 24,
+        "opp_corners": 5,
+        "opp_yc": 1,
+        "opp_offsides": 3,
+        "top_shooter": "Ronaldo (3)"
+      }
+    ],
+    "averages": {
+      "sot": 4.0,
+      "shots": 12.33,
+      "corners": 3.33,
+      "yc": 1.33,
+      "offsides": 2.33,
+      "fouls": 9.67
+    },
+    "notes": [
+      "Ronaldo top shooter in ALL 3 Portugal games (3, 7, 3 shots)",
+      "SOT bimodal: 9 vs UZB (dominant) vs 1-2 in other games",
+      "Portugal was dominated vs COL (COL: 6 SOT, 24 shots vs POR: 2 SOT)",
+      "Game total offsides: (3+2)=5, (2+2)=4, (2+3)=5 avg=4.67"
+    ]
+  },
+  "croatia_group_stage": {
+    "team_id_espn": 477,
+    "matches": [
+      {
+        "opponent": "England",
+        "ha": "away",
+        "result": "?",
+        "sot": 5,
+        "shots": 10,
+        "corners": 2,
+        "yc": 0,
+        "rc": 0,
+        "offsides": 1,
+        "fouls": 12,
+        "opp_sot": 11,
+        "opp_shots": 22,
+        "opp_corners": 8,
+        "opp_yc": 0,
+        "opp_offsides": 0,
+        "top_shooter": "Petar Sucic (1)"
+      },
+      {
+        "opponent": "Panama",
+        "ha": "away",
+        "result": "?",
+        "sot": 2,
+        "shots": 6,
+        "corners": 2,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 2,
+        "fouls": 12,
+        "opp_sot": 1,
+        "opp_shots": 8,
+        "opp_corners": 7,
+        "opp_yc": 1,
+        "opp_offsides": 1,
+        "top_shooter": "Marco Pasalic (2)"
+      },
+      {
+        "opponent": "Ghana",
+        "ha": "home",
+        "result": "?",
+        "sot": 4,
+        "shots": 8,
+        "corners": 3,
+        "yc": 1,
+        "rc": 0,
+        "offsides": 1,
+        "fouls": 9,
+        "opp_sot": 1,
+        "opp_shots": 6,
+        "opp_corners": 2,
+        "opp_yc": 1,
+        "opp_offsides": 2,
+        "top_shooter": "Nikola Vlasic (2)"
+      }
+    ],
+    "averages": {
+      "sot": 3.67,
+      "shots": 8.0,
+      "corners": 2.33,
+      "yc": 0.67,
+      "offsides": 1.33,
+      "fouls": 11.0
+    },
+    "notes": [
+      "Croatia performed best vs England (5 SOT, 10 shots) \u2014 their toughest group opponent",
+      "No Modric in top shooters for any group game \u2014 he's playmaker not primary shooter",
+      "Croatia consistent but conservative: avg 8 shots, 3.67 SOT",
+      "Game total offsides: (1+0)=1, (2+1)=3, (1+2)=3 avg=2.33"
+    ]
+  },
+  "player_market_data": {
+    "ronaldo_anytime_scorer": {
+      "mid": 0.4168,
+      "liquid": true
+    },
+    "ronaldo_sot_ou0.5": {
+      "mid": 0.7125,
+      "liquid": true
+    },
+    "ronaldo_sot_ou1.5": {
+      "mid": 0.3503,
+      "liquid": true
+    },
+    "ronaldo_anytime_header": {
+      "offer": 0.1316,
+      "liquid": false
+    },
+    "brunofernandes_anytime_scorer": {
+      "mid": 0.238,
+      "liquid": true
+    },
+    "brunofernandes_sot_ou0.5": {
+      "mid": 0.5851,
+      "liquid": true
+    },
+    "brunofernandes_sot_ou1.5": {
+      "offer": 0.2273,
+      "liquid": false
+    },
+    "joaofelix_anytime_scorer": {
+      "mid": 0.2099,
+      "liquid": true
+    },
+    "bernardosilva_anytime_scorer": {
+      "offer": 0.1754,
+      "liquid": false
+    },
+    "bernardosilva_sot_ou0.5": {
+      "offer": 0.3846,
+      "liquid": false
+    },
+    "modric_anytime_scorer": {
+      "offer": 0.1087,
+      "liquid": false
+    },
+    "modric_score_or_assist": {
+      "offer": 0.2326,
+      "liquid": false
+    },
+    "modric_sot_ou0.5": {
+      "offer": 0.2632,
+      "liquid": false
+    },
+    "kramaric_anytime_scorer": {
+      "offer": 0.1923,
+      "liquid": false
+    },
+    "budimir_anytime_scorer": {
+      "offer": 0.2273,
+      "liquid": false
+    },
+    "goncaloramos_anytime_scorer": {
+      "offer": 0.4098,
+      "liquid": false
+    },
+    "goncaloramos_header": {
+      "offer": 0.1351,
+      "liquid": false
+    },
+    "budimir_header": {
+      "offer": 0.1064,
+      "liquid": false
+    }
+  }
+}

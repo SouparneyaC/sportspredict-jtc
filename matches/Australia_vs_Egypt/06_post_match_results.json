@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Australia vs Egypt",
+  "date": "2026-07-03",
+  "actual_score": "Australia 1-1 Egypt (Egypt won, presumably on the qualification tiebreak/penalties)",
+  "match_rbp_total": 64.74,
+  "questions_beat_crowd": 10,
+  "questions_below_crowd": 5,
+  "question_results": [
+    {"text": "Will Mahmoud Trezeguet (Egypt) score a goal?", "our_estimate": 0.21, "crowd_estimate": 0.23, "outcome": "NO", "rbp": 7.66, "beat_crowd": true},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.51, "crowd_estimate": 0.49, "outcome": "NO", "rbp": -1.66, "beat_crowd": false},
+    {"text": "Will the match have 2 or fewer total goals?", "our_estimate": 0.67, "crowd_estimate": 0.60, "outcome": "YES", "rbp": 14.46, "beat_crowd": true},
+    {"text": "Will Nestory Irankunda (Australia) have 2 or more shots on target?", "our_estimate": 0.13, "crowd_estimate": 0.29, "outcome": "NO", "rbp": 20.34, "beat_crowd": true, "note": "Wide-spread thin market correctly discounted based on rotational role."},
+    {"text": "Will Egypt win in regulation?", "our_estimate": 0.40, "crowd_estimate": 0.44, "outcome": "NO", "rbp": 9.75, "beat_crowd": true},
+    {"text": "Will both teams receive at least one card?", "our_estimate": 0.70, "crowd_estimate": 0.64, "outcome": "NO", "rbp": -12.59, "beat_crowd": false},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.38, "crowd_estimate": 0.42, "outcome": "NO", "rbp": 10.73, "beat_crowd": true},
+    {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.35, "crowd_estimate": 0.32, "outcome": "NO", "rbp": -1.43, "beat_crowd": false},
+    {"text": "Will Egypt have 5 or more shots on target?", "our_estimate": 0.36, "crowd_estimate": 0.42, "outcome": "NO", "rbp": 13.15, "beat_crowd": true},
+    {"text": "Will there be 9 or more total corner kicks?", "our_estimate": 0.49, "crowd_estimate": 0.51, "outcome": "NO", "rbp": 6.92, "beat_crowd": true},
+    {"text": "Will Egypt score the first goal of the match?", "our_estimate": 0.47, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -3.82, "beat_crowd": false},
+    {"text": "Will the second half produce more goals than the first half?", "our_estimate": 0.40, "crowd_estimate": 0.48, "outcome": "NO", "rbp": 16.1, "beat_crowd": true},
+    {"text": "Will there be 3 or more offside calls?", "our_estimate": 0.32, "crowd_estimate": 0.53, "outcome": "YES", "rbp": -43.09, "beat_crowd": false, "note": "WORST RESULT OF MATCH. Priced low based on own-team-avg lambda; crowd's 53% was much closer. Same day COL-GHA priced this question type HIGH and also lost -- part of the 5-match offside pattern in JULY3_POSTMORTEM_DEEP_DIVE.md."},
+    {"text": "Will a substitution be made before halftime?", "our_estimate": 0.28, "crowd_estimate": 0.22, "outcome": "NO", "rbp": -1.23, "beat_crowd": false},
+    {"text": "Will there be 20 or more total shots?", "our_estimate": 0.77, "crowd_estimate": 0.59, "outcome": "YES", "rbp": 29.46, "beat_crowd": true, "note": "Biggest win of the match -- strong conviction on a DIRECT market question."}
+  ],
+  "key_lessons": [
+    "Biggest win: 20+ total shots (+29.46) -- DIRECT-tier market question, strong conviction paid off.",
+    "Biggest loss: 3+ offsides (-43.09) -- same-day mirror-image miss to COL-GHA's offside question (that one priced high and lost, this one priced low and lost). Core evidence behind the OFFSIDE_CROWD_ANCHOR proposed rule.",
+    "Irankunda 2+ SOT (+20.34) and Trezeguet scores (+7.66) both show real ESPN production data correctly discounting thin/wide-spread player markets."
+  ]
+}

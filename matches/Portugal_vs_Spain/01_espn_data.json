@@ -1,0 +1,26 @@
+{
+  "_description": "ESPN team/player data for Portugal and Spain across all 4 games played so far (3 group + R32 knockout)",
+  "match": "Portugal vs Spain",
+  "round": "Round of 16",
+  "date": "2026-07-06",
+  "espn_event_lookup": "not yet played - no event id",
+  "portugal_games": [
+    {"opponent": "Congo DR", "result": "1-1", "team_sot": 1, "team_shots": 7, "corners": 5, "yc": 3, "offsides": 3, "saves": 1, "ronaldo": {"g":0,"sot":0,"shots":3}, "bruno_fernandes": {"g":0,"sot":0,"shots":2}},
+    {"opponent": "Uzbekistan", "result": "5-0", "team_sot": 9, "team_shots": 17, "corners": 3, "yc": 1, "offsides": 2, "saves": 2, "ronaldo": {"g":2,"sot":5,"shots":7}, "bruno_fernandes": {"g":0,"sot":1,"shots":2,"a":1}},
+    {"opponent": "Colombia", "result": "0-0", "team_sot": 2, "team_shots": 13, "corners": 2, "yc": 0, "offsides": 2, "saves": 6, "ronaldo": {"g":0,"sot":1,"shots":3}, "bruno_fernandes": {"g":0,"sot":1,"shots":2}},
+    {"opponent": "Croatia (R32)", "result": "2-1", "team_sot": 3, "team_shots": 15, "corners": 9, "yc": 1, "offsides": 1, "saves": 5, "ronaldo": {"g":1,"sot":1,"shots":2}, "bruno_fernandes": {"g":0,"sot":1,"shots":2}, "goal_1": "68' penalty", "goal_2": "90+4' header"}
+  ],
+  "spain_games": [
+    {"opponent": "Cape Verde", "result": "0-0", "team_sot": 7, "team_shots": 27, "corners": 11, "yc": 1, "offsides": 2, "yamal": {"g":0,"sot":0,"shots":2,"starter":false}, "oyarzabal": {"g":0,"sot":1,"shots":5}},
+    {"opponent": "Saudi Arabia", "result": "4-0", "team_sot": 8, "team_shots": 22, "corners": 6, "yc": 0, "offsides": 2, "yamal": {"g":1,"sot":2,"shots":5}, "oyarzabal": {"g":2,"sot":3,"shots":5,"a":1}},
+    {"opponent": "Uruguay", "result": "1-0", "team_sot": 1, "team_shots": 6, "corners": 6, "yc": 1, "offsides": 2, "yamal": {"g":0,"sot":0,"shots":1}, "oyarzabal": {"g":0,"sot":0,"shots":1}},
+    {"opponent": "Austria (R32)", "result": "3-0", "team_sot": 10, "team_shots": 23, "corners": 9, "yc": 0, "offsides": 2, "yamal": {"g":0,"sot":4,"shots":6}, "oyarzabal": {"g":2,"sot":4,"shots":6}}
+  ],
+  "key_findings": [
+    "Bruno Fernandes: SOT = [0,1,1,1] across 4 games. He hits 1+ SOT reliably (3/4 = 75%) but NEVER 2+. Same drought pattern already validated in POR-CRO (2+ SOT NO won +27.17), but for THIS match's Q3 (1+ SOT), the signal points the opposite way: his floor is solid, market looks underpriced.",
+    "Cristiano Ronaldo: goals in 2/4 games (UZB blowout brace + CRO knockout goal). The CRO goal is the relevant precedent (competitive knockout match, not a blowout) - still productive, no drought.",
+    "Lamine Yamal: only 1 goal contribution in 4 games (vs weakest opponent, Saudi Arabia), ZERO assists all tournament. His 4-SOT game vs Austria was a shot-volume outlier against a very weak side, not a conversion signal. Real score/assist rate ~25%, well below market.",
+    "Diogo Costa saves: [1,2,6,5] across 4 games - clearly bimodal. Low-save games came against weak/overmatched opponents (Congo DR, Uzbekistan blowout); high-save games came against the two strongest, most possession-heavy opponents faced so far (Colombia away, Croatia). Spain today will be Portugal's toughest test yet (10 SOT vs Austria last game) - regime strongly favors the high end.",
+    "Substitution counts in regulation across the last 4 knockout/R32 games played by these exact 4 teams: POR-CRO=9, ESP-AUT=10, USA-BIH=8, BEL-SEN=8. Strong signal both teams use most/all of their 5 allowed subs in knockout football."
+  ]
+}

@@ -2,43 +2,160 @@
   "match": "Uruguay vs Spain",
   "date": "2026-06-26",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"CPV_vs_ESP_GD1": 760428, "URU_vs_SAU_GD1": 760429, "CPV_vs_URU_GD2": 760450, "SAU_vs_ESP_GD2": 760453},
+  "espn_event_ids": {
+    "CPV_vs_ESP_GD1": 760428,
+    "URU_vs_SAU_GD1": 760429,
+    "CPV_vs_URU_GD2": 760450,
+    "SAU_vs_ESP_GD2": 760453
+  },
   "smarkets_event_id": 45086936,
   "group_context": {
-    "Spain": {"pts": 4, "record": "1-1-0 (D0-0 CPV, W4-0 SAU)", "status": "Leading group, draw today likely enough to top the group"},
-    "Uruguay": {"pts": 2, "record": "0-2-0 (D1-1 SAU, D2-2 CPV)", "status": "Needs a result to control 2nd-place qualification; two draws so far"}
+    "Spain": {
+      "pts": 4,
+      "record": "1-1-0 (D0-0 CPV, W4-0 SAU)",
+      "status": "Leading group, draw today likely enough to top the group"
+    },
+    "Uruguay": {
+      "pts": 2,
+      "record": "0-2-0 (D1-1 SAU, D2-2 CPV)",
+      "status": "Needs a result to control 2nd-place qualification; two draws so far"
+    }
   },
   "wc2026_espn_stats": {
     "ESP": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760428, "opponent": "Cape Verde", "result": "D 0-0", "fouls": 10, "SOT": 7, "offsides": 2, "YC": 1, "RC": 0, "corners": 11, "possession": 74.3},
-        {"event_id": 760453, "opponent": "Saudi Arabia", "result": "W 4-0", "fouls": 10, "SOT": 8, "offsides": 2, "YC": 0, "RC": 0, "corners": 6, "possession": 67.1}
+        {
+          "event_id": 760428,
+          "opponent": "Cape Verde",
+          "result": "D 0-0",
+          "fouls": 10,
+          "SOT": 7,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 11,
+          "possession": 74.3
+        },
+        {
+          "event_id": 760453,
+          "opponent": "Saudi Arabia",
+          "result": "W 4-0",
+          "fouls": 10,
+          "SOT": 8,
+          "offsides": 2,
+          "YC": 0,
+          "RC": 0,
+          "corners": 6,
+          "possession": 67.1
+        }
       ],
-      "averages": {"fouls": 10.0, "SOT": 7.5, "offsides": 2.0, "cards": 0.5, "corners": 8.5},
+      "averages": {
+        "fouls": 10.0,
+        "SOT": 7.5,
+        "offsides": 2.0,
+        "cards": 0.5,
+        "corners": 8.5
+      },
       "CRITICAL": "Spain has NOT conceded a single goal in 2 WC2026 matches (0-0, 4-0). Elite, consistent defense. High possession (67-74%) in both."
     },
     "URU": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760429, "opponent": "Saudi Arabia", "result": "D 1-1", "fouls": 6, "SOT": 10, "offsides": 6, "YC": 0, "RC": 0, "corners": 14, "possession": 66.8},
-        {"event_id": 760450, "opponent": "Cape Verde", "result": "D 2-2", "fouls": 11, "SOT": 2, "offsides": 3, "YC": 2, "RC": 0, "corners": 11, "possession": 65.2}
+        {
+          "event_id": 760429,
+          "opponent": "Saudi Arabia",
+          "result": "D 1-1",
+          "fouls": 6,
+          "SOT": 10,
+          "offsides": 6,
+          "YC": 0,
+          "RC": 0,
+          "corners": 14,
+          "possession": 66.8
+        },
+        {
+          "event_id": 760450,
+          "opponent": "Cape Verde",
+          "result": "D 2-2",
+          "fouls": 11,
+          "SOT": 2,
+          "offsides": 3,
+          "YC": 2,
+          "RC": 0,
+          "corners": 11,
+          "possession": 65.2
+        }
       ],
-      "averages": {"fouls": 8.5, "SOT": 6.0, "offsides": 4.5, "cards": 1.0, "corners": 12.5},
+      "averages": {
+        "fouls": 8.5,
+        "SOT": 6.0,
+        "offsides": 4.5,
+        "cards": 1.0,
+        "corners": 12.5
+      },
       "NOTE": "Highly volatile SOT output (10 vs a low-block SAU, only 2 vs a disciplined CPV) — Uruguay's shot generation depends heavily on opponent quality, and Spain's defense is the best they've faced yet."
     }
   },
   "smarkets_markets": {
-    "FTR": {"Uruguay": 0.1493, "Spain": 0.5731, "Draw": 0.2759, "liquid": true},
-    "HT_result": {"Uruguay": 0.1390, "Spain": 0.4066, "Draw": 0.4547, "liquid": true},
-    "OU2_5": {"Under": 0.6099, "Over": 0.3892, "liquid": true},
-    "OU3_5": {"Under": 0.8067, "Over": 0.1961, "liquid": true},
-    "2H_OU1_5_goals": {"Under": 0.65, "Over": 0.3491, "liquid": true},
-    "URU_OU0_5_goals": {"Under": 0.6953, "Over": 0.3042, "liquid": true},
-    "Highest_scoring_half": {"First_Half": 0.2958, "Equal": 0.2996, "Second_Half": 0.4078, "liquid": true},
-    "Corners_OU8_5": {"Under": 0.5083, "Over": 0.4783, "liquid": true},
-    "Cards_OU3_5": {"Under": 0.5625, "Over": 0.4395, "liquid": true},
-    "player_SOT_fullmatch": {"Dani_Olmo": {"offer": 0.6536, "adjusted": 0.618}, "Darwin_Nunez": {"offer": 0.5917, "adjusted": 0.559}}
+    "FTR": {
+      "Uruguay": 0.1493,
+      "Spain": 0.5731,
+      "Draw": 0.2759,
+      "liquid": true
+    },
+    "HT_result": {
+      "Uruguay": 0.139,
+      "Spain": 0.4066,
+      "Draw": 0.4547,
+      "liquid": true
+    },
+    "OU2_5": {
+      "Under": 0.6099,
+      "Over": 0.3892,
+      "liquid": true
+    },
+    "OU3_5": {
+      "Under": 0.8067,
+      "Over": 0.1961,
+      "liquid": true
+    },
+    "2H_OU1_5_goals": {
+      "Under": 0.65,
+      "Over": 0.3491,
+      "liquid": true
+    },
+    "URU_OU0_5_goals": {
+      "Under": 0.6953,
+      "Over": 0.3042,
+      "liquid": true
+    },
+    "Highest_scoring_half": {
+      "First_Half": 0.2958,
+      "Equal": 0.2996,
+      "Second_Half": 0.4078,
+      "liquid": true
+    },
+    "Corners_OU8_5": {
+      "Under": 0.5083,
+      "Over": 0.4783,
+      "liquid": true
+    },
+    "Cards_OU3_5": {
+      "Under": 0.5625,
+      "Over": 0.4395,
+      "liquid": true
+    },
+    "player_SOT_fullmatch": {
+      "Dani_Olmo": {
+        "offer": 0.6536,
+        "adjusted": 0.618
+      },
+      "Darwin_Nunez": {
+        "offer": 0.5917,
+        "adjusted": 0.559
+      }
+    }
   },
   "context_flags": [
     "SPAIN_CLEAN_SHEETS: 0 goals conceded in 2 WC2026 matches — strongest defensive signal in the dataset so far. Heavily suppresses Uruguay-scores and Uruguay-SOT questions.",
@@ -54,7 +171,7 @@
       "text": "Will Uruguay commit more fouls than Spain?",
       "pick_tier": "LOW-MEDIUM CONFIDENCE",
       "reasoning": "Raw historical average favors NO (URU 8.5 < ESP 10.0, normal-approx P=0.33), but Spain will again dominate possession, meaning Uruguay is the defending side today — defending teams typically foul above their own average. Net: shade up from the raw 0.33 toward a coin-flip.",
-      "final_estimate": 0.40,
+      "final_estimate": 0.4,
       "direction": "NO lean (soft)",
       "confidence": "low-medium"
     },
@@ -72,7 +189,7 @@
       "text": "Will Dani Olmo have at least 1 shot on target in the second half?",
       "pick_tier": "MEDIUM CONFIDENCE",
       "reasoning": "Illiquid full-match offer (0.6536, adjusted ×0.945=0.618) implies λ_full≈0.96. The match's Highest-Scoring-Half market leans 2H (40.8% vs 29.6% 1H), so weighting ~55% of shot volume into the second half gives λ_2H≈0.53 → P(≥1)=0.41.",
-      "final_estimate": 0.40,
+      "final_estimate": 0.4,
       "direction": "YES lean (narrow)",
       "confidence": "medium"
     },
@@ -81,7 +198,7 @@
       "text": "Will Uruguay score at least 1 goal?",
       "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
       "reasoning": "Direct Smarkets market: Uruguay over 0.5 goals = 30.42%. Consistent with Spain's perfect defensive record (0 conceded in 2 matches). Trust the market.",
-      "final_estimate": 0.30,
+      "final_estimate": 0.3,
       "direction": "NO lean",
       "confidence": "high"
     },
@@ -108,7 +225,7 @@
       "text": "Will there be 9 or more total corner kicks in the match?",
       "pick_tier": "MARKET-ANCHORED",
       "reasoning": "Direct market: Over8.5 corners = 47.83%. Uruguay's elevated corner generation (12.5 avg, including 14 in one match) plus Spain's own solid 8.5 avg both point slightly higher than the market's near-50/50 read — small nudge up.",
-      "final_estimate": 0.50,
+      "final_estimate": 0.5,
       "direction": "TOSS-UP (slight YES lean)",
       "confidence": "medium"
     },
@@ -132,13 +249,13 @@
     }
   ],
   "summary_table": {
-    "Q1_URU_more_fouls": 0.40,
+    "Q1_URU_more_fouls": 0.4,
     "Q2_URU_more_2H_SOT": 0.25,
-    "Q3_Olmo_2H_SOT": 0.40,
-    "Q4_URU_scores": 0.30,
+    "Q3_Olmo_2H_SOT": 0.4,
+    "Q4_URU_scores": 0.3,
     "Q5_HT_tied": 0.45,
     "Q6_2H_2plus_goals": 0.35,
-    "Q7_9plus_corners": 0.50,
+    "Q7_9plus_corners": 0.5,
     "Q8_4plus_cards": 0.35,
     "Q9_Nunez_SOT": 0.48
   },
@@ -147,6 +264,103 @@
     "Q2: Uruguay more 2H SOT = 0.25 (MEDIUM-HIGH — Skellam + Spain's elite defense compounding)",
     "Q5: HT tied = 0.45 (HIGH CONFIDENCE — direct market, Spain's slow-start pattern)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Uruguay 0 - 1 Spain",
+    "total_rbp": 33.82,
+    "beat_crowd_count": "5/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Uruguay commit more fouls than Spain?",
+        "us": 0.4,
+        "crowd": 0.58,
+        "outcome": 0,
+        "rbp": 20.05,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "In the second half, will Uruguay have more shots on target than Spain?",
+        "us": 0.25,
+        "crowd": 0.29,
+        "outcome": 1,
+        "rbp": -4.15,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Dani Olmo have at least 1 shot on target in the second half?",
+        "us": 0.4,
+        "crowd": 0.35,
+        "outcome": 0,
+        "rbp": -0.23,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Uruguay score at least 1 goal?",
+        "us": 0.3,
+        "crowd": 0.53,
+        "outcome": 0,
+        "rbp": 21.57,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "At halftime, will the match be tied?",
+        "us": 0.45,
+        "crowd": 0.41,
+        "outcome": 0,
+        "rbp": -1.78,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will the match have 2 or fewer total goals?",
+        "us": 0.35,
+        "crowd": 0.47,
+        "outcome": 1,
+        "rbp": -11.75,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will the second half have 2 or more total goals?",
+        "us": 0.35,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 9.62,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will there be 9 or more total corner kicks in the match?",
+        "us": 0.5,
+        "crowd": 0.56,
+        "outcome": 0,
+        "rbp": 9.02,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will there be 4 or more total cards shown?",
+        "us": 0.35,
+        "crowd": 0.46,
+        "outcome": 1,
+        "rbp": -10.72,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Darwin Núñez have at least 1 shot on target?",
+        "us": 0.48,
+        "crowd": 0.47,
+        "outcome": 0,
+        "rbp": 2.2,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-26"
 }

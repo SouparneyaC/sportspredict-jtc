@@ -1,0 +1,258 @@
+{
+  "FTR": {
+    "Brazil": {
+      "bid": 0.5405,
+      "offer": 0.5435,
+      "mid": 0.542
+    },
+    "Draw": {
+      "bid": 0.2564,
+      "offer": 0.2597,
+      "mid": 0.2581
+    },
+    "Norway": {
+      "bid": 0.2,
+      "offer": 0.2,
+      "mid": 0.2
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.6024,
+      "offer": 0.6135,
+      "mid": 0.6079
+    },
+    "No": {
+      "bid": 0.3846,
+      "offer": 0.4,
+      "mid": 0.3923
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.1852,
+      "offer": 0.2,
+      "mid": 0.1926
+    },
+    "Over 1.5 goals": {
+      "bid": 0.7937,
+      "offer": 0.8197,
+      "mid": 0.8067
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.4274,
+      "offer": 0.4425,
+      "mid": 0.435
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5525,
+      "offer": 0.578,
+      "mid": 0.5653
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.6536,
+      "offer": 0.6803,
+      "mid": 0.6669
+    },
+    "Over 3.5 goals": {
+      "bid": 0.3279,
+      "offer": 0.3425,
+      "mid": 0.3352
+    }
+  },
+  "HT_result": {
+    "Brazil": {
+      "bid": 0.3937,
+      "offer": 0.4065,
+      "mid": 0.4001
+    },
+    "Draw": {
+      "bid": 0.4098,
+      "offer": 0.4202,
+      "mid": 0.415
+    },
+    "Norway": {
+      "bid": 0.1852,
+      "offer": 0.1961,
+      "mid": 0.1906
+    }
+  },
+  "To_qualify": {
+    "Brazil": {
+      "bid": 0.6944,
+      "offer": 0.7042,
+      "mid": 0.6993
+    },
+    "Norway": {
+      "bid": 0.303,
+      "offer": 0.3125,
+      "mid": 0.3077
+    }
+  },
+  "Penalty_shootout": {
+    "Yes": {
+      "bid": 0.119,
+      "offer": 0.1667,
+      "mid": 0.1428
+    },
+    "No": {
+      "bid": 0.8333,
+      "offer": 0.9091,
+      "mid": 0.8712
+    }
+  },
+  "Exact_goals": {
+    "No goals": {
+      "bid": 0.0455,
+      "offer": 0.0714,
+      "mid": 0.0585
+    },
+    "1 goals": {
+      "bid": 0.1389,
+      "offer": 0.1667,
+      "mid": 0.1528
+    },
+    "2 goals": {
+      "bid": 0.2128,
+      "offer": 0.2439,
+      "mid": 0.2283
+    },
+    "3 goals": {
+      "bid": 0.2174,
+      "offer": 0.25,
+      "mid": 0.2337
+    },
+    "4 goals": {
+      "bid": 0.1515,
+      "offer": 0.1754,
+      "mid": 0.1634
+    },
+    "5 goals": {
+      "bid": 0.087,
+      "offer": 0.1111,
+      "mid": 0.099
+    },
+    "6 or more goals": {
+      "bid": 0.0625,
+      "offer": 0.0909,
+      "mid": 0.0767
+    }
+  },
+  "BRA_SOT_OU4.5": {
+    "Under 4.5 shots on target": {
+      "bid": 0.3846,
+      "offer": 0.4762,
+      "mid": 0.4304
+    },
+    "Over 4.5 shots on target": {
+      "bid": 0.5405,
+      "offer": 0.6135,
+      "mid": 0.577
+    }
+  },
+  "NOR_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.3788,
+      "offer": 0.4717,
+      "mid": 0.4253
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.5348,
+      "offer": 0.6211,
+      "mid": 0.5779
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.4274,
+      "offer": 0.4808,
+      "mid": 0.4541
+    },
+    "Over 2.5 cards": {
+      "bid": 0.5682,
+      "offer": 0.5882,
+      "mid": 0.5782
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.6061,
+      "offer": 0.6993,
+      "mid": 0.6527
+    },
+    "Over 3.5 cards": {
+      "bid": 0.3401,
+      "offer": 0.4202,
+      "mid": 0.3801
+    }
+  },
+  "BRA_corners_OU5.5": {
+    "Under 5.5 corners": {
+      "bid": 0.4762,
+      "offer": 0.5405,
+      "mid": 0.5083
+    },
+    "Over 5.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5263,
+      "mid": 0.4925
+    }
+  },
+  "Highest_scoring_half": {
+    "First Half": {
+      "bid": 0.2778,
+      "offer": 0.2985,
+      "mid": 0.2882
+    },
+    "Equal": {
+      "bid": 0.2273,
+      "offer": 0.2667,
+      "mid": 0.247
+    },
+    "Second Half": {
+      "bid": 0.4505,
+      "offer": 0.4673,
+      "mid": 0.4589
+    }
+  },
+  "BRA_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.125,
+      "offer": 0.1471,
+      "mid": 0.1361
+    },
+    "Over 0.5 goals": {
+      "bid": 0.8475,
+      "offer": 0.8696,
+      "mid": 0.8586
+    }
+  },
+  "BRA_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.431,
+      "offer": 0.4464,
+      "mid": 0.4387
+    },
+    "Over 1.5 goals": {
+      "bid": 0.5587,
+      "offer": 0.5714,
+      "mid": 0.5651
+    }
+  },
+  "NOR_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.2985,
+      "offer": 0.3175,
+      "mid": 0.308
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6849,
+      "offer": 0.7042,
+      "mid": 0.6946
+    }
+  }
+}

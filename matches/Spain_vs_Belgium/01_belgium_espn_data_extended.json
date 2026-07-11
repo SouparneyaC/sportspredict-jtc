@@ -1,0 +1,19 @@
+{
+  "_description": "Belgium's full 5-game 2026 tournament log (4 pre-R16 games from matches/USA_vs_Belgium/01_espn_data.json + the actual R16 result vs USA, extracted from matches/USA_vs_Belgium/espn_r16_actual_summary.json rosters[].stats). Built for Spain vs Belgium QF pricing (2026-07-10).",
+  "source_files": [
+    "matches/USA_vs_Belgium/01_espn_data.json (games 1-4)",
+    "matches/USA_vs_Belgium/espn_r16_actual_summary.json (game 5, ESPN event 760507)"
+  ],
+  "belgium_games": [
+    {"opponent": "Egypt", "stage": "Group", "result": "1-1", "team_sot": 3, "team_shots": 15, "corners": 2, "yc": 2, "offsides": 0, "de_bruyne": {"g":0,"sot":1,"shots":4,"subbedOut":true}, "trossard": {"g":0,"sot":0,"shots":3}, "lukaku": {"g":0,"sot":0,"shots":2,"subbedIn":true,"starter":false}},
+    {"opponent": "Iran", "stage": "Group", "result": "0-0", "team_sot": 7, "team_shots": 23, "corners": 4, "yc": 1, "rc": 1, "offsides": 3, "de_bruyne": {"g":0,"sot":1,"shots":5,"subbedOut":true}, "trossard": {"g":0,"sot":0,"shots":1}, "lukaku": {"g":0,"sot":0,"shots":1,"subbedOut":true}},
+    {"opponent": "New Zealand", "stage": "Group", "result": "5-1", "team_sot": 10, "team_shots": 35, "corners": 8, "yc": 0, "offsides": 1, "de_bruyne": {"g":1,"sot":2,"shots":7,"subbedOut":true}, "trossard": {"g":2,"sot":2,"shots":7,"subbedOut":true}, "lukaku": {"g":1,"sot":1,"shots":1,"a":1,"subbedIn":true,"starter":false}},
+    {"opponent": "Senegal", "stage": "Round of 32", "result": "3-2", "team_sot": 5, "team_shots": 19, "corners": 4, "yc": 1, "offsides": 2, "de_bruyne": {"g":0,"sot":0,"shots":2,"subbedOut":true}, "trossard": {"g":0,"sot":1,"shots":2,"a":1,"subbedOut":true}, "lukaku": {"g":1,"sot":1,"shots":1,"subbedIn":true,"starter":false}},
+    {"opponent": "United States", "stage": "Round of 16", "result": "4-1", "team_sot": 7, "team_shots": 15, "corners": 5, "yc": 0, "rc": 0, "offsides": 1, "de_bruyne": {"appearances": 0, "note": "did not play at all - not a starter, not subbed in, 'active': true (available, not injured per ESPN roster status) - a genuine unused matchday squad member"}, "trossard": null, "lukaku": {"g":1,"sot":1,"shots":1,"a":0,"subbedIn":"67'","starter":false}}
+  ],
+  "key_findings_updated": [
+    "De Bruyne SOT log across games he actually played (1,2,3,4): [1,1,2,0] -> 1+ SOT in 3/4 = 75%. But game 5 (R16 vs USA): ZERO appearances, a genuine unused-squad-member DNP, not just an early substitution. This is an escalation from the established 'subbed out early every game' pattern (games 1-4) to 'did not feature at all' (game 5). ESPN's roster 'active' flag says true (not injured/suspended), so this reads as fatigue management or a tactical benching, not fitness. UNRESOLVED as of 2026-07-10: whether this repeats tonight is a genuine open question, not something the data can answer - flag as elevated uncertainty on De Bruyne featuring at all, let alone hitting 1+ SOT, rather than defaulting to the 75% played-games rate.",
+    "Lukaku: has now scored in 3 STRAIGHT sub appearances (New Zealand blowout, Senegal competitive R32, and now USA R16) - 3 goals from 3 shots, all 3 as an unused-starter impact substitute. Extends the 'genuine hot streak, tiny sample' note already on file in matches/USA_vs_Belgium/05_estimates.json from 2-for-2 to 3-for-3. Fool-risk: 3 shots total across 3 appearances is an extremely small base for any point estimate - the streak is real and worth weighting, but this is not a 'reliable finisher' claim, it's 3 shots landing perfectly.",
+    "Belgium team shot volume dropped sharply in the R16 (15 shots, down from 19-35 in prior 3 games) despite winning 4-1 comfortably - consistent with a comfortable/managed knockout win rather than a high-event game, worth factoring into Q11/Q12 (Spain/Belgium SOT thresholds) and Q13 (Spain corners) if used as a stage-appropriate comparison."
+  ]
+}

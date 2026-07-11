@@ -1,0 +1,43 @@
+{
+  "_description": "Rules applied per question for Colombia vs Ghana 2026-07-04",
+  "match_context": {
+    "colombia_win_prob": 0.685,
+    "draw_prob": 0.2151,
+    "ghana_win_prob": 0.1031,
+    "lambda_colombia_goals": 1.916,
+    "rule7_fires": "borderline",
+    "rule8_fires": false
+  },
+  "per_question": [
+    {"q": 1, "tier": "PLAYER_LIQUID", "rules": [], "estimate": 0.32,
+     "note": "Anytime scorer mid=0.3193 (liquid). Matches his solid group form (1 goal, 1 assist, avg 3.67 shots/game)."},
+    {"q": 2, "tier": "PLAYER_ILLIQUID", "rules": ["RULE9", "RULE12_FLAG"], "estimate": 0.42,
+     "note": "Score-or-assist offer=0.5405 (illiquid) x0.945=0.5108. Trimmed to 0.42 -- James started all 3 group games with zero goals AND zero assists, a real production signal the market may be underweighting relative to generic 'creative Colombian midfielder' pricing."},
+    {"q": 3, "tier": "PLAYER_ILLIQUID", "rules": [], "estimate": 0.10,
+     "note": "SOT OU1.5 (2+) offer=0.119 (illiquid) x0.945=0.1125. Confirmed by ESPN: 0 SOT across all 3 group games for Semenyo."},
+    {"q": 4, "tier": "DIRECT", "rules": [], "estimate": 0.41,
+     "note": "BTTS Yes mid=0.4133. Direct market use."},
+    {"q": 5, "tier": "PLAYER_ILLIQUID", "rules": [], "estimate": 0.09,
+     "note": "Anytime scorer offer=0.1316 (illiquid) x0.945=0.1244, trimmed slightly to 0.09 -- Ayew recorded ZERO shots in all 3 group games despite starting every game, an even weaker signal than Semenyo's."},
+    {"q": 6, "tier": "TEAM_MODEL", "rules": [], "estimate": 0.30,
+     "note": "Fitted lambda=5.436 from COL SOT OU5.5 Over=0.4601 -> P(>=7)=0.304."},
+    {"q": 7, "tier": "DIRECT", "rules": [], "estimate": 0.70,
+     "note": "Team-to-score-first Colombia mid=0.7015."},
+    {"q": 8, "tier": "DIRECT", "rules": [], "estimate": 0.30,
+     "note": "Cards OU3.5 Over mid=0.2976, matches Poisson fit (0.297)."},
+    {"q": 9, "tier": "DIRECT", "rules": [], "estimate": 0.50,
+     "note": "HT result Colombia mid=0.4963."},
+    {"q": 10, "tier": "TEAM_MODEL", "rules": [], "estimate": 0.68,
+     "note": "Fitted lambda=23.924 from Total shots OU23.5 Over=0.521 -> P(>=22)=0.681. Colombia alone averages 19.67 shots/game."},
+    {"q": 11, "tier": "DIRECT", "rules": [], "estimate": 0.50,
+     "note": "Colombia corners OU5.5 Over mid=0.5026 -- exact market match for '6 or more'."},
+    {"q": 12, "tier": "TEAM_MODEL", "rules": ["RULE12_FLAG"], "estimate": 0.75,
+     "note": "No market. Own-team-avg combined lambda=7.0 (COL 4.33 + GHA 2.67, inflated by COL's 7-offside outlier vs CDR) -> P(>=3)=0.97. Match-environment lambda=4.5 -> P(>=3)=0.826. Even excluding the CDR outlier, COL's remaining games (3,3) still support a moderate-high rate. Shaded down from the raw readings to 0.75 for outlier caution, but this is a genuinely high-offside matchup unlike AUS-EGY."},
+    {"q": 13, "tier": "DIRECT", "rules": [], "estimate": 0.46,
+     "note": "OU2.5 Over mid=0.4631, matches Poisson fit from the goal-total lambda (0.464)."},
+    {"q": 14, "tier": "TIMING_WITH_MARKET", "rules": [], "estimate": 0.46,
+     "note": "Goal_1_time_bracket sum(1-10, 11-20, 40% of 21-30)=0.4323. Cross-check via total-lambda(2.531) scaled to ~24/93 = 0.480. Blended 0.46."},
+    {"q": 15, "tier": "DIRECT", "rules": [], "estimate": 0.81,
+     "note": "To_qualify Colombia mid=0.8131."}
+  ]
+}

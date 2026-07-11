@@ -1,0 +1,686 @@
+{
+  "match": "France vs Sweden",
+  "date": "2026-06-30",
+  "stage": "Round of 32 (knockout stage)",
+  "espn_event_ids": {
+    "this_match": 760492,
+    "FRA_vs_NOR": 760475,
+    "IRQ_vs_FRA": 760457,
+    "SEN_vs_FRA": 760432,
+    "SWE_vs_JPN": 760471,
+    "SWE_vs_NED": 760447,
+    "TUN_vs_SWE": 760424
+  },
+  "smarkets_event_id": 45159784,
+  "prior_lessons_consulted": [
+    "fra_irq_2026-06-22.json",
+    "swe_tun_2026-06-14.json",
+    "ned_swe_2026-06-20.json",
+    "jpn_swe_2026-06-25.json",
+    "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md (6th knockout match)",
+    "STEPS_FOR_HIGH_POINTS.md"
+  ],
+  "knockout_context": {
+    "France": {
+      "group_record": "3W-0L, 9pts, GD+8 (W3-1 SEN, W3-0 IRQ, W4-1 NOR)",
+      "status": "Heavy favorite (76.3% straight win, only conceded 2 goals across 3 group matches)"
+    },
+    "Sweden": {
+      "group_record": "1W-1L-1D, 4pts, GD-1 (W5-1 TUN, L1-5 NED, D1-1 JPN)",
+      "status": "Clear underdog (7.7% straight win) but advanced via a mixed, not-dominant group; real attacking output even in defeat (8 SOT in the 1-5 NED loss)"
+    }
+  },
+  "wc2026_espn_stats": {
+    "FRA": {
+      "n_matches": 3,
+      "matches": [
+        {
+          "event_id": 760432,
+          "opponent": "Senegal",
+          "result": "W 3-1",
+          "fouls": 5,
+          "SOT": 8,
+          "offsides": 1,
+          "YC": 0,
+          "RC": 0,
+          "corners": 6,
+          "possession": 53.4
+        },
+        {
+          "event_id": 760457,
+          "opponent": "Iraq",
+          "result": "W 3-0",
+          "fouls": 8,
+          "SOT": 5,
+          "offsides": 1,
+          "YC": 0,
+          "RC": 0,
+          "corners": 4,
+          "possession": 55.6
+        },
+        {
+          "event_id": 760475,
+          "opponent": "Norway",
+          "result": "W 4-1 (away)",
+          "fouls": 11,
+          "SOT": 9,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 5,
+          "possession": 56.7
+        }
+      ],
+      "averages": {
+        "fouls": 8.0,
+        "SOT": 7.33,
+        "offsides": 1.33,
+        "YC": 0.33,
+        "RC": 0.0,
+        "corners": 5.0
+      },
+      "NOTE": "France have not conceded more than 1 goal in any group match (10 scored, 2 conceded across 3 games). Fouls trend upward with opponent quality (5->8->11), consistent with Norway being the toughest test."
+    },
+    "SWE": {
+      "n_matches": 3,
+      "matches": [
+        {
+          "event_id": 760424,
+          "opponent": "Tunisia",
+          "result": "W 5-1",
+          "fouls": 10,
+          "SOT": 7,
+          "offsides": 3,
+          "YC": 0,
+          "RC": 0,
+          "corners": 4,
+          "possession": 48.7
+        },
+        {
+          "event_id": 760447,
+          "opponent": "Netherlands",
+          "result": "L 1-5 (away)",
+          "fouls": 12,
+          "SOT": 8,
+          "offsides": 3,
+          "YC": 3,
+          "RC": 0,
+          "corners": 5,
+          "possession": 49.1
+        },
+        {
+          "event_id": 760471,
+          "opponent": "Japan",
+          "result": "D 1-1 (away)",
+          "fouls": 11,
+          "SOT": 5,
+          "offsides": 2,
+          "YC": 2,
+          "RC": 0,
+          "corners": 8,
+          "possession": 47.7
+        }
+      ],
+      "averages": {
+        "fouls": 11.0,
+        "SOT": 6.67,
+        "offsides": 2.67,
+        "YC": 1.67,
+        "RC": 0.0,
+        "corners": 5.67
+      },
+      "NOTE": "Sweden's foul rate (10/12/11) and offside rate (3/3/2) are remarkably stable regardless of result (dominant win, heavy loss, draw) -- a structural team pattern, not a game-state artifact. They generated 8 SOT even in the 1-5 NED blowout loss -- genuine attacking quality, not a pushover underdog."
+    }
+  },
+  "player_profiles": {
+    "Kylian_Mbappe_FRA": {
+      "matches": [
+        {
+          "opp": "SEN",
+          "goals": 2,
+          "assists": 0,
+          "shots": 4,
+          "SOT": 4
+        },
+        {
+          "opp": "IRQ",
+          "goals": 2,
+          "assists": 0,
+          "shots": 8,
+          "SOT": 3
+        },
+        {
+          "opp": "NOR",
+          "goals": 0,
+          "assists": 2,
+          "shots": 4,
+          "SOT": 2
+        }
+      ],
+      "totals": "4 goals, 2 assists in 3 matches. Hit 2+ SOT in ALL 3 group matches (4,3,2) -- perfect precedent for Q6.",
+      "smarkets_2plus_sot": {
+        "bid": 0.6289,
+        "offer": 0.6494,
+        "mid": 0.6392,
+        "liquid": true
+      }
+    },
+    "Ousmane_Dembele_FRA": {
+      "matches": [
+        {
+          "opp": "SEN",
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "SOT": 0
+        },
+        {
+          "opp": "IRQ",
+          "goals": 1,
+          "assists": 1,
+          "shots": 4,
+          "SOT": 2
+        },
+        {
+          "opp": "NOR",
+          "goals": 3,
+          "assists": 0,
+          "shots": 3,
+          "SOT": 3
+        }
+      ],
+      "totals": "4 goals total, including a hat-trick against Norway in his most recent match (the freshest data point). Per Loss Pattern #6, hot streaks regress like cold streaks do -- not over-trusting this beyond what the liquid market already prices in.",
+      "smarkets_anytime_scorer": {
+        "bid": 0.3846,
+        "offer": 0.3876,
+        "mid": 0.3861,
+        "liquid": true
+      }
+    },
+    "Viktor_Gyokeres_SWE": {
+      "matches": [
+        {
+          "opp": "TUN",
+          "goals": 1,
+          "assists": 1,
+          "shots": 5,
+          "SOT": 2
+        },
+        {
+          "opp": "NED",
+          "goals": 0,
+          "assists": 0,
+          "shots": 5,
+          "SOT": 3
+        },
+        {
+          "opp": "JPN",
+          "goals": 0,
+          "assists": 1,
+          "shots": 1,
+          "SOT": 0
+        }
+      ],
+      "totals": "1 goal in 3 matches (only vs the weakest group opponent, Tunisia). RULE15 context: Sweden are an extreme underdog (7.7% win prob) -- Scenario A (blowout underdog) suppression applies, but the liquid market is already at 19.24%, below the typical 0.20-0.35 RULE15 band -- trusting the live liquid price directly rather than stacking further suppression on top (the Enciso/GER-PAR over-suppression failure mode).",
+      "smarkets_anytime_scorer": {
+        "bid": 0.1887,
+        "offer": 0.1961,
+        "mid": 0.1924,
+        "liquid": true
+      }
+    },
+    "Alexander_Isak_SWE": {
+      "matches": [
+        {
+          "opp": "TUN",
+          "goals": 1,
+          "assists": 2,
+          "shots": 3,
+          "SOT": 2
+        },
+        {
+          "opp": "NED",
+          "goals": 0,
+          "assists": 1,
+          "shots": 1,
+          "SOT": 1
+        },
+        {
+          "opp": "JPN",
+          "goals": 0,
+          "assists": 0,
+          "shots": 2,
+          "SOT": 2
+        }
+      ],
+      "totals": "Hit 2+ SOT in 2 of 3 group matches (2,1,2) despite Sweden's underdog status. Smarkets liquid market (12.35%) is well below even a naive read of his own SOT log -- this already reflects the extreme talent/possession gap expected today. Trusting the liquid market directly per the deep-dive's PLAYER_LIQUID lesson (do not stack additional suppression on an already-liquid, already-low price).",
+      "smarkets_2plus_sot": {
+        "bid": 0.122,
+        "offer": 0.125,
+        "mid": 0.1235,
+        "liquid": true
+      }
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {
+      "France": 0.7634,
+      "Draw": 0.1562,
+      "Sweden": 0.0769,
+      "liquid": true
+    },
+    "OU2_5_goals": {
+      "Under": 0.3152,
+      "Over": 0.6875,
+      "liquid": true
+    },
+    "OU3_5_goals": {
+      "Under": 0.5348,
+      "Over": 0.4566,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.5715,
+      "No": 0.4367,
+      "liquid": true
+    },
+    "HT_result": {
+      "France": 0.5971,
+      "Draw": 0.3009,
+      "Sweden": 0.1044,
+      "liquid": true
+    },
+    "Team_to_score_first_goal": {
+      "France": 0.7295,
+      "Sweden": 0.252,
+      "No_goal": 0.0219,
+      "liquid": true
+    },
+    "France_SOT_OU6_5": {
+      "Under": 0.4601,
+      "Over": 0.5407,
+      "liquid": true
+    },
+    "Cards_OU4_5": {
+      "Under": 0.8652,
+      "Over": 0.136,
+      "liquid": true
+    },
+    "Any_sent_off": {
+      "Yes": 0.115,
+      "No": 0.8851,
+      "liquid": true
+    },
+    "France_corners_OU6_5": {
+      "Under": 0.5099,
+      "Over": 0.4904,
+      "liquid": true,
+      "implied_lambda": 6.608
+    },
+    "Sweden_corners_OU3_5": {
+      "Under": 0.563,
+      "Over": 0.4388,
+      "liquid": true,
+      "implied_lambda": 3.387
+    },
+    "OU8_5_corners_total": {
+      "Under": 0.3005,
+      "Over": 0.6988,
+      "liquid": true,
+      "implied_lambda": 10.289
+    },
+    "Most_corners": {
+      "France": 0.7403,
+      "Sweden": 0.1845,
+      "Draw": 0.0758,
+      "liquid": true
+    },
+    "Most_cards": {
+      "France": 0.2355,
+      "Draw": 0.283,
+      "Sweden": 0.4798,
+      "liquid": true
+    },
+    "France_OU_goals": {
+      "0.5": 0.939,
+      "1.5": 0.7577,
+      "2.5": 0.5102,
+      "3.5": 0.2553,
+      "implied_lambda": 2.672
+    },
+    "Sweden_OU_goals": {
+      "0.5": 0.5806,
+      "1.5": 0.2157,
+      "2.5": 0.0506,
+      "3.5": 0.0077,
+      "implied_lambda": 0.864
+    },
+    "1H_OU_goals": {
+      "0.5": 0.8001,
+      "1.5": 0.4696,
+      "implied_lambda": 1.591
+    },
+    "Penalty": {
+      "Yes": 0.2844,
+      "No": 0.7169,
+      "liquid": true
+    },
+    "Goal_1_time_bracket": {
+      "1-10": 0.2599,
+      "11-20": 0.21905,
+      "21-30": 0.15765,
+      "31-40": 0.1141,
+      "41-50": 0.0932,
+      "51-60": 0.054,
+      "61-70": 0.0349,
+      "71-80": 0.0233,
+      "81-90": 0.02185,
+      "None": 0.02935
+    }
+  },
+  "context_flags": [
+    "FRANCE_DOMINANT_FORM: 9 points from 3 wins, GD+8, only 2 goals conceded all group stage. The strongest pre-match favorite price of any knockout match so far this stage (76.3%, vs NED-MAR's 40.3% and NOR-CIV's 45.5%).",
+    "SWEDEN_REAL_BUT_OUTMATCHED: not a true minnow -- beat Tunisia 5-1, generated 8 SOT even losing 1-5 to Netherlands -- but every signal (market, Elo gap implied by the 76% favorite price, GD difference) points to a clear mismatch today specifically because France's attack (Mbappe + Dembele, 8 combined goals in 3 games) is operating at an exceptional level.",
+    "DEMBELE_HOT_STREAK_HANDLED_WITH_CAUTION: hat-trick vs Norway is the freshest data point but per Loss Pattern #6 (treating a small-sample hot/cold streak as a stable rate), not pushing the liquid anytime-scorer market (38.6%) higher on narrative alone -- the market plausibly already reflects recent form.",
+    "ISAK_GYOKERES_LIQUID_MARKETS_TRUSTED_NEAR_RAW: both are genuinely liquid (bid+offer present, narrow spreads) and already priced well below a naive RULE15 band -- per the knockout deep-dive's PLAYER_LIQUID lesson, not stacking additional underdog-suppression logic on top of an already-suppressed liquid price (the Enciso/GER-PAR over-suppression failure mode).",
+    "OFFSIDE_MODEL_DIFFERS_FROM_GER_PAR/NOR_CIV: unlike GER-PAR (clean near-zero offside record on both teams that still spiked to a disaster) or NOR-CIV (clean low record, defensively shaded up), France+Sweden's combined historical offside average is already substantial (FRA 1.33 + SWE 2.67 = 4.0/game combined), reinforced by Isak's own elevated personal rate (1,1,3) and Mbappe's recognized pace-driven offside risk. This is treated as a real signal, not a deceptively-clean record that needs aggressive upward correction -- raw Poisson P(>=4)=0.567, shaded only mildly to 0.52 for general knockout full-match-count humility.",
+    "GOAL_IN_1H_STOPPAGE_IS_AN_EARLY_WINDOW_QUESTION: per the knockout deep-dive, early-window timing questions (before the 1st hydration break) have gone 3-for-3 positive across the first 5 matches (incl. NED-MAR's identical question type, +13.38). Two independent lambda-scaling methods (from the fitted 1H-specific lambda, and from the full-match lambda) converge tightly (0.122 and 0.140) -- trusted near-raw with no late-window-style discount."
+  ],
+  "questions": [
+    {
+      "q": 1,
+      "text": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets OU2.5 goals market, Over = 0.6875. Cross-validated by independently-fit team lambdas (FRA 2.672 + SWE 0.864 = 3.536, very close to the direct market's implied total lambda of 3.501).",
+      "final_estimate": 0.69,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 2,
+      "text": "Will France have 6 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "TEAM_MODEL — HIGH CONFIDENCE",
+      "reasoning": "No direct 5.5 line exists; fitted lambda=6.608 from the liquid France-OU6.5-corners market (Over=0.4904), giving P(>=6)=0.6465. Cross-validated by the Most Corners market (France 74.0% to lead corners) and by the combined France+Sweden corner-lambda sum (9.995) matching the direct full-match OU8.5 fit (10.289) closely.",
+      "final_estimate": 0.64,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 3,
+      "text": "Will France win in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets FTR market, France = 0.7634 (liquid, tight spread). Trimmed slightly to account for single-match variance and Sweden's real attacking output (8 SOT even in a 5-goal defeat) -- not pushed to the raw market price given France's group-stage form (3 routine wins) sets a high baseline that doesn't always hold in a single knockout fixture.",
+      "final_estimate": 0.74,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 4,
+      "text": "Will Ousmane Dembélé (France) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "PLAYER_LIQUID — HIGH CONFIDENCE",
+      "reasoning": "Liquid anytime-goalscorer market, mid=0.3861. Dembele has 4 goals in 3 group matches including a hat-trick in his most recent match (Norway) -- a genuinely hot, current-tournament precedent, but per Loss Pattern #6 (small-sample streaks regress), not pushing materially above the market's own already-recency-aware price.",
+      "final_estimate": 0.39,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 5,
+      "text": "Will France be ahead at halftime?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets HT result market, France = 0.5971 (mid).",
+      "final_estimate": 0.6,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 6,
+      "text": "Will Kylian Mbappé (France) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "PLAYER_LIQUID — HIGHEST CONFIDENCE",
+      "reasoning": "Liquid market (bid 0.6289 / offer 0.6494, mid 0.6392). Mbappe hit 2+ SOT in ALL THREE group matches (4, 3, 2) -- a perfect precedent reinforcing the already-favorable market price. Nudged slightly above raw mid per the same logic that worked for Saibari in NED-MAR (liquid market + perfect same-player precedent agreeing).",
+      "final_estimate": 0.65,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 7,
+      "text": "Will a red card be shown in the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets 'Any player to be sent off' market, mid=0.115.",
+      "final_estimate": 0.12,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 8,
+      "text": "Will Viktor Gyökeres (Sweden) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "PLAYER_LIQUID — HIGH CONFIDENCE",
+      "reasoning": "Liquid anytime-goalscorer market, mid=0.1924. Gyokeres scored only 1 goal in 3 group matches (vs the weakest opponent, Tunisia). RULE15 (extreme-underdog forward suppression) would apply given Sweden's 7.7% win probability, but the live liquid price is already below the typical RULE15 band -- trusted directly rather than further suppressed (avoiding the Enciso/GER-PAR over-suppression failure).",
+      "final_estimate": 0.19,
+      "direction": "NO lean",
+      "confidence": "high"
+    },
+    {
+      "q": 9,
+      "text": "Will Alexander Isak (Sweden) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "PLAYER_LIQUID — HIGH CONFIDENCE",
+      "reasoning": "Liquid market (bid 0.1220 / offer 0.1250, mid 0.1235). Isak's own raw group-stage SOT log (2,1,2) would suggest a higher rate in isolation, but the live market already prices in today's extreme talent/possession gap against France. Trusted directly per the deep-dive's PLAYER_LIQUID lesson -- not stacking RULE15 suppression on an already-suppressed liquid price.",
+      "final_estimate": 0.13,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 10,
+      "text": "Will France score the first goal of the match?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets 'Team to score first goal' market, France = 0.7295 (mid).",
+      "final_estimate": 0.72,
+      "direction": "YES (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 11,
+      "text": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct Smarkets BTTS market, mid=0.5715. Sweden's genuine attacking output even in their NED loss (8 SOT) supports the market's view that they're live to score even while losing.",
+      "final_estimate": 0.57,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 12,
+      "text": "Will France have 7 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct match: question asks 7+, Smarkets has 'France over/under 6.5 shots on target' (Over = X>=7 exactly). Mid=0.5407. Consistent with France's own group-stage SOT average of 7.33.",
+      "final_estimate": 0.55,
+      "direction": "YES lean",
+      "confidence": "high"
+    },
+    {
+      "q": 13,
+      "text": "Will there be 5 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "DIRECT MARKET — HIGH CONFIDENCE",
+      "reasoning": "Direct match: question asks 5+, Smarkets has 'Over/under 4.5 cards' (Over = X>=5 exactly). Mid=0.136.",
+      "final_estimate": 0.14,
+      "direction": "NO (strong)",
+      "confidence": "high"
+    },
+    {
+      "q": 14,
+      "text": "Will a goal be scored in first-half stoppage (added) time?",
+      "pick_tier": "TIMING_WITH_MODEL — EARLY WINDOW, MEDIUM-HIGH CONFIDENCE",
+      "reasoning": "No direct stoppage-time market. Two independent lambda-scaling methods converge: (1) 1H-specific lambda (1.591, fit from 1H O/U0.5/1.5 markets) scaled to a ~4-minute stoppage window out of ~49 first-half minutes -> P(>=1)=0.122; (2) full-match lambda (3.536) scaled to 4/94 of the match -> P(>=1)=0.140. This is an EARLY-window timing question (before any hydration break) -- per the knockout deep-dive, this category has gone 3-for-3 positive across the first 5 matches, unlike late-window timing questions. Trusted near-raw.",
+      "final_estimate": 0.12,
+      "direction": "NO (strong)",
+      "confidence": "medium-high"
+    },
+    {
+      "q": 15,
+      "text": "Will there be 4 or more offside calls in regulation (90 minutes + stoppage time)?",
+      "pick_tier": "TEAM_MODEL — MEDIUM CONFIDENCE, KNOCKOUT HUMILITY DISCOUNT APPLIED",
+      "reasoning": "No Smarkets market exists for offsides. Combined Poisson lambda from team averages: FRA 1.33 + SWE 2.67 = 4.0/game combined, raw P(>=4)=0.567. Unlike GER-PAR (a clean near-zero record that still spiked to -48.68) or NOR-CIV (clean low record, defensively shaded up), this is already a substantial, two-team-confirmed signal -- not a deceptively clean record. Reinforced by Isak's own elevated personal offside rate (1,1,3) and Mbappe's recognized pace-driven offside risk. Shaded only mildly down from the raw 0.567 to 0.52 for general full-match-count knockout-stage humility, per the standing deep-dive caution about this question family.",
+      "final_estimate": 0.52,
+      "direction": "TOSS-UP (slight YES)",
+      "confidence": "medium"
+    }
+  ],
+  "summary_table": {
+    "Q1_3plus_total_goals": 0.69,
+    "Q2_france_6plus_corners": 0.64,
+    "Q3_france_win_regulation": 0.74,
+    "Q4_dembele_scores": 0.39,
+    "Q5_france_ahead_ht": 0.6,
+    "Q6_mbappe_2plus_sot": 0.65,
+    "Q7_red_card": 0.12,
+    "Q8_gyokeres_scores": 0.19,
+    "Q9_isak_2plus_sot": 0.13,
+    "Q10_france_scores_first": 0.72,
+    "Q11_btts": 0.57,
+    "Q12_france_7plus_sot": 0.55,
+    "Q13_5plus_total_cards": 0.14,
+    "Q14_goal_1h_stoppage": 0.12,
+    "Q15_4plus_offsides": 0.52
+  },
+  "post_match_results": {
+    "final_score": "France 3 - 0 Sweden",
+    "total_rbp": 148.25,
+    "beat_crowd_count": "14/15",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Ousmane Dembélé (France) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.39,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 14.12,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will France be ahead at halftime?",
+        "us": 0.6,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": 6.08,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Kylian Mbappé (France) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.65,
+        "crowd": 0.62,
+        "outcome": 1,
+        "rbp": 11.2,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will a red card be shown in the match?",
+        "us": 0.12,
+        "crowd": 0.17,
+        "outcome": 0,
+        "rbp": 6.53,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Viktor Gyökeres (Sweden) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.19,
+        "crowd": 0.27,
+        "outcome": 0,
+        "rbp": 10.16,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will France have 6 or more corner kicks in regulation (90 minutes + stoppage time)?",
+        "us": 0.64,
+        "crowd": 0.58,
+        "outcome": 1,
+        "rbp": 12.86,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will France win in regulation (90 minutes + stoppage time)?",
+        "us": 0.74,
+        "crowd": 0.75,
+        "outcome": 1,
+        "rbp": 1.82,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Alexander Isak (Sweden) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.13,
+        "crowd": 0.32,
+        "outcome": 0,
+        "rbp": 23.78,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+        "us": 0.69,
+        "crowd": 0.65,
+        "outcome": 1,
+        "rbp": 8.05,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will France score the first goal of the match?",
+        "us": 0.72,
+        "crowd": 0.71,
+        "outcome": 1,
+        "rbp": 3.79,
+        "note": null
+      },
+      {
+        "q": 11,
+        "leaderboard_question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+        "us": 0.57,
+        "crowd": 0.53,
+        "outcome": 0,
+        "rbp": -5.52,
+        "note": null
+      },
+      {
+        "q": 12,
+        "leaderboard_question": "Will France have 7 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.55,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": 11.9,
+        "note": null
+      },
+      {
+        "q": 13,
+        "leaderboard_question": "Will there be 5 or more total cards shown in regulation (90 minutes + stoppage time)?",
+        "us": 0.14,
+        "crowd": 0.29,
+        "outcome": 0,
+        "rbp": 17.46,
+        "note": null
+      },
+      {
+        "q": 14,
+        "leaderboard_question": "Will a goal be scored in first-half stoppage (added) time?",
+        "us": 0.12,
+        "crowd": 0.21,
+        "outcome": 0,
+        "rbp": 12.83,
+        "note": null
+      },
+      {
+        "q": 15,
+        "leaderboard_question": "Will there be 4 or more offside calls in regulation (90 minutes + stoppage time)?",
+        "us": 0.52,
+        "crowd": 0.48,
+        "outcome": 1,
+        "rbp": 13.18,
+        "note": null
+      }
+    ]
+  }
+}

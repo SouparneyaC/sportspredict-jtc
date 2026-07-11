@@ -1,0 +1,82 @@
+=== AUSTRALIA vs EGYPT — FULL SESSION LOG ===
+Date: 2026-07-03
+Match: AUS vs EGY, R32 WC2026
+Kickoff: 18:00 UTC, AT&T Stadium (Arlington, TX)
+ESPN Event ID: 760499
+Smarkets Event ID: 45159835
+SportsPredict Match ID: 0bc25d75-319a-493e-86b2-96f84ea9ad55
+
+--- ESPN GROUP STAGE DATA ---
+Fetched raw ESPN match summaries for 6 group games:
+  Australia vs Turkey (760421), Australia vs USA (760442), Australia vs Paraguay (760469)
+  Egypt vs Belgium (760426), Egypt vs New Zealand (760452), Egypt vs Iran (760476)
+
+AUSTRALIA: shots=[9,5,12] avg=8.67, SOT=[4,2,5] avg=3.67, corners=[5,4,3] avg=4.0, YC=[0,4,1] avg=1.67, offsides=[1,0,0] avg=0.33
+  Record: W2-0 TUR (28% poss, outshot 9-30 -- fortunate win), L0-2 USA, D0-0 PAR
+EGYPT: shots=[14,19,15] avg=16.0, SOT=[3,7,3] avg=4.33, corners=[7,4,8] avg=6.33, YC=[2,1,3] avg=2.0, offsides=[1,0,0] avg=0.33
+  Record: D1-1 BEL, W3-1 NZL, D1-1 IRN -- unbeaten, dominant possession/shots in all 3
+
+Trezeguet (real name on Smarkets: "Mahmoud Hassan"): did not start any group game, single 76' sub appearance vs NZL.
+Substitution timing check (for new Q14): only 2/6 team-games had a genuine <45' sub, both injury-forced
+  (EGY vs NZL 41' Rabia-for-Fathy; EGY vs IRN 14' Ibrahim-for-Abdelmonem). No tactical early subs by either team.
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45159835, 169 markets catalogued.
+Hit RATE_LIMIT_EXCEEDED on first batch (22 markets fetched too fast); waited ~20s, retried at 0.7-1.0s delay, succeeded.
+
+Key prices:
+  FTR: AUS 25.64%, Draw 33.78%, EGY 40.48%  (cross-checked vs DraftKings pickcenter: AUS 26.6%/Draw 33.2%/EGY 40.2% -- near-exact agreement)
+  Elo cross-check: AUS 1900.79 vs EGY 1809.75 -- Elo implies AUS favorite (~63%), CONTRADICTS live market + current form.
+    Flagged and NOT trusted; market + current-tournament ESPN data wins per RULE1/RULE3.
+  BTTS Yes=44.85%, OU2.5 Under=67.14%, HT Draw=50.63%
+  Cards OU3.5 Over=37.70%, Penalty Yes=24.87% (illiquid), Any sent off Yes=14.09% (liquid)
+  Corners OU8.5: Under mid=50.79% (2-sided), Over side offer missing -> implied Over=49.21%
+  Team score first: AUS 37.93%, Egypt 46.54%, No goal 14.01%
+  Highest scoring half: 1H=27.86%, Equal=31.81%, 2H=39.89%
+  Total shots OU23.5 Over=45.02% -> fitted lambda=23.06 -> P(20+)=76.6%
+  Egypt SOT OU3.5 Over=48.44% (wide/thin spread) -> fitted lambda=3.60 -> P(5+)=29.3%; blended w/ ESPN avg (4.33) -> 36.4%
+
+Player markets:
+  Trezeguet (Mahmoud Hassan) anytime scorer: offer=22.22% [ILLIQUID] -> x0.945 = 21.0%
+  Irankunda anytime scorer: mid=19.61% [LIQUID]
+  Irankunda SOT OU1.5 (2+ SOT): bid=6.9%, offer=15.62%, mid=11.26% [WIDE SPREAD, treated as thin]
+  Salah anytime scorer: mid=28.37% [LIQUID] (not asked in these 15 Qs)
+
+--- MODEL DERIVATIONS ---
+Lambda fitting via scipy.optimize.brentq from market OU lines:
+  AUS goals lambda=0.903, EGY goals lambda=1.217, total (direct fit)=2.054
+  Cards total lambda=3.05 -> P(4+ cards)=36.4% (matches direct market 37.7%)
+  Corners total lambda=8.71 -> P(9+)=50.5% (matches direct-implied 49.2%)
+  Both-teams-carded: P(AUS>=1)=81.1% x P(EGY>=1)=86.5% = 70.1% (POR-CRO Q7 methodology)
+  Pen-or-red compound: 24.87% + 14.09% - product = 35.46%
+  Offsides (no market): own-team-avg lambda=0.667 -> P(3+)=3.0% (too extreme, n=3 thin);
+    match-environment lambda=2.0 -> P(3+)=32.3% (same lambda MEX-ECU used successfully). Used the latter.
+    Historical base rate check: combined "3+ total offsides" questions in campaign history = 2/3 YES (MEX-ECU no, GER-PAR yes, ENG-CDR yes) -- supports not pricing too low.
+
+Rules checked:
+  RULE1: market is primary source (no crowd data pre-submission)
+  RULE6: clear, all estimates in 0.13-0.77
+  RULE7: INACTIVE (AUS win 25.64% >= 15%)
+  RULE8: FIRES (Draw 33.78% >= 25%) -- flagged for Q9, Q13 (thin-sample TEAM_MODEL questions)
+  RULE9: applied to Trezeguet (role-based prior: bench player in group stage, trusted illiquid-adjusted market price)
+  RULE12: flagged Q13 (offsides) for 6x sensitivity between own-avg and match-env lambda
+  RULE15: not applicable (AUS not a blowout underdog)
+
+--- FINAL ESTIMATES ---
+Q1 (Trezeguet scores): 0.21 [PLAYER_ILLIQUID]
+Q2 (Egypt win regulation): 0.40 [DIRECT]
+Q3 (tied at halftime): 0.51 [DIRECT]
+Q4 (2 or fewer goals): 0.67 [DIRECT]
+Q5 (Irankunda 2+ SOT): 0.13 [PLAYER_LIQUID_THIN]
+Q6 (both teams carded): 0.70 [TEAM_MODEL]
+Q7 (4+ total cards): 0.38 [DIRECT]
+Q8 (penalty OR red): 0.35 [TEAM_MODEL]
+Q9 (Egypt 5+ SOT): 0.36 [TEAM_MODEL]
+Q10 (9+ corners): 0.49 [DIRECT]
+Q11 (Egypt scores first): 0.47 [DIRECT]
+Q12 (2nd half more goals): 0.40 [DIRECT]
+Q13 (3+ offsides): 0.32 [TEAM_MODEL]
+Q14 (sub before halftime): 0.28 [BASE_RATE_ONLY]
+Q15 (20+ total shots): 0.77 [TEAM_MODEL]
+
+Output: matches/Australia_vs_Egypt/{01-05}.json

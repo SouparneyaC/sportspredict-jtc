@@ -1,0 +1,32 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Spain vs Austria",
+  "date": "2026-07-02",
+  "actual_score": "Spain 3-0 Austria",
+  "match_rbp_total": 77.57,
+  "questions_beat_crowd": 11,
+  "questions_below_crowd": 4,
+  "question_results": [
+    {"text": "Will Lamine Yamal (Spain) have 2 or more shots on target?", "our_estimate": 0.46, "crowd_estimate": 0.51, "outcome": "YES", "rbp": -2.63, "beat_crowd": false},
+    {"text": "Will Mikel Oyarzabal (Spain) score a goal?", "our_estimate": 0.45, "crowd_estimate": 0.42, "outcome": "YES", "rbp": 13.16, "beat_crowd": true},
+    {"text": "Will Spain win in regulation?", "our_estimate": 0.76, "crowd_estimate": 0.72, "outcome": "YES", "rbp": 7.07, "beat_crowd": true},
+    {"text": "Will Marcel Sabitzer (Austria) score or assist a goal?", "our_estimate": 0.20, "crowd_estimate": 0.26, "outcome": "NO", "rbp": 9.33, "beat_crowd": true},
+    {"text": "Will the match have 3 or more total goals?", "our_estimate": 0.58, "crowd_estimate": 0.54, "outcome": "YES", "rbp": 10.09, "beat_crowd": true},
+    {"text": "Will Spain score the first goal of the match?", "our_estimate": 0.76, "crowd_estimate": 0.70, "outcome": "YES", "rbp": 8.85, "beat_crowd": true},
+    {"text": "Will Spain have 8 or more shots on target?", "our_estimate": 0.29, "crowd_estimate": 0.40, "outcome": "YES", "rbp": -21.2, "beat_crowd": false, "note": "BIGGEST LOSS. Kept a market-anchored 0.294 despite Spain's own non-Uruguay-game SOT average being much higher (~7.5) -- this was the RULE12-flagged bimodal-SOT concern from the pre-match reasoning materializing exactly as worried."},
+    {"text": "Will Austria have 4 or more shots on target?", "our_estimate": 0.18, "crowd_estimate": 0.35, "outcome": "NO", "rbp": 23.24, "beat_crowd": true, "note": "Biggest win -- RULE15 Scenario A suppression of the extreme-underdog's attacking output, correct."},
+    {"text": "Will Spain have 7 or more corner kicks?", "our_estimate": 0.43, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -10.81, "beat_crowd": false},
+    {"text": "Will Spain be ahead at halftime?", "our_estimate": 0.56, "crowd_estimate": 0.55, "outcome": "YES", "rbp": 5.73, "beat_crowd": true},
+    {"text": "Will both teams score?", "our_estimate": 0.44, "crowd_estimate": 0.45, "outcome": "NO", "rbp": 5.44, "beat_crowd": true},
+    {"text": "Will Spain score in both halves?", "our_estimate": 0.47, "crowd_estimate": 0.48, "outcome": "YES", "rbp": 3.14, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.25, "crowd_estimate": 0.39, "outcome": "NO", "rbp": 22.11, "beat_crowd": true, "note": "Second-biggest win."},
+    {"text": "Will there be 4 or more offside calls?", "our_estimate": 0.55, "crowd_estimate": 0.48, "outcome": "YES", "rbp": 16.83, "beat_crowd": true},
+    {"text": "Will a goal be scored before the first hydration break?", "our_estimate": 0.52, "crowd_estimate": 0.43, "outcome": "NO", "rbp": -12.78, "beat_crowd": false}
+  ],
+  "key_lessons": [
+    "Biggest win: Austria 4+ SOT NO (+23.24) -- extreme-underdog attacking suppression (RULE15) worked cleanly.",
+    "Biggest loss: Spain 8+ SOT YES (-21.2) -- this is the SAME shape as the later-identified Cluster-B trap (favorite team's own SOT threshold, market below empirical, blend/anchor decision). Here we anchored to the market (0.29) despite Spain's own bimodal SOT history flagging real upside risk (RULE12), and Spain hit 8+ anyway. Cross-reference against WINNING_PATTERNS_SYNTHESIS.md and the Brazil-Norway/Mexico-England same-day split result on this exact question shape -- this is now a THIRD data point and, notably, a case where staying at market LOST, alongside Mexico-England's loss and Brazil-Norway's win. The picture on this rule remains genuinely mixed, not one-sided.",
+    "4+ offsides (+16.83) and 4+ cards (+22.11) were both strong direct-market/model wins.",
+    "Both offside/card count questions and RULE15 underdog-suppression are performing very reliably for this team pairing; the team's-own-SOT-ceiling question remains the one recurring soft spot."
+  ]
+}

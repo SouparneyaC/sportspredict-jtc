@@ -1,0 +1,60 @@
+{
+  "_description": "Model derivations for Switzerland vs Algeria 2026-07-02/03 R32",
+  "lambda_fits": {
+    "switzerland_goals": 1.499,
+    "algeria_goals": 0.928,
+    "total_goals": 2.422,
+    "consistency_check_sui_plus_alg": 2.427,
+    "cards": 2.911,
+    "second_half": 1.374
+  },
+  "derived_probs": {
+    "p_5plus_cards_poisson": 0.17,
+    "p_any_brace_poisson": 0.293,
+    "p_sui_sot_5plus_player_model": 0.6,
+    "p_pen_or_redcard": 0.336,
+    "p_goal_after_70min": 0.457,
+    "p_goal_after_70min_alt": 0.416,
+    "p_goal_after_70min_blended": 0.437,
+    "lam_sui_sot_player_sum": 4.09
+  },
+  "rule_checks": {
+    "RULE7": "INACTIVE \u2014 Algeria win=21.06% \u2265 15% threshold",
+    "RULE8": "FIRES \u2014 Draw=30.07% \u2265 25%. Competitive match; shade model-derived estimates toward 0.50",
+    "RULE6": "Clear \u2014 all estimates in 0.13-0.67 range",
+    "RULE12": "Q10 (SUI 5+ SOT): removing Canada game (4 SOT) shifts P up; removing either 7-SOT game shifts P to ~0.50. Sensitive. Capped at 0.600 (RULE8 pull).",
+    "RULE15": "Not applicable \u2014 Algeria not blowout underdog (21.06% > 10%)"
+  },
+  "espn_insight": {
+    "switzerland_sot": [
+      7,
+      7,
+      4
+    ],
+    "switzerland_sot_avg": 6.0,
+    "algeria_sot": [
+      1,
+      8,
+      5
+    ],
+    "algeria_sot_avg": 4.67,
+    "algeria_top_shooters": [
+      "Cha\u00efbi (3 vs ARG)",
+      "Maza (4 vs JOR)",
+      "Maza (3 vs AUT)"
+    ],
+    "note_on_gouiri_mahrez": "Neither Gouiri nor Mahrez was top shooter in any ALG group game. Maza and Cha\u00efbi are primary shooting threats.",
+    "algeria_corners": [
+      2,
+      10,
+      0
+    ],
+    "algeria_corners_avg": 4.0,
+    "switzerland_corners": [
+      10,
+      7,
+      2
+    ],
+    "switzerland_corners_avg": 6.33
+  }
+}

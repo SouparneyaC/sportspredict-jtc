@@ -1,0 +1,121 @@
+[
+  {
+    "matchId": "cb422ad6-6642-4e47-bc13-079bea1d8546",
+    "name": "MEX vs RSA",
+    "score": "2-0",
+    "date": "Jun 11, 2026",
+    "matchRbp": "-0.7",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "Will Mexico win the match?",
+        "you": 81,
+        "crowd": 73,
+        "outcome": 100,
+        "rbp": 6.45,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "YES",
+        "questionText": "Will the match have 2 or fewer total goals?",
+        "you": 41,
+        "crowd": 52,
+        "outcome": 100,
+        "rbp": -7.16,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will South Africa commit more fouls than Mexico?",
+        "you": null,
+        "crowd": 57,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 4,
+        "result": "YES",
+        "questionText": "In the second half, will Mexico have more corner kicks than South Africa?",
+        "you": null,
+        "crowd": 65,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 5,
+        "result": "YES",
+        "questionText": "Will Mexico have more shots on target than South Africa in the second half?",
+        "you": null,
+        "crowd": 69,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd called it perfectly!",
+        "predicted": false
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will a penalty kick be awarded OR a red card be shown in the match?",
+        "you": null,
+        "crowd": 42,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "Will South Africa be caught offside 2 or more times?",
+        "you": null,
+        "crowd": 51,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will South Africa receive more cards than Mexico?",
+        "you": null,
+        "crowd": 54,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will South Africa score in the second half?",
+        "you": null,
+        "crowd": 38,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Oswin Appollis score or assist a goal (excluding own goals)?",
+        "you": null,
+        "crowd": 30,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd called it perfectly!",
+        "predicted": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "match": "ARG-EGY",
+  "date": "2026-07-07",
+  "stage": null,
+  "post_match_results": {
+    "final_score": "Argentina 3 - 2 Egypt",
+    "total_rbp": 63.81,
+    "beat_crowd_count": "7/13",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Lionel Messi (Argentina, #10) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.54,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": -3.11,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Mohamed Salah (Egypt, #10) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.16,
+        "crowd": 0.26,
+        "outcome": 0,
+        "rbp": 12.57,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Argentina win in regulation (90 minutes + stoppage time)?",
+        "us": 0.73,
+        "crowd": 0.74,
+        "outcome": 1,
+        "rbp": 2.81,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Omar Marmoush (Egypt, #22) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.46,
+        "crowd": 0.37,
+        "outcome": 0,
+        "rbp": -6.01,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Julián Álvarez (Argentina, #9) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.28,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 29.14,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+        "us": 0.41,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": 7.25,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will the first goal of the match be scored by a player other than Lionel Messi and Mohamed Salah?",
+        "us": 0.77,
+        "crowd": 0.55,
+        "outcome": 1,
+        "rbp": 36.17,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+        "us": 0.39,
+        "crowd": 0.43,
+        "outcome": 1,
+        "rbp": -6.84,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will the total number of goals in regulation (90 minutes + stoppage time) be an odd number?",
+        "us": 0.47,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": -6.43,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will any player score 2 or more goals (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.36,
+        "crowd": 0.32,
+        "outcome": 0,
+        "rbp": 0.48,
+        "note": null
+      },
+      {
+        "q": 11,
+        "leaderboard_question": "Will Argentina have 5 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.7,
+        "crowd": 0.66,
+        "outcome": 1,
+        "rbp": 8.81,
+        "note": null
+      },
+      {
+        "q": 12,
+        "leaderboard_question": "Will Argentina have 6 or more corner kicks in regulation (90 minutes + stoppage time)?",
+        "us": 0.47,
+        "crowd": 0.53,
+        "outcome": 1,
+        "rbp": -8.51,
+        "note": null
+      },
+      {
+        "q": 13,
+        "leaderboard_question": "Will a goal be scored in the first half after the first hydration break?",
+        "us": 0.48,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": -2.51,
+        "note": null
+      }
+    ]
+  }
+}

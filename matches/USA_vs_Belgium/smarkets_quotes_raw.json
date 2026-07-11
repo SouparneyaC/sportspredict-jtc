@@ -1,0 +1,982 @@
+{
+  "149054564": {
+    "Alejandro Zendejas": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2147985,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alex Freeman": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.065205,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alexis Saelemaekers": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.18172349999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Amadou Onana": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0787185,
+      "liq": "ILLIQUID_offer"
+    },
+    "Antonee Robinson": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.057267,
+      "liq": "ILLIQUID_offer"
+    },
+    "Arthur Theate": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": 0.05254199999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Auston Trusty": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.053959499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Axel Witsel": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.08590049999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Brandon Mechele": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.048478499999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Brenden Aaronson": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.23048549999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Charles De Ketelaere": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.219807,
+      "liq": "ILLIQUID_offer"
+    },
+    "Chris Richards": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0726705,
+      "liq": "ILLIQUID_offer"
+    },
+    "Christian Pulisic": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": 0.304857,
+      "liq": "ILLIQUID_offer"
+    },
+    "Cristian Roldan": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1276695,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diego Moreira": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": 0.14316749999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Dodi Lukebakio": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.209979,
+      "liq": "ILLIQUID_offer"
+    },
+    "Folarin Balogun": {
+      "bid": 0.3704,
+      "offer": 0.3759,
+      "mid": 0.37315,
+      "liq": "LIQUID"
+    },
+    "Giovanni Reyna": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": 0.23625,
+      "liq": "ILLIQUID_offer"
+    },
+    "Haji Wright": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": 0.28633499999999995,
+      "liq": "ILLIQUID_offer"
+    },
+    "Hans Vanaken": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": 0.168777,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jeremy Doku": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.1928745,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joaquin Seys": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": 0.049707,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joseph Scally": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0609525,
+      "liq": "ILLIQUID_offer"
+    },
+    "Kevin De Bruyne": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    },
+    "Koni De Winter": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.044982,
+      "liq": "ILLIQUID_offer"
+    },
+    "Leandro Trossard": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.209979,
+      "liq": "ILLIQUID_offer"
+    },
+    "Malik Tillman": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853145,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mark McKenzie": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0787185,
+      "liq": "ILLIQUID_offer"
+    },
+    "Matias Fernandez Pardo": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": 0.28208249999999996,
+      "liq": "ILLIQUID_offer"
+    },
+    "Max Arfsten": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575315,
+      "liq": "ILLIQUID_offer"
+    },
+    "Maxim De Cuyper": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.10054799999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Miles Robinson": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.04725,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nathan Ngoy": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": 0.049707,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nicolas Thierry Raskin": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0726705,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ricardo Pepi": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.32139449999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Romelu Lukaku": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3327345,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sebastian Berhalter": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sergino Dest": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.1390095,
+      "liq": "ILLIQUID_offer"
+    },
+    "Thomas Meunier": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.065205,
+      "liq": "ILLIQUID_offer"
+    },
+    "Timothy Weah": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": 0.168777,
+      "liq": "ILLIQUID_offer"
+    },
+    "Timoty Castagne": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.04725,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tim Ream": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.044982,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tyler Adams": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0609525,
+      "liq": "ILLIQUID_offer"
+    },
+    "Weston McKennie": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.13504049999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Youri Tielemans": {
+      "bid": null,
+      "offer": 0.1316,
+      "mid": 0.12436199999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Zeno Debast": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0609525,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149064033": {
+    "Alejandro Zendejas": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Alex Freeman": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alexis Saelemaekers": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Amadou Onana": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175014,
+      "liq": "ILLIQUID_offer"
+    },
+    "Antonee Robinson": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189,
+      "liq": "ILLIQUID_offer"
+    },
+    "Arthur Theate": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Auston Trusty": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1276695,
+      "liq": "ILLIQUID_offer"
+    },
+    "Axel Witsel": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Brandon Mechele": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Brenden Aaronson": {
+      "bid": null,
+      "offer": 0.4202,
+      "mid": 0.39708899999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Charles De Ketelaere": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": 0.38726099999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Chris Richards": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.147609,
+      "liq": "ILLIQUID_offer"
+    },
+    "Christian Pulisic": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": 0.44159849999999995,
+      "liq": "ILLIQUID_offer"
+    },
+    "Cristian Roldan": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Diego Moreira": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Dodi Lukebakio": {
+      "bid": null,
+      "offer": 0.3731,
+      "mid": 0.3525795,
+      "liq": "ILLIQUID_offer"
+    },
+    "Folarin Balogun": {
+      "bid": null,
+      "offer": 0.4902,
+      "mid": 0.463239,
+      "liq": "ILLIQUID_offer"
+    },
+    "Giovanni Reyna": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Haji Wright": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Hans Vanaken": {
+      "bid": null,
+      "offer": 0.3356,
+      "mid": 0.317142,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jeremy Doku": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.357966,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joaquin Seys": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Joseph Scally": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Kevin De Bruyne": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": 0.410886,
+      "liq": "ILLIQUID_offer"
+    },
+    "Koni De Winter": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Leandro Trossard": {
+      "bid": null,
+      "offer": 0.3731,
+      "mid": 0.3525795,
+      "liq": "ILLIQUID_offer"
+    },
+    "Malik Tillman": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.357966,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mark McKenzie": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Matias Fernandez Pardo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Max Arfsten": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Maxim De Cuyper": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": 0.304857,
+      "liq": "ILLIQUID_offer"
+    },
+    "Miles Robinson": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Nathan Ngoy": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nicolas Thierry Raskin": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": 0.2554335,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ricardo Pepi": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": 0.44159849999999995,
+      "liq": "ILLIQUID_offer"
+    },
+    "Romelu Lukaku": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": 0.421848,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sebastian Berhalter": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.344925,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sergino Dest": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": 0.304857,
+      "liq": "ILLIQUID_offer"
+    },
+    "Thomas Meunier": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853145,
+      "liq": "ILLIQUID_offer"
+    },
+    "Timothy Weah": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Timoty Castagne": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.147609,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tim Ream": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.11245499999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tyler Adams": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575315,
+      "liq": "ILLIQUID_offer"
+    },
+    "Weston McKennie": {
+      "bid": null,
+      "offer": 0.3472,
+      "mid": 0.328104,
+      "liq": "ILLIQUID_offer"
+    },
+    "Youri Tielemans": {
+      "bid": null,
+      "offer": 0.2778,
+      "mid": 0.262521,
+      "liq": "ILLIQUID_offer"
+    },
+    "Zeno Debast": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149064012": {
+    "Alejandro Zendejas": {
+      "bid": null,
+      "offer": 0.5747,
+      "mid": 0.5430915,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alex Freeman": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.219807,
+      "liq": "ILLIQUID_offer"
+    },
+    "Alexis Saelemaekers": {
+      "bid": null,
+      "offer": 0.5128,
+      "mid": 0.484596,
+      "liq": "ILLIQUID_offer"
+    },
+    "Amadou Onana": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    },
+    "Antonee Robinson": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": 0.1783215,
+      "liq": "ILLIQUID_offer"
+    },
+    "Arthur Theate": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.205443,
+      "liq": "ILLIQUID_offer"
+    },
+    "Auston Trusty": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Axel Witsel": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.20109599999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Brandon Mechele": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Brenden Aaronson": {
+      "bid": null,
+      "offer": 0.5714,
+      "mid": 0.539973,
+      "liq": "ILLIQUID_offer"
+    },
+    "Charles De Ketelaere": {
+      "bid": null,
+      "offer": 0.6024,
+      "mid": 0.569268,
+      "liq": "ILLIQUID_offer"
+    },
+    "Chris Richards": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575315,
+      "liq": "ILLIQUID_offer"
+    },
+    "Christian Pulisic": {
+      "bid": null,
+      "offer": 0.625,
+      "mid": 0.590625,
+      "liq": "ILLIQUID_offer"
+    },
+    "Cristian Roldan": {
+      "bid": null,
+      "offer": 0.4167,
+      "mid": 0.3937815,
+      "liq": "ILLIQUID_offer"
+    },
+    "Diego Moreira": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": 0.38726099999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Dodi Lukebakio": {
+      "bid": null,
+      "offer": 0.5917,
+      "mid": 0.5591565,
+      "liq": "ILLIQUID_offer"
+    },
+    "Folarin Balogun": {
+      "bid": null,
+      "offer": 0.7042,
+      "mid": 0.665469,
+      "liq": "ILLIQUID_offer"
+    },
+    "Giovanni Reyna": {
+      "bid": null,
+      "offer": 0.5263,
+      "mid": 0.49735349999999995,
+      "liq": "ILLIQUID_offer"
+    },
+    "Haji Wright": {
+      "bid": null,
+      "offer": 0.6993,
+      "mid": 0.6608385,
+      "liq": "ILLIQUID_offer"
+    },
+    "Hans Vanaken": {
+      "bid": null,
+      "offer": 0.4545,
+      "mid": 0.4295025,
+      "liq": "ILLIQUID_offer"
+    },
+    "Jeremy Doku": {
+      "bid": null,
+      "offer": 0.5917,
+      "mid": 0.5591565,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joaquin Seys": {
+      "bid": null,
+      "offer": 0.2778,
+      "mid": 0.262521,
+      "liq": "ILLIQUID_offer"
+    },
+    "Joseph Scally": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.16575299999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Kevin De Bruyne": {
+      "bid": null,
+      "offer": 0.625,
+      "mid": 0.590625,
+      "liq": "ILLIQUID_offer"
+    },
+    "Koni De Winter": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Leandro Trossard": {
+      "bid": null,
+      "offer": 0.5587,
+      "mid": 0.5279714999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Malik Tillman": {
+      "bid": null,
+      "offer": 0.5848,
+      "mid": 0.5526359999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Mark McKenzie": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.1968435,
+      "liq": "ILLIQUID_offer"
+    },
+    "Matias Fernandez Pardo": {
+      "bid": null,
+      "offer": 0.5952,
+      "mid": 0.562464,
+      "liq": "ILLIQUID_offer"
+    },
+    "Max Arfsten": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.357966,
+      "liq": "ILLIQUID_offer"
+    },
+    "Maxim De Cuyper": {
+      "bid": null,
+      "offer": 0.3571,
+      "mid": 0.33745949999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Miles Robinson": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2147985,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nathan Ngoy": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.16575299999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Nicolas Thierry Raskin": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.29077649999999994,
+      "liq": "ILLIQUID_offer"
+    },
+    "Ricardo Pepi": {
+      "bid": null,
+      "offer": 0.6993,
+      "mid": 0.6608385,
+      "liq": "ILLIQUID_offer"
+    },
+    "Romelu Lukaku": {
+      "bid": null,
+      "offer": 0.6711,
+      "mid": 0.6341895,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sebastian Berhalter": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": 0.38726099999999997,
+      "liq": "ILLIQUID_offer"
+    },
+    "Sergino Dest": {
+      "bid": null,
+      "offer": 0.3876,
+      "mid": 0.366282,
+      "liq": "ILLIQUID_offer"
+    },
+    "Thomas Meunier": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": 0.24541649999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Timothy Weah": {
+      "bid": null,
+      "offer": 0.578,
+      "mid": 0.54621,
+      "liq": "ILLIQUID_offer"
+    },
+    "Timoty Castagne": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.17180099999999998,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tim Ream": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524285,
+      "liq": "ILLIQUID_offer"
+    },
+    "Tyler Adams": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.219807,
+      "liq": "ILLIQUID_offer"
+    },
+    "Weston McKennie": {
+      "bid": null,
+      "offer": 0.5236,
+      "mid": 0.4948019999999999,
+      "liq": "ILLIQUID_offer"
+    },
+    "Youri Tielemans": {
+      "bid": 0.3704,
+      "offer": 0.4167,
+      "mid": 0.39355,
+      "liq": "LIQUID"
+    },
+    "Zeno Debast": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.20109599999999997,
+      "liq": "ILLIQUID_offer"
+    }
+  },
+  "149054080": {
+    "Yes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "No": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054085": {
+    "USA": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Draw": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Belgium": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054245": {
+    "Under 3.5 cards": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Over 3.5 cards": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054405": {
+    "Under 4.5 shots on target": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Over 4.5 shots on target": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054453": {
+    "Under 4.5 shots on target": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Over 4.5 shots on target": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054258": {
+    "Under 10.5 corners": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Over 10.5 corners": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054211": {
+    "USA": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    },
+    "Belgium": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liq": "NO_QUOTE"
+    }
+  },
+  "149054115": {
+    "Under 2.5 goals": {
+      "bid": 0.4132,
+      "offer": 0.4274,
+      "mid": 0.4203,
+      "liq": "LIQUID"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5682,
+      "offer": 0.5848,
+      "mid": 0.5765,
+      "liq": "LIQUID"
+    }
+  },
+  "149054120": {
+    "Under 0.5 goals": {
+      "bid": 0.2899,
+      "offer": 0.2985,
+      "mid": 0.2942,
+      "liq": "LIQUID"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7042,
+      "offer": 0.7194,
+      "mid": 0.7118,
+      "liq": "LIQUID"
+    }
+  },
+  "149054123": {
+    "Under 0.5 goals": {
+      "bid": 0.1613,
+      "offer": 0.2041,
+      "mid": 0.1827,
+      "liq": "LIQUID"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7937,
+      "offer": 0.8403,
+      "mid": 0.817,
+      "liq": "LIQUID"
+    }
+  }
+}

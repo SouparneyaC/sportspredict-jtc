@@ -1,0 +1,269 @@
+{
+  "_description": "Per-question instrument-to-outcome trace. Each question mapped through all 5 layers: raw sources → statistical processing → rules applied → category → estimate → result",
+  "match": "Mexico vs Ecuador — 2026-06-30",
+  "actual_score": "Mexico 2-0 Ecuador",
+  "match_rbp_total": 154.20,
+
+  "traces": [
+    {
+      "q": 1,
+      "text": "Will Raúl Jiménez (Mexico) score a goal?",
+      "layer1_raw_sources": {
+        "ESPN": "Jimenez box scores from events 760415 (1G, 2SOT, starter vs RSA), 760441 (0G, 1SOT, starter vs KOR), 760467 (not a starter, rested vs CZE). Pulled from rosters[].roster[].stats.",
+        "Smarkets": "ILLIQUID — no bid/offer present for any anytime_goalscorer market (event 45161448)"
+      },
+      "layer2_processing": "Thinned Poisson: lambda_MEX_goals=1.160 × 0.33 goal_share = lambda_jimenez=0.383 → P(scores)=1-exp(-0.383)=0.318",
+      "layer3_rules": "RULE5 (n=2 thin sample, trim), RULE12 (removing RSA collapses estimate, low confidence)",
+      "layer4_category": "PLAYER_ILLIQUID",
+      "layer5_estimate": 0.27,
+      "crowd": 0.31,
+      "outcome": "YES (Jimenez scored)",
+      "rbp": -6.32,
+      "beat_crowd": false,
+      "verdict": "Miss — submitted NO lean, outcome was YES. Thinned Poisson too conservative."
+    },
+    {
+      "q": 2,
+      "text": "Will the second half produce more goals than the first half?",
+      "layer1_raw_sources": {
+        "Smarkets": "Highest Scoring Half 3-way market (event 45161448): 2H=0.3978, Equal=0.3275, 1H=0.2769 — liquid"
+      },
+      "layer2_processing": "Direct market read — Second Half contract = 0.3978, rounded to 0.40",
+      "layer3_rules": "None",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.40,
+      "crowd": 0.49,
+      "outcome": "NO (1H had more goals OR equal)",
+      "rbp": 18.96,
+      "beat_crowd": true,
+      "verdict": "Win — first half had more goals. Our estimate (0.40) vs crowd (0.49) reflects better calibration on half-goal distribution."
+    },
+    {
+      "q": 3,
+      "text": "Will Mexico have more shots on target than Ecuador?",
+      "layer1_raw_sources": {
+        "Smarkets": "MEX SOT OU3.5 Over=0.5407 → lambda_MEX=3.870. ECU SOT OU2.5 Over=0.5823 → lambda_ECU=3.025. Both liquid."
+      },
+      "layer2_processing": "Skellam: 1-skellam.cdf(0, 3.870, 3.025) = 0.550. RULE8 blend: 0.65×0.550 + 0.35×0.50 = 0.533",
+      "layer3_rules": "RULE8 (draw=34.25%, fires — blend toward 0.50)",
+      "layer4_category": "TEAM_MODEL",
+      "layer5_estimate": 0.53,
+      "crowd": 0.55,
+      "outcome": "YES (Mexico had more SOT)",
+      "rbp": -0.17,
+      "beat_crowd": false,
+      "verdict": "Marginal loss — both we and crowd right on direction, crowd 2pp closer to YES outcome."
+    },
+    {
+      "q": 4,
+      "text": "Will the match have 2 or fewer total goals?",
+      "layer1_raw_sources": {
+        "Smarkets": "OU2.5 Under=0.6996 (liquid). OU3.5 Under=0.8624 (liquid). Mexico group record: 2+1+3=6G in 3 matches but ECU competitive avg only 1G per match.",
+        "ESPN": "Mexico 0 goals conceded in all 3 group matches. ECU scored 2 goals in 3 matches (2G in just the GER match)."
+      },
+      "layer2_processing": "Direct market read: OU2.5 Under = 0.6996 → 0.70. Cross-check: lambda_total=1.966, Poisson P(<=2)=0.700. Perfect alignment.",
+      "layer3_rules": "None",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.70,
+      "crowd": 0.61,
+      "outcome": "YES (exactly 2 total goals: MEX 2-0 ECU)",
+      "rbp": 16.46,
+      "beat_crowd": true,
+      "verdict": "Win — strongest single YES call and it hit. Our 0.70 vs crowd's 0.61 shows we correctly identified the low-scoring structure of this match."
+    },
+    {
+      "q": 5,
+      "text": "Will Gonzalo Plata (Ecuador) score or assist a goal?",
+      "layer1_raw_sources": {
+        "ESPN": "Plata box scores: 0G/0A/1SOT vs CIV, 0G/0A/3SOT vs CUR (outlier), 1G/0A/1SOT vs GER. Card-prone: 4 fouls + 1YC vs GER. All from rosters[].roster[].stats.",
+        "Smarkets": "ILLIQUID — no bid/offer for any player prop"
+      },
+      "layer2_processing": "Thinned Poisson: lambda_ECU=0.806 × 0.35 goal_share = lambda_plata=0.282 → P(scores)=0.246. P(score OR assist)≈0.321",
+      "layer3_rules": "RULE5 (trim for small sample), card-risk shade",
+      "layer4_category": "PLAYER_ILLIQUID",
+      "layer5_estimate": 0.28,
+      "crowd": 0.28,
+      "outcome": "NO (Plata neither scored nor assisted — Mexico won to nil)",
+      "rbp": 3.92,
+      "beat_crowd": true,
+      "verdict": "Small win — identical estimates, slight numerical advantage when outcome was NO. Mexico clean sheet killed any ECU player props."
+    },
+    {
+      "q": 6,
+      "text": "Will Mexico have 6 or more shots on target?",
+      "layer1_raw_sources": {
+        "ESPN": "Mexico SOT history: 4 (vs RSA), 4 (vs KOR), 5 (vs CZE). Never reached 6 in any WC2026 group match.",
+        "Smarkets": "MEX SOT OU3.5 Over=0.5407 → lambda_MEX_SOT=3.870 (liquid)"
+      },
+      "layer2_processing": "Poisson tail: 1-poisson.cdf(5, 3.870) = P(>=6 SOT) = 0.195",
+      "layer3_rules": "None",
+      "layer4_category": "TEAM_MODEL",
+      "layer5_estimate": 0.19,
+      "crowd": 0.35,
+      "outcome": "NO (Mexico did not reach 6 SOT)",
+      "rbp": 23.44,
+      "beat_crowd": true,
+      "verdict": "Strong win — 16pp gap on a NO outcome. ESPN history (4, 4, 5) was a concrete ceiling the crowd ignored. Key process lesson."
+    },
+    {
+      "q": 7,
+      "text": "Will a goal be scored from outside the penalty area?",
+      "layer1_raw_sources": {
+        "Historical": "WC knockout-stage base rate: ~8-12% of goals are from outside the box",
+        "ESPN": "No direct ESPN metric for OTB goals. No Smarkets market available.",
+        "Smarkets": "No market"
+      },
+      "layer2_processing": "Base rate: expected_goals=2.0 × OTB_rate=0.10 = 0.20 expected OTB goals → P(>=1) = 1-exp(-0.20) = 0.18",
+      "layer3_rules": "None (no rules apply to base-rate questions)",
+      "layer4_category": "BASE_RATE",
+      "layer5_estimate": 0.18,
+      "crowd": 0.27,
+      "outcome": "NO (no goal from outside the box)",
+      "rbp": 13.13,
+      "beat_crowd": true,
+      "verdict": "Win — crowd overpriced OTB goals at 27%. Our conservative base rate was rewarded."
+    },
+    {
+      "q": 8,
+      "text": "Will an own goal be scored?",
+      "layer1_raw_sources": {
+        "Historical": "WC2022: 6 OGs in 64 matches = 9.4% base rate. No Smarkets market.",
+        "ESPN": "Mexico: 0 OGs in 3 group matches. No cross-heavy attack profile from ECU in competitive matches."
+      },
+      "layer2_processing": "Base rate: WC OG rate ≈ 9.4%. Conservative trim given tight match and Mexico's clean record → 0.08",
+      "layer3_rules": "None",
+      "layer4_category": "BASE_RATE",
+      "layer5_estimate": 0.08,
+      "crowd": 0.14,
+      "outcome": "NO (no own goal)",
+      "rbp": 7.09,
+      "beat_crowd": true,
+      "verdict": "Win — our lower base rate was correct. Crowd at 14% was overpriced."
+    },
+    {
+      "q": 9,
+      "text": "Will Mexico win in regulation?",
+      "layer1_raw_sources": {
+        "Smarkets": "FTR Mexico=0.4329, Draw=0.3425, Ecuador=0.2300 (all liquid)"
+      },
+      "layer2_processing": "Direct market read: Mexico = 0.4329 → 0.43",
+      "layer3_rules": "None (FTR market already calibrated for draw probability)",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.43,
+      "crowd": 0.48,
+      "outcome": "YES (Mexico won 2-0)",
+      "rbp": -7.22,
+      "beat_crowd": false,
+      "verdict": "Loss despite correct direction — crowd at 0.48 was closer to the YES=1.0 outcome. We submitted direct market (0.43) but crowd was 5pp higher. If we had gone higher on Mexico, we would have beaten crowd."
+    },
+    {
+      "q": 10,
+      "text": "Will there be 9 or more total corner kicks?",
+      "layer1_raw_sources": {
+        "ESPN": "Mexico corners: 3, 1, 1 (avg 1.67 — lowest of any KO team). ECU competitive corners: 6 (vs CIV), 3 (vs GER) = avg 4.5.",
+        "Smarkets": "Corners OU8.5 Over=0.4007 (liquid)"
+      },
+      "layer2_processing": "Direct market read: OU8.5 Over = 0.4007 → 0.40. ESPN model would have given ~0.20-0.25 based on expected 6.2 total corners. Market overruled ESPN.",
+      "layer3_rules": "Direct market trust protocol (liquid market overrules ESPN-only model)",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.40,
+      "crowd": 0.47,
+      "outcome": "YES (9+ corners occurred)",
+      "rbp": -11.80,
+      "beat_crowd": false,
+      "verdict": "Loss — both we and crowd underpriced corners. Crowd at 0.47 was less wrong. Mexico's corner count surprised. Knockout-round context (more set-pieces from physical contest) may inflate corner counts above group-stage history."
+    },
+    {
+      "q": 11,
+      "text": "Will there be 4 or more total cards?",
+      "layer1_raw_sources": {
+        "ESPN": "ECU YC: 1, 1, 3 (avg 1.67). MEX YC: 1, 0, 1 (avg 0.67). ECU fouls avg 11.67, MEX fouls avg 11.33.",
+        "Smarkets": "Cards OU3.5 Over=0.5371 (liquid)"
+      },
+      "layer2_processing": "Direct market: OU3.5 Over = 0.5371 → 0.54. ESPN confirms: combined 2.33 YC avg/game with physical profile of both teams.",
+      "layer3_rules": "None",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.54,
+      "crowd": 0.51,
+      "outcome": "YES (4+ cards shown)",
+      "rbp": 9.98,
+      "beat_crowd": true,
+      "verdict": "Win — our slight YES lean beat crowd. Ecuador's card-prone history (3 YC vs Germany) and both teams' physical fouling profile drove the YES."
+    },
+    {
+      "q": 12,
+      "text": "Will there be 3 or more offside calls?",
+      "layer1_raw_sources": {
+        "ESPN": "MEX offsides: 1, 3, 0 (avg 1.33). ECU offsides: 0, 1, 1 (avg 0.67). Combined avg 2.0/game. ECU STRUCTURAL NOTE: 0 offsides in their biggest competitive match (vs CIV); rarely caught offside even when pressing heavily.",
+        "Smarkets": "No offsides market"
+      },
+      "layer2_processing": "Poisson: combined_lambda=2.0, P(>=3) = 1-poisson.cdf(2, 2.0) = 0.323. Shaded to 0.28 for RULE8 context (tight match = fewer forward runs) and ECU's structural low-offside profile.",
+      "layer3_rules": "RULE8 context (shade, not full blend)",
+      "layer4_category": "TEAM_MODEL",
+      "layer5_estimate": 0.28,
+      "crowd": 0.55,
+      "outcome": "NO (fewer than 3 offsides)",
+      "rbp": 49.58,
+      "beat_crowd": true,
+      "verdict": "LARGEST SINGLE WIN: +49.58 RBP. 27pp gap between us (0.28) and crowd (0.55). Crowd priced offsides generically; we had Ecuador's match-specific ESPN data showing consistently low offside counts. This is the defining example of match-specific data beating generic crowd priors."
+    },
+    {
+      "q": 13,
+      "text": "Will a goal be scored before the first hydration break?",
+      "layer1_raw_sources": {
+        "Smarkets": "Goal 1 time bracket (briefly liquid then suspended): 1-10=14.9%, 11-20=14.5%, 21-30=12.2%. Also: 1H OU0.5 Over=0.545.",
+        "Derived": "lambda_total_goals=1.966 → lambda_0-25min=1.966×(25/90)=0.546 → P=0.421"
+      },
+      "layer2_processing": "Time-window Poisson: lambda_window=0.546 → P=0.421. Time bracket sum: 1-10+11-20+partial21-25 ≈ 0.354. Central estimate: 0.40.",
+      "layer3_rules": "TIMING_EARLY category (reliable per knockout deep-dive) — trusted near-raw",
+      "layer4_category": "TIMING_EARLY",
+      "layer5_estimate": 0.40,
+      "crowd": 0.34,
+      "outcome": "YES (goal scored before first hydration break)",
+      "rbp": 19.83,
+      "beat_crowd": true,
+      "verdict": "Win — goal came early. Our 0.40 (vs crowd's 0.34) from time-window Poisson was closer to truth. TIMING_EARLY category maintains perfect record."
+    },
+    {
+      "q": 14,
+      "text": "Will a penalty kick be awarded?",
+      "layer1_raw_sources": {
+        "Smarkets": "Penalty Yes=0.258 (wide spread: bid=0.2083, offer=0.3077) — liquid but wide"
+      },
+      "layer2_processing": "Raw market mid: 0.258 → 0.26",
+      "layer3_rules": "None",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.26,
+      "crowd": 0.25,
+      "outcome": "NO (no penalty awarded)",
+      "rbp": 1.71,
+      "beat_crowd": true,
+      "verdict": "Marginal win — 1pp below crowd when outcome was NO. Small positive contribution."
+    },
+    {
+      "q": 15,
+      "text": "Will there be 20 or more total shots?",
+      "layer1_raw_sources": {
+        "Smarkets": "Shots OU20.5 Over=0.521 → lambda=20.91. Shots OU21.5 Over=0.465 → lambda=21.26. Both liquid.",
+        "ESPN": "MEX group avg shots 11.67 + ECU competitive avg shots 9.5 = ~21.2 combined. Confirms market lambda."
+      },
+      "layer2_processing": "Two-market lambda average: (20.91+21.26)/2 = 21.085 → P(>=20) = 1-poisson.cdf(19, 21.085) = 0.623",
+      "layer3_rules": "None",
+      "layer4_category": "DIRECT_MARKET",
+      "layer5_estimate": 0.62,
+      "crowd": 0.56,
+      "outcome": "YES (20+ total shots occurred)",
+      "rbp": 15.63,
+      "beat_crowd": true,
+      "verdict": "Win — dual-market lambda cross-validated by ESPN team averages gave us higher conviction than crowd. Both sources pointed to ~21 shots expected."
+    }
+  ],
+
+  "category_performance_this_match": {
+    "DIRECT_MARKET": {"questions": [2,4,9,10,11,14,15], "beat": 5, "below": 2, "rbp_total": 73.77},
+    "TEAM_MODEL": {"questions": [3,6,12], "beat": 2, "below": 1, "rbp_total": 72.85},
+    "PLAYER_ILLIQUID": {"questions": [1,5], "beat": 1, "below": 1, "rbp_total": -2.40},
+    "TIMING_EARLY": {"questions": [13], "beat": 1, "below": 0, "rbp_total": 19.83},
+    "BASE_RATE": {"questions": [7,8], "beat": 2, "below": 0, "rbp_total": 20.22}
+  }
+}

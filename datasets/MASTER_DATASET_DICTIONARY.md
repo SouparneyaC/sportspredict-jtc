@@ -1,9 +1,11 @@
 # master_question_dataset.csv — Data Dictionary
 
 **Built by:** `datasets/build_master_dataset.py` (read-only against all raw data; writes only to `datasets/master_question_dataset.csv`)
-**Built from:** every match file in `data/external_markets/*.json` (49 matches) + joined external sources
-**Grain:** one row per (match, question) — 480 rows, 49 matches, 73 columns
+**Built from:** every match file in `data/external_markets/*.json`, plus every knockout-stage match folder in `matches/*/` (the newer `01_espn_data.json` … `06_post_match_results.json` layout), deduplicated by match code + joined external sources
+**Grain:** one row per (match, question) — 730 rows, 66 matches, 107 columns (as of 2026-07-06 rebuild)
 **Validated against:** 12 specific RBP figures independently documented in `STEPS_FOR_HIGH_POINTS.md` — all match exactly. See `DATASET_AUDIT_2026-06-26.md` Section 7 for the full build log.
+
+**Known gap (2026-07-06):** 12 R32-stage matches (2026-06-26 to 2026-06-30) have no post-match/settlement data anywhere in the repo, so they contribute zero rows: `ALG-AUT, CDR-UZB, COL-POR, CRO-GHA, EGY-IRN, FRA-SWE, JOR-ARG, NOR-CIV, NZL-BEL, PAN-ENG, SUI-ALG, URU-ESP`. These were priced (raw pre-match files exist in `data/external_markets/`) but the outcome/RBP data was apparently never pasted back in, the same failure mode already fixed once for POR-CRO/ESP-AUT/BEL-SEN on 2026-07-06 (see project memory). Until these are backfilled, the cumulative RBP total and per-question Brier mapping below are undercounting the true campaign total by roughly these 12 matches' worth of questions (~120-180 questions based on the ~10-15/match average elsewhere).
 
 Run `python3 datasets/build_master_dataset.py` from anywhere to rebuild it (paths resolve relative to the script, not your cwd). Rerun any time a new match file is added to `data/external_markets/`.
 
@@ -61,6 +63,8 @@ Run `python3 datasets/build_master_dataset.py` from anywhere to rebuild it (path
 | `outcome_known` | boolean convenience flag for the above |
 | `rbp` | Relative Brier Points actually earned. **Blank (not 0) for any question that was never actually submitted** (see `actually_submitted`) — this is a deliberate change from the raw file's literal `0`, to avoid conflating "never competed" with "competed and scored exactly zero." |
 | `beat_crowd` | True/False/blank to match the blank-vs-zero distinction on `rbp` above |
+| `our_brier_score` | Raw per-question Brier score of our submission: `(our_estimate − outcome)²`, lower is better. Blank if not `actually_submitted`, or if `our_estimate`/`outcome` is missing (135 scored rows lack this — the raw file recorded an `rbp` but not the underlying `our_estimate`, a genuine source-data gap, not a join failure). **Not the same metric as `rbp`** — JTC's RBP formula is not simply `crowd_brier_score − our_brier_score` scaled by a constant (checked directly: the implied scaling factor varies question to question), so treat the two as complementary, not interchangeable. |
+| `crowd_brier_score` | Same formula against `crowd_estimate` instead: `(crowd_estimate − outcome)²`. Useful for the crowd-vs-us raw-accuracy comparison already noted in project memory (crowd's mean raw Brier is *slightly better* than ours — 0.218 vs 0.219 across all scored questions — even though we beat the crowd's RBP on 69.2% of questions, because our edge concentrates on higher-leverage questions rather than being spread evenly). |
 | `actually_submitted` | **False** for the ~20 questions across `BIH-QAT` (11 questions, fully researched but never submitted before the deadline — a documented process failure, see `STEPS_FOR_HIGH_POINTS.md` Loss Pattern #3) and `URU-CPV` (10 questions, calibration-only). For these rows, `our_estimate` is the retrospective "would-have-been" value, not a real platform submission. |
 | `is_player_prop`, `player_key` | True + the matched player-profile key when the question text contains a name that appears in the raw file's `player_profiles` block |
 | `postmortem_note` | the rich free-text explanation attached to this question's outcome in the raw file, when present (currently discarded by both pre-existing flat datasets) |

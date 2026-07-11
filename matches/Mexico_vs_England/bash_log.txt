@@ -1,0 +1,54 @@
+=== MEXICO vs ENGLAND — FULL SESSION LOG ===
+Date: 2026-07-05/06, R16
+ESPN Event ID: 760505 | Smarkets Event ID: 45169601
+
+Pre-work: same 4-team Explore-agent sweep as BRA-NOR (see chat summary). Key carried-forward lesson
+specific to this match: the "Ghana-analogy overfit" -- England twice mispriced attacking props by
+treating their 0-0 Ghana deep-block game as the template rather than the floor/outlier (cost -26.27 and
+-11.36 RBP). Mexico is a similarly compact, low-corner, defensively organized side -- exactly the profile
+that could tempt the same mistake again. Also carrying forward WINNING_PATTERNS_SYNTHESIS.md Cluster-B
+discipline for the England-SOT-threshold question, since this exact team/question type already lost once.
+
+--- ESPN DATA (4 games each) ---
+MEXICO: W2-0 RSA, W1-0 KOR, W3-0 CZE (rotated), W2-0 ECU (R32). 3 clean sheets, lowest-corner team in the
+  tournament (1.67/game). Jiménez: 2 goals in 3 appearances (rested vs CZE). Quiñones: goals in 3/4 games,
+  and 1+ SOT in literally EVERY game (4/4) -- a clean personal floor.
+ENGLAND: W4-2 CRO, D0-0 GHA (86% favorite, major upset), W2-0 PAN (away), W2-1 CDR (R32). Corners
+  remarkably stable: 8,9,7. Kane: 4 goals in 4 games (blanked only vs Ghana). Bellingham: 2+ SOT in the
+  Croatia AND Congo DR (R32, deep-block) games -- NOT just the high-scoring game, real evidence he
+  produces even against defensive opposition, contrary to what the Ghana blank alone would suggest.
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45169601, 177 markets.
+FTR: Mexico 31.01%, Draw 31.01%, England 38.77% -- Mexico and Draw priced identically; RULE8 fires hard.
+ENG SOT OU3.5 Over=58.23% -> lambda=4.08 -> P(5+)=38.7%; empirical (incl. Ghana)=80.3%, (excl. Ghana
+  outlier)=90.0%. DELIBERATELY stayed at market (0.40) -- this is the SAME team/question type that already
+  lost -11.36 RBP once this campaign from blending upward; refusing to repeat it on the same team twice.
+Most_corners England=59.89% -- consistent with England's stable corner history and Mexico's low-corner profile.
+Total shots OU21.5 Over=46.73% -> lambda=21.29 -> P(18+)=79.1% (market-anchored, high confidence).
+Cards lambda=3.261, goals lambda=2.288 -> P(cards > goals)=57.7% (compound calc).
+Goal after 2nd hydration break (~69'): lambda scaled to window=0.590 -> P=44.6%, shaded within the
+  established 0.45-0.55 caution band for late-window no-market timing questions.
+To_qualify England=52.77%. HT Draw=48.32% (very high, consistent with RULE8). Penalty shootout=18.75%.
+
+Player markets:
+  Kane anytime scorer: mid=36.23% (liquid) -- kept close to market, explicitly NOT suppressing for a
+    Ghana-style worry about Mexico's defensive setup
+  Bellingham SOT OU1.5: mid=17.42% (liquid) -- looks Ghana-anchored; bumped to 0.32 as a deliberate
+    correction using his Croatia + Congo DR evidence
+  Jimenez anytime scorer: illiquid, offer=25.32% (adj 23.93%) -- small bump to 0.28
+  Quinones SOT OU0.5: illiquid, offer=56.82% (adj 53.69%) -- bumped to 0.63, personal floor never missed (4/4)
+
+--- RULES CHECKED ---
+RULE1: market primary source | RULE6: clear, 0.19-0.78 | RULE7: inactive | RULE8: fires hard (31% draw)
+GHA_ANALOGY_CAUTION: applied in the corrective direction on Bellingham (Q2), not repeated on Kane (Q1)
+WINNING_PATTERNS_SYNTHESIS discipline: applied to Q10 (England 5+ SOT), same team/question as a prior loss
+
+--- FINAL ESTIMATES ---
+Q1 (Kane scores): 0.38 | Q2 (Bellingham 2+SOT): 0.32 | Q3 (England advance QF): 0.53
+Q4 (Jimenez scores): 0.28 | Q5 (Quinones 1+SOT): 0.63 | Q6 (tied HT): 0.48
+Q7 (4+cards): 0.42 | Q8 (England more corners): 0.60 | Q9 (goal after 2nd break): 0.45
+Q10 (England 5+SOT): 0.40 | Q11 (pen shootout): 0.19 | Q12 (BTTS): 0.48
+Q13 (more cards than goals): 0.58 | Q14 (18+ shots): 0.78 | Q15 (2 or fewer goals): 0.61
+
+Output: matches/Mexico_vs_England/{01-05}.json

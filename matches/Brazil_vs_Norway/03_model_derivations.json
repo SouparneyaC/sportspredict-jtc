@@ -1,0 +1,28 @@
+{
+  "_description": "Model derivations for Brazil vs Norway 2026-07-05 R16",
+  "lambda_fits": {
+    "brazil_sot_market_fit": 5.101,
+    "brazil_sot_empirical_4game": 6.5,
+    "cards_total_implied": null
+  },
+  "derived_probs": {
+    "p_bra_sot_6plus_market_only": 0.402,
+    "p_bra_sot_6plus_empirical_only": 0.631,
+    "p_bra_sot_6plus_FINAL_DECISION": 0.41,
+    "p_both_teams_carded": 0.3251
+  },
+  "rule_checks": {
+    "RULE1": "market primary source",
+    "RULE6": "clear, all estimates within 0.14-0.70",
+    "RULE7": "INACTIVE -- Norway win=20% is above the 15% threshold, genuinely competitive underdog not a blowout risk",
+    "RULE8": "borderline FIRES -- Draw=25.81%, just over the 25% threshold",
+    "WINNING_PATTERNS_SYNTHESIS_APPLIED": "Q14 (Brazil 6+ SOT) is a DIRECT repeat of the Cluster-B trap: market-fit lambda (5.10, ->40.2%) sits below Brazil's own empirical SOT average (6.5, ->63.1%). Per the validated cross-match finding (0-for-5 net -155.64 RBP on exactly this move), staying at the market (0.41) rather than blending upward. This is a deliberate, disciplined non-repeat of a now well-established losing pattern.",
+    "BOTH_TEAMS_CARDED_CALC": "P(BRA>=1 card)=1-e^-1.75=0.826, P(NOR>=1 card)=1-e^-0.5=0.393, product=0.325"
+  },
+  "espn_insight": {
+    "brazil_blowout_coast_pattern": "0 second-half goals in either group win where they led -- do not inflate Brazil-scores-both-halves-type props (not directly asked here but informs 2nd-half-more-goals reasoning)",
+    "brazil_opponent_stats_not_suppressed": "Haiti and Scotland both kept generating real stats (offsides, corners, SOT) even while being blown out 0-3 -- informs NOT suppressing Norway's own team-level numbers just because Brazil is favored",
+    "norway_regime_coverage": "Norway's SOT was actually higher against a tougher opponent (Senegal, 7) than a weak one (Iraq, 5) -- genuine evidence they don't collapse against better sides, unlike Canada's untested-in-a-blowout floor",
+    "haaland_tested_in_knockout": "Scored in all 3 appearances including the R32 knockout game vs Ivory Coast -- meaningfully better regime coverage than Ødegaard's assist streak (all 3 of his assists came against weaker opposition than Brazil)"
+  }
+}

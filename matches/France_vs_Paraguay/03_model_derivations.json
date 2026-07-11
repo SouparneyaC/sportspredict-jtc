@@ -1,0 +1,40 @@
+{
+  "_description": "Model derivations for France vs Paraguay 2026-07-04 R16",
+  "lambda_fits": {
+    "total_goals": 3.016,
+    "france_goals_market_fit": 2.528,
+    "france_sot_market_fit": 7.317,
+    "france_sot_empirical_4game": 8.5,
+    "france_corners_market_fit": 6.97,
+    "france_corners_empirical_4game": 6.0,
+    "cards_total": 2.847
+  },
+  "derived_probs": {
+    "p_fra_sot_7plus_market_only": 0.596,
+    "p_fra_sot_7plus_empirical_only": 0.744,
+    "p_fra_sot_7plus_blended_45_55": 0.677,
+    "p_fra_corners_6plus_market_only": 0.695,
+    "p_fra_corners_6plus_empirical_only": 0.554,
+    "p_fra_corners_6plus_blended_60_40": 0.639,
+    "p_cards_4plus": 0.319,
+    "p_sub_scores_formula": 0.343,
+    "p_goal_before_break_bracket": 0.490,
+    "p_goal_before_break_lambda_scaling": 0.541,
+    "p_goal_before_break_blended": 0.51
+  },
+  "rule_checks": {
+    "RULE1": "market primary source",
+    "RULE6": "clear, all estimates within 0.11-0.82",
+    "RULE7": "FIRES HARD -- Paraguay win=4.67%, comparable to ARG-CPV's Cape Verde (3.51%), the most extreme underdog territory this campaign",
+    "RULE8": "INACTIVE -- draw=13.52% well below 25%",
+    "RULE15_refinement_from_ARGCPV_postmortem": "Paraguay's most recent game (R32 vs Germany) is a genuine COMPETITIVE-performance precedent (led 1-0, drew 1-1 in regulation, forced ET) -- NOT a blowout-victim precedent. Per the ARG-CPV lesson, do not default to blanket blowout-suppression logic for Paraguay's team-level metrics; this is a team that has repeatedly shown it competes hard in exactly this kind of lopsided knockout matchup.",
+    "CAN_MOR_regime_coverage_check_applied": "Before blending toward any empirical 'floor' or 'ceiling', checked whether the team's own sample actually covers the plausible range of game states for today. France's SOT/corners empirical signal DOES have decent regime coverage (their best output came against their toughest opponent yet, Sweden in R32) -- unlike Canada's SOT floor, which never saw a blowout-loss game state. This supports a moderate (not full) blend toward empirical for Q6/Q10, well short of the aggressive 80% weighting that blew up on CAN-MOR.",
+    "ENCISO_SPECIFIC_LESSON": "GER-PAR Q8 (Enciso 1+ SOT) was suppressed to 0.32 based on his 0-SOT history and LOST -26.3 RBP when he broke through in a match where Paraguay's whole attacking ceiling shattered. Applying that same caution here: NOT over-suppressing Enciso this time despite his continued 0,0,0-then-1 SOT pattern -- trusting the market's more balanced 42.48% instead of re-running the same suppression play that already backfired once on this exact player."
+  },
+  "espn_insight": {
+    "france_sot_trend": "8, 5, 9, 12 -- rising through the tournament, peak vs their best opponent (Sweden R32)",
+    "dembele_bimodal_pattern": "2+ SOT only vs weaker/mid opposition (Iraq, Norway); blanked vs tougher opposition (Senegal, Sweden) -- Paraguay's defense, while resilient on scoreline, allows plenty of shots on target (conceded 6 SOT to Germany even in a game they drew), so this doesn't clearly suppress Dembele today",
+    "paraguay_lead_precedent": "Led at some point in 2 of 4 games (50%), most recently vs Germany (12 minutes) -- a real, recent, relevant data point for Q12",
+    "almiron_total_anonymity": "0 goals, 0 assists, 0 SOT in every game featured, missing from the Australia squad entirely -- a personal-zero signal independent of game state, distinct from the team-context Enciso case"
+  }
+}

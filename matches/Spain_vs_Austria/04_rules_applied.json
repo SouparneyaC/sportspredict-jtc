@@ -1,0 +1,188 @@
+{
+  "_description": "Rules applied to each question for Spain vs Austria 2026-07-02",
+  "global_context": {
+    "austria_win_prob": 0.0728,
+    "draw_prob": 0.164,
+    "rule7_fires": true,
+    "rule7_trigger": "Austria win=7.28% < 15%",
+    "rule7_effect": "Edge concentrates in underdog props (Q3, Q7). Suppress Austrian attacking stats vs crowd.",
+    "rule8_fires": false,
+    "rule8_check": "Draw prob=16.4% < 25% threshold \u2014 RULE8 inactive",
+    "rule6": "All estimates kept between 0.05-0.95. No violations.",
+    "rule10": "Not applicable to direct count props; cards/fouls don't rely on comparison.",
+    "rule14": "P(Spain more SOT) >> P(Spain more goals): Spain \u03bb_SOT=6.27 vs Austria \u03bb_SOT=2.10 \u2192 ~90%+ Spain more SOT. Consistent.",
+    "rule15": "Austria scenario A (blowout underdog, win<10%). Suppress Austria forward SOT props \u2192 already at 0.18 (below group avg frequency of 33%).",
+    "rule12": "Spain 8+ SOT: Spain group bimodal (7,8,1). Removing 1 (vs URU) changes estimate 0.294\u21920.40+. Flag: high sensitivity. But URU was structurally different (0-0 compact defense). Austria not comparable to URU. Keep 0.294 with note."
+  },
+  "per_question": [
+    {
+      "q": 1,
+      "question": "Yamal 2+ SOT",
+      "rule_fires": [],
+      "tier": "PLAYER_LIQUID",
+      "anchor": "Smarkets Player_SOT_OU1.5 Yamal mid=0.4652",
+      "effect": "Use direct liquid market. No rule modifications.",
+      "final_estimate": 0.465
+    },
+    {
+      "q": 2,
+      "question": "Oyarzabal score",
+      "rule_fires": [],
+      "tier": "PLAYER_LIQUID",
+      "anchor": "Smarkets Anytime goalscorer Oyarzabal mid=0.4536",
+      "effect": "Use direct liquid market. No rule modifications.",
+      "final_estimate": 0.454
+    },
+    {
+      "q": 3,
+      "question": "Sabitzer score or assist",
+      "rule_fires": [
+        "RULE7"
+      ],
+      "tier": "PLAYER_ILLIQUID",
+      "anchor": "Smarkets Score_or_assist Sabitzer offer=0.2222 \u2192 \u00d70.945=0.2100",
+      "model_check": "Austria \u03bb=0.641, Sabitzer share 30%: \u03bb_S+A=0.192, P=0.175",
+      "rule7_effect": "Confirms downside direction. Illiquid offer\u00d70.945 = 0.210. Model at 0.175. Take midpoint.",
+      "final_estimate": 0.2
+    },
+    {
+      "q": 4,
+      "question": "3+ total goals",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "Smarkets OU2.5 Over mid=0.5765. Model cross-check \u03bb_total=2.988 \u2192 P=0.574.",
+      "final_estimate": 0.577
+    },
+    {
+      "q": 5,
+      "question": "Spain scores first",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "Smarkets Team_to_score_first Spain mid=0.7587",
+      "final_estimate": 0.759
+    },
+    {
+      "q": 6,
+      "question": "Spain 8+ SOT",
+      "rule_fires": [
+        "RULE12_FLAG"
+      ],
+      "tier": "TEAM_MODEL",
+      "anchor": "Spain SOT OU6.5 Over=0.4365 \u2192 fit \u03bb=6.267 \u2192 P(SOT\u22658)=0.294",
+      "rule12_note": "Spain group SOT bimodal: 7,8 (vs easy opponents) and 1 (vs Uruguay compact). Removing URU changes estimate. Austria \u2260 Uruguay (Austria will defend but not as organized). Keep market-derived 0.294.",
+      "espn_data": "Spain SOT: [7, 8, 1]. Non-URU avg=7.5. URU was unique opponent.",
+      "final_estimate": 0.294
+    },
+    {
+      "q": 7,
+      "question": "Austria 4+ SOT",
+      "rule_fires": [
+        "RULE7",
+        "RULE15_SCENARIO_A"
+      ],
+      "tier": "TEAM_MODEL",
+      "anchor": "Derived: Austria shots OU6.5 Over=0.563 \u2192 \u03bb_shots=7.09 \u00d7 0.296conv = \u03bb_SOT=2.10 \u2192 P(SOT\u22654)=0.162",
+      "rule7_effect": "Edge concentrates in underdog props. Crowd likely at 0.30-0.35. Our model at 0.162.",
+      "rule15_effect": "Scenario A: blowout underdog. Suppress Austrian forward metrics.",
+      "espn_data": "Austria SOT: [4, 1, 3]. 4+ SOT in 1/3 group games (vs Jordan). vs ARG (dominant opp): 1 SOT.",
+      "final_estimate": 0.18
+    },
+    {
+      "q": 8,
+      "question": "Spain 7+ corners",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "Spain_corners_OU6.5 Over mid=0.4294",
+      "espn_data": "Spain corners: [11, 6, 6]. Avg=7.67. P(\u22657)=42.9% from market.",
+      "final_estimate": 0.429
+    },
+    {
+      "q": 9,
+      "question": "Spain ahead at HT",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "HT result Spain mid=0.5602",
+      "final_estimate": 0.56
+    },
+    {
+      "q": 10,
+      "question": "BTTS",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "BTTS Yes mid=0.4465. Sanity: P(Austria\u22651)=0.4786 \u00d7 P(Spain\u22651)\u22480.91=0.436.",
+      "final_estimate": 0.447
+    },
+    {
+      "q": 11,
+      "question": "Spain score both halves",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "Spain_score_both_halves Yes mid=0.4768",
+      "final_estimate": 0.477
+    },
+    {
+      "q": 12,
+      "question": "4+ total cards",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "Cards OU3.5 Over mid=0.2542",
+      "espn_data": "Spain avg YC=0.67, Austria avg YC=1.33. Combined=2.0/game. Knockout rates typically higher.",
+      "final_estimate": 0.254
+    },
+    {
+      "q": 13,
+      "question": "4+ total offsides",
+      "rule_fires": [
+        "NO_DIRECT_MARKET"
+      ],
+      "tier": "TEAM_MODEL",
+      "anchor": "No Smarkets offside market. ESPN-derived.",
+      "espn_offside_analysis": {
+        "spain_own_offsides": [
+          2,
+          2,
+          2
+        ],
+        "spain_opponents_offsides": [
+          3,
+          3,
+          5
+        ],
+        "spain_game_totals": [
+          5,
+          5,
+          7
+        ],
+        "spain_game_total_avg": 5.67,
+        "austria_own_offsides": [
+          3,
+          0,
+          3
+        ],
+        "assumption": "Spain generates ~2 own offsides. Austria vs Spain (dominant, high defensive line): expect 2 offsides, similar to CPV/KSA vs Spain but lower than URU.",
+        "combined_lambda": 4.0
+      },
+      "p_4plus": 0.567,
+      "note": "Consistent with Spain's historical game totals (5, 5, 7). Using \u03bb=4.0 conservative vs game avg 5.67.",
+      "final_estimate": 0.55
+    },
+    {
+      "q": 14,
+      "question": "Goal before hydration break",
+      "rule_fires": [],
+      "tier": "TIMING_EARLY",
+      "anchor": "1H_OU0.5 Over=0.7463 \u2192 \u03bb_1H=1.372 \u2192 scaled to 24': \u03bb_break=0.732 \u2192 P=0.519",
+      "timing_note": "TIMING_EARLY = best category (100% beat-crowd record in knockout stage). Spain extremely strong favorite, expected early goal probability high.",
+      "cross_check": "Spain_1H_OU0.5 Over=0.6603 \u2192 time-scaled: P(Spain goal before break)=0.437. Total (both teams) = 0.519.",
+      "final_estimate": 0.519
+    },
+    {
+      "q": 15,
+      "question": "Spain wins in regulation",
+      "rule_fires": [],
+      "tier": "DIRECT",
+      "anchor": "FTR Spain mid=0.7663",
+      "final_estimate": 0.766
+    }
+  ]
+}

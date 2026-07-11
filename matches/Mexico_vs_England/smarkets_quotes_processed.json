@@ -1,0 +1,249 @@
+{
+  "FTR": {
+    "Mexico": {
+      "bid": 0.3077,
+      "offer": 0.3125,
+      "mid": 0.3101
+    },
+    "Draw": {
+      "bid": 0.3077,
+      "offer": 0.3125,
+      "mid": 0.3101
+    },
+    "England": {
+      "bid": 0.3937,
+      "offer": 0.3817,
+      "mid": 0.3877
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.4762,
+      "offer": 0.4854,
+      "mid": 0.4808
+    },
+    "No": {
+      "bid": 0.5155,
+      "offer": 0.5291,
+      "mid": 0.5223
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.3226,
+      "offer": 0.3378,
+      "mid": 0.3302
+    },
+    "Over 1.5 goals": {
+      "bid": 0.6757,
+      "offer": 0.6803,
+      "mid": 0.678
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.5952,
+      "offer": 0.6173,
+      "mid": 0.6062
+    },
+    "Over 2.5 goals": {
+      "bid": 0.3876,
+      "offer": 0.3968,
+      "mid": 0.3922
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.8,
+      "offer": 0.813,
+      "mid": 0.8065
+    },
+    "Over 3.5 goals": {
+      "bid": 0.1923,
+      "offer": 0.1961,
+      "mid": 0.1942
+    }
+  },
+  "HT_result": {
+    "Mexico": {
+      "bid": 0.2381,
+      "offer": 0.2532,
+      "mid": 0.2456
+    },
+    "Draw": {
+      "bid": 0.4762,
+      "offer": 0.4902,
+      "mid": 0.4832
+    },
+    "England": {
+      "bid": 0.2667,
+      "offer": 0.2817,
+      "mid": 0.2742
+    }
+  },
+  "To_qualify": {
+    "Mexico": {
+      "bid": 0.4717,
+      "offer": 0.4762,
+      "mid": 0.4739
+    },
+    "England": {
+      "bid": 0.5263,
+      "offer": 0.5291,
+      "mid": 0.5277
+    }
+  },
+  "Penalty_shootout": {
+    "Yes": {
+      "bid": 0.1667,
+      "offer": 0.2083,
+      "mid": 0.1875
+    },
+    "No": {
+      "bid": 0.8,
+      "offer": 0.8772,
+      "mid": 0.8386
+    }
+  },
+  "ENG_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.3788,
+      "offer": 0.4545,
+      "mid": 0.4167
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.5435,
+      "offer": 0.6211,
+      "mid": 0.5823
+    }
+  },
+  "MEX_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.5556,
+      "offer": 0.6369,
+      "mid": 0.5962
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.3704,
+      "offer": 0.4464,
+      "mid": 0.4084
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.3623,
+      "offer": 0.4202,
+      "mid": 0.3912
+    },
+    "Over 2.5 cards": {
+      "bid": 0.5747,
+      "offer": 0.6757,
+      "mid": 0.6252
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.5814,
+      "offer": 0.5952,
+      "mid": 0.5883
+    },
+    "Over 3.5 cards": {
+      "bid": 0.4167,
+      "offer": 0.4274,
+      "mid": 0.4221
+    }
+  },
+  "Cards_OU4.5": {
+    "Under 4.5 cards": {
+      "bid": 0.7299,
+      "offer": 0.813,
+      "mid": 0.7714
+    },
+    "Over 4.5 cards": {
+      "bid": 0.1887,
+      "offer": 0.2667,
+      "mid": 0.2277
+    }
+  },
+  "Most_corners": {
+    "Mexico": {
+      "bid": 0.2597,
+      "offer": 0.3226,
+      "mid": 0.2912
+    },
+    "Draw": {
+      "bid": 0.0769,
+      "offer": 0.119,
+      "mid": 0.0979
+    },
+    "England": {
+      "bid": 0.565,
+      "offer": 0.6329,
+      "mid": 0.5989
+    }
+  },
+  "Total_shots_OU21.5": {
+    "Under 21.5 shots": {
+      "bid": 0.4386,
+      "offer": 0.5405,
+      "mid": 0.4895
+    },
+    "Over 21.5 shots": {
+      "bid": 0.4673,
+      "offer": null,
+      "mid": 0.4673
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.1515,
+      "offer": 0.1852,
+      "mid": 0.1683
+    },
+    "11-20": {
+      "bid": 0.1429,
+      "offer": 0.1724,
+      "mid": 0.1577
+    },
+    "21-30": {
+      "bid": 0.119,
+      "offer": 0.1471,
+      "mid": 0.1331
+    },
+    "31-40": {
+      "bid": 0.0952,
+      "offer": 0.122,
+      "mid": 0.1086
+    },
+    "41-50": {
+      "bid": 0.0909,
+      "offer": 0.119,
+      "mid": 0.1049
+    },
+    "51-60": {
+      "bid": 0.0625,
+      "offer": 0.087,
+      "mid": 0.0747
+    },
+    "61-70": {
+      "bid": 0.0476,
+      "offer": 0.0667,
+      "mid": 0.0571
+    },
+    "71-80": {
+      "bid": 0.0345,
+      "offer": 0.0513,
+      "mid": 0.0429
+    },
+    "81-90": {
+      "bid": 0.04,
+      "offer": 0.0571,
+      "mid": 0.0485
+    },
+    "None": {
+      "bid": 0.1,
+      "offer": 0.125,
+      "mid": 0.1125
+    }
+  }
+}

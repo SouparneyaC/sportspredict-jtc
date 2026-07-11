@@ -1,0 +1,103 @@
+{
+  "match": "KSA-URU",
+  "date": "2026-06-15",
+  "stage": null,
+  "post_match_results": {
+    "final_score": "Saudi Arabia 1 - 1 Uruguay",
+    "total_rbp": -14.33,
+    "beat_crowd_count": "7/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Saudi Arabia be caught offside 2 or more times?",
+        "us": 0.34,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 10.68,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will both teams have at least 1 shot on target in the second half?",
+        "us": 0.74,
+        "crowd": 0.67,
+        "outcome": 0,
+        "rbp": -7.84,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Saudi Arabia receive more cards than Uruguay?",
+        "us": 0.52,
+        "crowd": 0.49,
+        "outcome": 1,
+        "rbp": 4.73,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Uruguay score more goals than Saudi Arabia in the second half?",
+        "us": 0.57,
+        "crowd": 0.56,
+        "outcome": 1,
+        "rbp": 2.89,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will a penalty kick be awarded in the match?",
+        "us": 0.26,
+        "crowd": 0.32,
+        "outcome": 0,
+        "rbp": 5.83,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Saudi Arabia commit more fouls than Uruguay?",
+        "us": 0.41,
+        "crowd": 0.53,
+        "outcome": 1,
+        "rbp": -9.94,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will Uruguay have more shots on target than Saudi Arabia in the second half?",
+        "us": 0.3,
+        "crowd": 0.67,
+        "outcome": 1,
+        "rbp": -35.68,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Saudi Arabia win the match?",
+        "us": 0.11,
+        "crowd": 0.18,
+        "outcome": 0,
+        "rbp": 4.38,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Salem Al-Dawsari score or assist a goal (excluding own goals)?",
+        "us": 0.2,
+        "crowd": 0.27,
+        "outcome": 0,
+        "rbp": 5.33,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Darwin Núñez score a goal (excluding own goals)?",
+        "us": 0.38,
+        "crowd": 0.41,
+        "outcome": 0,
+        "rbp": 5.29,
+        "note": null
+      }
+    ]
+  }
+}

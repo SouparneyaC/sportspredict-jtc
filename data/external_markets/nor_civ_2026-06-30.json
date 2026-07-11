@@ -2,22 +2,83 @@
   "match": "Norway vs Ivory Coast",
   "date": "2026-06-30",
   "stage": "Round of 32 (knockout stage)",
-  "espn_event_ids": {"this_match": 760490, "NOR_vs_IRQ": 760430, "SEN_vs_NOR": 760454, "FRA_vs_NOR": 760475, "ECU_vs_CIV": 760423, "CIV_vs_GER": 760448, "CIV_vs_CUR": 760473},
+  "espn_event_ids": {
+    "this_match": 760490,
+    "NOR_vs_IRQ": 760430,
+    "SEN_vs_NOR": 760454,
+    "FRA_vs_NOR": 760475,
+    "ECU_vs_CIV": 760423,
+    "CIV_vs_GER": 760448,
+    "CIV_vs_CUR": 760473
+  },
   "smarkets_event_id": 45159661,
-  "prior_lessons_consulted": ["nor_sen_2026-06-22.json", "civ_ecu_2026-06-14.json", "ger_civ_2026-06-20.json", "cur_civ_2026-06-25.json", "STEPS_FOR_HIGH_POINTS.md (all Win/Loss patterns)", "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md (this is the 5th knockout match; explicitly applying the technique-level findings from the prior 4)"],
+  "prior_lessons_consulted": [
+    "nor_sen_2026-06-22.json",
+    "civ_ecu_2026-06-14.json",
+    "ger_civ_2026-06-20.json",
+    "cur_civ_2026-06-25.json",
+    "STEPS_FOR_HIGH_POINTS.md (all Win/Loss patterns)",
+    "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md (this is the 5th knockout match; explicitly applying the technique-level findings from the prior 4)"
+  ],
   "knockout_context": {
-    "Norway": {"group_record": "2W-1L, 6pts, GD+1 (W4-1 IRQ, W3-2 SEN, L1-4 FRA)", "status": "Mild favorite (45.5% straight win, 63.7% to qualify)"},
-    "Ivory Coast": {"group_record": "2W-1L, 6pts, GD+2 (W1-0 ECU, L1-2 GER, W2-0 CUR)", "status": "Underdog but NOT a mismatch — better GD than Norway despite fewer goals scored, consistent with their AFCON-2023-champion pedigree noted in the GER-CIV file"}
+    "Norway": {
+      "group_record": "2W-1L, 6pts, GD+1 (W4-1 IRQ, W3-2 SEN, L1-4 FRA)",
+      "status": "Mild favorite (45.5% straight win, 63.7% to qualify)"
+    },
+    "Ivory Coast": {
+      "group_record": "2W-1L, 6pts, GD+2 (W1-0 ECU, L1-2 GER, W2-0 CUR)",
+      "status": "Underdog but NOT a mismatch — better GD than Norway despite fewer goals scored, consistent with their AFCON-2023-champion pedigree noted in the GER-CIV file"
+    }
   },
   "wc2026_espn_stats": {
     "NOR": {
       "n_matches": 3,
       "matches": [
-        {"event_id": 760430, "opponent": "Iraq", "result": "W 4-1 (away)", "fouls": 13, "SOT": 5, "offsides": 0, "YC": 0, "RC": 0, "corners": 5, "possession": 61.3},
-        {"event_id": 760454, "opponent": "Senegal", "result": "W 3-2", "fouls": 13, "SOT": 7, "offsides": 0, "YC": 0, "RC": 0, "corners": 5, "possession": 41.7},
-        {"event_id": 760475, "opponent": "France", "result": "L 1-4", "fouls": 9, "SOT": 4, "offsides": 1, "YC": 1, "RC": 0, "corners": 4, "possession": 43.3}
+        {
+          "event_id": 760430,
+          "opponent": "Iraq",
+          "result": "W 4-1 (away)",
+          "fouls": 13,
+          "SOT": 5,
+          "offsides": 0,
+          "YC": 0,
+          "RC": 0,
+          "corners": 5,
+          "possession": 61.3
+        },
+        {
+          "event_id": 760454,
+          "opponent": "Senegal",
+          "result": "W 3-2",
+          "fouls": 13,
+          "SOT": 7,
+          "offsides": 0,
+          "YC": 0,
+          "RC": 0,
+          "corners": 5,
+          "possession": 41.7
+        },
+        {
+          "event_id": 760475,
+          "opponent": "France",
+          "result": "L 1-4",
+          "fouls": 9,
+          "SOT": 4,
+          "offsides": 1,
+          "YC": 1,
+          "RC": 0,
+          "corners": 4,
+          "possession": 43.3
+        }
       ],
-      "averages": {"fouls": 11.67, "SOT": 5.33, "offsides": 0.33, "YC": 0.33, "RC": 0.0, "corners": 4.67},
+      "averages": {
+        "fouls": 11.67,
+        "SOT": 5.33,
+        "offsides": 0.33,
+        "YC": 0.33,
+        "RC": 0.0,
+        "corners": 4.67
+      },
       "HAALAND_GD1_PROFILE": "From nor_sen_2026-06-22.json's haaland_profile block: 2 goals in GD1 (29', 43', both 1H), 5 shots, 4 SOT. 57 international goals in 51 caps. Confirms he is a genuine, proven high-volume threat, not a name riding a hot streak.",
       "NOR_SOT_PRECEDENT": "nor_sen_2026-06-22.json Q9 ('Norway 6+ SOT') settled YES (outcome confirmed in that file's match_facts) — direct precedent for today's identical question type. Norway is a real high-SOT-volume team, not just a name-brand favorite.",
       "FRANCE_LOSS_CONTEXT": "Norway lost 1-4 to France in their final group match — unlike Germany's GER-ECU rotation loss, no explicit rotation note exists in this file, so treat this as a genuine quality-gap result (France) rather than assuming a discounted/rotated performance. Do not over-extrapolate weakness from it given the much smaller talent gap to Ivory Coast."
@@ -25,30 +86,159 @@
     "CIV": {
       "n_matches": 3,
       "matches": [
-        {"event_id": 760423, "opponent": "Ecuador", "result": "W 1-0", "fouls": 10, "SOT": 4, "offsides": 0, "YC": 3, "RC": 0, "corners": 3, "possession": 48.4},
-        {"event_id": 760448, "opponent": "Germany", "result": "L 1-2", "fouls": 7, "SOT": 2, "offsides": 1, "YC": 0, "RC": 0, "corners": 3, "possession": 40.5},
-        {"event_id": 760473, "opponent": "Curacao", "result": "W 2-0 (away)", "fouls": 6, "SOT": 3, "offsides": 1, "YC": 1, "RC": 0, "corners": 6, "possession": 63.3}
+        {
+          "event_id": 760423,
+          "opponent": "Ecuador",
+          "result": "W 1-0",
+          "fouls": 10,
+          "SOT": 4,
+          "offsides": 0,
+          "YC": 3,
+          "RC": 0,
+          "corners": 3,
+          "possession": 48.4
+        },
+        {
+          "event_id": 760448,
+          "opponent": "Germany",
+          "result": "L 1-2",
+          "fouls": 7,
+          "SOT": 2,
+          "offsides": 1,
+          "YC": 0,
+          "RC": 0,
+          "corners": 3,
+          "possession": 40.5
+        },
+        {
+          "event_id": 760473,
+          "opponent": "Curacao",
+          "result": "W 2-0 (away)",
+          "fouls": 6,
+          "SOT": 3,
+          "offsides": 1,
+          "YC": 1,
+          "RC": 0,
+          "corners": 6,
+          "possession": 63.3
+        }
       ],
-      "averages": {"fouls": 7.67, "SOT": 3.0, "offsides": 0.67, "YC": 1.33, "RC": 0.0, "corners": 4.0},
+      "averages": {
+        "fouls": 7.67,
+        "SOT": 3.0,
+        "offsides": 0.67,
+        "YC": 1.33,
+        "RC": 0.0,
+        "corners": 4.0
+      },
       "GER_CIV_DIRECT_LESSON": "ger_civ_2026-06-20.json: CIV 2+ offsides settled NO (only 1 offside total) and our 0.18 beat the crowd by +18.70 — CIV is a genuinely disciplined, low-offside team against strong opposition, not just on paper. Also 0 total cards for the ENTIRE match that day and CIV actually led 1-0 at HT before Germany's 2H comeback — confirms 'AFCON 2023 champions, not a mismatch like Haiti' framing explicitly noted in that file. Amad Diallo (Man Utd), Diomande, Adingra, Pepe, Kessie all flagged as real quality depth."
     }
   },
   "smarkets_markets": {
-    "FTR": {"Ivory Coast": 0.2564, "Norway": 0.4545, "Draw": 0.2703, "liquid": true},
-    "To_qualify": {"Ivory Coast": 0.3817, "Norway": 0.6369, "liquid": true},
-    "Will_there_be_ET": {"Yes": 0.3279, "No": 0.7692, "liquid": true},
-    "BTTS": {"Yes": 0.5848, "No": 0.4348, "liquid": true},
-    "OU2_5_goals": {"Under": 0.5025, "Over": 0.5155, "liquid": true},
-    "OU3_5_goals": {"Under": 0.7246, "Over": 0.2985, "liquid": true},
-    "Cards_OU1_5": {"Under": 0.3125, "Over": 0.7692, "liquid": true},
-    "Cards_OU2_5": {"Under": 0.5263, "Over": 0.5882, "liquid": true},
-    "Cards_OU3_5": {"Under": 0.7353, "Over": 0.3226, "liquid": true},
-    "Penalty": {"Yes": 0.3077, "No": 0.7576, "liquid": true},
-    "Most_corners": {"Ivory Coast": 0.3175, "Norway": 0.6061, "Draw": 0.1220, "liquid": true},
-    "Norway_SOT_OU4_5": {"Under": 0.5000, "Over": 0.5814, "liquid": true, "implied_lambda": 5.13},
-    "Goal_1_time_bracket": {"1-10": 0.2174, "11-20": 0.2000, "21-30": 0.1613, "31-40": 0.1250, "41-50": 0.1163, "51-60": 0.0800, "61-70": 0.0588, "71-80": 0.0435, "81-90": 0.0455, "None": 0.0870, "liquid": true},
-    "Team_to_score_first_goal": {"Ivory Coast": 0.4167, "Norway": 0.5236, "No goal": 0.0909, "liquid": true},
-    "player_markets": {"Erling_Haaland_anytime_goalscorer": {"bid": 0.5128, "offer": 0.5155, "mid": 0.5142, "liquid": true}, "Martin_Odegaard_score_or_assist": {"offer": 0.3571, "adjusted": 0.3375}, "Amad_Diallo_1plus_SOT": {"offer": 0.5882, "adjusted": 0.5558}, "Alexander_Sorloth_2plus_SOT": {"bid": 0.20, "offer": 0.2597, "mid": 0.2299, "liquid": true}}
+    "FTR": {
+      "Ivory Coast": 0.2564,
+      "Norway": 0.4545,
+      "Draw": 0.2703,
+      "liquid": true
+    },
+    "To_qualify": {
+      "Ivory Coast": 0.3817,
+      "Norway": 0.6369,
+      "liquid": true
+    },
+    "Will_there_be_ET": {
+      "Yes": 0.3279,
+      "No": 0.7692,
+      "liquid": true
+    },
+    "BTTS": {
+      "Yes": 0.5848,
+      "No": 0.4348,
+      "liquid": true
+    },
+    "OU2_5_goals": {
+      "Under": 0.5025,
+      "Over": 0.5155,
+      "liquid": true
+    },
+    "OU3_5_goals": {
+      "Under": 0.7246,
+      "Over": 0.2985,
+      "liquid": true
+    },
+    "Cards_OU1_5": {
+      "Under": 0.3125,
+      "Over": 0.7692,
+      "liquid": true
+    },
+    "Cards_OU2_5": {
+      "Under": 0.5263,
+      "Over": 0.5882,
+      "liquid": true
+    },
+    "Cards_OU3_5": {
+      "Under": 0.7353,
+      "Over": 0.3226,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.3077,
+      "No": 0.7576,
+      "liquid": true
+    },
+    "Most_corners": {
+      "Ivory Coast": 0.3175,
+      "Norway": 0.6061,
+      "Draw": 0.122,
+      "liquid": true
+    },
+    "Norway_SOT_OU4_5": {
+      "Under": 0.5,
+      "Over": 0.5814,
+      "liquid": true,
+      "implied_lambda": 5.13
+    },
+    "Goal_1_time_bracket": {
+      "1-10": 0.2174,
+      "11-20": 0.2,
+      "21-30": 0.1613,
+      "31-40": 0.125,
+      "41-50": 0.1163,
+      "51-60": 0.08,
+      "61-70": 0.0588,
+      "71-80": 0.0435,
+      "81-90": 0.0455,
+      "None": 0.087,
+      "liquid": true
+    },
+    "Team_to_score_first_goal": {
+      "Ivory Coast": 0.4167,
+      "Norway": 0.5236,
+      "No goal": 0.0909,
+      "liquid": true
+    },
+    "player_markets": {
+      "Erling_Haaland_anytime_goalscorer": {
+        "bid": 0.5128,
+        "offer": 0.5155,
+        "mid": 0.5142,
+        "liquid": true
+      },
+      "Martin_Odegaard_score_or_assist": {
+        "offer": 0.3571,
+        "adjusted": 0.3375
+      },
+      "Amad_Diallo_1plus_SOT": {
+        "offer": 0.5882,
+        "adjusted": 0.5558
+      },
+      "Alexander_Sorloth_2plus_SOT": {
+        "bid": 0.2,
+        "offer": 0.2597,
+        "mid": 0.2299,
+        "liquid": true
+      }
+    }
   },
   "context_flags": [
     "FIFTH KNOCKOUT MATCH — DEEP DIVE LESSONS APPLIED DIRECTLY: per KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md, two categories are reliably profitable across the first 4 matches (direct-market trust at 73.5% beat-crowd, team-level decomposition, liquid player markets at 66.7-100% beat-crowd) and two are reliably weak (illiquid offer-only player props with fat-tailed downside, and self-built timing decomposition especially for LATE-window/full-match-chaos-sensitive count questions, which lost on 4 of 7 instances including the two worst results of the season). Both weak-category lessons are directly load-bearing on today's Q12 and Q14 below.",
@@ -180,7 +370,7 @@
       "text": "Will a goal be scored after the second hydration break in regulation?",
       "pick_tier": "MEDIUM CONFIDENCE — LATE-WINDOW TIMING, LESSON-SHADED",
       "reasoning": "No direct market for this. Naive lambda-scaling (combined goal lambda ≈2.75 from OU2.5/OU3.5, scaled to the ~25-minute post-69' window) gives 0.5184 — this is the exact question type that went 0-for-3 across the prior 4 matches (RSA-CAN, NED-MAR×2), so the deep-dive lesson is to shade hard toward 0.45-0.55 regardless of model output. Convenient convergence here: the naive model already lands inside that band, giving more confidence in this particular instance than the category's track record alone would suggest.",
-      "final_estimate": 0.50,
+      "final_estimate": 0.5,
       "direction": "TOSS-UP",
       "confidence": "medium"
     },
@@ -208,7 +398,7 @@
     "Q11_NOR_scores_first": 0.52,
     "Q12_4plus_offside_calls": 0.42,
     "Q13_4plus_cards": 0.32,
-    "Q14_goal_after_2nd_break": 0.50,
+    "Q14_goal_after_2nd_break": 0.5,
     "Q15_penalty": 0.31
   },
   "strongest_picks": [
@@ -216,6 +406,148 @@
     "Q9: Norway 6+ SOT = 0.43 (HIGH CONFIDENCE — market-derived lambda directly corroborated by a same-question, same-team precedent from nor_sen)",
     "Q12/Q14: deliberately humility-shaded against the two specific, named failure modes (full-match chaos-sensitive counts; late-window timing decomposition) identified in KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md — the explicit point of today's exercise was applying those lessons rather than re-deriving them from scratch"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Cote d'Ivoire 1 - 2 Norway",
+    "total_rbp": 52.07,
+    "beat_crowd_count": "8/15",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Erling Haaland (Norway) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.51,
+        "crowd": 0.54,
+        "outcome": 1,
+        "rbp": 0.29,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Ivory Coast have more corner kicks than Norway in regulation (90 minutes + stoppage time)?",
+        "us": 0.32,
+        "crowd": 0.37,
+        "outcome": 1,
+        "rbp": -10.71,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Norway win in regulation (90 minutes + stoppage time)?",
+        "us": 0.45,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": -9.07,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Martin Ødegaard (Norway) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.34,
+        "crowd": 0.39,
+        "outcome": 1,
+        "rbp": -8.12,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+        "us": 0.58,
+        "crowd": 0.57,
+        "outcome": 1,
+        "rbp": 4.8,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Amad Diallo (Ivory Coast) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.53,
+        "crowd": 0.43,
+        "outcome": 1,
+        "rbp": 28.73,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+        "us": 0.52,
+        "crowd": 0.51,
+        "outcome": 1,
+        "rbp": 4.82,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will a goal be scored before the first hydration break?",
+        "us": 0.48,
+        "crowd": 0.41,
+        "outcome": 0,
+        "rbp": -7.37,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Norway have 6 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.43,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 7.37,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Alexander Sørloth (Norway) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.23,
+        "crowd": 0.33,
+        "outcome": 0,
+        "rbp": 17.92,
+        "note": null
+      },
+      {
+        "q": 11,
+        "leaderboard_question": "Will Norway score the first goal of the match?",
+        "us": 0.52,
+        "crowd": 0.56,
+        "outcome": 1,
+        "rbp": -3.96,
+        "note": null
+      },
+      {
+        "q": 12,
+        "leaderboard_question": "Will there be 4 or more offside calls in regulation (90 minutes + stoppage time)?",
+        "us": 0.42,
+        "crowd": 0.41,
+        "outcome": 1,
+        "rbp": 6.69,
+        "note": null
+      },
+      {
+        "q": 13,
+        "leaderboard_question": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+        "us": 0.32,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": 21.82,
+        "note": null
+      },
+      {
+        "q": 14,
+        "leaderboard_question": "Will a penalty kick be awarded during regulation (90 minutes + stoppage time)?",
+        "us": 0.31,
+        "crowd": 0.28,
+        "outcome": 0,
+        "rbp": -0.75,
+        "note": null
+      },
+      {
+        "q": 15,
+        "leaderboard_question": "Will a goal be scored after the second hydration break in regulation (90 minutes + stoppage time)?",
+        "us": 0.5,
+        "crowd": 0.52,
+        "outcome": 1,
+        "rbp": -0.37,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-30"
 }

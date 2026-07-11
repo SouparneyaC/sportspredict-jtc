@@ -1,0 +1,103 @@
+{
+  "match": "CPV-KSA",
+  "date": "2026-06-26",
+  "stage": null,
+  "post_match_results": {
+    "final_score": "Cabo Verde 0 - 0 Saudi Arabia",
+    "total_rbp": 1.42,
+    "beat_crowd_count": "6/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Cape Verde commit more fouls than Saudi Arabia?",
+        "us": 0.22,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 17.71,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will both teams have at least 1 shot on target in the second half?",
+        "us": 0.45,
+        "crowd": 0.66,
+        "outcome": 1,
+        "rbp": -16.14,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Saudi Arabia receive more cards than Cape Verde?",
+        "us": 0.38,
+        "crowd": 0.46,
+        "outcome": 1,
+        "rbp": -8.09,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will a penalty kick be awarded in the match?",
+        "us": 0.25,
+        "crowd": 0.28,
+        "outcome": 0,
+        "rbp": 3.31,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Cape Verde be caught offside 2 or more times?",
+        "us": 0.32,
+        "crowd": 0.47,
+        "outcome": 1,
+        "rbp": -15.26,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Saudi Arabia have more shots on target than Cape Verde in the second half?",
+        "us": 0.3,
+        "crowd": 0.44,
+        "outcome": 0,
+        "rbp": 12.45,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will Cape Verde win the match?",
+        "us": 0.37,
+        "crowd": 0.39,
+        "outcome": 0,
+        "rbp": 3.84,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Cape Verde score in the second half?",
+        "us": 0.49,
+        "crowd": 0.49,
+        "outcome": 0,
+        "rbp": 1.86,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Ryan Mendes score or assist a goal (excluding own goals)?",
+        "us": 0.34,
+        "crowd": 0.3,
+        "outcome": 0,
+        "rbp": -0.74,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Salem Al-Dawsari score a goal (excluding own goals)?",
+        "us": 0.24,
+        "crowd": 0.25,
+        "outcome": 0,
+        "rbp": 2.49,
+        "note": null
+      }
+    ]
+  }
+}

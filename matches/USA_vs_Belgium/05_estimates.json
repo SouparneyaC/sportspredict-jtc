@@ -1,0 +1,22 @@
+{
+  "match": "USA vs Belgium",
+  "smarkets_event_id": "45169843",
+  "date": "2026-07-07",
+  "estimates": [
+    {"q": 1, "text": "Pulisic scores", "estimate": 0.16, "market_mid": 0.3049, "tier": "PLAYER_ILLIQUID+CLUSTER_A_SUPPRESS", "note": "0 goals in 4 games this tournament, weak R32 output (0 SOT, 1 shot). Hard suppression."},
+    {"q": 2, "text": "De Bruyne scores or assists", "estimate": 0.24, "market_mid": 0.4109, "tier": "PLAYER_ILLIQUID+CLUSTER_A_SUPPRESS", "note": "1 goal in 4 (weakest opponent only), 0 assists ever this tournament, subbed out early every game. Suppressed."},
+    {"q": 3, "text": "Belgium advances to QF", "estimate": 0.46, "market_mid": 0.4588, "tier": "DIRECT"},
+    {"q": 4, "text": "Tillman 1+ SOT", "estimate": 0.52, "market_mid": 0.5526, "tier": "PLAYER_LIQUID", "note": "Real rate 2/4 = 50%, matches market closely."},
+    {"q": 5, "text": "Trossard scores", "estimate": 0.15, "market_mid": 0.21, "tier": "PLAYER_ILLIQUID+SUPPRESS", "note": "Brace only vs weakest opponent (NZL blowout); 0 goals in the other 3 competitive games. Ghana-analogy risk avoided."},
+    {"q": 6, "text": "Lukaku scores", "estimate": 0.30, "market_mid": 0.3327, "tier": "PLAYER_ILLIQUID+HOLD", "note": "Impact sub, never started, but scored in last 2 appearances incl. vs competitive Senegal (2-for-2 shots). Genuine hot streak, small discount for tiny sample, not suppressed."},
+    {"q": 7, "text": "Both teams score (BTTS)", "estimate": 0.62, "market_mid": 0.62695, "tier": "DIRECT"},
+    {"q": 8, "text": "Tied at halftime", "estimate": 0.42, "market_mid": 0.4185, "tier": "DIRECT"},
+    {"q": 9, "text": "4+ total cards", "estimate": 0.43, "market_mid": 0.435, "tier": "DIRECT"},
+    {"q": 10, "text": "USA SOT > Belgium SOT", "estimate": 0.47, "market_mid": "derived 0.4655", "tier": "TEAM_MODEL", "note": "Lambdas fit from team OU4.5 SOT lines (USA 4.5921, BEL 4.336), Poisson-difference computed P(USA>BEL)=0.4655, P(tie)=0.135."},
+    {"q": 11, "text": "Pulisic plays entire match", "estimate": 0.30, "market_mid": null, "tier": "BASE_RATE_FORMULA", "note": "Subbed at 88' in the one directly relevant knockout precedent (R32 vs Bosnia) - not a true full-90 appearance even under maximum stakes."},
+    {"q": 12, "text": "Goal in each half", "estimate": 0.56, "market_mid": "derived 0.5816", "tier": "BASE_RATE_FORMULA", "note": "Product of H1 Over0.5 (0.7118) x H2 Over0.5 (0.817), shaded down slightly for shared-match correlation."},
+    {"q": 13, "text": "3+ total goals", "estimate": 0.58, "market_mid": 0.5765, "tier": "DIRECT"},
+    {"q": 14, "text": "10+ total corners", "estimate": 0.51, "market_mid": 0.51435, "tier": "DIRECT"},
+    {"q": 15, "text": "4+ offside calls", "estimate": 0.56, "market_mid": "derived 0.614", "tier": "BASE_RATE_FORMULA", "note": "USA offside avg 2.75/game + Belgium avg 1.5/game -> combined lambda 4.25, Poisson P(>=4)=0.614, shaded to 0.56 for cross-opponent extrapolation uncertainty."}
+  ]
+}

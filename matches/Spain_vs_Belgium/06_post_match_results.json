@@ -1,0 +1,43 @@
+{
+  "_description": "Actual match outcomes for Spain vs Belgium QF. No crowd/market data was used for pricing this match (by instruction), so no RBP-vs-crowd figures are computable here -- this file records our estimate vs actual outcome and a directional/distance grade only. Full diagnosis in POSTMORTEM.md.",
+  "match": "Spain vs Belgium",
+  "date": "2026-07-10",
+  "actual_score": "Spain 2-1 Belgium",
+  "goals": [
+    {"minute": "30'", "team": "Spain", "scorer": "Fabián Ruiz"},
+    {"minute": "41'", "team": "Belgium", "scorer": "Charles De Ketelaere", "note": "header"},
+    {"minute": "88'", "team": "Spain", "scorer": "Mikel Merino"}
+  ],
+  "halftime_score": "1-1",
+  "team_stats": {
+    "spain": {"shots": 17, "shots_on_target": 8, "corners": 5, "yellow_cards": 2, "red_cards": 0, "possession_pct": 67.9, "fouls": 13},
+    "belgium": {"shots": 5, "shots_on_target": 2, "corners": 1, "yellow_cards": 2, "red_cards": 0, "possession_pct": 32.1, "fouls": 18}
+  },
+  "referee": "Michael Oliver",
+  "questions_correct_direction": 7,
+  "questions_wrong_direction": 8,
+  "average_miss_distance": 0.496,
+  "question_results": [
+    {"text": "Will Spain advance to the semifinals?", "our_estimate": 0.76, "outcome": "YES", "correct_direction": true, "miss_distance": 0.24},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.40, "outcome": "YES", "correct_direction": false, "miss_distance": 0.60, "note": "HT was 1-1 (goals at 30' and 41'). Monte Carlo simulation output, wrong side of a near-even call."},
+    {"text": "Will Belgium hold a lead at any point in regulation?", "our_estimate": 0.32, "outcome": "NO", "correct_direction": true, "miss_distance": 0.32},
+    {"text": "Will either team make a substitution at halftime?", "our_estimate": 0.55, "outcome": "NO", "correct_direction": false, "miss_distance": 0.55, "note": "First substitution was 55', outside the halftime window. New base-rate panel's first live test, missed."},
+    {"text": "Will a goal be scored before the first hydration break?", "our_estimate": 0.46, "outcome": "NO", "correct_direction": true, "miss_distance": 0.46, "note": "First goal was 30', after the 24' window."},
+    {"text": "Will a goal be scored after the second hydration break but before end of regulation?", "our_estimate": 0.48, "outcome": "YES", "correct_direction": false, "miss_distance": 0.52, "note": "88' Merino goal. Near-even call, wrong side."},
+    {"text": "Will both teams score in regulation?", "our_estimate": 0.43, "outcome": "YES", "correct_direction": false, "miss_distance": 0.57},
+    {"text": "Will Lamine Yamal score or assist a goal?", "our_estimate": 0.27, "outcome": "NO", "correct_direction": true, "miss_distance": 0.27, "note": "0 goals, 0 assists. 3rd straight correct application of the same validated pattern this tournament."},
+    {"text": "Will Kevin De Bruyne have 1+ shots on target?", "our_estimate": 0.45, "outcome": "YES", "correct_direction": false, "miss_distance": 0.55, "note": "He started and played to 86' (1 SOT) -- our participation-probability judgment (0.82) undershot reality after his R16 DNP scare."},
+    {"text": "Will Romelu Lukaku have 1+ shots on target?", "our_estimate": 0.46, "outcome": "NO", "correct_direction": true, "miss_distance": 0.46, "note": "0 shots, 0 SOT -- his sub-appearance scoring streak (3 straight goals pre-match) ended with a whimper, not a bang. Correctly hedged rather than chased the streak."},
+    {"text": "Will Spain have 5+ shots on target?", "our_estimate": 0.60, "outcome": "YES", "correct_direction": true, "miss_distance": 0.40, "note": "8 SOT. The regime-coverage shading (down from raw 78%) didn't cost anything -- Spain cleared the bar with room to spare."},
+    {"text": "Will Belgium have 3+ shots on target?", "our_estimate": 0.85, "outcome": "NO", "correct_direction": false, "miss_distance": 0.85, "note": "WORST RESULT OF THE MATCH. Only 2 SOT -- Belgium completely suppressed by Spain's 67.9% possession. The same regime-coverage check applied to Q11 (Spain's own SOT) was never applied symmetrically here. See POSTMORTEM.md SYMMETRIC_REGIME_COVERAGE."},
+    {"text": "Will Spain have 6+ corner kicks?", "our_estimate": 0.62, "outcome": "NO", "correct_direction": false, "miss_distance": 0.62, "note": "Only 5 corners despite 17 shots and 67.9% possession -- a genuinely surprising miss given the dominance, not obviously explainable from data on hand."},
+    {"text": "Will there be 4+ total cards?", "our_estimate": 0.30, "outcome": "YES", "correct_direction": false, "miss_distance": 0.70, "note": "Exactly 4 cards (2-2), 3 of the 4 shown in the second half incl. two in stoppage time. Matched Smarkets' 0.2976 almost exactly -- both wrong together, a shared blind spot on late-match discipline in tense knockout games."},
+    {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.33, "outcome": "NO", "correct_direction": true, "miss_distance": 0.33, "note": "No penalty, no reds. Referee-specific data (Oliver's 0 reds in 3 prior matches) held up."}
+  ],
+  "key_lessons": [
+    "Biggest miss: Belgium 3+ SOT at 0.85, missed by 0.85 -- the SYMMETRIC_REGIME_COVERAGE gap documented in POSTMORTEM.md. The opponent-quality shading applied correctly to Spain's own SOT prop (Q11) was never applied to Belgium's, despite the same underlying fact (Spain's dominance) being known at pricing time.",
+    "Monte Carlo simulation (Q2/Q3/Q5/Q6) split 2-2 with both misses near-50/50 pre-match -- statistically unremarkable, not evidence the method is flawed. Initial read blaming the simulation specifically did not survive checking the actual settlement data.",
+    "Q14 (cards) matched Smarkets almost exactly (0.30 vs 0.2976) and both were wrong -- independent agreement between model and market is not itself protection against a shared blind spot (late-match discipline in tense knockout games).",
+    "Q9 (De Bruyne SOT): the participation-probability judgment (0.82) was the weaker link, not the conditional-rate calculation -- he played virtually the whole match. A single R16 DNP was probably weighted too heavily against the base-rate expectation that a player features in his team's biggest game of the tournament."
+  ]
+}

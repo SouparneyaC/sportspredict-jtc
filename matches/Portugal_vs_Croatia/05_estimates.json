@@ -1,0 +1,142 @@
+{
+  "_description": "Final estimates \u2014 Portugal vs Croatia R32 2026-07-02",
+  "match": "Portugal vs Croatia",
+  "date": "2026-07-02",
+  "match_id": "b6287c24-0362-4169-ad1d-3aa4116a8bce",
+  "smarkets_event": 45161511,
+  "espn_event": 760496,
+  "ftr": {
+    "Portugal": 0.5797,
+    "Draw": 0.2581,
+    "Croatia": 0.164
+  },
+  "lambda_goals": {
+    "Portugal": 1.933,
+    "Croatia": 0.998
+  },
+  "rule8_fires": true,
+  "rule7_fires": false,
+  "questions": [
+    {
+      "q": 1,
+      "market_id": "885cd64c-e545-4e0f-9c2e-0060e38f429f",
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.417,
+      "question": "Will Cristiano Ronaldo (Portugal) score a goal in regulation?",
+      "crowd_formula_pred": 0.463
+    },
+    {
+      "q": 2,
+      "market_id": "68a19697-c475-42cf-9fec-78d2ccaca7d2",
+      "tier": "PLAYER_ILLIQUID",
+      "estimate": 0.215,
+      "question": "Will Bruno Fernandes (Portugal) have 2 or more shots on target in regulation?",
+      "crowd_formula_pred": 0.34
+    },
+    {
+      "q": 3,
+      "market_id": "ddaa196f-e8ad-48d2-b888-087f4efd418e",
+      "tier": "PLAYER_ILLIQUID",
+      "estimate": 0.22,
+      "question": "Will Luka Modri\u0107 (Croatia) score or assist a goal in regulation?",
+      "crowd_formula_pred": 0.343
+    },
+    {
+      "q": 4,
+      "market_id": "8fae87b5-69cf-439a-a0b1-395e95251d0c",
+      "tier": "DIRECT",
+      "estimate": 0.447,
+      "question": "Will the match have 2 or fewer total goals in regulation?",
+      "crowd_formula_pred": 0.482
+    },
+    {
+      "q": 5,
+      "market_id": "0d8b5cbe-a662-49e3-9e0b-aec265151376",
+      "tier": "DIRECT",
+      "estimate": 0.417,
+      "question": "Will Croatia have 4 or more shots on target in regulation?",
+      "crowd_formula_pred": 0.463
+    },
+    {
+      "q": 6,
+      "market_id": "76a42a42-5d35-4ac8-ac00-628268d82c04",
+      "tier": "DIRECT",
+      "estimate": 0.322,
+      "question": "Will there be 4 or more total cards shown in regulation?",
+      "crowd_formula_pred": 0.405
+    },
+    {
+      "q": 7,
+      "market_id": "1f8cf0d6-8608-426b-a0f7-d0e04f8f3664",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.55,
+      "question": "Will both teams receive at least one card in regulation?",
+      "crowd_formula_pred": 0.544
+    },
+    {
+      "q": 8,
+      "market_id": "15d199ba-bd1a-4003-82d0-4e098cb7c7b8",
+      "tier": "DIRECT",
+      "estimate": 0.486,
+      "question": "Will Portugal have 6 or more corner kicks in regulation?",
+      "crowd_formula_pred": 0.505
+    },
+    {
+      "q": 9,
+      "market_id": "ad4917d9-9d86-4cc4-9fb5-51dc8ea51b3a",
+      "tier": "DIRECT",
+      "estimate": 0.395,
+      "question": "Will the match be tied at halftime?",
+      "crowd_formula_pred": 0.45
+    },
+    {
+      "q": 10,
+      "market_id": "39ee4924-7315-4f52-8aee-8d0cb0ad5867",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.365,
+      "question": "Will Portugal have 6 or more shots on target in regulation?",
+      "crowd_formula_pred": 0.432
+    },
+    {
+      "q": 11,
+      "market_id": "ac50d1ea-0872-4150-93d5-11db85dfdc47",
+      "tier": "PLAYER_ILLIQUID",
+      "estimate": 0.363,
+      "question": "Will Bernardo Silva (Portugal) have 1 or more shots on target in regulation?",
+      "crowd_formula_pred": 0.43
+    },
+    {
+      "q": 12,
+      "market_id": "cef9a8f6-101f-4931-aebb-ef5288611fb9",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.34,
+      "question": "Will a header goal be scored in regulation?",
+      "crowd_formula_pred": 0.416
+    },
+    {
+      "q": 13,
+      "market_id": "d278a305-9c25-423e-9e22-30d4f757f45f",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.75,
+      "question": "Will there be 20 or more total shots in regulation?",
+      "crowd_formula_pred": 0.666
+    },
+    {
+      "q": 14,
+      "market_id": "b6fe115e-860f-4fda-9285-16a23c134d76",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.37,
+      "question": "Will a penalty kick be awarded OR a red card be shown in regulation?",
+      "crowd_formula_pred": 0.435
+    },
+    {
+      "q": 15,
+      "market_id": "ff34f943-9aef-4920-9aff-0d2bfc39e21d",
+      "tier": "DIRECT",
+      "estimate": 0.727,
+      "question": "Will Portugal advance to the Round of 16?",
+      "crowd_formula_pred": 0.652
+    }
+  ],
+  "post_match_results": null
+}

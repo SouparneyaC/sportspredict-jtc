@@ -1,0 +1,68 @@
+=== USA vs BELGIUM — FULL SESSION LOG ===
+Date: 2026-07-07 (kickoff 00:00 UTC = 2026-07-06 evening ET)
+Match: USA vs BEL, Round of 16, WC2026
+Smarkets Event ID: 45169843
+
+--- DATA GATHERING ---
+Pulled espn_match_panel.csv / espn_rolling_averages.csv rows for USA (4 games) and BEL (4 games).
+Fetched fresh ESPN summary endpoints for R32 games (USA-BIH 760494, BEL-SEN 760493) plus all
+group-stage games (USA-PAR 760417, USA-AUS 760442, TUR-USA 760470; BEL-EGY 760426, BEL-IRN 760451,
+NZL-BEL 760477) to pull player-level roster stat blocks for Pulisic, Tillman, De Bruyne, Trossard,
+Lukaku, including starter/subbedOut/subbedIn timestamps.
+
+--- SMARKETS DATA ---
+Fetched full market catalogue (176 markets) via /v3/events/45169843/markets/.
+Pulled contracts+quotes for: Anytime goalscorer (149054564), Player score-or-assist (149064033),
+Player 0.5 SOT (149064012), BTTS (149054080), Half-time result (149054085), Cards OU3.5 (149054245),
+USA/BEL team SOT OU4.5 (149054405/149054453), Corners OU9.5 (149054257), To qualify (149054211),
+Total goals OU2.5 (149054115), H1/H2 OU0.5 goals (149054120/149054123).
+
+Note: initial batch fetch of several markets returned empty due to rate limiting on the quotes
+endpoint - refetched individually with longer delays (1.0s) and confirmed all quotes present.
+
+--- MODEL DERIVATIONS ---
+USA vs BEL SOT comparison: fit Poisson lambda from team OU4.5 SOT lines (USA Over4.5=0.4844 ->
+lambda=4.587; BEL Over4.5=0.4365 -> lambda=4.336). Discrete convolution over both distributions:
+P(USA SOT > BEL SOT) = 0.4655, P(tie) = 0.135.
+
+Goal-in-each-half: product of H1 Over0.5 (0.7118) and H2 Over0.5 (0.817) = 0.5816, shaded to 0.56
+for shared-match correlation (a blowout suppresses both halves' independent variance somewhat).
+
+4+ combined offsides: no direct market. USA offside history [2,1,5,3] avg 2.75/game; Belgium
+[0,3,1,2] avg 1.5/game. Combined lambda 4.25, Poisson P(>=4) = 0.614, shaded to 0.56 for
+cross-opponent extrapolation uncertainty (neither team's offside rate has been tested specifically
+against a team playing like the other).
+
+Pulisic full-90: no direct market. Used roster subbedOut timestamps across his 4 games: HT sub vs
+Paraguay (rotation), DNP vs Australia, subbed in 58' vs Turkey (bench role), subbed out 88' in the
+one knockout precedent (R32 vs Bosnia) - even at maximum stakes he was withdrawn with 2+ stoppage
+minutes remaining. Base rate set low (0.30).
+
+--- KEY PLAYER FINDINGS (CLUSTER A APPLICATIONS) ---
+Pulisic: hard suppression (0.16 vs market 0.3049) - 0 goals in 4 games this tournament, weak R32
+output (0 SOT, 1 shot in 88 minutes played).
+De Bruyne: suppressed (0.24 vs market 0.4109) - 1 goal in 4 (weakest opponent only), 0 assists ever
+this tournament, subbed out early every single game.
+Trossard: suppressed (0.15 vs market 0.21) - brace only vs New Zealand (blowout), 0 goals in the
+other 3 competitive games. Same "outlier-as-template" risk flagged in the England postmortem.
+Lukaku: held near market (0.30 vs 0.3327), NOT suppressed - never started a game all tournament but
+scored in his last 2 appearances off the bench (2 goals from 2 shots), including vs a competitive
+Senegal side in the R32. This is a genuine recent hot streak, not a reputation-vs-reality gap, so
+treated differently from the other 3 suppressions - only a small discount for tiny sample size.
+
+--- FINAL ESTIMATES ---
+Q1: 0.16 [PLAYER_ILLIQUID+CLUSTER_A_SUPPRESS]
+Q2: 0.24 [PLAYER_ILLIQUID+CLUSTER_A_SUPPRESS]
+Q3: 0.46 [DIRECT]
+Q4: 0.52 [PLAYER_LIQUID]
+Q5: 0.15 [PLAYER_ILLIQUID+SUPPRESS]
+Q6: 0.30 [PLAYER_ILLIQUID+HOLD]
+Q7: 0.62 [DIRECT]
+Q8: 0.42 [DIRECT]
+Q9: 0.43 [DIRECT]
+Q10: 0.47 [TEAM_MODEL]
+Q11: 0.30 [BASE_RATE_FORMULA]
+Q12: 0.56 [BASE_RATE_FORMULA]
+Q13: 0.58 [DIRECT]
+Q14: 0.51 [DIRECT]
+Q15: 0.56 [BASE_RATE_FORMULA]

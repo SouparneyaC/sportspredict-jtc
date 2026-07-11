@@ -1,0 +1,191 @@
+{
+  "_source": "ESPN API — https://site.api.espn.com/apis/site/v2/sports/soccer/",
+  "_endpoint_pattern": "summary?event={event_id}  (full box score + rosters endpoint)",
+  "_player_data_note": "Player stats pulled from rosters[].roster[].stats — NOT from leaders[] block (leaders only returns 1 top performer per category and misses most players)",
+  "match_event_id": 760491,
+  "kickoff_utc": "2026-07-01T01:00Z",
+  "stage": "Round of 32 (knockout stage)",
+  "venue_note": "WC2026 venue — US host city",
+
+  "mexico": {
+    "espn_team_id": 203,
+    "group_matches_pulled": [
+      {
+        "event_id": 760415,
+        "date": "2026-06-11",
+        "opponent": "South Africa",
+        "result": "W 2-0 (as home team)",
+        "fouls": 12,
+        "SOT": 4,
+        "shots": 16,
+        "offsides": 1,
+        "yellow_cards": 1,
+        "red_cards": 1,
+        "corners": 3,
+        "goals_scored": 2,
+        "goals_conceded": 0
+      },
+      {
+        "event_id": 760441,
+        "date": "2026-06-19",
+        "opponent": "South Korea",
+        "result": "W 1-0",
+        "fouls": 9,
+        "SOT": 4,
+        "shots": 8,
+        "offsides": 3,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "corners": 1,
+        "goals_scored": 1,
+        "goals_conceded": 0
+      },
+      {
+        "event_id": 760467,
+        "date": "2026-06-25",
+        "opponent": "Czechia",
+        "result": "W 3-0 (rotated squad — Jimenez rested)",
+        "fouls": 13,
+        "SOT": 5,
+        "shots": 11,
+        "offsides": 0,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "corners": 1,
+        "goals_scored": 3,
+        "goals_conceded": 0
+      }
+    ],
+    "averages_3_group_matches": {
+      "fouls": 11.33,
+      "SOT": 4.33,
+      "shots": 11.67,
+      "offsides": 1.33,
+      "yellow_cards": 0.67,
+      "red_cards": 0.33,
+      "corners": 1.67
+    },
+    "key_signals": [
+      "CORNERS (3, 1, 1 = avg 1.67): Lowest corner average of any knockout-stage team. Structurally low regardless of result or dominance level. Load-bearing for Q10.",
+      "SOT CEILING (4, 4, 5): Mexico has NEVER reached 6 SOT in any WC2026 group match — not even in their 3-0 win. Q6 (6+ SOT) is above Mexico's observed ceiling.",
+      "CLEAN SHEETS: Three consecutive group-stage clean sheets (RSA, KOR, CZE). Highly organized defensive structure.",
+      "RED CARD IN GD1: Played with 10 men in the RSA match and still won 2-0. Indicates defensive resilience even understrength.",
+      "GD3 ROTATION: Jimenez rested vs Czechia (not a starter). He returned as starter for this knockout match."
+    ]
+  },
+
+  "ecuador": {
+    "espn_team_id": 209,
+    "group_matches_pulled": [
+      {
+        "event_id": 760423,
+        "date": "2026-06-14",
+        "opponent": "Ivory Coast",
+        "result": "L 0-1",
+        "fouls": 13,
+        "SOT": 1,
+        "shots": 12,
+        "offsides": 0,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "corners": 6,
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "label": "COMPETITIVE MATCH — baseline profile"
+      },
+      {
+        "event_id": 760446,
+        "date": "2026-06-21",
+        "opponent": "Curacao",
+        "result": "D 0-0 (FINISHING CRISIS — OUTLIER)",
+        "fouls": 7,
+        "SOT": 15,
+        "shots": 27,
+        "offsides": 1,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "corners": 9,
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "label": "OUTLIER — non-competitive opposition, finishing crisis, excluded from competitive-match averaging"
+      },
+      {
+        "event_id": 760468,
+        "date": "2026-06-25",
+        "opponent": "Germany",
+        "result": "W 2-1 (crisis broke)",
+        "fouls": 15,
+        "SOT": 3,
+        "shots": 7,
+        "offsides": 1,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "corners": 3,
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "label": "COMPETITIVE MATCH — baseline profile"
+      }
+    ],
+    "averages_all_3": {
+      "fouls": 11.67,
+      "SOT": 6.33,
+      "shots": 15.33,
+      "offsides": 0.67,
+      "yellow_cards": 1.67,
+      "red_cards": 0.0,
+      "corners": 6.0
+    },
+    "averages_competitive_only": {
+      "note": "CUR match excluded as non-competitive outlier",
+      "SOT": 2.0,
+      "shots": 9.5,
+      "corners": 4.5,
+      "offsides": 0.5,
+      "yellow_cards": 2.0
+    },
+    "key_signals": [
+      "BIMODAL FLAG: CUR match (27 shots / 15 SOT / 0 goals) is a structural outlier vs any competitive opposition. Raw averages inflate ECU's apparent attacking output by ~3x.",
+      "COMPETITIVE PROFILE: vs CIV (1 SOT, 12 shots) and vs GER (3 SOT, 7 shots) — avg 2.0 SOT and 4.5 corners vs quality opponents.",
+      "FINISHING CRISIS RESOLVED: Ecuador scored 0 goals in 2 WC2026 matches despite 16 combined SOT (CIV+CUR). Crisis broke vs GER with 2 goals from only 3 SOT.",
+      "CARD-PRONE: Ecuador averaged 3.0 yellow cards in their two competitive matches (CIV: 1, GER: 3). Ecuador drove the 4+ cards YES case.",
+      "LOW OFFSIDES: 0 offsides vs CIV, 1 vs GER. Ecuador rarely caught offside even when pressing heavily. This was the KEY SIGNAL for Q12 vs crowd."
+    ]
+  },
+
+  "player_stats": {
+    "Raul_Jimenez_MEX": {
+      "espn_player_id": "lookup via rosters[].roster[]",
+      "matches": [
+        {"event_id": 760415, "opponent": "RSA", "goals": 1, "assists": 0, "shots": 4, "SOT": 2, "starter": true, "minutes": 90},
+        {"event_id": 760441, "opponent": "KOR", "goals": 0, "assists": 0, "shots": 2, "SOT": 1, "starter": true, "minutes": 90},
+        {"event_id": 760467, "opponent": "CZE", "goals": 0, "assists": 0, "shots": 0, "SOT": 0, "starter": false, "minutes": 0, "note": "Rested for knockout stage"}
+      ],
+      "career_totals_wc2026": {"goals": 1, "SOT": 3, "starts": 2},
+      "note": "All Smarkets player markets were ILLIQUID for this match — estimate model-only"
+    },
+    "Gonzalo_Plata_ECU": {
+      "matches": [
+        {"event_id": 760423, "opponent": "CIV", "goals": 0, "assists": 0, "shots": 1, "SOT": 1, "starter": true},
+        {"event_id": 760446, "opponent": "CUR", "goals": 0, "assists": 0, "shots": 5, "SOT": 3, "starter": true, "note": "CUR outlier"},
+        {"event_id": 760468, "opponent": "GER", "goals": 1, "assists": 0, "shots": 2, "SOT": 1, "fouls": 4, "yellow_cards": 1, "starter": true, "note": "Scored the crucial winner"}
+      ],
+      "career_totals_wc2026": {"goals": 1, "assists": 0, "SOT": 5},
+      "card_risk_note": "4 fouls + 1 YC vs Germany — card-prone in physical knockout matches",
+      "note": "All Smarkets player markets were ILLIQUID — estimate model-only"
+    },
+    "Enner_Valencia_ECU": {
+      "matches": [
+        {"event_id": 760423, "opponent": "CIV", "goals": 0, "shots": 1, "SOT": 0, "starter": true},
+        {"event_id": 760446, "opponent": "CUR", "goals": 0, "shots": 7, "SOT": 5, "starter": true, "note": "CUR outlier"},
+        {"event_id": 760468, "opponent": "GER", "goals": 0, "shots": 2, "SOT": 1, "starter": true}
+      ],
+      "competitive_SOT_avg": 0.5,
+      "note": "Competitive-match profile is modest; CUR outlier inflates raw avg"
+    },
+    "Santiago_Gimenez_MEX": {
+      "role": "Bench player all 3 group matches",
+      "total_SOT_wc2026": 1,
+      "note": "Late substitute only — not a factor if Jimenez is fit and starting"
+    }
+  }
+}

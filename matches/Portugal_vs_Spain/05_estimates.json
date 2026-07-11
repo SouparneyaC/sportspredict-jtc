@@ -1,0 +1,22 @@
+{
+  "match": "Portugal vs Spain",
+  "smarkets_event_id": "45172458",
+  "date": "2026-07-06",
+  "estimates": [
+    {"q": 1, "text": "Ronaldo scores", "estimate": 0.32, "market_mid": 0.3128, "tier": "PLAYER_LIQUID", "note": "Held near market. Scored in 2/4 games incl. the last knockout match (competitive, not a blowout) - no drought to suppress."},
+    {"q": 2, "text": "Yamal scores or assists", "estimate": 0.30, "market_mid": 0.4485, "tier": "PLAYER_LIQUID+CLUSTER_A_SUPPRESS", "note": "Real rate 1/4 goal contributions (only vs weakest opponent), 0 assists all tournament. Suppressed well below market."},
+    {"q": 3, "text": "Bruno Fernandes 1+ SOT", "estimate": 0.58, "market_mid": 0.3523, "tier": "PLAYER_LIQUID+FLOOR_BOOST", "note": "Hit 1+ SOT in 3/4 games (75%). This is his floor, not his ceiling (2+ SOT is the documented drought stat) - boosted above market."},
+    {"q": 4, "text": "Both halves same goals", "estimate": 0.25, "market_mid": null, "tier": "BASE_RATE_FORMULA", "note": "Derived from H1 exact-goal buckets (149252910) and H2 exact-goal buckets (149252911, Poisson-split for the 2+ bucket). Computed 0.248."},
+    {"q": 5, "text": "Portugal scores first", "estimate": 0.36, "market_mid": 0.3613, "tier": "DIRECT"},
+    {"q": 6, "text": "3+ total goals", "estimate": 0.52, "market_mid": 0.5222, "tier": "DIRECT"},
+    {"q": 7, "text": "Diogo Costa 4+ saves", "estimate": 0.50, "market_mid": "lambda-fit 0.39-0.54 range", "tier": "PLAYER_ILLIQUID+REGIME_CHECK", "note": "Saves history [1,2,6,5] - bimodal, high vs strong opponents. Spain (10 SOT vs Austria) is Portugal's toughest test yet. Blended market lambda with historical trend -> lambda~3.96, P(>=4)=0.559, shaded to 0.50 for illiquid-market noise."},
+    {"q": 8, "text": "Substitute scores", "estimate": 0.33, "market_mid": null, "tier": "BASE_RATE_FORMULA", "note": "No direct market. ~9 subs expected combined, total goals expectation ~2.6-2.7; base rate for a sub-scored-goal in a high-sub knockout match."},
+    {"q": 9, "text": "4+ total cards", "estimate": 0.40, "market_mid": 0.4031, "tier": "DIRECT"},
+    {"q": 10, "text": "9+ total substitutions", "estimate": 0.58, "market_mid": null, "tier": "BASE_RATE_FORMULA", "note": "Last 4 knockout games by these exact teams: 9, 10, 8, 8 regulation subs. Strong repeated precedent just above/at the 9 threshold."},
+    {"q": 11, "text": "Spain 6+ corners", "estimate": 0.54, "market_mid": 0.5422, "tier": "DIRECT"},
+    {"q": 12, "text": "Match to extra time", "estimate": 0.27, "market_mid": 0.2724, "tier": "DIRECT"},
+    {"q": 13, "text": "Any Portugal player 2+ SOT", "estimate": 0.52, "market_mid": "compound calc 0.63", "tier": "TEAM_MODEL", "note": "Independence-based compound across Ronaldo/Bruno/Leao/Ramos/Bernardo player markets gave 0.63, but cross-checked against Portugal team-total Over2.5 SOT market (0.596 for team>=3) which requires shot concentration - tempered down to 0.52."},
+    {"q": 14, "text": "Spain advances to QF", "estimate": 0.66, "market_mid": 0.6623, "tier": "DIRECT"},
+    {"q": 15, "text": "First card before first goal", "estimate": 0.30, "market_mid": null, "tier": "BASE_RATE_FORMULA", "note": "Only 1 of the last 4 relevant games (POR-CRO itself) had a card precede the first goal. Base rate ~30%."}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "_description": "Smarkets event 45161510 -- key market prices for Colombia vs Ghana R32 2026-07-04",
+  "event_id": 45161510,
+  "total_markets": 172,
+  "key_prices": {
+    "FTR": {"Colombia": 0.685, "Draw": 0.2151, "Ghana": 0.1031, "market_id": 148293586},
+    "BTTS_yes": {"mid": 0.4133, "market_id": 148293588},
+    "OU1.5_over": {"mid": 0.7273, "market_id": 148293622},
+    "OU2.5_over": {"mid": 0.4631, "market_id": 148293623},
+    "OU3.5_over": {"mid": 0.2413, "market_id": 148293624},
+    "HT_result": {"Colombia": 0.4963, "Draw": 0.4082, "Ghana": 0.0986, "market_id": 148293593},
+    "COL_goals_OU1.5_over": {"mid": 0.5798, "market_id": 148293635},
+    "COL_goals_OU2.5_over": {"mid": 0.2921, "market_id": 148293636},
+    "COL_SOT_OU5.5_over": {"mid": 0.4601, "market_id": 148294104},
+    "GHA_SOT_OU2.5_over": {"mid": 0.432, "market_id": 148294149},
+    "Cards_OU2.5_over": {"mid": 0.5185, "market_id": 148293951},
+    "Cards_OU3.5_over": {"mid": 0.2976, "market_id": 148293953},
+    "Team_score_first": {"Colombia": 0.7015, "No_goal": 0.0756, "Ghana": 0.2282, "market_id": 148293987},
+    "COL_corners_OU5.5_over": {"mid": 0.5026, "market_id": 148293978},
+    "Total_corners_OU8.5_over": {"mid": 0.4985, "market_id": 148293964},
+    "Total_shots_OU23.5_over": {"mid": 0.521, "market_id": 148294400},
+    "Goal_1_time_bracket": {"1-10": 0.1957, "11-20": 0.1787, "21-30": 0.1447, "31-40": 0.1125, "41-50": 0.1036, "51-60": 0.0685, "61-70": 0.0494, "71-80": 0.0374, "81-90": 0.0394, "None": 0.0821, "market_id": 148294011},
+    "To_qualify": {"Colombia": 0.8131, "Ghana": 0.1944, "market_id": 148293919}
+  },
+  "player_market_data": {
+    "diaz_anytime_scorer": {"mid": 0.3193, "liquid": true},
+    "james_rodriguez_score_or_assist": {"offer": 0.5405, "mid": 0.5108, "liquid": false},
+    "ayew_anytime_scorer": {"offer": 0.1316, "mid": 0.1244, "liquid": false},
+    "semenyo_anytime_scorer": {"offer": 0.1429, "mid": 0.135, "liquid": false},
+    "semenyo_sot_ou0.5": {"offer": 0.4425, "mid": 0.4182, "liquid": false},
+    "semenyo_sot_ou1.5": {"offer": 0.119, "mid": 0.1125, "liquid": false, "note": "matches ESPN: 0 SOT in all 3 group games"}
+  }
+}

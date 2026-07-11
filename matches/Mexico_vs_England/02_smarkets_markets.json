@@ -1,0 +1,27 @@
+{
+  "_description": "Smarkets event 45169601 -- key market prices for Mexico vs England R16 2026-07-05/06",
+  "event_id": 45169601,
+  "total_markets": 177,
+  "key_prices": {
+    "FTR": {"Mexico": 0.3101, "Draw": 0.3101, "England": 0.3877, "market_id": 148992636},
+    "BTTS_yes": {"mid": 0.4808, "market_id": 148992638},
+    "OU1.5_over": {"mid": 0.678, "market_id": 148992672},
+    "OU2.5_over": {"mid": 0.3922, "market_id": 148992673},
+    "OU3.5_over": {"mid": 0.1942, "market_id": 148992674},
+    "HT_result": {"Mexico": 0.2456, "Draw": 0.4832, "England": 0.2742, "market_id": 148992643},
+    "To_qualify": {"Mexico": 0.4739, "England": 0.5277, "market_id": 148992769},
+    "Penalty_shootout_yes": {"mid": 0.1875, "market_id": 148992771},
+    "ENG_SOT_OU3.5_over": {"mid": 0.5823, "market_id": 148993004, "note": "only line available (4+); fitted lambda=4.08 to evaluate P(>=5)"},
+    "MEX_SOT_OU3.5_over": {"mid": 0.4084, "market_id": 148992956},
+    "Cards_OU3.5_over": {"mid": 0.4221, "market_id": 148992803},
+    "Most_corners": {"Mexico": 0.2912, "Draw": 0.0979, "England": 0.5989, "market_id": 148992659},
+    "Total_shots_OU21.5_over": {"mid": 0.4673, "market_id": 148993066, "note": "only line available (22+); fitted lambda=21.29 to evaluate P(>=18)"},
+    "Goal_1_time_bracket": {"1-10": 0.1683, "11-20": 0.1577, "21-30": 0.1331, "31-40": 0.1086, "41-50": 0.1049, "51-60": 0.0747, "61-70": 0.0571, "71-80": 0.0429, "81-90": 0.0485, "None": 0.1125, "market_id": 148992862}
+  },
+  "player_market_data": {
+    "kane_anytime_scorer": {"mid": 0.3623, "liquid": true},
+    "jimenez_anytime_scorer": {"offer": 0.2532, "mid": 0.2393, "liquid": false},
+    "bellingham_sot_ou1.5": {"mid": 0.1742, "liquid": true},
+    "quinones_sot_ou0.5": {"offer": 0.5682, "mid": 0.5369, "liquid": false}
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "Anytime_goalscorer": {
+    "William Saliba": {
+      "bid": 0.05,
+      "offer": 0.0556,
+      "mid": 0.0528
+    },
+    "Adrien Rabiot": {
+      "bid": 0.1163,
+      "offer": 0.125,
+      "mid": 0.1207
+    },
+    "Bradley Barcola": {
+      "bid": 0.2564,
+      "offer": 0.2667,
+      "mid": 0.2616
+    },
+    "Dayot Upamecano": {
+      "bid": 0.0541,
+      "offer": 0.0625,
+      "mid": 0.0583
+    },
+    "Diego Gomez": {
+      "bid": 0.0625,
+      "offer": 0.0667,
+      "mid": 0.0646
+    },
+    "Gustavo Ra\u00fal G\u00f3mez Portillo": {
+      "bid": 0.0227,
+      "offer": 0.0333,
+      "mid": 0.028
+    },
+    "Gustavo Vel\u00e1zquez": {
+      "bid": 0.0067,
+      "offer": 0.0154,
+      "mid": 0.0111
+    },
+    "Juan Caceres": {
+      "bid": 0.0067,
+      "offer": 0.0182,
+      "mid": 0.0125
+    },
+    "Jules Kounde": {
+      "bid": 0.0476,
+      "offer": 0.0526,
+      "mid": 0.0501
+    },
+    "Julio Enciso": {
+      "bid": 0.0952,
+      "offer": 0.1,
+      "mid": 0.0976
+    },
+    "Junior Alonso": {
+      "bid": 0.0067,
+      "offer": 0.0182,
+      "mid": 0.0125
+    },
+    "Kouadio Kone": {
+      "bid": 0.069,
+      "offer": 0.0909,
+      "mid": 0.0799
+    },
+    "Kylian Mbappe": {
+      "bid": 0.6369,
+      "offer": 0.641,
+      "mid": 0.639
+    },
+    "Lucas Digne": {
+      "bid": 0.0435,
+      "offer": 0.0513,
+      "mid": 0.0474
+    },
+    "Matias Galarza Fonda": {
+      "bid": 0.02,
+      "offer": 0.0556,
+      "mid": 0.0378
+    },
+    "Michael Olise": {
+      "bid": 0.3077,
+      "offer": 0.3279,
+      "mid": 0.3178
+    },
+    "Miguel Almir\u00f3n": {
+      "bid": 0.0714,
+      "offer": 0.0909,
+      "mid": 0.0811
+    },
+    "Omar Alderete": {
+      "bid": 0.025,
+      "offer": 0.0333,
+      "mid": 0.0292
+    },
+    "Ousmane Dembele": {
+      "bid": null,
+      "offer": 0.3759,
+      "mid": 0.3552
+    },
+    "Adri\u00e1n Andr\u00e9s Cubas": {
+      "bid": 0.0067,
+      "offer": 0.02,
+      "mid": 0.0134
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4039
+    },
+    "Jos\u00e9 Mar\u00eda Canale Dom\u00ednguez": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": 0.0278
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.139
+    },
+    "Mauricio": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": 0.0964
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Ramon Sosa": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": 0.0964
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.3356,
+      "mid": 0.3171
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Alejandro Romero Gamarra": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1005
+    },
+    "Alexandro Maidana": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": 0.0525
+    },
+    "Alex Arce": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Antonio Sanabria": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": 0.1074
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Braian Ojeda": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": 0.0525
+    },
+    "Dami\u00e1n Bobadilla": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": 0.0556
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": 0.1667,
+      "offer": 0.25,
+      "mid": 0.2083
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.2589
+    },
+    "Fabi\u00e1n Balbuena": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0411
+    },
+    "Gabriel Avalos": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": 0.1211
+    },
+    "Gustavo Caballero": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": 0.1074
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": 0.0964
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": 0.4218
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": 0.0964
+    },
+    "Isidro Pitta": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    }
+  },
+  "Score_or_assist": {
+    "William Saliba": {
+      "bid": null,
+      "offer": 0.1724,
+      "mid": 0.1629
+    },
+    "Adrien Rabiot": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3327
+    },
+    "Kylian Mbappe": {
+      "bid": 0.6494,
+      "offer": 0.7353,
+      "mid": 0.6924
+    },
+    "Lucas Digne": {
+      "bid": null,
+      "offer": 0.3731,
+      "mid": 0.3526
+    },
+    "Matias Galarza Fonda": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": 0.1211
+    },
+    "Michael Olise": {
+      "bid": 0.5263,
+      "offer": 0.6024,
+      "mid": 0.5644
+    },
+    "Miguel Almir\u00f3n": {
+      "bid": null,
+      "offer": 0.1695,
+      "mid": 0.1602
+    },
+    "Ousmane Dembele": {
+      "bid": 0.4762,
+      "offer": 0.5882,
+      "mid": 0.5322
+    },
+    "Adri\u00e1n Andr\u00e9s Cubas": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Bradley Barcola": {
+      "bid": null,
+      "offer": 0.5495,
+      "mid": 0.5193
+    },
+    "Dayot Upamecano": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1718
+    },
+    "Diego Gomez": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Gustavo Ra\u00fal G\u00f3mez Portillo": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": 0.0556
+    },
+    "Gustavo Vel\u00e1zquez": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.0473
+    },
+    "Juan Caceres": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Jules Kounde": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": 0.2362
+    },
+    "Julio Enciso": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Junior Alonso": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.0473
+    },
+    "Kouadio Kone": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": 0.2779
+    },
+    "Antonio Sanabria": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1718
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": 0.2554
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.3214
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2148
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": null,
+      "offer": 0.5618,
+      "mid": 0.5309
+    },
+    "Jos\u00e9 Mar\u00eda Canale Dom\u00ednguez": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Gabriel Avalos": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    }
+  },
+  "SOT_OU1.5": {
+    "Adri\u00e1n Andr\u00e9s Cubas": {
+      "bid": 0.0067,
+      "offer": 0.0238,
+      "mid": 0.0153
+    },
+    "Adrien Rabiot": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0859
+    },
+    "Bradley Barcola": {
+      "bid": 0.2222,
+      "offer": 0.2381,
+      "mid": 0.2302
+    },
+    "Dayot Upamecano": {
+      "bid": 0.02,
+      "offer": 0.0345,
+      "mid": 0.0273
+    },
+    "Diego Gomez": {
+      "bid": 0.0154,
+      "offer": 0.0435,
+      "mid": 0.0294
+    },
+    "Gustavo Ra\u00fal G\u00f3mez Portillo": {
+      "bid": 0.002,
+      "offer": 0.02,
+      "mid": 0.011
+    },
+    "Gustavo Vel\u00e1zquez": {
+      "bid": 0.002,
+      "offer": 0.0182,
+      "mid": 0.0101
+    },
+    "Juan Caceres": {
+      "bid": 0.002,
+      "offer": 0.0105,
+      "mid": 0.0063
+    },
+    "Jules Kounde": {
+      "bid": 0.0118,
+      "offer": 0.02,
+      "mid": 0.0159
+    },
+    "Julio Enciso": {
+      "bid": 0.0667,
+      "offer": 0.1351,
+      "mid": 0.1009
+    },
+    "Junior Alonso": {
+      "bid": 0.002,
+      "offer": 0.0167,
+      "mid": 0.0094
+    },
+    "Kouadio Kone": {
+      "bid": 0.0455,
+      "offer": 0.0588,
+      "mid": 0.0522
+    },
+    "Kylian Mbappe": {
+      "bid": 0.7092,
+      "offer": 0.7194,
+      "mid": 0.7143
+    },
+    "Lucas Digne": {
+      "bid": 0.0208,
+      "offer": 0.0345,
+      "mid": 0.0277
+    },
+    "Matias Galarza Fonda": {
+      "bid": 0.0143,
+      "offer": 0.0278,
+      "mid": 0.021
+    },
+    "Michael Olise": {
+      "bid": 0.3378,
+      "offer": 0.3546,
+      "mid": 0.3462
+    },
+    "Miguel Almir\u00f3n": {
+      "bid": 0.0357,
+      "offer": 0.0435,
+      "mid": 0.0396
+    },
+    "Omar Alderete": {
+      "bid": 0.0056,
+      "offer": 0.0154,
+      "mid": 0.0105
+    },
+    "Ousmane Dembele": {
+      "bid": 0.2,
+      "offer": 0.3226,
+      "mid": 0.2613
+    },
+    "William Saliba": {
+      "bid": 0.0167,
+      "offer": 0.02,
+      "mid": 0.0183
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0675
+    },
+    "Ramon Sosa": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1005
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.3876,
+      "mid": 0.3663
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": 0.0964
+    },
+    "Alejandro Romero Gamarra": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "Alex Arce": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.139
+    },
+    "Antonio Sanabria": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0859
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0675
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": 0.1074
+    },
+    "Dami\u00e1n Bobadilla": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": 0.0822
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": null,
+      "offer": 0.4202,
+      "mid": 0.3971
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.3876,
+      "mid": 0.3663
+    },
+    "Gabriel Avalos": {
+      "bid": null,
+      "offer": 0.1136,
+      "mid": 0.1074
+    },
+    "Gustavo Caballero": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0787
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0727
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.4808,
+      "mid": 0.4544
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.0455,
+      "mid": 0.043
+    },
+    "Isidro Pitta": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.0473
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.625,
+      "mid": 0.5906
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Mauricio": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": 0.0525
+    }
+  },
+  "SOT_OU0.5": {
+    "William Saliba": {
+      "bid": 0.1282,
+      "offer": 0.1613,
+      "mid": 0.1447
+    },
+    "Adrien Rabiot": {
+      "bid": 0.3175,
+      "offer": 0.3788,
+      "mid": 0.3482
+    },
+    "Bradley Barcola": {
+      "bid": 0.5952,
+      "offer": 0.5988,
+      "mid": 0.597
+    },
+    "Dayot Upamecano": {
+      "bid": 0.1351,
+      "offer": 0.1667,
+      "mid": 0.1509
+    },
+    "Diego Gomez": {
+      "bid": 0.2041,
+      "offer": 0.2632,
+      "mid": 0.2336
+    },
+    "Gustavo Ra\u00fal G\u00f3mez Portillo": {
+      "bid": 0.0333,
+      "offer": 0.1136,
+      "mid": 0.0735
+    },
+    "Gustavo Vel\u00e1zquez": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.1181
+    },
+    "Juan Caceres": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945
+    },
+    "Jules Kounde": {
+      "bid": 0.1695,
+      "offer": 0.1887,
+      "mid": 0.1791
+    },
+    "Julio Enciso": {
+      "bid": 0.4032,
+      "offer": 0.4464,
+      "mid": 0.4248
+    },
+    "Junior Alonso": {
+      "bid": 0.0238,
+      "offer": 0.1087,
+      "mid": 0.0663
+    },
+    "Kouadio Kone": {
+      "bid": 0.2703,
+      "offer": 0.2857,
+      "mid": 0.278
+    },
+    "Kylian Mbappe": {
+      "bid": 0.9259,
+      "offer": 0.9346,
+      "mid": 0.9303
+    },
+    "Lucas Digne": {
+      "bid": 0.1818,
+      "offer": 0.2128,
+      "mid": 0.1973
+    },
+    "Matias Galarza Fonda": {
+      "bid": 0.1818,
+      "offer": 0.2,
+      "mid": 0.1909
+    },
+    "Michael Olise": {
+      "bid": 0.6897,
+      "offer": 0.7246,
+      "mid": 0.7071
+    },
+    "Miguel Almir\u00f3n": {
+      "bid": 0.2667,
+      "offer": 0.2703,
+      "mid": 0.2685
+    },
+    "Omar Alderete": {
+      "bid": 0.0667,
+      "offer": 0.122,
+      "mid": 0.0943
+    },
+    "Ousmane Dembele": {
+      "bid": 0.6944,
+      "offer": 0.7042,
+      "mid": 0.6993
+    },
+    "Adri\u00e1n Andr\u00e9s Cubas": {
+      "bid": 0.025,
+      "offer": 0.08,
+      "mid": 0.0525
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.8772,
+      "mid": 0.829
+    },
+    "Jos\u00e9 Mar\u00eda Canale Dom\u00ednguez": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": 0.1211
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": 0.4218
+    },
+    "Mauricio": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": 0.2863
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.3472,
+      "mid": 0.3281
+    },
+    "Ramon Sosa": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": 0.3873
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.7299,
+      "mid": 0.6898
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.4032,
+      "mid": 0.381
+    },
+    "Alejandro Romero Gamarra": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.3214
+    },
+    "Alexandro Maidana": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Alex Arce": {
+      "bid": null,
+      "offer": 0.4808,
+      "mid": 0.4544
+    },
+    "Antonio Sanabria": {
+      "bid": null,
+      "offer": 0.4202,
+      "mid": 0.3971
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.3449
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4039
+    },
+    "Braian Ojeda": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1853
+    },
+    "Dami\u00e1n Bobadilla": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": 0.372
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.3356,
+      "mid": 0.3171
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": null,
+      "offer": 0.7634,
+      "mid": 0.7214
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.7407,
+      "mid": 0.7
+    },
+    "Fabi\u00e1n Balbuena": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": 0.0822
+    },
+    "Gabriel Avalos": {
+      "bid": null,
+      "offer": 0.4386,
+      "mid": 0.4145
+    },
+    "Gustavo Caballero": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.358
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.3597,
+      "mid": 0.3399
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.8,
+      "mid": 0.756
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.2778,
+      "mid": 0.2625
+    },
+    "Isidro Pitta": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": 0.27
+    }
+  }
+}

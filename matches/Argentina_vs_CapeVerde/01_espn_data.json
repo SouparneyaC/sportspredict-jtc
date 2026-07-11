@@ -1,0 +1,35 @@
+{
+  "_description": "ESPN team/player stats for Argentina (3 group games) and Cape Verde (3 group games), R32 ARG vs CPV 2026-07-03",
+  "espn_event_id": 760500,
+  "argentina_group_stage": {
+    "team_id_espn": 202,
+    "matches": [
+      {"opponent": "Algeria", "ha": "home", "result": "W 3-0", "possession_pct": 47.8, "shots": 10, "sot": 6, "corners": 2, "yc": 0, "rc": 0, "offsides": 3, "fouls": 13},
+      {"opponent": "Austria", "ha": "home", "result": "W 2-0", "possession_pct": 53.6, "shots": 12, "sot": 5, "corners": 1, "yc": 2, "rc": 0, "offsides": 2, "fouls": 13},
+      {"opponent": "Jordan", "ha": "away", "result": "W 3-1", "possession_pct": 73.3, "shots": 12, "sot": 4, "corners": 6, "yc": 0, "rc": 0, "offsides": 3, "fouls": 7}
+    ],
+    "averages": {"shots": 11.33, "sot": 5.0, "corners": 3.0, "yc": 0.67, "offsides": 2.67, "possession_pct": 58.2},
+    "notes": [
+      "Perfect group record (3W, 9pts), scored 8 goals conceded 1. Clear best team of the tournament so far.",
+      "Messi scored 6 of Argentina's 8 group goals: hat-trick vs Algeria (17',60',76'), brace vs Austria (38',90+5'), 1 free-kick vs Jordan (80', coming off the bench).",
+      "Other scorers: Lo Celso (free kick vs Jordan), Lautaro Martinez (penalty vs Jordan) -- Lautaro's ONLY goal in 3 games, and it was a penalty (0 open-play goals).",
+      "Julian Alvarez: 0 goals, 0 assists in 3 group games; benched (sub appearance only) in 2 of 3.",
+      "Messi SOT by game: 4, 4, 1 (avg 3.0); shots: 6, 7, 2. Extreme current form (6 goals) despite this being just group stage."
+    ]
+  },
+  "cape_verde_group_stage": {
+    "team_id_espn": 2597,
+    "matches": [
+      {"opponent": "Spain", "ha": "away", "result": "D 0-0", "possession_pct": 25.7, "shots": 6, "sot": 1, "corners": 1, "yc": 1, "rc": 0, "offsides": 3, "fouls": 1},
+      {"opponent": "Uruguay", "ha": "home", "result": "D 2-2", "possession_pct": 34.8, "shots": 12, "sot": 4, "corners": 4, "yc": 2, "rc": 0, "offsides": 0, "fouls": 4},
+      {"opponent": "Saudi Arabia", "ha": "home", "result": "D 0-0", "possession_pct": 51.0, "shots": 15, "sot": 2, "corners": 4, "yc": 1, "rc": 0, "offsides": 2, "fouls": 10}
+    ],
+    "averages": {"shots": 11.0, "sot": 2.33, "corners": 3.0, "yc": 1.33, "offsides": 1.67, "possession_pct": 37.2},
+    "notes": [
+      "Cinderella story: unbeaten in group stage (3 draws, 3pts), advanced as a best-third-place team. Extremely resilient defense -- clean sheets vs Spain (survived 74% possession, 27 shots) and Saudi Arabia.",
+      "Most analogous opponent-quality game to today (elite possession/press side) is the Spain match: CPV managed only 6 shots, 1 SOT, 25.7% possession -- the single most relevant precedent for how they'll look against Argentina.",
+      "Their best attacking output (12 shots, 4 SOT) came in their most open game (vs Uruguay, 2-2), not against elite opposition.",
+      "Low-foul, low-card team generally (1 foul(!) vs Spain -- extremely passive/deep defensive setup, not a disciplinary risk in the traditional sense)."
+    ]
+  }
+}

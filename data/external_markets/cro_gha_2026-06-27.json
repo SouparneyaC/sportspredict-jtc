@@ -2,43 +2,164 @@
   "match": "Croatia vs Ghana",
   "date": "2026-06-27",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"CRO_vs_ENG_GD1": 760437, "PAN_vs_GHA_GD1": 760434, "GHA_vs_ENG_GD2": 760458, "CRO_vs_PAN_GD2": 760460},
+  "espn_event_ids": {
+    "CRO_vs_ENG_GD1": 760437,
+    "PAN_vs_GHA_GD1": 760434,
+    "GHA_vs_ENG_GD2": 760458,
+    "CRO_vs_PAN_GD2": 760460
+  },
   "smarkets_event_id": 45086953,
   "group_context": {
-    "Croatia": {"pts": 3, "record": "0-1-1 (L2-4 ENG, W1-0 PAN)", "status": "Needs a win to firmly control 2nd place; GD currently -1"},
-    "Ghana": {"pts": 4, "record": "1-1-0 (W1-0 PAN, D0-0 ENG)", "status": "A draw likely secures qualification; GD +1, slightly ahead of Croatia"}
+    "Croatia": {
+      "pts": 3,
+      "record": "0-1-1 (L2-4 ENG, W1-0 PAN)",
+      "status": "Needs a win to firmly control 2nd place; GD currently -1"
+    },
+    "Ghana": {
+      "pts": 4,
+      "record": "1-1-0 (W1-0 PAN, D0-0 ENG)",
+      "status": "A draw likely secures qualification; GD +1, slightly ahead of Croatia"
+    }
   },
   "wc2026_espn_stats": {
     "CRO": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760437, "opponent": "England", "result": "L 2-4", "fouls": 12, "SOT": 5, "offsides": 1, "YC": 0, "RC": 0, "corners": 2, "possession": 48.3},
-        {"event_id": 760460, "opponent": "Panama", "result": "W 1-0", "fouls": 12, "SOT": 2, "offsides": 2, "YC": 1, "RC": 0, "corners": 2, "possession": 58.0}
+        {
+          "event_id": 760437,
+          "opponent": "England",
+          "result": "L 2-4",
+          "fouls": 12,
+          "SOT": 5,
+          "offsides": 1,
+          "YC": 0,
+          "RC": 0,
+          "corners": 2,
+          "possession": 48.3
+        },
+        {
+          "event_id": 760460,
+          "opponent": "Panama",
+          "result": "W 1-0",
+          "fouls": 12,
+          "SOT": 2,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 2,
+          "possession": 58.0
+        }
       ],
-      "averages": {"fouls": 12.0, "SOT": 3.5, "offsides": 1.5, "cards": 0.5, "corners": 2.0},
+      "averages": {
+        "fouls": 12.0,
+        "SOT": 3.5,
+        "offsides": 1.5,
+        "cards": 0.5,
+        "corners": 2.0
+      },
       "CRITICAL_LESSON": "CRO-PAN's '9+ corners' question was our biggest single loss of that match (-21.77): we trusted Croatia's thin 2-corner GD1/GD2 sample and badly underestimated a high-stakes, both-teams-attacking match, while the market (already pricing the survival-match intensity) was right. DO NOT repeat — weight the live market far more than the raw 2.0 corner average today."
     },
     "GHA": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760434, "opponent": "Panama", "result": "W 1-0", "fouls": 9, "SOT": 2, "offsides": 4, "YC": 1, "RC": 0, "corners": 2, "possession": 38.0},
-        {"event_id": 760458, "opponent": "England", "result": "D 0-0", "fouls": 24, "SOT": 1, "offsides": 2, "YC": 1, "RC": 0, "corners": 2, "possession": 21.1},
-        {"_note": "Ghana's offside count stayed elevated (4, then 2) in BOTH a moderate-possession win and an extreme-low-possession defensive performance — similar to Iran's counter-attack profile (EGY-IRN) rather than a simple defensive-underdog-parks-the-bus read. Their foul count, by contrast, exploded (9→24) purely as a function of possession share."}
+        {
+          "event_id": 760434,
+          "opponent": "Panama",
+          "result": "W 1-0",
+          "fouls": 9,
+          "SOT": 2,
+          "offsides": 4,
+          "YC": 1,
+          "RC": 0,
+          "corners": 2,
+          "possession": 38.0
+        },
+        {
+          "event_id": 760458,
+          "opponent": "England",
+          "result": "D 0-0",
+          "fouls": 24,
+          "SOT": 1,
+          "offsides": 2,
+          "YC": 1,
+          "RC": 0,
+          "corners": 2,
+          "possession": 21.1
+        },
+        {
+          "_note": "Ghana's offside count stayed elevated (4, then 2) in BOTH a moderate-possession win and an extreme-low-possession defensive performance — similar to Iran's counter-attack profile (EGY-IRN) rather than a simple defensive-underdog-parks-the-bus read. Their foul count, by contrast, exploded (9→24) purely as a function of possession share."
+        }
       ],
-      "averages": {"fouls": 16.5, "SOT": 1.5, "offsides": 3.0, "cards": 1.0, "corners": 2.0}
+      "averages": {
+        "fouls": 16.5,
+        "SOT": 1.5,
+        "offsides": 3.0,
+        "cards": 1.0,
+        "corners": 2.0
+      }
     }
   },
   "smarkets_markets": {
-    "FTR": {"Croatia": 0.5420, "Ghana": 0.1640, "Draw": 0.2942, "liquid": true},
-    "HT_result": {"Croatia": 0.3789, "Ghana": 0.1591, "Draw": 0.4695, "liquid": true},
-    "2H_result": {"Croatia": 0.4371, "Ghana": 0.1743, "Draw": 0.3866, "liquid": true},
-    "Penalty": {"Yes": 0.2409, "No": 0.7549, "liquid": true},
-    "Any_sent_off": {"Yes": 0.1376, "No": 0.8659, "liquid": true},
-    "OU3_5": {"Under": 0.7971, "Over": 0.2064, "liquid": true},
-    "CRO_2H_OU0_5_goals": {"Under": 0.4262, "Over": 0.5754, "liquid": true},
-    "CRO_SOT_OU4_5_fullmatch": {"Under": 0.4985, "Over": 0.5232, "liquid": true, "implied_lambda": 4.80},
-    "Corners_OU8_5": {"Under": 0.5321, "Over": 0.4631, "liquid": true},
-    "player_SOT_fullmatch": {"Luka_Sucic": {"offer": 0.5618, "adjusted": 0.531}, "Antoine_Semenyo": {"bid": 0.3546, "offer": 0.40, "mid": 0.3773}}
+    "FTR": {
+      "Croatia": 0.542,
+      "Ghana": 0.164,
+      "Draw": 0.2942,
+      "liquid": true
+    },
+    "HT_result": {
+      "Croatia": 0.3789,
+      "Ghana": 0.1591,
+      "Draw": 0.4695,
+      "liquid": true
+    },
+    "2H_result": {
+      "Croatia": 0.4371,
+      "Ghana": 0.1743,
+      "Draw": 0.3866,
+      "liquid": true
+    },
+    "Penalty": {
+      "Yes": 0.2409,
+      "No": 0.7549,
+      "liquid": true
+    },
+    "Any_sent_off": {
+      "Yes": 0.1376,
+      "No": 0.8659,
+      "liquid": true
+    },
+    "OU3_5": {
+      "Under": 0.7971,
+      "Over": 0.2064,
+      "liquid": true
+    },
+    "CRO_2H_OU0_5_goals": {
+      "Under": 0.4262,
+      "Over": 0.5754,
+      "liquid": true
+    },
+    "CRO_SOT_OU4_5_fullmatch": {
+      "Under": 0.4985,
+      "Over": 0.5232,
+      "liquid": true,
+      "implied_lambda": 4.8
+    },
+    "Corners_OU8_5": {
+      "Under": 0.5321,
+      "Over": 0.4631,
+      "liquid": true
+    },
+    "player_SOT_fullmatch": {
+      "Luka_Sucic": {
+        "offer": 0.5618,
+        "adjusted": 0.531
+      },
+      "Antoine_Semenyo": {
+        "bid": 0.3546,
+        "offer": 0.4,
+        "mid": 0.3773
+      }
+    }
   },
   "context_flags": [
     "RULE8_STRONG: HT Draw priced at 46.95% — the highest HT-draw price of any GD3 fixture this session. Both teams have something concrete to play for, pointing to a cagey first half before Croatia's class shows.",
@@ -53,7 +174,7 @@
       "text": "Will Ghana be caught offside 2 or more times?",
       "pick_tier": "MEDIUM-HIGH CONFIDENCE",
       "reasoning": "GHA offsides: 4 (38% poss) and 2 (21% poss) — λ=3.0 raw Poisson gives P(≥2)=0.80. This does NOT look like a typical defensive-underdog signal (compare GHA_OFFSIDE_NOT_DEFENSIVE_UNDERDOG_PATTERN) since the rate held up even at extreme-low possession. Shaded modestly down from raw because Croatia's press today may differ from England's high press that produced Ghana's 2nd offside game.",
-      "final_estimate": 0.60,
+      "final_estimate": 0.6,
       "direction": "YES lean",
       "confidence": "medium-high"
     },
@@ -140,7 +261,7 @@
     }
   ],
   "summary_table": {
-    "Q1_GHA_2plus_offsides": 0.60,
+    "Q1_GHA_2plus_offsides": 0.6,
     "Q2_penalty_or_red": 0.35,
     "Q3_Sucic_2H_SOT": 0.34,
     "Q4_CRO_wins": 0.54,
@@ -156,6 +277,103 @@
     "Q6: Croatia scores in 2H = 0.58 (HIGH CONFIDENCE — direct market, also corrects a prior under-confidence error on the same question type)",
     "Q4: Croatia wins = 0.54 (HIGH CONFIDENCE — direct market)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "Croatia 2 - 1 Ghana",
+    "total_rbp": 42.76,
+    "beat_crowd_count": "8/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Ghana be caught offside 2 or more times?",
+        "us": 0.6,
+        "crowd": 0.47,
+        "outcome": 1,
+        "rbp": 13.49,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will a penalty kick be awarded OR a red card be shown in the match?",
+        "us": 0.35,
+        "crowd": 0.35,
+        "outcome": 0,
+        "rbp": 1.81,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Luka Sučić have at least 1 shot on target in the second half?",
+        "us": 0.34,
+        "crowd": 0.28,
+        "outcome": 0,
+        "rbp": -0.87,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will there be 4 or more total shots on target in the second half?",
+        "us": 0.55,
+        "crowd": 0.57,
+        "outcome": 0,
+        "rbp": 5.32,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Croatia win the match?",
+        "us": 0.54,
+        "crowd": 0.56,
+        "outcome": 1,
+        "rbp": 0.24,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "At halftime, will Croatia be winning?",
+        "us": 0.38,
+        "crowd": 0.4,
+        "outcome": 1,
+        "rbp": -1.35,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will Croatia score in the second half?",
+        "us": 0.58,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": 0.3,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will there be 9 or more total corner kicks?",
+        "us": 0.46,
+        "crowd": 0.49,
+        "outcome": 0,
+        "rbp": 5.51,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Croatia have 6 or more shots on target?",
+        "us": 0.36,
+        "crowd": 0.4,
+        "outcome": 0,
+        "rbp": 5.35,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Antoine Semenyo have at least 1 shot on target?",
+        "us": 0.28,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": 12.97,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-27"
 }

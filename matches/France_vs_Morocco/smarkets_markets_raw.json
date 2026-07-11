@@ -1,0 +1,2296 @@
+{
+  "FTR": {
+    "market_id": "149627266",
+    "contracts": {
+      "415713621": "France",
+      "415713623": "Draw",
+      "415713622": "Morocco"
+    },
+    "quotes": {
+      "415713621": {
+        "bids": [
+          {
+            "price": 6061,
+            "quantity": 3062050
+          },
+          {
+            "price": 6024,
+            "quantity": 287486500
+          },
+          {
+            "price": 5988,
+            "quantity": 3922589
+          },
+          {
+            "price": 5952,
+            "quantity": 16801
+          },
+          {
+            "price": 5917,
+            "quantity": 1611589
+          }
+        ],
+        "offers": [
+          {
+            "price": 6098,
+            "quantity": 305656691
+          },
+          {
+            "price": 6135,
+            "quantity": 32678040
+          },
+          {
+            "price": 6173,
+            "quantity": 7071499
+          },
+          {
+            "price": 6289,
+            "quantity": 3507679
+          },
+          {
+            "price": 6329,
+            "quantity": 14129476
+          }
+        ]
+      },
+      "415713622": {
+        "bids": [
+          {
+            "price": 1389,
+            "quantity": 82977065
+          },
+          {
+            "price": 1351,
+            "quantity": 392498530
+          },
+          {
+            "price": 1316,
+            "quantity": 35528006
+          }
+        ],
+        "offers": [
+          {
+            "price": 1429,
+            "quantity": 16536547
+          },
+          {
+            "price": 1471,
+            "quantity": 647055061
+          },
+          {
+            "price": 1515,
+            "quantity": 9542039
+          },
+          {
+            "price": 1667,
+            "quantity": 299940
+          },
+          {
+            "price": 1818,
+            "quantity": 13751
+          }
+        ]
+      },
+      "415713623": {
+        "bids": [
+          {
+            "price": 2500,
+            "quantity": 78222655
+          },
+          {
+            "price": 2439,
+            "quantity": 333882907
+          },
+          {
+            "price": 2381,
+            "quantity": 64456923
+          },
+          {
+            "price": 2326,
+            "quantity": 29517700
+          }
+        ],
+        "offers": [
+          {
+            "price": 2532,
+            "quantity": 24880460
+          },
+          {
+            "price": 2564,
+            "quantity": 8113523
+          },
+          {
+            "price": 2597,
+            "quantity": 812906216
+          },
+          {
+            "price": 2667,
+            "quantity": 10864259
+          },
+          {
+            "price": 2857,
+            "quantity": 17500
+          }
+        ]
+      }
+    }
+  },
+  "OU2.5_goals": {
+    "market_id": "149627303",
+    "contracts": {
+      "415713785": "Under 2.5 goals",
+      "415713786": "Over 2.5 goals"
+    },
+    "quotes": {
+      "415713785": {
+        "bids": [
+          {
+            "price": 5319,
+            "quantity": 160336
+          },
+          {
+            "price": 5263,
+            "quantity": 16202
+          },
+          {
+            "price": 5181,
+            "quantity": 19301
+          },
+          {
+            "price": 5155,
+            "quantity": 4323317
+          },
+          {
+            "price": 5128,
+            "quantity": 52136792
+          }
+        ],
+        "offers": [
+          {
+            "price": 5405,
+            "quantity": 112162119
+          },
+          {
+            "price": 5464,
+            "quantity": 15747000
+          },
+          {
+            "price": 5495,
+            "quantity": 13001400
+          }
+        ]
+      },
+      "415713786": {
+        "bids": [
+          {
+            "price": 4630,
+            "quantity": 16847296
+          },
+          {
+            "price": 4587,
+            "quantity": 2108817
+          },
+          {
+            "price": 4464,
+            "quantity": 16001000
+          }
+        ],
+        "offers": [
+          {
+            "price": 4673,
+            "quantity": 8260218
+          },
+          {
+            "price": 4762,
+            "quantity": 1641118
+          },
+          {
+            "price": 4854,
+            "quantity": 123009782
+          },
+          {
+            "price": 5000,
+            "quantity": 14285700
+          }
+        ]
+      }
+    }
+  },
+  "Cards_OU4.5": {
+    "market_id": "149627441",
+    "contracts": {
+      "415714115": "Under 4.5 cards",
+      "415714116": "Over 4.5 cards"
+    },
+    "quotes": {
+      "415714115": {
+        "bids": [
+          {
+            "price": 7246,
+            "quantity": 540282
+          },
+          {
+            "price": 6849,
+            "quantity": 739158
+          }
+        ],
+        "offers": [
+          {
+            "price": 8696,
+            "quantity": 2588192
+          }
+        ]
+      },
+      "415714116": {
+        "bids": [
+          {
+            "price": 1754,
+            "quantity": 5772526
+          }
+        ],
+        "offers": [
+          {
+            "price": 2778,
+            "quantity": 542077
+          },
+          {
+            "price": 2985,
+            "quantity": 481112
+          }
+        ]
+      }
+    }
+  },
+  "Cards_OU3.5": {
+    "market_id": "149627439",
+    "contracts": {
+      "415714111": "Under 3.5 cards",
+      "415714112": "Over 3.5 cards"
+    },
+    "quotes": {
+      "415714111": {
+        "bids": [
+          {
+            "price": 5495,
+            "quantity": 91446
+          },
+          {
+            "price": 5464,
+            "quantity": 29099
+          },
+          {
+            "price": 5435,
+            "quantity": 15731
+          }
+        ],
+        "offers": [
+          {
+            "price": 6061,
+            "quantity": 1548103
+          }
+        ]
+      },
+      "415714112": {
+        "bids": [
+          {
+            "price": 4000,
+            "quantity": 173756
+          },
+          {
+            "price": 3704,
+            "quantity": 40360
+          }
+        ],
+        "offers": [
+          {
+            "price": 4762,
+            "quantity": 3256540
+          }
+        ]
+      }
+    }
+  },
+  "HT_result": {
+    "market_id": "149627273",
+    "contracts": {
+      "415713662": "France",
+      "415713664": "Draw",
+      "415713663": "Morocco"
+    },
+    "quotes": {
+      "415713662": {
+        "bids": [
+          {
+            "price": 4132,
+            "quantity": 21387246
+          },
+          {
+            "price": 4032,
+            "quantity": 2069406
+          }
+        ],
+        "offers": [
+          {
+            "price": 4274,
+            "quantity": 8732099
+          },
+          {
+            "price": 4310,
+            "quantity": 1713431
+          },
+          {
+            "price": 4386,
+            "quantity": 6360500
+          },
+          {
+            "price": 4505,
+            "quantity": 1819836
+          }
+        ]
+      },
+      "415713663": {
+        "bids": [
+          {
+            "price": 1429,
+            "quantity": 9228122
+          },
+          {
+            "price": 1351,
+            "quantity": 26435400
+          },
+          {
+            "price": 1282,
+            "quantity": 6701468
+          }
+        ],
+        "offers": [
+          {
+            "price": 1562,
+            "quantity": 105326391
+          },
+          {
+            "price": 1613,
+            "quantity": 994854
+          }
+        ]
+      },
+      "415713664": {
+        "bids": [
+          {
+            "price": 4348,
+            "quantity": 2382242
+          },
+          {
+            "price": 4310,
+            "quantity": 837354
+          },
+          {
+            "price": 4132,
+            "quantity": 8469377
+          },
+          {
+            "price": 4000,
+            "quantity": 2085961
+          }
+        ],
+        "offers": [
+          {
+            "price": 4425,
+            "quantity": 28842424
+          },
+          {
+            "price": 4464,
+            "quantity": 1551893
+          }
+        ]
+      }
+    }
+  },
+  "Penalty": {
+    "market_id": "149627291",
+    "contracts": {
+      "415713731": "Yes",
+      "415713732": "No"
+    },
+    "quotes": {
+      "415713731": {
+        "bids": [],
+        "offers": []
+      },
+      "415713732": {
+        "bids": [
+          {
+            "price": 7143,
+            "quantity": 3419999
+          },
+          {
+            "price": 6944,
+            "quantity": 972063
+          },
+          {
+            "price": 6849,
+            "quantity": 162416
+          }
+        ],
+        "offers": [
+          {
+            "price": 7299,
+            "quantity": 642280
+          }
+        ]
+      }
+    }
+  },
+  "Any_sent_off": {
+    "market_id": "149627428",
+    "contracts": {
+      "415714079": "Yes",
+      "415714080": "No"
+    },
+    "quotes": {
+      "415714079": {
+        "bids": [
+          {
+            "price": 1429,
+            "quantity": 2010354
+          },
+          {
+            "price": 1389,
+            "quantity": 2068248
+          }
+        ],
+        "offers": [
+          {
+            "price": 1515,
+            "quantity": 10246351
+          }
+        ]
+      },
+      "415714080": {
+        "bids": [
+          {
+            "price": 8475,
+            "quantity": 3077532
+          },
+          {
+            "price": 8130,
+            "quantity": 2490780
+          }
+        ],
+        "offers": [
+          {
+            "price": 8696,
+            "quantity": 19814110
+          }
+        ]
+      }
+    }
+  },
+  "Mbappe_anytime_scorer": {
+    "market_id": "149627747",
+    "contracts": {
+      "415715178": "Achraf Hakimi",
+      "415715192": "Adrien Rabiot",
+      "415715168": "Amine Sbai",
+      "415715163": "Anass Salah-Eddine",
+      "415715180": "Aurelien Tchouameni",
+      "415715174": "Ayoube Amaimouni-Echghouyab",
+      "415715158": "Ayoub El Kaabi",
+      "415715171": "Ayyoub Bouaddi",
+      "415715159": "Azzedine Ounahi",
+      "415715166": "Bilal El Khannous",
+      "415715187": "Bradley Barcola",
+      "415715179": "Brahim Abdelkader Diaz",
+      "415715160": "Chadi Riad",
+      "415715169": "Chemsdine Talbi",
+      "415715197": "Dayot Upamecano",
+      "415715189": "D\u00e9sir\u00e9 Dou\u00e9",
+      "415715173": "Gessime Ben Youssef Mustapha Yassine",
+      "415715202": "Ibrahima Konate",
+      "415715161": "Ismael Saibari",
+      "415715177": "Issa Diop",
+      "415715201": "Jean-Philippe Mateta",
+      "415715200": "Jules Kounde",
+      "415715184": "Kouadio Kone",
+      "415715199": "Kylian Mbappe",
+      "415715191": "Lucas Digne",
+      "415715193": "Lucas Hernandez",
+      "415715188": "Maghnes Akliouche",
+      "415715186": "Malo Gusto",
+      "415715196": "Marcus Thuram",
+      "415715176": "Marwane Saadane",
+      "415715181": "Maxence Lacroix",
+      "415715183": "Michael Olise",
+      "415715162": "Neil El Aynaoui",
+      "415715194": "N'Golo Kante",
+      "415715157": "Noussair Mazraoui",
+      "415715198": "Ousmane Dembele",
+      "415715185": "Rayan Cherki",
+      "415715164": "Redouane Halhal",
+      "415715172": "Samir El Mourabet",
+      "415715175": "Sofyan Amrabat",
+      "415715165": "Soufiane Rahimi",
+      "415715195": "Theo Francois Hernandez",
+      "415715190": "Warren Za\u00efre-Emery",
+      "415715182": "William Saliba",
+      "415715170": "Youssef Belammari",
+      "415715167": "Zakaria El Ouahdi"
+    },
+    "quotes": {
+      "415715157": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 333,
+            "quantity": 698251
+          }
+        ]
+      },
+      "415715158": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1754,
+            "quantity": 818578
+          },
+          {
+            "price": 1961,
+            "quantity": 839656
+          }
+        ]
+      },
+      "415715159": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1190,
+            "quantity": 766174
+          }
+        ]
+      },
+      "415715160": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 357,
+            "quantity": 699989
+          }
+        ]
+      },
+      "415715161": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2128,
+            "quantity": 857469
+          }
+        ]
+      },
+      "415715162": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 690,
+            "quantity": 725026
+          }
+        ]
+      },
+      "415715163": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 278,
+            "quantity": 694301
+          }
+        ]
+      },
+      "415715164": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 571,
+            "quantity": 715876
+          }
+        ]
+      },
+      "415715165": {
+        "bids": [
+          {
+            "price": 1613,
+            "quantity": 858673
+          },
+          {
+            "price": 1429,
+            "quantity": 1350069
+          }
+        ],
+        "offers": [
+          {
+            "price": 1754,
+            "quantity": 818578
+          }
+        ]
+      },
+      "415715166": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 909,
+            "quantity": 742492
+          }
+        ]
+      },
+      "415715167": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 400,
+            "quantity": 703124
+          }
+        ]
+      },
+      "415715168": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1064,
+            "quantity": 755371
+          },
+          {
+            "price": 1190,
+            "quantity": 766174
+          }
+        ]
+      },
+      "415715169": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          },
+          {
+            "price": 1136,
+            "quantity": 761507
+          }
+        ]
+      },
+      "415715170": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 435,
+            "quantity": 705697
+          }
+        ]
+      },
+      "415715171": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 357,
+            "quantity": 699989
+          }
+        ]
+      },
+      "415715172": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 513,
+            "quantity": 711500
+          }
+        ]
+      },
+      "415715173": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          }
+        ]
+      },
+      "415715174": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 833,
+            "quantity": 736336
+          },
+          {
+            "price": 1000,
+            "quantity": 749999
+          }
+        ]
+      },
+      "415715175": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 385,
+            "quantity": 702028
+          }
+        ]
+      },
+      "415715176": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 333,
+            "quantity": 698251
+          }
+        ]
+      },
+      "415715177": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 333,
+            "quantity": 698251
+          }
+        ]
+      },
+      "415715178": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1064,
+            "quantity": 755371
+          }
+        ]
+      },
+      "415715179": {
+        "bids": [
+          {
+            "price": 1163,
+            "quantity": 1289767
+          },
+          {
+            "price": 1111,
+            "quantity": 3330333
+          },
+          {
+            "price": 1000,
+            "quantity": 12500000
+          }
+        ],
+        "offers": [
+          {
+            "price": 1429,
+            "quantity": 10384458
+          }
+        ]
+      },
+      "415715180": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 714,
+            "quantity": 726900
+          }
+        ]
+      },
+      "415715181": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          },
+          {
+            "price": 1000,
+            "quantity": 749999
+          }
+        ]
+      },
+      "415715182": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 541,
+            "quantity": 713606
+          }
+        ]
+      },
+      "415715183": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2500,
+            "quantity": 900000
+          },
+          {
+            "price": 2632,
+            "quantity": 56989
+          },
+          {
+            "price": 2667,
+            "quantity": 920496
+          },
+          {
+            "price": 5000,
+            "quantity": 200000
+          }
+        ]
+      },
+      "415715184": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 741,
+            "quantity": 729020
+          }
+        ]
+      },
+      "415715185": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2273,
+            "quantity": 873560
+          }
+        ]
+      },
+      "415715186": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 690,
+            "quantity": 725026
+          }
+        ]
+      },
+      "415715187": {
+        "bids": [
+          {
+            "price": 1429,
+            "quantity": 2099370
+          }
+        ],
+        "offers": [
+          {
+            "price": 2222,
+            "quantity": 900090
+          },
+          {
+            "price": 2439,
+            "quantity": 892739
+          }
+        ]
+      },
+      "415715188": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2326,
+            "quantity": 879594
+          }
+        ]
+      },
+      "415715189": {
+        "bids": [
+          {
+            "price": 1429,
+            "quantity": 2099370
+          }
+        ],
+        "offers": [
+          {
+            "price": 2222,
+            "quantity": 867832
+          }
+        ]
+      },
+      "415715190": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 952,
+            "quantity": 746020
+          }
+        ]
+      },
+      "415715191": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 606,
+            "quantity": 718543
+          }
+        ]
+      },
+      "415715192": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1087,
+            "quantity": 757320
+          }
+        ]
+      },
+      "415715193": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 417,
+            "quantity": 704371
+          }
+        ]
+      },
+      "415715194": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          }
+        ]
+      },
+      "415715195": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          },
+          {
+            "price": 1000,
+            "quantity": 749999
+          }
+        ]
+      },
+      "415715196": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3378,
+            "quantity": 1019329
+          },
+          {
+            "price": 3650,
+            "quantity": 1062992
+          }
+        ]
+      },
+      "415715197": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 606,
+            "quantity": 718543
+          }
+        ]
+      },
+      "415715198": {
+        "bids": [
+          {
+            "price": 2500,
+            "quantity": 2000000
+          },
+          {
+            "price": 2439,
+            "quantity": 564576
+          }
+        ],
+        "offers": [
+          {
+            "price": 2899,
+            "quantity": 950570
+          },
+          {
+            "price": 5000,
+            "quantity": 350000
+          }
+        ]
+      },
+      "415715199": {
+        "bids": [
+          {
+            "price": 5000,
+            "quantity": 2000
+          },
+          {
+            "price": 4762,
+            "quantity": 2099958
+          }
+        ],
+        "offers": [
+          {
+            "price": 5051,
+            "quantity": 12862
+          },
+          {
+            "price": 5102,
+            "quantity": 6566079
+          },
+          {
+            "price": 5128,
+            "quantity": 526521
+          },
+          {
+            "price": 5181,
+            "quantity": 1208693
+          },
+          {
+            "price": 5208,
+            "quantity": 9600
+          }
+        ]
+      },
+      "415715200": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 541,
+            "quantity": 713606
+          }
+        ]
+      },
+      "415715201": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3125,
+            "quantity": 981818
+          },
+          {
+            "price": 3333,
+            "quantity": 30003
+          },
+          {
+            "price": 3378,
+            "quantity": 1019329
+          }
+        ]
+      },
+      "415715202": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 571,
+            "quantity": 715876
+          }
+        ]
+      },
+      "415715203": {
+        "bids": [],
+        "offers": []
+      }
+    }
+  },
+  "Player_SOT_OU0.5": {
+    "market_id": "149627999",
+    "contracts": {
+      "415716298": "Achraf Hakimi",
+      "415716312": "Adrien Rabiot",
+      "415716288": "Amine Sbai",
+      "415716283": "Anass Salah-Eddine",
+      "415716300": "Aurelien Tchouameni",
+      "415716294": "Ayoube Amaimouni-Echghouyab",
+      "415716278": "Ayoub El Kaabi",
+      "415716291": "Ayyoub Bouaddi",
+      "415716279": "Azzedine Ounahi",
+      "415716286": "Bilal El Khannous",
+      "415716307": "Bradley Barcola",
+      "415716299": "Brahim Abdelkader Diaz",
+      "415716280": "Chadi Riad",
+      "415716289": "Chemsdine Talbi",
+      "415716317": "Dayot Upamecano",
+      "415716309": "D\u00e9sir\u00e9 Dou\u00e9",
+      "415716293": "Gessime Ben Youssef Mustapha Yassine",
+      "415716322": "Ibrahima Konate",
+      "415716281": "Ismael Saibari",
+      "415716297": "Issa Diop",
+      "415716321": "Jean-Philippe Mateta",
+      "415716320": "Jules Kounde",
+      "415716304": "Kouadio Kone",
+      "415716319": "Kylian Mbappe",
+      "415716311": "Lucas Digne",
+      "415716313": "Lucas Hernandez",
+      "415716308": "Maghnes Akliouche",
+      "415716306": "Malo Gusto",
+      "415716316": "Marcus Thuram",
+      "415716296": "Marwane Saadane",
+      "415716301": "Maxence Lacroix",
+      "415716303": "Michael Olise",
+      "415716282": "Neil El Aynaoui",
+      "415716314": "N'Golo Kante",
+      "415716277": "Noussair Mazraoui",
+      "415716318": "Ousmane Dembele",
+      "415716305": "Rayan Cherki",
+      "415716284": "Redouane Halhal",
+      "415716292": "Samir El Mourabet",
+      "415716295": "Sofyan Amrabat",
+      "415716285": "Soufiane Rahimi",
+      "415716315": "Theo Francois Hernandez",
+      "415716310": "Warren Za\u00efre-Emery",
+      "415716302": "William Saliba",
+      "415716290": "Youssef Belammari",
+      "415716287": "Zakaria El Ouahdi"
+    },
+    "quotes": {
+      "415716277": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1190,
+            "quantity": 766174
+          }
+        ]
+      },
+      "415716278": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 5988,
+            "quantity": 1682455
+          },
+          {
+            "price": 6061,
+            "quantity": 1713634
+          }
+        ]
+      },
+      "415716279": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3279,
+            "quantity": 1004315
+          }
+        ]
+      },
+      "415716280": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1351,
+            "quantity": 780436
+          }
+        ]
+      },
+      "415716281": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 5000,
+            "quantity": 1349999
+          }
+        ]
+      },
+      "415716282": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2817,
+            "quantity": 939718
+          }
+        ]
+      },
+      "415716283": {
+        "bids": [],
+        "offers": []
+      },
+      "415716284": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1190,
+            "quantity": 766174
+          }
+        ]
+      },
+      "415716285": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 5525,
+            "quantity": 1508380
+          }
+        ]
+      },
+      "415716286": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3448,
+            "quantity": 1030220
+          }
+        ]
+      },
+      "415716287": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2564,
+            "quantity": 907745
+          }
+        ]
+      },
+      "415716288": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 4274,
+            "quantity": 1178834
+          },
+          {
+            "price": 4464,
+            "quantity": 1219292
+          }
+        ]
+      },
+      "415716289": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3788,
+            "quantity": 1086607
+          },
+          {
+            "price": 4167,
+            "quantity": 1157210
+          }
+        ]
+      },
+      "415716290": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1667,
+            "quantity": 810031
+          }
+        ]
+      },
+      "415716291": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1562,
+            "quantity": 799951
+          },
+          {
+            "price": 1961,
+            "quantity": 839656
+          }
+        ]
+      },
+      "415716292": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2740,
+            "quantity": 929752
+          }
+        ]
+      },
+      "415716293": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3788,
+            "quantity": 1086607
+          }
+        ]
+      },
+      "415716294": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 5236,
+            "quantity": 1416877
+          }
+        ]
+      },
+      "415716295": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1613,
+            "quantity": 804816
+          }
+        ]
+      },
+      "415716296": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1887,
+            "quantity": 831998
+          }
+        ]
+      },
+      "415716297": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1111,
+            "quantity": 759364
+          }
+        ]
+      },
+      "415716298": {
+        "bids": [
+          {
+            "price": 3378,
+            "quantity": 296033
+          },
+          {
+            "price": 3125,
+            "quantity": 3936000
+          }
+        ],
+        "offers": [
+          {
+            "price": 3876,
+            "quantity": 1102221
+          },
+          {
+            "price": 4167,
+            "quantity": 1157210
+          }
+        ]
+      },
+      "415716299": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 4348,
+            "quantity": 1194268
+          },
+          {
+            "price": 4464,
+            "quantity": 1219291
+          }
+        ]
+      },
+      "415716300": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2667,
+            "quantity": 920496
+          }
+        ]
+      },
+      "415716301": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2667,
+            "quantity": 920496
+          }
+        ]
+      },
+      "415716302": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1429,
+            "quantity": 787540
+          }
+        ]
+      },
+      "415716303": {
+        "bids": [
+          {
+            "price": 5714,
+            "quantity": 347988
+          },
+          {
+            "price": 5405,
+            "quantity": 790009
+          },
+          {
+            "price": 5376,
+            "quantity": 718470
+          },
+          {
+            "price": 5348,
+            "quantity": 18698578
+          }
+        ],
+        "offers": [
+          {
+            "price": 5848,
+            "quantity": 1625725
+          },
+          {
+            "price": 5882,
+            "quantity": 1639148
+          }
+        ]
+      },
+      "415716304": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3333,
+            "quantity": 1012449
+          },
+          {
+            "price": 3401,
+            "quantity": 1022882
+          }
+        ]
+      },
+      "415716305": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 6135,
+            "quantity": 1746444
+          }
+        ]
+      },
+      "415716306": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2899,
+            "quantity": 950570
+          }
+        ]
+      },
+      "415716307": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 4762,
+            "quantity": 1790382
+          },
+          {
+            "price": 5405,
+            "quantity": 1468989
+          }
+        ]
+      },
+      "415716308": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 6452,
+            "quantity": 1902484
+          }
+        ]
+      },
+      "415716309": {
+        "bids": [
+          {
+            "price": 1000,
+            "quantity": 100000
+          }
+        ],
+        "offers": [
+          {
+            "price": 6289,
+            "quantity": 1818920
+          },
+          {
+            "price": 6369,
+            "quantity": 1858994
+          }
+        ]
+      },
+      "415716310": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3788,
+            "quantity": 1086607
+          },
+          {
+            "price": 3876,
+            "quantity": 1102221
+          }
+        ]
+      },
+      "415716311": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2000,
+            "quantity": 843749
+          }
+        ]
+      },
+      "415716312": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3937,
+            "quantity": 1113310
+          }
+        ]
+      },
+      "415716313": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2703,
+            "quantity": 925037
+          }
+        ]
+      },
+      "415716314": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3030,
+            "quantity": 968436
+          }
+        ]
+      },
+      "415716315": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2985,
+            "quantity": 962223
+          }
+        ]
+      },
+      "415716316": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 7042,
+            "quantity": 2281952
+          },
+          {
+            "price": 7299,
+            "quantity": 2499080
+          }
+        ]
+      },
+      "415716317": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1923,
+            "quantity": 835706
+          }
+        ]
+      },
+      "415716318": {
+        "bids": [
+          {
+            "price": 5714,
+            "quantity": 16989156
+          },
+          {
+            "price": 5682,
+            "quantity": 741949
+          },
+          {
+            "price": 5650,
+            "quantity": 392568
+          },
+          {
+            "price": 5525,
+            "quantity": 3619908
+          },
+          {
+            "price": 5495,
+            "quantity": 4495594
+          }
+        ],
+        "offers": [
+          {
+            "price": 5747,
+            "quantity": 348007
+          },
+          {
+            "price": 5780,
+            "quantity": 9403712
+          },
+          {
+            "price": 5814,
+            "quantity": 345273
+          },
+          {
+            "price": 5882,
+            "quantity": 414059
+          },
+          {
+            "price": 6250,
+            "quantity": 356000
+          }
+        ]
+      },
+      "415716319": {
+        "bids": [
+          {
+            "price": 8333,
+            "quantity": 727349
+          },
+          {
+            "price": 8000,
+            "quantity": 1250
+          },
+          {
+            "price": 6667,
+            "quantity": 868681
+          },
+          {
+            "price": 6452,
+            "quantity": 1203192
+          }
+        ],
+        "offers": [
+          {
+            "price": 8696,
+            "quantity": 5176431
+          }
+        ]
+      },
+      "415716320": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1429,
+            "quantity": 787540
+          }
+        ]
+      },
+      "415716321": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 7692,
+            "quantity": 2924614
+          }
+        ]
+      },
+      "415716322": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2041,
+            "quantity": 848097
+          }
+        ]
+      },
+      "415716323": {
+        "bids": [],
+        "offers": []
+      }
+    }
+  },
+  "Player_SOT_OU1.5": {
+    "market_id": "149628001",
+    "contracts": {
+      "415716392": "Achraf Hakimi",
+      "415716406": "Adrien Rabiot",
+      "415716382": "Amine Sbai",
+      "415716377": "Anass Salah-Eddine",
+      "415716394": "Aurelien Tchouameni",
+      "415716388": "Ayoube Amaimouni-Echghouyab",
+      "415716372": "Ayoub El Kaabi",
+      "415716385": "Ayyoub Bouaddi",
+      "415716373": "Azzedine Ounahi",
+      "415716380": "Bilal El Khannous",
+      "415716401": "Bradley Barcola",
+      "415716393": "Brahim Abdelkader Diaz",
+      "415716374": "Chadi Riad",
+      "415716383": "Chemsdine Talbi",
+      "415716411": "Dayot Upamecano",
+      "415716403": "D\u00e9sir\u00e9 Dou\u00e9",
+      "415716387": "Gessime Ben Youssef Mustapha Yassine",
+      "415716416": "Ibrahima Konate",
+      "415716375": "Ismael Saibari",
+      "415716391": "Issa Diop",
+      "415716415": "Jean-Philippe Mateta",
+      "415716414": "Jules Kounde",
+      "415716398": "Kouadio Kone",
+      "415716413": "Kylian Mbappe",
+      "415716405": "Lucas Digne",
+      "415716407": "Lucas Hernandez",
+      "415716402": "Maghnes Akliouche",
+      "415716400": "Malo Gusto",
+      "415716410": "Marcus Thuram",
+      "415716390": "Marwane Saadane",
+      "415716395": "Maxence Lacroix",
+      "415716397": "Michael Olise",
+      "415716376": "Neil El Aynaoui",
+      "415716408": "N'Golo Kante",
+      "415716371": "Noussair Mazraoui",
+      "415716412": "Ousmane Dembele",
+      "415716399": "Rayan Cherki",
+      "415716378": "Redouane Halhal",
+      "415716386": "Samir El Mourabet",
+      "415716389": "Sofyan Amrabat",
+      "415716379": "Soufiane Rahimi",
+      "415716409": "Theo Francois Hernandez",
+      "415716404": "Warren Za\u00efre-Emery",
+      "415716396": "William Saliba",
+      "415716384": "Youssef Belammari",
+      "415716381": "Zakaria El Ouahdi"
+    },
+    "quotes": {
+      "415716371": {
+        "bids": [],
+        "offers": []
+      },
+      "415716372": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2174,
+            "quantity": 862509
+          }
+        ]
+      },
+      "415716373": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 800,
+            "quantity": 733695
+          }
+        ]
+      },
+      "415716374": {
+        "bids": [],
+        "offers": []
+      },
+      "415716375": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1724,
+            "quantity": 815610
+          }
+        ]
+      },
+      "415716376": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 476,
+            "quantity": 708735
+          }
+        ]
+      },
+      "415716377": {
+        "bids": [],
+        "offers": []
+      },
+      "415716378": {
+        "bids": [],
+        "offers": []
+      },
+      "415716379": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1818,
+            "quantity": 824981
+          }
+        ]
+      },
+      "415716380": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 645,
+            "quantity": 721539
+          }
+        ]
+      },
+      "415716381": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 435,
+            "quantity": 705697
+          }
+        ]
+      },
+      "415716382": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1111,
+            "quantity": 759364
+          },
+          {
+            "price": 1250,
+            "quantity": 771427
+          }
+        ]
+      },
+      "415716383": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 741,
+            "quantity": 729020
+          }
+        ]
+      },
+      "415716384": {
+        "bids": [],
+        "offers": []
+      },
+      "415716385": {
+        "bids": [],
+        "offers": []
+      },
+      "415716386": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 435,
+            "quantity": 705697
+          },
+          {
+            "price": 526,
+            "quantity": 712476
+          }
+        ]
+      },
+      "415716387": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 769,
+            "quantity": 731231
+          },
+          {
+            "price": 952,
+            "quantity": 746020
+          }
+        ]
+      },
+      "415716388": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1667,
+            "quantity": 810031
+          }
+        ]
+      },
+      "415716389": {
+        "bids": [],
+        "offers": []
+      },
+      "415716390": {
+        "bids": [],
+        "offers": []
+      },
+      "415716391": {
+        "bids": [],
+        "offers": []
+      },
+      "415716392": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 909,
+            "quantity": 742492
+          }
+        ]
+      },
+      "415716393": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1250,
+            "quantity": 771428
+          }
+        ]
+      },
+      "415716394": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 417,
+            "quantity": 704371
+          },
+          {
+            "price": 500,
+            "quantity": 710525
+          }
+        ]
+      },
+      "415716395": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 400,
+            "quantity": 703124
+          },
+          {
+            "price": 500,
+            "quantity": 710525
+          }
+        ]
+      },
+      "415716396": {
+        "bids": [],
+        "offers": []
+      },
+      "415716397": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2083,
+            "quantity": 852595
+          },
+          {
+            "price": 2778,
+            "quantity": 434354
+          }
+        ]
+      },
+      "415716398": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 606,
+            "quantity": 718543
+          }
+        ]
+      },
+      "415716399": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2439,
+            "quantity": 892740
+          },
+          {
+            "price": 2632,
+            "quantity": 916124
+          }
+        ]
+      },
+      "415716400": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 513,
+            "quantity": 711500
+          },
+          {
+            "price": 588,
+            "quantity": 717169
+          }
+        ]
+      },
+      "415716401": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 1754,
+            "quantity": 818578
+          }
+        ]
+      },
+      "415716402": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2740,
+            "quantity": 929752
+          },
+          {
+            "price": 2941,
+            "quantity": 956226
+          }
+        ]
+      },
+      "415716403": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 2439,
+            "quantity": 892740
+          }
+        ]
+      },
+      "415716404": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 741,
+            "quantity": 729020
+          },
+          {
+            "price": 909,
+            "quantity": 742492
+          }
+        ]
+      },
+      "415716405": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 312,
+            "quantity": 696738
+          },
+          {
+            "price": 385,
+            "quantity": 702028
+          }
+        ]
+      },
+      "415716406": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 833,
+            "quantity": 736336
+          }
+        ]
+      },
+      "415716407": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 435,
+            "quantity": 705697
+          },
+          {
+            "price": 526,
+            "quantity": 712476
+          }
+        ]
+      },
+      "415716408": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 571,
+            "quantity": 715876
+          },
+          {
+            "price": 667,
+            "quantity": 723240
+          }
+        ]
+      },
+      "415716409": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 541,
+            "quantity": 713606
+          }
+        ]
+      },
+      "415716410": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 3650,
+            "quantity": 1062992
+          },
+          {
+            "price": 3788,
+            "quantity": 1086607
+          }
+        ]
+      },
+      "415716411": {
+        "bids": [],
+        "offers": []
+      },
+      "415716412": {
+        "bids": [
+          {
+            "price": 2222,
+            "quantity": 3478397
+          },
+          {
+            "price": 2000,
+            "quantity": 1431000
+          }
+        ],
+        "offers": [
+          {
+            "price": 2667,
+            "quantity": 920496
+          }
+        ]
+      },
+      "415716413": {
+        "bids": [
+          {
+            "price": 6061,
+            "quantity": 3890917
+          },
+          {
+            "price": 6024,
+            "quantity": 9662685
+          },
+          {
+            "price": 5848,
+            "quantity": 14060191
+          },
+          {
+            "price": 5780,
+            "quantity": 26678200
+          },
+          {
+            "price": 5747,
+            "quantity": 7256205
+          }
+        ],
+        "offers": [
+          {
+            "price": 6211,
+            "quantity": 4830140
+          },
+          {
+            "price": 6250,
+            "quantity": 3207683
+          },
+          {
+            "price": 6579,
+            "quantity": 1973109
+          },
+          {
+            "price": 6667,
+            "quantity": 2025208
+          }
+        ]
+      },
+      "415716414": {
+        "bids": [],
+        "offers": []
+      },
+      "415716415": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 4464,
+            "quantity": 1219291
+          },
+          {
+            "price": 4673,
+            "quantity": 1267129
+          }
+        ]
+      },
+      "415716416": {
+        "bids": [],
+        "offers": [
+          {
+            "price": 250,
+            "quantity": 692307
+          },
+          {
+            "price": 333,
+            "quantity": 698251
+          }
+        ]
+      },
+      "415716417": {
+        "bids": [],
+        "offers": []
+      }
+    }
+  },
+  "Morocco_SOT_OU3.5": {
+    "market_id": "149627636",
+    "contracts": {
+      "415714753": "Under 3.5 shots on target",
+      "415714754": "Over 3.5 shots on target"
+    },
+    "quotes": {
+      "415714753": {
+        "bids": [
+          {
+            "price": 5236,
+            "quantity": 286478
+          }
+        ],
+        "offers": [
+          {
+            "price": 6024,
+            "quantity": 377263
+          }
+        ]
+      },
+      "415714754": {
+        "bids": [
+          {
+            "price": 3968,
+            "quantity": 378024
+          }
+        ],
+        "offers": [
+          {
+            "price": 4762,
+            "quantity": 286368
+          }
+        ]
+      }
+    }
+  },
+  "France_corners_OU6.5": {
+    "market_id": "149627466",
+    "contracts": {
+      "415714165": "Under 6.5 corners",
+      "415714166": "Over 6.5 corners"
+    },
+    "quotes": {
+      "415714165": {
+        "bids": [
+          {
+            "price": 5405,
+            "quantity": 13144700
+          },
+          {
+            "price": 5208,
+            "quantity": 129608
+          }
+        ],
+        "offers": [
+          {
+            "price": 6061,
+            "quantity": 7586863
+          },
+          {
+            "price": 6250,
+            "quantity": 180000
+          }
+        ]
+      },
+      "415714166": {
+        "bids": [
+          {
+            "price": 3968,
+            "quantity": 170110
+          },
+          {
+            "price": 3937,
+            "quantity": 7707000
+          },
+          {
+            "price": 3788,
+            "quantity": 178194
+          }
+        ],
+        "offers": [
+          {
+            "price": 4587,
+            "quantity": 12541678
+          },
+          {
+            "price": 4854,
+            "quantity": 131169
+          },
+          {
+            "price": 5025,
+            "quantity": 135678
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "Anytime_goalscorer": {
+    "Abdul Mumin": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.0236
+    },
+    "Abdul Rahman": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0315
+    },
+    "Alidu Seidu": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": 0.0278
+    },
+    "Antoine Semenyo": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.135
+    },
+    "Augustine Boakye": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Brandon Thomas-Asante": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.1181
+    },
+    "Caleb Marfo Yirenkyi": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.061
+    },
+    "Carlos Andr\u00e9s G\u00f3mez": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": 0.2487
+    },
+    "Christopher Bonsu Baah": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Cucho Hern\u00e1ndez": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3327
+    },
+    "Daniel Mu\u00f1oz": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.135
+    },
+    "Davinson S\u00e1nchez": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0573
+    },
+    "Deiver Andr\u00e9s Machado Mena": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0787
+    },
+    "Derrick Luckassen": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0411
+    },
+    "Elisha Owusu": {
+      "bid": null,
+      "offer": 0.0217,
+      "mid": 0.0205
+    },
+    "Ernest Nuamah": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945
+    },
+    "Gideon Mensah": {
+      "bid": null,
+      "offer": 0.0125,
+      "mid": 0.0118
+    },
+    "Gustavo Puerta": {
+      "bid": null,
+      "offer": 0.1389,
+      "mid": 0.1313
+    },
+    "Inaki Williams": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Issakahu Fatawu": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945
+    },
+    "James Rodr\u00edguez": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.2305
+    },
+    "Jaminton Campaz": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2198
+    },
+    "Jefferson Andres Lerma Solis": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Jerome Opoku": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0315
+    },
+    "Jhon Arias": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175
+    },
+    "Jhon C\u00f3rdoba": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.315
+    },
+    "Jhon Lucumi": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0573
+    },
+    "Johan Mojica": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "Jonas Adjei Adjetey": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0315
+    },
+    "Jordan Ayew": {
+      "bid": null,
+      "offer": 0.1316,
+      "mid": 0.1244
+    },
+    "Jorge Andr\u00e9s Carrascal Guardo": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Juan Camilo Portilla": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1005
+    },
+    "Juan Quintero": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2054
+    },
+    "Kamaldeen Sulemana": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0727
+    },
+    "Kevin Castano": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0727
+    },
+    "Kojo Peprah Oppong": {
+      "bid": null,
+      "offer": 0.02,
+      "mid": 0.0189
+    },
+    "Kwasi Sibo": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.045
+    },
+    "Luis D\u00edaz": {
+      "bid": 0.2985,
+      "offer": 0.3401,
+      "mid": 0.3193
+    },
+    "Luis Javier Suarez Charris": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.35
+    },
+    "Marvin Senaya": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": 0.0278
+    },
+    "Prince Kwabena Adu": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Richard Rios": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.1181
+    },
+    "Richard Rios Montoya": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1277
+    },
+    "Santiago Arias": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.061
+    },
+    "Thomas Teye Partey": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "Willer Ditta": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.045
+    },
+    "Yerry Fernando Mina Gonz\u00e1lez": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945
+    }
+  },
+  "Score_or_assist": {
+    "Antoine Semenyo": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": 0.225
+    },
+    "Daniel Mu\u00f1oz": {
+      "bid": null,
+      "offer": 0.3125,
+      "mid": 0.2953
+    },
+    "Davinson S\u00e1nchez": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Derrick Luckassen": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0675
+    },
+    "Elisha Owusu": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0675
+    },
+    "Gideon Mensah": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": 0.0822
+    },
+    "Gustavo Puerta": {
+      "bid": null,
+      "offer": 0.2564,
+      "mid": 0.2423
+    },
+    "Inaki Williams": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": 0.225
+    },
+    "James Rodr\u00edguez": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": 0.5108
+    },
+    "Jefferson Andres Lerma Solis": {
+      "bid": null,
+      "offer": 0.3125,
+      "mid": 0.2953
+    },
+    "Jhon Arias": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4039
+    },
+    "Jhon Lucumi": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.139
+    },
+    "Johan Mojica": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.21
+    },
+    "Jonas Adjei Adjetey": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Jordan Ayew": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.1929
+    },
+    "Kamaldeen Sulemana": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1718
+    },
+    "Kwasi Sibo": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0859
+    },
+    "Luis D\u00edaz": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": 0.5108
+    },
+    "Luis Javier Suarez Charris": {
+      "bid": null,
+      "offer": 0.5076,
+      "mid": 0.4797
+    },
+    "Marvin Senaya": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0727
+    },
+    "Thomas Teye Partey": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    }
+  },
+  "SOT_OU1.5": {
+    "Alidu Seidu": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Antoine Semenyo": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Augustine Boakye": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Brandon Thomas-Asante": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.0945
+    },
+    "Caleb Marfo Yirenkyi": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.0236
+    },
+    "Carlos Andr\u00e9s G\u00f3mez": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.315
+    },
+    "Christopher Bonsu Baah": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.061
+    },
+    "Cucho Hern\u00e1ndez": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.35
+    },
+    "Daniel Mu\u00f1oz": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": 0.063
+    },
+    "Davinson S\u00e1nchez": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0337
+    },
+    "Deiver Andr\u00e9s Machado Mena": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": 0.0295
+    },
+    "Derrick Luckassen": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Elisha Owusu": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ernest Nuamah": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Gideon Mensah": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Gustavo Puerta": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.135
+    },
+    "Inaki Williams": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.1181
+    },
+    "Issakahu Fatawu": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.061
+    },
+    "James Rodr\u00edguez": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2198
+    },
+    "Jaminton Campaz": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2148
+    },
+    "Jefferson Andres Lerma Solis": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": 0.0591
+    },
+    "Jerome Opoku": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Jhon Arias": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Jhon C\u00f3rdoba": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": 0.4109
+    },
+    "Jhon Lucumi": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Johan Mojica": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Jonas Adjei Adjetey": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Jordan Ayew": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.07
+    },
+    "Jorge Andr\u00e9s Carrascal Guardo": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2198
+    },
+    "Juan Camilo Portilla": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.0652
+    },
+    "Juan Quintero": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.21
+    },
+    "Kamaldeen Sulemana": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": 0.0525
+    },
+    "Kevin Castano": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0573
+    },
+    "Kojo Peprah Oppong": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kwasi Sibo": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Luis D\u00edaz": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.3214
+    },
+    "Luis Javier Suarez Charris": {
+      "bid": null,
+      "offer": 0.3448,
+      "mid": 0.3258
+    },
+    "Marvin Senaya": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Prince Kwabena Adu": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1718
+    },
+    "Richard Rios": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175
+    },
+    "Richard Rios Montoya": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.175
+    },
+    "Santiago Arias": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.0236
+    },
+    "Thomas Teye Partey": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Willer Ditta": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Yerry Fernando Mina Gonz\u00e1lez": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.054
+    }
+  },
+  "SOT_OU0.5": {
+    "Abdul Mumin": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.1181
+    },
+    "Abdul Rahman": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Alidu Seidu": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1476
+    },
+    "Antoine Semenyo": {
+      "bid": null,
+      "offer": 0.4425,
+      "mid": 0.4182
+    },
+    "Augustine Boakye": {
+      "bid": null,
+      "offer": 0.4167,
+      "mid": 0.3938
+    },
+    "Brandon Thomas-Asante": {
+      "bid": null,
+      "offer": 0.4,
+      "mid": 0.378
+    },
+    "Caleb Marfo Yirenkyi": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Carlos Andr\u00e9s G\u00f3mez": {
+      "bid": null,
+      "offer": 0.6849,
+      "mid": 0.6472
+    },
+    "Christopher Bonsu Baah": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.315
+    },
+    "Cucho Hern\u00e1ndez": {
+      "bid": null,
+      "offer": 0.7143,
+      "mid": 0.675
+    },
+    "Daniel Mu\u00f1oz": {
+      "bid": null,
+      "offer": 0.3571,
+      "mid": 0.3375
+    },
+    "Davinson S\u00e1nchez": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2148
+    },
+    "Deiver Andr\u00e9s Machado Mena": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2148
+    },
+    "Derrick Luckassen": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Elisha Owusu": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Ernest Nuamah": {
+      "bid": null,
+      "offer": 0.4167,
+      "mid": 0.3938
+    },
+    "Gideon Mensah": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0727
+    },
+    "Gustavo Puerta": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": 0.4416
+    },
+    "Inaki Williams": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": 0.45
+    },
+    "Issakahu Fatawu": {
+      "bid": null,
+      "offer": 0.3401,
+      "mid": 0.3214
+    },
+    "James Rodr\u00edguez": {
+      "bid": null,
+      "offer": 0.6173,
+      "mid": 0.5833
+    },
+    "Jaminton Campaz": {
+      "bid": null,
+      "offer": 0.6061,
+      "mid": 0.5728
+    },
+    "Jefferson Andres Lerma Solis": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": 0.2863
+    },
+    "Jerome Opoku": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.1125
+    },
+    "Jhon Arias": {
+      "bid": null,
+      "offer": 0.578,
+      "mid": 0.5462
+    },
+    "Jhon C\u00f3rdoba": {
+      "bid": null,
+      "offer": 0.7576,
+      "mid": 0.7159
+    },
+    "Jhon Lucumi": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524
+    },
+    "Johan Mojica": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1575
+    },
+    "Jonas Adjei Adjetey": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1005
+    },
+    "Jordan Ayew": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.3449
+    },
+    "Jorge Andr\u00e9s Carrascal Guardo": {
+      "bid": null,
+      "offer": 0.6061,
+      "mid": 0.5728
+    },
+    "Juan Camilo Portilla": {
+      "bid": null,
+      "offer": 0.3571,
+      "mid": 0.3375
+    },
+    "Juan Quintero": {
+      "bid": null,
+      "offer": 0.5988,
+      "mid": 0.5659
+    },
+    "Kamaldeen Sulemana": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": 0.274
+    },
+    "Kevin Castano": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.315
+    },
+    "Kojo Peprah Oppong": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.105
+    },
+    "Kwasi Sibo": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1817
+    },
+    "Luis D\u00edaz": {
+      "bid": 0.5587,
+      "offer": 0.6897,
+      "mid": 0.6242
+    },
+    "Luis Javier Suarez Charris": {
+      "bid": null,
+      "offer": 0.6993,
+      "mid": 0.6608
+    },
+    "Marvin Senaya": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.135
+    },
+    "Prince Kwabena Adu": {
+      "bid": null,
+      "offer": 0.5319,
+      "mid": 0.5026
+    },
+    "Richard Rios": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Richard Rios Montoya": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": 0.5108
+    },
+    "Santiago Arias": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.189
+    },
+    "Thomas Teye Partey": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1658
+    },
+    "Willer Ditta": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1524
+    },
+    "Yerry Fernando Mina Gonz\u00e1lez": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.2908
+    }
+  }
+}

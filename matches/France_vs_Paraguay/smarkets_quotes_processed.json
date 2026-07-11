@@ -1,0 +1,321 @@
+{
+  "FTR": {
+    "Paraguay": {
+      "bid": 0.0435,
+      "offer": 0.05,
+      "mid": 0.0467
+    },
+    "Draw": {
+      "bid": 0.1316,
+      "offer": 0.1389,
+      "mid": 0.1352
+    },
+    "France": {
+      "bid": 0.8197,
+      "offer": 0.8264,
+      "mid": 0.8231
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.3876,
+      "offer": 0.3759,
+      "mid": 0.3818
+    },
+    "No": {
+      "bid": 0.6061,
+      "offer": 0.6211,
+      "mid": 0.6136
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.1818,
+      "offer": 0.1923,
+      "mid": 0.187
+    },
+    "Over 1.5 goals": {
+      "bid": 0.8,
+      "offer": 0.8264,
+      "mid": 0.8132
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.4098,
+      "offer": 0.431,
+      "mid": 0.4204
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5714,
+      "offer": 0.5882,
+      "mid": 0.5798
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.6452,
+      "offer": 0.6711,
+      "mid": 0.6582
+    },
+    "Over 3.5 goals": {
+      "bid": 0.3333,
+      "offer": 0.3497,
+      "mid": 0.3415
+    }
+  },
+  "HT_result": {
+    "Paraguay": {
+      "bid": 0.0645,
+      "offer": 0.069,
+      "mid": 0.0668
+    },
+    "Draw": {
+      "bid": 0.3279,
+      "offer": 0.3401,
+      "mid": 0.334
+    },
+    "France": {
+      "bid": 0.5988,
+      "offer": 0.6061,
+      "mid": 0.6024
+    }
+  },
+  "FRA_SOT_OU7.5": {
+    "Under 7.5 shots on target": {
+      "bid": 0.5102,
+      "offer": 0.6024,
+      "mid": 0.5563
+    },
+    "Over 7.5 shots on target": {
+      "bid": 0.3968,
+      "offer": 0.5,
+      "mid": 0.4484
+    }
+  },
+  "PAR_SOT_OU2.5": {
+    "Under 2.5 shots on target": {
+      "bid": 0.5236,
+      "offer": 0.6024,
+      "mid": 0.563
+    },
+    "Over 2.5 shots on target": {
+      "bid": 0.3968,
+      "offer": 0.4762,
+      "mid": 0.4365
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.4237,
+      "offer": null,
+      "mid": 0.4237
+    },
+    "Over 2.5 cards": {
+      "bid": 0.5,
+      "offer": 0.5882,
+      "mid": 0.5441
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.6536,
+      "offer": 0.7519,
+      "mid": 0.7027
+    },
+    "Over 3.5 cards": {
+      "bid": 0.2778,
+      "offer": 0.3546,
+      "mid": 0.3162
+    }
+  },
+  "FRA_score_both_halves": {
+    "Yes": {
+      "bid": 0.5,
+      "offer": 0.5291,
+      "mid": 0.5146
+    },
+    "No": {
+      "bid": 0.4717,
+      "offer": 0.5291,
+      "mid": 0.5004
+    }
+  },
+  "FRA_corners_OU6.5": {
+    "Under 6.5 corners": {
+      "bid": 0.4545,
+      "offer": 0.5025,
+      "mid": 0.4785
+    },
+    "Over 6.5 corners": {
+      "bid": 0.5,
+      "offer": 0.5917,
+      "mid": 0.5458
+    }
+  },
+  "Total_corners_OU8.5": {
+    "Under 8.5 corners": {
+      "bid": 0.3333,
+      "offer": 0.3937,
+      "mid": 0.3635
+    },
+    "Over 8.5 corners": {
+      "bid": 0.6135,
+      "offer": 0.6369,
+      "mid": 0.6252
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": 0.2597,
+      "offer": 0.2985,
+      "mid": 0.2791
+    },
+    "No": {
+      "bid": 0.7246,
+      "offer": 0.7407,
+      "mid": 0.7327
+    }
+  },
+  "Team_score_first": {
+    "Paraguay": {
+      "bid": 0.1389,
+      "offer": 0.1471,
+      "mid": 0.143
+    },
+    "No goal": {
+      "bid": 0.0227,
+      "offer": 0.0667,
+      "mid": 0.0447
+    },
+    "France": {
+      "bid": 0.7463,
+      "offer": 0.8333,
+      "mid": 0.7898
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.2083,
+      "offer": 0.25,
+      "mid": 0.2292
+    },
+    "11-20": {
+      "bid": 0.1818,
+      "offer": 0.2174,
+      "mid": 0.1996
+    },
+    "21-30": {
+      "bid": 0.1351,
+      "offer": 0.1695,
+      "mid": 0.1523
+    },
+    "31-40": {
+      "bid": 0.102,
+      "offer": 0.1282,
+      "mid": 0.1151
+    },
+    "41-50": {
+      "bid": 0.087,
+      "offer": 0.1111,
+      "mid": 0.099
+    },
+    "51-60": {
+      "bid": 0.0513,
+      "offer": 0.0714,
+      "mid": 0.0614
+    },
+    "61-70": {
+      "bid": 0.0333,
+      "offer": 0.0513,
+      "mid": 0.0423
+    },
+    "71-80": {
+      "bid": 0.0217,
+      "offer": 0.037,
+      "mid": 0.0294
+    },
+    "81-90": {
+      "bid": 0.0227,
+      "offer": 0.0385,
+      "mid": 0.0306
+    },
+    "None": {
+      "bid": 0.04,
+      "offer": 0.0588,
+      "mid": 0.0494
+    }
+  },
+  "FRA_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.2564,
+      "offer": 0.2857,
+      "mid": 0.2711
+    },
+    "Over 1.5 goals": {
+      "bid": 0.7143,
+      "offer": 0.7407,
+      "mid": 0.7275
+    }
+  },
+  "FRA_goals_OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.5291,
+      "offer": 0.5618,
+      "mid": 0.5454
+    },
+    "Over 2.5 goals": {
+      "bid": 0.431,
+      "offer": 0.4717,
+      "mid": 0.4514
+    }
+  },
+  "PAR_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.5747,
+      "offer": 0.6024,
+      "mid": 0.5886
+    },
+    "Over 0.5 goals": {
+      "bid": 0.4032,
+      "offer": 0.4237,
+      "mid": 0.4134
+    }
+  },
+  "PAR_clean_sheet": {
+    "Yes": {
+      "bid": 0.0571,
+      "offer": 0.0741,
+      "mid": 0.0656
+    },
+    "No": {
+      "bid": 0.9174,
+      "offer": 0.9434,
+      "mid": 0.9304
+    }
+  },
+  "FRA_clean_sheet": {
+    "Yes": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "No": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "PAR_win_to_nil": {
+    "Yes": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "No": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  }
+}

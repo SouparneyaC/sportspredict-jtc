@@ -1,0 +1,34 @@
+{
+  "_description": "Model derivations for Mexico vs England 2026-07-05/06 R16",
+  "lambda_fits": {
+    "goals_total": 2.288,
+    "cards_total": 3.261,
+    "eng_sot_market_fit": 4.082,
+    "eng_sot_empirical_4game_incl_ghana": 6.75,
+    "eng_sot_empirical_excl_ghana_outlier": 8.0,
+    "total_shots_market_fit": 21.29
+  },
+  "derived_probs": {
+    "p_eng_sot_5plus_market_only": 0.387,
+    "p_eng_sot_5plus_empirical_incl_ghana": 0.803,
+    "p_eng_sot_5plus_empirical_excl_ghana": 0.900,
+    "p_eng_sot_5plus_FINAL_DECISION": 0.40,
+    "p_shots_18plus": 0.791,
+    "p_cards_gt_goals": 0.577,
+    "p_goal_after_2nd_hydration_break": 0.446
+  },
+  "rule_checks": {
+    "RULE1": "market primary source",
+    "RULE6": "clear, all estimates within 0.28-0.78",
+    "RULE7": "INACTIVE -- Mexico win=31.01% well above the 15% threshold, a genuinely close match",
+    "RULE8": "FIRES HARD -- Draw=31.01%, tied with Mexico's own win probability, the highest draw signal seen in a while",
+    "WINNING_PATTERNS_SYNTHESIS_APPLIED": "Q10 (England 5+ SOT) is the SAME team and SAME question type that already lost -11.36 RBP once this campaign (ENG-CDR '7+ SOT') from blending toward empirical. Market-fit (0.387) vs empirical (0.80-0.90, inflated by excluding/including the Ghana outlier either way) -- staying at market (0.40) as a deliberate non-repeat of an already-realized loss on this exact team/question type.",
+    "GHA_ANALOGY_CAUTION": "Applied to Q2 (Bellingham 2+ SOT) in the OPPOSITE direction from the historical mistake: rather than suppressing him toward the Ghana-game blank, bumped him toward the average of all 4 games (2+ SOT hit in 2 of 4, including the toughest defensive test to date, Congo DR R32) -- correcting the named overfit rather than repeating it."
+  },
+  "espn_insight": {
+    "mexico_low_corner_trait": "1.67 corners/game across groups -- a durable structural trait, but the market has already burned us once (MEX-ECU, -11.80) by trusting a market that undershot this; approaching Q for corners (Most_corners England 0.60) as a DIRECT market read rather than trying to double down on Mexico's own history again",
+    "england_corners_reliable": "8, 9, 7 across all 3 group games -- the most stable England trait, supports trusting the Most_corners market directly",
+    "quinones_floor": "1+ SOT in literally every game this tournament (4/4) -- a personal floor (Cluster-A-adjacent logic), much safer than a team-level ceiling projection since the bar is low and he's never missed it",
+    "jimenez_scoring_rate": "2 goals in 3 appearances when featured (67%) -- reasonably close to market already"
+  }
+}

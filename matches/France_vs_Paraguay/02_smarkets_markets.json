@@ -1,0 +1,34 @@
+{
+  "_description": "Smarkets event 45167029 -- key market prices for France vs Paraguay R16 2026-07-04",
+  "event_id": 45167029,
+  "total_markets": 165,
+  "key_prices": {
+    "FTR": {"France": 0.8231, "Draw": 0.1352, "Paraguay": 0.0467, "market_id": 148838011},
+    "BTTS_yes": {"mid": 0.3818, "market_id": 148838013},
+    "OU1.5_over": {"mid": 0.8132, "market_id": 148838047},
+    "OU2.5_over": {"mid": 0.5798, "market_id": 148838048},
+    "OU3.5_over": {"mid": 0.3415, "market_id": 148838049},
+    "HT_result": {"France": 0.6024, "Draw": 0.334, "Paraguay": 0.0668, "market_id": 148838018},
+    "FRA_goals_OU1.5_over": {"mid": 0.7275, "market_id": 148838070},
+    "FRA_goals_OU2.5_over": {"mid": 0.4514, "market_id": 148838071},
+    "PAR_goals_OU0.5_over": {"mid": 0.4134, "market_id": 148838059},
+    "FRA_SOT_OU7.5_over": {"mid": 0.4484, "market_id": 148838381, "note": "only line available (8+); fitted lambda=7.32 to evaluate P(>=7)"},
+    "PAR_SOT_OU2.5_over": {"mid": 0.4365, "market_id": 148838328},
+    "Cards_OU2.5_over": {"mid": 0.5441, "market_id": 148838178},
+    "Cards_OU3.5_over": {"mid": 0.3162, "market_id": 148838180},
+    "FRA_score_both_halves_yes": {"mid": 0.5146, "market_id": 148838159},
+    "FRA_corners_OU6.5_over": {"mid": 0.5458, "market_id": 148838208, "note": "only line available (7+); fitted lambda=6.97 to evaluate P(>=6)"},
+    "Total_corners_OU8.5_over": {"mid": 0.6252, "market_id": 148838191},
+    "Penalty_yes": {"mid": 0.2791, "market_id": 148838036},
+    "Team_score_first": {"Paraguay": 0.143, "No_goal": 0.0447, "France": 0.7898, "market_id": 148838214},
+    "Goal_1_time_bracket": {"1-10": 0.2292, "11-20": 0.1996, "21-30": 0.1523, "31-40": 0.1151, "41-50": 0.099, "51-60": 0.0614, "61-70": 0.0423, "71-80": 0.0294, "81-90": 0.0306, "None": 0.0494, "market_id": 148838238},
+    "PAR_clean_sheet_yes": {"mid": 0.0656, "market_id": 148838150}
+  },
+  "player_market_data": {
+    "mbappe_anytime_scorer": {"mid": 0.639, "liquid": true},
+    "olise_score_or_assist": {"mid": 0.5644, "liquid": true},
+    "almiron_score_or_assist": {"offer": 0.1695, "mid": 0.1602, "liquid": false},
+    "dembele_sot_ou1.5": {"bid": 0.20, "offer": 0.3226, "mid": 0.2613, "liquid": "semi (wide spread)"},
+    "enciso_sot_ou0.5": {"bid": 0.4032, "offer": 0.4464, "mid": 0.4248, "liquid": true}
+  }
+}

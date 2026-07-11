@@ -1,0 +1,32 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "France vs Paraguay",
+  "date": "2026-07-04",
+  "actual_score": "Paraguay 0-1 France",
+  "match_rbp_total": 116.44,
+  "questions_beat_crowd": 13,
+  "questions_below_crowd": 2,
+  "question_results": [
+    {"text": "Will Kylian Mbappé (France) score a goal?", "our_estimate": 0.65, "crowd_estimate": 0.64, "outcome": "YES", "rbp": 7.51, "beat_crowd": true},
+    {"text": "Will Ousmane Dembélé (France) have 2 or more shots on target?", "our_estimate": 0.33, "crowd_estimate": 0.48, "outcome": "NO", "rbp": 31.83, "beat_crowd": true, "note": "Second-biggest win of the match. Priced off his bimodal SOT pattern (blanked vs tougher opposition) rather than a naive empirical average."},
+    {"text": "Will France win in regulation?", "our_estimate": 0.82, "crowd_estimate": 0.80, "outcome": "YES", "rbp": 5.54, "beat_crowd": true},
+    {"text": "Will Julio Enciso (Paraguay) have 1 or more shots on target?", "our_estimate": 0.41, "crowd_estimate": 0.43, "outcome": "NO", "rbp": 10.3, "beat_crowd": true, "note": "Deliberately did NOT re-run the suppression play that lost -26.3 RBP on this exact player 6 days earlier (GER-PAR); trusted the market instead. Correct call."},
+    {"text": "Will the match have 3 or more total goals?", "our_estimate": 0.58, "crowd_estimate": 0.60, "outcome": "NO", "rbp": 7.63, "beat_crowd": true},
+    {"text": "Will Miguel Almirón (Paraguay) score or assist?", "our_estimate": 0.11, "crowd_estimate": 0.22, "outcome": "NO", "rbp": 10.91, "beat_crowd": true, "note": "PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT: 0 goals/assists/SOT in every game he played, discounted well below crowd."},
+    {"text": "Will France have 7 or more shots on target?", "our_estimate": 0.67, "crowd_estimate": 0.58, "outcome": "NO", "rbp": -15.7, "beat_crowd": false, "note": "The one clear miss of the match. Blended 45% market/55% empirical toward France's rising SOT trend (season-high 12 in the R32 game) -- reasonable regime-coverage logic, but still landed on the wrong side. Crowd's lower 58% was closer. A real, if much smaller-scale, echo of the CAN-MOR Q11 mechanism (empirical-lambda blend pushing above the market) -- worth flagging even though the magnitude here was contained (-15.7 vs -80.83)."},
+    {"text": "Will France score in both halves?", "our_estimate": 0.51, "crowd_estimate": 0.55, "outcome": "NO", "rbp": 14.93, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.32, "crowd_estimate": 0.42, "outcome": "NO", "rbp": 20.14, "beat_crowd": true},
+    {"text": "Will a substitute score a goal?", "our_estimate": 0.33, "crowd_estimate": 0.33, "outcome": "NO", "rbp": 3.93, "beat_crowd": true},
+    {"text": "Will France have 6 or more corner kicks?", "our_estimate": 0.64, "crowd_estimate": 0.62, "outcome": "YES", "rbp": 7.28, "beat_crowd": true},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.33, "crowd_estimate": 0.33, "outcome": "YES", "rbp": 4.56, "beat_crowd": true},
+    {"text": "Will Paraguay hold a lead at any point?", "our_estimate": 0.20, "crowd_estimate": 0.22, "outcome": "NO", "rbp": 6.24, "beat_crowd": true, "note": "No-market question anchored off the Team-to-score-first price (14.3%) plus a small addition for late-lead scenarios; landed close to crowd and correct."},
+    {"text": "Will Michael Olise (France) score or assist?", "our_estimate": 0.58, "crowd_estimate": 0.53, "outcome": "NO", "rbp": -3.97, "beat_crowd": false},
+    {"text": "Will a penalty kick be awarded?", "our_estimate": 0.28, "crowd_estimate": 0.27, "outcome": "YES", "rbp": 5.31, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "Best match of the recent stretch: 13/15 beat crowd, only 2 small misses (-15.7, -3.97), no catastrophic loss.",
+    "Biggest win: Dembélé 2+ SOT (+31.83) -- trusted a bimodal, opponent-quality-dependent read over a flat market/empirical average.",
+    "The Enciso call (+10.3) is the cleanest validation of learning from a named prior loss: same player, same question type, same underlying data pattern as a -26.3 RBP loss 6 days earlier on GER-PAR -- this time the suppression temptation was deliberately NOT repeated, and it worked.",
+    "The one miss (France 7+ SOT, -15.7) is a smaller-scale echo of the CAN-MOR catastrophe: blending toward an empirical SOT average pushed the estimate above the market again, and again the market was closer -- though the damage was contained because the blend was more conservative (55% vs CAN-MOR's 80%) and the underlying signal had genuine regime coverage. Still lost. Worth tracking as a continued data point against TEAM_SOT_EMPIRICAL_FLOOR in ANY direction, not just the aggressive-blend failure mode."
+  ]
+}

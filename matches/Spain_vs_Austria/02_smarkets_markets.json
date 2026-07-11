@@ -1,0 +1,209 @@
+{
+  "_description": "Smarkets market IDs and key prices used for Spain vs Austria R32 pricing",
+  "event_id": 45161536,
+  "total_markets_available": 167,
+  "key_markets": {
+    "FTR": {
+      "id": 148306932,
+      "Spain": 0.7663,
+      "Draw": 0.164,
+      "Austria": 0.0728,
+      "liquid": true
+    },
+    "BTTS": {
+      "id": 148306934,
+      "Yes": 0.4465,
+      "No": 0.5635,
+      "liquid": true
+    },
+    "OU2.5_goals": {
+      "id": 148306969,
+      "Over": 0.5765,
+      "Under": 0.4184,
+      "liquid": true
+    },
+    "OU3.5_goals": {
+      "id": 148306970,
+      "Over": 0.3379,
+      "Under": 0.6603,
+      "liquid": true
+    },
+    "HT_result": {
+      "id": 148306939,
+      "Spain": 0.5602,
+      "Draw": 0.3402,
+      "Austria": 0.0955,
+      "liquid": true
+    },
+    "Team_to_score_first": {
+      "id": 148307133,
+      "Spain": 0.7587,
+      "No_goal": 0.0459,
+      "Austria": 0.1944,
+      "liquid": true
+    },
+    "To_qualify": {
+      "id": 148307065,
+      "Spain": 0.8811,
+      "Austria": 0.1192,
+      "liquid": true
+    },
+    "Will_ET": {
+      "id": 148307066,
+      "Yes": 0.1667,
+      "No": 0.8394,
+      "liquid": true
+    },
+    "Spain_OU_goals_1.5": {
+      "id": 148306981,
+      "Over": 0.7093,
+      "Under": 0.3077,
+      "liquid": true
+    },
+    "Spain_OU_goals_2.5": {
+      "id": 148306982,
+      "Over": 0.4068,
+      "Under": 0.5932,
+      "liquid": true
+    },
+    "Spain_OU_goals_3.5": {
+      "id": 148306983,
+      "Over": 0.1898,
+      "Under": 0.8069,
+      "liquid": true
+    },
+    "Austria_OU_goals_0.5": {
+      "id": 148306990,
+      "Over": 0.4786,
+      "Under": 0.5195,
+      "liquid": true
+    },
+    "Austria_OU_goals_1.5": {
+      "id": 148306991,
+      "Over": 0.132,
+      "Under": 0.8659,
+      "liquid": true
+    },
+    "Spain_1H_OU0.5": {
+      "id": 148306984,
+      "Over": 0.6603,
+      "Under": 0.3364,
+      "liquid": true
+    },
+    "Total_1H_OU0.5": {
+      "id": 148306974,
+      "Over": 0.7463,
+      "Under": 0.2548,
+      "liquid": true
+    },
+    "Spain_score_both_halves": {
+      "id": 148307068,
+      "Yes": 0.4768,
+      "No": 0.5228,
+      "liquid": true
+    },
+    "Spain_win_to_nil": {
+      "id": 148307071,
+      "Yes": 0.4763,
+      "No": 0.5277,
+      "liquid": true
+    },
+    "Spain_SOT_OU6.5": {
+      "id": 148307251,
+      "Over": 0.4365,
+      "Under": 0.563,
+      "liquid": true
+    },
+    "Spain_corners_OU6.5": {
+      "id": 148307126,
+      "Over": 0.4294,
+      "Under": 0.5644,
+      "liquid": true
+    },
+    "Austria_shots_OU6.5": {
+      "id": 148307307,
+      "Over": 0.563,
+      "Under": 0.4365,
+      "liquid": true,
+      "note": "Contract labeled 'shots' not 'shots on target' \u2014 this is Austria total shots market"
+    },
+    "Spain_shots_OU17.5": {
+      "id": 148307270,
+      "Over": 0.4601,
+      "Under": 0.5407,
+      "liquid": true
+    },
+    "Cards_OU2.5": {
+      "id": 148307097,
+      "Over": 0.4922,
+      "Under": 0.603,
+      "liquid": true
+    },
+    "Cards_OU3.5": {
+      "id": 148307099,
+      "Over": 0.2542,
+      "Under": 0.752,
+      "liquid": true
+    },
+    "Corners_OU8.5": {
+      "id": 148307110,
+      "Over": 0.5559,
+      "Under": 0.4232,
+      "liquid": true
+    },
+    "Most_corners": {
+      "id": 148306955,
+      "Spain": 0.7911,
+      "Draw": 0.0702,
+      "Austria": 0.131,
+      "liquid": true
+    },
+    "Anytime_goalscorer_Yamal": {
+      "id": 148307407,
+      "mid": 0.41,
+      "liquid": true
+    },
+    "Anytime_goalscorer_Oyarzabal": {
+      "id": 148307407,
+      "mid": 0.4536,
+      "liquid": true
+    },
+    "Anytime_goalscorer_Sabitzer": {
+      "id": 148307407,
+      "offer": 0.125,
+      "liquid": false,
+      "illiquid_estimate": 0.118
+    },
+    "Score_or_assist_Yamal": {
+      "id": 148315131,
+      "mid": 0.5391,
+      "liquid": true
+    },
+    "Score_or_assist_Sabitzer": {
+      "id": 148315131,
+      "offer": 0.2222,
+      "liquid": false,
+      "illiquid_estimate": 0.21
+    },
+    "Player_SOT_OU0.5_Yamal": {
+      "id": 148315110,
+      "mid": 0.7483,
+      "liquid": true
+    },
+    "Player_SOT_OU0.5_Oyarzabal": {
+      "id": 148315110,
+      "mid": 0.6955,
+      "liquid": true
+    },
+    "Player_SOT_OU1.5_Yamal": {
+      "id": 148315112,
+      "mid": 0.4652,
+      "liquid": true
+    },
+    "Player_SOT_OU1.5_Oyarzabal": {
+      "id": 148315112,
+      "mid": 0.4084,
+      "liquid": true
+    }
+  }
+}

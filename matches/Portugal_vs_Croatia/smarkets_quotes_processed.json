@@ -1,0 +1,2464 @@
+{
+  "FTR": {
+    "Portugal": {
+      "bid": 0.578,
+      "offer": 0.5814,
+      "mid": 0.5797,
+      "liquid": true,
+      "cid": "412561555"
+    },
+    "Draw": {
+      "bid": 0.2564,
+      "offer": 0.2597,
+      "mid": 0.2581,
+      "liquid": true,
+      "cid": "412561557"
+    },
+    "Croatia": {
+      "bid": 0.1613,
+      "offer": 0.1667,
+      "mid": 0.164,
+      "liquid": true,
+      "cid": "412561556"
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.5682,
+      "offer": 0.5814,
+      "mid": 0.5748,
+      "liquid": true,
+      "cid": "412561577"
+    },
+    "No": {
+      "bid": 0.4274,
+      "offer": 0.4386,
+      "mid": 0.433,
+      "liquid": true,
+      "cid": "412561578"
+    }
+  },
+  "OU0_5_goals": {
+    "Under 0.5 goals": {
+      "bid": 0.0606,
+      "offer": 0.0645,
+      "mid": 0.0625,
+      "liquid": true,
+      "cid": "412561715"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.9346,
+      "offer": 0.9524,
+      "mid": 0.9435,
+      "liquid": true,
+      "cid": "412561716"
+    }
+  },
+  "OU1_5_goals": {
+    "Under 1.5 goals": {
+      "bid": 0.2,
+      "offer": 0.2128,
+      "mid": 0.2064,
+      "liquid": true,
+      "cid": "412561717"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.7812,
+      "offer": 0.8,
+      "mid": 0.7906,
+      "liquid": true,
+      "cid": "412561718"
+    }
+  },
+  "OU2_5_goals": {
+    "Under 2.5 goals": {
+      "bid": 0.4386,
+      "offer": 0.4545,
+      "mid": 0.4466,
+      "liquid": true,
+      "cid": "412561719"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5556,
+      "offer": 0.5618,
+      "mid": 0.5587,
+      "liquid": true,
+      "cid": "412561720"
+    }
+  },
+  "OU3_5_goals": {
+    "Under 3.5 goals": {
+      "bid": 0.6536,
+      "offer": 0.6803,
+      "mid": 0.6669,
+      "liquid": true,
+      "cid": "412561721"
+    },
+    "Over 3.5 goals": {
+      "bid": 0.3279,
+      "offer": 0.3333,
+      "mid": 0.3306,
+      "liquid": true,
+      "cid": "412561722"
+    }
+  },
+  "OU4_5_goals": {
+    "Under 4.5 goals": {
+      "bid": 0.8264,
+      "offer": 0.8475,
+      "mid": 0.837,
+      "liquid": true,
+      "cid": "412561723"
+    },
+    "Over 4.5 goals": {
+      "bid": 0.1562,
+      "offer": 0.1667,
+      "mid": 0.1614,
+      "liquid": true,
+      "cid": "412561724"
+    }
+  },
+  "HT_result": {
+    "Portugal": {
+      "bid": 0.4167,
+      "offer": 0.431,
+      "mid": 0.4239,
+      "liquid": true,
+      "cid": "412561596"
+    },
+    "Draw": {
+      "bid": 0.3906,
+      "offer": 0.4,
+      "mid": 0.3953,
+      "liquid": true,
+      "cid": "412561598"
+    },
+    "Croatia": {
+      "bid": 0.1786,
+      "offer": 0.1852,
+      "mid": 0.1819,
+      "liquid": true,
+      "cid": "412561597"
+    }
+  },
+  "Portugal_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.1282,
+      "offer": 0.1429,
+      "mid": 0.1356,
+      "liquid": true,
+      "cid": "412561741"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.8547,
+      "offer": 0.8696,
+      "mid": 0.8621,
+      "liquid": true,
+      "cid": "412561742"
+    }
+  },
+  "Portugal_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.4167,
+      "offer": 0.4348,
+      "mid": 0.4258,
+      "liquid": true,
+      "cid": "412561743"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.5682,
+      "offer": 0.578,
+      "mid": 0.5731,
+      "liquid": true,
+      "cid": "412561744"
+    }
+  },
+  "Portugal_OU2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.6944,
+      "offer": 0.7143,
+      "mid": 0.7044,
+      "liquid": true,
+      "cid": "412561745"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.2857,
+      "offer": 0.303,
+      "mid": 0.2944,
+      "liquid": true,
+      "cid": "412561746"
+    }
+  },
+  "Portugal_OU3_5": {
+    "Under 3.5 goals": {
+      "bid": 0.8547,
+      "offer": 0.9009,
+      "mid": 0.8778,
+      "liquid": true,
+      "cid": "412561747"
+    },
+    "Over 3.5 goals": {
+      "bid": 0.1064,
+      "offer": 0.1316,
+      "mid": 0.119,
+      "liquid": true,
+      "cid": "412561748"
+    }
+  },
+  "Croatia_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.3472,
+      "offer": 0.3704,
+      "mid": 0.3588,
+      "liquid": true,
+      "cid": "412561761"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6289,
+      "offer": 0.6536,
+      "mid": 0.6412,
+      "liquid": true,
+      "cid": "412561762"
+    }
+  },
+  "Croatia_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.7353,
+      "offer": 0.7519,
+      "mid": 0.7436,
+      "liquid": true,
+      "cid": "412561763"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2439,
+      "offer": 0.2632,
+      "mid": 0.2535,
+      "liquid": true,
+      "cid": "412561764"
+    }
+  },
+  "Croatia_OU2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.9174,
+      "offer": 0.9346,
+      "mid": 0.926,
+      "liquid": true,
+      "cid": "412561765"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.0714,
+      "offer": 0.08,
+      "mid": 0.0757,
+      "liquid": true,
+      "cid": "412561766"
+    }
+  },
+  "Portugal_clean_sheet": {
+    "Yes": {
+      "bid": 0.3623,
+      "offer": 0.3817,
+      "mid": 0.372,
+      "liquid": true,
+      "cid": "412561969"
+    },
+    "No": {
+      "bid": 0.6135,
+      "offer": 0.6452,
+      "mid": 0.6294,
+      "liquid": true,
+      "cid": "412561970"
+    }
+  },
+  "Portugal_score_both_halves": {
+    "Yes": {
+      "bid": 0.3731,
+      "offer": 0.4,
+      "mid": 0.3866,
+      "liquid": true,
+      "cid": "412561967"
+    },
+    "No": {
+      "bid": 0.5988,
+      "offer": 0.6369,
+      "mid": 0.6179,
+      "liquid": true,
+      "cid": "412561968"
+    }
+  },
+  "Portugal_win_to_nil": {
+    "Yes": {
+      "bid": 0.2778,
+      "offer": 0.3175,
+      "mid": 0.2976,
+      "liquid": true,
+      "cid": "412561973"
+    },
+    "No": {
+      "bid": 0.6849,
+      "offer": 0.7194,
+      "mid": 0.7022,
+      "liquid": true,
+      "cid": "412561974"
+    }
+  },
+  "Portugal_SOT_OU4_5": {
+    "Under 4.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601,
+      "liquid": true,
+      "cid": "412563401"
+    },
+    "Over 4.5 shots on target": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407,
+      "liquid": true,
+      "cid": "412563402"
+    }
+  },
+  "Croatia_SOT_OU3_5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.5435,
+      "offer": 0.6211,
+      "mid": 0.5823,
+      "liquid": true,
+      "cid": "412563495"
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.3788,
+      "offer": 0.4545,
+      "mid": 0.4167,
+      "liquid": true,
+      "cid": "412563496"
+    }
+  },
+  "Portugal_shots_OU14_5": {
+    "Under 14.5 shots": {
+      "bid": 0.4762,
+      "offer": 0.5556,
+      "mid": 0.5159,
+      "liquid": true,
+      "cid": "412563437"
+    },
+    "Over 14.5 shots": {
+      "bid": 0.4425,
+      "offer": 0.5263,
+      "mid": 0.4844,
+      "liquid": true,
+      "cid": "412563438"
+    }
+  },
+  "Croatia_shots_OU8_5": {
+    "Under 8.5 shots": {
+      "bid": 0.495,
+      "offer": 0.5814,
+      "mid": 0.5382,
+      "liquid": true,
+      "cid": "412563521"
+    },
+    "Over 8.5 shots": {
+      "bid": 0.4202,
+      "offer": 0.5025,
+      "mid": 0.4613,
+      "liquid": true,
+      "cid": "412563522"
+    }
+  },
+  "Total_SOT_OU8_5": {
+    "Under 8.5 shots on target": {
+      "bid": 0.4902,
+      "offer": 0.6024,
+      "mid": 0.5463,
+      "liquid": true,
+      "cid": "412563995"
+    },
+    "Over 8.5 shots on target": {
+      "bid": 0.4167,
+      "offer": 0.5128,
+      "mid": 0.4647,
+      "liquid": true,
+      "cid": "412563996"
+    }
+  },
+  "Total_shots_OU22_5": {
+    "Under 22.5 shots": {
+      "bid": 0.4167,
+      "offer": 0.5128,
+      "mid": 0.4647,
+      "liquid": true,
+      "cid": "412564023"
+    },
+    "Over 22.5 shots": {
+      "bid": 0.4902,
+      "offer": 0.6024,
+      "mid": 0.5463,
+      "liquid": true,
+      "cid": "412564024"
+    }
+  },
+  "Total_shots_OU23_5": {
+    "Under 23.5 shots": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564025"
+    },
+    "Over 23.5 shots": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564026"
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": 0.2597,
+      "offer": 0.2778,
+      "mid": 0.2687,
+      "liquid": true,
+      "cid": "412561665"
+    },
+    "No": {
+      "bid": 0.7407,
+      "offer": 0.7692,
+      "mid": 0.755,
+      "liquid": true,
+      "cid": "412561666"
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.119,
+      "offer": 0.1562,
+      "mid": 0.1376,
+      "liquid": true,
+      "cid": "412562013"
+    },
+    "No": {
+      "bid": 0.8696,
+      "offer": 0.8929,
+      "mid": 0.8813,
+      "liquid": true,
+      "cid": "412562014"
+    }
+  },
+  "Cards_OU1_5": {
+    "error": "quotes 429"
+  },
+  "Cards_OU2_5": {
+    "Under 2.5 cards": {
+      "bid": 0.5102,
+      "offer": 0.5525,
+      "mid": 0.5313,
+      "liquid": true,
+      "cid": "412562041"
+    },
+    "Over 2.5 cards": {
+      "bid": 0.4673,
+      "offer": 0.5025,
+      "mid": 0.4849,
+      "liquid": true,
+      "cid": "412562042"
+    }
+  },
+  "Cards_OU3_5": {
+    "Under 3.5 cards": {
+      "bid": 0.6897,
+      "offer": 0.7634,
+      "mid": 0.7266,
+      "liquid": true,
+      "cid": "412562045"
+    },
+    "Over 3.5 cards": {
+      "bid": 0.303,
+      "offer": 0.3401,
+      "mid": 0.3216,
+      "liquid": true,
+      "cid": "412562046"
+    }
+  },
+  "Cards_OU4_5": {
+    "Under 4.5 cards": {
+      "bid": 0.7937,
+      "offer": 0.9009,
+      "mid": 0.8473,
+      "liquid": true,
+      "cid": "412562049"
+    },
+    "Over 4.5 cards": {
+      "bid": 0.1042,
+      "offer": 0.2041,
+      "mid": 0.1542,
+      "liquid": true,
+      "cid": "412562050"
+    }
+  },
+  "Most_cards": {
+    "error": "quotes 429"
+  },
+  "Corners_OU7_5": {
+    "Under 7.5 corners": {
+      "bid": 0.3175,
+      "offer": 0.3546,
+      "mid": 0.3361,
+      "liquid": true,
+      "cid": "412562065"
+    },
+    "Over 7.5 corners": {
+      "bid": 0.6452,
+      "offer": 0.6849,
+      "mid": 0.665,
+      "liquid": true,
+      "cid": "412562066"
+    }
+  },
+  "Corners_OU8_5": {
+    "Under 8.5 corners": {
+      "bid": 0.4202,
+      "offer": 0.4425,
+      "mid": 0.4314,
+      "liquid": true,
+      "cid": "412562067"
+    },
+    "Over 8.5 corners": {
+      "bid": 0.5618,
+      "offer": 0.5814,
+      "mid": 0.5716,
+      "liquid": true,
+      "cid": "412562068"
+    }
+  },
+  "Corners_OU9_5": {
+    "Under 9.5 corners": {
+      "bid": 0.5263,
+      "offer": 0.5988,
+      "mid": 0.5625,
+      "liquid": true,
+      "cid": "412562069"
+    },
+    "Over 9.5 corners": {
+      "bid": 0.4032,
+      "offer": 0.4587,
+      "mid": 0.4309,
+      "liquid": true,
+      "cid": "412562070"
+    }
+  },
+  "Portugal_corners_OU5_5": {
+    "Under 5.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5495,
+      "mid": 0.5041,
+      "liquid": true,
+      "cid": "412562095"
+    },
+    "Over 5.5 corners": {
+      "bid": 0.431,
+      "offer": 0.5405,
+      "mid": 0.4858,
+      "liquid": true,
+      "cid": "412562096"
+    }
+  },
+  "Portugal_corners_OU4_5": {
+    "Under 4.5 corners": {
+      "bid": 0.3333,
+      "offer": 0.4,
+      "mid": 0.3667,
+      "liquid": true,
+      "cid": "412562091"
+    },
+    "Over 4.5 corners": {
+      "bid": 0.6024,
+      "offer": 0.6452,
+      "mid": 0.6238,
+      "liquid": true,
+      "cid": "412562092"
+    }
+  },
+  "Most_corners": {
+    "Portugal": {
+      "bid": 0.625,
+      "offer": 0.6897,
+      "mid": 0.6573,
+      "liquid": true,
+      "cid": "412561659"
+    },
+    "Draw": {
+      "bid": 0.08,
+      "offer": 0.1111,
+      "mid": 0.0955,
+      "liquid": true,
+      "cid": "412561661"
+    },
+    "Croatia": {
+      "bid": 0.2128,
+      "offer": 0.2632,
+      "mid": 0.238,
+      "liquid": true,
+      "cid": "412561660"
+    }
+  },
+  "To_qualify": {
+    "Portugal": {
+      "bid": 0.7194,
+      "offer": 0.7353,
+      "mid": 0.7273,
+      "liquid": true,
+      "cid": "412561961"
+    },
+    "Croatia": {
+      "bid": 0.2667,
+      "offer": 0.2817,
+      "mid": 0.2742,
+      "liquid": true,
+      "cid": "412561962"
+    }
+  },
+  "Will_ET": {
+    "Yes": {
+      "bid": 0.2083,
+      "offer": 0.2985,
+      "mid": 0.2534,
+      "liquid": true,
+      "cid": "412561963"
+    },
+    "No": {
+      "bid": 0.7042,
+      "offer": 0.7937,
+      "mid": 0.749,
+      "liquid": true,
+      "cid": "412561964"
+    }
+  },
+  "First_half_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.274,
+      "offer": 0.2899,
+      "mid": 0.282,
+      "liquid": true,
+      "cid": "412561729"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7143,
+      "offer": 0.7299,
+      "mid": 0.7221,
+      "liquid": true,
+      "cid": "412561730"
+    }
+  },
+  "First_half_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.6369,
+      "offer": 0.6494,
+      "mid": 0.6431,
+      "liquid": true,
+      "cid": "412561731"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.3571,
+      "offer": 0.3676,
+      "mid": 0.3623,
+      "liquid": true,
+      "cid": "412561732"
+    }
+  },
+  "First_half_POR_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.4098,
+      "offer": 0.431,
+      "mid": 0.4204,
+      "liquid": true,
+      "cid": "412561749"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.5747,
+      "offer": 0.5882,
+      "mid": 0.5815,
+      "liquid": true,
+      "cid": "412561750"
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.2,
+      "offer": 0.2381,
+      "mid": 0.2191,
+      "liquid": true,
+      "cid": "412562978"
+    },
+    "11-20": {
+      "bid": 0.1754,
+      "offer": 0.2083,
+      "mid": 0.1919,
+      "liquid": true,
+      "cid": "412562979"
+    },
+    "21-30": {
+      "bid": 0.1351,
+      "offer": 0.1667,
+      "mid": 0.1509,
+      "liquid": true,
+      "cid": "412562980"
+    },
+    "31-40": {
+      "bid": 0.102,
+      "offer": 0.1282,
+      "mid": 0.1151,
+      "liquid": true,
+      "cid": "412562981"
+    },
+    "41-50": {
+      "bid": 0.087,
+      "offer": 0.1136,
+      "mid": 0.1003,
+      "liquid": true,
+      "cid": "412562982"
+    },
+    "51-60": {
+      "bid": 0.0541,
+      "offer": 0.0741,
+      "mid": 0.0641,
+      "liquid": true,
+      "cid": "412562983"
+    },
+    "61-70": {
+      "bid": 0.0357,
+      "offer": 0.0526,
+      "mid": 0.0442,
+      "liquid": true,
+      "cid": "412562984"
+    },
+    "71-80": {
+      "bid": 0.0227,
+      "offer": 0.0385,
+      "mid": 0.0306,
+      "liquid": true,
+      "cid": "412562985"
+    },
+    "81-90": {
+      "bid": 0.0238,
+      "offer": 0.04,
+      "mid": 0.0319,
+      "liquid": true,
+      "cid": "412562986"
+    },
+    "None": {
+      "bid": 0.0526,
+      "offer": 0.0741,
+      "mid": 0.0634,
+      "liquid": true,
+      "cid": "412562987"
+    }
+  },
+  "Highest_scoring_half": {
+    "First Half": {
+      "bid": 0.2857,
+      "offer": 0.3226,
+      "mid": 0.3042,
+      "liquid": true,
+      "cid": "412561638"
+    },
+    "Equal": {
+      "bid": 0.2326,
+      "offer": 0.2703,
+      "mid": 0.2515,
+      "liquid": true,
+      "cid": "412561639"
+    },
+    "Second Half": {
+      "bid": 0.4348,
+      "offer": 0.4673,
+      "mid": 0.4511,
+      "liquid": true,
+      "cid": "412561640"
+    }
+  },
+  "Team_to_score_first": {
+    "Portugal": {
+      "bid": 0.5882,
+      "offer": 0.6623,
+      "mid": 0.6252,
+      "liquid": true,
+      "cid": "412562918"
+    },
+    "No goal": {
+      "bid": 0.0312,
+      "offer": 0.0769,
+      "mid": 0.0541,
+      "liquid": true,
+      "cid": "412562920"
+    },
+    "Croatia": {
+      "bid": 0.2985,
+      "offer": 0.3571,
+      "mid": 0.3278,
+      "liquid": true,
+      "cid": "412562919"
+    }
+  },
+  "Anytime_goalscorer": {
+    "Andrej Kramaric": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564344"
+    },
+    "Ante Budimir": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564343"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564323"
+    },
+    "Bruno Fernandes": {
+      "bid": 0.2128,
+      "offer": 0.2632,
+      "mid": 0.238,
+      "liquid": true,
+      "cid": "412564322"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.4098,
+      "offer": 0.4237,
+      "mid": 0.4168,
+      "liquid": true,
+      "cid": "412564308"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564327"
+    },
+    "Duje \u0106aleta-Car": {
+      "bid": null,
+      "offer": 0.037,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564347"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564315"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564306"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.2667,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564321"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564311"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564310"
+    },
+    "Igor Matanovic": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564335"
+    },
+    "Ivan Perisic": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564342"
+    },
+    "Joao Felix": {
+      "bid": 0.1667,
+      "offer": 0.2532,
+      "mid": 0.2099,
+      "liquid": true,
+      "cid": "412564307"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.0952,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564320"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564319"
+    },
+    "Josip Stanisic": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564329"
+    },
+    "Josip Sutalo": {
+      "bid": null,
+      "offer": 0.0278,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564333"
+    },
+    "Josko Gvardiol": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564332"
+    },
+    "Kristijan Jakic": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564331"
+    },
+    "Luka Modric": {
+      "bid": null,
+      "offer": 0.1087,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564341"
+    },
+    "Luka Sucic": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564337"
+    },
+    "Luka Vuskovic": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564340"
+    },
+    "Marco Pasalic": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564338"
+    },
+    "Marin Pongracic": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564351"
+    },
+    "Mario Pa\u0161ali\u0107": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564346"
+    },
+    "Martin Baturina": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564339"
+    },
+    "Martin Erlic": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564349"
+    },
+    "Mateo Kova\u010di\u0107": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564345"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564313"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564325"
+    },
+    "Nikola Moro": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564350"
+    },
+    "Nikola Vla\u0161i\u0107": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564348"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564312"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564305"
+    },
+    "Petar Musa": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564330"
+    },
+    "Petar Sucic": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564334"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.2817,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564328"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564317"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564326"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564324"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564314"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": 0.0667,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564316"
+    },
+    "Toni Fruk": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564336"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564309"
+    }
+  },
+  "Score_or_assist": {
+    "Andrej Kramaric": {
+      "bid": null,
+      "offer": 0.3279,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587910"
+    },
+    "Ante Budimir": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587909"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587889"
+    },
+    "Bruno Fernandes": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587888"
+    },
+    "Cristiano Ronaldo": {
+      "bid": null,
+      "offer": 0.5952,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587874"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587893"
+    },
+    "Duje \u0106aleta-Car": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587913"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587881"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587872"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587887"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587877"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587876"
+    },
+    "Igor Matanovic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587901"
+    },
+    "Ivan Perisic": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587908"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.4545,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587873"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587886"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587885"
+    },
+    "Josip Stanisic": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587895"
+    },
+    "Josip Sutalo": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587899"
+    },
+    "Josko Gvardiol": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587898"
+    },
+    "Kristijan Jakic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587897"
+    },
+    "Luka Modric": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587907"
+    },
+    "Luka Sucic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587903"
+    },
+    "Luka Vuskovic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587906"
+    },
+    "Marco Pasalic": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587904"
+    },
+    "Marin Pongracic": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587917"
+    },
+    "Mario Pa\u0161ali\u0107": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587912"
+    },
+    "Martin Baturina": {
+      "bid": null,
+      "offer": 0.2667,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587905"
+    },
+    "Martin Erlic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587915"
+    },
+    "Mateo Kova\u010di\u0107": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587911"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587879"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587891"
+    },
+    "Nikola Moro": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587916"
+    },
+    "Nikola Vla\u0161i\u0107": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587914"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587878"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587871"
+    },
+    "Petar Musa": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587896"
+    },
+    "Petar Sucic": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587900"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587894"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587883"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587892"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587890"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587880"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587882"
+    },
+    "Toni Fruk": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587902"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587875"
+    }
+  },
+  "Player_SOT_OU0_5": {
+    "Andrej Kramaric": {
+      "bid": null,
+      "offer": 0.5,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586902"
+    },
+    "Ante Budimir": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586901"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.3846,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586881"
+    },
+    "Bruno Fernandes": {
+      "bid": 0.5714,
+      "offer": 0.5988,
+      "mid": 0.5851,
+      "liquid": true,
+      "cid": "412586880"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.625,
+      "offer": 0.8,
+      "mid": 0.7125,
+      "liquid": true,
+      "cid": "412586866"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586885"
+    },
+    "Duje \u0106aleta-Car": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586905"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.5952,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586873"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.5848,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586864"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.6061,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586879"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586869"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.7407,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586868"
+    },
+    "Igor Matanovic": {
+      "bid": null,
+      "offer": 0.5917,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586893"
+    },
+    "Ivan Perisic": {
+      "bid": null,
+      "offer": 0.4,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586900"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.6061,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586865"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586878"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586877"
+    },
+    "Josip Stanisic": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586887"
+    },
+    "Josip Sutalo": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586891"
+    },
+    "Josko Gvardiol": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586890"
+    },
+    "Kristijan Jakic": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586889"
+    },
+    "Luka Modric": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586899"
+    },
+    "Luka Sucic": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586895"
+    },
+    "Luka Vuskovic": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586898"
+    },
+    "Marco Pasalic": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586896"
+    },
+    "Marin Pongracic": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586909"
+    },
+    "Mario Pa\u0161ali\u0107": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586904"
+    },
+    "Martin Baturina": {
+      "bid": null,
+      "offer": 0.3846,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586897"
+    },
+    "Martin Erlic": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586907"
+    },
+    "Mateo Kova\u010di\u0107": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586903"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586871"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586883"
+    },
+    "Nikola Moro": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586908"
+    },
+    "Nikola Vla\u0161i\u0107": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586906"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.2564,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586870"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586863"
+    },
+    "Petar Musa": {
+      "bid": null,
+      "offer": 0.625,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586888"
+    },
+    "Petar Sucic": {
+      "bid": null,
+      "offer": 0.3571,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586892"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.6135,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586886"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586875"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586884"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586882"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586872"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586874"
+    },
+    "Toni Fruk": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586894"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586867"
+    }
+  },
+  "Player_SOT_OU1_5": {
+    "Andrej Kramaric": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586998"
+    },
+    "Ante Budimir": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586997"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586977"
+    },
+    "Bruno Fernandes": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586976"
+    },
+    "Cristiano Ronaldo": {
+      "bid": 0.25,
+      "offer": 0.4505,
+      "mid": 0.3503,
+      "liquid": true,
+      "cid": "412586962"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586981"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.2381,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586969"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586960"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586975"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586965"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586964"
+    },
+    "Igor Matanovic": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586989"
+    },
+    "Ivan Perisic": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586996"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586961"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586974"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586973"
+    },
+    "Josip Stanisic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586983"
+    },
+    "Josip Sutalo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586987"
+    },
+    "Josko Gvardiol": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586986"
+    },
+    "Kristijan Jakic": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586985"
+    },
+    "Luka Modric": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586995"
+    },
+    "Luka Sucic": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586991"
+    },
+    "Luka Vuskovic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586994"
+    },
+    "Marco Pasalic": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586992"
+    },
+    "Marin Pongracic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587005"
+    },
+    "Mario Pa\u0161ali\u0107": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587000"
+    },
+    "Martin Baturina": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586993"
+    },
+    "Martin Erlic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587003"
+    },
+    "Mateo Kova\u010di\u0107": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586999"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586967"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586979"
+    },
+    "Nikola Moro": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587004"
+    },
+    "Nikola Vla\u0161i\u0107": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "cid": "412587002"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.0417,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586966"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586959"
+    },
+    "Petar Musa": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586984"
+    },
+    "Petar Sucic": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586988"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586982"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586971"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586980"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.0526,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586978"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586968"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586970"
+    },
+    "Toni Fruk": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586990"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": null,
+      "liquid": false,
+      "cid": "412586963"
+    }
+  },
+  "Anytime_header_scorer": {
+    "Andrej Kramaric": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564632"
+    },
+    "Ante Budimir": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564631"
+    },
+    "Bernardo Silva": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564611"
+    },
+    "Bruno Fernandes": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564610"
+    },
+    "Cristiano Ronaldo": {
+      "bid": null,
+      "offer": 0.1316,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564596"
+    },
+    "Diogo Dalot": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564615"
+    },
+    "Duje \u0106aleta-Car": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564635"
+    },
+    "Francisco Concei\u00e7\u00e3o": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564603"
+    },
+    "Francisco Trincao": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564594"
+    },
+    "Goncalo Guedes": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564609"
+    },
+    "Gon\u00e7alo Inacio": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564599"
+    },
+    "Goncalo Ramos": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564598"
+    },
+    "Igor Matanovic": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564623"
+    },
+    "Ivan Perisic": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564630"
+    },
+    "Joao Felix": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564595"
+    },
+    "Jo\u00e3o Pedro Cavaco Cancelo": {
+      "bid": null,
+      "offer": 0.0059,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564608"
+    },
+    "Jo\u00e3o Pedro Gon\u00e7alves Neves": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564607"
+    },
+    "Josip Stanisic": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564617"
+    },
+    "Josip Sutalo": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564621"
+    },
+    "Josko Gvardiol": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564620"
+    },
+    "Kristijan Jakic": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564619"
+    },
+    "Luka Modric": {
+      "bid": null,
+      "offer": 0.0071,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564629"
+    },
+    "Luka Sucic": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564625"
+    },
+    "Luka Vuskovic": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564628"
+    },
+    "Marco Pasalic": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564626"
+    },
+    "Marin Pongracic": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564639"
+    },
+    "Mario Pa\u0161ali\u0107": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564634"
+    },
+    "Martin Baturina": {
+      "bid": null,
+      "offer": 0.0133,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564627"
+    },
+    "Martin Erlic": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564637"
+    },
+    "Mateo Kova\u010di\u0107": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564633"
+    },
+    "Matheus Nunes": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564601"
+    },
+    "Nelson Semedo": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564613"
+    },
+    "Nikola Moro": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564638"
+    },
+    "Nikola Vla\u0161i\u0107": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564636"
+    },
+    "Nuno Mendes": {
+      "bid": null,
+      "offer": 0.0111,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564600"
+    },
+    "Pedro Lomba Neto": {
+      "bid": null,
+      "offer": 0.0227,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564593"
+    },
+    "Petar Musa": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564618"
+    },
+    "Petar Sucic": {
+      "bid": null,
+      "offer": 0.0167,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564622"
+    },
+    "Rafael Leao": {
+      "bid": null,
+      "offer": 0.0263,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564616"
+    },
+    "Renato Veiga": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564605"
+    },
+    "Ruben Dias": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564614"
+    },
+    "Ruben Neves": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564612"
+    },
+    "Samuel Costa": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564602"
+    },
+    "Tomas Lemos Araujo": {
+      "bid": null,
+      "offer": 0.0625,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564604"
+    },
+    "Toni Fruk": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564624"
+    },
+    "Vitinha": {
+      "bid": null,
+      "offer": 0.0083,
+      "mid": null,
+      "liquid": false,
+      "cid": "412564597"
+    }
+  },
+  "Portugal_cards_OU1_5": {
+    "Under 1.5 cards": {
+      "bid": 0.6173,
+      "offer": 0.7143,
+      "mid": 0.6658,
+      "liquid": true,
+      "cid": "412562958"
+    },
+    "Over 1.5 cards": {
+      "bid": 0.2857,
+      "offer": 0.3817,
+      "mid": 0.3337,
+      "liquid": true,
+      "cid": "412562959"
+    }
+  },
+  "Croatia_cards_OU1_5": {
+    "Under 1.5 cards": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407,
+      "liquid": true,
+      "cid": "412562960"
+    },
+    "Over 1.5 cards": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601,
+      "liquid": true,
+      "cid": "412562961"
+    }
+  },
+  "Croatia_corners_OU3_5": {
+    "Under 3.5 corners": {
+      "bid": 0.5025,
+      "offer": 0.5952,
+      "mid": 0.5488,
+      "liquid": true,
+      "cid": "412562089"
+    },
+    "Over 3.5 corners": {
+      "bid": 0.4032,
+      "offer": 0.5,
+      "mid": 0.4516,
+      "liquid": true,
+      "cid": "412562090"
+    }
+  }
+}

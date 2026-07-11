@@ -1,0 +1,36 @@
+{
+  "_description": "ESPN team/player stats for Brazil (3 group + R32) and Norway (3 group + R32), R16 BRA vs NOR 2026-07-05",
+  "espn_event_id": 760504,
+  "brazil_matches": {
+    "team_id_espn": 205,
+    "matches": [
+      {"opponent": "Morocco", "result": "D 1-1", "shots": 12, "sot": 5, "corners": 6, "yc": 2, "offsides": 0, "fouls": 16},
+      {"opponent": "Haiti", "result": "W 3-0", "shots": 8, "sot": 5, "corners": 4, "yc": 1, "offsides": 8, "fouls": 13, "note": "8 offsides is a clear outlier vs the rest of their record"},
+      {"opponent": "Scotland", "result": "W 3-0 (away)", "shots": 21, "sot": 9, "corners": 7, "yc": 2, "offsides": 1, "fouls": 11},
+      {"opponent": "Japan", "stage": "R32", "result": "W 2-1", "shots": 19, "sot": 7, "corners": 6, "yc": 2, "offsides": 1, "fouls": 4}
+    ],
+    "averages": {"shots": 15.0, "sot": 6.5, "corners": 5.75, "yc": 1.75, "offsides": 2.5},
+    "notes": [
+      "Won Group C (7pts), GD+6, only conceded once in 3 group games. Vinícius scored in 3/4 games (1,1,2,0 -- blanked only in R32 vs Japan, their toughest opponent to date). Cunha now first-choice CF with Raphinha out injured since GD3 (2,1 goals in his 2 starts since, 3 goals total).",
+      "KEY BEHAVIORAL PATTERN (from prior postmortem): Brazil does NOT keep scoring once ahead -- zero 2nd-half goals across both group wins where they led. Do not inflate 'Brazil scores both halves'-type props.",
+      "KEY BEHAVIORAL PATTERN: the trailing/losing opponent's own stats are NOT suppressed by a Brazil blowout -- Haiti (down 0-3) still put up 4 offsides + real 2H SOT; Scotland (losing 0-3) still out-cornered nobody but had comparable corners. Do not assume Norway's own attacking numbers collapse just because Brazil is favored.",
+      "WORST-EVER RESULT PRECEDENT: BRA-MAR Q8 'Will Brazil win?' was gut-overridden to 1.00 (researched estimate was 0.58-0.60); Brazil drew; -51.97 RBP. Never submit outside 0.05-0.95, and never override a researched market-consensus number with conviction."
+    ]
+  },
+  "norway_matches": {
+    "team_id_espn": 464,
+    "matches": [
+      {"opponent": "Iraq", "result": "W 4-1 (away)", "shots": 12, "sot": 5, "corners": 5, "yc": 0, "offsides": 0, "fouls": 13},
+      {"opponent": "Senegal", "result": "W 3-2", "shots": 13, "sot": 7, "corners": 5, "yc": 0, "offsides": 0, "fouls": 13},
+      {"opponent": "France", "result": "L 1-4", "shots": 10, "sot": 4, "corners": 4, "yc": 1, "offsides": 1, "fouls": 9},
+      {"opponent": "Ivory Coast", "stage": "R32", "result": "W 2-1", "shots": 9, "sot": 4, "corners": 3, "yc": 1, "offsides": 2, "fouls": 7}
+    ],
+    "averages": {"shots": 11.0, "sot": 5.0, "corners": 4.25, "yc": 0.5, "offsides": 0.75},
+    "notes": [
+      "2W-1L group record, 6pts, GD+1. Beat their R32 opponent (Ivory Coast) 2-1, confirming a real knockout-stage scalp.",
+      "KEY LESSON: don't anchor Norway's ceiling to their weakest opponent (Iraq). Their SOT was actually HIGHER (7) against the tougher Senegal test than against weak Iraq (5) -- the same 'regime coverage' issue flagged in the Canada postmortem, just showing up as underconfidence risk instead of overconfidence this time.",
+      "Haaland did NOT play at all vs France (starter=false, 0 in every stat) -- full rest/rotation, not injury or poor form. He has scored in literally every match he has featured in this tournament (Iraq 2G, Senegal 2G, Ivory Coast R32 1G) -- 5 goals in 3 appearances, including a knockout-stakes goal vs Ivory Coast.",
+      "Ødegaard: 0 goals in every game but an assist in all 3 games he played (100% rate) -- pure creator. However, none of those 3 assists came against opposition anywhere near Brazil's quality (Iraq, Senegal, Ivory Coast) -- untested against elite opposition, same caution as the France-Paraguay SOT lesson."
+    ]
+  }
+}

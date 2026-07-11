@@ -1,0 +1,832 @@
+{
+  "FTR": {
+    "France": {
+      "bid": 0.6061,
+      "offer": 0.6098,
+      "mid": 0.60795
+    },
+    "Morocco": {
+      "bid": 0.1389,
+      "offer": 0.1429,
+      "mid": 0.1409
+    },
+    "Draw": {
+      "bid": 0.25,
+      "offer": 0.2532,
+      "mid": 0.2516
+    }
+  },
+  "OU2.5_goals": {
+    "Under 2.5 goals": {
+      "bid": 0.5319,
+      "offer": 0.5405,
+      "mid": 0.5362
+    },
+    "Over 2.5 goals": {
+      "bid": 0.463,
+      "offer": 0.4673,
+      "mid": 0.46515
+    }
+  },
+  "Cards_OU4.5": {
+    "Under 4.5 cards": {
+      "bid": 0.7246,
+      "offer": 0.8696,
+      "mid": 0.7971
+    },
+    "Over 4.5 cards": {
+      "bid": 0.1754,
+      "offer": 0.2778,
+      "mid": 0.2266
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.5495,
+      "offer": 0.6061,
+      "mid": 0.5778
+    },
+    "Over 3.5 cards": {
+      "bid": 0.4,
+      "offer": 0.4762,
+      "mid": 0.43810000000000004
+    }
+  },
+  "HT_result": {
+    "France": {
+      "bid": 0.4132,
+      "offer": 0.4274,
+      "mid": 0.4203
+    },
+    "Morocco": {
+      "bid": 0.1429,
+      "offer": 0.1562,
+      "mid": 0.14955000000000002
+    },
+    "Draw": {
+      "bid": 0.4348,
+      "offer": 0.4425,
+      "mid": 0.43865
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "No": {
+      "bid": 0.7143,
+      "offer": 0.7299,
+      "mid": 0.7221
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.1429,
+      "offer": 0.1515,
+      "mid": 0.1472
+    },
+    "No": {
+      "bid": 0.8475,
+      "offer": 0.8696,
+      "mid": 0.85855
+    }
+  },
+  "Mbappe_anytime_scorer": {
+    "Noussair Mazraoui": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Ayoub El Kaabi": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1754
+    },
+    "Azzedine Ounahi": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Chadi Riad": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0357
+    },
+    "Ismael Saibari": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.2128
+    },
+    "Neil El Aynaoui": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Anass Salah-Eddine": {
+      "bid": null,
+      "offer": 0.0278,
+      "mid": 0.0278
+    },
+    "Redouane Halhal": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Soufiane Rahimi": {
+      "bid": 0.1613,
+      "offer": 0.1754,
+      "mid": 0.16835
+    },
+    "Bilal El Khannous": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0909
+    },
+    "Zakaria El Ouahdi": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.04
+    },
+    "Amine Sbai": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1064
+    },
+    "Chemsdine Talbi": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Youssef Belammari": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0435
+    },
+    "Ayyoub Bouaddi": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0357
+    },
+    "Samir El Mourabet": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Gessime Ben Youssef Mustapha Yassine": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Ayoube Amaimouni-Echghouyab": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0833
+    },
+    "Sofyan Amrabat": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": 0.0385
+    },
+    "Marwane Saadane": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Issa Diop": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Achraf Hakimi": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1064
+    },
+    "Brahim Abdelkader Diaz": {
+      "bid": 0.1163,
+      "offer": 0.1429,
+      "mid": 0.1296
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": 0.0714
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "William Saliba": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Michael Olise": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": 0.25
+    },
+    "Kouadio Kone": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2273
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Bradley Barcola": {
+      "bid": 0.1429,
+      "offer": 0.2222,
+      "mid": 0.18255
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2326
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": 0.1429,
+      "offer": 0.2222,
+      "mid": 0.18255
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.0952,
+      "mid": 0.0952
+    },
+    "Lucas Digne": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "Adrien Rabiot": {
+      "bid": null,
+      "offer": 0.1087,
+      "mid": 0.1087
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.0417,
+      "mid": 0.0417
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.3378,
+      "mid": 0.3378
+    },
+    "Dayot Upamecano": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "Ousmane Dembele": {
+      "bid": 0.25,
+      "offer": 0.2899,
+      "mid": 0.26995
+    },
+    "Kylian Mbappe": {
+      "bid": 0.5,
+      "offer": 0.5051,
+      "mid": 0.50255
+    },
+    "Jules Kounde": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.3125,
+      "mid": 0.3125
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "415715203": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Player_SOT_OU0.5": {
+    "Noussair Mazraoui": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Ayoub El Kaabi": {
+      "bid": null,
+      "offer": 0.5988,
+      "mid": 0.5988
+    },
+    "Azzedine Ounahi": {
+      "bid": null,
+      "offer": 0.3279,
+      "mid": 0.3279
+    },
+    "Chadi Riad": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1351
+    },
+    "Ismael Saibari": {
+      "bid": null,
+      "offer": 0.5,
+      "mid": 0.5
+    },
+    "Neil El Aynaoui": {
+      "bid": null,
+      "offer": 0.2817,
+      "mid": 0.2817
+    },
+    "Anass Salah-Eddine": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Redouane Halhal": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Soufiane Rahimi": {
+      "bid": null,
+      "offer": 0.5525,
+      "mid": 0.5525
+    },
+    "Bilal El Khannous": {
+      "bid": null,
+      "offer": 0.3448,
+      "mid": 0.3448
+    },
+    "Zakaria El Ouahdi": {
+      "bid": null,
+      "offer": 0.2564,
+      "mid": 0.2564
+    },
+    "Amine Sbai": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4274
+    },
+    "Chemsdine Talbi": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.3788
+    },
+    "Youssef Belammari": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Ayyoub Bouaddi": {
+      "bid": null,
+      "offer": 0.1562,
+      "mid": 0.1562
+    },
+    "Samir El Mourabet": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.274
+    },
+    "Gessime Ben Youssef Mustapha Yassine": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.3788
+    },
+    "Ayoube Amaimouni-Echghouyab": {
+      "bid": null,
+      "offer": 0.5236,
+      "mid": 0.5236
+    },
+    "Sofyan Amrabat": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1613
+    },
+    "Marwane Saadane": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": 0.1887
+    },
+    "Issa Diop": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Achraf Hakimi": {
+      "bid": 0.3378,
+      "offer": 0.3876,
+      "mid": 0.3627
+    },
+    "Brahim Abdelkader Diaz": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": 0.4348
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.2667,
+      "mid": 0.2667
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.2667,
+      "mid": 0.2667
+    },
+    "William Saliba": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Michael Olise": {
+      "bid": 0.5714,
+      "offer": 0.5848,
+      "mid": 0.5781000000000001
+    },
+    "Kouadio Kone": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.3333
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.6135,
+      "mid": 0.6135
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": 0.2899
+    },
+    "Bradley Barcola": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": 0.4762
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.6452,
+      "mid": 0.6452
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": 0.1,
+      "offer": 0.6289,
+      "mid": 0.36445
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": 0.3788
+    },
+    "Lucas Digne": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.2
+    },
+    "Adrien Rabiot": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": 0.3937
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": 0.2703
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": 0.303
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": 0.2985
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.7042,
+      "mid": 0.7042
+    },
+    "Dayot Upamecano": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1923
+    },
+    "Ousmane Dembele": {
+      "bid": 0.5714,
+      "offer": 0.5747,
+      "mid": 0.5730500000000001
+    },
+    "Kylian Mbappe": {
+      "bid": 0.8333,
+      "offer": 0.8696,
+      "mid": 0.85145
+    },
+    "Jules Kounde": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.7692,
+      "mid": 0.7692
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.2041
+    },
+    "415716323": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Player_SOT_OU1.5": {
+    "Noussair Mazraoui": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ayoub El Kaabi": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "Azzedine Ounahi": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Chadi Riad": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ismael Saibari": {
+      "bid": null,
+      "offer": 0.1724,
+      "mid": 0.1724
+    },
+    "Neil El Aynaoui": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.0476
+    },
+    "Anass Salah-Eddine": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Redouane Halhal": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Soufiane Rahimi": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1818
+    },
+    "Bilal El Khannous": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0645
+    },
+    "Zakaria El Ouahdi": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0435
+    },
+    "Amine Sbai": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Chemsdine Talbi": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "Youssef Belammari": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ayyoub Bouaddi": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Samir El Mourabet": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0435
+    },
+    "Gessime Ben Youssef Mustapha Yassine": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0769
+    },
+    "Ayoube Amaimouni-Echghouyab": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Sofyan Amrabat": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Marwane Saadane": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Issa Diop": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Achraf Hakimi": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0909
+    },
+    "Brahim Abdelkader Diaz": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Aurelien Tchouameni": {
+      "bid": null,
+      "offer": 0.0417,
+      "mid": 0.0417
+    },
+    "Maxence Lacroix": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.04
+    },
+    "William Saliba": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Michael Olise": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.2083
+    },
+    "Kouadio Kone": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "Rayan Cherki": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.2439
+    },
+    "Malo Gusto": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Bradley Barcola": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1754
+    },
+    "Maghnes Akliouche": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.274
+    },
+    "D\u00e9sir\u00e9 Dou\u00e9": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.2439
+    },
+    "Warren Za\u00efre-Emery": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "Lucas Digne": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": 0.0312
+    },
+    "Adrien Rabiot": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0833
+    },
+    "Lucas Hernandez": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0435
+    },
+    "N'Golo Kante": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Theo Francois Hernandez": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Marcus Thuram": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.365
+    },
+    "Dayot Upamecano": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ousmane Dembele": {
+      "bid": 0.2222,
+      "offer": 0.2667,
+      "mid": 0.24445
+    },
+    "Kylian Mbappe": {
+      "bid": 0.6061,
+      "offer": 0.6211,
+      "mid": 0.6135999999999999
+    },
+    "Jules Kounde": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Jean-Philippe Mateta": {
+      "bid": null,
+      "offer": 0.4464,
+      "mid": 0.4464
+    },
+    "Ibrahima Konate": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.025
+    },
+    "415716417": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Morocco_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.5236,
+      "offer": 0.6024,
+      "mid": 0.563
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.3968,
+      "offer": 0.4762,
+      "mid": 0.4365
+    }
+  },
+  "France_corners_OU6.5": {
+    "Under 6.5 corners": {
+      "bid": 0.5405,
+      "offer": 0.6061,
+      "mid": 0.5732999999999999
+    },
+    "Over 6.5 corners": {
+      "bid": 0.3968,
+      "offer": 0.4587,
+      "mid": 0.42774999999999996
+    }
+  },
+  "Sub_to_score": null
+}

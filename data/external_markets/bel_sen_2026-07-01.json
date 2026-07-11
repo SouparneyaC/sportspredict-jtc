@@ -1,0 +1,431 @@
+{
+  "match": "Belgium vs Senegal",
+  "date": "2026-07-01",
+  "stage": "Round of 32 (knockout stage)",
+  "kickoff_utc": "2026-07-01T20:00:00Z",
+  "espn_event_ids": {
+    "this_match": 760493,
+    "BEL_vs_EGY_GD1": 760426,
+    "BEL_vs_IRN_GD2": 760451,
+    "NZL_vs_BEL_GD3": 760477,
+    "SEN_vs_FRA_GD1": 760432,
+    "SEN_vs_NOR_GD2": 760454,
+    "SEN_vs_IRQ_GD3": 760474
+  },
+  "smarkets_event_id": 45161513,
+  "smarkets_markets_used": {
+    "FTR": 148295428,
+    "BTTS": 148295430,
+    "OU2_5_goals": 148295465,
+    "OU3_5_goals": 148295466,
+    "BEL_OU1_5_goals": 148295477,
+    "BEL_OU2_5_goals": 148295478,
+    "SEN_OU0_5_goals": 148295486,
+    "SEN_OU1_5_goals": 148295487,
+    "BEL_SOT_OU4_5": 148295745,
+    "SEN_SOT_OU2_5": 148295791,
+    "Total_shots_OU23_5": 148295855,
+    "Corners_OU8_5": 148295606,
+    "Corners_OU9_5": 148295607,
+    "BEL_corners_OU4_5": 148295618,
+    "Cards_OU3_5": 148295595,
+    "Cards_OU4_5": 148295597,
+    "HT_result": 148295435,
+    "HT_OU1_5_goals": 148295471,
+    "First_half_BEL_OU0_5_goals": 148295480,
+    "Penalty": 148295453,
+    "Any_RC": 148295584,
+    "Will_ET": 148295562,
+    "Highest_scoring_half": 148295446,
+    "Goal_1_time_bracket": 148295653,
+    "Team_to_score_first": 148295629,
+    "To_qualify": 148295561,
+    "Anytime_goalscorer": 148295903,
+    "Score_or_assist": 148302627,
+    "Player_SOT_OU0_5": 148302606,
+    "Player_SOT_OU1_5": 148302608
+  },
+  "prior_lessons_consulted": [
+    "bel_egy_2026-06-15.json",
+    "bel_irn_2026-06-21.json",
+    "nzl_bel_2026-06-26.json",
+    "nor_sen_2026-06-22.json",
+    "eng_cdr_2026-07-01.json",
+    "KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md"
+  ],
+  "knockout_context": {
+    "Belgium": {
+      "group_record": "1D-1D-1W: D1-1 EGY, D0-0 IRN, W5-1 NZL, 5pts, GD+5",
+      "status": "Slight favorite (49.3% straight win, 64.9% to qualify) — NOT a dominant blowout setup",
+      "group_notes": "Belgium massively underperformed expected quality in GD1+GD2 (drew Egypt and Iran, scored 1 goal in two games combined). NZL blowout (5-1) likely reflects opponent quality gap more than Belgium's form ceiling. Attacking output is bimodal: low vs organized defenses (3 SOT vs Egypt, 7 SOT vs Iran), high vs weak opposition (10 SOT vs NZL)."
+    },
+    "Senegal": {
+      "group_record": "0W-1D-2L: L1-3 FRA, L2-3 NOR, W5-0 IRQ, 3pts, GD+3 (qualified via pts tiebreaker or 3rd-place rule)",
+      "status": "Competitive underdog (22.5% straight win, 35.2% to qualify) — genuinely dangerous attack",
+      "group_notes": "Senegal's GD3 vs Iraq (5-0, 12 SOT, 28 shots) is a massive outlier. Competitive profile: vs France (lost 1-3, 2 SOT, 6 shots) and vs Norway (lost 2-3, 4 SOT, 16 shots, 58.3% possession). Strong individual talent (Mané, Sarr, Ndiaye). Capable of scoring vs any team."
+    }
+  },
+  "rule_checks": {
+    "RULE7": "DOES NOT FIRE — Senegal FTR win = 22.5%, threshold is <15%",
+    "RULE8": "FIRES — Draw FTR = 29.0% >= 25% threshold. Moderate draw probability means game-state uncertainty is elevated. Apply minor shade toward equilibrium on relative comparison questions.",
+    "RULE15": "Applied to Senegal player questions (underdog side). Mané 2+ SOT (Q5) already at market low 14.4% — no further suppression. Sarr 1+ SOT (Q10) at 54.5%, shaded to 52% for tough-opponent risk per France analogy."
+  },
+  "wc2026_espn_stats": {
+    "BEL": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760426, "opponent": "Egypt", "result": "D 1-1", "fouls": 15, "SOT": 3, "totalShots": 15, "offsides": 0, "YC": 2, "RC": 0, "corners": 2, "possession": 53.6, "note": "Belgium's goal was Egypt own goal (66'). Compact opponent, low SOT output."},
+        {"event_id": 760451, "opponent": "Iran", "result": "D 0-0", "fouls": 7, "SOT": 7, "totalShots": 23, "offsides": 3, "YC": 1, "RC": 1, "corners": 4, "possession": 70.1, "note": "70% possession, 7 SOT but couldn't score. Belgium reduced to 10 men. 0-0 despite dominance."},
+        {"event_id": 760477, "opponent": "New Zealand", "result": "W 5-1", "fouls": 7, "SOT": 10, "totalShots": 35, "offsides": 1, "YC": 0, "RC": 0, "corners": 8, "possession": 54.5, "note": "Massive blowout outlier. NZL extremely weak opposition."}
+      ],
+      "averages": {"fouls": 9.67, "SOT": 6.67, "totalShots": 24.33, "offsides": 1.33, "YC": 1.0, "RC": 0.33, "corners": 4.67},
+      "competitive_averages_GD1_GD2": {"SOT": 5.0, "totalShots": 19.0, "corners": 3.0, "fouls": 11.0},
+      "BIMODAL_FLAG": "NZL blowout is a clear outlier. Competitive profile vs organized defenses: 3-7 SOT range, 15-23 shots, 2-4 corners. Against Senegal who can defend in structure (held France to scoring only 3 goals but Senegal only had 6 shots total in that match), Belgium's SOT profile should be GD1/GD2-like not GD3."
+    },
+    "SEN": {
+      "n_matches": 3,
+      "matches": [
+        {"event_id": 760432, "opponent": "France", "result": "L 1-3", "fouls": 9, "SOT": 2, "totalShots": 6, "offsides": 3, "YC": 0, "RC": 0, "corners": 4, "possession": 46.6, "note": "Minimal attacking output vs quality French defense. 6 total shots only."},
+        {"event_id": 760454, "opponent": "Norway", "result": "L 2-3", "fouls": 5, "SOT": 4, "totalShots": 16, "offsides": 4, "YC": 0, "RC": 0, "corners": 4, "possession": 58.3, "note": "Senegal dominated possession and scored 2, but lost. Genuinely competitive game."},
+        {"event_id": 760474, "opponent": "Iraq", "result": "W 5-0", "fouls": 10, "SOT": 12, "totalShots": 28, "offsides": 1, "YC": 2, "RC": 0, "corners": 12, "possession": 69.2, "note": "Blowout outlier. Iraq extremely weak."}
+      ],
+      "averages": {"fouls": 8.0, "SOT": 6.0, "totalShots": 16.67, "offsides": 2.67, "YC": 0.67, "RC": 0.0, "corners": 6.67},
+      "competitive_averages_GD1_GD2": {"SOT": 3.0, "totalShots": 11.0, "corners": 4.0, "fouls": 7.0},
+      "BIMODAL_FLAG": "Iraq match is extreme outlier. True competitive profile: 2-4 SOT, 6-16 shots, 4 corners. France analogy is the most relevant for Belgium matchup — quality side restricts Senegal to 6 shots/2 SOT. Belgium may not be quite as defensively stifling as France, but the ceiling is set."
+    }
+  },
+  "player_profiles": {
+    "Trossard": {
+      "club": "Arsenal (Premier League)",
+      "role": "Left winger / attacking midfielder",
+      "espn_group_stage": {
+        "GD1_vs_Egypt": {"starter": true, "SOT": 0, "totalShots": 3, "goals": null, "assists": null},
+        "GD2_vs_Iran": {"starter": true, "SOT": 0, "totalShots": 1, "goals": null, "assists": null},
+        "GD3_vs_NZL": {"starter": true, "SOT": 2, "totalShots": 7, "goals": null, "assists": null}
+      },
+      "sot_avg": 0.67,
+      "market_anytime_score_LIQUID": 0.217,
+      "market_sot_ge1_LIQUID": 0.484,
+      "market_sot_ge2_LIQUID": 0.161,
+      "note": "Trossard's 0 SOT in GD1+GD2 (vs Egypt and Iran, both organized defenses) is the most relevant analog. Only got active vs NZL blowout. If Belgium faces a structured Senegal defensive block, his SOT output might be low again. Goalkeeper estimate 0.22 is trusted per liquid market."
+    },
+    "De Bruyne": {
+      "club": "Al-Qadsiah (Saudi Arabia, on loan from former Man City)",
+      "role": "Central attacking midfielder / second striker",
+      "espn_group_stage": {
+        "GD1_vs_Egypt": {"starter": true, "SOT": 1, "totalShots": 4, "goals": null, "assists": null},
+        "GD2_vs_Iran": {"starter": true, "SOT": 1, "totalShots": 5, "goals": null, "assists": null},
+        "GD3_vs_NZL": {"starter": true, "SOT": 2, "totalShots": 7, "goals": null, "assists": null}
+      },
+      "sot_avg": 1.33,
+      "market_anytime_score_LIQUID": 0.233,
+      "market_score_or_assist_ILLIQUID_mid": 0.378,
+      "market_sot_ge1_LIQUID": 0.612,
+      "market_sot_ge2_LIQUID": 0.251,
+      "note": "KDB is consistently getting shots on target across all 3 games (1,1,2 SOT) — much more consistent than Trossard. High SOT probability (61.2%) reflects his high activity level. Score-or-assist market is ILLIQUID (offer only, no bid): 40.0% offer -> 37.8% illiquid mid. With liquid anchors (score=23.3%, SOT>=1=61.2%), the 37.8% illiquid mid is in the right range. ILLIQUID classification means prefer crowd if crowd provides a different signal."
+    },
+    "Mane": {
+      "full_name": "Sadio Mané",
+      "club": "Al-Nassr (Saudi Arabia)",
+      "age": 34,
+      "role": "Left winger / second striker",
+      "espn_group_stage": {
+        "GD1_vs_France": {"starter": true, "SOT": 1, "totalShots": 1, "goals": null, "assists": null, "offsides": 0},
+        "GD2_vs_Norway": {"starter": true, "SOT": 0, "totalShots": 0, "goals": null, "assists": 1, "offsides": 1},
+        "GD3_vs_Iraq": {"starter": true, "SOT": 1, "totalShots": 4, "goals": null, "assists": null, "offsides": 0}
+      },
+      "sot_avg": 0.67,
+      "market_anytime_score_LIQUID": 0.213,
+      "market_sot_ge1_LIQUID": 0.457,
+      "market_sot_ge2_LIQUID": 0.144,
+      "note": "Mané's SOT profile is VERY LOW: 1, 0, 1 across 3 matches = avg 0.67/game. He registered 0 SOT vs Norway in a game where Senegal had 4 total SOT. The 2+ SOT threshold has been hit 0 TIMES in group stage. The liquid market at 14.4% for 2+ SOT correctly reflects his poor shot-on-target output. Position: cuts inside from left but not generating shots. At 34 years old from Saudi league, may be running lower than peak. Estimate 14% is trusted per liquid market."
+    },
+    "Sarr_Ismaila": {
+      "full_name": "Ismaïla Sarr",
+      "club": "Marseille (Ligue 1)",
+      "age": 26,
+      "role": "Right winger",
+      "espn_group_stage": {
+        "GD1_vs_France": {"starter": true, "SOT": 0, "totalShots": 3, "goals": null, "assists": null, "offsides": 0},
+        "GD2_vs_Norway": {"starter": true, "SOT": 3, "totalShots": 6, "goals": null, "assists": null, "offsides": 1},
+        "GD3_vs_Iraq": {"starter": true, "SOT": 2, "totalShots": 3, "goals": null, "assists": 1, "offsides": 1}
+      },
+      "sot_avg": 1.67,
+      "market_anytime_score_LIQUID": 0.225,
+      "market_sot_ge1_LIQUID": 0.545,
+      "market_sot_ge2_LIQUID": 0.187,
+      "note": "Sarr has the highest SOT average of the four profiled players (1.67/game). BUT critically: he registered 0 SOT in GD1 vs France (the quality-side analogy for Belgium). France held Senegal to 6 shots/2 SOT total; Sarr got 0 personally. Against Belgium (similar quality level), the 0-SOT France scenario is a real risk. Market at 54.5% for 1+ SOT already accounts for all this. Shading to 52% for the France-analog tough-opponent risk, noting the market is very tight (1bp spread)."
+    }
+  },
+  "smarkets_markets": {
+    "FTR": {"Belgium": 0.493, "Draw": 0.290, "Senegal": 0.225, "liquid": true},
+    "To_qualify": {"Belgium": 0.649, "Senegal": 0.352, "liquid": true},
+    "Will_ET": {"Yes": 0.281, "No": 0.724, "liquid": true},
+    "BTTS": {"Yes": 0.594, "No": 0.410, "liquid": true},
+    "OU2_5_goals": {"Over": 0.549, "Under": 0.449, "liquid": true},
+    "OU3_5_goals": {"Over": 0.323, "Under": 0.676, "liquid": true},
+    "BEL_OU1_5_goals": {"Over": 0.521, "Under": 0.479, "liquid": true},
+    "BEL_OU2_5_goals": {"Over": 0.234, "Under": 0.763, "liquid": true},
+    "SEN_OU0_5_goals": {"Over": 0.720, "Under": 0.293, "liquid": true},
+    "SEN_OU1_5_goals": {"Over": 0.320, "Under": 0.685, "liquid": true},
+    "HT_result": {"Belgium": 0.389, "Draw": 0.424, "Senegal": 0.191, "liquid": true},
+    "HT_OU1_5_goals": {"Over": 0.337, "Under": 0.669, "liquid": true},
+    "First_half_BEL_OU0_5_goals": {"Over": 0.538, "Under": 0.459, "liquid": true},
+    "Penalty": {"Yes": 0.244, "No": 0.772, "liquid": true},
+    "Any_RC": {"Yes": 0.129, "No": 0.881, "liquid": true},
+    "Cards_OU3_5": {"Over": 0.393, "Under": 0.610, "liquid": true},
+    "Cards_OU4_5": {"Over": 0.221, "Under": 0.777, "liquid": true},
+    "Corners_OU8_5": {"Over": 0.645, "Under": 0.340, "liquid": true},
+    "Corners_OU9_5": {"Over": 0.510, "Under": 0.440, "liquid": true},
+    "BEL_corners_OU4_5": {"Over": 0.629, "Under": 0.393, "liquid": true},
+    "BEL_SOT_OU4_5": {"Over": 0.563, "Under": 0.436, "liquid": true, "spread_pp": 7.8},
+    "SEN_SOT_OU2_5": {"Over": 0.563, "Under": 0.436, "liquid": true, "spread_pp": 7.9},
+    "Total_shots_OU23_5": {"Over": 0.521, "Under": 0.489, "liquid": true, "spread_pp": 10.8, "NOTE": "WIDE SPREAD — treat as soft signal only; bid=0.467 offer=0.575"},
+    "Highest_scoring_half": {"First_Half": 0.298, "Equal": 0.255, "Second_Half": 0.451, "liquid": true},
+    "Team_to_score_first": {"Belgium": 0.562, "Senegal": 0.384, "No_goal": 0.059, "liquid": true},
+    "Goal_1_time_bracket": {"1-10": 0.214, "11-20": 0.188, "21-30": 0.149, "31-40": 0.115, "41-50": 0.102, "51-60": 0.066, "61-70": 0.046, "71-80": 0.032, "81-90": 0.034, "None": 0.067, "liquid": true},
+    "player_markets": {
+      "Trossard_anytime_score": {"bid": 0.213, "offer": 0.222, "mid": 0.217, "liquid": true},
+      "De_Bruyne_anytime_score": {"bid": 0.227, "offer": 0.238, "mid": 0.233, "liquid": true},
+      "De_Bruyne_score_or_assist": {"offer": 0.400, "illiq_mid": 0.378, "liquid": false, "NOTE": "ILLIQUID offer-only; no bid present"},
+      "De_Bruyne_SOT_ge1": {"bid": 0.610, "offer": 0.614, "mid": 0.612, "liquid": true},
+      "De_Bruyne_SOT_ge2": {"bid": 0.238, "offer": 0.263, "mid": 0.251, "liquid": true},
+      "Trossard_SOT_ge1": {"bid": 0.467, "offer": 0.500, "mid": 0.484, "liquid": true},
+      "Trossard_SOT_ge2": {"bid": 0.156, "offer": 0.167, "mid": 0.161, "liquid": true},
+      "Mane_anytime_score": {"bid": 0.208, "offer": 0.217, "mid": 0.213, "liquid": true},
+      "Mane_SOT_ge1": {"bid": 0.443, "offer": 0.472, "mid": 0.457, "liquid": true},
+      "Mane_SOT_ge2": {"bid": 0.122, "offer": 0.167, "mid": 0.144, "liquid": true},
+      "Sarr_Ismaila_anytime_score": {"bid": 0.222, "offer": 0.227, "mid": 0.225, "liquid": true},
+      "Sarr_Ismaila_SOT_ge1": {"bid": 0.543, "offer": 0.546, "mid": 0.545, "liquid": true, "NOTE": "EXTREMELY TIGHT SPREAD — 1bp — highest liquidity in player market set"},
+      "Sarr_Ismaila_SOT_ge2": {"bid": 0.182, "offer": 0.192, "mid": 0.187, "liquid": true},
+      "Mane_score_or_assist_ILLIQUID": {"offer": 0.388, "illiq_mid": 0.366, "liquid": false},
+      "Sarr_score_or_assist_ILLIQUID": {"offer": 0.340, "illiq_mid": 0.321, "liquid": false},
+      "Lukaku_anytime_score": {"bid": 0.151, "offer": 0.385, "mid": 0.268, "liquid": true, "NOTE": "VERY WIDE SPREAD 23pp — reflects starter vs sub uncertainty; illiquid despite bid present"},
+      "Doku_anytime_score": {"bid": 0.172, "offer": 0.179, "mid": 0.175, "liquid": true},
+      "De_Ketelaere_anytime_score": {"bid": 0.204, "offer": 0.208, "mid": 0.206, "liquid": true},
+      "Iliman_Ndiaye_anytime_score": {"bid": 0.135, "offer": 0.147, "mid": 0.141, "liquid": true}
+    }
+  },
+  "derived_computations": {
+    "lambda_BEL_goals": 1.706,
+    "lambda_BEL_goals_v1_from_OU1_5": 1.746,
+    "lambda_BEL_goals_v2_from_OU2_5": 1.667,
+    "lambda_SEN_goals": 1.213,
+    "lambda_SEN_goals_v1_from_OU0_5": 1.273,
+    "lambda_SEN_goals_v2_from_OU1_5": 1.152,
+    "lambda_total_goals": 2.919,
+    "lambda_total_goals_cross_check_OU2_5": 2.878,
+    "lambda_BEL_SOT": 5.020,
+    "lambda_SEN_SOT": 2.939,
+    "lambda_BEL_corners": 5.414,
+    "lambda_total_corners": 9.777,
+    "lambda_cards": 3.180,
+    "lambda_total_shots_market": 23.924,
+    "lambda_total_shots_ESPN_competitive_estimate": 26.0,
+    "p_bel_wins_reg": 0.493,
+    "p_draw_reg": 0.290,
+    "p_sen_wins_reg": 0.225,
+    "p_btts": 0.594,
+    "p_total_goals_ge3": 0.558,
+    "p_bel_sot_ge7": 0.241,
+    "p_bel_corners_ge6": 0.456,
+    "p_cards_ge4": 0.393,
+    "p_1h_stoppage_goal_poisson": 0.113,
+    "p_pen_or_rc_compound": 0.342,
+    "p_sen_scores": 0.703,
+    "p_bel_scores": 0.818,
+    "p_bel_leads_ht": 0.389
+  },
+  "context_flags": [
+    "COMPETITIVE_MATCH_NOT_BLOWOUT: FTR shows Belgium only 49.3% to win in regulation with 29% draw. This is NOT a one-sided affair. Do NOT apply NZL-blowout statistics as representative. Belgium's true competitive ceiling is the Egypt and Iran matches.",
+    "RULE8_FIRES_DRAW_29PCT: Draw=29% fires RULE8. For relative comparison questions (one team more than other), apply mild shade toward equilibrium. For absolute level questions, use market lambda directly.",
+    "SENEGAL_COMPETITIVE_ATTACK: Despite two group stage losses, Senegal are a genuinely dangerous attacking side (Mané, Sarr, Iliman Ndiaye). BTTS at 59.4% reflects this. Do NOT treat Senegal as a defensive pushover.",
+    "BELGIUM_POOR_DEFENSIVE_RECORD: Belgium conceded in GD1 (Egypt OG = from Belgium corner but Egypt scored from open play 19') and GD3 (NZL scored 1). Belgium are NOT clean sheet merchants. SEN scoring at 72% via OU0.5 is credible.",
+    "SHOTS_MARKET_WIDE_SPREAD: Total shots OU23.5 has a bid-offer spread of 10.8pp (bid=0.467, offer=0.575). This is unusually wide and reflects market maker uncertainty. ESPN competitive team averages (Belgium 19 shots + Senegal 11 shots = 30 combined) suggest the market may understate total shot volume. Applying 0.62 estimate vs market's 52%, reflecting genuine conviction from team data with moderation.",
+    "DE_BRUYNE_SCORE_OR_ASSIST_ILLIQUID: The score_or_assist market for KDB is offer-only (no bid). Per KNOCKOUT_STAGE_PRICING_DEEP_DIVE lesson: illiquid one-sided markets are weak signals. However, the liquid anchors (score=23.3%, SOT>=1=61.2%) validate that 37.8% illiquid mid is in the right range. Trust with moderate confidence.",
+    "MANE_SOT_PROFILE_VERY_LOW: Mané averaged only 0.67 SOT per game across group stage, hitting 2+ SOT in ZERO of three matches. The 14.4% liquid market for 2+ SOT is consistent with this. No reason to deviate upward.",
+    "SARR_FRANCE_ANALOGY: Sarr got 0 SOT vs France (the best analog for Belgium's defensive quality). The 54.5% market for 1+ SOT slightly discounts for this. Shading to 52% preserves the France-analogy risk while not overcorrecting away from a very tight liquid market.",
+    "SUBSTITUTE_SCORER_NO_DIRECT_MARKET: Q6 is a TIER3 question. Estimate based on: lambda_total_goals=2.70, estimated sub fraction=25%, lambda_sub=0.675, P(at least one sub scores)=0.49. Shaded conservatively to 0.38 accounting for knockout match caution and the fact that both teams' likely first-choice strikers probably start."
+  ],
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "Will Belgium win the match?",
+      "platform_question": "Will Belgium win in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.49,
+      "pricing_category": "DIRECT",
+      "source": "FTR market Belgium mid=49.3% LIQUID",
+      "methodology": "DIRECT from Smarkets FTR contract. Belgium bid=0.490, offer=0.495, mid=0.493. Rounded to 0.49.",
+      "confidence": "HIGH — very tight spread (0.5pp), market is highly liquid"
+    },
+    {
+      "question_number": 2,
+      "question_text": "Will Leandro Trossard (Belgium) score a goal (excluding own goals)?",
+      "platform_question": "Will Leandro Trossard (Belgium) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.22,
+      "pricing_category": "PLAYER_LIQUID",
+      "source": "Anytime goalscorer market Trossard mid=21.7% LIQUID (bid=0.213 offer=0.222)",
+      "methodology": "DIRECT from liquid two-sided goalscorer market. Spread is 0.9pp (very tight). Trossard's group stage SOT: 0, 0, 2 — only active in NZL blowout. Against organized Senegal defense, limited SOT output expected. Market at 21.7% is well-calibrated.",
+      "confidence": "HIGH — liquid market, consistent with player SOT history"
+    },
+    {
+      "question_number": 3,
+      "question_text": "Will Kevin De Bruyne (Belgium) score or assist a goal (excluding own goals)?",
+      "platform_question": "Will Kevin De Bruyne (Belgium) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.38,
+      "pricing_category": "PLAYER_ILLIQUID",
+      "source": "Score_or_assist market: offer=0.400, illiq_mid=0.378 (ILLIQUID, no bid). Liquid anchors: score=23.3% (LIQUID), SOT>=1=61.2% (LIQUID), SOT>=2=25.1% (LIQUID)",
+      "methodology": "Primary: illiquid mid of 0.378 from offer × 0.945. Validated by liquid anchors: KDB scores 23.3%, assists more on top of that, so 37-40% total for score-or-assist is plausible given Belgium lambda_goals=1.71. Lambda_BEL_goals * estimated KDB involvement rate (~0.40) = 0.71 expected involvement, P(at least once) ≈ 0.49 — but this overcounts assists vs goals. Settle at 0.38 as compromise between illiquid offer (40%) and the risk of ILLIQUID markets being biased upward (per KNOCKOUT_STAGE_PRICING_DEEP_DIVE).",
+      "confidence": "MEDIUM — illiquid market is weak signal; liquid anchors validate range is correct"
+    },
+    {
+      "question_number": 4,
+      "question_text": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "platform_question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.59,
+      "pricing_category": "DIRECT",
+      "source": "BTTS market Yes mid=59.4% LIQUID (bid=0.575 offer=0.614)",
+      "methodology": "DIRECT from BTTS market. Spread = 3.9pp, liquid. P(BEL scores)=81.8%, P(SEN scores)=70.3% from lambda fits, independently consistent with BTTS=59.4% (81.8%×70.3%=57.5% if independent, slightly below market 59.4% — likely mild positive correlation in balanced match).",
+      "confidence": "HIGH — liquid market, internally consistent with goal lambdas"
+    },
+    {
+      "question_number": 5,
+      "question_text": "Will Sadio Mané (Senegal) have 2 or more shots on target?",
+      "platform_question": "Will Sadio Mané (Senegal) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.14,
+      "pricing_category": "PLAYER_LIQUID",
+      "source": "Player SOT OU1.5 Mané mid=14.4% LIQUID (bid=0.122 offer=0.167)",
+      "methodology": "DIRECT from liquid two-sided SOT OU1.5 market. Spread is 4.5pp (acceptable). Validated by Mané's group stage SOT history: 1, 0, 1 across three matches — has hit 2+ SOT ZERO times in this tournament. Average SOT per game = 0.67. For Poisson(0.67): P(X>=2) = 1-P(X<=1) = 1-(e^-0.67)(1+0.67) = 1-0.511*1.67 = 1-0.854 = 0.146 ≈ 14.6%. Market is spot on.",
+      "confidence": "HIGH — liquid market, fully consistent with ESPN SOT data"
+    },
+    {
+      "question_number": 6,
+      "question_text": "Will a substitute score a goal (excluding own goals) in regulation?",
+      "platform_question": "Will a substitute score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.38,
+      "pricing_category": "TIMING_NO_MARKET",
+      "source": "No direct Smarkets market. Base rate calculation.",
+      "methodology": "Base rate approach: lambda_total_goals=2.70. WC knockout stage: approximately 25% of goals scored by substitutes (second-half impact players). Lambda_sub_goals = 2.70 × 0.25 = 0.675. P(at least one sub scores) = 1 - e^(-0.675) = 0.49. Shaded conservatively to 0.38 for: (a) first-choice strikers likely starting (Belgium: De Ketelaere/Doku/Trossard likely starters; Senegal: Mané/Sarr/Ndiaye likely starters); (b) knockout match caution may reduce late sub impact; (c) standoff from 0.49 raw to 0.38 reflects Loss Pattern #8 humility for self-constructed models. Floor: 0.30 per standing rule for self-constructed models.",
+      "confidence": "LOW — TIER3, no direct market, base rate only"
+    },
+    {
+      "question_number": 7,
+      "question_text": "Will the match have 3 or more total goals in regulation?",
+      "platform_question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.55,
+      "pricing_category": "DIRECT",
+      "source": "OU2.5 goals market Over mid=54.9% LIQUID (bid=0.543 offer=0.556)",
+      "methodology": "DIRECT from OU2.5 goals market. Spread = 1.3pp (very tight). Cross-checked: Poisson(lambda_total=2.88) gives P(>=3)=0.558, consistent with 54.9% market.",
+      "confidence": "HIGH — very liquid market, internally consistent"
+    },
+    {
+      "question_number": 8,
+      "question_text": "Will Belgium have 7 or more shots on target in regulation?",
+      "platform_question": "Will Belgium have 7 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.24,
+      "pricing_category": "TEAM_MODEL",
+      "source": "BEL SOT OU4.5 Over=56.3% (bid=0.524 offer=0.602, spread=7.8pp). Poisson extrapolation to OU6.5 (7+).",
+      "methodology": "Fit lambda_BEL_SOT = 5.02 from OU4.5 Over=56.3%. Poisson(5.02): P(X>=7) = 0.241. Belgium's group stage SOT: 3, 7, 10. Hit 7+ in GD2 (vs Iran, 70% possession blowout) and GD3 (vs NZL). Against Senegal who can attack back (competitive game), Belgium may not maintain 70% possession and could see reduced SOT. The market's lambda of 5.02 (vs actual group avg of 6.67 SOT) already accounts for this. No SOT OU6.5 market available so Poisson extrapolation is necessary.",
+      "confidence": "MEDIUM — market only covers OU4.5, extrapolation to 7+ adds uncertainty"
+    },
+    {
+      "question_number": 9,
+      "question_text": "Will there be 4 or more total cards shown in regulation?",
+      "platform_question": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.39,
+      "pricing_category": "DIRECT",
+      "source": "Cards OU3.5 Over mid=39.3% LIQUID (bid=0.376 offer=0.410)",
+      "methodology": "DIRECT from OU3.5 cards market (= P(cards>=4)). Spread = 3.4pp, liquid. Cross-checked: Poisson(lambda=3.18) gives P(X>=4)=0.393. Belgium group stage YC: 2,1,0 (avg 1.0). Senegal group stage YC: 0,0,2 (avg 0.67). Belgium: 1 RC in GD2. Combined average ~1.67 cards per team per match = 3.33 combined. Market lambda 3.18 is consistent. 4+ cards at 39.3% is reasonable.",
+      "confidence": "HIGH — liquid market"
+    },
+    {
+      "question_number": 10,
+      "question_text": "Will Ismaïla Sarr (Senegal) have 1 or more shots on target in regulation?",
+      "platform_question": "Will Ismaïla Sarr (Senegal) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.52,
+      "pricing_category": "PLAYER_LIQUID",
+      "source": "Player SOT OU0.5 Sarr mid=54.5% LIQUID (bid=0.543 offer=0.546, spread=0.3pp — TIGHTEST SPREAD IN ENTIRE PLAYER MARKET SET)",
+      "methodology": "Market at 54.5% with essentially 0 effective spread = extremely liquid. Primary anchor. Shade rationale: Sarr's 0 SOT vs France in GD1 (6 total shots for team, compact loss) is the best analog for today's Belgium matchup. France and Belgium are comparable quality sides defensively. Against France, Sarr had 3 total shots but 0 SOT. The France analogy justifies shading below 54.5%. However, market is VERY tight, and I don't have enough conviction to deviate more than 2-3pp from it. Final: 0.52.",
+      "confidence": "HIGH on market price; LOW on direction of shade — France analogy is valid but one data point"
+    },
+    {
+      "question_number": 11,
+      "question_text": "Will Belgium have 6 or more corner kicks in regulation?",
+      "platform_question": "Will Belgium have 6 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.46,
+      "pricing_category": "TEAM_MODEL",
+      "source": "BEL corners OU4.5 Over=62.9% (bid=0.625 offer=0.633, spread=0.8pp). Poisson extrapolation to 6+.",
+      "methodology": "Fit lambda_BEL_corners = 5.41 from OU4.5 Over=62.9%. Poisson(5.41): P(X>=6) = 0.456. Belgium's group stage corners: 2 (vs Egypt), 4 (vs Iran), 8 (vs NZL). Competitive average (GD1+GD2): 3 corners. But market expects lambda 5.41 reflecting Belgium's attacking dominance vs moderate underdog. The market's OU4.5 is tight (0.8pp spread) providing good confidence in the lambda. Extrapolation to 6+ adds some model risk.",
+      "confidence": "MEDIUM — market supports lambda but extrapolation to threshold introduces uncertainty"
+    },
+    {
+      "question_number": 12,
+      "question_text": "Will Belgium be ahead at halftime?",
+      "platform_question": "Will Belgium be ahead at halftime?",
+      "our_estimate": 0.39,
+      "pricing_category": "DIRECT",
+      "source": "HT result market Belgium mid=38.9% LIQUID (bid=0.385 offer=0.394, spread=0.9pp)",
+      "methodology": "DIRECT from HT result market. Very tight spread. Belgium 1H OU0.5 Over=53.8% (Belgium score in 1H). HT draw = 42.4% is the single most likely HT outcome per market. Belgium leading at HT is second most likely at 38.9%. Note RULE8 is firing (draw=29% FTR), consistent with high HT-draw probability.",
+      "confidence": "HIGH — very liquid market"
+    },
+    {
+      "question_number": 13,
+      "question_text": "Will a goal be scored in first-half stoppage time?",
+      "platform_question": "Will a goal be scored in first-half stoppage time?",
+      "our_estimate": 0.10,
+      "pricing_category": "TIMING_WITH_MARKET",
+      "source": "Poisson scaling from lambda_total_goals=2.703 (derived from Goal_1_time_bracket 'None'=6.7%). 4-minute window.",
+      "methodology": "P(goal in 4-min 1H stoppage) = 1 - e^(-lambda × 4/90) = 1 - e^(-2.703 × 0.0444) = 1 - e^(-0.120) = 0.113. From time bracket: P(goal in 41-50 bracket) = 10.2% for 10-minute window → rough 4-minute share = 4.1% for first-goal-only, higher for any-goal. Conservative 0.10 reflects: (a) this window has been positive in 3 of 3 prior knock-stage pricing sessions at 0.10-0.12 estimates (NED-MAR +13.38, FRA-SWE, ENG-CDR); (b) early-window timing per KNOCKOUT_STAGE_PRICING_DEEP_DIVE is SAFE category (3/3 positive); (c) crowd likely overprices rare event at 15-20%. Submit well below crowd.",
+      "confidence": "MEDIUM — Poisson gives 11.3%, using 10% as conservative anchor"
+    },
+    {
+      "question_number": 14,
+      "question_text": "Will there be 24 or more total shots (on and off target)?",
+      "platform_question": "Will there be 24 or more total shots (on and off target) in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.62,
+      "pricing_category": "TEAM_MODEL",
+      "source": "Total shots OU23.5 Over market mid=52.1% WIDE SPREAD (bid=0.467 offer=0.575, spread=10.8pp). ESPN team averages provide stronger evidence.",
+      "methodology": "Market is WIDE SPREAD (10.8pp) — treat as soft anchor only. ESPN totalShots data: Belgium competitive average (GD1+GD2) = 19 shots/game. Senegal competitive average (GD1+GD2) = 11 shots/game. Combined competitive expectation = 30 shots. Knockout stage discount (~15%): 30 × 0.87 = 26.1 expected total shots. P(24+ from Poisson(26.1)): 1 - poisson.cdf(23, 26.1) ≈ 0.70. Compromise between market (52%) and ESPN-derived (70%) at 0.62, reflecting that: the question specifies 'on and off target' matching ESPN's totalShots definition, and Belgium alone averaged 19 shots competitively (so 24+ combined is very achievable). Similar conviction pattern to ENG-CDR Q10 (20+ shots at 85%) where ESPN data strongly overruled the market.",
+      "confidence": "MEDIUM-HIGH — genuine conviction over wide-spread market; ESPN data clearly points higher"
+    },
+    {
+      "question_number": 15,
+      "question_text": "Will a penalty kick be awarded OR a red card be shown?",
+      "platform_question": "Will a penalty kick be awarded OR a red card be shown in regulation (90 minutes + stoppage time)?",
+      "our_estimate": 0.34,
+      "pricing_category": "DIRECT",
+      "source": "Penalty market Yes=24.4% LIQUID. Any_RC market Yes=12.9% LIQUID. Compound formula assuming independence.",
+      "methodology": "P(pen OR RC) = 1 - (1-P_pen)(1-P_RC) = 1 - (0.756)(0.871) = 1 - 0.659 = 0.341. Belgium's RC rate: 1 in 3 group matches (GD2 vs Iran). Senegal's RC rate: 0 in 3 group matches. No referee data available. Compound formula from liquid markets is the cleanest approach. Note: NOR-SEN had pen+RC at 0.38, outcome NO, +2.91. ENG-CDR Q14 used 0.340 similarly.",
+      "confidence": "HIGH — both component markets are liquid; compound formula is standard approach"
+    }
+  ],
+  "post_match_results": {
+    "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+    "actual_score": "Belgium 2-2 Senegal",
+    "match_rbp_total": 159.71,
+    "questions_beat_crowd": 13,
+    "questions_below_crowd": 2,
+    "question_results": [
+      {"text": "Will Leandro Trossard (Belgium) score a goal?", "our_estimate": 0.21, "crowd_estimate": 0.30, "outcome": "NO", "rbp": 13.91, "beat_crowd": true},
+      {"text": "Will Kevin De Bruyne (Belgium) score or assist a goal?", "our_estimate": 0.38, "crowd_estimate": 0.42, "outcome": "NO", "rbp": 10.18, "beat_crowd": true},
+      {"text": "Will both teams score?", "our_estimate": 0.59, "crowd_estimate": 0.58, "outcome": "YES", "rbp": 4.57, "beat_crowd": true},
+      {"text": "Will Sadio Mané (Senegal) have 2 or more shots on target?", "our_estimate": 0.14, "crowd_estimate": 0.32, "outcome": "NO", "rbp": 23.78, "beat_crowd": true, "note": "Second-biggest win -- extreme suppression of an aging veteran forward's SOT ceiling, correct."},
+      {"text": "Will Belgium win in regulation?", "our_estimate": 0.49, "crowd_estimate": 0.49, "outcome": "NO", "rbp": 3.15, "beat_crowd": true},
+      {"text": "Will a substitute score a goal?", "our_estimate": 0.38, "crowd_estimate": 0.32, "outcome": "YES", "rbp": 20.44, "beat_crowd": true, "note": "Third-biggest win -- the base-rate substitute-scorer formula (1-(1-p)^lambda_goals) paid off big in a high-scoring game."},
+      {"text": "Will the match have 3 or more total goals?", "our_estimate": 0.55, "crowd_estimate": 0.52, "outcome": "YES", "rbp": 8.42, "beat_crowd": true},
+      {"text": "Will Belgium have 7 or more shots on target?", "our_estimate": 0.24, "crowd_estimate": 0.37, "outcome": "NO", "rbp": 21.41, "beat_crowd": true, "note": "Correct suppression of Belgium's SOT ceiling given the pre-match 'not a clean blowout-favorite' framing (BEL-SEN was flagged competitive, not extrapolated from the NZL rout)."},
+      {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.39, "crowd_estimate": 0.44, "outcome": "NO", "rbp": 11.7, "beat_crowd": true},
+      {"text": "Will Ismaïla Sarr (Senegal) have 1 or more shots on target?", "our_estimate": 0.52, "crowd_estimate": 0.56, "outcome": "YES", "rbp": -2.37, "beat_crowd": false},
+      {"text": "Will Belgium have 6 or more corner kicks?", "our_estimate": 0.45, "crowd_estimate": 0.48, "outcome": "NO", "rbp": 9.76, "beat_crowd": true},
+      {"text": "Will Belgium be ahead at halftime?", "our_estimate": 0.39, "crowd_estimate": 0.38, "outcome": "NO", "rbp": 2.23, "beat_crowd": true},
+      {"text": "Will a goal be scored in first-half stoppage time?", "our_estimate": 0.11, "crowd_estimate": 0.19, "outcome": "NO", "rbp": 10.91, "beat_crowd": true},
+      {"text": "Will there be 24 or more total shots?", "our_estimate": 0.62, "crowd_estimate": 0.53, "outcome": "YES", "rbp": 22.09, "beat_crowd": true, "note": "Biggest win of the match -- high-confidence volume call."},
+      {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.34, "crowd_estimate": 0.32, "outcome": "NO", "rbp": -0.46, "beat_crowd": false}
+    ],
+    "key_lessons": [
+      "Biggest win: 24+ total shots (+22.09). Second: Mané 2+ SOT NO (+23.78, veteran-forward suppression). Third: substitute scores YES (+20.44, base-rate formula validated in a genuinely high-scoring game).",
+      "Correctly suppressed BOTH teams' own SOT ceilings (Belgium 7+ NO +21.41, implicitly consistent with the 'competitive, not blowout' framing applied pre-match) despite this being the kind of question that has failed elsewhere (Cluster-B) -- worth noting this went the RIGHT way here, adding to a genuinely mixed cross-match record on team-SOT-ceiling questions.",
+      "13/15 beat crowd -- one of the best beat-crowd rates of the campaign. Both losses were small (-2.37, -0.46)."
+    ]
+  }
+}

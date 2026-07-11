@@ -1,0 +1,37 @@
+{
+  "_description": "Smarkets event 45159764 -- key market prices for Argentina vs Cape Verde R32 2026-07-03",
+  "event_id": 45159764,
+  "total_markets": 165,
+  "elo_cross_check": "Argentina 2189.53 vs Cape Verde 1653.45 (diff=536) -> two-outcome Elo implies ~95.6% ARG win. Directionally agrees with the live market's 85.5% three-way FTR -- unlike AUS-EGY, Elo and market align here.",
+  "key_prices": {
+    "FTR": {"Argentina": 0.8548, "Draw": 0.1099, "Cape Verde": 0.0351, "market_id": 148123899},
+    "BTTS_yes": {"mid": 0.315, "market_id": 148123901},
+    "OU1.5_over": {"mid": 0.8234, "market_id": 148123935},
+    "OU2.5_over": {"mid": 0.5936, "market_id": 148123936},
+    "OU3.5_over": {"mid": 0.3548, "market_id": 148123937},
+    "OU4.5_over": {"mid": 0.1771, "market_id": 148123938},
+    "HT_result": {"Argentina": 0.6712, "Draw": 0.2838, "Cape Verde": 0.0467, "market_id": 148123906},
+    "ARG_clean_sheet_yes": {"mid": 0.6671, "market_id": 148124038},
+    "CPV_clean_sheet_yes": {"mid": 0.0673, "market_id": 148124048},
+    "ARG_goals_OU2.5_over": {"mid": 0.5015, "market_id": 148123949},
+    "ARG_score_both_halves_yes": {"mid": 0.525, "market_id": 148124037},
+    "ARG_SOT_OU6.5_over": {"mid": 0.4601, "market_id": 148124223},
+    "CPV_SOT_OU1.5_over": {"mid": 0.5136, "market_id": 148124266},
+    "Cards_OU2.5_over": {"mid": 0.5192, "market_id": 148124066},
+    "Cards_OU3.5_over": {"mid": 0.2776, "market_id": 148124068},
+    "Team_score_first": {"Argentina": 0.8285, "No_goal": 0.0413, "Cape Verde": 0.1076, "market_id": 148124102},
+    "ARG_corners_OU6.5_over": {"mid": 0.4925, "market_id": 148124095},
+    "Total_corners_OU8.5_over": {"mid": 0.5241, "market_id": 148124079},
+    "Total_shots_OU22.5": {"mid": 0.503, "market_id": 148124330, "note": "both sides quoted identically (0.4505/0.5556) -- likely thin/artifactual, treated with low confidence, Poisson fit used instead"},
+    "Goal_1_time_bracket": {"1-10": 0.2353, "11-20": 0.2037, "21-30": 0.1542, "31-40": 0.1151, "41-50": 0.099, "51-60": 0.0595, "61-70": 0.0423, "71-80": 0.0283, "81-90": 0.0294, "None": 0.0449, "market_id": 148124126}
+  },
+  "player_market_data": {
+    "messi_sot_ou2.5": {"bid": 0.4, "offer": 0.5208, "mid": 0.4604, "liquid": true},
+    "messi_anytime_scorer": {"mid": 0.625, "liquid": true},
+    "messi_2plus_goals": {"mid": 0.247, "liquid": true},
+    "messi_hattrick": {"mid": 0.093, "liquid": true},
+    "lautaro_anytime_scorer": {"mid": 0.4773, "liquid": true},
+    "alvarez_anytime_scorer": {"offer": 0.5, "liquid": false, "note": "contract name 'Julian Alvarez' (no accent)"},
+    "alvarez_score_or_assist": {"offer": 0.6897, "liquid": false}
+  }
+}

@@ -1,0 +1,2055 @@
+{
+  "FTR": {
+    "Spain": {
+      "bid": 0.7634,
+      "offer": 0.7692,
+      "mid": 0.7663,
+      "liquid": true,
+      "contract_id": "412601276"
+    },
+    "Draw": {
+      "bid": 0.1613,
+      "offer": 0.1667,
+      "mid": 0.164,
+      "liquid": true,
+      "contract_id": "412601278"
+    },
+    "Austria": {
+      "bid": 0.0714,
+      "offer": 0.0741,
+      "mid": 0.0728,
+      "liquid": true,
+      "contract_id": "412601277"
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.4425,
+      "offer": 0.4505,
+      "mid": 0.4465,
+      "liquid": true,
+      "contract_id": "412601298"
+    },
+    "No": {
+      "bid": 0.5556,
+      "offer": 0.5714,
+      "mid": 0.5635,
+      "liquid": true,
+      "contract_id": "412601299"
+    }
+  },
+  "OU2_5_goals": {
+    "Under 2.5 goals": {
+      "bid": 0.4132,
+      "offer": 0.4237,
+      "mid": 0.4184,
+      "liquid": true,
+      "contract_id": "412601440"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5682,
+      "offer": 0.5848,
+      "mid": 0.5765,
+      "liquid": true,
+      "contract_id": "412601441"
+    }
+  },
+  "OU3_5_goals": {
+    "Under 3.5 goals": {
+      "bid": 0.6494,
+      "offer": 0.6711,
+      "mid": 0.6603,
+      "liquid": true,
+      "contract_id": "412601442"
+    },
+    "Over 3.5 goals": {
+      "bid": 0.3333,
+      "offer": 0.3425,
+      "mid": 0.3379,
+      "liquid": true,
+      "contract_id": "412601443"
+    }
+  },
+  "OU4_5_goals": {
+    "Under 4.5 goals": {
+      "bid": 0.8197,
+      "offer": 0.8403,
+      "mid": 0.83,
+      "liquid": true,
+      "contract_id": "412601444"
+    },
+    "Over 4.5 goals": {
+      "bid": 0.1562,
+      "offer": 0.1695,
+      "mid": 0.1628,
+      "liquid": true,
+      "contract_id": "412601445"
+    }
+  },
+  "HT_result": {
+    "Spain": {
+      "bid": 0.5587,
+      "offer": 0.5618,
+      "mid": 0.5602,
+      "liquid": true,
+      "contract_id": "412601317"
+    },
+    "Draw": {
+      "bid": 0.3356,
+      "offer": 0.3448,
+      "mid": 0.3402,
+      "liquid": true,
+      "contract_id": "412601319"
+    },
+    "Austria": {
+      "bid": 0.0909,
+      "offer": 0.1,
+      "mid": 0.0955,
+      "liquid": true,
+      "contract_id": "412601318"
+    }
+  },
+  "Highest_scoring_half": {
+    "First Half": {
+      "bid": 0.2899,
+      "offer": 0.3226,
+      "mid": 0.3063,
+      "liquid": true,
+      "contract_id": "412601359"
+    },
+    "Equal": {
+      "bid": 0.2222,
+      "offer": 0.2564,
+      "mid": 0.2393,
+      "liquid": true,
+      "contract_id": "412601360"
+    },
+    "Second Half": {
+      "bid": 0.4386,
+      "offer": 0.4717,
+      "mid": 0.4551,
+      "liquid": true,
+      "contract_id": "412601361"
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.2041,
+      "offer": 0.2439,
+      "mid": 0.224,
+      "liquid": true,
+      "contract_id": "412601895"
+    },
+    "11-20": {
+      "bid": 0.1786,
+      "offer": 0.2128,
+      "mid": 0.1957,
+      "liquid": true,
+      "contract_id": "412601896"
+    },
+    "21-30": {
+      "bid": 0.1389,
+      "offer": 0.1695,
+      "mid": 0.1542,
+      "liquid": true,
+      "contract_id": "412601897"
+    },
+    "31-40": {
+      "bid": 0.102,
+      "offer": 0.1282,
+      "mid": 0.1151,
+      "liquid": true,
+      "contract_id": "412601898"
+    },
+    "41-50": {
+      "bid": 0.087,
+      "offer": 0.1136,
+      "mid": 0.1003,
+      "liquid": true,
+      "contract_id": "412601899"
+    },
+    "51-60": {
+      "bid": 0.0526,
+      "offer": 0.0714,
+      "mid": 0.062,
+      "liquid": true,
+      "contract_id": "412601900"
+    },
+    "61-70": {
+      "bid": 0.0357,
+      "offer": 0.0526,
+      "mid": 0.0442,
+      "liquid": true,
+      "contract_id": "412601901"
+    },
+    "71-80": {
+      "bid": 0.0227,
+      "offer": 0.0385,
+      "mid": 0.0306,
+      "liquid": true,
+      "contract_id": "412601902"
+    },
+    "81-90": {
+      "bid": 0.0227,
+      "offer": 0.0385,
+      "mid": 0.0306,
+      "liquid": true,
+      "contract_id": "412601903"
+    },
+    "None": {
+      "bid": 0.0435,
+      "offer": 0.0625,
+      "mid": 0.053,
+      "liquid": true,
+      "contract_id": "412601904"
+    }
+  },
+  "Team_to_score_first": {
+    "Spain": {
+      "bid": 0.7299,
+      "offer": 0.7874,
+      "mid": 0.7587,
+      "liquid": true,
+      "contract_id": "412601835"
+    },
+    "No goal": {
+      "bid": 0.025,
+      "offer": 0.0667,
+      "mid": 0.0459,
+      "liquid": true,
+      "contract_id": "412601837"
+    },
+    "Austria": {
+      "bid": 0.1887,
+      "offer": 0.2,
+      "mid": 0.1944,
+      "liquid": true,
+      "contract_id": "412601836"
+    }
+  },
+  "To_qualify": {
+    "Spain": {
+      "bid": 0.8772,
+      "offer": 0.885,
+      "mid": 0.8811,
+      "liquid": true,
+      "contract_id": "412601682"
+    },
+    "Austria": {
+      "bid": 0.1163,
+      "offer": 0.122,
+      "mid": 0.1192,
+      "liquid": true,
+      "contract_id": "412601683"
+    }
+  },
+  "Will_ET": {
+    "Yes": {
+      "bid": 0.125,
+      "offer": 0.2083,
+      "mid": 0.1667,
+      "liquid": true,
+      "contract_id": "412601684"
+    },
+    "No": {
+      "bid": 0.7937,
+      "offer": 0.885,
+      "mid": 0.8394,
+      "liquid": true,
+      "contract_id": "412601685"
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": 0.2632,
+      "offer": 0.2778,
+      "mid": 0.2705,
+      "liquid": true,
+      "contract_id": "412601386"
+    },
+    "No": {
+      "bid": 0.7299,
+      "offer": 0.7519,
+      "mid": 0.7409,
+      "liquid": true,
+      "contract_id": "412601387"
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.1064,
+      "offer": 0.119,
+      "mid": 0.1127,
+      "liquid": true,
+      "contract_id": "412601734"
+    },
+    "No": {
+      "bid": 0.8772,
+      "offer": 0.9091,
+      "mid": 0.8931,
+      "liquid": true,
+      "contract_id": "412601735"
+    }
+  },
+  "Cards_OU2_5": {
+    "Under 2.5 cards": {
+      "bid": 0.565,
+      "offer": 0.641,
+      "mid": 0.603,
+      "liquid": true,
+      "contract_id": "412601762"
+    },
+    "Over 2.5 cards": {
+      "bid": 0.4065,
+      "offer": 0.578,
+      "mid": 0.4922,
+      "liquid": true,
+      "contract_id": "412601763"
+    }
+  },
+  "Cards_OU3_5": {
+    "Under 3.5 cards": {
+      "bid": 0.7407,
+      "offer": 0.7634,
+      "mid": 0.752,
+      "liquid": true,
+      "contract_id": "412601766"
+    },
+    "Over 3.5 cards": {
+      "bid": 0.2381,
+      "offer": 0.2703,
+      "mid": 0.2542,
+      "liquid": true,
+      "contract_id": "412601767"
+    }
+  },
+  "Cards_OU4_5": {
+    "Under 4.5 cards": {
+      "bid": 0.8264,
+      "offer": 0.9346,
+      "mid": 0.8805,
+      "liquid": true,
+      "contract_id": "412601770"
+    },
+    "Over 4.5 cards": {
+      "bid": 0.0714,
+      "offer": 0.1695,
+      "mid": 0.1205,
+      "liquid": true,
+      "contract_id": "412601771"
+    }
+  },
+  "Most_cards": {
+    "Spain": {
+      "bid": 0.1316,
+      "offer": 0.2326,
+      "mid": 0.1821,
+      "liquid": true,
+      "contract_id": "412601383"
+    },
+    "Draw": {
+      "bid": 0.2273,
+      "offer": 0.3472,
+      "mid": 0.2873,
+      "liquid": true,
+      "contract_id": "412601385"
+    },
+    "Austria": {
+      "bid": 0.4505,
+      "offer": 0.6135,
+      "mid": 0.532,
+      "liquid": true,
+      "contract_id": "412601384"
+    }
+  },
+  "Corners_OU8_5": {
+    "Under 8.5 corners": {
+      "bid": 0.3876,
+      "offer": 0.4587,
+      "mid": 0.4232,
+      "liquid": true,
+      "contract_id": "412601788"
+    },
+    "Over 8.5 corners": {
+      "bid": 0.5405,
+      "offer": 0.5714,
+      "mid": 0.5559,
+      "liquid": true,
+      "contract_id": "412601789"
+    }
+  },
+  "Corners_OU9_5": {
+    "Under 9.5 corners": {
+      "bid": 0.5587,
+      "offer": 0.5988,
+      "mid": 0.5787,
+      "liquid": true,
+      "contract_id": "412601790"
+    },
+    "Over 9.5 corners": {
+      "bid": 0.4032,
+      "offer": 0.4505,
+      "mid": 0.4269,
+      "liquid": true,
+      "contract_id": "412601791"
+    }
+  },
+  "Corners_OU10_5": {
+    "Under 10.5 corners": {
+      "bid": 0.6849,
+      "offer": 0.6897,
+      "mid": 0.6873,
+      "liquid": true,
+      "contract_id": "412601792"
+    },
+    "Over 10.5 corners": {
+      "bid": 0.3125,
+      "offer": 0.3279,
+      "mid": 0.3202,
+      "liquid": true,
+      "contract_id": "412601793"
+    }
+  },
+  "Most_corners": {
+    "Spain": {
+      "bid": 0.7692,
+      "offer": 0.813,
+      "mid": 0.7911,
+      "liquid": true,
+      "contract_id": "412601380"
+    },
+    "Draw": {
+      "bid": 0.0571,
+      "offer": 0.0833,
+      "mid": 0.0702,
+      "liquid": true,
+      "contract_id": "412601382"
+    },
+    "Austria": {
+      "bid": 0.119,
+      "offer": 0.1429,
+      "mid": 0.131,
+      "liquid": true,
+      "contract_id": "412601381"
+    }
+  },
+  "Spain_corners_OU6_5": {
+    "Under 6.5 corners": {
+      "bid": 0.5263,
+      "offer": 0.6024,
+      "mid": 0.5644,
+      "liquid": true,
+      "contract_id": "412601820"
+    },
+    "Over 6.5 corners": {
+      "bid": 0.4,
+      "offer": 0.4587,
+      "mid": 0.4294,
+      "liquid": true,
+      "contract_id": "412601821"
+    }
+  },
+  "Spain_SOT_OU6_5": {
+    "Under 6.5 shots on target": {
+      "bid": 0.5236,
+      "offer": 0.6024,
+      "mid": 0.563,
+      "liquid": true,
+      "contract_id": "412602318"
+    },
+    "Over 6.5 shots on target": {
+      "bid": 0.3968,
+      "offer": 0.4762,
+      "mid": 0.4365,
+      "liquid": true,
+      "contract_id": "412602319"
+    }
+  },
+  "Spain_OU_goals_1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.303,
+      "offer": 0.3125,
+      "mid": 0.3077,
+      "liquid": true,
+      "contract_id": "412601464"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.7042,
+      "offer": 0.7143,
+      "mid": 0.7093,
+      "liquid": true,
+      "contract_id": "412601465"
+    }
+  },
+  "Spain_OU_goals_2_5": {
+    "Under 2.5 goals": {
+      "bid": 0.5848,
+      "offer": 0.5988,
+      "mid": 0.5918,
+      "liquid": true,
+      "contract_id": "412601466"
+    },
+    "Over 2.5 goals": {
+      "bid": 0.3968,
+      "offer": 0.4167,
+      "mid": 0.4068,
+      "liquid": true,
+      "contract_id": "412601467"
+    }
+  },
+  "Spain_OU_goals_3_5": {
+    "Under 3.5 goals": {
+      "bid": 0.7874,
+      "offer": 0.8264,
+      "mid": 0.8069,
+      "liquid": true,
+      "contract_id": "412601468"
+    },
+    "Over 3.5 goals": {
+      "bid": 0.1754,
+      "offer": 0.2041,
+      "mid": 0.1898,
+      "liquid": true,
+      "contract_id": "412601469"
+    }
+  },
+  "Austria_OU_goals_0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.5128,
+      "offer": 0.5263,
+      "mid": 0.5195,
+      "liquid": true,
+      "contract_id": "412601482"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.4717,
+      "offer": 0.4854,
+      "mid": 0.4786,
+      "liquid": true,
+      "contract_id": "412601483"
+    }
+  },
+  "Austria_OU_goals_1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.8547,
+      "offer": 0.8772,
+      "mid": 0.8659,
+      "liquid": true,
+      "contract_id": "412601484"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.125,
+      "offer": 0.1389,
+      "mid": 0.132,
+      "liquid": true,
+      "contract_id": "412601485"
+    }
+  },
+  "Spain_1H_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.3279,
+      "offer": 0.3448,
+      "mid": 0.3364,
+      "liquid": true,
+      "contract_id": "412601470"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6494,
+      "offer": 0.6711,
+      "mid": 0.6603,
+      "liquid": true,
+      "contract_id": "412601471"
+    }
+  },
+  "Spain_1H_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.6944,
+      "offer": 0.7299,
+      "mid": 0.7122,
+      "liquid": true,
+      "contract_id": "412601472"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.274,
+      "offer": 0.2857,
+      "mid": 0.2799,
+      "liquid": true,
+      "contract_id": "412601473"
+    }
+  },
+  "1H_OU0_5": {
+    "Under 0.5 goals": {
+      "bid": 0.2532,
+      "offer": 0.2564,
+      "mid": 0.2548,
+      "liquid": true,
+      "contract_id": "412601450"
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7407,
+      "offer": 0.7519,
+      "mid": 0.7463,
+      "liquid": true,
+      "contract_id": "412601451"
+    }
+  },
+  "1H_OU1_5": {
+    "Under 1.5 goals": {
+      "bid": 0.6135,
+      "offer": 0.625,
+      "mid": 0.6193,
+      "liquid": true,
+      "contract_id": "412601452"
+    },
+    "Over 1.5 goals": {
+      "bid": 0.3788,
+      "offer": 0.3876,
+      "mid": 0.3832,
+      "liquid": true,
+      "contract_id": "412601453"
+    }
+  },
+  "Spain_score_both_halves": {
+    "Yes": {
+      "bid": 0.4587,
+      "offer": 0.495,
+      "mid": 0.4768,
+      "liquid": true,
+      "contract_id": "412601688"
+    },
+    "No": {
+      "bid": 0.5051,
+      "offer": 0.5405,
+      "mid": 0.5228,
+      "liquid": true,
+      "contract_id": "412601689"
+    }
+  },
+  "Spain_win_to_nil": {
+    "Yes": {
+      "bid": 0.4717,
+      "offer": 0.4808,
+      "mid": 0.4763,
+      "liquid": true,
+      "contract_id": "412601694"
+    },
+    "No": {
+      "bid": 0.5236,
+      "offer": 0.5319,
+      "mid": 0.5277,
+      "liquid": true,
+      "contract_id": "412601695"
+    }
+  },
+  "Spain_shots_OU17_5": {
+    "Under 17.5 shots": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407,
+      "liquid": true,
+      "contract_id": "412602356"
+    },
+    "Over 17.5 shots": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601,
+      "liquid": true,
+      "contract_id": "412602357"
+    }
+  },
+  "Austria_SOT_OU2_5": {
+    "Under 6.5 shots": {
+      "bid": 0.3968,
+      "offer": 0.4762,
+      "mid": 0.4365,
+      "liquid": true,
+      "contract_id": "412602430"
+    },
+    "Over 6.5 shots": {
+      "bid": 0.5236,
+      "offer": 0.6024,
+      "mid": 0.563,
+      "liquid": true,
+      "contract_id": "412602431"
+    }
+  },
+  "Total_shots_OU24_5": {
+    "Under 24.5 shots": {
+      "bid": 0.4386,
+      "offer": 0.5405,
+      "mid": 0.4895,
+      "liquid": true,
+      "contract_id": "412602536"
+    },
+    "Over 24.5 shots": {
+      "bid": 0.4673,
+      "offer": 0.5747,
+      "mid": 0.521,
+      "liquid": true,
+      "contract_id": "412602537"
+    }
+  },
+  "Winning_margin": {
+    "Spain by 1": {
+      "bid": 0.2439,
+      "offer": 0.2597,
+      "mid": 0.2518,
+      "liquid": true,
+      "contract_id": "412601746"
+    },
+    "Spain by 2": {
+      "bid": 0.2128,
+      "offer": 0.2326,
+      "mid": 0.2227,
+      "liquid": true,
+      "contract_id": "412601747"
+    },
+    "Spain by 3+": {
+      "bid": 0.274,
+      "offer": 0.2941,
+      "mid": 0.2841,
+      "liquid": true,
+      "contract_id": "412601748"
+    },
+    "Austria by 1": {
+      "bid": 0.0526,
+      "offer": 0.0625,
+      "mid": 0.0576,
+      "liquid": true,
+      "contract_id": "412601749"
+    },
+    "Austria by 2": {
+      "bid": 0.0111,
+      "offer": 0.0154,
+      "mid": 0.0133,
+      "liquid": true,
+      "contract_id": "412601750"
+    },
+    "Austria by 3+": {
+      "bid": 0.002,
+      "offer": 0.004,
+      "mid": 0.003,
+      "liquid": true,
+      "contract_id": "412601751"
+    },
+    "Draw": {
+      "bid": 0.1562,
+      "offer": 0.1754,
+      "mid": 0.1658,
+      "liquid": true,
+      "contract_id": "412601752"
+    }
+  },
+  "Spain_corners_handicap_neg2_5": {
+    "Spain -2.5 corners": {
+      "bid": 0.625,
+      "offer": 0.6452,
+      "mid": 0.6351,
+      "liquid": true,
+      "contract_id": "412601668"
+    },
+    "Austria +2.5 corners": {
+      "bid": 0.3571,
+      "offer": 0.4505,
+      "mid": 0.4038,
+      "liquid": true,
+      "contract_id": "412601669"
+    }
+  },
+  "Anytime_goalscorer": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.1389,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602823"
+    },
+    "Alessandro Sch\u00f6pf": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602844"
+    },
+    "Alexander Prass": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602838"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602814"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602824"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.4167,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602826"
+    },
+    "Carney Chukwuemeka": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602834"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602828"
+    },
+    "David Affengruber": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602837"
+    },
+    "David Alaba": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602841"
+    },
+    "Dejan Ljubicic": {
+      "bid": null,
+      "offer": 0.102,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602855"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602812"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602830"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.3788,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602810"
+    },
+    "Florian Grillitsch": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602845"
+    },
+    "Kevin Danso": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602852"
+    },
+    "Konrad Laimer": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602847"
+    },
+    "Lamine Yamal": {
+      "bid": 0.4032,
+      "offer": 0.4167,
+      "mid": 0.41,
+      "liquid": true,
+      "contract_id": "412602819"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602827"
+    },
+    "Marcel Sabitzer": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602843"
+    },
+    "Marco Friedl": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602853"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.0714,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602825"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602818"
+    },
+    "Marko Arnautovic": {
+      "bid": 0.1,
+      "offer": 0.1613,
+      "mid": 0.1306,
+      "liquid": true,
+      "contract_id": "412602840"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602813"
+    },
+    "Michael Gregoritsch": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602842"
+    },
+    "Michael Svoboda": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602833"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602829"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.431,
+      "offer": 0.4762,
+      "mid": 0.4536,
+      "liquid": true,
+      "contract_id": "412602831"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602816"
+    },
+    "Nicolas Seiwald": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602836"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602817"
+    },
+    "Patrick Wimmer": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602835"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602820"
+    },
+    "Paul Wanner": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602839"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602822"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602811"
+    },
+    "Philip Lienhart": {
+      "bid": null,
+      "offer": 0.0294,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602849"
+    },
+    "Philipp Mwene": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602848"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602832"
+    },
+    "Romano Schmid": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602851"
+    },
+    "Sasa Kalajdzic": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602854"
+    },
+    "Stefan Posch": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602846"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602821"
+    },
+    "Xaver Schlager": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602850"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412602815"
+    }
+  },
+  "Score_or_assist": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623997"
+    },
+    "Alessandro Sch\u00f6pf": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624018"
+    },
+    "Alexander Prass": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624012"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.4762,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623988"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.1724,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623998"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624000"
+    },
+    "Carney Chukwuemeka": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624008"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.5128,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624002"
+    },
+    "David Affengruber": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624011"
+    },
+    "David Alaba": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624015"
+    },
+    "Dejan Ljubicic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624029"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623986"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624004"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623984"
+    },
+    "Florian Grillitsch": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624019"
+    },
+    "Kevin Danso": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624026"
+    },
+    "Konrad Laimer": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624021"
+    },
+    "Lamine Yamal": {
+      "bid": 0.5376,
+      "offer": 0.5405,
+      "mid": 0.5391,
+      "liquid": true,
+      "contract_id": "412623993"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624001"
+    },
+    "Marcel Sabitzer": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624017"
+    },
+    "Marco Friedl": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624027"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623999"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623992"
+    },
+    "Marko Arnautovic": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624014"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623987"
+    },
+    "Michael Gregoritsch": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624016"
+    },
+    "Michael Svoboda": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624007"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624003"
+    },
+    "Mikel Oyarzabal": {
+      "bid": null,
+      "offer": 0.6135,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624005"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.5682,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623990"
+    },
+    "Nicolas Seiwald": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624010"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623991"
+    },
+    "Patrick Wimmer": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624009"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623994"
+    },
+    "Paul Wanner": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624013"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.4,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623996"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.3448,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623985"
+    },
+    "Philip Lienhart": {
+      "bid": null,
+      "offer": 0.0556,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624023"
+    },
+    "Philipp Mwene": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624022"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.2817,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624006"
+    },
+    "Romano Schmid": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624025"
+    },
+    "Sasa Kalajdzic": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624028"
+    },
+    "Stefan Posch": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624020"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623995"
+    },
+    "Xaver Schlager": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412624024"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623989"
+    }
+  },
+  "Player_SOT_OU0_5": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.5917,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623010"
+    },
+    "Alessandro Sch\u00f6pf": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623031"
+    },
+    "Alexander Prass": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623025"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.578,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623001"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623011"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.7407,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623013"
+    },
+    "Carney Chukwuemeka": {
+      "bid": null,
+      "offer": 0.2778,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623021"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.5556,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623015"
+    },
+    "David Affengruber": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623024"
+    },
+    "David Alaba": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623028"
+    },
+    "Dejan Ljubicic": {
+      "bid": null,
+      "offer": 0.303,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623042"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412622999"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623017"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.7299,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412622997"
+    },
+    "Florian Grillitsch": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623032"
+    },
+    "Kevin Danso": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623039"
+    },
+    "Konrad Laimer": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623034"
+    },
+    "Lamine Yamal": {
+      "bid": 0.7092,
+      "offer": 0.7874,
+      "mid": 0.7483,
+      "liquid": true,
+      "contract_id": "412623006"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623014"
+    },
+    "Marcel Sabitzer": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623030"
+    },
+    "Marco Friedl": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623040"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623012"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623005"
+    },
+    "Marko Arnautovic": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623027"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.3125,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623000"
+    },
+    "Michael Gregoritsch": {
+      "bid": null,
+      "offer": 0.4167,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623029"
+    },
+    "Michael Svoboda": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623020"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.6369,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623016"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.6098,
+      "offer": 0.7812,
+      "mid": 0.6955,
+      "liquid": true,
+      "contract_id": "412623018"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.6897,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623003"
+    },
+    "Nicolas Seiwald": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623023"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.5682,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623004"
+    },
+    "Patrick Wimmer": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623022"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623007"
+    },
+    "Paul Wanner": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623026"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.3846,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623009"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412622998"
+    },
+    "Philip Lienhart": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623036"
+    },
+    "Philipp Mwene": {
+      "bid": null,
+      "offer": 0.087,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623035"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.2985,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623019"
+    },
+    "Romano Schmid": {
+      "bid": null,
+      "offer": 0.2778,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623038"
+    },
+    "Sasa Kalajdzic": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623041"
+    },
+    "Stefan Posch": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623033"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.7246,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623008"
+    },
+    "Xaver Schlager": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623037"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.641,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623002"
+    }
+  },
+  "Player_SOT_OU1_5": {
+    "Alejandro Grimaldo": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623104"
+    },
+    "Alessandro Sch\u00f6pf": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623125"
+    },
+    "Alexander Prass": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623119"
+    },
+    "Alex Baena": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623095"
+    },
+    "Aymeric Laporte": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623105"
+    },
+    "Borja Iglesias": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623107"
+    },
+    "Carney Chukwuemeka": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623115"
+    },
+    "Dani Olmo": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623109"
+    },
+    "David Affengruber": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623118"
+    },
+    "David Alaba": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623122"
+    },
+    "Dejan Ljubicic": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623136"
+    },
+    "Eric Garcia": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623093"
+    },
+    "Fabian Ruiz": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623111"
+    },
+    "Ferran Torres": {
+      "bid": null,
+      "offer": 0.4098,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623091"
+    },
+    "Florian Grillitsch": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623126"
+    },
+    "Kevin Danso": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623133"
+    },
+    "Konrad Laimer": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623128"
+    },
+    "Lamine Yamal": {
+      "bid": 0.463,
+      "offer": 0.4673,
+      "mid": 0.4652,
+      "liquid": true,
+      "contract_id": "412623100"
+    },
+    "Marc Cucurella": {
+      "bid": null,
+      "offer": 0.0345,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623108"
+    },
+    "Marcel Sabitzer": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623124"
+    },
+    "Marco Friedl": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623134"
+    },
+    "Marcos Llorente": {
+      "bid": null,
+      "offer": 0.0345,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623106"
+    },
+    "Marc Pubill": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623099"
+    },
+    "Marko Arnautovic": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623121"
+    },
+    "Martin Zubimendi": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623094"
+    },
+    "Michael Gregoritsch": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623123"
+    },
+    "Michael Svoboda": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623114"
+    },
+    "Mikel Merino": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623110"
+    },
+    "Mikel Oyarzabal": {
+      "bid": 0.3623,
+      "offer": 0.4545,
+      "mid": 0.4084,
+      "liquid": true,
+      "contract_id": "412623112"
+    },
+    "Nicholas Williams Arthuer": {
+      "bid": null,
+      "offer": 0.3356,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623097"
+    },
+    "Nicolas Seiwald": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623117"
+    },
+    "Pablo Gavira": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623098"
+    },
+    "Patrick Wimmer": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623116"
+    },
+    "Pau Cubarsi Paredes": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623101"
+    },
+    "Paul Wanner": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623120"
+    },
+    "Pedro Gonzalez Lopez": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623103"
+    },
+    "Pedro Porro": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623092"
+    },
+    "Philip Lienhart": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623130"
+    },
+    "Philipp Mwene": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623129"
+    },
+    "Rodri": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623113"
+    },
+    "Romano Schmid": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623132"
+    },
+    "Sasa Kalajdzic": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623135"
+    },
+    "Stefan Posch": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623127"
+    },
+    "V\u00edctor Munoz Villanueva": {
+      "bid": null,
+      "offer": 0.3846,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623102"
+    },
+    "Xaver Schlager": {
+      "bid": null,
+      "offer": null,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623131"
+    },
+    "Yeremi Pino": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": null,
+      "liquid": false,
+      "contract_id": "412623096"
+    }
+  }
+}

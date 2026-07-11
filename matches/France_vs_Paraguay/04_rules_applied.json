@@ -1,0 +1,42 @@
+{
+  "_description": "Rules applied per question for France vs Paraguay 2026-07-04",
+  "match_context": {
+    "france_win_prob": 0.8231,
+    "draw_prob": 0.1352,
+    "paraguay_win_prob": 0.0467,
+    "rule7_fires": true,
+    "rule8_fires": false
+  },
+  "per_question": [
+    {"q": 1, "tier": "PLAYER_LIQUID", "rules": [], "estimate": 0.65,
+     "note": "Anytime scorer mid=0.639 (liquid). Matches his record of scoring in 3 of 4 games (blanked only vs Norway, where he had 2 assists instead)."},
+    {"q": 2, "tier": "PLAYER_SEMI_LIQUID", "rules": ["REGIME_CHECK"], "estimate": 0.33,
+     "note": "SOT OU1.5 mid=0.2613 (wide spread). His own record is bimodal: 2+ SOT vs weaker/mid opposition (Iraq, Norway), blanked vs tougher opposition (Senegal, Sweden). Paraguay's defense is scoreline-resilient but concedes plenty of SOT (6 to Germany), so today's weaker opponent doesn't clearly suppress him -- blended moderately above market rather than fully trusting either extreme."},
+    {"q": 3, "tier": "PLAYER_LIQUID", "rules": ["ENCISO_SPECIFIC_LESSON"], "estimate": 0.41,
+     "note": "SOT OU0.5 mid=0.4248 (liquid, tight spread). Enciso's SOT record is 0,0,0,1 -- broke through only in the Germany R32 game. A near-identical suppression call on this exact player LOST -26.3 RBP last time (GER-PAR) when the team's whole attacking ceiling broke through unexpectedly. Trusting the market's more balanced number rather than re-applying the same suppression logic."},
+    {"q": 4, "tier": "DIRECT", "rules": [], "estimate": 0.58,
+     "note": "OU2.5 Over mid=0.5798, matches Poisson fit from the same line."},
+    {"q": 5, "tier": "PLAYER_ILLIQUID", "rules": ["PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT"], "estimate": 0.11,
+     "note": "Score-or-assist offer=0.1695 (illiquid) x0.945=0.1602. Discounted further: 0 goals, 0 assists, 0 SOT in every game he's featured, missing from the Australia squad entirely -- total anonymity independent of game state (distinct from the team-context Enciso case, this is a genuine personal-zero signal)."},
+    {"q": 6, "tier": "TEAM_MODEL", "rules": ["CAN_MOR_REGIME_CHECK"], "estimate": 0.67,
+     "note": "Market-fit lambda=7.317 -> P(>=7)=0.596. Empirical 4-game avg lambda=8.5 -> P(>=7)=0.744. Regime-coverage check PASSES here (unlike Canada): France's SOT trend is rising and peaked against their toughest opponent yet (Sweden R32), meaning the empirical signal has actually been tested against quality opposition and held up. Blended 45% market/55% empirical -> 0.677, a moderate lean, well short of the aggressive weighting that blew up on CAN-MOR Q11."},
+    {"q": 7, "tier": "DIRECT", "rules": [], "estimate": 0.51,
+     "note": "France score-both-halves Yes mid=0.5146."},
+    {"q": 8, "tier": "DIRECT", "rules": [], "estimate": 0.32,
+     "note": "Cards OU3.5 Over mid=0.3162, matches Poisson fit (0.319)."},
+    {"q": 9, "tier": "BASE_RATE_FORMULA", "rules": [], "estimate": 0.33,
+     "note": "No direct market. Validated formula P(sub scores)=1-(1-0.13)^lambda_total_goals, lambda=3.016 (fitted from total-goals market) -> 0.343. This formula has a mixed record (RSA-CAN win, BRA-JPN narrow loss) -- used as best available estimate absent a market, shaded slightly to 0.33."},
+    {"q": 10, "tier": "TEAM_MODEL", "rules": [], "estimate": 0.64,
+     "note": "Market-fit lambda=6.97 -> P(>=6)=0.695. Empirical 4-game avg lambda=6.0 -> P(>=6)=0.554. Here the market is HIGHER than empirical (no under-trust pattern to correct) -- blended 60% market/40% empirical -> 0.639."},
+    {"q": 11, "tier": "DIRECT", "rules": [], "estimate": 0.33,
+     "note": "HT result Draw mid=0.334."},
+    {"q": 12, "tier": "BASE_RATE_WITH_MARKET_ANCHOR", "rules": ["RULE15_REFINEMENT"], "estimate": 0.20,
+     "note": "No direct market for this exact question. Anchored off Team-to-score-first Paraguay=14.3% (a floor, since scoring first always means leading at that moment) plus a modest addition for late-lead scenarios after initially trailing. Cross-checked against the empirical base rate (Paraguay led at some point in 2 of 4 games, 50%, most recently vs Germany for 12 minutes) -- but that sample is against weaker-to-comparable opposition than France, so the market-anchored, opponent-specific number is trusted more than the raw historical rate. Per the ARG-CPV postmortem lesson, NOT defaulting to near-zero blowout-suppression given Paraguay's genuine recent competitive precedent."},
+    {"q": 13, "tier": "PLAYER_LIQUID", "rules": [], "estimate": 0.58,
+     "note": "Score-or-assist mid=0.5644 (liquid). His empirical rate is even higher (assists in 3 of 4 games, 75%), but keeping close to market per the lesson about not over-trusting small-sample empirical rates -- modest nudge above market given his elite, consistent creative output this tournament."},
+    {"q": 14, "tier": "DIRECT", "rules": [], "estimate": 0.28,
+     "note": "Penalty Yes mid=0.2791."},
+    {"q": 15, "tier": "DIRECT", "rules": [], "estimate": 0.82,
+     "note": "FTR France mid=0.8231. Noting the Paraguay-specific context (they just forced Germany to extra time from a similar underdog position) as a live risk to this DIRECT number, but not overriding the market with a hunch -- that was the CAN-MOR mistake in reverse. The market already has access to the same Germany-precedent information."}
+  ]
+}

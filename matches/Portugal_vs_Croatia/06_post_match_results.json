@@ -1,0 +1,32 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Portugal vs Croatia",
+  "date": "2026-07-02",
+  "actual_score": "Portugal 2-1 Croatia",
+  "match_rbp_total": 130.08,
+  "questions_beat_crowd": 10,
+  "questions_below_crowd": 5,
+  "question_results": [
+    {"text": "Will Cristiano Ronaldo (Portugal) score a goal?", "our_estimate": 0.42, "crowd_estimate": 0.43, "outcome": "YES", "rbp": 4.05, "beat_crowd": true},
+    {"text": "Will Bruno Fernandes (Portugal) have 2 or more shots on target?", "our_estimate": 0.21, "crowd_estimate": 0.37, "outcome": "NO", "rbp": 27.17, "beat_crowd": true, "note": "Second-biggest win of the match."},
+    {"text": "Will Portugal advance to the Round of 16?", "our_estimate": 0.73, "crowd_estimate": 0.68, "outcome": "YES", "rbp": 9.78, "beat_crowd": true},
+    {"text": "Will Luka Modrić (Croatia) score or assist a goal?", "our_estimate": 0.22, "crowd_estimate": 0.29, "outcome": "NO", "rbp": 12.74, "beat_crowd": true},
+    {"text": "Will the match have 2 or fewer total goals?", "our_estimate": 0.45, "crowd_estimate": 0.47, "outcome": "NO", "rbp": 9.22, "beat_crowd": true},
+    {"text": "Will Croatia have 4 or more shots on target?", "our_estimate": 0.42, "crowd_estimate": 0.46, "outcome": "YES", "rbp": -4.69, "beat_crowd": false},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.32, "crowd_estimate": 0.40, "outcome": "NO", "rbp": 16.6, "beat_crowd": true},
+    {"text": "Will both teams receive at least one card?", "our_estimate": 0.55, "crowd_estimate": 0.61, "outcome": "YES", "rbp": -4.54, "beat_crowd": false},
+    {"text": "Will Portugal have 6 or more corner kicks?", "our_estimate": 0.47, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -2.19, "beat_crowd": false},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.40, "crowd_estimate": 0.44, "outcome": "YES", "rbp": -6.23, "beat_crowd": false},
+    {"text": "Will Portugal have 6 or more shots on target?", "our_estimate": 0.37, "crowd_estimate": 0.45, "outcome": "NO", "rbp": 17.49, "beat_crowd": true, "note": "Correctly suppressed Portugal's SOT ceiling against organized opposition (matches the Colombia-game precedent, NOT the Uzbekistan blowout)."},
+    {"text": "Will Bernardo Silva (Portugal) have 1 or more shots on target?", "our_estimate": 0.36, "crowd_estimate": 0.39, "outcome": "NO", "rbp": 14.24, "beat_crowd": true},
+    {"text": "Will a header goal be scored?", "our_estimate": 0.34, "crowd_estimate": 0.36, "outcome": "YES", "rbp": -1.22, "beat_crowd": false},
+    {"text": "Will there be 20 or more total shots?", "our_estimate": 0.75, "crowd_estimate": 0.63, "outcome": "YES", "rbp": 21.58, "beat_crowd": true, "note": "Biggest win of the match -- high-confidence DIRECT/market-anchored volume call."},
+    {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.37, "crowd_estimate": 0.32, "outcome": "YES", "rbp": 16.08, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "Biggest win: 20+ total shots (+21.58), a DIRECT/volume-based call.",
+    "Second-biggest win: Bruno Fernandes 2+ SOT NO (+27.17) -- correctly suppressed.",
+    "Q11 (Portugal 6+ SOT, +17.49) validates the specific lesson from pre-match research: Portugal's SOT ceiling should be anchored to their performance against organized opposition (Colombia, 2 SOT) rather than their Uzbekistan blowout (9 SOT) -- this held and won.",
+    "All 5 losses were small (largest -6.23) and mostly direct-market questions where the crowd landed marginally closer -- no systemic miss in this match."
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "FTR": {
+    "Argentina": {
+      "bid": 0.8475,
+      "offer": 0.8621,
+      "mid": 0.8548
+    },
+    "Draw": {
+      "bid": 0.1087,
+      "offer": 0.1111,
+      "mid": 0.1099
+    },
+    "Cape Verde": {
+      "bid": 0.0345,
+      "offer": 0.0357,
+      "mid": 0.0351
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.3125,
+      "offer": 0.3175,
+      "mid": 0.315
+    },
+    "No": {
+      "bid": 0.6803,
+      "offer": 0.6944,
+      "mid": 0.6874
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.1695,
+      "offer": 0.1786,
+      "mid": 0.1741
+    },
+    "Over 1.5 goals": {
+      "bid": 0.8065,
+      "offer": 0.8403,
+      "mid": 0.8234
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.4,
+      "offer": 0.4098,
+      "mid": 0.4049
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5848,
+      "offer": 0.6024,
+      "mid": 0.5936
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.6369,
+      "offer": 0.6579,
+      "mid": 0.6474
+    },
+    "Over 3.5 goals": {
+      "bid": 0.3472,
+      "offer": 0.3623,
+      "mid": 0.3548
+    }
+  },
+  "OU4.5": {
+    "Under 4.5 goals": {
+      "bid": 0.813,
+      "offer": 0.8333,
+      "mid": 0.8232
+    },
+    "Over 4.5 goals": {
+      "bid": 0.1724,
+      "offer": 0.1818,
+      "mid": 0.1771
+    }
+  },
+  "HT_result": {
+    "Argentina": {
+      "bid": 0.6667,
+      "offer": 0.6757,
+      "mid": 0.6712
+    },
+    "Draw": {
+      "bid": 0.2778,
+      "offer": 0.2899,
+      "mid": 0.2838
+    },
+    "Cape Verde": {
+      "bid": 0.0435,
+      "offer": 0.05,
+      "mid": 0.0467
+    }
+  },
+  "ARG_clean_sheet": {
+    "Yes": {
+      "bid": 0.6494,
+      "offer": 0.6849,
+      "mid": 0.6671
+    },
+    "No": {
+      "bid": 0.3226,
+      "offer": 0.3472,
+      "mid": 0.3349
+    }
+  },
+  "CPV_clean_sheet": {
+    "Yes": {
+      "bid": 0.0606,
+      "offer": 0.0741,
+      "mid": 0.0673
+    },
+    "No": {
+      "bid": 0.9259,
+      "offer": 0.9434,
+      "mid": 0.9346
+    }
+  },
+  "ARG_goals_OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.495,
+      "offer": 0.5128,
+      "mid": 0.5039
+    },
+    "Over 2.5 goals": {
+      "bid": 0.4902,
+      "offer": 0.5128,
+      "mid": 0.5015
+    }
+  },
+  "ARG_score_both_halves": {
+    "Yes": {
+      "bid": 0.5236,
+      "offer": 0.5263,
+      "mid": 0.525
+    },
+    "No": {
+      "bid": 0.4348,
+      "offer": 0.495,
+      "mid": 0.4649
+    }
+  },
+  "ARG_SOT_OU6.5": {
+    "Under 6.5 shots on target": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407
+    },
+    "Over 6.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601
+    }
+  },
+  "CPV_SOT_OU1.5": {
+    "Under 1.5 shots on target": {
+      "bid": 0.4425,
+      "offer": 0.5319,
+      "mid": 0.4872
+    },
+    "Over 1.5 shots on target": {
+      "bid": 0.4717,
+      "offer": 0.5556,
+      "mid": 0.5136
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.5025,
+      "offer": 0.5435,
+      "mid": 0.523
+    },
+    "Over 2.5 cards": {
+      "bid": 0.495,
+      "offer": 0.5435,
+      "mid": 0.5192
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.6711,
+      "offer": 0.7692,
+      "mid": 0.7202
+    },
+    "Over 3.5 cards": {
+      "bid": 0.2273,
+      "offer": 0.3279,
+      "mid": 0.2776
+    }
+  },
+  "Team_score_first": {
+    "Argentina": {
+      "bid": 0.7874,
+      "offer": 0.8696,
+      "mid": 0.8285
+    },
+    "No goal": {
+      "bid": 0.02,
+      "offer": 0.0625,
+      "mid": 0.0413
+    },
+    "Cape Verde": {
+      "bid": 0.1064,
+      "offer": 0.1087,
+      "mid": 0.1076
+    }
+  },
+  "ARG_corners_OU6.5": {
+    "Under 6.5 corners": {
+      "bid": 0.4762,
+      "offer": 0.5348,
+      "mid": 0.5055
+    },
+    "Over 6.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5263,
+      "mid": 0.4925
+    }
+  },
+  "Total_corners_OU8.5": {
+    "Under 8.5 corners": {
+      "bid": 0.4673,
+      "offer": 0.495,
+      "mid": 0.4811
+    },
+    "Over 8.5 corners": {
+      "bid": 0.5076,
+      "offer": 0.5405,
+      "mid": 0.5241
+    }
+  },
+  "Total_shots_OU22.5": {
+    "Under 22.5 shots": {
+      "bid": 0.4505,
+      "offer": 0.5556,
+      "mid": 0.503
+    },
+    "Over 22.5 shots": {
+      "bid": 0.4505,
+      "offer": 0.5556,
+      "mid": 0.503
+    }
+  },
+  "Goal_1_time_bracket": {
+    "1-10": {
+      "bid": 0.2174,
+      "offer": 0.2532,
+      "mid": 0.2353
+    },
+    "11-20": {
+      "bid": 0.1852,
+      "offer": 0.2222,
+      "mid": 0.2037
+    },
+    "21-30": {
+      "bid": 0.1389,
+      "offer": 0.1695,
+      "mid": 0.1542
+    },
+    "31-40": {
+      "bid": 0.102,
+      "offer": 0.1282,
+      "mid": 0.1151
+    },
+    "41-50": {
+      "bid": 0.087,
+      "offer": 0.1111,
+      "mid": 0.099
+    },
+    "51-60": {
+      "bid": 0.05,
+      "offer": 0.069,
+      "mid": 0.0595
+    },
+    "61-70": {
+      "bid": 0.0333,
+      "offer": 0.0513,
+      "mid": 0.0423
+    },
+    "71-80": {
+      "bid": 0.0208,
+      "offer": 0.0357,
+      "mid": 0.0283
+    },
+    "81-90": {
+      "bid": 0.0217,
+      "offer": 0.037,
+      "mid": 0.0294
+    },
+    "None": {
+      "bid": 0.0357,
+      "offer": 0.0541,
+      "mid": 0.0449
+    }
+  },
+  "To_qualify": {
+    "Argentina": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Cape Verde": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Winning_margin": {
+    "Argentina by 1": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Argentina by 2": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Argentina by 3+": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Cape Verde by 1": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Cape Verde by 2": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Cape Verde by 3+": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Draw": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  }
+}

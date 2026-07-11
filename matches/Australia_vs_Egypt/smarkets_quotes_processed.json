@@ -1,0 +1,404 @@
+{
+  "FTR": {
+    "Australia": {
+      "bid": 0.2532,
+      "offer": 0.2597,
+      "mid": 0.2564
+    },
+    "Draw": {
+      "bid": 0.3378,
+      "offer": 0.3378,
+      "mid": 0.3378
+    },
+    "Egypt": {
+      "bid": 0.4032,
+      "offer": 0.4065,
+      "mid": 0.4048
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.4464,
+      "offer": 0.4505,
+      "mid": 0.4485
+    },
+    "No": {
+      "bid": 0.5495,
+      "offer": 0.565,
+      "mid": 0.5573
+    }
+  },
+  "OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.125,
+      "offer": 0.1351,
+      "mid": 0.13
+    },
+    "Over 0.5 goals": {
+      "bid": 0.8621,
+      "offer": 0.885,
+      "mid": 0.8736
+    }
+  },
+  "OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.3731,
+      "offer": 0.3876,
+      "mid": 0.3803
+    },
+    "Over 1.5 goals": {
+      "bid": 0.6098,
+      "offer": 0.6329,
+      "mid": 0.6214
+    }
+  },
+  "OU2.5": {
+    "Under 2.5 goals": {
+      "bid": 0.6579,
+      "offer": 0.6849,
+      "mid": 0.6714
+    },
+    "Over 2.5 goals": {
+      "bid": 0.3175,
+      "offer": 0.3333,
+      "mid": 0.3254
+    }
+  },
+  "OU3.5": {
+    "Under 3.5 goals": {
+      "bid": 0.8403,
+      "offer": 0.8621,
+      "mid": 0.8512
+    },
+    "Over 3.5 goals": {
+      "bid": 0.1429,
+      "offer": 0.1562,
+      "mid": 0.1496
+    }
+  },
+  "HT_result": {
+    "Australia": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Draw": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Egypt": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Egypt_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.4762,
+      "offer": 0.5556,
+      "mid": 0.5159
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.4425,
+      "offer": 0.5263,
+      "mid": 0.4844
+    }
+  },
+  "Cards_OU1.5": {
+    "Under 1.5 cards": {
+      "bid": 0.1695,
+      "offer": 0.25,
+      "mid": 0.2097
+    },
+    "Over 1.5 cards": {
+      "bid": 0.7463,
+      "offer": 0.8333,
+      "mid": 0.7898
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.4274,
+      "offer": 0.4464,
+      "mid": 0.4369
+    },
+    "Over 2.5 cards": {
+      "bid": 0.565,
+      "offer": 0.5848,
+      "mid": 0.5749
+    }
+  },
+  "Cards_OU3.5": {
+    "Under 3.5 cards": {
+      "bid": 0.6098,
+      "offer": 0.7246,
+      "mid": 0.6672
+    },
+    "Over 3.5 cards": {
+      "bid": 0.3571,
+      "offer": 0.3968,
+      "mid": 0.377
+    }
+  },
+  "Cards_OU4.5": {
+    "Under 4.5 cards": {
+      "bid": 0.7463,
+      "offer": 0.8621,
+      "mid": 0.8042
+    },
+    "Over 4.5 cards": {
+      "bid": 0.1429,
+      "offer": 0.25,
+      "mid": 0.1965
+    }
+  },
+  "Penalty": {
+    "Yes": {
+      "bid": null,
+      "offer": 0.2632,
+      "mid": 0.2487
+    },
+    "No": {
+      "bid": 0.7353,
+      "offer": 0.7692,
+      "mid": 0.7522
+    }
+  },
+  "Any_sent_off": {
+    "Yes": {
+      "bid": 0.1389,
+      "offer": 0.1429,
+      "mid": 0.1409
+    },
+    "No": {
+      "bid": 0.8547,
+      "offer": 0.8772,
+      "mid": 0.8659
+    }
+  },
+  "Corners_OU7.5": {
+    "Under 7.5 corners": {
+      "bid": 0.3175,
+      "offer": 0.4,
+      "mid": 0.3588
+    },
+    "Over 7.5 corners": {
+      "bid": 0.5988,
+      "offer": 0.6711,
+      "mid": 0.635
+    }
+  },
+  "Corners_OU8.5": {
+    "Under 8.5 corners": {
+      "bid": 0.495,
+      "offer": 0.5208,
+      "mid": 0.5079
+    },
+    "Over 8.5 corners": {
+      "bid": 0.4854,
+      "offer": null,
+      "mid": 0.4854
+    }
+  },
+  "Corners_OU9.5": {
+    "Under 9.5 corners": {
+      "bid": 0.5618,
+      "offer": 0.641,
+      "mid": 0.6014
+    },
+    "Over 9.5 corners": {
+      "bid": 0.3597,
+      "offer": 0.4386,
+      "mid": 0.3992
+    }
+  },
+  "Team_score_first": {
+    "Australia": {
+      "bid": 0.3521,
+      "offer": 0.4065,
+      "mid": 0.3793
+    },
+    "No goal": {
+      "bid": 0.1136,
+      "offer": 0.1667,
+      "mid": 0.1401
+    },
+    "Egypt": {
+      "bid": 0.4545,
+      "offer": 0.4762,
+      "mid": 0.4654
+    }
+  },
+  "Highest_scoring_half": {
+    "First Half": {
+      "bid": 0.2632,
+      "offer": 0.2941,
+      "mid": 0.2786
+    },
+    "Equal": {
+      "bid": 0.303,
+      "offer": 0.3333,
+      "mid": 0.3181
+    },
+    "Second Half": {
+      "bid": 0.3846,
+      "offer": 0.4132,
+      "mid": 0.3989
+    }
+  },
+  "Total_shots_OU23.5": {
+    "Under 23.5 shots": {
+      "bid": 0.4902,
+      "offer": 0.6061,
+      "mid": 0.5482
+    },
+    "Over 23.5 shots": {
+      "bid": 0.3876,
+      "offer": 0.5128,
+      "mid": 0.4502
+    }
+  },
+  "Egypt_shots_OU11.5": {
+    "Under 11.5 shots": {
+      "bid": 0.4505,
+      "offer": 0.5464,
+      "mid": 0.4985
+    },
+    "Over 11.5 shots": {
+      "bid": 0.5348,
+      "offer": 0.5464,
+      "mid": 0.5406
+    }
+  },
+  "Total_SOT_OU6.5": {
+    "Under 6.5 shots on target": {
+      "bid": 0.4386,
+      "offer": 0.5405,
+      "mid": 0.4895
+    },
+    "Over 6.5 shots on target": {
+      "bid": 0.4673,
+      "offer": 0.5747,
+      "mid": 0.521
+    }
+  },
+  "Most_corners": {
+    "Australia": {
+      "bid": 0.2667,
+      "offer": 0.3906,
+      "mid": 0.3286
+    },
+    "Draw": {
+      "bid": 0.0435,
+      "offer": 0.1282,
+      "mid": 0.0859
+    },
+    "Egypt": {
+      "bid": 0.5714,
+      "offer": 0.641,
+      "mid": 0.6062
+    }
+  },
+  "Most_cards": {
+    "Australia": {
+      "bid": 0.3401,
+      "offer": 0.4464,
+      "mid": 0.3932
+    },
+    "Draw": {
+      "bid": 0.2222,
+      "offer": 0.3226,
+      "mid": 0.2724
+    },
+    "Egypt": {
+      "bid": 0.274,
+      "offer": 0.3937,
+      "mid": 0.3338
+    }
+  },
+  "To_qualify": {
+    "Australia": {
+      "bid": 0.4,
+      "offer": 0.4065,
+      "mid": 0.4032
+    },
+    "Egypt": {
+      "bid": 0.5988,
+      "offer": 0.6061,
+      "mid": 0.6024
+    }
+  },
+  "First_half_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": 0.4237,
+      "offer": 0.4348,
+      "mid": 0.4293
+    },
+    "Over 0.5 goals": {
+      "bid": 0.5682,
+      "offer": 0.5848,
+      "mid": 0.5765
+    }
+  },
+  "First_half_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": 0.7874,
+      "offer": 0.7937,
+      "mid": 0.7905
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2083,
+      "offer": 0.2174,
+      "mid": 0.2129
+    }
+  },
+  "AUS_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Over 0.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "AUS_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Over 1.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "EGY_goals_OU0.5": {
+    "Under 0.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Over 0.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "EGY_goals_OU1.5": {
+    "Under 1.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Over 1.5 goals": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  }
+}

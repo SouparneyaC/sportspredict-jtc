@@ -1,0 +1,37 @@
+{
+  "_description": "Model derivations for Colombia vs Ghana 2026-07-04 R32",
+  "lambda_fits": {
+    "total_goals": 2.531,
+    "colombia_goals": 1.916,
+    "colombia_sot": 5.436,
+    "cards_total": 2.751,
+    "total_shots": 23.924,
+    "offsides_own_avg_sum": 7.0,
+    "offsides_match_env_avg": 4.5
+  },
+  "derived_probs": {
+    "p_total_3plus_goals": 0.464,
+    "p_col_sot_7plus": 0.304,
+    "p_cards_4plus": 0.297,
+    "p_shots_22plus": 0.681,
+    "p_offsides_3plus_ownavg": 0.970,
+    "p_offsides_3plus_matchenv": 0.826,
+    "p_offsides_3plus_blended_shaded": 0.75,
+    "p_goal_before_break_bracket_method": 0.4323,
+    "p_goal_before_break_lambda_scaling": 0.480,
+    "p_goal_before_break_blended": 0.46
+  },
+  "rule_checks": {
+    "RULE1": "market primary source",
+    "RULE6": "clear, all estimates within 0.09-0.81",
+    "RULE7": "Borderline fires -- Ghana win=10.31%, just above the 10% Scenario-A floor but below the 15% RULE7 threshold. Treat as moderate favorite, not extreme blowout.",
+    "RULE8": "INACTIVE -- draw=21.51% < 25% (though not far off)",
+    "RULE15": "Borderline -- Ghana win 10.31% is right at the Scenario A/B boundary. Not applying extra suppression beyond what real data already shows, since Ayew (0 shots/3 games) and Semenyo (0 SOT/3 games) already carry genuinely poor underlying production independent of any blowout-suppression logic.",
+    "RULE12": "Flagged Q12 (offsides): own-team-avg lambda (7.0, driven partly by COL's 7-offside outlier vs CDR) vs match-environment lambda (4.5) diverge meaningfully. Even excluding the CDR outlier, COL's remaining games (3,3) still support an elevated rate. Blended and shaded down slightly from the raw own-avg reading (0.97) to 0.75 for outlier caution.",
+    "RULE9": "Applied to James Rodríguez (Q2): market price (illiquid, 51%) trimmed for his 0G/0A group-stage record despite starting all 3 games."
+  },
+  "espn_insight": {
+    "note_on_ghana_forwards": "Both Ayew and Semenyo are total blanks in the group stage -- 0 combined goals, 0 combined assists, 0 combined SOT across 6 player-games. Ghana's 2 group goals came from Yirenkyi and Luckassen, neither of whom is asked about in these 15 questions.",
+    "note_on_james": "James Rodríguez started every game but has zero goal involvements -- a real signal worth trusting over the illiquid market's more generous 51% score-or-assist price."
+  }
+}

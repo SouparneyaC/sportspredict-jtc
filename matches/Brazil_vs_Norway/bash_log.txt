@@ -1,0 +1,52 @@
+=== BRAZIL vs NORWAY — FULL SESSION LOG ===
+Date: 2026-07-05, R16
+ESPN Event ID: 760504 | Smarkets Event ID: 45166893
+
+Pre-work: 4 parallel Explore agents gathered full tournament history for Brazil, Norway, Mexico, England
+before any live data was fetched (see chat summary). Key carried-forward lessons: never override a
+researched estimate with gut conviction (BRA-MAR Q8, -51.97); don't assume a blowout suppresses the
+losing team's own stats (Haiti/Scotland precedent); don't under-anchor a team's ceiling to their weakest
+opponent (Norway's own lesson); WINNING_PATTERNS_SYNTHESIS.md Cluster-B discipline (never blend a
+favorite's own SOT threshold upward from a thin market).
+
+--- ESPN DATA (4 games each) ---
+BRAZIL: D1-1 MAR, W3-0 HAI, W3-0 SCO (away), W2-1 JPN (R32). Won Group C, GD+6.
+  Vinícius: goals 1,1,2,0 (blanked only vs Japan, toughest opponent). Cunha now 1st-choice CF (2,1,-,1 SOT
+  across starts), Raphinha out injured since GD3.
+NORWAY: W4-1 IRQ, W3-2 SEN, L1-4 FRA, W2-1 CIV (R32, confirmed win via fresh fetch -- our own file had
+  this outcome unrecorded). Haaland DNP vs France (full rest), scored in all 3 games he played incl. the
+  R32 knockout game (2,2,-,1). Ødegaard: 0 goals but assisted in all 3 games played (100%), all vs weaker
+  opposition than Brazil.
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45166893, 177 markets.
+FTR: Brazil 54.2%, Draw 25.81%, Norway 20% -- genuinely competitive, RULE7 inactive, RULE8 borderline fires.
+BRA SOT OU4.5 Over=57.7% -> lambda=5.10 -> P(6+)=40.2%; Brazil's own empirical avg=6.5 -> P(6+)=63.1%.
+  DELIBERATELY stayed at market (0.41) per WINNING_PATTERNS_SYNTHESIS.md's 0-for-5 track record on
+  blending team SOT thresholds upward.
+NOR SOT OU3.5 Over=57.79% -- exact match for the "4+ SOT" question, trusted directly.
+Brazil corners OU5.5 Over=49.25% -- exact match for "6+ corners". Cards OU3.5 Over=38.01%.
+Both teams carded: no direct market -- P(BRA>=1)=1-e^-1.75=0.826, P(NOR>=1)=1-e^-0.5=0.393, product=0.325.
+To_qualify Brazil=69.93%. Exact-goals "2"=22.83%. Penalty shootout=14.28%. HT Draw=41.5%.
+Highest scoring half Second Half=45.89%.
+
+Player markets:
+  Vinicius anytime scorer: mid=37.75% (liquid) -- modest bump to 0.40, blanked vs their toughest opponent (Japan)
+  Haaland anytime scorer: mid=40.98% (liquid) -- meaningful bump to 0.55, scored in literally every appearance
+    including the R32 knockout game (real regime coverage, unlike a group-stage-only streak)
+  Ødegaard score or assist: mid=25.42% (liquid) -- modest bump to 0.36, 100% assist rate but untested vs elite opposition
+  Cunha SOT OU0.5: mid=56.52% (liquid) -- trusted close to market at 0.58, matches his record as full-time starter
+
+--- RULES CHECKED ---
+RULE1: market primary source | RULE6: clear, 0.14-0.70 | RULE7: inactive | RULE8: borderline fires
+WINNING_PATTERNS_SYNTHESIS discipline: applied to Q14 (Brazil 6+ SOT), explicitly NOT repeating the
+  Cluster-B mistake despite a real market-vs-empirical gap.
+
+--- FINAL ESTIMATES ---
+Q1 (Vinicius scores): 0.40 | Q2 (Haaland scores): 0.55 | Q3 (Ødegaard score/assist): 0.36
+Q4 (Cunha 1+SOT): 0.58 | Q5 (Brazil advance QF): 0.70 | Q6 (pen shootout): 0.14
+Q7 (exactly 2 goals): 0.23 | Q8 (BTTS): 0.61 | Q9 (Brazil 6+corners): 0.49
+Q10 (4+cards): 0.38 | Q11 (Norway 4+SOT): 0.58 | Q12 (tied HT): 0.42
+Q13 (2nd half more goals): 0.46 | Q14 (Brazil 6+SOT): 0.41 | Q15 (both teams carded): 0.33
+
+Output: matches/Brazil_vs_Norway/{01-05}.json

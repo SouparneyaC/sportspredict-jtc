@@ -1,0 +1,33 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Portugal vs Spain",
+  "date": "2026-07-06",
+  "actual_score": "Portugal 0-1 Spain",
+  "match_rbp_total": 85.41,
+  "questions_beat_crowd": 13,
+  "questions_below_crowd": 2,
+  "question_results": [
+    {"text": "Will Cristiano Ronaldo (Portugal) score a goal?", "our_estimate": 0.32, "crowd_estimate": 0.37, "outcome": "NO", "rbp": 13.92, "beat_crowd": true},
+    {"text": "Will Lamine Yamal (Spain) score or assist a goal?", "our_estimate": 0.30, "crowd_estimate": 0.51, "outcome": "NO", "rbp": 38.48, "beat_crowd": true, "note": "Biggest win. Cluster-A suppression validated again - real score/assist rate (~25%) beat the market's reputation-driven 51%."},
+    {"text": "Will Spain advance to the quarterfinals?", "our_estimate": 0.66, "crowd_estimate": 0.64, "outcome": "YES", "rbp": 6.92, "beat_crowd": true},
+    {"text": "Will Bruno Fernandes (Portugal) have 1 or more shots on target?", "our_estimate": 0.58, "crowd_estimate": 0.53, "outcome": "NO", "rbp": -4.77, "beat_crowd": false, "note": "The one miss on the two boosted floor calls. We pushed above market (0.35->0.58) based on his 75% historical 1+SOT rate, but Spain's dominant possession/service starvation broke his floor entirely (0 SOT). Small loss, but a real lesson: a personal floor built from n=4 games can still break when the opponent-quality regime shifts the whole game state (Portugal had far less service/build-up than in his other 3 games)."},
+    {"text": "Will both halves have the same number of goals?", "our_estimate": 0.25, "crowd_estimate": 0.31, "outcome": "NO", "rbp": 10.49, "beat_crowd": true},
+    {"text": "Will the first card be shown before the first goal?", "our_estimate": 0.30, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -43.96, "beat_crowd": false, "note": "Biggest loss of the match, and the biggest single-question loss of the whole campaign so far. Our base rate was built from only 4 recent games (1/4 hit). Crowd's 0.50 was much better calibrated - suggests the crowd has a broader implicit prior on card-timing distributions that a 4-game sample can't approximate. This question TYPE (event-ordering / timing-race questions) is now flagged as a genuine soft spot for our base-rate-from-small-n approach."},
+    {"text": "Will Portugal score the first goal?", "our_estimate": 0.36, "crowd_estimate": 0.38, "outcome": "NO", "rbp": 7.26, "beat_crowd": true},
+    {"text": "Will the match have 3 or more total goals?", "our_estimate": 0.52, "crowd_estimate": 0.53, "outcome": "NO", "rbp": 6.79, "beat_crowd": true},
+    {"text": "Will Diogo Costa (Portugal) make 4 or more saves?", "our_estimate": 0.50, "crowd_estimate": 0.51, "outcome": "YES", "rbp": 2.62, "beat_crowd": true, "note": "Regime-coverage read was correct - Spain's dominant, high-SOT attack pushed Costa's saves into the high end of his bimodal range as predicted."},
+    {"text": "Will a substitute score a goal?", "our_estimate": 0.33, "crowd_estimate": 0.32, "outcome": "YES", "rbp": 7.34, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.40, "crowd_estimate": 0.45, "outcome": "NO", "rbp": 13.59, "beat_crowd": true},
+    {"text": "Will there be 9 or more total substitutions?", "our_estimate": 0.58, "crowd_estimate": 0.56, "outcome": "YES", "rbp": 11.39, "beat_crowd": true, "note": "The knockout-stage substitution-count precedent (9,10,8,8 from the last 4 games) paid off cleanly."},
+    {"text": "Will Spain have 6 or more corner kicks?", "our_estimate": 0.54, "crowd_estimate": 0.54, "outcome": "YES", "rbp": 3.97, "beat_crowd": true},
+    {"text": "Will the match go to extra time?", "our_estimate": 0.27, "crowd_estimate": 0.32, "outcome": "NO", "rbp": 11.31, "beat_crowd": true},
+    {"text": "Will any Portugal player have 2 or more shots on target?", "our_estimate": 0.52, "crowd_estimate": 0.57, "outcome": "YES", "rbp": 0.06, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "Biggest win: Yamal score-or-assist NO (+38.48) - Cluster-A player-drought suppression, now validated across virtually every match this tournament.",
+    "Biggest loss: first-card-before-first-goal YES (-43.96) - a novel event-ordering question type where our n=4 base rate badly underperformed the crowd's 0.50. New flagged soft spot: timing-race/event-ordering questions need either a much larger historical sample or explicit deference to the crowd rather than a thin base rate.",
+    "Secondary miss: Bruno Fernandes 1+ SOT NO (-4.77) - the only case this tournament where 'trust the player's own floor over the market' backfired, because Spain's suffocating possession changed Portugal's entire service pattern, not just Bruno's individual form. Floor/ceiling patterns from a player's own history still need an opponent-quality regime check, in both directions (suppression AND boosting).",
+    "Diogo Costa 4+ saves (+2.62) confirmed the regime-coverage read: bimodal history correctly identified Spain as a 'high-saves' trigger.",
+    "13/15 beat crowd, +85.41 total - one of the strongest results of the tournament, in the same tier as Brazil-Norway and France-Paraguay."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "_description": "Final pricing estimates for Spain vs Belgium QF (2026-07-10, closes 23:00 UTC). Model-only pricing -- no crowd consensus, no Smarkets/market data used, both excluded by explicit instruction. This is a departure from the project's usual RULE1 (avg crowd+market) anchor -- every estimate here is either a direct model output or an explicitly-reasoned judgment call, documented in 03_model_derivations.json and 04_rules_applied.json.",
+  "match_id": "5da5b95b-4b52-4b16-8b8d-dd9547f749ca",
+  "estimates": [
+    {"market_id": "00d625f6-1be3-419d-907c-204920399eeb", "question": "Will Spain advance to the semifinals?", "estimate": 0.76},
+    {"market_id": "7dd8a63b-88ca-473d-a94d-939fadcd1de8", "question": "Will the match be tied at halftime?", "estimate": 0.40},
+    {"market_id": "c10a88a6-f915-44e7-a7cd-8cf17d2a2a26", "question": "Will Belgium hold a lead at any point in regulation (excl. shootout)?", "estimate": 0.32},
+    {"market_id": "bf062c09-af08-4f13-8b33-69a009048dbe", "question": "Will either team make a substitution at halftime?", "estimate": 0.55},
+    {"market_id": "282943c0-e33e-4914-80f1-7934fbd0e095", "question": "Will a goal be scored before the first hydration break?", "estimate": 0.46},
+    {"market_id": "459e24e0-8c82-40a5-850b-3f8b1d5bf559", "question": "Will a goal be scored after the second hydration break but before end of regulation?", "estimate": 0.48},
+    {"market_id": "52cdaaf7-cdef-4784-a488-7cbf7d32eb45", "question": "Will both teams score in regulation?", "estimate": 0.43},
+    {"market_id": "48c69f61-3761-4cb9-aa73-602c4f238576", "question": "Will Lamine Yamal score or assist a goal?", "estimate": 0.27},
+    {"market_id": "fa70ca3e-68b4-4985-bacf-4b862bd2ca97", "question": "Will Kevin De Bruyne have 1+ SOT?", "estimate": 0.45},
+    {"market_id": "fe437409-8270-4c4b-be65-329d68a43da4", "question": "Will Romelu Lukaku have 1+ SOT?", "estimate": 0.46},
+    {"market_id": "4efded96-ea08-4bbd-bcf6-558547a90627", "question": "Will Spain have 5+ SOT?", "estimate": 0.60},
+    {"market_id": "5999bdbf-34d8-4f2c-a100-3dbd879867ff", "question": "Will Belgium have 3+ SOT?", "estimate": 0.85},
+    {"market_id": "7d855e3c-44ca-4134-95f8-7d9f542a35e4", "question": "Will Spain have 6+ corner kicks?", "estimate": 0.62},
+    {"market_id": "7e65476b-18c5-4c20-91d9-a746b6598dd3", "question": "Will there be 4+ total cards?", "estimate": 0.30},
+    {"market_id": "666b76a3-006b-4f12-a529-1d2b7242a71f", "question": "Will a penalty kick be awarded OR a red card be shown?", "estimate": 0.33}
+  ]
+}

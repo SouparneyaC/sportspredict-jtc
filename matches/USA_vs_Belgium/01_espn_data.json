@@ -1,0 +1,27 @@
+{
+  "_description": "ESPN team/player data for USA and Belgium across all 4 games played so far (3 group + R32 knockout)",
+  "match": "USA vs Belgium",
+  "round": "Round of 16",
+  "date": "2026-07-07",
+  "usa_games": [
+    {"opponent": "Paraguay", "result": "4-1", "team_sot": 6, "team_shots": 16, "corners": 3, "yc": 1, "offsides": 2, "pulisic": {"g":0,"sot":0,"shots":0,"a":1,"subbedOut":"45'"}, "tillman": {"g":0,"sot":2,"shots":5,"a":1}},
+    {"opponent": "Australia", "result": "2-0", "team_sot": 2, "team_shots": 10, "corners": 7, "yc": 3, "offsides": 1, "pulisic": "did not play", "tillman": {"g":0,"sot":0,"shots":0}},
+    {"opponent": "Turkey", "result": "2-3 (loss)", "team_sot": 7, "team_shots": 18, "corners": 9, "yc": 1, "offsides": 5, "pulisic": {"g":0,"sot":2,"shots":3,"subbedIn":"58'","starter":false}, "tillman": {"g":0,"sot":0,"shots":0,"starter":false}},
+    {"opponent": "Bosnia (R32)", "result": "2-0", "team_sot": 2, "team_shots": 8, "corners": 4, "yc": 0, "rc": 1, "offsides": 3, "pulisic": {"g":0,"sot":0,"shots":1,"subbedOut":"88'"}, "tillman": {"g":1,"sot":1,"shots":2}}
+  ],
+  "belgium_games": [
+    {"opponent": "Egypt", "result": "1-1", "team_sot": 3, "team_shots": 15, "corners": 2, "yc": 2, "offsides": 0, "de_bruyne": {"g":0,"sot":1,"shots":4,"subbedOut":true}, "trossard": {"g":0,"sot":0,"shots":3}, "lukaku": {"g":0,"sot":0,"shots":2,"subbedIn":true,"starter":false}},
+    {"opponent": "Iran", "result": "0-0", "team_sot": 7, "team_shots": 23, "corners": 4, "yc": 1, "rc": 1, "offsides": 3, "de_bruyne": {"g":0,"sot":1,"shots":5,"subbedOut":true}, "trossard": {"g":0,"sot":0,"shots":1}, "lukaku": {"g":0,"sot":0,"shots":1,"subbedOut":true}},
+    {"opponent": "New Zealand", "result": "5-1", "team_sot": 10, "team_shots": 35, "corners": 8, "yc": 0, "offsides": 1, "de_bruyne": {"g":1,"sot":2,"shots":7,"subbedOut":true}, "trossard": {"g":2,"sot":2,"shots":7,"subbedOut":true}, "lukaku": {"g":1,"sot":1,"shots":1,"a":1,"subbedIn":true,"starter":false}},
+    {"opponent": "Senegal (R32)", "result": "3-2", "team_sot": 5, "team_shots": 19, "corners": 4, "yc": 1, "offsides": 2, "de_bruyne": {"g":0,"sot":0,"shots":2,"subbedOut":true}, "trossard": {"g":0,"sot":1,"shots":2,"a":1,"subbedOut":true}, "lukaku": {"g":1,"sot":1,"shots":1,"subbedIn":true,"starter":false}}
+  ],
+  "key_findings": [
+    "Christian Pulisic: ZERO goals across all 4 USA games this tournament. Heavily rotated in group stage (subbed at HT vs Paraguay, benched entirely vs Australia, came off bench vs Turkey), started and played to 88' in the one knockout game (R32 vs Bosnia) but produced almost nothing (0 SOT, 1 shot). Clean drought signal on the goalscorer question.",
+    "Kevin De Bruyne: 1 goal in 4 games, and it came only against the weakest opponent (New Zealand, 5-1 blowout). ZERO assists in any of the 4 games. Subbed out early in every single game so far. Strong suppression signal.",
+    "Leandro Trossard: scored a brace vs New Zealand (blowout) but 0 goals in the other 3 games (Egypt, Iran, Senegal) despite reasonable shot volume. NZL game is the outlier, not the template - same 'Ghana-analogy' risk as prior matches.",
+    "Romelu Lukaku: has NOT started a single game, always an impact substitute, but has scored in his last 2 appearances (NZL blowout AND vs Senegal, a real competitive knockout match) - 2 goals from 2 shots. Genuine current hot streak, not a reputation-vs-reality gap, though sample is tiny.",
+    "Malik Tillman: SOT = [2,0,0,1] across 4 games - hit 1+ SOT in 2/4 (50%), matches market pricing closely.",
+    "USA offsides history: [2,1,5,3] avg 2.75/game. Belgium offsides: [0,3,1,2] avg 1.5/game. Combined implies ~4.25 total per game.",
+    "Substitution counts in regulation (same knockout-stage pattern as POR-ESP): USA-BIH=8, BEL-SEN=8 in their most recent R32 games."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "_description": "ESPN team/player stats for Canada (3 group games + R32) and Morocco (3 group games + R32), R16 CAN vs MAR 2026-07-04. Using all 4 games since both teams have now played an R32 match -- most recent form weighted alongside group stage.",
+  "espn_event_id": 760502,
+  "canada_matches": {
+    "team_id_espn": 206,
+    "matches": [
+      {"opponent": "Bosnia-Herzegovina", "stage": "GS", "result": "D 1-1", "possession_pct": 61.1, "shots": 13, "sot": 4, "corners": 9, "yc": 2, "rc": 0, "offsides": 1, "fouls": 10},
+      {"opponent": "Qatar", "stage": "GS", "result": "W 6-0", "possession_pct": 79.0, "shots": 32, "sot": 10, "corners": 19, "yc": 1, "rc": 0, "offsides": 1, "fouls": 9, "note": "Qatar had 2 red cards -- extreme blowout outlier, not representative"},
+      {"opponent": "Switzerland", "stage": "GS", "result": "L 1-2", "possession_pct": 44.7, "shots": 13, "sot": 7, "corners": 7, "yc": 2, "rc": 0, "offsides": 3, "fouls": 13},
+      {"opponent": "South Africa", "stage": "R32", "result": "W 1-0", "possession_pct": 41.6, "shots": 12, "sot": 7, "corners": 4, "yc": 2, "rc": 0, "offsides": 0, "fouls": 16}
+    ],
+    "averages_all4": {"shots": 17.5, "sot": 7.0, "corners": 9.75, "yc": 1.75, "offsides": 1.25},
+    "averages_group_only": {"shots": 19.33, "sot": 7.0, "corners": 11.67, "yc": 1.67, "offsides": 1.67},
+    "notes": [
+      "SOT floor is remarkably consistent and high: 4, 10, 7, 7 across all 4 games -- NEVER below 4 SOT in any match, including their loss to Switzerland and their tense R32 win over South Africa. This looks like a durable shot-creation trait, not opponent-dependent variance.",
+      "Jonathan David: goals 0, 3, 0, 0 -- all 3 group goals came in the Qatar blowout (Qatar had 2 red cards, extreme outlier). Zero goals in 3 'normal' competitive games (BIH draw, SUI loss, RSA R32 win).",
+      "Alphonso Davies: appearances 0, 0, 0, 1 -- did NOT PLAY AT ALL in the first 3 group games (not benched-with-cameo, literally zero minutes recorded). First appearance of the tournament was a substitute cameo vs South Africa, recording 0 shots. Likely returning from injury/rotation -- his involvement level and output are both extremely uncertain for this match."
+    ]
+  },
+  "morocco_matches": {
+    "team_id_espn": 2869,
+    "matches": [
+      {"opponent": "Brazil", "stage": "GS", "result": "D 1-1", "possession_pct": 48.6, "shots": 14, "sot": 3, "corners": 2, "yc": 0, "rc": 0, "offsides": 1, "fouls": 14},
+      {"opponent": "Scotland", "stage": "GS", "result": "W 1-0", "possession_pct": 58.9, "shots": 12, "sot": 2, "corners": 5, "yc": 1, "rc": 0, "offsides": 0, "fouls": 8},
+      {"opponent": "Haiti", "stage": "GS", "result": "W 4-2", "possession_pct": 69.1, "shots": 22, "sot": 11, "corners": 9, "yc": 0, "rc": 0, "offsides": 5, "fouls": 10},
+      {"opponent": "Netherlands", "stage": "R32", "result": "D 1-1 (won on pens/ET)", "possession_pct": 70.1, "shots": 11, "sot": 5, "corners": 8, "yc": 1, "rc": 0, "offsides": 0, "fouls": 15}
+    ],
+    "averages_all4": {"shots": 14.75, "sot": 5.25, "corners": 6.0, "yc": 0.5, "offsides": 1.5},
+    "averages_group_only": {"shots": 16.0, "sot": 5.33, "corners": 5.33, "yc": 0.33, "offsides": 2.0},
+    "notes": [
+      "Very clean disciplinary record: 0.5 YC/game across 4 games -- consistently low-card team.",
+      "Achraf Hakimi: goals 0,0,1,0; assists 0,0,1,0 -- both involvements came in the same Haiti blowout game. Zero production in the 3 more competitive games (BRA, SCO, NED R32).",
+      "Ismael Saibari: goals 1,1,1,0 -- scored in 3 straight group games (vs BRA, SCO, HAI) but blanked (0 shots) in the R32 game vs Netherlands, his highest-quality opponent to date. Direct precedent: NED-MAR Q11 (Saibari score-or-assist) priced 0.32 vs crowd 0.35, outcome NO, +8.0 RBP -- confirms he's Morocco's primary channel but not automatic.",
+      "Brahim Díaz: SOT 1,0,0,0 across 4 games -- only 1 shot on target in the ENTIRE tournament so far despite starting every game. A much weaker underlying signal than his general 'creative Morocco starter' profile would suggest."
+    ]
+  }
+}

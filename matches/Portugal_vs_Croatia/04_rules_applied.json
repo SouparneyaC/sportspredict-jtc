@@ -1,0 +1,132 @@
+{
+  "_description": "Rules applied per question for Portugal vs Croatia 2026-07-02",
+  "match_context": {
+    "portugal_win_prob": 0.5797,
+    "draw_prob": 0.2581,
+    "croatia_win_prob": 0.164,
+    "lambda_portugal": 1.933,
+    "lambda_croatia": 0.998,
+    "rule7_fires": false,
+    "rule8_fires": true,
+    "rule8_note": "Draw 25.81% \u2265 25%. In practice, most Q here are direct market reads or counts, not 'more than' comparisons. Minor shading applied where relevant."
+  },
+  "per_question": [
+    {
+      "q": 1,
+      "tier": "PLAYER_LIQUID",
+      "rules": [],
+      "estimate": 0.417,
+      "note": "Ronaldo top shooter all 3 POR group games (3,7,3 shots). Liquid market mid 0.4168 used directly."
+    },
+    {
+      "q": 2,
+      "tier": "PLAYER_ILLIQUID",
+      "rules": [
+        "RULE_ILLIQUID_0.945"
+      ],
+      "estimate": 0.215,
+      "note": "SOT OU1.5 Bruno Fernandes offer=0.2273 \u00d70.945=0.215. Cross-check from OU0.5 Poisson: 0.220. Consistent."
+    },
+    {
+      "q": 3,
+      "tier": "PLAYER_ILLIQUID",
+      "rules": [
+        "RULE_ILLIQUID_0.945"
+      ],
+      "estimate": 0.22,
+      "note": "Modric S+A offer=0.2326 \u00d70.945=0.220. Modric not top shooter any game; role is playmaker. \u03bb_modric_SA from Croatia \u03bb\u00d70.22 = 0.22."
+    },
+    {
+      "q": 4,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.447,
+      "note": "OU2.5 Under mid=0.4466 = P(\u22642 goals). Direct."
+    },
+    {
+      "q": 5,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.417,
+      "note": "Croatia SOT OU3.5 Over mid=0.4167. ESPN: Croatia had 5 SOT vs ENG and 4 vs GHA, only 2 vs PAN."
+    },
+    {
+      "q": 6,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.322,
+      "note": "Cards OU3.5 Over market mid=0.3216. Portugal group YC: 3,1,0. Croatia: 0,1,1. Combined avg 2.0. Market prices knockout premium."
+    },
+    {
+      "q": 7,
+      "tier": "TEAM_MODEL",
+      "rules": [
+        "RULE8_MINOR"
+      ],
+      "estimate": 0.55,
+      "note": "P(POR\u22651 card)=0.696 \u00d7 P(CRO\u22651 card)=0.789 = 0.549. RULE8 flag: competitive match, both teams likely to foul. Keep 0.550."
+    },
+    {
+      "q": 8,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.486,
+      "note": "Portugal corners OU5.5 Over=0.4858. ESPN: Portugal corners [5,3,2] avg=3.33 in group, but market expects more in this matchup."
+    },
+    {
+      "q": 9,
+      "tier": "DIRECT",
+      "rules": [
+        "RULE8_CONFIRMS"
+      ],
+      "estimate": 0.395,
+      "note": "HT result Draw mid=0.3953. RULE8 fires \u2192 elevated draw probability is already priced. Use direct."
+    },
+    {
+      "q": 10,
+      "tier": "TEAM_MODEL",
+      "rules": [
+        "RULE12_FLAG"
+      ],
+      "estimate": 0.365,
+      "note": "Portugal SOT OU4.5\u2192Poisson \u03bb=4.894\u2192P(SOT\u22656)=0.365. RULE12: bimodal SOT (9,1,2), removing UZB drops avg to 1.5. Market anchor used over ESPN raw avg."
+    },
+    {
+      "q": 11,
+      "tier": "PLAYER_ILLIQUID",
+      "rules": [
+        "RULE_ILLIQUID_0.945"
+      ],
+      "estimate": 0.363,
+      "note": "Bernardo Silva SOT OU0.5 offer=0.3846 \u00d70.945=0.363. He takes smaller share of POR shots vs Ronaldo dominance."
+    },
+    {
+      "q": 12,
+      "tier": "TEAM_MODEL",
+      "rules": [],
+      "estimate": 0.34,
+      "note": "No direct header market. Aggregated illiquid header scorer offers: Ronaldo(0.124)+Ramos(0.128)+Budimir(0.101)+others(0.10) \u2192 P(any header)=0.382. Shaded to 0.340 for illiquid bias."
+    },
+    {
+      "q": 13,
+      "tier": "TEAM_MODEL",
+      "rules": [],
+      "estimate": 0.75,
+      "note": "Total shots \u03bb=22.9 (from POR OU14.5 and CRO OU8.5 market fits). P(\u226520|\u03bb=22.9)=0.756. Conservative shade to 0.750."
+    },
+    {
+      "q": 14,
+      "tier": "TEAM_MODEL",
+      "rules": [],
+      "estimate": 0.37,
+      "note": "P(pen OR RC) = P(pen=0.2687) + P(RC=0.1376) - P(both\u22480.037) = 0.369. Round to 0.370."
+    },
+    {
+      "q": 15,
+      "tier": "DIRECT",
+      "rules": [],
+      "estimate": 0.727,
+      "note": "To_qualify Portugal mid=0.7273. FTR Portugal win (57.97%) + P(advance via ET/PK) = 72.73%."
+    }
+  ]
+}

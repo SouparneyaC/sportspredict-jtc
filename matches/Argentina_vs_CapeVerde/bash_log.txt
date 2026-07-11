@@ -1,0 +1,60 @@
+=== ARGENTINA vs CAPE VERDE — FULL SESSION LOG ===
+Date: 2026-07-03
+Match: ARG vs CPV, R32 WC2026
+ESPN Event ID: 760500
+Smarkets Event ID: 45159764
+
+--- ESPN GROUP STAGE DATA ---
+Fetched raw ESPN summaries for 6 group games (ARG vs ALG/AUT/JOR; CPV vs ESP/URU/SAU).
+
+ARGENTINA: perfect record (3W, 9pts), 8 goals for / 1 against. shots avg=11.33, SOT avg=5.0, corners avg=3.0.
+  Messi scored 6 of Argentina's 8 goals (hat-trick vs ALG, brace vs AUT, 1 off the bench vs JOR). SOT 4/4/1.
+  Lautaro: 1 goal in 3 (penalty vs JOR only, 0 open play). Alvarez: 0G/0A in 3, benched 2 of 3 games.
+CAPE VERDE: unbeaten (3D, 3pts) as a best-third-place qualifier. shots avg=11.0, SOT avg=2.33.
+  Extremely resilient low-block defense: clean sheets vs Spain (74% opp poss, 27 shots against) and Saudi Arabia.
+  Their Spain game is the closest quality-comparable to today: only 1 SOT, 6 shots, 25.7% possession, 1 foul all match.
+
+--- SMARKETS DATA ---
+API: https://api.smarkets.com/v3, Event 45159764, 165 markets.
+FTR: ARG 85.48%, Draw 10.99%, CPV 3.51% -- most lopsided favorite of the campaign so far.
+Elo cross-check: ARG 2189.53 vs CPV 1653.45 (diff=536) -> ~95.6% two-outcome, agrees directionally.
+Cards OU2.5 Over=51.92%, Corners (total) OU8.5 Over=52.41%, ARG corners OU6.5 Over=49.25%
+ARG SOT OU6.5 Over=46.01% -> lambda=6.415 -> P(8+)=31.5%
+CPV SOT OU1.5 Over=51.36% (raw) -- shaded for RULE15 Scenario A, see below
+Team score first: ARG 82.85%. HT result: ARG 67.12%. ARG clean sheet: 66.71%.
+Total shots OU22.5 came back with IDENTICAL bid/offer on both sides (0.4505/0.5556) -- flagged as thin/artifactual,
+  used Poisson fit from this line instead (lambda=22.70 -> P(22+)=58.7%).
+
+Player markets:
+  Messi SOT OU2.5 (3+): market mid=46.04%, but his own group avg is exactly 3.0 SOT/game (4,4,1) -> raw Poisson=57.7%. Blended 0.52.
+  Messi anytime scorer=62.5%, 2+ goals=24.7%, hat-trick=9.3% (not asked in these 15 Qs, logged for reference)
+  Lautaro anytime scorer=47.73% (liquid) -- trimmed to 0.45 given 0 open-play goals in 3 group games
+  Alvarez anytime scorer: illiquid, offer=50% (contract name "Julian Alvarez", no accent)
+  Alvarez score-or-assist: illiquid, offer=68.97% x0.945=65.18% -- trimmed to 0.58 given 0G/0A group record + bench role
+
+--- RULES CHECKED ---
+RULE1: market primary source (no crowd data pre-submission)
+RULE6: clear, all estimates 0.32-0.86
+RULE7: FIRES HARD (CPV win 3.51%, most extreme underdog price this campaign)
+RULE8: INACTIVE (draw 10.99% << 25%)
+RULE15: FIRES Scenario A for Q6 (CPV SOT) -- shaded down using the Spain-game precedent as the best analog
+RULE12: flagged Lautaro (Q4) and Alvarez (Q10) for thin/poor group-stage production despite favorable team context
+
+--- FINAL ESTIMATES ---
+Q1 (ARG win regulation): 0.86 [DIRECT]
+Q2 (Messi 3+ SOT): 0.50 [PLAYER_LIQUID, blended w/ ESPN]
+Q3 (goal before 1st hydration break): 0.52 [TIMING_WITH_MARKET]
+Q4 (Lautaro scores): 0.45 [PLAYER_LIQUID, RULE12 trim]
+Q5 (ARG clean sheet): 0.67 [DIRECT]
+Q6 (CPV 2+ SOT): 0.40 [TEAM_MODEL, RULE15 suppression]
+Q7 (ARG 3+ goals): 0.50 [DIRECT]
+Q8 (ARG scores both halves): 0.53 [DIRECT]
+Q9 (ARG 8+ SOT): 0.32 [TEAM_MODEL]
+Q10 (Alvarez score or assist): 0.58 [PLAYER_ILLIQUID, RULE12 trim]
+Q11 (3+ total cards): 0.52 [DIRECT]
+Q12 (ARG scores first): 0.83 [DIRECT]
+Q13 (ARG 8+ corners): 0.35 [TEAM_MODEL]
+Q14 (ARG ahead at HT): 0.67 [DIRECT]
+Q15 (22+ total shots): 0.59 [TEAM_MODEL, market side flagged thin]
+
+Output: matches/Argentina_vs_CapeVerde/{01-05}.json

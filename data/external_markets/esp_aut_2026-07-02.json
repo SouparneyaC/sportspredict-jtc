@@ -1,0 +1,94 @@
+{
+  "_description": "Pre-match pricing for Spain vs Austria 2026-07-02 (R32 WC2026)",
+  "match": "Spain vs Austria",
+  "date": "2026-07-02",
+  "smarkets_event": 45161536,
+  "espn_event": 760497,
+  "ftr": {
+    "Spain": 0.7663,
+    "Draw": 0.164,
+    "Austria": 0.0728
+  },
+  "lambda_goals": {
+    "Spain": 2.347,
+    "Austria": 0.641
+  },
+  "questions": [
+    {
+      "q": 1,
+      "estimate": 0.465,
+      "tier": "PLAYER_LIQUID"
+    },
+    {
+      "q": 2,
+      "estimate": 0.454,
+      "tier": "PLAYER_LIQUID"
+    },
+    {
+      "q": 3,
+      "estimate": 0.2,
+      "tier": "PLAYER_ILLIQUID"
+    },
+    {
+      "q": 4,
+      "estimate": 0.577,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 5,
+      "estimate": 0.759,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 6,
+      "estimate": 0.294,
+      "tier": "TEAM_MODEL"
+    },
+    {
+      "q": 7,
+      "estimate": 0.18,
+      "tier": "TEAM_MODEL"
+    },
+    {
+      "q": 8,
+      "estimate": 0.429,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 9,
+      "estimate": 0.56,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 10,
+      "estimate": 0.447,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 11,
+      "estimate": 0.477,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 12,
+      "estimate": 0.254,
+      "tier": "DIRECT"
+    },
+    {
+      "q": 13,
+      "estimate": 0.55,
+      "tier": "TEAM_MODEL"
+    },
+    {
+      "q": 14,
+      "estimate": 0.519,
+      "tier": "TIMING_EARLY"
+    },
+    {
+      "q": 15,
+      "estimate": 0.766,
+      "tier": "DIRECT"
+    }
+  ],
+  "post_match_results": null
+}

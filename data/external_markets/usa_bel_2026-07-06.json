@@ -1,0 +1,148 @@
+{
+  "match": "USA-BEL",
+  "date": "2026-07-06",
+  "stage": null,
+  "post_match_results": {
+    "final_score": "United States 1 - 4 Belgium",
+    "total_rbp": 114.47,
+    "beat_crowd_count": "11/15",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "Will Christian Pulisic (United States) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.16,
+        "crowd": 0.32,
+        "outcome": 0,
+        "rbp": 20.56,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will Kevin De Bruyne (Belgium) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.24,
+        "crowd": 0.36,
+        "outcome": 0,
+        "rbp": 20.47,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Belgium advance to the quarterfinals?",
+        "us": 0.46,
+        "crowd": 0.51,
+        "outcome": 1,
+        "rbp": -3.73,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will Malik Tillman (United States) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+        "us": 0.52,
+        "crowd": 0.49,
+        "outcome": 1,
+        "rbp": 11.3,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will Leandro Trossard (Belgium) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.15,
+        "crowd": 0.29,
+        "outcome": 0,
+        "rbp": 17.31,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will Romelu Lukaku (Belgium) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+        "us": 0.3,
+        "crowd": 0.34,
+        "outcome": 1,
+        "rbp": -5.51,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+        "us": 0.62,
+        "crowd": 0.59,
+        "outcome": 1,
+        "rbp": 7.35,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will the match be tied at halftime?",
+        "us": 0.42,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": 5.38,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will there be 4 or more total cards shown in regulation (90 minutes + stoppage time)?",
+        "us": 0.43,
+        "crowd": 0.45,
+        "outcome": 0,
+        "rbp": 8.52,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will the United States have more shots on target than Belgium in regulation (90 minutes + stoppage time)?",
+        "us": 0.47,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": -2.49,
+        "note": null
+      },
+      {
+        "q": 11,
+        "leaderboard_question": "Will Christian Pulisic (United States) play the entire match in regulation (90 minutes + stoppage time)?",
+        "us": 0.29,
+        "crowd": 0.46,
+        "outcome": 0,
+        "rbp": 32.5,
+        "note": null
+      },
+      {
+        "q": 12,
+        "leaderboard_question": "Will at least one goal be scored in each half in regulation (90 minutes + stoppage time)?",
+        "us": 0.56,
+        "crowd": 0.55,
+        "outcome": 1,
+        "rbp": 6.98,
+        "note": null
+      },
+      {
+        "q": 13,
+        "leaderboard_question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+        "us": 0.58,
+        "crowd": 0.54,
+        "outcome": 1,
+        "rbp": 9.1,
+        "note": null
+      },
+      {
+        "q": 14,
+        "leaderboard_question": "Will there be 10 or more total corner kicks in regulation (90 minutes + stoppage time)?",
+        "us": 0.51,
+        "crowd": 0.51,
+        "outcome": 0,
+        "rbp": 2.75,
+        "note": null
+      },
+      {
+        "q": 15,
+        "leaderboard_question": "Will there be 4 or more offside calls in regulation (90 minutes + stoppage time)?",
+        "us": 0.56,
+        "crowd": 0.46,
+        "outcome": 0,
+        "rbp": -16.01,
+        "note": null
+      }
+    ]
+  }
+}

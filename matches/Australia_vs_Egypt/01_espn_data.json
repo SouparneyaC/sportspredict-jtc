@@ -1,0 +1,42 @@
+{
+  "_description": "ESPN team/player stats for Australia (3 group games) and Egypt (3 group games), R32 AUS vs EGY 2026-07-03",
+  "espn_event_id": 760499,
+  "venue": "AT&T Stadium, Arlington, Texas",
+  "australia_group_stage": {
+    "team_id_espn": 628,
+    "matches": [
+      {"opponent": "Turkey", "ha": "home", "result": "W 2-0", "possession_pct": 28.4, "shots": 9, "sot": 4, "corners": 5, "yc": 0, "rc": 0, "offsides": 1, "fouls": 12},
+      {"opponent": "USA", "ha": "away", "result": "L 0-2", "possession_pct": 38.1, "shots": 5, "sot": 2, "corners": 4, "yc": 4, "rc": 0, "offsides": 0, "fouls": 16},
+      {"opponent": "Paraguay", "ha": "away", "result": "D 0-0", "possession_pct": 56.0, "shots": 12, "sot": 5, "corners": 3, "yc": 1, "rc": 0, "offsides": 0, "fouls": 6}
+    ],
+    "averages": {"shots": 8.67, "sot": 3.67, "corners": 4.0, "yc": 1.67, "offsides": 0.33, "possession_pct": 40.8},
+    "opponent_offsides_against_aus": [3, 1, 0],
+    "notes": [
+      "AUS beat Turkey 2-0 despite being heavily outplayed (28.4% possession, 9 shots vs Turkey's 30) -- clinical counter-attacking win, not a form indicator of general output.",
+      "Lost 0-2 to USA with worst discipline of the three games (4 YC, 16 fouls).",
+      "Best attacking output (12 shots, 5 SOT) came in a scoreless draw vs Paraguay -- did not convert.",
+      "Structurally low shot-volume team (season high 12 shots) relative to Egypt.",
+      "Irankunda: sub at 61' vs TUR, started and subbed at HT vs USA (came back on as a HT sub replacement himself is confusing -- he was subbed OFF at 45' vs USA per keyEvents, then subbed back ON... actually keyEvents show him subbed IN at 45' vs USA replacing Toure), subbed off 84' vs PAR. Rotational/impact role, not an explicit multi-goal source in group stage."
+    ]
+  },
+  "egypt_group_stage": {
+    "team_id_espn": 2620,
+    "matches": [
+      {"opponent": "Belgium", "ha": "away", "result": "D 1-1", "possession_pct": 46.4, "shots": 14, "sot": 3, "corners": 7, "yc": 2, "rc": 0, "offsides": 1, "fouls": 15},
+      {"opponent": "New Zealand", "ha": "away", "result": "W 3-1", "possession_pct": 55.6, "shots": 19, "sot": 7, "corners": 4, "yc": 1, "rc": 0, "offsides": 0, "fouls": 8},
+      {"opponent": "Iran", "ha": "home", "result": "D 1-1", "possession_pct": 61.4, "shots": 15, "sot": 3, "corners": 8, "yc": 3, "rc": 0, "offsides": 0, "fouls": 11}
+    ],
+    "averages": {"shots": 16.0, "sot": 4.33, "corners": 6.33, "yc": 2.0, "offsides": 0.33, "possession_pct": 54.5},
+    "opponent_offsides_against_egy": [0, 3, 3],
+    "notes": [
+      "Egypt unbeaten in group stage (1W 2D), consistently the possession-dominant, higher-shot-volume team in all 3 games.",
+      "SOT bimodal: 3, 7, 3 -- the 7-SOT game vs NZL was a comfortable 3-1 win; competitive draws (BEL, IRN) settled at 3 SOT.",
+      "Salah started and played significant minutes in all 3 games (subbed off 76'/57'/76') but is NOT the subject of any AUS-EGY question.",
+      "Trezeguet: did NOT start any of the 3 group games -- came on as a 76th-minute substitute vs NZL only, unused vs BEL and IRN early stages. Market price for him (see Smarkets) already reflects this bench/impact-sub profile unless R32 lineup rotates him into the XI.",
+      "Two of Egypt's three subs made before the 45' mark were both injury-forced (Ramy Rabia on at 41' vs NZL, Yasser Ibrahim on at 14' vs IRN) -- not tactical."
+    ]
+  },
+  "australia_before_halftime_subs": ["none genuinely before 45' across 3 games (earliest tactical sub was 45' at USA match, itself borderline HT-interval, not in-half)"],
+  "egypt_before_halftime_subs": ["NZL: 41' injury sub (Rabia for Fathy)", "IRN: 14' injury sub (Ibrahim for Abdelmonem)"],
+  "combined_before_halftime_sub_rate": "2 of 6 team-games had a genuine <45' substitution, both injury-forced (not tactical/rotational)"
+}

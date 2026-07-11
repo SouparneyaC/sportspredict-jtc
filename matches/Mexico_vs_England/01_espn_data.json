@@ -1,0 +1,38 @@
+{
+  "_description": "ESPN team/player stats for Mexico (3 group + R32) and England (3 group + R32), R16 MEX vs ENG 2026-07-05/06",
+  "espn_event_id": 760505,
+  "mexico_matches": {
+    "team_id_espn": 203,
+    "matches": [
+      {"opponent": "South Africa", "result": "W 2-0", "shots": 16, "sot": 4, "corners": 3, "yc": 1, "offsides": 1, "fouls": 12},
+      {"opponent": "South Korea", "result": "W 1-0", "shots": 8, "sot": 4, "corners": 1, "yc": 0, "offsides": 3, "fouls": 9},
+      {"opponent": "Czechia", "result": "W 3-0 (away, rotated)", "shots": 11, "sot": 5, "corners": 1, "yc": 1, "offsides": 0, "fouls": 13},
+      {"opponent": "Ecuador", "stage": "R32", "result": "W 2-0", "shots": "20+ combined", "sot": "more than ECU", "corners": "9+ combined", "yc": "4+ combined"}
+    ],
+    "averages_group_only": {"shots": 11.67, "sot": 4.33, "corners": 1.67, "yc": 0.67, "offsides": 1.33},
+    "notes": [
+      "3 clean sheets in 3 group games, won all 4 matches this tournament (2W group before Czechia, +R32). Structurally the LOWEST-CORNER team in the tournament (1.67/game average) -- this is a durable team trait, not variance.",
+      "Raúl Jiménez: scored vs RSA (1G,2SOT,4sh) and vs Ecuador R32 (1G,1SOT,4sh); blanked vs Korea (0G,1SOT,2sh); rested entirely vs Czechia. 2 goals in 3 appearances (67% scoring rate when featured).",
+      "Julián Quiñones: goals in 3 of 4 games (RSA, CZE, ECU), and CRITICALLY has recorded at least 1 shot on target in literally EVERY game this tournament (2,1,1,1 SOT) -- a clean personal floor, not a team-level ceiling projection.",
+      "PRIOR LESSON: Mexico's own SOT ceiling logic (never hit 6 SOT in any group game) correctly won +23.44 RBP on MEX-ECU by pricing BELOW a generous crowd -- validated downward-suppression, the safe direction per WINNING_PATTERNS_SYNTHESIS.md.",
+      "PRIOR MISS: Mexico corners keep being mispriced -- lost -11.80 on 'MEX-ECU 9+ corners' by trusting a market that undershot despite Mexico's own low-corner history; watch for this again today."
+    ]
+  },
+  "england_matches": {
+    "team_id_espn": 448,
+    "matches": [
+      {"opponent": "Croatia", "result": "W 4-2", "shots": 22, "sot": 11, "corners": 8, "yc": 0, "offsides": 0, "fouls": 10},
+      {"opponent": "Ghana", "result": "D 0-0 (major upset as 86% favorite)", "shots": 19, "sot": 3, "corners": 9, "yc": 1, "offsides": 2, "fouls": 14},
+      {"opponent": "Panama", "result": "W 2-0 (away)", "shots": 17, "sot": 6, "corners": 7, "yc": 1, "offsides": 4, "fouls": 13},
+      {"opponent": "Congo DR", "stage": "R32", "result": "W 2-1", "shots": "confirmed 20+", "sot": "confirmed 7+", "corners": "confirmed not below 8", "yc": null, "offsides": "confirmed 4+", "fouls": null}
+    ],
+    "averages_group_only": {"shots": 19.33, "sot": 6.67, "corners": 8.0, "yc": 0.67, "offsides": 2.0},
+    "notes": [
+      "Corners are the single most reliable England structural trait: 8, 9, 7 across all 3 group games -- remarkably consistent regardless of opponent.",
+      "Harry Kane: 4 goals in 4 games (75% scoring rate), blanked only vs Ghana. SOT log: 3,1,2,3 (avg 2.25).",
+      "Jude Bellingham: 2 goals in 4 games. SOT log: 2,0,1,3 -- hit 2+ SOT in exactly 2 of 4 games: the HIGH-scoring Croatia opener AND the deep-block Congo DR R32 game. The one blank was specifically vs Ghana.",
+      "NAMED LESSON (GHA-analogy overfit, confirmed from the England postmortem): twice priced England attacking props DOWN by treating the 0-0 Ghana deep-block performance as the template for how England plays vs defensive opposition, rather than as an outlier/floor. Lost Bellingham 2+SOT (-26.27) and England 7+SOT (-11.36) as a direct result -- England's actual attacking floor vs defensive sides is higher than the Ghana game suggested (they still got 6-7 SOT even vs the deep-block Congo DR side in the very next defensive test). Mexico is a similarly compact, low-corner, defensively organized side -- EXACTLY the profile that could tempt the same overfit again. Correction applied: anchor to the average of all 4 games, not the single worst-case Ghana result.",
+      "Submission-discipline note: the single costliest England result (-44.54) was a straight transcription error (Kane 2H SOT), not a modeling error -- read back Kane/Bellingham numbers carefully before submitting today."
+    ]
+  }
+}

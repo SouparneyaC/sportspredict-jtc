@@ -1,0 +1,35 @@
+{
+  "_description": "Model derivations for Canada vs Morocco 2026-07-04 R16",
+  "lambda_fits": {
+    "total_goals": 2.386,
+    "canada_sot_market_fit": 3.025,
+    "canada_sot_empirical_4game": 7.0,
+    "cards_total": 3.29
+  },
+  "derived_probs": {
+    "p_can_sot_4plus_market_only": 0.358,
+    "p_can_sot_4plus_empirical_only": 0.918,
+    "p_can_sot_4plus_blended": 0.68,
+    "p_cards_4plus": 0.418,
+    "p_pen_or_red": 0.341,
+    "p_goal_before_break_bracket": 0.400,
+    "p_goal_before_break_lambda_scaling": 0.460,
+    "p_goal_before_break_blended": 0.43,
+    "p_exactly_1_goal_poisson_crosscheck": 0.219
+  },
+  "rule_checks": {
+    "RULE1": "market primary source",
+    "RULE6": "clear, all estimates within 0.12-0.71",
+    "RULE7": "borderline INACTIVE -- Canada win=17.39%, just above the 15% threshold",
+    "RULE8": "FIRES -- Draw=28.78% >= 25%. Comparison-type estimates shaded toward 0.50.",
+    "RULE15": "borderline -- Canada win 17.39% is above the 10% Scenario-A floor, so no blanket underdog-forward suppression applied to Jonathan David. Davies' suppression is driven by his OWN literal non-participation data, not team-context blowout logic.",
+    "TEAM_SOT_EMPIRICAL_FLOOR (new, from JULY3 postmortem)": "Canada's SOT market-fit lambda (3.025) is drastically below their own 4-game empirical average (7.0, with a floor of 4 in every single game including a loss and a tense R32 win). This is the exact pattern flagged in the postmortem as costing -35.67 RBP across 4 recent matches when the market fit was trusted over empirical data. Applied here: blended 30% market / 70% empirical -> 0.68, a much higher number than the raw market-fit (0.358) would suggest.",
+    "PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT (new, from JULY3 postmortem)": "Applied to both Davies (0 shots across 4 apps, didn't play at all in 3 of 4 games) and Brahim Díaz (1 SOT in 4 games despite starting every game) -- both discounted well below their market prices (Davies: market 0.274 -> priced 0.12; Díaz: market 0.545 -> priced 0.33) rather than trusting the more generous illiquid/liquid market reads."
+  },
+  "espn_insight": {
+    "canada_sot_floor": "4, 10, 7, 7 -- never below 4 in any of 4 games this tournament, including a loss to Switzerland and a tense 1-0 R32 win. Strong, durable signal independent of opponent quality or game state.",
+    "jonathan_david_goal_concentration": "All 3 group goals came in a single extreme blowout (Qatar, who had 2 red cards). Zero goals in the other 3 competitive games.",
+    "hakimi_involvement_concentration": "Both goal involvements (1G, 1A) came in the same Haiti blowout game. Zero in BRA/SCO/NED.",
+    "saibari_ned_precedent": "Blanked (0 shots) against Netherlands, his toughest opponent to date -- but Canada (17.4% win prob) is a considerably weaker opponent than Netherlands were for Morocco, supporting a reversion toward his earlier group-stage scoring form rather than the NED blank."
+  }
+}

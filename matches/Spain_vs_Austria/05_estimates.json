@@ -1,0 +1,167 @@
+{
+  "_description": "Final probability estimates for Spain vs Austria 2026-07-02 JTC Round of 32",
+  "match": "Spain vs Austria",
+  "date": "2026-07-02",
+  "match_id": "11bcf2a2-6564-4ade-9cf7-43ee2ecbedd1",
+  "total_questions": 15,
+  "questions": [
+    {
+      "q": 1,
+      "market_id": "d7a2e383-f1d2-4330-98fa-3e0be849414a",
+      "question": "Will Lamine Yamal (Spain) have 2 or more shots on target in regulation?",
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.465,
+      "crowd_formula_prediction": 0.493,
+      "key_source": "Smarkets Player_SOT_OU1.5 Yamal liquid mid=0.4652",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 2,
+      "market_id": "15ef3b72-4d19-41b1-8381-7964a9d16bfe",
+      "question": "Will Mikel Oyarzabal (Spain) score a goal in regulation?",
+      "tier": "PLAYER_LIQUID",
+      "estimate": 0.454,
+      "crowd_formula_prediction": 0.486,
+      "key_source": "Smarkets Anytime goalscorer Oyarzabal liquid mid=0.4536",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 3,
+      "market_id": "7c63bc5a-d25a-4f9f-afa8-343c6fa5ebee",
+      "question": "Will Marcel Sabitzer (Austria) score or assist a goal in regulation?",
+      "tier": "PLAYER_ILLIQUID",
+      "estimate": 0.2,
+      "crowd_formula_prediction": 0.331,
+      "key_source": "Smarkets Score_or_assist Sabitzer offer=0.2222 (\u00d70.945=0.210). RULE7+RULE15 shade to 0.200",
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 4,
+      "market_id": "99c182e7-b2aa-40d3-a1fb-dbe304d17754",
+      "question": "Will the match have 3 or more total goals in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.577,
+      "crowd_formula_prediction": 0.561,
+      "key_source": "Smarkets OU2.5 Over mid=0.5765 (model cross-check: Poisson \u03bb=2.988 \u2192 0.574)",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 5,
+      "market_id": "5a166126-68d8-412d-a368-b1d4f94e2d87",
+      "question": "Will Spain score the first goal of the match?",
+      "tier": "DIRECT",
+      "estimate": 0.759,
+      "crowd_formula_prediction": 0.672,
+      "key_source": "Smarkets Team_to_score_first Spain mid=0.7587",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 6,
+      "market_id": "5bc19a3f-7e30-45c8-85eb-c3f9c583c332",
+      "question": "Will Spain have 8 or more shots on target in regulation?",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.294,
+      "crowd_formula_prediction": 0.388,
+      "key_source": "Spain SOT OU6.5 Over=0.4365 \u2192 Poisson fit \u03bb=6.27 \u2192 P(SOT\u22658)=0.294. ESPN: [7,8,1]",
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 7,
+      "market_id": "061aeb81-321a-4deb-8998-e2a1f55a7c4c",
+      "question": "Will Austria have 4 or more shots on target in regulation?",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.18,
+      "crowd_formula_prediction": 0.319,
+      "key_source": "Derived: Austria shots OU6.5\u2192\u03bb_shots=7.09\u2192\u03bb_SOT=2.10\u2192P(SOT\u22654)=0.162. RULE7+RULE15 \u2192 0.180",
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 8,
+      "market_id": "48406c6e-9222-4f1b-b57f-16f979b54cd5",
+      "question": "Will Spain have 7 or more corner kicks in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.429,
+      "crowd_formula_prediction": 0.471,
+      "key_source": "Spain_corners_OU6.5 Over mid=0.4294. ESPN: Spain corners [11,6,6], avg=7.67",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 9,
+      "market_id": "e0c1df27-c528-4f2e-b51f-2ae60b6ab9c8",
+      "question": "Will Spain be ahead at halftime?",
+      "tier": "DIRECT",
+      "estimate": 0.56,
+      "crowd_formula_prediction": 0.551,
+      "key_source": "Smarkets HT result Spain mid=0.5602",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 10,
+      "market_id": "29ee5b9f-5806-46b3-aed3-578cafd33f8b",
+      "question": "Will both teams score in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.447,
+      "crowd_formula_prediction": 0.482,
+      "key_source": "Smarkets BTTS Yes mid=0.4465",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 11,
+      "market_id": "d7655d0b-d218-4ed4-a475-316e3f47b8ca",
+      "question": "Will Spain score in both halves in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.477,
+      "crowd_formula_prediction": 0.5,
+      "key_source": "Smarkets Spain_score_both_halves Yes mid=0.4768",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 12,
+      "market_id": "1df0c901-8c87-4e78-9172-93a7adaeae3d",
+      "question": "Will there be 4 or more total cards in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.254,
+      "crowd_formula_prediction": 0.364,
+      "key_source": "Smarkets Cards OU3.5 Over mid=0.2542. ESPN: Spain avg YC=0.67, Austria avg YC=1.33",
+      "confidence": "HIGH"
+    },
+    {
+      "q": 13,
+      "market_id": "16a5ab92-b3d1-49f9-8de3-f783daf07d02",
+      "question": "Will there be 4 or more offside calls in regulation?",
+      "tier": "TEAM_MODEL",
+      "estimate": 0.55,
+      "crowd_formula_prediction": 0.544,
+      "key_source": "ESPN: Spain game totals [5,5,7] avg=5.67. Spain own=2 consistent. Austria vs Spain ~2. \u03bb=4.0 \u2192 P(4+)=0.567. Conservative to 0.55.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 14,
+      "market_id": "6b27e4f8-63d1-4b77-985e-fd2b80f9014b",
+      "question": "Will a goal be scored before the first hydration break?",
+      "tier": "TIMING_EARLY",
+      "estimate": 0.519,
+      "crowd_formula_prediction": 0.526,
+      "key_source": "1H_OU0.5 Over=0.7463 \u2192 Poisson time-scaling to 24': P=0.519. TIMING_EARLY: 100% beat-crowd record.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 15,
+      "market_id": "aea8fb01-9548-4468-9ed5-32a29c075938",
+      "question": "Will Spain win in regulation?",
+      "tier": "DIRECT",
+      "estimate": 0.766,
+      "crowd_formula_prediction": 0.676,
+      "key_source": "Smarkets FTR Spain mid=0.7663",
+      "confidence": "HIGH"
+    }
+  ],
+  "rule_summary": {
+    "rule6": "CLEAR \u2014 all estimates 0.18-0.77",
+    "rule7": "FIRES \u2014 Austria 7.28% win. Suppress Q3 (Sabitzer) and Q7 (Austria SOT).",
+    "rule8": "INACTIVE \u2014 draw 16.4% < 25% threshold",
+    "rule10": "NOT APPLICABLE to count props",
+    "rule12": "FLAGGED on Q6 \u2014 Spain SOT bimodal, but Austria \u2260 Uruguay",
+    "rule15": "FIRES (Scenario A) on Q7 \u2014 Austria blowout underdog, suppress forward SOT"
+  }
+}

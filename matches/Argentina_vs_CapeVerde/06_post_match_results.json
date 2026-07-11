@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Argentina vs Cape Verde",
+  "date": "2026-07-03",
+  "actual_score": "Argentina 3-2 Cape Verde (after extra time -- regulation ended level)",
+  "match_rbp_total": -3.41,
+  "questions_beat_crowd": 8,
+  "questions_below_crowd": 7,
+  "question_results": [
+    {"text": "Will Lionel Messi (Argentina) have 3 or more shots on target?", "our_estimate": 0.50, "crowd_estimate": 0.51, "outcome": "YES", "rbp": 7.95, "beat_crowd": true},
+    {"text": "Will a goal be scored before the first hydration break?", "our_estimate": 0.52, "crowd_estimate": 0.48, "outcome": "NO", "rbp": -3.06, "beat_crowd": false},
+    {"text": "Will Lautaro Martínez (Argentina) score a goal?", "our_estimate": 0.45, "crowd_estimate": 0.44, "outcome": "NO", "rbp": 4.45, "beat_crowd": true},
+    {"text": "Will Argentina keep a clean sheet?", "our_estimate": 0.67, "crowd_estimate": 0.64, "outcome": "NO", "rbp": -2.83, "beat_crowd": false, "note": "Argentina conceded 2 -- part of the Cape Verde near-miracle context (regulation ended level, forcing ET)."},
+    {"text": "Will Argentina win in regulation?", "our_estimate": 0.86, "crowd_estimate": 0.83, "outcome": "NO", "rbp": -5.59, "beat_crowd": false, "note": "Both Elo (536pt gap) and market (85.5%) agreed and were both wrong about the regulation-time result specifically -- see JULY3_POSTMORTEM_DEEP_DIVE.md section 6."},
+    {"text": "Will Cape Verde have 2 or more shots on target?", "our_estimate": 0.40, "crowd_estimate": 0.49, "outcome": "YES", "rbp": -14.32, "beat_crowd": false, "note": "RULE15 blowout-suppression shaded this down from market's 0.51; Cape Verde was NOT in blowout-victim mode, they were playing the game of their tournament. Their Uruguay-game (competitive) precedent should have been weighted over their Spain-game (blowout-victim) precedent."},
+    {"text": "Will Argentina score 3 or more goals?", "our_estimate": 0.50, "crowd_estimate": 0.51, "outcome": "NO", "rbp": 7.06, "beat_crowd": true},
+    {"text": "Will Argentina score in both halves?", "our_estimate": 0.53, "crowd_estimate": 0.58, "outcome": "NO", "rbp": 16.13, "beat_crowd": true},
+    {"text": "Will Argentina have 8 or more shots on target?", "our_estimate": 0.32, "crowd_estimate": 0.47, "outcome": "YES", "rbp": -27.42, "beat_crowd": false, "note": "Favorite-team-SOT underpricing pattern (see JULY3_POSTMORTEM_DEEP_DIVE.md section 4)."},
+    {"text": "Will Julián Álvarez (Argentina) score or assist?", "our_estimate": 0.58, "crowd_estimate": 0.39, "outcome": "NO", "rbp": -29.25, "beat_crowd": false, "note": "WORST RESULT OF MATCH. Illiquid market (offer 65%) trusted too much despite his 0G/0A group-stage record and bench role in 2 of 3 games; crowd's 39% was much closer. See JULY3_POSTMORTEM_DEEP_DIVE.md section 5."},
+    {"text": "Will there be 3 or more total cards shown?", "our_estimate": 0.52, "crowd_estimate": 0.51, "outcome": "NO", "rbp": 2.65, "beat_crowd": true},
+    {"text": "Will Argentina score the first goal?", "our_estimate": 0.83, "crowd_estimate": 0.80, "outcome": "YES", "rbp": 5.15, "beat_crowd": true},
+    {"text": "Will Argentina have 8 or more corner kicks?", "our_estimate": 0.35, "crowd_estimate": 0.45, "outcome": "NO", "rbp": 23.36, "beat_crowd": true, "note": "Biggest win of the match."},
+    {"text": "Will Argentina be ahead at halftime?", "our_estimate": 0.67, "crowd_estimate": 0.65, "outcome": "YES", "rbp": 5.94, "beat_crowd": true},
+    {"text": "Will there be 22 or more total shots?", "our_estimate": 0.59, "crowd_estimate": 0.59, "outcome": "NO", "rbp": 6.37, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "The whole match's shape is explained by one fact: regulation ended level (Cape Verde forced ET). Q4/Q5/Q6 losses all trace back to this single tail event materializing despite two independent, cross-validated pre-match signals (Elo + market) both being confident in Argentina.",
+    "Biggest loss: Julián Álvarez score-or-assist (-29.25) -- illiquid-market overtrust on a personally out-of-form favorite-side player. Directly informed the PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT rule.",
+    "Biggest win: Argentina 8+ corners (+23.36) -- correctly priced below crowd despite Argentina being a heavy favorite; shows the favorite-SOT-underpricing pattern does not automatically extend to corners."
+  ]
+}

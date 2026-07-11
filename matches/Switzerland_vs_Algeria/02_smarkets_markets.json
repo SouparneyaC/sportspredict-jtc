@@ -1,0 +1,153 @@
+{
+  "_description": "Smarkets event 45161537 \u2014 key market prices for Switzerland vs Algeria R32 2026-07-02/03",
+  "event_id": 45161537,
+  "total_markets": 165,
+  "key_prices": {
+    "FTR": {
+      "Switzerland": 0.4878,
+      "Draw": 0.3007,
+      "Algeria": 0.2106,
+      "market_id": 148307430
+    },
+    "BTTS_yes": {
+      "mid": 0.5141,
+      "market_id": 148307432
+    },
+    "OU0.5_over": {
+      "mid": 0.9052,
+      "market_id": 148307465
+    },
+    "OU1.5_over": {
+      "mid": 0.7069,
+      "market_id": 148307466
+    },
+    "OU2.5_over": {
+      "mid": 0.435,
+      "market_id": 148307467
+    },
+    "OU3.5_over": {
+      "mid": 0.2302,
+      "market_id": 148307468
+    },
+    "HT_result": {
+      "Switzerland": 0.3535,
+      "Draw": 0.4785,
+      "Algeria": 0.1755,
+      "market_id": 148307437
+    },
+    "SUI_OU0.5_over": {
+      "mid": 0.7906,
+      "market_id": 148307478
+    },
+    "SUI_OU1.5_over": {
+      "mid": 0.4407,
+      "market_id": 148307479
+    },
+    "SUI_OU2.5_over": {
+      "mid": 0.1759,
+      "market_id": 148307480
+    },
+    "ALG_OU0.5_over": {
+      "mid": 0.6257,
+      "market_id": 148307488
+    },
+    "ALG_OU1.5_over": {
+      "mid": 0.2302,
+      "market_id": 148307489
+    },
+    "ALG_OU2.5_over": {
+      "mid": 0.0619,
+      "market_id": 148307490
+    },
+    "Penalty_yes": {
+      "mid": 0.2402,
+      "market_id": 148307455
+    },
+    "Any_sent_off_No": {
+      "mid": 0.8738,
+      "market_id": 148307586
+    },
+    "Cards_OU2.5_over": {
+      "mid": 0.5473,
+      "market_id": 148307595
+    },
+    "Cards_OU3.5_over": {
+      "mid": 0.3311,
+      "market_id": 148307597
+    },
+    "Cards_OU4.5_over": {
+      "mid": 0.1778,
+      "market_id": 148307599
+    },
+    "Cards_OU5.5_over": {
+      "mid": 0.0889,
+      "market_id": 148307601
+    },
+    "Most_corners": {
+      "Switzerland": 0.5291,
+      "Draw": 0.1026,
+      "Algeria": 0.3227,
+      "market_id": 148307453
+    },
+    "Corners_AH_SUI-0.5": {
+      "mid": 0.5424,
+      "market_id": 148307558
+    },
+    "Corners_OU7.5_over": {
+      "mid": 0.7005,
+      "market_id": 148307607
+    },
+    "Corners_OU8.5_over": {
+      "mid": 0.5874,
+      "market_id": 148307608
+    },
+    "Corners_OU9.5_over": {
+      "mid": 0.4216,
+      "market_id": 148307609
+    },
+    "To_qualify": {
+      "Switzerland": 0.6735,
+      "Algeria": 0.3328,
+      "market_id": 148307563
+    },
+    "Will_ET_yes": {
+      "mid": 0.2983,
+      "market_id": 148307564
+    },
+    "First_half_OU0.5_over": {
+      "mid": 0.627,
+      "market_id": 148307472
+    },
+    "First_half_OU1.5_over": {
+      "mid": 0.2703,
+      "market_id": 148307473
+    },
+    "Team_score_first": {
+      "Switzerland": 0.5576,
+      "No_goal": 0.0952,
+      "Algeria": 0.3521,
+      "market_id": 148307631
+    },
+    "Goal_1_time_bracket": {
+      "1-10": 0.1787,
+      "11-20": 0.1666,
+      "21-30": 0.1367,
+      "31-40": 0.1086,
+      "41-50": 0.1036,
+      "51-60": 0.072,
+      "61-70": 0.053,
+      "71-80": 0.0394,
+      "81-90": 0.0442,
+      "None": 0.1036,
+      "market_id": 148307655
+    },
+    "SH_OU0.5_over": {
+      "mid": 0.7469,
+      "market_id": 148307475
+    },
+    "SH_OU1.5_over": {
+      "mid": 0.3887,
+      "market_id": 148307476
+    }
+  }
+}

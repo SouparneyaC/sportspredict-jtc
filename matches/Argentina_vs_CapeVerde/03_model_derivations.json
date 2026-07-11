@@ -1,0 +1,46 @@
+{
+  "_description": "Model derivations for Argentina vs Cape Verde 2026-07-03 R32",
+  "lambda_fits": {
+    "total_goals": 3.05,
+    "argentina_goals": 2.68,
+    "argentina_sot": 6.415,
+    "cards_total": 2.707,
+    "corners_total": 8.848,
+    "argentina_corners": 6.621,
+    "total_shots": 22.70
+  },
+  "derived_probs": {
+    "p_arg_3plus_goals": 0.5015,
+    "p_arg_sot_8plus": 0.315,
+    "p_messi_sot_3plus_market": 0.4604,
+    "p_messi_sot_3plus_espn_avg_as_lambda": 0.577,
+    "p_messi_sot_3plus_blended": 0.52,
+    "p_cards_3plus": 0.508,
+    "p_arg_corners_8plus": 0.345,
+    "p_shots_22plus": 0.587,
+    "p_goal_before_break_bracket_method": 0.5007,
+    "p_goal_before_break_lambda_scaling": 0.545,
+    "p_goal_before_break_blended": 0.52
+  },
+  "elo": {
+    "argentina": 2189.53,
+    "cape_verde": 1653.45,
+    "diff": 536.08,
+    "elo_implied_arg_winprob_two_outcome": 0.956,
+    "flag": "Agrees directionally with market (85.5%) -- both sources confirm this is the most lopsided favorite of the campaign so far."
+  },
+  "rule_checks": {
+    "RULE1": "market is primary source",
+    "RULE6": "Clear -- all estimates within 0.05-0.95",
+    "RULE7": "FIRES HARD -- Cape Verde win=3.51%, the most extreme underdog price seen this campaign (more extreme than SUI-ALG 21%, ESP-AUT 7.3%, ENG-CDR 5.6%). Edge focus shifts to Cape Verde-side props.",
+    "RULE8": "INACTIVE -- Draw=10.99% << 25% threshold",
+    "RULE15": "FIRES Scenario A for Q6 (Cape Verde 2+ SOT) -- CPV win probability (3.5%) is far below the 10% blowout threshold. Most-analogous precedent (CPV vs Spain, comparable elite-press opponent quality) produced just 1 SOT/6 shots/25.7% possession. Market's 51.36% raw price is shaded down materially.",
+    "RULE12": "Flagged for Q4 (Lautaro) and Q10 (Alvarez) -- both players have very thin/poor group-stage production (Lautaro: 1 goal in 3, a penalty, 0 open-play; Alvarez: 0 goals, 0 assists, benched twice). Market prices trusted but trimmed modestly for this signal."
+  },
+  "espn_insight": {
+    "messi_group_form": "6 goals in 3 group games (hat-trick, brace, 1 off the bench) -- exceptional current form, SOT 4/4/1 (avg 3.0)",
+    "lautaro_group_form": "1 goal in 3 (penalty only, 0 open play), SOT 1/0/1 -- clearly the tournament's quiet man among ARG's front three so far",
+    "alvarez_group_form": "0G/0A in 3 games, started only 1 of 3 -- rotation/impact role, not a nailed-on starter",
+    "cape_verde_vs_elite_press": "Their Spain game (74% opponent possession, 27 shots against) is the single most relevant comparable for today's likely game state -- 1 SOT, 6 shots, 1 foul committed all match (extremely passive low block)"
+  }
+}

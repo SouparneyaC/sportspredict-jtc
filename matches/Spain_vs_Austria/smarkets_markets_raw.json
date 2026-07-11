@@ -1,0 +1,5209 @@
+{
+  "event_id": "45161536",
+  "markets": [
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 0,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306932",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_3_WAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Full-time result",
+      "slug": "winner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 5,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306933",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORRECT_SCORE"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Correct score",
+      "slug": "correct-score",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 6,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306934",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Both teams to score",
+      "slug": "both-teams-score",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 10,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306967",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 0.5",
+      "slug": "over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 11,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306968",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 1.5",
+      "slug": "over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 12,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306969",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 2.5",
+      "slug": "over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 13,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306970",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 3.5",
+      "slug": "over-under-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 14,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306971",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "4.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 4.5",
+      "slug": "over-under-4.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 15,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306972",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "5.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 5.5",
+      "slug": "over-under-5.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 16,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306973",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "OVER_UNDER",
+        "param": "6.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Over/under 6.5",
+      "slug": "over-under-6.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 20,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307065",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TO_QUALIFY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "To qualify",
+      "slug": "to-qualify",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 21,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307000",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "METHOD_OF_QUALIFICATION"
+      },
+      "modified": "2026-07-01T19:01:08.466Z",
+      "name": "Method of qualification",
+      "slug": "method-of-qualification",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 25,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307407",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ANYTIME_GOALSCORER"
+      },
+      "modified": "2026-06-28T06:05:48.190Z",
+      "name": "Anytime goalscorer",
+      "slug": "anytime-goalscorer",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.541Z",
+      "description": "",
+      "display_order": 27,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307239",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_CARDED"
+      },
+      "modified": "2026-06-28T12:44:36.399Z",
+      "name": "Player to be carded",
+      "slug": "player-carded",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 29,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315110",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS_ON_TARGET",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 0.5 shots on target",
+      "slug": "player-shots-target-over-0.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 30,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315112",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS_ON_TARGET",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 1.5 shots on target",
+      "slug": "player-shots-target-over-1.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 31,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315114",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS_ON_TARGET",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T14:35:53.209Z",
+      "name": "Player to have over 2.5 shots on target",
+      "slug": "player-shots-target-over-2.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 32,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315116",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 0.5 shots",
+      "slug": "player-to-have-over-0-5-shots",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 33,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315118",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 1.5 shots",
+      "slug": "player-to-have-over-1-5-shots",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 34,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315120",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 2.5 shots",
+      "slug": "player-to-have-over-2-5-shots",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 35,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315122",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 3.5 shots",
+      "slug": "player-to-have-over-3-5-shots",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 36,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315124",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SHOTS",
+        "param": "4.5"
+      },
+      "modified": "2026-06-28T14:35:53.209Z",
+      "name": "Player to have over 4.5 shots",
+      "slug": "player-to-have-over-4-5-shots",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 39,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315134",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_FOULS",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T14:34:47.081Z",
+      "name": "Player to commit over 0.5 fouls",
+      "slug": "player-fouls-over-0.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 40,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315137",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_FOULS",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T14:34:47.081Z",
+      "name": "Player to commit over 1.5 fouls",
+      "slug": "player-fouls-over-1.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 40,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315130",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_ANYTIME_ASSISTS"
+      },
+      "modified": "2026-06-28T16:18:50.949Z",
+      "name": "Anytime assists",
+      "slug": "player-anytime-assists",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 41,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315140",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_FOULS",
+        "param": "2.5"
+      },
+      "modified": "2026-07-01T22:50:47.970Z",
+      "name": "Player to commit over 2.5 fouls",
+      "slug": "player-fouls-over-2.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 41,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315131",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SCORE_OR_ASSIST"
+      },
+      "modified": "2026-06-29T18:16:51.771Z",
+      "name": "Player to score or assist",
+      "slug": "player-score-or-assist",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.800Z",
+      "description": "",
+      "display_order": 43,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307403",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_GOALSCORER"
+      },
+      "modified": "2026-06-28T06:05:48.190Z",
+      "name": "First goalscorer",
+      "slug": "first-goalscorer",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": false,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.800Z",
+      "description": "",
+      "display_order": 44,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307405",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "LAST_GOALSCORER"
+      },
+      "modified": "2026-06-28T06:05:48.190Z",
+      "name": "Last goalscorer",
+      "slug": "last-goalscorer",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": false,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.541Z",
+      "description": "",
+      "display_order": 47,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307241",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_SENT_OFF"
+      },
+      "modified": "2026-06-28T16:04:27.832Z",
+      "name": "Player to be sent off",
+      "slug": "player-sent-off",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 58,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307409",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_AT_LEAST_GOALS",
+        "param": "2"
+      },
+      "modified": "2026-06-28T06:55:11.356Z",
+      "name": "Player to score at least 2 goals",
+      "slug": "player-score-2-goals",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 59,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307411",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "PLAYER_AT_LEAST_GOALS",
+        "param": "3"
+      },
+      "modified": "2026-06-28T06:55:11.356Z",
+      "name": "Player to score a hat-trick",
+      "slug": "player-score-3-goals",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 60,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315136",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_SAVES",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T14:35:00.219Z",
+      "name": "Player to have over 0.5 saves",
+      "slug": "player-saves-over-0.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 61,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315139",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_SAVES",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 1.5 saves",
+      "slug": "player-saves-over-1.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "popular"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 62,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315142",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_SAVES",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player to have over 2.5 saves",
+      "slug": "player-saves-over-2.5",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 63,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307413",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ANYTIME_GOALSCORER_BY_TYPE",
+        "param": "header"
+      },
+      "modified": "2026-06-28T14:12:49.014Z",
+      "name": "Anytime goalscorer - Header",
+      "slug": "anytime-goalscorer-header",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 64,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307415",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ANYTIME_GOALSCORER_BY_TYPE",
+        "param": "outside_the_box"
+      },
+      "modified": "2026-06-28T14:12:49.014Z",
+      "name": "Anytime goalscorer - Outside the Box",
+      "slug": "anytime-goalscorer-outside-the-box",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.801Z",
+      "description": "",
+      "display_order": 65,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307417",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ANYTIME_GOALSCORER_BY_TYPE",
+        "param": "free_kick"
+      },
+      "modified": "2026-06-29T19:06:39.734Z",
+      "name": "Anytime goalscorer - Free Kick",
+      "slug": "anytime-goalscorer-free-kick",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 67,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315126",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_SHOTS_ON_TARGET_BY_TYPE",
+        "params": {
+          "SCORING_METHOD": "outside_the_box",
+          "TOTAL": "0.5"
+        }
+      },
+      "modified": "2026-06-28T14:35:00.219Z",
+      "name": "Player shots on target - Outside the Box",
+      "slug": "player-sot-outside-the-box",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players"
+      ],
+      "category": "players",
+      "complete": false,
+      "contract_selections": null,
+      "created": "2026-06-28T06:00:46.628Z",
+      "description": "",
+      "display_order": 68,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148315128",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PLAYER_SHOTS_ON_TARGET_BY_TYPE",
+        "params": {
+          "SCORING_METHOD": "header",
+          "TOTAL": "0.5"
+        }
+      },
+      "modified": "2026-06-28T14:35:26.377Z",
+      "name": "Player shots on target - Header",
+      "slug": "player-sot-header",
+      "state": "open",
+      "winner_count": 36
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 69,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306942",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_AND_BTTS"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Winner and both teams to score",
+      "slug": "winner-and-btts",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 71,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306958",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_AND_OVER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Winner and over/under 1.5",
+      "slug": "winner-and-over-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 72,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306959",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_AND_OVER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Winner and over/under 2.5",
+      "slug": "winner-and-over-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 73,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306960",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_AND_OVER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Winner and over/under 3.5",
+      "slug": "winner-and-over-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 74,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306961",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_AND_OVER",
+        "param": "4.5"
+      },
+      "modified": "2026-06-29T19:01:19.537Z",
+      "name": "Winner and over/under 4.5",
+      "slug": "winner-and-over-4.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 77,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306962",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS_AND_OVER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Both teams to score and over/under 2.5",
+      "slug": "btts-and-over-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 78,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306963",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS_AND_OVER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T16:41:35.427Z",
+      "name": "Both teams to score and over/under 3.5",
+      "slug": "btts-and-over-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 78,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307008",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-3.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -3.5 / Austria +3.5",
+      "slug": "asian-handicap-spain-minus-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 79,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306964",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS_AND_OVER",
+        "param": "4.5"
+      },
+      "modified": "2026-06-28T16:41:35.427Z",
+      "name": "Both teams to score and over/under 4.5",
+      "slug": "btts-and-over-4.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 80,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307011",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -2.5 / Austria +2.5",
+      "slug": "asian-handicap-spain-minus-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 81,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307014",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-2.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -2.0 / Austria +2.0",
+      "slug": "asian-handicap-spain-minus-2.0",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 82,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307017",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -1.5 / Austria +1.5",
+      "slug": "asian-handicap-spain-minus-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.705Z",
+      "description": "",
+      "display_order": 83,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307020",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -1.0 / Austria +1.0",
+      "slug": "asian-handicap-spain-minus-1.0",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.705Z",
+      "description": "",
+      "display_order": 84,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307023",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ASIAN_HANDICAP",
+        "param": "-0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Asian Handicap Spain -0.5 / Austria +0.5",
+      "slug": "asian-handicap-spain-minus-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 100,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306937",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "DOUBLE_CHANCE"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Double chance",
+      "slug": "double-chance",
+      "state": "open",
+      "winner_count": 2
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "winner",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 120,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306935",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HALF_FULL"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Half-time/full-time",
+      "slug": "half-full",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.963Z",
+      "description": "",
+      "display_order": 139,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307045",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HANDICAP_3_WAY",
+        "param": "-2.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Handicap Spain -2.0 / Austria +2.0 (3-way)",
+      "slug": "handicap-spain-minus-2.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.963Z",
+      "description": "",
+      "display_order": 140,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307048",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HANDICAP_3_WAY",
+        "param": "-1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Handicap Spain -1.0 / Austria +1.0 (3-way)",
+      "slug": "handicap-spain-minus-1.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.963Z",
+      "description": "",
+      "display_order": 141,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307051",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HANDICAP_3_WAY",
+        "param": "1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Handicap Spain +1.0 / Austria -1.0 (3-way)",
+      "slug": "handicap-spain-plus-1.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": false,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 160,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306954",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "SCORE_RANGE"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Goal range",
+      "slug": "goal-range",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": false,
+      "categories": [
+        "winner",
+        "popular"
+      ],
+      "category": "winner",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 175,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306936",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_DNB"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Draw No Bet",
+      "slug": "draw-no-bet",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 180,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306950",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HIGHEST_SCORING_HALF"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Highest scoring half",
+      "slug": "highest-scoring-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.541Z",
+      "description": "",
+      "display_order": 194,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307251",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_SHOTS_ON_TARGET_OVER_UNDER",
+        "params": {
+          "SIDE": "home",
+          "TOTAL": "6.5"
+        }
+      },
+      "modified": "2026-07-02T10:01:27.049Z",
+      "name": "Spain over/under 6.5 shots on target",
+      "slug": "spain-over-under-6.5-shots-on-target",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.542Z",
+      "description": "",
+      "display_order": 213,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307270",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_SHOTS_OVER_UNDER",
+        "params": {
+          "SIDE": "home",
+          "TOTAL": "17.5"
+        }
+      },
+      "modified": "2026-07-02T11:19:39.511Z",
+      "name": "Spain over/under 17.5 shots",
+      "slug": "spain-over-under-17.5-shots",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "other"
+      ],
+      "category": "other",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 225,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307066",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "GAME_TO_GO_OVERTIME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Will there be Extra Time",
+      "slug": "will-there-be-extra-time",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.543Z",
+      "description": "",
+      "display_order": 243,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307308",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_SHOTS_OVER_UNDER",
+        "params": {
+          "SIDE": "away",
+          "TOTAL": "7.5"
+        }
+      },
+      "modified": "2026-07-02T05:01:44.606Z",
+      "name": "Austria over/under 7.5 shots",
+      "slug": "austria-over-under-7.5-shots",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.543Z",
+      "description": "",
+      "display_order": 244,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307307",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_SHOTS_OVER_UNDER",
+        "params": {
+          "SIDE": "away",
+          "TOTAL": "6.5"
+        }
+      },
+      "modified": "2026-07-02T14:19:16.235Z",
+      "name": "Austria over/under 6.5 shots",
+      "slug": "austria-over-under-6.5-shots",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.799Z",
+      "description": "",
+      "display_order": 343,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307343",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SHOTS_ON_TARGET_OVER_UNDER",
+        "param": "7.5"
+      },
+      "modified": "2026-07-02T08:29:50.755Z",
+      "name": "Over/under 7.5 shots on target",
+      "slug": "over-under-7.5-shots-on-target",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.799Z",
+      "description": "",
+      "display_order": 356,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307360",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SHOTS_OVER_UNDER",
+        "param": "24.5"
+      },
+      "modified": "2026-07-02T05:07:51.958Z",
+      "name": "Over/under 24.5 shots",
+      "slug": "over-under-24.5-shots",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.800Z",
+      "description": "",
+      "display_order": 389,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307393",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TACKLES_OVER_UNDER",
+        "param": "31.5"
+      },
+      "modified": "2026-07-01T19:51:32.643Z",
+      "name": "Over/under 31.5 tackles",
+      "slug": "over-under-31.5-tackles",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 700,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306951",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "EXACT_GOALS"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Exact goals",
+      "slug": "exact-goals",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 710,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306947",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ODD_EVEN"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Odd or even score",
+      "slug": "odd-even",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 720,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307092",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "WIN_MARGIN"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Winning margin",
+      "slug": "win-margin",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "other"
+      ],
+      "category": "other",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 726,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307067",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "GAME_TO_GO_PENALTIES"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Will there be a Penalty Shootout",
+      "slug": "will-there-be-a-penalty-shootout",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 800,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306939",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HALF_TIME_WINNER_3_WAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Half-time result",
+      "slug": "half-time-winner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 825,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306944",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "HALF_TIME_DOUBLE_CHANCE"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Half-time double chance",
+      "slug": "half-time-double-chance",
+      "state": "open",
+      "winner_count": 2
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 850,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306940",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HALF_TIME_CORRECT_SCORE"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Half-time correct score",
+      "slug": "half-time-correct-score",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 900,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306974",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half over/under 0.5",
+      "slug": "first-half-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 901,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306975",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half over/under 1.5",
+      "slug": "first-half-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 902,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306976",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half over/under 2.5",
+      "slug": "first-half-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 997,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307018",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_ASIAN_HANDICAP",
+        "param": "-1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Asian Handicap Spain -1.5 / Austria +1.5",
+      "slug": "first-half-asian-handicap-spain-minus-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.705Z",
+      "description": "",
+      "display_order": 998,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307021",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_ASIAN_HANDICAP",
+        "param": "-1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Asian Handicap Spain -1.0 / Austria +1.0",
+      "slug": "first-half-asian-handicap-spain-minus-1.0",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.705Z",
+      "description": "",
+      "display_order": 999,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307024",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_ASIAN_HANDICAP",
+        "param": "-0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Asian Handicap Spain -0.5 / Austria +0.5",
+      "slug": "first-half-asian-handicap-spain-minus-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.963Z",
+      "description": "",
+      "display_order": 1059,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307046",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HANDICAP_3_WAY",
+        "param": "-2.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Handicap Spain -2.0 / Austria +2.0 (3-way)",
+      "slug": "first-half-handicap-spain-minus-2.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.963Z",
+      "description": "",
+      "display_order": 1060,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307049",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HANDICAP_3_WAY",
+        "param": "-1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Handicap Spain -1.0 / Austria +1.0 (3-way)",
+      "slug": "first-half-handicap-spain-minus-1.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "handicap",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "handicap",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1061,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307052",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HANDICAP_3_WAY",
+        "param": "1.0"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Handicap Spain +1.0 / Austria -1.0 (3-way)",
+      "slug": "first-half-handicap-spain-plus-1.0-three-way",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1100,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306943",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "FIRST_HALF_WINNER_AND_BTTS"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "First half winner and both teams to score",
+      "slug": "first-half-winner-and-btts",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1151,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306965",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_WINNER_AND_OVER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half winner and over/under 1.5",
+      "slug": "first-half-winner-and-over-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": false,
+      "categories": [
+        "goals"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.345Z",
+      "description": "",
+      "display_order": 1151,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307157",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TIME_OF_NEXT_GOAL",
+        "param": "1"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Goal 1 time bracket",
+      "slug": "goal-1-time-bracket",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1175,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306948",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "FIRST_HALF_ODD_EVEN"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "First half odd or even score",
+      "slug": "first-half-odd-even",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1200,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306952",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "FIRST_HALF_EXACT_GOALS"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "First half exact goals",
+      "slug": "first-half-exact-goals",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1300,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306938",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_WINNER_3_WAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half result",
+      "slug": "second-half-winner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1350,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306977",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half over/under 0.5",
+      "slug": "second-half-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1351,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306978",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half over/under 1.5",
+      "slug": "second-half-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1352,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306979",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half over/under 2.5",
+      "slug": "second-half-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1400,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306949",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "SECOND_HALF_ODD_EVEN"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Second half odd or even score",
+      "slug": "second-half-odd-even",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1425,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306953",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "SECOND_HALF_EXACT_GOALS"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Second half exact goals",
+      "slug": "second-half-exact-goals",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1450,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306980",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain over/under 0.5 goals",
+      "slug": "spain-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1451,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306981",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain over/under 1.5 goals",
+      "slug": "spain-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1452,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306982",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_TEAM_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain over/under 2.5 goals",
+      "slug": "spain-over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1453,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306983",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_TEAM_OVER_UNDER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain over/under 3.5 goals",
+      "slug": "spain-over-under-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1475,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306990",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "AWAY_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria over/under 0.5 goals",
+      "slug": "austria-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1476,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306991",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "AWAY_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria over/under 1.5 goals",
+      "slug": "austria-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "totals",
+        "bet_builder"
+      ],
+      "category": "totals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1477,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306992",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "AWAY_TEAM_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria over/under 2.5 goals",
+      "slug": "austria-over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1500,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307069",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CLEAN_SHEET",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain clean sheet",
+      "slug": "spain-clean-sheet",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1501,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307079",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CLEAN_SHEET",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria clean sheet",
+      "slug": "austria-clean-sheet",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1525,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307070",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WIN_BOTH_HALVES",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain to win both halves",
+      "slug": "spain-win-both-halves",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1535,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307074",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_WIN_EITHER_HALF",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain win either half",
+      "slug": "spain-win-either-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1536,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307084",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_WIN_EITHER_HALF",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria win either half",
+      "slug": "austria-win-either-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1550,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307068",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SCORE_BOTH_HALVES",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain to score in both halves",
+      "slug": "spain-score-both-halves",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1551,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307078",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SCORE_BOTH_HALVES",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria to score in both halves",
+      "slug": "austria-score-both-halves",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1575,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307071",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WIN_TO_NIL",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain to win to nil",
+      "slug": "spain-to-win-to-nil",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1576,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307081",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WIN_TO_NIL",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria to win to nil",
+      "slug": "austria-to-win-to-nil",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1600,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306945",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS_FIRST_HALF"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Both teams to score in First Half",
+      "slug": "btts-first-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1610,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306946",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "BTTS_SECOND_HALF"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Both teams to score in Second Half",
+      "slug": "btts-second-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 1620,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306941",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "BTTS_BOTH_HALVES"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Both teams to score in first half / second half",
+      "slug": "btts-both-halves",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1640,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307075",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "TEAM_HIGHEST_SCORING_HALF",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Spain highest scoring half",
+      "slug": "spain-highest-scoring-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1641,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307085",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "TEAM_HIGHEST_SCORING_HALF",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Austria highest scoring half",
+      "slug": "austria-highest-scoring-half",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1650,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307073",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_EXACT_GOALS",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Spain exact goals",
+      "slug": "spain-exact-goals",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals",
+        "bet_builder"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1651,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307083",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "TEAM_EXACT_GOALS",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Austria exact goals",
+      "slug": "austria-exact-goals",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1660,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307072",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "TEAM_ODD_EVEN",
+        "param": "HOME"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Spain odd or even score",
+      "slug": "spain-odd-even",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1661,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307082",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "TEAM_ODD_EVEN",
+        "param": "AWAY"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Austria odd or even score",
+      "slug": "austria-odd-even",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1670,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306984",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Spain over/under 0.5 goals",
+      "slug": "first-half-spain-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1671,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306985",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Spain over/under 1.5 goals",
+      "slug": "first-half-spain-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1672,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306986",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Spain over/under 2.5 goals",
+      "slug": "first-half-spain-over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1680,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306987",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half Spain over/under 0.5 goals",
+      "slug": "second-half-spain-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1681,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306988",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half Spain over/under 1.5 goals",
+      "slug": "second-half-spain-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1682,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306989",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_HOME_TEAM_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half Spain over/under 2.5 goals",
+      "slug": "second-half-spain-over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1690,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306994",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_AWAY_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Austria over/under 0.5 goals",
+      "slug": "first-half-austria-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1691,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306995",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_AWAY_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "First half Austria over/under 1.5 goals",
+      "slug": "first-half-austria-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1700,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306997",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_AWAY_TEAM_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half Austria over/under 0.5 goals",
+      "slug": "second-half-austria-over-under-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "half",
+        "bet_builder"
+      ],
+      "category": "half",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.704Z",
+      "description": "",
+      "display_order": 1701,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306998",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "SECOND_HALF_AWAY_TEAM_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Second half Austria over/under 1.5 goals",
+      "slug": "second-half-austria-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1710,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307091",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WHICH_TEAM_TO_SCORE"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Which team to score",
+      "slug": "which-team-to-score",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1720,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307090",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "LAST_TEAM_TO_SCORE"
+      },
+      "modified": "2026-06-28T04:05:30.874Z",
+      "name": "Last team to score",
+      "slug": "last-team-to-score",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "teams",
+        "bet_builder"
+      ],
+      "category": "teams",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.344Z",
+      "description": "",
+      "display_order": 1731,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307133",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "NEXT_TEAM_TO_SCORE",
+        "param": "1"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Team to score first goal",
+      "slug": "team-to-score-first-goal",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1993,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307057",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_HANDICAP",
+        "param": "-3.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Spain -3.5 corners / Austria +3.5 corners",
+      "slug": "corners-handicap-spain-minus-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 1995,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307058",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_HANDICAP",
+        "param": "-2.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Spain -2.5 corners / Austria +2.5 corners",
+      "slug": "corners-handicap-spain-minus-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2031,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307108",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_OVER_UNDER",
+        "param": "6.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Over/under 6.5 corners",
+      "slug": "corners-over-under-6.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2032,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307109",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_OVER_UNDER",
+        "param": "7.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Over/under 7.5 corners",
+      "slug": "corners-over-under-7.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2033,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307110",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_OVER_UNDER",
+        "param": "8.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Over/under 8.5 corners",
+      "slug": "corners-over-under-8.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2034,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307111",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_OVER_UNDER",
+        "param": "9.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Over/under 9.5 corners",
+      "slug": "corners-over-under-9.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2035,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307112",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_OVER_UNDER",
+        "param": "10.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Over/under 10.5 corners",
+      "slug": "corners-over-under-10.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 2050,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306955",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNERS_WINNER_THREE_WAY"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Most corners",
+      "slug": "corners-winner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 2085,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307093",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "LAST_CORNER"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Team to have the last corner",
+      "slug": "team-last-corner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 2100,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307089",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CORNER_RANGE"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Total corners in range",
+      "slug": "range-corners",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.344Z",
+      "description": "",
+      "display_order": 2126,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307134",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "NEXT_CORNER",
+        "param": "1"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "Team to have first corner",
+      "slug": "team-corner-1",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2143,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307117",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_CORNERS_OVER_UNDER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "First half over/under 3.5 corners",
+      "slug": "first-half-corners-over-under-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2144,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307118",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_CORNERS_OVER_UNDER",
+        "param": "4.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "First half over/under 4.5 corners",
+      "slug": "first-half-corners-over-under-4.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "bet_builder"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2145,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307119",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_HALF_CORNERS_OVER_UNDER",
+        "param": "5.5"
+      },
+      "modified": "2026-06-28T11:23:00.784Z",
+      "name": "First half over/under 5.5 corners",
+      "slug": "first-half-corners-over-under-5.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners",
+        "popular"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2232,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307126",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_CORNERS_OVER_UNDER",
+        "param": "6.5"
+      },
+      "modified": "2026-07-02T09:27:43.185Z",
+      "name": "Spain over/under 6.5 corners",
+      "slug": "spain-over-under-6.5-corners",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "players",
+        "bet_builder"
+      ],
+      "category": "players",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 2250,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307088",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "ANY_PLAYER_SENT_OFF"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Any player to be sent off",
+      "slug": "any-player-sent-off",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.964Z",
+      "description": "",
+      "display_order": 2301,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307095",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Over/under 1.5 cards",
+      "slug": "cards-over-under-1.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2302,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307097",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "2.5"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Over/under 2.5 cards",
+      "slug": "cards-over-under-2.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2303,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307099",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "3.5"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Over/under 3.5 cards",
+      "slug": "cards-over-under-3.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2304,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307101",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "4.5"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Over/under 4.5 cards",
+      "slug": "cards-over-under-4.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2305,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307103",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "5.5"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Over/under 5.5 cards",
+      "slug": "cards-over-under-5.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.965Z",
+      "description": "",
+      "display_order": 2306,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307105",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_OVER_UNDER",
+        "param": "6.5"
+      },
+      "modified": "2026-06-30T15:47:17.291Z",
+      "name": "Over/under 6.5 cards",
+      "slug": "cards-over-under-6.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.705Z",
+      "description": "",
+      "display_order": 2401,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307028",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_HANDICAP",
+        "param": "0.5"
+      },
+      "modified": "2026-07-02T02:40:42.544Z",
+      "name": "Spain +0.5 cards / Austria -0.5 cards",
+      "slug": "cards-handicap-spain-plus-0.5",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "other"
+      ],
+      "category": "other",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 2500,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306957",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": false,
+      "market_type": {
+        "name": "PENALTY_IN_MATCH"
+      },
+      "modified": "2026-07-01T22:50:47.970Z",
+      "name": "Penalty to be awarded",
+      "slug": "penalty-in-match",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:37.703Z",
+      "description": "",
+      "display_order": 2550,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148306956",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "CARDS_WINNER_THREE_WAY"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Most cards",
+      "slug": "cards-winner",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.344Z",
+      "description": "",
+      "display_order": 2676,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307132",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "NEXT_CARD",
+        "param": "1"
+      },
+      "modified": "2026-06-29T20:50:38.472Z",
+      "name": "Team to have first card",
+      "slug": "team-card-1",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.344Z",
+      "description": "",
+      "display_order": 2700,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307145",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "HOME_CARDS_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-07-01T09:30:39.291Z",
+      "name": "Spain over/under 0.5 cards",
+      "slug": "spain-over-under-0.5-cards",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards",
+        "bet_builder",
+        "popular"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.345Z",
+      "description": "",
+      "display_order": 2703,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307148",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "AWAY_CARDS_OVER_UNDER",
+        "param": "1.5"
+      },
+      "modified": "2026-07-01T09:30:39.291Z",
+      "name": "Austria over/under 1.5 cards",
+      "slug": "austria-over-under-1.5-cards",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "other"
+      ],
+      "category": "other",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.345Z",
+      "description": "",
+      "display_order": 4101,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307176",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "WINNER_3_WAY_TIME_BRACKET",
+        "param": "1-10"
+      },
+      "modified": "2026-06-28T06:00:47.946Z",
+      "name": "Winner in 1 minute to 10 minute time bracket",
+      "slug": "winner-three-way-in-1-minute-to-10-minute-time-bracket",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "goals"
+      ],
+      "category": "goals",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.345Z",
+      "description": "",
+      "display_order": 4400,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307185",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_TEN_MINUTE_BRACKET_OVER_UNDER",
+        "param": "0.5"
+      },
+      "modified": "2026-06-28T07:40:36.797Z",
+      "name": "Over under 0.5 goals in 1 minute to 10 minute time bracket",
+      "slug": "goals-over-under-0.5-in-1-minute-to-10-minute-time-bracket",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "corners"
+      ],
+      "category": "corners",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.346Z",
+      "description": "",
+      "display_order": 4700,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307203",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_TEN_MINUTE_BRACKET_OVER_UNDER_CORNERS",
+        "param": "0.5"
+      },
+      "modified": "2026-06-30T21:46:10.543Z",
+      "name": "Over under 0.5 corners in 1 minute to 10 minute time bracket",
+      "slug": "corners-over-under-0.5-in-1-minute-to-10-minute-time-bracket",
+      "state": "open",
+      "winner_count": 1
+    },
+    {
+      "bet_delay": 0,
+      "cashout_enabled": true,
+      "categories": [
+        "cards"
+      ],
+      "category": "cards",
+      "complete": true,
+      "contract_selections": null,
+      "created": "2026-06-28T04:01:38.346Z",
+      "description": "",
+      "display_order": 5000,
+      "display_type": "default",
+      "event_id": "45161536",
+      "hidden": false,
+      "id": "148307221",
+      "info": {
+        "reason": ""
+      },
+      "inplay_enabled": true,
+      "market_type": {
+        "name": "FIRST_TEN_MINUTE_BRACKET_OVER_UNDER_CARDS",
+        "param": "0.5"
+      },
+      "modified": "2026-06-30T21:46:10.543Z",
+      "name": "Over under 0.5 cards in 1 minute to 10 minute time bracket",
+      "slug": "cards-over-under-0.5-in-1-minute-to-10-minute-time-bracket",
+      "state": "open",
+      "winner_count": 1
+    }
+  ]
+}

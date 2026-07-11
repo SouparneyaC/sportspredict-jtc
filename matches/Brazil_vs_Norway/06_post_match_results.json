@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Brazil vs Norway",
+  "date": "2026-07-05",
+  "actual_score": "Brazil 1-2 Norway (upset -- Norway were 20% pre-match underdogs)",
+  "match_rbp_total": 179.26,
+  "questions_beat_crowd": 13,
+  "questions_below_crowd": 2,
+  "question_results": [
+    {"text": "Will Vinícius Júnior (Brazil) score a goal?", "our_estimate": 0.40, "crowd_estimate": 0.44, "outcome": "NO", "rbp": 11.17, "beat_crowd": true},
+    {"text": "Will Erling Haaland (Norway) score a goal?", "our_estimate": 0.55, "crowd_estimate": 0.48, "outcome": "YES", "rbp": 19.38, "beat_crowd": true, "note": "Bumped above market on knockout-stakes regime-coverage reasoning (scored in all 3 appearances incl. R32); validated."},
+    {"text": "Will Martin Ødegaard (Norway) score or assist a goal?", "our_estimate": 0.36, "crowd_estimate": 0.35, "outcome": "NO", "rbp": 2.3, "beat_crowd": true},
+    {"text": "Will Matheus Cunha (Brazil) have 1 or more shots on target?", "our_estimate": 0.58, "crowd_estimate": 0.59, "outcome": "NO", "rbp": 8.3, "beat_crowd": true, "note": "Both us and crowd wrong-direction; we were marginally closer."},
+    {"text": "Will Brazil advance to the quarterfinals?", "our_estimate": 0.70, "crowd_estimate": 0.67, "outcome": "NO", "rbp": -5.06, "beat_crowd": false, "note": "Brazil lost the upset; market-based number reflected genuine ~30% risk that materialized -- not a methodology failure."},
+    {"text": "Will the match be decided by a penalty shootout?", "our_estimate": 0.14, "crowd_estimate": 0.22, "outcome": "NO", "rbp": 11.29, "beat_crowd": true},
+    {"text": "Will the match finish with exactly 2 total goals?", "our_estimate": 0.23, "crowd_estimate": 0.28, "outcome": "NO", "rbp": 10.03, "beat_crowd": true},
+    {"text": "Will both teams score?", "our_estimate": 0.61, "crowd_estimate": 0.60, "outcome": "YES", "rbp": 4.88, "beat_crowd": true},
+    {"text": "Will Brazil have 6 or more corner kicks?", "our_estimate": 0.49, "crowd_estimate": 0.52, "outcome": "NO", "rbp": 10.4, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.38, "crowd_estimate": 0.42, "outcome": "NO", "rbp": 10.54, "beat_crowd": true},
+    {"text": "Will Norway have 4 or more shots on target?", "our_estimate": 0.58, "crowd_estimate": 0.52, "outcome": "YES", "rbp": 14.07, "beat_crowd": true, "note": "Trusted the direct market read (exact line match) with no override -- correct."},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.42, "crowd_estimate": 0.41, "outcome": "YES", "rbp": 5.44, "beat_crowd": true},
+    {"text": "Will the second half produce more goals than the first half?", "our_estimate": 0.46, "crowd_estimate": 0.50, "outcome": "YES", "rbp": -5.47, "beat_crowd": false},
+    {"text": "Will Brazil have 6 or more shots on target?", "our_estimate": 0.41, "crowd_estimate": 0.51, "outcome": "NO", "rbp": 22.57, "beat_crowd": true, "note": "MAJOR VALIDATION of WINNING_PATTERNS_SYNTHESIS.md Cluster-B discipline: deliberately stayed at market (0.41) instead of blending toward Brazil's own empirical SOT average (0.631, which would have been wrong). Correct call, second-biggest win of the match."},
+    {"text": "Will both teams receive at least one card?", "our_estimate": 0.33, "crowd_estimate": 0.62, "outcome": "NO", "rbp": 59.43, "beat_crowd": true, "note": "BIGGEST WIN OF THE MATCH, and one of the largest single-question wins of the campaign. Priced via independent per-team Poisson model using each team's OWN real card rate (Brazil 1.75/game, Norway only 0.5/game) rather than a generic symmetric assumption: P(BRA>=1)=0.826 x P(NOR>=1)=0.393 = 0.325. Crowd's 62% looks like a generic 'both teams get carded in a big knockout match' heuristic that ignored Norway's genuinely low personal disciplinary record. See chat analysis for full breakdown."}
+  ],
+  "key_lessons": [
+    "13/15 beat crowd -- best beat-crowd rate of any match this campaign. Both losses were small (-5.06, -5.47) and both were 'right process, market moved against us' cases, not methodology failures.",
+    "Q15 (both teams carded, +59.43) validates a NEW pattern: independent per-team Poisson modeling using each team's actual historical rate, for 'both teams do X' compound questions, can massively beat a crowd that over-generalizes compound probabilities.",
+    "Q14 (Brazil 6+ SOT, +22.57) is the first live confirmation that the WINNING_PATTERNS_SYNTHESIS.md Cluster-B discipline (stay at market, don't blend a favorite's SOT threshold upward) is worth keeping as a standing rule."
+  ]
+}

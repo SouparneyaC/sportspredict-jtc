@@ -1,0 +1,31 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Colombia vs Ghana",
+  "date": "2026-07-03",
+  "actual_score": "Colombia 1-0 Ghana",
+  "match_rbp_total": 46.48,
+  "questions_beat_crowd": 11,
+  "questions_below_crowd": 4,
+  "question_results": [
+    {"text": "Will Luis Díaz (Colombia) score a goal?", "our_estimate": 0.32, "crowd_estimate": 0.39, "outcome": "NO", "rbp": 15.71, "beat_crowd": true},
+    {"text": "Will James Rodríguez (Colombia) score or assist a goal?", "our_estimate": 0.42, "crowd_estimate": 0.40, "outcome": "NO", "rbp": 0.0, "beat_crowd": false, "note": "Near-exact tie with crowd; we were 2pp on the wrong side."},
+    {"text": "Will Colombia advance to the Round of 16?", "our_estimate": 0.81, "crowd_estimate": 0.75, "outcome": "YES", "rbp": 8.75, "beat_crowd": true},
+    {"text": "Will Antoine Semenyo (Ghana) have 2 or more shots on target?", "our_estimate": 0.10, "crowd_estimate": 0.26, "outcome": "NO", "rbp": 18.38, "beat_crowd": true, "note": "ESPN zero-SOT-in-3-games signal trusted over a much higher crowd; big win."},
+    {"text": "Will both teams score?", "our_estimate": 0.41, "crowd_estimate": 0.43, "outcome": "NO", "rbp": 7.36, "beat_crowd": true},
+    {"text": "Will Jordan Ayew (Ghana) score a goal?", "our_estimate": 0.09, "crowd_estimate": 0.22, "outcome": "NO", "rbp": 12.35, "beat_crowd": true, "note": "Zero shots in 3 group games trusted; correct."},
+    {"text": "Will Colombia have 7 or more shots on target?", "our_estimate": 0.30, "crowd_estimate": 0.40, "outcome": "YES", "rbp": -20.33, "beat_crowd": false, "note": "Favorite-team-SOT underpricing pattern -- flagged in JULY3_POSTMORTEM_DEEP_DIVE.md as one of 3 systematic issues."},
+    {"text": "Will Colombia score the first goal of the match?", "our_estimate": 0.70, "crowd_estimate": 0.65, "outcome": "YES", "rbp": 8.8, "beat_crowd": true},
+    {"text": "Will there be 4 or more total cards shown?", "our_estimate": 0.30, "crowd_estimate": 0.41, "outcome": "YES", "rbp": -23.16, "beat_crowd": false},
+    {"text": "Will Colombia be ahead at halftime?", "our_estimate": 0.50, "crowd_estimate": 0.48, "outcome": "YES", "rbp": 7.0, "beat_crowd": true},
+    {"text": "Will there be 22 or more total shots?", "our_estimate": 0.68, "crowd_estimate": 0.57, "outcome": "YES", "rbp": 21.58, "beat_crowd": true},
+    {"text": "Will Colombia have 6 or more corner kicks?", "our_estimate": 0.50, "crowd_estimate": 0.52, "outcome": "NO", "rbp": 6.31, "beat_crowd": true},
+    {"text": "Will there be 3 or more offside calls?", "our_estimate": 0.75, "crowd_estimate": 0.59, "outcome": "NO", "rbp": -36.94, "beat_crowd": false, "note": "Priced HIGH and lost; same day AUS-EGY priced this question type LOW and also lost -- part of the 5-match offside pattern in JULY3_POSTMORTEM_DEEP_DIVE.md (net -75.99 RBP)."},
+    {"text": "Will the match have 3 or more total goals?", "our_estimate": 0.46, "crowd_estimate": 0.46, "outcome": "NO", "rbp": 2.33, "beat_crowd": true},
+    {"text": "Will a goal be scored before the first hydration break?", "our_estimate": 0.46, "crowd_estimate": 0.40, "outcome": "YES", "rbp": 18.32, "beat_crowd": true}
+  ],
+  "key_lessons": [
+    "Biggest win: Semenyo 2+ SOT (+18.38) -- ESPN zero-production data on an underdog-side player trusted over a much higher crowd number.",
+    "Biggest loss: 3+ offsides (-36.94) -- priced high (0.75) based on a team-history read that didn't hold; see JULY3_POSTMORTEM_DEEP_DIVE.md for the cross-match offside pattern.",
+    "Second-biggest loss: Colombia 7+ SOT (-20.33) -- favorite-team-SOT underpricing, same pattern seen in ENG-CDR and ARG-CPV the same week."
+  ]
+}

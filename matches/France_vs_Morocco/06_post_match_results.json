@@ -1,0 +1,40 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform. NEW CAMPAIGN BEST as of settlement (surpasses Mexico vs Ecuador's prior best of +154.20 RBP). 13 of 14 submitted questions beat the crowd (92.9%), the best beat-crowd rate of any match this campaign. Q15 (card during first- or second-half stoppage time) was deliberately not submitted -- see JULY9_Q15_SKIP_POSTMORTEM note below -- and is recorded here for completeness with the platform's crowd/outcome only, no our_estimate and no RBP earned or lost.",
+  "match": "France vs Morocco",
+  "date": "2026-07-09",
+  "actual_score": "France 2-0 Morocco",
+  "match_rbp_total": 169.17,
+  "questions_submitted": 14,
+  "questions_beat_crowd": 13,
+  "questions_below_crowd": 1,
+  "question_results": [
+    {"text": "Will Kylian Mbappé (France, #10) score a goal (excluding own goals)?", "our_estimate": 0.54, "crowd_estimate": 0.57, "outcome": "YES", "rbp": 1.81, "beat_crowd": true},
+    {"text": "Will Achraf Hakimi (Morocco, #2) have 1 or more shots on target?", "our_estimate": 0.30, "crowd_estimate": 0.44, "outcome": "NO", "rbp": 29.21, "beat_crowd": true, "note": "Validated the StatsBomb career finding (0 SOT across all 10 tracked WC18/22 appearances) over the crowd's more generous read."},
+    {"text": "Will France win in regulation?", "our_estimate": 0.55, "crowd_estimate": 0.63, "outcome": "YES", "rbp": -8.75, "beat_crowd": false, "note": "The one loss of the match. The crowd (63%) was better calibrated on France's win probability than either the corrected point-in-time ordered logit (0.5525 raw) or the Smarkets-blended submission (0.60->rounded/averaged down in the final pre-submission pass to 0.55) -- worth auditing why the final submitted number drifted below the 0.60 Smarkets-adopted figure documented in the paper."},
+    {"text": "Will Brahim Díaz (Morocco, #10) have 1 or more shots on target?", "our_estimate": 0.25, "crowd_estimate": 0.46, "outcome": "NO", "rbp": 36.65, "beat_crowd": true, "note": "Biggest win of the match. PERSONAL_ZERO_OVERRIDES_TEAM_CONTEXT validated a third time this campaign on this exact player (1 SOT in his prior 5 tournament games) against a crowd that priced him near a coin flip."},
+    {"text": "Will Ousmane Dembélé (France, #7) have 2 or more shots on target?", "our_estimate": 0.30, "crowd_estimate": 0.40, "outcome": "NO", "rbp": 21.91, "beat_crowd": true, "note": "Bimodal-by-opponent-quality pattern held again -- blanked against a fourth consecutive tough opponent."},
+    {"text": "Will Morocco have 3 or more shots on target?", "our_estimate": 0.60, "crowd_estimate": 0.58, "outcome": "NO", "rbp": 2.42, "beat_crowd": true, "note": "Small win despite the outcome going against the estimate's direction -- France's defensive record (2 goals conceded in 5 games) suppressed Morocco's shot volume as flagged, and the market-corroborated lambda (3.377) kept this from being a repeat of the CAN-MOR team-SOT-ceiling disaster."},
+    {"text": "Will the match have 2 or fewer total goals?", "our_estimate": 0.60, "crowd_estimate": 0.48, "outcome": "YES", "rbp": 27.1, "beat_crowd": true, "note": "The corrected point-in-time Poisson/NB total (lambda=2.299, P<=2=0.596) plus the 2022 h2h precedent (2-0) both pointed here; the crowd underpriced it."},
+    {"text": "Will there be 5 or more total cards?", "our_estimate": 0.32, "crowd_estimate": 0.34, "outcome": "NO", "rbp": 8.13, "beat_crowd": true},
+    {"text": "Will the match be tied at halftime?", "our_estimate": 0.45, "crowd_estimate": 0.43, "outcome": "YES", "rbp": 7.39, "beat_crowd": true},
+    {"text": "Will both halves have the same number of goals?", "our_estimate": 0.32, "crowd_estimate": 0.30, "outcome": "NO", "rbp": 1.36, "beat_crowd": true},
+    {"text": "Will a penalty kick be awarded OR a red card be shown?", "our_estimate": 0.38, "crowd_estimate": 0.35, "outcome": "YES", "rbp": 11.16, "beat_crowd": true},
+    {"text": "Will a substitute score or assist a goal?", "our_estimate": 0.34, "crowd_estimate": 0.38, "outcome": "NO", "rbp": 9.51, "beat_crowd": true},
+    {"text": "Will France have 5 or more corner kicks?", "our_estimate": 0.74, "crowd_estimate": 0.66, "outcome": "YES", "rbp": 13.03, "beat_crowd": true, "note": "Market-corroborated lambda (6.212, P>=5=0.742) held up exactly as the convergence with the empirical estimate suggested it would."},
+    {"text": "Will a goal be scored after the second hydration break?", "our_estimate": 0.50, "crowd_estimate": 0.52, "outcome": "NO", "rbp": 8.23, "beat_crowd": true, "note": "Settled with the corrected (0.45, lambda-scaled) reasoning in mind directionally, though the flat 0.50 actually submitted still beat the crowd's 0.52 on this NO outcome."}
+  ],
+  "q15_not_submitted": {
+    "text": "Will a card be shown during first- or second-half stoppage time?",
+    "crowd_estimate": 0.42,
+    "outcome": "NO",
+    "our_original_pre-drop_estimate": 0.28,
+    "note": "Dropped entirely after an audit found zero prior settled instances of this exact question anywhere in the campaign's record, making the 0.28 estimate an unsupported guess rather than an evidence-based figure -- see JULY9_Q15_SKIP_POSTMORTEM.md. The actual outcome (NO) landed on the same side as the dropped 0.28 estimate, well below the crowd's 0.42, which would have been a large win (user estimated 220+ RBP) had it been submitted. This does not retroactively validate the 0.28 figure's evidentiary basis, which remained a guess at the time it was set aside -- but it does mean the decision to skip cost real, and in this instance very large, positive RBP rather than avoiding a loss."
+  },
+  "key_lessons": [
+    "New campaign-best result: +169.17 RBP, surpassing Mexico vs Ecuador's prior best of +154.20.",
+    "13/14 beat-crowd rate (92.9%) is the best beat-crowd rate of any match this campaign.",
+    "The two team-count questions carrying this match's largest identified tail risk in the absence of a market (Morocco 3+ SOT, France 5+ corners) both beat the crowd, and both had been de-risked pre-match by the close agreement between the Smarkets-implied lambda and the independently-built empirical estimate -- direct validation of that specific methodological safeguard.",
+    "The one loss (France win in regulation, -8.75) came on the DIRECT, liquid, most-trusted tier -- the crowd (63%) simply read the match-winner question better than either model output on this occasion, a reminder that DIRECT-tier trust is a strong prior, not a guarantee.",
+    "Skipping Q15 for lack of any precedent was a defensible decision on the evidence available at the time, but cost a very large positive result this time -- worth revisiting whether 'no precedent' should mean 'skip entirely' versus 'submit a deliberately conservative, clearly-flagged-as-low-confidence estimate rather than forgo the question outright'."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "FTR": {
+    "market_id": 148306932,
+    "contracts": {}
+  },
+  "BTTS": {
+    "market_id": 148306934,
+    "contracts": {}
+  },
+  "OU2_5_goals": {
+    "market_id": 148306969,
+    "contracts": {}
+  },
+  "OU3_5_goals": {
+    "market_id": 148306970,
+    "contracts": {}
+  },
+  "OU4_5_goals": {
+    "market_id": 148306971,
+    "contracts": {}
+  },
+  "HT_result": {
+    "market_id": 148306939,
+    "contracts": {}
+  },
+  "Highest_scoring_half": {
+    "market_id": 148306950,
+    "contracts": {}
+  },
+  "Goal_1_time_bracket": {
+    "market_id": 148307157,
+    "contracts": {}
+  },
+  "Team_to_score_first": {
+    "market_id": 148307133,
+    "contracts": {}
+  },
+  "To_qualify": {
+    "market_id": 148307065,
+    "contracts": {}
+  },
+  "Will_ET": {
+    "market_id": 148307066,
+    "contracts": {}
+  },
+  "Penalty": {
+    "market_id": 148306957,
+    "contracts": {}
+  },
+  "Any_sent_off": {
+    "market_id": 148307088,
+    "contracts": {}
+  },
+  "Cards_OU1_5": {
+    "market_id": 148307095,
+    "contracts": {}
+  },
+  "Cards_OU2_5": {
+    "market_id": 148307097,
+    "contracts": {}
+  },
+  "Cards_OU3_5": {
+    "market_id": 148307099,
+    "contracts": {}
+  },
+  "Cards_OU4_5": {
+    "market_id": 148307101,
+    "contracts": {}
+  },
+  "Most_cards": {
+    "market_id": 148306956,
+    "contracts": {}
+  },
+  "Corners_OU6_5": {
+    "market_id": 148307108,
+    "contracts": {}
+  },
+  "Corners_OU7_5": {
+    "market_id": 148307109,
+    "contracts": {}
+  },
+  "Corners_OU8_5": {
+    "error": 429
+  },
+  "Corners_OU9_5": {
+    "error": 429
+  },
+  "Corners_OU10_5": {
+    "error": 429
+  },
+  "Most_corners": {
+    "error": 429
+  },
+  "Spain_corners_OU6_5": {
+    "error": 429
+  },
+  "Spain_SOT_OU6_5": {
+    "error": 429
+  },
+  "Spain_OU_goals_0_5": {
+    "error": 429
+  },
+  "Spain_OU_goals_1_5": {
+    "error": 429
+  },
+  "Spain_OU_goals_2_5": {
+    "error": 429
+  },
+  "Spain_OU_goals_3_5": {
+    "error": 429
+  },
+  "Austria_OU_goals_0_5": {
+    "error": 429
+  },
+  "Austria_OU_goals_1_5": {
+    "error": 429
+  },
+  "Austria_OU_goals_2_5": {
+    "error": 429
+  },
+  "Spain_1H_OU_goals_0_5": {
+    "error": 429
+  },
+  "Spain_1H_OU_goals_1_5": {
+    "error": 429
+  },
+  "1H_OU0_5": {
+    "error": 429
+  },
+  "1H_OU1_5": {
+    "error": 429
+  },
+  "Spain_score_both_halves": {
+    "error": 429
+  },
+  "Spain_win_to_nil": {
+    "error": 429
+  },
+  "Spain_SOT_OU7_5_total": {
+    "error": 429
+  },
+  "Austria_SOT_OU7_5": {
+    "error": 429
+  },
+  "Austria_SOT_OU6_5": {
+    "error": 429
+  },
+  "Total_shots_OU24_5": {
+    "error": 429
+  },
+  "Spain_shots_OU17_5": {
+    "error": 429
+  },
+  "Spain_corners_handicap_neg2_5": {
+    "error": 429
+  },
+  "Winning_margin": {
+    "error": 429
+  }
+}

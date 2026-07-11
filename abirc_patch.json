@@ -1,0 +1,954 @@
+[
+  {
+    "matchId": "6ca0522e-2b35-466c-ab1e-b5c473255781",
+    "name": "NED vs JPN",
+    "score": "2-2",
+    "date": "Jun 14, 2026",
+    "matchRbp": "+0.51",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "NO",
+        "questionText": "Will Japan commit more fouls than Netherlands?",
+        "you": 72,
+        "crowd": 49,
+        "outcome": 0,
+        "rbp": -25.43,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "NO",
+        "questionText": "Will Netherlands be caught offside 2 or more times?",
+        "you": 44,
+        "crowd": 54,
+        "outcome": 0,
+        "rbp": 12.1,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "YES",
+        "questionText": "Will both teams have at least 1 shot on target in the second half?",
+        "you": 83,
+        "crowd": 76,
+        "outcome": 100,
+        "rbp": 5.25,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "YES",
+        "questionText": "Will both teams score AND the match have 3 or more total goals?",
+        "you": 39,
+        "crowd": 44,
+        "outcome": 100,
+        "rbp": -2.7,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "Will Japan receive more cards than Netherlands?",
+        "you": 44,
+        "crowd": 43,
+        "outcome": 0,
+        "rbp": 1.06,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "NO",
+        "questionText": "Will Netherlands win the match?",
+        "you": 47,
+        "crowd": 53,
+        "outcome": 0,
+        "rbp": 9.2,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "YES",
+        "questionText": "Will Japan score in the second half?",
+        "you": 45,
+        "crowd": 50,
+        "outcome": 100,
+        "rbp": -2.77,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will there be 8 or more total shots on target?",
+        "you": 59,
+        "crowd": 56,
+        "outcome": 100,
+        "rbp": 5.97,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "YES",
+        "questionText": "Will Cody Gakpo have at least 1 shot on target?",
+        "you": 61,
+        "crowd": 61,
+        "outcome": 100,
+        "rbp": 2.48,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "YES",
+        "questionText": "Will Takefusa Kubo score or assist a goal (excluding own goals)?",
+        "you": 30,
+        "crowd": 36,
+        "outcome": 100,
+        "rbp": -4.64,
+        "performance": "Below crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "2267a04a-4b5e-4452-b300-610b20e3c863",
+    "name": "GER vs Curacao",
+    "score": "7-1",
+    "date": "Jun 14, 2026",
+    "matchRbp": "+72.01",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "NO",
+        "questionText": "Will Curaçao be caught offside 2 or more times?",
+        "you": 38,
+        "crowd": 39,
+        "outcome": 0,
+        "rbp": 4.96,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "YES",
+        "questionText": "In the second half, will Germany have more shots on target than Curaçao?",
+        "you": 83,
+        "crowd": 84,
+        "outcome": 100,
+        "rbp": 1.74,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will Curaçao commit more fouls than Germany?",
+        "you": 48,
+        "crowd": 66,
+        "outcome": 0,
+        "rbp": 23.32,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "NO",
+        "questionText": "Will Curaçao receive more cards than Germany?",
+        "you": 59,
+        "crowd": 61,
+        "outcome": 0,
+        "rbp": 4.84,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "Will Germany be caught offside 2 or more times?",
+        "you": 43,
+        "crowd": 54,
+        "outcome": 0,
+        "rbp": 13.83,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will Germany win the match?",
+        "you": 94,
+        "crowd": 92,
+        "outcome": 100,
+        "rbp": 1.64,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "Will the match have 2 or fewer total goals?",
+        "you": 16,
+        "crowd": 25,
+        "outcome": 0,
+        "rbp": 7.06,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will the second half have 2 or more total goals?",
+        "you": 67,
+        "crowd": 60,
+        "outcome": 100,
+        "rbp": 8.07,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will Curaçao have 3 or more shots on target?",
+        "you": 42,
+        "crowd": 32,
+        "outcome": 0,
+        "rbp": -3.19,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Leandro Bacuna have at least 1 shot on target?",
+        "you": 21,
+        "crowd": 32,
+        "outcome": 0,
+        "rbp": 9.74,
+        "performance": "Beat crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "d95d0e9c-c8dd-40af-9090-3df88d3c610d",
+    "name": "BRA vs MAR",
+    "score": "1-1",
+    "date": "Jun 13, 2026",
+    "matchRbp": "-17.11",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "NO",
+        "questionText": "Will Brazil be caught offside 2 or more times?",
+        "you": 43,
+        "crowd": 59,
+        "outcome": 0,
+        "rbp": 20.26,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "NO",
+        "questionText": "Will Morocco commit more fouls than Brazil?",
+        "you": 64,
+        "crowd": 61,
+        "outcome": 0,
+        "rbp": -0.59,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will Morocco score the first goal of the second half?",
+        "you": 35,
+        "crowd": 32,
+        "outcome": 0,
+        "rbp": 0.39,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "NO",
+        "questionText": "Will Brazil score more goals than Morocco in the second half?",
+        "you": 58,
+        "crowd": 55,
+        "outcome": 0,
+        "rbp": 0.49,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "Will Morocco have more shots on target than Brazil in the second half?",
+        "you": 23,
+        "crowd": 33,
+        "outcome": 0,
+        "rbp": 8.37,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will Brazil receive more cards than Morocco?",
+        "you": 41,
+        "crowd": 39,
+        "outcome": 100,
+        "rbp": 4.68,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "Will both teams score AND the match have 3 or more total goals?",
+        "you": 40,
+        "crowd": 47,
+        "outcome": 0,
+        "rbp": 10.63,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "NO",
+        "questionText": "Will Brazil win the match?",
+        "you": 100,
+        "crowd": 66,
+        "outcome": 0,
+        "rbp": -52.16,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will Morocco have 5 or more corner kicks?",
+        "you": 42,
+        "crowd": 38,
+        "outcome": 0,
+        "rbp": 0.42,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "YES",
+        "questionText": "Will the match be tied at halftime?",
+        "you": 32,
+        "crowd": 42,
+        "outcome": 100,
+        "rbp": -9.61,
+        "performance": "Below crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "c3312bad-7f26-4ff7-a3d9-994230bdb4bd",
+    "name": "QAT vs SUI",
+    "score": "1-1",
+    "date": "Jun 13, 2026",
+    "matchRbp": "-39.67",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "At halftime, will both teams have at least 1 shot on target?",
+        "you": 20,
+        "crowd": 59,
+        "outcome": 100,
+        "rbp": -42.5,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "NO",
+        "questionText": "Will Switzerland be caught offside 2 or more times?",
+        "you": 60,
+        "crowd": 53,
+        "outcome": 0,
+        "rbp": -3.94,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will Switzerland receive at least 1 card in the second half?",
+        "you": 40,
+        "crowd": 57,
+        "outcome": 0,
+        "rbp": 19.71,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "NO",
+        "questionText": "Will both teams score AND the match have 3 or more total goals?",
+        "you": 32,
+        "crowd": 30,
+        "outcome": 0,
+        "rbp": 2.71,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "YES",
+        "questionText": "Will Qatar have 2 or more shots on target in the second half?",
+        "you": 30,
+        "crowd": 39,
+        "outcome": 100,
+        "rbp": -7.49,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will Qatar commit more fouls than Switzerland?",
+        "you": 46,
+        "crowd": 64,
+        "outcome": 100,
+        "rbp": -13.86,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "YES",
+        "questionText": "Will Qatar score at least 1 goal?",
+        "you": 38,
+        "crowd": 40,
+        "outcome": 100,
+        "rbp": 2.09,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will Qatar have 2 or more shots on target?",
+        "you": 39,
+        "crowd": 57,
+        "outcome": 100,
+        "rbp": -14.27,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will Akram Afif have at least 1 shot on target?",
+        "you": 42,
+        "crowd": 46,
+        "outcome": 0,
+        "rbp": 7.12,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Granit Xhaka have at least 1 shot on target?",
+        "you": 41,
+        "crowd": 48,
+        "outcome": 0,
+        "rbp": 10.75,
+        "performance": "Beat crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "f3e6d1f5-dfb2-4cab-8673-906307cc0b11",
+    "name": "USA vs PAR",
+    "score": "4-1",
+    "date": "Jun 12, 2026",
+    "matchRbp": "+18.39",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "Will United States be caught offside 2 or more times?",
+        "you": 58,
+        "crowd": 56,
+        "outcome": 100,
+        "rbp": 5.27,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "YES",
+        "questionText": "Will United States score the first goal of the game and Paraguay score in the second half?",
+        "you": 22,
+        "crowd": 31,
+        "outcome": 100,
+        "rbp": -9.33,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will Paraguay finish with more corner kicks than United States?",
+        "you": 35,
+        "crowd": 35,
+        "outcome": 0,
+        "rbp": 4.11,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "YES",
+        "questionText": "Will United States win the match?",
+        "you": 46,
+        "crowd": 60,
+        "outcome": 100,
+        "rbp": -8.91,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "At halftime, will the match be tied?",
+        "you": 47,
+        "crowd": 45,
+        "outcome": 0,
+        "rbp": 1.15,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will the match have 3 or more total goals?",
+        "you": 38,
+        "crowd": 42,
+        "outcome": 100,
+        "rbp": -1.65,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "YES",
+        "questionText": "Will Paraguay score in the second half?",
+        "you": 40,
+        "crowd": 44,
+        "outcome": 100,
+        "rbp": -1.4,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will there be 4 or more total cards shown?",
+        "you": 57,
+        "crowd": 49,
+        "outcome": 100,
+        "rbp": 12,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "YES",
+        "questionText": "Will Folarin Balogun have at least 1 shot on target?",
+        "you": 62,
+        "crowd": 63,
+        "outcome": 100,
+        "rbp": 2.53,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Julio Enciso have at least 1 shot on target in the second half?",
+        "you": 20,
+        "crowd": 37,
+        "outcome": 0,
+        "rbp": 14.6,
+        "performance": "Beat crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "f8d4585d-a929-4084-8f2a-25bf0999834b",
+    "name": "CAN vs BIH",
+    "score": "1-1",
+    "date": "Jun 12, 2026",
+    "matchRbp": "+41.5",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "Will Bosnia and Herzegovina commit more fouls than Canada?",
+        "you": 67,
+        "crowd": 64,
+        "outcome": 100,
+        "rbp": 5.11,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "YES",
+        "questionText": "Will there be 4 or more total shots on target in the second half?",
+        "you": 70,
+        "crowd": 59,
+        "outcome": 100,
+        "rbp": 11.65,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will a penalty kick be awarded OR a red card be shown?",
+        "you": 43,
+        "crowd": 41,
+        "outcome": 0,
+        "rbp": 2.65,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "NO",
+        "questionText": "Will Canada win the match?",
+        "you": 75,
+        "crowd": 62,
+        "outcome": 0,
+        "rbp": -14.64,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "At halftime, will the match be tied?",
+        "you": 46,
+        "crowd": 47,
+        "outcome": 0,
+        "rbp": 3.86,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "NO",
+        "questionText": "Will the second half have 2 or more total goals?",
+        "you": 37,
+        "crowd": 38,
+        "outcome": 0,
+        "rbp": 4.24,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "Will Bosnia and Herzegovina have 5 or more corner kicks?",
+        "you": 27,
+        "crowd": 36,
+        "outcome": 0,
+        "rbp": 9.31,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 8,
+        "result": "NO",
+        "questionText": "Will Jonathan David score a goal (excluding own goals)?",
+        "you": 33,
+        "crowd": 38,
+        "outcome": 0,
+        "rbp": 6.74,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will Edin Džeko have at least 1 shot on target?",
+        "you": 60,
+        "crowd": 58,
+        "outcome": 0,
+        "rbp": 2.76,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Bosnia and Herzegovina score in the second half?",
+        "you": 37,
+        "crowd": 44,
+        "outcome": 0,
+        "rbp": 9.83,
+        "performance": "Beat crowd",
+        "predicted": true
+      }
+    ]
+  },
+  {
+    "matchId": "4a46d42d-a791-4150-bff0-7287446e03f4",
+    "name": "KOR vs CZE",
+    "score": "2-1",
+    "date": "Jun 11, 2026",
+    "matchRbp": "+22.8",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "Will both teams score AND the match have 3 or more total goals?",
+        "you": 40,
+        "crowd": 38,
+        "outcome": 100,
+        "rbp": 6.34,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "NO",
+        "questionText": "Will a penalty kick be awarded in the match?",
+        "you": 42,
+        "crowd": 33,
+        "outcome": 0,
+        "rbp": -3.15,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "YES",
+        "questionText": "Will South Korea have more shots on target than Czechia in the second half?",
+        "you": 60,
+        "crowd": 55,
+        "outcome": 100,
+        "rbp": 7.25,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 4,
+        "result": "YES",
+        "questionText": "Will South Korea win the match?",
+        "you": 46,
+        "crowd": 50,
+        "outcome": 100,
+        "rbp": 0.01,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 5,
+        "result": "NO",
+        "questionText": "Will Son Heung-min score a goal (excluding own goals)?",
+        "you": 38,
+        "crowd": 40,
+        "outcome": 0,
+        "rbp": 6.55,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 6,
+        "result": "NO",
+        "questionText": "Will Patrik Schick have at least 1 shot on target?",
+        "you": 65,
+        "crowd": 67,
+        "outcome": 0,
+        "rbp": 5.81,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "At halftime, will Czechia have more corner kicks than South Korea?",
+        "you": null,
+        "crowd": 45,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will South Korea be caught offside 2 or more times?",
+        "you": null,
+        "crowd": 52,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will there be 2 or more total cards shown in the second half?",
+        "you": null,
+        "crowd": 58,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 10,
+        "result": "YES",
+        "questionText": "Will South Korea score in the second half?",
+        "you": null,
+        "crowd": 55,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      }
+    ]
+  },
+  {
+    "matchId": "cb422ad6-6642-4e47-bc13-079bea1d8546",
+    "name": "MEX vs RSA",
+    "score": "2-0",
+    "date": "Jun 11, 2026",
+    "matchRbp": "-0.7",
+    "questions": [
+      {
+        "qNum": 1,
+        "result": "YES",
+        "questionText": "Will Mexico win the match?",
+        "you": 81,
+        "crowd": 73,
+        "outcome": 100,
+        "rbp": 6.45,
+        "performance": "Beat crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 2,
+        "result": "YES",
+        "questionText": "Will the match have 2 or fewer total goals?",
+        "you": 41,
+        "crowd": 52,
+        "outcome": 100,
+        "rbp": -7.16,
+        "performance": "Below crowd",
+        "predicted": true
+      },
+      {
+        "qNum": 3,
+        "result": "NO",
+        "questionText": "Will South Africa commit more fouls than Mexico?",
+        "you": null,
+        "crowd": 57,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 4,
+        "result": "YES",
+        "questionText": "In the second half, will Mexico have more corner kicks than South Africa?",
+        "you": null,
+        "crowd": 65,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 5,
+        "result": "YES",
+        "questionText": "Will Mexico have more shots on target than South Africa in the second half?",
+        "you": null,
+        "crowd": 69,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd called it perfectly!",
+        "predicted": false
+      },
+      {
+        "qNum": 6,
+        "result": "YES",
+        "questionText": "Will a penalty kick be awarded OR a red card be shown in the match?",
+        "you": null,
+        "crowd": 42,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 7,
+        "result": "NO",
+        "questionText": "Will South Africa be caught offside 2 or more times?",
+        "you": null,
+        "crowd": 51,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 8,
+        "result": "YES",
+        "questionText": "Will South Africa receive more cards than Mexico?",
+        "you": null,
+        "crowd": 54,
+        "outcome": 100,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 9,
+        "result": "NO",
+        "questionText": "Will South Africa score in the second half?",
+        "you": null,
+        "crowd": 38,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd played it safe.",
+        "predicted": false
+      },
+      {
+        "qNum": 10,
+        "result": "NO",
+        "questionText": "Will Oswin Appollis score or assist a goal (excluding own goals)?",
+        "you": null,
+        "crowd": 30,
+        "outcome": 0,
+        "rbp": null,
+        "performance": "The Crowd called it perfectly!",
+        "predicted": false
+      }
+    ]
+  }
+]

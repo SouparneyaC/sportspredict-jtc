@@ -1,0 +1,38 @@
+{
+  "_description": "ESPN team/player stats for France (3 group + R32) and Paraguay (3 group + R32), R16 FRA vs PAR 2026-07-04",
+  "espn_event_id": 760503,
+  "france_matches": {
+    "team_id_espn": 478,
+    "matches": [
+      {"opponent": "Senegal", "result": "W 3-1", "shots": 11, "sot": 8, "corners": 6, "yc": 0, "offsides": 1, "first_goal_min": "66'"},
+      {"opponent": "Iraq", "result": "W 3-0", "shots": 19, "sot": 5, "corners": 4, "yc": 0, "offsides": 1, "first_goal_min": "14'"},
+      {"opponent": "Norway", "result": "W 4-1 (away)", "shots": 18, "sot": 9, "corners": 5, "yc": 1, "offsides": 2, "first_goal_min": "7'"},
+      {"opponent": "Sweden", "stage": "R32", "result": "W 3-0", "shots": 25, "sot": 12, "corners": 9, "yc": 0, "offsides": 3, "first_goal_min": "45'"}
+    ],
+    "averages": {"shots": 18.25, "sot": 8.5, "corners": 6.0},
+    "notes": [
+      "Perfect record, 4W, 13 goals for / 2 against. SOT trending UP as tournament progresses: 8,5,9,12 -- season-high (12 SOT) came in their toughest test yet (Sweden, R32). Good regime coverage: their best output came against their best opponent, not their worst -- unlike Canada's untested-against-a-superior-side blind spot from the R16 match two days ago.",
+      "First-goal timing has real variance: 66', 14', 7', 45' -- they don't always start fast, meaning there IS a realistic window for an early Paraguay goal in some scenarios.",
+      "Mbappe: goals 2,2,0,2 (scored in 3/4 games, blanked only vs Norway where he had 2 assists instead). SOT 4,3,2,4.",
+      "Dembele: goals 0,1,3,0 (hat-trick vs Norway). SOT bimodal: 0,2,3,0 -- hit 2+ SOT only in the 2 games against weaker/mid opposition (Iraq, Norway); blanked on SOT vs the 2 tougher opponents (Senegal, Sweden).",
+      "Olise: 0 goals in all 4 games but assists 1,2,0,2 -- elite creator, present in 3/4 games via assist alone."
+    ]
+  },
+  "paraguay_matches": {
+    "team_id_espn": 210,
+    "matches": [
+      {"opponent": "USA", "result": "L 1-4", "shots": 9, "sot": 1, "corners": 1, "led_at_any_point": false},
+      {"opponent": "Turkey", "result": "W 1-0 (away, 21.5% poss)", "shots": 7, "sot": 2, "corners": 0, "led_at_any_point": true, "led_from_min": "2'"},
+      {"opponent": "Australia", "result": "D 0-0", "shots": 7, "sot": 2, "corners": 1, "led_at_any_point": false},
+      {"opponent": "Germany", "stage": "R32", "result": "D 1-1 in regulation (won 5-4 after ET)", "shots": 7, "sot": 3, "corners": 6, "led_at_any_point": true, "led_from_min": "42'-54'"}
+    ],
+    "averages_group_only": {"shots": 7.67, "sot": 1.67, "corners": 0.67},
+    "notes": [
+      "The ultimate giant-killer story: beat Turkey away with 21.5% possession, then held Germany to a 1-1 draw in regulation (forcing ET, eventually winning 5-4) in their R32 match -- the most direct, recent, relevant precedent for today's even-more-lopsided matchup.",
+      "Led at some point in 2 of 4 games (50%), including very recently vs a strong European side (Germany) for 12 minutes before being pegged back. This is a genuine team trait -- clinical, opportunistic finishing (a long-range effort vs Turkey, a header vs Germany) despite very low shot volume.",
+      "Team SOT floor is genuinely low and consistent (1,2,2 in groups, 3 in the R32 game which partly reflects extra-time action) -- unlike Canada's case, this IS well-regime-tested: Paraguay's low output persisted whether dominated territorially (TUR 21.5% poss, GER 24.4% poss) or in a balanced game (AUS). Real evidence, not an untested assumption.",
+      "Enciso: SOT 0,0,0,1 -- broke his SOT duck for the first time in the Germany R32 game (also scored there). IMPORTANT: a near-identical 'Enciso 1+ SOT' suppression call was made for GER-PAR and LOST -26.3 RBP specifically because the team's whole attacking ceiling broke through in that match. Do not over-anchor to the 0,0,0 pattern this time.",
+      "Almiron: 0 goals, 0 assists, 0 SOT in every game he's featured (missing entirely from the Australia squad list). Total attacking anonymity across all 4 games regardless of context (blowout loss, upset win, wild R32 draw) -- this is a personal-zero signal independent of game state, unlike the team-level Enciso case."
+    ]
+  }
+}

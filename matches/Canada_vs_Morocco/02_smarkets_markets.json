@@ -1,0 +1,30 @@
+{
+  "_description": "Smarkets event 45164869 -- key market prices for Canada vs Morocco R16 2026-07-04",
+  "event_id": 45164869,
+  "total_markets": 180,
+  "key_prices": {
+    "FTR": {"Canada": 0.1739, "Draw": 0.2878, "Morocco": 0.5362, "market_id": 148648175},
+    "BTTS_yes": {"mid": 0.4902, "market_id": 148648177},
+    "Penalty_shootout_yes": {"mid": 0.1662, "market_id": 148648310},
+    "Exact_goals": {"0": 0.099, "1": 0.2205, "2": 0.262, "3": 0.2157, "4": 0.119, "5": 0.0595, "6+": 0.03, "market_id": 148648194},
+    "HT_result": {"Canada": 0.1564, "Draw": 0.4546, "Morocco": 0.3906, "market_id": 148648182},
+    "Cards_OU2.5_over": {"mid": 0.6315, "market_id": 148648340},
+    "Cards_OU3.5_over": {"mid": 0.4253, "market_id": 148648342},
+    "CAN_SOT_OU2.5_over": {"mid": 0.5823, "market_id": 148648490, "note": "fitted lambda=3.02, far BELOW Canada's own 4-game empirical SOT avg of 7.0 -- flagged for TEAM_SOT_EMPIRICAL_FLOOR rule"},
+    "MAR_SOT_OU4.5_over": {"mid": 0.4613, "market_id": 148648540},
+    "Most_corners": {"Canada": 0.3802, "Draw": 0.1058, "Morocco": 0.519, "market_id": 148648198},
+    "Penalty_yes": {"mid": 0.2337, "market_id": 148648200},
+    "Any_sent_off_yes": {"mid": 0.1401, "market_id": 148648331},
+    "Goal_1_time_bracket": {"1-10": 0.1787, "11-20": 0.1666, "21-30": 0.1367, "31-40": 0.1086, "41-50": 0.1036, "51-60": 0.0694, "61-70": 0.053, "71-80": 0.0394, "81-90": 0.0442, "None": 0.1071, "market_id": 148648400},
+    "To_qualify": {"Canada": 0.2899, "Morocco": 0.7143, "market_id": 148648308},
+    "OU1.5_over": {"mid": 0.6996, "market_id": 148648211},
+    "OU2.5_over": {"mid": 0.4133, "market_id": 148648212}
+  },
+  "player_market_data": {
+    "jonathan_david_anytime_scorer": {"mid": 0.1981, "liquid": true},
+    "saibari_anytime_scorer": {"mid": 0.3103, "liquid": true},
+    "hakimi_score_or_assist": {"offer": 0.3401, "mid": 0.3214, "liquid": false},
+    "davies_sot_ou0.5": {"offer": 0.2899, "mid": 0.274, "liquid": false, "note": "did not play at all in 3 of 4 games; 0 shots in his one cameo"},
+    "brahim_diaz_sot_ou0.5": {"bid": 0.5076, "offer": 0.5814, "mid": 0.5445, "liquid": true, "note": "market looks generous vs his real record of 1 SOT in 4 games"}
+  }
+}

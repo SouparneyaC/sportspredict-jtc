@@ -1,0 +1,54 @@
+{
+  "_description": "Model derivations for Australia vs Egypt 2026-07-03 R32",
+  "lambda_fits": {
+    "australia_goals": 0.903,
+    "egypt_goals": 1.217,
+    "total_goals_direct_fit": 2.054,
+    "consistency_check_aus_plus_egy": 2.120,
+    "cards_total": 3.05,
+    "corners_total": 8.707,
+    "total_shots": 23.06,
+    "egypt_sot_market_fit": 3.598,
+    "egypt_sot_espn_avg": 4.33,
+    "egypt_sot_blended": 3.966
+  },
+  "derived_probs": {
+    "p_egy_sot_5plus_market_only": 0.293,
+    "p_egy_sot_5plus_espn_only": 0.436,
+    "p_egy_sot_5plus_blended": 0.364,
+    "p_cards_4plus_poisson": 0.364,
+    "p_corners_9plus_poisson": 0.505,
+    "p_corners_9plus_implied_from_under": 0.492,
+    "p_shots_20plus_poisson": 0.766,
+    "p_aus_card": 0.8111,
+    "p_egy_card": 0.8647,
+    "p_both_teams_carded": 0.7014,
+    "p_pen_or_red": 0.3546,
+    "p_offsides_3plus_own_avg_only": 0.030,
+    "p_offsides_3plus_match_env_avg": 0.323,
+    "p_offsides_3plus_blended": null
+  },
+  "elo": {
+    "australia": 1900.79,
+    "egypt": 1809.75,
+    "elo_implied_aus_winprob_two_outcome": 0.628,
+    "flag": "Elo strongly contradicts live market + current-tournament form. Not trusted -- market wins per RULE1/RULE3."
+  },
+  "rule_checks": {
+    "RULE1": "avg(market consensus) used as primary source -- no crowd data available pre-submission for this match",
+    "RULE6": "Clear -- all estimates kept within 0.05-0.95",
+    "RULE7": "INACTIVE -- Australia win=25.64% >= 15% threshold, not a heavy-favorite blowout scenario",
+    "RULE8": "FIRES -- Draw=33.78% >= 25%. Competitive/draw-heavy match; comparison-type and thin-sample model estimates shaded toward 0.50",
+    "RULE9": "Applies to Trezeguet (no reliable liquid market baseline beyond the illiquid scorer price; used positional/role prior: impact substitute in group stage, R32 question implies probable starter)",
+    "RULE12": "Q13 (offsides) flagged: own-team-only average (lambda=0.667) vs match-environment average (lambda=2.0) differ by 6x due to n=3 thin sample on each side. Blended toward the higher, more historically-consistent match-environment reading given prior precedent (MEX-ECU used match-environment-style lambda=2.0 successfully).",
+    "RULE15": "Not applicable -- Australia not a blowout underdog (25.64% > 10% floor for Scenario A)"
+  },
+  "espn_insight": {
+    "australia_shots_avg": 8.67,
+    "australia_sot_avg": 3.67,
+    "egypt_shots_avg": 16.0,
+    "egypt_sot_avg": 4.33,
+    "note_on_aus_form": "Australia's group-stage output is thin (season-high 12 shots) and their one win (2-0 vs Turkey) came against the run of play (28% possession). Egypt were the better team by shots/possession in every one of their 3 group games.",
+    "note_on_trezeguet": "Trezeguet did not start any group game; single sub appearance (76' vs NZL). Market price of ~21% for a game he may or may not start already reflects this uncertainty."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_description": "ESPN team and player stats for Spain (3 group games) and Austria (3 group games) \u2014 pre-match context for R32 2026-07-02",
+  "spain_group_stage": {
+    "event_id_today": 760497,
+    "team_id": 164,
+    "matches": [
+      {
+        "opponent": "Cape Verde",
+        "result": "W",
+        "sot": 7,
+        "shots": 27,
+        "corners": 11,
+        "yc": 1,
+        "offsides": 2,
+        "opp_offsides": 3
+      },
+      {
+        "opponent": "Saudi Arabia",
+        "result": "W",
+        "sot": 8,
+        "shots": 22,
+        "corners": 6,
+        "yc": 0,
+        "offsides": 2,
+        "opp_offsides": 3
+      },
+      {
+        "opponent": "Uruguay",
+        "result": "D 0-0",
+        "sot": 1,
+        "shots": 6,
+        "corners": 6,
+        "yc": 1,
+        "offsides": 2,
+        "opp_offsides": 5
+      }
+    ],
+    "averages": {
+      "sot": 5.33,
+      "shots": 18.33,
+      "corners": 7.67,
+      "yc": 0.67,
+      "offsides": 2.0,
+      "opp_offsides_avg": 3.67
+    },
+    "player_leaders": {
+      "vs_cpv": "Oyarzabal 5 shots (top)",
+      "vs_ksa": "Yamal 5 shots (top)",
+      "vs_uru": "Cubars\u00ed 1 shot (top)"
+    }
+  },
+  "austria_group_stage": {
+    "team_id": 474,
+    "matches": [
+      {
+        "opponent": "Jordan",
+        "result": "W 4-1",
+        "sot": 4,
+        "shots": 11,
+        "corners": 4,
+        "yc": 1,
+        "offsides": 3,
+        "opp_offsides": 1
+      },
+      {
+        "opponent": "Argentina",
+        "result": "L 0-1",
+        "sot": 1,
+        "shots": 6,
+        "corners": 3,
+        "yc": 2,
+        "offsides": 0,
+        "opp_offsides": 2
+      },
+      {
+        "opponent": "Algeria",
+        "result": "W 1-0",
+        "sot": 3,
+        "shots": 10,
+        "corners": 3,
+        "yc": 1,
+        "offsides": 3,
+        "opp_offsides": 1
+      }
+    ],
+    "averages": {
+      "sot": 2.67,
+      "shots": 9.0,
+      "corners": 3.33,
+      "yc": 1.33,
+      "offsides": 2.0
+    },
+    "player_leaders": {
+      "vs_jor": "Stefan Posch 2 shots (top \u2014 Sabitzer not top shooter)",
+      "vs_arg": "Marcel Sabitzer 3 shots (top)",
+      "vs_alg": "Nicolas Seiwald 2 shots (top \u2014 Sabitzer not top shooter)"
+    }
+  },
+  "offside_analysis": {
+    "spain_game_total_offsides": [
+      5,
+      5,
+      7
+    ],
+    "avg_total": 5.67,
+    "note": "Spain plays high defensive line \u2014 consistently generates 5+ total offside calls per game regardless of opponent quality"
+  }
+}

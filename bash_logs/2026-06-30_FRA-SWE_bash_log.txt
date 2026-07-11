@@ -1,0 +1,69 @@
+FRA vs SWE (2026-06-30) — bash log
+====================================
+
+# 0. Checked existing team history first (never skipped):
+#    FRA: fra_irq_2026-06-22 (W3-0, +46.55) — France slow-1H/explosive-2H pattern (Mbappe 1 career
+#         WC 1H goal vs 12 2H goals), heavy favorite playbook (RULE7).
+#    SWE: swe_tun_2026-06-14 (W5-1, +17.37, but Q2 "more fouls" -33.9 = 3rd-worst result ever — Tunisia's
+#         high foul average did NOT transfer in a blowout; RULE10 confirmed: winning team fouls >= losing
+#         team in blowouts), ned_swe_2026-06-20 (L1-5, +32.05 — Gyokeres RULE15 confirmed, -SOT in 2H
+#         despite SWE 8 total SOT), jpn_swe_2026-06-25 (D1-1, +70.49 — Sweden's offside consistency
+#         (3 offsides in BOTH GD1 win and GD2 loss) confirmed a 3rd time; Sweden's high-SOT-volume
+#         pattern (7.5 avg vs JPN's 4.0) the cleanest ESPN read of the tournament).
+
+# 1. ESPN team IDs via summary?event=760492 (today's match): France=478, Sweden=466.
+#    Schedules pulled -> FRA: 760432 (SEN, 6/16), 760457 (IRQ, 6/22), 760475 (NOR, 6/26).
+#                          SWE: 760424 (TUN, 6/15), 760447 (NED, 6/20), 760471 (JPN, 6/25).
+
+# 2. ESPN box scores pulled for all 6 group matches -> wc2026_espn_stats block.
+#    Key: France 3W-0L, GD+8, only 2 goals conceded all group stage. Sweden 1W-1L-1D but genuinely
+#    competitive even in defeat (8 SOT in the 1-5 NED loss). Sweden's fouls (10/12/11) and offsides
+#    (3/3/2) extremely stable across win/loss/draw — structural, not game-state-driven.
+
+# 3. Individual player stats pulled from ESPN rosters[].roster[].stats (per-player goals/SOT/shots/
+#    offsides/fouls) — "leaders" endpoint only shows 1 top performer per stat category and missed
+#    Dembele/Isak/Gyokeres in several matches; full roster stats array has every player's full line.
+#    Mbappe: 4 goals, 2 assists in 3 matches, hit 2+ SOT in ALL 3 games (4,3,2) — perfect precedent.
+#    Dembele: 4 goals incl. a hat-trick vs Norway (most recent match) — hot streak, handled with
+#    Loss-Pattern-#6 caution (small-sample streaks regress; don't push the already-recency-aware
+#    market higher on narrative).
+#    Gyokeres: 1 goal/3 matches (only vs weakest opponent Tunisia). Isak: 2+ SOT in 2/3 matches but
+#    today's live market (12.35%) already prices below a naive RULE15 band.
+
+# 4. Smarkets event discovery (limit=300, never the broken name= param): found 45159784
+#    "France vs Sweden" 2026-06-30, 173 markets available.
+
+# 5. Pulled 25+ targeted market quotes via a recreated scratchpad fetch_quotes.py helper (contracts/
+#    + quotes/ endpoints, bid/offer/mid with 0.945 illiquid-ratio convention): FTR (FRA 76.34%),
+#    OU2.5/OU3.5 goals, BTTS (57.15%), HT result (FRA 59.71%), team-to-score-first (FRA 72.95%),
+#    France/Sweden team-specific O/U goal lines (for separate lambda fits), France SOT OU6.5 (54.07%),
+#    Cards OU4.5 (13.6%), Any sent off (11.5%), France/Sweden corner O/U lines + Most Corners (FRA
+#    74.03%), 1H O/U goal lines, player markets: Mbappe 2+SOT LIQUID (mid 63.92%), Dembele anytime
+#    scorer LIQUID (mid 38.61%), Gyokeres anytime scorer LIQUID (mid 19.24%), Isak 2+SOT LIQUID
+#    (mid 12.35%) — all four player props are genuinely two-sided liquid markets, unusually clean
+#    for this stage.
+
+# 6. Computed via scipy (poisson.cdf + least_squares lambda fitting):
+#    - lambda_FRA_goals=2.672, lambda_SWE_goals=0.864 (fit from team-specific O/U lines, sum=3.536
+#      cross-validates tightly against the direct total-goals market fit of 3.501)
+#    - lambda_FRA_corners=6.608 (from France OU6.5 corners market) -> P(FRA corners>=6)=0.6465.
+#      Cross-validated: FRA+SWE corner-lambda sum (9.995) vs direct total OU8.5 fit (10.289) — close.
+#    - Q14 (goal in 1H stoppage): two independent scalings converge — 1H-specific lambda (1.591,
+#      scaled to 4/49 of the first half) gives 0.122; full-match lambda (3.536) scaled to 4/94 gives
+#      0.140. EARLY-window timing question (before any hydration break) — per the deep dive this
+#      category is 3-for-3 positive across the prior 5 matches, unlike late-window timing. Trusted
+#      near-raw at 0.12.
+#    - Q15 (4+ offsides, no market exists): combined team-average lambda = FRA 1.33 + SWE 2.67 = 4.0,
+#      raw Poisson P(>=4)=0.567. Unlike GER-PAR/NOR-CIV (clean near-zero records needing upward
+#      correction), this is already a substantial, two-team-confirmed signal — shaded only mildly to
+#      0.52 for standing full-match-count knockout humility, not aggressively corrected either way.
+
+# 7. Player-prop philosophy applied per the knockout deep-dive's PLAYER_LIQUID lesson: Isak and
+#    Gyokeres are both genuinely liquid (bid+offer, narrow spreads) and already priced below a naive
+#    RULE15 underdog-suppression band — trusted directly rather than stacking further suppression on
+#    top (the Enciso/GER-PAR over-suppression failure mode, -26.30 RBP in that case).
+
+# 8. Validated the written JSON immediately with json.load() per the deep dive's standing
+#    recommendation — confirmed valid, 15 questions, on first write.
+
+# Output: data/external_markets/fra_swe_2026-06-30.json (full 15-question estimates)

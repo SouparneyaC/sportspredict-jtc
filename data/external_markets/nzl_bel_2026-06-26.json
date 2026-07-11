@@ -2,40 +2,147 @@
   "match": "New Zealand vs Belgium",
   "date": "2026-06-26",
   "stage": "Group Stage 3 (GD3)",
-  "espn_event_ids": {"EGY_vs_BEL_GD1": 760426, "NZL_vs_IRN_GD1": 760427, "IRN_vs_BEL_GD2": 760451, "EGY_vs_NZL_GD2": 760452},
+  "espn_event_ids": {
+    "EGY_vs_BEL_GD1": 760426,
+    "NZL_vs_IRN_GD1": 760427,
+    "IRN_vs_BEL_GD2": 760451,
+    "EGY_vs_NZL_GD2": 760452
+  },
   "smarkets_event_id": 45086925,
   "group_context": {
-    "Belgium": {"pts": 2, "record": "0-2-0 (D1-1 EGY, D0-0 IRN)", "status": "Needs a win to control 2nd place; heavy favorite today against the group's bottom side"},
-    "New Zealand": {"pts": 1, "record": "0-1-1 (D2-2 IRN, L1-3 EGY)", "status": "Bottom of the group, needs a win and help elsewhere to have any realistic path"}
+    "Belgium": {
+      "pts": 2,
+      "record": "0-2-0 (D1-1 EGY, D0-0 IRN)",
+      "status": "Needs a win to control 2nd place; heavy favorite today against the group's bottom side"
+    },
+    "New Zealand": {
+      "pts": 1,
+      "record": "0-1-1 (D2-2 IRN, L1-3 EGY)",
+      "status": "Bottom of the group, needs a win and help elsewhere to have any realistic path"
+    }
   },
   "wc2026_espn_stats": {
     "BEL": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760426, "opponent": "Egypt", "result": "D 1-1", "fouls": 15, "SOT": 3, "offsides": 0, "YC": 2, "RC": 0, "corners": 2, "possession": 53.6},
-        {"event_id": 760451, "opponent": "Iran", "result": "D 0-0", "fouls": 7, "SOT": 7, "offsides": 3, "YC": 1, "RC": 1, "corners": 4, "possession": 70.1}
+        {
+          "event_id": 760426,
+          "opponent": "Egypt",
+          "result": "D 1-1",
+          "fouls": 15,
+          "SOT": 3,
+          "offsides": 0,
+          "YC": 2,
+          "RC": 0,
+          "corners": 2,
+          "possession": 53.6
+        },
+        {
+          "event_id": 760451,
+          "opponent": "Iran",
+          "result": "D 0-0",
+          "fouls": 7,
+          "SOT": 7,
+          "offsides": 3,
+          "YC": 1,
+          "RC": 1,
+          "corners": 4,
+          "possession": 70.1
+        }
       ],
-      "averages": {"fouls": 11.0, "SOT": 5.0, "offsides": 1.5, "cards": 2.0, "corners": 3.0}
+      "averages": {
+        "fouls": 11.0,
+        "SOT": 5.0,
+        "offsides": 1.5,
+        "cards": 2.0,
+        "corners": 3.0
+      }
     },
     "NZL": {
       "n_matches": 2,
       "matches": [
-        {"event_id": 760427, "opponent": "Iran", "result": "D 2-2", "fouls": 8, "SOT": 8, "offsides": 0, "YC": 0, "RC": 0, "corners": 1, "possession": 51.5},
-        {"event_id": 760452, "opponent": "Egypt", "result": "L 1-3", "fouls": 14, "SOT": 5, "offsides": 3, "YC": 2, "RC": 0, "corners": 4, "possession": 44.4}
+        {
+          "event_id": 760427,
+          "opponent": "Iran",
+          "result": "D 2-2",
+          "fouls": 8,
+          "SOT": 8,
+          "offsides": 0,
+          "YC": 0,
+          "RC": 0,
+          "corners": 1,
+          "possession": 51.5
+        },
+        {
+          "event_id": 760452,
+          "opponent": "Egypt",
+          "result": "L 1-3",
+          "fouls": 14,
+          "SOT": 5,
+          "offsides": 3,
+          "YC": 2,
+          "RC": 0,
+          "corners": 4,
+          "possession": 44.4
+        }
       ],
-      "averages": {"fouls": 11.0, "SOT": 6.5, "offsides": 1.5, "cards": 1.0, "corners": 2.5},
+      "averages": {
+        "fouls": 11.0,
+        "SOT": 6.5,
+        "offsides": 1.5,
+        "cards": 1.0,
+        "corners": 2.5
+      },
       "NOTE": "NZL's SOT average (6.5) is inflated by one strong performance (8 SOT vs a defensively shakier Iran); against Belgium's much tighter defense (only 1 goal conceded across 2 matches) this is unlikely to repeat fully."
     }
   },
   "smarkets_markets": {
-    "FTR": {"New_Zealand": 0.0656, "Belgium": 0.8265, "Draw": 0.1124, "liquid": true},
-    "HT_result": {"New_Zealand": 0.0854, "Belgium": 0.6716, "Draw": 0.2429, "liquid": true},
-    "BTTS_and_OU2_5": {"Yes_Over": 0.5237, "Yes_Under": 0.045, "No_Over": 0.2476, "No_Under": 0.1821, "liquid": true},
-    "NZL_cards_handicap_minus0_5": {"NZL_more_cards": 0.5199, "BEL_covers": 0.4791, "liquid": true},
-    "NZL_OU0_5_goals": {"Under": 0.4281, "Over": 0.5685, "liquid": true},
-    "BEL_2H_OU0_5_goals": {"Under": 0.1735, "Over": 0.8348, "liquid": true},
-    "BEL_SOT_OU6_5_fullmatch": {"Under": 0.4365, "Over": 0.5630, "liquid": true, "implied_lambda": 7.09},
-    "player_SOT_fullmatch": {"Youri_Tielemans": {"offer": 0.5128, "adjusted": 0.485}}
+    "FTR": {
+      "New_Zealand": 0.0656,
+      "Belgium": 0.8265,
+      "Draw": 0.1124,
+      "liquid": true
+    },
+    "HT_result": {
+      "New_Zealand": 0.0854,
+      "Belgium": 0.6716,
+      "Draw": 0.2429,
+      "liquid": true
+    },
+    "BTTS_and_OU2_5": {
+      "Yes_Over": 0.5237,
+      "Yes_Under": 0.045,
+      "No_Over": 0.2476,
+      "No_Under": 0.1821,
+      "liquid": true
+    },
+    "NZL_cards_handicap_minus0_5": {
+      "NZL_more_cards": 0.5199,
+      "BEL_covers": 0.4791,
+      "liquid": true
+    },
+    "NZL_OU0_5_goals": {
+      "Under": 0.4281,
+      "Over": 0.5685,
+      "liquid": true
+    },
+    "BEL_2H_OU0_5_goals": {
+      "Under": 0.1735,
+      "Over": 0.8348,
+      "liquid": true
+    },
+    "BEL_SOT_OU6_5_fullmatch": {
+      "Under": 0.4365,
+      "Over": 0.563,
+      "liquid": true,
+      "implied_lambda": 7.09
+    },
+    "player_SOT_fullmatch": {
+      "Youri_Tielemans": {
+        "offer": 0.5128,
+        "adjusted": 0.485
+      }
+    }
   },
   "context_flags": [
     "MASSIVE_MISMATCH: Belgium 82.65% favorite — the most lopsided FTR of any GD3 fixture analyzed so far. Treat this as blowout-regime for all comparison props.",
@@ -58,7 +165,7 @@
       "text": "Will New Zealand commit more fouls than Belgium?",
       "pick_tier": "LOW-MEDIUM CONFIDENCE",
       "reasoning": "Both teams average exactly 11.0 fouls/game — a true tie on paper, and Poisson-with-ties gives 0.46 raw. But NZL will almost certainly see far less of the ball than ever today against a stronger, more dominant Belgium, pushing them toward the 'defending team fouls more' pattern seen across the tournament. Nets out close to a coin-flip.",
-      "final_estimate": 0.50,
+      "final_estimate": 0.5,
       "direction": "TOSS-UP",
       "confidence": "low-medium"
     },
@@ -67,7 +174,7 @@
       "text": "Will Belgium receive at least 1 card in the second half?",
       "pick_tier": "MEDIUM CONFIDENCE",
       "reasoning": "Belgium's card average is 2.0/game (includes a red card vs Iran). Half-split Poisson (λ_2H≈1.0) gives P(≥1)=0.63.",
-      "final_estimate": 0.60,
+      "final_estimate": 0.6,
       "direction": "YES lean",
       "confidence": "medium"
     },
@@ -137,8 +244,8 @@
   ],
   "summary_table": {
     "Q1_HT_both_SOT": 0.82,
-    "Q2_NZL_more_fouls": 0.50,
-    "Q3_BEL_card_2H": 0.60,
+    "Q2_NZL_more_fouls": 0.5,
+    "Q3_BEL_card_2H": 0.6,
     "Q4_BTTS_3plus": 0.52,
     "Q5_NZL_2plus_2H_SOT": 0.65,
     "Q6_NZL_more_cards": 0.52,
@@ -152,6 +259,103 @@
     "Q8: Belgium scores in 2H = 0.83 (HIGH CONFIDENCE — direct market)",
     "Q1: Both teams 1+ SOT at HT = 0.82 (HIGH CONFIDENCE — both teams have shown early shot generation all tournament)"
   ],
-  "post_match_results": null,
+  "post_match_results": {
+    "final_score": "New Zealand 1 - 5 Belgium",
+    "total_rbp": 24.88,
+    "beat_crowd_count": "6/10",
+    "settled_date": null,
+    "questions": [
+      {
+        "q": 1,
+        "leaderboard_question": "At halftime, will both teams have at least 1 shot on target?",
+        "us": 0.82,
+        "crowd": 0.6,
+        "outcome": 0,
+        "rbp": -28.47,
+        "note": null
+      },
+      {
+        "q": 2,
+        "leaderboard_question": "Will New Zealand commit more fouls than Belgium?",
+        "us": 0.5,
+        "crowd": 0.57,
+        "outcome": 1,
+        "rbp": -4.81,
+        "note": null
+      },
+      {
+        "q": 3,
+        "leaderboard_question": "Will Belgium receive at least 1 card in the second half?",
+        "us": 0.6,
+        "crowd": 0.51,
+        "outcome": 0,
+        "rbp": -7.29,
+        "note": null
+      },
+      {
+        "q": 4,
+        "leaderboard_question": "Will both teams score AND the match have 3 or more total goals?",
+        "us": 0.52,
+        "crowd": 0.4,
+        "outcome": 1,
+        "rbp": 15.16,
+        "note": null
+      },
+      {
+        "q": 5,
+        "leaderboard_question": "Will New Zealand have 2 or more shots on target in the second half?",
+        "us": 0.65,
+        "crowd": 0.43,
+        "outcome": 1,
+        "rbp": 22.83,
+        "note": null
+      },
+      {
+        "q": 6,
+        "leaderboard_question": "Will New Zealand receive more cards than Belgium?",
+        "us": 0.52,
+        "crowd": 0.5,
+        "outcome": 1,
+        "rbp": 3.7,
+        "note": null
+      },
+      {
+        "q": 7,
+        "leaderboard_question": "Will New Zealand score at least 1 goal?",
+        "us": 0.57,
+        "crowd": 0.48,
+        "outcome": 1,
+        "rbp": 11.02,
+        "note": null
+      },
+      {
+        "q": 8,
+        "leaderboard_question": "Will Belgium score in the second half?",
+        "us": 0.83,
+        "crowd": 0.71,
+        "outcome": 1,
+        "rbp": 7.36,
+        "note": null
+      },
+      {
+        "q": 9,
+        "leaderboard_question": "Will Belgium have 4 or more shots on target?",
+        "us": 0.85,
+        "crowd": 0.73,
+        "outcome": 1,
+        "rbp": 7.51,
+        "note": null
+      },
+      {
+        "q": 10,
+        "leaderboard_question": "Will Youri Tielemans have at least 1 shot on target?",
+        "us": 0.48,
+        "crowd": 0.43,
+        "outcome": 0,
+        "rbp": -2.14,
+        "note": null
+      }
+    ]
+  },
   "created": "2026-06-26"
 }

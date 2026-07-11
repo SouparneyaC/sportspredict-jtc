@@ -1,0 +1,160 @@
+{
+  "_description": "Smarkets event 45161511 \u2014 key market prices for Portugal vs Croatia R32 2026-07-02",
+  "event_id": 45161511,
+  "total_markets": 179,
+  "key_prices": {
+    "FTR": {
+      "Portugal": 0.5797,
+      "Draw": 0.2581,
+      "Croatia": 0.164,
+      "market_id": 148293486
+    },
+    "BTTS_yes": {
+      "mid": 0.5748,
+      "market_id": 148293488
+    },
+    "OU2.5_over": {
+      "mid": 0.5587,
+      "market_id": 148293523
+    },
+    "OU3.5_over": {
+      "mid": 0.3306,
+      "market_id": 148293524
+    },
+    "HT_result": {
+      "Portugal": 0.4239,
+      "Draw": 0.3953,
+      "Croatia": 0.1819,
+      "market_id": 148293493
+    },
+    "Portugal_OU0.5_over": {
+      "mid": 0.8621,
+      "market_id": 148293534
+    },
+    "Portugal_OU1.5_over": {
+      "mid": 0.5731,
+      "market_id": 148293535
+    },
+    "Portugal_OU2.5_over": {
+      "mid": 0.2944,
+      "market_id": 148293536
+    },
+    "Croatia_OU0.5_over": {
+      "mid": 0.6412,
+      "market_id": 148293544
+    },
+    "Croatia_OU1.5_over": {
+      "mid": 0.2535,
+      "market_id": 148293545
+    },
+    "Portugal_SOT_OU4.5_over": {
+      "mid": 0.5407,
+      "market_id": 148294203
+    },
+    "Croatia_SOT_OU3.5_over": {
+      "mid": 0.4167,
+      "market_id": 148294250
+    },
+    "Portugal_shots_OU14.5_over": {
+      "mid": 0.4844,
+      "market_id": 148294221
+    },
+    "Croatia_shots_OU8.5_over": {
+      "mid": 0.4613,
+      "market_id": 148294263
+    },
+    "Total_shots_OU22.5_over": {
+      "mid": 0.5463,
+      "market_id": 148294312
+    },
+    "Cards_OU2.5_over": {
+      "mid": 0.4849,
+      "market_id": 148293751
+    },
+    "Cards_OU3.5_over": {
+      "mid": 0.3216,
+      "market_id": 148293753
+    },
+    "Cards_OU4.5_over": {
+      "mid": 0.1542,
+      "market_id": 148293755
+    },
+    "Portugal_cards_OU1.5_over": {
+      "mid": 0.3337,
+      "market_id": 148293801
+    },
+    "Croatia_cards_OU1.5_over": {
+      "mid": 0.4601,
+      "market_id": 148293802
+    },
+    "Penalty_yes": {
+      "mid": 0.2687,
+      "market_id": 148293511
+    },
+    "Any_sent_off_yes": {
+      "mid": 0.1376,
+      "market_id": 148293742
+    },
+    "Corners_OU7.5_over": {
+      "mid": 0.665,
+      "market_id": 148293763
+    },
+    "Corners_OU8.5_over": {
+      "mid": 0.5716,
+      "market_id": 148293764
+    },
+    "Corners_OU9.5_over": {
+      "mid": 0.4309,
+      "market_id": 148293765
+    },
+    "Portugal_corners_OU4.5_over": {
+      "mid": 0.6238,
+      "market_id": 148293776
+    },
+    "Portugal_corners_OU5.5_over": {
+      "mid": 0.4858,
+      "market_id": 148293778
+    },
+    "Croatia_corners_OU3.5_over": {
+      "mid": 0.4516,
+      "market_id": 148293775
+    },
+    "Most_corners": {
+      "Portugal": 0.6573,
+      "Draw": 0.0955,
+      "Croatia": 0.238,
+      "market_id": 148293509
+    },
+    "To_qualify": {
+      "Portugal": 0.7273,
+      "Croatia": 0.2742,
+      "market_id": 148293719
+    },
+    "Will_ET_yes": {
+      "mid": 0.2534,
+      "market_id": 148293720
+    },
+    "First_half_OU0.5_over": {
+      "mid": 0.7221,
+      "market_id": 148293528
+    },
+    "First_half_POR_OU0.5_over": {
+      "mid": 0.5815,
+      "market_id": 148293538
+    },
+    "Team_to_score_first": {
+      "Portugal": 0.6252,
+      "No_goal": 0.0541,
+      "Croatia": 0.3278,
+      "market_id": 148293787
+    },
+    "Portugal_clean_sheet_yes": {
+      "mid": 0.372,
+      "market_id": 148293723
+    },
+    "Portugal_score_both_halves_yes": {
+      "mid": 0.3866,
+      "market_id": 148293722
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "_description": "Actual match outcomes and per-question RBP results from the JTC SportsPredict platform",
+  "match": "Mexico vs Ecuador",
+  "date": "2026-06-30",
+  "actual_score": "Mexico 2-0 Ecuador",
+  "match_rbp_total": 154.20,
+  "questions_beat_crowd": 11,
+  "questions_below_crowd": 4,
+  "leaderboard_position_after": 499,
+
+  "key_outcomes": {
+    "winner": "Mexico",
+    "goals_total": 2,
+    "btts": false,
+    "penalty_awarded": false,
+    "red_card": false,
+    "goal_before_first_hydration_break": true,
+    "corners_total": "9+ (exact unknown)",
+    "shots_total": "20+ (exact unknown)",
+    "cards_total": "4+ (exact unknown)",
+    "offsides_total": "fewer than 3",
+    "goal_from_outside_box": false,
+    "own_goal": false
+  },
+
+  "question_results": [
+    {
+      "q": 1,
+      "text": "Will Raúl Jiménez (Mexico) score a goal?",
+      "our_estimate": 0.27,
+      "crowd_estimate": 0.31,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": -6.32,
+      "beat_crowd": false,
+      "note": "Jimenez scored — we were directionally wrong (submitted NO lean at 27%). Crowd at 31% was closer. Thinned Poisson estimate proved too conservative."
+    },
+    {
+      "q": 2,
+      "text": "Will the second half produce more goals than the first half?",
+      "our_estimate": 0.40,
+      "crowd_estimate": 0.49,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 18.96,
+      "beat_crowd": true,
+      "note": "First half had more goals OR equal distribution. Both goals were not concentrated in 2H. Our lower estimate (0.40 vs crowd 0.49) was vindicated."
+    },
+    {
+      "q": 3,
+      "text": "Will Mexico have more shots on target than Ecuador?",
+      "our_estimate": 0.53,
+      "crowd_estimate": 0.55,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": -0.17,
+      "beat_crowd": false,
+      "note": "Mexico DID have more SOT. Both we and crowd were roughly right directionally but crowd was marginally closer. Marginal loss."
+    },
+    {
+      "q": 4,
+      "text": "Will the match have 2 or fewer total goals?",
+      "our_estimate": 0.70,
+      "crowd_estimate": 0.61,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": 16.46,
+      "beat_crowd": true,
+      "note": "Exactly 2 goals total (Mexico 2-0 Ecuador). Our higher 0.70 vs crowd's 0.61 was our strongest YES call — vindicated. Low-scoring model was correct."
+    },
+    {
+      "q": 5,
+      "text": "Will Gonzalo Plata (Ecuador) score or assist?",
+      "our_estimate": 0.28,
+      "crowd_estimate": 0.28,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 3.92,
+      "beat_crowd": true,
+      "note": "Plata neither scored nor assisted. We matched the crowd on estimate but slight numerical advantage. Mexico kept a clean sheet."
+    },
+    {
+      "q": 6,
+      "text": "Will Mexico have 6 or more shots on target?",
+      "our_estimate": 0.19,
+      "crowd_estimate": 0.35,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 23.44,
+      "beat_crowd": true,
+      "note": "Mexico did NOT reach 6 SOT. Our ESPN-history read (Mexico never hit 6 in any WC2026 group match) was correct and beat crowd by 16pp. Strong process win."
+    },
+    {
+      "q": 7,
+      "text": "Will a goal be scored from outside the penalty area?",
+      "our_estimate": 0.18,
+      "crowd_estimate": 0.27,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 13.13,
+      "beat_crowd": true,
+      "note": "No goal from outside the box. Our low base-rate estimate (0.18 vs crowd 0.27) was rewarded. Even low-confidence questions contribute positive RBP when calibrated correctly."
+    },
+    {
+      "q": 8,
+      "text": "Will an own goal be scored?",
+      "our_estimate": 0.08,
+      "crowd_estimate": 0.14,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 7.09,
+      "beat_crowd": true,
+      "note": "No own goal. Our conservative 0.08 base rate estimate beat crowd's 0.14. Mexico's clean defensive organization also argued against OG risk."
+    },
+    {
+      "q": 9,
+      "text": "Will Mexico win in regulation?",
+      "our_estimate": 0.43,
+      "crowd_estimate": 0.48,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": -7.22,
+      "beat_crowd": false,
+      "note": "Mexico DID win. Both we and crowd were in the right direction but we were further from the true 1.0 outcome. Crowd at 0.48 was closer to truth. Loss despite correct direction."
+    },
+    {
+      "q": 10,
+      "text": "Will there be 9 or more total corner kicks?",
+      "our_estimate": 0.40,
+      "crowd_estimate": 0.47,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": -11.80,
+      "beat_crowd": false,
+      "note": "9+ corners DID occur — surprising given Mexico's 1.67 avg. We submitted 0.40 per market (vs our ESPN model suggesting ~0.20-0.25). Both we and crowd undershooted — crowd slightly less wrong at 0.47."
+    },
+    {
+      "q": 11,
+      "text": "Will there be 4 or more total cards?",
+      "our_estimate": 0.54,
+      "crowd_estimate": 0.51,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": 9.98,
+      "beat_crowd": true,
+      "note": "4+ cards occurred. Our slight YES lean (0.54) beat crowd's (0.51). Ecuador's card-prone history (3 YC vs Germany) proved predictive."
+    },
+    {
+      "q": 12,
+      "text": "Will there be 3 or more offside calls?",
+      "our_estimate": 0.28,
+      "crowd_estimate": 0.55,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 49.58,
+      "beat_crowd": true,
+      "note": "LARGEST SINGLE WIN: +49.58 RBP. Fewer than 3 offsides. Our ESPN data correctly identified Ecuador's structural low-offside profile (0,1,1 in group stage). Crowd at 0.55 massively overpriced offsides. 27pp gap between us and crowd, which was maximally rewarded when outcome was NO."
+    },
+    {
+      "q": 13,
+      "text": "Will a goal be scored before the first hydration break?",
+      "our_estimate": 0.40,
+      "crowd_estimate": 0.34,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": 19.83,
+      "beat_crowd": true,
+      "note": "Goal scored early. Our 0.40 (vs crowd's 0.34) correctly estimated higher early-goal probability. Time-window Poisson scaling was accurate. Category TIMING_EARLY continues perfect record."
+    },
+    {
+      "q": 14,
+      "text": "Will a penalty kick be awarded?",
+      "our_estimate": 0.26,
+      "crowd_estimate": 0.25,
+      "outcome": "NO",
+      "outcome_value": 0.0,
+      "rbp": 1.71,
+      "beat_crowd": true,
+      "note": "No penalty. Marginal win — we and crowd were essentially identical. Slight numerical edge at 0.26 vs 0.25 when outcome was NO."
+    },
+    {
+      "q": 15,
+      "text": "Will there be 20 or more total shots?",
+      "our_estimate": 0.62,
+      "crowd_estimate": 0.56,
+      "outcome": "YES",
+      "outcome_value": 1.0,
+      "rbp": 15.63,
+      "beat_crowd": true,
+      "note": "20+ shots occurred. Our stronger YES lean (0.62 vs crowd 0.56) — supported by dual lambda cross-check (market + ESPN team averages both pointing to ~21 shots) — was rewarded."
+    }
+  ],
+
+  "key_lessons": [
+    "Q12 OFFSIDE (our biggest single win ever at +49.58 RBP): Ecuador's ESPN offside profile (0,1,1 in group stage) was the crucial data point. Crowd priced offsides at 55% — crowd relied on general WC averages, not match-specific team history.",
+    "Q6 SOT CEILING: Never once reaching 6 SOT in 3 group matches was a concrete boundary that our ESPN data made visible and the crowd missed.",
+    "Q10 CORNERS LOSS: We submitted 0.40 per market (ESPN-only model said ~0.20-0.25). Both we and crowd were wrong — 9+ corners happened despite Mexico averaging 1.67 per match. Market was closer to truth but still wrong. Watch for tournament-round context shifts in set-piece counts.",
+    "Q1 JIMENEZ MISS: Thinned Poisson from n=2 starts was too conservative at 0.27. Jimenez did score. Consider widening confidence interval or using floor of 0.30-0.35 for returning-from-rest primary strikers.",
+    "BASE RATE WINS (Q7, Q8): Even low-confidence base rate questions added positive RBP (+13.13, +7.09) when calibrated below the crowd's overpriced naive base rate."
+  ]
+}

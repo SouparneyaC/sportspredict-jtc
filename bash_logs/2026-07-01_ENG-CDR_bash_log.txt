@@ -1,0 +1,50 @@
+ENG vs CDR (2026-07-01) — bash log
+====================================
+
+# 0. Checked existing history:
+#    ENG: eng_cro (W4-2, open game, 11 SOT), eng_gha (D0-0, 3 SOT from 19 shots vs compact Ghana
+#         defense — MOST CRITICAL LESSON), pan_eng (W2-0, 6 SOT). ENG avg: 8.0 corners, 6.67 SOT.
+#    CDR: col_cdr (Q5 Bakambu SOT +10.45 win via RULE15), cdr_uzb (CDR dominant 3-1 win as favorite).
+#         Key: CDR drew with PORTUGAL 1-1 with only 25% possession and allowed Portugal just 1 SOT.
+
+# 1. ESPN team IDs: England=448, Congo DR=2850. Event 760495, kickoff 2026-07-01T16:00Z.
+#    England schedule: CRO-GD1(760437), GHA-GD2(760458), PAN-GD3(760485).
+#    CDR schedule: POR-GD1(760435), COL-GD2(760459), UZB-GD3(760482).
+
+# 2. ESPN box scores: all 6 group matches. Key signals:
+#    ENG corners: 8,9,7 = avg 8.0 (consistently high). SOT: 11,3,6 = avg 6.67 (BIMODAL — Ghana = 3).
+#    CDR competitive-match profile (vs POR+COL): avg 1.5 SOT, 7.5 shots. GD3 vs UZB outlier (19 shots).
+#    Portugal had ONLY 1 SOT in 7 shots vs CDR's compact block — the most stark data point in the set.
+
+# 3. Player stats: Kane (2G CRO, 0G GHA, 1G PAN; SOT 3,1,2 avg 2.0). Bellingham (SOT 2,0,1 avg 1.0).
+#    Wissa (1G vs POR, 0G vs COL, 2G vs UZB; competitive SOT 1,0 = avg 0.5).
+
+# 4. Smarkets event 45161512 "England vs Congo DR", 169 markets. KEY LIQUID MARKETS:
+#    FTR: ENG 76.05%, Draw 18.02%, CDR 5.64% → RULE7 fires (CDR < 15%)
+#    BTTS: Yes 34.49%, OU2.5: Over 46.96%, OU3.5: Over 25.49%
+#    ENG SOT OU5.5: Over 56.30% (lambda_ENG_SOT=6.054, P(ENG>=7 SOT)=0.402)
+#    CDR SOT OU1.5: Over 58.23% (lambda_CDR_SOT=1.957)
+#    ENG corners OU7.5: Over 44.38% (Q8 direct), Total corners OU9.5: Over 53.48%
+#    Cards OU3.5: Over 28.09% (Q9 direct), Penalty: Yes 25.34%, Any sent off: Yes 11.54%
+#    Winning margin: ENG_by1=27.07%, ENG_by2=23.77%, ENG_by3+=25.15% (Q15: 0.2377+0.2515=0.4892)
+#    ENG score both halves: Yes 41.35% (Q6 direct)
+#    Highest scoring half: 2H=43.54% (Q11 direct)
+#    CDR 1H OU0.5: Over 18.24% (only liquid CDR goal market — implies CDR scoring is most likely 2H)
+#    ALL PLAYER MARKETS ILLIQUID (Kane, Bellingham, Wissa, all scorer/SOT/assist markets).
+
+# 5. Computed via scipy:
+#    lambda_ENG_goals=2.11 (avg of OU1.5-fit 2.158 and OU2.5-fit 2.063)
+#    P(CDR scores)=0.35 (blend: BTTS→0.392, 1H-doubling→0.332)
+#    Q14 compound: P(pen OR RC) = 0.2534+0.1154-0.2534×0.1154 = 0.340
+#    Q12 offsides: combined lambda=3.0 (ENG 2.0 + CDR competitive 1.0), P(>=3)=0.577→shaded 0.55
+#    Q10 shots: ENG avg 19.33 + CDR competitive avg 7.5 = 26.8 combined expected → P(>=20) ≈ 0.85
+
+# 6. Key judgment calls:
+#    - Q7 (ENG 7+ SOT): kept at 0.40 per market lambda, acknowledging GHA-style low-SOT risk
+#    - Q1 (Kane scores): 0.65 between thinned-Poisson (0.55), empirical (0.67), and PAN-ENG analogy
+#    - Q4 (Wissa 1+ SOT): market CDR team SOT already generous; applied moderate RULE15 shade → 0.35
+#    - Q10 (20+ shots): highest conviction YES — England alone hits 17+ in every match, combined floor ≫ 20
+
+# 7. Validated JSON: VALID, 15 questions.
+
+# Output: data/external_markets/eng_cdr_2026-07-01.json
