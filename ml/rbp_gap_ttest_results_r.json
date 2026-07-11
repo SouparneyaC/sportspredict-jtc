@@ -1,0 +1,30 @@
+{
+  "question_level": {
+    "n_low": 394,
+    "n_high": 377,
+    "mean_low": 3.0239,
+    "mean_high": 4.4355,
+    "mean_diff": 1.4116,
+    "ci_95": [-0.352, 3.1751],
+    "t_stat": 1.5732,
+    "p_value": 0.1164,
+    "levene_stat": 192.3097,
+    "levene_p": 3.418e-39,
+    "cohens_d": 0.1155,
+    "median_split": 0.05
+  },
+  "match_level": {
+    "n_low": 36,
+    "n_high": 35,
+    "mean_low": 4.1324,
+    "mean_high": 2.4484,
+    "mean_diff": -1.684,
+    "ci_95": [-3.4136, 0.0457],
+    "t_stat": -1.9437,
+    "p_value": 0.0562,
+    "levene_stat": 2.5018,
+    "levene_p": 0.1183,
+    "cohens_d": -0.4626,
+    "median_split": 0.0727
+  }
+}

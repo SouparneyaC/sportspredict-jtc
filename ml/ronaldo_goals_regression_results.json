@@ -1,0 +1,35 @@
+{
+  "n_matches": 9,
+  "features": [
+    "shots_on_target",
+    "xg_total",
+    "minutes_played"
+  ],
+  "in_sample_r2": 0.4314861968234204,
+  "in_sample_adj_r2": 0.0903779149174726,
+  "coefficients": {
+    "const": {
+      "coef": -0.16813388250792954,
+      "p_value": 0.6927540943889408
+    },
+    "shots_on_target": {
+      "coef": 0.19937072087846824,
+      "p_value": 0.8190125256291985
+    },
+    "xg_total": {
+      "coef": 0.8178239745587975,
+      "p_value": 0.6565263546681294
+    },
+    "minutes_played": {
+      "coef": 0.0007610359951308225,
+      "p_value": 0.9206629483151978
+    }
+  },
+  "loocv": {
+    "mse_model": 1.8461783075150693,
+    "mse_baseline": 1.15625,
+    "mae_model": 0.9720933124955504,
+    "mae_baseline": 0.8333333333333334
+  },
+  "caveat": "n=9 is far below any sample size this project trusts (RULE5 bar is n>=10). Treat as methodology demonstration, not a usable model."
+}

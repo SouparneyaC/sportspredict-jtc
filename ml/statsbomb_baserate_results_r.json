@@ -1,0 +1,28 @@
+{
+  "portugal_rates": {
+    "n_matches": 9,
+    "shots_on_target": 4.1696,
+    "total_shots": 13.2098,
+    "corners": 5.173,
+    "fouls_committed": 13.0935,
+    "goals": 1.7614,
+    "cards": 1.3954
+  },
+  "croatia_rates": {
+    "n_matches": 14,
+    "shots_on_target": 3.9145,
+    "total_shots": 13.3651,
+    "corners": 4.8643,
+    "fouls_committed": 15.4899,
+    "goals": 1.5084,
+    "cards": 1.6071
+  },
+  "derived": {
+    "n_matches": 128,
+    "p_header_goal": 0.3672,
+    "p_ht_tied": 0.4922,
+    "p_pen_or_red": 0.3984
+  },
+  "total_our_rbp": 120.3,
+  "total_model_rbp": 93.1667
+}

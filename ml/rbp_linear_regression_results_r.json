@@ -1,0 +1,19 @@
+{
+  "n_rows": 771,
+  "n_matches": 71,
+  "in_sample_r2": 0.0532,
+  "in_sample_adj_r2": 0.0306,
+  "significant_at_5pct": ["elo_diff", "rest_days_diff", "is_player_prop", "rule13_fired", "elo_context_missing"],
+  "walk_forward": {
+    "r2_model": -0.0177,
+    "mse_model": 178.3328,
+    "r2_baseline": -0.0195,
+    "mse_baseline": 178.6382
+  },
+  "grouped_kfold": {
+    "r2_model": -0.0972,
+    "mse_model": 164.0484,
+    "r2_baseline": -0.0031,
+    "mse_baseline": 149.9817
+  }
+}

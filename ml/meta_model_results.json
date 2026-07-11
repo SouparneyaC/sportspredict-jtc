@@ -1,0 +1,256 @@
+{
+  "n_rows": 404,
+  "n_matches": 42,
+  "feature_cols": [
+    "our_estimate",
+    "crowd_estimate",
+    "gap",
+    "abs_gap",
+    "elo_diff",
+    "rest_days_diff",
+    "squad_value_diff_m",
+    "fifa_ranking_diff",
+    "draw_probability",
+    "rule_fired_count",
+    "rule1_fired",
+    "rule5_fired",
+    "rule7_fired",
+    "rule8_fired",
+    "rule10_fired",
+    "rule12_fired",
+    "rule13_fired",
+    "rule14_fired",
+    "rule15_fired"
+  ],
+  "kept_rule_cols": [
+    "rule1_fired",
+    "rule5_fired",
+    "rule7_fired",
+    "rule8_fired",
+    "rule10_fired",
+    "rule12_fired",
+    "rule13_fired",
+    "rule14_fired",
+    "rule15_fired"
+  ],
+  "overall_baseline_brier": {
+    "n": 404,
+    "crowd_alone": 0.2156224034653465,
+    "our_estimate_alone": 0.21789925742574254,
+    "naive_50_50_avg": 0.21390734591584157
+  },
+  "rbp_scale_S": 101.34944858530565,
+  "walk_forward": {
+    "logreg": {
+      "n_test": 208,
+      "model_brier": 0.2545085315099285,
+      "baselines": {
+        "n": 208,
+        "crowd_alone": 0.21671971153846153,
+        "our_estimate_alone": 0.22077548076923076,
+        "naive_50_50_avg": 0.21572235576923077
+      },
+      "improvement_vs_best_baseline": -0.03878617574069776,
+      "est_rbp_equiv_over_test_set": -817.6391650029152
+    },
+    "hgb": {
+      "n_test": 208,
+      "model_brier": 0.2227370750148402,
+      "baselines": {
+        "n": 208,
+        "crowd_alone": 0.21671971153846153,
+        "our_estimate_alone": 0.22077548076923076,
+        "naive_50_50_avg": 0.21572235576923077
+      },
+      "improvement_vs_best_baseline": -0.007014719245609424,
+      "est_rbp_equiv_over_test_set": -147.87508892483524
+    }
+  },
+  "grouped_kfold": {
+    "logreg": {
+      "n_test": 404,
+      "model_brier": 0.2568993006279556,
+      "improvement_vs_best_baseline": -0.042991954712114006,
+      "est_rbp_equiv_over_full_set": -1760.3132050855838
+    },
+    "hgb": {
+      "n_test": 404,
+      "model_brier": 0.2315188383384321,
+      "improvement_vs_best_baseline": -0.017611492422590524,
+      "est_rbp_equiv_over_full_set": -721.1056785007107
+    }
+  },
+  "logreg_coefficients_full_fit": [
+    {
+      "feature": "crowd_estimate",
+      "std_coef": 0.5900123977785565
+    },
+    {
+      "feature": "fifa_ranking_diff",
+      "std_coef": 0.4496079848876951
+    },
+    {
+      "feature": "our_estimate",
+      "std_coef": 0.34996075680103966
+    },
+    {
+      "feature": "rule1_fired",
+      "std_coef": -0.3065256567127658
+    },
+    {
+      "feature": "squad_value_diff_m",
+      "std_coef": -0.2092578360670894
+    },
+    {
+      "feature": "elo_diff",
+      "std_coef": -0.1980077578371053
+    },
+    {
+      "feature": "rule15_fired",
+      "std_coef": 0.1712870015111557
+    },
+    {
+      "feature": "gap",
+      "std_coef": -0.14664528585237244
+    },
+    {
+      "feature": "draw_probability",
+      "std_coef": -0.10594185929551327
+    },
+    {
+      "feature": "rule7_fired",
+      "std_coef": -0.07925647684893079
+    },
+    {
+      "feature": "rule14_fired",
+      "std_coef": 0.07070844318611484
+    },
+    {
+      "feature": "missing_indicator_1",
+      "std_coef": -0.06823257483811562
+    },
+    {
+      "feature": "abs_gap",
+      "std_coef": -0.06168883465353108
+    },
+    {
+      "feature": "missing_indicator_2",
+      "std_coef": 0.02611066646223379
+    },
+    {
+      "feature": "rule12_fired",
+      "std_coef": 0.024861975060087426
+    },
+    {
+      "feature": "rule10_fired",
+      "std_coef": 0.01700716702355887
+    },
+    {
+      "feature": "rule13_fired",
+      "std_coef": -0.015583601685023261
+    },
+    {
+      "feature": "rule_fired_count",
+      "std_coef": -0.012933335661957214
+    },
+    {
+      "feature": "rest_days_diff",
+      "std_coef": 0.005762253464927534
+    },
+    {
+      "feature": "rule8_fired",
+      "std_coef": 0.004504843481133312
+    },
+    {
+      "feature": "rule5_fired",
+      "std_coef": 0.0022280336161041156
+    },
+    {
+      "feature": "missing_indicator_0",
+      "std_coef": 0.0022280336161041156
+    },
+    {
+      "feature": "missing_indicator_3",
+      "std_coef": 0.0022280336161041156
+    }
+  ],
+  "hgb_importances_full_fit": [
+    {
+      "feature": "crowd_estimate",
+      "importance_mean": 0.059377488328114444
+    },
+    {
+      "feature": "fifa_ranking_diff",
+      "importance_mean": 0.01743790850496231
+    },
+    {
+      "feature": "our_estimate",
+      "importance_mean": 0.006911625889886498
+    },
+    {
+      "feature": "squad_value_diff_m",
+      "importance_mean": 0.005391064188278205
+    },
+    {
+      "feature": "draw_probability",
+      "importance_mean": 0.0034817056259768718
+    },
+    {
+      "feature": "elo_diff",
+      "importance_mean": 0.0028914826890706403
+    },
+    {
+      "feature": "abs_gap",
+      "importance_mean": 0.0012374097557657586
+    },
+    {
+      "feature": "rule1_fired",
+      "importance_mean": 0.0011282363884256477
+    },
+    {
+      "feature": "rule_fired_count",
+      "importance_mean": 0.00025470136735826905
+    },
+    {
+      "feature": "rule14_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "gap",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule5_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule7_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule8_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule10_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule12_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule13_fired",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rest_days_diff",
+      "importance_mean": 0.0
+    },
+    {
+      "feature": "rule15_fired",
+      "importance_mean": 0.0
+    }
+  ],
+  "decision": "Improvement is small, inconsistent between walk-forward and grouped k-fold, or negative for at least one model/scheme. Do NOT deploy. Matches the Platt-diagnostic precedent: revisit once the master dataset includes the knockout-stage matches (more rows, more matches) and re-run this script unchanged."
+}

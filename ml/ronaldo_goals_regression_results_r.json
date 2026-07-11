@@ -1,0 +1,13 @@
+{
+  "n_matches": 9,
+  "features": ["shots_on_target", "xg_total", "minutes_played"],
+  "in_sample_r2": 0.4315,
+  "in_sample_adj_r2": 0.0904,
+  "loocv": {
+    "mse_model": 1.8462,
+    "mse_baseline": 1.1562,
+    "mae_model": 0.9721,
+    "mae_baseline": 0.8333
+  },
+  "caveat": "n=9 is far below any sample size this project trusts (RULE5 bar is n>=10). Treat as methodology demonstration, not a usable model."
+}

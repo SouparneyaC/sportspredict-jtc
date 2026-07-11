@@ -1,0 +1,178 @@
+{
+  "portugal_rates": {
+    "shots_on_target": 4.169642857142857,
+    "total_shots": 13.209821428571429,
+    "corners": 5.172991071428571,
+    "fouls_committed": 13.093470982142858,
+    "goals": 1.7614397321428572,
+    "cards": 1.3953683035714286,
+    "n_matches": 9
+  },
+  "croatia_rates": {
+    "shots_on_target": 3.914473684210526,
+    "total_shots": 13.365131578947368,
+    "corners": 4.864309210526316,
+    "fouls_committed": 15.489925986842104,
+    "goals": 1.5084292763157894,
+    "cards": 1.6071134868421053,
+    "n_matches": 14
+  },
+  "global_mean": {
+    "shots_on_target": 3.875,
+    "total_shots": 12.1875,
+    "corners": 4.484375,
+    "fouls_committed": 14.26171875,
+    "goals": 1.33203125,
+    "cards": 1.70703125
+  },
+  "derived_empirical": {
+    "n_matches": 128,
+    "p_header_goal": 0.3671875,
+    "p_ht_tied": 0.4921875,
+    "p_pen_or_red": 0.3984375
+  },
+  "results": [
+    {
+      "question": "Will Cristiano Ronaldo (Portugal) score a goal?",
+      "model_estimate": 0.504,
+      "our_estimate": 0.42,
+      "crowd_estimate": 0.43,
+      "outcome": "YES",
+      "our_rbp": 4.05,
+      "model_rbp_equiv": 7.99,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will the match have 2 or fewer total goals?",
+      "model_estimate": 0.366,
+      "our_estimate": 0.45,
+      "crowd_estimate": 0.47,
+      "outcome": "NO",
+      "our_rbp": 9.22,
+      "model_rbp_equiv": 8.81,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will Bruno Fernandes (Portugal) have 2 or more shots on target?",
+      "model_estimate": 0.146,
+      "our_estimate": 0.21,
+      "crowd_estimate": 0.37,
+      "outcome": "NO",
+      "our_rbp": 27.17,
+      "model_rbp_equiv": 11.71,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will Luka Modri\u0107 (Croatia) score or assist a goal?",
+      "model_estimate": 0.229,
+      "our_estimate": 0.22,
+      "crowd_estimate": 0.29,
+      "outcome": "NO",
+      "our_rbp": 12.74,
+      "model_rbp_equiv": 3.21,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will Croatia have 4 or more shots on target?",
+      "model_estimate": 0.55,
+      "our_estimate": 0.42,
+      "crowd_estimate": 0.46,
+      "outcome": "YES",
+      "our_rbp": -4.69,
+      "model_rbp_equiv": 9.03,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will there be 4 or more total cards shown?",
+      "model_estimate": 0.353,
+      "our_estimate": 0.32,
+      "crowd_estimate": 0.4,
+      "outcome": "NO",
+      "our_rbp": 16.6,
+      "model_rbp_equiv": 3.59,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will both teams receive at least one card?",
+      "model_estimate": 0.601,
+      "our_estimate": 0.55,
+      "crowd_estimate": 0.61,
+      "outcome": "YES",
+      "our_rbp": -4.54,
+      "model_rbp_equiv": -0.72,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will Portugal have 6 or more corner kicks?",
+      "model_estimate": 0.414,
+      "our_estimate": 0.47,
+      "crowd_estimate": 0.5,
+      "outcome": "YES",
+      "our_rbp": -2.19,
+      "model_rbp_equiv": -9.46,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will the match be tied at halftime?",
+      "model_estimate": 0.492,
+      "our_estimate": 0.4,
+      "crowd_estimate": 0.44,
+      "outcome": "YES",
+      "our_rbp": -6.23,
+      "model_rbp_equiv": 5.63,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will Portugal have 6 or more shots on target?",
+      "model_estimate": 0.242,
+      "our_estimate": 0.37,
+      "crowd_estimate": 0.45,
+      "outcome": "NO",
+      "our_rbp": 17.49,
+      "model_rbp_equiv": 14.58,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will Bernardo Silva (Portugal) have 1 or more shots on target?",
+      "model_estimate": 0.1,
+      "our_estimate": 0.36,
+      "crowd_estimate": 0.39,
+      "outcome": "NO",
+      "our_rbp": 14.24,
+      "model_rbp_equiv": 14.39,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will a header goal be scored?",
+      "model_estimate": 0.367,
+      "our_estimate": 0.34,
+      "crowd_estimate": 0.36,
+      "outcome": "YES",
+      "our_rbp": -1.22,
+      "model_rbp_equiv": 0.9,
+      "model_better_than_us": true
+    },
+    {
+      "question": "Will there be 20 or more total shots?",
+      "model_estimate": 0.92,
+      "our_estimate": 0.75,
+      "crowd_estimate": 0.63,
+      "outcome": "YES",
+      "our_rbp": 21.58,
+      "model_rbp_equiv": 13.22,
+      "model_better_than_us": false
+    },
+    {
+      "question": "Will a penalty kick be awarded OR a red card be shown?",
+      "model_estimate": 0.398,
+      "our_estimate": 0.37,
+      "crowd_estimate": 0.32,
+      "outcome": "YES",
+      "our_rbp": 16.08,
+      "model_rbp_equiv": 10.13,
+      "model_better_than_us": false
+    }
+  ],
+  "total_our_rbp": 120.3,
+  "total_model_rbp_equiv": 93.01
+}
