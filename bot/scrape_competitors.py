@@ -59,12 +59,31 @@ def post(url, body, label=""):
     return None
 
 
+PII_FIELDS = ("user_full_name", "user_email", "full_name", "email", "fullName", "userEmail", "userFullName")
+
+
+def strip_pii(obj):
+    """Competitors' real names/emails are private account data, not part of the
+    platform's public leaderboard display -- never persist them to disk. Applied
+    immediately after every fetch, before any raw dump or in-memory reuse."""
+    if isinstance(obj, dict):
+        for k in PII_FIELDS:
+            obj.pop(k, None)
+        for v in obj.values():
+            strip_pii(v)
+    elif isinstance(obj, list):
+        for item in obj:
+            strip_pii(item)
+    return obj
+
+
 # ── Step 1: Fetch all trades ─────────────────────────────────────────────────
 print("Step 1: Fetching all trades for event...")
 trades = get(f"{BASE_WEB}/trades",
              params={"q": json.dumps({"event_id": EVENT_ID})},
              label="GET /api/trades")
 print(f"  → {len(trades)} trades")
+strip_pii(trades)
 with open(OUT / "raw_trades.json", "w") as f:
     json.dump({"scraped_at": SCRAPE_TS, "count": len(trades), "data": trades}, f, indent=2)
 
@@ -76,8 +95,6 @@ for t in trades:
         users[uid] = {
             "user_id": uid,
             "user_name": t["user_name"],
-            "user_full_name": t["user_full_name"],
-            "user_email": t["user_email"],
             "user_role": t["user_role"],
             "user_img_variants": t["user_img_variants"],
         }
@@ -163,6 +180,7 @@ while True:
     time.sleep(0.3)
 
 print(f"  → {len(leaderboard_all)} leaderboard entries total")
+strip_pii(leaderboard_all)
 with open(OUT / "raw_leaderboard.json", "w") as f:
     json.dump({"scraped_at": SCRAPE_TS, "count": len(leaderboard_all), "data": leaderboard_all}, f, indent=2)
 
@@ -176,7 +194,7 @@ for uid, udata in users.items():
     ut = get(f"{BASE_WEB}/trades",
              params={"q": json.dumps({"user_id": uid, "event_id": EVENT_ID})},
              label=f"trades/{uname}")
-    per_user_trades[uid] = ut if ut is not None else []
+    per_user_trades[uid] = strip_pii(ut) if ut is not None else []
     n = len(per_user_trades[uid]) if per_user_trades[uid] else 0
     print(f"  {uname:<25} → {n} trades")
 
@@ -252,8 +270,6 @@ for uid, p in profiles.items():
     summary_rows.append({
         "user_id":         uid,
         "user_name":       p["user_name"],
-        "user_full_name":  p["user_full_name"],
-        "user_email":      p["user_email"],
         "total_picks":     p["total_picks"],
         "settled_picks":   p["settled_picks"],
         "wins":            p["wins"],
@@ -276,7 +292,6 @@ for uid, p in profiles.items():
         trade_rows.append({
             "user_name":     p["user_name"],
             "user_id":       uid,
-            "user_email":    p["user_email"],
             "match_id":      pick["match_id"],
             "market_id":     pick["market_id"],
             "question":      pick["question"],
