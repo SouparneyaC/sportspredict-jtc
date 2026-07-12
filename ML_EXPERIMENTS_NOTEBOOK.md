@@ -282,179 +282,27 @@ As the dataset grows, record here:
 ---
 
 <a name="7systematic"></a>
-## 7 Systematic Session 1 — Meeting Notes & Clues for Our Problems
-**Date recorded:** 2026-06-22  
-**Meeting date:** 2026-06-16  
-**Source file:** `[REDACTED_FILENAME]`  
-**Original:** [REDACTED] (~2h19m)  
-**Hosts:** [REDACTED_NAME] & [REDACTED_NAME] ([REDACTED]) | **Facilitator:** [REDACTED_NAME]  
-**Attendees inc:** Souparneya Chakrabarti (that's us), [REDACTED_NAME], [REDACTED_NAME], [REDACTED_NAME], [REDACTED_NAME], [REDACTED_NAME], [REDACTED_NAME]
+## Lessons from a Quant Workshop Session — Applied to Our Problems
+**Date recorded:** 2026-06-22
 
-> This was a quant/data science session on systematic investing methodology. Several things said in this meeting speak directly to problems we are navigating right now. Recorded here because the clues are valuable.
+> Several ideas from a quant/data-science workshop on systematic investing methodology speak directly to problems we're navigating right now. Paraphrased and de-identified here; the applicability is what matters, not the source.
 
 ---
 
-### What the meeting covered
+### Summary: workshop lessons applied to our project
 
-The "7 Steps to Systematic Investing" framework — a practitioner's guide, not academic theory:
-
-1. Data Collection & Preparation
-2. Exploratory Data Analysis (EDA)
-3. Model Selection & Development
-4. Backtesting, Simulation & Validation
-5. Monitoring & Maintenance
-6. Implementation & Deployment
-7. (Portfolio Management / Risk — implied, touched on)
-
-Key philosophy: *"There's alpha in every single one of those processes."* The goal isn't finding a better indicator — it's building a system that can repeatedly find and test ideas, improve itself, and fail fast on bad ones.
-
----
-
-### Clue 1: Sample size warnings match exactly our Platt problem
-
-When [REDACTED_NAME] mentioned having 16 quarters of data, [REDACTED_NAME] immediately said:
-
-> *"That's not that many for a sample size... I've always had a hard time figuring out a good sample size. And it makes it even less useful sometimes."*
-
-And later:
-
-> *"Having a very poor cut... there's bias in who gets these credit cards... if you found a better data source, updating your signal is a tricky proposition."*
-
-**How this applies to us:**  
-We have n=246 questions. The Platt bootstrap CI of [0.12, 1.29] is the quantitative proof of exactly this problem — the confidence interval is almost 1.2 units wide. These practitioners, with decades of quant experience, would look at our b=0.51 with CI [0.12, 1.29] and say: *"Too noisy to act on."* The walk-forward test confirming Platt WORSENS Brier by 0.028 is the practical consequence. We were right not to apply the correction.
-
----
-
-### Clue 2: Simple beats complex — the neural net anecdote
-
-[REDACTED_NAME], describing a real backtest he ran:
-
-> *"The stupidest idea I had to manage this worked the best. The complex neural network for detecting trend created too much portfolio turnover, and it was too expensive... Whereas the long-term moving average filter was just better, chiefly because it didn't have much portfolio turnover."*
-
-And as a general principle:
-
-> *"Don't pick a model you don't understand. If you have really good data and a really good idea, you can probably get away with a simpler model that executes faster and is a little more stable."*
-
-**How this applies to us:**  
-We've been building toward Gradient Boosting and neural architectures. This is a reminder that our structural rules (RULE1–RULE15) — discovered from first principles — may already be most of the edge. Adding complex ML on top of 246 data points is the "neural network for trend detection" in this analogy. It won't add value and may subtract it. The Platt diagnostic just confirmed this empirically.
-
----
-
-### Clue 3: The in-sample discovery bias problem — and they have no clean answer
-
-[REDACTED_NAME]'s question was pointed:
-
-> *"To what extent would you take a Bayesian point of view ('I'm not going to just create 100 variables, because even if it's noise, 5% will look good') versus a non-Bayesian point of view?"*
-
-Justin and Jeff's answer was sobering:
-
-> *"Once you see out-of-sample, it's done — you shouldn't be able to touch it again."*
-
-> *"Even just the notion of 'I know it included March of 2020'... those things... you're gonna pick or discard signals based on that, because you know in-sample... it won't pass in sample, and it'll never make it to the out-of-sample test."*
-
-> *"The one that has a 3 Sharpe that took 4 iterations versus the one that took 75 iterations should have some penalty factor."*
-
-**How this applies to us:**  
-RULE1 through RULE15 were all discovered by looking at our data. Every rule we discovered was, by definition, discovered in-sample. This is the Harvey et al. (2016) false-discovery problem we documented in the ML_RESEARCH_AGENT_NOTES. The practitioners in this room agree: there is no clean solution. Their best advice was:
-
-1. **Penalty factor for iterations** — the more times you've touched and re-cut the data, the more skeptical you should be of what you found. We should track how many "looks" each rule emerged from.
-2. **Bayesian priors help** — rules that have theoretical first-principles backing (e.g. "losing-team forwards are suppressed offensively" — RULE15) are more trustworthy than purely data-mined ones.
-3. **Keep the graveyard** — even rules that fail shouldn't be thrown away. They stop you accidentally re-discovering them and teach you something.
-
-This means: RULE1–RULE15 need to be documented with their discovery context and held to a higher bar before they go into any ML feature set. We should NOT just feed all 15 rules as features into a model — that's exactly the over-iteration path they're warning about.
-
----
-
-### Clue 4: Souparneya's own question — and the direct answer
-
-You (Souparneya) asked the hosts directly:
-
-> *"When I'm adding a new set of data to the original dataset I'm training my model on, is there any architecture I could use to see whether the new data I'm bringing in is even good, or actually benefiting my model?"*
-
-Their answer:
-
-> *"You can just drop it in if you have an existing model framework — if you spend time massaging your data and making sure it's right, fit a linear model to it, and you've got some loadings there that help you navigate bringing in these disparate pieces of data, you can simply add it and see if your model's tests increase or decrease. If you're starting from scratch, use something simple — use a t-test, see how it goes."*
-
-**How this applies to us:**  
-This is the exact question for our next steps. Their prescription is precisely what we're already doing:
-- We have a "linear model" (our logistic regression via Platt scaling) as the baseline
-- We should add each new data element (Elo, xG, rest days, question family) **one at a time** and check whether Brier/RBP improves
-- Start with a simple t-test before building anything complex
-- The key metric is Brier score (not AUC, not accuracy) — which we already established
-
----
-
-### Clue 5: "The more you look at it, the more biased you become"
-
-On the danger of spending too long with novel data before deciding:
-
-> *"There's a whole risk that the more you look at it, the more biased you become, and it's tricky, especially when you're trying to do most of it yourself."*
-
-**How this applies to us:**  
-We've been looking at our match data extensively for weeks. We know the outcomes, we know the crowd patterns, we've seen the rules emerge. Every exploration of the feature_matrix.csv is, technically, another "look" at the data. This is unavoidable at our scale and team size. But it means:
-- We cannot do a true hold-out test on RULE1–RULE15 because we already know what they looked like
-- Any "out-of-sample" test we run going forward (remaining WC2026 matches) is genuinely clean
-- The remaining ~50–70 WC2026 questions are our real validation set — treat them accordingly
-
----
-
-### Clue 6: Monitoring degradation in real time
-
-Step 5 of their framework resonated directly:
-
-> *"As you have all of this running, you want to compare real-time signals and executed trades against backtested baselines... That's how you get the proverbial death by a thousand cuts — you miss one tick on execution on an actively managed strategy, and the whole thing is toast, and you won't see it until after a big decline in the market."*
-
-> *"Live performance monitoring lets you detect model drift earlier, detect execution problems earlier. If the tracking error between the sim and live is diverging, that's a big problem."*
-
-**How this applies to us:**  
-This is exactly what the monitoring bot concept was for. We want to track:
-- Cumulative RBP vs. time (is the rate of gain accelerating, flat, or decelerating?)
-- Beat-crowd rate by week (should be relatively stable; big drops signal model drift)
-- Per-rule performance (which structural rules are still firing and adding value)
-
-The calibration benchmarks table at the bottom of Experiment 1 is the beginning of this. The Platt diagnostic re-run at n=350 is the systematic check.
-
----
-
-### Clue 7: [REDACTED_NAME]'s core data philosophy — directly applicable
-
-[REDACTED_NAME]'s frustration with Bloomberg is the same frustration we've had with data quality:
-
-> *"Almost no platform you can get data from is very good at disclosing how they go about creating the data they have. There are missing pieces, things are either interpolated, or... even on fundamentals, almost no one reports quarterly end-of-year fundamentals correctly."*
-
-> *"The only way was to build it from scratch, or buy from multiple vendors — those are just super painful."*
-
-**How this applies to us:**  
-Our 5-schema problem with the match JSON files is this exact issue in miniature. Each schema version represents a different iteration of the data pipeline where assumptions changed. The fact that MEX-KOR is missing 6/10 questions, and that SUI-BIH Q9/Q10/Q11 have null outcomes, are exactly the kind of "data quality gaps that matter for performance." [REDACTED_NAME]'s advice: spend the time to get the table-stakes data right once, then never go back. Our `build_feature_matrix.py` is that investment.
-
----
-
-### Clue 8: Fail fast, keep the graveyard
-
-> *"A lot of ideas fail, and that's one of the big overarching lessons here — we want to create systems so we can fail fast, and also let them tell us if it's not worth it."*
-
-> *"Even if it's a failure, I would treat it... definitely should keep track of what you failed on. From a modeling perspective, from a data perspective, because the graveyard of failures — one, you don't want to accidentally repeat it. But the things to learn from them, and it's not just the data itself."*
-
-**How this applies to us:**  
-The Platt diagnostic result (no significant improvement, walk-forward worsens Brier) IS a failure. That's good information. It tells us: don't apply Platt at n=246. We've documented it here, we won't re-run it for the same reason, and it sets a baseline for comparison when we eventually do have enough data. This is the notebook's entire purpose.
-
----
-
-### Summary: What the meeting tells us to do next
-
-| Problem we had | What the meeting says |
+| Problem we had | Lesson |
 |-----------------|----------------------|
-| Platt b=0.51 — is it real? | "Small sample size is the enemy." Not enough data. Don't act on it. |
-| Should we apply ML correction? | "Simple beats complex at small n. Neural nets added turnover cost; moving average won." |
-| RULE1–RULE15 in-sample bias | "Once you see out-of-sample, you can't unsee it. Penalty factor for iterations." Bayesian priors help justify rules theoretically. |
-| What to do with new data (xG, Elo, etc.) | "Drop it in. Fit a linear model. See if tests go up or down. Start with a t-test." |
-| When to apply corrections | "The remaining WC matches are your real out-of-sample test. Don't contaminate it." |
-| Monitoring & maintenance | "Track in real time. Catch drift early. Calibration benchmarks table = right approach." |
+| Platt b=0.51 — is it real? | Small sample size is the enemy — a CI of [0.12, 1.29] is not enough to act on. Don't apply the correction yet. |
+| Should we apply ML correction? | Simple beats complex at small n — added complexity (e.g. a neural net) can add cost/turnover without adding value; a simpler, well-understood model is often more stable. |
+| RULE1–RULE15 in-sample bias | Every rule discovered by looking at our own data is, by definition, in-sample (the Harvey et al. 2016 false-discovery problem, see ML_RESEARCH_AGENT_NOTES). No clean fix exists, but three mitigations help: (1) track how many "looks" each rule emerged from and penalize heavily-iterated ones, (2) trust rules with first-principles theoretical backing more than purely data-mined ones, (3) keep a "graveyard" of failed rules — don't discard them, they prevent re-discovering the same dead end and teach their own lesson. Do not feed all 15 rules as raw features into an ML model — that repeats the over-iteration problem instead of solving it.
+| What to do with new data (xG, Elo, etc.) | Add each new data element one at a time against an existing baseline model and check whether the test metric (Brier, not AUC/accuracy) improves. Start with something as simple as a t-test before building anything complex. |
+| When to apply corrections | Remaining WC2026 matches are the real out-of-sample test — don't contaminate it by re-looking at already-seen data. |
+| Monitoring & maintenance | Track cumulative RBP and beat-crowd rate over time, and per-rule performance, to catch model drift early rather than after a large decline. |
+| Data quality | Almost no data source discloses its own construction cleanly — missing pieces and inconsistent reporting are normal. The fix is investing once in getting the table-stakes data pipeline right (schema handling, validation) rather than re-litigating it every time. Our multi-schema `build_feature_matrix.py` handling is exactly that investment. |
+| Failure tracking | A negative result (e.g., Platt diagnostic showing no improvement) is good information, not a wasted effort — document it once and don't re-run the same failed approach. |
 
-**The most important single takeaway from the meeting:**  
-> *"Write it down and stick by the rules you wrote down as part of the process."*
-
-This notebook is that discipline. Every experiment documented, every rule discovery tracked, every failure recorded. The meeting validated the entire framework we're building.
+**The single most important takeaway:** write decisions down and hold to the process you defined, rather than re-litigating it under pressure. This notebook is that discipline in practice — every experiment documented, every rule's discovery context tracked, every failure recorded.
 
 ---
 
