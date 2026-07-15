@@ -145,7 +145,9 @@ topics/              Question-type navigation (start here) — one folder per qu
 matches/              One folder per match: raw data pulled, models applied, final prediction,
                         and (once played) the settled outcome and score
 writeups/             Polished, cross-linked narrative writeups + standing methodology decisions
-model/                model/elo.py — the point-in-time Elo rating system every topic depends on
+model/                model/elo.py — the Elo update formula and historical-panel builder every
+                        topic depends on. Point-in-time for 2026 fixtures specifically comes from
+                        a replay layer on top (ml/backtests/), not this file alone — see §11
 ml/                   Track-record-wide diagnostics: calibration checks, and four separate,
                         honestly-reported experiments testing whether a learned blending model
                         could beat the hand-built pipeline (answer: not yet, and here's why)
@@ -216,10 +218,17 @@ is plain Python and R with common libraries, no exotic dependencies.
 robust standard errors), `ggplot2`. The two formal papers (`.Rmd` files) additionally need
 `rmarkdown` to knit to PDF.
 
-A representative example — refitting the point-in-time Elo ratings from scratch:
+A representative example — rebuilding the historical Elo panel from scratch:
 
 ```bash
 python3 model/elo.py
+```
+
+Note this alone reproduces the pre-tournament baseline, not a current 2026 rating (see §11) —
+for a genuinely current point-in-time Elo panel, run:
+
+```bash
+python3 ml/backtests/build_full_tournament_pit_elo.py
 ```
 
 Or running one of the topic backtests (from the repo root, since paths are root-relative):
@@ -253,11 +262,47 @@ python3 scripts/verify_md_links.py
 
 ## 11. Key findings so far
 
-- **The crowd is structurally biased, not just imperfect.** The platform's crowd consensus
-  compresses toward 50% in a measurable, fittable way (`crowd ≈ 0.50 + 0.61 × (our estimate −
-  0.50)`, consistently replicated across three sample sizes from n=85 to n=772) — a textbook
-  favorite-longshot bias. Exploiting that compression, not simply being a better forecaster in
-  some abstract sense, is the primary source of this project's edge.
+- **The crowd is structurally biased, not just imperfect — but deliberately exploiting that bias
+  doesn't work, and the project's own data says so.** The platform's crowd consensus compresses
+  toward 50% in a measurable, fittable way (`crowd ≈ 0.50 + 0.61 × (our estimate − 0.50)`,
+  independently re-fit three times as the sample grew — n=85, n=384, n=772 — with the slope
+  essentially unchanged each time, r≈0.83 throughout). That part is solid. What doesn't hold up:
+  a match-level test of whether deviating further from the crowd earns more RBP (the statistically
+  correct way to ask the question, since ~15 questions per match aren't independent observations)
+  finds the *opposite* — more deviation is weakly associated with *lower* RBP (n=71 matches,
+  p=0.056). A regression of RBP on crowd-deviation gets R²=0.053 and loses to a naive baseline
+  out-of-sample. And there's a closed-form reason why: under this scoring rule, deliberately
+  pushing a submission past a genuinely calibrated estimate costs exactly S·δ² in expectation — a
+  guaranteed loss with no offsetting upside. The one live attempt to do this anyway (Canada vs.
+  Morocco, pushing past a calibrated market price) cost **-80.83 RBP, the campaign's worst single
+  result**. The real source of edge is narrower and less flattering: at the original n=85 check,
+  the crowd's *raw* Brier score was actually *better* than the project's own (0.2268 vs. 0.2424),
+  and the individual-question win rate was 52.9% — barely above a coin flip. The positive
+  cumulative RBP came from winning big on a handful of high-leverage, well-grounded calls, while
+  occasionally losing big on overconfident ones — removing just the single worst loss from that
+  sample would have raised total RBP by 37%. The crowd-compression regression is genuinely useful
+  as a **diagnostic** (it flags which questions the crowd is likely wrong about, and RULE12 uses
+  the compressed value as a floor when shrinking a low-confidence estimate) — it just isn't a lever
+  you can safely pull harder for more points. See
+  [`JTC_WC2026_Research_Paper.pdf`](JTC_WC2026_Research_Paper.pdf) (the "Rejection of Learned
+  Blending Models" section) for the full four-test case.
+- **The point-in-time Elo claim is true, but only because a known staleness bug is actively routed
+  around, not because it can't happen.** `data/international_results/results.csv` records every
+  2026 World Cup match's score as `NA` (it's a fixture list, not a results file), so the base
+  `model/elo.py` pipeline never actually processes a single 2026 result — its output,
+  `data/processed/elo_current_ratings.csv`, is genuinely frozen at pre-tournament (early June)
+  values (confirmed: file untouched since June 10, the day before the tournament started). The bug
+  was caught by a sanity check: Argentina's listed Elo was *identical* (2189.5282) across all three
+  of its group-stage matches despite winning 3-0, 2-0, and 3-1 — a rating that doesn't move after
+  three wins is not a live rating. Left uncorrected, this kind of staleness is not cosmetic: in one
+  traced case (Spain vs. Belgium, quarterfinal), the frozen rating overstated Spain's Elo edge by
+  **64.23 points** relative to the correct point-in-time value, because it was blind to Belgium's
+  4-1 demolition of the USA in the round before. Every actual 2026 prediction in this repo uses a
+  separate, dedicated point-in-time replay (`ml/backtests/build_full_tournament_pit_elo.py` for the
+  systematic panel, plus a same-day, fixture-specific replay script for whichever match is being
+  priced next) that replays real results through the same update formula — not the frozen base
+  output. This is disclosed, not hidden, specifically so a reviewer checking the "point-in-time
+  Elo" claim in this README can verify it rather than take it on faith.
 - **A liquid market beats a domain model, every time one exists.** See
   [`writeups/decisions/0001-market-priority-over-domain-model.md`](writeups/decisions/0001-market-priority-over-domain-model.md).
 - **Machine learning helps in some places and not others, and both are worth knowing.** The
