@@ -20,7 +20,7 @@ suppressPackageStartupMessages({
 
 ROOT <- getwd()
 PLAYER_PANEL <- file.path(ROOT, "data", "processed", "statsbomb_player_match_panel.csv")
-OUT <- file.path(ROOT, "ml", "ronaldo_goals_regression_results_r.json")
+OUT <- file.path(ROOT, "topics", "player-props", "ronaldo_goals_regression_results_r.json")
 
 PLAYER_NAME <- "Cristiano Ronaldo dos Santos Aveiro"
 FEATURES <- c("shots_on_target", "xg_total", "minutes_played")

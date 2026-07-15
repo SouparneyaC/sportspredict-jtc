@@ -44,9 +44,9 @@ import statsmodels.api as sm
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import LeaveOneOut
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 PLAYER_PANEL = ROOT / "data" / "processed" / "statsbomb_player_match_panel.csv"
-OUT = ROOT / "ml" / "ronaldo_goals_regression_results.json"
+OUT = ROOT / "topics" / "player-props" / "ronaldo_goals_regression_results.json"
 
 PLAYER_NAME = "Cristiano Ronaldo dos Santos Aveiro"
 FEATURES = ["shots_on_target", "xg_total", "minutes_played"]
