@@ -32,7 +32,7 @@ match gets a row here. Per-match research/sourcing detail lives in the linked fi
 
 **Running total (this table only): +393.31 RBP across 220 graded questions (24 matches tabulated above, BIH-QAT contributing 0 RBP / unsubmitted). NOTE: this table still does not include every match in `data/external_markets/` — see `datasets/questions_flat.csv` for the complete settled-question ledger (423 submitted questions, +812.15 RBP, 58.2% beat-crowd, as of 2026-06-26). The two totals differ because this table is a partial index; the CSV is the authoritative complete record.**
 
-**2026-06-25 GD3 session total: +167.04 RBP across 56 questions (6 matches): GER-ECU +8.05 | CUR-CIV +45.21 | JPN-SWE +70.49 | TUN-NED -13.62 | PAR-AUS +49.57 | TUR-USA +8.34. Full win/loss trail analysis for every notable result (good and bad) across the whole campaign: see [STEPS_FOR_HIGH_POINTS.md](../STEPS_FOR_HIGH_POINTS.md).**
+**2026-06-25 GD3 session total: +167.04 RBP across 56 questions (6 matches): GER-ECU +8.05 | CUR-CIV +45.21 | JPN-SWE +70.49 | TUN-NED -13.62 | PAR-AUS +49.57 | TUR-USA +8.34. Full win/loss trail analysis for every notable result (good and bad) across the whole campaign: see [STEPS_FOR_HIGH_POINTS.md](../../STEPS_FOR_HIGH_POINTS.md).**
 
 **2026-06-24 GD3 session total: -53.31 RBP across 49 questions (5 matches).**
 Breakdown: SUI-CAN -21.56 | SCO-BRA +2.75 | MAR-HAI +11.07 | CZE-MEX -6.01 | RSA-KOR -39.56.
@@ -41,7 +41,7 @@ Beat crowd today: 26/49 questions (53%).
 
 ---
 
-## 2026-06-25 GD3 Predictions (SETTLED — results recorded in the master table above and in each match's JSON `post_match_results`; full trail analysis in [STEPS_FOR_HIGH_POINTS.md](../STEPS_FOR_HIGH_POINTS.md))
+## 2026-06-25 GD3 Predictions (SETTLED — results recorded in the master table above and in each match's JSON `post_match_results`; full trail analysis in [STEPS_FOR_HIGH_POINTS.md](../../STEPS_FOR_HIGH_POINTS.md))
 
 ### GER-ECU Pre-Match Estimates
 

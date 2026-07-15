@@ -14,19 +14,25 @@ each gets one entry describing what it is and how it's used.
 
 **Status:** written incrementally as each section was completed — sections were appended as they
 finished, not held back for one final pass, so nothing would be lost if the work were interrupted.
-All 7 sections are now complete.
+All 8 sections are now complete. **2026-07-15:** the repo was reorganized by question-type topic
+(see Section 2) — files that were single-topic physically moved into `topics/<slug>/`; genuinely
+shared infrastructure stayed put and is now linked from every topic that depends on it. Sections 6
+and 8 were updated to reflect the new locations; every other section's file-path references were
+checked and fixed where stale (`scripts/verify_md_links.py` now confirms zero broken markdown
+links repo-wide).
 
 ---
 
 ## Contents
 
 1. [Root-level research notes (MD files)](#1-root-level-research-notes)
-2. [`bot/` — live API pipeline](#2-bot--live-api-pipeline)
-3. [`data/` and `datasets/` — data sources and processed panels](#3-data-and-datasets)
-4. [`matches/` — per-match research and settlement records](#4-matches--per-match-research-and-settlement-records)
-5. [`ml/` and `model/` — the core statistical pipeline and backtesting](#5-ml-and-model--the-core-statistical-pipeline-and-backtesting)
-6. [`papers/`, Tactic AI, `bash_logs/`, and misc root files](#6-papers-tactic-ai-bash_logs-and-misc-root-files)
-7. [`writeups/` — professional match write-ups](#7-writeups--professional-match-write-ups)
+2. [`topics/` — question-type navigation (start here)](#2-topics--question-type-navigation-start-here)
+3. [`bot/` — live API pipeline](#3-bot--live-api-pipeline)
+4. [`data/` and `datasets/` — data sources and processed panels](#4-data-and-datasets)
+5. [`matches/` — per-match research and settlement records](#5-matches--per-match-research-and-settlement-records)
+6. [`ml/` and `model/` — shared infrastructure](#6-ml-and-model--shared-infrastructure-family-specific-content-moved-to-topics)
+7. [`papers/`, Tactic AI, `bash_logs/`, and misc root files](#7-papers-tactic-ai-bash_logs-and-misc-root-files)
+8. [`writeups/` — professional match write-ups](#8-writeups--professional-match-write-ups)
 
 ---
 
@@ -232,7 +238,58 @@ explicitly supersede or get superseded by others, noted per entry.
 
 ---
 
-## 2. `bot/` — live API pipeline
+## 2. `topics/` — question-type navigation (start here)
+
+The primary entry point for "how do we price question type X" — added 2026-07-15 to fix a
+specific, named problem: before this, tracing a single question type (e.g. "total cards") meant
+hunting across `ml/backtests/`, `model/`, `data/processed/`, several `matches/*/` folders, and
+root-level MD notes with no consistent linking. `matches/*/` (Section 5) remains the right place
+to look up "what happened in this specific match"; `topics/` is the complementary axis for
+"what's our model/track record for this kind of question across every match."
+
+**How this was built, and why it isn't a 100%-physical move:** files that are genuinely specific
+to one question type were physically moved here via `git mv` (preserving history). Files that are
+genuinely shared across multiple topics — the point-in-time Elo panels, the StatsBomb/ESPN/unified
+training panels, the shared hierarchical-backtest library, the master dataset — were **not**
+duplicated or moved, per this repo's own raw/processed-data discipline (see root `README.md`).
+They stay in `model/`, `data/processed/`, `datasets/`, and `ml/backtests/` (now much smaller,
+holding only genuinely cross-topic infrastructure — see Section 6), and every topic folder that
+depends on one of them links to it explicitly in a "Shared inputs" table rather than copying it.
+
+Each topic folder follows the same template: **what this topic covers**, **current status/verdict**
+(PASS/FAIL where a backtest exists), **files in this folder**, **shared inputs** (exact paths to
+dependencies that live elsewhere), **relevant matches**, and **root-doc mentions**.
+
+| Topic | Folder | Status | Files here |
+|---|---|---|---|
+| Shots on Target | [`shots-on-target/`](topics/shots-on-target/README.md) | **PASS** (hierarchical GLMM) | 8 |
+| Cards | [`cards/`](topics/cards/README.md) | **FAIL** (twice — original + referee-refined) | 4 |
+| Corners | [`corners/`](topics/corners/README.md) | **PASS** | 3 |
+| Offsides | [`offsides/`](topics/offsides/README.md) | **FAIL** (post-bug-fix; a retracted false-PASS is documented in full) | 2 |
+| First Substitution / Timing | [`first-substitution/`](topics/first-substitution/README.md) | **FAIL** (confidently worse than baseline) | 4 |
+| Player Props | [`player-props/`](topics/player-props/README.md) | Not usable (n=9 methodology demo) | 4 |
+| Match Winner + Goals-Totals/BTTS | [`match-winner-goals-totals/`](topics/match-winner-goals-totals/README.md) | Fitted, in production (the classical pipeline) | 18 |
+| Rare-Event Timing | [`rare-event-timing/`](topics/rare-event-timing/README.md) | Stub — no dedicated model yet | 0 (README only) |
+| VAR Review | [`var-review/`](topics/var-review/README.md) | Stub — genuinely sample-starved | 0 (README only) |
+| Penalties / Red Cards | [`penalties-red-cards/`](topics/penalties-red-cards/README.md) | Stub — priced via named rule (RULE4) | 0 (README only) |
+| Half-Time Splits | [`half-time-splits/`](topics/half-time-splits/README.md) | Stub — market-anchored, no model needed | 0 (README only) |
+| Fouls | [`fouls/`](topics/fouls/README.md) | Stub — folded into Cards as a covariate | 0 (README only) |
+| Combined-Threshold Composition | [`combined-threshold/`](topics/combined-threshold/README.md) | Stub — a methodology, not a question type; see the 3 families above | 0 (README only) |
+
+This is the taxonomy actually used across the project's preregistration docs, the RULE1–18
+system, and the `tier` tags in `matches/*/04_rules_applied.json` — not an invented one. 7 of the
+14 topics have dedicated files; the other 6 are README-only stubs completing the taxonomy so
+every question type has exactly one canonical folder to check, even ones without a fitted model.
+
+**Reused pattern from `writeups/`:** every topic README's links are verified to resolve, the same
+discipline `writeups/README.md` already used for its 100 cross-repo links (see Section 8) — now
+extended repo-wide via `scripts/verify_md_links.py`, added as part of this reorg
+(percent-decodes every markdown link, checks `os.path.exists`, run repo-wide as the final
+verification step).
+
+---
+
+## 3. `bot/` — live API pipeline
 
 The live API bot pipeline for the SportsPredict/JTC platform: endpoint-discovery research, fetch
 scripts (SportsPredict web/v1 API, Smarkets betting exchange, ESPN box scores), a prediction
@@ -307,7 +364,7 @@ Accumulated outputs of the scripts above — 7 files at the top level (`markets_
 
 ---
 
-## 3. `data/` and `datasets/`
+## 4. `data/` and `datasets/`
 
 Excluded per scope: `data/external/statsbomb/open-data/` — full clone of the public statsbomb/open-data repo (~9,000 files), gitignored, re-clonable, used as raw source for `build_statsbomb_panel.py`.
 
@@ -401,7 +458,7 @@ Interactive/exploratory script — summarizes the panels, spot-checks Portugal's
 
 ---
 
-## 4. `matches/` — per-match research and settlement records
+## 5. `matches/` — per-match research and settlement records
 
 19 match subdirectories, one per game priced for the JTC platform (play.sportspredict.com), each covering the ~15 probabilistic questions for that fixture. Two generations of file-naming convention are present: an older "01-06" convention (most folders) and a newer, richer "00-14" convention used on the most recent quarterfinal/semifinal matches (Argentina_vs_Switzerland, Norway_vs_England, Spain_vs_Belgium, and especially "France Vs Spain (Jul.14.26)"). `mex_ecu_2026-06-30` is the earliest match and also uses the 01-06 convention but with its own README and an extra `07_instrument_trace.json`.
 
@@ -453,61 +510,49 @@ The pipeline: raw data fetch → market fetch → model derivation → rule appl
 
 ---
 
-## 5. `ml/` and `model/` — the core statistical pipeline and backtesting
+## 6. `ml/` and `model/` — shared infrastructure (family-specific content moved to `topics/`)
 
-`model/` is the deterministic core pipeline (point-in-time Elo → Poisson goals GLM → Dixon-Coles correction → prediction/backtesting, plus a parallel ordered-logit track and NB-dispersion refinement). `ml/` is mostly statistical diagnostics on the live JTC track record (our_estimate vs crowd_estimate vs outcome/RBP) plus the "design #2" hierarchical-GLMM ML campaign under `ml/backtests/`.
+**Reorganized 2026-07-15** (see Section 2): the family-specific backtests, results, and
+preregistration docs that used to fill these two directories now live in `topics/<slug>/` — SOT,
+cards, corners, offsides, first-substitution, player-props, and the match-winner/goals-totals
+classical pipeline. What's left here is genuinely cross-topic infrastructure: things every family
+depends on, that would have to be duplicated (violating this repo's own no-duplicate-data rule)
+to live inside any single topic folder.
 
-### `model/` — 15 Python files, no subdirectories
+### `model/` — 1 file
+- **`elo.py`** — point-in-time Elo for every national team from `data/international_results/results.csv`, using the published World Football Elo Ratings formula (`R_new = R_old + K*G*(W-We)`), K from `tournament_kfactor_map.csv` (default K=30 fallback), G the goal-difference multiplier, +100 home advantage when non-neutral. INITIAL_RATING=1500.0 (unvalidated). Outputs `data/processed/elo_match_panel.csv` and `data/processed/elo_current_ratings.csv` — the Elo panel every topic's own-Elo covariate depends on. The other 14 files formerly in `model/` (Poisson goals GLM, Dixon-Coles, ordered logit, and their prediction/backtest/diagnostic scripts) moved to `topics/match-winner-goals-totals/model/` — see Section 2.
 
-- **`elo.py`** (Stage 1) — point-in-time Elo for every national team from `data/international_results/results.csv`, using the published World Football Elo Ratings formula (`R_new = R_old + K*G*(W-We)`), K from `tournament_kfactor_map.csv` (default K=30 fallback), G the goal-difference multiplier, +100 home advantage when non-neutral. INITIAL_RATING=1500.0 (unvalidated). Outputs `elo_match_panel.csv` (pre-match Elo per historical match — the training panel for the Poisson stage) and `elo_current_ratings.csv` (latest per-team rating, used by `predict.py`).
-- **`poisson_goals.py`** (Stage 2) — classical Poisson GLM (log link), `log(lambda) = b0 + b1*home_adv + b2*elo_diff`, following Hvattum & Arntzen (2010). Recency weighting `exp(-XI*days_ago)`, XI=0.0008 (untuned placeholder). Output: `poisson_goals_coefs.json`. **Documented bug fix (2026-07-10):** originally assigned `home_adv=1` unconditionally even on neutral-venue matches (~26%/13,100 of 49k rows), biasing the fitted home-advantage coefficient down (~0.23 vs true ~0.35), compressing all non-neutral win probabilities toward 50/50 — the same gap `backtest_harness.py`'s decile table exposed. Fixed by zeroing `home_adv` when `neutral=="TRUE"`.
-- **`dixon_coles.py`** (Stage 3) — turns `(lambda_home, lambda_away)` into a full scoreline grid (max_goals=10) via independent Poisson (or NB) marginals corrected by the Dixon & Coles (1997) tau factor on the 4 low-scoring cells. Derives 1X2, O/U, BTTS, "team scores ≥N". Includes `fit_rho()` (grid-search MLE, default -0.30 to 0.10; rho "typically -0.05 to -0.15").
-- **`ordered_logit.py`** — parallel track: fits match outcome (away<draw<home) directly on Elo diff + home advantage via L-BFGS-B on a hand-coded weighted NLL, cutpoints reparametrized to enforce ordering. Calibrated against P(home win) by construction, addressing a ~+0.25-0.35 logit-space gap found in the goals-based pipeline. Output: `ordered_logit_coefs.json`.
-- **`predict.py`** / **`predict_ordered_logit.py`** — end-to-end single-fixture prediction CLIs for the Poisson+DC pipeline and the ordered-logit model respectively. `RHO_DEFAULT=-0.1` flagged unfit/placeholder in `predict.py`. Ordered-logit version covers only match-result (no goal totals).
-- **`backtest_harness.py`** — full historical backtest of the Poisson+DC pipeline: mean Brier/RPS for match result, mean Brier for total-goals≤2, a 10-bucket calibration table. **Explicit caveat:** coefficients fit once on the full ~49k-match panel (mild lookahead for older matches) — flagged as needing a proper walk-forward refit, not yet done. Exposes `predict_one()`, `brier_3way()`, `rps_3way()` reused elsewhere.
-- **`backtest_single.py`** — single-match sanity-check/demo, explicitly labeled "not a statistical validation."
-- **`backtest_vs_market.py`** — ordered-logit model vs de-vigged bookmaker odds (`international_fixture_odds.csv`); reports Brier/RPS, sign test, paired t-test, favorite-strength-bucket breakdown.
-- **`fit_rho.py`** — CLI to fit Dixon-Coles rho by MLE (downstream default used is rho=-0.06).
-- **`fit_nb_dispersion.py`** — fits NB2 overdispersion `alpha` holding the Poisson mean structure fixed, addressing a "fatter-than-Poisson tails" miscalibration found by `goal_totals_diagnostics.py`. Re-fits rho under NB marginals. Output: `nb_dispersion_coefs.json`.
-- **`backtest_diagnostics.py`** — discriminates logit-space vs raw-probability calibration gap (multiplicative Elo-coefficient attenuation vs additive home-advantage-related miscalibration); splits by neutral vs non-neutral to rule out home-advantage as the cause. Defines the reusable `Bucketer` class used by sibling diagnostics.
-- **`goal_totals_diagnostics.py`** / **`goal_totals_diagnostics_nb.py`** — same decile/calibration methodology applied to P(total goals≤threshold), Poisson and NB variants respectively, for before/after comparison.
-- **`ordered_logit_diagnostics.py`** — same Brier/RPS/calibration diagnostics applied to the ordered-logit model, for direct side-by-side comparison with the goals-based pipeline.
+### `ml/` — 18 top-level files (track-record-wide diagnostics, not topic-scoped)
+- **`build_feature_matrix.py`** — flattens every settled match JSON in `data/external_markets/` (6 documented schema variants, labeled A-G) into **`ml/feature_matrix.csv`** (264 rows). **Documented fix (2026-07-10):** added a `post_match` key fallback, recovering 7 previously-silently-dropped matches.
+- **`platt_diagnostic.py`** — hand-implemented Platt-scaling calibration check over 246 settled questions. **Result: b=0.510, 95% CI [0.123,1.287] includes 1.0 — recalibration WORSENS Brier both globally and walk-forward. Conclusion: do not apply Platt recalibration.**
+- **`meta_model.py`** — Problem-A meta-model: context-aware logistic regression / shallow HGB blend of our_estimate/crowd_estimate, validated two ways against 3 baselines. Estimates an RBP-per-Brier scale `S≈101.3` (reused in `statsbomb_baserate_test.py`). **Result: both models WORSE than baseline OOS — decision: do NOT deploy.**
+- **`rbp_gap_ttest.py`/`.R`** — Welch's t-test on whether deviating from crowd predicts RBP, at question level (non-independent, caveated) and match level (the trusted unit). **Result: match-level -1.68 (p=0.056) — deviating more from crowd associates with LOWER RBP at the correctly-independent unit.**
+- **`rbp_linear_regression.py`/`.R`** — OLS of actual RBP on gap/elo_diff/draw_probability/rest_days/squad_value/9 rule-fired dummies, cluster-robust SEs by match. **Result: in-sample R²=0.053 (weak). OOS does NOT beat baseline — in-sample signal without OOS value.**
+- **`statsbomb_baserate_test.py`/`.R`** — StatsBomb-derived empirical-Bayes-shrunk base-rate model vs. the actual JTC submission for Portugal vs Croatia, using the `S=101.3` RBP scale. **Result: actual submitted RBP 120.30 vs model-implied 93.01 — the base-rate model would have scored WORSE than the actual submission.**
+- **Output JSONs** (`rbp_gap_ttest_results.json`/`_r.json`, `rbp_linear_regression_results.json`/`_r.json`, `statsbomb_baserate_results.json`/`_r.json`, `meta_model_results.json`, `platt_results.json`) — all R/Python pairs checked and agree to rounding precision. (`ronaldo_goals_regression.*` and its results moved to `topics/player-props/` — see Section 2.)
 
-### `ml/` — 20 top-level files
+### `ml/backtests/` — 18 files, now shared cross-family infrastructure only
+The "design #2" hierarchical-GLMM campaign's family-specific outputs (results CSVs,
+family-specific preregistrations, walk-forward scripts) moved to `topics/<slug>/`. What stays:
 
-- **`build_feature_matrix.py`** — flattens every settled match JSON in `data/external_markets/` (6 documented schema variants, labeled A-G) into **`ml/feature_matrix.csv`** (264 rows: match, date, question_num, question_key, our_estimate, crowd_estimate, outcome, rbp, beat_crowd, has_sub_estimate, schema). **Documented fix (2026-07-10):** added a `post_match` key fallback (era-3 files used this instead of `post_match_results`), recovering 7 previously-silently-dropped matches.
-- **`platt_diagnostic.py`** — hand-implemented Platt-scaling calibration check (Newton-Raphson) over 246 settled questions: global fit, walk-forward holdout, reliability diagram. **Result: b=0.510, 95% CI [0.123,1.287] includes 1.0 (not significant); recalibration WORSENS Brier both globally (0.2188→0.2237) and walk-forward (0.2144→0.2421). Conclusion: do not apply Platt recalibration.** Beat-crowd 72.4%, +614.22 RBP over n=246.
-- **`meta_model.py`** — Problem-A meta-model: context-aware logistic regression / shallow HGB blend of our_estimate/crowd_estimate on 404 rows/42 matches, validated walk-forward and GroupKFold-by-match against 3 baselines. Estimates an RBP-per-Brier scale `S≈101.3` (reused in `statsbomb_baserate_test.py`). **Result: both models WORSE than baseline OOS under both schemes — decision: do NOT deploy.**
-- **`rbp_gap_ttest.py`/`.R`** — Welch's t-test on whether deviating from crowd (median-split abs_gap) predicts RBP, at question level (771 rows, non-independent, caveated) and match level (71 rows, the trusted unit). **Result: question-level +1.41 (p=0.116, ns); match-level -1.68 (p=0.056, marginal, opposite sign) — deviating more from crowd associates with LOWER RBP at the correctly-independent unit.**
-- **`rbp_linear_regression.py`/`.R`** — OLS of actual RBP on gap/elo_diff/draw_probability/rest_days/squad_value/9 rule-fired dummies, cluster-robust SEs by match. Two documented collinearity fixes (dropped `rule_fired_count`; shared missing-indicator for elo_diff/draw_probability). **Result: in-sample R²=0.053 (weak); `is_player_prop` strongest effect (+4.87, p=7e-8). OOS does NOT beat baseline (walk-forward R²=-0.017 vs baseline -0.019; grouped k-fold -0.052 vs -0.001) — in-sample signal without OOS value.**
-- **`ronaldo_goals_regression.py`/`.R`** — n=9 OLS methodology demonstration (explicitly not a usable model per RULE5's n≥10 threshold). **Result: in-sample R²=0.431 but adj R²=0.090 (huge shrinkage); LOOCV MSE 1.846 vs train-mean baseline 1.156 — model WORSE than guessing the mean, exactly as the n=9 caveat predicted.**
-- **`statsbomb_baserate_test.py`/`.R`** — StatsBomb-derived empirical-Bayes-shrunk (k=5 team, k=3 player) base-rate model vs the actual JTC submission for Portugal vs Croatia (WC2026 R32), using the `S=101.3` RBP scale. **Result: actual submitted RBP 120.30 vs model-implied 93.01 (R: 93.17) — the base-rate model would have scored WORSE than the actual submission (beat it on only 6/14 questions).**
-- **Output JSONs** (`rbp_gap_ttest_results.json`/`_r.json`, `rbp_linear_regression_results.json`/`_r.json`, `ronaldo_goals_regression_results.json`/`_r.json`, `statsbomb_baserate_results.json`/`_r.json`, `meta_model_results.json`, `platt_results.json`) — all R/Python pairs checked and agree to rounding precision.
-
-### `ml/backtests/` — 37 files, the "design #2" hierarchical-GLMM campaign (all dated 2026-07-14, run under strict pre-registration discipline)
-
-**Pre-registration documents and their backtest scripts:**
-
-- **`PREREGISTRATION_sot_hierarchical_backtest.md`** ↔ `walk_forward_sot_backtest.R` (+ `lib_hierarchical_backtest.R`) — hierarchical Poisson GLMM `SOT ~ elo_diff_pre_100 + data_source + (1|team_name)` vs. k=5 empirical-Bayes shrinkage baseline, walk-forward across 100 WC2026 matches. **VERDICT: PASS.** Match-level (n=98) mean NLL improvement +0.224, t=4.071, p=0.0001, bootstrap 90% band [0.138, 0.318] entirely positive; correlation with actual SOT nearly doubles (0.303→0.561). Flagged as needing shadow-deployment before trust.
-- **`PREREGISTRATION_cards_corners_offsides_and_combined.md`** ↔ `run_all_family_backtests.R` (+ `combined_threshold_backtest.py`, `apply_to_fra_esp.R`) — extends to cards/corners/offsides plus a compositional (convolved-Poisson) combined-threshold test, with Benjamini-Hochberg FDR correction across families. **First pass found an implausibly huge offsides PASS (p=8.96e-09), traced to the 8.49x StatsBomb offsides-undercounting bug** (the model's `data_source` fixed effect was absorbing the bug, not real signal). After the bug fix, offsides collapsed to null (p=0.627/0.954). **Final FDR-surviving families: SOT PASS (p=9.6e-5, BH 3.8e-4), corners PASS (p=0.030, BH 0.059); cards FAIL (p=0.218), offsides FAIL (p=0.954).** Combined-threshold composition failed for both SOT and corners (positive within-match correlation breaks the independence assumption). FDR-surviving models applied to France vs Spain Q12/Q15 via `apply_to_fra_esp.R` as a retrospective comparison, not a live resubmission.
-- **`PREREGISTRATION_cards_referee_fouls_stage.md`** ↔ `walk_forward_cards_referee_backtest.R` — follow-up to the cards FAIL: adds a referee `(1|referee_name)` random effect (48 distinct referees, ESPN+StatsBomb sourced), each team's own shrunk foul rate (motivated by fouls-cards correlation r=0.449), and an `is_knockout` fixed effect. **VERDICT: FAIL again** (n=196/98 matches, mean NLL 1.518→1.486, t=1.153, p=0.252, 90% band [-0.0147,+0.0773] crosses zero) — referee coverage was complete, ruling out "unseen referee" as the explanation. **Explicit conclusion: cards stays a market/crowd-anchored question, not model-driven, for this tournament** — treated as more load-bearing than the first FAIL since it survived a genuinely targeted fix attempt.
-- **`PREREGISTRATION_elo_level_refinement.md`** ↔ `run_elo_level_refinement.R` — adds each team's own absolute PIT Elo (`own_elo_pre_100`) alongside the opponent-relative diff, to address a top-tercile underprediction bias for elite teams. **VERDICT: PASS, promoted as new default, modestly.** SOT still beats baseline (p=0.0001 unchanged); top-tercile bias shrinks 11% (never itself significant, honest caveat noted). Corners still beats baseline (p=0.038); top-tercile bias shrinks 39%.
-- **`PREREGISTRATION_q14_first_sub_race.md`** ↔ `walk_forward_first_sub_backtest.py` — tests shrunk historical first-sub-minute tendency + Elo diff (proxy for who's more likely trailing) predicting which team subs first, vs naive 50/50. **VERDICT: FAIL, confidently worse than baseline** (79 folds, mean Brier 0.2785 vs 0.2500, bootstrap 90% band [-0.0536,-0.0030] entirely negative) — the already-submitted Q14 heuristic (0.60, simple manual comparison) was appropriately scoped, not under-sophisticated.
-
-**Supporting library/driver scripts:** `lib_hierarchical_backtest.R` (reusable `run_family_backtest()`/`summarize_backtest()`, `glmer` Poisson/bobyqa per fold on strictly-prior data, match-clustered t-test + bootstrap 90% CI — shared by the family, elo-refinement, and FRA-ESP-application scripts); `run_all_family_backtests.R` (cards/corners/offsides driver + BH correction, writes `all_families_summary.csv`); `run_elo_level_refinement.R` (own-Elo refinement driver + tercile-bias check); `apply_to_fra_esp.R` (refits FDR-surviving models on all prior data through the QFs, predicts France/Spain SF lambdas using PIT Elo France 2238.47/Spain 2261.31, writes `matches/France Vs Spain (Jul.14.26)/12_ml_predictions.csv` — the Q1/offsides entry was later retracted once the bug fix reversed that family's pass).
-
-**Pipeline/feature-engineering scripts:** `add_pit_elo_to_unified_panel.py` (joins genuinely PIT `elo_diff_pre` onto the 456-row unified panel — WC2026 rows via `wc2026_pit_elo_panel.csv`, WC2018/2022 rows via `elo_match_panel.csv`; output feeds every hierarchical-GLMM backtest); `build_full_tournament_pit_elo.py` (systematic full-tournament Elo replay superseding the hand-built scripts below — replays all 100 WC2026 matches, true home advantage only for USA/MEX/CAN participants, self-cross-checked against the hand-built FRA-ESP numbers); `build_rare_event_panels.py` (builds `rare_event_panel.csv` for VAR mentions, goal-between-hydration-breaks, first-sub-minute — **documented bug fix**: an earlier version conflated hydration breaks with injury stoppages, caught via an implausible-gap sanity check, fixed by filtering on ESPN's own "drinks break" text tag); `combined_threshold_backtest.py` (sum-of-two-Poissons composition test for SOT/offsides/corners); `sot_vs_market_comparison.py` (finds 11 of 100 matches with a saved Smarkets team-SOT line — knockout-stage only — solves implied Poisson lambda via binary search, compares NLL against ML/baseline; output `sot_vs_market_comparison.csv`, 20 team-observations); `blend_market_glmm.py` ("Design #3": fixed pre-specified blend `lambda_blend = 0.25*lambda_glmm + 0.75*lambda_market`, capped ±0.08 from market-alone probability, directly motivated by the CAN-MOR -80 RBP blowup; evaluated directionally, n=11, not a powered test).
-
-**Point-in-time Elo hand-replay scripts** (superseded by `build_full_tournament_pit_elo.py`, kept as cross-checks) — all share the same root cause: `results.csv` records every WC2026 score as NA, so `model/elo.py`'s regular pipeline never processes a WC2026 result, leaving `elo_current_ratings.csv` frozen at pre-tournament values. `r16_point_in_time_elo_replay.py` (10 teams into R16 — the smoking-gun verification, e.g. Argentina's Elo frozen at 2189.5282 across all 3 group games despite 3-0/2-0/3-1 wins), `qf_point_in_time_elo_replay.py` (Spain/Belgium into their QF — naive stale Elo overstated Spain's edge by 64.23 points), `arg_sui_qf_point_in_time_elo_replay.py`, `nor_eng_qf_point_in_time_elo_replay.py`, `fra_esp_sf_point_in_time_elo_replay.py` (France/Spain into the SF; all games neutral=True since France/Spain's run was on US soil against non-USA/MX/CA opponents).
-
-**CSV result files:** `all_families_summary.csv` (5 lines — the post-bug-fix family verdicts); `cards_backtest_results.csv`/`corners_backtest_results.csv`(+`_ownelo`)/`offsides_backtest_results.csv`/`sot_backtest_results.csv`(+`_ownelo`) (197 lines each, common family/lambda/NLL/Brier schema); `cards_referee_backtest_results.csv` (197 lines, baseline-vs-referee-refined only); `combined_corners/offsides/sot_backtest_results.csv` (99 lines each); `first_sub_backtest_results.csv` (80 lines, 79 scored folds); `rare_event_panel.csv` (101 lines, 100 matches); `sot_vs_market_comparison.csv` (21 lines, 20 team-observations across 11 matches).
+- **`PREREGISTRATION_cards_corners_offsides_and_combined.md`** — the shared preregistration fusing cards+corners+offsides+combined-threshold into one hypothesis set, results table, and Benjamini-Hochberg FDR correction. Documents the 8.49x StatsBomb offsides-undercounting bug discovery and retraction in full. Linked from `topics/cards/`, `topics/corners/`, `topics/offsides/`, and `topics/combined-threshold/` — not split or duplicated per topic.
+- **`PREREGISTRATION_cards_referee_fouls_stage.md`** — the referee-refined cards follow-up (still FAIL). Linked from `topics/cards/`.
+- **`PREREGISTRATION_elo_level_refinement.md`** — the own-Elo-level refinement, run jointly for SOT + corners (both PASS, promoted). Linked from `topics/shots-on-target/` and `topics/corners/`.
+- **`lib_hierarchical_backtest.R`** — the shared walk-forward backtest engine (`run_family_backtest()`/`summarize_backtest()`) every family's own backtest script sources.
+- **`run_all_family_backtests.R`**, **`run_elo_level_refinement.R`** — shared drivers that fit/write multiple families' results at once; each routes its output to the correct `topics/<slug>/` location via an explicit per-family output-directory map (added during the reorg).
+- **`apply_to_fra_esp.R`** — the live application step: refits the FDR-surviving models on all prior data and predicts France/Spain SF lambdas, writing into `matches/France Vs Spain (Jul.14.26)/12_ml_predictions.csv`.
+- **`combined_threshold_backtest.py`** — the sum-of-two-Poissons composition test script, shared across SOT/corners/offsides' combined-threshold outputs (each of which now lives in its own topic folder).
+- **`add_pit_elo_to_unified_panel.py`**, **`build_full_tournament_pit_elo.py`** — joins genuinely point-in-time Elo onto the training panel; every family's own-Elo covariate depends on this.
+- **`build_rare_event_panels.py`** / **`rare_event_panel.csv`** — the shared panel spanning first-substitution, VAR mentions, and goal-between-hydration-breaks (linked from `topics/first-substitution/`, `topics/var-review/`, `topics/rare-event-timing/`).
+- **Point-in-time Elo hand-replay scripts** (superseded by `build_full_tournament_pit_elo.py`, kept as cross-checks): `r16_point_in_time_elo_replay.py`, `qf_point_in_time_elo_replay.py`, `arg_sui_qf_point_in_time_elo_replay.py`, `nor_eng_qf_point_in_time_elo_replay.py`, `fra_esp_sf_point_in_time_elo_replay.py` — all share the root cause that `results.csv` records every WC2026 score as NA, so `model/elo.py`'s regular pipeline never processes a WC2026 result.
+- **`all_families_summary.csv`** — the joint FDR-adjusted verdict table across all 4 families (5 lines).
 
 ### `ml/backtests/live_market_watch/`
-Single file: `event_45195225_England_Argentina.json` — a raw Smarkets snapshot (10 corners/cards O/U markets with bid/offer/mid quotes), a lightweight cache location for live-market snapshots feeding `sot_vs_market_comparison.py`/`blend_market_glmm.py`, distinct from the more extensive per-match `matches/*/` folders.
+Single file: `event_45195225_England_Argentina.json` — a raw Smarkets snapshot, a lightweight cache location for live-market snapshots, distinct from the more extensive per-match `matches/*/` folders.
 
 ---
 
-## 6. `papers/`, Tactic AI, `bash_logs/`, and misc root files
+## 7. `papers/`, Tactic AI, `bash_logs/`, and misc root files
 
 ### `papers/` — 5 reference academic papers underpinning the pipeline
 All cited in `references.bib` and both competition papers.
@@ -521,7 +566,7 @@ All cited in `references.bib` and both competition papers.
 `MANIFEST.md` (acquisition log) and `TACTICAI_RESEARCH_NOTES.md` (49KB technical writeup), plus: `papers/` (5 PDFs — the Nature Communications 2024 article, arXiv preprint, 17-page Supplementary Information, and a `related_precursor_and_followup_work/` subfolder with *Game Plan* 2020, *Graph Imputer* 2022, and a June-2026 RL follow-up "Maximising the Set-Piece Return"); `supplementary/` (the official Zenodo figure-generation notebook, not model/training code); `blog_and_media/` (DeepMind's announcement post + media-coverage notes); `code/` (a single file documenting that DeepMind never publicly released TacticAI's model/training code). TacticAI is a GNN (GATv2 + D2-symmetry) system built with Liverpool FC for corner-kick receiver prediction, shot-probability, and defender-repositioning suggestions, evaluated via a 5-expert case study. The research notes close by explicitly connecting to this project: the StatsBomb 360 freeze-frame data is structurally similar in spirit to TacticAI's player-graph representation but far smaller and without a coaching-evaluation loop — recommended as conceptual/exploratory reference only, consistent with the project's repeated finding (across four other ML attempts) that available sample sizes are too small for a from-scratch model here.
 
 ### `bash_logs/` — 37 root-level session-transcript files
-Per-match(day) transcripts of actual bash commands, stdout, and (in "match_analysis"-style files) hand-computed calibration outputs and final estimate summaries. Early files (mid-June) are large, literal auto-generated command-log exports spanning multiple matches per session (up to 1.5MB); from ~2026-06-22 onward most switch to a hand-written `match_analysis` format (full Q1-Q10 calibration workup per match, model vs. crowd, ending in a summary table). A few document cross-match research/diagnostic tasks rather than one match's pricing (flagged in the index below). One structured (non-log) file: `2026-06-21_postmatch_stats.json` (box-score stats for 8 matches settled around that date, not a bash transcript). Three files (`bel_irn_2026-06-21`, `nzl_egy_2026-06-22`, `uru_cpv_2026-06-21`) use a distinct lowercase "matchcode_date" naming convention, suggesting a different script/session around the same period. *(Note: distinct from `bot/bash_log_2026-06-27.txt` through `06-28.txt` — a separate, larger per-day series covered in Section 2.)*
+Per-match(day) transcripts of actual bash commands, stdout, and (in "match_analysis"-style files) hand-computed calibration outputs and final estimate summaries. Early files (mid-June) are large, literal auto-generated command-log exports spanning multiple matches per session (up to 1.5MB); from ~2026-06-22 onward most switch to a hand-written `match_analysis` format (full Q1-Q10 calibration workup per match, model vs. crowd, ending in a summary table). A few document cross-match research/diagnostic tasks rather than one match's pricing (flagged in the index below). One structured (non-log) file: `2026-06-21_postmatch_stats.json` (box-score stats for 8 matches settled around that date, not a bash transcript). Three files (`bel_irn_2026-06-21`, `nzl_egy_2026-06-22`, `uru_cpv_2026-06-21`) use a distinct lowercase "matchcode_date" naming convention, suggesting a different script/session around the same period. *(Note: distinct from `bot/bash_log_2026-06-27.txt` through `06-28.txt` — a separate, larger per-day series covered in Section 3.)*
 
 Full index (chronological within date group, as listed on disk):
 
@@ -580,7 +625,7 @@ Full index (chronological within date group, as listed on disk):
 
 ---
 
-## 7. `writeups/` — professional match write-ups
+## 8. `writeups/` — professional match write-ups
 
 A "sports betting shop"-quality documentation layer, structured as its own internally-linked mini-repo inside the main repo. Originally built as a standalone git repo (`jtc-match-writeups`, still pushed separately to a private GitHub repo) and later merged in here so every reference resolves to the actual script/model/data file it describes instead of linking out to a different repo. Every path reference in this section was individually verified to resolve (a 100-link check via a Python script comparing percent-encoded/decoded paths against `os.path.exists`).
 
@@ -588,7 +633,7 @@ A "sports betting shop"-quality documentation layer, structured as its own inter
 - **`CONTRIBUTING.md`** — the standard every future match write-up must follow (structure/tone/sourcing rules), so new matches stay consistent with the France-Spain template.
 - **`docs/DOCUMENTATION_STANDARDS.md`** — the researched industry-practice memo this whole format is built from: Google SRE blameless-postmortem structure, Architecture Decision Records (ADR/MADR: Status/Context/Decision/Consequences), docs-as-code/README-driven development, Keep a Changelog conventions, professional sports-betting Closing-Line-Value grading discipline ("grade every bet, every time"), and trading-desk pre-trade/post-trade analysis structure — cited as the direct precedent for using git-as-documentation here.
 - **`decisions/0001-market-priority-over-domain-model.md`** — ADR: a liquid market takes priority over a domain-only model when both exist (RULE1/RULE2's formal writeup).
-- **`decisions/0002-shadow-deploy-before-live-submission.md`** — ADR: a newly backtested model must be shadow-tested against real outcomes before it can override a submission (the discipline that kept the FRA-ESP GLMM's SOT predictions as a shadow comparison, not a live resubmission — see Section 5's `apply_to_fra_esp.R`).
+- **`decisions/0002-shadow-deploy-before-live-submission.md`** — ADR: a newly backtested model must be shadow-tested against real outcomes before it can override a submission (the discipline that kept the FRA-ESP GLMM's SOT predictions as a shadow comparison, not a live resubmission — see Section 6's `apply_to_fra_esp.R`).
 - **`decisions/0003-never-blindly-drop-a-question.md`** — ADR: dropping a question requires a specific evidentiary reason, not just "no market exists."
 - **`matches/2026-07-14-france-vs-spain/README.md`** — the full formal write-up for the France vs Spain semifinal: what data was pulled, which scripts/models were used, what was actually submitted, what the market/crowd said, and how each question settled, with real clickable links back into `matches/France Vs Spain (Jul.14.26)/` and `ml/backtests/`.
 - **`CHANGELOG.md`** — additions to this write-up repo itself (not match outcomes, which live in the match files) — Keep a Changelog format.
