@@ -122,6 +122,32 @@ why it's the one quoted here.
 The tournament is still in progress (knockout stage, semifinals settled as of this writing), so
 none of these numbers are final.
 
+### The campaign so far, visualized
+
+![Cumulative RBP by match](ml/track_record_viz/cumulative_rbp_simple.png)
+
+This is a **locally-computed** figure (unlike the platform-pulled table above) — cumulative RBP
+summed match-by-match across the 83 settled matches in `datasets/master_question_dataset.csv` as
+of 2026-07-07, computed by [`ml/track_record_viz/plot_cumulative_rbp_drawdown.py`](ml/track_record_viz/plot_cumulative_rbp_drawdown.py):
+**+3246.04 RBP**. Labeled as locally-computed specifically because, per the note above, this
+repo's own local recomputations have disagreed with each other at different points in the
+campaign — this number is reproducible by re-running the script against the current dataset, not
+asserted from memory. This is the simple, single-panel version of the chart, meant for a quick
+read here; the same script also produces a fuller version with an added drawdown panel
+([`cumulative_rbp_drawdown.png`](ml/track_record_viz/cumulative_rbp_drawdown.png)) for deeper
+analysis.
+
+Two companion charts live in the same folder, deliberately built to the same standard (real
+literature behind every design choice, no unexplained constants — see
+[`TRACK_RECORD_VISUALIZATION_RESEARCH_2026-07-15.md`](TRACK_RECORD_VISUALIZATION_RESEARCH_2026-07-15.md)
+for the full research this is built on):
+[`match_rbp_waterfall.png`](ml/track_record_viz/match_rbp_waterfall.png) (the same data, per-match
+instead of cumulative — shows that a small number of large results, not a broad accuracy edge,
+drive the total) and
+[`calibration_reliability.png`](ml/track_record_viz/calibration_reliability.png) (a different
+question entirely — not the campaign trajectory, but whether submitted probabilities are
+well-calibrated against realized outcomes).
+
 ## 5. How to find things in this repo
 
 This repo has three complementary ways to navigate it, each answering a different question:
