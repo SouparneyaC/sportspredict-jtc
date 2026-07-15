@@ -22,9 +22,9 @@ from pathlib import Path
 
 from dixon_coles import fit_rho
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
-COEFS_JSON = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
 
 
 def main():

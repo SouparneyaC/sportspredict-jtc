@@ -27,7 +27,7 @@ Recency weighting: same exp(-XI * days_before_most_recent_match) scheme as
 poisson_goals.py (XI_DEFAULT=0.0008), applied as a weighted log-likelihood.
 
 Input:  data/processed/elo_match_panel.csv
-Output: data/processed/ordered_logit_coefs.json (b_elo, b_home, c1, c2 + metadata)
+Output: topics/match-winner-goals-totals/coefs/ordered_logit_coefs.json (b_elo, b_home, c1, c2 + metadata)
 
 Usage:
     python3 ordered_logit.py
@@ -42,9 +42,9 @@ from pathlib import Path
 import numpy as np
 from scipy.optimize import minimize
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
-COEFS_OUT = ROOT / "data" / "processed" / "ordered_logit_coefs.json"
+COEFS_OUT = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "ordered_logit_coefs.json"
 
 XI_DEFAULT = 0.0008  # same recency decay as poisson_goals.py
 

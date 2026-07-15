@@ -17,8 +17,8 @@ This prints:
                                                fewer total goals?"
 
 Prerequisites (run once, in order):
-  1. python3 model/elo.py            -> elo_current_ratings.csv, elo_match_panel.csv
-  2. python3 model/poisson_goals.py  -> poisson_goals_coefs.json
+  1. python3 model/elo.py                                          -> elo_current_ratings.csv, elo_match_panel.csv
+  2. python3 topics/match-winner-goals-totals/model/poisson_goals.py -> poisson_goals_coefs.json
 
 RHO_DEFAULT is a placeholder for the Dixon-Coles low-score correlation
 parameter (see dixon_coles.fit_rho) -- not yet estimated from data.
@@ -32,9 +32,9 @@ from pathlib import Path
 
 from dixon_coles import scoreline_grid, match_result_probs, total_goals_over_under
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 RATINGS_CSV = ROOT / "data" / "processed" / "elo_current_ratings.csv"
-COEFS_JSON = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
 
 RHO_DEFAULT = -0.1  # placeholder; fit via dixon_coles.fit_rho in the backtest
 

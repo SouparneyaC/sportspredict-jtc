@@ -168,12 +168,12 @@ def load_squad_lookup():
 
 
 def load_ordered_logit_coefs():
-    path = ROOT / "data" / "processed" / "ordered_logit_coefs.json"
+    path = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "ordered_logit_coefs.json"
     return json.loads(path.read_text())
 
 
 def load_poisson_coefs():
-    path = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
+    path = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
     return json.loads(path.read_text())
 
 

@@ -23,7 +23,7 @@ Step 2: re-fit the Dixon-Coles rho parameter using NB marginals + the
 Recency weighting for alpha: same exp(-XI*days_ago) scheme as
 poisson_goals.py.
 
-Output: data/processed/nb_dispersion_coefs.json (alpha, rho_nb + metadata)
+Output: topics/match-winner-goals-totals/coefs/nb_dispersion_coefs.json (alpha, rho_nb + metadata)
 
 Usage:
     python3 fit_nb_dispersion.py
@@ -41,10 +41,10 @@ from scipy.stats import nbinom
 
 from dixon_coles import fit_rho, nb_pmf
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
-POISSON_COEFS_JSON = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
-OUT_JSON = ROOT / "data" / "processed" / "nb_dispersion_coefs.json"
+POISSON_COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
+OUT_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "nb_dispersion_coefs.json"
 
 XI_DEFAULT = 0.0008
 

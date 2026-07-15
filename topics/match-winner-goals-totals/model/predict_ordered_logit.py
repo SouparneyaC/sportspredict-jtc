@@ -16,8 +16,8 @@ Example:
     python3 predict_ordered_logit.py "Mexico" "South Africa" --neutral false
 
 Prerequisites (run once, in order):
-  1. python3 model/elo.py            -> elo_current_ratings.csv
-  2. python3 model/ordered_logit.py  -> ordered_logit_coefs.json
+  1. python3 model/elo.py                                          -> elo_current_ratings.csv
+  2. python3 topics/match-winner-goals-totals/model/ordered_logit.py -> ordered_logit_coefs.json
 """
 
 import argparse
@@ -27,9 +27,9 @@ from pathlib import Path
 
 from ordered_logit import predict_probs
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 RATINGS_CSV = ROOT / "data" / "processed" / "elo_current_ratings.csv"
-COEFS_JSON = ROOT / "data" / "processed" / "ordered_logit_coefs.json"
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "ordered_logit_coefs.json"
 
 
 def load_ratings():

@@ -20,8 +20,8 @@ from backtest_diagnostics import Bucketer, load_rows
 from backtest_harness import actual_outcome, brier_3way, rps_3way
 from ordered_logit import predict_probs
 
-ROOT = Path(__file__).resolve().parents[1]
-COEFS_JSON = ROOT / "data" / "processed" / "ordered_logit_coefs.json"
+ROOT = Path(__file__).resolve().parents[3]
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "ordered_logit_coefs.json"
 
 
 def predict_one(row, b_elo, b_home, c1, c2):

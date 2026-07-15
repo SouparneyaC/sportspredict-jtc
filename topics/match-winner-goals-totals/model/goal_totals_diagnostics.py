@@ -20,8 +20,8 @@ from pathlib import Path
 import backtest_harness as bh
 from backtest_diagnostics import Bucketer, load_rows
 
-ROOT = Path(__file__).resolve().parents[1]
-COEFS_JSON = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
+ROOT = Path(__file__).resolve().parents[3]
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
 
 
 def main():

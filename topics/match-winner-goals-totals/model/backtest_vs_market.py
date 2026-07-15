@@ -30,10 +30,10 @@ from scipy import stats
 
 from ordered_logit import predict_probs
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
 ODDS_CSV = ROOT / "data" / "external" / "odds" / "international_fixture_odds.csv"
-COEFS_JSON = ROOT / "data" / "processed" / "ordered_logit_coefs.json"
+COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "ordered_logit_coefs.json"
 
 ORDER = ["away_win", "draw", "home_win"]
 

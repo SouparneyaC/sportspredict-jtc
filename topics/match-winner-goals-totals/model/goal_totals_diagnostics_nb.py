@@ -17,9 +17,9 @@ from pathlib import Path
 from backtest_diagnostics import Bucketer, load_rows
 from dixon_coles import scoreline_grid_nb, total_goals_over_under
 
-ROOT = Path(__file__).resolve().parents[1]
-POISSON_COEFS_JSON = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
-NB_COEFS_JSON = ROOT / "data" / "processed" / "nb_dispersion_coefs.json"
+ROOT = Path(__file__).resolve().parents[3]
+POISSON_COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
+NB_COEFS_JSON = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "nb_dispersion_coefs.json"
 
 MAX_GOALS = 8
 

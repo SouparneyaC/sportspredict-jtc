@@ -2,7 +2,7 @@
 For every market we CAN predict (match_winner, total_goals_under/over,
 btts_and_over -- see classify_markets.py), compute our model's probability
 using:
-  - ordered_logit (data/processed/ordered_logit_coefs.json) for match_winner
+  - ordered_logit (topics/match-winner-goals-totals/coefs/ordered_logit_coefs.json) for match_winner
   - Poisson means (poisson_goals_coefs.json) + NB-corrected Dixon-Coles grid
     (nb_dispersion_coefs.json) for goal-total markets
 
@@ -26,7 +26,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "model"))
+sys.path.insert(0, str(ROOT / "topics" / "match-winner-goals-totals" / "model"))
 
 from ordered_logit import predict_probs  # noqa: E402
 from dixon_coles import scoreline_grid_nb, total_goals_over_under  # noqa: E402
@@ -34,9 +34,10 @@ from classify_markets import classify  # noqa: E402
 from team_code_map import TEAM_CODE_MAP  # noqa: E402
 
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
-OL_COEFS = json.load(open(ROOT / "data" / "processed" / "ordered_logit_coefs.json"))
-POISSON_COEFS = json.load(open(ROOT / "data" / "processed" / "poisson_goals_coefs.json"))
-NB_COEFS = json.load(open(ROOT / "data" / "processed" / "nb_dispersion_coefs.json"))
+COEFS_DIR = ROOT / "topics" / "match-winner-goals-totals" / "coefs"
+OL_COEFS = json.load(open(COEFS_DIR / "ordered_logit_coefs.json"))
+POISSON_COEFS = json.load(open(COEFS_DIR / "poisson_goals_coefs.json"))
+NB_COEFS = json.load(open(COEFS_DIR / "nb_dispersion_coefs.json"))
 
 MAX_GOALS = 8
 

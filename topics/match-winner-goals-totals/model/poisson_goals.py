@@ -30,7 +30,7 @@ For a future fixture (home team H vs away team A, neutral=False):
     lambda_A = exp(b0      + b2 * (Elo_A - Elo_H))
 
 Input:  data/processed/elo_match_panel.csv (from elo.py)
-Output: data/processed/poisson_goals_coefs.json  (b0, b1, b2 + metadata)
+Output: topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json  (b0, b1, b2 + metadata)
 
 Recency weighting: per DC97 (research_notes.md S1.3/1.4), older matches
 are down-weighted by exp(-XI * days_before_most_recent_match). XI is a
@@ -53,9 +53,9 @@ from pathlib import Path
 import numpy as np
 import statsmodels.api as sm
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 PANEL_CSV = ROOT / "data" / "processed" / "elo_match_panel.csv"
-COEFS_OUT = ROOT / "data" / "processed" / "poisson_goals_coefs.json"
+COEFS_OUT = ROOT / "topics" / "match-winner-goals-totals" / "coefs" / "poisson_goals_coefs.json"
 
 XI_DEFAULT = 0.0008  # placeholder decay rate; tune via backtest
 
