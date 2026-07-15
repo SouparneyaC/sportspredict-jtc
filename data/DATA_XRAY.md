@@ -188,7 +188,7 @@ All fitted on `elo_match_panel.csv` (49,400 matches) with `xi=0.0008` time-decay
 
 ### C1: Poisson Goals Model
 
-**File:** `data/processed/poisson_goals_coefs.json`  
+**File:** `topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`  
 ```json
 {
   "intercept": 0.104,
@@ -204,7 +204,7 @@ All fitted on `elo_match_panel.csv` (49,400 matches) with `xi=0.0008` time-decay
 
 ### C2: Negative Binomial Dispersion
 
-**File:** `data/processed/nb_dispersion_coefs.json`  
+**File:** `topics/match-winner-goals-totals/coefs/nb_dispersion_coefs.json`  
 ```json
 {"alpha": 0.099, "rho_nb": -0.05, "n_observations": 98800}
 ```
@@ -212,7 +212,7 @@ All fitted on `elo_match_panel.csv` (49,400 matches) with `xi=0.0008` time-decay
 
 ### C3: Ordered Logit (Match Winner)
 
-**File:** `data/processed/ordered_logit_coefs.json`  
+**File:** `topics/match-winner-goals-totals/coefs/ordered_logit_coefs.json`  
 ```json
 {
   "b_elo": 0.00520,
@@ -232,16 +232,16 @@ All fitted on `elo_match_panel.csv` (49,400 matches) with `xi=0.0008` time-decay
 | File | Purpose |
 |------|---------|
 | `model/elo.py` | Elo rating system with k-factor and time-decay |
-| `model/poisson_goals.py` | Poisson GLM, goal-count predictions |
-| `model/dixon_coles.py` | Dixon-Coles scoreline grid (adds low-score correlation) |
-| `model/ordered_logit.py` | Ordered logit for W/D/L |
-| `model/fit_nb_dispersion.py` | NB dispersion fit |
-| `model/fit_rho.py` | DC rho parameter fit |
-| `model/backtest_harness.py` | Walk-forward backtesting infrastructure |
-| `model/backtest_vs_market.py` | Model vs. market comparison |
-| `model/backtest_diagnostics.py` | Calibration diagnostics (Brier, RPS, calibration buckets) |
-| `model/predict.py` | Main prediction pipeline |
-| `model/predict_ordered_logit.py` | Ordered logit prediction path |
+| `topics/match-winner-goals-totals/model/poisson_goals.py` | Poisson GLM, goal-count predictions |
+| `topics/match-winner-goals-totals/model/dixon_coles.py` | Dixon-Coles scoreline grid (adds low-score correlation) |
+| `topics/match-winner-goals-totals/model/ordered_logit.py` | Ordered logit for W/D/L |
+| `topics/match-winner-goals-totals/model/fit_nb_dispersion.py` | NB dispersion fit |
+| `topics/match-winner-goals-totals/model/fit_rho.py` | DC rho parameter fit |
+| `topics/match-winner-goals-totals/model/backtest_harness.py` | Walk-forward backtesting infrastructure |
+| `topics/match-winner-goals-totals/model/backtest_vs_market.py` | Model vs. market comparison |
+| `topics/match-winner-goals-totals/model/backtest_diagnostics.py` | Calibration diagnostics (Brier, RPS, calibration buckets) |
+| `topics/match-winner-goals-totals/model/predict.py` | Main prediction pipeline |
+| `topics/match-winner-goals-totals/model/predict_ordered_logit.py` | Ordered logit prediction path |
 
 ---
 

@@ -36,8 +36,8 @@ Run `python3 datasets/build_master_dataset.py` from anywhere to rebuild it (path
 | `squad_value_a_eur`, `squad_value_b_eur` | total squad market value (EUR), from `data/external/transfermarkt/extracted/national_teams.csv` (2025 season snapshot). **Null for Cape Verde, Curaçao, DR Congo, Haiti, Ivory Coast — these 5 teams are simply absent from that 119-row extract, not a join bug.** |
 | `squad_avg_age_a`, `squad_avg_age_b` | same source |
 | `fifa_ranking_2025_a`, `fifa_ranking_2025_b` | current (2025) FIFA ranking from the same Transfermarkt extract — used in preference to `data/external/fifa_ranking/*.csv`, which is stale (latest snapshot 2020, or historical through 2024-09 at best) |
-| `draw_probability` | from the raw file's own `model_outputs.p_draw` when present, else computed from `elo_diff` via `data/processed/ordered_logit_coefs.json` (neutral-venue assumption: `home_advantage` term set to 0, since these are WC2026 group/knockout matches, not classic home/away) |
-| `poisson_lambda_a`, `poisson_lambda_b` | expected goals; same precedence (raw file's `model_outputs.lambda_*` first, else computed from `elo_diff` via `data/processed/poisson_goals_coefs.json`) |
+| `draw_probability` | from the raw file's own `model_outputs.p_draw` when present, else computed from `elo_diff` via `topics/match-winner-goals-totals/coefs/ordered_logit_coefs.json` (neutral-venue assumption: `home_advantage` term set to 0, since these are WC2026 group/knockout matches, not classic home/away) |
+| `poisson_lambda_a`, `poisson_lambda_b` | expected goals; same precedence (raw file's `model_outputs.lambda_*` first, else computed from `elo_diff` via `topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`) |
 | `rules_fired_list` | semicolon-joined list of which named RULEs (RULE1–RULE15) fired for this match, per the raw file |
 | `rule_fired_count` | count of the above |
 | `rule1_fired` … `rule15_fired` | per-rule boolean (None/blank = rule not mentioned in this file at all, as opposed to False = explicitly considered and did not fire) |

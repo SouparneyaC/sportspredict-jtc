@@ -10,7 +10,7 @@ Legend: ✅ Fixed & confirmed | ⚠️ Known, lower priority | 📝 Docs-only up
 
 ## Category A — Code Bugs (actual broken behaviour in scripts)
 
-### A1 — `model/poisson_goals.py`: neutral-flag train/predict mismatch ✅ FIXED
+### A1 — `topics/match-winner-goals-totals/model/poisson_goals.py`: neutral-flag train/predict mismatch ✅ FIXED
 **Identified in:** `data/code_audit_findings.md`, `JTC_PROJECT_WRITEUP.md` §10.2  
 **What it was:** `build_design_matrix()` unconditionally assigned `home_adv=1.0` to the
 home-team row for every match in the 49,400-row panel, including the 13,051 neutral-venue
@@ -22,7 +22,7 @@ mismatch affecting 26% of training rows.
 Verified: running buggy vs fixed side-by-side gives b1=0.25622 (buggy) vs b1=0.23022
 (fixed). The saved `poisson_goals_coefs.json` contains the correct fixed coefficients
 (b0=0.10408, b1=0.23022, b2=0.00181). A detailed explanatory comment block was added
-to the code on 2026-07-10. Coefficients re-confirmed by re-running `python3 model/poisson_goals.py`.  
+to the code on 2026-07-10. Coefficients re-confirmed by re-running `python3 topics/match-winner-goals-totals/model/poisson_goals.py`.  
 **Note on direction:** The audit predicted attenuation downward (buggy b1 < fixed b1).
 Actual result was the opposite — buggy b1 is *higher* (0.256) than fixed (0.230). The
 neutral-venue "home" teams skew slightly toward higher-rated sides (seeding/alphabetical
@@ -76,7 +76,7 @@ and bucket-level breakdown are not available to quote here."
 **Why not urgent:** The main campaign edge comes from crowd-bias arbitrage (the RBP
 mechanic), not from beating bookmaker odds head-to-head. The script is a long-run
 diagnostic, not a live tool.  
-**Status:** Open. Worth running once as a reference point. Command: `python3 model/backtest_vs_market.py`
+**Status:** Open. Worth running once as a reference point. Command: `python3 topics/match-winner-goals-totals/model/backtest_vs_market.py`
 
 ---
 
@@ -112,7 +112,7 @@ The gap from 0.35 is a separate calibration question, not attributable to this b
 has actually been run"  
 **Status:** Not confirmed run. `backtest_diagnostics.py` contains the correct code for
 the neutral/non-neutral split. Once coefficients are confirmed stable, re-running
-`python3 model/backtest_diagnostics.py` would close this item.
+`python3 topics/match-winner-goals-totals/model/backtest_diagnostics.py` would close this item.
 
 ### B5 — `JTC_PROJECT_WRITEUP.md` §9.2: backtest_vs_market.py output 📝 OPEN
 **Flag text:** "NEEDS VERIFICATION: ...did not find a saved output/results file"  
@@ -144,7 +144,7 @@ Ready to re-run: `python3 ml/meta_model.py`
 with R32 results for the 8 remaining teams.
 
 ### C4 — Run logit-space neutral/non-neutral calibration diagnostic 🔲
-`python3 model/backtest_diagnostics.py` — the script is complete and correct.
+`python3 topics/match-winner-goals-totals/model/backtest_diagnostics.py` — the script is complete and correct.
 Closes B4/JTC_PROJECT_WRITEUP.md §7.1 flag.
 
 ### C5 — StatsBomb GBDT per-market-type models 🔲

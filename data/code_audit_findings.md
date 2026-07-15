@@ -107,7 +107,7 @@ round-robin schedule generator (circle method) rather than any team-quality-base
 
 ### 2.1 [CONFIRMED, HIGH RELEVANCE] `is_home` ignores `neutral` in `poisson_goals.py::build_design_matrix()`
 
-**File**: `model/poisson_goals.py`, lines 81-89.
+**File**: `topics/match-winner-goals-totals/model/poisson_goals.py`, lines 81-89.
 
 ```python
 # home team's goal-scoring observation
@@ -172,11 +172,11 @@ Beyond `build_design_matrix()`, the following files all implement
 `home_adv = 0.0 if row["neutral"] == "TRUE" else 1.0` and then `lambda_home =
 exp(b0 + b1*home_adv + b2*elo_diff)`:
 
-- `model/predict.py` (line 65, via `--neutral` CLI flag)
-- `model/backtest_harness.py` (line 72, `predict_one()`)
-- `model/backtest_diagnostics.py` (via `bh.predict_one()`)
-- `model/backtest_single.py` (line 67)
-- `model/fit_rho.py` (line 48)
+- `topics/match-winner-goals-totals/model/predict.py` (line 65, via `--neutral` CLI flag)
+- `topics/match-winner-goals-totals/model/backtest_harness.py` (line 72, `predict_one()`)
+- `topics/match-winner-goals-totals/model/backtest_diagnostics.py` (via `bh.predict_one()`)
+- `topics/match-winner-goals-totals/model/backtest_single.py` (line 67)
+- `topics/match-winner-goals-totals/model/fit_rho.py` (line 48)
 
 All FIVE of these are internally consistent with each other (same formula, same
 neutral-gating). Only `poisson_goals.py`'s `build_design_matrix()` is the odd one out.

@@ -112,7 +112,7 @@ These have no fitted parameters and therefore cannot overfit — any candidate m
 
 Following the project's standing rule against random k-fold on temporally-ordered data:
 
-**(a) Time-ordered walk-forward.** Matches sorted chronologically; first 21 matches (~half) used as a burn-in training set; then, expanding the training window one match at a time, the model predicts the next match's questions out-of-sample. This exactly mirrors `model/backtest_harness.py`'s philosophy — no lookahead.
+**(a) Time-ordered walk-forward.** Matches sorted chronologically; first 21 matches (~half) used as a burn-in training set; then, expanding the training window one match at a time, the model predicts the next match's questions out-of-sample. This exactly mirrors `topics/match-winner-goals-totals/model/backtest_harness.py`'s philosophy — no lookahead.
 
 **(b) Grouped 6-fold cross-validation, grouped by match.** A robustness check: since only 21 matches ever get to be "test" data under scheme (a), this scheme lets every match serve as held-out data at some point, while `GroupKFold` still guarantees no single match's questions are split across train and test (which would leak match-level context).
 

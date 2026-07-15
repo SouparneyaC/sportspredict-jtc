@@ -46,7 +46,7 @@ log, plus the per-question reasoning.
 | `data/processed/statsbomb_team_match_panel.csv` (256 rows) | Spain (n=8) and Belgium (n=10) historical team-level SOT/corners/cards | Static, WC2018/2022 only |
 | `matches/Portugal_vs_Spain/01_espn_data.json`, `06_post_match_results.json` | Spain's 4-game 2026 log (incl. Yamal), the settled Yamal score-or-assist precedent (0.30 vs crowd 0.51, NO, +38.48 RBP) | 2026-07-06 |
 | `matches/USA_vs_Belgium/01_espn_data.json`, `espn_r16_actual_summary.json` (fetched this session) | Belgium's full 5-game 2026 log, incl. the previously-missing R16 result and De Bruyne/Lukaku individual stats | 2026-07-06/07 |
-| `data/processed/halftime_sub_panel.csv`, `referee_card_panel.csv` (built this session) | Halftime-substitution base rate (61.0% overall, n=59), referee card rates incl. Michael Oliver (4.33/game, n=3) | Built 2026-07-10 |
+| `topics/first-substitution/halftime_sub_panel.csv`, `referee_card_panel.csv` (built this session) | Halftime-substitution base rate (61.0% overall, n=59), referee card rates incl. Michael Oliver (4.33/game, n=3) | Built 2026-07-10 |
 | `KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md` | Early-vs-late hydration-break-window methodology and track record (+30.86 early / -45.90 late, both n=3) | 2026-06-30 audit, still the governing precedent |
 | Web search (Fox Sports, OneFootball, khelnow) | Michael Oliver's identity as tonight's referee — not verifiable against ESPN (unpublished), corroborated by independently confirming his 3 other matches against our own ESPN data | 2026-07-10 |
 
@@ -122,7 +122,7 @@ cluster at 3223.0 (53'43") — no ambiguity in what counts as "at halftime."
 on its own (see §4, Q4).
 
 ### 3.7 Referee identity and card-rate panel (new)
-Same script also built `data/processed/referee_card_panel.csv` from `gameInfo.officials` +
+Same script also built `topics/cards/referee_card_panel.csv` from `gameInfo.officials` +
 card-event counts. Corpus-wide average: 2.76 cards/match (n=59).
 
 Tonight's actual referee, **Michael Oliver**, is not published by ESPN this far ahead of kickoff
@@ -157,7 +157,7 @@ Method: this is the only question requiring a "does the match extend past regula
 Computed three independent read on the regulation-time win/draw/loss split, then added an
 extra-time/penalties term for the draw case:
 
-1. **Ordered logit** (`data/processed/ordered_logit_coefs.json`): `z = b_elo * elo_diff` with
+1. **Ordered logit** (`topics/match-winner-goals-totals/coefs/ordered_logit_coefs.json`): `z = b_elo * elo_diff` with
    `elo_diff = 2248.18 - 2031.57 = 216.61` (neutral venue, so no home term). Cutpoints
    `c1=-0.7702, c2=0.5549`. `z = 0.0051987 * 216.61 = 1.1259`.
    `P(loss) = sigma(c1-z) = 0.1305`, `P(draw) = sigma(c2-z) - P(loss) = 0.2304`,
@@ -250,7 +250,7 @@ Result: `P(Belgium leads at some point) = 0.3163`, used directly, rounded to **0
 ### Q4 — Will either team make a substitution at halftime?
 **Estimate: 0.55**
 
-Data: `data/processed/halftime_sub_panel.csv` (§3.6, new this session).
+Data: `topics/first-substitution/halftime_sub_panel.csv` (§3.6, new this session).
 
 Overall corpus rate 61.0% (n=59) vs knockout-stage-only rate 50.0% (n=10, doubled from n=8 to n=10
 after this session added the Canada-Morocco R16 game to the corpus). Tonight is a QF — knockout
@@ -476,7 +476,7 @@ fetch detail is in `bash_log.txt` Phase 13; raw quotes in `02_smarkets_quotes_ra
 | 1 | Spain advances to semis | 0.76 | 0.75 | *Model:* ordered logit + Dixon-Coles bivariate grid blend + Elo tiebreak proxy. *Data:* corrected Elo (Spain 2248.18 vs Belgium 2031.57), `ordered_logit_coefs.json`, `poisson_goals_coefs.json`. 3 methods converge 0.78-0.82; small discount for no market cross-check at compute time. |
 | 2 | Tied at halftime | 0.40 | 0.42 | *Model:* Monte Carlo simulation, 200k trials. *Data:* Poisson lambda_Spain=1.6423, lambda_Belgium=0.7498 (from corrected Elo), goal times sampled uniform(0,93). |
 | 3 | Belgium leads at any point | 0.32 | NA | *Model:* same Monte Carlo run as Q2, tracks running score path. *Data:* same Poisson lambdas. No Smarkets market for this exact prop. |
-| 4 | Sub at halftime | 0.55 | NA | *Model:* empirical base rate, no statistical model. *Data:* `data/processed/halftime_sub_panel.csv` (built this session, 59 matches, keyEvents-parsed). No Smarkets market exists for this prop. |
+| 4 | Sub at halftime | 0.55 | NA | *Model:* empirical base rate, no statistical model. *Data:* `topics/first-substitution/halftime_sub_panel.csv` (built this session, 59 matches, keyEvents-parsed). No Smarkets market exists for this prop. |
 | 5 | Goal before 1st hydration break | 0.46 | NA | *Model:* Monte Carlo simulation. *Data:* same Poisson lambdas + `KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md` early-window precedent (+30.86 RBP, validated-safe pattern). No matching Smarkets market. |
 | 6 | Goal after 2nd hydration break | 0.48 | NA | *Model:* Monte Carlo simulation, shaded toward 0.5. *Data:* same Poisson lambdas + deep-dive late-window precedent (-45.90 RBP, flagged-risky pattern). No matching Smarkets market. |
 | 7 | BTTS | 0.43 | 0.53 | *Model:* Dixon-Coles bivariate grid + Monte Carlo, averaged. *Data:* Poisson lambdas, `nb_dispersion_coefs.json` (rho=-0.05). |
@@ -513,4 +513,4 @@ methodology.
 | `PRICING_METHODOLOGY.md` | This document |
 | `ml/backtests/qf_point_in_time_elo_replay.py` (repo root `ml/`) | Persisted Elo fix script |
 | `data/processed/build_halftime_sub_and_referee_panels.py` (repo root `data/`) | Persisted panel-builder script |
-| `data/processed/halftime_sub_panel.csv`, `referee_card_panel.csv` (repo root `data/`) | The two new base-rate panels |
+| `topics/first-substitution/halftime_sub_panel.csv`, `referee_card_panel.csv` (repo root `data/`) | The two new base-rate panels |
