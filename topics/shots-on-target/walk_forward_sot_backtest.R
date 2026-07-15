@@ -19,7 +19,7 @@ suppressPackageStartupMessages({
 
 ROOT <- "/Users/aki/Desktop/sportspredict_research"
 PANEL <- file.path(ROOT, "data", "processed", "unified_team_match_panel_with_pit_elo.csv")
-OUT <- file.path(ROOT, "ml", "backtests", "sot_backtest_results.csv")
+OUT <- file.path(ROOT, "topics", "shots-on-target", "sot_backtest_results.csv")
 
 df <- read.csv(PANEL, stringsAsFactors = FALSE)
 df <- df[!is.na(df$shots_on_target) & !is.na(df$elo_diff_pre), ]

@@ -23,6 +23,11 @@ tercile_bias_check <- function(res, label) {
               label, mean(resid_top), tt$statistic, tt$p.value))
 }
 
+# Per-family output directory: results move into topics/<slug>/ as each
+# family gets reorganized out of ml/backtests/; unmoved families still write
+# here. Update this map as more families move.
+OUTPUT_DIR <- list(sot = file.path(ROOT, "topics", "shots-on-target"))
+
 for (fam in list(c("sot", "shots_on_target"), c("corners", "corners"))) {
   label <- fam[1]; col <- fam[2]
   cat(sprintf("\n=== %s: ORIGINAL model ===\n", label))
@@ -35,5 +40,6 @@ for (fam in list(c("sot", "shots_on_target"), c("corners", "corners"))) {
   print(summarize_backtest(res_new, label)[, c("mean_diff", "p_value")])
   tercile_bias_check(res_new, "refined")
 
-  write.csv(res_new, file.path(ROOT, "ml", "backtests", sprintf("%s_backtest_results_ownelo.csv", label)), row.names = FALSE)
+  out_dir <- if (!is.null(OUTPUT_DIR[[label]])) OUTPUT_DIR[[label]] else file.path(ROOT, "ml", "backtests")
+  write.csv(res_new, file.path(out_dir, sprintf("%s_backtest_results_ownelo.csv", label)), row.names = FALSE)
 }

@@ -1,7 +1,7 @@
 """
 Reusable Smarkets team-prop-market fetcher, generalized from the one-off
 fetch_fra_esp_smarkets.py so growing the live GLMM-vs-market comparison
-(currently stuck at 11 matches, see ml/backtests/sot_vs_market_comparison.py)
+(currently stuck at 11 matches, see topics/shots-on-target/sot_vs_market_comparison.py)
 doesn't require hand-writing a new script per match. Discovers team-level
 SOT/cards/corners markets by NAME PATTERN (not hardcoded market IDs), so it
 works on any future match without editing.

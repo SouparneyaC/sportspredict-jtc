@@ -21,7 +21,10 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parent
 FAMILIES = ["sot", "offsides", "corners"]
-FILE_MAP = {"sot": "sot_backtest_results.csv", "offsides": "offsides_backtest_results.csv",
+# Per-family results now live in topics/<slug>/ (moved out of ml/backtests/ during
+# the topic-based reorg); this script stays here as shared cross-family infra.
+FILE_MAP = {"sot": "../../topics/shots-on-target/sot_backtest_results.csv",
+            "offsides": "offsides_backtest_results.csv",
             "corners": "corners_backtest_results.csv"}
 
 

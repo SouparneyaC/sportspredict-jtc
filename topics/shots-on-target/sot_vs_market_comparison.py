@@ -111,7 +111,7 @@ def nll(actual, lam):
 def main():
     # Load the walk-forward ML/baseline predictions (already PIT-safe)
     wf = {}
-    for row in csv.DictReader(open(ROOT / "ml" / "backtests" / "sot_backtest_results.csv")):
+    for row in csv.DictReader(open(ROOT / "topics" / "shots-on-target" / "sot_backtest_results.csv")):
         wf[(row["match_date"], row["team_name"])] = row
 
     results = []
@@ -180,7 +180,7 @@ def main():
     t = mean_diff / se if se > 0 else float("nan")
     print(f"\nMean diff (market NLL - ML NLL): {mean_diff:+.4f}  (positive = ML beats market)  t={t:.3f} (n={n}, very low power)")
 
-    with open(ROOT / "ml" / "backtests" / "sot_vs_market_comparison.csv", "w", newline="") as f:
+    with open(ROOT / "topics" / "shots-on-target" / "sot_vs_market_comparison.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(results[0].keys()))
         w.writeheader()
         w.writerows(results)
