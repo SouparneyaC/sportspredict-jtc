@@ -10,7 +10,7 @@ matches/Spain_vs_Belgium/DATA_SCOPING_MEMO.md:
      team make a substitution at halftime?") with an actual base rate instead
      of nothing.
 
-  2. data/processed/referee_card_panel.csv
+  2. topics/cards/referee_card_panel.csv
      One row per match: referee full name (from `gameInfo.officials`), total
      match cards (yellow+red, both teams), and stage. Answers question 15's
      card component with an aggregated per-referee card-rate table instead of
@@ -52,7 +52,7 @@ ROOT = Path(__file__).resolve().parents[2]
 HALFTIME_WINDOW_SEC = 47 * 60  # 47'00" -- see docstring for calibration note
 
 OUT_SUB = ROOT / "data" / "processed" / "halftime_sub_panel.csv"
-OUT_REF = ROOT / "data" / "processed" / "referee_card_panel.csv"
+OUT_REF = ROOT / "topics" / "cards" / "referee_card_panel.csv"
 
 
 def find_full_dumps():

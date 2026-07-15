@@ -88,7 +88,7 @@ for (d in wc26_dates) {
 }
 cat(sprintf("Folds skipped on fit failure: %d\n", fit_failures))
 res <- bind_rows(results)
-write.csv(res, file.path(ROOT, "ml", "backtests", "cards_referee_backtest_results.csv"), row.names = FALSE)
+write.csv(res, file.path(ROOT, "topics", "cards", "cards_referee_backtest_results.csv"), row.names = FALSE)
 
 cat(sprintf("\nn=%d team-match predictions\n", nrow(res)))
 cat(sprintf("Mean NLL -- baseline: %.4f   refined (referee+fouls+stage): %.4f\n",

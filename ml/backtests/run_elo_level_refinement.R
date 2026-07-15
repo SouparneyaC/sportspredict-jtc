@@ -26,7 +26,10 @@ tercile_bias_check <- function(res, label) {
 # Per-family output directory: results move into topics/<slug>/ as each
 # family gets reorganized out of ml/backtests/; unmoved families still write
 # here. Update this map as more families move.
-OUTPUT_DIR <- list(sot = file.path(ROOT, "topics", "shots-on-target"))
+OUTPUT_DIR <- list(
+  sot     = file.path(ROOT, "topics", "shots-on-target"),
+  corners = file.path(ROOT, "topics", "corners")
+)
 
 for (fam in list(c("sot", "shots_on_target"), c("corners", "corners"))) {
   label <- fam[1]; col <- fam[2]

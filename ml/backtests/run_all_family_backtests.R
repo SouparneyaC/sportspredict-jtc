@@ -26,12 +26,23 @@ families <- list(
   sot      = "shots_on_target"
 )
 
+# Per-family results now live in topics/<slug>/ (moved out of ml/backtests/
+# during the topic-based reorg); this script stays here as shared cross-family
+# infra (it fits/writes all four families plus the joint FDR summary below).
+OUTPUT_DIR <- list(
+  sot      = file.path(ROOT, "topics", "shots-on-target"),
+  cards    = file.path(ROOT, "topics", "cards"),
+  corners  = file.path(ROOT, "topics", "corners"),
+  offsides = file.path(ROOT, "topics", "offsides")
+)
+
 all_summaries <- list()
 for (label in names(families)) {
   col <- families[[label]]
   cat(sprintf("\n=== Running %s ===\n", label))
   res <- run_family_backtest(df, col, label)
-  write.csv(res, file.path(ROOT, "ml", "backtests", sprintf("%s_backtest_results.csv", label)), row.names = FALSE)
+  out_dir <- if (!is.null(OUTPUT_DIR[[label]])) OUTPUT_DIR[[label]] else file.path(ROOT, "ml", "backtests")
+  write.csv(res, file.path(out_dir, sprintf("%s_backtest_results.csv", label)), row.names = FALSE)
   summ <- summarize_backtest(res, label)
   all_summaries[[label]] <- summ
   print(summ)

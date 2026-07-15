@@ -23,9 +23,9 @@ ROOT = Path(__file__).resolve().parent
 FAMILIES = ["sot", "offsides", "corners"]
 # Per-family results now live in topics/<slug>/ (moved out of ml/backtests/ during
 # the topic-based reorg); this script stays here as shared cross-family infra.
-FILE_MAP = {"sot": "../../topics/shots-on-target/sot_backtest_results.csv",
-            "offsides": "offsides_backtest_results.csv",
-            "corners": "corners_backtest_results.csv"}
+OUTPUT_DIR = {"sot": "../../topics/shots-on-target", "offsides": "../../topics/offsides",
+              "corners": "../../topics/corners"}
+FILE_MAP = {fam: f"{OUTPUT_DIR[fam]}/{fam}_backtest_results.csv" for fam in FAMILIES}
 
 
 def poisson_pmf(k, lam):
@@ -96,7 +96,7 @@ def main():
         print(f"  Mean Brier: baseline-convolved={mean_br_b:.4f}  hier-convolved={mean_br_h:.4f}")
         print(f"  Mean diff (baseline-hier): {mean_diff:+.4f}  t-stat: {t_stat:.3f}  (n={n}, ~t-dist df={n-1})")
 
-        out = ROOT / f"combined_{fam}_backtest_results.csv"
+        out = ROOT / Path(OUTPUT_DIR[fam]) / f"combined_{fam}_backtest_results.csv"
         with open(out, "w", newline="") as f:
             w = csv.DictWriter(f, fieldnames=list(results[0].keys()))
             w.writeheader()
