@@ -227,10 +227,10 @@ a completely different method.
 
 ## 5. Small-sample regression demo: Ronaldo's goals (n=9)
 
-**Script:** [ml/ronaldo_goals_regression.py](ml/ronaldo_goals_regression.py) ·
-R port: [ml/ronaldo_goals_regression.R](ml/ronaldo_goals_regression.R)
-**Results:** [ml/ronaldo_goals_regression_results.json](ml/ronaldo_goals_regression_results.json) ·
-R results: [ml/ronaldo_goals_regression_results_r.json](ml/ronaldo_goals_regression_results_r.json)
+**Script:** [topics/player-props/ronaldo_goals_regression.py](topics/player-props/ronaldo_goals_regression.py) ·
+R port: [topics/player-props/ronaldo_goals_regression.R](topics/player-props/ronaldo_goals_regression.R)
+**Results:** [topics/player-props/ronaldo_goals_regression_results.json](topics/player-props/ronaldo_goals_regression_results.json) ·
+R results: [topics/player-props/ronaldo_goals_regression_results_r.json](topics/player-props/ronaldo_goals_regression_results_r.json)
 
 **The question:** regress Ronaldo's per-match goals on `shots_on_target`, `xg_total`, and
 `minutes_played`, using his 9 WC2018+2022 appearances — deliberately run at a sample size far below
@@ -349,7 +349,7 @@ confirm the numbers match). Click any filename to open it.
 | [ml/statsbomb_baserate_test.py](ml/statsbomb_baserate_test.py) | [ml/statsbomb_baserate_test.R](ml/statsbomb_baserate_test.R) | [statsbomb_baserate_results.json](ml/statsbomb_baserate_results.json) · [_r.json](ml/statsbomb_baserate_results_r.json) |
 | [datasets/build_unified_team_match_panel.py](datasets/build_unified_team_match_panel.py) | [datasets/build_unified_team_match_panel.R](datasets/build_unified_team_match_panel.R) | [unified_team_match_panel.csv](data/processed/unified_team_match_panel.csv) · [_r.csv](data/processed/unified_team_match_panel_r.csv) |
 | [ml/rbp_linear_regression.py](ml/rbp_linear_regression.py) | [ml/rbp_linear_regression.R](ml/rbp_linear_regression.R) | [rbp_linear_regression_results.json](ml/rbp_linear_regression_results.json) · [_r.json](ml/rbp_linear_regression_results_r.json) |
-| [ml/ronaldo_goals_regression.py](ml/ronaldo_goals_regression.py) | [ml/ronaldo_goals_regression.R](ml/ronaldo_goals_regression.R) | [ronaldo_goals_regression_results.json](ml/ronaldo_goals_regression_results.json) · [_r.json](ml/ronaldo_goals_regression_results_r.json) |
+| [topics/player-props/ronaldo_goals_regression.py](topics/player-props/ronaldo_goals_regression.py) | [topics/player-props/ronaldo_goals_regression.R](topics/player-props/ronaldo_goals_regression.R) | [ronaldo_goals_regression_results.json](topics/player-props/ronaldo_goals_regression_results.json) · [_r.json](topics/player-props/ronaldo_goals_regression_results_r.json) |
 | [ml/rbp_gap_ttest.py](ml/rbp_gap_ttest.py) | [ml/rbp_gap_ttest.R](ml/rbp_gap_ttest.R) | [rbp_gap_ttest_results.json](ml/rbp_gap_ttest_results.json) · [_r.json](ml/rbp_gap_ttest_results_r.json) |
 
 **Data sources referenced (not created this session):**

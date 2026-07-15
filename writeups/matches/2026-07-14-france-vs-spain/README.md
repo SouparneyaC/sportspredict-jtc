@@ -83,7 +83,7 @@ p=0.218) — ruling out "we forgot referee/fouls/stage" as the explanation, not 
 
 **Scripts/data used:** [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py), [`data/processed/fetch_all_raw_events.py`](../../../data/processed/fetch_all_raw_events.py) (referee
 extraction), [`ml/backtests/PREREGISTRATION_cards_referee_fouls_stage.md`](../../../ml/backtests/PREREGISTRATION_cards_referee_fouls_stage.md),
-[`ml/backtests/walk_forward_cards_referee_backtest.R`](../../../ml/backtests/walk_forward_cards_referee_backtest.R), `data/processed/unified_team_match_panel_with_referee.csv`.
+[`topics/cards/walk_forward_cards_referee_backtest.R`](../../../topics/cards/walk_forward_cards_referee_backtest.R), `data/processed/unified_team_match_panel_with_referee.csv`.
 
 ---
 
@@ -147,7 +147,7 @@ Direct Smarkets market (`OU2_5_goals`, normalized 0.5038). Cross-checked against
 100k-draw joint simulation ([`bot/simulate_fra_esp_sf.py`](../../../bot/simulate_fra_esp_sf.py)) that fits a Dixon-Coles scoreline grid to the
 liquid market lines so all goal-structure questions on the slate answer consistently with each other.
 A second, fully crowd-free check — the project's own historical Poisson/Dixon-Coles model
-([`data/processed/poisson_goals_coefs.json`](../../../data/processed/poisson_goals_coefs.json), fit on 49,400 historical matches, fed with the corrected
+([`topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`](../../../topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json), fit on 49,400 historical matches, fed with the corrected
 point-in-time Elo, not market-fit) gave 0.383, notably below the market — flagged as a real divergence
 (the pure model consistently under-shot goal expectancy for this match relative to market) but not acted
 on, per decision 0001.
@@ -157,8 +157,8 @@ on, per decision 0001.
 ### Settlement
 **Result: NO.** Final: 2 total goals. **RBP: +10.10. Beat crowd.**
 
-**Scripts/data used:** [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py), [`bot/simulate_fra_esp_sf.py`](../../../bot/simulate_fra_esp_sf.py), [`model/dixon_coles.py`](../../../model/dixon_coles.py),
-[`data/processed/poisson_goals_coefs.json`](../../../data/processed/poisson_goals_coefs.json), [`ml/backtests/build_full_tournament_pit_elo.py`](../../../ml/backtests/build_full_tournament_pit_elo.py).
+**Scripts/data used:** [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py), [`bot/simulate_fra_esp_sf.py`](../../../bot/simulate_fra_esp_sf.py), [`topics/match-winner-goals-totals/model/dixon_coles.py`](../../../topics/match-winner-goals-totals/model/dixon_coles.py),
+[`topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`](../../../topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json), [`ml/backtests/build_full_tournament_pit_elo.py`](../../../ml/backtests/build_full_tournament_pit_elo.py).
 
 ---
 
@@ -241,8 +241,8 @@ one live match does not overturn 505 historical matches of evidence that market 
 this is logged as a genuine, valuable counter-example, not proof the general rule was wrong.
 
 **Scripts/data used:** [`ml/backtests/build_full_tournament_pit_elo.py`](../../../ml/backtests/build_full_tournament_pit_elo.py),
-`data/processed/wc2026_pit_elo_panel.csv`, [`model/dixon_coles.py`](../../../model/dixon_coles.py),
-[`data/processed/poisson_goals_coefs.json`](../../../data/processed/poisson_goals_coefs.json), [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py).
+`data/processed/wc2026_pit_elo_panel.csv`, [`topics/match-winner-goals-totals/model/dixon_coles.py`](../../../topics/match-winner-goals-totals/model/dixon_coles.py),
+[`topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`](../../../topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json), [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py).
 
 ---
 
@@ -300,7 +300,7 @@ France-specific SOT line ([`bot/simulate_fra_esp_sf.py`](../../../bot/simulate_f
 hierarchical partial-pooling Poisson model for team-level SOT (team random intercept + Elo diff +
 data-source fixed effect, later refined with each team's own absolute Elo to correct a diagnosed
 elite-team underprediction bias) was pre-registered
-([`ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md)), walk-forward backtested across 29
+([`topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md)), walk-forward backtested across 29
 chronological folds, and **passed** against the production baseline (mean NLL 2.154 vs. 2.378, p=0.0003,
 match-clustered bootstrap 90% band entirely positive). Per [decision 0002](../../decisions/0002-shadow-deploy-before-live-submission.md),
 this backtest evidence alone does not clear the model to override a submission — it has never been
@@ -318,9 +318,9 @@ near-coin-flip market/crowd (~0.49-0.50). This is the first live data point wher
 clearly beat the market on exactly the family it was built and backtested for — real, valuable
 evidence, and per decision 0002 still just one data point. The model remains in shadow mode.
 
-**Scripts/data used:** [`ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md),
+**Scripts/data used:** [`topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md),
 [`ml/backtests/PREREGISTRATION_elo_level_refinement.md`](../../../ml/backtests/PREREGISTRATION_elo_level_refinement.md), [`ml/backtests/lib_hierarchical_backtest.R`](../../../ml/backtests/lib_hierarchical_backtest.R),
-[`ml/backtests/apply_to_fra_esp.R`](../../../ml/backtests/apply_to_fra_esp.R), [`ml/backtests/blend_market_glmm.py`](../../../ml/backtests/blend_market_glmm.py) (built, not used live this match),
+[`ml/backtests/apply_to_fra_esp.R`](../../../ml/backtests/apply_to_fra_esp.R), [`topics/shots-on-target/blend_market_glmm.py`](../../../topics/shots-on-target/blend_market_glmm.py) (built, not used live this match),
 [`bot/fetch_fra_esp_smarkets.py`](../../../bot/fetch_fra_esp_smarkets.py), [`bot/simulate_fra_esp_sf.py`](../../../bot/simulate_fra_esp_sf.py).
 
 ---
@@ -353,7 +353,7 @@ minutes across their 2026 games (`10_espn_form_supplement.json`) — France had 
 so it was kept). A dedicated, purpose-built walk-forward logistic model (team's own shrunk historical
 first-sub tendency + Elo diff, using only pre-match-knowable covariates since in-match trailing state
 isn't available before kickoff) was built and backtested specifically to test whether a more rigorous
-approach could improve on this heuristic ([`ml/backtests/walk_forward_first_sub_backtest.py`](../../../ml/backtests/walk_forward_first_sub_backtest.py)). It failed —
+approach could improve on this heuristic ([`topics/first-substitution/walk_forward_first_sub_backtest.py`](../../../topics/first-substitution/walk_forward_first_sub_backtest.py)). It failed —
 confidently worse than a naive 50/50 baseline (bootstrap 90% band entirely negative,
 [-0.0536, -0.0030]) — so the simple heuristic was kept rather than replaced.
 
@@ -364,7 +364,7 @@ confidently worse than a naive 50/50 baseline (bootstrap 90% band entirely negat
 William Saliba, 30'. **RBP: -10.64. Below crowd.** Locked in at halftime, held.
 
 **Scripts/data used:** [`bot/compile_fra_esp_espn_form.py`](../../../bot/compile_fra_esp_espn_form.py), [`ml/backtests/build_rare_event_panels.py`](../../../ml/backtests/build_rare_event_panels.py),
-[`ml/backtests/PREREGISTRATION_q14_first_sub_race.md`](../../../ml/backtests/PREREGISTRATION_q14_first_sub_race.md), [`ml/backtests/walk_forward_first_sub_backtest.py`](../../../ml/backtests/walk_forward_first_sub_backtest.py).
+[`topics/first-substitution/PREREGISTRATION_q14_first_sub_race.md`](../../../topics/first-substitution/PREREGISTRATION_q14_first_sub_race.md), [`topics/first-substitution/walk_forward_first_sub_backtest.py`](../../../topics/first-substitution/walk_forward_first_sub_backtest.py).
 
 ---
 
@@ -465,18 +465,18 @@ All paths relative to `sportspredict_research/` unless noted.
 [`ml/backtests/build_full_tournament_pit_elo.py`](../../../ml/backtests/build_full_tournament_pit_elo.py), [`ml/backtests/add_pit_elo_to_unified_panel.py`](../../../ml/backtests/add_pit_elo_to_unified_panel.py).
 
 **Modeling / backtesting:**
-[`model/dixon_coles.py`](../../../model/dixon_coles.py), [`data/processed/poisson_goals_coefs.json`](../../../data/processed/poisson_goals_coefs.json),
+[`topics/match-winner-goals-totals/model/dixon_coles.py`](../../../topics/match-winner-goals-totals/model/dixon_coles.py), [`topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json`](../../../topics/match-winner-goals-totals/coefs/poisson_goals_coefs.json),
 [`ml/backtests/lib_hierarchical_backtest.R`](../../../ml/backtests/lib_hierarchical_backtest.R), [`ml/backtests/run_all_family_backtests.R`](../../../ml/backtests/run_all_family_backtests.R),
-[`ml/backtests/apply_to_fra_esp.R`](../../../ml/backtests/apply_to_fra_esp.R), [`ml/backtests/walk_forward_first_sub_backtest.py`](../../../ml/backtests/walk_forward_first_sub_backtest.py),
-[`ml/backtests/walk_forward_cards_referee_backtest.R`](../../../ml/backtests/walk_forward_cards_referee_backtest.R), [`ml/backtests/blend_market_glmm.py`](../../../ml/backtests/blend_market_glmm.py),
-[`ml/backtests/build_rare_event_panels.py`](../../../ml/backtests/build_rare_event_panels.py), [`ml/backtests/sot_vs_market_comparison.py`](../../../ml/backtests/sot_vs_market_comparison.py).
+[`ml/backtests/apply_to_fra_esp.R`](../../../ml/backtests/apply_to_fra_esp.R), [`topics/first-substitution/walk_forward_first_sub_backtest.py`](../../../topics/first-substitution/walk_forward_first_sub_backtest.py),
+[`topics/cards/walk_forward_cards_referee_backtest.R`](../../../topics/cards/walk_forward_cards_referee_backtest.R), [`topics/shots-on-target/blend_market_glmm.py`](../../../topics/shots-on-target/blend_market_glmm.py),
+[`ml/backtests/build_rare_event_panels.py`](../../../ml/backtests/build_rare_event_panels.py), [`topics/shots-on-target/sot_vs_market_comparison.py`](../../../topics/shots-on-target/sot_vs_market_comparison.py).
 
 **Pre-registrations (methodology committed before results were seen):**
-[`ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../ml/backtests/PREREGISTRATION_sot_hierarchical_backtest.md),
+[`topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md`](../../../topics/shots-on-target/PREREGISTRATION_sot_hierarchical_backtest.md),
 [`ml/backtests/PREREGISTRATION_cards_corners_offsides_and_combined.md`](../../../ml/backtests/PREREGISTRATION_cards_corners_offsides_and_combined.md),
 [`ml/backtests/PREREGISTRATION_elo_level_refinement.md`](../../../ml/backtests/PREREGISTRATION_elo_level_refinement.md),
 [`ml/backtests/PREREGISTRATION_cards_referee_fouls_stage.md`](../../../ml/backtests/PREREGISTRATION_cards_referee_fouls_stage.md),
-[`ml/backtests/PREREGISTRATION_q14_first_sub_race.md`](../../../ml/backtests/PREREGISTRATION_q14_first_sub_race.md).
+[`topics/first-substitution/PREREGISTRATION_q14_first_sub_race.md`](../../../topics/first-substitution/PREREGISTRATION_q14_first_sub_race.md).
 
 **External research:**
 [`ML_MODEL_BUILD_RESEARCH_2026-07-13.md`](../../../ML_MODEL_BUILD_RESEARCH_2026-07-13.md), [`BACKTEST_METHODOLOGY_RARE_EVENTS_2026-07-14.md`](../../../BACKTEST_METHODOLOGY_RARE_EVENTS_2026-07-14.md).
