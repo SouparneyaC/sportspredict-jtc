@@ -22,7 +22,7 @@ from sklearn.linear_model import LogisticRegression
 ROOT = Path(__file__).resolve().parents[2]
 PANEL = ROOT / "ml" / "backtests" / "rare_event_panel.csv"
 ELO_PANEL = ROOT / "data" / "processed" / "unified_team_match_panel_with_pit_elo.csv"
-OUT = ROOT / "ml" / "backtests" / "first_sub_backtest_results.csv"
+OUT = ROOT / "topics" / "first-substitution" / "first_sub_backtest_results.csv"
 
 K_SHRINK = 5
 

@@ -2,7 +2,7 @@
 Build two panels the project has never had before, to fix two gaps flagged in
 matches/Spain_vs_Belgium/DATA_SCOPING_MEMO.md:
 
-  1. data/processed/halftime_sub_panel.csv
+  1. topics/first-substitution/halftime_sub_panel.csv
      One row per WC2026 match with a saved full ESPN summary dump on disk.
      Extracted from `keyEvents` (type=='substitution'): did either team make a
      substitution in the immediate second-half-restart window (period 2,
@@ -51,7 +51,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 HALFTIME_WINDOW_SEC = 47 * 60  # 47'00" -- see docstring for calibration note
 
-OUT_SUB = ROOT / "data" / "processed" / "halftime_sub_panel.csv"
+OUT_SUB = ROOT / "topics" / "first-substitution" / "halftime_sub_panel.csv"
 OUT_REF = ROOT / "topics" / "cards" / "referee_card_panel.csv"
 
 
