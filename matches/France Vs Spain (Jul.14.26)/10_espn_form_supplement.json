@@ -1,0 +1,734 @@
+{
+  "_description": "Supplement to 10_espn_form.json (v2, corrected): per-team first-sub minute, goal minutes (all goal types incl. penalties/headers/own goals), card minutes, deduped delay windows (hydration breaks + VAR/injury stoppages), QF matchday jersey numbers.",
+  "games": {
+    "FRA_SEN_group": {
+      "goal_minutes": [
+        {
+          "min": 66,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 82,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 90,
+          "team": "Senegal",
+          "type": "Goal"
+        },
+        {
+          "min": 90,
+          "team": "France",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [],
+      "team_first_sub_minute": {
+        "Senegal": 75,
+        "France": 80
+      },
+      "delay_start_minutes": [
+        26,
+        40,
+        60,
+        68,
+        90
+      ]
+    },
+    "FRA_IRQ_group": {
+      "goal_minutes": [
+        {
+          "min": 14,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 54,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 66,
+          "team": "France",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 6,
+          "team": "Iraq",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Iraq": 26,
+        "France": 68
+      },
+      "delay_start_minutes": [
+        23,
+        28,
+        45
+      ]
+    },
+    "FRA_NOR_group": {
+      "goal_minutes": [
+        {
+          "min": 7,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 20,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 21,
+          "team": "Norway",
+          "type": "Goal"
+        },
+        {
+          "min": 32,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 90,
+          "team": "France",
+          "type": "Goal - Header"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 10,
+          "team": "Norway",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 74,
+          "team": "France",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Norway": 45,
+        "France": 65
+      },
+      "delay_start_minutes": [
+        2,
+        24,
+        56,
+        68
+      ]
+    },
+    "FRA_SWE_r32": {
+      "goal_minutes": [
+        {
+          "min": 45,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 53,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 74,
+          "team": "France",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [],
+      "team_first_sub_minute": {
+        "Sweden": 66,
+        "France": 75
+      },
+      "delay_start_minutes": [
+        23,
+        68
+      ]
+    },
+    "FRA_PAR_r16": {
+      "goal_minutes": [
+        {
+          "min": 70,
+          "team": "France",
+          "type": "Penalty - Scored"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 19,
+          "team": "France",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 81,
+          "team": "France",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "France",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Paraguay": 58,
+        "France": 61
+      },
+      "delay_start_minutes": [
+        23,
+        52,
+        66,
+        67,
+        73
+      ]
+    },
+    "FRA_MAR_qf": {
+      "goal_minutes": [
+        {
+          "min": 60,
+          "team": "France",
+          "type": "Goal"
+        },
+        {
+          "min": 66,
+          "team": "France",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 63,
+          "team": "Morocco",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Morocco": 62,
+        "France": 71
+      },
+      "delay_start_minutes": [
+        29,
+        67,
+        76
+      ]
+    },
+    "ESP_CPV_group": {
+      "goal_minutes": [],
+      "card_minutes": [
+        {
+          "min": 16,
+          "team": "Cape Verde",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Spain",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Cape Verde": 61,
+        "Spain": 71
+      },
+      "delay_start_minutes": [
+        4,
+        23,
+        65,
+        68,
+        81
+      ]
+    },
+    "ESP_SAU_group": {
+      "goal_minutes": [
+        {
+          "min": 10,
+          "team": "Spain",
+          "type": "Goal"
+        },
+        {
+          "min": 21,
+          "team": "Spain",
+          "type": "Goal"
+        },
+        {
+          "min": 24,
+          "team": "Spain",
+          "type": "Goal"
+        },
+        {
+          "min": 49,
+          "team": "Spain",
+          "type": "Own Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 30,
+          "team": "Saudi Arabia",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 60,
+          "team": "Saudi Arabia",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Spain": 45,
+        "Saudi Arabia": 45
+      },
+      "delay_start_minutes": [
+        25,
+        60,
+        68,
+        87,
+        90
+      ]
+    },
+    "ESP_URU_group": {
+      "goal_minutes": [
+        {
+          "min": 42,
+          "team": "Spain",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 46,
+          "team": "Spain",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 54,
+          "team": "Uruguay",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 58,
+          "team": "Uruguay",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Uruguay",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Uruguay",
+          "type": "Red Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Uruguay": 45,
+        "Spain": 60
+      },
+      "delay_start_minutes": [
+        23,
+        39,
+        42,
+        68,
+        87
+      ]
+    },
+    "ESP_AUT_r32": {
+      "goal_minutes": [
+        {
+          "min": 36,
+          "team": "Spain",
+          "type": "Goal"
+        },
+        {
+          "min": 66,
+          "team": "Spain",
+          "type": "Goal - Header"
+        },
+        {
+          "min": 89,
+          "team": "Spain",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 83,
+          "team": "Austria",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Austria": 45,
+        "Spain": 71
+      },
+      "delay_start_minutes": [
+        9,
+        24,
+        45,
+        63,
+        68
+      ]
+    },
+    "ESP_POR_r16": {
+      "goal_minutes": [
+        {
+          "min": 90,
+          "team": "Spain",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 89,
+          "team": "Portugal",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Portugal",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Spain",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Portugal": 56,
+        "Spain": 75
+      },
+      "delay_start_minutes": [
+        23,
+        37,
+        54,
+        68
+      ]
+    },
+    "ESP_BEL_qf": {
+      "goal_minutes": [
+        {
+          "min": 30,
+          "team": "Spain",
+          "type": "Goal"
+        },
+        {
+          "min": 41,
+          "team": "Belgium",
+          "type": "Goal - Header"
+        },
+        {
+          "min": 88,
+          "team": "Spain",
+          "type": "Goal"
+        }
+      ],
+      "card_minutes": [
+        {
+          "min": 43,
+          "team": "Spain",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 85,
+          "team": "Belgium",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Spain",
+          "type": "Yellow Card"
+        },
+        {
+          "min": 90,
+          "team": "Belgium",
+          "type": "Yellow Card"
+        }
+      ],
+      "team_first_sub_minute": {
+        "Spain": 55,
+        "Belgium": 60
+      },
+      "delay_start_minutes": [
+        23,
+        31,
+        35,
+        45,
+        66,
+        67
+      ]
+    }
+  },
+  "jerseys": {
+    "France": {
+      "Mike Maignan": {
+        "jersey": "16",
+        "pos": null,
+        "starter": true
+      },
+      "William Saliba": {
+        "jersey": "17",
+        "pos": null,
+        "starter": true
+      },
+      "Dayot Upamecano": {
+        "jersey": "4",
+        "pos": null,
+        "starter": true
+      },
+      "Lucas Digne": {
+        "jersey": "3",
+        "pos": null,
+        "starter": true
+      },
+      "Jules Kound\u00e9": {
+        "jersey": "5",
+        "pos": null,
+        "starter": true
+      },
+      "Michael Olise": {
+        "jersey": "11",
+        "pos": null,
+        "starter": true
+      },
+      "Adrien Rabiot": {
+        "jersey": "14",
+        "pos": null,
+        "starter": true
+      },
+      "Manu Kon\u00e9": {
+        "jersey": "6",
+        "pos": null,
+        "starter": true
+      },
+      "Kylian Mbapp\u00e9": {
+        "jersey": "10",
+        "pos": null,
+        "starter": true
+      },
+      "D\u00e9sir\u00e9 Dou\u00e9": {
+        "jersey": "20",
+        "pos": null,
+        "starter": true
+      },
+      "Ousmane Demb\u00e9l\u00e9": {
+        "jersey": "7",
+        "pos": null,
+        "starter": true
+      },
+      "N'Golo Kant\u00e9": {
+        "jersey": "13",
+        "pos": null,
+        "starter": false
+      },
+      "Ibrahima Konat\u00e9": {
+        "jersey": "15",
+        "pos": null,
+        "starter": false
+      },
+      "Robin Risser": {
+        "jersey": "23",
+        "pos": null,
+        "starter": false
+      },
+      "Rayan Cherki": {
+        "jersey": "24",
+        "pos": null,
+        "starter": false
+      },
+      "Theo Hern\u00e1ndez": {
+        "jersey": "19",
+        "pos": null,
+        "starter": false
+      },
+      "Lucas Hern\u00e1ndez": {
+        "jersey": "21",
+        "pos": null,
+        "starter": false
+      },
+      "Bradley Barcola": {
+        "jersey": "12",
+        "pos": null,
+        "starter": false
+      },
+      "Marcus Thuram": {
+        "jersey": "9",
+        "pos": null,
+        "starter": false
+      },
+      "Brice Samba": {
+        "jersey": "1",
+        "pos": null,
+        "starter": false
+      },
+      "Maxence Lacroix": {
+        "jersey": "26",
+        "pos": null,
+        "starter": false
+      },
+      "Maghnes Akliouche": {
+        "jersey": "25",
+        "pos": null,
+        "starter": false
+      },
+      "Aur\u00e9lien Tchouam\u00e9ni": {
+        "jersey": "8",
+        "pos": null,
+        "starter": false
+      },
+      "Warren Za\u00efre-Emery": {
+        "jersey": "18",
+        "pos": null,
+        "starter": false
+      },
+      "Jean-Philippe Mateta": {
+        "jersey": "22",
+        "pos": null,
+        "starter": false
+      },
+      "Malo Gusto": {
+        "jersey": "2",
+        "pos": null,
+        "starter": false
+      }
+    },
+    "Spain": {
+      "Unai Sim\u00f3n": {
+        "jersey": "23",
+        "pos": null,
+        "starter": true
+      },
+      "Aymeric Laporte": {
+        "jersey": "14",
+        "pos": null,
+        "starter": true
+      },
+      "Pau Cubars\u00ed": {
+        "jersey": "22",
+        "pos": null,
+        "starter": true
+      },
+      "Marc Cucurella": {
+        "jersey": "24",
+        "pos": null,
+        "starter": true
+      },
+      "Pedro Porro": {
+        "jersey": "12",
+        "pos": null,
+        "starter": true
+      },
+      "Dani Olmo": {
+        "jersey": "10",
+        "pos": null,
+        "starter": true
+      },
+      "Fabi\u00e1n Ruiz": {
+        "jersey": "8",
+        "pos": null,
+        "starter": true
+      },
+      "Rodri": {
+        "jersey": "16",
+        "pos": null,
+        "starter": true
+      },
+      "Mikel Oyarzabal": {
+        "jersey": "21",
+        "pos": null,
+        "starter": true
+      },
+      "\u00c1lex Baena": {
+        "jersey": "15",
+        "pos": null,
+        "starter": true
+      },
+      "Lamine Yamal": {
+        "jersey": "19",
+        "pos": null,
+        "starter": true
+      },
+      "Nico Williams": {
+        "jersey": "17",
+        "pos": null,
+        "starter": false
+      },
+      "Y\u00e9remy Pino": {
+        "jersey": "11",
+        "pos": null,
+        "starter": false
+      },
+      "Alejandro Grimaldo": {
+        "jersey": "3",
+        "pos": null,
+        "starter": false
+      },
+      "V\u00edctor Mu\u00f1oz": {
+        "jersey": "25",
+        "pos": null,
+        "starter": false
+      },
+      "Mikel Merino": {
+        "jersey": "6",
+        "pos": null,
+        "starter": false
+      },
+      "Joan Garc\u00eda": {
+        "jersey": "13",
+        "pos": null,
+        "starter": false
+      },
+      "Eric Garc\u00eda": {
+        "jersey": "4",
+        "pos": null,
+        "starter": false
+      },
+      "Borja Iglesias": {
+        "jersey": "26",
+        "pos": null,
+        "starter": false
+      },
+      "Gavi": {
+        "jersey": "9",
+        "pos": null,
+        "starter": false
+      },
+      "David Raya": {
+        "jersey": "1",
+        "pos": null,
+        "starter": false
+      },
+      "Marc Pubill": {
+        "jersey": "2",
+        "pos": null,
+        "starter": false
+      },
+      "Pedri": {
+        "jersey": "20",
+        "pos": null,
+        "starter": false
+      },
+      "Mart\u00edn Zubimendi": {
+        "jersey": "18",
+        "pos": null,
+        "starter": false
+      },
+      "Ferran Torres": {
+        "jersey": "7",
+        "pos": null,
+        "starter": false
+      },
+      "Marcos Llorente": {
+        "jersey": "5",
+        "pos": null,
+        "starter": false
+      }
+    }
+  }
+}

@@ -134,6 +134,24 @@ EVENTS = [
     ("2026-07-02", 760496, "POR",  "CRO",  "POR",  "CRO"),
     ("2026-07-02", 760497, "ESP",  "AUT",  "ESP",  "AUT"),
     ("2026-07-02", 760498, "SUI",  "ALG",  "SUI",  "ALG"),
+    # R32 final batch (added 2026-07-14; was missing from the original build)
+    ("2026-07-03", 760499, "AUS",  "EGY",  "AUS",  "EGY"),
+    ("2026-07-03", 760500, "ARG",  "CPV",  "ARG",  "CPV"),
+    ("2026-07-03", 760501, "COL",  "GHA",  "COL",  "GHA"),
+    # R16 (added 2026-07-14)
+    ("2026-07-04", 760502, "CAN",  "MAR",  "CAN",  "MAR"),
+    ("2026-07-04", 760503, "PAR",  "FRA",  "PAR",  "FRA"),
+    ("2026-07-05", 760504, "BRA",  "NOR",  "BRA",  "NOR"),
+    ("2026-07-05", 760505, "MEX",  "ENG",  "MEX",  "ENG"),
+    ("2026-07-06", 760506, "POR",  "ESP",  "POR",  "ESP"),
+    ("2026-07-06", 760507, "USA",  "BEL",  "USA",  "BEL"),
+    ("2026-07-07", 760508, "SUI",  "COL",  "SUI",  "COL"),
+    ("2026-07-07", 760509, "ARG",  "EGY",  "ARG",  "EGY"),
+    # QF (added 2026-07-14)
+    ("2026-07-09", 760510, "FRA",  "MAR",  "FRA",  "MAR"),
+    ("2026-07-10", 760511, "ESP",  "BEL",  "ESP",  "BEL"),
+    ("2026-07-11", 760512, "NOR",  "ENG",  "NOR",  "ENG"),
+    ("2026-07-11", 760513, "ARG",  "SUI",  "ARG",  "SUI"),
 ]
 
 # Stats to extract from ESPN boxscore (ESPN field name -> our column name)

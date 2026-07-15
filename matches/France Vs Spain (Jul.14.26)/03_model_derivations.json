@@ -1,0 +1,79 @@
+{
+  "_description": "Model derivations for France vs Spain SF (2026-07-14, match_id de7b7b6f-f3a8-4948-af5e-f0f4565728d0, AT&T Stadium Arlington TX, neutral venue). First match priced with the design-#1 joint simulation from ML_MODEL_BUILD_RESEARCH_2026-07-13.md C.3: all goal-structure questions read off ONE 200k-draw market-calibrated simulation (bot/simulate_fra_esp_sf.py -> 11_simulation_results.json). Market anchors from Smarkets event 45192700 (09_smarkets_quotes_processed.json, fetched ~05:30Z 2026-07-14). Form data from live ESPN summaries, all 6 games each team (10_espn_form.json + supplement).",
+  "match_context": {
+    "point_in_time_elo": {
+      "France": 2225.13,
+      "Spain": 2261.57,
+      "diff_spain_minus_france": 36.44,
+      "source": "ml/backtests/fra_esp_sf_point_in_time_elo_replay.py; stale frozen values (2129/2226) overstated Spain's edge by 60 Elo points"
+    },
+    "market_ftr_normalized": {
+      "France": 0.4021,
+      "Spain": 0.2967,
+      "Draw": 0.3012
+    },
+    "note_on_elo_vs_market": "Corrected Elo says near-even (Spain +36); market makes France clear favorite (40/30). Market includes lineup/venue/form information Elo cannot see; RULE1/RULE2 give market priority. The stale Elo would have said Spain much stronger -- the point-in-time fix moved our prior TOWARD the market, de-risking the disagreement.",
+    "fitted_simulation_params": {
+      "lambda_fra": 1.4785,
+      "lambda_esp": 1.2535,
+      "dc_rho_market_implied": -0.1918,
+      "timing_slope_a": 0.862,
+      "hydration_breaks_observed": "first 23-25' (median 24), second 63-76' (median 67), measured across all 12 FRA/ESP games from ESPN delay events"
+    },
+    "jtc_crowd_status": "not observable pre-close via any known endpoint (structural platform limitation)"
+  },
+  "key_form_facts": {
+    "mbappe": "scored 5/6 games (2,2,0,2,1,1 = 8 goals), 2 assists in the game he did not score; SOT 4,3,2,4,4,2",
+    "yamal": "1 goal 0 assists in 6 games (S/A hit 1/6 = 0.167); still active (SOT 0,2,0,4,2,2; 6 shots vs BEL); drought CONTINUED after the POR-ESP suppression won +38.48 on this exact question",
+    "france_first_sub_own_minutes": [
+      80,
+      68,
+      65,
+      75,
+      61,
+      71
+    ],
+    "spain_first_sub_own_minutes": [
+      71,
+      45,
+      60,
+      71,
+      75,
+      55
+    ],
+    "france_offsides": [
+      1,
+      1,
+      2,
+      3,
+      0,
+      0
+    ],
+    "spain_offsides": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      3
+    ],
+    "france_sot": [
+      8,
+      5,
+      9,
+      12,
+      5,
+      8
+    ],
+    "spain_sot": [
+      7,
+      8,
+      1,
+      10,
+      6,
+      8
+    ],
+    "single_digit_scorer_share": "FRA 5/16 (all Dembele #7), ESP 3/10 (Merino #6 x2, Fabian #8) = ~0.31 combined; market-normalized first-scorer share 0.2853",
+    "var_events": "VAR decisions in 7/12 games but only 1 near-certain ON-FIELD review (FRA-PAR penalty award 67'); question requires the referee at the monitor, not a booth check"
+  }
+}

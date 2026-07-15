@@ -1,0 +1,114 @@
+{
+  "_description": "Joint-simulation outputs for FRA-ESP SF, 200k draws. Goal-structure questions are mutually consistent by construction (one simulation). Cards/SOT calibrated to their own market lines; offsides empirical (no market). Every probability listed with its market anchor where one exists. Fitted on normalized Smarkets mids fetched 2026-07-14.",
+  "fitted_params": {
+    "lambda_fra_goals": 1.4785,
+    "lambda_esp_goals": 1.2535,
+    "dixon_coles_rho": -0.1918,
+    "timing_slope_a": 0.862,
+    "lambda_cards": 3.2,
+    "cards_overdispersion_phi": 0.02,
+    "lambda_fra_sot": 5.02,
+    "lambda_esp_sot": 4.65,
+    "lambda_offsides_combined": 3.167,
+    "p_spain_wins_shootout_calibrated": 0.3104,
+    "hydration_break_minutes": [
+      24,
+      67
+    ]
+  },
+  "market_fit_check": {
+    "p_fra_win": {
+      "market": 0.4021,
+      "fitted": 0.4011
+    },
+    "p_esp_win": {
+      "market": 0.2967,
+      "fitted": 0.2981
+    },
+    "p_draw": {
+      "market": 0.3012,
+      "fitted": 0.3008
+    },
+    "fra_o05": {
+      "market": 0.783,
+      "fitted": 0.772
+    },
+    "fra_o15": {
+      "market": 0.4345,
+      "fitted": 0.435
+    },
+    "esp_o05": {
+      "market": 0.7336,
+      "fitted": 0.7145
+    },
+    "esp_o15": {
+      "market": 0.3485,
+      "fitted": 0.3566
+    },
+    "tot_o15": {
+      "market": 0.7635,
+      "fitted": 0.7802
+    },
+    "tot_o25": {
+      "market": 0.5038,
+      "fitted": 0.5142
+    },
+    "tot_o35": {
+      "market": 0.2933,
+      "fitted": 0.293
+    },
+    "btts": {
+      "market": 0.5905,
+      "fitted": 0.5748
+    }
+  },
+  "question_probs": {
+    "Q1_offsides_4plus": {
+      "sim": 0.3899,
+      "market": null
+    },
+    "Q2_cards_4plus": {
+      "sim": 0.396,
+      "market": 0.3973
+    },
+    "Q5_goals_3plus": {
+      "sim": 0.5147,
+      "market": 0.5038
+    },
+    "Q6_extra_time": {
+      "sim": 0.301,
+      "market": 0.2967
+    },
+    "Q7_goal_before_break1": {
+      "sim": 0.4327,
+      "market_first_goal_le24_implied": 0.4331
+    },
+    "Q9_spain_advances": {
+      "sim": 0.4119,
+      "market": 0.4126
+    },
+    "Q11_goal_between_breaks": {
+      "sim": 0.7234,
+      "market": null
+    },
+    "Q12_spain_sot_5plus": {
+      "sim": 0.4929,
+      "market": "derived: total SOT line minus France SOT line"
+    },
+    "Q13_btts": {
+      "sim": 0.575,
+      "market": 0.5905
+    },
+    "Q15_france_sot_4plus": {
+      "sim": 0.7358,
+      "market_5plus": 0.5633
+    }
+  },
+  "consistency_extras": {
+    "p_pens": 0.1488,
+    "market_pens": 0.1626,
+    "p_fra_win_reg": 0.4013,
+    "p_esp_win_reg": 0.2977,
+    "p_first_goal_le20_sim_check": 0.3718
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "fetched_at": "2026-07-14T04:27:39.416247Z",
+  "open_matches": [
+    {
+      "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+      "name": "FRA vs ESP",
+      "closing_time": "2026-07-14T23:00:00.000Z",
+      "closes_in": "18h 32m",
+      "open_market_count": 15
+    },
+    {
+      "id": "4dc764d8-9ed2-416a-8e9f-02159518e853",
+      "name": "ENG vs ARG",
+      "closing_time": "2026-07-15T23:00:00.000Z",
+      "closes_in": "42h 32m",
+      "open_market_count": 15
+    }
+  ],
+  "settled_matches": [],
+  "rank": null,
+  "event_summary": null,
+  "leaderboard_top10": null,
+  "raw": {
+    "matches": [
+      {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z",
+        "open_market_count": 15
+      },
+      {
+        "id": "4dc764d8-9ed2-416a-8e9f-02159518e853",
+        "name": "ENG vs ARG",
+        "event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+        "opening_time": "2026-07-15T19:00:00.000Z",
+        "closing_time": "2026-07-15T23:00:00.000Z",
+        "open_market_count": 15
+      }
+    ]
+  }
+}

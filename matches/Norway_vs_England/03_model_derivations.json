@@ -1,0 +1,108 @@
+{
+  "_description": "Model derivations for Norway vs England QF pricing (2026-07-11). RULE1 restored this session (Smarkets fetched FIRST, before any estimate was finalized) after yesterday's Spain-Belgium postmortem found the model-only experiment fetched market data too late to act on the one question where it mattered most. Every model output below is shown next to its market cross-check; gaps over ~15-20pp are flagged and resolved by blending, not left in a file nobody reads until after the match.",
+  "elo": {
+    "norway": 2040.58,
+    "england": 2138.54,
+    "diff_england_minus_norway": 97.97,
+    "note": "Moderate favorite, not a blowout mismatch like Spain(+216.61)/Belgium -- relevant to the SYMMETRIC_REGIME_COVERAGE check below."
+  },
+  "poisson_goal_rates": {
+    "lambda_england": 1.3250,
+    "lambda_norway": 0.9294,
+    "lambda_total": 2.2544,
+    "note": "This lambda_total is LOW relative to both teams' own 2026 scoring environments (England's 5 games averaged 3.2 total goals; Norway's averaged 4.2) and relative to the market-implied lambda from the O/U2.5 goals price (2.999, back-solved via brentq). Flagged and corrected in the goals-dependent questions below (Q4, Q6) rather than trusted raw -- likely because the global Elo-Poisson coefficients are calibrated on a large low-scoring-skewed historical panel (49,400 matches) that doesn't fully capture these two specific teams' unusually open 2026 form."
+  },
+  "ordered_logit": {"p_england_win": 0.4886, "p_draw": 0.2938, "p_england_loss": 0.2176},
+  "dixon_coles_grid": {"rho": -0.05, "p_england_win": 0.4515, "p_draw": 0.2928, "p_norway_win": 0.2558, "p_btts": 0.4508, "p_0_0": 0.1114, "p_3plus_goals": 0.3918},
+  "blended_match_outcome": {
+    "p_england_win_regulation": 0.4700, "p_draw_regulation": 0.2933, "p_norway_win_regulation": 0.2367,
+    "market_cross_check": {"full_time_result_england": 0.4975, "gap_pp": 2.75, "flag": false, "note": "Model and market agree closely on the win/draw/loss split -- the relative-strength read is sound, only the total-goals VOLUME dimension (below) is off."}
+  },
+  "monte_carlo_simulation": {
+    "n_iterations": 200000,
+    "p_tied_at_halftime": 0.4421,
+    "p_btts_sim": 0.4442,
+    "p_second_half_more_goals": 0.3745,
+    "p_england_win_sim": 0.4587,
+    "p_draw_sim": 0.2797,
+    "note": "Independent Poisson goal counts, goal times sampled uniform(0,93). The uniform-time assumption doesn't capture the real-world second-half goal bias (fatigue, subs, chasing scorelines) -- see Q13 resolution, where this sim output is corrected against both a 60-match corpus base rate and the market's equivalent 'highest scoring half' price."
+  },
+  "market_gap_log": {
+    "_description": "Every case this session where |model - market| exceeded ~15pp, what was checked, and how it was resolved. This log is the direct fix for the Spain-Belgium Q12 failure mode (market flag seen, not acted on).",
+    "entries": [
+      {
+        "question": "3+ total goals",
+        "model": 0.3918, "market": 0.5765, "gap_pp": 18.5,
+        "recheck": "Both teams' own 2026 scoring logs run far hotter than the model's total lambda (England 3.2 goals/game, Norway 4.2 goals/game, vs model's 2.254 combined). Market-implied lambda (2.999) matches the empirical read far better than the model's own lambda (2.254).",
+        "resolution": "Blended toward market + empirical scoring logs, away from the raw Poisson output. Final: 0.54."
+      },
+      {
+        "question": "Both teams to score",
+        "model": 0.4508, "market": 0.6062, "gap_pp": 15.5,
+        "recheck": "Norway scored AND conceded in literally all 5 of its games this tournament (5/5 BTTS). England BTTS in 3/5. Same root cause as the goals-total gap above -- the model's low total-goals lambda understates both teams' actual attacking output.",
+        "resolution": "Blended heavily toward market + Norway's 5/5 empirical BTTS record. Final: 0.58."
+      },
+      {
+        "question": "Jude Bellingham 2+ SOT",
+        "model_2026_empirical": 0.60, "market": 0.28125, "gap_pp": 31.9,
+        "recheck": "StatsBomb historical panel (2022 WC, n=5, his only prior major tournament): 2+ SOT in 0/5 games, ceiling was 1 SOT. The 2026 empirical rate is driven almost entirely by his last 2 games (3, 3 SOT) after 3 games at 2, 0, 1 -- a short hot streak, not a form change confirmed by any independent source. Market and multi-year historical record agree against the recent streak.",
+        "resolution": "Shaded down sharply from the empirical 2026 rate toward market, this is the single largest correction this session and the clearest example of the recheck discipline working as intended. Final: 0.32."
+      },
+      {
+        "question": "Harry Kane 2+ SOT",
+        "model_2026_empirical": 0.60, "market": 0.4855, "historical_statsbomb_n12": 0.167, "gap_pp": 11.5,
+        "recheck": "Smaller gap than Bellingham's (under the 15pp trigger), included here for contrast: market already sits between the historical caution (0.167) and the 2026 hot form (0.60), i.e. the market has plausibly already done this same blending. No further correction needed beyond a small nudge.",
+        "resolution": "Set close to market with a slight upward nudge for genuine recent shot-volume increase. Final: 0.50."
+      },
+      {
+        "question": "24+ total shots",
+        "model": 0.7191, "market_calibrated": 0.6460, "gap_pp": 7.3,
+        "recheck": "No exact market line exists (Smarkets offers 25.5, not 23.5) -- rather than discard the market entirely as NA (last session's default), backed out an implied combined-shots lambda from the O/U25.5 price via brentq and re-evaluated at the 24+ threshold. This is a new technique this session: use near-miss market lines to calibrate the model's distribution shape instead of only using exact 1:1 matches.",
+        "resolution": "Blended model and market-calibrated figure. Final: 0.68."
+      },
+      {
+        "question": "Norway 4+ corners",
+        "model": 0.6497, "market_calibrated": 0.6010, "gap_pp": 4.9,
+        "recheck": "Same near-miss-market-calibration technique (Smarkets offers Norway O/U4.5, not 3.5). Small gap, both well below the raw 2026 empirical rate (0.80, n=5, too thin to trust alone).",
+        "resolution": "Blended model and market-calibrated figure. Final: 0.63."
+      }
+    ]
+  },
+  "symmetric_regime_coverage_check": {
+    "_description": "Explicit check this session, per the Spain-Belgium POSTMORTEM.md finding that this check was applied to only one side of a paired count-prop (Spain's own SOT, not Belgium's). Norway vs England has an equivalent paired prop: England 6+ corners / Norway 4+ corners.",
+    "elo_diff_context": "England favored by only 97.97 Elo points, a MODERATE edge -- not the 216.61-point blowout-level gap that drove Spain's 67.9% possession suppression of Belgium yesterday. Dixon-Coles gives a genuinely competitive 45/29/26 win/draw/loss split, not a lopsided one.",
+    "england_corners_check": "Is Norway a weak defensive/low-possession opponent that would inflate England's corner count relative to England's average? Norway's possession share varies widely by opponent quality (43-66%) and Norway has shown they can sit compact against stronger technical sides (66.4% possession conceded to Brazil in the R16 upset, suggesting a well-organized low block, not an easy walkover). No basis found for shading England's corner prop up beyond what EB shrinkage already reflects.",
+    "norway_corners_check": "Is England a much stronger attacking side than Norway's other opponents, that would suppress Norway's OWN corner count (the exact mechanism that hurt Belgium's SOT prop yesterday)? England is a stronger opponent on paper (Elo +97.97) but this is a 98-point gap, not a 217-point gap, and England's own defensive record this tournament is not dominant (conceded in 3/5 games, including 2 against Mexico in a chaotic R16). No basis found for shading Norway's corner prop down beyond the EB shrinkage + market-calibration already applied.",
+    "conclusion": "Checked both directions explicitly, as required. Neither prop needs additional asymmetric shading beyond the EB-shrinkage and market-calibration already applied above -- the underlying reason (this matchup isn't a blowout-level mismatch, unlike Spain-Belgium) is different from a false-negative miss; it's a genuine absence of the risk factor that applied yesterday."
+  },
+  "cards_model": {
+    "team_level_own_cards": {"norway_2026_mean": 0.4, "england_2026_mean": 1.6, "combined": 2.0},
+    "referee": {"name": "Clement Turpin", "mean_cards_n2": 2.5, "penalty_rate_shrunk_k5_prior0.25": 0.3214, "red_rate_shrunk_k5_prior0.13": 0.0929},
+    "corpus_baseline_mean": 2.76,
+    "blend_weights": {"team_level": 0.40, "referee": 0.35, "corpus": 0.25},
+    "blended_lambda": 2.365,
+    "market_calibrated_lambda_ou3.5": 2.625,
+    "penalty_or_red_model": 0.3844,
+    "penalty_or_red_market": 0.3836,
+    "gap_pp": 0.08,
+    "note": "Excellent model/market agreement on penalty-or-red (0.3844 vs 0.3836) -- no correction needed, strong validation of the component-wise EB-shrinkage approach."
+  },
+  "card_in_each_half": {
+    "corpus_base_rate": 0.4833,
+    "turpin_raw_n2": 0.50,
+    "blended": 0.48
+  },
+  "compound_corners_and_shots": {
+    "p_england_more_corners": 0.6003,
+    "p_england_more_shots": 0.8300,
+    "independence_product": 0.4982,
+    "high_correlation_bound_min": 0.6003,
+    "blended_50_50": 0.5493,
+    "note": "No market exists for this exact compound question. Computed via Skellam distribution on each marginal (corners: shrunk lambdas 5.77 vs 4.45; shots: raw 2026 means 16.0 vs 10.6), then combined assuming partial (not full) positive correlation between the two territorial-dominance indicators, since a match where England dominates one dimension plausibly but not certainly dominates the other too."
+  },
+  "haaland_goalscorer_model": {
+    "2026_empirical_rate": "4/4 games played (1 DNP), i.e. scored in literally every game he featured in this tournament, 7 goals total",
+    "market": 0.4368,
+    "note": "Same underlying tension as the Yamal case in Spain-Belgium but in the OPPOSITE direction -- there, a hyped player was underproducing relative to market price; here, a genuinely red-hot tournament top-scorer has a market price that already looks like it's pricing in a very live opponent-defense discount for facing England specifically. Norway's own prior match (Brazil vs Norway) independently validated 'bump Haaland above market on knockout-stakes regime-coverage reasoning' at 0.55 vs market 0.48, and it hit. Not chasing the unsustainable 100% empirical rate (small n=4, no team can price a striker at 90%+ under RULE6 discipline anyway), but leaning above market again given the validated precedent and continued elite production. Final: 0.48."
+  }
+}

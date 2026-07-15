@@ -1,0 +1,124 @@
+{
+  "_description": "Norway and England full 2026 in-tournament logs (group stage x3 + R32 + R16), extracted from ESPN boxscore/roster data. England's group+R32 games and R16 opponent (Mexico) data reused from matches/Mexico_vs_England/; Norway's from matches/Brazil_vs_Norway/. Both R16 games (Norway vs Brazil, England vs Mexico) fetched fresh live from ESPN (events 760504, 760505) since neither folder had the R16 game itself on disk.",
+  "elo": {
+    "source": "ml/backtests/nor_eng_qf_point_in_time_elo_replay.py (new script, same methodology as qf_point_in_time_elo_replay.py from Spain vs Belgium)",
+    "norway_entering_qf": 2040.58,
+    "england_entering_qf": 2138.54,
+    "diff_england_minus_norway": 97.97,
+    "note": "Neither team was in the original 10-team r16_point_in_time_elo_replay.py set; built a fresh replay from data/processed/unified_team_match_panel.csv real scores (results.csv is NA-filled for all WC2026 games, same known staleness bug). Frozen pre-tournament baselines: Norway 1983.84, England 2090.37."
+  },
+  "venue": {
+    "name": "Hard Rock Stadium, Miami Gardens, Florida",
+    "espn_event_id": "760512",
+    "kickoff_utc": "2026-07-11T21:00Z",
+    "neutral": true,
+    "note": "Neither Norway nor England is USA/MX/CA, so neutral=true per project convention despite US venue. Altitude negligible (sea level), not a factor."
+  },
+  "rest_days": {
+    "norway_r16_kickoff": "2026-07-05T20:00Z (vs Brazil, event 760504)",
+    "england_r16_kickoff": "2026-07-06T01:00Z (vs Mexico, event 760505)",
+    "norway_rest_hours": 145.0,
+    "england_rest_hours": 140.0,
+    "note": "Essentially equal, ~5 hour edge to Norway -- not a meaningful factor."
+  },
+  "haaland_tournament_log": {
+    "games": [
+      {"opponent": "Iraq", "stage": "group", "started": true, "goals": 2, "assists": 0, "shots": 5, "sot": 4},
+      {"opponent": "Senegal", "stage": "group", "started": true, "goals": 2, "assists": 0, "shots": 5, "sot": 3},
+      {"opponent": "France", "stage": "group", "started": false, "goals": null, "note": "DNP -- did not feature, no minutes recorded"},
+      {"opponent": "Ivory Coast", "stage": "R32", "started": true, "goals": 1, "assists": 0, "shots": 4, "sot": 2},
+      {"opponent": "Brazil", "stage": "R16", "started": true, "goals": 2, "assists": 0, "shots": 4, "sot": 3}
+    ],
+    "summary": "Scored in all 4 games he appeared in (7 goals total), 1 DNP (vs France, group stage -- reason not confirmed, possibly rotation). Tournament's outright leading scorer. StatsBomb historical panel: 0 rows (Norway has not appeared in a men's WC since 1998, so Haaland has no prior major-tournament data at any age)."
+  },
+  "kane_tournament_log": {
+    "games": [
+      {"opponent": "Croatia", "stage": "group", "goals": 2, "assists": 0, "shots": 7, "sot": 3},
+      {"opponent": "Ghana", "stage": "group", "goals": 0, "assists": 0, "shots": 3, "sot": 1},
+      {"opponent": "Panama", "stage": "group", "goals": 1, "assists": 0, "shots": 3, "sot": 2, "subbed_out": true},
+      {"opponent": "DR Congo", "stage": "R32", "goals": 2, "assists": 0, "shots": 5, "sot": 3},
+      {"opponent": "Mexico", "stage": "R16", "goals": 1, "assists": 1, "shots": 1, "sot": 1, "subbed_out": true}
+    ],
+    "summary": "2+ SOT in 3/5 games (0.60). StatsBomb historical (2018+2022, n=12): 2+ SOT in only 2/12 games (0.167) -- large historical/current-form gap, see PRICING_METHODOLOGY.md."
+  },
+  "bellingham_tournament_log": {
+    "games": [
+      {"opponent": "Croatia", "stage": "group", "goals": 1, "assists": 0, "shots": 3, "sot": 2, "subbed_out": true},
+      {"opponent": "Ghana", "stage": "group", "goals": 0, "assists": 0, "shots": 1, "sot": 0, "subbed_out": true},
+      {"opponent": "Panama", "stage": "group", "goals": 1, "assists": 1, "shots": 2, "sot": 1, "subbed_out": true},
+      {"opponent": "DR Congo", "stage": "R32", "goals": 0, "assists": 0, "shots": 3, "sot": 3},
+      {"opponent": "Mexico", "stage": "R16", "goals": 2, "assists": 0, "shots": 3, "sot": 3}
+    ],
+    "summary": "2+ SOT in 3/5 games (0.60), but driven almost entirely by the last 2 games (3, 3). StatsBomb historical (2022 WC only, n=5, too young for 2018): 2+ SOT in 0/5 games -- his 2022 ceiling was 1 SOT. Sharp divergence between recent 2026 form and full historical record -- see PRICING_METHODOLOGY.md, this triggered a mandatory recheck under the restored RULE1 discipline."
+  },
+  "team_logs": {
+    "norway": {
+      "games": ["Iraq(H, W4-1)", "Senegal(W3-2)", "France(L1-4)", "Ivory Coast(R32, W2-1)", "Brazil(R16, W2-1)"],
+      "shots_on_target": [5,7,4,4,5],
+      "total_shots": [12,13,10,9,9],
+      "corners": [5,5,4,3,5],
+      "yellow_cards": [0,0,1,1,0],
+      "red_cards": [0,0,0,0,0],
+      "possession_pct": [61.3,41.7,43.3,53.0,66.4],
+      "goals_for": [4,3,1,2,2],
+      "goals_against": [1,2,4,1,1],
+      "statsbomb_historical_rows": 0,
+      "note": "Norway has 0 StatsBomb historical rows (last men's WC appearance 1998) -- team-level count-prop priors shrink toward the 2026 tournament-wide corpus mean instead of a team-specific historical mean, a genuine methodology fork from every prior match in this project. Norway scored AND conceded in literally every one of its 5 games (5/5 BTTS)."
+    },
+    "england": {
+      "games": ["Croatia(W4-2)", "Ghana(D0-0)", "Panama(W2-0)", "DR Congo(R32, W2-1)", "Mexico(R16, W3-2)"],
+      "shots_on_target": [11,3,6,7,5],
+      "total_shots": [22,19,17,16,6],
+      "corners": [8,9,7,5,2],
+      "yellow_cards": [0,1,1,1,4],
+      "red_cards": [0,0,0,0,1],
+      "possession_pct": [51.7,78.9,67.1,59.7,33.1],
+      "goals_for": [4,0,2,2,3],
+      "goals_against": [2,0,0,1,2],
+      "statsbomb_historical_rows": 12,
+      "historical_sot_mean": 4.4167,
+      "historical_corners_mean": 5.3333,
+      "note": "R16 vs Mexico was a chaotic outlier: only 6 total shots but 4 yellows + 1 red -- lowest-volume, highest-discipline-cost game of the tournament for England. BTTS in 3/5 games."
+    },
+    "corpus_2026_wide_priors": {
+      "source": "data/processed/unified_team_match_panel.csv, season_year=2026, n=170 team-match rows",
+      "sot_mean": 4.1765,
+      "corners_mean": 4.5059,
+      "note": "Used as Norway's shrinkage prior in place of a team-specific historical mean (see above)."
+    }
+  },
+  "sub_scorer_base_rate": {
+    "method": "scanned every locally saved full ESPN match dump with usable roster stats (n=60 unique matches); a match counts as a hit if any player with subIns>=1 also has goals>0 or assists>0 in that match",
+    "hits": 33,
+    "n": 60,
+    "rate": 0.55
+  },
+  "second_half_more_goals_base_rate": {
+    "method": "parsed keyEvents goal timestamps by period across the same 60-match corpus",
+    "second_half_more": 26,
+    "equal": 14,
+    "n": 60,
+    "rate": 0.4333
+  },
+  "card_in_each_half_base_rate": {
+    "method": "parsed keyEvents card timestamps by period across the same 60-match corpus",
+    "hits": 29,
+    "n": 60,
+    "rate": 0.4833
+  },
+  "referee": {
+    "name": "Clement Turpin",
+    "nationality": "France",
+    "source": "web search (Tribuna.com, nysportsday.com, law5-theref.blogspot.com), corroborated against our own ESPN data",
+    "note_on_source": "ESPN gameInfo.officials for event 760512 returns null (doesn't publish future assignments) -- identity from external reporting, corroborated by independently pulling his 2 other confirmed WC2026 matches directly from ESPN.",
+    "matches_this_tournament": [
+      {"match": "England vs Croatia (group, 2026-06-17, event 760437)", "total_cards": 0, "penalty": true, "penalty_note": "Kane converted, England's opening goal", "red_cards": 0},
+      {"match": "Colombia vs Ghana (R32, 2026-07-03, event 760501)", "total_cards": 5, "cards_by_half": "1 in H1 (12'), 4 in H2 (49',66',76',78')", "penalty": false, "red_cards": 0}
+    ],
+    "mean_cards": 2.5,
+    "penalty_rate_raw": 0.5,
+    "red_card_rate_raw": 0.0,
+    "card_in_each_half_raw": 0.5,
+    "sample_caveat": "n=2, thinner than the Oliver sample (n=3) used for Spain vs Belgium -- treat as a weak signal, weighted accordingly in the blend (see 03_model_derivations.json)."
+  }
+}

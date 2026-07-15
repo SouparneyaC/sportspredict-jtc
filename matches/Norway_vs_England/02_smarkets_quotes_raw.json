@@ -1,0 +1,621 @@
+{
+  "Full_time_result": {
+    "Norway": {
+      "bid": 0.2381,
+      "offer": 0.2439,
+      "mid": 0.241
+    },
+    "England": {
+      "bid": 0.495,
+      "offer": 0.5,
+      "mid": 0.4975
+    },
+    "Draw": {
+      "bid": 0.2564,
+      "offer": 0.2597,
+      "mid": 0.25805
+    }
+  },
+  "HT_result": {
+    "Norway": {
+      "bid": 0.2128,
+      "offer": 0.2222,
+      "mid": 0.2175
+    },
+    "England": {
+      "bid": 0.3571,
+      "offer": 0.3623,
+      "mid": 0.3597
+    },
+    "Draw": {
+      "bid": 0.4202,
+      "offer": 0.4237,
+      "mid": 0.42195000000000005
+    }
+  },
+  "BTTS": {
+    "Yes": {
+      "bid": 0.5988,
+      "offer": 0.6135,
+      "mid": 0.60615
+    },
+    "No": {
+      "bid": 0.3846,
+      "offer": 0.4,
+      "mid": 0.3923
+    }
+  },
+  "OU_2.5_goals": {
+    "Under 2.5 goals": {
+      "bid": 0.4167,
+      "offer": 0.4348,
+      "mid": 0.42575
+    },
+    "Over 2.5 goals": {
+      "bid": 0.5682,
+      "offer": 0.5848,
+      "mid": 0.5765
+    }
+  },
+  "Anytime_goalscorer": {
+    "Anthony Gordon": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.2128
+    },
+    "Eberechi Eze": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.2083
+    },
+    "Djed Spence": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Morgan Rogers": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.2041
+    },
+    "Bukayo Saka": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.2128
+    },
+    "Marc Guehi": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Jude Bellingham": {
+      "bid": 0.2439,
+      "offer": 0.2532,
+      "mid": 0.24855
+    },
+    "Elliot Anderson": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Noni Madueke": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1961
+    },
+    "416252079": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kobbie Mainoo": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0769
+    },
+    "Nico O'Reilly": {
+      "bid": 0.0741,
+      "offer": 0.1,
+      "mid": 0.08705
+    },
+    "416252082": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Harry Kane": {
+      "bid": 0.4717,
+      "offer": 0.4808,
+      "mid": 0.47625
+    },
+    "Dan Burn": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "John Stones": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Ivan Toney": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.3333
+    },
+    "Ollie Watkins": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": 0.3937
+    },
+    "Trevoh Chalobah": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Marcus Rashford": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2326
+    },
+    "Ezri Konsa": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Declan Rice": {
+      "bid": null,
+      "offer": 0.1,
+      "mid": 0.1
+    },
+    "Reece James": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "Torbjorn Heggem": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Marcus Holmgren Pedersen": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.0476
+    },
+    "Kristian Thorstvedt": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": 0.1515
+    },
+    "416252096": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Henrik S\u00e6lebakke Falchener": {
+      "bid": null,
+      "offer": 0.05,
+      "mid": 0.05
+    },
+    "Oscar Bobb": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Thelo Aasgaard": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "David M\u00f6ller Wolfe": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Andreas Schjelderup": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1351
+    },
+    "Antonio Nusa": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1351
+    },
+    "Sondre Langas": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Fredrik Aursnes": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Alexander Sorloth": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.2083
+    },
+    "Patrick Berg": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "Morten Thorsby": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Martin Odegaard": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1064
+    },
+    "Kristoffer Ajer": {
+      "bid": null,
+      "offer": 0.0435,
+      "mid": 0.0435
+    },
+    "Sander Berge": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Julian Ryerson": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Frederik Andre Bjorkan": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.0476
+    },
+    "Jens Petter Hauge": {
+      "bid": null,
+      "offer": 0.1786,
+      "mid": 0.1786
+    },
+    "Erling Braut Haaland": {
+      "bid": 0.431,
+      "offer": 0.4425,
+      "mid": 0.43674999999999997
+    },
+    "Jorgen Strand Larsen": {
+      "bid": null,
+      "offer": 0.274,
+      "mid": 0.274
+    },
+    "Leo Ostigard": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "416252117": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Player_SOT_OU1.5": {
+    "Anthony Gordon": {
+      "bid": null,
+      "offer": 0.2041,
+      "mid": 0.2041
+    },
+    "Eberechi Eze": {
+      "bid": null,
+      "offer": 0.2817,
+      "mid": 0.2817
+    },
+    "Djed Spence": {
+      "bid": null,
+      "offer": 0.0312,
+      "mid": 0.0312
+    },
+    "Morgan Rogers": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "Bukayo Saka": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1818
+    },
+    "Marc Guehi": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.025
+    },
+    "Jude Bellingham": {
+      "bid": 0.25,
+      "offer": 0.3125,
+      "mid": 0.28125
+    },
+    "Elliot Anderson": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Noni Madueke": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "416262536": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kobbie Mainoo": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0645
+    },
+    "Nico O'Reilly": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0645
+    },
+    "416262539": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Harry Kane": {
+      "bid": 0.4808,
+      "offer": 0.4902,
+      "mid": 0.48550000000000004
+    },
+    "Dan Burn": {
+      "bid": null,
+      "offer": 0.0476,
+      "mid": 0.0476
+    },
+    "John Stones": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Ivan Toney": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": 0.4673
+    },
+    "Ollie Watkins": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": 0.4348
+    },
+    "Trevoh Chalobah": {
+      "bid": null,
+      "offer": 0.0278,
+      "mid": 0.0278
+    },
+    "Marcus Rashford": {
+      "bid": null,
+      "offer": 0.2439,
+      "mid": 0.2439
+    },
+    "Ezri Konsa": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Declan Rice": {
+      "bid": null,
+      "offer": 0.0909,
+      "mid": 0.0909
+    },
+    "Reece James": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0357
+    },
+    "Torbjorn Heggem": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Marcus Holmgren Pedersen": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.025
+    },
+    "Kristian Thorstvedt": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "416262553": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Henrik S\u00e6lebakke Falchener": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Oscar Bobb": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Thelo Aasgaard": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.1852
+    },
+    "David M\u00f6ller Wolfe": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Andreas Schjelderup": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Antonio Nusa": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Sondre Langas": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Fredrik Aursnes": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Alexander Sorloth": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1351
+    },
+    "Patrick Berg": {
+      "bid": null,
+      "offer": 0.0541,
+      "mid": 0.0541
+    },
+    "Morten Thorsby": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Martin Odegaard": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1064
+    },
+    "Kristoffer Ajer": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Sander Berge": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Julian Ryerson": {
+      "bid": null,
+      "offer": 0.025,
+      "mid": 0.025
+    },
+    "Frederik Andre Bjorkan": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Jens Petter Hauge": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Erling Braut Haaland": {
+      "bid": 0.5291,
+      "offer": 0.5556,
+      "mid": 0.54235
+    },
+    "Jorgen Strand Larsen": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": 0.2941
+    },
+    "Leo Ostigard": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "416262574": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "England_corners_OU5.5": {
+    "Under 5.5 corners": {
+      "bid": 0.4587,
+      "offer": 0.5435,
+      "mid": 0.5011
+    },
+    "Over 5.5 corners": {
+      "bid": 0.4673,
+      "offer": 0.5464,
+      "mid": 0.50685
+    }
+  },
+  "Norway_corners_OU4.5": {
+    "Under 4.5 corners": {
+      "bid": 0.5556,
+      "offer": 0.6369,
+      "mid": 0.59625
+    },
+    "Over 4.5 corners": {
+      "bid": 0.3623,
+      "offer": 0.4505,
+      "mid": 0.4064
+    }
+  },
+  "Highest_scoring_half": {
+    "First Half": {
+      "bid": 0.274,
+      "offer": 0.2941,
+      "mid": 0.28405
+    },
+    "Equal": {
+      "bid": 0.2381,
+      "offer": 0.2778,
+      "mid": 0.25795
+    },
+    "Second Half": {
+      "bid": 0.463,
+      "offer": 0.4673,
+      "mid": 0.46515
+    }
+  },
+  "Penalty_awarded": {
+    "Yes": {
+      "bid": 0.2985,
+      "offer": 0.3125,
+      "mid": 0.3055
+    },
+    "No": {
+      "bid": 0.6993,
+      "offer": 0.7194,
+      "mid": 0.70935
+    }
+  },
+  "Any_player_sent_off": {
+    "Yes": {
+      "bid": 0.1087,
+      "offer": 0.1163,
+      "mid": 0.1125
+    },
+    "No": {
+      "bid": 0.8696,
+      "offer": 0.9009,
+      "mid": 0.8852500000000001
+    }
+  },
+  "OU_3.5_cards": {
+    "Under 3.5 cards": {
+      "bid": 0.7353,
+      "offer": 0.7634,
+      "mid": 0.74935
+    },
+    "Over 3.5 cards": {
+      "bid": 0.2532,
+      "offer": 0.2857,
+      "mid": 0.26944999999999997
+    }
+  }
+}

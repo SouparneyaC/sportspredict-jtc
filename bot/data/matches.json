@@ -1,18 +1,18 @@
 [
   {
-    "id": "b8499206-a6a8-4951-9bfd-5f60ccab361c",
-    "name": "FRA vs MAR",
+    "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+    "name": "FRA vs ESP",
     "event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
-    "opening_time": "2026-07-09T20:00:00.000Z",
-    "closing_time": "2026-07-10T00:00:00.000Z",
+    "opening_time": "2026-07-14T19:00:00.000Z",
+    "closing_time": "2026-07-14T23:00:00.000Z",
     "open_market_count": 15
   },
   {
-    "id": "8fd166b3-1b8b-4834-a761-ba7caf26ed93",
-    "name": "NOR vs ENG",
+    "id": "4dc764d8-9ed2-416a-8e9f-02159518e853",
+    "name": "ENG vs ARG",
     "event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
-    "opening_time": "2026-07-11T21:00:00.000Z",
-    "closing_time": "2026-07-12T01:00:00.000Z",
+    "opening_time": "2026-07-15T19:00:00.000Z",
+    "closing_time": "2026-07-15T23:00:00.000Z",
     "open_market_count": 15
   }
 ]

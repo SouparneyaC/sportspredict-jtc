@@ -1,0 +1,83 @@
+{
+  "match_id": "f444b793-6a20-48a1-862c-e748781b5f91",
+  "match_name": "ARG vs SUI",
+  "opening_time": "2026-07-12T01:00:00.000Z",
+  "closing_time": "2026-07-12T05:00:00.000Z",
+  "questions": [
+    {
+      "market_id": "258494ea-c0fe-415c-be96-f1a82847e532",
+      "question": "Will Argentina advance to the semifinals?",
+      "status": "open"
+    },
+    {
+      "market_id": "8f6b3538-18d7-493e-ba8b-034eaf919372",
+      "question": "Will the match be 0-0 at halftime?",
+      "status": "open"
+    },
+    {
+      "market_id": "dcfe7dba-b40c-4083-93c5-a347d5b55ee9",
+      "question": "Will Switzerland hold a lead at any point in regulation (90 minutes + stoppage time, excluding penalty shootout)?",
+      "status": "open"
+    },
+    {
+      "market_id": "a474e3f2-e7d8-4b2f-9227-1b8c10ce2986",
+      "question": "Will the match have 2 or fewer total goals in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "0f541af6-eb8e-4f9c-bd80-2fa54dfa9c04",
+      "question": "Will a goal be scored after the second hydration break but before the end of regulation?",
+      "status": "open"
+    },
+    {
+      "market_id": "a6327b4d-9afe-49c4-9904-2b78b5eed5be",
+      "question": "Will Switzerland have 3 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "ff884e2a-a5ac-40c6-a052-95ef264e0f72",
+      "question": "Will a substitute score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "9b7aaf11-e3cd-4caf-a86f-e471b765b456",
+      "question": "Will Lionel Messi (Argentina, #10) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "2e31f35c-535f-4586-9517-22d6845f4259",
+      "question": "Will Juli\u00e1n \u00c1lvarez (Argentina, #9) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "df06e360-cc08-4da8-bce6-c72bfbe9b891",
+      "question": "Will Breel Embolo (Switzerland, #7) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "2fec1bd4-3321-4a64-9a20-bad1222f1143",
+      "question": "Will Switzerland have 4 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "6fff5347-5a05-4112-a823-d6a72872755c",
+      "question": "Will Argentina have 5 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "b2c0044a-5688-4b54-8ce6-7949fd543693",
+      "question": "Will Argentina have 7 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "8419869a-3b74-43a2-8c5d-65a9d045d088",
+      "question": "Will there be 4 or more total cards in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "ed6e3f2c-1b94-4a5e-82a2-9e62527c16cd",
+      "question": "Will a penalty kick be awarded OR a red card be shown in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    }
+  ]
+}

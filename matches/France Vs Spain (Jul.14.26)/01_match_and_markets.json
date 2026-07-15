@@ -1,0 +1,208 @@
+{
+  "_source": "duplicated from bot/data/matches.json + bot/data/markets_raw.jsonl (v1 API, fetched 2026-07-13)",
+  "match": {
+    "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+    "name": "FRA vs ESP",
+    "event_id": "aa5572ec-5930-4d99-b06b-f8966333d172",
+    "opening_time": "2026-07-14T19:00:00.000Z",
+    "closing_time": "2026-07-14T23:00:00.000Z",
+    "open_market_count": 15
+  },
+  "markets": [
+    {
+      "id": "9bd5b987-8139-4810-911a-74f99e08ff40",
+      "question": "Will there be 4 or more offsides (both teams combined) in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "e1628e4c-88be-49eb-89d8-d4458963bdec",
+      "question": "Will there be 4 or more total cards in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "dd629f5a-3c33-4d82-8182-f813849181e2",
+      "question": "Will Lamine Yamal (Spain, #19) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "5fcd5ede-f8e5-4f09-be7f-dd1946fad05f",
+      "question": "Will the referee conduct an on-field review at the pitchside VAR monitor at any point in regulation (90 minutes + stoppage time) or extra time? Reviews during the penalty shootout do not count.",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "1a7ec330-f24d-4dd2-8b12-704faf8a5b2a",
+      "question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "f8ee9e26-2cdd-4251-a504-a0d8948ea1e6",
+      "question": "Will the match be tied at the end of regulation (90 minutes + stoppage time) and go to extra time?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "bf9f1eee-9c5b-4b64-8b96-4cb1e7144013",
+      "question": "Will a goal be scored before the first hydration break?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "2976d6ff-456c-4b9b-aed1-e92eba8f005d",
+      "question": "Will the first goal of the match (including extra time, excluding penalty shootout) be scored by a player wearing a single-digit shirt number (1-9)? Resolves No if the score is 0-0 after extra time.",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "3d756b04-93a9-4a0b-8e48-af337ff03abf",
+      "question": "Will Spain advance to the final?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "8c7fab96-b9a1-4478-85fd-8ecb7662ef44",
+      "question": "Will Kylian Mbapp\u00e9 (France, #10) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "8f2cf309-769f-455e-ab52-63f1b439965d",
+      "question": "Will a goal be scored after the first hydration break but before the second hydration break?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "94cd6f5b-bd8a-4a30-a79a-934ddac47c5f",
+      "question": "Will Spain have 5 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "031279f8-c097-449a-a533-5b905abd9e25",
+      "question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "de5277f7-2368-4ba5-ba24-84d1e69cb479",
+      "question": "Will Spain make the first substitution of the match in regulation (90 minutes + stoppage time)? If both teams substitute simultaneously, resolves by whichever outgoing player exits the field first.",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    },
+    {
+      "id": "932222d6-7053-4a8c-a07b-e2e89553293c",
+      "question": "Will France have 4 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "event_type": "probability",
+      "status": "open",
+      "match": {
+        "id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+        "name": "FRA vs ESP",
+        "opening_time": "2026-07-14T19:00:00.000Z",
+        "closing_time": "2026-07-14T23:00:00.000Z"
+      },
+      "lobby_id": "8df8038c-fd2c-4a5f-be4e-0e11d5966c05"
+    }
+  ]
+}

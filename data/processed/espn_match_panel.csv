@@ -169,3 +169,33 @@ event_id,date,match_slug,team_code,team_espn_abbr,home_away,goals,opponent_goals
 760497,2026-07-02,ESP-AUT,AUT,AUT,away,0,3,15,1,0,5,0,6,35.6,5,0,1,347,0.8,6,8,21,SoFi Stadium,"Inglewood, California"
 760498,2026-07-02,SUI-ALG,SUI,SUI,home,2,0,10,0,0,0,4,2,44.5,11,5,2,438,0.8,17,14,23,BC Place,Vancouver
 760498,2026-07-02,SUI-ALG,ALG,ALG,away,0,2,12,2,0,2,2,2,55.5,8,2,3,563,0.8,10,9,14,BC Place,Vancouver
+760499,2026-07-03,AUS-EGY,AUS,AUS,home,1,1,12,0,0,0,4,3,41.7,16,1,9,505,0.8,9,7,31,AT&T Stadium,"Arlington, Texas"
+760499,2026-07-03,AUS-EGY,EGY,EGY,away,1,1,14,2,0,3,7,1,58.3,14,3,6,722,0.8,8,7,37,AT&T Stadium,"Arlington, Texas"
+760500,2026-07-03,ARG-CPV,ARG,ARG,home,3,2,13,1,0,3,8,3,63.6,22,10,7,850,0.9,9,13,24,Hard Rock Stadium,"Miami Gardens, Florida"
+760500,2026-07-03,ARG-CPV,CPV,CPV,away,2,3,12,1,0,2,8,8,36.4,16,5,6,476,0.9,9,7,26,Hard Rock Stadium,"Miami Gardens, Florida"
+760501,2026-07-03,COL-GHA,COL,COL,home,1,0,14,2,0,2,3,0,60.7,20,8,4,586,0.9,5,8,24,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760501,2026-07-03,COL-GHA,GHA,GHA,away,0,1,10,3,0,0,2,7,39.3,8,0,5,376,0.8,5,7,11,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760502,2026-07-04,CAN-MAR,CAN,CAN,home,0,3,24,4,0,2,11,1,44.7,10,3,3,359,0.8,5,9,10,NRG Stadium,"Houston, Texas"
+760502,2026-07-04,CAN-MAR,MAR,MAR,away,3,0,14,4,0,3,1,3,55.3,5,4,0,473,0.8,9,9,47,NRG Stadium,"Houston, Texas"
+760503,2026-07-04,PAR-FRA,PAR,PAR,home,0,1,13,0,0,0,2,4,24.1,5,1,1,183,0.5,14,21,21,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760503,2026-07-04,PAR-FRA,FRA,FRA,away,1,0,11,3,0,0,12,1,75.9,15,5,4,569,0.9,10,7,27,Lincoln Financial Field,"Philadelphia, Pennsylvania"
+760504,2026-07-05,BRA-NOR,BRA,BRA,home,1,2,7,1,0,1,5,3,33.6,14,4,4,331,0.8,11,10,21,MetLife Stadium,"East Rutherford, New Jersey"
+760504,2026-07-05,BRA-NOR,NOR,NOR,away,2,1,6,0,0,1,5,4,66.4,9,5,1,681,0.9,6,11,18,MetLife Stadium,"East Rutherford, New Jersey"
+760505,2026-07-05,MEX-ENG,MEX,MEX,home,2,3,14,2,0,1,12,2,66.9,20,5,7,453,0.9,7,7,13,Estadio Banorte,Mexico City
+760505,2026-07-05,MEX-ENG,ENG,ENG,away,3,2,7,4,1,0,2,3,33.1,6,5,0,244,0.8,4,9,49,Estadio Banorte,Mexico City
+760506,2026-07-06,POR-ESP,POR,POR,home,0,1,9,2,0,2,3,5,44.6,10,2,3,427,0.8,7,9,23,AT&T Stadium,"Arlington, Texas"
+760506,2026-07-06,POR-ESP,ESP,ESP,away,1,0,13,1,0,1,7,2,55.4,15,6,3,530,0.9,6,13,13,AT&T Stadium,"Arlington, Texas"
+760507,2026-07-06,USA-BEL,USA,USA,home,1,4,11,2,0,0,3,3,55.9,7,2,0,527,0.9,9,9,23,Lumen Field,"Seattle, Washington"
+760507,2026-07-06,USA-BEL,BEL,BEL,away,4,1,9,0,0,1,5,1,44.1,15,7,4,414,0.8,9,10,18,Lumen Field,"Seattle, Washington"
+760508,2026-07-07,SUI-COL,SUI,SUI,home,0,0,22,3,0,5,3,3,53.4,7,2,1,631,0.9,14,7,35,BC Place,Vancouver
+760508,2026-07-07,SUI-COL,COL,COL,away,0,0,21,2,0,4,7,2,46.6,15,3,4,547,0.8,13,8,22,BC Place,Vancouver
+760509,2026-07-07,ARG-EGY,ARG,ARG,home,3,2,13,0,0,3,6,0,63.6,19,7,4,602,0.9,7,15,14,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760509,2026-07-07,ARG-EGY,EGY,EGY,away,2,3,11,4,0,0,1,4,36.4,5,2,1,349,0.8,9,7,44,Mercedes-Benz Stadium,"Atlanta, Georgia"
+760510,2026-07-09,FRA-MAR,FRA,FRA,home,2,0,10,0,0,0,5,1,48.0,22,8,5,486,0.9,13,8,20,Gillette Stadium,"Foxborough, Massachusetts"
+760510,2026-07-09,FRA-MAR,MAR,MAR,away,0,2,13,1,0,0,5,6,52.0,5,1,1,526,0.9,6,5,12,Gillette Stadium,"Foxborough, Massachusetts"
+760511,2026-07-10,ESP-BEL,ESP,ESP,home,2,1,13,2,0,3,5,1,67.9,17,8,5,664,0.9,5,6,15,SoFi Stadium,"Inglewood, California"
+760511,2026-07-10,ESP-BEL,BEL,BEL,away,1,2,18,2,0,1,1,6,32.1,5,2,2,312,0.8,9,6,34,SoFi Stadium,"Inglewood, California"
+760512,2026-07-11,NOR-ENG,NOR,NOR,home,1,2,10,1,0,1,7,6,47.6,13,4,3,577,0.9,9,11,21,Hard Rock Stadium,"Miami Gardens, Florida"
+760512,2026-07-11,NOR-ENG,ENG,ENG,away,2,1,8,0,0,5,4,3,52.4,14,8,3,628,0.9,6,9,35,Hard Rock Stadium,"Miami Gardens, Florida"
+760513,2026-07-11,ARG-SUI,ARG,ARG,home,3,1,14,3,0,4,8,4,59.0,22,7,7,691,0.9,13,8,31,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"
+760513,2026-07-11,ARG-SUI,SUI,SUI,away,1,3,18,1,1,3,2,4,41.0,11,5,3,474,0.8,4,5,28,GEHA Field at Arrowhead Stadium,"Kansas City, Missouri"

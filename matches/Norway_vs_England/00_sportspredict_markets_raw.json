@@ -1,0 +1,83 @@
+{
+  "match_id": "8fd166b3-1b8b-4834-a761-ba7caf26ed93",
+  "match_name": "NOR vs ENG",
+  "opening_time": "2026-07-11T21:00:00.000Z",
+  "closing_time": "2026-07-12T01:00:00.000Z",
+  "questions": [
+    {
+      "market_id": "22aafdae-57b1-41f8-a278-18901aed0460",
+      "question": "Will Erling Haaland (Norway, #9) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "23d4a4a6-66d9-465e-a1de-75b5ebf7212c",
+      "question": "Will Harry Kane (England, #9) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "d1ca444f-aec1-4132-bb31-8c7636878361",
+      "question": "Will Jude Bellingham (England, #10) have 2 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "b3d5e9ea-8467-4b3d-ac9f-65eaa4c86359",
+      "question": "Will the match have 3 or more total goals in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "5398817e-81c6-47f8-9c46-52f8d0552fed",
+      "question": "Will the match be tied at halftime?",
+      "status": "open"
+    },
+    {
+      "market_id": "1c591c57-d961-4f5f-bbb0-c821e1fb4906",
+      "question": "Will both teams score in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "bd04d7a7-4b2c-4fc0-9ed0-139647ad1ab2",
+      "question": "Will England have 6 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "8af63054-57ad-4c54-b587-31a0c4cddc52",
+      "question": "Will Norway have 4 or more corner kicks in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "0c5e7d07-c407-4760-8e24-4c3b81b1c996",
+      "question": "Will a substitute score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "0d00bdb2-cc0c-4bea-a333-cd09f4566173",
+      "question": "Will a penalty kick be awarded OR a red card be shown in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "697c57e1-c430-4840-9275-62e3e24659aa",
+      "question": "Will at least one card be shown in each half of regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "c5de9cb6-90e1-47b3-b86e-7662fb0a9cfe",
+      "question": "Will there be 24 or more total shots (on and off target) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "19ddf7eb-ae72-43d6-80ea-90c124d5a2b9",
+      "question": "Will the second half produce more goals than the first half in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "ff923dde-c7d4-4d58-b783-02eb30a7138e",
+      "question": "Will England have more corner kicks AND more total shots than Norway in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "fe6d89f4-eb39-4d4a-945a-3a1d2638c075",
+      "question": "Will England win in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    }
+  ]
+}

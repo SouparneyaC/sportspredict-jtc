@@ -1,0 +1,79 @@
+{
+  "_description": "Argentina and Switzerland full 2026 in-tournament logs (group x3 + R32 + R16), extracted from ESPN boxscore/roster data. Group-stage/R32-opponent data reused from matches/Argentina_vs_CapeVerde/ and matches/Switzerland_vs_Algeria/; both teams' own R32 games (Argentina-CapeVerde event 760500, Switzerland-Algeria event 760498) and R16 games (Egypt-Argentina 760509, Colombia-Switzerland 760508) fetched fresh live since neither folder had the team's own matches on disk, only their upcoming opponents' prior games.",
+  "elo": {
+    "source": "ml/backtests/arg_sui_qf_point_in_time_elo_replay.py",
+    "argentina_entering_qf": 2230.22,
+    "switzerland_entering_qf": 2016.26,
+    "diff_argentina_minus_switzerland": 213.96,
+    "note": "This is a BLOWOUT-MAGNITUDE gap, almost identical in size to Spain's +216.61 over Belgium yesterday -- the exact risk profile that produced the SYMMETRIC_REGIME_COVERAGE failure. Treated as a high-alert case for the paired count props (Q6/Q11, Q12/Q13) -- see 03_model_derivations.json."
+  },
+  "venue": {"name": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri", "espn_event_id": "760513", "kickoff_utc": "2026-07-12T01:00Z", "neutral": true},
+  "rest_days": {
+    "argentina_r16_kickoff": "2026-07-07T16:00Z (vs Egypt, event 760509)",
+    "switzerland_r16_kickoff": "2026-07-07T20:00Z (vs Colombia, event 760508)",
+    "note": "Argentina ~4 hours more rest -- not meaningful."
+  },
+  "messi_tournament_log": {
+    "games": [
+      {"opponent": "Algeria", "stage": "group", "goals": 3, "assists": 0, "shots": 6, "sot": 4},
+      {"opponent": "Austria", "stage": "group", "goals": 2, "assists": 0, "shots": 7, "sot": 4},
+      {"opponent": "Jordan", "stage": "group", "goals": 1, "assists": 0, "shots": 2, "sot": 1, "subbed_in": true},
+      {"opponent": "Cape Verde", "stage": "R32", "goals": 1, "assists": 0, "shots": 9, "sot": 6},
+      {"opponent": "Egypt", "stage": "R16", "goals": 1, "assists": 1, "shots": 5, "sot": 2}
+    ],
+    "summary": "Scored in literally every game this tournament (5/5, 8 goals total) -- an even more extreme consistency streak than Haaland's (4/4 games played, 1 DNP). StatsBomb historical panel not needed to establish base rate given this level of current-tournament consistency, but market (0.4528 anytime scorer) still discounts a good deal relative to the perfect empirical record -- see 03_model_derivations.json for the resolution."
+  },
+  "alvarez_tournament_log": {
+    "games": [
+      {"opponent": "Algeria", "stage": "group", "goals": 0, "assists": 0, "shots": 0, "sot": 0, "subbed_in": true},
+      {"opponent": "Austria", "stage": "group", "goals": 0, "assists": 0, "shots": 1, "sot": 1, "subbed_in": true},
+      {"opponent": "Jordan", "stage": "group", "goals": 0, "assists": 0, "shots": 1, "sot": 1},
+      {"opponent": "Cape Verde", "stage": "R32", "goals": 0, "assists": 0, "shots": 1, "sot": 0, "subbed_in": true},
+      {"opponent": "Egypt", "stage": "R16", "goals": 0, "assists": 0, "shots": 2, "sot": 1}
+    ],
+    "summary": "Complete drought: 0 goals AND 0 assists in all 5 games, and the underlying shot volume is also low (5 shots total across 5 games, never more than 2 in a game) -- this is not just bad finishing luck, his chance-creation involvement itself has been minimal. StatsBomb historical panel has 0 rows for him (data-coverage gap, not a real absence -- he did play in the 2022 WC). Market prices him at 0.50 for 'scores or assists', a 50pp gap against the empirical 0/5 record -- flagged as a mandatory recheck, see 03_model_derivations.json."
+  },
+  "embolo_tournament_log": {
+    "games": [
+      {"opponent": "Qatar", "stage": "group", "goals": 1, "assists": 0, "shots": 4, "sot": 1},
+      {"opponent": "Bosnia", "stage": "group", "goals": 0, "assists": 1, "shots": 1, "sot": 0},
+      {"opponent": "Canada", "stage": "group", "goals": 0, "assists": 1, "shots": 2, "sot": 2},
+      {"opponent": "Algeria", "stage": "R32", "goals": 1, "assists": 0, "shots": 2, "sot": 1},
+      {"opponent": "Colombia", "stage": "R16", "goals": 0, "assists": 0, "shots": 0, "sot": 0}
+    ],
+    "summary": "1+ SOT in 3/5 games (0.60). Blanked entirely (0 shots) in the R16 defensive grind vs Colombia -- consistent with the team-wide pattern of Switzerland's attacking output collapsing against stronger opposition (see team_logs note below)."
+  },
+  "team_logs": {
+    "argentina": {
+      "games": ["Algeria(W3-0)", "Austria(W2-0)", "Jordan(W3-1)", "Cape Verde(R32,W3-2 AET)", "Egypt(R16,W3-2)"],
+      "shots_on_target": [6,5,4,10,7], "total_shots": [10,12,12,22,19], "corners": [2,1,6,8,6],
+      "yellow_cards": [0,2,0,1,0], "red_cards": [0,0,0,0,0], "possession_pct": [47.8,53.6,73.3,63.6,63.6],
+      "opponent_elo_at_kickoff": {"Algeria": 1872, "Austria": 1885, "Jordan": 1774, "Cape Verde": 1653, "Egypt": 1810},
+      "note": "Argentina's toughest tests by Elo were actually its weakest group opponents on paper -- no opponent this tournament has been within even 350 Elo points of Argentina itself, so there's no genuine same-caliber precedent on file for how Argentina performs against a team of Switzerland's level. Output held up fine against knockout-stage opposition (10 SOT vs Cape Verde, 7 vs Egypt)."
+    },
+    "switzerland": {
+      "games": ["Qatar(D1-1)", "Bosnia(W4-1)", "Canada(W2-1)", "Algeria(R32,W2-0)", "Colombia(R16,D0-0,won pens)"],
+      "shots_on_target": [7,7,4,5,2], "total_shots": [26,13,6,11,7], "corners": [10,7,2,4,3],
+      "yellow_cards": [1,1,1,0,3], "red_cards": [0,0,0,0,0], "possession_pct": [68.0,62.3,55.3,44.5,53.4],
+      "opponent_elo_at_kickoff": {"Qatar": 1564, "Bosnia": 1653, "Canada": 1902, "Algeria": 1872, "Colombia": 2064},
+      "note": "CLEAR, monotonic pattern: Switzerland's attacking output scales inversely with opponent strength. SOT by opponent Elo: Qatar(1564)=7, Bosnia(1653)=7, Canada(1902)=4, Algeria(1872)=5, Colombia(2064)=2 -- their weakest output by far came against their strongest opponent. Argentina (2230) is stronger than any team Switzerland has faced this tournament. This is the SAME underlying mechanism that suppressed Belgium's SOT against Spain yesterday -- see 03_model_derivations.json symmetric_regime_coverage_check for how this was handled.",
+      "opponent_output_against_switzerland_defense": {"colombia_r16": {"shots": 15, "sot": 3, "corners": 7}, "note": "Colombia (Elo 2064, closest caliber to Argentina among Switzerland's opponents) still managed 15 shots/7 corners against Switzerland's defense, though only 3 SOT -- Switzerland concedes some volume but forces low-quality efforts. Not a total shutdown, but a real defensive discipline signal for Argentina's own count props too."
+    },
+    "corpus_2026_wide_priors": {"sot_mean": 4.1765, "corners_mean": 4.5059, "source": "same as Norway-England session, data/processed/unified_team_match_panel.csv n=170"}
+  },
+  "referee": {
+    "name": "Joao Pinheiro", "nationality": "Portugal",
+    "source": "web search (beIN Sports, Yahoo Sports, Squawka, OneFootball), corroborated against our own ESPN data",
+    "note": "Described in multiple outlets as 'controversial' over a missed handball penalty call in a UCL semifinal (club football, not WC2026) -- noted for context only, not a quantitative signal. This will be his first match involving Argentina; second involving Switzerland.",
+    "matches_this_tournament": [
+      {"match": "Switzerland vs Bosnia (group, event 760... part of Switzerland's group log)", "total_cards": 4, "cards_detail": "1 SUI yellow, 2 BIH yellow, 1 BIH red", "penalty": true, "penalty_note": "Xhaka converted for Switzerland"},
+      {"match": "Canada vs South Africa (group, 2026-06-28, event 760486)", "total_cards": 2, "cards_detail": "2 CAN yellow", "penalty": false}
+    ],
+    "mean_cards": 3.0, "penalty_rate_raw": 0.5, "red_card_rate_raw": 0.5,
+    "sample_caveat": "n=2, and a web-search claim that his 2nd match was 'Canada vs South Africa R16' was independently checked and found to actually be a GROUP STAGE match (2026-06-28) -- the card/referee facts corroborated fine against our own ESPN data, but the round label in secondary reporting was wrong. Flagging this as a reminder that even corroborated web claims can have small factual errors worth checking, not just accepting wholesale."
+  },
+  "sub_scorer_and_second_half_base_rates": {
+    "note": "Reused from the Norway-England session's 60-match ESPN corpus scan -- same corpus, no match-specific adjustment needed. Sub scores/assists: 0.55 (n=60).",
+    "source": "matches/Norway_vs_England/01_team_and_player_logs.json"
+  }
+}

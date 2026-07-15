@@ -1,0 +1,71 @@
+{
+  "_description": "Model derivations for Argentina vs Switzerland QF (2026-07-12). RULE1 applied throughout: Smarkets fetched first (02_smarkets_quotes_raw.json), before any estimate finalized. This match's Elo gap (+213.96) is almost identical in size to Spain-Belgium's (+216.61), the exact conditions that produced yesterday's SYMMETRIC_REGIME_COVERAGE failure -- treated as a high-alert case throughout.",
+  "elo": {"argentina": 2230.22, "switzerland": 2016.26, "diff_argentina_minus_switzerland": 213.96},
+  "poisson_goal_rates": {"lambda_argentina": 1.6345, "lambda_switzerland": 0.7534, "lambda_total": 2.3879},
+  "ordered_logit": {"p_argentina_win": 0.6359, "p_draw": 0.2320, "p_argentina_loss": 0.1321},
+  "dixon_coles_grid": {"rho": -0.05, "p_argentina_win": 0.5788, "p_draw": 0.2562, "p_switzerland_win": 0.1650, "p_btts": 0.4317, "p_0_0": 0.0975, "p_2_or_fewer_goals": 0.5729},
+  "blended_match_outcome": {
+    "p_argentina_win_regulation": 0.6073, "p_draw_regulation": 0.2441, "p_switzerland_win_regulation": 0.1486,
+    "elo_tiebreak_proxy": 0.7741, "p_argentina_advances_semis": 0.7963,
+    "market_cross_check": {"to_qualify_argentina": 0.7463, "gap_pp": 5.0, "flag": false}
+  },
+  "monte_carlo_simulation": {
+    "n_iterations": 200000,
+    "p_0_0_at_halftime": 0.3150, "p_switzerland_leads_at_any_point": 0.3186, "p_goal_after_69min": 0.4593, "p_btts_sim": 0.4243,
+    "note": "Unlike Norway-England, this match's goal-total model agrees well with market (see market_gap_log) -- the earlier lambda-underestimation issue was specific to that matchup's coefficients, not a universal model bug."
+  },
+  "market_gap_log": {
+    "_description": "Every case this session where |model - market| exceeded ~15pp.",
+    "entries": [
+      {
+        "question": "4+ total cards",
+        "model": 0.2339, "market": 0.4037, "gap_pp": 17.0,
+        "recheck": "Model's team-level own-card rates for both teams are low this tournament (Argentina 0.6/game, Switzerland 1.2/game), pulling the blended lambda down to 2.46. Market may be pricing in the tension/rivalry narrative around this specific fixture (high-stakes QF, 'controversial referee' storyline) that a pure historical-rate model can't see. Pinheiro's own small sample (n=2) includes a red card in one match.",
+        "resolution": "Weighted toward market given the exact-match line and the model's own admitted blind spot to fixture-specific tension. Final: 0.37."
+      },
+      {
+        "question": "Julian Alvarez scores or assists",
+        "model_2026_empirical": 0.00, "market": 0.50, "gap_pp": 50.0,
+        "recheck": "Largest gap of the session. 0 goals AND 0 assists in all 5 games, AND his underlying shot volume is also minimal (5 shots total, never more than 2 in a game) -- this is corroborating evidence of low involvement, not just finishing variance. No historical StatsBomb rows exist for him to arbitrate (data-coverage gap). This matches the exact shape of the Yamal reputation-inflation pattern this project has validated three separate times this tournament (market prices a big-name attacker on reputation/role expectation, not current production).",
+        "resolution": "Priced well below market given the corroborated (not just outcome-based) evidence of low involvement, but not at the extreme empirical 0% given n=5 and RULE6 discipline. Final: 0.32."
+      },
+      {
+        "question": "Switzerland 3+ shots on target",
+        "model_naive_5game": 0.8361, "model_regime_adjusted": 0.7594, "market": 0.5962, "gap_pp_vs_naive": 24.0, "gap_pp_vs_regime_adjusted": 16.3,
+        "recheck": "This is the direct test case for SYMMETRIC_REGIME_COVERAGE -- see the dedicated section below. Even after re-weighting toward Switzerland's 2 toughest opponents (Algeria, Colombia: mean 3.5 SOT vs the full-5-game mean of 5.0), the model still runs 16pp above market.",
+        "resolution": "Weighted market more heavily than a simple average, given the model (even adjusted) shows a persistent tendency to overrate Switzerland's output and the market has visibility into team news/tactics this count-based model doesn't. Final: 0.62."
+      },
+      {
+        "question": "Switzerland 4+ corners",
+        "model_naive_5game": 0.7137, "model_regime_adjusted": 0.6080, "market": 0.3968, "gap_pp_vs_regime_adjusted": 21.1,
+        "recheck": "Same mechanism and same direction as the SOT case above -- larger residual gap even after adjustment.",
+        "resolution": "Weighted market more heavily, same logic as above. Final: 0.45."
+      }
+    ]
+  },
+  "symmetric_regime_coverage_check": {
+    "_description": "This match has almost the exact Elo-gap magnitude (+213.96) that produced yesterday's Q12 failure on Belgium's SOT prop (+216.61). Treated as the primary test of whether the restored discipline actually works under the same conditions that broke it before.",
+    "switzerland_own_props_check": "Switzerland's SOT and corners both show a clear, monotonic decline as opponent Elo rises this tournament (SOT: 7,7,4,5,2 against opponents ranked 1564,1653,1902,1872,2064 respectively -- their weakest output came against their strongest opponent by a wide margin). Argentina (2230) is stronger than every team Switzerland has faced. Built an explicit regime-adjusted estimate using only the 2 toughest-opponent games (Algeria, Colombia) as the primary reference class instead of the full 5-game average -- this is the exact check that was skipped for Belgium yesterday. Even after this adjustment, both count-props still ran meaningfully above market, so market was weighted more heavily still in the final blend (see market_gap_log). This is the substantive difference from yesterday: the check was run, it changed the number materially (naive 0.84/0.71 -> regime-adjusted 0.76/0.61 -> final blended-to-market 0.62/0.45), not just checked-and-dismissed.",
+    "argentina_own_props_check": "Mirror direction: is Switzerland's defense good enough to suppress Argentina's own SOT/corners props? Evidence is mixed but real -- Colombia (the closest-caliber opponent Switzerland has faced) still managed 15 shots and 7 corners against Switzerland's defense, only their SOT conversion was suppressed (3 SOT from 15 shots). This is a genuine defensive discipline signal, not a total shutdown. Argentina's own count-prop models already agree closely with market (see below), suggesting the market has already priced in a reasonable amount of Swiss defensive resistance without needing further manual shading.",
+    "argentina_5plus_sot": {"model_naive": 0.6086, "market_calibrated": 0.6583, "gap_pp": 5.0, "final": 0.63},
+    "argentina_7plus_corners": {"model_naive": 0.1758, "market_calibrated": 0.2169, "gap_pp": 4.1, "final": 0.20}
+  },
+  "cards_model": {
+    "team_level_own_cards": {"argentina_2026_mean": 0.6, "switzerland_2026_mean": 1.2, "combined": 1.8},
+    "referee": {"name": "Joao Pinheiro", "mean_cards_n2": 3.0, "penalty_rate_shrunk_k5_prior0.25": 0.3214, "red_rate_shrunk_k5_prior0.13": 0.2357},
+    "corpus_baseline_mean": 2.76,
+    "blend_weights": {"team_level": 0.40, "referee": 0.35, "corpus": 0.25},
+    "blended_lambda": 2.46,
+    "model_p_4plus_cards": 0.2339,
+    "penalty_or_red_model": 0.4814,
+    "penalty_or_red_market": 0.4205,
+    "gap_pp_penalty_or_red": 6.1,
+    "note": "Cards threshold and penalty-or-red both use Pinheiro's n=2 sample -- thinner than every referee sample used so far this project (Oliver n=3, Turpin n=2 but with a cleaner corroboration). One of his 2 known matches included a red card, which is doing real work in the red-card-rate shrinkage; treated as a weak but not ignorable signal."
+  },
+  "messi_goalscorer_model": {
+    "2026_empirical_rate": "5/5 games, scored in literally every match, 8 goals total -- more extreme than Haaland's 4/4 (with 1 DNP)",
+    "market": 0.4528,
+    "note": "Same tension as Haaland in the Norway-England session. Leaned above market given the genuinely unprecedented consistency (not a single blank all tournament) but nowhere near the raw empirical rate -- RULE6 discipline applies regardless of how hot the streak is. Final: 0.50."
+  },
+  "sub_scorer_and_second_half_reuse": {"sub_scores_or_assists": 0.55, "source": "reused corpus base rate from Norway-England session (n=60), no match-specific adjustment"}
+}

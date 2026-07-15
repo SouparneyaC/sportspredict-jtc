@@ -1,0 +1,111 @@
+{
+  "_description": "The ACTUAL final submission placed on the JTC platform for France vs Spain, now SETTLED with OFFICIAL platform RBP figures (superseding the earlier estimated if_yes/if_no preview values, which were close but not exact). Distinct from 05_estimates.json, which was our pre-match recommendation and diverged from the actual submission on several questions (noted per-question below).",
+  "final_score": "France 0-2 Spain, winner Spain",
+  "official_total_rbp": 138.32,
+  "official_record_13_answered": {"wins": 10, "losses": 3, "win_rate": "77%"},
+  "questions": [
+    {
+      "platform_q": 1, "internal_q": 2, "text": "4+ total cards",
+      "submitted": 0.40, "crowd": 0.43, "our_recommended": 0.40, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": 9.84, "beat_crowd": true
+    },
+    {
+      "platform_q": 2, "internal_q": 3, "text": "Yamal score or assist",
+      "submitted": 0.18, "crowd": 0.42, "our_recommended": 0.25, "match_to_recommendation": false,
+      "note": "Submitted the no-crowd/pure-data shrinkage estimate (0.1763~0.18) instead of the Cluster-A-suppressed, partially market-referenced 0.25 -- a larger downward deviation from crowd than recommended.",
+      "result": "NO", "official_rbp": 35.62, "beat_crowd": true,
+      "verdict": "BIG WIN, second-largest on the slate. The flagged divergence toward the lower pure-data number was not just correct but correct by a wider margin than the recommended 0.25 would have captured -- Yamal was completely quiet (0 goals, 0 assists, 0 shots)."
+    },
+    {
+      "platform_q": 3, "internal_q": 5, "text": "3+ total goals",
+      "submitted": 0.50, "crowd": 0.53, "our_recommended": 0.50, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": 10.10, "beat_crowd": true
+    },
+    {
+      "platform_q": 4, "internal_q": 6, "text": "Tied at 90' -> extra time",
+      "submitted": 0.31, "crowd": 0.34, "our_recommended": 0.30, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": 8.66, "beat_crowd": true
+    },
+    {
+      "platform_q": 5, "internal_q": 7, "text": "Goal before 1st hydration break",
+      "submitted": 0.42, "crowd": 0.38, "our_recommended": 0.43, "match_to_recommendation": true,
+      "result": "YES", "official_rbp": 13.96, "beat_crowd": true,
+      "verdict": "Locked in at halftime (Oyarzabal pen 22' before the 24' break), held to settlement."
+    },
+    {
+      "platform_q": 6, "internal_q": 8, "text": "First goal by single-digit shirt",
+      "submitted": 0.31, "crowd": 0.35, "our_recommended": 0.28, "match_to_recommendation": false,
+      "note": "Submitted the no-crowd/pure-empirical scorer-share estimate (0.31) instead of the blended 0.28.",
+      "result": "NO", "official_rbp": 11.49, "beat_crowd": true,
+      "verdict": "Locked in at halftime (Oyarzabal #21, confirmed via ESPN roster), held to settlement."
+    },
+    {
+      "platform_q": 7, "internal_q": 9, "text": "Spain advance to final",
+      "submitted": 0.53, "crowd": 0.43, "our_recommended": 0.41, "match_to_recommendation": false,
+      "note": "MAJOR DIVERGENCE (+12pp vs recommendation). Submitted the pure Elo->Poisson->Dixon-Coles model output (0.53, favors Spain) instead of the direct liquid Smarkets market anchor (0.41, favored France advancing) -- overrode RULE1/RULE2's market-priority default.",
+      "result": "YES", "official_rbp": 26.73, "beat_crowd": true,
+      "verdict": "WIN. The deviation from market was right this time -- pure model beat both market and our own recommendation."
+    },
+    {
+      "platform_q": 8, "internal_q": 10, "text": "Mbappe scores",
+      "submitted": 0.60, "crowd": 0.52, "our_recommended": 0.45, "match_to_recommendation": false,
+      "note": "MAJOR DIVERGENCE (+15pp vs recommendation). Submitted the personal-form k=3-shrinkage estimate (0.60) instead of the tight liquid-market anchor (0.44 mid) -- explicitly the move RULE17 was retired for (upward deviation from a liquid market on personal conviction, 0-for-5/-155.64 RBP historical pattern before this match).",
+      "result": "NO", "official_rbp": -12.48, "beat_crowd": false,
+      "verdict": "LOSS, the only one of the three big flagged divergences that lost. Mbappe finished scoreless (0G, 3 shots, 0 SOT). Second live confirmation of the RULE17 pattern."
+    },
+    {
+      "platform_q": 9, "internal_q": 11, "text": "Goal between hydration breaks",
+      "submitted": 0.75, "crowd": 0.61, "our_recommended": 0.71, "match_to_recommendation": true,
+      "result": "YES", "official_rbp": 23.26, "beat_crowd": true,
+      "verdict": "WIN. Breaks at 24'/69'; Pedro Porro's goal at 58' fell inside the window."
+    },
+    {
+      "platform_q": 10, "internal_q": 12, "text": "Spain 5+ shots on target",
+      "submitted": 0.36, "crowd": 0.50, "our_recommended": 0.48, "match_to_recommendation": false,
+      "note": "MAJOR DIVERGENCE (-12pp vs recommendation). Submitted the shadow-tested hierarchical GLMM's raw output (0.36) instead of the market-derived estimate (0.49) -- explicitly a live test of a model not yet cleared for submission.",
+      "result": "NO", "official_rbp": 28.23, "beat_crowd": true,
+      "verdict": "BIGGEST WIN on the slate. Spain finished with only 2 SOT from 10 shots. The GLMM's lower number was much closer to reality than the near-coin-flip market/crowd (~0.49-0.50). First live data point where the shadow-tested SOT/corners model clearly beat the market on exactly the family it was built and backtested for."
+    },
+    {
+      "platform_q": 11, "internal_q": 13, "text": "Both teams score",
+      "submitted": 0.59, "crowd": 0.59, "our_recommended": 0.59, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": 5.54, "beat_crowd": true,
+      "verdict": "CORRECTED from earlier live-preview estimate, which mischaracterized this as a loss. It was a small win -- our unrounded submission was fractionally closer to the correct (NO) side than crowd's, despite both displaying as 59%. France failed to score; only Spain did."
+    },
+    {
+      "platform_q": 12, "internal_q": 14, "text": "Spain first substitution",
+      "submitted": 0.60, "crowd": 0.54, "our_recommended": 0.60, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": -10.64, "beat_crowd": false,
+      "verdict": "LOSS. Locked in at halftime (France subbed first, Lacroix for injured Saliba, 30'), held. The one place our own heuristic, unaided by any market, read the wrong side."
+    },
+    {
+      "platform_q": 13, "internal_q": 15, "text": "France 4+ shots on target",
+      "submitted": 0.72, "crowd": 0.66, "our_recommended": 0.72, "match_to_recommendation": true,
+      "result": "NO", "official_rbp": -11.98, "beat_crowd": false,
+      "verdict": "LOSS, and the costliest kind -- our single highest-conviction number on the whole slate (72%), missing by exactly one shot on target (France finished with 3, needed 4). France had zero SOT at halftime."
+    },
+    {
+      "platform_q": 14, "internal_q": 1, "text": "4+ combined offsides",
+      "submitted": null, "crowd": 0.50, "our_recommended": 0.45, "dropped": true,
+      "note": "DROPPED, matching the drop recommendation (real negative settled history for this exact combined-N+ phrasing: n=17, -63.34 net RBP, 53% win rate).",
+      "result": "YES", "final_value": "France 4 + Spain 5 = 9 combined offsides", "platform_note": "The Crowd played it safe.",
+      "verdict": "No RBP impact (dropped). This one resolved YES, which would have paid off had we answered near/above the crowd's 50% -- worth logging honestly, but one match resolving favorably doesn't overturn a well-evidenced 17-question base rate on its own."
+    },
+    {
+      "platform_q": 15, "internal_q": 4, "text": "VAR on-field review",
+      "submitted": null, "crowd": 0.42, "our_recommended": 0.35, "dropped": true,
+      "note": "DROPPED, matching the drop recommendation (zero prior occurrences of this question type ever; Kupiec power-analysis showed no test could validate a number at n=12).",
+      "result": "YES", "final_value": "Officially resolved YES -- the 83' VAR check (\"Other Decision Cancelled\" in ESPN commentary) was counted as a genuine on-field pitchside review", "platform_note": "The Crowd played it safe.",
+      "verdict": "No RBP impact (dropped). Resolves the measurement ambiguity flagged before the match: ESPN's text couldn't distinguish booth-only from on-field, but the platform's official ruling confirms this one WAS on-field. This is now the 2nd confirmed real occurrence for this project's evidence base on VAR-review questions (previously 1-in-12 hand-checked), still nowhere near enough for a validated model, but a real, useful data point for the ongoing record."
+    }
+  ],
+  "internal_q14_first_sub_NOT_dropped": "Internal Q14 (Spain first substitution) was the third recommended drop, but was NOT dropped in the actual submission -- answered at 0.60, matching our own recommended number (no market existed to disagree with). Lost, -10.64.",
+  "final_box_score": {
+    "France": {"shots": 10, "shots_on_target": 3, "possession_pct": 49.1, "fouls": 11, "offsides": 4, "corners": 7, "yellow_cards": 2, "red_cards": 0},
+    "Spain": {"shots": 10, "shots_on_target": 2, "possession_pct": 50.9, "fouls": 12, "offsides": 5, "corners": 1, "yellow_cards": 1, "red_cards": 0}
+  },
+  "goals": ["Mikel Oyarzabal (Spain, penalty) 22'", "Pedro Porro (Spain) 58'"],
+  "hydration_breaks": {"break1_min": 24, "break2_min": 69},
+  "first_substitution": {"team": "France", "detail": "Maxence Lacroix for William Saliba (injury), 30'"},
+  "summary": "Final: +138.32 RBP, 10 wins / 3 losses (77%) on the 13 answered questions -- one of the best single-match results of the campaign. The 3 flagged divergences from market/recommendation split 2-1 in favor of deviating: Q7 (Spain advance, pure-model divergence) and Q10 (Spain SOT, GLMM divergence, +28.23, the single biggest win) both beat the market decisively; Q8 (Mbappe, personal-form divergence) lost (-12.48), validating the pre-match RULE17 caution. Net: genuinely mixed evidence from one match, not proof either posture (trust the model vs. trust the market) is generally right -- exactly the kind of single-data-point noise the shadow-deployment discipline exists to not over-read. The costliest loss was the highest-conviction number on the slate (Q13, France 4+ SOT at 72%, missed by one shot). Both dropped questions (offsides, VAR) resolved YES -- logged honestly for the record without treating one match as overturning either the 17-question offside base rate or the n=12 VAR power-analysis finding."
+}

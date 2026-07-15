@@ -1,0 +1,103 @@
+{
+  "_description": "FINAL pre-submission estimates, France vs Spain SF 2026-07-14 (closes 23:00Z). Order matches the JTC question list in 01_match_and_markets.json. READ BACK against the platform before submitting (top open item: ENG-CRO Kane transcription error cost -44.54). All estimates within RULE6 caps.",
+  "match_id": "de7b7b6f-f3a8-4948-af5e-f0f4565728d0",
+  "estimates": [
+    {
+      "q": 1,
+      "question": "4+ offsides (combined, regulation)",
+      "estimate": 0.45,
+      "confidence": "LOW"
+    },
+    {
+      "q": 2,
+      "question": "4+ total cards (regulation)",
+      "estimate": 0.4,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 3,
+      "question": "Yamal score or assist (regulation)",
+      "estimate": 0.25,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 4,
+      "question": "VAR on-field review (reg or ET)",
+      "estimate": 0.35,
+      "confidence": "VERY_LOW"
+    },
+    {
+      "q": 5,
+      "question": "3+ total goals (regulation)",
+      "estimate": 0.5,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 6,
+      "question": "tied at 90' -> extra time",
+      "estimate": 0.3,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 7,
+      "question": "goal before first hydration break",
+      "estimate": 0.43,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 8,
+      "question": "first goal by single-digit shirt (incl ET)",
+      "estimate": 0.28,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 9,
+      "question": "Spain advance to final",
+      "estimate": 0.41,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 10,
+      "question": "Mbappe scores (regulation)",
+      "estimate": 0.45,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 11,
+      "question": "goal between hydration breaks",
+      "estimate": 0.71,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 12,
+      "question": "Spain 5+ SOT (regulation)",
+      "estimate": 0.48,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 13,
+      "question": "both teams score (regulation)",
+      "estimate": 0.59,
+      "confidence": "HIGH"
+    },
+    {
+      "q": 14,
+      "question": "Spain makes first substitution",
+      "estimate": 0.6,
+      "confidence": "MEDIUM"
+    },
+    {
+      "q": 15,
+      "question": "France 4+ SOT (regulation)",
+      "estimate": 0.72,
+      "confidence": "MEDIUM"
+    }
+  ],
+  "consistency_checks_rule14": [
+    "P(Spain advance)=0.41 >= P(Spain win reg)=0.297 OK",
+    "Q6 ET 0.30 == sim P(level@90) == FTR draw OK",
+    "Q7 0.43 + Q11 0.71 consistent with one joint simulation (not additive; windows overlap in multi-goal sims) OK",
+    "France SOT lambda (5.02) > Spain SOT lambda (4.65) matches market totals OK",
+    "All estimates in [0.05, 0.95] (RULE6) OK"
+  ]
+}

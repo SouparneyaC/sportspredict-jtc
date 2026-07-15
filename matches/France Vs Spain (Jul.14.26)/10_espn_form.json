@@ -1,0 +1,1193 @@
+{
+  "_description": "ESPN form data for France and Spain across all 6 WC2026 games each, compiled from raw summaries in espn_raw/ (fetched live 2026-07-14). Team stats per game, Mbappe/Yamal per-game lines, substitution timing, and SF squad shirt numbers (event 760514).",
+  "games": [
+    {
+      "tag": "FRA_SEN_group",
+      "espn_event": "760432",
+      "date": "2026-06-16T19:00Z",
+      "status": "FT",
+      "score": {
+        "France": 3,
+        "Senegal": 1
+      },
+      "team_stats": {
+        "France": {
+          "foulsCommitted": "5",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "6",
+          "saves": "2",
+          "possessionPct": "53.4",
+          "totalShots": "11",
+          "shotsOnTarget": "8"
+        },
+        "Senegal": {
+          "foulsCommitted": "9",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "4",
+          "saves": "5",
+          "possessionPct": "46.6",
+          "totalShots": "6",
+          "shotsOnTarget": "2"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": false,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 2.0,
+            "foulsSuffered": 1.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 1.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 4.0,
+            "totalGoals": 2.0,
+            "totalShots": 4.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "75'",
+          "team": "Senegal"
+        },
+        {
+          "clock": "76'",
+          "team": "Senegal"
+        },
+        {
+          "clock": "80'",
+          "team": "France"
+        },
+        {
+          "clock": "83'",
+          "team": "Senegal"
+        },
+        {
+          "clock": "83'",
+          "team": "Senegal"
+        },
+        {
+          "clock": "87'",
+          "team": "France"
+        },
+        {
+          "clock": "88'",
+          "team": "Senegal"
+        }
+      ],
+      "first_sub_team": "Senegal",
+      "first_sub_minute": 75
+    },
+    {
+      "tag": "FRA_IRQ_group",
+      "espn_event": "760457",
+      "date": "2026-06-22T21:00Z",
+      "status": "FT",
+      "score": {
+        "France": 3,
+        "Iraq": 0
+      },
+      "team_stats": {
+        "France": {
+          "foulsCommitted": "8",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "4",
+          "saves": "0",
+          "possessionPct": "55.6",
+          "totalShots": "19",
+          "shotsOnTarget": "5"
+        },
+        "Iraq": {
+          "foulsCommitted": "4",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "2",
+          "saves": "2",
+          "possessionPct": "44.4",
+          "totalShots": "4",
+          "shotsOnTarget": "0"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 1.0,
+            "foulsSuffered": 1.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 1.0,
+            "shotsOnTarget": 3.0,
+            "totalGoals": 2.0,
+            "totalShots": 8.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "26'",
+          "team": "Iraq"
+        },
+        {
+          "clock": "60'",
+          "team": "Iraq"
+        },
+        {
+          "clock": "60'",
+          "team": "Iraq"
+        },
+        {
+          "clock": "68'",
+          "team": "France"
+        },
+        {
+          "clock": "68'",
+          "team": "France"
+        },
+        {
+          "clock": "68'",
+          "team": "Iraq"
+        },
+        {
+          "clock": "69'",
+          "team": "Iraq"
+        },
+        {
+          "clock": "83'",
+          "team": "France"
+        },
+        {
+          "clock": "83'",
+          "team": "France"
+        },
+        {
+          "clock": "90'+1'",
+          "team": "France"
+        }
+      ],
+      "first_sub_team": "Iraq",
+      "first_sub_minute": 26
+    },
+    {
+      "tag": "FRA_NOR_group",
+      "espn_event": "760475",
+      "date": "2026-06-26T19:00Z",
+      "status": "FT",
+      "score": {
+        "Norway": 1,
+        "France": 4
+      },
+      "team_stats": {
+        "Norway": {
+          "foulsCommitted": "9",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "4",
+          "saves": "5",
+          "possessionPct": "43.3",
+          "totalShots": "10",
+          "shotsOnTarget": "4"
+        },
+        "France": {
+          "foulsCommitted": "11",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "5",
+          "saves": "3",
+          "possessionPct": "56.7",
+          "totalShots": "18",
+          "shotsOnTarget": "9"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 0.0,
+            "foulsSuffered": 0.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 1.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 2.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 2.0,
+            "totalGoals": 0.0,
+            "totalShots": 4.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "45'",
+          "team": "Norway"
+        },
+        {
+          "clock": "45'",
+          "team": "Norway"
+        },
+        {
+          "clock": "65'",
+          "team": "France"
+        },
+        {
+          "clock": "65'",
+          "team": "France"
+        },
+        {
+          "clock": "66'",
+          "team": "Norway"
+        },
+        {
+          "clock": "76'",
+          "team": "France"
+        },
+        {
+          "clock": "83'",
+          "team": "Norway"
+        },
+        {
+          "clock": "83'",
+          "team": "Norway"
+        },
+        {
+          "clock": "87'",
+          "team": "France"
+        },
+        {
+          "clock": "87'",
+          "team": "France"
+        }
+      ],
+      "first_sub_team": "Norway",
+      "first_sub_minute": 45
+    },
+    {
+      "tag": "FRA_SWE_r32",
+      "espn_event": "760492",
+      "date": "2026-06-30T21:00Z",
+      "status": "FT",
+      "score": {
+        "France": 3,
+        "Sweden": 0
+      },
+      "team_stats": {
+        "France": {
+          "foulsCommitted": "14",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "9",
+          "saves": "3",
+          "possessionPct": "61",
+          "totalShots": "25",
+          "shotsOnTarget": "12"
+        },
+        "Sweden": {
+          "foulsCommitted": "10",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "1",
+          "saves": "9",
+          "possessionPct": "39",
+          "totalShots": "8",
+          "shotsOnTarget": "3"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 1.0,
+            "foulsSuffered": 1.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 1.0,
+            "shotsOnTarget": 4.0,
+            "totalGoals": 2.0,
+            "totalShots": 5.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "66'",
+          "team": "Sweden"
+        },
+        {
+          "clock": "66'",
+          "team": "Sweden"
+        },
+        {
+          "clock": "75'",
+          "team": "France"
+        },
+        {
+          "clock": "75'",
+          "team": "France"
+        },
+        {
+          "clock": "78'",
+          "team": "France"
+        },
+        {
+          "clock": "82'",
+          "team": "Sweden"
+        },
+        {
+          "clock": "82'",
+          "team": "Sweden"
+        },
+        {
+          "clock": "85'",
+          "team": "France"
+        },
+        {
+          "clock": "85'",
+          "team": "France"
+        },
+        {
+          "clock": "89'",
+          "team": "Sweden"
+        }
+      ],
+      "first_sub_team": "Sweden",
+      "first_sub_minute": 66
+    },
+    {
+      "tag": "FRA_PAR_r16",
+      "espn_event": "760503",
+      "date": "2026-07-04T21:00Z",
+      "status": "FT",
+      "score": {
+        "Paraguay": 0,
+        "France": 1
+      },
+      "team_stats": {
+        "Paraguay": {
+          "foulsCommitted": "13",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "2",
+          "saves": "4",
+          "possessionPct": "24.1",
+          "totalShots": "5",
+          "shotsOnTarget": "1"
+        },
+        "France": {
+          "foulsCommitted": "11",
+          "yellowCards": "3",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "12",
+          "saves": "1",
+          "possessionPct": "75.9",
+          "totalShots": "15",
+          "shotsOnTarget": "5"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": false,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 1.0,
+            "foulsSuffered": 2.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 4.0,
+            "totalGoals": 1.0,
+            "totalShots": 5.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "58'",
+          "team": "Paraguay"
+        },
+        {
+          "clock": "61'",
+          "team": "Paraguay"
+        },
+        {
+          "clock": "61'",
+          "team": "France"
+        },
+        {
+          "clock": "71'",
+          "team": "Paraguay"
+        },
+        {
+          "clock": "71'",
+          "team": "Paraguay"
+        },
+        {
+          "clock": "84'",
+          "team": "France"
+        }
+      ],
+      "first_sub_team": "Paraguay",
+      "first_sub_minute": 58
+    },
+    {
+      "tag": "FRA_MAR_qf",
+      "espn_event": "760510",
+      "date": "2026-07-09T20:00Z",
+      "status": "FT",
+      "score": {
+        "France": 2,
+        "Morocco": 0
+      },
+      "team_stats": {
+        "France": {
+          "foulsCommitted": "10",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "5",
+          "saves": "1",
+          "possessionPct": "48",
+          "totalShots": "22",
+          "shotsOnTarget": "8"
+        },
+        "Morocco": {
+          "foulsCommitted": "13",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "5",
+          "saves": "6",
+          "possessionPct": "52",
+          "totalShots": "5",
+          "shotsOnTarget": "1"
+        }
+      },
+      "tracked_players": {
+        "Kylian Mbapp\u00e9": {
+          "team": "France",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 0.0,
+            "foulsSuffered": 2.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 1.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 2.0,
+            "totalGoals": 1.0,
+            "totalShots": 4.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "62'",
+          "team": "Morocco"
+        },
+        {
+          "clock": "62'",
+          "team": "Morocco"
+        },
+        {
+          "clock": "71'",
+          "team": "France"
+        },
+        {
+          "clock": "74'",
+          "team": "Morocco"
+        },
+        {
+          "clock": "74'",
+          "team": "Morocco"
+        },
+        {
+          "clock": "77'",
+          "team": "France"
+        },
+        {
+          "clock": "77'",
+          "team": "France"
+        },
+        {
+          "clock": "85'",
+          "team": "Morocco"
+        },
+        {
+          "clock": "87'",
+          "team": "France"
+        }
+      ],
+      "first_sub_team": "Morocco",
+      "first_sub_minute": 62
+    },
+    {
+      "tag": "ESP_CPV_group",
+      "espn_event": "760428",
+      "date": "2026-06-15T16:00Z",
+      "status": "FT",
+      "score": {
+        "Spain": 0,
+        "Cape Verde": 0
+      },
+      "team_stats": {
+        "Spain": {
+          "foulsCommitted": "10",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "11",
+          "saves": "1",
+          "possessionPct": "74.3",
+          "totalShots": "27",
+          "shotsOnTarget": "7"
+        },
+        "Cape Verde": {
+          "foulsCommitted": "1",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "1",
+          "saves": "7",
+          "possessionPct": "25.7",
+          "totalShots": "6",
+          "shotsOnTarget": "1"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": false,
+          "jersey": null,
+          "subbed_out": false,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 1.0,
+            "foulsSuffered": 0.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 1.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 0.0,
+            "totalGoals": 0.0,
+            "totalShots": 2.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "61'",
+          "team": "Cape Verde"
+        },
+        {
+          "clock": "61'",
+          "team": "Cape Verde"
+        },
+        {
+          "clock": "61'",
+          "team": "Cape Verde"
+        },
+        {
+          "clock": "71'",
+          "team": "Spain"
+        },
+        {
+          "clock": "71'",
+          "team": "Spain"
+        },
+        {
+          "clock": "76'",
+          "team": "Cape Verde"
+        },
+        {
+          "clock": "79'",
+          "team": "Cape Verde"
+        },
+        {
+          "clock": "81'",
+          "team": "Spain"
+        },
+        {
+          "clock": "87'",
+          "team": "Spain"
+        }
+      ],
+      "first_sub_team": "Cape Verde",
+      "first_sub_minute": 61
+    },
+    {
+      "tag": "ESP_SAU_group",
+      "espn_event": "760453",
+      "date": "2026-06-21T16:00Z",
+      "status": "FT",
+      "score": {
+        "Spain": 4,
+        "Saudi Arabia": 0
+      },
+      "team_stats": {
+        "Spain": {
+          "foulsCommitted": "10",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "6",
+          "saves": "1",
+          "possessionPct": "67.1",
+          "totalShots": "22",
+          "shotsOnTarget": "8"
+        },
+        "Saudi Arabia": {
+          "foulsCommitted": "2",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "1",
+          "saves": "5",
+          "possessionPct": "32.9",
+          "totalShots": "3",
+          "shotsOnTarget": "1"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 0.0,
+            "foulsSuffered": 0.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 0.0,
+            "shotsOnTarget": 2.0,
+            "totalGoals": 1.0,
+            "totalShots": 5.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "45'",
+          "team": "Spain"
+        },
+        {
+          "clock": "45'",
+          "team": "Spain"
+        },
+        {
+          "clock": "45'",
+          "team": "Saudi Arabia"
+        },
+        {
+          "clock": "45'",
+          "team": "Saudi Arabia"
+        },
+        {
+          "clock": "60'",
+          "team": "Saudi Arabia"
+        },
+        {
+          "clock": "60'",
+          "team": "Saudi Arabia"
+        },
+        {
+          "clock": "61'",
+          "team": "Spain"
+        },
+        {
+          "clock": "61'",
+          "team": "Spain"
+        },
+        {
+          "clock": "70'",
+          "team": "Spain"
+        },
+        {
+          "clock": "90'",
+          "team": "Saudi Arabia"
+        }
+      ],
+      "first_sub_team": "Spain",
+      "first_sub_minute": 45
+    },
+    {
+      "tag": "ESP_URU_group",
+      "espn_event": "760479",
+      "date": "2026-06-27T00:00Z",
+      "status": "FT",
+      "score": {
+        "Uruguay": 0,
+        "Spain": 1
+      },
+      "team_stats": {
+        "Uruguay": {
+          "foulsCommitted": "14",
+          "yellowCards": "3",
+          "redCards": "1",
+          "offsides": "5",
+          "wonCorners": "1",
+          "saves": "0",
+          "possessionPct": "33.1",
+          "totalShots": "5",
+          "shotsOnTarget": "1"
+        },
+        "Spain": {
+          "foulsCommitted": "14",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "6",
+          "saves": "2",
+          "possessionPct": "66.9",
+          "totalShots": "6",
+          "shotsOnTarget": "1"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 0.0,
+            "foulsSuffered": 1.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 1.0,
+            "shotsOnTarget": 0.0,
+            "totalGoals": 0.0,
+            "totalShots": 1.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "45'",
+          "team": "Uruguay"
+        },
+        {
+          "clock": "45'",
+          "team": "Uruguay"
+        },
+        {
+          "clock": "57'",
+          "team": "Uruguay"
+        },
+        {
+          "clock": "60'",
+          "team": "Spain"
+        },
+        {
+          "clock": "60'",
+          "team": "Spain"
+        },
+        {
+          "clock": "66'",
+          "team": "Spain"
+        },
+        {
+          "clock": "70'",
+          "team": "Uruguay"
+        },
+        {
+          "clock": "76'",
+          "team": "Spain"
+        },
+        {
+          "clock": "76'",
+          "team": "Spain"
+        }
+      ],
+      "first_sub_team": "Uruguay",
+      "first_sub_minute": 45
+    },
+    {
+      "tag": "ESP_AUT_r32",
+      "espn_event": "760497",
+      "date": "2026-07-02T19:00Z",
+      "status": "FT",
+      "score": {
+        "Spain": 3,
+        "Austria": 0
+      },
+      "team_stats": {
+        "Spain": {
+          "foulsCommitted": "8",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "9",
+          "saves": "0",
+          "possessionPct": "64.4",
+          "totalShots": "23",
+          "shotsOnTarget": "10"
+        },
+        "Austria": {
+          "foulsCommitted": "15",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "5",
+          "wonCorners": "0",
+          "saves": "6",
+          "possessionPct": "35.6",
+          "totalShots": "5",
+          "shotsOnTarget": "0"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": true,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 1.0,
+            "foulsSuffered": 0.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 2.0,
+            "shotsOnTarget": 4.0,
+            "totalGoals": 0.0,
+            "totalShots": 6.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "45'",
+          "team": "Austria"
+        },
+        {
+          "clock": "45'",
+          "team": "Austria"
+        },
+        {
+          "clock": "60'",
+          "team": "Austria"
+        },
+        {
+          "clock": "60'",
+          "team": "Austria"
+        },
+        {
+          "clock": "71'",
+          "team": "Spain"
+        },
+        {
+          "clock": "71'",
+          "team": "Spain"
+        },
+        {
+          "clock": "85'",
+          "team": "Spain"
+        },
+        {
+          "clock": "85'",
+          "team": "Austria"
+        },
+        {
+          "clock": "90'+3'",
+          "team": "Spain"
+        },
+        {
+          "clock": "90'+3'",
+          "team": "Spain"
+        }
+      ],
+      "first_sub_team": "Austria",
+      "first_sub_minute": 45
+    },
+    {
+      "tag": "ESP_POR_r16",
+      "espn_event": "760506",
+      "date": "2026-07-06T19:00Z",
+      "status": "FT",
+      "score": {
+        "Portugal": 0,
+        "Spain": 1
+      },
+      "team_stats": {
+        "Portugal": {
+          "foulsCommitted": "9",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "3",
+          "saves": "5",
+          "possessionPct": "44.6",
+          "totalShots": "10",
+          "shotsOnTarget": "2"
+        },
+        "Spain": {
+          "foulsCommitted": "13",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "7",
+          "saves": "2",
+          "possessionPct": "55.4",
+          "totalShots": "15",
+          "shotsOnTarget": "6"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": false,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 5.0,
+            "foulsSuffered": 2.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 0.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 1.0,
+            "shotsOnTarget": 2.0,
+            "totalGoals": 0.0,
+            "totalShots": 3.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "56'",
+          "team": "Portugal"
+        },
+        {
+          "clock": "71'",
+          "team": "Portugal"
+        },
+        {
+          "clock": "71'",
+          "team": "Portugal"
+        },
+        {
+          "clock": "75'",
+          "team": "Spain"
+        },
+        {
+          "clock": "83'",
+          "team": "Portugal"
+        },
+        {
+          "clock": "83'",
+          "team": "Portugal"
+        },
+        {
+          "clock": "85'",
+          "team": "Spain"
+        },
+        {
+          "clock": "85'",
+          "team": "Spain"
+        },
+        {
+          "clock": "90'+7'",
+          "team": "Spain"
+        }
+      ],
+      "first_sub_team": "Portugal",
+      "first_sub_minute": 56
+    },
+    {
+      "tag": "ESP_BEL_qf",
+      "espn_event": "760511",
+      "date": "2026-07-10T19:00Z",
+      "status": "FT",
+      "score": {
+        "Spain": 2,
+        "Belgium": 1
+      },
+      "team_stats": {
+        "Spain": {
+          "foulsCommitted": "13",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "5",
+          "saves": "1",
+          "possessionPct": "67.9",
+          "totalShots": "17",
+          "shotsOnTarget": "8"
+        },
+        "Belgium": {
+          "foulsCommitted": "18",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "1",
+          "saves": "6",
+          "possessionPct": "32.1",
+          "totalShots": "5",
+          "shotsOnTarget": "2"
+        }
+      },
+      "tracked_players": {
+        "Lamine Yamal": {
+          "team": "Spain",
+          "starter": true,
+          "jersey": null,
+          "subbed_out": false,
+          "stats": {
+            "appearances": 1.0,
+            "foulsCommitted": 2.0,
+            "foulsSuffered": 4.0,
+            "ownGoals": 0.0,
+            "redCards": 0.0,
+            "subIns": 0.0,
+            "yellowCards": 0.0,
+            "goalsConceded": 1.0,
+            "shotsFaced": 0.0,
+            "goalAssists": 0.0,
+            "offsides": 1.0,
+            "shotsOnTarget": 2.0,
+            "totalGoals": 0.0,
+            "totalShots": 6.0
+          }
+        }
+      },
+      "substitutions": [
+        {
+          "clock": "55'",
+          "team": "Spain"
+        },
+        {
+          "clock": "55'",
+          "team": "Spain"
+        },
+        {
+          "clock": "60'",
+          "team": "Belgium"
+        },
+        {
+          "clock": "60'",
+          "team": "Belgium"
+        },
+        {
+          "clock": "61'",
+          "team": "Belgium"
+        },
+        {
+          "clock": "71'",
+          "team": "Belgium"
+        },
+        {
+          "clock": "79'",
+          "team": "Spain"
+        },
+        {
+          "clock": "86'",
+          "team": "Belgium"
+        },
+        {
+          "clock": "86'",
+          "team": "Spain"
+        }
+      ],
+      "first_sub_team": "Spain",
+      "first_sub_minute": 55
+    }
+  ],
+  "sf_fixture": {
+    "espn_event": "760514",
+    "venue": "AT&T Stadium",
+    "venue_city": {
+      "city": "Arlington, Texas",
+      "country": "USA"
+    },
+    "rosters": {
+      "France": [],
+      "Spain": []
+    }
+  }
+}

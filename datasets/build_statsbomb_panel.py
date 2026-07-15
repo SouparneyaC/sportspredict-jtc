@@ -22,6 +22,21 @@ Methodology (see TRAINING_DATASET_STRATEGY_2026-07-07.md for source research):
   authoritative per the audit rather than re-deriving from events.
 - Corners = Pass events with pass.type.name == "Corner" (StatsBomb has no
   standalone Corner event type).
+- Offsides = standalone `type.name == "Offside"` events PLUS Pass events with
+  `pass.outcome.name == "Pass Offside"` (fixed 2026-07-14). The standalone
+  Offside event type is rare in this dataset (5 occurrences across a random
+  15-match sample) -- StatsBomb encodes the overwhelming majority of offside
+  calls (62/67 in that same sample, ~12:1) as the pass outcome instead. The
+  original version of this script only checked the standalone event type,
+  undercounting offsides by ~8.5x (verified: team-match mean 0.203 before the
+  fix vs ESPN's 2026 mean of 1.725 for the same stat) -- caught during a
+  hierarchical-model backtest (ml/backtests/PREREGISTRATION_cards_corners_
+  offsides_and_combined.md) whose implausibly large effect size on offsides
+  specifically prompted this investigation. This was a genuine extraction
+  bug, not a cross-source measurement-convention difference like the other
+  stats' smaller ESPN/StatsBomb ratios (SOT 1.3x, corners 1.03x, cards
+  0.79-0.88x) -- StatsBomb's underlying data was correct, the parser was
+  reading the wrong field.
 - Minutes played: summed from lineup positions[] from/to intervals
   (cumulative match-clock, matching the event `minute` field convention).
   Open-ended intervals (`to` is null, i.e. still on at the whistle) are
@@ -134,6 +149,8 @@ def aggregate_match(match_id):
                 ts["passes_completed"] += 1
             if p.get("type", {}).get("name") == "Corner":
                 ts["corners"] += 1
+            if p.get("outcome", {}).get("name") == "Pass Offside":
+                ts["offsides"] += 1
             if ps is not None:
                 if p.get("goal_assist"):
                     ps["assists"] += 1

@@ -1,0 +1,23 @@
+match_id,competition_name,season_name,competition_stage,match_date,kick_off,referee_name,stadium_name,team_id,team_name,opponent_id,opponent_name,is_home,goals,opponent_goals,result,total_shots,shots_on_target,blocked_shots,xg_total,fouls_committed,fouls_won,yellow_cards,red_cards,corners,offsides,passes,passes_completed,pass_pct,clearances,interceptions
+7530,FIFA World Cup 2018,2018,Group Stage,2018-06-16,10:00:00.000,Andrés Cunha,Ak Bars Arena,771,France,792,Australia,True,2,1,W,12,4,5,1.5616,17,20,1,0,5,0,549,445,81.1,9,7
+7543,FIFA World Cup 2018,2018,Group Stage,2018-06-20,18:00:00.000,Andrés Cunha,Ak Bars Arena,772,Spain,797,Iran,False,1,0,W,18,3,9,2.197,15,14,0,0,6,0,816,719,88.1,10,6
+7546,FIFA World Cup 2018,2018,Group Stage,2018-06-21,15:00:00.000,Mohamed Abdulla Hassan Mohd,Ekaterinburg Arena,771,France,784,Peru,True,1,0,W,12,4,2,1.8624,11,14,2,0,5,0,435,332,76.3,12,24
+7560,FIFA World Cup 2018,2018,Group Stage,2018-06-25,18:00:00.000,Ravshan Irmatov,Rostec Arena,772,Spain,788,Morocco,True,2,2,D,18,3,2,2.6045,6,18,0,0,7,0,753,675,89.6,3,9
+7563,FIFA World Cup 2018,2018,Group Stage,2018-06-26,14:00:00.000,Sandro Ricci,Stadion Luzhniki,771,France,776,Denmark,False,0,0,D,11,4,1,0.4181,10,11,0,0,2,0,699,592,84.7,8,5
+7576,FIFA World Cup 2018,2018,Group Stage,2018-06-15,18:00:00.000,Gianluca Rocchi,Olimpiyskiy Stadion Fisht,772,Spain,780,Portugal,False,3,3,D,12,5,2,1.6609,11,12,1,0,5,1,780,714,91.5,8,12
+7580,FIFA World Cup 2018,2018,Round of 16,2018-06-30,14:00:00.000,Alireza Faghani,Ak Bars Arena,771,France,779,Argentina,True,4,3,W,9,4,1,1.638,23,14,2,0,0,0,350,283,80.9,16,8
+7582,FIFA World Cup 2018,2018,Round of 16,2018-07-01,14:00:00.000,Björn Kuipers,Stadion Luzhniki,772,Spain,796,Russia,True,1,1,D,24,9,7,1.4411,6,19,1,0,6,0,1157,1026,88.7,8,3
+8649,FIFA World Cup 2018,2018,Quarter-finals,2018-07-06,14:00:00.000,Néstor Fabián Pitana,Stadion Nizhny Novgorod (Nizhniy Novgorod),771,France,783,Uruguay,False,2,0,W,11,2,1,0.5388,18,21,2,0,3,0,567,445,78.5,32,17
+8655,FIFA World Cup 2018,2018,Semi-finals,2018-07-10,18:00:00.000,Andrés Cunha,Saint-Petersburg Stadium ( Gazprom Arena ),771,France,782,Belgium,True,1,0,W,19,5,5,1.6817,6,17,2,0,4,0,367,301,82.0,21,8
+8658,FIFA World Cup 2018,2018,Final,2018-07-15,17:00:00.000,Néstor Fabián Pitana,Stadion Luzhniki,771,France,785,Croatia,True,4,2,W,8,6,1,1.098,14,13,1,0,2,0,292,202,69.2,24,11
+3857255,FIFA World Cup 2022,2022,Group Stage,2022-12-01,19:00:00.000,Victor Miguel de Freitas Gomes,Sheikh Khalifa International Stadium,772,Spain,778,Japan,False,1,2,L,12,5,5,0.8577,8,11,0,0,2,0,1093,993,90.9,4,9
+3857263,FIFA World Cup 2022,2022,Group Stage,2022-11-27,19:00:00.000,Danny Desmond Makkelie,Al Bayt Stadium,772,Spain,770,Germany,True,1,1,D,7,2,2,0.6395,14,15,1,0,6,0,663,578,87.2,16,12
+3857266,FIFA World Cup 2022,2022,Group Stage,2022-11-26,16:00:00.000,Szymon Marciniak,Stadium 974,771,France,776,Denmark,True,2,1,W,21,6,8,1.9336,4,11,1,0,6,0,540,464,85.9,17,15
+3857275,FIFA World Cup 2022,2022,Group Stage,2022-11-30,15:00:00.000,Matthew Conger,Education City Stadium ,771,France,777,Tunisia,False,0,1,L,10,3,4,0.477,8,16,0,0,8,1,661,564,85.3,19,12
+3857279,FIFA World Cup 2022,2022,Group Stage,2022-11-22,19:00:00.000,Victor Miguel de Freitas Gomes,Al Janoub Stadium   ,771,France,792,Australia,True,4,1,W,23,6,8,3.1705,4,14,0,0,8,0,763,680,89.1,11,11
+3857291,FIFA World Cup 2022,2022,Group Stage,2022-11-23,16:00:00.000,,Al Thumama Stadium,772,Spain,795,Costa Rica,True,7,0,W,17,8,2,2.7619,8,13,0,0,5,0,1090,1009,92.6,5,7
+3869152,FIFA World Cup 2022,2022,Round of 16,2022-12-04,17:00:00.000,Jesús Valenzuela Sáez,Al Thumama Stadium,771,France,789,Poland,True,3,1,W,16,8,2,1.1264,11,10,1,0,7,0,593,505,85.2,12,15
+3869220,FIFA World Cup 2022,2022,Round of 16,2022-12-06,17:00:00.000,Fernando Andrés Rapallini,Education City Stadium ,772,Spain,788,Morocco,False,0,0,D,12,1,5,0.495,14,18,1,0,8,0,1068,960,89.9,10,9
+3869354,FIFA World Cup 2022,2022,Quarter-finals,2022-12-10,21:00:00.000,Wilton Pereira Sampaio,Al Bayt Stadium,771,France,768,England,False,2,1,W,8,5,1,0.8394,15,10,3,0,2,0,412,328,79.6,17,7
+3869552,FIFA World Cup 2022,2022,Semi-finals,2022-12-14,21:00:00.000,César Arturo Ramos Palazuelos,Al Bayt Stadium,771,France,788,Morocco,True,2,0,W,14,2,6,2.0024,14,13,0,0,2,1,387,316,81.7,19,20
+3869685,FIFA World Cup 2022,2022,Final,2022-12-18,17:00:00.000,Szymon Marciniak,Lusail Stadium,771,France,779,Argentina,False,3,3,D,10,5,3,2.2726,19,26,3,0,5,0,570,434,76.1,19,15

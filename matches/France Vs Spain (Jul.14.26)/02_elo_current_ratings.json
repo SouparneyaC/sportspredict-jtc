@@ -1,0 +1,37 @@
+{
+  "_source": "duplicated from data/processed/elo_current_ratings.csv \u2014 NOTE: this file is confirmed frozen at pre-tournament values, does not reflect real WC2026 in-tournament results (see project memory). Needs a point-in-time replay before use.",
+  "stale_ratings_do_not_use_for_modeling": [
+    {
+      "team": "Spain",
+      "elo_rating": "2225.5610"
+    },
+    {
+      "team": "France",
+      "elo_rating": "2129.0524"
+    }
+  ],
+  "corrected_point_in_time_ratings": {
+    "_source": "SUPERSEDED 2026-07-14 by ml/backtests/build_full_tournament_pit_elo.py -- see superseding_ratings below. This block (ml/backtests/fra_esp_sf_point_in_time_elo_replay.py, run 2026-07-13) held every opponent outside a small tracked set frozen at its pre-tournament baseline (a simplification used by every prior piecemeal replay script). For France that meant ALL SIX opponents (Senegal, Iraq, Norway, Sweden, Paraguay, Morocco) were frozen, vs only 2 of Spain's 6 -- so this number understates France's true rating more than Spain's. Kept for the audit trail, not for modeling.",
+    "France": {
+      "elo_rating": 2225.13,
+      "delta_vs_stale": "+96.08",
+      "path": "Group: 3-1 Senegal, 3-0 Iraq, 4-1 Norway; R32: 3-0 Sweden; R16: 1-0 Paraguay; QF: 2-0 Morocco"
+    },
+    "Spain": {
+      "elo_rating": 2261.57,
+      "delta_vs_stale": "+36.01",
+      "path": "Group: 0-0 Cape Verde, 4-0 Saudi Arabia, 1-0 Uruguay; R32: 3-0 Austria; R16: 1-0 Portugal; QF: 2-1 Belgium"
+    },
+    "diff_spain_minus_france": {
+      "stale": "+96.51",
+      "correct": "+36.44",
+      "shift": "-60.06 \u2014 stale ratings overstate Spain's edge; France's group-stage dominance (11 goals for, 3 against) isn't reflected in the frozen value"
+    }
+  },
+  "superseding_ratings": {
+    "_source": "ml/backtests/build_full_tournament_pit_elo.py, run 2026-07-14. Systematic replay of ALL 100 WC2026 matches for ALL 48 teams -- every opponent's rating is itself genuinely point-in-time (no team held frozen), which is strictly more accurate than any of the piecemeal per-matchup scripts. This is now the canonical PIT Elo source for the project; data/processed/wc2026_pit_elo_panel.csv has the full match-by-match trail.",
+    "France": {"elo_rating": 2238.47, "delta_vs_hand_built_script": "+13.34 (opponent-freezing understated France more than Spain, see note above)"},
+    "Spain": {"elo_rating": 2261.31, "delta_vs_hand_built_script": "-0.26 (negligible -- Spain's chain only had 2 frozen opponents)"},
+    "diff_spain_minus_france": "+22.84 (vs +36.44 from the hand-built scripts -- narrows the gap further)"
+  }
+}

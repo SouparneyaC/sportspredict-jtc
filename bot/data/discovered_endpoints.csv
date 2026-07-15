@@ -15,3 +15,14 @@ date_discovered,namespace,method,endpoint,auth_required,status_observed,descript
 2026-06-27,web,GET,/api/users/achievements/fetch,Session cookie,200,User achievements,PARTIAL,Confirmed by network tool
 2026-06-27,web,GET,/api/users/trades/check-25,Session cookie,200,Check if user has reached 25 trades milestone,PARTIAL,Confirmed by network tool
 2026-06-27,web,POST,/api/users/smart-rating,Session cookie,201,SMART rating for global leaderboard,PARTIAL,Confirmed by network tool on /leaderboard page load
+2026-07-14,web,POST,/api/probability/performance,Bearer token (axios fetch adapter),201,"Full Performance Summary page data: RBP gap vs crowd, contrarian win rate, forecasts settled, confidence bias, best/worst market+match, category breakdown, calibration bins",TRUE,"Confirmed live on Souparneya's own logged-in account (username AbirC) via play.sportspredict.com/probability-events/{eventId}/performance-summary; body includes eventId+lobbyId, likely optional botId to switch identity"
+2026-07-14,web,POST,/api/probability/my-bots,Bearer token,201,Lists bot identities tied to the account (surfaces the Me/Abir's Bot toggle on Performance page),TRUE,Confirmed live
+2026-07-14,web,POST,/api/probability/achievements/backlog,Bearer token,201,Unseen/backlog achievements notification,TRUE,Confirmed live on /home
+2026-07-14,web,POST,/api/probability/leaderboard,Bearer token,201,Lobby leaderboard (superset of earlier /api/lobbies/leaderboard finding - same concept under probability namespace),TRUE,Confirmed live on /home
+2026-07-14,web,POST,/api/probability/lobby-matches,Bearer token,201,Matches list scoped to a lobby,TRUE,Confirmed live on /home
+2026-07-14,web,POST,/api/probability/rank,Bearer token,201,User's rank within event/lobby,TRUE,Confirmed live on /home
+2026-07-14,web,POST,/api/probability/user-predicted-matches,Bearer token,201,Matches the user has already predicted on,TRUE,Confirmed live on /home
+2026-07-14,web,POST,/api/probability/activity,Bearer token,201,Large payload (~324KB) - full activity feed/history,TRUE,Confirmed live on /home; large response worth inspecting for settled-trade history
+2026-07-14,web,GET,/api/lobbies/event/{eventId},Bearer token or cookie,200,Very large payload (~1.08MB) - full lobby/market data for the event,TRUE,Confirmed live
+2026-07-14,web,GET,/api/slates/event?eventId={id},Bearer token or cookie,200,~113KB payload - event slate data,TRUE,Confirmed live
+2026-07-14,web,GET,/api/following/list,Bearer token or cookie,201,List of forecasters the user follows,TRUE,Confirmed live

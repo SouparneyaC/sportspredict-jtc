@@ -1,0 +1,101 @@
+event_id,date,team_a,team_b,n_goals,goal_minutes,break1_min,break2_min,goal_between_breaks,team_a_first_sub_min,team_b_first_sub_min,first_sub_team,var_mentions,any_var_mention
+760497,2026-07-02,Spain,Austria,3,36;66;89,24,68,True,71,45,Austria,1,True
+760511,2026-07-10,Spain,Belgium,3,30;41;88,23,67,True,55,60,Spain,0,False
+760428,2026-06-15,Spain,Cape Verde,0,,23,68,False,71,61,Cape Verde,2,True
+760506,2026-07-06,Portugal,Spain,1,90,23,68,False,56,75,Portugal,0,False
+760453,2026-06-21,Spain,Saudi Arabia,4,10;21;24;49,25,68,True,45,45,Spain,2,True
+760479,2026-06-27,Uruguay,Spain,1,42,23,68,True,45,60,Uruguay,0,False
+760457,2026-06-22,France,Iraq,3,14;54;66,23,,,68,26,Iraq,1,True
+760510,2026-07-09,France,Morocco,2,60;66,29,67,True,71,62,Morocco,0,False
+760475,2026-06-26,Norway,France,5,7;20;21;32;90,24,68,True,45,65,Norway,0,False
+760503,2026-07-04,Paraguay,France,1,70,23,73,True,58,61,Paraguay,1,True
+760432,2026-06-16,France,Senegal,4,66;82;90;90,26,68,True,80,75,Senegal,1,True
+760492,2026-06-30,France,Sweden,3,45;53;74,23,68,True,75,66,Sweden,0,False
+760414,2026-06-12,South Korea,Czechia,3,59;67;80,23,70,True,62,64,South Korea,0,False
+760415,2026-06-11,Mexico,South Africa,2,9;67,25,68,True,66,56,South Africa,1,True
+760416,2026-06-12,Canada,Bosnia-Herzegovina,2,21;78,23,69,False,61,62,Canada,0,False
+760417,2026-06-13,United States,Paraguay,5,7;31;45;73;90,24,68,True,45,45,Paraguay,2,True
+760418,2026-06-14,Haiti,Scotland,1,28,23,67,True,61,75,Haiti,0,False
+760419,2026-06-13,Brazil,Morocco,2,21;32,23,68,True,45,65,Brazil,1,True
+760420,2026-06-13,Qatar,Switzerland,2,17;90,24,68,False,60,65,Qatar,0,False
+760421,2026-06-14,Australia,Türkiye,2,27;75,23,68,True,61,45,Türkiye,1,True
+760422,2026-06-14,Germany,Curaçao,7,6;21;38;45;47;78;88,23,69,True,64,45,Curaçao,0,False
+760423,2026-06-14,Ivory Coast,Ecuador,1,90,24,69,False,56,56,Ecuador,0,False
+760424,2026-06-15,Sweden,Tunisia,6,7;30;43;59;84;90,22,69,True,65,72,Sweden,2,True
+760425,2026-06-14,Netherlands,Japan,4,51;57;64;89,23,67,True,70,66,Japan,0,False
+760426,2026-06-15,Belgium,Egypt,2,20;66,22,67,True,56,71,Belgium,1,True
+760427,2026-06-16,Iran,New Zealand,4,7;32;54;64,25,68,True,45,68,Iran,0,False
+760429,2026-06-15,Saudi Arabia,Uruguay,2,41;80,23,69,True,63,45,Uruguay,0,False
+760430,2026-06-16,Iraq,Norway,5,29;39;43;76;90,24,69,True,59,73,Iraq,0,False
+760431,2026-06-17,Austria,Jordan,4,21;50;76;90,23,72,True,45,72,Austria,3,True
+760433,2026-06-17,Argentina,Algeria,3,17;60;76,25,69,True,45,64,Argentina,2,True
+760434,2026-06-17,Ghana,Panama,1,90,24,68,False,45,63,Ghana,0,False
+760435,2026-06-17,Portugal,Congo DR,2,6;45,23,69,True,45,57,Portugal,0,False
+760436,2026-06-18,Uzbekistan,Colombia,4,40;60;65;90,23,69,True,45,72,Uzbekistan,0,False
+760437,2026-06-17,England,Croatia,6,12;36;42;45;47;85,23,69,True,72,58,Croatia,2,True
+760438,2026-06-18,Czechia,South Africa,2,6;83,23,69,False,55,45,South Africa,0,False
+760439,2026-06-18,Switzerland,Bosnia-Herzegovina,5,74;84;90;90;90,23,69,False,71,63,Bosnia-Herzegovina,1,True
+760440,2026-06-18,Canada,Qatar,5,16;29;45;75;90,25,68,True,45,40,Qatar,3,True
+760441,2026-06-19,Mexico,South Korea,1,50,23,68,True,71,57,South Korea,0,False
+760442,2026-06-19,United States,Australia,2,11;43,24,68,True,74,45,Australia,3,True
+760443,2026-06-20,Türkiye,Paraguay,1,2,26,66,False,45,45,Paraguay,1,True
+760444,2026-06-20,Brazil,Haiti,3,23;36;45,26,69,True,40,45,Brazil,0,False
+760445,2026-06-19,Scotland,Morocco,1,2,24,68,False,60,84,Scotland,0,False
+760446,2026-06-21,Ecuador,Curaçao,0,,24,68,False,45,75,Ecuador,2,True
+760447,2026-06-20,Netherlands,Sweden,6,5;17;47;54;59;89,23,69,True,45,55,Netherlands,0,False
+760448,2026-06-20,Germany,Ivory Coast,3,30;68;90,25,71,True,45,75,Germany,0,False
+760449,2026-06-21,Tunisia,Japan,4,4;31;69;83,24,70,True,45,73,Tunisia,0,False
+760450,2026-06-21,Uruguay,Cape Verde,3,44;45;61,25,71,True,70,45,Cape Verde,1,True
+760451,2026-06-21,Belgium,Iran,0,,30,70,False,58,45,Iran,2,True
+760452,2026-06-22,New Zealand,Egypt,4,15;58;67;82,22,72,True,66,41,Egypt,1,True
+760454,2026-06-23,Norway,Senegal,5,43;48;53;58;90,23,68,True,13,54,Norway,0,False
+760455,2026-06-23,Jordan,Algeria,3,36;69;82,24,74,True,76,45,Algeria,0,False
+760456,2026-06-22,Argentina,Austria,2,38;90,23,69,True,57,67,Argentina,1,True
+760458,2026-06-23,England,Ghana,0,,26,70,False,65,66,England,0,False
+760459,2026-06-24,Colombia,Congo DR,1,76,25,68,False,58,45,Congo DR,1,True
+760460,2026-06-23,Panama,Croatia,1,54,23,69,True,77,45,Croatia,0,False
+760461,2026-06-23,Portugal,Uzbekistan,3,39;60;87,23,69,True,45,45,Uzbekistan,2,True
+760462,2026-06-24,Bosnia-Herzegovina,Qatar,4,29;34;42;80,23,69,True,45,45,Bosnia-Herzegovina,1,True
+760463,2026-06-24,Switzerland,Canada,3,46;57;76,23,71,True,74,58,Canada,0,False
+760464,2026-06-24,Morocco,Haiti,6,10;39;43;45;78;89,23,68,True,70,67,Haiti,1,True
+760465,2026-06-24,Scotland,Brazil,3,7;45;60,25,68,True,45,65,Scotland,2,True
+760466,2026-06-25,South Africa,South Korea,1,63,23,69,True,62,45,South Korea,0,False
+760467,2026-06-25,Czechia,Mexico,3,55;61;90,22,68,True,56,63,Czechia,0,False
+760468,2026-06-25,Ecuador,Germany,3,2;9;77,27,69,False,64,45,Germany,1,True
+760469,2026-06-26,Paraguay,Australia,0,,24,68,False,45,58,Paraguay,0,False
+760470,2026-06-26,Türkiye,United States,5,3;10;31;49;90,23,67,True,84,58,United States,0,False
+760471,2026-06-25,Japan,Sweden,2,56;62,24,68,True,39,37,Sweden,0,False
+760472,2026-06-25,Tunisia,Netherlands,4,3;7;54;62,23,69,True,67,72,Tunisia,0,False
+760473,2026-06-25,Curaçao,Ivory Coast,2,7;64,23,68,True,61,45,Ivory Coast,0,False
+760474,2026-06-26,Senegal,Iraq,5,4;56;59;71;82,23,67,True,57,16,Iraq,2,True
+760476,2026-06-27,Egypt,Iran,2,5;14,23,69,False,14,45,Egypt,2,True
+760477,2026-06-27,New Zealand,Belgium,6,28;50;66;84;86;90,24,69,True,45,56,New Zealand,1,True
+760478,2026-06-27,Cape Verde,Saudi Arabia,0,,24,69,False,61,33,Saudi Arabia,2,True
+760480,2026-06-27,Croatia,Ghana,3,31;73;83,25,69,True,66,45,Ghana,2,True
+760481,2026-06-27,Colombia,Portugal,0,,24,68,False,60,45,Portugal,1,True
+760482,2026-06-27,Congo DR,Uzbekistan,3,68;78;90,23,70,True,51,59,Congo DR,2,True
+760483,2026-06-28,Jordan,Argentina,2,31;55,23,68,True,45,60,Jordan,1,True
+760484,2026-06-28,Algeria,Austria,6,28;45;55;60;90;90,23,68,True,71,45,Austria,0,False
+760485,2026-06-27,Panama,England,2,62;67,23,69,True,45,63,Panama,0,False
+760486,2026-06-28,South Africa,Canada,1,90,23,67,False,45,59,South Africa,2,True
+760487,2026-06-29,Brazil,Japan,3,29;56;90,23,68,True,45,66,Brazil,0,False
+760488,2026-06-30,Netherlands,Morocco,2,72;90,22,67,False,71,75,Netherlands,0,False
+760489,2026-06-29,Germany,Paraguay,2,42;54,23,70,True,45,55,Germany,2,True
+760490,2026-06-30,Ivory Coast,Norway,3,39;74;86,24,68,True,60,71,Ivory Coast,0,False
+760491,2026-07-01,Mexico,Ecuador,2,22;31,25,68,True,58,45,Ecuador,1,True
+760493,2026-07-01,Belgium,Senegal,5,24;51;86;89;120,27,70,True,45,66,Belgium,1,True
+760494,2026-07-02,United States,Bosnia-Herzegovina,1,45,23,69,True,87,51,Bosnia-Herzegovina,1,True
+760495,2026-07-01,England,Congo DR,3,7;75;86,23,68,False,61,64,England,0,False
+760496,2026-07-02,Portugal,Croatia,3,53;68;90,24,69,True,62,45,Croatia,3,True
+760498,2026-07-03,Switzerland,Algeria,2,10;46,25,67,True,71,58,Algeria,0,False
+760499,2026-07-03,Australia,Egypt,2,13;55,23,68,True,45,67,Australia,0,False
+760500,2026-07-03,Argentina,Cape Verde,5,29;59;92;103;111,25,73,True,63,67,Argentina,0,False
+760501,2026-07-04,Colombia,Ghana,1,14,24,69,False,8,13,Colombia,0,False
+760502,2026-07-04,Canada,Morocco,3,50;82;90,24,68,True,63,22,Morocco,0,False
+760504,2026-07-05,Brazil,Norway,3,79;90;90,27,68,False,58,45,Norway,1,True
+760505,2026-07-06,Mexico,England,5,36;38;42;60;69,23,71,True,45,57,Mexico,3,True
+760507,2026-07-07,United States,Belgium,4,9;33;57;90,24,69,True,45,21,Belgium,1,True
+760508,2026-07-07,Switzerland,Colombia,0,,23,68,False,45,66,Switzerland,1,True
+760509,2026-07-07,Argentina,Egypt,5,15;67;79;83;90,23,71,True,66,45,Egypt,3,True
+760512,2026-07-11,Norway,England,3,36;45;93,23,68,True,60,45,England,3,True
+760513,2026-07-12,Argentina,Switzerland,4,10;67;112;120,23,75,True,78,86,Argentina,1,True

@@ -96,16 +96,21 @@ cross_source_plausibility_check <- function(df) {
   teams_both <- sort(intersect(teams_espn, teams_sb))
 
   cat("\n", length(teams_both), "teams appear under both sources (cross-tournament):\n")
-  cat(sprintf("%-15s %-10s %3s %7s %6s %6s %8s\n", "Team", "src", "n", "fouls", "SOT", "cards", "corners"))
-  ratios <- list(fouls = c(), sot = c(), cards = c(), corners = c())
+  cat(sprintf("%-15s %-10s %3s %7s %6s %6s %8s %8s\n", "Team", "src", "n", "fouls", "SOT", "cards", "corners", "offsides"))
+  # offsides added 2026-07-14 -- its absence from this check let an 8.5x extraction
+  # bug in build_statsbomb_panel.py go undetected for a full backtest cycle before
+  # being caught (see that script's docstring for the fix). Every stat this project
+  # cross-source-pools needs to be in this table, not just the four checked historically.
+  ratios <- list(fouls = c(), sot = c(), cards = c(), corners = c(), offsides = c())
   for (team in teams_both) {
     for (src in c("espn_boxscore", "statsbomb_event_data")) {
       tr <- df[df$team_name == team & df$data_source == src, ]
       n <- nrow(tr)
       fouls <- mean(tr$fouls_committed); sot <- mean(tr$shots_on_target)
       cards <- mean(tr$yellow_cards + tr$red_cards); corners <- mean(tr$corners)
+      offsides <- mean(tr$offsides)
       tag <- if (src == "espn_boxscore") "ESPN/26" else "SB/18+22"
-      cat(sprintf("%-15s %-10s %3d %7.2f %6.2f %6.2f %8.2f\n", team, tag, n, fouls, sot, cards, corners))
+      cat(sprintf("%-15s %-10s %3d %7.2f %6.2f %6.2f %8.2f %8.2f\n", team, tag, n, fouls, sot, cards, corners, offsides))
     }
     e <- df[df$team_name == team & df$data_source == "espn_boxscore", ]
     s <- df[df$team_name == team & df$data_source == "statsbomb_event_data", ]
@@ -113,6 +118,7 @@ cross_source_plausibility_check <- function(df) {
     ratios$sot <- c(ratios$sot, mean(e$shots_on_target) / mean(s$shots_on_target))
     ratios$cards <- c(ratios$cards, mean(e$yellow_cards + e$red_cards) / mean(s$yellow_cards + s$red_cards))
     ratios$corners <- c(ratios$corners, mean(e$corners) / mean(s$corners))
+    ratios$offsides <- c(ratios$offsides, mean(e$offsides) / mean(s$offsides))
   }
   cat("\nMean ESPN/StatsBomb ratio across", length(teams_both), "teams:\n")
   for (stat in names(ratios)) cat(sprintf("  %-10s %.3f\n", stat, mean(ratios[[stat]])))

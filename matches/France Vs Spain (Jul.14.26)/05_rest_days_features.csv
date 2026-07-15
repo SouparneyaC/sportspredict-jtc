@@ -1,0 +1,3361 @@
+date,team,side,opponent,rest_days
+1904-05-01,Belgium,home,France,
+1904-05-01,France,away,Belgium,
+1905-02-12,France,home,Switzerland,287
+1905-02-12,Switzerland,away,France,
+1905-05-07,Belgium,home,France,7
+1905-05-07,France,away,Belgium,84
+1906-04-22,France,home,Belgium,350
+1906-04-22,Belgium,away,France,343
+1907-04-21,Belgium,home,France,7
+1907-04-21,France,away,Belgium,364
+1908-03-08,Switzerland,home,France,1120
+1908-03-08,France,away,Switzerland,322
+1908-04-12,France,home,Belgium,35
+1908-04-12,Belgium,away,France,14
+1908-05-10,Netherlands,home,France,14
+1908-05-10,France,away,Netherlands,28
+1908-10-22,France,home,Denmark,165
+1908-10-22,Denmark,away,France,
+1909-05-09,Belgium,home,France,14
+1909-05-09,France,away,Belgium,199
+1910-04-03,France,home,Belgium,329
+1910-04-03,Belgium,away,France,21
+1910-05-15,Italy,home,France,
+1910-05-15,France,away,Italy,42
+1911-01-01,France,home,Hungary,231
+1911-01-01,Hungary,away,France,56
+1911-04-09,France,home,Italy,98
+1911-04-09,Italy,away,France,93
+1911-04-23,Switzerland,home,France,28
+1911-04-23,France,away,Switzerland,14
+1911-04-30,Belgium,home,France,7
+1911-04-30,France,away,Belgium,7
+1911-10-29,Luxembourg,home,France,
+1911-10-29,France,away,Luxembourg,182
+1912-01-28,France,home,Belgium,91
+1912-01-28,Belgium,away,France,273
+1912-02-10,France,home,Catalonia,13
+1912-02-10,Catalonia,away,France,
+1912-02-18,France,home,Switzerland,8
+1912-02-18,Switzerland,away,France,112
+1912-03-17,Italy,home,France,301
+1912-03-17,France,away,Italy,28
+1912-12-01,Catalonia,home,France,295
+1912-12-01,France,away,Catalonia,259
+1913-01-12,France,home,Italy,42
+1913-01-12,Italy,away,France,21
+1913-02-16,Belgium,home,France,294
+1913-02-16,France,away,Belgium,35
+1913-03-09,Switzerland,home,France,308
+1913-03-09,France,away,Switzerland,21
+1913-04-20,France,home,Luxembourg,42
+1913-04-20,Luxembourg,away,France,539
+1914-01-25,France,home,Belgium,280
+1914-01-25,Belgium,away,France,63
+1914-02-08,Luxembourg,home,France,294
+1914-02-08,France,away,Luxembourg,14
+1914-03-08,France,home,Switzerland,28
+1914-03-08,Switzerland,away,France,126
+1914-03-29,Italy,home,France,77
+1914-03-29,France,away,Italy,21
+1914-05-31,Hungary,home,France,28
+1914-05-31,France,away,Hungary,63
+1919-03-09,Belgium,home,France,1778
+1919-03-09,France,away,Belgium,1743
+1919-06-24,France,home,Romania,107
+1919-06-24,Romania,away,France,
+1919-06-26,France,home,Greece,2
+1919-06-26,Greece,away,France,1
+1919-06-28,France,home,Italy,2
+1919-06-28,Italy,away,France,2
+1919-06-29,France,home,Czechoslovakia,1
+1919-06-29,Czechoslovakia,away,France,1
+1920-01-18,Italy,home,France,204
+1920-01-18,France,away,Italy,203
+1920-02-29,Switzerland,home,France,658
+1920-02-29,France,away,Switzerland,42
+1920-03-28,France,home,Belgium,28
+1920-03-28,Belgium,away,France,274
+1920-08-28,Spain,home,Denmark,
+1920-08-28,Denmark,away,Spain,76
+1920-08-29,France,home,Italy,154
+1920-08-29,Italy,away,France,1
+1920-08-29,Belgium,home,Spain,154
+1920-08-29,Spain,away,Belgium,1
+1920-08-31,France,home,Czechoslovakia,2
+1920-08-31,Czechoslovakia,away,France,2
+1920-09-01,Spain,home,Sweden,3
+1920-09-01,Sweden,away,Spain,3
+1920-09-02,Spain,home,Italy,1
+1920-09-02,Italy,away,Spain,2
+1920-09-05,Spain,home,Netherlands,3
+1920-09-05,Netherlands,away,Spain,5
+1921-02-20,France,home,Italy,173
+1921-02-20,Italy,away,France,171
+1921-03-06,Belgium,home,France,185
+1921-03-06,France,away,Belgium,14
+1921-11-13,France,home,Netherlands,252
+1921-11-13,Netherlands,away,France,154
+1921-12-18,Spain,home,Portugal,469
+1921-12-18,Portugal,away,Spain,
+1922-01-15,France,home,Belgium,63
+1922-01-15,Belgium,away,France,239
+1922-04-30,France,home,Spain,105
+1922-04-30,Spain,away,France,133
+1922-06-11,Norway,home,France,17
+1922-06-11,France,away,Norway,42
+1922-12-17,Portugal,home,Spain,364
+1922-12-17,Spain,away,Portugal,231
+1923-01-28,Spain,home,France,42
+1923-01-28,France,away,Spain,231
+1923-02-04,Belgium,home,Spain,259
+1923-02-04,Spain,away,Belgium,7
+1923-02-25,Belgium,home,France,21
+1923-02-25,France,away,Belgium,28
+1923-04-02,Netherlands,home,France,134
+1923-04-02,France,away,Netherlands,36
+1923-04-22,France,home,Switzerland,20
+1923-04-22,Switzerland,away,France,42
+1923-05-10,France,home,England,18
+1923-05-10,England,away,France,26
+1923-10-28,France,home,Norway,171
+1923-10-28,Norway,away,France,28
+1923-12-16,Spain,home,Portugal,315
+1923-12-16,Portugal,away,Spain,364
+1924-01-13,France,home,Belgium,77
+1924-01-13,Belgium,away,France,73
+1924-03-09,Italy,home,Spain,49
+1924-03-09,Spain,away,Italy,84
+1924-03-13,Catalonia,home,Spain,1074
+1924-03-13,Spain,away,Catalonia,4
+1924-03-23,Switzerland,home,France,119
+1924-03-23,France,away,Switzerland,70
+1924-05-17,France,home,England,55
+1924-05-17,England,away,France,35
+1924-05-25,Italy,home,Spain,49
+1924-05-25,Spain,away,Italy,73
+1924-05-27,France,home,Latvia,10
+1924-05-27,Latvia,away,France,308
+1924-06-01,France,home,Uruguay,5
+1924-06-01,Uruguay,away,France,3
+1924-06-04,France,home,Hungary,3
+1924-06-04,Hungary,away,France,6
+1924-11-11,Belgium,home,France,37
+1924-11-11,France,away,Belgium,160
+1924-12-21,Spain,home,Austria,210
+1924-12-21,Austria,away,Spain,42
+1925-03-22,Italy,home,France,119
+1925-03-22,France,away,Italy,131
+1925-04-19,France,home,Austria,28
+1925-04-19,Austria,away,France,28
+1925-05-21,France,home,England,32
+1925-05-21,England,away,France,47
+1925-06-01,Switzerland,home,Spain,8
+1925-06-01,Spain,away,Switzerland,162
+1925-06-14,Spain,home,Italy,13
+1925-06-14,Italy,away,Spain,84
+1925-09-27,Austria,home,Spain,7
+1925-09-27,Spain,away,Austria,105
+1925-10-04,Hungary,home,Spain,14
+1925-10-04,Spain,away,Hungary,7
+1926-04-11,France,home,Belgium,325
+1926-04-11,Belgium,away,France,28
+1926-04-18,France,home,Portugal,7
+1926-04-18,Portugal,away,France,304
+1926-04-25,France,home,Switzerland,7
+1926-04-25,Switzerland,away,France,7
+1926-05-30,Austria,home,France,28
+1926-05-30,France,away,Austria,35
+1926-06-13,France,home,Yugoslavia,14
+1926-06-13,Yugoslavia,away,France,14
+1926-06-20,Belgium,home,France,27
+1926-06-20,France,away,Belgium,7
+1926-12-19,Spain,home,Hungary,441
+1926-12-19,Hungary,away,Spain,35
+1927-03-16,Portugal,home,France,80
+1927-03-16,France,away,Portugal,269
+1927-04-17,Spain,home,Switzerland,119
+1927-04-17,Switzerland,away,Spain,77
+1927-04-24,France,home,Italy,39
+1927-04-24,Italy,away,France,7
+1927-05-22,France,home,Spain,28
+1927-05-22,Spain,away,France,35
+1927-05-26,France,home,England,4
+1927-05-26,England,away,France,5
+1927-05-29,Italy,home,Spain,35
+1927-05-29,Spain,away,Italy,7
+1927-06-12,Hungary,home,France,49
+1927-06-12,France,away,Hungary,17
+1928-01-08,Portugal,home,Spain,266
+1928-01-08,Spain,away,Portugal,224
+1928-02-21,France,home,Northern Ireland,254
+1928-02-21,Northern Ireland,away,France,17
+1928-03-11,Switzerland,home,France,70
+1928-03-11,France,away,Switzerland,19
+1928-04-15,France,home,Belgium,35
+1928-04-15,Belgium,away,France,14
+1928-04-22,Spain,home,Italy,105
+1928-04-22,Italy,away,Spain,7
+1928-04-29,France,home,Portugal,14
+1928-04-29,Portugal,away,France,14
+1928-05-13,France,home,Czechoslovakia,14
+1928-05-13,Czechoslovakia,away,France,21
+1928-05-17,France,home,England,4
+1928-05-17,England,away,France,47
+1928-05-29,Italy,home,France,37
+1928-05-29,France,away,Italy,12
+1928-05-30,Spain,home,Mexico,38
+1928-05-30,Mexico,away,Spain,1627
+1928-06-01,Italy,home,Spain,3
+1928-06-01,Spain,away,Italy,2
+1928-06-04,Italy,home,Spain,3
+1928-06-04,Spain,away,Italy,3
+1929-02-24,France,home,Hungary,271
+1929-02-24,Hungary,away,France,115
+1929-03-17,Spain,home,Portugal,286
+1929-03-17,Portugal,away,Spain,286
+1929-03-24,France,home,Portugal,28
+1929-03-24,Portugal,away,France,7
+1929-04-14,Spain,home,France,28
+1929-04-14,France,away,Spain,21
+1929-05-09,France,home,England,25
+1929-05-09,England,away,France,26
+1929-05-15,Spain,home,England,31
+1929-05-15,England,away,Spain,4
+1929-05-19,France,home,Yugoslavia,10
+1929-05-19,Yugoslavia,away,France,9
+1929-05-26,Belgium,home,France,15
+1929-05-26,France,away,Belgium,7
+1930-01-01,Spain,home,Czechoslovakia,231
+1930-01-01,Czechoslovakia,away,Spain,65
+1930-02-23,Portugal,home,France,42
+1930-02-23,France,away,Portugal,273
+1930-03-23,France,home,Switzerland,28
+1930-03-23,Switzerland,away,France,42
+1930-04-13,France,home,Belgium,21
+1930-04-13,Belgium,away,France,322
+1930-05-11,France,home,Czechoslovakia,28
+1930-05-11,Czechoslovakia,away,France,10
+1930-05-18,France,home,Scotland,7
+1930-05-18,Scotland,away,France,43
+1930-05-25,Belgium,home,France,7
+1930-05-25,France,away,Belgium,7
+1930-06-14,Czechoslovakia,home,Spain,34
+1930-06-14,Spain,away,Czechoslovakia,164
+1930-06-22,Italy,home,Spain,42
+1930-06-22,Spain,away,Italy,8
+1930-07-13,France,home,Mexico,49
+1930-07-13,Mexico,away,France,768
+1930-07-15,Argentina,home,France,51
+1930-07-15,France,away,Argentina,2
+1930-07-19,Chile,home,France,3
+1930-07-19,France,away,Chile,4
+1930-08-01,Brazil,home,France,12
+1930-08-01,France,away,Brazil,13
+1930-11-30,Portugal,home,Spain,175
+1930-11-30,Spain,away,Portugal,161
+1930-12-07,France,home,Belgium,128
+1930-12-07,Belgium,away,France,70
+1931-01-25,Italy,home,France,217
+1931-01-25,France,away,Italy,49
+1931-02-15,France,home,Czechoslovakia,21
+1931-02-15,Czechoslovakia,away,France,112
+1931-03-15,France,home,Germany,28
+1931-03-15,Germany,away,France,133
+1931-04-19,Spain,home,Italy,140
+1931-04-19,Italy,away,Spain,7
+1931-04-26,Spain,home,Republic of Ireland,7
+1931-04-26,Republic of Ireland,away,Spain,350
+1931-05-14,France,home,England,60
+1931-05-14,England,away,France,47
+1931-11-29,France,home,Netherlands,199
+1931-11-29,Netherlands,away,France,168
+1931-12-09,England,home,Spain,21
+1931-12-09,Spain,away,England,227
+1931-12-13,Republic of Ireland,home,Spain,231
+1931-12-13,Spain,away,Republic of Ireland,4
+1932-03-20,Switzerland,home,France,14
+1932-03-20,France,away,Switzerland,112
+1932-04-10,France,home,Italy,21
+1932-04-10,Italy,away,France,21
+1932-04-24,Spain,home,Yugoslavia,133
+1932-04-24,Yugoslavia,away,Spain,182
+1932-05-01,Belgium,home,France,14
+1932-05-01,France,away,Belgium,21
+1932-05-08,France,home,Scotland,7
+1932-05-08,Scotland,away,France,29
+1932-06-05,Yugoslavia,home,France,7
+1932-06-05,France,away,Yugoslavia,28
+1932-06-09,Bulgaria,home,France,71
+1932-06-09,France,away,Bulgaria,4
+1932-06-12,Romania,home,France,196
+1932-06-12,France,away,Romania,3
+1933-02-12,France,home,Austria,245
+1933-02-12,Austria,away,France,63
+1933-03-19,Germany,home,France,77
+1933-03-19,France,away,Germany,35
+1933-03-26,France,home,Belgium,7
+1933-03-26,Belgium,away,France,14
+1933-04-02,Spain,home,Portugal,343
+1933-04-02,Portugal,away,Spain,63
+1933-04-23,France,home,Spain,28
+1933-04-23,Spain,away,France,21
+1933-04-30,Yugoslavia,home,Spain,203
+1933-04-30,Spain,away,Yugoslavia,7
+1933-05-21,Spain,home,Bulgaria,21
+1933-05-21,Bulgaria,away,Spain,198
+1933-05-25,France,home,Wales,32
+1933-05-25,Wales,away,France,169
+1933-06-10,Czechoslovakia,home,France,34
+1933-06-10,France,away,Czechoslovakia,16
+1933-12-06,England,home,France,21
+1933-12-06,France,away,England,179
+1934-01-21,Belgium,home,France,56
+1934-01-21,France,away,Belgium,46
+1934-02-02,Catalonia,home,Spain,1128
+1934-02-02,Spain,away,Catalonia,257
+1934-03-11,France,home,Switzerland,49
+1934-03-11,Switzerland,away,France,98
+1934-03-11,Spain,home,Portugal,37
+1934-03-11,Portugal,away,Spain,343
+1934-03-18,Portugal,home,Spain,7
+1934-03-18,Spain,away,Portugal,7
+1934-03-25,France,home,Czechoslovakia,14
+1934-03-25,Czechoslovakia,away,France,161
+1934-04-15,Luxembourg,home,France,35
+1934-04-15,France,away,Luxembourg,21
+1934-05-10,Netherlands,home,France,11
+1934-05-10,France,away,Netherlands,25
+1934-05-27,Austria,home,France,32
+1934-05-27,France,away,Austria,17
+1934-05-27,Brazil,home,Spain,539
+1934-05-27,Spain,away,Brazil,70
+1934-05-31,Italy,home,Spain,4
+1934-05-31,Spain,away,Italy,4
+1934-06-01,Italy,home,Spain,1
+1934-06-01,Spain,away,Italy,1
+1934-12-16,France,home,Yugoslavia,203
+1934-12-16,Yugoslavia,away,France,105
+1935-01-24,Spain,home,France,237
+1935-01-24,France,away,Spain,39
+1935-02-17,Italy,home,France,70
+1935-02-17,France,away,Italy,24
+1935-03-17,France,home,Germany,28
+1935-03-17,Germany,away,France,28
+1935-04-14,Belgium,home,France,14
+1935-04-14,France,away,Belgium,28
+1935-05-05,Portugal,home,Spain,413
+1935-05-05,Spain,away,Portugal,101
+1935-05-12,Germany,home,Spain,4
+1935-05-12,Spain,away,Germany,7
+1935-05-19,France,home,Hungary,35
+1935-05-19,Hungary,away,France,7
+1935-10-27,Switzerland,home,France,150
+1935-10-27,France,away,Switzerland,161
+1935-11-10,France,home,Sweden,14
+1935-11-10,Sweden,away,France,49
+1936-01-12,France,home,Netherlands,63
+1936-01-12,Netherlands,away,France,35
+1936-01-19,Spain,home,Austria,252
+1936-01-19,Austria,away,Spain,105
+1936-02-09,France,home,Czechoslovakia,28
+1936-02-09,Czechoslovakia,away,France,105
+1936-02-23,Spain,home,Germany,35
+1936-02-23,Germany,away,Spain,81
+1936-03-08,France,home,Belgium,28
+1936-03-08,Belgium,away,France,21
+1936-05-03,Switzerland,home,Spain,28
+1936-05-03,Spain,away,Switzerland,70
+1936-12-13,France,home,Yugoslavia,280
+1936-12-13,Yugoslavia,away,France,98
+1937-01-24,France,home,Austria,42
+1937-01-24,Austria,away,France,77
+1937-02-21,Belgium,home,France,273
+1937-02-21,France,away,Belgium,28
+1937-03-21,Germany,home,France,49
+1937-03-21,France,away,Germany,28
+1937-05-23,France,home,Republic of Ireland,63
+1937-05-23,Republic of Ireland,away,France,6
+1937-10-10,France,home,Switzerland,140
+1937-10-10,Switzerland,away,France,21
+1937-10-31,Netherlands,home,France,182
+1937-10-31,France,away,Netherlands,21
+1937-11-28,Spain,home,Portugal,574
+1937-11-28,Portugal,away,Spain,640
+1937-12-05,France,home,Italy,35
+1937-12-05,Italy,away,France,35
+1938-01-30,France,home,Belgium,56
+1938-01-30,Belgium,away,France,234
+1938-01-30,Portugal,home,Spain,21
+1938-01-30,Spain,away,Portugal,63
+1938-03-24,France,home,Bulgaria,53
+1938-03-24,Bulgaria,away,France,137
+1938-05-26,France,home,England,63
+1938-05-26,England,away,France,5
+1938-06-05,France,home,Belgium,10
+1938-06-05,Belgium,away,France,7
+1938-06-12,France,home,Italy,7
+1938-06-12,Italy,away,France,7
+1938-12-04,Italy,home,France,14
+1938-12-04,France,away,Italy,175
+1939-01-22,France,home,Poland,49
+1939-01-22,Poland,away,France,70
+1939-03-16,France,home,Hungary,53
+1939-03-16,Hungary,away,France,18
+1939-05-18,Belgium,home,France,4
+1939-05-18,France,away,Belgium,63
+1939-05-20,France,home,Wales,2
+1939-05-20,Wales,away,France,66
+1940-01-28,France,home,Portugal,253
+1940-01-28,Portugal,away,France,350
+1941-01-12,Portugal,home,Spain,350
+1941-01-12,Spain,away,Portugal,1078
+1941-03-16,Spain,home,Portugal,63
+1941-03-16,Portugal,away,Spain,63
+1941-12-28,Spain,home,Switzerland,287
+1941-12-28,Switzerland,away,Spain,42
+1942-03-08,France,home,Switzerland,770
+1942-03-08,Switzerland,away,France,35
+1942-03-15,Spain,home,France,77
+1942-03-15,France,away,Spain,7
+1942-04-12,Germany,home,Spain,70
+1942-04-12,Spain,away,Germany,28
+1942-04-19,Italy,home,Spain,14
+1942-04-19,Spain,away,Italy,7
+1944-12-24,France,home,Belgium,1015
+1944-12-24,Belgium,away,France,1708
+1945-03-11,Portugal,home,Spain,1165
+1945-03-11,Spain,away,Portugal,1057
+1945-04-08,Switzerland,home,France,664
+1945-04-08,France,away,Switzerland,105
+1945-05-06,Spain,home,Portugal,56
+1945-05-06,Portugal,away,Spain,56
+1945-05-26,England,home,France,2194
+1945-05-26,France,away,England,48
+1945-12-06,Austria,home,France,108
+1945-12-06,France,away,Austria,194
+1945-12-15,Belgium,home,France,216
+1945-12-15,France,away,Belgium,9
+1946-04-07,France,home,Czechoslovakia,113
+1946-04-07,Czechoslovakia,away,France,2338
+1946-04-14,Portugal,home,France,328
+1946-04-14,France,away,Portugal,7
+1946-05-05,France,home,Austria,21
+1946-05-05,Austria,away,France,21
+1946-05-19,France,home,England,14
+1946-05-19,England,away,France,8
+1946-06-23,Spain,home,Republic of Ireland,413
+1946-06-23,Republic of Ireland,away,Spain,7
+1947-01-26,Portugal,home,Spain,21
+1947-01-26,Spain,away,Portugal,217
+1947-03-02,Republic of Ireland,home,Spain,153
+1947-03-02,Spain,away,Republic of Ireland,35
+1947-03-23,France,home,Portugal,308
+1947-03-23,Portugal,away,France,56
+1947-05-03,England,home,France,21
+1947-05-03,France,away,England,41
+1947-05-26,France,home,Netherlands,23
+1947-05-26,Netherlands,away,France,22
+1947-06-01,France,home,Belgium,6
+1947-06-01,Belgium,away,France,14
+1947-06-08,Switzerland,home,France,21
+1947-06-08,France,away,Switzerland,7
+1947-10-19,Catalonia,home,Spain,4865
+1947-10-19,Spain,away,Catalonia,231
+1947-11-23,Portugal,home,France,182
+1947-11-23,France,away,Portugal,168
+1948-03-21,Spain,home,Portugal,154
+1948-03-21,Portugal,away,Spain,119
+1948-04-04,France,home,Italy,133
+1948-04-04,Italy,away,France,112
+1948-05-23,France,home,Scotland,49
+1948-05-23,Scotland,away,France,6
+1948-05-30,Spain,home,Republic of Ireland,70
+1948-05-30,Republic of Ireland,away,Spain,7
+1948-06-06,Belgium,home,France,39
+1948-06-06,France,away,Belgium,14
+1948-06-12,Czechoslovakia,home,France,20
+1948-06-12,France,away,Czechoslovakia,6
+1948-06-20,Switzerland,home,Spain,34
+1948-06-20,Spain,away,Switzerland,21
+1948-10-17,France,home,Belgium,127
+1948-10-17,Belgium,away,France,133
+1949-01-02,Spain,home,Belgium,196
+1949-01-02,Belgium,away,Spain,42
+1949-03-20,Portugal,home,Spain,21
+1949-03-20,Spain,away,Portugal,77
+1949-03-27,Spain,home,Italy,7
+1949-03-27,Italy,away,Spain,28
+1949-04-23,Netherlands,home,France,41
+1949-04-23,France,away,Netherlands,188
+1949-04-27,Scotland,home,France,18
+1949-04-27,France,away,Scotland,4
+1949-05-22,France,home,England,25
+1949-05-22,England,away,France,4
+1949-06-04,France,home,Switzerland,13
+1949-06-04,Switzerland,away,France,9
+1949-06-12,Republic of Ireland,home,Spain,10
+1949-06-12,Spain,away,Republic of Ireland,77
+1949-06-19,France,home,Spain,15
+1949-06-19,Spain,away,France,7
+1949-10-09,Yugoslavia,home,France,21
+1949-10-09,France,away,Yugoslavia,112
+1949-10-30,France,home,Yugoslavia,21
+1949-10-30,Yugoslavia,away,France,21
+1949-11-13,France,home,Czechoslovakia,14
+1949-11-13,Czechoslovakia,away,France,14
+1949-12-11,France,home,Yugoslavia,28
+1949-12-11,Yugoslavia,away,France,28
+1950-04-02,Spain,home,Portugal,287
+1950-04-02,Portugal,away,Spain,315
+1950-04-09,Portugal,home,Spain,7
+1950-04-09,Spain,away,Portugal,7
+1950-05-27,France,home,Scotland,167
+1950-05-27,Scotland,away,France,6
+1950-06-04,Belgium,home,France,17
+1950-06-04,France,away,Belgium,8
+1950-06-25,Spain,home,United States,77
+1950-06-25,United States,away,Spain,277
+1950-06-29,Chile,home,Spain,4
+1950-06-29,Spain,away,Chile,4
+1950-07-02,England,home,Spain,3
+1950-07-02,Spain,away,England,3
+1950-07-09,Spain,home,Uruguay,7
+1950-07-09,Uruguay,away,Spain,7
+1950-07-13,Brazil,home,Spain,4
+1950-07-13,Spain,away,Brazil,4
+1950-07-16,Spain,home,Sweden,3
+1950-07-16,Sweden,away,Spain,3
+1950-11-01,France,home,Belgium,150
+1950-11-01,Belgium,away,France,150
+1950-12-10,France,home,Netherlands,39
+1950-12-10,Netherlands,away,France,28
+1951-02-06,France,home,Yugoslavia,58
+1951-02-06,Yugoslavia,away,France,76
+1951-02-18,Spain,home,Switzerland,217
+1951-02-18,Switzerland,away,Spain,88
+1951-05-12,Northern Ireland,home,France,66
+1951-05-12,France,away,Northern Ireland,95
+1951-05-16,Scotland,home,France,4
+1951-05-16,France,away,Scotland,4
+1951-06-03,Italy,home,France,28
+1951-06-03,France,away,Italy,18
+1951-06-10,Belgium,home,Spain,21
+1951-06-10,Spain,away,Belgium,112
+1951-06-17,Sweden,home,Spain,7
+1951-06-17,Spain,away,Sweden,7
+1951-10-03,England,home,France,137
+1951-10-03,France,away,England,122
+1951-10-14,Switzerland,home,France,112
+1951-10-14,France,away,Switzerland,11
+1951-11-01,France,home,Austria,18
+1951-11-01,Austria,away,France,18
+1952-03-26,France,home,Sweden,146
+1952-03-26,Sweden,away,France,133
+1952-04-20,France,home,Portugal,25
+1952-04-20,Portugal,away,France,308
+1952-05-22,Belgium,home,France,46
+1952-05-22,France,away,Belgium,32
+1952-06-01,Spain,home,Republic of Ireland,350
+1952-06-01,Republic of Ireland,away,Spain,25
+1952-06-08,Turkey,home,Spain,7
+1952-06-08,Spain,away,Turkey,7
+1952-10-05,France,home,Germany,136
+1952-10-05,Germany,away,France,154
+1952-10-19,Austria,home,France,28
+1952-10-19,France,away,Austria,14
+1952-11-11,France,home,Northern Ireland,23
+1952-11-11,Northern Ireland,away,France,6
+1952-11-16,Republic of Ireland,home,France,168
+1952-11-16,France,away,Republic of Ireland,5
+1952-12-07,Spain,home,Argentina,182
+1952-12-07,Argentina,away,Spain,574
+1952-12-25,France,home,Belgium,39
+1952-12-25,Belgium,away,France,29
+1952-12-28,Spain,home,Germany,21
+1952-12-28,Germany,away,Spain,7
+1953-03-19,Spain,home,Belgium,81
+1953-03-19,Belgium,away,Spain,84
+1953-05-14,France,home,Wales,140
+1953-05-14,Wales,away,France,29
+1953-06-11,Sweden,home,France,14
+1953-06-11,France,away,Sweden,28
+1953-07-05,Argentina,home,Spain,49
+1953-07-05,Spain,away,Argentina,108
+1953-07-12,Chile,home,Spain,49
+1953-07-12,Spain,away,Chile,7
+1953-08-09,Catalonia,home,Spain,2121
+1953-08-09,Spain,away,Catalonia,28
+1953-09-20,Luxembourg,home,France,518
+1953-09-20,France,away,Luxembourg,101
+1953-10-04,Republic of Ireland,home,France,193
+1953-10-04,France,away,Republic of Ireland,14
+1953-10-18,Yugoslavia,home,France,135
+1953-10-18,France,away,Yugoslavia,14
+1953-11-08,Spain,home,Sweden,91
+1953-11-08,Sweden,away,Spain,21
+1953-11-11,France,home,Switzerland,24
+1953-11-11,Switzerland,away,France,52
+1953-11-25,France,home,Republic of Ireland,14
+1953-11-25,Republic of Ireland,away,France,28
+1953-12-17,France,home,Luxembourg,22
+1953-12-17,Luxembourg,away,France,50
+1954-01-06,Spain,home,Turkey,59
+1954-01-06,Turkey,away,Spain,215
+1954-03-14,Turkey,home,Spain,67
+1954-03-14,Spain,away,Turkey,67
+1954-03-17,Turkey,home,Spain,3
+1954-03-17,Spain,away,Turkey,3
+1954-04-11,France,home,Italy,115
+1954-04-11,Italy,away,France,77
+1954-05-30,Belgium,home,France,21
+1954-05-30,France,away,Belgium,49
+1954-06-16,France,home,Yugoslavia,17
+1954-06-16,Yugoslavia,away,France,31
+1954-06-19,France,home,Mexico,3
+1954-06-19,Mexico,away,France,3
+1954-10-16,Germany,home,France,20
+1954-10-16,France,away,Germany,119
+1954-11-11,France,home,Belgium,26
+1954-11-11,Belgium,away,France,18
+1955-03-17,Spain,home,France,365
+1955-03-17,France,away,Spain,126
+1955-04-03,France,home,Sweden,17
+1955-04-03,Sweden,away,France,154
+1955-05-15,France,home,England,42
+1955-05-15,England,away,France,43
+1955-05-18,Spain,home,England,62
+1955-05-18,England,away,Spain,3
+1955-06-19,Switzerland,home,Spain,31
+1955-06-19,Spain,away,Switzerland,32
+1955-10-09,Switzerland,home,France,22
+1955-10-09,France,away,Switzerland,147
+1955-10-23,Russia,home,France,28
+1955-10-23,France,away,Russia,14
+1955-11-11,France,home,Yugoslavia,19
+1955-11-11,Yugoslavia,away,France,12
+1955-11-27,Republic of Ireland,home,Spain,39
+1955-11-27,Spain,away,Republic of Ireland,161
+1955-11-30,England,home,Spain,28
+1955-11-30,Spain,away,England,3
+1955-12-25,Belgium,home,France,70
+1955-12-25,France,away,Belgium,44
+1956-02-15,Italy,home,France,59
+1956-02-15,France,away,Italy,52
+1956-03-25,France,home,Austria,39
+1956-03-25,Austria,away,France,123
+1956-06-03,Portugal,home,Spain,56
+1956-06-03,Spain,away,Portugal,186
+1956-10-07,France,home,Hungary,196
+1956-10-07,Hungary,away,France,14
+1956-10-21,France,home,Russia,14
+1956-10-21,Russia,away,France,28
+1956-11-11,France,home,Belgium,21
+1956-11-11,Belgium,away,France,28
+1957-01-30,Spain,home,Netherlands,241
+1957-01-30,Netherlands,away,Spain,87
+1957-03-10,Spain,home,Switzerland,39
+1957-03-10,Switzerland,away,Spain,109
+1957-03-31,Belgium,home,Spain,98
+1957-03-31,Spain,away,Belgium,21
+1957-05-08,Scotland,home,Spain,32
+1957-05-08,Spain,away,Scotland,38
+1957-05-26,Spain,home,Scotland,18
+1957-05-26,Scotland,away,Spain,4
+1957-06-02,France,home,Iceland,203
+1957-06-02,Iceland,away,France,338
+1957-09-01,Iceland,home,France,53
+1957-09-01,France,away,Iceland,91
+1957-10-06,Hungary,home,France,14
+1957-10-06,France,away,Hungary,35
+1957-10-27,Belgium,home,France,53
+1957-10-27,France,away,Belgium,21
+1957-11-24,Switzerland,home,Spain,18
+1957-11-24,Spain,away,Switzerland,182
+1957-11-27,England,home,France,21
+1957-11-27,France,away,England,31
+1957-12-25,France,home,Bulgaria,28
+1957-12-25,Bulgaria,away,France,52
+1958-03-13,France,home,Spain,78
+1958-03-13,Spain,away,France,109
+1958-03-19,Germany,home,Spain,17
+1958-03-19,Spain,away,Germany,6
+1958-04-13,Spain,home,Portugal,25
+1958-04-13,Portugal,away,Spain,112
+1958-04-16,France,home,Switzerland,34
+1958-04-16,Switzerland,away,France,143
+1958-06-08,France,home,Paraguay,53
+1958-06-08,Paraguay,away,France,32
+1958-06-11,France,home,Yugoslavia,3
+1958-06-11,Yugoslavia,away,France,3
+1958-06-15,France,home,Scotland,4
+1958-06-15,Scotland,away,France,4
+1958-06-19,France,home,Northern Ireland,4
+1958-06-19,Northern Ireland,away,France,2
+1958-06-24,Brazil,home,France,5
+1958-06-24,France,away,Brazil,5
+1958-06-28,France,home,Germany,4
+1958-06-28,Germany,away,France,4
+1958-10-01,France,home,Greece,95
+1958-10-01,Greece,away,France,325
+1958-10-05,Austria,home,France,21
+1958-10-05,France,away,Austria,4
+1958-10-15,Spain,home,Northern Ireland,185
+1958-10-15,Northern Ireland,away,Spain,11
+1958-10-26,France,home,Germany,21
+1958-10-26,Germany,away,France,32
+1958-11-09,France,home,Italy,14
+1958-11-09,Italy,away,France,231
+1958-12-03,Greece,home,France,63
+1958-12-03,France,away,Greece,24
+1959-02-28,Italy,home,Spain,77
+1959-02-28,Spain,away,Italy,136
+1959-03-01,France,home,Belgium,88
+1959-03-01,Belgium,away,France,98
+1959-06-28,Poland,home,Spain,7
+1959-06-28,Spain,away,Poland,120
+1959-10-11,Bulgaria,home,France,133
+1959-10-11,France,away,Bulgaria,224
+1959-10-14,Spain,home,Poland,108
+1959-10-14,Poland,away,Spain,45
+1959-11-11,France,home,Portugal,31
+1959-11-11,Portugal,away,France,136
+1959-11-22,Spain,home,Austria,39
+1959-11-22,Austria,away,Spain,60
+1959-12-13,France,home,Austria,32
+1959-12-13,Austria,away,France,21
+1959-12-17,France,home,Spain,4
+1959-12-17,Spain,away,France,25
+1960-02-28,Belgium,home,France,147
+1960-02-28,France,away,Belgium,73
+1960-03-13,Spain,home,Italy,87
+1960-03-13,Italy,away,Spain,67
+1960-03-16,France,home,Chile,17
+1960-03-16,Chile,away,France,119
+1960-03-27,Austria,home,France,105
+1960-03-27,France,away,Austria,11
+1960-05-15,Spain,home,England,63
+1960-05-15,England,away,Spain,4
+1960-07-06,France,home,Yugoslavia,101
+1960-07-06,Yugoslavia,away,France,45
+1960-07-09,France,home,Czechoslovakia,3
+1960-07-09,Czechoslovakia,away,France,3
+1960-07-10,Peru,home,Spain,420
+1960-07-10,Spain,away,Peru,56
+1960-07-14,Chile,home,Spain,15
+1960-07-14,Spain,away,Chile,4
+1960-07-17,Chile,home,Spain,3
+1960-07-17,Spain,away,Chile,3
+1960-07-24,Argentina,home,Spain,12
+1960-07-24,Spain,away,Argentina,7
+1960-09-25,Finland,home,France,28
+1960-09-25,France,away,Finland,78
+1960-09-28,Poland,home,France,94
+1960-09-28,France,away,Poland,3
+1960-10-12,Switzerland,home,France,147
+1960-10-12,France,away,Switzerland,14
+1960-10-26,England,home,Spain,7
+1960-10-26,Spain,away,England,94
+1960-10-30,Austria,home,Spain,56
+1960-10-30,Spain,away,Austria,4
+1960-10-30,Sweden,home,France,7
+1960-10-30,France,away,Sweden,18
+1960-12-11,France,home,Bulgaria,42
+1960-12-11,Bulgaria,away,France,14
+1961-03-15,France,home,Belgium,94
+1961-03-15,Belgium,away,France,7
+1961-04-02,Spain,home,France,154
+1961-04-02,France,away,Spain,18
+1961-04-19,Wales,home,Spain,7
+1961-04-19,Spain,away,Wales,17
+1961-05-18,Spain,home,Wales,29
+1961-05-18,Wales,away,Spain,29
+1961-06-11,Spain,home,Argentina,24
+1961-06-11,Argentina,away,Spain,7
+1961-09-28,France,home,Finland,179
+1961-09-28,Finland,away,France,50
+1961-10-18,Belgium,home,France,14
+1961-10-18,France,away,Belgium,20
+1961-11-12,Bulgaria,home,France,14
+1961-11-12,France,away,Bulgaria,25
+1961-11-12,Morocco,home,Spain,144
+1961-11-12,Spain,away,Morocco,154
+1961-11-23,Spain,home,Morocco,11
+1961-11-23,Morocco,away,Spain,11
+1961-12-10,France,home,Spain,28
+1961-12-10,Spain,away,France,17
+1961-12-16,Bulgaria,home,France,34
+1961-12-16,France,away,Bulgaria,6
+1962-04-11,France,home,Poland,116
+1962-04-11,Poland,away,France,157
+1962-05-05,Italy,home,France,182
+1962-05-05,France,away,Italy,24
+1962-05-31,Czechoslovakia,home,Spain,39
+1962-05-31,Spain,away,Czechoslovakia,172
+1962-06-03,Mexico,home,Spain,4
+1962-06-03,Spain,away,Mexico,3
+1962-06-06,Brazil,home,Spain,4
+1962-06-06,Spain,away,Brazil,3
+1962-10-03,England,home,France,115
+1962-10-03,France,away,England,151
+1962-10-24,Germany,home,France,24
+1962-10-24,France,away,Germany,21
+1962-11-01,Spain,home,Romania,148
+1962-11-01,Romania,away,Spain,18
+1962-11-11,France,home,Hungary,18
+1962-11-11,Hungary,away,France,4
+1962-11-25,Romania,home,Spain,24
+1962-11-25,Spain,away,Romania,24
+1962-12-02,Belgium,home,Spain,28
+1962-12-02,Spain,away,Belgium,7
+1963-01-09,Spain,home,France,38
+1963-01-09,France,away,Spain,59
+1963-02-27,France,home,England,49
+1963-02-27,England,away,France,98
+1963-04-12,France,home,Gambia,44
+1963-04-12,Gambia,away,France,493
+1963-04-14,France,home,Gabon,2
+1963-04-14,Gabon,away,France,2
+1963-04-16,France,home,Burkina Faso,2
+1963-04-16,Burkina Faso,away,France,2
+1963-04-17,Netherlands,home,France,17
+1963-04-17,France,away,Netherlands,1
+1963-04-18,Senegal,home,France,2
+1963-04-18,France,away,Senegal,1
+1963-04-20,France,home,Madagascar,2
+1963-04-20,Madagascar,away,France,2
+1963-04-28,France,home,Brazil,8
+1963-04-28,Brazil,away,France,4
+1963-05-30,Spain,home,Northern Ireland,141
+1963-05-30,Northern Ireland,away,Spain,57
+1963-06-13,Spain,home,Scotland,14
+1963-06-13,Scotland,away,Spain,4
+1963-09-29,Bulgaria,home,France,11
+1963-09-29,France,away,Bulgaria,154
+1963-10-26,France,home,Bulgaria,27
+1963-10-26,Bulgaria,away,France,27
+1963-10-30,Northern Ireland,home,Spain,18
+1963-10-30,Spain,away,Northern Ireland,139
+1963-11-11,France,home,Switzerland,16
+1963-11-11,Switzerland,away,France,8
+1963-12-01,Spain,home,Belgium,32
+1963-12-01,Belgium,away,Spain,42
+1963-12-25,France,home,Belgium,44
+1963-12-25,Belgium,away,France,24
+1964-03-11,Spain,home,Republic of Ireland,101
+1964-03-11,Republic of Ireland,away,Spain,150
+1964-04-08,Republic of Ireland,home,Spain,28
+1964-04-08,Spain,away,Republic of Ireland,28
+1964-04-25,France,home,Hungary,122
+1964-04-25,Hungary,away,France,174
+1964-05-23,Hungary,home,France,20
+1964-05-23,France,away,Hungary,28
+1964-06-17,Spain,home,Hungary,70
+1964-06-17,Hungary,away,Spain,25
+1964-06-21,Spain,home,Russia,4
+1964-06-21,Russia,away,Spain,4
+1964-10-04,Luxembourg,home,France,5
+1964-10-04,France,away,Luxembourg,134
+1964-11-11,France,home,Norway,38
+1964-11-11,Norway,away,France,3
+1964-11-15,Portugal,home,Spain,161
+1964-11-15,Spain,away,Portugal,147
+1964-12-02,Belgium,home,France,42
+1964-12-02,France,away,Belgium,21
+1965-03-24,France,home,Austria,112
+1965-03-24,Austria,away,France,164
+1965-04-18,Yugoslavia,home,France,147
+1965-04-18,France,away,Yugoslavia,25
+1965-05-05,Republic of Ireland,home,Spain,42
+1965-05-05,Spain,away,Republic of Ireland,171
+1965-05-08,Scotland,home,Spain,28
+1965-05-08,Spain,away,Scotland,3
+1965-06-03,France,home,Argentina,46
+1965-06-03,Argentina,away,France,177
+1965-09-15,Norway,home,France,38
+1965-09-15,France,away,Norway,104
+1965-10-09,France,home,Yugoslavia,24
+1965-10-09,Yugoslavia,away,France,20
+1965-10-27,Spain,home,Republic of Ireland,172
+1965-10-27,Republic of Ireland,away,Spain,175
+1965-11-06,France,home,Luxembourg,28
+1965-11-06,Luxembourg,away,France,48
+1965-11-10,Republic of Ireland,home,Spain,14
+1965-11-10,Spain,away,Republic of Ireland,14
+1965-12-08,Spain,home,England,28
+1965-12-08,England,away,Spain,28
+1966-03-19,France,home,Italy,133
+1966-03-19,Italy,away,France,102
+1966-04-20,France,home,Belgium,32
+1966-04-20,Belgium,away,France,3
+1966-06-05,Russia,home,France,14
+1966-06-05,France,away,Russia,46
+1966-06-23,Spain,home,Uruguay,197
+1966-06-23,Uruguay,away,Spain,4
+1966-07-13,Argentina,home,Spain,21
+1966-07-13,Spain,away,Argentina,20
+1966-07-13,France,home,Mexico,38
+1966-07-13,Mexico,away,France,14
+1966-07-15,France,home,Uruguay,2
+1966-07-15,Uruguay,away,France,4
+1966-07-15,Spain,home,Switzerland,2
+1966-07-15,Switzerland,away,Spain,3
+1966-07-20,England,home,France,4
+1966-07-20,France,away,England,5
+1966-07-20,Germany,home,Spain,4
+1966-07-20,Spain,away,Germany,5
+1966-09-28,Hungary,home,France,7
+1966-09-28,France,away,Hungary,70
+1966-10-22,France,home,Poland,24
+1966-10-22,Poland,away,France,20
+1966-10-23,Republic of Ireland,home,Spain,151
+1966-10-23,Spain,away,Republic of Ireland,95
+1966-11-11,Belgium,home,France,20
+1966-11-11,France,away,Belgium,20
+1966-11-26,Luxembourg,home,France,55
+1966-11-26,France,away,Luxembourg,15
+1966-12-07,Spain,home,Republic of Ireland,45
+1966-12-07,Republic of Ireland,away,Spain,21
+1967-02-01,Turkey,home,Spain,10
+1967-02-01,Spain,away,Turkey,56
+1967-02-28,France,home,Corsica,94
+1967-02-28,Corsica,away,France,
+1967-03-22,France,home,Romania,22
+1967-03-22,Romania,away,France,14
+1967-05-24,England,home,Spain,39
+1967-05-24,Spain,away,England,112
+1967-05-31,Spain,home,Turkey,7
+1967-05-31,Turkey,away,Spain,98
+1967-06-03,France,home,Russia,73
+1967-06-03,Russia,away,France,6
+1967-09-17,Poland,home,France,119
+1967-09-17,France,away,Poland,106
+1967-09-27,Germany,home,France,147
+1967-09-27,France,away,Germany,10
+1967-10-01,Czechoslovakia,home,Spain,105
+1967-10-01,Spain,away,Czechoslovakia,123
+1967-10-22,Spain,home,Czechoslovakia,21
+1967-10-22,Czechoslovakia,away,Spain,21
+1967-10-28,France,home,Belgium,31
+1967-10-28,Belgium,away,France,20
+1967-12-23,France,home,Luxembourg,56
+1967-12-23,Luxembourg,away,France,31
+1968-02-28,Spain,home,Sweden,129
+1968-02-28,Sweden,away,Spain,9
+1968-04-03,England,home,Spain,39
+1968-04-03,Spain,away,England,35
+1968-04-06,France,home,Yugoslavia,105
+1968-04-06,Yugoslavia,away,France,146
+1968-04-24,Yugoslavia,home,France,18
+1968-04-24,France,away,Yugoslavia,18
+1968-05-02,Sweden,home,Spain,64
+1968-05-02,Spain,away,Sweden,29
+1968-05-08,Spain,home,England,6
+1968-05-08,England,away,Spain,35
+1968-09-25,France,home,Germany,154
+1968-09-25,Germany,away,France,101
+1968-10-17,France,home,Spain,22
+1968-10-17,Spain,away,France,162
+1968-10-27,Yugoslavia,home,Spain,11
+1968-10-27,Spain,away,Yugoslavia,10
+1968-11-06,France,home,Norway,20
+1968-11-06,Norway,away,France,28
+1968-12-11,Spain,home,Belgium,45
+1968-12-11,Belgium,away,Spain,56
+1969-02-12,France,home,Hungary,98
+1969-02-12,Hungary,away,France,3
+1969-02-23,Belgium,home,Spain,74
+1969-02-23,Spain,away,Belgium,74
+1969-03-12,England,home,France,56
+1969-03-12,France,away,England,28
+1969-03-26,Spain,home,Switzerland,31
+1969-03-26,Switzerland,away,Spain,123
+1969-04-23,Spain,home,Mexico,28
+1969-04-23,Mexico,away,Spain,7
+1969-04-30,France,home,Romania,49
+1969-04-30,Romania,away,France,14
+1969-04-30,Spain,home,Yugoslavia,7
+1969-04-30,Yugoslavia,away,Spain,63
+1969-06-25,Finland,home,Spain,21
+1969-06-25,Spain,away,Finland,56
+1969-09-10,Norway,home,France,14
+1969-09-10,France,away,Norway,133
+1969-10-15,Spain,home,Finland,112
+1969-10-15,Finland,away,Spain,35
+1969-10-15,Sweden,home,France,21
+1969-10-15,France,away,Sweden,35
+1969-11-01,France,home,Sweden,17
+1969-11-01,Sweden,away,France,17
+1970-02-11,Spain,home,Germany,119
+1970-02-11,Germany,away,Spain,112
+1970-02-21,Spain,home,Italy,10
+1970-02-21,Italy,away,Spain,91
+1970-04-08,France,home,Bulgaria,158
+1970-04-08,Bulgaria,away,France,43
+1970-04-22,Switzerland,home,Spain,171
+1970-04-22,Spain,away,Switzerland,60
+1970-04-28,France,home,Romania,20
+1970-04-28,Romania,away,France,20
+1970-05-03,Switzerland,home,France,11
+1970-05-03,France,away,Switzerland,5
+1970-09-05,France,home,Czechoslovakia,125
+1970-09-05,Czechoslovakia,away,France,86
+1970-10-07,Austria,home,France,10
+1970-10-07,France,away,Austria,32
+1970-10-28,Spain,home,Greece,189
+1970-10-28,Greece,away,Spain,17
+1970-11-11,France,home,Norway,35
+1970-11-11,Norway,away,France,35
+1970-11-11,Spain,home,Northern Ireland,14
+1970-11-11,Northern Ireland,away,Spain,200
+1970-11-15,Belgium,home,France,157
+1970-11-15,France,away,Belgium,4
+1971-01-08,Argentina,home,France,78
+1971-01-08,France,away,Argentina,54
+1971-01-13,Argentina,home,France,5
+1971-01-13,France,away,Argentina,5
+1971-02-20,Italy,home,Spain,74
+1971-02-20,Spain,away,Italy,101
+1971-03-17,Spain,home,France,25
+1971-03-17,France,away,Spain,63
+1971-04-24,Hungary,home,France,20
+1971-04-24,France,away,Hungary,38
+1971-05-09,Cyprus,home,Spain,18
+1971-05-09,Spain,away,Cyprus,53
+1971-05-30,Russia,home,Spain,32
+1971-05-30,Spain,away,Russia,21
+1971-09-08,Norway,home,France,14
+1971-09-08,France,away,Norway,137
+1971-10-09,France,home,Hungary,31
+1971-10-09,Hungary,away,France,14
+1971-10-27,Spain,home,Russia,150
+1971-10-27,Russia,away,Spain,14
+1971-11-10,France,home,Bulgaria,32
+1971-11-10,Bulgaria,away,France,46
+1971-11-24,Spain,home,Cyprus,28
+1971-11-24,Cyprus,away,Spain,136
+1971-12-04,Bulgaria,home,France,17
+1971-12-04,France,away,Bulgaria,24
+1972-01-12,Spain,home,Hungary,49
+1972-01-12,Hungary,away,Spain,59
+1972-02-16,Northern Ireland,home,Spain,126
+1972-02-16,Spain,away,Northern Ireland,35
+1972-04-08,Romania,home,France,136
+1972-04-08,France,away,Romania,126
+1972-04-12,Greece,home,Spain,39
+1972-04-12,Spain,away,Greece,56
+1972-05-23,Spain,home,Uruguay,41
+1972-05-23,Uruguay,away,Spain,202
+1972-06-18,Colombia,home,France,12
+1972-06-18,France,away,Colombia,71
+1972-06-25,Argentina,home,France,3
+1972-06-25,France,away,Argentina,7
+1972-09-02,Greece,home,France,118
+1972-09-02,France,away,Greece,69
+1972-10-11,Spain,home,Argentina,141
+1972-10-11,Argentina,away,Spain,94
+1972-10-13,France,home,Russia,41
+1972-10-13,Russia,away,France,68
+1972-10-19,Spain,home,Yugoslavia,8
+1972-10-19,Yugoslavia,away,Spain,8
+1972-11-15,Republic of Ireland,home,France,28
+1972-11-15,France,away,Republic of Ireland,33
+1973-01-17,Greece,home,Spain,60
+1973-01-17,Spain,away,Greece,90
+1973-02-21,Spain,home,Greece,35
+1973-02-21,Greece,away,Spain,21
+1973-03-03,France,home,Portugal,108
+1973-03-03,Portugal,away,France,237
+1973-05-02,Netherlands,home,Spain,35
+1973-05-02,Spain,away,Netherlands,70
+1973-05-19,France,home,Republic of Ireland,77
+1973-05-19,Republic of Ireland,away,France,3
+1973-05-26,Russia,home,France,13
+1973-05-26,France,away,Russia,7
+1973-09-08,France,home,Greece,105
+1973-09-08,Greece,away,France,199
+1973-10-13,Germany,home,France,3
+1973-10-13,France,away,Germany,35
+1973-10-17,Turkey,home,Spain,161
+1973-10-17,Spain,away,Turkey,168
+1973-10-21,Yugoslavia,home,Spain,25
+1973-10-21,Spain,away,Yugoslavia,4
+1973-11-21,France,home,Denmark,39
+1973-11-21,Denmark,away,France,39
+1973-11-24,Germany,home,Spain,10
+1973-11-24,Spain,away,Germany,34
+1974-02-13,Yugoslavia,home,Spain,56
+1974-02-13,Spain,away,Yugoslavia,81
+1974-02-23,Spain,home,Germany,10
+1974-02-23,Germany,away,Spain,91
+1974-03-23,France,home,Romania,122
+1974-03-23,Romania,away,France,160
+1974-04-27,Czechoslovakia,home,France,14
+1974-04-27,France,away,Czechoslovakia,35
+1974-05-18,France,home,Argentina,21
+1974-05-18,Argentina,away,France,26
+1974-09-07,Poland,home,France,3
+1974-09-07,France,away,Poland,112
+1974-09-25,Denmark,home,Spain,22
+1974-09-25,Spain,away,Denmark,214
+1974-10-12,Argentina,home,Spain,101
+1974-10-12,Spain,away,Argentina,17
+1974-10-12,Belgium,home,France,34
+1974-10-12,France,away,Belgium,35
+1974-11-16,France,home,German DR,35
+1974-11-16,German DR,away,France,17
+1974-11-20,Scotland,home,Spain,21
+1974-11-20,Spain,away,Scotland,39
+1975-02-05,Spain,home,Scotland,77
+1975-02-05,Scotland,away,Spain,77
+1975-03-26,France,home,Hungary,130
+1975-03-26,Hungary,away,France,112
+1975-04-17,Spain,home,Romania,71
+1975-04-17,Romania,away,Spain,17
+1975-04-26,France,home,Portugal,31
+1975-04-26,Portugal,away,France,48
+1975-05-25,Iceland,home,France,225
+1975-05-25,France,away,Iceland,29
+1975-09-03,France,home,Iceland,101
+1975-09-03,Iceland,away,France,72
+1975-10-12,German DR,home,France,15
+1975-10-12,France,away,German DR,39
+1975-10-12,Spain,home,Denmark,178
+1975-10-12,Denmark,away,Spain,17
+1975-11-15,France,home,Belgium,34
+1975-11-15,Belgium,away,France,49
+1975-11-16,Romania,home,Spain,35
+1975-11-16,Spain,away,Romania,35
+1976-03-27,France,home,Czechoslovakia,133
+1976-03-27,Czechoslovakia,away,France,17
+1976-04-24,France,home,Poland,28
+1976-04-24,Poland,away,France,31
+1976-04-24,Spain,home,Germany,160
+1976-04-24,Germany,away,Spain,56
+1976-05-22,Germany,home,Spain,28
+1976-05-22,Spain,away,Germany,28
+1976-05-22,Hungary,home,France,22
+1976-05-22,France,away,Hungary,28
+1976-09-01,Denmark,home,France,7
+1976-09-01,France,away,Denmark,102
+1976-10-09,Bulgaria,home,France,17
+1976-10-09,France,away,Bulgaria,38
+1976-10-10,Spain,home,Yugoslavia,141
+1976-10-10,Yugoslavia,away,Spain,15
+1976-11-17,France,home,Republic of Ireland,39
+1976-11-17,Republic of Ireland,away,France,35
+1977-02-02,France,home,Romania,77
+1977-02-02,Romania,away,France,66
+1977-02-09,Republic of Ireland,home,Spain,84
+1977-02-09,Spain,away,Republic of Ireland,122
+1977-02-23,France,home,Germany,21
+1977-02-23,Germany,away,France,98
+1977-03-27,Spain,home,Hungary,46
+1977-03-27,Hungary,away,Spain,12
+1977-03-30,Republic of Ireland,home,France,49
+1977-03-30,France,away,Republic of Ireland,35
+1977-04-16,Romania,home,Spain,24
+1977-04-16,Spain,away,Romania,20
+1977-04-23,Switzerland,home,France,24
+1977-04-23,France,away,Switzerland,24
+1977-06-26,Argentina,home,France,8
+1977-06-26,France,away,Argentina,64
+1977-06-30,Brazil,home,France,4
+1977-06-30,France,away,Brazil,4
+1977-09-21,Switzerland,home,Spain,14
+1977-09-21,Spain,away,Switzerland,158
+1977-10-08,France,home,Russia,100
+1977-10-08,Russia,away,France,3
+1977-10-26,Spain,home,Romania,35
+1977-10-26,Romania,away,Spain,35
+1977-11-16,France,home,Bulgaria,39
+1977-11-16,Bulgaria,away,France,21
+1977-11-30,Yugoslavia,home,Spain,14
+1977-11-30,Spain,away,Yugoslavia,35
+1978-01-25,Spain,home,Italy,56
+1978-01-25,Italy,away,Spain,35
+1978-02-08,Italy,home,France,14
+1978-02-08,France,away,Italy,84
+1978-03-08,France,home,Portugal,28
+1978-03-08,Portugal,away,France,112
+1978-03-29,Spain,home,Norway,63
+1978-03-29,Norway,away,Spain,150
+1978-04-01,France,home,Brazil,24
+1978-04-01,Brazil,away,France,261
+1978-04-26,Spain,home,Mexico,28
+1978-04-26,Mexico,away,Spain,15
+1978-05-11,France,home,Iran,40
+1978-05-11,Iran,away,France,15
+1978-05-19,France,home,Tunisia,8
+1978-05-19,Tunisia,away,France,44
+1978-05-24,Uruguay,home,Spain,21
+1978-05-24,Spain,away,Uruguay,28
+1978-06-02,France,home,Italy,14
+1978-06-02,Italy,away,France,15
+1978-06-03,Austria,home,Spain,14
+1978-06-03,Spain,away,Austria,10
+1978-06-06,Argentina,home,France,4
+1978-06-06,France,away,Argentina,4
+1978-06-07,Brazil,home,Spain,4
+1978-06-07,Spain,away,Brazil,4
+1978-06-10,France,home,Hungary,4
+1978-06-10,Hungary,away,France,4
+1978-06-11,Spain,home,Sweden,4
+1978-06-11,Sweden,away,Spain,4
+1978-09-01,France,home,Sweden,83
+1978-09-01,Sweden,away,France,16
+1978-10-04,Yugoslavia,home,Spain,139
+1978-10-04,Spain,away,Yugoslavia,115
+1978-10-07,Luxembourg,home,France,199
+1978-10-07,France,away,Luxembourg,36
+1978-11-08,France,home,Spain,32
+1978-11-08,Spain,away,France,35
+1978-11-15,Spain,home,Romania,7
+1978-11-15,Romania,away,Spain,21
+1978-12-13,Spain,home,Cyprus,28
+1978-12-13,Cyprus,away,Spain,336
+1978-12-21,Italy,home,Spain,43
+1978-12-21,Spain,away,Italy,8
+1979-02-25,France,home,Luxembourg,109
+1979-02-25,Luxembourg,away,France,141
+1979-03-14,Czechoslovakia,home,Spain,105
+1979-03-14,Spain,away,Czechoslovakia,83
+1979-04-04,Czechoslovakia,home,France,21
+1979-04-04,France,away,Czechoslovakia,38
+1979-04-04,Romania,home,Spain,14
+1979-04-04,Spain,away,Romania,21
+1979-05-02,United States,home,France,224
+1979-05-02,France,away,United States,28
+1979-09-05,Sweden,home,France,21
+1979-09-05,France,away,Sweden,126
+1979-09-26,Spain,home,Portugal,175
+1979-09-26,Portugal,away,Spain,140
+1979-10-10,France,home,United States,35
+1979-10-10,United States,away,France,3
+1979-10-10,Spain,home,Yugoslavia,14
+1979-10-10,Yugoslavia,away,Spain,24
+1979-11-14,Spain,home,Denmark,35
+1979-11-14,Denmark,away,Spain,14
+1979-11-17,France,home,Czechoslovakia,38
+1979-11-17,Czechoslovakia,away,France,38
+1979-12-09,Cyprus,home,Spain,21
+1979-12-09,Spain,away,Cyprus,25
+1980-01-23,Spain,home,Netherlands,45
+1980-01-23,Netherlands,away,Spain,63
+1980-02-13,Spain,home,German DR,21
+1980-02-13,German DR,away,Spain,84
+1980-02-27,France,home,Greece,102
+1980-02-27,Greece,away,France,42
+1980-03-26,France,home,Netherlands,28
+1980-03-26,Netherlands,away,France,63
+1980-03-26,Spain,home,England,42
+1980-03-26,England,away,Spain,49
+1980-04-16,Spain,home,Czechoslovakia,21
+1980-04-16,Czechoslovakia,away,Spain,21
+1980-05-21,Denmark,home,Spain,14
+1980-05-21,Spain,away,Denmark,35
+1980-05-23,Russia,home,France,24
+1980-05-23,France,away,Russia,58
+1980-06-12,Italy,home,Spain,54
+1980-06-12,Spain,away,Italy,22
+1980-06-15,Belgium,home,Spain,3
+1980-06-15,Spain,away,Belgium,3
+1980-06-18,Spain,home,England,3
+1980-06-18,England,away,Spain,3
+1980-09-24,Hungary,home,Spain,28
+1980-09-24,Spain,away,Hungary,98
+1980-10-11,Cyprus,home,France,199
+1980-10-11,France,away,Cyprus,141
+1980-10-15,German DR,home,Spain,7
+1980-10-15,Spain,away,German DR,21
+1980-10-28,France,home,Republic of Ireland,17
+1980-10-28,Republic of Ireland,away,France,13
+1980-11-12,Spain,home,Poland,28
+1980-11-12,Poland,away,Spain,31
+1980-11-19,Germany,home,France,39
+1980-11-19,France,away,Germany,22
+1981-02-18,Spain,home,France,98
+1981-02-18,France,away,Spain,91
+1981-03-25,England,home,Spain,126
+1981-03-25,Spain,away,England,35
+1981-03-25,Netherlands,home,France,31
+1981-03-25,France,away,Netherlands,35
+1981-04-15,Spain,home,Hungary,21
+1981-04-15,Hungary,away,Spain,147
+1981-04-29,France,home,Belgium,35
+1981-04-29,Belgium,away,France,35
+1981-05-15,France,home,Brazil,16
+1981-05-15,Brazil,away,France,3
+1981-06-20,Portugal,home,Spain,52
+1981-06-20,Spain,away,Portugal,66
+1981-06-28,Venezuela,home,Spain,91
+1981-06-28,Spain,away,Venezuela,8
+1981-07-02,Colombia,home,Spain,105
+1981-07-02,Spain,away,Colombia,4
+1981-07-05,Chile,home,Spain,14
+1981-07-05,Spain,away,Chile,3
+1981-07-08,Brazil,home,Spain,50
+1981-07-08,Spain,away,Brazil,3
+1981-09-09,Belgium,home,France,133
+1981-09-09,France,away,Belgium,117
+1981-09-23,Austria,home,Spain,98
+1981-09-23,Spain,away,Austria,77
+1981-10-14,Republic of Ireland,home,France,35
+1981-10-14,France,away,Republic of Ireland,35
+1981-10-14,Spain,home,Luxembourg,21
+1981-10-14,Luxembourg,away,Spain,166
+1981-11-18,France,home,Netherlands,35
+1981-11-18,Netherlands,away,France,35
+1981-11-18,Poland,home,Spain,3
+1981-11-18,Spain,away,Poland,35
+1981-12-05,France,home,Cyprus,17
+1981-12-05,Cyprus,away,France,220
+1981-12-16,Spain,home,Belgium,28
+1981-12-16,Belgium,away,Spain,63
+1982-02-23,France,home,Italy,80
+1982-02-23,Italy,away,France,80
+1982-02-24,Spain,home,Scotland,70
+1982-02-24,Scotland,away,Spain,98
+1982-03-24,France,home,Northern Ireland,29
+1982-03-24,Northern Ireland,away,France,29
+1982-03-24,Spain,home,Wales,28
+1982-03-24,Wales,away,Spain,126
+1982-04-28,France,home,Peru,35
+1982-04-28,Peru,away,France,3
+1982-04-28,Spain,home,Switzerland,35
+1982-04-28,Switzerland,away,Spain,35
+1982-06-02,France,home,Wales,35
+1982-06-02,Wales,away,France,6
+1982-06-16,England,home,France,13
+1982-06-16,France,away,England,14
+1982-06-16,Spain,home,Honduras,49
+1982-06-16,Honduras,away,Spain,55
+1982-06-20,Spain,home,Yugoslavia,4
+1982-06-20,Yugoslavia,away,Spain,3
+1982-06-21,France,home,Kuwait,5
+1982-06-21,Kuwait,away,France,4
+1982-06-24,France,home,Czechoslovakia,3
+1982-06-24,Czechoslovakia,away,France,4
+1982-06-25,Spain,home,Northern Ireland,5
+1982-06-25,Northern Ireland,away,Spain,4
+1982-06-28,Austria,home,France,3
+1982-06-28,France,away,Austria,4
+1982-07-02,Spain,home,Germany,7
+1982-07-02,Germany,away,Spain,3
+1982-07-04,France,home,Northern Ireland,6
+1982-07-04,Northern Ireland,away,France,3
+1982-07-05,Spain,home,England,3
+1982-07-05,England,away,Spain,6
+1982-07-08,Germany,home,France,6
+1982-07-08,France,away,Germany,4
+1982-07-10,Poland,home,France,2
+1982-07-10,France,away,Poland,2
+1982-08-31,France,home,Poland,52
+1982-08-31,Poland,away,France,52
+1982-10-06,France,home,Hungary,36
+1982-10-06,Hungary,away,France,14
+1982-10-27,Spain,home,Iceland,114
+1982-10-27,Iceland,away,Spain,14
+1982-11-10,Netherlands,home,France,49
+1982-11-10,France,away,Netherlands,35
+1982-11-17,Republic of Ireland,home,Spain,35
+1982-11-17,Spain,away,Republic of Ireland,21
+1983-02-16,Portugal,home,France,129
+1983-02-16,France,away,Portugal,98
+1983-02-16,Spain,home,Netherlands,91
+1983-02-16,Netherlands,away,Spain,59
+1983-03-23,France,home,Russia,35
+1983-03-23,Russia,away,France,161
+1983-04-23,France,home,Yugoslavia,31
+1983-04-23,Yugoslavia,away,France,24
+1983-04-27,Spain,home,Republic of Ireland,70
+1983-04-27,Republic of Ireland,away,Spain,28
+1983-05-15,Malta,home,Spain,46
+1983-05-15,Spain,away,Malta,18
+1983-05-29,Iceland,home,Spain,214
+1983-05-29,Spain,away,Iceland,14
+1983-05-31,Belgium,home,France,34
+1983-05-31,France,away,Belgium,38
+1983-09-07,Denmark,home,France,98
+1983-09-07,France,away,Denmark,99
+1983-10-05,France,home,Spain,28
+1983-10-05,Spain,away,France,129
+1983-11-12,Yugoslavia,home,France,17
+1983-11-12,France,away,Yugoslavia,38
+1983-11-16,Netherlands,home,Spain,35
+1983-11-16,Spain,away,Netherlands,42
+1983-12-21,Spain,home,Malta,35
+1983-12-21,Malta,away,Spain,4
+1984-01-18,Spain,home,Hungary,28
+1984-01-18,Hungary,away,Spain,46
+1984-02-29,France,home,England,109
+1984-02-29,England,away,France,105
+1984-02-29,Luxembourg,home,Spain,77
+1984-02-29,Spain,away,Luxembourg,42
+1984-03-28,France,home,Austria,28
+1984-03-28,Austria,away,France,133
+1984-04-11,Spain,home,Denmark,42
+1984-04-11,Denmark,away,Spain,28
+1984-04-18,France,home,Germany,21
+1984-04-18,Germany,away,France,21
+1984-05-26,Switzerland,home,Spain,24
+1984-05-26,Spain,away,Switzerland,45
+1984-05-31,Hungary,home,Spain,8
+1984-05-31,Spain,away,Hungary,5
+1984-06-01,France,home,Scotland,44
+1984-06-01,Scotland,away,France,6
+1984-06-07,Spain,home,Yugoslavia,7
+1984-06-07,Yugoslavia,away,Spain,5
+1984-06-12,France,home,Denmark,11
+1984-06-12,Denmark,away,France,4
+1984-06-14,Romania,home,Spain,64
+1984-06-14,Spain,away,Romania,7
+1984-06-16,France,home,Belgium,4
+1984-06-16,Belgium,away,France,3
+1984-06-17,Portugal,home,Spain,3
+1984-06-17,Spain,away,Portugal,3
+1984-06-19,France,home,Yugoslavia,3
+1984-06-19,Yugoslavia,away,France,3
+1984-06-20,Germany,home,Spain,3
+1984-06-20,Spain,away,Germany,3
+1984-06-23,France,home,Portugal,4
+1984-06-23,Portugal,away,France,3
+1984-06-24,Denmark,home,Spain,5
+1984-06-24,Spain,away,Denmark,4
+1984-06-27,France,home,Spain,4
+1984-06-27,Spain,away,France,3
+1984-10-13,Luxembourg,home,France,126
+1984-10-13,France,away,Luxembourg,108
+1984-10-17,Spain,home,Wales,112
+1984-10-17,Wales,away,Spain,35
+1984-11-14,Scotland,home,Spain,28
+1984-11-14,Spain,away,Scotland,28
+1984-11-21,France,home,Bulgaria,39
+1984-11-21,Bulgaria,away,France,36
+1984-12-08,France,home,German DR,17
+1984-12-08,German DR,away,France,21
+1985-01-23,Spain,home,Finland,70
+1985-01-23,Finland,away,Spain,60
+1985-02-27,Spain,home,Scotland,35
+1985-02-27,Scotland,away,Spain,105
+1985-03-27,Spain,home,Northern Ireland,28
+1985-03-27,Northern Ireland,away,Spain,28
+1985-04-03,Yugoslavia,home,France,7
+1985-04-03,France,away,Yugoslavia,116
+1985-04-30,Wales,home,Spain,34
+1985-04-30,Spain,away,Wales,34
+1985-05-02,Bulgaria,home,France,15
+1985-05-02,France,away,Bulgaria,29
+1985-05-26,Republic of Ireland,home,Spain,25
+1985-05-26,Spain,away,Republic of Ireland,26
+1985-06-12,Iceland,home,Spain,15
+1985-06-12,Spain,away,Iceland,17
+1985-08-21,France,home,Uruguay,111
+1985-08-21,Uruguay,away,France,87
+1985-09-11,German DR,home,France,28
+1985-09-11,France,away,German DR,21
+1985-09-25,Spain,home,Iceland,105
+1985-09-25,Iceland,away,Spain,75
+1985-10-30,France,home,Luxembourg,49
+1985-10-30,Luxembourg,away,France,35
+1985-11-06,France,home,Yugoslavia,7
+1985-11-06,Yugoslavia,away,France,21
+1985-11-20,Spain,home,Austria,56
+1985-11-20,Austria,away,Spain,35
+1985-12-18,Spain,home,Bulgaria,28
+1985-12-18,Bulgaria,away,Spain,32
+1986-01-22,Spain,home,Russia,35
+1986-01-22,Russia,away,Spain,84
+1986-02-19,Spain,home,Belgium,28
+1986-02-19,Belgium,away,Spain,91
+1986-02-26,France,home,Northern Ireland,112
+1986-02-26,Northern Ireland,away,France,105
+1986-03-26,France,home,Argentina,28
+1986-03-26,Argentina,away,France,129
+1986-03-26,Spain,home,Poland,35
+1986-03-26,Poland,away,Spain,38
+1986-06-01,Canada,home,France,8
+1986-06-01,France,away,Canada,67
+1986-06-01,Spain,home,Brazil,67
+1986-06-01,Brazil,away,Spain,25
+1986-06-05,France,home,Russia,4
+1986-06-05,Russia,away,France,3
+1986-06-07,Northern Ireland,home,Spain,4
+1986-06-07,Spain,away,Northern Ireland,6
+1986-06-09,Hungary,home,France,3
+1986-06-09,France,away,Hungary,4
+1986-06-12,Algeria,home,Spain,6
+1986-06-12,Spain,away,Algeria,5
+1986-06-17,Italy,home,France,7
+1986-06-17,France,away,Italy,8
+1986-06-18,Denmark,home,Spain,5
+1986-06-18,Spain,away,Denmark,6
+1986-06-21,Brazil,home,France,5
+1986-06-21,France,away,Brazil,4
+1986-06-22,Spain,home,Belgium,4
+1986-06-22,Belgium,away,Spain,7
+1986-06-25,France,home,Germany,4
+1986-06-25,Germany,away,France,4
+1986-06-28,France,home,Belgium,3
+1986-06-28,Belgium,away,France,3
+1986-08-19,Switzerland,home,France,105
+1986-08-19,France,away,Switzerland,52
+1986-09-10,Iceland,home,France,104
+1986-09-10,France,away,Iceland,22
+1986-09-24,Spain,home,Greece,94
+1986-09-24,Greece,away,Spain,146
+1986-10-11,France,home,Russia,31
+1986-10-11,Russia,away,France,17
+1986-10-15,Germany,home,Spain,21
+1986-10-15,Spain,away,Germany,21
+1986-11-12,Spain,home,Romania,28
+1986-11-12,Romania,away,Spain,35
+1986-11-19,German DR,home,France,21
+1986-11-19,France,away,German DR,39
+1986-12-03,Albania,home,Spain,49
+1986-12-03,Spain,away,Albania,21
+1987-01-21,Spain,home,Netherlands,49
+1987-01-21,Netherlands,away,Spain,31
+1987-02-18,Spain,home,England,28
+1987-02-18,England,away,Spain,98
+1987-04-01,Austria,home,Spain,7
+1987-04-01,Spain,away,Austria,42
+1987-04-29,France,home,Iceland,161
+1987-04-29,Iceland,away,France,60
+1987-04-29,Romania,home,Spain,21
+1987-04-29,Spain,away,Romania,28
+1987-06-16,Norway,home,France,13
+1987-06-16,France,away,Norway,48
+1987-08-12,Germany,home,France,116
+1987-08-12,France,away,Germany,57
+1987-09-09,Russia,home,France,11
+1987-09-09,France,away,Russia,28
+1987-09-23,Spain,home,Luxembourg,147
+1987-09-23,Luxembourg,away,Spain,14
+1987-10-14,France,home,Norway,35
+1987-10-14,Norway,away,France,21
+1987-10-14,Spain,home,Austria,21
+1987-10-14,Austria,away,Spain,57
+1987-11-18,France,home,German DR,35
+1987-11-18,German DR,away,France,21
+1987-11-18,Spain,home,Albania,35
+1987-11-18,Albania,away,Spain,21
+1988-01-27,Israel,home,France,8
+1988-01-27,France,away,Israel,70
+1988-01-27,Spain,home,German DR,70
+1988-01-27,German DR,away,Spain,12
+1988-02-02,France,home,Switzerland,6
+1988-02-02,Switzerland,away,France,48
+1988-02-05,France,home,Morocco,3
+1988-02-05,Morocco,away,France,3
+1988-02-24,Spain,home,Czechoslovakia,28
+1988-02-24,Czechoslovakia,away,Spain,40
+1988-03-23,France,home,Spain,47
+1988-03-23,Spain,away,France,28
+1988-04-27,Northern Ireland,home,France,35
+1988-04-27,France,away,Northern Ireland,35
+1988-04-27,Spain,home,Scotland,35
+1988-04-27,Scotland,away,Spain,36
+1988-06-01,Spain,home,Sweden,35
+1988-06-01,Sweden,away,Spain,35
+1988-06-05,Switzerland,home,Spain,8
+1988-06-05,Spain,away,Switzerland,4
+1988-06-11,Denmark,home,Spain,6
+1988-06-11,Spain,away,Denmark,6
+1988-06-14,Italy,home,Spain,4
+1988-06-14,Spain,away,Italy,3
+1988-06-17,Germany,home,Spain,3
+1988-06-17,Spain,away,Germany,3
+1988-08-24,France,home,Czechoslovakia,119
+1988-08-24,Czechoslovakia,away,France,84
+1988-09-14,Spain,home,Yugoslavia,89
+1988-09-14,Yugoslavia,away,Spain,21
+1988-09-28,France,home,Norway,35
+1988-09-28,Norway,away,France,14
+1988-10-12,Spain,home,Argentina,28
+1988-10-12,Argentina,away,Spain,88
+1988-10-22,Cyprus,home,France,10
+1988-10-22,France,away,Cyprus,24
+1988-11-16,Spain,home,Republic of Ireland,35
+1988-11-16,Republic of Ireland,away,Spain,28
+1988-11-19,Yugoslavia,home,France,31
+1988-11-19,France,away,Yugoslavia,28
+1988-12-21,Spain,home,Northern Ireland,35
+1988-12-21,Northern Ireland,away,Spain,63
+1989-01-22,Malta,home,Spain,11
+1989-01-22,Spain,away,Malta,32
+1989-02-07,Republic of Ireland,home,France,83
+1989-02-07,France,away,Republic of Ireland,80
+1989-02-08,Northern Ireland,home,Spain,49
+1989-02-08,Spain,away,Northern Ireland,17
+1989-03-08,Scotland,home,France,28
+1989-03-08,France,away,Scotland,29
+1989-03-23,Spain,home,Malta,43
+1989-03-23,Malta,away,Spain,39
+1989-04-26,Republic of Ireland,home,Spain,49
+1989-04-26,Spain,away,Republic of Ireland,34
+1989-04-29,France,home,Yugoslavia,52
+1989-04-29,Yugoslavia,away,France,24
+1989-08-16,Sweden,home,France,61
+1989-08-16,France,away,Sweden,109
+1989-09-05,Norway,home,France,13
+1989-09-05,France,away,Norway,20
+1989-09-20,Spain,home,Poland,147
+1989-09-20,Poland,away,Spain,15
+1989-10-11,France,home,Scotland,36
+1989-10-11,Scotland,away,France,35
+1989-10-11,Hungary,home,Spain,35
+1989-10-11,Spain,away,Hungary,21
+1989-11-15,Spain,home,Hungary,35
+1989-11-15,Hungary,away,Spain,21
+1989-11-18,France,home,Cyprus,38
+1989-11-18,Cyprus,away,France,21
+1989-12-13,Spain,home,Switzerland,28
+1989-12-13,Switzerland,away,Spain,28
+1990-01-21,Kuwait,home,France,70
+1990-01-21,France,away,Kuwait,64
+1990-01-24,France,home,German DR,3
+1990-01-24,German DR,away,France,70
+1990-02-21,Spain,home,Czechoslovakia,70
+1990-02-21,Czechoslovakia,away,Spain,98
+1990-02-28,France,home,Germany,35
+1990-02-28,Germany,away,France,105
+1990-03-28,Hungary,home,France,8
+1990-03-28,France,away,Hungary,28
+1990-03-28,Spain,home,Austria,35
+1990-03-28,Austria,away,Spain,28
+1990-05-26,Yugoslavia,home,Spain,59
+1990-05-26,Spain,away,Yugoslavia,59
+1990-06-13,Uruguay,home,Spain,22
+1990-06-13,Spain,away,Uruguay,18
+1990-06-17,South Korea,home,Spain,5
+1990-06-17,Spain,away,South Korea,4
+1990-06-21,Belgium,home,Spain,4
+1990-06-21,Spain,away,Belgium,4
+1990-06-26,Spain,home,Yugoslavia,5
+1990-06-26,Yugoslavia,away,Spain,7
+1990-08-15,France,home,Poland,140
+1990-08-15,Poland,away,France,70
+1990-09-05,Iceland,home,France,28
+1990-09-05,France,away,Iceland,21
+1990-09-12,Spain,home,Brazil,78
+1990-09-12,Brazil,away,Spain,80
+1990-10-10,Spain,home,Iceland,28
+1990-10-10,Iceland,away,Spain,14
+1990-10-13,France,home,Czechoslovakia,38
+1990-10-13,Czechoslovakia,away,France,17
+1990-11-14,Czechoslovakia,home,Spain,32
+1990-11-14,Spain,away,Czechoslovakia,35
+1990-11-17,Albania,home,France,73
+1990-11-17,France,away,Albania,35
+1990-12-19,Spain,home,Albania,35
+1990-12-19,Albania,away,Spain,32
+1991-01-16,Spain,home,Portugal,28
+1991-01-16,Portugal,away,Spain,28
+1991-02-20,France,home,Spain,95
+1991-02-20,Spain,away,France,35
+1991-03-27,Spain,home,Hungary,35
+1991-03-27,Hungary,away,Spain,36
+1991-03-30,France,home,Albania,38
+1991-03-30,Albania,away,France,101
+1991-04-17,Spain,home,Romania,21
+1991-04-17,Romania,away,Spain,14
+1991-08-14,Poland,home,France,77
+1991-08-14,France,away,Poland,137
+1991-09-04,Czechoslovakia,home,France,14
+1991-09-04,France,away,Czechoslovakia,21
+1991-09-04,Spain,home,Uruguay,140
+1991-09-04,Uruguay,away,Spain,51
+1991-09-25,Iceland,home,Spain,21
+1991-09-25,Spain,away,Iceland,21
+1991-10-12,Spain,home,France,17
+1991-10-12,France,away,Spain,38
+1991-11-13,Spain,home,Czechoslovakia,32
+1991-11-13,Czechoslovakia,away,Spain,28
+1991-11-20,France,home,Iceland,39
+1991-11-20,Iceland,away,France,35
+1992-01-15,Portugal,home,Spain,56
+1992-01-15,Spain,away,Portugal,63
+1992-02-19,England,home,France,98
+1992-02-19,France,away,England,91
+1992-02-19,Spain,home,Russia,35
+1992-02-19,Russia,away,Spain,7
+1992-03-11,Spain,home,United States,21
+1992-03-11,United States,away,Spain,14
+1992-03-25,France,home,Belgium,35
+1992-03-25,Belgium,away,France,28
+1992-04-22,Spain,home,Albania,42
+1992-04-22,Albania,away,Spain,84
+1992-05-27,Switzerland,home,France,29
+1992-05-27,France,away,Switzerland,63
+1992-06-05,France,home,Netherlands,9
+1992-06-05,Netherlands,away,France,6
+1992-06-10,Sweden,home,France,14
+1992-06-10,France,away,Sweden,5
+1992-06-14,France,home,England,4
+1992-06-14,England,away,France,3
+1992-06-17,France,home,Denmark,3
+1992-06-17,Denmark,away,France,3
+1992-08-26,France,home,Brazil,70
+1992-08-26,Brazil,away,France,24
+1992-09-09,Bulgaria,home,France,14
+1992-09-09,France,away,Bulgaria,14
+1992-09-09,Spain,home,England,140
+1992-09-09,England,away,Spain,84
+1992-09-23,Latvia,home,Spain,14
+1992-09-23,Spain,away,Latvia,14
+1992-10-14,France,home,Austria,35
+1992-10-14,Austria,away,France,42
+1992-10-14,Northern Ireland,home,Spain,35
+1992-10-14,Spain,away,Northern Ireland,21
+1992-11-14,France,home,Finland,31
+1992-11-14,Finland,away,France,7
+1992-11-18,Spain,home,Republic of Ireland,35
+1992-11-18,Republic of Ireland,away,Spain,35
+1992-12-16,Spain,home,Latvia,28
+1992-12-16,Latvia,away,Spain,28
+1993-01-27,Spain,home,Mexico,42
+1993-01-27,Mexico,away,Spain,7
+1993-02-17,Israel,home,France,14
+1993-02-17,France,away,Israel,95
+1993-02-24,Spain,home,Lithuania,28
+1993-02-24,Lithuania,away,Spain,3
+1993-03-27,Austria,home,France,17
+1993-03-27,France,away,Austria,38
+1993-03-31,Denmark,home,Spain,35
+1993-03-31,Spain,away,Denmark,35
+1993-04-28,France,home,Sweden,32
+1993-04-28,Sweden,away,France,13
+1993-04-28,Spain,home,Northern Ireland,28
+1993-04-28,Northern Ireland,away,Spain,28
+1993-06-02,Lithuania,home,Spain,8
+1993-06-02,Spain,away,Lithuania,35
+1993-07-28,France,home,Russia,91
+1993-07-28,Russia,away,France,56
+1993-08-22,Sweden,home,France,11
+1993-08-22,France,away,Sweden,25
+1993-09-08,Finland,home,France,14
+1993-09-08,France,away,Finland,17
+1993-09-08,Spain,home,Chile,98
+1993-09-08,Chile,away,Spain,76
+1993-09-22,Albania,home,Spain,14
+1993-09-22,Spain,away,Albania,14
+1993-10-13,France,home,Israel,35
+1993-10-13,Israel,away,France,8
+1993-10-13,Republic of Ireland,home,Spain,35
+1993-10-13,Spain,away,Republic of Ireland,21
+1993-11-17,France,home,Bulgaria,35
+1993-11-17,Bulgaria,away,France,35
+1993-11-17,Spain,home,Denmark,35
+1993-11-17,Denmark,away,Spain,35
+1994-01-19,Spain,home,Portugal,63
+1994-01-19,Portugal,away,Spain,63
+1994-02-09,Spain,home,Poland,21
+1994-02-09,Poland,away,Spain,84
+1994-02-16,Italy,home,France,91
+1994-02-16,France,away,Italy,91
+1994-03-22,France,home,Chile,34
+1994-03-22,Chile,away,France,195
+1994-03-23,Spain,home,Croatia,42
+1994-03-23,Croatia,away,Spain,271
+1994-05-26,Australia,home,France,4
+1994-05-26,France,away,Australia,65
+1994-05-29,Japan,home,France,7
+1994-05-29,France,away,Japan,3
+1994-06-02,Finland,home,Spain,6
+1994-06-02,Spain,away,Finland,71
+1994-06-10,Canada,home,Spain,2
+1994-06-10,Spain,away,Canada,8
+1994-06-17,Spain,home,South Korea,7
+1994-06-17,South Korea,away,Spain,6
+1994-06-21,Germany,home,Spain,4
+1994-06-21,Spain,away,Germany,4
+1994-06-27,Bolivia,home,Spain,4
+1994-06-27,Spain,away,Bolivia,6
+1994-07-02,Spain,home,Switzerland,5
+1994-07-02,Switzerland,away,Spain,6
+1994-07-09,Italy,home,Spain,4
+1994-07-09,Spain,away,Italy,7
+1994-08-17,France,home,Czech Republic,80
+1994-08-17,Czech Republic,away,France,73
+1994-09-07,Cyprus,home,Spain,133
+1994-09-07,Spain,away,Cyprus,60
+1994-09-07,Slovakia,home,France,22
+1994-09-07,France,away,Slovakia,21
+1994-10-08,France,home,Romania,31
+1994-10-08,Romania,away,France,31
+1994-10-12,North Macedonia,home,Spain,35
+1994-10-12,Spain,away,North Macedonia,35
+1994-11-16,Poland,home,France,35
+1994-11-16,France,away,Poland,39
+1994-11-16,Spain,home,Denmark,35
+1994-11-16,Denmark,away,Spain,35
+1994-11-30,Spain,home,Finland,14
+1994-11-30,Finland,away,Spain,14
+1994-12-13,Azerbaijan,home,France,27
+1994-12-13,France,away,Azerbaijan,27
+1994-12-17,Belgium,home,Spain,31
+1994-12-17,Spain,away,Belgium,17
+1995-01-18,Netherlands,home,France,35
+1995-01-18,France,away,Netherlands,36
+1995-01-18,Spain,home,Uruguay,32
+1995-01-18,Uruguay,away,Spain,91
+1995-02-22,Spain,home,Germany,35
+1995-02-22,Germany,away,Spain,66
+1995-03-29,Israel,home,France,21
+1995-03-29,France,away,Israel,70
+1995-03-29,Spain,home,Belgium,35
+1995-03-29,Belgium,away,Spain,102
+1995-04-26,Armenia,home,Spain,161
+1995-04-26,Spain,away,Armenia,28
+1995-04-26,France,home,Slovakia,28
+1995-04-26,Slovakia,away,France,28
+1995-06-07,Spain,home,Armenia,42
+1995-06-07,Armenia,away,Spain,28
+1995-07-22,Norway,home,France,45
+1995-07-22,France,away,Norway,87
+1995-08-16,France,home,Poland,25
+1995-08-16,Poland,away,France,48
+1995-09-06,France,home,Azerbaijan,21
+1995-09-06,Azerbaijan,away,France,21
+1995-09-06,Spain,home,Cyprus,91
+1995-09-06,Cyprus,away,Spain,91
+1995-09-20,Spain,home,Argentina,14
+1995-09-20,Argentina,away,Spain,65
+1995-10-11,Denmark,home,Spain,35
+1995-10-11,Spain,away,Denmark,21
+1995-10-11,Romania,home,France,35
+1995-10-11,France,away,Romania,35
+1995-11-15,France,home,Israel,35
+1995-11-15,Israel,away,France,35
+1995-11-15,Spain,home,North Macedonia,35
+1995-11-15,North Macedonia,away,Spain,35
+1996-02-07,Spain,home,Norway,84
+1996-02-07,Norway,away,Spain,70
+1996-02-21,France,home,Greece,98
+1996-02-21,Greece,away,France,28
+1996-03-27,Belgium,home,France,133
+1996-03-27,France,away,Belgium,35
+1996-04-24,Norway,home,Spain,28
+1996-04-24,Spain,away,Norway,77
+1996-05-29,France,home,Finland,63
+1996-05-29,Finland,away,France,74
+1996-06-01,Germany,home,France,3
+1996-06-01,France,away,Germany,3
+1996-06-05,France,home,Armenia,4
+1996-06-05,Armenia,away,France,140
+1996-06-09,Spain,home,Bulgaria,46
+1996-06-09,Bulgaria,away,Spain,7
+1996-06-10,Romania,home,France,9
+1996-06-10,France,away,Romania,5
+1996-06-15,France,home,Spain,5
+1996-06-15,Spain,away,France,6
+1996-06-18,France,home,Bulgaria,3
+1996-06-18,Bulgaria,away,France,5
+1996-06-18,Romania,home,Spain,5
+1996-06-18,Spain,away,Romania,3
+1996-06-22,England,home,Spain,4
+1996-06-22,Spain,away,England,4
+1996-06-22,France,home,Netherlands,4
+1996-06-22,Netherlands,away,France,4
+1996-06-26,France,home,Czech Republic,4
+1996-06-26,Czech Republic,away,France,3
+1996-08-31,France,home,Mexico,66
+1996-08-31,Mexico,away,France,76
+1996-09-04,Faroe Islands,home,Spain,4
+1996-09-04,Spain,away,Faroe Islands,74
+1996-10-09,Czech Republic,home,Spain,21
+1996-10-09,Spain,away,Czech Republic,35
+1996-10-09,France,home,Turkey,39
+1996-10-09,Turkey,away,France,39
+1996-11-09,Denmark,home,France,31
+1996-11-09,France,away,Denmark,31
+1996-11-13,Spain,home,Slovakia,35
+1996-11-13,Slovakia,away,Spain,21
+1996-12-14,Spain,home,Serbia,31
+1996-12-14,Serbia,away,Spain,34
+1996-12-18,Malta,home,Spain,21
+1996-12-18,Spain,away,Malta,4
+1997-01-22,Portugal,home,France,39
+1997-01-22,France,away,Portugal,74
+1997-02-12,Spain,home,Malta,56
+1997-02-12,Malta,away,Spain,56
+1997-02-26,France,home,Netherlands,35
+1997-02-26,Netherlands,away,France,74
+1997-04-02,France,home,Sweden,35
+1997-04-02,Sweden,away,France,21
+1997-04-30,Serbia,home,Spain,28
+1997-04-30,Spain,away,Serbia,77
+1997-06-03,France,home,Brazil,62
+1997-06-03,Brazil,away,France,4
+1997-06-07,France,home,England,4
+1997-06-07,England,away,France,3
+1997-06-08,Spain,home,Czech Republic,39
+1997-06-08,Czech Republic,away,Spain,67
+1997-06-11,France,home,Italy,4
+1997-06-11,Italy,away,France,3
+1997-09-24,Slovakia,home,Spain,14
+1997-09-24,Spain,away,Slovakia,108
+1997-10-11,France,home,South Africa,122
+1997-10-11,South Africa,away,France,56
+1997-10-11,Spain,home,Faroe Islands,17
+1997-10-11,Faroe Islands,away,Spain,35
+1997-11-12,France,home,Scotland,32
+1997-11-12,Scotland,away,France,32
+1997-11-19,Spain,home,Romania,39
+1997-11-19,Romania,away,Spain,39
+1998-01-28,France,home,Spain,77
+1998-01-28,Spain,away,France,70
+1998-02-25,France,home,Norway,28
+1998-02-25,Norway,away,France,140
+1998-03-25,Russia,home,France,35
+1998-03-25,France,away,Russia,28
+1998-03-25,Spain,home,Sweden,56
+1998-03-25,Sweden,away,Spain,55
+1998-04-22,Sweden,home,France,28
+1998-04-22,France,away,Sweden,28
+1998-05-27,Belgium,home,France,35
+1998-05-27,France,away,Belgium,35
+1998-05-29,Morocco,home,France,2
+1998-05-29,France,away,Morocco,2
+1998-06-03,Spain,home,Northern Ireland,70
+1998-06-03,Northern Ireland,away,Spain,42
+1998-06-05,Finland,home,France,9
+1998-06-05,France,away,Finland,7
+1998-06-12,France,home,South Africa,7
+1998-06-12,South Africa,away,France,6
+1998-06-13,Spain,home,Nigeria,10
+1998-06-13,Nigeria,away,Spain,8
+1998-06-18,France,home,Saudi Arabia,6
+1998-06-18,Saudi Arabia,away,France,6
+1998-06-19,Spain,home,Paraguay,6
+1998-06-19,Paraguay,away,Spain,7
+1998-06-24,France,home,Denmark,6
+1998-06-24,Denmark,away,France,6
+1998-06-24,Spain,home,Bulgaria,5
+1998-06-24,Bulgaria,away,Spain,5
+1998-06-28,France,home,Paraguay,4
+1998-06-28,Paraguay,away,France,4
+1998-07-03,France,home,Italy,5
+1998-07-03,Italy,away,France,6
+1998-07-08,France,home,Croatia,5
+1998-07-08,Croatia,away,France,4
+1998-07-12,France,home,Brazil,4
+1998-07-12,Brazil,away,France,5
+1998-08-19,Austria,home,France,57
+1998-08-19,France,away,Austria,38
+1998-09-05,Cyprus,home,Spain,17
+1998-09-05,Spain,away,Cyprus,73
+1998-09-05,Iceland,home,France,17
+1998-09-05,France,away,Iceland,17
+1998-09-23,Spain,home,Russia,18
+1998-09-23,Russia,away,Spain,18
+1998-10-10,Russia,home,France,17
+1998-10-10,France,away,Russia,35
+1998-10-14,France,home,Andorra,4
+1998-10-14,Andorra,away,France,4
+1998-10-14,Israel,home,Spain,4
+1998-10-14,Spain,away,Israel,21
+1998-11-18,Italy,home,Spain,39
+1998-11-18,Spain,away,Italy,35
+1999-01-20,France,home,Morocco,98
+1999-01-20,Morocco,away,France,140
+1999-02-10,England,home,France,84
+1999-02-10,France,away,England,21
+1999-03-27,France,home,Ukraine,45
+1999-03-27,Ukraine,away,France,7
+1999-03-27,Spain,home,Austria,129
+1999-03-27,Austria,away,Spain,17
+1999-03-31,France,home,Armenia,4
+1999-03-31,Armenia,away,France,4
+1999-03-31,San Marino,home,Spain,49
+1999-03-31,Spain,away,San Marino,4
+1999-05-05,Spain,home,Croatia,35
+1999-05-05,Croatia,away,Spain,7
+1999-06-05,France,home,Russia,66
+1999-06-05,Russia,away,France,17
+1999-06-05,Spain,home,San Marino,31
+1999-06-05,San Marino,away,Spain,38
+1999-06-09,Andorra,home,France,4
+1999-06-09,France,away,Andorra,4
+1999-08-18,Northern Ireland,home,France,81
+1999-08-18,France,away,Northern Ireland,70
+1999-08-18,Poland,home,Spain,60
+1999-08-18,Spain,away,Poland,74
+1999-09-04,Austria,home,Spain,17
+1999-09-04,Spain,away,Austria,17
+1999-09-04,Ukraine,home,France,17
+1999-09-04,France,away,Ukraine,17
+1999-09-08,Armenia,home,France,4
+1999-09-08,France,away,Armenia,4
+1999-09-08,Spain,home,Cyprus,4
+1999-09-08,Cyprus,away,Spain,3
+1999-10-09,France,home,Iceland,31
+1999-10-09,Iceland,away,France,31
+1999-10-10,Spain,home,Israel,32
+1999-10-10,Israel,away,Spain,32
+1999-11-13,France,home,Croatia,35
+1999-11-13,Croatia,away,France,35
+1999-11-13,Spain,home,Brazil,34
+1999-11-13,Brazil,away,Spain,35
+1999-11-17,Spain,home,Argentina,4
+1999-11-17,Argentina,away,Spain,35
+2000-01-26,Spain,home,Poland,70
+2000-01-26,Poland,away,Spain,109
+2000-02-23,Croatia,home,Spain,102
+2000-02-23,Spain,away,Croatia,28
+2000-02-23,France,home,Poland,102
+2000-02-23,Poland,away,France,28
+2000-03-29,Scotland,home,France,133
+2000-03-29,France,away,Scotland,35
+2000-03-29,Spain,home,Italy,35
+2000-03-29,Italy,away,Spain,35
+2000-04-26,France,home,Slovenia,28
+2000-04-26,Slovenia,away,France,63
+2000-05-28,Croatia,home,France,32
+2000-05-28,France,away,Croatia,32
+2000-06-03,Sweden,home,Spain,38
+2000-06-03,Spain,away,Sweden,66
+2000-06-04,France,home,Japan,7
+2000-06-04,Japan,away,France,39
+2000-06-06,Morocco,home,France,2
+2000-06-06,France,away,Morocco,2
+2000-06-07,Luxembourg,home,Spain,42
+2000-06-07,Spain,away,Luxembourg,4
+2000-06-11,France,home,Denmark,5
+2000-06-11,Denmark,away,France,8
+2000-06-13,Spain,home,Norway,6
+2000-06-13,Norway,away,Spain,10
+2000-06-16,Czech Republic,home,France,5
+2000-06-16,France,away,Czech Republic,5
+2000-06-18,Slovenia,home,Spain,5
+2000-06-18,Spain,away,Slovenia,5
+2000-06-21,Netherlands,home,France,5
+2000-06-21,France,away,Netherlands,5
+2000-06-21,Serbia,home,Spain,3
+2000-06-21,Spain,away,Serbia,3
+2000-06-25,Spain,home,France,4
+2000-06-25,France,away,Spain,4
+2000-06-28,France,home,Portugal,3
+2000-06-28,Portugal,away,France,4
+2000-07-02,France,home,Italy,4
+2000-07-02,Italy,away,France,3
+2000-08-16,Germany,home,Spain,57
+2000-08-16,Spain,away,Germany,52
+2000-09-02,Bosnia and Herzegovina,home,Spain,17
+2000-09-02,Spain,away,Bosnia and Herzegovina,17
+2000-09-02,France,home,England,62
+2000-09-02,England,away,France,74
+2000-10-04,France,home,Cameroon,32
+2000-10-04,Cameroon,away,France,87
+2000-10-07,South Africa,home,France,34
+2000-10-07,France,away,South Africa,3
+2000-10-07,Spain,home,Israel,35
+2000-10-07,Israel,away,Spain,34
+2000-10-11,Austria,home,Spain,4
+2000-10-11,Spain,away,Austria,4
+2000-11-15,Spain,home,Netherlands,35
+2000-11-15,Netherlands,away,Spain,35
+2000-11-15,Turkey,home,France,35
+2000-11-15,France,away,Turkey,39
+2001-02-27,France,home,Germany,104
+2001-02-27,Germany,away,France,104
+2001-02-28,England,home,Spain,105
+2001-02-28,Spain,away,England,105
+2001-03-24,France,home,Japan,25
+2001-03-24,Japan,away,France,60
+2001-03-24,Spain,home,Liechtenstein,24
+2001-03-24,Liechtenstein,away,Spain,24
+2001-03-28,Spain,home,France,4
+2001-03-28,France,away,Spain,4
+2001-04-25,France,home,Portugal,28
+2001-04-25,Portugal,away,France,28
+2001-04-25,Spain,home,Japan,28
+2001-04-25,Japan,away,Spain,32
+2001-05-30,South Korea,home,France,5
+2001-05-30,France,away,South Korea,35
+2001-06-01,Australia,home,France,2
+2001-06-01,France,away,Australia,2
+2001-06-02,Spain,home,Bosnia and Herzegovina,38
+2001-06-02,Bosnia and Herzegovina,away,Spain,66
+2001-06-03,France,home,Mexico,2
+2001-06-03,Mexico,away,France,2
+2001-06-06,Israel,home,Spain,4
+2001-06-06,Spain,away,Israel,4
+2001-06-07,France,home,Brazil,4
+2001-06-07,Brazil,away,France,3
+2001-06-10,Japan,home,France,3
+2001-06-10,France,away,Japan,3
+2001-08-15,France,home,Denmark,66
+2001-08-15,Denmark,away,France,70
+2001-09-01,Chile,home,France,18
+2001-09-01,France,away,Chile,17
+2001-09-01,Spain,home,Austria,87
+2001-09-01,Austria,away,Spain,17
+2001-09-05,Liechtenstein,home,Spain,95
+2001-09-05,Spain,away,Liechtenstein,4
+2001-10-06,France,home,Algeria,35
+2001-10-06,Algeria,away,France,77
+2001-11-11,Australia,home,France,88
+2001-11-11,France,away,Australia,36
+2001-11-14,Spain,home,Mexico,70
+2001-11-14,Mexico,away,Spain,3
+2002-02-13,France,home,Romania,94
+2002-02-13,Romania,away,France,91
+2002-02-13,Spain,home,Portugal,91
+2002-02-13,Portugal,away,Spain,91
+2002-03-27,France,home,Scotland,42
+2002-03-27,Scotland,away,France,172
+2002-03-27,Netherlands,home,Spain,42
+2002-03-27,Spain,away,Netherlands,42
+2002-04-17,France,home,Russia,21
+2002-04-17,Russia,away,France,21
+2002-04-17,Northern Ireland,home,Spain,21
+2002-04-17,Spain,away,Northern Ireland,21
+2002-05-18,France,home,Belgium,31
+2002-05-18,Belgium,away,France,4
+2002-05-26,South Korea,home,France,5
+2002-05-26,France,away,South Korea,8
+2002-05-31,France,home,Senegal,5
+2002-05-31,Senegal,away,France,8
+2002-06-02,Spain,home,Slovenia,46
+2002-06-02,Slovenia,away,Spain,16
+2002-06-06,France,home,Uruguay,6
+2002-06-06,Uruguay,away,France,5
+2002-06-07,Spain,home,Paraguay,5
+2002-06-07,Paraguay,away,Spain,5
+2002-06-11,Denmark,home,France,5
+2002-06-11,France,away,Denmark,5
+2002-06-12,South Africa,home,Spain,4
+2002-06-12,Spain,away,South Africa,5
+2002-06-16,Spain,home,Republic of Ireland,4
+2002-06-16,Republic of Ireland,away,Spain,5
+2002-06-22,South Korea,home,Spain,4
+2002-06-22,Spain,away,South Korea,6
+2002-08-21,Hungary,home,Spain,105
+2002-08-21,Spain,away,Hungary,60
+2002-08-21,Tunisia,home,France,68
+2002-08-21,France,away,Tunisia,71
+2002-09-07,Cyprus,home,France,17
+2002-09-07,France,away,Cyprus,17
+2002-09-07,Greece,home,Spain,17
+2002-09-07,Spain,away,Greece,17
+2002-10-12,France,home,Slovenia,35
+2002-10-12,Slovenia,away,France,35
+2002-10-12,Spain,home,Northern Ireland,35
+2002-10-12,Northern Ireland,away,Spain,52
+2002-10-16,Malta,home,France,4
+2002-10-16,France,away,Malta,4
+2002-10-16,Spain,home,Paraguay,4
+2002-10-16,Paraguay,away,Spain,27
+2002-11-20,France,home,Serbia,35
+2002-11-20,Serbia,away,France,35
+2002-11-20,Spain,home,Bulgaria,35
+2002-11-20,Bulgaria,away,Spain,35
+2003-02-12,France,home,Czech Republic,84
+2003-02-12,Czech Republic,away,France,84
+2003-02-12,Spain,home,Germany,84
+2003-02-12,Germany,away,Spain,84
+2003-03-29,France,home,Malta,45
+2003-03-29,Malta,away,France,45
+2003-03-29,Ukraine,home,Spain,45
+2003-03-29,Spain,away,Ukraine,45
+2003-04-02,Israel,home,France,4
+2003-04-02,France,away,Israel,4
+2003-04-02,Spain,home,Armenia,4
+2003-04-02,Armenia,away,Spain,4
+2003-04-30,France,home,Egypt,28
+2003-04-30,Egypt,away,France,32
+2003-04-30,Spain,home,Ecuador,28
+2003-04-30,Ecuador,away,Spain,77
+2003-06-07,Spain,home,Greece,38
+2003-06-07,Greece,away,Spain,38
+2003-06-11,Northern Ireland,home,Spain,8
+2003-06-11,Spain,away,Northern Ireland,4
+2003-06-18,France,home,Colombia,49
+2003-06-18,Colombia,away,France,10
+2003-06-20,France,home,Japan,2
+2003-06-20,Japan,away,France,2
+2003-06-22,France,home,New Zealand,2
+2003-06-22,New Zealand,away,France,2
+2003-06-26,France,home,Turkey,4
+2003-06-26,Turkey,away,France,3
+2003-06-29,France,home,Cameroon,3
+2003-06-29,Cameroon,away,France,3
+2003-08-20,Switzerland,home,France,70
+2003-08-20,France,away,Switzerland,52
+2003-09-06,France,home,Cyprus,17
+2003-09-06,Cyprus,away,France,91
+2003-09-06,Portugal,home,Spain,17
+2003-09-06,Spain,away,Portugal,87
+2003-09-10,Slovenia,home,France,4
+2003-09-10,France,away,Slovenia,4
+2003-09-10,Spain,home,Ukraine,4
+2003-09-10,Ukraine,away,Spain,4
+2003-10-11,Armenia,home,Spain,31
+2003-10-11,Spain,away,Armenia,31
+2003-10-11,France,home,Israel,31
+2003-10-11,Israel,away,France,31
+2003-11-15,Germany,home,France,35
+2003-11-15,France,away,Germany,35
+2003-11-15,Spain,home,Norway,35
+2003-11-15,Norway,away,Spain,35
+2003-11-19,Norway,home,Spain,4
+2003-11-19,Spain,away,Norway,4
+2004-02-18,Belgium,home,France,130
+2004-02-18,France,away,Belgium,95
+2004-02-18,Spain,home,Peru,91
+2004-02-18,Peru,away,Spain,91
+2004-03-31,Netherlands,home,France,42
+2004-03-31,France,away,Netherlands,42
+2004-03-31,Spain,home,Denmark,42
+2004-03-31,Denmark,away,Spain,136
+2004-04-28,Italy,home,Spain,28
+2004-04-28,Spain,away,Italy,28
+2004-05-20,France,home,Brazil,50
+2004-05-20,Brazil,away,France,22
+2004-05-28,France,home,Andorra,8
+2004-05-28,Andorra,away,France,44
+2004-06-05,Spain,home,Andorra,38
+2004-06-05,Andorra,away,Spain,8
+2004-06-06,France,home,Ukraine,9
+2004-06-06,Ukraine,away,France,39
+2004-06-12,Spain,home,Russia,7
+2004-06-12,Russia,away,Spain,18
+2004-06-13,France,home,England,7
+2004-06-13,England,away,France,8
+2004-06-16,Greece,home,Spain,4
+2004-06-16,Spain,away,Greece,4
+2004-06-17,Croatia,home,France,4
+2004-06-17,France,away,Croatia,4
+2004-06-20,Portugal,home,Spain,4
+2004-06-20,Spain,away,Portugal,4
+2004-06-21,Switzerland,home,France,4
+2004-06-21,France,away,Switzerland,4
+2004-06-25,France,home,Greece,4
+2004-06-25,Greece,away,France,5
+2004-08-18,France,home,Bosnia and Herzegovina,54
+2004-08-18,Bosnia and Herzegovina,away,France,112
+2004-08-18,Spain,home,Venezuela,59
+2004-08-18,Venezuela,away,Spain,37
+2004-09-03,Spain,home,Scotland,16
+2004-09-03,Scotland,away,Spain,16
+2004-09-04,France,home,Israel,17
+2004-09-04,Israel,away,France,17
+2004-09-08,Bosnia and Herzegovina,home,Spain,21
+2004-09-08,Spain,away,Bosnia and Herzegovina,5
+2004-09-08,Faroe Islands,home,France,4
+2004-09-08,France,away,Faroe Islands,4
+2004-10-09,France,home,Republic of Ireland,31
+2004-10-09,Republic of Ireland,away,France,31
+2004-10-09,Spain,home,Belgium,31
+2004-10-09,Belgium,away,Spain,35
+2004-10-13,Cyprus,home,France,4
+2004-10-13,France,away,Cyprus,4
+2004-10-13,Lithuania,home,Spain,35
+2004-10-13,Spain,away,Lithuania,4
+2004-11-17,France,home,Poland,35
+2004-11-17,Poland,away,France,35
+2004-11-17,Spain,home,England,35
+2004-11-17,England,away,Spain,35
+2005-02-09,France,home,Sweden,84
+2005-02-09,Sweden,away,France,14
+2005-02-09,Spain,home,San Marino,84
+2005-02-09,San Marino,away,Spain,84
+2005-03-26,France,home,Switzerland,45
+2005-03-26,Switzerland,away,France,45
+2005-03-26,Spain,home,China,45
+2005-03-26,China,away,Spain,129
+2005-03-30,Israel,home,France,4
+2005-03-30,France,away,Israel,4
+2005-03-30,Serbia,home,Spain,49
+2005-03-30,Spain,away,Serbia,4
+2005-05-31,France,home,Hungary,62
+2005-05-31,Hungary,away,France,62
+2005-06-04,Spain,home,Lithuania,66
+2005-06-04,Lithuania,away,Spain,14
+2005-06-08,Spain,home,Bosnia and Herzegovina,4
+2005-06-08,Bosnia and Herzegovina,away,Spain,4
+2005-08-17,France,home,Ivory Coast,78
+2005-08-17,Ivory Coast,away,France,59
+2005-08-17,Spain,home,Uruguay,70
+2005-08-17,Uruguay,away,Spain,71
+2005-09-03,France,home,Faroe Islands,17
+2005-09-03,Faroe Islands,away,France,17
+2005-09-03,Spain,home,Canada,17
+2005-09-03,Canada,away,Spain,53
+2005-09-07,Republic of Ireland,home,France,21
+2005-09-07,France,away,Republic of Ireland,4
+2005-09-07,Spain,home,Serbia,4
+2005-09-07,Serbia,away,Spain,4
+2005-10-08,Belgium,home,Spain,31
+2005-10-08,Spain,away,Belgium,31
+2005-10-08,Switzerland,home,France,31
+2005-10-08,France,away,Switzerland,31
+2005-10-12,France,home,Cyprus,4
+2005-10-12,Cyprus,away,France,4
+2005-10-12,San Marino,home,Spain,4
+2005-10-12,Spain,away,San Marino,4
+2005-11-09,France,home,Costa Rica,28
+2005-11-09,Costa Rica,away,France,28
+2005-11-12,France,home,Germany,3
+2005-11-12,Germany,away,France,31
+2005-11-12,Spain,home,Slovakia,31
+2005-11-12,Slovakia,away,Spain,31
+2005-11-16,Slovakia,home,Spain,4
+2005-11-16,Spain,away,Slovakia,4
+2006-03-01,France,home,Slovakia,109
+2006-03-01,Slovakia,away,France,105
+2006-03-01,Spain,home,Ivory Coast,105
+2006-03-01,Ivory Coast,away,Spain,19
+2006-05-27,France,home,Mexico,87
+2006-05-27,Mexico,away,France,15
+2006-05-27,Spain,home,Russia,87
+2006-05-27,Russia,away,Spain,87
+2006-05-31,France,home,Denmark,4
+2006-05-31,Denmark,away,France,4
+2006-06-03,Spain,home,Egypt,7
+2006-06-03,Egypt,away,Spain,113
+2006-06-07,France,home,China,7
+2006-06-07,China,away,France,4
+2006-06-07,Spain,home,Croatia,4
+2006-06-07,Croatia,away,Spain,4
+2006-06-13,France,home,Switzerland,6
+2006-06-13,Switzerland,away,France,10
+2006-06-14,Spain,home,Ukraine,7
+2006-06-14,Ukraine,away,Spain,6
+2006-06-18,France,home,South Korea,5
+2006-06-18,South Korea,away,France,5
+2006-06-19,Spain,home,Tunisia,5
+2006-06-19,Tunisia,away,Spain,5
+2006-06-23,Saudi Arabia,home,Spain,4
+2006-06-23,Spain,away,Saudi Arabia,4
+2006-06-23,Togo,home,France,4
+2006-06-23,France,away,Togo,5
+2006-06-27,Spain,home,France,4
+2006-06-27,France,away,Spain,4
+2006-07-01,Brazil,home,France,4
+2006-07-01,France,away,Brazil,4
+2006-07-05,Portugal,home,France,4
+2006-07-05,France,away,Portugal,4
+2006-07-09,Italy,home,France,5
+2006-07-09,France,away,Italy,4
+2006-08-15,Iceland,home,Spain,168
+2006-08-15,Spain,away,Iceland,49
+2006-08-16,Bosnia and Herzegovina,home,France,77
+2006-08-16,France,away,Bosnia and Herzegovina,38
+2006-09-02,Georgia,home,France,17
+2006-09-02,France,away,Georgia,17
+2006-09-02,Spain,home,Liechtenstein,18
+2006-09-02,Liechtenstein,away,Spain,17
+2006-09-06,France,home,Italy,4
+2006-09-06,Italy,away,France,4
+2006-09-06,Northern Ireland,home,Spain,4
+2006-09-06,Spain,away,Northern Ireland,4
+2006-10-07,Scotland,home,France,31
+2006-10-07,France,away,Scotland,31
+2006-10-07,Sweden,home,Spain,31
+2006-10-07,Spain,away,Sweden,31
+2006-10-11,France,home,Faroe Islands,4
+2006-10-11,Faroe Islands,away,France,4
+2006-10-11,Spain,home,Argentina,4
+2006-10-11,Argentina,away,Spain,38
+2006-11-15,France,home,Greece,35
+2006-11-15,Greece,away,France,35
+2006-11-15,Spain,home,Romania,35
+2006-11-15,Romania,away,Spain,39
+2007-02-07,England,home,Spain,84
+2007-02-07,Spain,away,England,84
+2007-02-07,France,home,Argentina,84
+2007-02-07,Argentina,away,France,119
+2007-03-24,Lithuania,home,France,46
+2007-03-24,France,away,Lithuania,45
+2007-03-24,Spain,home,Denmark,45
+2007-03-24,Denmark,away,Spain,46
+2007-03-28,France,home,Austria,4
+2007-03-28,Austria,away,France,4
+2007-03-28,Spain,home,Iceland,4
+2007-03-28,Iceland,away,Spain,168
+2007-06-02,France,home,Ukraine,66
+2007-06-02,Ukraine,away,France,66
+2007-06-02,Latvia,home,Spain,66
+2007-06-02,Spain,away,Latvia,66
+2007-06-06,France,home,Georgia,4
+2007-06-06,Georgia,away,France,4
+2007-06-06,Liechtenstein,home,Spain,4
+2007-06-06,Spain,away,Liechtenstein,4
+2007-08-22,Greece,home,Spain,77
+2007-08-22,Spain,away,Greece,77
+2007-08-22,Slovakia,home,France,77
+2007-08-22,France,away,Slovakia,77
+2007-09-08,Iceland,home,Spain,17
+2007-09-08,Spain,away,Iceland,17
+2007-09-08,Italy,home,France,17
+2007-09-08,France,away,Italy,17
+2007-09-12,France,home,Scotland,4
+2007-09-12,Scotland,away,France,4
+2007-09-12,Spain,home,Latvia,4
+2007-09-12,Latvia,away,Spain,4
+2007-10-13,Denmark,home,Spain,31
+2007-10-13,Spain,away,Denmark,31
+2007-10-13,Faroe Islands,home,France,31
+2007-10-13,France,away,Faroe Islands,31
+2007-10-17,Finland,home,Spain,4
+2007-10-17,Spain,away,Finland,4
+2007-10-17,France,home,Lithuania,4
+2007-10-17,Lithuania,away,France,35
+2007-11-16,France,home,Morocco,30
+2007-11-16,Morocco,away,France,30
+2007-11-17,Spain,home,Sweden,31
+2007-11-17,Sweden,away,Spain,31
+2007-11-21,Spain,home,Northern Ireland,4
+2007-11-21,Northern Ireland,away,Spain,4
+2007-11-21,Ukraine,home,France,4
+2007-11-21,France,away,Ukraine,5
+2008-02-06,Spain,home,France,77
+2008-02-06,France,away,Spain,77
+2008-03-26,France,home,England,49
+2008-03-26,England,away,France,49
+2008-03-26,Spain,home,Italy,49
+2008-03-26,Italy,away,Spain,49
+2008-05-27,France,home,Ecuador,62
+2008-05-27,Ecuador,away,France,62
+2008-05-31,France,home,Paraguay,4
+2008-05-31,Paraguay,away,France,4
+2008-05-31,Spain,home,Peru,66
+2008-05-31,Peru,away,Spain,66
+2008-06-03,France,home,Colombia,3
+2008-06-03,Colombia,away,France,5
+2008-06-04,Spain,home,United States,4
+2008-06-04,United States,away,Spain,7
+2008-06-09,Romania,home,France,9
+2008-06-09,France,away,Romania,6
+2008-06-10,Spain,home,Russia,6
+2008-06-10,Russia,away,Spain,6
+2008-06-13,Netherlands,home,France,4
+2008-06-13,France,away,Netherlands,4
+2008-06-14,Sweden,home,Spain,4
+2008-06-14,Spain,away,Sweden,4
+2008-06-17,France,home,Italy,4
+2008-06-17,Italy,away,France,4
+2008-06-18,Greece,home,Spain,4
+2008-06-18,Spain,away,Greece,4
+2008-06-22,Spain,home,Italy,4
+2008-06-22,Italy,away,Spain,5
+2008-06-26,Russia,home,Spain,5
+2008-06-26,Spain,away,Russia,4
+2008-06-29,Germany,home,Spain,4
+2008-06-29,Spain,away,Germany,3
+2008-08-20,Denmark,home,Spain,80
+2008-08-20,Spain,away,Denmark,52
+2008-08-20,Sweden,home,France,63
+2008-08-20,France,away,Sweden,64
+2008-09-06,Austria,home,France,17
+2008-09-06,France,away,Austria,17
+2008-09-06,Spain,home,Bosnia and Herzegovina,17
+2008-09-06,Bosnia and Herzegovina,away,Spain,17
+2008-09-10,France,home,Serbia,4
+2008-09-10,Serbia,away,France,4
+2008-09-10,Spain,home,Armenia,4
+2008-09-10,Armenia,away,Spain,4
+2008-10-11,Estonia,home,Spain,31
+2008-10-11,Spain,away,Estonia,31
+2008-10-11,Romania,home,France,31
+2008-10-11,France,away,Romania,31
+2008-10-14,France,home,Tunisia,3
+2008-10-14,Tunisia,away,France,3
+2008-10-15,Belgium,home,Spain,4
+2008-10-15,Spain,away,Belgium,4
+2008-11-19,France,home,Uruguay,36
+2008-11-19,Uruguay,away,France,36
+2008-11-19,Spain,home,Chile,35
+2008-11-19,Chile,away,Spain,35
+2009-02-11,France,home,Argentina,84
+2009-02-11,Argentina,away,France,84
+2009-02-11,Spain,home,England,84
+2009-02-11,England,away,Spain,84
+2009-03-28,Lithuania,home,France,45
+2009-03-28,France,away,Lithuania,45
+2009-03-28,Spain,home,Turkey,45
+2009-03-28,Turkey,away,Spain,45
+2009-04-01,France,home,Lithuania,4
+2009-04-01,Lithuania,away,France,4
+2009-04-01,Turkey,home,Spain,4
+2009-04-01,Spain,away,Turkey,4
+2009-06-02,France,home,Nigeria,62
+2009-06-02,Nigeria,away,France,4
+2009-06-05,France,home,Turkey,3
+2009-06-05,Turkey,away,France,3
+2009-06-09,Azerbaijan,home,Spain,3
+2009-06-09,Spain,away,Azerbaijan,69
+2009-06-14,New Zealand,home,Spain,4
+2009-06-14,Spain,away,New Zealand,5
+2009-06-17,Spain,home,Iraq,3
+2009-06-17,Iraq,away,Spain,3
+2009-06-20,South Africa,home,Spain,3
+2009-06-20,Spain,away,South Africa,3
+2009-06-24,Spain,home,United States,4
+2009-06-24,United States,away,Spain,3
+2009-06-28,South Africa,home,Spain,3
+2009-06-28,Spain,away,South Africa,4
+2009-08-12,Faroe Islands,home,France,63
+2009-08-12,France,away,Faroe Islands,68
+2009-08-12,North Macedonia,home,Spain,63
+2009-08-12,Spain,away,North Macedonia,45
+2009-09-05,France,home,Romania,24
+2009-09-05,Romania,away,France,24
+2009-09-05,Spain,home,Belgium,24
+2009-09-05,Belgium,away,Spain,24
+2009-09-09,Serbia,home,France,28
+2009-09-09,France,away,Serbia,4
+2009-09-09,Spain,home,Estonia,4
+2009-09-09,Estonia,away,Spain,4
+2009-10-10,Armenia,home,Spain,31
+2009-10-10,Spain,away,Armenia,31
+2009-10-10,France,home,Faroe Islands,31
+2009-10-10,Faroe Islands,away,France,31
+2009-10-14,Bosnia and Herzegovina,home,Spain,4
+2009-10-14,Spain,away,Bosnia and Herzegovina,4
+2009-10-14,France,home,Austria,4
+2009-10-14,Austria,away,France,4
+2009-11-14,Republic of Ireland,home,France,31
+2009-11-14,France,away,Republic of Ireland,31
+2009-11-14,Spain,home,Argentina,31
+2009-11-14,Argentina,away,Spain,31
+2009-11-18,Austria,home,Spain,35
+2009-11-18,Spain,away,Austria,4
+2009-11-18,France,home,Republic of Ireland,4
+2009-11-18,Republic of Ireland,away,France,4
+2010-03-03,France,home,Spain,105
+2010-03-03,Spain,away,France,105
+2010-05-26,France,home,Costa Rica,84
+2010-05-26,Costa Rica,away,France,120
+2010-05-29,Spain,home,Saudi Arabia,87
+2010-05-29,Saudi Arabia,away,Spain,4
+2010-05-30,Tunisia,home,France,129
+2010-05-30,France,away,Tunisia,4
+2010-06-03,Spain,home,South Korea,5
+2010-06-03,South Korea,away,Spain,4
+2010-06-04,France,home,China,5
+2010-06-04,China,away,France,93
+2010-06-08,Spain,home,Poland,5
+2010-06-08,Poland,away,Spain,6
+2010-06-11,Uruguay,home,France,16
+2010-06-11,France,away,Uruguay,7
+2010-06-16,Spain,home,Switzerland,8
+2010-06-16,Switzerland,away,Spain,11
+2010-06-17,France,home,Mexico,6
+2010-06-17,Mexico,away,France,6
+2010-06-21,Spain,home,Honduras,5
+2010-06-21,Honduras,away,Spain,5
+2010-06-22,South Africa,home,France,6
+2010-06-22,France,away,South Africa,5
+2010-06-25,Chile,home,Spain,4
+2010-06-25,Spain,away,Chile,4
+2010-06-29,Spain,home,Portugal,4
+2010-06-29,Portugal,away,Spain,4
+2010-07-03,Paraguay,home,Spain,4
+2010-07-03,Spain,away,Paraguay,4
+2010-07-07,Germany,home,Spain,4
+2010-07-07,Spain,away,Germany,4
+2010-07-11,Netherlands,home,Spain,5
+2010-07-11,Spain,away,Netherlands,4
+2010-08-11,Mexico,home,Spain,45
+2010-08-11,Spain,away,Mexico,31
+2010-08-11,Norway,home,France,70
+2010-08-11,France,away,Norway,50
+2010-09-03,France,home,Belarus,23
+2010-09-03,Belarus,away,France,23
+2010-09-03,Liechtenstein,home,Spain,23
+2010-09-03,Spain,away,Liechtenstein,23
+2010-09-07,Argentina,home,Spain,27
+2010-09-07,Spain,away,Argentina,4
+2010-09-07,Bosnia and Herzegovina,home,France,4
+2010-09-07,France,away,Bosnia and Herzegovina,4
+2010-10-08,Spain,home,Lithuania,31
+2010-10-08,Lithuania,away,Spain,31
+2010-10-09,France,home,Romania,32
+2010-10-09,Romania,away,France,32
+2010-10-12,France,home,Luxembourg,3
+2010-10-12,Luxembourg,away,France,4
+2010-10-12,Scotland,home,Spain,4
+2010-10-12,Spain,away,Scotland,4
+2010-11-17,England,home,France,36
+2010-11-17,France,away,England,36
+2010-11-17,Portugal,home,Spain,36
+2010-11-17,Spain,away,Portugal,36
+2011-02-09,France,home,Brazil,84
+2011-02-09,Brazil,away,France,84
+2011-02-09,Spain,home,Colombia,84
+2011-02-09,Colombia,away,Spain,84
+2011-03-25,Luxembourg,home,France,44
+2011-03-25,France,away,Luxembourg,44
+2011-03-25,Spain,home,Czech Republic,44
+2011-03-25,Czech Republic,away,Spain,44
+2011-03-29,France,home,Croatia,4
+2011-03-29,Croatia,away,France,3
+2011-03-29,Lithuania,home,Spain,4
+2011-03-29,Spain,away,Lithuania,4
+2011-06-03,Belarus,home,France,66
+2011-06-03,France,away,Belarus,66
+2011-06-04,United States,home,Spain,67
+2011-06-04,Spain,away,United States,67
+2011-06-06,Ukraine,home,France,5
+2011-06-06,France,away,Ukraine,3
+2011-06-07,Venezuela,home,Spain,6
+2011-06-07,Spain,away,Venezuela,3
+2011-06-09,Poland,home,France,4
+2011-06-09,France,away,Poland,3
+2011-08-10,France,home,Chile,62
+2011-08-10,Chile,away,France,24
+2011-08-10,Italy,home,Spain,64
+2011-08-10,Spain,away,Italy,64
+2011-09-02,Albania,home,France,23
+2011-09-02,France,away,Albania,23
+2011-09-02,Spain,home,Chile,23
+2011-09-02,Chile,away,Spain,23
+2011-09-06,Romania,home,France,4
+2011-09-06,France,away,Romania,4
+2011-09-06,Spain,home,Liechtenstein,4
+2011-09-06,Liechtenstein,away,Spain,4
+2011-10-07,Czech Republic,home,Spain,31
+2011-10-07,Spain,away,Czech Republic,31
+2011-10-07,France,home,Albania,31
+2011-10-07,Albania,away,France,31
+2011-10-11,France,home,Bosnia and Herzegovina,4
+2011-10-11,Bosnia and Herzegovina,away,France,4
+2011-10-11,Spain,home,Scotland,4
+2011-10-11,Scotland,away,Spain,3
+2011-11-11,France,home,United States,31
+2011-11-11,United States,away,France,31
+2011-11-12,England,home,Spain,36
+2011-11-12,Spain,away,England,32
+2011-11-15,Costa Rica,home,Spain,4
+2011-11-15,Spain,away,Costa Rica,3
+2011-11-15,France,home,Belgium,4
+2011-11-15,Belgium,away,France,4
+2012-02-29,Germany,home,France,106
+2012-02-29,France,away,Germany,106
+2012-02-29,Spain,home,Venezuela,106
+2012-02-29,Venezuela,away,Spain,35
+2012-05-26,Spain,home,Serbia,87
+2012-05-26,Serbia,away,Spain,87
+2012-05-27,France,home,Iceland,88
+2012-05-27,Iceland,away,France,88
+2012-05-30,Spain,home,South Korea,4
+2012-05-30,South Korea,away,Spain,91
+2012-05-31,France,home,Serbia,4
+2012-05-31,Serbia,away,France,5
+2012-06-03,Spain,home,China,4
+2012-06-03,China,away,Spain,95
+2012-06-05,France,home,Estonia,5
+2012-06-05,Estonia,away,France,2
+2012-06-10,Spain,home,Italy,7
+2012-06-10,Italy,away,Spain,9
+2012-06-11,France,home,England,6
+2012-06-11,England,away,France,9
+2012-06-14,Spain,home,Republic of Ireland,4
+2012-06-14,Republic of Ireland,away,Spain,4
+2012-06-15,Ukraine,home,France,4
+2012-06-15,France,away,Ukraine,4
+2012-06-18,Croatia,home,Spain,4
+2012-06-18,Spain,away,Croatia,4
+2012-06-19,Sweden,home,France,4
+2012-06-19,France,away,Sweden,4
+2012-06-23,Spain,home,France,5
+2012-06-23,France,away,Spain,4
+2012-06-27,Portugal,home,Spain,6
+2012-06-27,Spain,away,Portugal,4
+2012-07-01,Spain,home,Italy,4
+2012-07-01,Italy,away,Spain,3
+2012-08-15,France,home,Uruguay,53
+2012-08-15,Uruguay,away,France,66
+2012-08-15,Puerto Rico,home,Spain,73
+2012-08-15,Spain,away,Puerto Rico,45
+2012-09-07,Finland,home,France,23
+2012-09-07,France,away,Finland,23
+2012-09-07,Spain,home,Saudi Arabia,23
+2012-09-07,Saudi Arabia,away,Spain,64
+2012-09-11,France,home,Belarus,4
+2012-09-11,Belarus,away,France,4
+2012-09-11,Georgia,home,Spain,4
+2012-09-11,Spain,away,Georgia,4
+2012-10-12,Belarus,home,Spain,31
+2012-10-12,Spain,away,Belarus,31
+2012-10-12,France,home,Japan,31
+2012-10-12,Japan,away,France,31
+2012-10-16,Spain,home,France,4
+2012-10-16,France,away,Spain,4
+2012-11-14,Italy,home,France,29
+2012-11-14,France,away,Italy,29
+2012-11-14,Panama,home,Spain,29
+2012-11-14,Spain,away,Panama,29
+2013-02-06,France,home,Germany,84
+2013-02-06,Germany,away,France,84
+2013-02-06,Spain,home,Uruguay,84
+2013-02-06,Uruguay,away,Spain,84
+2013-03-22,France,home,Georgia,44
+2013-03-22,Georgia,away,France,44
+2013-03-22,Spain,home,Finland,44
+2013-03-22,Finland,away,Spain,44
+2013-03-26,France,home,Spain,4
+2013-03-26,Spain,away,France,4
+2013-06-05,Uruguay,home,France,71
+2013-06-05,France,away,Uruguay,71
+2013-06-08,Haiti,home,Spain,76
+2013-06-08,Spain,away,Haiti,74
+2013-06-09,Brazil,home,France,7
+2013-06-09,France,away,Brazil,4
+2013-06-11,Spain,home,Republic of Ireland,3
+2013-06-11,Republic of Ireland,away,Spain,4
+2013-06-16,Spain,home,Uruguay,5
+2013-06-16,Uruguay,away,Spain,5
+2013-06-20,Spain,home,Tahiti,4
+2013-06-20,Tahiti,away,Spain,3
+2013-06-23,Nigeria,home,Spain,3
+2013-06-23,Spain,away,Nigeria,3
+2013-06-27,Spain,home,Italy,4
+2013-06-27,Italy,away,Spain,5
+2013-06-30,Brazil,home,Spain,4
+2013-06-30,Spain,away,Brazil,3
+2013-08-14,Belgium,home,France,68
+2013-08-14,France,away,Belgium,66
+2013-08-14,Ecuador,home,Spain,64
+2013-08-14,Spain,away,Ecuador,45
+2013-09-06,Finland,home,Spain,23
+2013-09-06,Spain,away,Finland,23
+2013-09-06,Georgia,home,France,23
+2013-09-06,France,away,Georgia,23
+2013-09-10,Belarus,home,France,4
+2013-09-10,France,away,Belarus,4
+2013-09-10,Spain,home,Chile,4
+2013-09-10,Chile,away,Spain,4
+2013-10-11,France,home,Australia,31
+2013-10-11,Australia,away,France,34
+2013-10-11,Spain,home,Belarus,31
+2013-10-11,Belarus,away,Spain,31
+2013-10-15,France,home,Finland,4
+2013-10-15,Finland,away,France,35
+2013-10-15,Spain,home,Georgia,4
+2013-10-15,Georgia,away,Spain,35
+2013-11-15,Ukraine,home,France,31
+2013-11-15,France,away,Ukraine,31
+2013-11-16,Equatorial Guinea,home,Spain,70
+2013-11-16,Spain,away,Equatorial Guinea,32
+2013-11-19,France,home,Ukraine,4
+2013-11-19,Ukraine,away,France,4
+2013-11-19,South Africa,home,Spain,4
+2013-11-19,Spain,away,South Africa,3
+2014-03-05,France,home,Netherlands,106
+2014-03-05,Netherlands,away,France,106
+2014-03-05,Spain,home,Italy,106
+2014-03-05,Italy,away,Spain,107
+2014-05-27,France,home,Norway,83
+2014-05-27,Norway,away,France,83
+2014-05-30,Spain,home,Bolivia,86
+2014-05-30,Bolivia,away,Spain,227
+2014-06-01,France,home,Paraguay,5
+2014-06-01,Paraguay,away,France,3
+2014-06-07,El Salvador,home,Spain,3
+2014-06-07,Spain,away,El Salvador,8
+2014-06-08,France,home,Jamaica,7
+2014-06-08,Jamaica,away,France,4
+2014-06-13,Spain,home,Netherlands,6
+2014-06-13,Netherlands,away,Spain,9
+2014-06-15,France,home,Honduras,7
+2014-06-15,Honduras,away,France,8
+2014-06-18,Spain,home,Chile,5
+2014-06-18,Chile,away,Spain,5
+2014-06-20,Switzerland,home,France,5
+2014-06-20,France,away,Switzerland,5
+2014-06-23,Australia,home,Spain,5
+2014-06-23,Spain,away,Australia,5
+2014-06-25,Ecuador,home,France,5
+2014-06-25,France,away,Ecuador,5
+2014-06-30,France,home,Nigeria,5
+2014-06-30,Nigeria,away,France,5
+2014-07-04,France,home,Germany,4
+2014-07-04,Germany,away,France,4
+2014-09-04,France,home,Spain,62
+2014-09-04,Spain,away,France,73
+2014-09-07,Serbia,home,France,93
+2014-09-07,France,away,Serbia,3
+2014-09-08,Spain,home,North Macedonia,4
+2014-09-08,North Macedonia,away,Spain,78
+2014-10-09,Slovakia,home,Spain,31
+2014-10-09,Spain,away,Slovakia,31
+2014-10-11,France,home,Portugal,34
+2014-10-11,Portugal,away,France,34
+2014-10-12,Luxembourg,home,Spain,3
+2014-10-12,Spain,away,Luxembourg,3
+2014-10-14,Armenia,home,France,3
+2014-10-14,France,away,Armenia,3
+2014-11-14,France,home,Albania,31
+2014-11-14,Albania,away,France,31
+2014-11-15,Spain,home,Belarus,34
+2014-11-15,Belarus,away,Spain,34
+2014-11-18,France,home,Sweden,4
+2014-11-18,Sweden,away,France,3
+2014-11-18,Spain,home,Germany,3
+2014-11-18,Germany,away,Spain,4
+2015-03-26,France,home,Brazil,128
+2015-03-26,Brazil,away,France,128
+2015-03-27,Spain,home,Ukraine,129
+2015-03-27,Ukraine,away,Spain,129
+2015-03-29,France,home,Denmark,3
+2015-03-29,Denmark,away,France,4
+2015-03-31,Netherlands,home,Spain,3
+2015-03-31,Spain,away,Netherlands,4
+2015-06-07,France,home,Belgium,70
+2015-06-07,Belgium,away,France,68
+2015-06-11,Spain,home,Costa Rica,72
+2015-06-11,Costa Rica,away,Spain,5
+2015-06-13,Albania,home,France,76
+2015-06-13,France,away,Albania,6
+2015-06-14,Belarus,home,Spain,7
+2015-06-14,Spain,away,Belarus,3
+2015-09-04,Portugal,home,France,80
+2015-09-04,France,away,Portugal,83
+2015-09-05,Spain,home,Slovakia,83
+2015-09-05,Slovakia,away,Spain,83
+2015-09-07,France,home,Serbia,3
+2015-09-07,Serbia,away,France,3
+2015-09-08,North Macedonia,home,Spain,3
+2015-09-08,Spain,away,North Macedonia,3
+2015-10-08,France,home,Armenia,31
+2015-10-08,Armenia,away,France,31
+2015-10-09,Spain,home,Luxembourg,31
+2015-10-09,Luxembourg,away,Spain,31
+2015-10-11,Denmark,home,France,3
+2015-10-11,France,away,Denmark,3
+2015-10-12,Ukraine,home,Spain,3
+2015-10-12,Spain,away,Ukraine,3
+2015-11-13,France,home,Germany,33
+2015-11-13,Germany,away,France,33
+2015-11-13,Spain,home,England,32
+2015-11-13,England,away,Spain,32
+2015-11-17,England,home,France,4
+2015-11-17,France,away,England,4
+2016-03-24,Italy,home,Spain,128
+2016-03-24,Spain,away,Italy,132
+2016-03-25,Netherlands,home,France,133
+2016-03-25,France,away,Netherlands,129
+2016-03-27,Romania,home,Spain,4
+2016-03-27,Spain,away,Romania,3
+2016-03-29,France,home,Russia,4
+2016-03-29,Russia,away,France,3
+2016-05-29,Bosnia and Herzegovina,home,Spain,61
+2016-05-29,Spain,away,Bosnia and Herzegovina,63
+2016-05-30,France,home,Cameroon,62
+2016-05-30,Cameroon,away,France,62
+2016-06-01,Spain,home,South Korea,3
+2016-06-01,South Korea,away,Spain,66
+2016-06-04,France,home,Scotland,5
+2016-06-04,Scotland,away,France,6
+2016-06-07,Spain,home,Georgia,6
+2016-06-07,Georgia,away,Spain,4
+2016-06-10,France,home,Romania,6
+2016-06-10,Romania,away,France,7
+2016-06-13,Spain,home,Czech Republic,6
+2016-06-13,Czech Republic,away,Spain,8
+2016-06-15,France,home,Albania,5
+2016-06-15,Albania,away,France,4
+2016-06-17,Spain,home,Turkey,4
+2016-06-17,Turkey,away,Spain,5
+2016-06-19,France,home,Switzerland,4
+2016-06-19,Switzerland,away,France,4
+2016-06-21,Croatia,home,Spain,4
+2016-06-21,Spain,away,Croatia,4
+2016-06-26,France,home,Republic of Ireland,7
+2016-06-26,Republic of Ireland,away,France,4
+2016-06-27,Italy,home,Spain,5
+2016-06-27,Spain,away,Italy,6
+2016-07-03,France,home,Iceland,7
+2016-07-03,Iceland,away,France,6
+2016-07-07,France,home,Germany,4
+2016-07-07,Germany,away,France,5
+2016-07-10,France,home,Portugal,3
+2016-07-10,Portugal,away,France,4
+2016-09-01,Belgium,home,Spain,62
+2016-09-01,Spain,away,Belgium,66
+2016-09-01,Italy,home,France,61
+2016-09-01,France,away,Italy,53
+2016-09-05,Spain,home,Liechtenstein,4
+2016-09-05,Liechtenstein,away,Spain,5
+2016-09-06,Belarus,home,France,6
+2016-09-06,France,away,Belarus,5
+2016-10-06,Italy,home,Spain,31
+2016-10-06,Spain,away,Italy,31
+2016-10-07,France,home,Bulgaria,31
+2016-10-07,Bulgaria,away,France,31
+2016-10-09,Albania,home,Spain,3
+2016-10-09,Spain,away,Albania,3
+2016-10-10,Netherlands,home,France,3
+2016-10-10,France,away,Netherlands,3
+2016-11-11,France,home,Sweden,32
+2016-11-11,Sweden,away,France,32
+2016-11-12,Spain,home,North Macedonia,34
+2016-11-12,North Macedonia,away,Spain,34
+2016-11-15,England,home,Spain,4
+2016-11-15,Spain,away,England,3
+2016-11-15,France,home,Ivory Coast,4
+2016-11-15,Ivory Coast,away,France,3
+2017-03-24,Spain,home,Israel,129
+2017-03-24,Israel,away,Spain,132
+2017-03-25,Luxembourg,home,France,132
+2017-03-25,France,away,Luxembourg,130
+2017-03-28,France,home,Spain,3
+2017-03-28,Spain,away,France,4
+2017-06-02,France,home,Paraguay,66
+2017-06-02,Paraguay,away,France,66
+2017-06-07,Spain,home,Colombia,71
+2017-06-07,Colombia,away,Spain,71
+2017-06-09,Sweden,home,France,73
+2017-06-09,France,away,Sweden,7
+2017-06-11,North Macedonia,home,Spain,6
+2017-06-11,Spain,away,North Macedonia,4
+2017-06-13,France,home,England,4
+2017-06-13,England,away,France,3
+2017-08-31,France,home,Netherlands,79
+2017-08-31,Netherlands,away,France,83
+2017-09-02,Spain,home,Italy,83
+2017-09-02,Italy,away,Spain,83
+2017-09-03,France,home,Luxembourg,3
+2017-09-03,Luxembourg,away,France,3
+2017-09-05,Liechtenstein,home,Spain,3
+2017-09-05,Spain,away,Liechtenstein,3
+2017-10-06,Spain,home,Albania,31
+2017-10-06,Albania,away,Spain,31
+2017-10-07,Bulgaria,home,France,34
+2017-10-07,France,away,Bulgaria,34
+2017-10-09,Israel,home,Spain,3
+2017-10-09,Spain,away,Israel,3
+2017-10-10,France,home,Belarus,3
+2017-10-10,Belarus,away,France,3
+2017-11-10,France,home,Wales,31
+2017-11-10,Wales,away,France,32
+2017-11-11,Spain,home,Costa Rica,33
+2017-11-11,Costa Rica,away,Spain,32
+2017-11-14,Germany,home,France,4
+2017-11-14,France,away,Germany,4
+2017-11-14,Russia,home,Spain,3
+2017-11-14,Spain,away,Russia,3
+2018-03-23,France,home,Colombia,129
+2018-03-23,Colombia,away,France,129
+2018-03-23,Germany,home,Spain,129
+2018-03-23,Spain,away,Germany,129
+2018-03-27,Russia,home,France,4
+2018-03-27,France,away,Russia,4
+2018-03-27,Spain,home,Argentina,4
+2018-03-27,Argentina,away,Spain,4
+2018-05-28,France,home,Republic of Ireland,62
+2018-05-28,Republic of Ireland,away,France,66
+2018-06-01,France,home,Italy,4
+2018-06-01,Italy,away,France,4
+2018-06-03,Spain,home,Switzerland,68
+2018-06-03,Switzerland,away,Spain,68
+2018-06-09,Tunisia,home,Spain,8
+2018-06-09,Spain,away,Tunisia,6
+2018-06-09,France,home,United States,8
+2018-06-09,United States,away,France,7
+2018-06-15,Portugal,home,Spain,8
+2018-06-15,Spain,away,Portugal,6
+2018-06-16,France,home,Australia,7
+2018-06-16,Australia,away,France,7
+2018-06-20,Iran,home,Spain,5
+2018-06-20,Spain,away,Iran,5
+2018-06-21,France,home,Peru,5
+2018-06-21,Peru,away,France,5
+2018-06-25,Spain,home,Morocco,5
+2018-06-25,Morocco,away,Spain,5
+2018-06-26,Denmark,home,France,5
+2018-06-26,France,away,Denmark,5
+2018-06-30,France,home,Argentina,4
+2018-06-30,Argentina,away,France,4
+2018-07-01,Russia,home,Spain,6
+2018-07-01,Spain,away,Russia,6
+2018-07-06,Uruguay,home,France,6
+2018-07-06,France,away,Uruguay,6
+2018-07-10,France,home,Belgium,4
+2018-07-10,Belgium,away,France,4
+2018-07-15,France,home,Croatia,5
+2018-07-15,Croatia,away,France,4
+2018-09-06,Germany,home,France,71
+2018-09-06,France,away,Germany,53
+2018-09-08,England,home,Spain,56
+2018-09-08,Spain,away,England,69
+2018-09-09,France,home,Netherlands,3
+2018-09-09,Netherlands,away,France,3
+2018-09-11,Spain,home,Croatia,3
+2018-09-11,Croatia,away,Spain,5
+2018-10-11,France,home,Iceland,32
+2018-10-11,Iceland,away,France,30
+2018-10-11,Wales,home,Spain,32
+2018-10-11,Spain,away,Wales,30
+2018-10-15,Spain,home,England,4
+2018-10-15,England,away,Spain,3
+2018-10-16,France,home,Germany,5
+2018-10-16,Germany,away,France,3
+2018-11-15,Croatia,home,Spain,31
+2018-11-15,Spain,away,Croatia,31
+2018-11-16,Netherlands,home,France,31
+2018-11-16,France,away,Netherlands,31
+2018-11-18,Spain,home,Bosnia and Herzegovina,3
+2018-11-18,Bosnia and Herzegovina,away,Spain,3
+2018-11-20,France,home,Uruguay,4
+2018-11-20,Uruguay,away,France,4
+2019-03-22,Moldova,home,France,29
+2019-03-22,France,away,Moldova,122
+2019-03-23,Spain,home,Norway,125
+2019-03-23,Norway,away,Spain,124
+2019-03-25,France,home,Iceland,3
+2019-03-25,Iceland,away,France,3
+2019-03-26,Malta,home,Spain,3
+2019-03-26,Spain,away,Malta,3
+2019-06-02,France,home,Bolivia,69
+2019-06-02,Bolivia,away,France,68
+2019-06-07,Faroe Islands,home,Spain,73
+2019-06-07,Spain,away,Faroe Islands,73
+2019-06-08,Turkey,home,France,6
+2019-06-08,France,away,Turkey,6
+2019-06-10,Spain,home,Sweden,3
+2019-06-10,Sweden,away,Spain,3
+2019-06-11,Andorra,home,France,3
+2019-06-11,France,away,Andorra,3
+2019-09-05,Romania,home,Spain,87
+2019-09-05,Spain,away,Romania,87
+2019-09-07,France,home,Albania,88
+2019-09-07,Albania,away,France,88
+2019-09-08,Spain,home,Faroe Islands,3
+2019-09-08,Faroe Islands,away,Spain,3
+2019-09-10,France,home,Andorra,3
+2019-09-10,Andorra,away,France,3
+2019-10-11,Iceland,home,France,31
+2019-10-11,France,away,Iceland,31
+2019-10-12,Norway,home,Spain,34
+2019-10-12,Spain,away,Norway,34
+2019-10-14,France,home,Turkey,3
+2019-10-14,Turkey,away,France,3
+2019-10-15,Sweden,home,Spain,3
+2019-10-15,Spain,away,Sweden,3
+2019-11-14,France,home,Moldova,31
+2019-11-14,Moldova,away,France,31
+2019-11-15,Spain,home,Malta,31
+2019-11-15,Malta,away,Spain,31
+2019-11-17,Albania,home,France,3
+2019-11-17,France,away,Albania,3
+2019-11-18,Spain,home,Romania,3
+2019-11-18,Romania,away,Spain,3
+2020-09-03,Germany,home,Spain,289
+2020-09-03,Spain,away,Germany,290
+2020-09-05,Sweden,home,France,237
+2020-09-05,France,away,Sweden,293
+2020-09-06,Spain,home,Ukraine,3
+2020-09-06,Ukraine,away,Spain,3
+2020-09-08,France,home,Croatia,3
+2020-09-08,Croatia,away,France,3
+2020-10-07,France,home,Ukraine,29
+2020-10-07,Ukraine,away,France,31
+2020-10-07,Portugal,home,Spain,29
+2020-10-07,Spain,away,Portugal,31
+2020-10-10,Spain,home,Switzerland,3
+2020-10-10,Switzerland,away,Spain,3
+2020-10-11,France,home,Portugal,4
+2020-10-11,Portugal,away,France,4
+2020-10-13,Ukraine,home,Spain,3
+2020-10-13,Spain,away,Ukraine,3
+2020-10-14,Croatia,home,France,3
+2020-10-14,France,away,Croatia,3
+2020-11-11,France,home,Finland,28
+2020-11-11,Finland,away,France,28
+2020-11-11,Netherlands,home,Spain,28
+2020-11-11,Spain,away,Netherlands,29
+2020-11-14,Portugal,home,France,3
+2020-11-14,France,away,Portugal,3
+2020-11-14,Switzerland,home,Spain,3
+2020-11-14,Spain,away,Switzerland,3
+2020-11-17,France,home,Sweden,3
+2020-11-17,Sweden,away,France,3
+2020-11-17,Spain,home,Germany,3
+2020-11-17,Germany,away,Spain,3
+2021-03-24,France,home,Ukraine,127
+2021-03-24,Ukraine,away,France,127
+2021-03-25,Spain,home,Greece,128
+2021-03-25,Greece,away,Spain,127
+2021-03-28,Georgia,home,Spain,3
+2021-03-28,Spain,away,Georgia,3
+2021-03-28,Kazakhstan,home,France,130
+2021-03-28,France,away,Kazakhstan,4
+2021-03-31,Spain,home,Kosovo,3
+2021-03-31,Kosovo,away,Spain,3
+2021-03-31,Bosnia and Herzegovina,home,France,4
+2021-03-31,France,away,Bosnia and Herzegovina,3
+2021-06-02,France,home,Wales,63
+2021-06-02,Wales,away,France,64
+2021-06-04,Spain,home,Portugal,65
+2021-06-04,Portugal,away,Spain,66
+2021-06-08,France,home,Bulgaria,6
+2021-06-08,Bulgaria,away,France,3
+2021-06-08,Spain,home,Lithuania,4
+2021-06-08,Lithuania,away,Spain,4
+2021-06-14,Spain,home,Sweden,6
+2021-06-14,Sweden,away,Spain,9
+2021-06-15,Germany,home,France,8
+2021-06-15,France,away,Germany,7
+2021-06-19,Spain,home,Poland,5
+2021-06-19,Poland,away,Spain,5
+2021-06-19,Hungary,home,France,4
+2021-06-19,France,away,Hungary,4
+2021-06-23,Spain,home,Slovakia,4
+2021-06-23,Slovakia,away,Spain,5
+2021-06-23,Portugal,home,France,4
+2021-06-23,France,away,Portugal,4
+2021-06-28,Croatia,home,Spain,6
+2021-06-28,Spain,away,Croatia,5
+2021-06-28,France,home,Switzerland,5
+2021-06-28,Switzerland,away,France,8
+2021-07-02,Switzerland,home,Spain,4
+2021-07-02,Spain,away,Switzerland,4
+2021-07-06,Italy,home,Spain,4
+2021-07-06,Spain,away,Italy,4
+2021-09-01,France,home,Bosnia and Herzegovina,65
+2021-09-01,Bosnia and Herzegovina,away,France,87
+2021-09-02,Sweden,home,Spain,65
+2021-09-02,Spain,away,Sweden,58
+2021-09-04,Ukraine,home,France,3
+2021-09-04,France,away,Ukraine,3
+2021-09-05,Spain,home,Georgia,3
+2021-09-05,Georgia,away,Spain,3
+2021-09-07,France,home,Finland,3
+2021-09-07,Finland,away,France,3
+2021-09-08,Kosovo,home,Spain,3
+2021-09-08,Spain,away,Kosovo,3
+2021-10-06,Italy,home,Spain,28
+2021-10-06,Spain,away,Italy,28
+2021-10-07,Belgium,home,France,29
+2021-10-07,France,away,Belgium,30
+2021-10-10,Spain,home,France,4
+2021-10-10,France,away,Spain,3
+2021-11-11,Greece,home,Spain,30
+2021-11-11,Spain,away,Greece,32
+2021-11-13,France,home,Kazakhstan,34
+2021-11-13,Kazakhstan,away,France,32
+2021-11-14,Spain,home,Sweden,3
+2021-11-14,Sweden,away,Spain,3
+2021-11-16,Finland,home,France,3
+2021-11-16,France,away,Finland,3
+2022-03-25,France,home,Ivory Coast,129
+2022-03-25,Ivory Coast,away,France,58
+2022-03-26,Spain,home,Albania,132
+2022-03-26,Albania,away,Spain,131
+2022-03-29,France,home,South Africa,4
+2022-03-29,South Africa,away,France,4
+2022-03-29,Spain,home,Iceland,3
+2022-03-29,Iceland,away,Spain,3
+2022-06-02,Spain,home,Portugal,65
+2022-06-02,Portugal,away,Spain,65
+2022-06-03,France,home,Denmark,66
+2022-06-03,Denmark,away,France,66
+2022-06-05,Czech Republic,home,Spain,3
+2022-06-05,Spain,away,Czech Republic,3
+2022-06-06,Croatia,home,France,3
+2022-06-06,France,away,Croatia,3
+2022-06-09,Switzerland,home,Spain,4
+2022-06-09,Spain,away,Switzerland,4
+2022-06-10,Austria,home,France,4
+2022-06-10,France,away,Austria,4
+2022-06-12,Spain,home,Czech Republic,3
+2022-06-12,Czech Republic,away,Spain,3
+2022-06-13,France,home,Croatia,3
+2022-06-13,Croatia,away,France,3
+2022-09-22,France,home,Austria,101
+2022-09-22,Austria,away,France,101
+2022-09-24,Spain,home,Switzerland,104
+2022-09-24,Switzerland,away,Spain,104
+2022-09-25,Denmark,home,France,3
+2022-09-25,France,away,Denmark,3
+2022-09-27,Portugal,home,Spain,3
+2022-09-27,Spain,away,Portugal,3
+2022-11-17,Jordan,home,Spain,52
+2022-11-17,Spain,away,Jordan,51
+2022-11-22,France,home,Australia,58
+2022-11-22,Australia,away,France,58
+2022-11-23,Spain,home,Costa Rica,6
+2022-11-23,Costa Rica,away,Spain,14
+2022-11-26,France,home,Denmark,4
+2022-11-26,Denmark,away,France,4
+2022-11-27,Spain,home,Germany,4
+2022-11-27,Germany,away,Spain,4
+2022-11-30,Tunisia,home,France,4
+2022-11-30,France,away,Tunisia,4
+2022-12-01,Japan,home,Spain,4
+2022-12-01,Spain,away,Japan,4
+2022-12-04,France,home,Poland,4
+2022-12-04,Poland,away,France,4
+2022-12-06,Morocco,home,Spain,5
+2022-12-06,Spain,away,Morocco,5
+2022-12-10,England,home,France,6
+2022-12-10,France,away,England,6
+2022-12-14,France,home,Morocco,4
+2022-12-14,Morocco,away,France,4
+2022-12-18,Argentina,home,France,5
+2022-12-18,France,away,Argentina,4
+2023-03-24,France,home,Netherlands,96
+2023-03-24,Netherlands,away,France,105
+2023-03-25,Spain,home,Norway,109
+2023-03-25,Norway,away,Spain,125
+2023-03-27,Republic of Ireland,home,France,5
+2023-03-27,France,away,Republic of Ireland,3
+2023-03-28,Scotland,home,Spain,3
+2023-03-28,Spain,away,Scotland,3
+2023-06-15,Spain,home,Italy,79
+2023-06-15,Italy,away,Spain,81
+2023-06-16,Gibraltar,home,France,81
+2023-06-16,France,away,Gibraltar,81
+2023-06-18,Croatia,home,Spain,4
+2023-06-18,Spain,away,Croatia,3
+2023-06-19,France,home,Greece,3
+2023-06-19,Greece,away,France,3
+2023-09-07,France,home,Republic of Ireland,80
+2023-09-07,Republic of Ireland,away,France,80
+2023-09-08,Georgia,home,Spain,80
+2023-09-08,Spain,away,Georgia,82
+2023-09-12,Germany,home,France,3
+2023-09-12,France,away,Germany,5
+2023-09-12,Spain,home,Cyprus,4
+2023-09-12,Cyprus,away,Spain,4
+2023-10-12,Spain,home,Scotland,30
+2023-10-12,Scotland,away,Spain,30
+2023-10-13,Netherlands,home,France,33
+2023-10-13,France,away,Netherlands,31
+2023-10-15,Norway,home,Spain,3
+2023-10-15,Spain,away,Norway,3
+2023-10-17,France,home,Scotland,4
+2023-10-17,Scotland,away,France,5
+2023-11-16,Cyprus,home,Spain,32
+2023-11-16,Spain,away,Cyprus,32
+2023-11-18,France,home,Gibraltar,32
+2023-11-18,Gibraltar,away,France,33
+2023-11-19,Spain,home,Georgia,3
+2023-11-19,Georgia,away,Spain,3
+2023-11-21,Greece,home,France,4
+2023-11-21,France,away,Greece,3
+2024-03-22,Spain,home,Colombia,124
+2024-03-22,Colombia,away,Spain,97
+2024-03-23,France,home,Germany,123
+2024-03-23,Germany,away,France,123
+2024-03-26,France,home,Chile,3
+2024-03-26,Chile,away,France,4
+2024-03-26,Spain,home,Brazil,4
+2024-03-26,Brazil,away,Spain,3
+2024-06-05,France,home,Luxembourg,71
+2024-06-05,Luxembourg,away,France,76
+2024-06-05,Spain,home,Andorra,71
+2024-06-05,Andorra,away,Spain,72
+2024-06-08,Spain,home,Northern Ireland,3
+2024-06-08,Northern Ireland,away,Spain,74
+2024-06-09,France,home,Canada,4
+2024-06-09,Canada,away,France,3
+2024-06-15,Spain,home,Croatia,7
+2024-06-15,Croatia,away,Spain,7
+2024-06-17,Austria,home,France,9
+2024-06-17,France,away,Austria,8
+2024-06-20,Spain,home,Italy,5
+2024-06-20,Italy,away,Spain,5
+2024-06-21,Netherlands,home,France,5
+2024-06-21,France,away,Netherlands,4
+2024-06-24,Albania,home,Spain,5
+2024-06-24,Spain,away,Albania,4
+2024-06-25,France,home,Poland,4
+2024-06-25,Poland,away,France,4
+2024-06-30,Spain,home,Georgia,6
+2024-06-30,Georgia,away,Spain,4
+2024-07-01,France,home,Belgium,6
+2024-07-01,Belgium,away,France,5
+2024-07-05,Germany,home,Spain,6
+2024-07-05,Spain,away,Germany,5
+2024-07-05,Portugal,home,France,4
+2024-07-05,France,away,Portugal,4
+2024-07-09,Spain,home,France,4
+2024-07-09,France,away,Spain,4
+2024-07-14,Spain,home,England,5
+2024-07-14,England,away,Spain,4
+2024-09-05,Serbia,home,Spain,72
+2024-09-05,Spain,away,Serbia,53
+2024-09-06,France,home,Italy,59
+2024-09-06,Italy,away,France,69
+2024-09-08,Switzerland,home,Spain,3
+2024-09-08,Spain,away,Switzerland,3
+2024-09-09,France,home,Belgium,3
+2024-09-09,Belgium,away,France,3
+2024-10-10,Israel,home,France,31
+2024-10-10,France,away,Israel,31
+2024-10-12,Spain,home,Denmark,34
+2024-10-12,Denmark,away,Spain,34
+2024-10-14,Belgium,home,France,4
+2024-10-14,France,away,Belgium,4
+2024-10-15,Spain,home,Serbia,3
+2024-10-15,Serbia,away,Spain,3
+2024-11-14,France,home,Israel,31
+2024-11-14,Israel,away,France,31
+2024-11-15,Denmark,home,Spain,31
+2024-11-15,Spain,away,Denmark,31
+2024-11-17,Italy,home,France,3
+2024-11-17,France,away,Italy,3
+2024-11-18,Spain,home,Switzerland,3
+2024-11-18,Switzerland,away,Spain,3
+2025-03-20,Croatia,home,France,122
+2025-03-20,France,away,Croatia,123
+2025-03-20,Netherlands,home,Spain,121
+2025-03-20,Spain,away,Netherlands,122
+2025-03-23,France,home,Croatia,3
+2025-03-23,Croatia,away,France,3
+2025-03-23,Spain,home,Netherlands,3
+2025-03-23,Netherlands,away,Spain,3
+2025-06-05,Spain,home,France,74
+2025-06-05,France,away,Spain,74
+2025-06-08,Germany,home,France,4
+2025-06-08,France,away,Germany,3
+2025-06-08,Portugal,home,Spain,4
+2025-06-08,Spain,away,Portugal,3
+2025-09-04,Bulgaria,home,Spain,86
+2025-09-04,Spain,away,Bulgaria,88
+2025-09-05,Ukraine,home,France,87
+2025-09-05,France,away,Ukraine,89
+2025-09-07,Turkey,home,Spain,3
+2025-09-07,Spain,away,Turkey,3
+2025-09-09,France,home,Iceland,4
+2025-09-09,Iceland,away,France,4
+2025-10-10,France,home,Azerbaijan,31
+2025-10-10,Azerbaijan,away,France,31
+2025-10-11,Spain,home,Georgia,34
+2025-10-11,Georgia,away,Spain,34
+2025-10-13,Iceland,home,France,3
+2025-10-13,France,away,Iceland,3
+2025-10-14,Spain,home,Bulgaria,3
+2025-10-14,Bulgaria,away,Spain,3
+2025-11-13,France,home,Ukraine,31
+2025-11-13,Ukraine,away,France,31
+2025-11-15,Georgia,home,Spain,32
+2025-11-15,Spain,away,Georgia,32
+2025-11-16,Azerbaijan,home,France,3
+2025-11-16,France,away,Azerbaijan,3
+2025-11-18,Spain,home,Turkey,3
+2025-11-18,Turkey,away,Spain,3
+2026-03-26,Brazil,home,France,128
+2026-03-26,France,away,Brazil,130
+2026-03-27,Spain,home,Serbia,129
+2026-03-27,Serbia,away,Spain,131
+2026-03-29,Colombia,home,France,3
+2026-03-29,France,away,Colombia,3
+2026-03-31,Spain,home,Egypt,4
+2026-03-31,Egypt,away,Spain,4
+2026-06-04,France,home,Ivory Coast,67
+2026-06-04,Ivory Coast,away,France,65
+2026-06-04,Spain,home,Iraq,65
+2026-06-04,Iraq,away,Spain,6
+2026-06-08,France,home,Northern Ireland,4
+2026-06-08,Northern Ireland,away,France,4
+2026-06-08,Peru,home,Spain,3
+2026-06-08,Spain,away,Peru,4

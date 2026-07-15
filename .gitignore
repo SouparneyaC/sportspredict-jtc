@@ -36,3 +36,4 @@ __pycache__/
 *.aux
 *.toc
 *.out
+external_repos/

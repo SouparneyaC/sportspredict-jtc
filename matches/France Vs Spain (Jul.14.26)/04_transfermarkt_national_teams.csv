@@ -1,0 +1,3 @@
+national_team_id,name,team_code,country_id,country_name,country_code,confederation,team_image_url,squad_size,average_age,foreigners_number,foreigners_percentage,total_market_value,coach_name,fifa_ranking,last_season,url
+3375,Spain,spain,157,Spain,ES1,UEFA,https://tmssl.akamaized.net//images/flagge/head/157.png?lm=1520611569,27,26.7,8,29.6,,,2,2025,https://www.transfermarkt.co.uk/spain/startseite/verein/3375
+3377,France,france,50,France,FR1,UEFA,https://tmssl.akamaized.net//images/flagge/head/50.png?lm=1520611569,25,26.9,19,76.0,,,1,2025,https://www.transfermarkt.co.uk/france/startseite/verein/3377

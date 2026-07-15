@@ -1,0 +1,21 @@
+{
+  "_description": "Final pricing estimates for Norway vs England QF (2026-07-11, closes 2026-07-12T01:00 UTC). RULE1 restored: Smarkets fetched first, blended throughout, every model-vs-market gap over ~15-20pp explicitly rechecked and resolved (see 03_model_derivations.json market_gap_log and 04_rules_applied.json).",
+  "match_id": "8fd166b3-1b8b-4834-a761-ba7caf26ed93",
+  "estimates": [
+    {"market_id": "22aafdae-57b1-41f8-a278-18901aed0460", "question": "Will Erling Haaland score a goal?", "estimate": 0.48},
+    {"market_id": "23d4a4a6-66d9-465e-a1de-75b5ebf7212c", "question": "Will Harry Kane have 2+ SOT?", "estimate": 0.50},
+    {"market_id": "d1ca444f-aec1-4132-bb31-8c7636878361", "question": "Will Jude Bellingham have 2+ SOT?", "estimate": 0.32},
+    {"market_id": "b3d5e9ea-8467-4b3d-ac9f-65eaa4c86359", "question": "Will the match have 3+ total goals?", "estimate": 0.54},
+    {"market_id": "5398817e-81c6-47f8-9c46-52f8d0552fed", "question": "Will the match be tied at halftime?", "estimate": 0.43},
+    {"market_id": "1c591c57-d961-4f5f-bbb0-c821e1fb4906", "question": "Will both teams score?", "estimate": 0.58},
+    {"market_id": "bd04d7a7-4b2c-4fc0-9ed0-139647ad1ab2", "question": "Will England have 6+ corner kicks?", "estimate": 0.51},
+    {"market_id": "8af63054-57ad-4c54-b587-31a0c4cddc52", "question": "Will Norway have 4+ corner kicks?", "estimate": 0.63},
+    {"market_id": "0c5e7d07-c407-4760-8e24-4c3b81b1c996", "question": "Will a substitute score or assist?", "estimate": 0.53},
+    {"market_id": "0d00bdb2-cc0c-4bea-a333-cd09f4566173", "question": "Will a penalty be awarded OR a red card shown?", "estimate": 0.38},
+    {"market_id": "697c57e1-c430-4840-9275-62e3e24659aa", "question": "Will at least one card be shown in each half?", "estimate": 0.48},
+    {"market_id": "c5de9cb6-90e1-47b3-b86e-7662fb0a9cfe", "question": "Will there be 24+ total shots?", "estimate": 0.68},
+    {"market_id": "19ddf7eb-ae72-43d6-80ea-90c124d5a2b9", "question": "Will the second half produce more goals than the first half?", "estimate": 0.44},
+    {"market_id": "ff923dde-c7d4-4d58-b783-02eb30a7138e", "question": "Will England have more corners AND more shots than Norway?", "estimate": 0.55},
+    {"market_id": "fe6d89f4-eb39-4d4a-945a-3a1d2638c075", "question": "Will England win in regulation?", "estimate": 0.48}
+  ]
+}
