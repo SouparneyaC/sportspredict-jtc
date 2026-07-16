@@ -1,0 +1,3 @@
+national_team_id,name,team_code,country_id,country_name,country_code,confederation,team_image_url,squad_size,average_age,foreigners_number,foreigners_percentage,total_market_value,coach_name,fifa_ranking,last_season,url
+3299,England,england,189,England,GB1,UEFA,https://tmssl.akamaized.net//images/flagge/head/189.png?lm=1520611569,35,27.3,4,11.4,,,4,2025,https://www.transfermarkt.co.uk/england/startseite/verein/3299
+3437,Argentina,argentina,9,Argentina,ARG1,CONMEBOL,https://tmssl.akamaized.net//images/flagge/head/9.png?lm=1520611569,29,28.0,24,82.8,761200012,,3,2025,https://www.transfermarkt.co.uk/argentina/startseite/verein/3437

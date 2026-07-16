@@ -1,0 +1,2 @@
+"question","team_A","team_B","lambda_A","lambda_B","p_A_gt_B","p_B_gt_A","p_tie","n_train_rows","fit_train_cutoff"
+"Q9_argentina_more_corners_than_england","Argentina","England",4.55604017124459,4.19058037798484,0.48047627172443,0.383541429303928,0.135982298971642,456,"2026-07-15 (strictly before)"

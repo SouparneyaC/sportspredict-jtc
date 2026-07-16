@@ -1,0 +1,126 @@
+{
+  "historical_rates": {
+    "messi_score_rate": 0.6363636363636364,
+    "messi_n": 11,
+    "alvarez_sot_rate": 0.7142857142857143,
+    "alvarez_n": 7
+  },
+  "walk_forward": {
+    "alvarez_1plus_sot": [
+      {
+        "opponent": "Algeria",
+        "n_prior_2026": 0,
+        "rate_2026_prior": null,
+        "pred": 0.7143,
+        "actual": 0,
+        "note": ""
+      },
+      {
+        "opponent": "Austria",
+        "n_prior_2026": 1,
+        "rate_2026_prior": 0.0,
+        "pred": 0.5952,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Jordan",
+        "n_prior_2026": 2,
+        "rate_2026_prior": 0.5,
+        "pred": 0.6531,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Cape Verde",
+        "n_prior_2026": 3,
+        "rate_2026_prior": 0.6667,
+        "pred": 0.6964,
+        "actual": 0,
+        "note": "AET match; whole-match total is 0, unambiguous"
+      },
+      {
+        "opponent": "Egypt",
+        "n_prior_2026": 4,
+        "rate_2026_prior": 0.5,
+        "pred": 0.619,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Switzerland",
+        "n_prior_2026": 5,
+        "rate_2026_prior": 0.6,
+        "pred": 0.6571,
+        "actual": 1,
+        "note": "AET match; whole-match total incl. his 112' ET goal (a SOT by definition) -- true regulation-only SOT is ambiguous (0 or 1), ESPN has no shot-level clock data"
+      }
+    ],
+    "messi_scores": [
+      {
+        "opponent": "Algeria",
+        "n_prior_2026": 0,
+        "rate_2026_prior": null,
+        "pred": 0.6364,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Austria",
+        "n_prior_2026": 1,
+        "rate_2026_prior": 1.0,
+        "pred": 0.697,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Jordan",
+        "n_prior_2026": 2,
+        "rate_2026_prior": 1.0,
+        "pred": 0.7403,
+        "actual": 1,
+        "note": ""
+      },
+      {
+        "opponent": "Cape Verde",
+        "n_prior_2026": 3,
+        "rate_2026_prior": 1.0,
+        "pred": 0.7727,
+        "actual": 1,
+        "note": "goal at 29' verified via keyEvents clock, inside regulation (End Regular Time marker was 90'+9')"
+      },
+      {
+        "opponent": "Egypt",
+        "n_prior_2026": 4,
+        "rate_2026_prior": 1.0,
+        "pred": 0.798,
+        "actual": 1,
+        "note": "goal at 83', regulation, no ET in this match"
+      },
+      {
+        "opponent": "Switzerland",
+        "n_prior_2026": 5,
+        "rate_2026_prior": 1.0,
+        "pred": 0.8182,
+        "actual": 0,
+        "note": "0 goals for the full match incl. ET -- unambiguous, streak broken"
+      }
+    ]
+  },
+  "brier": {
+    "alvarez": {
+      "model": 0.257023585,
+      "flat_historical_baseline": 0.22448979591836735,
+      "flat_0.5_baseline": 0.25
+    },
+    "messi": {
+      "model": 0.1755630966666667,
+      "flat_historical_baseline": 0.17768595041322313,
+      "flat_0.5_baseline": 0.25
+    }
+  },
+  "live_tonight": {
+    "alvarez_q1_p_1plus_sot": 0.6883,
+    "messi_q4_p_scores": 0.7438
+  }
+}

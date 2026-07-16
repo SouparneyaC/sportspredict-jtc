@@ -1,0 +1,88 @@
+match,stage,text,est,crowd,outcome,rbp,beat_crowd,hard_type
+Spain_vs_Belgium,QF,Will Spain advance to the semifinals?,0.76,,YES,,,
+Spain_vs_Belgium,QF,Will the match be tied at halftime?,0.4,,YES,,,
+Spain_vs_Belgium,QF,Will Belgium hold a lead at any point in regulation?,0.32,,NO,,,path-dependent-lead
+Spain_vs_Belgium,QF,Will either team make a substitution at halftime?,0.55,,NO,,,substitution-timing
+Spain_vs_Belgium,QF,Will a goal be scored before the first hydration break?,0.46,,NO,,,hydration-window
+Spain_vs_Belgium,QF,Will a goal be scored after the second hydration break but before end of regulation?,0.48,,YES,,,hydration-window
+Spain_vs_Belgium,QF,Will both teams score in regulation?,0.43,,YES,,,
+Spain_vs_Belgium,QF,Will Lamine Yamal score or assist a goal?,0.27,,NO,,,
+Spain_vs_Belgium,QF,Will Kevin De Bruyne have 1+ shots on target?,0.45,,YES,,,
+Spain_vs_Belgium,QF,Will Romelu Lukaku have 1+ shots on target?,0.46,,NO,,,
+Spain_vs_Belgium,QF,Will Spain have 5+ shots on target?,0.6,,YES,,,
+Spain_vs_Belgium,QF,Will Belgium have 3+ shots on target?,0.85,,NO,,,
+Spain_vs_Belgium,QF,Will Spain have 6+ corner kicks?,0.62,,NO,,,
+Spain_vs_Belgium,QF,Will there be 4+ total cards?,0.3,,YES,,,
+Spain_vs_Belgium,QF,Will a penalty kick be awarded OR a red card be shown?,0.33,,NO,,,penalty-OR-red
+Norway_vs_England,QF,Will Erling Haaland score a goal?,0.48,0.55,NO,22.38,True,
+Norway_vs_England,QF,Will Harry Kane have 2+ SOT?,0.5,0.55,NO,18.68,True,
+Norway_vs_England,QF,Will England win in regulation?,0.48,0.52,NO,12.98,True,
+Norway_vs_England,QF,Will Jude Bellingham have 2+ SOT?,0.32,0.42,NO,22.27,True,
+Norway_vs_England,QF,Will the match have 3+ total goals?,0.54,0.58,NO,14.09,True,
+Norway_vs_England,QF,Will the match be tied at halftime?,0.43,0.44,YES,1.28,True,
+Norway_vs_England,QF,Will both teams score?,0.58,0.63,YES,-3.68,False,
+Norway_vs_England,QF,Will England have 6+ corner kicks?,0.51,0.51,NO,3.86,True,
+Norway_vs_England,QF,Will Norway have 4+ corner kicks?,0.63,0.56,YES,15.24,True,
+Norway_vs_England,QF,Will a substitute score or assist?,0.53,0.39,NO,-21.12,False,
+Norway_vs_England,QF,Will a penalty be awarded OR a red card shown?,0.38,0.35,NO,-0.5,False,penalty-OR-red
+Norway_vs_England,QF,Will at least one card be shown in each half?,0.48,0.51,NO,11.82,True,event-in-each-half
+Norway_vs_England,QF,Will there be 24+ total shots?,0.68,0.56,NO,-23.83,False,
+Norway_vs_England,QF,Will the second half produce more goals than the first half?,0.44,0.53,NO,21.71,True,half-comparison
+Norway_vs_England,QF,Will England have more corners AND more shots than Norway?,0.55,0.53,NO,0.4,True,
+Argentina_vs_Switzerland,QF,Will Argentina advance to the semifinals?,0.77,0.75,YES,5.65,True,
+Argentina_vs_Switzerland,QF,Will the match be 0-0 at halftime?,0.35,0.37,NO,7.93,True,
+Argentina_vs_Switzerland,QF,Will Switzerland hold a lead at any point?,0.32,0.33,NO,5.56,True,path-dependent-lead
+Argentina_vs_Switzerland,QF,Will the match have 2 or fewer total goals?,0.58,0.52,YES,15.07,True,
+Argentina_vs_Switzerland,QF,Will a goal be scored after the second hydration break?,0.47,0.51,NO,11.69,True,hydration-window
+Argentina_vs_Switzerland,QF,Will Switzerland have 3+ SOT?,0.62,0.52,YES,22.44,True,
+Argentina_vs_Switzerland,QF,Will a substitute score or assist?,0.53,0.37,NO,-24.9,False,
+Argentina_vs_Switzerland,QF,Will Messi score?,0.5,0.55,NO,16.75,True,
+Argentina_vs_Switzerland,QF,Will Alvarez score or assist?,0.32,0.4,NO,15.61,True,
+Argentina_vs_Switzerland,QF,Will Embolo have 1+ SOT?,0.57,0.51,YES,15.4,True,
+Argentina_vs_Switzerland,QF,Will Switzerland have 4+ corners?,0.45,0.46,NO,5.1,True,
+Argentina_vs_Switzerland,QF,Will Argentina have 5+ SOT?,0.63,0.61,NO,0.11,True,
+Argentina_vs_Switzerland,QF,Will Argentina have 7+ corners?,0.2,0.38,NO,26.71,True,
+Argentina_vs_Switzerland,QF,Will there be 4+ total cards?,0.37,0.42,NO,12.23,True,
+Argentina_vs_Switzerland,QF,Will a penalty be awarded OR a red card be shown?,0.45,0.36,YES,24.41,True,penalty-OR-red
+France_vs_Morocco,QF,"Will Kylian Mbappé (France, #10) score a goal (excluding own goals)?",0.54,0.57,YES,1.81,True,
+France_vs_Morocco,QF,"Will Achraf Hakimi (Morocco, #2) have 1 or more shots on target?",0.3,0.44,NO,29.21,True,
+France_vs_Morocco,QF,Will France win in regulation?,0.55,0.63,YES,-8.75,False,
+France_vs_Morocco,QF,"Will Brahim Díaz (Morocco, #10) have 1 or more shots on target?",0.25,0.46,NO,36.65,True,
+France_vs_Morocco,QF,"Will Ousmane Dembélé (France, #7) have 2 or more shots on target?",0.3,0.4,NO,21.91,True,
+France_vs_Morocco,QF,Will Morocco have 3 or more shots on target?,0.6,0.58,NO,2.42,True,
+France_vs_Morocco,QF,Will the match have 2 or fewer total goals?,0.6,0.48,YES,27.1,True,
+France_vs_Morocco,QF,Will there be 5 or more total cards?,0.32,0.34,NO,8.13,True,
+France_vs_Morocco,QF,Will the match be tied at halftime?,0.45,0.43,YES,7.39,True,
+France_vs_Morocco,QF,Will both halves have the same number of goals?,0.32,0.3,NO,1.36,True,
+France_vs_Morocco,QF,Will a penalty kick be awarded OR a red card be shown?,0.38,0.35,YES,11.16,True,penalty-OR-red
+France_vs_Morocco,QF,Will a substitute score or assist a goal?,0.34,0.38,NO,9.51,True,
+France_vs_Morocco,QF,Will France have 5 or more corner kicks?,0.74,0.66,YES,13.03,True,
+France_vs_Morocco,QF,Will a goal be scored after the second hydration break?,0.5,0.52,NO,8.23,True,hydration-window
+France_vs_Spain,SF,4+ total cards,0.4,0.43,NO,9.84,True,
+France_vs_Spain,SF,Yamal score or assist,0.18,0.42,NO,35.62,True,
+France_vs_Spain,SF,3+ total goals,0.5,0.53,NO,10.1,True,
+France_vs_Spain,SF,Tied at 90' -> extra time,0.31,0.34,NO,8.66,True,
+France_vs_Spain,SF,Goal before 1st hydration break,0.42,0.38,YES,13.96,True,hydration-window
+France_vs_Spain,SF,First goal by single-digit shirt,0.31,0.35,NO,11.49,True,novel-scorer-shirt
+France_vs_Spain,SF,Spain advance to final,0.53,0.43,YES,26.73,True,
+France_vs_Spain,SF,Mbappe scores,0.6,0.52,NO,-12.48,False,
+France_vs_Spain,SF,Goal between hydration breaks,0.75,0.61,YES,23.26,True,hydration-window
+France_vs_Spain,SF,Spain 5+ shots on target,0.36,0.5,NO,28.23,True,
+France_vs_Spain,SF,Both teams score,0.59,0.59,NO,5.54,True,
+France_vs_Spain,SF,Spain first substitution,0.6,0.54,NO,-10.64,False,substitution-timing
+France_vs_Spain,SF,France 4+ shots on target,0.72,0.66,NO,-11.98,False,
+England_vs_Argentina,SF,8+ total shots on target (both combined),0.45,0.58,NO,32.3,True,
+England_vs_Argentina,SF,goal in first/second-half stoppage time,0.31,0.34,YES,-0.52,False,stoppage-time-goal
+England_vs_Argentina,SF,Julian Alvarez 1+ SOT,0.58,0.58,YES,6.44,True,
+England_vs_Argentina,SF,England advance to the final,0.55,0.53,NO,1.19,True,
+England_vs_Argentina,SF,penalty kick awarded,0.29,0.33,NO,11.62,True,
+England_vs_Argentina,SF,Lionel Messi scores,0.5,0.45,NO,-2.45,False,
+England_vs_Argentina,SF,goal in each half,0.52,0.51,NO,2.68,True,event-in-each-half
+England_vs_Argentina,SF,Jude Bellingham score or assist,0.3,0.44,NO,28.32,True,
+England_vs_Argentina,SF,both teams receive at least one card,0.55,0.66,YES,-10.88,False,
+England_vs_Argentina,SF,Argentina more corners than England,0.44,0.43,YES,5.73,True,
+England_vs_Argentina,SF,card before the first goal,0.35,0.5,YES,-28.43,False,card-before-goal
+England_vs_Argentina,SF,Harry Kane scores,0.36,0.44,NO,18.03,True,
+England_vs_Argentina,SF,10+ total corner kicks (both combined),0.25,0.45,NO,34.89,True,
+England_vs_Argentina,SF,England lead at halftime,0.27,0.35,NO,14.5,True,
+England_vs_Argentina,SF,Argentina 2+ goals,0.3,0.39,YES,-17.37,False,

@@ -1,0 +1,208 @@
+source,match_id,date,competition,stage_or_round,opponent,is_starter,shots,sot,goals,valid_stats,high_stakes_tags
+ESPN,635246,2022-07-30T16:00Z,Community Shield,Man City,Liverpool,False,1.0,1.0,1.0,True,Oneoff_final_trophy
+ESPN,638208,2022-08-07T15:30Z,Premier League,Man City,West Ham United,False,1.0,0.0,0.0,True,
+ESPN,638215,2022-08-13T14:00Z,Premier League,Man City,AFC Bournemouth,False,0.0,0.0,0.0,True,
+ESPN,638235,2022-08-27T14:00Z,Premier League,Man City,Crystal Palace,False,0.0,0.0,0.0,True,
+ESPN,638248,2022-08-31T18:30Z,Premier League,Man City,Nottingham Forest,True,5.0,3.0,2.0,True,
+ESPN,652592,2022-09-06T19:00Z,Champions League,Man City,Sevilla,False,1.0,0.0,0.0,True,
+ESPN,652612,2022-09-14T19:00Z,Champions League,Man City,Borussia Dortmund,False,2.0,1.0,0.0,True,
+ESPN,637893,2022-09-17T11:30Z,Premier League,Man City,Wolverhampton Wanderers,False,1.0,1.0,0.0,True,
+ESPN,637903,2022-10-02T13:00Z,Premier League,Man City,Manchester United,False,0.0,0.0,0.0,True,PL_rival
+ESPN,652628,2022-10-05T19:00Z,Champions League,Man City,F.C. København,True,2.0,1.0,1.0,True,
+ESPN,637912,2022-10-08T14:00Z,Premier League,Man City,Southampton,False,0.0,0.0,0.0,True,
+ESPN,652634,2022-10-11T16:45Z,Champions League,Man City,F.C. København,True,3.0,0.0,0.0,True,
+ESPN,637924,2022-10-16T15:30Z,Premier League,Man City,Liverpool,False,0.0,0.0,0.0,True,PL_rival
+ESPN,637944,2022-10-22T14:00Z,Premier League,Man City,Brighton & Hove Albion,False,0.0,0.0,0.0,True,
+ESPN,652653,2022-10-25T19:00Z,Champions League,Man City,Borussia Dortmund,True,0.0,0.0,0.0,True,
+ESPN,637955,2022-10-29T11:30Z,Premier League,Man City,Leicester City,True,0.0,0.0,0.0,True,
+ESPN,652681,2022-11-02T20:00Z,Champions League,Man City,Sevilla,True,1.0,1.0,1.0,True,
+ESPN,637966,2022-11-05T15:00Z,Premier League,Man City,Fulham,True,3.0,1.0,1.0,True,
+ESPN,652251,2022-11-09T20:00Z,League Cup,Man City,Chelsea,True,3.0,2.0,1.0,True,Domestic_cup_knockout
+ESPN,637974,2022-11-12T12:30Z,Premier League,Man City,Brentford,False,1.0,1.0,0.0,True,
+ESPN,637994,2022-12-31T15:00Z,Premier League,Man City,Everton,False,0.0,0.0,0.0,True,
+ESPN,658305,2023-01-08T16:30Z,FA Cup,Man City,Chelsea,True,,,,False,Domestic_cup_knockout
+ESPN,660276,2023-01-11T20:00Z,League Cup,Man City,Southampton,True,2.0,0.0,0.0,True,Domestic_cup_knockout
+ESPN,638263,2023-01-19T20:00Z,Premier League,Man City,Tottenham Hotspur,True,4.0,1.0,1.0,True,
+ESPN,638021,2023-01-22T14:00Z,Premier League,Man City,Wolverhampton Wanderers,False,1.0,1.0,0.0,True,
+ESPN,638029,2023-02-05T16:30Z,Premier League,Man City,Tottenham Hotspur,True,2.0,0.0,0.0,True,
+ESPN,638040,2023-02-12T16:30Z,Premier League,Man City,Aston Villa,False,1.0,0.0,0.0,True,
+ESPN,638053,2023-02-18T15:00Z,Premier League,Man City,Nottingham Forest,False,0.0,0.0,0.0,True,
+ESPN,638059,2023-02-25T17:30Z,Premier League,Man City,AFC Bournemouth,True,4.0,2.0,1.0,True,
+ESPN,664625,2023-02-28T20:00Z,FA Cup,Man City,Bristol City,True,,,,False,Domestic_cup_knockout
+ESPN,638081,2023-03-11T17:30Z,Premier League,Man City,Crystal Palace,False,2.0,1.0,0.0,True,
+ESPN,656866,2023-03-14T20:00Z,Champions League,2nd Leg - Manchester City advance 8-1 on aggregate,RB Leipzig,False,1.0,0.0,0.0,True,UCL_knockout_R16plus
+ESPN,666824,2023-03-18T17:45Z,FA Cup,Man City,Burnley,True,,,,False,Domestic_cup_knockout
+ESPN,638108,2023-04-01T11:30Z,Premier League,Man City,Liverpool,True,3.0,2.0,1.0,True,PL_rival
+ESPN,638111,2023-04-08T16:30Z,Premier League,Man City,Southampton,False,1.0,1.0,1.0,True,
+ESPN,667466,2023-04-11T19:00Z,Champions League,1st Leg,Bayern Munich,False,2.0,1.0,0.0,True,UCL_knockout_R16plus
+ESPN,638123,2023-04-15T16:30Z,Premier League,Man City,Leicester City,False,0.0,0.0,0.0,True,
+ESPN,667470,2023-04-19T19:00Z,Champions League,2nd Leg - Manchester City advance 4-1 on aggregate,Bayern Munich,False,0.0,0.0,0.0,True,UCL_knockout_R16plus
+ESPN,667519,2023-04-22T15:45Z,FA Cup,Man City,Sheffield United,True,,,,False,Domestic_cup_knockout
+ESPN,638148,2023-04-26T19:00Z,Premier League,Man City,Arsenal,False,0.0,0.0,0.0,True,PL_rival
+ESPN,638152,2023-04-30T13:00Z,Premier League,Man City,Fulham,True,3.0,2.0,1.0,True,
+ESPN,638095,2023-05-03T19:00Z,Premier League,Man City,West Ham United,True,2.0,2.0,0.0,True,
+ESPN,638168,2023-05-06T14:00Z,Premier League,Man City,Leeds United,True,2.0,1.0,0.0,True,
+ESPN,638172,2023-05-14T13:00Z,Premier League,Man City,Everton,True,0.0,0.0,0.0,True,
+ESPN,668475,2023-05-17T19:00Z,Champions League,2nd Leg - Manchester City advance 5-1 on aggregate,Real Madrid,False,1.0,1.0,1.0,True,UCL_knockout_R16plus
+ESPN,638186,2023-05-21T15:00Z,Premier League,Man City,Chelsea,True,3.0,2.0,1.0,True,
+ESPN,638132,2023-05-24T19:00Z,Premier League,Man City,Brighton & Hove Albion,False,1.0,0.0,0.0,True,
+ESPN,638196,2023-05-28T15:30Z,Premier League,Man City,Brentford,True,5.0,0.0,0.0,True,
+ESPN,670111,2023-08-06T15:00Z,Community Shield,Man City,Arsenal,True,1.0,0.0,0.0,True,Oneoff_final_trophy
+ESPN,671031,2023-08-11T19:00Z,Premier League,Man City,Burnley,True,3.0,1.0,0.0,True,
+ESPN,670084,2023-08-16T19:00Z,UEFA Super Cup,Man City,Sevilla,False,0.0,0.0,0.0,True,Oneoff_final_trophy
+ESPN,671046,2023-08-19T19:00Z,Premier League,Man City,Newcastle United,True,1.0,1.0,1.0,True,
+ESPN,671059,2023-08-27T13:00Z,Premier League,Man City,Sheffield United,True,8.0,2.0,0.0,True,
+ESPN,671066,2023-09-02T14:00Z,Premier League,Man City,Fulham,True,2.0,1.0,1.0,True,
+ESPN,671078,2023-09-16T14:00Z,Premier League,Man City,West Ham United,True,2.0,0.0,0.0,True,
+ESPN,687540,2023-09-19T19:00Z,Champions League,Man City,Red Star Belgrade,True,8.0,5.0,2.0,True,
+ESPN,671081,2023-09-23T14:00Z,Premier League,Man City,Nottingham Forest,True,4.0,1.0,0.0,True,
+ESPN,687495,2023-09-27T19:00Z,League Cup,Man City,Newcastle United,True,2.0,1.0,0.0,True,Domestic_cup_knockout
+ESPN,671097,2023-09-30T14:00Z,Premier League,Man City,Wolverhampton Wanderers,True,2.0,2.0,1.0,True,
+ESPN,687564,2023-10-04T19:00Z,Champions League,Man City,RB Leipzig,False,1.0,1.0,1.0,True,
+ESPN,671101,2023-10-08T15:30Z,Premier League,Man City,Arsenal,True,2.0,0.0,0.0,True,PL_rival
+ESPN,671113,2023-10-21T14:00Z,Premier League,Man City,Brighton & Hove Albion,True,3.0,1.0,1.0,True,
+ESPN,687580,2023-10-25T19:00Z,Champions League,Man City,Young Boys,False,1.0,1.0,0.0,True,
+ESPN,671128,2023-10-29T15:30Z,Premier League,Man City,Manchester United,True,3.0,0.0,0.0,True,PL_rival
+ESPN,671136,2023-11-04T15:00Z,Premier League,Man City,AFC Bournemouth,True,2.0,0.0,0.0,True,
+ESPN,671150,2023-11-12T16:30Z,Premier League,Man City,Chelsea,True,2.0,1.0,0.0,True,
+ESPN,671154,2023-11-25T12:30Z,Premier League,Man City,Liverpool,True,3.0,0.0,0.0,True,PL_rival
+ESPN,687605,2023-11-28T20:00Z,Champions League,Man City,RB Leipzig,False,1.0,1.0,1.0,True,
+ESPN,671166,2023-12-03T16:30Z,Premier League,Man City,Tottenham Hotspur,True,1.0,0.0,0.0,True,
+ESPN,671173,2023-12-06T20:15Z,Premier League,Man City,Aston Villa,True,0.0,0.0,0.0,True,
+ESPN,671185,2023-12-10T14:00Z,Premier League,Man City,Luton Town,True,3.0,0.0,0.0,True,
+ESPN,671199,2023-12-16T15:00Z,Premier League,Man City,Crystal Palace,True,1.0,1.0,0.0,True,
+ESPN,687850,2023-12-19T18:00Z,Club World Cup,Man City,Urawa Red Diamonds,False,2.0,2.0,0.0,True,Oneoff_final_trophy
+ESPN,687851,2023-12-22T18:00Z,Club World Cup,Man City,Fluminense,True,3.0,2.0,2.0,True,Oneoff_final_trophy
+ESPN,671214,2023-12-27T20:15Z,Premier League,Man City,Everton,True,5.0,3.0,1.0,True,
+ESPN,671225,2023-12-30T15:00Z,Premier League,Man City,Sheffield United,True,4.0,1.0,1.0,True,
+ESPN,690662,2024-01-07T14:00Z,FA Cup,Man City,Huddersfield Town,True,3.0,2.0,1.0,True,Domestic_cup_knockout
+ESPN,671239,2024-01-13T17:30Z,Premier League,Man City,Newcastle United,True,6.0,2.0,0.0,True,
+ESPN,694694,2024-01-26T20:00Z,FA Cup,Man City,Tottenham Hotspur,True,2.0,1.0,0.0,True,Domestic_cup_knockout
+ESPN,671250,2024-01-31T19:30Z,Premier League,Man City,Burnley,True,2.0,2.0,2.0,True,
+ESPN,671257,2024-02-05T20:00Z,Premier League,Man City,Brentford,True,5.0,5.0,0.0,True,
+ESPN,671264,2024-02-10T12:30Z,Premier League,Man City,Everton,True,2.0,0.0,0.0,True,
+ESPN,671273,2024-02-17T17:30Z,Premier League,Man City,Chelsea,True,5.0,0.0,0.0,True,
+ESPN,671203,2024-02-20T19:30Z,Premier League,Man City,Brentford,True,3.0,0.0,0.0,True,
+ESPN,671288,2024-02-24T17:30Z,Premier League,Man City,AFC Bournemouth,False,0.0,0.0,0.0,True,
+ESPN,698129,2024-02-27T20:00Z,FA Cup,Man City,Luton Town,False,1.0,1.0,0.0,True,Domestic_cup_knockout
+ESPN,671292,2024-03-03T15:30Z,Premier League,Man City,Manchester United,False,0.0,0.0,0.0,True,PL_rival
+ESPN,691522,2024-03-06T20:00Z,Champions League,2nd Leg - Manchester City advance 6-2 on aggregate,F.C. København,True,3.0,1.0,1.0,True,UCL_knockout_R16plus
+ESPN,671309,2024-03-10T15:45Z,Premier League,Man City,Liverpool,True,2.0,1.0,0.0,True,PL_rival
+ESPN,699286,2024-03-16T17:30Z,FA Cup,Man City,Newcastle United,False,0.0,0.0,0.0,True,Domestic_cup_knockout
+ESPN,671339,2024-04-03T19:15Z,Premier League,Man City,Aston Villa,True,7.0,3.0,0.0,True,
+ESPN,671342,2024-04-06T11:30Z,Premier League,Man City,Crystal Palace,True,4.0,1.0,0.0,True,
+ESPN,700716,2024-04-09T19:00Z,Champions League,1st Leg,Real Madrid,False,0.0,0.0,0.0,True,UCL_knockout_R16plus
+ESPN,671356,2024-04-13T14:00Z,Premier League,Man City,Luton Town,True,3.0,1.0,0.0,True,
+ESPN,700722,2024-04-17T19:00Z,Champions League,2nd Leg - Tied on aggregate - RMA advance 4-3 on penalties,Real Madrid,False,1.0,1.0,0.0,True,UCL_knockout_R16plus
+ESPN,700835,2024-04-20T16:15Z,FA Cup,Man City,Chelsea,True,2.0,0.0,0.0,True,Domestic_cup_knockout
+ESPN,671318,2024-04-25T19:00Z,Premier League,Man City,Brighton & Hove Albion,True,6.0,2.0,1.0,True,
+ESPN,671373,2024-04-28T15:30Z,Premier League,Man City,Nottingham Forest,True,1.0,0.0,0.0,True,
+ESPN,671389,2024-05-04T16:30Z,Premier League,Man City,Wolverhampton Wanderers,False,1.0,1.0,1.0,True,
+ESPN,671394,2024-05-11T11:30Z,Premier League,Man City,Fulham,False,1.0,1.0,1.0,True,
+ESPN,671365,2024-05-14T19:00Z,Premier League,Man City,Tottenham Hotspur,False,0.0,0.0,0.0,True,
+ESPN,702151,2024-05-25T14:00Z,FA Cup,Man City,Manchester United,False,2.0,0.0,0.0,True,Domestic_cup_knockout
+StatsBomb,3939969,2024-06-21,Copa America 2024,Group Stage,Canada,True,3,2,1,True,
+StatsBomb,3939977,2024-06-26,Copa America 2024,Group Stage,Chile,True,2,1,0,True,
+StatsBomb,3942228,2024-07-05,Copa America 2024,Quarter-finals,Ecuador,False,0,0,0,True,CopaAmerica2024_knockout
+StatsBomb,3942785,2024-07-10,Copa America 2024,Semi-finals,Canada,True,3,2,1,True,CopaAmerica2024_knockout
+StatsBomb,3943077,2024-07-15,Copa America 2024,Final,Colombia,True,1,0,0,True,CopaAmerica2024_knockout
+ESPN,704669,2024-08-19T19:30Z,La Liga,Atletico Madrid,Villarreal,False,0.0,0.0,0.0,True,
+ESPN,704671,2024-08-25T19:30Z,La Liga,Atletico Madrid,Girona,True,1.0,0.0,0.0,True,
+ESPN,704681,2024-08-28T19:30Z,La Liga,Atletico Madrid,Espanyol,True,3.0,1.0,0.0,True,
+ESPN,704691,2024-08-31T17:00Z,La Liga,Atletico Madrid,Athletic Club,True,1.0,0.0,0.0,True,
+ESPN,704705,2024-09-15T19:00Z,La Liga,Atletico Madrid,Valencia,False,1.0,1.0,1.0,True,
+ESPN,720432,2024-09-19T19:00Z,Champions League,Atletico Madrid,RB Leipzig,True,2.0,0.0,0.0,True,
+ESPN,704714,2024-09-22T19:00Z,La Liga,Atletico Madrid,Rayo Vallecano,True,2.0,1.0,0.0,True,
+ESPN,704721,2024-09-26T19:00Z,La Liga,Atletico Madrid,Celta Vigo,False,2.0,1.0,1.0,True,
+ESPN,704734,2024-09-29T19:00Z,La Liga,Atletico Madrid,Real Madrid,True,2.0,1.0,0.0,True,LaLiga_Madrid_derby
+ESPN,720447,2024-10-02T19:00Z,Champions League,Atletico Madrid,Benfica,True,0.0,0.0,0.0,True,
+ESPN,704746,2024-10-06T19:00Z,La Liga,Atletico Madrid,Real Sociedad,True,2.0,1.0,1.0,True,
+ESPN,704752,2024-10-20T14:15Z,La Liga,Atletico Madrid,Leganés,False,3.0,1.0,0.0,True,
+ESPN,720373,2024-10-23T19:00Z,Champions League,Atletico Madrid,Lille,True,2.0,2.0,1.0,True,
+ESPN,704765,2024-10-27T17:30Z,La Liga,Atletico Madrid,Real Betis,True,1.0,1.0,0.0,True,
+ESPN,704777,2024-11-03T13:00Z,La Liga,Atletico Madrid,Las Palmas,True,2.0,0.0,0.0,True,
+ESPN,720388,2024-11-06T20:00Z,Champions League,Atletico Madrid,Paris Saint-Germain,True,1.0,1.0,0.0,True,
+ESPN,704780,2024-11-10T15:15Z,La Liga,Atletico Madrid,Mallorca,True,4.0,1.0,1.0,True,
+ESPN,704791,2024-11-23T15:15Z,La Liga,Atletico Madrid,Alavés,False,0.0,0.0,0.0,True,
+ESPN,720392,2024-11-26T17:45Z,Champions League,Atletico Madrid,Sparta Prague,True,4.0,2.0,2.0,True,
+ESPN,704806,2024-11-30T20:00Z,La Liga,Atletico Madrid,Real Valladolid,True,2.0,2.0,1.0,True,
+ESPN,704811,2024-12-08T20:00Z,La Liga,Atletico Madrid,Sevilla,True,1.0,0.0,0.0,True,
+ESPN,720321,2024-12-11T17:45Z,Champions League,Atletico Madrid,Slovan Bratislava,True,4.0,1.0,1.0,True,
+ESPN,704821,2024-12-15T13:00Z,La Liga,Atletico Madrid,Getafe,True,1.0,1.0,0.0,True,
+ESPN,704830,2024-12-21T20:00Z,La Liga,Atletico Madrid,Barcelona,True,1.0,0.0,0.0,True,
+ESPN,724687,2025-01-04T20:30Z,Copa del Rey,Atletico Madrid,Marbella FC,True,,,,False,Domestic_cup_knockout
+ESPN,704842,2025-01-12T15:15Z,La Liga,Atletico Madrid,Osasuna,True,4.0,4.0,1.0,True,
+ESPN,704853,2025-01-18T15:15Z,La Liga,Atletico Madrid,Leganés,True,2.0,0.0,0.0,True,
+ESPN,720335,2025-01-21T20:00Z,Champions League,Atletico Madrid,Bayer Leverkusen,True,3.0,2.0,2.0,True,
+ESPN,704862,2025-01-25T15:15Z,La Liga,Atletico Madrid,Villarreal,True,5.0,3.0,0.0,True,
+ESPN,720356,2025-01-29T20:00Z,Champions League,Atletico Madrid,RB Salzburg,True,1.0,0.0,0.0,True,
+ESPN,704870,2025-02-01T17:30Z,La Liga,Atletico Madrid,Mallorca,True,1.0,0.0,0.0,True,
+ESPN,730976,2025-02-04T20:30Z,Copa del Rey,Atletico Madrid,Getafe,True,,,,False,Domestic_cup_knockout
+ESPN,704886,2025-02-08T20:00Z,La Liga,Atletico Madrid,Real Madrid,True,2.0,1.0,1.0,True,LaLiga_Madrid_derby
+ESPN,704890,2025-02-15T17:30Z,La Liga,Atletico Madrid,Celta Vigo,True,1.0,0.0,0.0,True,
+ESPN,704905,2025-02-22T17:30Z,La Liga,Atletico Madrid,Valencia,True,5.0,2.0,2.0,True,
+ESPN,732586,2025-02-25T20:30Z,Copa del Rey,1st Leg,Barcelona,True,,,,False,Domestic_cup_knockout
+ESPN,704910,2025-03-01T20:00Z,La Liga,Atletico Madrid,Athletic Club,False,2.0,1.0,1.0,True,
+ESPN,733602,2025-03-04T20:00Z,Champions League,1st Leg,Real Madrid,True,1.0,1.0,1.0,True,UCL_knockout_R16plus
+ESPN,704924,2025-03-09T13:00Z,La Liga,Atletico Madrid,Getafe,True,0.0,0.0,0.0,True,
+ESPN,733606,2025-03-12T20:00Z,Champions League,2nd Leg - Tied on aggregate - RMA advance 4-2 on penalties,Real Madrid,True,5.0,3.0,0.0,True,UCL_knockout_R16plus
+ESPN,704930,2025-03-16T20:00Z,La Liga,Atletico Madrid,Barcelona,True,1.0,1.0,1.0,True,
+ESPN,704948,2025-03-29T15:15Z,La Liga,Atletico Madrid,Espanyol,False,1.0,0.0,0.0,True,
+ESPN,732588,2025-04-02T19:30Z,Copa del Rey,2nd Leg - Barcelona advance 5-4 on aggregate,Barcelona,True,,,,False,Domestic_cup_knockout
+ESPN,704955,2025-04-06T14:15Z,La Liga,Atletico Madrid,Sevilla,True,5.0,3.0,1.0,True,
+ESPN,704969,2025-04-14T19:00Z,La Liga,Atletico Madrid,Real Valladolid,True,6.0,4.0,2.0,True,
+ESPN,704971,2025-04-19T19:00Z,La Liga,Atletico Madrid,Las Palmas,True,1.0,1.0,0.0,True,
+ESPN,704980,2025-04-24T19:30Z,La Liga,Atletico Madrid,Rayo Vallecano,True,2.0,2.0,1.0,True,
+ESPN,704993,2025-05-03T12:00Z,La Liga,Atletico Madrid,Alavés,True,0.0,0.0,0.0,True,
+ESPN,705012,2025-05-15T17:00Z,La Liga,Atletico Madrid,Osasuna,True,0.0,0.0,0.0,True,
+ESPN,705020,2025-05-18T17:00Z,La Liga,Atletico Madrid,Real Betis,True,4.0,2.0,2.0,True,
+ESPN,705033,2025-05-25T12:00Z,La Liga,Atletico Madrid,Girona,True,3.0,3.0,0.0,True,
+ESPN,748146,2025-08-17T19:30Z,La Liga,Atletico Madrid,Espanyol,True,5.0,3.0,1.0,True,
+ESPN,748161,2025-08-23T17:30Z,La Liga,Atletico Madrid,Elche,True,0.0,0.0,0.0,True,
+ESPN,748172,2025-08-30T15:00Z,La Liga,Atletico Madrid,Alavés,True,2.0,1.0,0.0,True,
+ESPN,748181,2025-09-13T19:00Z,La Liga,Atletico Madrid,Villarreal,True,1.0,0.0,0.0,True,
+ESPN,748188,2025-09-21T14:15Z,La Liga,Atletico Madrid,Mallorca,True,2.0,2.0,0.0,True,
+ESPN,748195,2025-09-24T19:30Z,La Liga,Atletico Madrid,Rayo Vallecano,True,4.0,3.0,3.0,True,
+ESPN,748210,2025-09-27T14:15Z,La Liga,Atletico Madrid,Real Madrid,True,4.0,2.0,2.0,True,LaLiga_Madrid_derby
+ESPN,757673,2025-09-30T19:00Z,Champions League,Atletico Madrid,Eintracht Frankfurt,True,4.0,3.0,1.0,True,
+ESPN,748221,2025-10-05T19:00Z,La Liga,Atletico Madrid,Celta Vigo,True,0.0,0.0,0.0,True,
+ESPN,748224,2025-10-18T19:00Z,La Liga,Atletico Madrid,Osasuna,True,3.0,3.0,0.0,True,
+ESPN,757697,2025-10-21T19:00Z,Champions League,Atletico Madrid,Arsenal,True,3.0,0.0,0.0,True,
+ESPN,748237,2025-10-27T20:00Z,La Liga,Atletico Madrid,Real Betis,True,1.0,0.0,0.0,True,
+ESPN,748245,2025-11-01T15:15Z,La Liga,Atletico Madrid,Sevilla,True,3.0,1.0,1.0,True,
+ESPN,757711,2025-11-04T20:00Z,Champions League,Atletico Madrid,Union St.-Gilloise,True,3.0,3.0,1.0,True,
+ESPN,748261,2025-11-08T17:30Z,La Liga,Atletico Madrid,Levante,True,5.0,2.0,0.0,True,
+ESPN,748264,2025-11-23T17:30Z,La Liga,Atletico Madrid,Getafe,True,1.0,0.0,0.0,True,
+ESPN,757740,2025-11-26T20:00Z,Champions League,Atletico Madrid,Internazionale,True,3.0,2.0,1.0,True,
+ESPN,748275,2025-11-29T20:00Z,La Liga,Atletico Madrid,Real Oviedo,False,0.0,0.0,0.0,True,
+ESPN,748331,2025-12-02T20:00Z,La Liga,Atletico Madrid,Barcelona,True,1.0,1.0,0.0,True,
+ESPN,748286,2025-12-06T20:00Z,La Liga,Atletico Madrid,Athletic Club,True,1.0,0.0,0.0,True,
+ESPN,757750,2025-12-09T20:00Z,Champions League,Atletico Madrid,PSV Eindhoven,True,3.0,2.0,1.0,True,
+ESPN,748296,2025-12-13T13:00Z,La Liga,Atletico Madrid,Valencia,True,1.0,0.0,0.0,True,
+ESPN,748309,2025-12-21T13:00Z,La Liga,Atletico Madrid,Girona,True,1.0,1.0,0.0,True,
+ESPN,748314,2026-01-04T20:00Z,La Liga,Atletico Madrid,Real Sociedad,True,2.0,0.0,0.0,True,
+ESPN,748116,2026-01-08T19:00Z,Spanish Super Cup,Atletico Madrid,Real Madrid,True,4.0,0.0,0.0,True,Oneoff_final_trophy
+ESPN,401846960,2026-01-13T20:00Z,Copa del Rey,Atletico Madrid,Deportivo La Coruña,True,,,,False,Domestic_cup_knockout
+ESPN,748334,2026-01-18T15:15Z,La Liga,Atletico Madrid,Alavés,True,4.0,1.0,0.0,True,
+ESPN,757771,2026-01-21T17:45Z,Champions League,Atletico Madrid,Galatasaray,True,4.0,0.0,0.0,True,
+ESPN,748345,2026-01-25T13:00Z,La Liga,Atletico Madrid,Mallorca,True,2.0,0.0,0.0,True,
+ESPN,757782,2026-01-28T20:00Z,Champions League,Atletico Madrid,Bodo/Glimt,True,4.0,0.0,0.0,True,
+ESPN,748357,2026-01-31T17:30Z,La Liga,Atletico Madrid,Levante,False,2.0,2.0,0.0,True,
+ESPN,748369,2026-02-08T17:30Z,La Liga,Atletico Madrid,Real Betis,True,1.0,1.0,0.0,True,
+ESPN,401859849,2026-02-12T20:00Z,Copa del Rey,1st Leg,Barcelona,True,,,,False,Domestic_cup_knockout
+ESPN,748382,2026-02-15T15:15Z,La Liga,Atletico Madrid,Rayo Vallecano,False,0.0,0.0,0.0,True,
+ESPN,401858760,2026-02-18T20:00Z,Champions League,1st Leg,Club Brugge,True,2.0,2.0,1.0,True,UCL_knockout_R16plus
+ESPN,748390,2026-02-21T20:00Z,La Liga,Atletico Madrid,Espanyol,False,0.0,0.0,0.0,True,
+ESPN,401858768,2026-02-24T17:45Z,Champions League,2nd Leg - Atlético Madrid advance 7-4 on aggregate,Club Brugge,True,1.0,0.0,0.0,True,UCL_knockout_R16plus
+ESPN,748394,2026-02-28T20:00Z,La Liga,Atletico Madrid,Real Oviedo,False,2.0,1.0,1.0,True,
+ESPN,401859850,2026-03-03T20:00Z,Copa del Rey,2nd Leg - Atlético Madrid advance 4-3 on aggregate,Barcelona,True,1.0,1.0,0.0,True,Domestic_cup_knockout
+ESPN,748410,2026-03-07T17:30Z,La Liga,Atletico Madrid,Real Sociedad,False,0.0,0.0,0.0,True,
+ESPN,401862579,2026-03-10T20:00Z,Champions League,1st Leg,Tottenham Hotspur,True,2.0,2.0,2.0,True,UCL_knockout_R16plus
+ESPN,748423,2026-03-14T15:15Z,La Liga,Atletico Madrid,Getafe,False,1.0,1.0,0.0,True,
+ESPN,401862580,2026-03-18T20:00Z,Champions League,2nd Leg - Atlético Madrid advance 7-5 on aggregate,Tottenham Hotspur,True,7.0,3.0,1.0,True,UCL_knockout_R16plus
+ESPN,748433,2026-03-22T20:00Z,La Liga,Atletico Madrid,Real Madrid,True,5.0,1.0,0.0,True,LaLiga_Madrid_derby
+ESPN,401862887,2026-04-08T19:00Z,Champions League,1st Leg,Barcelona,True,2.0,2.0,1.0,True,UCL_knockout_R16plus
+ESPN,401862892,2026-04-14T19:00Z,Champions League,2nd Leg - Atlético Madrid advance 3-2 on aggregate,Barcelona,True,1.0,1.0,0.0,True,UCL_knockout_R16plus
+ESPN,401859852,2026-04-18T19:00Z,Copa del Rey,Atletico Madrid,Real Sociedad,True,6.0,3.0,1.0,True,Domestic_cup_knockout
+ESPN,401862894,2026-04-29T19:00Z,Champions League,1st Leg,Arsenal,True,6.0,2.0,1.0,True,UCL_knockout_R16plus
+ESPN,401862896,2026-05-05T19:00Z,Champions League,2nd Leg - Arsenal advance 2-1 on aggregate,Arsenal,True,1.0,0.0,0.0,True,UCL_knockout_R16plus

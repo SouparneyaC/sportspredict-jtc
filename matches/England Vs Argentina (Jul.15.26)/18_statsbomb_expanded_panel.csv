@@ -1,0 +1,136 @@
+match_id,competition,date,stage,stage_bucket,is_sf_or_final,team_a,team_b,n_goals_regulation,n_cards_regulation,q5_goal_each_half,q7_stoppage_goal,q8_both_carded,q10_card_before_goal,has_goal,has_card
+3920384,AFCON2023,2024-01-13,Group Stage,group,False,Côte d'Ivoire,Guinea-Bissau,2,3,True,False,True,False,True,True
+3920386,AFCON2023,2024-01-14,Group Stage,group,False,Nigeria,Equatorial Guinea,2,3,False,False,True,True,True,True
+3920385,AFCON2023,2024-01-14,Group Stage,group,False,Egypt,Mozambique,4,4,True,True,True,False,True,True
+3920387,AFCON2023,2024-01-14,Group Stage,group,False,Ghana,Cape Verde Islands,3,6,True,True,True,True,True,True
+3920389,AFCON2023,2024-01-15,Group Stage,group,False,Cameroon,Guinea,2,4,True,False,True,False,True,True
+3920390,AFCON2023,2024-01-15,Group Stage,group,False,Algeria,Angola,2,5,True,False,True,False,True,True
+3920388,AFCON2023,2024-01-15,Group Stage,group,False,Senegal,Gambia,3,3,True,False,True,False,True,True
+3920393,AFCON2023,2024-01-16,Group Stage,group,False,Tunisia,Namibia,1,0,False,False,False,False,True,False
+3920392,AFCON2023,2024-01-16,Group Stage,group,False,Burkina Faso,Mauritania,1,5,False,True,True,True,True,True
+3920391,AFCON2023,2024-01-16,Group Stage,group,False,Mali,South Africa,2,5,False,False,True,True,True,True
+3920395,AFCON2023,2024-01-17,Group Stage,group,False,Congo DR,Zambia,2,2,False,False,True,False,True,True
+3920394,AFCON2023,2024-01-17,Group Stage,group,False,Morocco,Tanzania,3,7,True,False,True,True,True,True
+3920397,AFCON2023,2024-01-18,Group Stage,group,False,Equatorial Guinea,Guinea-Bissau,6,2,True,True,False,False,True,True
+3920396,AFCON2023,2024-01-18,Group Stage,group,False,Egypt,Ghana,4,1,True,True,False,True,True,True
+3920398,AFCON2023,2024-01-18,Group Stage,group,False,Côte d'Ivoire,Nigeria,1,1,False,False,False,False,True,True
+3920399,AFCON2023,2024-01-19,Group Stage,group,False,Cape Verde Islands,Mozambique,3,1,True,False,False,False,True,True
+3920400,AFCON2023,2024-01-19,Group Stage,group,False,Senegal,Cameroon,4,4,True,True,True,False,True,True
+3920401,AFCON2023,2024-01-19,Group Stage,group,False,Guinea,Gambia,1,4,False,False,True,True,True,True
+3920404,AFCON2023,2024-01-20,Group Stage,group,False,Tunisia,Mali,2,2,False,False,False,False,True,True
+3920403,AFCON2023,2024-01-20,Group Stage,group,False,Mauritania,Angola,5,3,True,False,True,True,True,True
+3920402,AFCON2023,2024-01-20,Group Stage,group,False,Algeria,Burkina Faso,4,7,True,True,True,True,True,True
+3920407,AFCON2023,2024-01-21,Group Stage,group,False,South Africa,Namibia,4,1,True,False,False,False,True,True
+3920405,AFCON2023,2024-01-21,Group Stage,group,False,Morocco,Congo DR,2,4,True,False,True,False,True,True
+3920406,AFCON2023,2024-01-21,Group Stage,group,False,Zambia,Tanzania,2,3,True,False,False,False,True,True
+3920409,AFCON2023,2024-01-22,Group Stage,group,False,Guinea-Bissau,Nigeria,1,3,False,False,False,False,True,True
+3920408,AFCON2023,2024-01-22,Group Stage,group,False,Equatorial Guinea,Côte d'Ivoire,4,5,True,False,True,True,True,True
+3920410,AFCON2023,2024-01-22,Group Stage,group,False,Mozambique,Ghana,4,9,True,True,True,False,True,True
+3920411,AFCON2023,2024-01-22,Group Stage,group,False,Cape Verde Islands,Egypt,4,3,True,True,True,False,True,True
+3920413,AFCON2023,2024-01-23,Group Stage,group,False,Gambia,Cameroon,5,4,False,True,False,False,True,True
+3920412,AFCON2023,2024-01-23,Group Stage,group,False,Guinea,Senegal,2,4,False,False,True,True,True,True
+3920415,AFCON2023,2024-01-23,Group Stage,group,False,Mauritania,Algeria,1,6,False,False,True,True,True,True
+3920414,AFCON2023,2024-01-23,Group Stage,group,False,Angola,Burkina Faso,2,4,True,True,True,True,True,True
+3920417,AFCON2023,2024-01-24,Group Stage,group,False,Namibia,Mali,0,1,False,False,False,True,False,True
+3920416,AFCON2023,2024-01-24,Group Stage,group,False,South Africa,Tunisia,0,0,False,False,False,False,False,False
+3920419,AFCON2023,2024-01-24,Group Stage,group,False,Zambia,Morocco,1,1,False,False,False,False,True,True
+3920418,AFCON2023,2024-01-24,Group Stage,group,False,Tanzania,Congo DR,0,1,False,False,False,True,False,True
+3922237,AFCON2023,2024-01-27,Round of 16,knockout_core,False,Angola,Namibia,3,4,True,False,True,True,True,True
+3922238,AFCON2023,2024-01-27,Round of 16,knockout_core,False,Nigeria,Cameroon,2,4,True,False,True,False,True,True
+3922240,AFCON2023,2024-01-28,Round of 16,knockout_core,False,Egypt,Congo DR,2,4,False,True,True,False,True,True
+3922239,AFCON2023,2024-01-28,Round of 16,knockout_core,False,Equatorial Guinea,Guinea,1,2,False,True,True,True,True,True
+3922242,AFCON2023,2024-01-29,Round of 16,knockout_core,False,Senegal,Côte d'Ivoire,2,6,True,False,True,False,True,True
+3922241,AFCON2023,2024-01-29,Round of 16,knockout_core,False,Cape Verde Islands,Mauritania,1,2,False,False,True,True,True,True
+3922244,AFCON2023,2024-01-30,Round of 16,knockout_core,False,Mali,Burkina Faso,3,4,True,False,True,False,True,True
+3922243,AFCON2023,2024-01-30,Round of 16,knockout_core,False,Morocco,South Africa,2,5,False,True,True,True,True,True
+3922356,AFCON2023,2024-02-02,Quarter-finals,knockout_core,False,Congo DR,Guinea,4,3,True,False,True,False,True,True
+3922321,AFCON2023,2024-02-02,Quarter-finals,knockout_core,False,Nigeria,Angola,1,4,False,False,True,False,True,True
+3922658,AFCON2023,2024-02-03,Quarter-finals,knockout_core,False,Cape Verde Islands,South Africa,0,1,False,False,False,True,False,True
+3922659,AFCON2023,2024-02-03,Quarter-finals,knockout_core,False,Mali,Côte d'Ivoire,2,8,False,False,True,True,True,True
+3922838,AFCON2023,2024-02-07,Semi-finals,knockout_core,True,Côte d'Ivoire,Congo DR,1,0,False,False,False,False,True,False
+3922837,AFCON2023,2024-02-07,Semi-finals,knockout_core,True,Nigeria,South Africa,2,0,False,False,False,False,True,False
+3923880,AFCON2023,2024-02-10,3rd Place Final,third_place,False,South Africa,Congo DR,0,1,False,False,False,True,False,True
+3923881,AFCON2023,2024-02-11,Final,knockout_core,True,Nigeria,Côte d'Ivoire,3,5,True,False,True,False,True,True
+3930158,Euro2024,2024-06-14,Group Stage,group,False,Germany,Scotland,6,4,True,True,True,False,True,True
+3930159,Euro2024,2024-06-15,Group Stage,group,False,Hungary,Switzerland,4,4,True,True,True,True,True,True
+3930160,Euro2024,2024-06-15,Group Stage,group,False,Spain,Croatia,3,1,False,True,False,False,True,True
+3930161,Euro2024,2024-06-15,Group Stage,group,False,Italy,Albania,3,4,False,False,True,False,True,True
+3930163,Euro2024,2024-06-16,Group Stage,group,False,Serbia,England,1,2,False,False,False,False,True,True
+3938637,Euro2024,2024-06-16,Group Stage,group,False,Poland,Netherlands,3,1,True,False,False,True,True,True
+3930162,Euro2024,2024-06-16,Group Stage,group,False,Slovenia,Denmark,2,3,True,False,True,False,True,True
+3938638,Euro2024,2024-06-17,Group Stage,group,False,Romania,Ukraine,3,2,True,False,True,False,True,True
+3930165,Euro2024,2024-06-17,Group Stage,group,False,Austria,France,1,7,False,False,True,True,True,True
+3930164,Euro2024,2024-06-17,Group Stage,group,False,Belgium,Slovakia,1,4,False,False,True,False,True,True
+3930166,Euro2024,2024-06-18,Group Stage,group,False,Portugal,Czech Republic,3,3,False,True,True,True,True,True
+3938639,Euro2024,2024-06-18,Group Stage,group,False,Turkey,Georgia,4,3,True,True,True,False,True,True
+3930169,Euro2024,2024-06-19,Group Stage,group,False,Scotland,Switzerland,2,5,False,False,True,False,True,True
+3930167,Euro2024,2024-06-19,Group Stage,group,False,Croatia,Albania,4,4,True,True,True,False,True,True
+3930168,Euro2024,2024-06-19,Group Stage,group,False,Germany,Hungary,2,4,True,False,True,False,True,True
+3930170,Euro2024,2024-06-20,Group Stage,group,False,Slovenia,Serbia,2,6,False,True,True,True,True,True
+3930171,Euro2024,2024-06-20,Group Stage,group,False,Denmark,England,2,4,False,False,True,False,True,True
+3930172,Euro2024,2024-06-20,Group Stage,group,False,Spain,Italy,1,5,False,False,True,True,True,True
+3938641,Euro2024,2024-06-21,Group Stage,group,False,Poland,Austria,4,6,True,False,True,False,True,True
+3938640,Euro2024,2024-06-21,Group Stage,group,False,Slovakia,Ukraine,3,1,True,False,False,False,True,True
+3930173,Euro2024,2024-06-21,Group Stage,group,False,Netherlands,France,0,1,False,False,False,True,False,True
+3939969,CopaAmerica2024,2024-06-21,Group Stage,group,False,Argentina,Canada,2,4,False,False,True,False,True,True
+3938642,Euro2024,2024-06-22,Group Stage,group,False,Georgia,Czech Republic,2,9,True,True,True,True,True,True
+3930174,Euro2024,2024-06-22,Group Stage,group,False,Turkey,Portugal,3,5,True,False,True,False,True,True
+3930175,Euro2024,2024-06-22,Group Stage,group,False,Belgium,Romania,2,3,True,False,True,False,True,True
+3939970,CopaAmerica2024,2024-06-22,Group Stage,group,False,Peru,Chile,0,4,False,False,True,True,False,True
+3939972,CopaAmerica2024,2024-06-22,Group Stage,group,False,Ecuador,Venezuela,3,5,True,False,True,True,True,True
+3930176,Euro2024,2024-06-23,Group Stage,group,False,Switzerland,Germany,2,4,True,True,True,True,True,True
+3930177,Euro2024,2024-06-23,Group Stage,group,False,Scotland,Hungary,1,6,False,True,True,True,True,True
+3939974,CopaAmerica2024,2024-06-23,Group Stage,group,False,United States,Bolivia,2,5,False,False,True,False,True,True
+3939971,CopaAmerica2024,2024-06-23,Group Stage,group,False,Mexico,Jamaica,1,0,False,False,False,False,True,False
+3930178,Euro2024,2024-06-24,Group Stage,group,False,Croatia,Italy,2,8,False,True,True,True,True,True
+3930179,Euro2024,2024-06-24,Group Stage,group,False,Albania,Spain,1,3,False,False,True,False,True,True
+3939975,CopaAmerica2024,2024-06-24,Group Stage,group,False,Colombia,Paraguay,3,3,True,False,True,True,True,True
+3939973,CopaAmerica2024,2024-06-24,Group Stage,group,False,Uruguay,Panama,4,1,True,True,False,False,True,True
+3930181,Euro2024,2024-06-25,Group Stage,group,False,England,Slovenia,0,5,False,False,True,True,False,True
+3938643,Euro2024,2024-06-25,Group Stage,group,False,France,Poland,2,4,False,False,True,True,True,True
+3930180,Euro2024,2024-06-25,Group Stage,group,False,Netherlands,Austria,5,3,True,False,False,False,True,True
+3930182,Euro2024,2024-06-25,Group Stage,group,False,Denmark,Serbia,0,4,False,False,True,True,False,True
+3939978,CopaAmerica2024,2024-06-25,Group Stage,group,False,Peru,Canada,1,2,False,False,True,True,True,True
+3939976,CopaAmerica2024,2024-06-25,Group Stage,group,False,Brazil,Costa Rica,0,3,False,False,True,True,False,True
+3938644,Euro2024,2024-06-26,Group Stage,group,False,Georgia,Portugal,2,4,True,False,True,False,True,True
+3938645,Euro2024,2024-06-26,Group Stage,group,False,Ukraine,Belgium,0,2,False,False,True,True,False,True
+3930184,Euro2024,2024-06-26,Group Stage,group,False,Czech Republic,Turkey,3,19,False,True,True,True,True,True
+3930183,Euro2024,2024-06-26,Group Stage,group,False,Slovakia,Romania,2,4,False,False,True,False,True,True
+3939980,CopaAmerica2024,2024-06-26,Group Stage,group,False,Ecuador,Jamaica,4,4,True,True,False,False,True,True
+3939977,CopaAmerica2024,2024-06-26,Group Stage,group,False,Chile,Argentina,1,2,False,False,False,True,True,True
+3939979,CopaAmerica2024,2024-06-27,Group Stage,group,False,Venezuela,Mexico,1,4,False,False,True,True,True,True
+3939981,CopaAmerica2024,2024-06-27,Group Stage,group,False,Panama,United States,3,7,True,False,True,True,True,True
+3939982,CopaAmerica2024,2024-06-28,Group Stage,group,False,Uruguay,Bolivia,5,1,True,False,False,False,True,True
+3939984,CopaAmerica2024,2024-06-28,Group Stage,group,False,Colombia,Costa Rica,3,3,True,False,True,True,True,True
+3940983,Euro2024,2024-06-29,Round of 16,knockout_core,False,Germany,Denmark,2,2,False,False,False,False,True,True
+3940878,Euro2024,2024-06-29,Round of 16,knockout_core,False,Switzerland,Italy,2,3,True,False,False,True,True,True
+3939983,CopaAmerica2024,2024-06-29,Group Stage,group,False,Paraguay,Brazil,5,6,True,True,True,False,True,True
+3941018,Euro2024,2024-06-30,Round of 16,knockout_core,False,Spain,Georgia,5,2,True,False,True,False,True,True
+3941017,Euro2024,2024-06-30,Round of 16,knockout_core,False,England,Slovakia,2,6,True,True,True,True,True,True
+3939986,CopaAmerica2024,2024-06-30,Group Stage,group,False,Argentina,Peru,2,6,False,False,True,True,True,True
+3939985,CopaAmerica2024,2024-06-30,Group Stage,group,False,Canada,Chile,0,7,False,False,True,True,False,True
+3941019,Euro2024,2024-07-01,Round of 16,knockout_core,False,France,Belgium,1,5,False,False,True,True,True,True
+3941020,Euro2024,2024-07-01,Round of 16,knockout_core,False,Portugal,Slovenia,0,2,False,False,False,True,False,True
+3939987,CopaAmerica2024,2024-07-01,Group Stage,group,False,Jamaica,Venezuela,3,2,False,False,True,True,True,True
+3939988,CopaAmerica2024,2024-07-01,Group Stage,group,False,Mexico,Ecuador,0,7,False,False,True,True,False,True
+3941022,Euro2024,2024-07-02,Round of 16,knockout_core,False,Austria,Turkey,3,4,True,False,True,False,True,True
+3941021,Euro2024,2024-07-02,Round of 16,knockout_core,False,Romania,Netherlands,3,4,True,True,True,False,True,True
+3939990,CopaAmerica2024,2024-07-02,Group Stage,group,False,United States,Uruguay,1,3,False,False,True,True,True,True
+3939989,CopaAmerica2024,2024-07-02,Group Stage,group,False,Bolivia,Panama,4,3,True,True,True,True,True,True
+3939991,CopaAmerica2024,2024-07-03,Group Stage,group,False,Brazil,Colombia,2,5,False,True,True,True,True,True
+3939992,CopaAmerica2024,2024-07-03,Group Stage,group,False,Costa Rica,Paraguay,3,6,True,False,True,False,True,True
+3942349,Euro2024,2024-07-05,Quarter-finals,knockout_core,False,Portugal,France,0,2,False,False,True,True,False,True
+3942226,Euro2024,2024-07-05,Quarter-finals,knockout_core,False,Spain,Germany,2,9,False,False,True,True,True,True
+3942228,CopaAmerica2024,2024-07-05,Quarter-finals,knockout_core,False,Argentina,Ecuador,2,4,True,True,True,True,True,True
+3942227,Euro2024,2024-07-06,Quarter-finals,knockout_core,False,England,Switzerland,2,3,False,False,True,True,True,True
+3942382,Euro2024,2024-07-06,Quarter-finals,knockout_core,False,Netherlands,Turkey,3,6,True,False,True,True,True,True
+3942416,CopaAmerica2024,2024-07-06,Quarter-finals,knockout_core,False,Colombia,Panama,5,4,True,True,True,False,True,True
+3942229,CopaAmerica2024,2024-07-06,Quarter-finals,knockout_core,False,Venezuela,Canada,2,3,True,False,True,False,True,True
+3942415,CopaAmerica2024,2024-07-07,Quarter-finals,knockout_core,False,Uruguay,Brazil,0,5,False,False,True,True,False,True
+3942752,Euro2024,2024-07-09,Semi-finals,knockout_core,True,Spain,France,3,4,False,False,True,False,True,True
+3942819,Euro2024,2024-07-10,Semi-finals,knockout_core,True,Netherlands,England,3,6,True,True,True,False,True,True
+3942785,CopaAmerica2024,2024-07-10,Semi-finals,knockout_core,True,Argentina,Canada,2,4,True,False,True,False,True,True
+3942852,CopaAmerica2024,2024-07-11,Semi-finals,knockout_core,True,Uruguay,Colombia,1,8,False,False,True,True,True,True
+3943043,Euro2024,2024-07-14,Final,knockout_core,True,Spain,England,3,4,False,False,True,True,True,True
+3943076,CopaAmerica2024,2024-07-14,3rd Place Final,third_place,False,Canada,Uruguay,4,5,True,True,True,True,True,True
+3943077,CopaAmerica2024,2024-07-15,Final,knockout_core,True,Argentina,Colombia,0,2,False,False,True,True,False,True

@@ -1,0 +1,33 @@
+team,venue_city,venue_country,distance_km
+Argentina,Mexico City,Mexico,7380.5
+Argentina,Guadalajara,Mexico,7774.5
+Argentina,Monterrey,Mexico,8022.0
+Argentina,Atlanta,USA,8069.6
+Argentina,Kansas City,USA,8991.5
+Argentina,Toronto,Canada,8956.6
+Argentina,Dallas,USA,8508.6
+Argentina,Vancouver,Canada,11297.0
+Argentina,Seattle,USA,11131.0
+Argentina,Los Angeles,USA,9849.5
+Argentina,San Francisco Bay Area,USA,10351.3
+Argentina,Boston,USA,8628.4
+Argentina,New York/New Jersey,USA,8538.2
+Argentina,Philadelphia,USA,8461.5
+Argentina,Houston,USA,8134.7
+Argentina,Miami,USA,7116.6
+England,Mexico City,Mexico,8941.2
+England,Guadalajara,Mexico,9099.2
+England,Monterrey,Mexico,8460.2
+England,Atlanta,USA,6770.3
+England,Kansas City,USA,6988.3
+England,Toronto,Canada,5716.1
+England,Dallas,USA,7662.1
+England,Vancouver,Canada,7578.4
+England,Seattle,USA,7700.6
+England,Los Angeles,USA,8769.6
+England,San Francisco Bay Area,USA,8629.8
+England,Boston,USA,5295.7
+England,New York/New Jersey,USA,5567.7
+England,Philadelphia,USA,5703.6
+England,Houston,USA,7812.1
+England,Miami,USA,7114.2

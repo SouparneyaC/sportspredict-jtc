@@ -1,0 +1,83 @@
+{
+  "match_id": "4dc764d8-9ed2-416a-8e9f-02159518e853",
+  "match_name": "ENG vs ARG",
+  "opening_time": "2026-07-15T19:00:00.000Z",
+  "closing_time": "2026-07-15T23:00:00.000Z",
+  "questions": [
+    {
+      "market_id": "6bd9655c-a7d0-4ddd-ab7f-0b4e6063a232",
+      "question": "Will Juli\u00e1n \u00c1lvarez (Argentina, #9) have 1 or more shots on target in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "f688b759-9858-4aed-917b-41dbbeb37bc3",
+      "question": "Will England advance to the final?",
+      "status": "open"
+    },
+    {
+      "market_id": "f1215e47-0655-4c0d-abf8-1f13c2291cd5",
+      "question": "Will a penalty kick be awarded in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "63a39a07-a029-4401-a95f-8d242df12564",
+      "question": "Will Lionel Messi (Argentina, #10) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "126e1f9f-6bd8-4360-a4b8-f03ef26c326e",
+      "question": "Will at least one goal be scored in each half of regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "8ad3aaf1-991c-4399-81e0-0aae1d8f47e7",
+      "question": "Will there be 8 or more total shots on target (both teams combined) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "4bb7166a-6583-449d-8a34-6fa25133c208",
+      "question": "Will a goal be scored during first- or second-half stoppage time in regulation?",
+      "status": "open"
+    },
+    {
+      "market_id": "9abc4aca-539d-452f-88b1-415d6cb78ab4",
+      "question": "Will both teams receive at least one card in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "6d3646a9-614f-4b87-8599-67f9fc63016f",
+      "question": "Will Argentina have more corner kicks than England in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "22c865f4-44a5-4ada-aa35-e849e11f610c",
+      "question": "Will a card be shown before the first goal of the match in regulation (90 minutes + stoppage time)? If neither a card nor a goal occurs, resolves No.",
+      "status": "open"
+    },
+    {
+      "market_id": "cc78d7c9-adbd-42e5-8b5e-2acdbeae2c90",
+      "question": "Will Harry Kane (England, #9) score a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "09f79851-b8b2-4c68-bb69-ddf47a7d78e4",
+      "question": "Will there be 10 or more total corner kicks (both teams combined) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "ab8abad4-f095-46db-a639-20d7c2f7ef82",
+      "question": "Will England lead at halftime?",
+      "status": "open"
+    },
+    {
+      "market_id": "6d7f5be4-a974-4cb4-bfe3-cdf3fbf7d332",
+      "question": "Will Argentina score 2 or more goals in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    },
+    {
+      "market_id": "c88de455-c7c2-4bb6-9174-fa8b2481bce7",
+      "question": "Will Jude Bellingham (England, #10) score or assist a goal (excluding own goals) in regulation (90 minutes + stoppage time)?",
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,996 @@
+{
+  "To_qualify": {
+    "England": {
+      "bid": 0.5405,
+      "offer": 0.5495,
+      "mid": 0.5449999999999999
+    },
+    "Argentina": {
+      "bid": 0.4545,
+      "offer": 0.4587,
+      "mid": 0.4566
+    }
+  },
+  "Full_time_result": {
+    "England": {
+      "bid": 0.3571,
+      "offer": 0.3597,
+      "mid": 0.3584
+    },
+    "Argentina": {
+      "bid": 0.3077,
+      "offer": 0.3125,
+      "mid": 0.3101
+    },
+    "Draw": {
+      "bid": 0.3279,
+      "offer": 0.3333,
+      "mid": 0.3306
+    }
+  },
+  "Both_teams_to_score": {
+    "Yes": {
+      "bid": 0.5051,
+      "offer": 0.5102,
+      "mid": 0.5076499999999999
+    },
+    "No": {
+      "bid": 0.4854,
+      "offer": 0.5025,
+      "mid": 0.49395
+    }
+  },
+  "Half_time_result": {
+    "England": {
+      "bid": 0.2703,
+      "offer": 0.2778,
+      "mid": 0.27405
+    },
+    "Argentina": {
+      "bid": 0.2439,
+      "offer": 0.25,
+      "mid": 0.24695
+    },
+    "Draw": {
+      "bid": 0.4717,
+      "offer": 0.4762,
+      "mid": 0.47395
+    }
+  },
+  "Argentina_OU1.5_goals": {
+    "Under 1.5 goals": {
+      "bid": 0.6993,
+      "offer": 0.7143,
+      "mid": 0.7068000000000001
+    },
+    "Over 1.5 goals": {
+      "bid": 0.2941,
+      "offer": 0.303,
+      "mid": 0.29855
+    }
+  },
+  "England_OU0.5_goals": {
+    "Under 0.5 goals": {
+      "bid": 0.2778,
+      "offer": 0.303,
+      "mid": 0.2904
+    },
+    "Over 0.5 goals": {
+      "bid": 0.7092,
+      "offer": 0.7143,
+      "mid": 0.7117500000000001
+    }
+  },
+  "FH_OU0.5_goals": {
+    "Under 0.5 goals": {
+      "bid": 0.3759,
+      "offer": 0.3846,
+      "mid": 0.38025
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6135,
+      "offer": 0.6289,
+      "mid": 0.6212
+    }
+  },
+  "SH_OU0.5_goals": {
+    "Under 0.5 goals": {
+      "bid": 0.2597,
+      "offer": 0.2985,
+      "mid": 0.2791
+    },
+    "Over 0.5 goals": {
+      "bid": 0.6993,
+      "offer": 0.7407,
+      "mid": 0.72
+    }
+  },
+  "Goal1_time_bracket": {
+    "1-10": {
+      "bid": 0.1562,
+      "offer": 0.1887,
+      "mid": 0.17245
+    },
+    "11-20": {
+      "bid": 0.1429,
+      "offer": 0.1754,
+      "mid": 0.15915
+    },
+    "21-30": {
+      "bid": 0.119,
+      "offer": 0.1471,
+      "mid": 0.13305
+    },
+    "31-40": {
+      "bid": 0.0952,
+      "offer": 0.122,
+      "mid": 0.1086
+    },
+    "41-50": {
+      "bid": 0.0909,
+      "offer": 0.1163,
+      "mid": 0.1036
+    },
+    "51-60": {
+      "bid": 0.0606,
+      "offer": 0.0833,
+      "mid": 0.07195
+    },
+    "61-70": {
+      "bid": 0.0455,
+      "offer": 0.0645,
+      "mid": 0.055
+    },
+    "71-80": {
+      "bid": 0.0333,
+      "offer": 0.0513,
+      "mid": 0.042300000000000004
+    },
+    "81-90": {
+      "bid": 0.037,
+      "offer": 0.0556,
+      "mid": 0.046299999999999994
+    },
+    "None": {
+      "bid": 0.1042,
+      "offer": 0.1316,
+      "mid": 0.1179
+    }
+  },
+  "OU9.5_corners": {
+    "Under 9.5 corners": {
+      "bid": 0.7042,
+      "offer": 0.7937,
+      "mid": 0.74895
+    },
+    "Over 9.5 corners": {
+      "bid": 0.2041,
+      "offer": 0.2941,
+      "mid": 0.2491
+    }
+  },
+  "Corners_handicap_ENGm0.5_ARGp0.5": {
+    "England -0.5 corners": {
+      "bid": 0.4762,
+      "offer": 0.5587,
+      "mid": 0.51745
+    },
+    "Argentina +0.5 corners": {
+      "bid": 0.4425,
+      "offer": 0.5291,
+      "mid": 0.4858
+    }
+  },
+  "Cards_OU1.5": {
+    "Under 1.5 cards": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Over 1.5 cards": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Cards_OU2.5": {
+    "Under 2.5 cards": {
+      "bid": 0.25,
+      "offer": 0.2667,
+      "mid": 0.25834999999999997
+    },
+    "Over 2.5 cards": {
+      "bid": 0.7299,
+      "offer": 0.8197,
+      "mid": 0.7747999999999999
+    }
+  },
+  "England_cards_OU1.5": {
+    "Under 1.5 cards": {
+      "bid": 0.3472,
+      "offer": 0.4237,
+      "mid": 0.38545
+    },
+    "Over 1.5 cards": {
+      "bid": 0.578,
+      "offer": 0.6536,
+      "mid": 0.6157999999999999
+    }
+  },
+  "Argentina_cards_OU1.5": {
+    "Under 1.5 cards": {
+      "bid": 0.3546,
+      "offer": 0.4762,
+      "mid": 0.4154
+    },
+    "Over 1.5 cards": {
+      "bid": 0.5236,
+      "offer": 0.6452,
+      "mid": 0.5844
+    }
+  },
+  "Team_to_have_first_card": {
+    "England": {
+      "bid": 0.3968,
+      "offer": 0.5435,
+      "mid": 0.47014999999999996
+    },
+    "Argentina": {
+      "bid": 0.3968,
+      "offer": 0.5435,
+      "mid": 0.47014999999999996
+    },
+    "No winner": {
+      "bid": 0.0118,
+      "offer": 0.1136,
+      "mid": 0.0627
+    }
+  },
+  "Penalty_to_be_awarded": {
+    "Yes": {
+      "bid": 0.2667,
+      "offer": 0.3175,
+      "mid": 0.2921
+    },
+    "No": {
+      "bid": 0.7042,
+      "offer": 0.7353,
+      "mid": 0.71975
+    }
+  },
+  "England_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407
+    }
+  },
+  "Argentina_SOT_OU3.5": {
+    "Under 3.5 shots on target": {
+      "bid": 0.5,
+      "offer": 0.5814,
+      "mid": 0.5407
+    },
+    "Over 3.5 shots on target": {
+      "bid": 0.4202,
+      "offer": 0.5,
+      "mid": 0.4601
+    }
+  },
+  "Anytime_goalscorer": {
+    "Anthony Gordon": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Eberechi Eze": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Djed Spence": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Morgan Rogers": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Bukayo Saka": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Marc Guehi": {
+      "bid": null,
+      "offer": 0.0417,
+      "mid": 0.0417
+    },
+    "Jude Bellingham": {
+      "bid": 0.2273,
+      "offer": 0.2381,
+      "mid": 0.23270000000000002
+    },
+    "Elliot Anderson": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Noni Madueke": {
+      "bid": null,
+      "offer": 0.1351,
+      "mid": 0.1351
+    },
+    "419206748": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kobbie Mainoo": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Nico O'Reilly": {
+      "bid": null,
+      "offer": 0.0741,
+      "mid": 0.0741
+    },
+    "419206751": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Harry Kane": {
+      "bid": 0.3571,
+      "offer": 0.3623,
+      "mid": 0.3597
+    },
+    "Dan Burn": {
+      "bid": null,
+      "offer": 0.0588,
+      "mid": 0.0588
+    },
+    "John Stones": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.04
+    },
+    "Ivan Toney": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": 0.2857
+    },
+    "Ollie Watkins": {
+      "bid": null,
+      "offer": 0.2857,
+      "mid": 0.2857
+    },
+    "Trevoh Chalobah": {
+      "bid": null,
+      "offer": 0.0513,
+      "mid": 0.0513
+    },
+    "Marcus Rashford": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Ezri Konsa": {
+      "bid": null,
+      "offer": 0.04,
+      "mid": 0.04
+    },
+    "Declan Rice": {
+      "bid": null,
+      "offer": 0.0645,
+      "mid": 0.0645
+    },
+    "Reece James": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Lionel Messi": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.365
+    },
+    "Exequiel Palacios": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0833
+    },
+    "Gonzalo Montiel": {
+      "bid": null,
+      "offer": 0.069,
+      "mid": 0.069
+    },
+    "Lautaro Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "Nicolas Ivan Gonzalez": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Alexis Mac Allister": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0769
+    },
+    "Marcos Senesi": {
+      "bid": null,
+      "offer": 0.0455,
+      "mid": 0.0455
+    },
+    "Cristian Gabriel Romero": {
+      "bid": null,
+      "offer": 0.0606,
+      "mid": 0.0606
+    },
+    "Facundo Medina": {
+      "bid": null,
+      "offer": 0.0333,
+      "mid": 0.0333
+    },
+    "Lisandro Martinez": {
+      "bid": null,
+      "offer": 0.0385,
+      "mid": 0.0385
+    },
+    "Thiago Almada": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Julian Alvarez": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "Enzo Jerem\u00edas Fern\u00e1ndez": {
+      "bid": 0.0741,
+      "offer": 0.1,
+      "mid": 0.08705
+    },
+    "Valentin Barco": {
+      "bid": null,
+      "offer": 0.08,
+      "mid": 0.08
+    },
+    "Jose Manuel Lopez": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": 0.2532
+    },
+    "Giuliano Simeone": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Nahuel Molina": {
+      "bid": null,
+      "offer": 0.0278,
+      "mid": 0.0278
+    },
+    "Nicol\u00e1s Paz Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.2,
+      "mid": 0.2
+    },
+    "Nicol\u00e1s Otamendi": {
+      "bid": null,
+      "offer": 0.0455,
+      "mid": 0.0455
+    },
+    "Leandro Daniel Paredes": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Rodrigo Javier De Paul": {
+      "bid": null,
+      "offer": 0.0571,
+      "mid": 0.0571
+    },
+    "Giovani Lo Celso": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Nicol\u00e1s Alejandro Tagliafico": {
+      "bid": null,
+      "offer": 0.0357,
+      "mid": 0.0357
+    },
+    "419206785": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Score_or_assist": {
+    "Anthony Gordon": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.3077
+    },
+    "Eberechi Eze": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": 0.2941
+    },
+    "Djed Spence": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "Morgan Rogers": {
+      "bid": null,
+      "offer": 0.2941,
+      "mid": 0.2941
+    },
+    "Bukayo Saka": {
+      "bid": null,
+      "offer": 0.2899,
+      "mid": 0.2899
+    },
+    "Marc Guehi": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0833
+    },
+    "Jude Bellingham": {
+      "bid": 0.2703,
+      "offer": 0.3333,
+      "mid": 0.30179999999999996
+    },
+    "Elliot Anderson": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1818
+    },
+    "Noni Madueke": {
+      "bid": null,
+      "offer": 0.3077,
+      "mid": 0.3077
+    },
+    "419213746": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kobbie Mainoo": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1613
+    },
+    "Nico O'Reilly": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1754
+    },
+    "419213749": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Harry Kane": {
+      "bid": 0.4065,
+      "offer": 0.4673,
+      "mid": 0.43689999999999996
+    },
+    "Dan Burn": {
+      "bid": null,
+      "offer": 0.1429,
+      "mid": 0.1429
+    },
+    "John Stones": {
+      "bid": null,
+      "offer": 0.0769,
+      "mid": 0.0769
+    },
+    "Ivan Toney": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": 0.3937
+    },
+    "Ollie Watkins": {
+      "bid": null,
+      "offer": 0.3937,
+      "mid": 0.3937
+    },
+    "Trevoh Chalobah": {
+      "bid": null,
+      "offer": 0.1064,
+      "mid": 0.1064
+    },
+    "Marcus Rashford": {
+      "bid": null,
+      "offer": 0.3333,
+      "mid": 0.3333
+    },
+    "Ezri Konsa": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Declan Rice": {
+      "bid": null,
+      "offer": 0.2083,
+      "mid": 0.2083
+    },
+    "Reece James": {
+      "bid": null,
+      "offer": 0.2128,
+      "mid": 0.2128
+    },
+    "Lionel Messi": {
+      "bid": 0.3906,
+      "offer": 0.5025,
+      "mid": 0.44655
+    },
+    "Exequiel Palacios": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1961
+    },
+    "Gonzalo Montiel": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1754
+    },
+    "Lautaro Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.3448,
+      "mid": 0.3448
+    },
+    "Nicolas Ivan Gonzalez": {
+      "bid": null,
+      "offer": 0.2532,
+      "mid": 0.2532
+    },
+    "Alexis Mac Allister": {
+      "bid": null,
+      "offer": 0.1852,
+      "mid": 0.1852
+    },
+    "Marcos Senesi": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "Cristian Gabriel Romero": {
+      "bid": null,
+      "offer": 0.1042,
+      "mid": 0.1042
+    },
+    "Facundo Medina": {
+      "bid": null,
+      "offer": 0.119,
+      "mid": 0.119
+    },
+    "Lisandro Martinez": {
+      "bid": null,
+      "offer": 0.0833,
+      "mid": 0.0833
+    },
+    "Thiago Almada": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": 0.2703
+    },
+    "Julian Alvarez": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.3704
+    },
+    "Enzo Jerem\u00edas Fern\u00e1ndez": {
+      "bid": null,
+      "offer": 0.2174,
+      "mid": 0.2174
+    },
+    "Valentin Barco": {
+      "bid": null,
+      "offer": 0.1923,
+      "mid": 0.1923
+    },
+    "Jose Manuel Lopez": {
+      "bid": null,
+      "offer": 0.365,
+      "mid": 0.365
+    },
+    "Giuliano Simeone": {
+      "bid": null,
+      "offer": 0.2703,
+      "mid": 0.2703
+    },
+    "Nahuel Molina": {
+      "bid": null,
+      "offer": 0.1695,
+      "mid": 0.1695
+    },
+    "Nicol\u00e1s Paz Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.3521,
+      "mid": 0.3521
+    },
+    "Nicol\u00e1s Otamendi": {
+      "bid": null,
+      "offer": 0.1111,
+      "mid": 0.1111
+    },
+    "Leandro Daniel Paredes": {
+      "bid": null,
+      "offer": 0.1887,
+      "mid": 0.1887
+    },
+    "Rodrigo Javier De Paul": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Giovani Lo Celso": {
+      "bid": null,
+      "offer": 0.2817,
+      "mid": 0.2817
+    },
+    "Nicol\u00e1s Alejandro Tagliafico": {
+      "bid": null,
+      "offer": 0.125,
+      "mid": 0.125
+    },
+    "419213783": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  },
+  "Player_SOT_OU0.5": {
+    "Anthony Gordon": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4274
+    },
+    "Eberechi Eze": {
+      "bid": null,
+      "offer": 0.5525,
+      "mid": 0.5525
+    },
+    "Djed Spence": {
+      "bid": null,
+      "offer": 0.1695,
+      "mid": 0.1695
+    },
+    "Morgan Rogers": {
+      "bid": null,
+      "offer": 0.5128,
+      "mid": 0.5128
+    },
+    "Bukayo Saka": {
+      "bid": null,
+      "offer": 0.4348,
+      "mid": 0.4348
+    },
+    "Marc Guehi": {
+      "bid": null,
+      "offer": 0.1282,
+      "mid": 0.1282
+    },
+    "Jude Bellingham": {
+      "bid": 0.5618,
+      "offer": 0.5682,
+      "mid": 0.565
+    },
+    "Elliot Anderson": {
+      "bid": null,
+      "offer": 0.2326,
+      "mid": 0.2326
+    },
+    "Noni Madueke": {
+      "bid": null,
+      "offer": 0.4902,
+      "mid": 0.4902
+    },
+    "419212759": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Kobbie Mainoo": {
+      "bid": null,
+      "offer": 0.2564,
+      "mid": 0.2564
+    },
+    "Nico O'Reilly": {
+      "bid": null,
+      "offer": 0.2667,
+      "mid": 0.2667
+    },
+    "419212762": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    },
+    "Harry Kane": {
+      "bid": 0.5952,
+      "offer": 0.7143,
+      "mid": 0.6547499999999999
+    },
+    "Dan Burn": {
+      "bid": null,
+      "offer": 0.2222,
+      "mid": 0.2222
+    },
+    "John Stones": {
+      "bid": null,
+      "offer": 0.1316,
+      "mid": 0.1316
+    },
+    "Ivan Toney": {
+      "bid": null,
+      "offer": 0.6897,
+      "mid": 0.6897
+    },
+    "Ollie Watkins": {
+      "bid": null,
+      "offer": 0.6667,
+      "mid": 0.6667
+    },
+    "Trevoh Chalobah": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Marcus Rashford": {
+      "bid": null,
+      "offer": 0.4545,
+      "mid": 0.4545
+    },
+    "Ezri Konsa": {
+      "bid": null,
+      "offer": 0.1316,
+      "mid": 0.1316
+    },
+    "Declan Rice": {
+      "bid": 0.125,
+      "offer": 0.2985,
+      "mid": 0.21175
+    },
+    "Reece James": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1818
+    },
+    "Lionel Messi": {
+      "bid": 0.6993,
+      "offer": 0.7143,
+      "mid": 0.7068000000000001
+    },
+    "Exequiel Palacios": {
+      "bid": null,
+      "offer": 0.25,
+      "mid": 0.25
+    },
+    "Gonzalo Montiel": {
+      "bid": null,
+      "offer": 0.1961,
+      "mid": 0.1961
+    },
+    "Lautaro Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.5587,
+      "mid": 0.5587
+    },
+    "Nicolas Ivan Gonzalez": {
+      "bid": null,
+      "offer": 0.4673,
+      "mid": 0.4673
+    },
+    "Alexis Mac Allister": {
+      "bid": 0.2222,
+      "offer": 0.2703,
+      "mid": 0.24625
+    },
+    "Marcos Senesi": {
+      "bid": null,
+      "offer": 0.1754,
+      "mid": 0.1754
+    },
+    "Cristian Gabriel Romero": {
+      "bid": null,
+      "offer": 0.1613,
+      "mid": 0.1613
+    },
+    "Facundo Medina": {
+      "bid": null,
+      "offer": 0.1818,
+      "mid": 0.1818
+    },
+    "Lisandro Martinez": {
+      "bid": null,
+      "offer": 0.1515,
+      "mid": 0.1515
+    },
+    "Thiago Almada": {
+      "bid": null,
+      "offer": 0.4274,
+      "mid": 0.4274
+    },
+    "Julian Alvarez": {
+      "bid": null,
+      "offer": 0.5682,
+      "mid": 0.5682
+    },
+    "Enzo Jerem\u00edas Fern\u00e1ndez": {
+      "bid": null,
+      "offer": 0.3226,
+      "mid": 0.3226
+    },
+    "Valentin Barco": {
+      "bid": null,
+      "offer": 0.3704,
+      "mid": 0.3704
+    },
+    "Jose Manuel Lopez": {
+      "bid": null,
+      "offer": 0.7042,
+      "mid": 0.7042
+    },
+    "Giuliano Simeone": {
+      "bid": null,
+      "offer": 0.5848,
+      "mid": 0.5848
+    },
+    "Nahuel Molina": {
+      "bid": null,
+      "offer": 0.1667,
+      "mid": 0.1667
+    },
+    "Nicol\u00e1s Paz Mart\u00ednez": {
+      "bid": null,
+      "offer": 0.5405,
+      "mid": 0.5405
+    },
+    "Nicol\u00e1s Otamendi": {
+      "bid": null,
+      "offer": 0.1471,
+      "mid": 0.1471
+    },
+    "Leandro Daniel Paredes": {
+      "bid": null,
+      "offer": 0.2597,
+      "mid": 0.2597
+    },
+    "Rodrigo Javier De Paul": {
+      "bid": null,
+      "offer": 0.2273,
+      "mid": 0.2273
+    },
+    "Giovani Lo Celso": {
+      "bid": null,
+      "offer": 0.4545,
+      "mid": 0.4545
+    },
+    "Nicol\u00e1s Alejandro Tagliafico": {
+      "bid": null,
+      "offer": 0.1724,
+      "mid": 0.1724
+    },
+    "419212796": {
+      "bid": null,
+      "offer": null,
+      "mid": null
+    }
+  }
+}

@@ -1,0 +1,42 @@
+fixture_id,date,league_name,home_team,away_team,goals_home,goals_away,bookmaker,home_win,draw,away_win,source
+150298,2022-12-10 19:00:00+00,FIFA World Cup,England,France,1,2,Pinnacle,3.27,3.24,2.42,API-Football-closing
+150321,2022-12-13 19:00:00+00,FIFA World Cup,Argentina,Croatia,3,0,Pinnacle,1.88,3.4,5.05,API-Football-closing
+152029,2022-06-14 18:45:00+00,UEFA Nations League,England,Hungary,0,4,Pinnacle,1.29,5.63,12.98,The-Odds-API
+151249,2021-07-07 19:00:00+00,UEFA Euro,England,Denmark,2,1,Pinnacle,1.74,3.65,5.66,API-Football-closing
+150450,2024-06-16 19:00:00+00,UEFA Euro,Serbia,England,0,1,Pinnacle,7.53,4.5,1.48,API-Football-closing
+150458,2024-06-20 16:00:00+00,UEFA Euro,Denmark,England,1,1,Pinnacle,6.05,3.77,1.67,API-Football-closing
+150530,2024-07-06 16:00:00+00,UEFA Euro,England,Switzerland,1,1,Pinnacle,2.24,3.03,3.89,API-Football-closing
+150534,2024-07-10 19:00:00+00,UEFA Euro,Netherlands,England,1,2,Pinnacle,3.31,2.81,2.71,API-Football-closing
+152095,2022-09-23 18:45:00+00,UEFA Nations League,Italy,England,1,0,Pinnacle,3.02,3.23,2.59,The-Odds-API
+152221,2022-09-26 18:45:00+00,UEFA Nations League,England,Germany,3,3,Pinnacle,2.5,3.44,2.97,The-Odds-API
+151315,2024-09-07 16:00:00+00,UEFA Nations League,Rep. Of Ireland,England,0,2,William Hill,7,4.2,1.44,The-Odds-API
+151395,2024-09-10 18:45:00+00,UEFA Nations League,England,Finland,2,0,William Hill,1.1,9,17,The-Odds-API
+151397,2024-10-10 18:45:00+00,UEFA Nations League,England,Greece,1,2,William Hill,1.29,5,9.5,The-Odds-API
+151471,2024-10-13 16:00:00+00,UEFA Nations League,Finland,England,1,3,William Hill,9,5,1.3,The-Odds-API
+151512,2024-11-14 19:45:00+00,UEFA Nations League,Greece,England,0,3,William Hill,3.5,3.2,2.1,The-Odds-API
+151555,2024-11-17 17:00:00+00,UEFA Nations League,England,Rep. Of Ireland,5,0,Marathon Bet,1.24,6.05,13.5,The-Odds-API
+153104,2024-07-15 00:30:00+00,Copa America,Argentina,Colombia,1,0,Pinnacle,2.09,4.62,4.62,API-Football-closing
+150277,2022-11-29 19:00:00+00,FIFA World Cup,Wales,England,0,3,Pinnacle,8.6,4.8,1.41,API-Football-closing
+150275,2022-11-30 19:00:00+00,FIFA World Cup,Poland,Argentina,0,2,Pinnacle,8.11,4.3,1.48,API-Football-closing
+151164,2021-06-13 13:00:00+00,UEFA Euro,England,Croatia,1,0,Pinnacle,1.67,3.84,6.06,API-Football-closing
+151200,2021-06-18 19:00:00+00,UEFA Euro,England,Scotland,0,0,Pinnacle,1.33,5.07,9.83,API-Football-closing
+151211,2021-06-22 19:00:00+00,UEFA Euro,Czech Republic,England,0,1,Pinnacle,7.89,3.69,1.6,API-Football-closing
+150242,2022-11-21 13:00:00+00,FIFA World Cup,England,Iran,6,2,Pinnacle,1.38,4.75,11.25,API-Football-closing
+150244,2022-11-22 10:00:00+00,FIFA World Cup,Argentina,Saudi Arabia,1,2,Pinnacle,1.19,7.43,20.44,API-Football-closing
+150256,2022-11-25 19:00:00+00,FIFA World Cup,England,USA,0,0,Pinnacle,1.59,3.99,6.07,API-Football-closing
+150263,2022-11-26 19:00:00+00,FIFA World Cup,Argentina,Mexico,2,0,Pinnacle,1.51,4.13,7.24,API-Football-closing
+150297,2022-12-09 19:00:00+00,FIFA World Cup,Netherlands,Argentina,2,2,Pinnacle,3.79,3.2,2.21,API-Football-closing
+151242,2021-06-29 16:00:00+00,UEFA Euro,England,Germany,2,0,Pinnacle,2.62,3.31,2.96,API-Football-closing
+150492,2024-06-25 19:00:00+00,UEFA Euro,England,Slovenia,0,0,Pinnacle,1.36,4.96,10.51,API-Football-closing
+153048,2024-06-21 00:00:00+00,Copa America,Argentina,Canada,2,0,Pinnacle,1.3,5.77,11.39,API-Football-closing
+153039,2024-06-26 01:00:00+00,Copa America,Chile,Argentina,0,1,Pinnacle,7.99,4.4,1.46,API-Football-closing
+153045,2024-06-30 00:00:00+00,Copa America,Argentina,Peru,2,0,Betfair,1.17,1.05,1.11,API-Football-closing
+153101,2024-07-10 00:00:00+00,Copa America,Argentina,Canada,2,0,Pinnacle,1.33,5.11,11.71,API-Football-closing
+153097,2024-07-05 01:00:00+00,Copa America,Argentina,Ecuador,1,1,Pinnacle,1.49,3.99,9.1,API-Football-closing
+151247,2021-07-03 19:00:00+00,UEFA Euro,Ukraine,England,0,4,Pinnacle,9.04,4.36,1.46,API-Football-closing
+150291,2022-12-03 19:00:00+00,FIFA World Cup,Argentina,Australia,2,1,Pinnacle,1.27,6.3,13.5,API-Football-closing
+150290,2022-12-04 19:00:00+00,FIFA World Cup,England,Senegal,3,0,Pinnacle,1.54,3.96,8.13,API-Football-closing
+150324,2022-12-18 15:00:00+00,FIFA World Cup,Argentina,France,3,3,Pinnacle,2.73,3.16,2.93,API-Football-closing
+151250,2021-07-11 19:00:00+00,UEFA Euro,Italy,England,1,1,Pinnacle,3.48,3,2.51,API-Football-closing
+150503,2024-06-30 16:00:00+00,UEFA Euro,England,Slovakia,2,1,Pinnacle,1.45,4.07,10.4,API-Football-closing
+150535,2024-07-14 19:00:00+00,UEFA Euro,Spain,England,2,1,Pinnacle,2.47,2.47,3.57,API-Football-closing

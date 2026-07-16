@@ -1,0 +1,38 @@
+{
+  "_source": "duplicated from data/processed/elo_current_ratings.csv — NOTE: this file is confirmed frozen at pre-tournament values, does not reflect real WC2026 in-tournament results (same documented staleness bug as every prior match folder, see project memory / feedback_qnumber_join_safety sibling notes on frozen Elo).",
+  "stale_ratings_do_not_use_for_modeling": [
+    {
+      "team": "England",
+      "elo_rating": "2090.3687"
+    },
+    {
+      "team": "Argentina",
+      "elo_rating": "2189.5282"
+    }
+  ],
+  "corrected_point_in_time_ratings": {
+    "_source": "data/processed/wc2026_pit_elo_panel.csv, built by ml/backtests/build_full_tournament_pit_elo.py — a systematic point-in-time replay of ALL 100 WC2026 matches for ALL 48 teams (every opponent's rating is itself genuinely point-in-time, not frozen). This is the project's canonical PIT Elo source per REPO_MAP.md Section 6, so no per-matchup hand-built replay script (of the fra_esp_sf_point_in_time_elo_replay.py / nor_eng_qf_point_in_time_elo_replay.py kind) was needed or built for this match — this file is a direct lookup of each team's elo_post value from their most recent played WC2026 match, not a new computation.",
+    "England": {
+      "elo_rating": 2172.2772,
+      "delta_vs_stale": "+81.91",
+      "path": "Group: 4-2 Croatia (H), 0-0 Ghana (H), 2-0 Panama (A); R32: 2-1 DR Congo (H); R16: 3-2 Mexico (A); QF: 2-1 Norway (A)",
+      "entering_elo_pre_for_this_match": 2172.2772,
+      "last_match_date": "2026-07-11",
+      "last_match_event_id": 760512
+    },
+    "Argentina": {
+      "elo_rating": 2253.3138,
+      "delta_vs_stale": "+63.79",
+      "path": "Group: 3-0 Algeria (H), 2-0 Austria (H), 3-1 Jordan (A); R32: 3-2 Cape Verde (H, AET); R16: 3-2 Egypt (H); QF: 3-1 Switzerland (H)",
+      "entering_elo_pre_for_this_match": 2253.3138,
+      "last_match_date": "2026-07-11",
+      "last_match_event_id": 760513
+    },
+    "diff_argentina_minus_england": {
+      "stale": "+99.16",
+      "correct": "+81.04",
+      "shift": "-18.12 — stale ratings modestly overstate Argentina's edge; both teams have gained ground in-tournament (England +81.91, Argentina +63.79) relative to their frozen pre-tournament values, but England has gained more, narrowing the gap."
+    }
+  },
+  "note_on_neutrality": "All England and Argentina WC2026 matches to date have been played in the USA on neutral ground per the project's established convention (neutral=True unless USA/Mexico/Canada is itself a participant) — see data/processed/wc2026_pit_elo_panel.csv true_home_advantage column, False for every England/Argentina row. Home/away in the path descriptions above refers to the nominal home/away designation used by ESPN's event feed, not a true home-advantage flag."
+}

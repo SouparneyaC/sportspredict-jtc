@@ -1,0 +1,16 @@
+date,home_team,away_team,home_score,away_score,tournament,city,country,neutral
+1951-05-09,England,Argentina,2,1,Friendly,London,England,FALSE
+1953-05-14,Argentina,England,3,1,Friendly,Buenos Aires,Argentina,FALSE
+1953-05-17,Argentina,England,0,0,Friendly,Buenos Aires,Argentina,FALSE
+1962-06-02,Argentina,England,1,3,FIFA World Cup,Rancagua,Chile,TRUE
+1964-06-06,Argentina,England,1,0,Friendly,Rio de Janeiro,Brazil,TRUE
+1966-07-23,England,Argentina,1,0,FIFA World Cup,London,England,FALSE
+1974-05-22,England,Argentina,2,2,Friendly,London,England,FALSE
+1977-06-12,Argentina,England,1,1,Friendly,Buenos Aires,Argentina,FALSE
+1980-05-13,England,Argentina,3,1,Friendly,London,England,FALSE
+1986-06-22,Argentina,England,2,1,FIFA World Cup,Mexico City,Mexico,TRUE
+1991-05-25,England,Argentina,2,2,Friendly,London,England,FALSE
+1998-06-30,Argentina,England,2,2,FIFA World Cup,Saint-Étienne,France,TRUE
+2000-02-23,England,Argentina,0,0,Friendly,London,England,FALSE
+2002-06-07,Argentina,England,0,1,FIFA World Cup,Sapporo,Japan,TRUE
+2005-11-12,England,Argentina,3,2,Friendly,Geneva,Switzerland,TRUE

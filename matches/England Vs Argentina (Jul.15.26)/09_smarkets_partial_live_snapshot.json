@@ -1,0 +1,172 @@
+{
+  "event_id": "45195225",
+  "team_a": "England",
+  "team_b": "Argentina",
+  "fetched_markets": {
+    "Over/under 6.5 corners": {
+      "market_id": "151061258",
+      "quotes": {
+        "Under 6.5 corners": {
+          "bid": 0.2439,
+          "offer": 0.303,
+          "mid": 0.27344999999999997
+        },
+        "Over 6.5 corners": {
+          "bid": 0.6944,
+          "offer": 0.7576,
+          "mid": 0.726
+        }
+      }
+    },
+    "Over/under 7.5 corners": {
+      "market_id": "151061259",
+      "quotes": {
+        "Under 7.5 corners": {
+          "bid": 0.3731,
+          "offer": 0.4587,
+          "mid": 0.4159
+        },
+        "Over 7.5 corners": {
+          "bid": 0.5376,
+          "offer": 0.625,
+          "mid": 0.5812999999999999
+        }
+      }
+    },
+    "Over/under 8.5 corners": {
+      "market_id": "151061260",
+      "quotes": {
+        "Under 8.5 corners": {
+          "bid": 0.5405,
+          "offer": 0.5952,
+          "mid": 0.56785
+        },
+        "Over 8.5 corners": {
+          "bid": 0.4167,
+          "offer": 0.4717,
+          "mid": 0.44420000000000004
+        }
+      }
+    },
+    "Over/under 9.5 corners": {
+      "market_id": "151061261",
+      "quotes": {
+        "Under 9.5 corners": {
+          "bid": 0.6211,
+          "offer": 0.7042,
+          "mid": 0.66265
+        },
+        "Over 9.5 corners": {
+          "bid": 0.2941,
+          "offer": 0.3788,
+          "mid": 0.33645
+        }
+      }
+    },
+    "Over/under 10.5 corners": {
+      "market_id": "151061262",
+      "quotes": {
+        "Under 10.5 corners": {
+          "bid": 0.7299,
+          "offer": 0.7937,
+          "mid": 0.7618
+        },
+        "Over 10.5 corners": {
+          "bid": 0.2,
+          "offer": 0.2632,
+          "mid": 0.2316
+        }
+      }
+    },
+    "Over/under 1.5 cards": {
+      "market_id": "151061245",
+      "quotes": {
+        "Under 1.5 cards": {
+          "bid": 0.125,
+          "offer": 0.1961,
+          "mid": 0.16055
+        },
+        "Over 1.5 cards": {
+          "bid": 0.8,
+          "offer": 0.8772,
+          "mid": 0.8386
+        }
+      }
+    },
+    "Over/under 2.5 cards": {
+      "market_id": "151061247",
+      "quotes": {
+        "Under 2.5 cards": {
+          "bid": 0.2817,
+          "offer": 0.365,
+          "mid": 0.32335
+        },
+        "Over 2.5 cards": {
+          "bid": 0.6329,
+          "offer": 0.7143,
+          "mid": 0.6736
+        }
+      }
+    },
+    "Over/under 3.5 cards": {
+      "market_id": "151061249",
+      "quotes": {
+        "Under 3.5 cards": {
+          "bid": 0.4902,
+          "offer": 0.6536,
+          "mid": 0.5719
+        },
+        "Over 3.5 cards": {
+          "bid": 0.463,
+          "offer": 0.5102,
+          "mid": 0.48660000000000003
+        }
+      }
+    },
+    "Over/under 4.5 cards": {
+      "market_id": "151061251",
+      "quotes": {
+        "Under 4.5 cards": {
+          "bid": 0.6667,
+          "offer": 0.7519,
+          "mid": 0.7093
+        },
+        "Over 4.5 cards": {
+          "bid": 0.2439,
+          "offer": 0.3356,
+          "mid": 0.28975
+        }
+      }
+    },
+    "Over/under 5.5 cards": {
+      "market_id": "151061253",
+      "quotes": {
+        "Under 5.5 cards": {
+          "bid": 0.7812,
+          "offer": 0.885,
+          "mid": 0.8331
+        },
+        "Over 5.5 cards": {
+          "bid": 0.1163,
+          "offer": 0.2174,
+          "mid": 0.16685
+        }
+      }
+    },
+    "Over/under 6.5 cards": {
+      "market_id": "151061255",
+      "quotes": {
+        "Under 6.5 cards": {
+          "bid": 0.8929,
+          "offer": 0.9434,
+          "mid": 0.91815
+        },
+        "Over 6.5 cards": {
+          "bid": 0.0588,
+          "offer": 0.1,
+          "mid": 0.0794
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+match_id,competition_name,season_name,competition_stage,match_date,kick_off,referee_name,stadium_name,team_id,team_name,opponent_id,opponent_name,is_home,goals,opponent_goals,result,total_shots,shots_on_target,blocked_shots,xg_total,fouls_committed,fouls_won,yellow_cards,red_cards,corners,offsides,passes,passes_completed,pass_pct,clearances,interceptions
+7531,FIFA World Cup 2018,2018,Group Stage,2018-06-16,13:00:00.000,Szymon Marciniak,Otkritie Bank Arena,779,Argentina,793,Iceland,True,1,1,D,28,7,12,2.0805,11,17,0,0,10,0,796,694,87.2,10,3
+7537,FIFA World Cup 2018,2018,Group Stage,2018-06-18,18:00:00.000,Wilmar Alexander Roldán Pérez,Volgograd Arena,768,England,777,Tunisia,False,2,1,W,18,7,3,2.6264,9,14,1,0,7,2,570,484,84.9,4,6
+7545,FIFA World Cup 2018,2018,Group Stage,2018-06-21,18:00:00.000,Ravshan Irmatov,Stadion Nizhny Novgorod (Nizhniy Novgorod),779,Argentina,785,Croatia,True,0,3,L,10,3,4,1.2181,20,22,4,0,5,3,535,413,77.2,7,11
+7554,FIFA World Cup 2018,2018,Group Stage,2018-06-24,12:00:00.000,Ghead Grisha,Stadion Nizhny Novgorod (Nizhniy Novgorod),768,England,798,Panama,True,6,1,W,11,7,2,3.1683,14,12,1,0,3,3,607,552,90.9,12,5
+7564,FIFA World Cup 2018,2018,Group Stage,2018-06-26,18:00:00.000,Cüneyt Çakιr,Saint-Petersburg Stadium ( Gazprom Arena ),779,Argentina,775,Nigeria,False,2,1,W,8,3,1,0.8506,17,19,3,0,5,2,595,479,80.5,13,13
+7570,FIFA World Cup 2018,2018,Group Stage,2018-06-28,18:00:00.000,Damir Skomina,Rostec Arena,768,England,782,Belgium,True,0,1,L,12,1,4,1.2007,14,15,0,0,7,3,514,432,84.0,3,6
+7580,FIFA World Cup 2018,2018,Round of 16,2018-06-30,14:00:00.000,Alireza Faghani,Ak Bars Arena,779,Argentina,771,France,False,3,4,L,12,4,6,1.4466,14,23,4,0,4,1,535,448,83.7,5,7
+7585,FIFA World Cup 2018,2018,Round of 16,2018-07-03,18:00:00.000,Mark Geiger,Otkritie Bank Arena,768,England,769,Colombia,False,1,1,D,17,2,5,2.2443,13,22,2,0,7,2,605,477,78.8,22,5
+8651,FIFA World Cup 2018,2018,Quarter-finals,2018-07-07,14:00:00.000,Björn Kuipers,Solidarnost Arena,768,England,790,Sweden,False,2,0,W,12,2,7,0.7582,8,12,1,0,6,1,563,426,75.7,7,4
+8656,FIFA World Cup 2018,2018,Semi-finals,2018-07-11,18:00:00.000,Cüneyt Çakιr,Stadion Luzhniki,768,England,785,Croatia,False,1,2,L,11,1,4,0.5467,13,24,1,0,4,3,537,403,75.0,41,5
+8657,FIFA World Cup 2018,2018,3rd Place Final,2018-07-14,16:00:00.000,Alireza Faghani,Saint-Petersburg Stadium ( Gazprom Arena ),768,England,782,Belgium,False,0,2,L,15,5,3,1.3354,4,11,2,0,5,0,685,619,90.4,8,13
+3857261,FIFA World Cup 2022,2022,Group Stage,2022-11-29,19:00:00.000,Slavko Vinčić,Ahmad bin Ali Stadium,768,England,907,Wales,False,3,0,W,18,7,4,2.9155,11,17,0,0,6,1,630,553,87.8,9,9
+3857264,FIFA World Cup 2022,2022,Group Stage,2022-11-30,19:00:00.000,Danny Desmond Makkelie,Stadium 974,779,Argentina,789,Poland,False,2,0,W,24,13,4,3.0767,12,9,1,0,8,0,909,826,90.9,7,7
+3857271,FIFA World Cup 2022,2022,Group Stage,2022-11-21,13:00:00.000,Raphael Claus,Sheikh Khalifa International Stadium,768,England,797,Iran,True,6,2,W,13,7,3,1.9872,9,17,0,0,8,2,846,746,88.2,7,6
+3857272,FIFA World Cup 2022,2022,Group Stage,2022-11-25,19:00:00.000,Jesús Valenzuela Sáez,Al Bayt Stadium,768,England,1839,United States,True,0,0,D,8,3,1,0.4606,11,15,0,0,3,1,582,500,85.9,20,7
+3857289,FIFA World Cup 2022,2022,Group Stage,2022-11-26,19:00:00.000,Daniele Orsato,Lusail Stadium,779,Argentina,794,Mexico,True,2,0,W,5,2,0,0.3252,15,20,1,0,4,2,567,476,84.0,20,5
+3857300,FIFA World Cup 2022,2022,Group Stage,2022-11-22,10:00:00.000,Slavko Vinčić,Lusail Stadium,779,Argentina,799,Saudi Arabia,True,1,2,L,15,6,3,2.4916,7,22,0,0,9,10,646,542,83.9,18,11
+3869118,FIFA World Cup 2022,2022,Round of 16,2022-12-04,21:00:00.000,Ivan Arcides Barton Cisneros,Al Bayt Stadium,768,England,787,Senegal,True,3,0,W,8,4,0,1.02,16,13,0,0,3,0,626,536,85.6,11,15
+3869151,FIFA World Cup 2022,2022,Round of 16,2022-12-03,21:00:00.000,Szymon Marciniak,Ahmad bin Ali Stadium,779,Argentina,792,Australia,True,2,1,W,14,5,2,1.4816,9,16,0,0,1,4,728,646,88.7,25,16
+3869321,FIFA World Cup 2022,2022,Quarter-finals,2022-12-09,19:00:00.000,Antonio Miguel Mateu Lahoz,Lusail Stadium,779,Argentina,941,Netherlands,False,2,2,D,14,5,4,1.9392,22,37,8,0,8,2,640,531,83.0,27,10
+3869354,FIFA World Cup 2022,2022,Quarter-finals,2022-12-10,21:00:00.000,Wilton Pereira Sampaio,Al Bayt Stadium,768,England,771,France,True,1,2,L,16,7,5,2.3526,10,15,1,0,5,1,554,465,83.9,11,9
+3869519,FIFA World Cup 2022,2022,Semi-finals,2022-12-13,21:00:00.000,Daniele Orsato,Lusail Stadium,779,Argentina,785,Croatia,True,3,0,W,9,7,1,1.8644,20,10,2,0,2,1,432,358,82.9,18,8
+3869685,FIFA World Cup 2022,2022,Final,2022-12-18,17:00:00.000,Szymon Marciniak,Lusail Stadium,779,Argentina,771,France,True,3,3,D,20,10,4,2.7583,29,18,5,0,6,4,693,560,80.8,26,13

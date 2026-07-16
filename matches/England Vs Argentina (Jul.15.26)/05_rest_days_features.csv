@@ -1,0 +1,2159 @@
+date,team,side,opponent,rest_days
+1872-11-30,England,away,Scotland,
+1873-03-08,England,home,Scotland,98
+1874-03-07,England,away,Scotland,364
+1875-03-06,England,home,Scotland,364
+1876-03-04,England,away,Scotland,364
+1877-03-03,England,home,Scotland,364
+1878-03-02,England,away,Scotland,364
+1879-01-18,England,home,Wales,322
+1879-04-05,England,home,Scotland,77
+1880-03-13,England,away,Scotland,343
+1880-03-15,England,away,Wales,2
+1881-02-26,England,home,Wales,348
+1881-03-12,England,home,Scotland,14
+1882-02-18,England,away,Northern Ireland,343
+1882-03-11,England,away,Scotland,21
+1882-03-13,England,away,Wales,2
+1883-02-03,England,home,Wales,327
+1883-02-24,England,home,Northern Ireland,21
+1883-03-10,England,home,Scotland,14
+1884-02-23,England,away,Northern Ireland,350
+1884-03-15,England,away,Scotland,21
+1884-03-17,England,away,Wales,2
+1885-02-28,England,home,Northern Ireland,348
+1885-03-14,England,home,Wales,14
+1885-03-21,England,home,Scotland,7
+1886-03-13,England,away,Northern Ireland,357
+1886-03-27,England,away,Scotland,14
+1886-03-29,England,away,Wales,2
+1887-02-05,England,home,Northern Ireland,313
+1887-02-26,England,home,Wales,21
+1887-03-19,England,home,Scotland,21
+1888-02-04,England,home,Wales,322
+1888-03-17,England,away,Scotland,42
+1888-04-07,England,away,Northern Ireland,21
+1889-02-23,England,home,Wales,322
+1889-03-02,England,home,Northern Ireland,7
+1889-04-13,England,home,Scotland,42
+1890-03-15,England,away,Northern Ireland,336
+1890-03-15,England,away,Wales,0
+1890-04-05,England,away,Scotland,21
+1891-03-07,England,home,Wales,336
+1891-03-07,England,home,Northern Ireland,0
+1891-04-04,England,home,Scotland,28
+1892-03-05,England,away,Northern Ireland,336
+1892-03-05,England,away,Wales,0
+1892-04-02,England,away,Scotland,28
+1893-02-25,England,home,Northern Ireland,329
+1893-03-13,England,home,Wales,16
+1893-04-01,England,home,Scotland,19
+1894-03-03,England,away,Northern Ireland,336
+1894-03-12,England,away,Wales,9
+1894-04-07,England,away,Scotland,26
+1895-03-09,England,home,Northern Ireland,336
+1895-03-18,England,home,Wales,9
+1895-04-06,England,home,Scotland,19
+1896-03-07,England,away,Northern Ireland,336
+1896-03-16,England,away,Wales,9
+1896-04-04,England,away,Scotland,19
+1897-02-20,England,home,Northern Ireland,322
+1897-03-29,England,home,Wales,37
+1897-04-03,England,home,Scotland,5
+1898-03-05,England,away,Northern Ireland,336
+1898-03-28,England,away,Wales,23
+1898-04-02,England,away,Scotland,5
+1899-02-18,England,home,Northern Ireland,322
+1899-03-20,England,home,Wales,30
+1899-04-08,England,home,Scotland,19
+1900-03-17,England,away,Northern Ireland,343
+1900-03-26,England,away,Wales,9
+1900-04-07,England,away,Scotland,12
+1901-03-09,England,home,Northern Ireland,336
+1901-03-18,England,home,Wales,9
+1901-03-30,England,home,Scotland,12
+1902-03-03,England,away,Wales,338
+1902-03-22,England,away,Northern Ireland,19
+1902-05-03,England,home,Scotland,42
+1902-07-20,Argentina,away,Uruguay,
+1903-02-14,England,home,Northern Ireland,287
+1903-03-02,England,home,Wales,16
+1903-04-04,England,home,Scotland,33
+1903-09-13,Argentina,home,Uruguay,420
+1904-02-29,England,away,Wales,331
+1904-03-12,England,away,Northern Ireland,12
+1904-04-09,England,away,Scotland,28
+1905-02-25,England,home,Northern Ireland,322
+1905-03-27,England,home,Wales,30
+1905-04-01,England,home,Scotland,5
+1905-08-15,Argentina,home,Uruguay,702
+1906-02-17,England,away,Northern Ireland,322
+1906-03-19,England,away,Wales,30
+1906-04-07,England,away,Scotland,19
+1906-07-09,Argentina,home,South Africa,328
+1906-08-15,Argentina,away,Uruguay,37
+1906-10-21,Argentina,home,Uruguay,67
+1907-02-16,England,home,Northern Ireland,315
+1907-03-18,England,home,Wales,30
+1907-04-06,England,home,Scotland,19
+1908-02-15,England,away,Northern Ireland,315
+1908-03-16,England,away,Wales,30
+1908-04-04,England,away,Scotland,19
+1908-06-06,England,away,Austria,63
+1908-06-08,England,away,Austria,2
+1908-06-10,England,away,Hungary,2
+1908-06-13,England,away,Czechoslovakia,3
+1908-08-15,Argentina,away,Uruguay,664
+1908-09-13,Argentina,home,Uruguay,29
+1908-10-04,Argentina,home,Uruguay,21
+1909-02-13,England,home,Northern Ireland,245
+1909-03-15,England,home,Wales,30
+1909-04-03,England,home,Scotland,19
+1909-05-29,England,away,Hungary,56
+1909-05-31,England,away,Hungary,2
+1909-06-01,England,away,Austria,1
+1909-08-15,Argentina,home,Uruguay,315
+1909-09-19,Argentina,away,Uruguay,35
+1909-10-10,Argentina,home,Uruguay,21
+1910-02-12,England,away,Northern Ireland,256
+1910-03-14,England,away,Wales,30
+1910-04-02,England,away,Scotland,19
+1910-05-27,Argentina,home,Chile,229
+1910-06-05,Argentina,home,Chile,9
+1910-06-12,Argentina,home,Uruguay,7
+1910-08-15,Argentina,away,Uruguay,64
+1910-09-11,Argentina,away,Chile,27
+1910-11-13,Argentina,home,Uruguay,63
+1910-11-27,Argentina,home,Uruguay,14
+1911-02-11,England,home,Northern Ireland,315
+1911-03-13,England,home,Wales,30
+1911-04-01,England,home,Scotland,19
+1911-08-15,Argentina,home,Uruguay,261
+1911-09-17,Argentina,away,Uruguay,33
+1911-10-08,Argentina,away,Uruguay,21
+1911-10-22,Argentina,home,Uruguay,14
+1911-10-29,Argentina,away,Uruguay,7
+1912-02-10,England,away,Northern Ireland,315
+1912-03-11,England,away,Wales,30
+1912-03-23,England,away,Scotland,12
+1912-08-15,Argentina,away,Uruguay,291
+1912-08-25,Argentina,away,Uruguay,10
+1912-09-22,Argentina,home,Uruguay,28
+1912-10-06,Argentina,home,Uruguay,14
+1912-12-01,Argentina,away,Uruguay,56
+1913-02-15,England,away,Northern Ireland,329
+1913-03-17,England,home,Wales,30
+1913-04-05,England,home,Scotland,19
+1913-06-15,Argentina,home,Uruguay,196
+1913-07-09,Argentina,home,Uruguay,24
+1913-08-15,Argentina,home,Uruguay,37
+1913-08-31,Argentina,home,Uruguay,16
+1913-09-21,Argentina,away,Chile,21
+1913-10-05,Argentina,away,Uruguay,14
+1913-10-26,Argentina,away,Uruguay,21
+1914-02-14,England,home,Northern Ireland,315
+1914-03-16,England,away,Wales,30
+1914-04-04,England,away,Scotland,19
+1914-08-30,Argentina,away,Uruguay,308
+1914-09-13,Argentina,home,Uruguay,14
+1914-09-20,Argentina,home,Brazil,7
+1914-09-27,Argentina,home,Brazil,7
+1915-07-18,Argentina,away,Uruguay,294
+1915-08-15,Argentina,home,Uruguay,28
+1915-09-12,Argentina,away,Uruguay,28
+1916-07-06,Argentina,home,Chile,298
+1916-07-10,Argentina,home,Brazil,4
+1916-07-12,Argentina,home,Chile,2
+1916-07-17,Argentina,home,Uruguay,5
+1916-08-15,Argentina,home,Uruguay,29
+1916-08-15,Argentina,away,Uruguay,0
+1916-10-01,Argentina,home,Uruguay,47
+1916-10-01,Argentina,away,Uruguay,0
+1916-10-29,Argentina,away,Uruguay,28
+1917-07-18,Argentina,away,Uruguay,262
+1917-08-15,Argentina,home,Uruguay,28
+1917-09-02,Argentina,away,Uruguay,18
+1917-10-03,Argentina,home,Brazil,31
+1917-10-06,Argentina,home,Chile,3
+1917-10-14,Argentina,away,Uruguay,8
+1918-07-18,Argentina,away,Uruguay,277
+1918-07-28,Argentina,away,Uruguay,10
+1918-08-15,Argentina,home,Uruguay,18
+1918-08-25,Argentina,home,Uruguay,10
+1918-09-20,Argentina,away,Uruguay,26
+1918-09-29,Argentina,home,Uruguay,9
+1919-05-11,Argentina,away,Paraguay,224
+1919-05-13,Argentina,home,Uruguay,2
+1919-05-15,Argentina,away,Paraguay,2
+1919-05-18,Argentina,away,Brazil,3
+1919-05-21,Argentina,away,Paraguay,3
+1919-05-22,Argentina,home,Chile,1
+1919-05-24,Argentina,away,Paraguay,2
+1919-06-01,Argentina,away,Brazil,8
+1919-07-18,Argentina,away,Uruguay,47
+1919-08-24,Argentina,away,Uruguay,37
+1919-09-07,Argentina,home,Uruguay,14
+1919-10-19,Argentina,home,Uruguay,42
+1919-10-25,England,away,Northern Ireland,2030
+1919-12-07,Argentina,away,Uruguay,49
+1920-03-15,England,home,Wales,142
+1920-04-10,England,home,Scotland,26
+1920-07-18,Argentina,away,Uruguay,224
+1920-07-25,Argentina,home,Uruguay,7
+1920-08-08,Argentina,home,Uruguay,14
+1920-09-12,Argentina,away,Uruguay,35
+1920-09-20,Argentina,away,Chile,8
+1920-09-25,Argentina,home,Brazil,5
+1920-10-23,England,home,Northern Ireland,196
+1921-03-14,England,away,Wales,142
+1921-04-07,Argentina,away,Paraguay,194
+1921-04-09,England,away,Scotland,26
+1921-04-14,Argentina,away,Paraguay,7
+1921-05-21,England,away,Belgium,42
+1921-10-02,Argentina,home,Brazil,171
+1921-10-16,Argentina,home,Paraguay,14
+1921-10-22,England,away,Northern Ireland,154
+1921-10-30,Argentina,home,Uruguay,14
+1922-03-13,England,home,Wales,142
+1922-04-08,England,home,Scotland,26
+1922-07-16,Argentina,home,Basque Country,259
+1922-07-27,Argentina,home,Basque Country,11
+1922-09-28,Argentina,home,Chile,63
+1922-10-08,Argentina,home,Uruguay,10
+1922-10-15,Argentina,away,Brazil,7
+1922-10-18,Argentina,home,Paraguay,3
+1922-10-21,England,home,Northern Ireland,196
+1922-10-22,Argentina,home,Chile,4
+1922-10-22,Argentina,away,Brazil,0
+1922-11-12,Argentina,away,Uruguay,21
+1922-12-10,Argentina,away,Uruguay,28
+1922-12-17,Argentina,home,Uruguay,7
+1923-03-05,England,away,Wales,135
+1923-03-19,England,home,Belgium,14
+1923-04-14,England,away,Scotland,26
+1923-05-10,England,away,France,26
+1923-05-20,Argentina,home,Paraguay,154
+1923-05-21,England,away,Sweden,11
+1923-05-24,England,away,Sweden,3
+1923-05-25,Argentina,home,Paraguay,5
+1923-06-24,Argentina,home,Uruguay,30
+1923-07-15,Argentina,home,Uruguay,21
+1923-07-22,Argentina,away,Uruguay,7
+1923-09-30,Argentina,away,Uruguay,70
+1923-10-20,England,away,Northern Ireland,149
+1923-10-29,Argentina,home,Paraguay,29
+1923-11-01,England,away,Belgium,12
+1923-11-18,Argentina,home,Brazil,20
+1923-12-02,Argentina,home,Brazil,14
+1923-12-02,Argentina,away,Uruguay,0
+1923-12-09,Argentina,home,Brazil,7
+1924-03-03,England,home,Wales,123
+1924-04-12,England,home,Scotland,40
+1924-05-15,Argentina,away,Paraguay,158
+1924-05-17,England,away,France,35
+1924-05-18,Argentina,away,Paraguay,3
+1924-05-25,Argentina,home,Uruguay,7
+1924-05-25,Argentina,away,Uruguay,0
+1924-09-21,Argentina,away,Uruguay,119
+1924-10-02,Argentina,home,Uruguay,11
+1924-10-12,Argentina,home,Paraguay,10
+1924-10-22,England,home,Northern Ireland,158
+1924-10-25,Argentina,home,Chile,13
+1924-11-02,Argentina,away,Uruguay,8
+1924-12-08,England,home,Belgium,47
+1925-02-28,England,away,Wales,82
+1925-04-04,England,away,Scotland,35
+1925-05-21,England,away,France,47
+1925-07-09,Argentina,home,Paraguay,249
+1925-07-12,Argentina,home,Paraguay,3
+1925-10-24,England,away,Northern Ireland,156
+1925-11-29,Argentina,home,Paraguay,140
+1925-12-13,Argentina,home,Brazil,14
+1925-12-20,Argentina,home,Paraguay,7
+1925-12-25,Argentina,home,Brazil,5
+1926-03-01,England,home,Wales,128
+1926-04-17,England,home,Scotland,47
+1926-05-24,England,away,Belgium,37
+1926-05-29,Argentina,home,Paraguay,155
+1926-06-03,Argentina,home,Paraguay,5
+1926-10-16,Argentina,home,Bolivia,135
+1926-10-20,Argentina,home,Paraguay,4
+1926-10-20,England,home,Northern Ireland,149
+1926-10-24,Argentina,home,Uruguay,4
+1926-10-31,Argentina,away,Chile,7
+1927-02-12,England,away,Wales,115
+1927-04-02,England,away,Scotland,49
+1927-05-11,England,away,Belgium,39
+1927-05-21,England,away,Luxembourg,10
+1927-05-26,England,away,France,5
+1927-07-14,Argentina,away,Uruguay,256
+1927-08-30,Argentina,home,Uruguay,47
+1927-10-22,England,away,Northern Ireland,149
+1927-10-30,Argentina,home,Bolivia,61
+1927-11-20,Argentina,home,Uruguay,21
+1927-11-27,Argentina,away,Peru,7
+1927-11-28,England,home,Wales,37
+1928-03-31,England,home,Scotland,124
+1928-04-01,Argentina,away,Portugal,126
+1928-05-17,England,away,France,47
+1928-05-19,England,away,Belgium,2
+1928-05-29,Argentina,home,United States,58
+1928-06-02,Argentina,home,Belgium,4
+1928-06-06,Argentina,home,Egypt,4
+1928-06-10,Argentina,away,Uruguay,4
+1928-06-13,Argentina,away,Uruguay,3
+1928-08-30,Argentina,home,Uruguay,78
+1928-09-21,Argentina,away,Uruguay,22
+1928-10-22,England,home,Northern Ireland,156
+1928-11-17,England,away,Wales,26
+1929-04-13,England,away,Scotland,147
+1929-05-09,England,away,France,26
+1929-05-11,England,away,Belgium,2
+1929-05-15,England,away,Spain,4
+1929-06-16,Argentina,home,Uruguay,268
+1929-06-16,Argentina,away,Uruguay,0
+1929-09-20,Argentina,away,Uruguay,96
+1929-09-28,Argentina,home,Uruguay,8
+1929-10-19,England,away,Northern Ireland,157
+1929-11-03,Argentina,home,Peru,36
+1929-11-10,Argentina,home,Paraguay,7
+1929-11-17,Argentina,home,Uruguay,7
+1929-11-20,England,home,Wales,32
+1930-04-05,England,home,Scotland,136
+1930-05-10,England,away,Germany,35
+1930-05-14,England,away,Austria,4
+1930-05-25,Argentina,home,Uruguay,189
+1930-07-15,Argentina,home,France,51
+1930-07-19,Argentina,home,Mexico,4
+1930-07-22,Argentina,home,Chile,3
+1930-07-26,Argentina,home,United States,4
+1930-07-30,Argentina,away,Uruguay,4
+1930-08-03,Argentina,home,Yugoslavia,4
+1930-10-20,England,home,Northern Ireland,159
+1930-11-22,England,away,Wales,33
+1931-03-28,England,away,Scotland,126
+1931-04-19,Argentina,away,Paraguay,259
+1931-04-25,Argentina,away,Paraguay,6
+1931-05-14,England,away,France,47
+1931-05-16,England,away,Belgium,2
+1931-07-04,Argentina,home,Paraguay,70
+1931-07-09,Argentina,home,Paraguay,5
+1931-10-17,England,away,Northern Ireland,154
+1931-11-18,England,home,Wales,32
+1931-12-09,England,home,Spain,21
+1932-04-09,England,home,Scotland,122
+1932-05-15,Argentina,home,Uruguay,311
+1932-05-18,Argentina,away,Uruguay,3
+1932-10-17,England,home,Northern Ireland,191
+1932-11-16,England,away,Wales,30
+1932-12-07,England,home,Austria,21
+1933-01-21,Argentina,away,Uruguay,248
+1933-02-05,Argentina,home,Uruguay,15
+1933-04-01,England,away,Scotland,115
+1933-05-13,England,away,Italy,42
+1933-05-20,England,away,Switzerland,7
+1933-10-14,England,away,Northern Ireland,147
+1933-11-15,England,home,Wales,32
+1933-12-06,England,home,France,21
+1933-12-14,Argentina,away,Uruguay,312
+1934-04-14,England,home,Scotland,129
+1934-05-10,England,away,Hungary,26
+1934-05-16,England,away,Czechoslovakia,6
+1934-05-27,Argentina,home,Sweden,164
+1934-07-18,Argentina,away,Uruguay,52
+1934-08-15,Argentina,home,Uruguay,28
+1934-09-29,England,away,Wales,136
+1934-11-14,England,home,Italy,46
+1935-01-06,Argentina,home,Chile,144
+1935-01-20,Argentina,away,Peru,14
+1935-01-27,Argentina,home,Uruguay,7
+1935-02-06,England,home,Northern Ireland,84
+1935-04-06,England,away,Scotland,59
+1935-05-18,England,away,Netherlands,42
+1935-07-18,Argentina,away,Uruguay,172
+1935-08-15,Argentina,home,Uruguay,28
+1935-10-19,England,away,Northern Ireland,154
+1935-12-04,England,home,Germany,46
+1936-02-05,England,home,Wales,63
+1936-04-04,England,home,Scotland,59
+1936-05-06,England,away,Austria,32
+1936-05-09,England,away,Belgium,3
+1936-08-09,Argentina,home,Uruguay,360
+1936-09-20,Argentina,away,Uruguay,42
+1936-10-17,England,away,Wales,161
+1936-11-18,England,home,Northern Ireland,32
+1936-12-02,England,home,Hungary,14
+1936-12-30,Argentina,home,Chile,101
+1937-01-09,Argentina,home,Paraguay,10
+1937-01-16,Argentina,home,Peru,7
+1937-01-23,Argentina,home,Uruguay,7
+1937-01-30,Argentina,home,Brazil,7
+1937-02-01,Argentina,home,Brazil,2
+1937-04-17,England,away,Scotland,136
+1937-05-14,England,away,Norway,27
+1937-05-17,England,away,Sweden,3
+1937-05-20,England,away,Finland,3
+1937-10-10,Argentina,away,Uruguay,251
+1937-10-23,England,away,Northern Ireland,156
+1937-11-11,Argentina,home,Uruguay,32
+1937-11-17,England,home,Wales,25
+1937-12-01,England,home,Czechoslovakia,14
+1938-04-09,England,home,Scotland,129
+1938-05-14,England,away,Germany,35
+1938-05-21,England,away,Switzerland,7
+1938-05-26,England,away,France,5
+1938-06-18,Argentina,home,Uruguay,219
+1938-10-12,Argentina,away,Uruguay,116
+1938-10-22,England,away,Wales,149
+1938-11-09,England,home,Norway,18
+1938-11-16,England,home,Northern Ireland,7
+1939-01-15,Argentina,away,Brazil,95
+1939-01-22,Argentina,away,Brazil,7
+1939-04-15,England,away,Scotland,150
+1939-05-13,England,away,Italy,28
+1939-05-18,England,away,Yugoslavia,5
+1939-05-24,England,away,Romania,6
+1939-08-14,Argentina,away,Paraguay,204
+1939-08-16,Argentina,away,Paraguay,2
+1940-02-18,Argentina,home,Paraguay,186
+1940-02-18,Argentina,away,Brazil,0
+1940-02-25,Argentina,home,Paraguay,7
+1940-02-25,Argentina,away,Brazil,0
+1940-03-02,Argentina,home,Chile,6
+1940-03-05,Argentina,home,Brazil,3
+1940-03-09,Argentina,home,Chile,4
+1940-03-10,Argentina,home,Brazil,1
+1940-03-17,Argentina,home,Brazil,7
+1940-07-18,Argentina,away,Uruguay,123
+1940-08-15,Argentina,home,Uruguay,28
+1941-01-05,Argentina,away,Chile,143
+1941-01-09,Argentina,away,Chile,4
+1941-01-19,Argentina,away,Peru,10
+1941-01-26,Argentina,away,Peru,7
+1941-01-29,Argentina,away,Peru,3
+1941-02-12,Argentina,home,Peru,14
+1941-02-16,Argentina,home,Ecuador,4
+1941-02-23,Argentina,home,Uruguay,7
+1941-03-04,Argentina,away,Chile,9
+1942-01-11,Argentina,home,Paraguay,313
+1942-01-17,Argentina,home,Brazil,6
+1942-01-22,Argentina,home,Ecuador,5
+1942-01-25,Argentina,home,Peru,3
+1942-01-31,Argentina,home,Chile,6
+1942-02-07,Argentina,away,Uruguay,7
+1942-05-25,Argentina,home,Uruguay,107
+1942-08-25,Argentina,away,Uruguay,92
+1943-03-28,Argentina,home,Uruguay,215
+1943-04-04,Argentina,away,Uruguay,7
+1943-07-10,Argentina,away,Paraguay,97
+1943-07-11,Argentina,away,Paraguay,1
+1945-01-06,Argentina,home,Paraguay,545
+1945-01-09,Argentina,home,Paraguay,3
+1945-01-18,Argentina,home,Bolivia,9
+1945-01-31,Argentina,home,Ecuador,13
+1945-02-07,Argentina,home,Colombia,7
+1945-02-11,Argentina,away,Chile,4
+1945-02-15,Argentina,home,Brazil,4
+1945-02-25,Argentina,home,Uruguay,10
+1945-05-26,England,home,France,2194
+1945-07-07,Argentina,away,Paraguay,132
+1945-07-09,Argentina,away,Paraguay,2
+1945-07-18,Argentina,away,Uruguay,9
+1945-07-21,England,away,Switzerland,56
+1945-08-15,Argentina,home,Uruguay,28
+1945-09-15,England,away,Northern Ireland,56
+1945-10-20,England,home,Wales,35
+1945-12-16,Argentina,away,Brazil,123
+1945-12-20,Argentina,away,Brazil,4
+1945-12-23,Argentina,away,Brazil,3
+1946-01-12,Argentina,home,Paraguay,20
+1946-01-19,Argentina,home,Bolivia,7
+1946-01-19,England,home,Belgium,91
+1946-01-26,Argentina,home,Chile,7
+1946-02-02,Argentina,home,Uruguay,7
+1946-02-10,Argentina,home,Brazil,8
+1946-04-13,England,away,Scotland,84
+1946-04-24,England,home,Scotland,11
+1946-05-11,England,home,Switzerland,17
+1946-05-19,England,away,France,8
+1946-09-28,England,away,Northern Ireland,132
+1946-09-30,England,away,Republic of Ireland,2
+1946-11-13,England,home,Wales,44
+1946-11-27,England,home,Netherlands,14
+1947-04-12,England,home,Scotland,136
+1947-05-03,England,home,France,21
+1947-05-18,England,away,Switzerland,15
+1947-05-25,England,away,Portugal,7
+1947-09-21,England,away,Belgium,119
+1947-10-18,England,away,Wales,27
+1947-11-05,England,home,Northern Ireland,18
+1947-11-19,England,home,Sweden,14
+1947-12-02,Argentina,home,Paraguay,660
+1947-12-04,Argentina,home,Bolivia,2
+1947-12-11,Argentina,home,Peru,7
+1947-12-16,Argentina,home,Chile,5
+1947-12-18,Argentina,home,Colombia,2
+1947-12-25,Argentina,away,Ecuador,7
+1947-12-28,Argentina,home,Uruguay,3
+1948-04-10,England,away,Scotland,143
+1948-05-16,England,away,Italy,36
+1948-09-26,England,away,Denmark,133
+1948-10-09,England,away,Northern Ireland,13
+1948-11-10,England,home,Wales,32
+1948-12-02,England,home,Switzerland,22
+1949-04-09,England,home,Scotland,128
+1949-05-13,England,away,Sweden,34
+1949-05-18,England,away,Norway,5
+1949-05-22,England,away,France,4
+1949-09-21,England,home,Republic of Ireland,122
+1949-10-15,England,away,Wales,24
+1949-11-16,England,home,Northern Ireland,32
+1949-11-30,England,home,Italy,14
+1950-03-25,Argentina,home,Paraguay,818
+1950-03-29,Argentina,home,Paraguay,4
+1950-04-15,England,away,Scotland,136
+1950-05-14,England,away,Portugal,29
+1950-05-18,England,away,Belgium,4
+1950-06-25,England,away,Chile,38
+1950-06-29,England,home,United States,4
+1950-07-02,England,home,Spain,3
+1950-10-07,England,away,Northern Ireland,97
+1950-11-15,England,home,Wales,39
+1950-11-22,England,home,Yugoslavia,7
+1951-04-14,England,home,Scotland,143
+1951-05-09,England,home,Argentina,25
+1951-05-09,Argentina,away,England,406
+1951-05-13,Argentina,away,Republic of Ireland,4
+1951-05-19,England,home,Portugal,10
+1951-10-03,England,home,France,137
+1951-10-20,England,away,Wales,17
+1951-11-14,England,home,Northern Ireland,25
+1951-11-28,England,home,Austria,14
+1952-04-05,England,away,Scotland,129
+1952-05-18,England,away,Italy,43
+1952-05-25,England,away,Austria,7
+1952-05-28,England,away,Switzerland,3
+1952-10-04,England,away,Northern Ireland,129
+1952-11-12,England,home,Wales,39
+1952-11-26,England,home,Belgium,14
+1952-12-07,Argentina,away,Spain,574
+1952-12-14,Argentina,away,Portugal,7
+1953-04-18,England,home,Scotland,143
+1953-05-14,Argentina,home,England,151
+1953-05-14,England,away,Argentina,26
+1953-05-17,Argentina,home,England,3
+1953-05-17,England,away,Argentina,3
+1953-05-24,England,away,Chile,7
+1953-05-31,England,away,Uruguay,7
+1953-06-08,England,away,United States,8
+1953-07-05,Argentina,home,Spain,49
+1953-10-10,England,away,Wales,124
+1953-11-11,England,home,Northern Ireland,32
+1953-11-25,England,home,Hungary,14
+1954-04-03,England,away,Scotland,129
+1954-05-16,England,away,Yugoslavia,43
+1954-05-23,England,away,Hungary,7
+1954-06-17,England,away,Belgium,25
+1954-06-20,England,away,Switzerland,3
+1954-06-26,England,home,Uruguay,6
+1954-10-02,England,away,Northern Ireland,98
+1954-11-10,England,home,Wales,39
+1954-11-28,Argentina,away,Portugal,511
+1954-12-01,England,home,Germany,21
+1954-12-05,Argentina,away,Italy,7
+1955-03-02,Argentina,home,Paraguay,87
+1955-03-09,Argentina,home,Ecuador,7
+1955-03-16,Argentina,home,Peru,7
+1955-03-27,Argentina,home,Uruguay,11
+1955-03-30,Argentina,away,Chile,3
+1955-04-02,England,home,Scotland,122
+1955-05-15,England,away,France,43
+1955-05-18,England,away,Spain,3
+1955-05-22,England,away,Portugal,4
+1955-10-02,England,away,Denmark,133
+1955-10-22,England,away,Wales,20
+1955-11-02,England,home,Northern Ireland,11
+1955-11-30,England,home,Spain,28
+1956-01-22,Argentina,home,Peru,298
+1956-01-29,Argentina,home,Chile,7
+1956-02-01,Argentina,home,Paraguay,3
+1956-02-05,Argentina,home,Brazil,4
+1956-02-15,Argentina,away,Uruguay,10
+1956-02-28,Argentina,home,Peru,13
+1956-03-06,Argentina,home,Costa Rica,7
+1956-03-11,Argentina,home,Chile,5
+1956-03-13,Argentina,away,Mexico,2
+1956-03-18,Argentina,home,Brazil,5
+1956-04-14,England,away,Scotland,136
+1956-05-09,England,home,Brazil,25
+1956-05-16,England,away,Sweden,7
+1956-05-20,England,away,Finland,4
+1956-05-26,England,away,Germany,6
+1956-06-24,Argentina,home,Italy,98
+1956-07-01,Argentina,away,Uruguay,7
+1956-07-08,Argentina,home,Brazil,7
+1956-08-15,Argentina,away,Paraguay,38
+1956-08-19,Argentina,home,Czechoslovakia,4
+1956-10-06,England,away,Northern Ireland,133
+1956-10-10,Argentina,away,Uruguay,52
+1956-11-14,Argentina,home,Uruguay,35
+1956-11-14,England,home,Wales,39
+1956-11-28,England,home,Yugoslavia,14
+1956-12-05,England,home,Denmark,7
+1957-03-13,Argentina,home,Colombia,119
+1957-03-17,Argentina,home,Ecuador,4
+1957-03-20,Argentina,home,Uruguay,3
+1957-03-28,Argentina,home,Chile,8
+1957-04-03,Argentina,home,Brazil,6
+1957-04-06,England,home,Scotland,122
+1957-04-06,Argentina,away,Peru,3
+1957-04-09,Argentina,away,Peru,3
+1957-05-08,England,home,Republic of Ireland,32
+1957-05-15,England,away,Denmark,7
+1957-05-19,England,away,Republic of Ireland,4
+1957-05-23,Argentina,away,Uruguay,44
+1957-06-05,Argentina,home,Uruguay,13
+1957-07-07,Argentina,away,Brazil,32
+1957-07-10,Argentina,away,Brazil,3
+1957-10-06,Argentina,away,Bolivia,88
+1957-10-13,Argentina,away,Chile,7
+1957-10-19,England,away,Wales,153
+1957-10-20,Argentina,home,Chile,7
+1957-10-27,Argentina,home,Bolivia,7
+1957-11-06,England,home,Northern Ireland,18
+1957-11-27,England,home,France,21
+1958-04-06,Argentina,away,Uruguay,161
+1958-04-19,England,away,Scotland,143
+1958-04-20,Argentina,away,Paraguay,14
+1958-04-26,Argentina,home,Paraguay,6
+1958-04-30,Argentina,home,Uruguay,4
+1958-05-07,England,home,Portugal,18
+1958-05-11,England,away,Yugoslavia,4
+1958-05-18,England,away,Russia,7
+1958-06-08,Argentina,home,Germany,39
+1958-06-08,England,home,Russia,21
+1958-06-11,Argentina,home,Northern Ireland,3
+1958-06-11,England,away,Brazil,3
+1958-06-15,Argentina,home,Czechoslovakia,4
+1958-06-15,England,away,Austria,4
+1958-06-17,England,home,Russia,2
+1958-10-04,England,away,Northern Ireland,109
+1958-10-22,England,home,Russia,18
+1958-11-26,England,home,Wales,35
+1959-03-07,Argentina,home,Chile,265
+1959-03-11,Argentina,home,Bolivia,4
+1959-03-18,Argentina,home,Peru,7
+1959-03-22,Argentina,home,Paraguay,4
+1959-03-30,Argentina,home,Uruguay,8
+1959-04-04,Argentina,home,Brazil,5
+1959-04-11,England,home,Scotland,136
+1959-05-06,England,home,Italy,25
+1959-05-13,England,away,Brazil,7
+1959-05-17,England,away,Peru,4
+1959-05-24,England,away,Mexico,7
+1959-05-28,England,away,United States,4
+1959-10-17,England,away,Wales,142
+1959-10-28,England,home,Sweden,11
+1959-11-18,Argentina,away,Chile,228
+1959-11-18,England,home,Northern Ireland,21
+1959-12-09,Argentina,home,Paraguay,21
+1959-12-12,Argentina,away,Ecuador,3
+1959-12-16,Argentina,home,Uruguay,4
+1959-12-22,Argentina,home,Brazil,6
+1960-03-08,Argentina,away,Costa Rica,77
+1960-03-10,Argentina,home,Mexico,2
+1960-03-13,Argentina,home,Brazil,3
+1960-03-15,Argentina,away,Costa Rica,2
+1960-03-17,Argentina,home,Mexico,2
+1960-03-20,Argentina,home,Brazil,3
+1960-04-09,England,away,Scotland,143
+1960-05-11,England,home,Yugoslavia,32
+1960-05-15,England,away,Spain,4
+1960-05-22,England,away,Hungary,7
+1960-05-26,Argentina,home,Brazil,67
+1960-05-29,Argentina,home,Brazil,3
+1960-07-09,Argentina,home,Paraguay,41
+1960-07-12,Argentina,away,Brazil,3
+1960-07-24,Argentina,home,Spain,12
+1960-08-17,Argentina,home,Uruguay,24
+1960-10-08,England,away,Northern Ireland,139
+1960-10-19,England,away,Luxembourg,11
+1960-10-26,England,home,Spain,7
+1960-11-23,England,home,Wales,28
+1960-12-04,Argentina,away,Ecuador,109
+1960-12-17,Argentina,home,Ecuador,13
+1961-04-15,England,home,Scotland,143
+1961-05-10,England,home,Mexico,25
+1961-05-17,Argentina,away,Paraguay,151
+1961-05-21,England,away,Portugal,11
+1961-05-24,England,away,Italy,3
+1961-05-27,England,away,Austria,3
+1961-06-04,Argentina,away,Portugal,18
+1961-06-11,Argentina,away,Spain,7
+1961-06-15,Argentina,away,Italy,4
+1961-06-19,Argentina,away,Czechoslovakia,4
+1961-06-24,Argentina,away,Russia,5
+1961-09-28,England,home,Luxembourg,124
+1961-10-12,Argentina,home,Paraguay,110
+1961-10-14,England,away,Wales,16
+1961-10-25,England,home,Portugal,11
+1961-11-18,Argentina,home,Russia,37
+1961-11-22,England,home,Northern Ireland,28
+1962-03-13,Argentina,away,Uruguay,115
+1962-03-28,Argentina,home,Mexico,15
+1962-04-04,England,home,Austria,133
+1962-04-14,England,away,Scotland,10
+1962-05-09,England,home,Switzerland,25
+1962-05-20,England,away,Peru,11
+1962-05-30,Argentina,home,Bulgaria,63
+1962-05-31,England,home,Hungary,11
+1962-06-02,Argentina,home,England,3
+1962-06-02,England,away,Argentina,2
+1962-06-06,Argentina,home,Hungary,4
+1962-06-07,England,away,Bulgaria,5
+1962-06-10,England,away,Brazil,3
+1962-08-15,Argentina,home,Uruguay,70
+1962-10-03,England,home,France,115
+1962-10-20,England,away,Northern Ireland,17
+1962-11-07,Argentina,away,Chile,84
+1962-11-21,Argentina,home,Chile,14
+1962-11-21,England,home,Wales,32
+1963-02-27,England,away,France,98
+1963-03-10,Argentina,home,Colombia,109
+1963-03-13,Argentina,home,Peru,3
+1963-03-20,Argentina,home,Ecuador,7
+1963-03-24,Argentina,home,Brazil,4
+1963-03-28,Argentina,away,Bolivia,4
+1963-03-31,Argentina,home,Paraguay,3
+1963-04-06,England,home,Scotland,38
+1963-04-13,Argentina,away,Brazil,13
+1963-04-16,Argentina,away,Brazil,3
+1963-05-08,England,home,Brazil,32
+1963-05-29,England,away,Czechoslovakia,21
+1963-06-02,England,away,German DR,4
+1963-06-05,England,away,Switzerland,3
+1963-10-12,England,away,Wales,129
+1963-10-15,Argentina,away,Paraguay,182
+1963-10-29,Argentina,home,Paraguay,14
+1963-11-20,England,home,Northern Ireland,39
+1964-04-11,England,away,Scotland,143
+1964-05-06,England,home,Uruguay,25
+1964-05-17,England,away,Portugal,11
+1964-05-24,England,away,Republic of Ireland,7
+1964-05-27,England,away,United States,3
+1964-05-30,England,away,Brazil,3
+1964-05-31,Argentina,home,Portugal,215
+1964-06-03,Argentina,away,Brazil,3
+1964-06-04,England,home,Portugal,5
+1964-06-06,Argentina,home,England,3
+1964-06-06,England,away,Argentina,2
+1964-09-24,Argentina,home,Chile,110
+1964-10-03,England,away,Northern Ireland,119
+1964-10-14,Argentina,away,Chile,20
+1964-10-21,England,home,Belgium,18
+1964-11-18,England,home,Wales,28
+1964-11-25,Argentina,away,Paraguay,42
+1964-12-08,Argentina,home,Paraguay,13
+1964-12-09,England,away,Netherlands,21
+1965-04-10,England,home,Scotland,122
+1965-05-05,England,home,Hungary,25
+1965-05-09,England,away,Yugoslavia,4
+1965-05-12,England,away,Germany,3
+1965-05-16,England,away,Sweden,4
+1965-06-03,Argentina,away,France,177
+1965-06-09,Argentina,away,Brazil,6
+1965-07-14,Argentina,home,Chile,35
+1965-07-21,Argentina,away,Chile,7
+1965-08-01,Argentina,home,Paraguay,11
+1965-08-08,Argentina,away,Paraguay,7
+1965-08-17,Argentina,home,Bolivia,9
+1965-08-29,Argentina,away,Bolivia,12
+1965-10-02,England,away,Wales,139
+1965-10-20,England,home,Austria,18
+1965-11-10,England,home,Northern Ireland,21
+1965-12-01,Argentina,home,Russia,94
+1965-12-08,England,away,Spain,28
+1966-01-05,England,home,Poland,28
+1966-02-23,England,home,Germany,49
+1966-04-02,England,away,Scotland,38
+1966-05-04,England,home,Yugoslavia,32
+1966-06-11,Argentina,home,Poland,192
+1966-06-22,Argentina,away,Italy,11
+1966-06-26,England,away,Finland,53
+1966-06-29,England,away,Norway,3
+1966-07-03,England,away,Denmark,4
+1966-07-05,England,away,Poland,2
+1966-07-11,England,home,Uruguay,6
+1966-07-13,Argentina,home,Spain,21
+1966-07-16,Argentina,home,Germany,3
+1966-07-16,England,home,Mexico,5
+1966-07-19,Argentina,home,Switzerland,3
+1966-07-20,England,home,France,4
+1966-07-23,England,home,Argentina,3
+1966-07-23,Argentina,away,England,4
+1966-07-26,England,home,Portugal,3
+1966-07-30,England,home,Germany,4
+1966-10-22,England,away,Northern Ireland,84
+1966-11-02,England,home,Czechoslovakia,11
+1966-11-16,England,home,Wales,14
+1967-01-18,Argentina,home,Paraguay,179
+1967-01-22,Argentina,away,Bolivia,4
+1967-01-25,Argentina,home,Venezuela,3
+1967-01-28,Argentina,home,Chile,3
+1967-02-02,Argentina,away,Uruguay,5
+1967-04-15,England,home,Scotland,150
+1967-05-24,England,home,Spain,39
+1967-05-27,England,away,Austria,3
+1967-08-15,Argentina,away,Chile,194
+1967-08-22,Argentina,away,Mexico,7
+1967-10-13,Argentina,away,Paraguay,52
+1967-10-21,England,away,Wales,147
+1967-11-08,Argentina,away,Chile,26
+1967-11-22,England,home,Northern Ireland,32
+1967-12-06,England,home,Russia,14
+1968-02-24,England,away,Scotland,80
+1968-04-03,England,home,Spain,39
+1968-05-08,England,away,Spain,35
+1968-05-15,Argentina,away,Paraguay,189
+1968-05-22,England,home,Sweden,14
+1968-06-01,England,away,Germany,10
+1968-06-05,Argentina,home,Uruguay,21
+1968-06-05,England,home,Yugoslavia,4
+1968-06-08,England,home,Russia,3
+1968-06-20,Argentina,away,Uruguay,15
+1968-08-07,Argentina,away,Brazil,48
+1968-08-11,Argentina,away,Brazil,4
+1968-08-29,Argentina,away,Peru,18
+1968-09-01,Argentina,away,Peru,3
+1968-11-06,England,away,Romania,151
+1968-11-27,Argentina,home,Chile,87
+1968-12-04,Argentina,away,Chile,7
+1968-12-11,England,home,Bulgaria,35
+1968-12-17,Argentina,home,Poland,13
+1968-12-22,Argentina,home,Yugoslavia,5
+1969-01-15,England,home,Romania,35
+1969-03-12,England,home,France,56
+1969-03-19,Argentina,home,Paraguay,87
+1969-04-09,Argentina,away,Paraguay,21
+1969-05-03,England,away,Northern Ireland,52
+1969-05-07,England,home,Wales,4
+1969-05-10,England,home,Scotland,3
+1969-05-28,Argentina,away,Chile,49
+1969-06-01,England,away,Mexico,22
+1969-06-03,England,away,Mexico,2
+1969-06-08,England,away,Uruguay,5
+1969-06-11,Argentina,home,Chile,14
+1969-06-12,England,away,Brazil,4
+1969-07-27,Argentina,away,Bolivia,46
+1969-08-03,Argentina,away,Peru,7
+1969-08-24,Argentina,home,Bolivia,21
+1969-08-31,Argentina,home,Peru,7
+1969-11-05,England,away,Netherlands,146
+1969-12-10,England,home,Portugal,35
+1970-01-14,England,home,Netherlands,35
+1970-02-25,England,away,Belgium,42
+1970-03-04,Argentina,away,Brazil,185
+1970-03-08,Argentina,away,Brazil,4
+1970-04-08,Argentina,home,Uruguay,31
+1970-04-15,Argentina,away,Uruguay,7
+1970-04-18,England,away,Wales,52
+1970-04-21,England,home,Northern Ireland,3
+1970-04-25,England,away,Scotland,4
+1970-05-20,England,away,Colombia,25
+1970-05-24,England,away,Ecuador,4
+1970-06-02,England,home,Romania,9
+1970-06-07,England,away,Brazil,5
+1970-06-11,England,away,Czechoslovakia,4
+1970-06-14,England,home,Germany,3
+1970-10-22,Argentina,away,Paraguay,190
+1970-11-25,England,home,German DR,164
+1971-01-08,Argentina,home,France,78
+1971-01-13,Argentina,home,France,5
+1971-02-03,England,away,Malta,70
+1971-04-21,England,home,Greece,77
+1971-05-12,England,home,Malta,21
+1971-05-15,England,away,Northern Ireland,3
+1971-05-19,England,home,Wales,4
+1971-05-22,England,home,Scotland,3
+1971-07-04,Argentina,away,Paraguay,172
+1971-07-09,Argentina,home,Paraguay,5
+1971-07-14,Argentina,home,Uruguay,5
+1971-07-18,Argentina,away,Uruguay,4
+1971-07-21,Argentina,away,Chile,3
+1971-07-28,Argentina,home,Brazil,7
+1971-07-31,Argentina,home,Brazil,3
+1971-08-04,Argentina,home,Chile,4
+1971-10-13,England,away,Switzerland,144
+1971-11-10,England,home,Switzerland,28
+1971-12-01,England,away,Greece,21
+1972-04-29,England,home,Germany,150
+1972-05-13,England,away,Germany,14
+1972-05-20,England,away,Wales,7
+1972-05-23,England,home,Northern Ireland,3
+1972-05-25,Argentina,home,Paraguay,295
+1972-05-27,England,away,Scotland,4
+1972-05-31,Argentina,away,Chile,6
+1972-06-22,Argentina,home,Colombia,22
+1972-06-25,Argentina,home,France,3
+1972-06-29,Argentina,home,Portugal,4
+1972-07-02,Argentina,home,Russia,3
+1972-07-06,Argentina,home,Uruguay,4
+1972-07-09,Argentina,home,Yugoslavia,3
+1972-10-11,England,home,Yugoslavia,137
+1972-10-11,Argentina,away,Spain,94
+1972-10-25,Argentina,away,Peru,14
+1972-11-15,England,away,Wales,35
+1973-01-24,England,home,Wales,70
+1973-02-06,Argentina,away,Mexico,104
+1973-02-14,Argentina,away,Germany,8
+1973-02-14,England,away,Scotland,21
+1973-02-20,Argentina,away,Israel,6
+1973-05-12,England,home,Northern Ireland,87
+1973-05-15,England,home,Wales,3
+1973-05-17,Argentina,home,Uruguay,86
+1973-05-19,England,home,Scotland,4
+1973-05-23,Argentina,away,Uruguay,6
+1973-05-27,England,away,Czechoslovakia,8
+1973-06-06,England,away,Poland,10
+1973-06-10,England,away,Russia,4
+1973-06-14,England,away,Italy,4
+1973-07-13,Argentina,home,Chile,51
+1973-07-18,Argentina,away,Chile,5
+1973-07-27,Argentina,home,Peru,9
+1973-09-09,Argentina,home,Bolivia,44
+1973-09-16,Argentina,away,Paraguay,7
+1973-09-23,Argentina,away,Bolivia,7
+1973-09-26,England,home,Austria,104
+1973-10-07,Argentina,home,Paraguay,14
+1973-10-17,England,home,Poland,21
+1973-11-14,England,home,Italy,28
+1974-04-03,England,away,Portugal,140
+1974-04-22,Argentina,home,Romania,197
+1974-05-11,England,away,Wales,38
+1974-05-15,England,home,Northern Ireland,4
+1974-05-18,Argentina,away,France,26
+1974-05-18,England,away,Scotland,3
+1974-05-22,England,home,Argentina,4
+1974-05-22,Argentina,away,England,4
+1974-05-26,Argentina,away,Netherlands,4
+1974-05-29,England,away,German DR,7
+1974-06-01,England,away,Bulgaria,3
+1974-06-05,England,away,Yugoslavia,4
+1974-06-15,Argentina,away,Poland,20
+1974-06-19,Argentina,home,Italy,4
+1974-06-23,Argentina,home,Haiti,4
+1974-06-26,Argentina,away,Netherlands,3
+1974-06-30,Argentina,home,Brazil,4
+1974-07-03,Argentina,home,German DR,3
+1974-10-12,Argentina,home,Spain,101
+1974-10-30,England,home,Czechoslovakia,147
+1974-11-06,Argentina,away,Chile,25
+1974-11-20,Argentina,home,Chile,14
+1974-11-20,England,home,Portugal,21
+1975-03-12,England,home,Germany,112
+1975-04-16,England,home,Cyprus,35
+1975-05-11,England,away,Cyprus,25
+1975-05-17,England,away,Northern Ireland,6
+1975-05-21,England,home,Wales,4
+1975-05-24,England,home,Scotland,3
+1975-06-27,Argentina,away,Bolivia,219
+1975-07-18,Argentina,away,Uruguay,21
+1975-08-03,Argentina,away,Venezuela,16
+1975-08-06,Argentina,away,Brazil,3
+1975-08-10,Argentina,home,Venezuela,4
+1975-08-16,Argentina,home,Brazil,6
+1975-08-21,Argentina,home,United States,5
+1975-08-31,Argentina,away,Mexico,10
+1975-09-03,England,away,Switzerland,102
+1975-10-30,England,away,Czechoslovakia,57
+1975-11-19,England,away,Portugal,20
+1976-02-25,Argentina,away,Paraguay,178
+1976-02-27,Argentina,home,Brazil,2
+1976-03-20,Argentina,away,Russia,22
+1976-03-24,Argentina,away,Poland,4
+1976-03-24,England,away,Wales,126
+1976-03-27,Argentina,away,Hungary,3
+1976-04-08,Argentina,home,Uruguay,12
+1976-04-28,Argentina,home,Paraguay,20
+1976-05-08,England,away,Wales,45
+1976-05-11,England,home,Northern Ireland,3
+1976-05-15,England,away,Scotland,4
+1976-05-19,Argentina,away,Brazil,21
+1976-05-23,England,away,Brazil,8
+1976-05-28,England,home,Italy,5
+1976-06-09,Argentina,away,Uruguay,21
+1976-06-13,England,away,Finland,16
+1976-09-08,England,home,Republic of Ireland,87
+1976-10-13,Argentina,home,Chile,126
+1976-10-13,England,home,Finland,35
+1976-10-28,Argentina,away,Peru,15
+1976-11-10,Argentina,home,Peru,13
+1976-11-17,England,away,Italy,35
+1976-11-28,Argentina,home,Russia,18
+1977-02-09,England,home,Netherlands,84
+1977-02-27,Argentina,home,Hungary,91
+1977-03-22,Argentina,home,Iran,23
+1977-03-30,England,home,Luxembourg,49
+1977-05-28,England,away,Northern Ireland,59
+1977-05-29,Argentina,home,Poland,68
+1977-05-31,England,home,Wales,3
+1977-06-04,England,home,Scotland,4
+1977-06-05,Argentina,home,Germany,7
+1977-06-08,England,away,Brazil,4
+1977-06-12,Argentina,home,England,7
+1977-06-12,England,away,Argentina,4
+1977-06-15,England,away,Uruguay,3
+1977-06-18,Argentina,home,Scotland,6
+1977-06-26,Argentina,home,France,8
+1977-07-03,Argentina,home,Yugoslavia,7
+1977-07-12,Argentina,home,German DR,9
+1977-08-24,Argentina,home,Paraguay,43
+1977-08-31,Argentina,away,Paraguay,7
+1977-09-07,England,home,Switzerland,84
+1977-10-12,England,away,Luxembourg,35
+1977-11-16,England,home,Italy,35
+1978-02-22,England,away,Germany,98
+1978-03-19,Argentina,home,Peru,200
+1978-03-23,Argentina,away,Peru,4
+1978-03-29,Argentina,home,Bulgaria,6
+1978-04-05,Argentina,home,Romania,7
+1978-04-19,England,home,Brazil,56
+1978-04-25,Argentina,away,Uruguay,20
+1978-05-03,Argentina,home,Uruguay,8
+1978-05-13,England,away,Wales,24
+1978-05-16,England,home,Northern Ireland,3
+1978-05-20,England,away,Scotland,4
+1978-05-24,England,home,Hungary,4
+1978-06-02,Argentina,home,Hungary,30
+1978-06-06,Argentina,home,France,4
+1978-06-10,Argentina,home,Italy,4
+1978-06-14,Argentina,home,Poland,4
+1978-06-18,Argentina,home,Brazil,4
+1978-06-21,Argentina,home,Peru,3
+1978-06-25,Argentina,home,Netherlands,4
+1978-09-20,England,away,Denmark,119
+1978-10-25,England,away,Republic of Ireland,35
+1978-11-29,England,home,Czechoslovakia,35
+1979-02-07,England,home,Northern Ireland,70
+1979-04-25,Argentina,home,Bulgaria,304
+1979-05-19,England,away,Northern Ireland,101
+1979-05-22,Argentina,home,Netherlands,27
+1979-05-23,England,home,Wales,4
+1979-05-26,England,home,Scotland,3
+1979-05-26,Argentina,away,Italy,4
+1979-05-29,Argentina,away,Republic of Ireland,3
+1979-06-02,Argentina,away,Scotland,4
+1979-06-06,England,away,Bulgaria,11
+1979-06-10,England,away,Sweden,4
+1979-06-13,England,away,Austria,3
+1979-07-18,Argentina,away,Bolivia,46
+1979-08-02,Argentina,away,Brazil,15
+1979-08-08,Argentina,home,Bolivia,6
+1979-08-23,Argentina,home,Brazil,15
+1979-09-12,England,home,Denmark,91
+1979-09-12,Argentina,away,Germany,20
+1979-09-16,Argentina,away,Yugoslavia,4
+1979-10-17,England,away,Northern Ireland,35
+1979-11-22,England,home,Bulgaria,36
+1980-02-06,England,home,Republic of Ireland,76
+1980-03-26,England,away,Spain,49
+1980-05-13,England,home,Argentina,48
+1980-05-13,Argentina,away,England,240
+1980-05-16,Argentina,away,Republic of Ireland,3
+1980-05-17,England,away,Wales,4
+1980-05-20,England,home,Northern Ireland,3
+1980-05-21,Argentina,away,Austria,5
+1980-05-24,England,away,Scotland,4
+1980-05-31,England,away,Australia,7
+1980-06-12,England,away,Belgium,12
+1980-06-15,England,away,Italy,3
+1980-06-18,England,away,Spain,3
+1980-09-10,England,home,Norway,84
+1980-09-18,Argentina,home,Chile,120
+1980-10-09,Argentina,home,Bulgaria,21
+1980-10-12,Argentina,home,Poland,3
+1980-10-15,Argentina,home,Czechoslovakia,3
+1980-10-15,England,away,Romania,35
+1980-11-19,England,home,Switzerland,35
+1980-12-04,Argentina,home,Russia,50
+1980-12-16,Argentina,home,Switzerland,12
+1981-01-01,Argentina,home,Germany,16
+1981-01-04,Argentina,home,Brazil,3
+1981-03-25,England,home,Spain,126
+1981-04-29,England,home,Romania,35
+1981-05-12,England,home,Brazil,13
+1981-05-20,England,home,Wales,8
+1981-05-23,England,home,Scotland,3
+1981-05-30,England,away,Switzerland,7
+1981-06-06,England,away,Hungary,7
+1981-09-09,England,away,Norway,95
+1981-10-28,Argentina,home,Poland,297
+1981-11-11,Argentina,home,Czechoslovakia,14
+1981-11-18,England,home,Hungary,70
+1982-02-23,England,home,Northern Ireland,97
+1982-03-09,Argentina,home,Czechoslovakia,118
+1982-03-24,Argentina,home,Germany,15
+1982-04-14,Argentina,home,Russia,21
+1982-04-27,England,away,Wales,63
+1982-05-05,Argentina,home,Bulgaria,21
+1982-05-12,Argentina,home,Romania,7
+1982-05-25,England,home,Netherlands,28
+1982-05-29,England,away,Scotland,4
+1982-06-02,England,away,Iceland,4
+1982-06-03,England,away,Finland,1
+1982-06-13,Argentina,home,Belgium,32
+1982-06-16,England,home,France,13
+1982-06-18,Argentina,home,Hungary,5
+1982-06-20,England,home,Czechoslovakia,4
+1982-06-23,Argentina,home,El Salvador,5
+1982-06-25,England,home,Kuwait,5
+1982-06-29,England,away,Germany,4
+1982-06-29,Argentina,away,Italy,6
+1982-07-02,Argentina,home,Brazil,3
+1982-07-05,England,away,Spain,6
+1982-09-22,England,away,Denmark,79
+1982-10-13,England,home,Germany,21
+1982-11-17,England,away,Greece,35
+1982-12-15,England,home,Luxembourg,28
+1983-02-23,England,home,Wales,70
+1983-03-30,England,home,Greece,35
+1983-04-27,England,home,Hungary,28
+1983-05-12,Argentina,away,Chile,314
+1983-05-28,England,away,Northern Ireland,31
+1983-06-01,England,home,Scotland,4
+1983-06-12,England,away,Australia,11
+1983-06-15,England,away,Australia,3
+1983-06-19,England,away,Australia,4
+1983-06-23,Argentina,home,Chile,42
+1983-07-14,Argentina,away,Paraguay,21
+1983-07-21,Argentina,home,Paraguay,7
+1983-08-10,Argentina,away,Ecuador,20
+1983-08-24,Argentina,home,Brazil,14
+1983-09-07,Argentina,home,Ecuador,14
+1983-09-14,Argentina,away,Brazil,7
+1983-09-21,England,home,Denmark,94
+1983-10-12,England,away,Hungary,21
+1983-11-16,England,away,Luxembourg,35
+1984-01-14,Argentina,away,India,122
+1984-01-17,Argentina,home,Poland,3
+1984-01-20,Argentina,home,China,3
+1984-02-29,England,away,France,105
+1984-04-04,England,home,Northern Ireland,35
+1984-05-02,England,away,Wales,28
+1984-05-26,England,away,Scotland,24
+1984-06-02,England,home,Russia,7
+1984-06-10,England,away,Brazil,8
+1984-06-13,England,away,Uruguay,3
+1984-06-17,Argentina,away,Brazil,149
+1984-06-17,England,away,Chile,4
+1984-07-18,Argentina,away,Uruguay,31
+1984-08-02,Argentina,home,Uruguay,15
+1984-08-24,Argentina,away,Colombia,22
+1984-09-01,Argentina,away,Switzerland,8
+1984-09-05,Argentina,away,Belgium,4
+1984-09-12,England,home,German DR,87
+1984-09-12,Argentina,away,Germany,7
+1984-09-18,Argentina,away,Mexico,6
+1984-10-17,England,home,Finland,35
+1984-10-25,Argentina,home,Mexico,37
+1984-11-14,England,away,Turkey,28
+1985-02-27,England,away,Northern Ireland,105
+1985-03-26,England,home,Republic of Ireland,27
+1985-04-28,Argentina,away,Paraguay,185
+1985-05-01,England,away,Romania,36
+1985-05-05,Argentina,away,Brazil,7
+1985-05-09,Argentina,home,Paraguay,4
+1985-05-14,Argentina,home,Chile,5
+1985-05-22,England,away,Finland,21
+1985-05-25,England,away,Scotland,3
+1985-05-26,Argentina,away,Venezuela,12
+1985-06-02,Argentina,away,Colombia,7
+1985-06-06,England,home,Italy,12
+1985-06-09,Argentina,home,Venezuela,7
+1985-06-09,England,away,Mexico,3
+1985-06-12,England,home,Germany,3
+1985-06-16,Argentina,home,Colombia,7
+1985-06-16,England,away,United States,4
+1985-06-23,Argentina,away,Peru,7
+1985-06-30,Argentina,home,Peru,7
+1985-09-11,England,home,Romania,87
+1985-10-16,England,home,Turkey,35
+1985-11-13,England,home,Northern Ireland,28
+1985-11-14,Argentina,away,Mexico,137
+1985-11-17,Argentina,away,Mexico,3
+1986-01-29,England,away,Egypt,77
+1986-02-26,England,away,Israel,28
+1986-03-26,Argentina,away,France,129
+1986-03-26,England,away,Russia,28
+1986-04-23,England,home,Scotland,28
+1986-04-30,Argentina,away,Norway,35
+1986-05-17,England,away,Mexico,24
+1986-05-24,England,away,Canada,7
+1986-06-02,Argentina,home,South Korea,33
+1986-06-03,England,away,Portugal,10
+1986-06-05,Argentina,away,Italy,3
+1986-06-06,England,home,Morocco,3
+1986-06-10,Argentina,home,Bulgaria,5
+1986-06-11,England,home,Poland,5
+1986-06-16,Argentina,home,Uruguay,6
+1986-06-18,England,home,Paraguay,7
+1986-06-22,Argentina,home,England,6
+1986-06-22,England,away,Argentina,4
+1986-06-25,Argentina,home,Belgium,3
+1986-06-29,Argentina,home,Germany,4
+1986-09-10,England,away,Sweden,80
+1986-10-15,England,home,Northern Ireland,35
+1986-11-12,England,home,Yugoslavia,28
+1987-02-18,England,away,Spain,98
+1987-04-01,England,away,Northern Ireland,42
+1987-04-29,England,away,Turkey,28
+1987-05-19,England,home,Brazil,20
+1987-05-23,England,away,Scotland,4
+1987-06-10,Argentina,home,Italy,346
+1987-06-20,Argentina,home,Paraguay,10
+1987-06-27,Argentina,home,Peru,7
+1987-07-02,Argentina,home,Ecuador,5
+1987-07-09,Argentina,home,Uruguay,7
+1987-07-11,Argentina,home,Colombia,2
+1987-09-09,England,away,Germany,109
+1987-10-14,England,home,Turkey,35
+1987-11-11,England,away,Yugoslavia,28
+1987-12-16,Argentina,home,Germany,158
+1988-02-17,England,away,Israel,98
+1988-03-23,England,home,Netherlands,35
+1988-03-31,Argentina,home,Russia,106
+1988-04-02,Argentina,away,Germany,2
+1988-04-27,England,away,Hungary,35
+1988-05-21,England,home,Scotland,24
+1988-05-24,England,home,Colombia,3
+1988-05-28,England,away,Switzerland,4
+1988-06-12,England,home,Republic of Ireland,15
+1988-06-15,England,home,Netherlands,3
+1988-06-18,England,home,Russia,3
+1988-07-06,Argentina,home,Saudi Arabia,95
+1988-07-10,Argentina,home,Brazil,4
+1988-07-14,Argentina,away,Australia,4
+1988-07-16,Argentina,home,Saudi Arabia,2
+1988-09-14,England,home,Denmark,88
+1988-10-12,Argentina,away,Spain,88
+1988-10-19,England,home,Sweden,35
+1988-11-16,England,away,Saudi Arabia,28
+1989-02-08,England,away,Greece,84
+1989-03-08,England,away,Albania,28
+1989-03-09,Argentina,away,Colombia,148
+1989-04-13,Argentina,away,Ecuador,35
+1989-04-20,Argentina,away,Chile,7
+1989-04-26,England,home,Albania,49
+1989-05-23,England,home,Chile,27
+1989-05-27,England,away,Scotland,4
+1989-06-03,England,home,Poland,7
+1989-06-07,England,away,Denmark,4
+1989-07-02,Argentina,home,Chile,73
+1989-07-04,Argentina,home,Ecuador,2
+1989-07-08,Argentina,away,Uruguay,4
+1989-07-10,Argentina,home,Bolivia,2
+1989-07-12,Argentina,away,Brazil,2
+1989-07-14,Argentina,home,Uruguay,2
+1989-07-16,Argentina,away,Paraguay,2
+1989-09-06,England,away,Sweden,91
+1989-10-11,England,away,Poland,35
+1989-11-15,England,home,Italy,35
+1989-12-13,England,home,Yugoslavia,28
+1989-12-21,Argentina,away,Italy,158
+1990-01-17,Argentina,away,Mexico,27
+1990-03-28,England,home,Brazil,105
+1990-03-28,Argentina,away,Scotland,70
+1990-04-25,England,home,Czechoslovakia,28
+1990-05-03,Argentina,away,Austria,36
+1990-05-08,Argentina,away,Switzerland,5
+1990-05-15,England,home,Denmark,20
+1990-05-22,England,home,Uruguay,7
+1990-05-22,Argentina,away,Israel,14
+1990-06-02,England,away,Tunisia,11
+1990-06-08,Argentina,home,Cameroon,17
+1990-06-11,England,home,Republic of Ireland,9
+1990-06-13,Argentina,home,Russia,5
+1990-06-16,England,home,Netherlands,5
+1990-06-18,Argentina,home,Romania,5
+1990-06-21,England,home,Egypt,5
+1990-06-24,Argentina,away,Brazil,6
+1990-06-26,England,home,Belgium,5
+1990-06-30,Argentina,away,Yugoslavia,6
+1990-07-01,England,away,Cameroon,5
+1990-07-03,Argentina,away,Italy,3
+1990-07-04,England,away,Germany,3
+1990-07-07,England,away,Italy,3
+1990-07-08,Argentina,away,Germany,5
+1990-09-12,England,home,Hungary,67
+1990-10-17,England,home,Poland,35
+1990-11-14,England,away,Republic of Ireland,28
+1991-02-06,England,home,Cameroon,84
+1991-02-19,Argentina,home,Hungary,226
+1991-03-13,Argentina,home,Mexico,22
+1991-03-27,Argentina,home,Brazil,14
+1991-03-27,England,home,Republic of Ireland,49
+1991-05-01,England,away,Turkey,35
+1991-05-19,Argentina,away,United States,53
+1991-05-21,England,home,Russia,20
+1991-05-23,Argentina,home,Russia,4
+1991-05-25,England,home,Argentina,4
+1991-05-25,Argentina,away,England,2
+1991-06-01,England,away,Australia,7
+1991-06-03,England,away,New Zealand,2
+1991-06-08,England,away,New Zealand,5
+1991-06-12,England,away,Malaysia,4
+1991-06-27,Argentina,away,Brazil,33
+1991-07-08,Argentina,home,Venezuela,11
+1991-07-10,Argentina,away,Chile,2
+1991-07-12,Argentina,home,Paraguay,2
+1991-07-14,Argentina,home,Peru,2
+1991-07-17,Argentina,home,Brazil,3
+1991-07-19,Argentina,away,Chile,2
+1991-07-21,Argentina,home,Colombia,2
+1991-09-11,England,home,Germany,91
+1991-10-16,England,home,Turkey,35
+1991-11-13,England,away,Poland,28
+1992-02-19,England,home,France,98
+1992-03-25,England,away,Czechoslovakia,35
+1992-04-29,England,away,Russia,35
+1992-05-12,England,away,Hungary,13
+1992-05-17,England,home,Brazil,5
+1992-05-30,Argentina,away,Japan,314
+1992-06-03,Argentina,home,Wales,4
+1992-06-03,England,away,Finland,17
+1992-06-11,England,away,Denmark,8
+1992-06-14,England,away,France,3
+1992-06-17,England,away,Sweden,3
+1992-06-18,Argentina,home,Australia,15
+1992-09-09,England,away,Spain,84
+1992-09-23,Argentina,away,Uruguay,97
+1992-10-14,England,home,Norway,35
+1992-10-16,Argentina,home,Ivory Coast,23
+1992-10-20,Argentina,away,Saudi Arabia,4
+1992-11-18,England,home,Turkey,35
+1992-11-26,Argentina,home,Poland,37
+1993-02-17,England,home,San Marino,91
+1993-02-18,Argentina,home,Brazil,84
+1993-02-24,Argentina,home,Denmark,6
+1993-03-31,England,away,Turkey,42
+1993-04-28,England,home,Netherlands,28
+1993-05-29,England,away,Poland,31
+1993-06-02,England,away,Norway,4
+1993-06-09,England,away,United States,7
+1993-06-13,England,away,Brazil,4
+1993-06-17,Argentina,home,Bolivia,113
+1993-06-19,England,home,Germany,6
+1993-06-20,Argentina,home,Mexico,3
+1993-06-23,Argentina,home,Colombia,3
+1993-06-27,Argentina,away,Brazil,4
+1993-07-01,Argentina,away,Colombia,4
+1993-07-04,Argentina,home,Mexico,3
+1993-08-01,Argentina,away,Peru,28
+1993-08-08,Argentina,away,Paraguay,7
+1993-08-15,Argentina,away,Colombia,7
+1993-08-22,Argentina,home,Peru,7
+1993-08-29,Argentina,home,Paraguay,7
+1993-09-05,Argentina,home,Colombia,7
+1993-09-08,England,home,Poland,81
+1993-10-13,England,away,Netherlands,35
+1993-10-31,Argentina,away,Australia,56
+1993-11-17,Argentina,home,Australia,17
+1993-11-17,England,away,San Marino,35
+1993-12-15,Argentina,home,Germany,28
+1994-03-09,England,home,Denmark,112
+1994-03-23,Argentina,away,Brazil,98
+1994-04-20,Argentina,home,Morocco,28
+1994-05-17,England,home,Greece,69
+1994-05-18,Argentina,away,Chile,28
+1994-05-22,England,home,Norway,5
+1994-05-25,Argentina,away,Ecuador,7
+1994-05-31,Argentina,away,Israel,6
+1994-06-04,Argentina,away,Croatia,4
+1994-06-21,Argentina,home,Greece,17
+1994-06-25,Argentina,home,Nigeria,4
+1994-06-30,Argentina,home,Bulgaria,5
+1994-07-03,Argentina,away,Romania,3
+1994-09-07,England,home,United States,108
+1994-10-12,England,home,Romania,35
+1994-11-16,Argentina,away,Chile,136
+1994-11-16,England,home,Nigeria,35
+1994-12-27,Argentina,home,Serbia,41
+1995-01-08,Argentina,away,Japan,12
+1995-01-10,Argentina,away,Nigeria,2
+1995-01-13,Argentina,away,Denmark,3
+1995-02-14,Argentina,home,Bulgaria,32
+1995-02-15,England,away,Republic of Ireland,91
+1995-03-29,England,home,Uruguay,42
+1995-05-13,Argentina,away,South Africa,88
+1995-05-31,Argentina,home,Peru,18
+1995-06-03,England,home,Japan,66
+1995-06-08,England,home,Sweden,5
+1995-06-11,England,home,Brazil,3
+1995-06-14,Argentina,home,Paraguay,14
+1995-06-30,Argentina,home,Australia,16
+1995-07-08,Argentina,home,Bolivia,8
+1995-07-11,Argentina,home,Chile,3
+1995-07-14,Argentina,home,United States,3
+1995-07-17,Argentina,away,Brazil,3
+1995-09-06,England,home,Colombia,87
+1995-09-20,Argentina,away,Spain,65
+1995-10-11,Argentina,home,Colombia,21
+1995-10-11,England,away,Norway,35
+1995-11-08,Argentina,home,Brazil,28
+1995-11-15,England,home,Switzerland,35
+1995-12-12,England,home,Portugal,27
+1995-12-21,Argentina,home,Venezuela,43
+1996-03-27,England,home,Bulgaria,106
+1996-04-24,Argentina,home,Bolivia,125
+1996-04-24,England,home,Croatia,28
+1996-05-18,England,home,Hungary,24
+1996-05-23,England,away,China,5
+1996-06-02,Argentina,away,Ecuador,39
+1996-06-08,England,home,Switzerland,16
+1996-06-15,England,home,Scotland,7
+1996-06-18,England,home,Netherlands,3
+1996-06-22,England,home,Spain,4
+1996-06-26,England,home,Germany,4
+1996-07-07,Argentina,away,Peru,35
+1996-09-01,Argentina,home,Paraguay,56
+1996-09-01,England,away,Moldova,67
+1996-10-09,England,home,Poland,38
+1996-10-09,Argentina,away,Venezuela,38
+1996-11-09,England,away,Georgia,31
+1996-12-15,Argentina,home,Chile,67
+1996-12-28,Argentina,home,Serbia,13
+1997-01-12,Argentina,away,Uruguay,15
+1997-02-12,Argentina,away,Colombia,31
+1997-02-12,England,home,Italy,95
+1997-03-29,England,home,Mexico,45
+1997-04-02,Argentina,away,Bolivia,49
+1997-04-30,Argentina,home,Ecuador,28
+1997-04-30,England,home,Georgia,32
+1997-05-24,England,home,South Africa,24
+1997-05-31,England,away,Poland,7
+1997-06-04,England,home,Italy,4
+1997-06-07,England,away,France,3
+1997-06-08,Argentina,home,Peru,39
+1997-06-10,England,home,Brazil,3
+1997-06-11,Argentina,home,Ecuador,3
+1997-06-14,Argentina,home,Chile,3
+1997-06-17,Argentina,home,Paraguay,3
+1997-06-21,Argentina,away,Peru,4
+1997-07-06,Argentina,away,Paraguay,15
+1997-07-20,Argentina,home,Venezuela,14
+1997-09-10,Argentina,away,Chile,52
+1997-09-10,England,home,Moldova,92
+1997-10-11,England,away,Italy,31
+1997-10-12,Argentina,home,Uruguay,32
+1997-11-15,England,home,Cameroon,35
+1997-11-16,Argentina,home,Colombia,35
+1998-02-11,England,home,Chile,88
+1998-02-24,Argentina,home,Serbia,100
+1998-03-10,Argentina,home,Bulgaria,14
+1998-03-25,England,away,Switzerland,42
+1998-04-15,Argentina,away,Israel,36
+1998-04-22,England,home,Portugal,28
+1998-04-22,Argentina,away,Republic of Ireland,7
+1998-04-29,Argentina,away,Brazil,7
+1998-05-14,Argentina,home,Bosnia and Herzegovina,15
+1998-05-19,Argentina,home,Chile,5
+1998-05-23,England,home,Saudi Arabia,31
+1998-05-25,Argentina,home,South Africa,6
+1998-05-27,England,away,Morocco,4
+1998-05-29,England,away,Belgium,2
+1998-06-14,Argentina,home,Japan,20
+1998-06-15,England,home,Tunisia,17
+1998-06-21,Argentina,home,Jamaica,7
+1998-06-22,England,away,Romania,7
+1998-06-26,Argentina,home,Croatia,5
+1998-06-26,England,away,Colombia,4
+1998-06-30,Argentina,home,England,4
+1998-06-30,England,away,Argentina,4
+1998-07-04,Argentina,away,Netherlands,4
+1998-09-05,England,away,Sweden,67
+1998-10-10,England,home,Bulgaria,35
+1998-10-14,England,away,Luxembourg,4
+1998-11-18,England,home,Czech Republic,35
+1999-02-03,Argentina,away,Venezuela,214
+1999-02-10,England,home,France,84
+1999-02-10,Argentina,away,Mexico,7
+1999-03-27,England,home,Poland,45
+1999-03-31,Argentina,away,Netherlands,49
+1999-04-28,England,away,Hungary,32
+1999-06-05,England,home,Sweden,38
+1999-06-09,England,away,Bulgaria,4
+1999-06-09,Argentina,away,Mexico,70
+1999-06-13,Argentina,away,United States,4
+1999-06-26,Argentina,home,Lithuania,13
+1999-07-01,Argentina,home,Ecuador,5
+1999-07-04,Argentina,home,Colombia,3
+1999-07-07,Argentina,away,Uruguay,3
+1999-07-11,Argentina,away,Brazil,4
+1999-09-04,Argentina,home,Brazil,55
+1999-09-04,England,home,Luxembourg,87
+1999-09-07,Argentina,away,Brazil,3
+1999-09-08,England,away,Poland,4
+1999-10-10,England,home,Belgium,32
+1999-10-13,Argentina,home,Colombia,36
+1999-11-13,England,away,Scotland,34
+1999-11-17,England,home,Scotland,4
+1999-11-17,Argentina,away,Spain,35
+2000-02-23,England,home,Argentina,98
+2000-02-23,Argentina,away,England,98
+2000-03-29,Argentina,home,Chile,35
+2000-04-26,Argentina,away,Venezuela,28
+2000-05-27,England,home,Brazil,94
+2000-05-31,England,home,Ukraine,4
+2000-06-03,England,away,Malta,3
+2000-06-04,Argentina,home,Bolivia,39
+2000-06-12,England,away,Portugal,9
+2000-06-17,England,home,Germany,5
+2000-06-20,England,home,Romania,3
+2000-06-29,Argentina,away,Colombia,25
+2000-07-19,Argentina,home,Ecuador,20
+2000-07-26,Argentina,away,Brazil,7
+2000-08-16,Argentina,home,Paraguay,21
+2000-09-02,England,away,France,74
+2000-09-03,Argentina,away,Peru,18
+2000-10-07,England,home,Germany,35
+2000-10-08,Argentina,home,Uruguay,35
+2000-10-11,England,away,Finland,4
+2000-11-15,Argentina,away,Chile,38
+2000-11-15,England,away,Italy,35
+2000-12-20,Argentina,away,Mexico,35
+2001-02-28,England,home,Spain,105
+2001-02-28,Argentina,away,Italy,70
+2001-03-24,England,home,Finland,24
+2001-03-28,England,away,Albania,4
+2001-03-28,Argentina,home,Venezuela,28
+2001-04-25,Argentina,away,Bolivia,28
+2001-05-25,England,home,Mexico,58
+2001-06-03,Argentina,home,Colombia,39
+2001-06-06,England,away,Greece,12
+2001-08-15,Argentina,away,Ecuador,73
+2001-08-15,England,home,Netherlands,70
+2001-09-01,England,away,Germany,17
+2001-09-05,Argentina,home,Brazil,21
+2001-09-05,England,home,Albania,4
+2001-10-06,England,home,Greece,31
+2001-10-07,Argentina,away,Paraguay,32
+2001-11-08,Argentina,home,Peru,32
+2001-11-10,England,home,Sweden,35
+2001-11-14,Argentina,away,Uruguay,6
+2002-02-13,England,away,Netherlands,95
+2002-02-13,Argentina,away,Wales,91
+2002-03-27,Argentina,home,Cameroon,42
+2002-03-27,England,home,Italy,42
+2002-04-17,England,home,Paraguay,21
+2002-04-17,Argentina,away,Germany,21
+2002-05-21,England,away,South Korea,34
+2002-05-26,England,away,Cameroon,5
+2002-06-02,Argentina,home,Nigeria,46
+2002-06-02,England,home,Sweden,7
+2002-06-07,Argentina,home,England,5
+2002-06-07,England,away,Argentina,5
+2002-06-12,England,away,Nigeria,5
+2002-06-12,Argentina,away,Sweden,5
+2002-06-15,England,away,Denmark,3
+2002-06-21,England,home,Brazil,6
+2002-09-07,England,home,Portugal,78
+2002-10-12,England,away,Slovakia,35
+2002-10-16,England,home,North Macedonia,4
+2002-11-20,Argentina,away,Japan,161
+2003-01-31,Argentina,away,Honduras,72
+2003-02-04,Argentina,away,Mexico,4
+2003-02-08,Argentina,away,United States,4
+2003-02-12,England,home,Australia,119
+2003-02-12,Argentina,away,Netherlands,4
+2003-03-29,England,away,Liechtenstein,45
+2003-04-02,England,home,Turkey,4
+2003-04-30,Argentina,away,Libya,77
+2003-05-22,England,away,South Africa,50
+2003-06-03,England,home,Serbia,12
+2003-06-08,Argentina,away,Japan,39
+2003-06-11,England,home,Slovakia,8
+2003-06-11,Argentina,away,South Korea,3
+2003-07-16,Argentina,home,Uruguay,35
+2003-08-20,Argentina,home,Uruguay,35
+2003-08-20,England,home,Croatia,70
+2003-09-06,Argentina,home,Chile,17
+2003-09-06,England,away,North Macedonia,17
+2003-09-09,Argentina,away,Venezuela,3
+2003-09-10,England,home,Liechtenstein,4
+2003-10-11,England,away,Turkey,31
+2003-11-15,Argentina,home,Bolivia,67
+2003-11-16,England,home,Denmark,36
+2003-11-19,Argentina,away,Colombia,4
+2004-02-18,England,away,Portugal,94
+2004-03-30,Argentina,home,Ecuador,132
+2004-03-31,England,away,Sweden,42
+2004-04-28,Argentina,away,Morocco,29
+2004-06-01,England,home,Japan,62
+2004-06-02,Argentina,away,Brazil,35
+2004-06-05,England,home,Iceland,4
+2004-06-06,Argentina,home,Paraguay,4
+2004-06-13,England,away,France,8
+2004-06-17,England,home,Switzerland,4
+2004-06-21,England,away,Croatia,4
+2004-06-24,England,away,Portugal,3
+2004-06-27,Argentina,home,Colombia,21
+2004-06-30,Argentina,home,Peru,3
+2004-07-07,Argentina,home,Ecuador,7
+2004-07-10,Argentina,home,Mexico,3
+2004-07-13,Argentina,home,Uruguay,3
+2004-07-17,Argentina,away,Peru,4
+2004-07-20,Argentina,home,Colombia,3
+2004-07-25,Argentina,home,Brazil,5
+2004-08-18,England,home,Ukraine,55
+2004-08-18,Argentina,away,Japan,24
+2004-09-04,England,away,Austria,17
+2004-09-04,Argentina,away,Peru,17
+2004-09-08,England,away,Poland,4
+2004-10-09,Argentina,home,Uruguay,35
+2004-10-09,England,home,Wales,31
+2004-10-13,England,away,Azerbaijan,4
+2004-10-13,Argentina,away,Chile,4
+2004-11-17,Argentina,home,Venezuela,35
+2004-11-17,England,away,Spain,35
+2004-12-29,Argentina,away,Catalonia,42
+2005-02-09,England,home,Netherlands,84
+2005-02-09,Argentina,away,Germany,42
+2005-03-09,Argentina,away,Mexico,28
+2005-03-26,Argentina,away,Bolivia,17
+2005-03-26,England,home,Northern Ireland,45
+2005-03-30,Argentina,home,Colombia,4
+2005-03-30,England,home,Azerbaijan,4
+2005-05-28,England,away,United States,59
+2005-05-31,England,away,Colombia,3
+2005-06-04,Argentina,away,Ecuador,66
+2005-06-08,Argentina,home,Brazil,4
+2005-06-15,Argentina,home,Tunisia,7
+2005-06-18,Argentina,away,Australia,3
+2005-06-21,Argentina,away,Germany,3
+2005-06-26,Argentina,away,Mexico,5
+2005-06-29,Argentina,away,Brazil,3
+2005-08-17,England,away,Denmark,78
+2005-08-17,Argentina,away,Hungary,49
+2005-09-03,Argentina,away,Paraguay,17
+2005-09-03,England,away,Wales,17
+2005-09-07,England,away,Northern Ireland,4
+2005-10-08,England,home,Austria,31
+2005-10-09,Argentina,home,Peru,36
+2005-10-12,England,home,Poland,4
+2005-10-12,Argentina,away,Uruguay,3
+2005-11-12,England,home,Argentina,31
+2005-11-12,Argentina,away,England,31
+2005-11-16,Argentina,away,Qatar,4
+2006-03-01,Argentina,home,Croatia,105
+2006-03-01,England,home,Uruguay,109
+2006-05-30,Argentina,home,Angola,90
+2006-05-30,England,home,Hungary,90
+2006-06-03,England,home,Jamaica,4
+2006-06-10,Argentina,home,Ivory Coast,11
+2006-06-10,England,home,Paraguay,7
+2006-06-15,England,home,Trinidad and Tobago,5
+2006-06-16,Argentina,home,Serbia,6
+2006-06-20,England,away,Sweden,5
+2006-06-21,Argentina,away,Netherlands,5
+2006-06-24,Argentina,home,Mexico,3
+2006-06-25,England,home,Ecuador,5
+2006-06-30,Argentina,away,Germany,6
+2006-07-01,England,home,Portugal,6
+2006-08-16,England,home,Greece,46
+2006-09-02,England,home,Andorra,17
+2006-09-03,Argentina,home,Brazil,65
+2006-09-06,England,away,North Macedonia,4
+2006-10-07,England,home,North Macedonia,31
+2006-10-11,England,away,Croatia,4
+2006-10-11,Argentina,away,Spain,38
+2006-11-15,England,away,Netherlands,35
+2007-02-07,England,home,Spain,84
+2007-02-07,Argentina,away,France,119
+2007-03-24,England,away,Israel,45
+2007-03-28,England,away,Andorra,4
+2007-04-18,Argentina,home,Chile,70
+2007-06-01,England,home,Brazil,65
+2007-06-02,Argentina,away,Switzerland,45
+2007-06-05,Argentina,away,Algeria,3
+2007-06-06,England,away,Estonia,5
+2007-06-28,Argentina,home,United States,23
+2007-07-02,Argentina,home,Colombia,4
+2007-07-05,Argentina,home,Paraguay,3
+2007-07-08,Argentina,home,Peru,3
+2007-07-11,Argentina,away,Mexico,3
+2007-07-15,Argentina,away,Brazil,4
+2007-08-22,England,home,Germany,77
+2007-08-22,Argentina,away,Norway,38
+2007-09-08,England,home,Israel,17
+2007-09-11,Argentina,away,Australia,20
+2007-09-12,England,home,Russia,4
+2007-10-13,Argentina,home,Chile,32
+2007-10-13,England,home,Estonia,31
+2007-10-16,Argentina,away,Venezuela,3
+2007-10-17,England,away,Russia,4
+2007-11-16,England,away,Austria,30
+2007-11-17,Argentina,home,Bolivia,32
+2007-11-20,Argentina,away,Colombia,3
+2007-11-21,England,home,Croatia,5
+2008-02-06,England,home,Switzerland,77
+2008-03-26,Argentina,away,Egypt,127
+2008-03-26,England,away,France,49
+2008-05-24,Argentina,away,Catalonia,59
+2008-05-28,England,home,United States,63
+2008-06-01,England,away,Trinidad and Tobago,4
+2008-06-04,Argentina,away,Mexico,11
+2008-06-08,Argentina,away,United States,4
+2008-06-15,Argentina,home,Ecuador,7
+2008-06-18,Argentina,away,Brazil,3
+2008-08-20,Argentina,away,Belarus,63
+2008-08-20,England,home,Czech Republic,80
+2008-09-06,England,away,Andorra,17
+2008-09-06,Argentina,home,Paraguay,17
+2008-09-10,England,away,Croatia,4
+2008-09-10,Argentina,away,Peru,4
+2008-10-11,Argentina,home,Uruguay,31
+2008-10-11,England,home,Kazakhstan,31
+2008-10-15,England,away,Belarus,4
+2008-10-15,Argentina,away,Chile,4
+2008-11-19,England,away,Germany,35
+2008-11-19,Argentina,away,Scotland,35
+2009-02-11,Argentina,away,France,84
+2009-02-11,England,away,Spain,84
+2009-03-28,Argentina,home,Venezuela,45
+2009-03-28,England,home,Slovakia,45
+2009-04-01,England,home,Ukraine,4
+2009-04-01,Argentina,away,Bolivia,4
+2009-05-20,Argentina,home,Panama,49
+2009-06-06,Argentina,home,Colombia,17
+2009-06-06,England,away,Kazakhstan,66
+2009-06-10,Argentina,away,Ecuador,4
+2009-06-10,England,home,Andorra,4
+2009-08-12,England,away,Netherlands,63
+2009-08-12,Argentina,away,Russia,63
+2009-09-05,Argentina,home,Brazil,24
+2009-09-05,England,home,Slovenia,24
+2009-09-09,England,home,Croatia,4
+2009-09-09,Argentina,away,Paraguay,4
+2009-09-30,Argentina,home,Ghana,21
+2009-10-10,Argentina,home,Peru,10
+2009-10-10,England,away,Ukraine,31
+2009-10-14,England,home,Belarus,4
+2009-10-14,Argentina,away,Uruguay,4
+2009-11-14,England,away,Brazil,31
+2009-11-14,Argentina,away,Spain,31
+2009-12-22,Argentina,away,Catalonia,38
+2010-01-26,Argentina,home,Costa Rica,35
+2010-02-10,Argentina,home,Jamaica,15
+2010-03-03,England,home,Egypt,109
+2010-03-03,Argentina,away,Germany,21
+2010-05-05,Argentina,home,Haiti,63
+2010-05-24,Argentina,home,Canada,19
+2010-05-24,England,home,Mexico,82
+2010-05-30,England,away,Japan,6
+2010-06-12,Argentina,home,Nigeria,19
+2010-06-12,England,home,United States,13
+2010-06-17,Argentina,home,South Korea,5
+2010-06-18,England,home,Algeria,6
+2010-06-22,Argentina,away,Greece,5
+2010-06-23,England,away,Slovenia,5
+2010-06-27,Argentina,home,Mexico,5
+2010-06-27,England,away,Germany,4
+2010-07-03,Argentina,home,Germany,6
+2010-08-11,England,home,Hungary,45
+2010-08-11,Argentina,away,Republic of Ireland,39
+2010-09-03,England,home,Bulgaria,23
+2010-09-07,Argentina,home,Spain,27
+2010-09-07,England,away,Switzerland,4
+2010-10-08,Argentina,away,Japan,31
+2010-10-12,England,home,Montenegro,35
+2010-11-17,Argentina,home,Brazil,40
+2010-11-17,England,home,France,36
+2011-02-09,Argentina,home,Portugal,84
+2011-02-09,England,away,Denmark,84
+2011-03-16,Argentina,home,Venezuela,35
+2011-03-26,Argentina,away,United States,10
+2011-03-26,England,away,Wales,45
+2011-03-29,Argentina,away,Costa Rica,3
+2011-03-29,England,home,Ghana,3
+2011-04-20,Argentina,home,Ecuador,22
+2011-05-25,Argentina,home,Paraguay,35
+2011-06-01,Argentina,away,Nigeria,7
+2011-06-04,England,home,Switzerland,67
+2011-06-05,Argentina,away,Poland,4
+2011-06-20,Argentina,home,Albania,15
+2011-07-01,Argentina,home,Bolivia,11
+2011-07-06,Argentina,home,Colombia,5
+2011-07-11,Argentina,home,Costa Rica,5
+2011-07-16,Argentina,home,Uruguay,5
+2011-09-02,Argentina,home,Venezuela,48
+2011-09-02,England,away,Bulgaria,90
+2011-09-06,Argentina,home,Nigeria,4
+2011-09-06,England,home,Wales,4
+2011-09-14,Argentina,home,Brazil,8
+2011-09-28,Argentina,away,Brazil,14
+2011-10-07,Argentina,home,Chile,9
+2011-10-07,England,away,Montenegro,31
+2011-10-11,Argentina,away,Venezuela,4
+2011-11-11,Argentina,home,Bolivia,31
+2011-11-12,England,home,Spain,36
+2011-11-15,Argentina,away,Colombia,4
+2011-11-15,England,home,Sweden,3
+2012-02-29,England,home,Netherlands,106
+2012-02-29,Argentina,away,Switzerland,106
+2012-05-26,England,away,Norway,87
+2012-06-02,Argentina,home,Ecuador,94
+2012-06-02,England,home,Belgium,7
+2012-06-09,Argentina,away,Brazil,7
+2012-06-11,England,away,France,9
+2012-06-15,England,away,Sweden,4
+2012-06-19,England,away,Ukraine,4
+2012-06-24,England,home,Italy,5
+2012-08-15,England,home,Italy,52
+2012-08-15,Argentina,away,Germany,67
+2012-09-07,Argentina,home,Paraguay,23
+2012-09-07,England,away,Moldova,23
+2012-09-11,England,home,Ukraine,4
+2012-09-11,Argentina,away,Peru,4
+2012-09-19,Argentina,away,Brazil,8
+2012-10-12,Argentina,home,Uruguay,23
+2012-10-12,England,home,San Marino,31
+2012-10-16,Argentina,away,Chile,4
+2012-10-17,England,away,Poland,5
+2012-11-14,Argentina,away,Saudi Arabia,29
+2012-11-14,England,away,Sweden,28
+2012-11-21,Argentina,home,Brazil,7
+2013-02-06,England,home,Brazil,84
+2013-02-06,Argentina,away,Sweden,77
+2013-03-22,Argentina,home,Venezuela,44
+2013-03-22,England,away,San Marino,44
+2013-03-26,Argentina,away,Bolivia,4
+2013-03-26,England,away,Montenegro,4
+2013-05-29,England,home,Republic of Ireland,64
+2013-06-02,England,away,Brazil,4
+2013-06-07,Argentina,home,Colombia,73
+2013-06-11,Argentina,away,Ecuador,4
+2013-06-14,Argentina,away,Guatemala,3
+2013-08-14,England,home,Scotland,73
+2013-08-14,Argentina,away,Italy,61
+2013-09-06,England,home,Moldova,23
+2013-09-10,Argentina,away,Paraguay,27
+2013-09-10,England,away,Ukraine,4
+2013-10-11,Argentina,home,Peru,31
+2013-10-11,England,home,Montenegro,31
+2013-10-15,England,home,Poland,4
+2013-10-15,Argentina,away,Uruguay,4
+2013-11-15,Argentina,home,Ecuador,31
+2013-11-15,England,home,Chile,31
+2013-11-18,Argentina,home,Bosnia and Herzegovina,3
+2013-11-19,England,home,Germany,4
+2014-03-05,England,home,Denmark,106
+2014-03-05,Argentina,away,Romania,107
+2014-05-30,England,home,Peru,86
+2014-06-04,Argentina,home,Trinidad and Tobago,91
+2014-06-04,England,away,Ecuador,5
+2014-06-07,Argentina,home,Slovenia,3
+2014-06-07,England,away,Honduras,3
+2014-06-14,England,home,Italy,7
+2014-06-15,Argentina,home,Bosnia and Herzegovina,8
+2014-06-19,England,away,Uruguay,5
+2014-06-21,Argentina,home,Iran,6
+2014-06-24,England,away,Costa Rica,5
+2014-06-25,Argentina,away,Nigeria,4
+2014-07-01,Argentina,home,Switzerland,6
+2014-07-05,Argentina,home,Belgium,4
+2014-07-09,Argentina,away,Netherlands,4
+2014-07-13,Argentina,away,Germany,4
+2014-09-03,England,home,Norway,71
+2014-09-03,Argentina,away,Germany,52
+2014-09-08,England,away,Switzerland,5
+2014-10-09,England,home,San Marino,31
+2014-10-11,Argentina,home,Brazil,38
+2014-10-12,England,away,Estonia,3
+2014-10-14,Argentina,away,Hong Kong,3
+2014-11-12,Argentina,home,Croatia,29
+2014-11-15,England,home,Slovenia,34
+2014-11-18,Argentina,away,Portugal,6
+2014-11-18,England,away,Scotland,3
+2015-03-27,England,home,Lithuania,129
+2015-03-28,Argentina,home,El Salvador,130
+2015-03-31,Argentina,home,Ecuador,3
+2015-03-31,England,away,Italy,4
+2015-06-06,Argentina,home,Bolivia,67
+2015-06-07,England,away,Republic of Ireland,68
+2015-06-13,Argentina,home,Paraguay,7
+2015-06-14,England,away,Slovenia,7
+2015-06-16,Argentina,home,Uruguay,3
+2015-06-20,Argentina,home,Jamaica,4
+2015-06-26,Argentina,home,Colombia,6
+2015-06-30,Argentina,home,Paraguay,4
+2015-07-04,Argentina,away,Chile,4
+2015-09-05,Argentina,home,Bolivia,63
+2015-09-05,England,away,San Marino,83
+2015-09-08,England,home,Switzerland,3
+2015-09-08,Argentina,away,Mexico,3
+2015-10-08,Argentina,home,Ecuador,30
+2015-10-09,England,home,Estonia,31
+2015-10-12,England,away,Lithuania,3
+2015-10-13,Argentina,away,Paraguay,5
+2015-11-13,Argentina,home,Brazil,31
+2015-11-13,England,away,Spain,32
+2015-11-17,Argentina,away,Colombia,4
+2015-11-17,England,home,France,4
+2016-03-24,Argentina,away,Chile,128
+2016-03-26,England,away,Germany,130
+2016-03-29,Argentina,home,Bolivia,5
+2016-03-29,England,home,Netherlands,3
+2016-05-22,England,home,Turkey,54
+2016-05-27,England,home,Australia,5
+2016-06-02,England,home,Portugal,6
+2016-06-06,Argentina,home,Chile,69
+2016-06-10,Argentina,home,Panama,4
+2016-06-11,England,home,Russia,9
+2016-06-14,Argentina,home,Bolivia,4
+2016-06-16,England,home,Wales,5
+2016-06-18,Argentina,home,Venezuela,4
+2016-06-20,England,away,Slovakia,4
+2016-06-21,Argentina,away,United States,3
+2016-06-26,Argentina,home,Chile,5
+2016-06-27,England,home,Iceland,7
+2016-09-01,Argentina,home,Uruguay,67
+2016-09-04,England,away,Slovakia,69
+2016-09-06,Argentina,away,Venezuela,5
+2016-10-06,Argentina,away,Peru,30
+2016-10-08,England,home,Malta,34
+2016-10-11,Argentina,home,Paraguay,5
+2016-10-11,England,away,Slovenia,3
+2016-11-10,Argentina,away,Brazil,30
+2016-11-11,England,home,Scotland,31
+2016-11-15,Argentina,home,Colombia,5
+2016-11-15,England,home,Spain,4
+2017-03-22,England,away,Germany,127
+2017-03-23,Argentina,home,Chile,128
+2017-03-26,England,home,Lithuania,4
+2017-03-28,Argentina,away,Bolivia,5
+2017-06-09,Argentina,home,Brazil,73
+2017-06-10,England,away,Scotland,76
+2017-06-13,England,away,France,3
+2017-06-13,Argentina,away,Singapore,4
+2017-08-31,Argentina,away,Uruguay,79
+2017-09-01,England,away,Malta,80
+2017-09-04,England,home,Slovakia,3
+2017-09-05,Argentina,home,Venezuela,5
+2017-10-05,Argentina,home,Peru,30
+2017-10-05,England,home,Slovenia,31
+2017-10-08,England,away,Lithuania,3
+2017-10-10,Argentina,away,Ecuador,5
+2017-11-10,England,home,Germany,33
+2017-11-11,Argentina,away,Russia,32
+2017-11-14,Argentina,home,Nigeria,3
+2017-11-14,England,home,Brazil,4
+2018-03-23,Argentina,away,Italy,129
+2018-03-23,England,away,Netherlands,129
+2018-03-27,England,home,Italy,4
+2018-03-27,Argentina,away,Spain,4
+2018-05-29,Argentina,home,Haiti,63
+2018-06-02,England,home,Nigeria,67
+2018-06-07,England,home,Costa Rica,5
+2018-06-16,Argentina,home,Iceland,18
+2018-06-18,England,away,Tunisia,11
+2018-06-21,Argentina,home,Croatia,5
+2018-06-24,England,home,Panama,6
+2018-06-26,Argentina,away,Nigeria,5
+2018-06-28,England,home,Belgium,4
+2018-06-30,Argentina,away,France,4
+2018-07-03,England,away,Colombia,5
+2018-07-07,England,away,Sweden,4
+2018-07-11,England,away,Croatia,4
+2018-07-14,England,away,Belgium,3
+2018-09-07,Argentina,home,Guatemala,69
+2018-09-08,England,home,Spain,56
+2018-09-11,Argentina,away,Colombia,4
+2018-09-11,England,home,Switzerland,3
+2018-10-11,Argentina,home,Iraq,30
+2018-10-12,England,away,Croatia,31
+2018-10-15,England,away,Spain,3
+2018-10-16,Argentina,home,Brazil,5
+2018-11-15,England,home,United States,31
+2018-11-16,Argentina,home,Mexico,31
+2018-11-18,England,home,Croatia,3
+2018-11-20,Argentina,home,Mexico,4
+2019-03-22,Argentina,home,Venezuela,122
+2019-03-22,England,home,Czech Republic,124
+2019-03-25,England,away,Montenegro,3
+2019-03-26,Argentina,away,Morocco,4
+2019-06-06,England,home,Netherlands,73
+2019-06-07,Argentina,home,Nicaragua,73
+2019-06-09,England,away,Switzerland,3
+2019-06-15,Argentina,home,Colombia,8
+2019-06-19,Argentina,home,Paraguay,4
+2019-06-23,Argentina,away,Qatar,4
+2019-06-28,Argentina,away,Venezuela,5
+2019-07-02,Argentina,away,Brazil,4
+2019-07-06,Argentina,home,Chile,4
+2019-09-05,Argentina,home,Chile,61
+2019-09-07,England,home,Bulgaria,90
+2019-09-10,Argentina,home,Mexico,5
+2019-09-10,England,home,Kosovo,3
+2019-10-09,Argentina,away,Germany,29
+2019-10-11,England,away,Czech Republic,31
+2019-10-13,Argentina,away,Ecuador,4
+2019-10-14,England,away,Bulgaria,3
+2019-11-14,England,home,Montenegro,31
+2019-11-15,Argentina,away,Brazil,33
+2019-11-17,England,away,Kosovo,3
+2019-11-18,Argentina,home,Uruguay,3
+2020-09-05,England,away,Iceland,293
+2020-09-08,England,away,Denmark,3
+2020-10-08,England,home,Wales,30
+2020-10-08,Argentina,home,Ecuador,325
+2020-10-11,England,home,Belgium,3
+2020-10-13,Argentina,away,Bolivia,5
+2020-10-14,England,home,Denmark,3
+2020-11-12,England,home,Republic of Ireland,29
+2020-11-12,Argentina,home,Paraguay,30
+2020-11-15,England,away,Belgium,3
+2020-11-17,Argentina,away,Peru,5
+2020-11-18,England,home,Iceland,3
+2021-03-25,England,home,San Marino,127
+2021-03-28,England,away,Albania,3
+2021-03-31,England,home,Poland,3
+2021-06-02,England,home,Austria,63
+2021-06-03,Argentina,home,Chile,198
+2021-06-06,England,home,Romania,4
+2021-06-08,Argentina,away,Colombia,5
+2021-06-13,England,home,Croatia,7
+2021-06-14,Argentina,home,Chile,6
+2021-06-18,England,home,Scotland,5
+2021-06-18,Argentina,home,Uruguay,4
+2021-06-21,Argentina,home,Paraguay,3
+2021-06-22,England,home,Czech Republic,4
+2021-06-28,Argentina,home,Bolivia,7
+2021-06-29,England,home,Germany,7
+2021-07-03,England,away,Ukraine,4
+2021-07-03,Argentina,home,Ecuador,5
+2021-07-06,Argentina,home,Colombia,3
+2021-07-07,England,home,Denmark,4
+2021-07-10,Argentina,away,Brazil,4
+2021-07-11,England,home,Italy,4
+2021-09-02,England,away,Hungary,53
+2021-09-02,Argentina,away,Venezuela,54
+2021-09-05,England,home,Andorra,3
+2021-09-08,England,away,Poland,3
+2021-09-09,Argentina,home,Bolivia,7
+2021-10-07,Argentina,away,Paraguay,28
+2021-10-09,England,away,Andorra,31
+2021-10-10,Argentina,home,Uruguay,3
+2021-10-12,England,home,Hungary,3
+2021-10-14,Argentina,home,Peru,4
+2021-11-12,England,home,Albania,31
+2021-11-12,Argentina,away,Uruguay,29
+2021-11-15,England,away,San Marino,3
+2021-11-16,Argentina,home,Brazil,4
+2022-01-27,Argentina,away,Chile,72
+2022-02-01,Argentina,home,Colombia,5
+2022-03-25,Argentina,home,Venezuela,52
+2022-03-26,England,home,Switzerland,131
+2022-03-29,Argentina,away,Ecuador,4
+2022-03-29,England,home,Ivory Coast,3
+2022-06-01,Argentina,away,Italy,64
+2022-06-04,England,away,Hungary,67
+2022-06-05,Argentina,home,Estonia,4
+2022-06-07,England,away,Germany,3
+2022-06-11,England,home,Italy,4
+2022-06-14,England,home,Hungary,3
+2022-09-23,Argentina,home,Honduras,110
+2022-09-23,England,away,Italy,101
+2022-09-26,England,home,Germany,3
+2022-09-27,Argentina,home,Jamaica,4
+2022-11-16,Argentina,away,United Arab Emirates,50
+2022-11-21,England,home,Iran,56
+2022-11-22,Argentina,home,Saudi Arabia,6
+2022-11-25,England,home,United States,4
+2022-11-26,Argentina,home,Mexico,4
+2022-11-29,England,away,Wales,4
+2022-11-30,Argentina,away,Poland,4
+2022-12-03,Argentina,home,Australia,3
+2022-12-04,England,home,Senegal,5
+2022-12-09,Argentina,away,Netherlands,6
+2022-12-10,England,home,France,6
+2022-12-13,Argentina,home,Croatia,4
+2022-12-18,Argentina,home,France,5
+2023-03-23,Argentina,home,Panama,95
+2023-03-23,England,away,Italy,103
+2023-03-26,England,home,Ukraine,3
+2023-03-28,Argentina,home,Curaçao,5
+2023-06-15,Argentina,home,Australia,79
+2023-06-16,England,away,Malta,82
+2023-06-19,Argentina,away,Indonesia,4
+2023-06-19,England,home,North Macedonia,3
+2023-09-07,Argentina,home,Ecuador,80
+2023-09-09,England,away,Ukraine,82
+2023-09-12,Argentina,away,Bolivia,5
+2023-09-12,England,away,Scotland,3
+2023-10-12,Argentina,home,Paraguay,30
+2023-10-13,England,home,Australia,31
+2023-10-17,Argentina,away,Peru,5
+2023-10-17,England,home,Italy,4
+2023-11-16,Argentina,home,Uruguay,30
+2023-11-17,England,home,Malta,31
+2023-11-20,England,away,North Macedonia,3
+2023-11-21,Argentina,away,Brazil,5
+2024-03-22,Argentina,home,El Salvador,122
+2024-03-23,England,home,Brazil,124
+2024-03-26,Argentina,home,Costa Rica,4
+2024-03-26,England,home,Belgium,3
+2024-06-03,England,home,Bosnia and Herzegovina,69
+2024-06-07,England,home,Iceland,4
+2024-06-09,Argentina,home,Ecuador,75
+2024-06-14,Argentina,home,Guatemala,5
+2024-06-16,England,away,Serbia,9
+2024-06-20,England,away,Denmark,4
+2024-06-20,Argentina,home,Canada,6
+2024-06-25,England,home,Slovenia,5
+2024-06-25,Argentina,away,Chile,5
+2024-06-29,Argentina,home,Peru,4
+2024-06-30,England,home,Slovakia,5
+2024-07-04,Argentina,home,Ecuador,5
+2024-07-06,England,home,Switzerland,6
+2024-07-09,Argentina,home,Canada,5
+2024-07-10,England,away,Netherlands,4
+2024-07-14,England,away,Spain,4
+2024-07-14,Argentina,home,Colombia,5
+2024-09-05,Argentina,home,Chile,53
+2024-09-07,England,away,Republic of Ireland,55
+2024-09-10,England,home,Finland,3
+2024-09-10,Argentina,away,Colombia,5
+2024-10-10,England,home,Greece,30
+2024-10-10,Argentina,away,Venezuela,30
+2024-10-13,England,away,Finland,3
+2024-10-15,Argentina,home,Bolivia,5
+2024-11-14,England,away,Greece,32
+2024-11-14,Argentina,away,Paraguay,30
+2024-11-17,England,home,Republic of Ireland,3
+2024-11-19,Argentina,home,Peru,5
+2025-03-21,Argentina,away,Uruguay,122
+2025-03-21,England,home,Albania,124
+2025-03-24,England,home,Latvia,3
+2025-03-25,Argentina,home,Brazil,4
+2025-06-05,Argentina,away,Chile,72
+2025-06-07,England,away,Andorra,75
+2025-06-10,England,home,Senegal,3
+2025-06-10,Argentina,home,Colombia,5
+2025-09-04,Argentina,home,Venezuela,86
+2025-09-06,England,home,Andorra,88
+2025-09-09,Argentina,away,Ecuador,5
+2025-09-09,England,away,Serbia,3
+2025-10-09,England,home,Wales,30
+2025-10-10,Argentina,home,Venezuela,31
+2025-10-14,Argentina,away,Puerto Rico,4
+2025-10-14,England,away,Latvia,5
+2025-11-13,England,home,Serbia,30
+2025-11-14,Argentina,away,Angola,31
+2025-11-16,England,away,Albania,3
+2026-03-27,Argentina,home,Mauritania,133
+2026-03-27,England,home,Uruguay,131
+2026-03-31,Argentina,home,Zambia,4
+2026-03-31,England,home,Japan,4
+2026-06-06,Argentina,home,Honduras,67
+2026-06-06,England,home,New Zealand,67
+2026-06-09,Argentina,home,Iceland,3
