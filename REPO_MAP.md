@@ -5,7 +5,7 @@ external data source, what it contains, and how it fits together. Written for a 
 this project for the first time (a senior engineer, a researcher, a competition judge) who needs
 to find their way around without reading everything.
 
-**Scope note:** this repo has roughly 855-860 project files once two large third-party mirrors are excluded
+**Scope note:** this repo has roughly 915-920 project files once two large third-party mirrors are excluded
 (both gitignored, both re-clonable, neither ours): `external_repos/machine-learning-for-trading`
 (Stefan Jansen's ML4T book, cloned for research reference) and
 `data/external/statsbomb/open-data/` (the full public StatsBomb open-data GitHub repo, ~9,000
@@ -19,7 +19,13 @@ All 8 sections are now complete. **2026-07-15:** the repo was reorganized by que
 shared infrastructure stayed put and is now linked from every topic that depends on it. Sections 6
 and 8 were updated to reflect the new locations; every other section's file-path references were
 checked and fixed where stale (`scripts/verify_md_links.py` now confirms zero broken markdown
-links repo-wide).
+links repo-wide). **2026-07-15 (later same day):** the England vs Argentina semifinal was priced,
+settled (Argentina won 1-2, +96.05 RBP), and added as `matches/England Vs Argentina (Jul.15.26)/`
+(25 files, the most complete match folder to date — data-sourcing 01-10, per-question analysis
+11-20, a two-loop reproducibility audit 21-22, settlement + post-match 23-24), along with its
+supporting cross-topic backtests (`ml/backtests/corners_comparison_*`, `timing_compound_events_*`),
+a new `topics/cards/card_timing_panel.*`, a `topics/penalties-red-cards/PENALTY_MODELING_RESEARCH.md`,
+and a root-level QF/SF retrospective. Sections 1, 2, 3, 4, 5, and 6 updated accordingly.
 
 ---
 
@@ -208,6 +214,14 @@ explicitly supersede or get superseded by others, noted per entry.
 - **Cross-references:** Its category-performance framework became the standing taxonomy; directly echoed in `JULY3_POSTMORTEM_DEEP_DIVE.md` and `PREDICTION_INSTRUMENT_WRITEUP.md`.
 - **Status:** Finished, dated audit; framework remains the standing taxonomy.
 
+### `QF_SF_RETROSPECTIVE_AND_HARD_QUESTIONS.md`
+- **Size/date:** ~9,500 bytes, last modified Jul 15 (written after the England vs Argentina SF settled).
+- **Purpose:** A cross-match retrospective over all six quarterfinal + semifinal matches, built to (1) explain why each result went the way it did and (2) create a standing record of the "hard" question types — the "card before the first goal" family — with their track record.
+- **Contents:** Per-match record table (6 matches), a corrected category-performance table, and a hard-vs-standard bucket split. The centerpiece is a full record of every "hard" question (novel/compound/timing/race — card-before-goal, event-in-each-half, stoppage-time goal, hydration-window, penalty-OR-red, half-comparison, novel-scorer-shirt, path-dependent-lead, VAR) ordered worst-to-best. Includes an honesty note on a classifier bug (the substring "var" inside "Álvarez" mis-tagged two player questions) and that no VAR question was ever scored (always dropped). Backed by the reproducible `data/processed/qf_sf_all_questions.csv` (87 rows).
+- **Key numbers/results:** 5 crowd-scored matches, 72 questions, +658.88 RBP. Hard bucket n=15, +105.9, 73% positive, mean +7.06 vs standard bucket n=57, +553.0, 82% positive, mean +9.70. Worst single result: card-before-goal -28.4; hard-bucket jackpots pen-OR-red +24.4, hydration +23.3, half-comparison +21.7. Core finding: hard questions win when they have an anchor (market/trusted base rate/model decomposition) and lose when priced as un-anchored no-market heuristics sitting far from the crowd — reproducing `KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md`'s TIMING_NO_MARKET-is-worst result.
+- **Cross-references:** Generalizes `KNOCKOUT_STAGE_PRICING_DEEP_DIVE.md` and the England-Argentina `24_post_match_analysis.md`; the "shrink un-anchored far-from-crowd signals toward the crowd" rule echoes `STRATEGIC_MARGIN_PUSH_RESEARCH.md`.
+- **Status:** Finished cross-match postmortem; its standing rule (a low-confidence flag on a no-market question must trigger a shrink toward the crowd, not just a note) recorded for the final.
+
 ### `JULY3_POSTMORTEM_DEEP_DIVE.md`
 - **Size/date:** 16,681 bytes, last modified Jul 4 14:57
 - **Purpose:** A postmortem tracing every RBP number for three July 3 matches back to its pricing instrument, with a same-week addendum live-testing two newly-derived rules.
@@ -263,7 +277,7 @@ dependencies that live elsewhere), **relevant matches**, and **root-doc mentions
 | Topic | Folder | Status | Files here |
 |---|---|---|---|
 | Shots on Target | [`shots-on-target/`](topics/shots-on-target/README.md) | **PASS** (hierarchical GLMM) | 8 |
-| Cards | [`cards/`](topics/cards/README.md) | **FAIL** (twice — original + referee-refined) | 4 |
+| Cards | [`cards/`](topics/cards/README.md) | **FAIL** (twice — original + referee-refined) | 6 |
 | Corners | [`corners/`](topics/corners/README.md) | **PASS** | 3 |
 | Offsides | [`offsides/`](topics/offsides/README.md) | **FAIL** (post-bug-fix; a retracted false-PASS is documented in full) | 2 |
 | First Substitution / Timing | [`first-substitution/`](topics/first-substitution/README.md) | **FAIL** (confidently worse than baseline) | 4 |
@@ -271,15 +285,19 @@ dependencies that live elsewhere), **relevant matches**, and **root-doc mentions
 | Match Winner + Goals-Totals/BTTS | [`match-winner-goals-totals/`](topics/match-winner-goals-totals/README.md) | Fitted, in production (the classical pipeline) | 18 |
 | Rare-Event Timing | [`rare-event-timing/`](topics/rare-event-timing/README.md) | Stub — no dedicated model yet | 0 (README only) |
 | VAR Review | [`var-review/`](topics/var-review/README.md) | Stub — genuinely sample-starved | 0 (README only) |
-| Penalties / Red Cards | [`penalties-red-cards/`](topics/penalties-red-cards/README.md) | Stub — priced via named rule (RULE4) | 0 (README only) |
+| Penalties / Red Cards | [`penalties-red-cards/`](topics/penalties-red-cards/README.md) | Researched — no fitted model (base-rate + market); see `PENALTY_MODELING_RESEARCH.md` | 1 (+README) |
 | Half-Time Splits | [`half-time-splits/`](topics/half-time-splits/README.md) | Stub — market-anchored, no model needed | 0 (README only) |
 | Fouls | [`fouls/`](topics/fouls/README.md) | Stub — folded into Cards as a covariate | 0 (README only) |
 | Combined-Threshold Composition | [`combined-threshold/`](topics/combined-threshold/README.md) | Stub — a methodology, not a question type; see the 3 families above | 0 (README only) |
 
 This is the taxonomy actually used across the project's preregistration docs, the RULE1–18
-system, and the `tier` tags in `matches/*/04_rules_applied.json` — not an invented one. 7 of the
+system, and the `tier` tags in `matches/*/04_rules_applied.json` — not an invented one. 8 of the
 14 topics have dedicated files; the other 6 are README-only stubs completing the taxonomy so
 every question type has exactly one canonical folder to check, even ones without a fitted model.
+(Penalties / Red Cards moved from stub to having a dedicated file — `PENALTY_MODELING_RESEARCH.md`,
+a deep research doc that reviews our own penalty-pricing track record, computes an empirical
+base rate from the StatsBomb corpus, surveys academic + cross-sport modeling, and concludes a
+fitted covariate model is un-viable at this sample size, so the family stays market/base-rate-anchored.)
 
 **Reused pattern from `writeups/`:** every topic README's links are verified to resolve, the same
 discipline `writeups/README.md` already used for its 100 cross-repo links (see Section 8) — now
@@ -322,6 +340,9 @@ Daily dashboard fetcher — pulls match schedule, rank, settled results, and sta
 
 ### `bot/fetch_fra_esp_smarkets.py`
 One-off Smarkets quote fetcher for France vs Spain — 26 hardcoded market IDs (FTR, correct score, BTTS, goal lines, cards, team goals, SOT, player props) from event 45192700. Has resume support for rate-limit recovery. Notes 4 markets don't exist for this fixture (offsides, VAR, Spain team SOT, first sub). Directly feeds `simulate_fra_esp_sf.py`.
+
+### `bot/fetch_eng_arg_smarkets.py`
+Same pattern for the England vs Argentina SF — 21 market IDs (to-qualify, FTR, BTTS, HT result, team goals, corners O/U + handicap, cards O/U + per-team, penalty, team SOT, and Messi/Kane/Bellingham/Álvarez player props) discovered live from event 45195225's full 180-market list, with resume support for rate-limit recovery. Writes `matches/England Vs Argentina (Jul.15.26)/10_smarkets_quotes_{raw,processed}.json`. The newest of the per-match Smarkets fetchers.
 
 ### `bot/fetch_fra_mar_smarkets.py`
 Earlier, simpler version of the same pattern for the France vs Morocco QF (event 45178292, 12 hardcoded markets, no resume logic) — the direct precursor to `fetch_fra_esp_smarkets.py` and later `fetch_team_prop_markets.py`.
@@ -378,6 +399,9 @@ Reads every `matches/*/espn_*.json` full-summary dump (files with both `keyEvent
 
 ### `data/processed/build_kfactor_map.py`
 Classifies every distinct tournament name in `results.csv` into an Elo K-factor tier (60=World Cup finals, 50=continental finals/major intercontinental, 40=WC/major-confederation qualifiers, 30=other tournaments, 20=friendlies) per the eloratings.net published methodology. Writes `tournament_kfactor_map.csv`. Static, one-time classification.
+
+### `data/processed/qf_sf_all_questions.csv`
+The reproducible dataset behind `QF_SF_RETROSPECTIVE_AND_HARD_QUESTIONS.md` (Section 1): 87 rows, one per question priced across all six quarterfinal + semifinal matches, with our estimate, crowd, outcome, RBP, beat-crowd, and a `hard_type` tag (card-before-goal, hydration-window, penalty-OR-red, etc.). Extracted from each match's own settlement file (`06_post_match_results.json` / `14_actual_submission.json` / `23_post_match_results.json`); Spain-Belgium's rows carry no RBP/crowd (the deliberate no-crowd session).
 
 ### `data/processed/fetch_all_raw_events.py`
 Fetches full ESPN event-summary JSON (goal/card/sub/VAR timeline via `keyEvents`, not just aggregated team totals) for every match_id in `espn_match_panel.csv`, resumable, one file per match to `espn_raw_events/espn_event_{id}.json`. Built specifically to support rare-event/timing/race-type questions the aggregate panel and hierarchical GLMM can't answer.
@@ -460,7 +484,7 @@ Interactive/exploratory script — summarizes the panels, spot-checks Portugal's
 
 ## 5. `matches/` — per-match research and settlement records
 
-19 match subdirectories, one per game priced for the JTC platform (play.sportspredict.com), each covering the ~15 probabilistic questions for that fixture. Two generations of file-naming convention are present: an older "01-06" convention (most folders) and a newer, richer "00-14" convention used on the most recent quarterfinal/semifinal matches (Argentina_vs_Switzerland, Norway_vs_England, Spain_vs_Belgium, and especially "France Vs Spain (Jul.14.26)"). `mex_ecu_2026-06-30` is the earliest match and also uses the 01-06 convention but with its own README and an extra `07_instrument_trace.json`.
+20 match subdirectories, one per game priced for the JTC platform (play.sportspredict.com), each covering the ~15 probabilistic questions for that fixture. Two generations of file-naming convention are present: an older "01-06" convention (most folders) and a newer, richer numbered-extract convention used on the most recent quarterfinal/semifinal matches (Argentina_vs_Switzerland, Norway_vs_England, Spain_vs_Belgium, "France Vs Spain (Jul.14.26)" reaching 00-14, and "England Vs Argentina (Jul.15.26)" reaching 01-24 — the most complete folder in the repo). `mex_ecu_2026-06-30` is the earliest match and also uses the 01-06 convention but with its own README and an extra `07_instrument_trace.json`.
 
 ### Standard match-folder schema
 The pipeline: raw data fetch → market fetch → model derivation → rule application → final estimate → post-match settlement.
@@ -486,6 +510,7 @@ The pipeline: raw data fetch → market fetch → model derivation → rule appl
 | Australia_vs_Egypt | 2026-07-03 | Australia 1-1 Egypt (Egypt advanced) | +64.74 | 10/15 | Biggest loss (3+ offsides, -43.09) mirrored Colombia_vs_Ghana's same-day offside miss, feeding "OFFSIDE_CROWD_ANCHOR." | Extra files: `irankunda_sot.json`, `smarkets_quotes_retry2.json`. |
 | Brazil_vs_Norway | 2026-07-05 | Brazil 1-2 Norway (upset) | +179.26 | 13/15 | Best beat-crowd rate at the time; validated independent per-team Poisson for both-teams-do-X (both teams carded, +59.43). | Missing `04_rules_applied.json` (jumps 03→05). |
 | Canada_vs_Morocco | 2026-07-04 | Canada 0-3 Morocco | +58.92 | 12/15 | Biggest loss on record at the time: Canada 4+ SOT (-80.83); same match had two of the best wins (Díaz +44.06, Davies +30.97). | None — full standard 01-06 set. |
+| "England Vs Argentina (Jul.15.26)" | 2026-07-15 (SF) | England 1-2 Argentina (Argentina advanced) | +96.05 (official) | 10/15 | Most complete folder in the repo (01-24). Biggest wins from DIRECT-market discipline on far-from-crowd questions: 10+ corners +34.89, 8+ SOT +32.30, Bellingham +28.32, Kane +18.03; penalty deep-research call (hold 0.29) won +11.62. Worst loss card-before-first-goal -28.4 — the exact question flagged lowest-confidence pre-match. | Newest generation: numbered extracts 01-10, per-question analysis 11-20 (player-prop high-stakes deep dives, corners-comparison Skellam backtest, timing/compound walk-forwards, de-shrinkage pressure test), a two-loop reproducibility audit (`21_LOOP1_full_audit_and_map.md`, `22_LOOP2_agent_audit.md`), and settlement `23_post_match_results.json` + `24_post_match_analysis.md`. |
 | Colombia_vs_Ghana | 2026-07-03 | Colombia 1-0 Ghana | +46.48 | 11/15 | Biggest loss: 3+ offsides (-36.94); second loss favorite-team-SOT underpricing (-20.33). | None — full standard 01-06 set. |
 | "France Vs Spain (Jul.14.26)" | 2026-07-14 (SF) | France 0-2 Spain | +138.32 (official) | 10/13 answered (77%) | Newest/most complete folder (00-14, MANIFEST.md, ML shadow-test, Monte Carlo sim). Spain-advance and Spain 5+ SOT (shadow-tested GLMM) both won big; Mbappé-scores lost (-12.48). Costliest loss: France 4+ SOT at 72%, missed by one shot. | Newest generation: `13_..._comparison.md` (same-day retraction of an offsides ML model resting on the 8.49x StatsBomb bug), `14_actual_submission.json` as settlement file, `espn_raw/` subfolder. |
 | France_vs_Morocco | 2026-07-09 | France 2-0 Morocco | +169.17 | 13/14 (92.9%, campaign-best at the time) | One loss on the DIRECT/most-trusted tier (-8.75); one question skipped for lack of precedent. | Missing ESPN files entirely; only 03-06 plus unique `jtc_crowd_snapshot.json`. |
@@ -507,6 +532,9 @@ The pipeline: raw data fetch → market fetch → model derivation → rule appl
 - **mex_ecu_2026-06-30/README.md** — folder-level index, biggest-wins/losses tables, the campaign's earliest big lesson (Ecuador offsides mispricing, +49.58 RBP, "definitive proof that per-match ESPN data beats the crowd's generic priors").
 - **"France Vs Spain (Jul.14.26)"/MANIFEST.md** — two-part manifest: an initial data-scoping table (each file's raw source, known gaps like zero Transfermarkt player rows for both teams) plus a later "pricing-session artifacts" addendum (2026-07-14) documenting the live pricing/simulation/submission files and the final settled result.
 - **"France Vs Spain (Jul.14.26)"/13_ml_vs_market_vs_submitted_comparison.md** — first entry in a "shadow-deployment" log comparing an ML model's predictions against market and the actual submission (not a resubmission). Same-day retracts its offsides prediction after discovering the 8.49x StatsBomb undercounting bug; keeps two SOT predictions (hierarchical GLMM) for the record, both lower than market/submitted, attributed to the model lacking match-context awareness — used to argue RULE2 (market priority over an unvalidated model) remains correct.
+- **"England Vs Argentina (Jul.15.26)"/19–20_deshrinkage_pressure_test*.md** — a two-part "de-shrinkage" audit checking every question is submitted at its honest un-shrunk number (not dragged toward 0.5), using the RBP premium math `S·(p_c − p_s)²` and per-book de-vig. Finds the pipeline already collects the full crowd-compression premium on the far-from-crowd questions; total recoverable EV from all possible adjustments ≈ +0.02 RBP.
+- **"England Vs Argentina (Jul.15.26)"/21_LOOP1_full_audit_and_map.md + 22_LOOP2_agent_audit.md** — a "loop-engineering" two-pass reproducibility audit: Loop 1 (main assistant) re-runs all eight deterministic scripts and re-extracts every coefficient; Loop 2 (a separately-spawned Opus agent, self-documenting its own model/tools/context and grounded in Anthropic's published agentic-tooling guidance) independently repeats it. Both confirm 8/8 scripts reproduce; the only defect found is a decision-neutral missing `minutes_played > 0` filter in the Messi high-stakes script (n=38 emitted vs n=37 correct). A model for how to verify a pricing pipeline end-to-end.
+- **"England Vs Argentina (Jul.15.26)"/24_post_match_analysis.md** — the post-match lessons writeup: the winning engine was DIRECT-market discipline on far-from-crowd questions (the four biggest wins), and the worst loss (card-before-goal, -28.4) was the exact question flagged lowest-confidence — producing the standing rule that a low-confidence flag on a no-market question must trigger a shrink toward the crowd, not just a note.
 
 ---
 
@@ -531,7 +559,7 @@ to live inside any single topic folder.
 - **`statsbomb_baserate_test.py`/`.R`** — StatsBomb-derived empirical-Bayes-shrunk base-rate model vs. the actual JTC submission for Portugal vs Croatia, using the `S=101.3` RBP scale. **Result: actual submitted RBP 120.30 vs model-implied 93.01 — the base-rate model would have scored WORSE than the actual submission.**
 - **Output JSONs** (`rbp_gap_ttest_results.json`/`_r.json`, `rbp_linear_regression_results.json`/`_r.json`, `statsbomb_baserate_results.json`/`_r.json`, `meta_model_results.json`, `platt_results.json`) — all R/Python pairs checked and agree to rounding precision. (`ronaldo_goals_regression.*` and its results moved to `topics/player-props/` — see Section 2.)
 
-### `ml/backtests/` — 18 files, now shared cross-family infrastructure only
+### `ml/backtests/` — 25 files, now shared cross-family infrastructure only
 The "design #2" hierarchical-GLMM campaign's family-specific outputs (results CSVs,
 family-specific preregistrations, walk-forward scripts) moved to `topics/<slug>/`. What stays:
 
@@ -544,6 +572,8 @@ family-specific preregistrations, walk-forward scripts) moved to `topics/<slug>/
 - **`combined_threshold_backtest.py`** — the sum-of-two-Poissons composition test script, shared across SOT/corners/offsides' combined-threshold outputs (each of which now lives in its own topic folder).
 - **`add_pit_elo_to_unified_panel.py`**, **`build_full_tournament_pit_elo.py`** — joins genuinely point-in-time Elo onto the training panel; every family's own-Elo covariate depends on this.
 - **`build_rare_event_panels.py`** / **`rare_event_panel.csv`** — the shared panel spanning first-substitution, VAR mentions, and goal-between-hydration-breaks (linked from `topics/first-substitution/`, `topics/var-review/`, `topics/rare-event-timing/`).
+- **`corners_comparison_skellam_backtest.R`** + **`corners_comparison_backtest_results.csv`** / **`_summary.csv`** + **`PREREGISTRATION_corners_comparison.md`** — a new (2026-07-15) preregistered walk-forward backtest of a *comparison/difference* composition ("does team A have more corners than team B"), built for England-Argentina Q9. Distinct from both the per-team corners GLMM (PASS) and the sum/combined-threshold composition (FAIL): it composes the two teams' PIT-refit GLMM lambdas via a Skellam distribution. **Result: PASS** (n=98, Brier 0.2015 vs 0.2442 baseline vs 0.2500, 90% CI clears zero on all four comparisons). The prereg reasons in advance why a *difference* composition can survive where the *sum* one failed (positive within-match correlation shrinks a difference's variance but inflates a sum's).
+- **`timing_compound_events_backtest.py`** + **`_results.csv`** / **`_summary.csv`** — walk-forward empirical-base-rate backtest (no GLMM, matching the standing judgment that cards/timing families don't support fitted models) of four England-Argentina questions: goal-in-each-half, stoppage-time goal, both-teams-carded, card-before-first-goal. Strict `date < d` folds. Findings: modest real edge on stoppage-time-goal and card-before-goal; none on goal-in-each-half or both-carded. Also independently flagged a goal-type text-matching gap in `rare_event_panel.csv` (undercounts ~10 goals corpus-wide). The pooled/expanded-corpus extension lives in the match folder (`18_*`).
 - **Point-in-time Elo hand-replay scripts** (superseded by `build_full_tournament_pit_elo.py`, kept as cross-checks): `r16_point_in_time_elo_replay.py`, `qf_point_in_time_elo_replay.py`, `arg_sui_qf_point_in_time_elo_replay.py`, `nor_eng_qf_point_in_time_elo_replay.py`, `fra_esp_sf_point_in_time_elo_replay.py` — all share the root cause that `results.csv` records every WC2026 score as NA, so `model/elo.py`'s regular pipeline never processes a WC2026 result.
 - **`all_families_summary.csv`** — the joint FDR-adjusted verdict table across all 4 families (5 lines).
 
